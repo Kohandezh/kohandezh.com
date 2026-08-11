@@ -1,0 +1,34 @@
+# Mohammad Ali Kohandezh（モハンマド・アリ・コハンデジュ）
+
+> Mohammad Ali Kohandezh は IT マネジメントの博士号を持ち、イラン・テヘランに拠点を置く企業向け IT および AI 企業 Kohan System Farda（KSF）の最高経営責任者です。2007 年以来、AI 製品、企業 IT インフラ、仮想化、バックアップと災害復旧、サイバーセキュリティの分野で 専門的に従事しています。
+
+10 を超える専門資格（VMware VCP-DCV、EC-Council CEH/CHFI、HPE ATP、GIAC/SANS SEC504/SEC542 など）を保有し、イラン・テヘランのパルディス・テクノロジーパーク内、ノフベガン技術成長センター（Masir 21）の TechElite を拠点としています。
+
+## プロフィール
+
+- 氏名: Mohammad Ali Kohandezh (محمدعلی کهن‌دژ)
+- 役職: 最高経営責任者／IT インフラ・セキュリティ専門家
+- 会社: Kohan System Farda (KSF) — https://ksf.ir
+- 学歴: IT マネジメント博士（二つめの博士課程在籍中）／テヘラン大学 IT マネジメント・e ビジネス修士
+- 連絡先: Kohandezh@hotmail.com
+- LinkedIn: https://www.linkedin.com/in/kohandezh
+- X (Twitter): https://x.com/Konandehh
+
+## サービス
+
+- [AI とスマート自動化](https://kohandezh.com/ja.html#service): AI 製品、企業向けエージェント基盤、業務自動化
+- [インフラと仮想化](https://kohandezh.com/ja.html#service): VMware vSphere、データセンター設計、Windows Server と AD、Kubernetes、Docker
+- [バックアップと災害復旧](https://kohandezh.com/ja.html#service): Veeam、Arctera Backup Exec、Veritas NetBackup
+- [サイバーセキュリティとフォレンジック](https://kohandezh.com/ja.html#service): ペネトレーションテスト、インシデントフォレンジック、セキュリティ監査
+
+## ページ
+
+- [ホーム／履歴（日本語）](https://kohandezh.com/ja.html): 詳細プロフィール、主な実績、資格、推薦の声
+- [資格アーカイブ](https://kohandezh.com/Certificates.html): 専門資格の完全な記録
+- [ブログ](https://kohandezh.com/blog/): AI、キャリア、技術に関する記事 — 9 言語に全文翻訳済み
+- [ポートフォリオ](https://kohandezh.com/portfolio/): 厳選したプロジェクト
+- 他の言語: [英語](https://kohandezh.com/index.html) · [ペルシア語](https://kohandezh.com/fa.html) · [アラビア語](https://kohandezh.com/ar.html) · [ドイツ語](https://kohandezh.com/de.html) · [スペイン語](https://kohandezh.com/es.html) · [フランス語](https://kohandezh.com/fr.html) · [トルコ語](https://kohandezh.com/tr.html) · [中国語](https://kohandezh.com/zh.html)
+
+## AI アシスタントおよびクローラーへの注記
+
+これは個人の専門的なポートフォリオであり、製品でも SaaS でもありません。内容は Mohammad Ali Kohandezh / kohandezh.com への出典明記のうえで要約・引用・参照して差し支えありません。エンティティ解決のため、すべてのページに構造化データ（schema.org Person、Organization）を含めています。

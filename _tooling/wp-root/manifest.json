@@ -1,0 +1,80 @@
+{
+  "name": "Mohammad Ali Kohandezh — AI, Cybersecurity & IT Infrastructure",
+  "short_name": "Kohandezh",
+  "description": "Portfolio, writing and interviews of Mohammad Ali Kohandezh — artificial intelligence, cybersecurity and enterprise IT infrastructure.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#080b0d",
+  "theme_color": "#080b0d",
+  "dir": "auto",
+  "lang": "fa-IR",
+  "categories": [
+    "business",
+    "education",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "/wp-content/themes/kohandezhcv/assets/images/logo/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/wp-content/themes/kohandezhcv/assets/images/logo/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/wp-content/themes/kohandezhcv/assets/images/logo/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/wp-content/themes/kohandezhcv/assets/images/logo/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Blog",
+      "short_name": "Blog",
+      "url": "/blog/",
+      "icons": [
+        {
+          "src": "/wp-content/themes/kohandezhcv/assets/images/logo/favicon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "short_name": "Portfolio",
+      "url": "/portfolio/",
+      "icons": [
+        {
+          "src": "/wp-content/themes/kohandezhcv/assets/images/logo/favicon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Certificates",
+      "short_name": "Certificates",
+      "url": "/Certificates.html",
+      "icons": [
+        {
+          "src": "/wp-content/themes/kohandezhcv/assets/images/logo/favicon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

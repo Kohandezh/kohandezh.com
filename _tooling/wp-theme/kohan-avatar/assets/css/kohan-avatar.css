@@ -1,0 +1,73 @@
+/**
+ * Kohan Avatar — presentation only. The controller owns background-image /
+ * background-position; this file only positions, sizes and reveals the root.
+ * One 192x208 atlas cell, scaled by --kohan-scale.
+ */
+.kohan-avatar-root {
+  --kohan-scale: 1;
+  position: fixed;
+  z-index: 1040;
+  width: calc(132px * var(--kohan-scale));
+  height: calc(143px * var(--kohan-scale)); /* 132 * 208/192 keeps cell aspect */
+  background-repeat: no-repeat;
+  image-rendering: -webkit-optimize-contrast;
+  cursor: grab;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  will-change: transform, background-position;
+  transition: opacity 200ms ease-out;
+}
+
+.kohan-avatar-root[data-position="bottom-left"] {
+  inset-inline-start: max(20px, env(safe-area-inset-left));
+  bottom: max(20px, env(safe-area-inset-bottom));
+}
+.kohan-avatar-root[data-position="bottom-right"] {
+  inset-inline-end: max(20px, env(safe-area-inset-right));
+  bottom: max(20px, env(safe-area-inset-bottom));
+}
+.kohan-avatar-root[data-position="top-left"] {
+  inset-inline-start: max(20px, env(safe-area-inset-left));
+  top: max(20px, env(safe-area-inset-top));
+}
+.kohan-avatar-root[data-position="top-right"] {
+  inset-inline-end: max(20px, env(safe-area-inset-right));
+  top: max(20px, env(safe-area-inset-top));
+}
+
+.kohan-avatar-root:active {
+  cursor: grabbing;
+}
+
+.kohan-avatar-root:focus-visible {
+  outline: 2px solid #6cf3a4;
+  outline-offset: 4px;
+  border-radius: 14px;
+}
+
+/* Hidden after a goodbye-smoke sequence — stays hidden until reset/show. */
+.kohan-avatar-root[data-kohan-hidden="true"] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Overlay used for supplemental strips inherits the root's box. */
+.kohan-avatar-root [data-kohan-overlay="true"] {
+  border-radius: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kohan-avatar-root {
+    transition: none;
+  }
+}
+
+/* Small screens: nudge scale down a touch so it never dominates. */
+@media (max-width: 560px) {
+  .kohan-avatar-root {
+    width: calc(104px * var(--kohan-scale));
+    height: calc(113px * var(--kohan-scale));
+  }
+}

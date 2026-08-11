@@ -1,0 +1,210 @@
+/* pearl-button.css — vanilla port of the <PearlButton> glossy pill.
+   -------------------------------------------------------------------------
+   The React version ships its styles in a <style> tag inside the component and
+   builds the sparkle from two <span>s that swap on hover. This project is plain
+   HTML/CSS, so the styles live here and the sparkle is a ::before whose
+   `content` swaps — no markup change needed, which matters because these pills
+   are generated in nine locale files.
+
+   Applied to the SECTION LABEL PILLS (About me, Leadership, Certificates,
+   Tech Stack, LinkedIn Recommendations, …), the professional-role badges and
+   the timeline date chips.
+
+   Sizing note: the reference is a hero-scale button (25px text, 32px/45px
+   padding). These are section labels, so the same material is rendered at
+   label scale — the gloss geometry is proportional, not copied verbatim. */
+
+.kdcv-pearl {
+    --pearl-white: #eaffd6;
+    --pearl-bg: #0a0d09;
+    --pearl-radius: 100px;
+
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    width: fit-content;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: var(--pearl-radius);
+    background-color: var(--pearl-bg);
+    color: rgba(234, 255, 214, .82);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .03em;
+    line-height: 1.4;
+    overflow: hidden;
+    isolation: isolate;
+    transition: box-shadow .25s ease, transform .2s ease, color .25s ease;
+    box-shadow:
+        inset 0 .3rem .9rem rgba(255, 255, 255, .18),
+        inset 0 -.1rem .3rem rgba(0, 0, 0, .7),
+        inset 0 -.4rem .9rem rgba(168, 255, 70, .22),
+        0 1.4rem 1.6rem rgba(0, 0, 0, .3),
+        0 .5rem .6rem -.35rem rgba(0, 0, 0, .8);
+}
+
+/* The dome: a large soft ellipse rising from below the pill. */
+.kdcv-pearl::before {
+    content: "";
+    position: absolute;
+    left: -15%;
+    right: -15%;
+    bottom: 25%;
+    top: -100%;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .12);
+    transition: transform .3s ease;
+}
+
+/* The top gloss: a bright hairline with a gradient falling away beneath it. */
+.kdcv-pearl::after {
+    content: "";
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    top: 12%;
+    bottom: 40%;
+    z-index: -1;
+    border-radius: 24px 22px 0 0;
+    box-shadow: inset 0 10px 8px -10px rgba(255, 255, 255, .8);
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, .3) 0%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0) 100%);
+    transition: transform .3s ease, opacity .3s ease;
+}
+
+/* The label is masked so it fades toward the bottom, which is what gives the
+   reference its "lit from above" read. */
+.kdcv-pearl > .kdcv-pearl-label {
+    -webkit-mask-image: linear-gradient(to bottom, #fff 46%, rgba(255, 255, 255, .55));
+            mask-image: linear-gradient(to bottom, #fff 46%, rgba(255, 255, 255, .55));
+    transition: transform .2s ease;
+}
+
+/* Sparkle — ✧ at rest, ✦ on hover, matching the reference's span swap. */
+.kdcv-pearl-spark { font-size: 1.05em; line-height: 1; color: var(--pearl-white); opacity: .85; }
+.kdcv-pearl-spark::before { content: "\2727"; }
+.kdcv-pearl:hover .kdcv-pearl-spark::before { content: "\2726"; }
+
+/* The pill keeps whatever icon the markup already had, sitting before the
+   sparkle; both share the same optical weight. */
+.kdcv-pearl > i,
+.kdcv-pearl > .icon { font-size: 1.05em; line-height: 1; opacity: .9; }
+
+/* ---- states ------------------------------------------------------------ */
+.kdcv-pearl:hover {
+    color: var(--pearl-white);
+    box-shadow:
+        inset 0 .3rem .5rem rgba(255, 255, 255, .28),
+        inset 0 -.1rem .3rem rgba(0, 0, 0, .7),
+        inset 0 -.4rem .9rem rgba(168, 255, 70, .38),
+        0 1.4rem 1.6rem rgba(0, 0, 0, .3),
+        0 .5rem .6rem -.35rem rgba(0, 0, 0, .8);
+}
+.kdcv-pearl:hover::before { transform: translateY(-5%); }
+.kdcv-pearl:hover::after { opacity: .4; transform: translateY(5%); }
+.kdcv-pearl:hover > .kdcv-pearl-label { transform: translateY(-4%); }
+
+/* Only the interactive ones depress — a section label is not a button. */
+a.kdcv-pearl:active,
+button.kdcv-pearl:active {
+    transform: translateY(4px);
+    box-shadow:
+        inset 0 .3rem .5rem rgba(255, 255, 255, .34),
+        inset 0 -.1rem .3rem rgba(0, 0, 0, .8),
+        inset 0 -.4rem .9rem rgba(168, 255, 70, .28),
+        0 1.4rem 1.6rem rgba(0, 0, 0, .3),
+        0 .5rem .6rem -.35rem rgba(0, 0, 0, .8);
+}
+a.kdcv-pearl:focus-visible,
+button.kdcv-pearl:focus-visible { outline: 2px solid #a8ff46; outline-offset: 3px; }
+
+/* CTA scale — "Request a Demo" and friends read as actions, so they get the
+   larger of the two sizes and a 44px tap target. */
+.kdcv-pearl--cta {
+    min-height: 44px;
+    padding: 12px 26px;
+    font-size: 13px;
+    letter-spacing: .04em;
+}
+
+/* Timeline date chips are the quietest of the three. */
+.kdcv-pearl--chip {
+    padding: 6px 14px;
+    font-size: 11px;
+    letter-spacing: .02em;
+}
+
+/* Light theme — dark is body.dark-mode, light is the unclassed default. */
+body:not(.dark-mode) .kdcv-pearl {
+    --pearl-bg: #eef4e9;
+    color: #1d3316;
+    box-shadow:
+        inset 0 .3rem .9rem rgba(255, 255, 255, .9),
+        inset 0 -.1rem .3rem rgba(23, 46, 16, .18),
+        inset 0 -.4rem .9rem rgba(22, 163, 74, .16),
+        0 1rem 1.2rem rgba(23, 46, 16, .12),
+        0 .4rem .5rem -.3rem rgba(23, 46, 16, .2);
+}
+body:not(.dark-mode) .kdcv-pearl::before { background-color: rgba(255, 255, 255, .5); }
+body:not(.dark-mode) .kdcv-pearl-spark { color: #16a34a; }
+
+/* Arabic and Persian sit slightly lower in the box than Latin; nudge the
+   optical centre so the pill does not look bottom-heavy. */
+html[lang="ar"] .kdcv-pearl,
+html[lang="fa"] .kdcv-pearl { padding-block: 11px 9px; letter-spacing: normal; }
+
+@media (prefers-reduced-motion: reduce) {
+    .kdcv-pearl, .kdcv-pearl::before, .kdcv-pearl::after, .kdcv-pearl > .kdcv-pearl-label { transition: none; }
+    a.kdcv-pearl:active, button.kdcv-pearl:active { transform: none; }
+}
+
+/* ==========================================================================
+   Timeline dates
+   --------------------------------------------------------------------------
+   These sit in a narrow column beside the timeline rail, so they must stay on
+   ONE line and stay slim. The default pearl padding made them bulge and, once
+   a longer value like "2025 - Actualidad" appeared, wrap onto two lines and
+   knock the rail out of alignment.
+   ========================================================================== */
+.timeline-date.kdcv-pearl {
+    padding: 5px 12px;
+    font-size: 11px;
+    line-height: 1.35;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+/* The sparkle costs horizontal room the column does not have. */
+.timeline-date.kdcv-pearl .kdcv-pearl-spark { display: none; }
+
+@media (max-width: 991.98px) {
+    .timeline-date.kdcv-pearl { padding: 4px 10px; font-size: 10px; }
+}
+
+/* ==========================================================================
+   Pill icon normalisation
+   --------------------------------------------------------------------------
+   The icons come from the icomoon font, but some carry their own explicit box
+   from elsewhere in the cascade — the Certificates pill rendered at 16x16
+   while every other pill sat at 13x13, so its glyph pushed the label off the
+   pill's optical centre and read as broken. Pinning one square here makes
+   every pill's icon align identically no matter what sized it upstream.
+   ========================================================================== */
+.kdcv-pearl > i,
+.kdcv-pearl > .icon,
+.kdcv-pearl > i[class*="icon-"] {
+    flex: 0 0 auto !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 14px !important;
+    min-width: 14px !important;
+    height: 14px !important;
+    min-height: 14px !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+    opacity: .9;
+}

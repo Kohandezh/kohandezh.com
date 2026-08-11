@@ -1,0 +1,39 @@
+/* Glowing effect — vanilla port of the GlowingEffect component for the
+   profile avatar frame. A green arc of light follows the pointer around the
+   frame; the avatar and its original colors are untouched. */
+.sidebar-user .user-image .image,
+.wg-work .work-image,
+.service-image .wrap_image,
+.award_img,
+.certificate-card-media {
+    position: relative;
+}
+
+.glow-frame {
+    /* the host clips at its edge, so the ring sits just inside it and
+       follows whatever corner radius the framed image already uses */
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 3px solid transparent;
+    background: conic-gradient(
+        from calc((var(--start, 0) - var(--spread, 45)) * 1deg),
+        transparent 0deg,
+        rgba(0, 222, 81, .45) calc(var(--spread, 45) * .5deg),
+        var(--primary, #00DE51) calc(var(--spread, 45) * 1deg),
+        rgba(0, 222, 81, .45) calc(var(--spread, 45) * 1.5deg),
+        transparent calc(var(--spread, 45) * 2deg)
+    ) border-box;
+    -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    opacity: var(--active, 0);
+    transition: opacity .3s;
+    pointer-events: none;
+    z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .glow-frame { display: none }
+}

@@ -1,0 +1,443 @@
+{
+  "version": "1.0.0",
+  "language": "ja-JP",
+  "selection_strategy": "brand_fit",
+  "selection_mode": "weighted_random",
+  "categories": [
+    {
+      "id": "iranian_wisdom",
+      "title": "ペルシアの叡智と神秘思想",
+      "weight_percent": 25,
+      "quotes": [
+        {
+          "id": "rumi-001",
+          "author": "ルーミー",
+          "text": "この秘密を知れば、すべてを知る。あなたが探し求めているもの、それはすでにあなた自身だ。",
+          "source": "『シャムス詩集』四行詩1815番",
+          "tags": [
+            "هدف",
+            "هویت",
+            "خودشناسی"
+          ],
+          "tone": "deep",
+          "priority": 10,
+          "verification_ref": "S01",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "saadi-001",
+          "author": "サアディー",
+          "text": "人は一つの身体の各部であり、同じ本質から創られている。",
+          "source": "『薔薇園』第1巻 第10話",
+          "tags": [
+            "انسانیت",
+            "همدلی",
+            "جامعه"
+          ],
+          "tone": "human",
+          "priority": 9,
+          "verification_ref": "S02",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "hafez-001",
+          "author": "ハーフェズ",
+          "text": "二つの世の安らぎは二語に尽きる。友には寛容を、敵には忍耐を。",
+          "source": "『ハーフェズ詩集』ガザル5番",
+          "tags": [
+            "رهبری",
+            "روابط",
+            "مدارا"
+          ],
+          "tone": "wise",
+          "priority": 10,
+          "verification_ref": "S03",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "ferdowsi-001",
+          "author": "フェルドウスィー",
+          "text": "知る者こそ力を持つ。知識によって老いた心も若返る。",
+          "source": "『王書』冒頭",
+          "tags": [
+            "دانش",
+            "قدرت",
+            "یادگیری"
+          ],
+          "tone": "strong",
+          "priority": 10,
+          "verification_ref": "S04",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "attar-001",
+          "author": "アッタール",
+          "text": "まず道に足を踏み出せ、何も問うな。道そのものが歩き方を教えてくれる。",
+          "source": "『モフタール・ナーメ』第18章 第25番",
+          "tags": [
+            "اقدام",
+            "مسیر",
+            "شجاعت"
+          ],
+          "tone": "action",
+          "priority": 10,
+          "verification_ref": "S05",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "stoicism",
+      "title": "ストア哲学",
+      "weight_percent": 25,
+      "quotes": [
+        {
+          "id": "marcus-001",
+          "author": "マルクス・アウレリウス",
+          "text": "行動を阻むものが行動を前へ進める。道を塞ぐものが、そのまま道となる。",
+          "source": "『自省録』第5巻",
+          "tags": [
+            "مانع",
+            "تاب‌آوری",
+            "عمل"
+          ],
+          "tone": "resilient",
+          "priority": 10,
+          "verification_ref": "S06",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "marcus-002",
+          "author": "マルクス・アウレリウス",
+          "text": "人が自らの魂よりも静かで安らかな隠れ家を見つけることはできない。",
+          "source": "『自省録』第4巻",
+          "tags": [
+            "تمرکز",
+            "آرامش",
+            "خودآگاهی"
+          ],
+          "tone": "calm",
+          "priority": 8,
+          "verification_ref": "S07",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "seneca-001",
+          "author": "セネカ",
+          "text": "私たちは現実よりも想像の中でより多く苦しむ。",
+          "source": "『ルキリウスへの手紙』第13書簡",
+          "tags": [
+            "ترس",
+            "اضطراب",
+            "واقعیت"
+          ],
+          "tone": "direct",
+          "priority": 10,
+          "verification_ref": "S08",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "epictetus-001",
+          "author": "エピクテトス",
+          "text": "人を乱すのは出来事そのものではなく、それについての判断である。",
+          "source": "『提要』第5節",
+          "tags": [
+            "ادراک",
+            "قضاوت",
+            "کنترل"
+          ],
+          "tone": "analytical",
+          "priority": 10,
+          "verification_ref": "S09",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "marcus-003",
+          "author": "マルクス・アウレリウス",
+          "text": "人には、その本性が耐えられぬようなことは何も起こらない。",
+          "source": "『自省録』第5巻",
+          "tags": [
+            "سختی",
+            "استقامت",
+            "توانایی"
+          ],
+          "tone": "resilient",
+          "priority": 9,
+          "verification_ref": "S10",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "science_engineering",
+      "title": "科学・技術・工学",
+      "weight_percent": 20,
+      "quotes": [
+        {
+          "id": "feynman-001",
+          "author": "リチャード・ファインマン",
+          "text": "自分で作れないものを、私は理解していない。",
+          "source": "ファインマンの研究室の黒板に残された言葉",
+          "tags": [
+            "ساختن",
+            "مهندسی",
+            "درک"
+          ],
+          "tone": "technical",
+          "priority": 10,
+          "verification_ref": "S11",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "turing-001",
+          "author": "アラン・チューリング",
+          "text": "私たちはほんの先しか見通せないが、そこにはやるべきことが山ほどある。",
+          "source": "「計算機械と知性」",
+          "tags": [
+            "آینده",
+            "هوش مصنوعی",
+            "اقدام"
+          ],
+          "tone": "visionary",
+          "priority": 10,
+          "verification_ref": "S12",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "tesla-001",
+          "author": "ニコラ・テスラ",
+          "text": "現在は彼らのものだ。私が本当に取り組んできた未来は、私のものだ。",
+          "source": "「無線による電力伝送」1905年",
+          "tags": [
+            "آینده",
+            "نوآوری",
+            "میراث"
+          ],
+          "tone": "visionary",
+          "priority": 9,
+          "verification_ref": "S13",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "einstein-001",
+          "author": "アルベルト・アインシュタイン",
+          "text": "想像力は知識より重要だ。知識には限りがあるが、想像力は世界を包み込む。",
+          "source": "ジョージ・シルベスター・ヴィエレックとの対談、1929年",
+          "tags": [
+            "تخیل",
+            "دانش",
+            "نوآوری"
+          ],
+          "tone": "creative",
+          "priority": 10,
+          "verification_ref": "S14",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "shannon-001",
+          "author": "クロード・シャノン",
+          "text": "私の頭は昼夜をおかず巡り、さまざまなことを想像しては「もしそうだったら？」と問い続ける。",
+          "source": "インタビューとノキア・ベル研究所アーカイブ",
+          "tags": [
+            "کنجکاوی",
+            "فرضیه",
+            "اختراع"
+          ],
+          "tone": "curious",
+          "priority": 8,
+          "verification_ref": "S15",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "management_entrepreneurship",
+      "title": "経営と起業",
+      "weight_percent": 20,
+      "quotes": [
+        {
+          "id": "drucker-001",
+          "author": "ピーター・ドラッカー",
+          "text": "そもそもやるべきでないことを効率よくやることほど無駄なことはない。",
+          "source": "ピーター・ドラッカーの経営論",
+          "tags": [
+            "اولویت",
+            "بهره‌وری",
+            "استراتژی"
+          ],
+          "tone": "strategic",
+          "priority": 10,
+          "verification_ref": "S16",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "grove-001",
+          "author": "アンディ・グローブ",
+          "text": "パラノイアだけが生き残る。",
+          "source": "『パラノイアだけが生き残る』",
+          "tags": [
+            "رقابت",
+            "ریسک",
+            "بقا"
+          ],
+          "tone": "competitive",
+          "priority": 10,
+          "verification_ref": "S17",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "jobs-001",
+          "author": "スティーブ・ジョブズ",
+          "text": "時間は限られている。他人の人生を生きて無駄にしてはいけない。",
+          "source": "スタンフォード大学卒業式スピーチ、2005年",
+          "tags": [
+            "زمان",
+            "استقلال",
+            "تصمیم"
+          ],
+          "tone": "direct",
+          "priority": 10,
+          "verification_ref": "S18",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "bezos-001",
+          "author": "ジェフ・ベゾス",
+          "text": "ビジョンには頑固に、細部には柔軟に。",
+          "source": "アマゾン公式資料でジェフ・ベゾスに帰される経営原則",
+          "tags": [
+            "چشم‌انداز",
+            "انعطاف",
+            "اجرا"
+          ],
+          "tone": "strategic",
+          "priority": 10,
+          "verification_ref": "S19",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "graham-001",
+          "author": "ポール・グレアム",
+          "text": "人が本当に欲しがるものを作れ。",
+          "source": "Y Combinator のモットーとエッセイ「Be Good」",
+          "tags": [
+            "محصول",
+            "مشتری",
+            "استارتاپ"
+          ],
+          "tone": "product",
+          "priority": 10,
+          "verification_ref": "S20",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "psychology_human_behavior",
+      "title": "心理学と人間行動",
+      "weight_percent": 10,
+      "quotes": [
+        {
+          "id": "kahneman-001",
+          "author": "ダニエル・カーネマン",
+          "text": "人生において、それについて考えている最中に思うほど重要なものは何もない。",
+          "source": "フォーカシング・イリュージョン",
+          "tags": [
+            "سوگیری",
+            "تمرکز",
+            "تصمیم‌گیری"
+          ],
+          "tone": "analytical",
+          "priority": 10,
+          "verification_ref": "S21",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "frankl-001",
+          "author": "ヴィクトール・フランクル",
+          "text": "状況をもはや変えられないとき、私たちは自分自身を変えるよう促される。",
+          "source": "『夜と霧』",
+          "tags": [
+            "معنا",
+            "تغییر",
+            "تاب‌آوری"
+          ],
+          "tone": "resilient",
+          "priority": 10,
+          "verification_ref": "S22",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "jung-001",
+          "author": "カール・ユング",
+          "text": "外を見る者は夢を見る。内を見る者は目覚める。",
+          "source": "カール・ユングの書簡と語録",
+          "tags": [
+            "خودشناسی",
+            "درون‌نگری",
+            "آگاهی"
+          ],
+          "tone": "deep",
+          "priority": 9,
+          "verification_ref": "S23",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "james-001",
+          "author": "ウィリアム・ジェームズ",
+          "text": "人の性格において、決断力ある者とない者ほど際立った違いはない。",
+          "source": "『心理学原理』第26章",
+          "tags": [
+            "اراده",
+            "تصمیم",
+            "شخصیت"
+          ],
+          "tone": "analytical",
+          "priority": 9,
+          "verification_ref": "S24",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "schopenhauer-001",
+          "author": "アルトゥル・ショーペンハウアー",
+          "text": "意志が達成したいかなる対象も持続する満足を与えない。もたらすのは束の間の快だけだ。",
+          "source": "『意志と表象としての世界』",
+          "tags": [
+            "خواستن",
+            "رضایت",
+            "انسان"
+          ],
+          "tone": "philosophical",
+          "priority": 8,
+          "verification_ref": "S25",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "version": "1.0.0",
+  "language": "fr-FR",
+  "selection_strategy": "brand_fit",
+  "selection_mode": "weighted_random",
+  "categories": [
+    {
+      "id": "iranian_wisdom",
+      "title": "Sagesse persane et mystique",
+      "weight_percent": 25,
+      "quotes": [
+        {
+          "id": "rumi-001",
+          "author": "Roumi",
+          "text": "Connais ce secret et tu sais tout : ce que tu cherches, tu l’es déjà.",
+          "source": "Divan de Chams, quatrain 1815",
+          "tags": [
+            "هدف",
+            "هویت",
+            "خودشناسی"
+          ],
+          "tone": "deep",
+          "priority": 10,
+          "verification_ref": "S01",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "saadi-001",
+          "author": "Saadi",
+          "text": "Les êtres humains sont les membres d’un même corps, créés d’une même essence.",
+          "source": "Golestan, livre I, récit 10",
+          "tags": [
+            "انسانیت",
+            "همدلی",
+            "جامعه"
+          ],
+          "tone": "human",
+          "priority": 9,
+          "verification_ref": "S02",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "hafez-001",
+          "author": "Hafez",
+          "text": "La paix des deux mondes tient en deux mots : générosité envers les amis, patience envers les ennemis.",
+          "source": "Divan de Hafez, ghazal 5",
+          "tags": [
+            "رهبری",
+            "روابط",
+            "مدارا"
+          ],
+          "tone": "wise",
+          "priority": 10,
+          "verification_ref": "S03",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "ferdowsi-001",
+          "author": "Ferdowsi",
+          "text": "Qui possède le savoir possède la puissance ; par le savoir le vieux cœur rajeunit.",
+          "source": "Shahnameh, ouverture du livre",
+          "tags": [
+            "دانش",
+            "قدرت",
+            "یادگیری"
+          ],
+          "tone": "strong",
+          "priority": 10,
+          "verification_ref": "S04",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "attar-001",
+          "author": "Attar de Nichapour",
+          "text": "Mets le pied sur la route et ne demande rien ; la route elle-même te dira comment marcher.",
+          "source": "Mokhtar-nameh, chapitre 18, n° 25",
+          "tags": [
+            "اقدام",
+            "مسیر",
+            "شجاعت"
+          ],
+          "tone": "action",
+          "priority": 10,
+          "verification_ref": "S05",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "stoicism",
+      "title": "Philosophie stoïcienne",
+      "weight_percent": 25,
+      "quotes": [
+        {
+          "id": "marcus-001",
+          "author": "Marc Aurèle",
+          "text": "L’obstacle à l’action fait avancer l’action. Ce qui barre la route devient la route.",
+          "source": "Pensées pour moi-même, livre V",
+          "tags": [
+            "مانع",
+            "تاب‌آوری",
+            "عمل"
+          ],
+          "tone": "resilient",
+          "priority": 10,
+          "verification_ref": "S06",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "marcus-002",
+          "author": "Marc Aurèle",
+          "text": "Nulle part l’homme ne trouve de retraite plus paisible que dans sa propre âme.",
+          "source": "Pensées pour moi-même, livre IV",
+          "tags": [
+            "تمرکز",
+            "آرامش",
+            "خودآگاهی"
+          ],
+          "tone": "calm",
+          "priority": 8,
+          "verification_ref": "S07",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "seneca-001",
+          "author": "Sénèque",
+          "text": "Nous souffrons plus souvent en imagination qu’en réalité.",
+          "source": "Lettres à Lucilius, lettre 13",
+          "tags": [
+            "ترس",
+            "اضطراب",
+            "واقعیت"
+          ],
+          "tone": "direct",
+          "priority": 10,
+          "verification_ref": "S08",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "epictetus-001",
+          "author": "Épictète",
+          "text": "Ce ne sont pas les choses qui troublent les hommes, mais les jugements qu’ils en portent.",
+          "source": "Manuel, section 5",
+          "tags": [
+            "ادراک",
+            "قضاوت",
+            "کنترل"
+          ],
+          "tone": "analytical",
+          "priority": 10,
+          "verification_ref": "S09",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "marcus-003",
+          "author": "Marc Aurèle",
+          "text": "Rien n’arrive à personne que sa nature ne l’ait rendu capable de supporter.",
+          "source": "Pensées pour moi-même, livre V",
+          "tags": [
+            "سختی",
+            "استقامت",
+            "توانایی"
+          ],
+          "tone": "resilient",
+          "priority": 9,
+          "verification_ref": "S10",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "science_engineering",
+      "title": "Science, technologie et ingénierie",
+      "weight_percent": 20,
+      "quotes": [
+        {
+          "id": "feynman-001",
+          "author": "Richard Feynman",
+          "text": "Ce que je ne peux pas créer, je ne le comprends pas.",
+          "source": "Laissé au tableau noir du bureau de Feynman",
+          "tags": [
+            "ساختن",
+            "مهندسی",
+            "درک"
+          ],
+          "tone": "technical",
+          "priority": 10,
+          "verification_ref": "S11",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "turing-001",
+          "author": "Alan Turing",
+          "text": "Nous ne voyons qu’à faible distance, mais il y a déjà beaucoup à y faire.",
+          "source": "Computing Machinery and Intelligence",
+          "tags": [
+            "آینده",
+            "هوش مصنوعی",
+            "اقدام"
+          ],
+          "tone": "visionary",
+          "priority": 10,
+          "verification_ref": "S12",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "tesla-001",
+          "author": "Nikola Tesla",
+          "text": "Le présent leur appartient ; l’avenir, pour lequel j’ai vraiment travaillé, m’appartient.",
+          "source": "The Transmission of Electrical Energy Without Wires, 1905",
+          "tags": [
+            "آینده",
+            "نوآوری",
+            "میراث"
+          ],
+          "tone": "visionary",
+          "priority": 9,
+          "verification_ref": "S13",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "einstein-001",
+          "author": "Albert Einstein",
+          "text": "L’imagination est plus importante que le savoir : le savoir est limité, l’imagination embrasse le monde.",
+          "source": "Entretien avec George Sylvester Viereck, 1929",
+          "tags": [
+            "تخیل",
+            "دانش",
+            "نوآوری"
+          ],
+          "tone": "creative",
+          "priority": 10,
+          "verification_ref": "S14",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "shannon-001",
+          "author": "Claude Shannon",
+          "text": "Mon esprit vagabonde jour et nuit, imaginant des choses et demandant toujours : et si ?",
+          "source": "Entretiens et archives des Nokia Bell Labs",
+          "tags": [
+            "کنجکاوی",
+            "فرضیه",
+            "اختراع"
+          ],
+          "tone": "curious",
+          "priority": 8,
+          "verification_ref": "S15",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "management_entrepreneurship",
+      "title": "Management et entrepreneuriat",
+      "weight_percent": 20,
+      "quotes": [
+        {
+          "id": "drucker-001",
+          "author": "Peter Drucker",
+          "text": "Rien n’est plus inutile que de faire avec efficacité ce qui ne devrait pas être fait du tout.",
+          "source": "Écrits de management de Peter Drucker",
+          "tags": [
+            "اولویت",
+            "بهره‌وری",
+            "استراتژی"
+          ],
+          "tone": "strategic",
+          "priority": 10,
+          "verification_ref": "S16",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "grove-001",
+          "author": "Andy Grove",
+          "text": "Seuls les paranoïaques survivent.",
+          "source": "Only the Paranoid Survive",
+          "tags": [
+            "رقابت",
+            "ریسک",
+            "بقا"
+          ],
+          "tone": "competitive",
+          "priority": 10,
+          "verification_ref": "S17",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "jobs-001",
+          "author": "Steve Jobs",
+          "text": "Votre temps est limité : ne le gaspillez pas à vivre la vie d’un autre.",
+          "source": "Discours à l’université Stanford, 2005",
+          "tags": [
+            "زمان",
+            "استقلال",
+            "تصمیم"
+          ],
+          "tone": "direct",
+          "priority": 10,
+          "verification_ref": "S18",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "bezos-001",
+          "author": "Jeff Bezos",
+          "text": "Soyez inflexible sur la vision, souple sur les détails.",
+          "source": "Principe de management attribué à Jeff Bezos dans les sources officielles d’Amazon",
+          "tags": [
+            "چشم‌انداز",
+            "انعطاف",
+            "اجرا"
+          ],
+          "tone": "strategic",
+          "priority": 10,
+          "verification_ref": "S19",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "graham-001",
+          "author": "Paul Graham",
+          "text": "Faites quelque chose que les gens veulent vraiment.",
+          "source": "La devise de Y Combinator et l’essai « Be Good »",
+          "tags": [
+            "محصول",
+            "مشتری",
+            "استارتاپ"
+          ],
+          "tone": "product",
+          "priority": 10,
+          "verification_ref": "S20",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "psychology_human_behavior",
+      "title": "Psychologie et comportement humain",
+      "weight_percent": 10,
+      "quotes": [
+        {
+          "id": "kahneman-001",
+          "author": "Daniel Kahneman",
+          "text": "Rien dans la vie n’est aussi important que vous le pensez pendant que vous y pensez.",
+          "source": "L’illusion de focalisation",
+          "tags": [
+            "سوگیری",
+            "تمرکز",
+            "تصمیم‌گیری"
+          ],
+          "tone": "analytical",
+          "priority": 10,
+          "verification_ref": "S21",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "frankl-001",
+          "author": "Viktor Frankl",
+          "text": "Quand nous ne pouvons plus changer une situation, nous sommes mis au défi de nous changer nous-mêmes.",
+          "source": "Découvrir un sens à sa vie",
+          "tags": [
+            "معنا",
+            "تغییر",
+            "تاب‌آوری"
+          ],
+          "tone": "resilient",
+          "priority": 10,
+          "verification_ref": "S22",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "jung-001",
+          "author": "Carl Jung",
+          "text": "Qui regarde dehors rêve ; qui regarde dedans s’éveille.",
+          "source": "Lettres et propos rassemblés de Carl Jung",
+          "tags": [
+            "خودشناسی",
+            "درون‌نگری",
+            "آگاهی"
+          ],
+          "tone": "deep",
+          "priority": 9,
+          "verification_ref": "S23",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "james-001",
+          "author": "William James",
+          "text": "Dans le caractère humain, nulle différence n’est plus frappante que celle entre le résolu et l’irrésolu.",
+          "source": "The Principles of Psychology, chapitre 26",
+          "tags": [
+            "اراده",
+            "تصمیم",
+            "شخصیت"
+          ],
+          "tone": "analytical",
+          "priority": 9,
+          "verification_ref": "S24",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "schopenhauer-001",
+          "author": "Arthur Schopenhauer",
+          "text": "Aucun objet atteint du vouloir ne donne de satisfaction durable ; il n’apporte qu’un plaisir fugitif.",
+          "source": "Le Monde comme volonté et comme représentation",
+          "tags": [
+            "خواستن",
+            "رضایت",
+            "انسان"
+          ],
+          "tone": "philosophical",
+          "priority": 8,
+          "verification_ref": "S25",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+/*
+ * IRANSansX (Pro) — Variable webfont
+ * This font is proprietary software by FontIran (www.fontiran.com).
+ * Used in this project under license: VC3960YS
+ * https://fontiran.com/license/VC3960YS
+ */
+@font-face {
+    font-family: "IRANSansX";
+    src: url("IRANSansXV.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}

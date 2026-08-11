@@ -1,0 +1,27 @@
+# ── Build artefacts ──────────────────────────────────────────────────────
+# Every archive here is produced by a script, never hand-edited:
+#   kohandezhcv.zip   — rebuilt by _tooling/wp-theme/sync-from-static.py
+#   kohan-avatar.zip  — rebuilt from the plugin source beside it
+# Tracking them means a 24 MB binary diff on every sync, for a file anyone
+# can regenerate in one command.
+*.zip
+*.tar.gz
+
+# ── Local tool state ─────────────────────────────────────────────────────
+# Browse logs, a memory database and per-run scratch from the local AI
+# tooling. Machine-specific, and the network logs record URLs visited.
+.tooling-state/
+
+# QA run output: audit logs, one-off check scripts and ~3 MB of before/after
+# screenshots. Evidence from a past session, not something a clone needs to
+# build or run the site.
+.gstack/
+
+# ── Server / OS noise ────────────────────────────────────────────────────
+.DS_Store
+error_log
+node_modules/
+
+# ── Scratch ──────────────────────────────────────────────────────────────
+tmp-blog-import/
+*.log

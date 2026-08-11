@@ -1,0 +1,21 @@
+/* Pixel canvas — vanilla port of the pixel-canvas hover effect for the blog
+   section. Cards keep their original colors; hovering shimmers a grid of
+   pixels in the site's existing green. */
+.section-blog .blog-local-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-blog .blog-local-item > .pixel-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section-blog .blog-local-item > *:not(.pixel-canvas) {
+    position: relative;
+    z-index: 1;
+}

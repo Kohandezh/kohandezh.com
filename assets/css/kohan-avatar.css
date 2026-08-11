@@ -1,0 +1,396 @@
+/* =========================================================================
+   Kohan Avatar — replaces the static .kdcv-pet-image with a sprite canvas.
+   Loaded only when the avatar module initialises. No global styles bleed.
+   ========================================================================= */
+
+/* Bigger Kohan avatar — overrides the host pet's 92px trigger */
+.kdcv-pet-root[data-kohan-active="true"] {
+  width: var(--kohan-avatar-size, 132px);
+  height: var(--kohan-avatar-size, 132px);
+}
+
+.kdcv-pet-root[data-kohan-active="true"] .kdcv-pet-trigger {
+  width: var(--kohan-avatar-size, 132px);
+  height: var(--kohan-avatar-size, 132px);
+  border-radius: var(--kohan-avatar-radius, 32px);
+}
+
+.kdcv-pet-root[data-kohan-active="true"] .kdcv-pet-image-shell::before {
+  inset: 4px;
+  border-radius: calc(var(--kohan-avatar-radius, 32px) - 2px);
+}
+
+.kohan-size-controls {
+  position: absolute;
+  z-index: 8;
+  inset-inline-start: calc(var(--kohan-avatar-size, 132px) + 7px);
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transform: translateY(-50%);
+}
+
+.kdcv-pet-root .kohan-size-button {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  min-height: 28px;
+  padding: 0;
+  border: 1px solid rgba(108, 243, 164, 0.3);
+  border-radius: 9px;
+  background: rgba(11, 18, 18, 0.88);
+  color: #d7ffe8;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font: 700 17px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.kdcv-pet-root .kohan-size-button:hover {
+  border-color: rgba(108, 243, 164, 0.72);
+  background: rgba(20, 35, 31, 0.96);
+}
+
+.kdcv-pet-root .kohan-size-button:focus-visible {
+  outline: 2px solid #6cf3a4;
+  outline-offset: 2px;
+}
+
+.kdcv-pet-root .kohan-size-button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.kohan-root {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.kohan-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* When Kohan is active, hide the old static image and disable the upstream
+   3D-tilt + breathing animation: pointer-look takes over from here. */
+.kdcv-pet-root[data-kohan-active="true"] .kdcv-pet-image {
+  display: none !important;
+}
+
+/* Classic mode (switched off via the ⇄ button): hide the sprite canvas so
+   only the original static pet image shows through. */
+.kdcv-pet-root:not([data-kohan-active="true"]) .kohan-root {
+  display: none !important;
+}
+
+.kohan-switch-button {
+  font-size: 0;
+}
+.kohan-switch-button svg {
+  display: block;
+}
+.kdcv-pet-root .kohan-switch-button[aria-pressed="true"] {
+  border-color: rgba(108, 243, 164, 0.72);
+  background: rgba(20, 35, 31, 0.96);
+  color: #6cf3a4;
+}
+
+.kdcv-pet-root[data-kohan-active="true"] .kdcv-pet-visual {
+  transform: none !important;
+  transition: none !important;
+}
+
+.kdcv-pet-root[data-kohan-active="true"] .kdcv-pet-image-shell {
+  animation: none !important;
+}
+
+/* Optional mood badge for debugging — hidden by default.
+   Enable with window.KohanAvatar.debug(true) */
+.kohan-debug-badge {
+  position: absolute;
+  inset-inline-end: -2px;
+  top: -10px;
+  z-index: 4;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: rgba(11, 18, 18, 0.85);
+  color: #6cf3a4;
+  font: 600 9px/1.4 -apple-system, system-ui, sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 160ms ease-out;
+}
+
+.kohan-debug-badge[data-visible="true"] {
+  opacity: 1;
+}
+
+/* Reduced motion: Kohan falls back to a single static idle frame. */
+@media (prefers-reduced-motion: reduce) {
+  .kohan-root {
+    animation: none !important;
+  }
+}
+
+/* When the avatar is hidden after a goodbye-smoke sequence. */
+.kdcv-pet-root[data-kohan-hidden="true"] .kdcv-pet-trigger {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease-out;
+}
+
+/* The column itself stays so the eye survives; only the size buttons go. */
+.kdcv-pet-root[data-kohan-hidden="true"] .kohan-size-button {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Make sure pointer-look direction container stays inside the button bounds. */
+.kdcv-pet-trigger {
+  overflow: visible;
+}
+
+/* Walking patrol animation: moves the trigger element right then back.
+   The keyframes are paused by default and only run when the parent has
+   data-kohan-patrol="forward" or "back". The JS dispatches the two
+   half-cycles so the avatar returns to its exact origin. */
+@keyframes kohan-patrol-forward {
+  from { transform: translateX(0); }
+  to   { transform: translateX(56px); }
+}
+@keyframes kohan-patrol-back {
+  from { transform: translateX(56px); }
+  to   { transform: translateX(0); }
+}
+
+.kdcv-pet-root[data-kohan-patrol="forward"] .kdcv-pet-trigger {
+  animation: kohan-patrol-forward 1.3s steps(2, end) forwards;
+}
+.kdcv-pet-root[data-kohan-patrol="back"] .kdcv-pet-trigger {
+  animation: kohan-patrol-back 1.3s steps(2, end) forwards;
+}
+
+/* ---- classic (static image) avatar: same +/- sizing as the sprite --------
+   ai-pet.css pins the root/trigger/image to a fixed 92px (74px on mobile),
+   so the size controls had no effect in classic mode and were disabled. These
+   rules hand the classic avatar the same --kohan-avatar-size variable the
+   sprite already uses, so one set of controls drives both. The :not() carries
+   the attribute's specificity, so it wins over ai-pet.css's plain .kdcv-pet-root
+   rules — including the mobile ones — without needing !important. */
+.kdcv-pet-root:not([data-kohan-active="true"]) {
+    width: var(--kohan-avatar-size, 92px);
+    height: var(--kohan-avatar-size, 92px);
+}
+.kdcv-pet-root:not([data-kohan-active="true"]) .kdcv-pet-trigger {
+    width: var(--kohan-avatar-size, 92px);
+    height: var(--kohan-avatar-size, 92px);
+    border-radius: var(--kohan-avatar-radius, 26px);
+}
+.kdcv-pet-root:not([data-kohan-active="true"]) .kdcv-pet-image {
+    width: 94%;
+    height: 94%;
+}
+
+/* ---- size controls must never leave the viewport ------------------------
+   The column sits beside the avatar at `avatar-size + 7px` from its inline
+   start. Once the avatar is dragged (or anchored) near the right edge on a
+   narrow screen that pushes the buttons off-screen — measured 385px against
+   a 375px viewport. Below the mobile breakpoint they become a horizontal row
+   tucked under the avatar, which is bounded by the avatar's own footprint
+   and so can't overflow regardless of where it sits. */
+@media (max-width: 767.98px) {
+    .kohan-size-controls {
+        inset-inline-start: 50%;
+        top: 100%;
+        flex-direction: row;
+        gap: 6px;
+        margin-top: 6px;
+        transform: translateX(-50%);
+    }
+    html[dir="rtl"] .kohan-size-controls { transform: translateX(50%); }
+}
+
+/* ---- eye toggle: hide/show the avatar ----------------------------------
+   The eye is a sibling of .kohan-size-controls, not a child, because the
+   whole control group is hidden together with the avatar. An eye nested
+   inside it would disappear with everything else and strand the user. */
+.kohan-eye-button {
+    /* A flex item at the top of .kohan-size-controls — directly above "−",
+       sharing the column's gap and alignment. It used to be absolutely
+       positioned with a guessed `bottom: calc(50% + 79px)`, which could not
+       track the real column height and left the eye floating and misaligned. */
+    flex: 0 0 auto;
+    order: -1;
+    display: grid;
+    place-items: center;
+    width: 28px;
+    min-width: 28px;
+    height: 28px;
+    min-height: 28px;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid rgba(108, 243, 164, .45);
+    border-radius: 9px;
+    background: rgba(11, 18, 18, .88);
+    color: #6cf3a4;
+    cursor: pointer;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, .28);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    touch-action: manipulation;
+    transition: border-color .2s ease, background .2s ease, color .2s ease;
+}
+.kohan-eye-button:hover { border-color: #6cf3a4; background: rgba(20, 35, 31, .96); }
+.kohan-eye-button:focus-visible { outline: 2px solid #6cf3a4; outline-offset: 2px; }
+.kohan-eye-button .kohan-eye-closed { display: none; }
+.kohan-eye-button[aria-pressed="true"] .kohan-eye-open { display: none; }
+.kohan-eye-button[aria-pressed="true"] .kohan-eye-closed { display: block; }
+
+/* Hidden state: everything goes except the eye itself. */
+.kdcv-pet-root[data-kohan-hidden="true"] .kdcv-pet-trigger,
+.kdcv-pet-root[data-kohan-hidden="true"] .kohan-root,
+.kdcv-pet-root[data-kohan-hidden="true"] .kohan-size-button,
+.kdcv-pet-root[data-kohan-hidden="true"] .kdcv-pet-status-dot {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+}
+/* The root keeps its box so the eye stays anchored where the avatar was;
+   it must not intercept clicks meant for the page underneath. */
+.kdcv-pet-root[data-kohan-hidden="true"] { pointer-events: none; }
+.kdcv-pet-root[data-kohan-hidden="true"] .kohan-size-controls {
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+    top: auto;
+    bottom: 0;
+    transform: none;
+}
+.kdcv-pet-root[data-kohan-hidden="true"] .kohan-eye-button {
+    pointer-events: auto;
+    opacity: .92;
+}
+.kdcv-pet-root[data-kohan-hidden="true"] .kohan-eye-button:hover { opacity: 1; }
+
+@media (max-width: 767.98px) {
+    /* Touch floor by WIDTH, not just pointer type: a narrow window on a mouse
+       device gets the same cramped layout but reports `pointer: fine`, so the
+       coarse-pointer rule never applied there. Measured 28x28 at 375px. */
+    .kdcv-pet-root .kohan-size-button { width: 44px; min-width: 44px; height: 44px; min-height: 44px; border-radius: 12px; }
+    .kohan-size-controls { gap: 8px; }
+    .kohan-eye-button { top: auto; bottom: -34px; inset-inline-start: 50%; transform: translateX(-50%); }
+    html[dir="rtl"] .kohan-eye-button { transform: translateX(50%); }
+    .kdcv-pet-root[data-kohan-hidden="true"] .kohan-eye-button { bottom: 0; inset-inline-start: auto; transform: none; }
+}
+@media (pointer: coarse) {
+    .kohan-eye-button { width: 44px; min-width: 44px; height: 44px; min-height: 44px; border-radius: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .kohan-eye-button { transition: none; }
+}
+
+
+/* ======================================================================
+   Garry-style badge treatment for the avatar + chat panel.
+
+   Technique lifted from Windscribe's "Ask Garry" badge (inspected live):
+     background   deep near-black panel colour
+     effect       a tiny SVG tile repeated as a dotted grid, brand colour at
+                  0.16 alpha — reads as texture, not noise
+     border       1px hairline in the brand colour at ~0.25 alpha
+     glow         0 0 12px brand @ .14, rising to 16px @ .26 on hover
+     shape        16px radius, overflow hidden, 1px lift on :active
+
+   Recoloured to the site's lime (#a8ff46) rather than Windscribe's cyan:
+   copying their exact palette onto this site would read as someone else's
+   product. To match them literally, swap --kdcv-badge-accent to #7ADAD6
+   and --kdcv-badge-bg to #0c1b23 — nothing else needs to change.
+   ====================================================================== */
+.kdcv-pet-root {
+    --kdcv-badge-accent: 168, 255, 70;              /* #a8ff46 as RGB parts */
+    --kdcv-badge-bg: #0d1510;
+    --kdcv-badge-bd: rgba(var(--kdcv-badge-accent), .25);
+    --kdcv-badge-shadow: 0 0 12px rgba(var(--kdcv-badge-accent), .14);
+    --kdcv-badge-shadow-hover: 0 0 16px rgba(var(--kdcv-badge-accent), .26);
+    /* 7.6x7.6 tile, 1.2x1.2 dot — same geometry Windscribe uses. */
+    --kdcv-badge-dots: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="7.6" height="7.6" viewBox="0 0 7.6 7.6"><rect width="1.2" height="1.2" fill="%23a8ff46" fill-opacity="0.16"/></svg>');
+}
+
+/* Avatar backdrop */
+.kdcv-pet-root .kdcv-pet-image-shell::before {
+    background-color: var(--kdcv-badge-bg);
+    background-image: var(--kdcv-badge-dots);
+    background-repeat: repeat;
+    border: 1px solid var(--kdcv-badge-bd);
+    border-radius: 16px;
+    box-shadow: var(--kdcv-badge-shadow);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: box-shadow .22s ease;
+}
+.kdcv-pet-root:hover .kdcv-pet-image-shell::before { box-shadow: var(--kdcv-badge-shadow-hover); }
+.kdcv-pet-root .kdcv-pet-trigger:active .kdcv-pet-image-shell { transform: translateY(-1px); }
+
+/* Chat panel — flat black with a green edge. The dotted tile stays on the
+   avatar badge only: behind a full column of text it turned into visual noise
+   and hurt reading, which is the opposite of what it does on a 65px badge. */
+.kdcv-pet-panel {
+    background-color: #050806 !important;
+    background-image:
+        radial-gradient(120% 80% at 50% 0%, rgba(168, 255, 70, .07), transparent 60%) !important;
+    border: 1px solid var(--kdcv-badge-bd) !important;
+    border-radius: 18px !important;
+    box-shadow: var(--kdcv-badge-shadow), 0 26px 70px rgba(0, 0, 0, .55) !important;
+}
+
+/* The control buttons pick up the same surface so nothing looks bolted on. */
+.kdcv-pet-root .kohan-size-button,
+.kohan-eye-button {
+    background-color: var(--kdcv-badge-bg);
+    background-image: var(--kdcv-badge-dots);
+    border-color: var(--kdcv-badge-bd);
+    box-shadow: var(--kdcv-badge-shadow);
+}
+.kdcv-pet-root .kohan-size-button:hover,
+.kohan-eye-button:hover { box-shadow: var(--kdcv-badge-shadow-hover); }
+
+@media (prefers-reduced-motion: reduce) {
+    .kdcv-pet-root .kdcv-pet-image-shell::before { transition: none; }
+    .kdcv-pet-root .kdcv-pet-trigger:active .kdcv-pet-image-shell { transform: none; }
+}
+
+/* ==========================================================================
+   Control column direction
+   --------------------------------------------------------------------------
+   The eye is the first child of .kohan-size-controls so it sits directly
+   above "−". That only holds while the group is a COLUMN; something in the
+   generated kdcv-interaction-fix layer was resolving it to `row`, which put
+   the eye beside the size buttons instead of above them. Pinned here with
+   enough specificity to settle it. Below the mobile breakpoint the group is
+   deliberately a row tucked under the avatar — that rule still wins because
+   it comes later and carries the same weight.
+   ========================================================================== */
+.kdcv-pet-root .kohan-size-controls {
+    flex-direction: column !important;
+    align-items: center;
+}
+
+@media (max-width: 767.98px) {
+    .kdcv-pet-root .kohan-size-controls { flex-direction: row !important; }
+}

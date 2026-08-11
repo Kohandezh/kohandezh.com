@@ -1,0 +1,431 @@
+{
+  "schemaVersion": 1,
+  "cell": {
+    "w": 192,
+    "h": 208
+  },
+  "moods": {
+    "wink": {
+      "frames": [
+        {
+          "file": "wink-0.webp",
+          "w": 192,
+          "h": 208,
+          "sha256": "50c23863b3a088c23ff9e1541ca7f5fc0471d77868333048efb8537cb768761f"
+        }
+      ],
+      "frameCount": 1,
+      "sourceFile": "wink.png",
+      "sourceSha256": "e70ef96ebdcefa1232b192f8d2e84e4dfec6d74a201c858bbafec4a5b41c39ed"
+    },
+    "angry-still": {
+      "frames": [
+        {
+          "file": "angry-still-0.webp",
+          "w": 192,
+          "h": 208,
+          "sha256": "c7d188a1eabfa284cb580c340b5cee7978c7b98230d3ea9c469c04a6b36af1d7"
+        }
+      ],
+      "frameCount": 1,
+      "sourceFile": "angry.png",
+      "sourceSha256": "b2ee3790e604f4b77dc3c6b79809d856f8c786d13323dffd37d461ebf239b835"
+    },
+    "confused-vision": {
+      "frames": [
+        {
+          "file": "confused-vision-0.webp",
+          "w": 192,
+          "h": 208,
+          "sha256": "2176dd0006dc527a167ccf0002a7f9dce681d5ecfab131c5a2b51a71ab57ddd3"
+        }
+      ],
+      "frameCount": 1,
+      "sourceFile": "confused-vision.png",
+      "sourceSha256": "1a48ec1df486a9f254e57cd68375ba1128eb4f23c1e2390e964663f0f8d5434a"
+    },
+    "russian-roulette": {
+      "frames": [
+        {
+          "file": "russian-roulette-0.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            55,
+            66,
+            311,
+            671
+          ],
+          "sha256": "a2ab3185150446d69a0aafbc350853af0d7c314b4bd0eba92a495394d3ce6436"
+        },
+        {
+          "file": "russian-roulette-1.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            383,
+            67,
+            633,
+            675
+          ],
+          "sha256": "9e7d8b5f385a87fc7cd2aa1f537030e450e8215464d05e04706d22b59a678af9"
+        },
+        {
+          "file": "russian-roulette-2.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            687,
+            70,
+            938,
+            677
+          ],
+          "sha256": "cdf05b0993eec5c82c8b9307c85c0ef3db25e88accfbb3cf59dfa8b1621cb2f7"
+        },
+        {
+          "file": "russian-roulette-3.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            988,
+            68,
+            1224,
+            675
+          ],
+          "sha256": "7caf7eb5383fe9720034d033946b22a89e4a3ef686d9d99aeb2303cd37aa270e"
+        },
+        {
+          "file": "russian-roulette-4.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            1280,
+            70,
+            1521,
+            677
+          ],
+          "sha256": "6468ef29301b1c8c197f9dc99266de60de8cfc8b61860cb09a107d855b2a7d57"
+        },
+        {
+          "file": "russian-roulette-5.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            1587,
+            71,
+            1832,
+            678
+          ],
+          "sha256": "41be290031d4b6c64760e55c8cb0ff9c3f6676f0dc44762be26030f7e7f3cd02"
+        }
+      ],
+      "frameCount": 6,
+      "sourceFile": "chamber-game-camera.png",
+      "sourceSha256": "ea6d318ef8703adb2a79d3b94594ee99d64c9aa95a030d3a4b7f4b87fa7c907d"
+    },
+    "guarded": {
+      "frames": [
+        {
+          "file": "guarded-0.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            86,
+            71,
+            397,
+            807
+          ],
+          "sha256": "280c5ebacc9595f11a070404d415df433dde395f910002c9b982a537e959f639"
+        },
+        {
+          "file": "guarded-1.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            480,
+            70,
+            794,
+            808
+          ],
+          "sha256": "700ed48333566759184cc69dc79d4541b907dd713d148d402e3a3c9a7827cc8c"
+        },
+        {
+          "file": "guarded-2.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            873,
+            71,
+            1201,
+            808
+          ],
+          "sha256": "1e2a899e75b1ce25f7565f81f12a33bcb5b4d770c133510277ab7468ee84b8c7"
+        },
+        {
+          "file": "guarded-3.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            1279,
+            76,
+            1610,
+            806
+          ],
+          "sha256": "a4585b11676f09271d021906cf715b963f6872fc720b200cfcddf4711ad5ecfd"
+        }
+      ],
+      "frameCount": 4,
+      "sourceFile": "colt-kodiak-threat.png",
+      "sourceSha256": "e68408377bea917f818bb360a001702aa24387f3984618daa128eb94ba792512"
+    },
+    "drag-annoyed": {
+      "frames": [
+        {
+          "file": "drag-annoyed-0.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            81,
+            103,
+            298,
+            660
+          ],
+          "sha256": "ca9929d111ce9e0b852f014d62e13fcf3d814b9da5aa83793ecc6703fe276957"
+        },
+        {
+          "file": "drag-annoyed-1.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            422,
+            112,
+            643,
+            608
+          ],
+          "sha256": "903460f64ce7811078b8ca9b01ef425e1ba8f5cf94411cfb728857205451fcc6"
+        },
+        {
+          "file": "drag-annoyed-2.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            757,
+            76,
+            981,
+            565
+          ],
+          "sha256": "1bf11420ed273a1310c3f3e84543aeed12d3e402289320cb7b5c605b3be28978"
+        },
+        {
+          "file": "drag-annoyed-3.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            1103,
+            123,
+            1402,
+            585
+          ],
+          "sha256": "3401905dfe13ce1e39f095e48754ac092805204728c9069f1d25d77e14a381f6"
+        },
+        {
+          "file": "drag-annoyed-4.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            1483,
+            125,
+            1781,
+            582
+          ],
+          "sha256": "1909b68f313da24b79bad81aa9351bf4dbb03d8dc4ea64865680befe890fa111"
+        },
+        {
+          "file": "drag-annoyed-5.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            1852,
+            112,
+            2046,
+            660
+          ],
+          "sha256": "7c8b0a4bae9a3eb9185a4273d051f6982682aeb3de2250b587fdec0057f09642"
+        }
+      ],
+      "frameCount": 6,
+      "sourceFile": "drag-annoyed.png",
+      "sourceSha256": "9fbcf57fd056207a789875a58894b79e86cfd44dfb2af374fc9ceb76e48a11f8"
+    },
+    "fall-scared": {
+      "frames": [
+        {
+          "file": "fall-scared-0.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            29,
+            87,
+            365,
+            520
+          ],
+          "sha256": "4be63bb264cef6bc34a239c788178de93a4db9b628b9e31b0859a649a790c80c"
+        },
+        {
+          "file": "fall-scared-1.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            380,
+            163,
+            699,
+            535
+          ],
+          "sha256": "fa7b8e828eacbc78158a689640aab82b411f56c3fa0063ef2005ea1b4c925b5d"
+        },
+        {
+          "file": "fall-scared-2.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            713,
+            208,
+            1064,
+            546
+          ],
+          "sha256": "4221cec7e04228a86bc6df4de6a3cc05ee860a0b82c761528b7dcdc7b9ede51f"
+        },
+        {
+          "file": "fall-scared-3.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            1128,
+            213,
+            1322,
+            530
+          ],
+          "sha256": "44d2bc87a010c5b0b0f98e1ff7a411a1e4c77afbad1cc681534bb08e2264fd19"
+        },
+        {
+          "file": "fall-scared-4.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            1412,
+            259,
+            1671,
+            630
+          ],
+          "sha256": "7cb103222f4276b4b273c9665d142c3a1cafb330433deaa008a0e6d3aa67053b"
+        },
+        {
+          "file": "fall-scared-5.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            1771,
+            335,
+            1998,
+            630
+          ],
+          "sha256": "3ce9c424e00e868e6051264c4a3b986840be6eb427fde61874d5df32772d796f"
+        }
+      ],
+      "frameCount": 6,
+      "sourceFile": "fall-scared.png",
+      "sourceSha256": "3e4571ab76724dc40cb12c3b16f7a3176cacfd051c048a921c5d47098af0bbf9"
+    },
+    "goodbye-smoke": {
+      "frames": [
+        {
+          "file": "goodbye-smoke-0.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            32,
+            147,
+            251,
+            583
+          ],
+          "sha256": "90cee815aec6465c5e3fac1cc40faee08ff195381c5778982073be231e2501e1"
+        },
+        {
+          "file": "goodbye-smoke-1.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            339,
+            148,
+            542,
+            584
+          ],
+          "sha256": "29a961055c1dd8204eda9d327ef6d46d2d3c04488d5bc3baffbb8ff31de9edc0"
+        },
+        {
+          "file": "goodbye-smoke-2.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            628,
+            148,
+            816,
+            584
+          ],
+          "sha256": "c54704ee83eb45f92a4b18415903ed078a755fabf28f3c80279b3a044b670d09"
+        },
+        {
+          "file": "goodbye-smoke-3.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            889,
+            147,
+            1126,
+            583
+          ],
+          "sha256": "0306a022c72951b1238fc28183fd2b86c26dc861ad62c0af5f557fb1357ec435"
+        },
+        {
+          "file": "goodbye-smoke-4.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            1172,
+            147,
+            1377,
+            584
+          ],
+          "sha256": "9994fb80c3262b3c73c23be53693a5a3c349d265e8615cc6ba5f5a6fe62b2eca"
+        },
+        {
+          "file": "goodbye-smoke-5.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            1474,
+            208,
+            1607,
+            584
+          ],
+          "sha256": "88c3e0711ca6bbe8df6b122dadc4842a81147937e06fd12bcdbe8242ccb2243b"
+        },
+        {
+          "file": "goodbye-smoke-6.webp",
+          "w": 192,
+          "h": 208,
+          "inkBBox": [
+            1746,
+            406,
+            1802,
+            524
+          ],
+          "sha256": "3f623eedc21d20db06063519df467a26a9efbf65d9523a85a88a44150187af53"
+        }
+      ],
+      "frameCount": 7,
+      "sourceFile": "goodbye-snap-smoke.png",
+      "sourceSha256": "71c23f7a3d81d8b04e1fff250fb6b1b516d047387800a99050c1ef44e67a404c"
+    }
+  }
+}

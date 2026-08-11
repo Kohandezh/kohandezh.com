@@ -1,0 +1,905 @@
+{
+  "_readme": [
+    "Single source of truth for the ATS résumés. build-cv.py renders one",
+    "ATS-safe PDF per locale from this file.",
+    "",
+    "GateMate is deliberately absent. It must not be reintroduced anywhere.",
+    "",
+    "Proper nouns — certificate names, vendor names, product names — stay in",
+    "their original Latin form in every locale ON PURPOSE. Applicant tracking",
+    "systems match on the canonical string ('VMware Certified Professional',",
+    "'CEH'), so translating them would make the résumé unsearchable. Only the",
+    "surrounding prose and the section headings are localised."
+  ],
+  "profile": {
+    "name": {
+      "en": "Mohammad Ali Kohandezh",
+      "fa": "محمدعلی کهن‌دژ",
+      "ar": "محمد علي كهن‌دژ",
+      "de": "Mohammad Ali Kohandezh",
+      "es": "Mohammad Ali Kohandezh",
+      "fr": "Mohammad Ali Kohandezh",
+      "tr": "Mohammad Ali Kohandezh",
+      "zh": "穆罕默德·阿里·科汉德兹",
+      "ja": "モハンマド・アリ・コハンデズ"
+    },
+    "title": {
+      "en": "CEO, Kohan System Farda (KSF) — PhD in IT Management",
+      "fa": "مدیرعامل کهن سیستم فردا (KSF) — دکترای مدیریت فناوری اطلاعات",
+      "ar": "الرئيس التنفيذي، Kohan System Farda (KSF) — دكتوراه في إدارة تقنية المعلومات",
+      "de": "CEO, Kohan System Farda (KSF) — PhD in IT-Management",
+      "es": "CEO, Kohan System Farda (KSF) — Doctorado en Gestión de TI",
+      "fr": "PDG, Kohan System Farda (KSF) — Doctorat en management des SI",
+      "tr": "CEO, Kohan System Farda (KSF) — BT Yönetimi Doktorası",
+      "zh": "首席执行官，Kohan System Farda (KSF) — 信息技术管理博士",
+      "ja": "CEO, Kohan System Farda (KSF) — IT経営学博士"
+    },
+    "email": "Kohandezh@hotmail.com",
+    "phone": "+98 912 149 1644",
+    "location": {
+      "en": "Tehran, Iran",
+      "fa": "تهران، ایران",
+      "ar": "طهران، إيران",
+      "de": "Teheran, Iran",
+      "es": "Teherán, Irán",
+      "fr": "Téhéran, Iran",
+      "tr": "Tahran, İran",
+      "zh": "伊朗德黑兰",
+      "ja": "イラン・テヘラン"
+    },
+    "website": "kohandezh.com",
+    "linkedin": "linkedin.com/in/kohandezh"
+  },
+  "headings": {
+    "summary": {
+      "en": "SUMMARY",
+      "fa": "خلاصه",
+      "ar": "الملخص",
+      "de": "PROFIL",
+      "es": "PERFIL",
+      "fr": "PROFIL",
+      "tr": "ÖZET",
+      "zh": "个人简介",
+      "ja": "サマリー"
+    },
+    "experience": {
+      "en": "PROFESSIONAL EXPERIENCE",
+      "fa": "سوابق حرفه‌ای",
+      "ar": "الخبرة المهنية",
+      "de": "BERUFSERFAHRUNG",
+      "es": "EXPERIENCIA PROFESIONAL",
+      "fr": "EXPÉRIENCE PROFESSIONNELLE",
+      "tr": "PROFESYONEL DENEYİM",
+      "zh": "工作经历",
+      "ja": "職務経歴"
+    },
+    "education": {
+      "en": "EDUCATION",
+      "fa": "تحصیلات",
+      "ar": "التعليم",
+      "de": "AUSBILDUNG",
+      "es": "FORMACIÓN ACADÉMICA",
+      "fr": "FORMATION",
+      "tr": "EĞİTİM",
+      "zh": "教育背景",
+      "ja": "学歴"
+    },
+    "certifications": {
+      "en": "CERTIFICATIONS",
+      "fa": "گواهی‌نامه‌های حرفه‌ای",
+      "ar": "الشهادات المهنية",
+      "de": "ZERTIFIZIERUNGEN",
+      "es": "CERTIFICACIONES",
+      "fr": "CERTIFICATIONS",
+      "tr": "SERTİFİKALAR",
+      "zh": "专业认证",
+      "ja": "資格・認定"
+    },
+    "recognition": {
+      "en": "AWARDS & LETTERS OF APPRECIATION",
+      "fa": "تقدیرنامه‌ها و لوح‌های سپاس",
+      "ar": "الجوائز وخطابات التقدير",
+      "de": "AUSZEICHNUNGEN & ANERKENNUNGSSCHREIBEN",
+      "es": "RECONOCIMIENTOS Y CARTAS DE AGRADECIMIENTO",
+      "fr": "DISTINCTIONS ET LETTRES DE REMERCIEMENT",
+      "tr": "ÖDÜLLER VE TEŞEKKÜR MEKTUPLARI",
+      "zh": "获奖与感谢信",
+      "ja": "表彰・感謝状"
+    },
+    "skills": {
+      "en": "CORE SKILLS",
+      "fa": "مهارت‌های کلیدی",
+      "ar": "المهارات الأساسية",
+      "de": "KERNKOMPETENZEN",
+      "es": "COMPETENCIAS CLAVE",
+      "fr": "COMPÉTENCES CLÉS",
+      "tr": "TEMEL YETKİNLİKLER",
+      "zh": "核心技能",
+      "ja": "コアスキル"
+    },
+    "languages": {
+      "en": "LANGUAGES",
+      "fa": "زبان‌ها",
+      "ar": "اللغات",
+      "de": "SPRACHEN",
+      "es": "IDIOMAS",
+      "fr": "LANGUES",
+      "tr": "DİLLER",
+      "zh": "语言能力",
+      "ja": "語学力"
+    },
+    "sectors": {
+      "en": "CLIENTS & SECTORS",
+      "fa": "مشتریان و حوزه‌ها",
+      "ar": "العملاء والقطاعات",
+      "de": "KUNDEN & BRANCHEN",
+      "es": "CLIENTES Y SECTORES",
+      "fr": "CLIENTS ET SECTEURS",
+      "tr": "MÜŞTERİLER VE SEKTÖRLER",
+      "zh": "客户与行业",
+      "ja": "顧客・業界"
+    }
+  },
+  "summary": {
+    "en": "CEO and IT executive with 15+ years of specialised experience designing, implementing and managing IT infrastructure, cybersecurity, virtualisation and AI-driven products. Founder of AI technology products including the Padyar AI Avatar, HomaYar, MeetYar, BlogYar, NetYar and HomeYar platforms and an AI Agent platform integrating multiple LLM providers, and a development contributor to Iran's National Open-Source AI Platform. Proven record delivering enterprise projects for banks, industrial groups, universities and public institutions across Iran.",
+    "fa": "مدیرعامل و مدیر ارشد فناوری اطلاعات با بیش از ۱۵ سال تجربهٔ تخصصی در طراحی، پیاده‌سازی و مدیریت زیرساخت فناوری اطلاعات، امنیت سایبری، مجازی‌سازی و محصولات مبتنی بر هوش مصنوعی. بنیان‌گذار محصولات هوش مصنوعی از جمله سکوهای پادیار، HomaYar، MeetYar، BlogYar، NetYar و HomeYar و سکوی AI Agent با یکپارچگی چند ارائه‌دهندهٔ مدل زبانی، و مشارکت‌کننده در توسعهٔ سکوی ملی متن‌باز هوش مصنوعی. دارای کارنامهٔ اثبات‌شده در اجرای پروژه‌های سازمانی برای بانک‌ها، گروه‌های صنعتی، دانشگاه‌ها و نهادهای عمومی در سراسر ایران.",
+    "ar": "رئيس تنفيذي وقيادي في تقنية المعلومات يمتلك أكثر من 15 عامًا من الخبرة المتخصصة في تصميم وتنفيذ وإدارة البنية التحتية لتقنية المعلومات والأمن السيبراني والمحاكاة الافتراضية والمنتجات المعتمدة على الذكاء الاصطناعي. مؤسس منتجات ذكاء اصطناعي تشمل منصات Padyar وHomaYar وMeetYar وBlogYar وNetYar وHomeYar ومنصة AI Agent المتكاملة مع عدة مزودي نماذج لغوية، ومساهم في تطوير المنصة الوطنية مفتوحة المصدر للذكاء الاصطناعي. سجل مثبت في تنفيذ مشاريع مؤسسية للبنوك والمجموعات الصناعية والجامعات والمؤسسات العامة في جميع أنحاء إيران.",
+    "de": "CEO und IT-Führungskraft mit über 15 Jahren Spezialerfahrung in Design, Implementierung und Betrieb von IT-Infrastruktur, Cybersicherheit, Virtualisierung und KI-gestützten Produkten. Gründer von KI-Produkten wie den Plattformen Padyar AI Avatar, HomaYar, MeetYar, BlogYar, NetYar und HomeYar und einer AI-Agent-Plattform mit Anbindung mehrerer LLM-Anbieter sowie Entwicklungsbeitragender der nationalen Open-Source-KI-Plattform des Iran. Nachgewiesene Erfolge bei Enterprise-Projekten für Banken, Industriegruppen, Universitäten und öffentliche Institutionen im gesamten Iran.",
+    "es": "CEO y directivo de TI con más de 15 años de experiencia especializada en el diseño, la implementación y la gestión de infraestructura de TI, ciberseguridad, virtualización y productos basados en IA. Fundador de productos de IA como las plataformas Padyar AI Avatar, HomaYar, MeetYar, BlogYar, NetYar y HomeYar y una plataforma de AI Agent que integra múltiples proveedores de LLM, y colaborador en el desarrollo de la Plataforma Nacional de IA de Código Abierto de Irán. Trayectoria demostrada en proyectos empresariales para bancos, grupos industriales, universidades e instituciones públicas de todo Irán.",
+    "fr": "PDG et dirigeant IT fort de plus de 15 ans d'expérience spécialisée dans la conception, la mise en œuvre et la gestion d'infrastructures informatiques, de cybersécurité, de virtualisation et de produits pilotés par l'IA. Fondateur de produits d'IA dont les plateformes Padyar AI Avatar, HomaYar, MeetYar, BlogYar, NetYar et HomeYar et une plateforme AI Agent intégrant plusieurs fournisseurs de LLM, et contributeur au développement de la plateforme nationale d'IA open source d'Iran. Bilan avéré de projets d'entreprise livrés pour des banques, groupes industriels, universités et institutions publiques à travers l'Iran.",
+    "tr": "BT altyapısı, siber güvenlik, sanallaştırma ve yapay zekâ tabanlı ürünlerin tasarımı, uygulanması ve yönetiminde 15 yılı aşkın uzmanlık deneyimine sahip CEO ve BT yöneticisi. Padyar AI Avatar, HomaYar, MeetYar, BlogYar, NetYar ve HomeYar platformları ile birden fazla LLM sağlayıcısını entegre eden AI Agent platformu dâhil yapay zekâ ürünlerinin kurucusu ve İran Ulusal Açık Kaynaklı Yapay Zekâ Platformu'na geliştirme katkısı sunan uzman. İran genelinde bankalar, sanayi grupları, üniversiteler ve kamu kurumları için kurumsal projeler teslim etme konusunda kanıtlanmış sicil.",
+    "zh": "首席执行官兼 IT 高管，拥有 15 年以上专业经验，涵盖 IT 基础设施、网络安全、虚拟化及人工智能产品的设计、实施与管理。创立多项人工智能产品，包括 Padyar AI Avatar、HomaYar、MeetYar、BlogYar、NetYar和HomeYar 平台和整合多家 LLM 服务商的 AI Agent 平台，并参与伊朗国家开源人工智能平台的开发。在为伊朗各地的银行、工业集团、大学和公共机构交付企业级项目方面拥有可靠业绩。",
+    "ja": "ITインフラ、サイバーセキュリティ、仮想化、AI製品の設計・構築・運用において15年以上の専門経験を持つCEO兼IT経営者。Padyar AI Avatar、HomaYar、MeetYar、BlogYar、NetYar、HomeYar などのプラットフォーム、複数のLLMプロバイダーを統合したAI Agentプラットフォームなどを創出し、イラン国立オープンソースAIプラットフォームの開発にも参画。イラン全土の銀行、産業グループ、大学、公共機関向けにエンタープライズ案件を提供してきた実績を持つ。"
+  },
+  "experience": [
+    {
+      "role": {
+        "en": "Developer — National Open-Source AI Platform",
+        "fa": "توسعه‌دهنده — سکوی ملی متن‌باز هوش مصنوعی",
+        "ar": "مطور — المنصة الوطنية مفتوحة المصدر للذكاء الاصطناعي",
+        "de": "Entwickler — Nationale Open-Source-KI-Plattform",
+        "es": "Desarrollador — Plataforma Nacional de IA de Código Abierto",
+        "fr": "Développeur — Plateforme nationale d'IA open source",
+        "tr": "Geliştirici — Ulusal Açık Kaynaklı Yapay Zekâ Platformu",
+        "zh": "开发者 — 国家开源人工智能平台",
+        "ja": "開発者 — 国立オープンソースAIプラットフォーム"
+      },
+      "org": "Sako",
+      "period": {
+        "en": "2026 – Present",
+        "fa": "۱۴۰۵ – اکنون",
+        "ar": "2026 – الآن",
+        "de": "2026 – heute",
+        "es": "2026 – Actualidad",
+        "fr": "2026 – Aujourd'hui",
+        "tr": "2026 – Günümüz",
+        "zh": "2026 – 至今",
+        "ja": "2026年 – 現在"
+      },
+      "bullets": {
+        "en": [
+          "Development contributor to Iran's national open-source AI platform, working on platform components and model integration."
+        ],
+        "fa": [
+          "مشارکت در توسعهٔ سکوی ملی متن‌باز هوش مصنوعی ایران، شامل توسعهٔ اجزای سکو و یکپارچه‌سازی مدل‌ها."
+        ],
+        "ar": [
+          "مساهم في تطوير المنصة الوطنية مفتوحة المصدر للذكاء الاصطناعي في إيران، بما يشمل مكونات المنصة وتكامل النماذج."
+        ],
+        "de": [
+          "Entwicklungsbeitragender der nationalen Open-Source-KI-Plattform des Iran: Plattformkomponenten und Modellintegration."
+        ],
+        "es": [
+          "Colaborador de desarrollo en la plataforma nacional de IA de código abierto de Irán: componentes de plataforma e integración de modelos."
+        ],
+        "fr": [
+          "Contributeur au développement de la plateforme nationale d'IA open source d'Iran : composants de la plateforme et intégration de modèles."
+        ],
+        "tr": [
+          "İran'ın ulusal açık kaynaklı yapay zekâ platformuna geliştirme katkısı: platform bileşenleri ve model entegrasyonu."
+        ],
+        "zh": [
+          "参与伊朗国家开源人工智能平台的开发，负责平台组件与模型集成。"
+        ],
+        "ja": [
+          "イラン国立オープンソースAIプラットフォームの開発に参画し、プラットフォーム構成要素とモデル統合を担当。"
+        ]
+      }
+    },
+    {
+      "role": {
+        "en": "Chief Executive Officer",
+        "fa": "مدیرعامل",
+        "ar": "الرئيس التنفيذي",
+        "de": "Geschäftsführer (CEO)",
+        "es": "Director Ejecutivo (CEO)",
+        "fr": "Président-directeur général",
+        "tr": "Genel Müdür (CEO)",
+        "zh": "首席执行官",
+        "ja": "最高経営責任者（CEO）"
+      },
+      "org": "Kohan System Farda (KSF)",
+      "period": {
+        "en": "2024 – Present",
+        "fa": "۱۴۰۳ – اکنون",
+        "ar": "2024 – الآن",
+        "de": "2024 – heute",
+        "es": "2024 – Actualidad",
+        "fr": "2024 – Aujourd'hui",
+        "tr": "2024 – Günümüz",
+        "zh": "2024 – 至今",
+        "ja": "2024年 – 現在"
+      },
+      "bullets": {
+        "en": [
+          "Lead development of AI-driven products including the Padyar AI Avatar, HomaYar, MeetYar, BlogYar, NetYar and HomeYar platforms and an AI Agent platform integrating multiple LLM providers.",
+          "Direct enterprise infrastructure and cybersecurity consulting engagements for banking, industrial and public-sector clients.",
+          "Own technical strategy, delivery standards and team leadership across the company."
+        ],
+        "fa": [
+          "راهبری توسعهٔ محصولات مبتنی بر هوش مصنوعی از جمله سکوهای پادیار، HomaYar، MeetYar، BlogYar، NetYar و HomeYar و سکوی AI Agent با یکپارچگی چند ارائه‌دهندهٔ مدل زبانی.",
+          "هدایت پروژه‌های مشاورهٔ زیرساخت سازمانی و امنیت سایبری برای مشتریان بانکی، صنعتی و بخش عمومی.",
+          "مسئولیت راهبرد فنی، استانداردهای تحویل و رهبری تیم در سطح شرکت."
+        ],
+        "ar": [
+          "قيادة تطوير منتجات الذكاء الاصطناعي بما فيها منصات Padyar وHomaYar وMeetYar وBlogYar وNetYar وHomeYar ومنصة AI Agent المتكاملة مع عدة مزودي نماذج لغوية.",
+          "إدارة مشاريع استشارات البنية التحتية المؤسسية والأمن السيبراني لعملاء القطاع المصرفي والصناعي والعام.",
+          "تولي الاستراتيجية التقنية ومعايير التسليم وقيادة الفريق على مستوى الشركة."
+        ],
+        "de": [
+          "Leitung der Entwicklung KI-gestützter Produkte, darunter die Plattformen Padyar AI Avatar, HomaYar, MeetYar, BlogYar, NetYar und HomeYar und eine AI-Agent-Plattform mit mehreren LLM-Anbietern.",
+          "Steuerung von Beratungsprojekten zu Unternehmensinfrastruktur und Cybersicherheit für Banken, Industrie und öffentliche Hand.",
+          "Verantwortung für Technologiestrategie, Lieferstandards und Teamführung im gesamten Unternehmen."
+        ],
+        "es": [
+          "Dirección del desarrollo de productos basados en IA, incluidos las plataformas Padyar AI Avatar, HomaYar, MeetYar, BlogYar, NetYar y HomeYar y una plataforma de AI Agent con múltiples proveedores de LLM.",
+          "Dirección de proyectos de consultoría de infraestructura empresarial y ciberseguridad para clientes de banca, industria y sector público.",
+          "Responsable de la estrategia técnica, los estándares de entrega y el liderazgo de equipos en toda la empresa."
+        ],
+        "fr": [
+          "Direction du développement de produits pilotés par l'IA, dont les plateformes Padyar AI Avatar, HomaYar, MeetYar, BlogYar, NetYar et HomeYar et une plateforme AI Agent intégrant plusieurs fournisseurs de LLM.",
+          "Pilotage des missions de conseil en infrastructure d'entreprise et cybersécurité pour des clients bancaires, industriels et publics.",
+          "Responsable de la stratégie technique, des standards de livraison et de l'encadrement des équipes."
+        ],
+        "tr": [
+          "Padyar AI Avatar, HomaYar, MeetYar, BlogYar, NetYar ve HomeYar platformları ve birden fazla LLM sağlayıcısını entegre eden AI Agent platformu dâhil yapay zekâ ürünlerinin geliştirilmesini yönetme.",
+          "Bankacılık, sanayi ve kamu sektörü müşterileri için kurumsal altyapı ve siber güvenlik danışmanlık projelerini yönetme.",
+          "Şirket genelinde teknik strateji, teslim standartları ve ekip liderliğinin sahipliği."
+        ],
+        "zh": [
+          "主导人工智能产品研发，包括 Padyar AI Avatar、HomaYar、MeetYar、BlogYar、NetYar和HomeYar 平台及整合多家 LLM 服务商的 AI Agent 平台。",
+          "负责面向银行、工业与公共部门客户的企业基础设施与网络安全咨询项目。",
+          "统筹公司技术战略、交付标准与团队管理。"
+        ],
+        "ja": [
+          "Padyar AI Avatar、HomaYar、MeetYar、BlogYar、NetYar、HomeYar などのプラットフォームおよび複数LLMプロバイダーを統合したAI Agentプラットフォームなど、AI製品の開発を主導。",
+          "銀行・産業・公共部門の顧客向けに、エンタープライズインフラおよびサイバーセキュリティのコンサルティング案件を統括。",
+          "全社の技術戦略、納品基準、チームマネジメントを担当。"
+        ]
+      }
+    },
+    {
+      "role": {
+        "en": "Senior Technical Expert",
+        "fa": "کارشناس ارشد فنی",
+        "ar": "خبير تقني أول",
+        "de": "Senior Technical Expert",
+        "es": "Experto Técnico Sénior",
+        "fr": "Expert technique senior",
+        "tr": "Kıdemli Teknik Uzman",
+        "zh": "高级技术专家",
+        "ja": "シニアテクニカルエキスパート"
+      },
+      "org": "Modabberan Fanavari Pasargad",
+      "period": {
+        "en": "2018 – 2023",
+        "fa": "۱۳۹۷ – ۱۴۰۲",
+        "ar": "2018 – 2023",
+        "de": "2018 – 2023",
+        "es": "2018 – 2023",
+        "fr": "2018 – 2023",
+        "tr": "2018 – 2023",
+        "zh": "2018 – 2023",
+        "ja": "2018年 – 2023年"
+      },
+      "bullets": {
+        "en": [
+          "Designed and operated virtualisation and backup infrastructure using VMware, Veeam and Symantec Backup Exec.",
+          "Delivered enterprise storage solutions and disaster-recovery capability for large organisations."
+        ],
+        "fa": [
+          "طراحی و راهبری زیرساخت مجازی‌سازی و پشتیبان‌گیری با VMware، Veeam و Symantec Backup Exec.",
+          "پیاده‌سازی راهکارهای ذخیره‌سازی سازمانی و توان بازیابی از فاجعه برای سازمان‌های بزرگ."
+        ],
+        "ar": [
+          "تصميم وتشغيل بنية المحاكاة الافتراضية والنسخ الاحتياطي باستخدام VMware وVeeam وSymantec Backup Exec.",
+          "تقديم حلول تخزين مؤسسية وقدرات التعافي من الكوارث لمؤسسات كبيرة."
+        ],
+        "de": [
+          "Aufbau und Betrieb von Virtualisierungs- und Backup-Infrastruktur mit VMware, Veeam und Symantec Backup Exec.",
+          "Bereitstellung von Enterprise-Storage-Lösungen und Disaster-Recovery-Fähigkeit für Großorganisationen."
+        ],
+        "es": [
+          "Diseño y operación de infraestructura de virtualización y copias de seguridad con VMware, Veeam y Symantec Backup Exec.",
+          "Entrega de soluciones de almacenamiento empresarial y capacidad de recuperación ante desastres para grandes organizaciones."
+        ],
+        "fr": [
+          "Conception et exploitation d'infrastructures de virtualisation et de sauvegarde avec VMware, Veeam et Symantec Backup Exec.",
+          "Livraison de solutions de stockage d'entreprise et de capacités de reprise après sinistre pour de grandes organisations."
+        ],
+        "tr": [
+          "VMware, Veeam ve Symantec Backup Exec ile sanallaştırma ve yedekleme altyapısının tasarımı ve işletimi.",
+          "Büyük kuruluşlar için kurumsal depolama çözümleri ve olağanüstü durum kurtarma yeteneği sağlama."
+        ],
+        "zh": [
+          "使用 VMware、Veeam 和 Symantec Backup Exec 设计并运维虚拟化与备份基础设施。",
+          "为大型组织交付企业存储解决方案与灾难恢复能力。"
+        ],
+        "ja": [
+          "VMware、Veeam、Symantec Backup Exec を用いた仮想化・バックアップ基盤の設計と運用。",
+          "大規模組織向けにエンタープライズストレージと災害復旧能力を提供。"
+        ]
+      }
+    },
+    {
+      "role": {
+        "en": "IT Manager",
+        "fa": "مدیر فناوری اطلاعات",
+        "ar": "مدير تقنية المعلومات",
+        "de": "IT-Leiter",
+        "es": "Gerente de TI",
+        "fr": "Responsable informatique",
+        "tr": "BT Müdürü",
+        "zh": "IT 经理",
+        "ja": "ITマネージャー"
+      },
+      "org": "Haft Tappeh Sugarcane Agro-Industry",
+      "period": {
+        "en": "2016 – 2018",
+        "fa": "۱۳۹۵ – ۱۳۹۷",
+        "ar": "2016 – 2018",
+        "de": "2016 – 2018",
+        "es": "2016 – 2018",
+        "fr": "2016 – 2018",
+        "tr": "2016 – 2018",
+        "zh": "2016 – 2018",
+        "ja": "2016年 – 2018年"
+      },
+      "bullets": {
+        "en": [
+          "Designed and managed IT infrastructure, virtualisation and the enterprise network for a large agro-industrial group.",
+          "Delivered administrative and financial automation across the organisation."
+        ],
+        "fa": [
+          "طراحی و مدیریت زیرساخت فناوری اطلاعات، مجازی‌سازی و شبکهٔ سازمانی برای یک مجموعهٔ بزرگ کشت و صنعت.",
+          "اجرای اتوماسیون اداری و مالی در سطح سازمان."
+        ],
+        "ar": [
+          "تصميم وإدارة البنية التحتية لتقنية المعلومات والمحاكاة الافتراضية والشبكة المؤسسية لمجموعة زراعية صناعية كبيرة.",
+          "تنفيذ الأتمتة الإدارية والمالية على مستوى المؤسسة."
+        ],
+        "de": [
+          "Konzeption und Betrieb von IT-Infrastruktur, Virtualisierung und Unternehmensnetzwerk einer großen Agrarindustriegruppe.",
+          "Umsetzung der Verwaltungs- und Finanzautomatisierung im gesamten Unternehmen."
+        ],
+        "es": [
+          "Diseño y gestión de la infraestructura de TI, la virtualización y la red corporativa de un gran grupo agroindustrial.",
+          "Implantación de la automatización administrativa y financiera en toda la organización."
+        ],
+        "fr": [
+          "Conception et gestion de l'infrastructure informatique, de la virtualisation et du réseau d'entreprise d'un grand groupe agro-industriel.",
+          "Déploiement de l'automatisation administrative et financière à l'échelle de l'organisation."
+        ],
+        "tr": [
+          "Büyük bir tarım-sanayi grubu için BT altyapısı, sanallaştırma ve kurumsal ağın tasarımı ve yönetimi.",
+          "Kurum genelinde idari ve mali otomasyonun hayata geçirilmesi."
+        ],
+        "zh": [
+          "为大型农工集团设计并管理 IT 基础设施、虚拟化及企业网络。",
+          "在全组织范围内实施行政与财务自动化。"
+        ],
+        "ja": [
+          "大規模農工グループのITインフラ、仮想化、企業ネットワークの設計と運用。",
+          "組織全体の管理・財務業務の自動化を実現。"
+        ]
+      }
+    },
+    {
+      "role": {
+        "en": "Senior Network & Internet Expert",
+        "fa": "کارشناس ارشد شبکه و اینترنت",
+        "ar": "خبير أول للشبكات والإنترنت",
+        "de": "Senior Netzwerk- und Internetexperte",
+        "es": "Experto Sénior en Redes e Internet",
+        "fr": "Expert senior réseaux et Internet",
+        "tr": "Kıdemli Ağ ve İnternet Uzmanı",
+        "zh": "高级网络与互联网专家",
+        "ja": "シニアネットワーク・インターネット専門家"
+      },
+      "org": "Islamic Azad University",
+      "period": {
+        "en": "2014 – 2016",
+        "fa": "۱۳۹۳ – ۱۳۹۵",
+        "ar": "2014 – 2016",
+        "de": "2014 – 2016",
+        "es": "2014 – 2016",
+        "fr": "2014 – 2016",
+        "tr": "2014 – 2016",
+        "zh": "2014 – 2016",
+        "ja": "2014年 – 2016年"
+      },
+      "bullets": {
+        "en": [
+          "Operated and secured campus network and internet services for a major university."
+        ],
+        "fa": [
+          "راهبری و ایمن‌سازی شبکهٔ دانشگاهی و سرویس‌های اینترنت برای یک دانشگاه بزرگ."
+        ],
+        "ar": [
+          "تشغيل وتأمين شبكة الحرم الجامعي وخدمات الإنترنت لجامعة كبرى."
+        ],
+        "de": [
+          "Betrieb und Absicherung von Campusnetzwerk und Internetdiensten einer großen Universität."
+        ],
+        "es": [
+          "Operación y protección de la red del campus y los servicios de internet de una gran universidad."
+        ],
+        "fr": [
+          "Exploitation et sécurisation du réseau de campus et des services Internet d'une grande université."
+        ],
+        "tr": [
+          "Büyük bir üniversitenin kampüs ağı ve internet hizmetlerinin işletimi ve güvenliği."
+        ],
+        "zh": [
+          "运维并保障某大型高校的校园网络与互联网服务。"
+        ],
+        "ja": [
+          "大規模大学のキャンパスネットワークとインターネットサービスの運用・セキュリティを担当。"
+        ]
+      }
+    },
+    {
+      "role": {
+        "en": "Technical Analyst",
+        "fa": "تحلیل‌گر فنی",
+        "ar": "محلل تقني",
+        "de": "Technischer Analyst",
+        "es": "Analista Técnico",
+        "fr": "Analyste technique",
+        "tr": "Teknik Analist",
+        "zh": "技术分析师",
+        "ja": "テクニカルアナリスト"
+      },
+      "org": "Tahlilgaran Ettelaat Negareh",
+      "period": {
+        "en": "2011 – 2013",
+        "fa": "۱۳۹۰ – ۱۳۹۲",
+        "ar": "2011 – 2013",
+        "de": "2011 – 2013",
+        "es": "2011 – 2013",
+        "fr": "2011 – 2013",
+        "tr": "2011 – 2013",
+        "zh": "2011 – 2013",
+        "ja": "2011年 – 2013年"
+      },
+      "bullets": {
+        "en": [
+          "Technical analysis and implementation support for information-systems projects."
+        ],
+        "fa": [
+          "تحلیل فنی و پشتیبانی پیاده‌سازی پروژه‌های سامانه‌های اطلاعاتی."
+        ],
+        "ar": [
+          "التحليل التقني ودعم التنفيذ لمشاريع نظم المعلومات."
+        ],
+        "de": [
+          "Technische Analyse und Implementierungsunterstützung für Informationssystemprojekte."
+        ],
+        "es": [
+          "Análisis técnico y soporte de implementación para proyectos de sistemas de información."
+        ],
+        "fr": [
+          "Analyse technique et accompagnement de la mise en œuvre de projets de systèmes d'information."
+        ],
+        "tr": [
+          "Bilgi sistemleri projeleri için teknik analiz ve uygulama desteği."
+        ],
+        "zh": [
+          "为信息系统项目提供技术分析与实施支持。"
+        ],
+        "ja": [
+          "情報システム案件における技術分析と導入支援。"
+        ]
+      }
+    }
+  ],
+  "education": [
+    {
+      "degree": {
+        "en": "PhD Candidate (second doctorate)",
+        "fa": "دانشجوی دکترا (دکترای دوم)",
+        "ar": "مرشح لنيل الدكتوراه (الدكتوراه الثانية)",
+        "de": "Doktorand (zweite Promotion)",
+        "es": "Candidato a Doctor (segundo doctorado)",
+        "fr": "Doctorant (second doctorat)",
+        "tr": "Doktora Adayı (ikinci doktora)",
+        "zh": "博士研究生（第二个博士学位）",
+        "ja": "博士課程在籍（2つ目の博士号）"
+      },
+      "school": "",
+      "period": {
+        "en": "In progress",
+        "fa": "در حال تحصیل",
+        "ar": "قيد الدراسة",
+        "de": "laufend",
+        "es": "En curso",
+        "fr": "En cours",
+        "tr": "Devam ediyor",
+        "zh": "在读",
+        "ja": "在学中"
+      },
+      "note": ""
+    },
+    {
+      "degree": {
+        "en": "PhD, IT Management — Smart Business",
+        "fa": "دکترای مدیریت فناوری اطلاعات — کسب‌وکار هوشمند",
+        "ar": "دكتوراه في إدارة تقنية المعلومات — الأعمال الذكية",
+        "de": "PhD, IT-Management — Smart Business",
+        "es": "Doctorado en Gestión de TI — Negocios Inteligentes",
+        "fr": "Doctorat en management des SI — Smart Business",
+        "tr": "BT Yönetimi Doktorası — Akıllı İşletme",
+        "zh": "信息技术管理博士 — 智慧商业",
+        "ja": "IT経営学博士 — スマートビジネス"
+      },
+      "school": "Islamic Azad University, Central Tehran Branch",
+      "period": {
+        "en": "2018 – 2023",
+        "fa": "۱۳۹۷ – ۱۴۰۲",
+        "ar": "2018 – 2023",
+        "de": "2018 – 2023",
+        "es": "2018 – 2023",
+        "fr": "2018 – 2023",
+        "tr": "2018 – 2023",
+        "zh": "2018 – 2023",
+        "ja": "2018年 – 2023年"
+      },
+      "note": {
+        "en": "GPA 17.70 / 20",
+        "fa": "معدل ۱۷٫۷۰ از ۲۰",
+        "ar": "المعدل 17.70 / 20",
+        "de": "Note 17,70 / 20",
+        "es": "Promedio 17,70 / 20",
+        "fr": "Moyenne 17,70 / 20",
+        "tr": "Not ortalaması 17,70 / 20",
+        "zh": "平均分 17.70 / 20",
+        "ja": "GPA 17.70 / 20"
+      }
+    },
+    {
+      "degree": {
+        "en": "MSc, IT Management — e-Business",
+        "fa": "کارشناسی ارشد مدیریت فناوری اطلاعات — کسب‌وکار الکترونیک",
+        "ar": "ماجستير في إدارة تقنية المعلومات — الأعمال الإلكترونية",
+        "de": "MSc, IT-Management — E-Business",
+        "es": "Máster en Gestión de TI — Negocio Electrónico",
+        "fr": "Master en management des SI — e-Business",
+        "tr": "BT Yönetimi Yüksek Lisansı — e-Ticaret",
+        "zh": "信息技术管理硕士 — 电子商务",
+        "ja": "IT経営学修士 — eビジネス"
+      },
+      "school": "University of Tehran",
+      "period": {
+        "en": "2015 – 2017",
+        "fa": "۱۳۹۴ – ۱۳۹۶",
+        "ar": "2015 – 2017",
+        "de": "2015 – 2017",
+        "es": "2015 – 2017",
+        "fr": "2015 – 2017",
+        "tr": "2015 – 2017",
+        "zh": "2015 – 2017",
+        "ja": "2015年 – 2017年"
+      },
+      "note": {
+        "en": "GPA 15.97 / 20",
+        "fa": "معدل ۱۵٫۹۷ از ۲۰",
+        "ar": "المعدل 15.97 / 20",
+        "de": "Note 15,97 / 20",
+        "es": "Promedio 15,97 / 20",
+        "fr": "Moyenne 15,97 / 20",
+        "tr": "Not ortalaması 15,97 / 20",
+        "zh": "平均分 15.97 / 20",
+        "ja": "GPA 15.97 / 20"
+      }
+    },
+    {
+      "degree": {
+        "en": "BSc, Software Technology Engineering",
+        "fa": "کارشناسی مهندسی فناوری نرم‌افزار",
+        "ar": "بكالوريوس هندسة تقنية البرمجيات",
+        "de": "BSc, Software-Technologie-Ingenieurwesen",
+        "es": "Grado en Ingeniería de Tecnología de Software",
+        "fr": "Licence en ingénierie des technologies logicielles",
+        "tr": "Yazılım Teknolojisi Mühendisliği Lisansı",
+        "zh": "软件技术工程学士",
+        "ja": "ソフトウェア技術工学 学士"
+      },
+      "school": "Motahar Institute of Higher Education",
+      "period": {
+        "en": "2011 – 2013",
+        "fa": "۱۳۹۰ – ۱۳۹۲",
+        "ar": "2011 – 2013",
+        "de": "2011 – 2013",
+        "es": "2011 – 2013",
+        "fr": "2011 – 2013",
+        "tr": "2011 – 2013",
+        "zh": "2011 – 2013",
+        "ja": "2011年 – 2013年"
+      },
+      "note": {
+        "en": "GPA 16.72 / 20",
+        "fa": "معدل ۱۶٫۷۲ از ۲۰",
+        "ar": "المعدل 16.72 / 20",
+        "de": "Note 16,72 / 20",
+        "es": "Promedio 16,72 / 20",
+        "fr": "Moyenne 16,72 / 20",
+        "tr": "Not ortalaması 16,72 / 20",
+        "zh": "平均分 16.72 / 20",
+        "ja": "GPA 16.72 / 20"
+      }
+    },
+    {
+      "degree": {
+        "en": "Associate's Degree, Computer Engineering",
+        "fa": "کاردانی مهندسی کامپیوتر",
+        "ar": "دبلوم في هندسة الحاسوب",
+        "de": "Associate Degree, Computertechnik",
+        "es": "Técnico Superior en Ingeniería Informática",
+        "fr": "DUT en génie informatique",
+        "tr": "Bilgisayar Mühendisliği Ön Lisansı",
+        "zh": "计算机工程专科",
+        "ja": "コンピュータ工学 準学士"
+      },
+      "school": "Islamic Azad University",
+      "period": {
+        "en": "",
+        "fa": "",
+        "ar": "",
+        "de": "",
+        "es": "",
+        "fr": "",
+        "tr": "",
+        "zh": "",
+        "ja": ""
+      },
+      "note": ""
+    }
+  ],
+  "certifications": [
+    "VCP-DCV 2021 — VMware Certified Professional, Data Center Virtualization",
+    "CEH — Certified Ethical Hacker, EC-Council",
+    "CHFI — Computer Hacking Forensic Investigator, EC-Council",
+    "SEC504 — Hacker Tools, Techniques & Incident Handling (SANS-track)",
+    "SEC542 — Web Application Penetration Testing (SANS-track)",
+    "Metasploit Kung-Fu — SABA Safe Village",
+    "ICSI — Certified Network Security Specialist",
+    "Sophos Firewall v19.5 — Certified Engineer",
+    "Splunk 7.x Fundamentals Part 1",
+    "Safetica — Security Audit in One Click",
+    "HPE ATP — Server Solutions V4, Hewlett Packard Enterprise",
+    "Veritas Backup Exec 20.1 — Administrator",
+    "Symantec Backup Exec 16 — Administration",
+    "Symantec Backup Exec 2012 — Administrator",
+    "PROMISE VTRAK — Level 1 Certification Program",
+    "MikroTik Certified — Danesh IT Academy",
+    "LPIC-1 — Linux Professional Institute",
+    "MCP — Microsoft Certified Professional",
+    "Microsoft Specialist — Windows 7 Configuring",
+    "ISC2 — Utilizing Big Data",
+    "TUV SUD — ITT2015 International Congress",
+    "Cambridge English B1 · IELTS 6.5"
+  ],
+  "recognition": [
+    {
+      "en": "National Iranian Copper Industries Company — five-page letter of appreciation and satisfaction survey",
+      "fa": "شرکت ملی صنایع مس ایران — تقدیرنامهٔ پنج‌صفحه‌ای و نظرسنجی رضایت",
+      "ar": "شركة الصناعات الوطنية الإيرانية للنحاس — خطاب تقدير من خمس صفحات واستبيان رضا",
+      "de": "National Iranian Copper Industries Company — fünfseitiges Anerkennungsschreiben und Zufriedenheitsumfrage",
+      "es": "National Iranian Copper Industries Company — carta de agradecimiento de cinco páginas y encuesta de satisfacción",
+      "fr": "National Iranian Copper Industries Company — lettre de remerciement de cinq pages et enquête de satisfaction",
+      "tr": "National Iranian Copper Industries Company — beş sayfalık teşekkür mektubu ve memnuniyet anketi",
+      "zh": "伊朗国家铜业公司 — 五页感谢信及满意度调查",
+      "ja": "イラン国営銅工業会社 — 5ページの感謝状および満足度調査"
+    },
+    {
+      "en": "Tehran Chamber of Commerce — appreciation for Backup Exec implementation and Symantec Backup training",
+      "fa": "اتاق بازرگانی تهران — تقدیر بابت پیاده‌سازی Backup Exec و آموزش Symantec Backup",
+      "ar": "غرفة تجارة طهران — تقدير لتنفيذ Backup Exec وتدريب Symantec Backup",
+      "de": "Handelskammer Teheran — Anerkennung für Backup-Exec-Implementierung und Symantec-Backup-Schulung",
+      "es": "Cámara de Comercio de Teherán — reconocimiento por la implantación de Backup Exec y la formación en Symantec Backup",
+      "fr": "Chambre de commerce de Téhéran — remerciements pour la mise en œuvre de Backup Exec et la formation Symantec Backup",
+      "tr": "Tahran Ticaret Odası — Backup Exec uygulaması ve Symantec Backup eğitimi için takdir",
+      "zh": "德黑兰商会 — 表彰 Backup Exec 实施与 Symantec Backup 培训",
+      "ja": "テヘラン商工会議所 — Backup Exec 導入および Symantec Backup 研修に対する感謝状"
+    },
+    {
+      "en": "Islamic Azad University, Kermanshah — appreciation for tape-library services",
+      "fa": "دانشگاه آزاد اسلامی کرمانشاه — تقدیر بابت خدمات کتابخانهٔ نواری",
+      "ar": "جامعة آزاد الإسلامية، كرمانشاه — تقدير لخدمات مكتبة الأشرطة",
+      "de": "Islamic Azad University, Kermanshah — Anerkennung für Tape-Library-Services",
+      "es": "Universidad Islámica Azad, Kermanshah — reconocimiento por servicios de biblioteca de cintas",
+      "fr": "Université islamique Azad, Kermanshah — remerciements pour les services de bibliothèque de bandes",
+      "tr": "İslami Azad Üniversitesi, Kermanşah — teyp kütüphanesi hizmetleri için takdir",
+      "zh": "伊斯兰阿扎德大学克尔曼沙阿分校 — 表彰磁带库服务",
+      "ja": "イスラム・アザド大学ケルマーンシャー校 — テープライブラリ業務に対する感謝状"
+    },
+    {
+      "en": "Haft Tappeh Sugarcane Agro-Industry Company — letter of appreciation",
+      "fa": "شرکت کشت و صنعت نیشکر هفت‌تپه — لوح سپاس",
+      "ar": "شركة هفت تبه لصناعة قصب السكر — خطاب تقدير",
+      "de": "Haft Tappeh Sugarcane Agro-Industry Company — Anerkennungsschreiben",
+      "es": "Haft Tappeh Sugarcane Agro-Industry Company — carta de agradecimiento",
+      "fr": "Haft Tappeh Sugarcane Agro-Industry Company — lettre de remerciement",
+      "tr": "Haft Tappeh Şeker Kamışı Tarım-Sanayi Şirketi — teşekkür mektubu",
+      "zh": "哈夫特塔佩甘蔗农工公司 — 感谢信",
+      "ja": "ハフト・タッペ製糖農工会社 — 感謝状"
+    },
+    {
+      "en": "Firooz Healthcare Group — appreciation for Sophos firewall support",
+      "fa": "گروه بهداشتی فیروز — تقدیر بابت پشتیبانی فایروال Sophos",
+      "ar": "مجموعة فيروز للرعاية الصحية — تقدير لدعم جدار حماية Sophos",
+      "de": "Firooz Healthcare Group — Anerkennung für Sophos-Firewall-Support",
+      "es": "Firooz Healthcare Group — reconocimiento por soporte de firewall Sophos",
+      "fr": "Firooz Healthcare Group — remerciements pour le support du pare-feu Sophos",
+      "tr": "Firooz Sağlık Grubu — Sophos güvenlik duvarı desteği için takdir",
+      "zh": "Firooz 医疗集团 — 表彰 Sophos 防火墙支持",
+      "ja": "Firooz ヘルスケアグループ — Sophos ファイアウォール支援に対する感謝状"
+    },
+    {
+      "en": "Golzar Ettesal Trading Company — letter of appreciation",
+      "fa": "شرکت بازرگانی گلزار اتصال — لوح سپاس",
+      "ar": "شركة كلزار اتصال التجارية — خطاب تقدير",
+      "de": "Golzar Ettesal Trading Company — Anerkennungsschreiben",
+      "es": "Golzar Ettesal Trading Company — carta de agradecimiento",
+      "fr": "Golzar Ettesal Trading Company — lettre de remerciement",
+      "tr": "Golzar Ettesal Ticaret Şirketi — teşekkür mektubu",
+      "zh": "Golzar Ettesal 贸易公司 — 感谢信",
+      "ja": "Golzar Ettesal 商事 — 感謝状"
+    },
+    {
+      "en": "Hava System Aria — appreciation for informatics and network services",
+      "fa": "هوا سیستم آریا — تقدیر بابت خدمات انفورماتیک و شبکه",
+      "ar": "هوا سيستم آريا — تقدير لخدمات المعلوماتية والشبكات",
+      "de": "Hava System Aria — Anerkennung für Informatik- und Netzwerkdienste",
+      "es": "Hava System Aria — reconocimiento por servicios de informática y redes",
+      "fr": "Hava System Aria — remerciements pour les services informatiques et réseau",
+      "tr": "Hava System Aria — bilişim ve ağ hizmetleri için takdir",
+      "zh": "Hava System Aria — 表彰信息与网络服务",
+      "ja": "Hava System Aria — 情報・ネットワーク業務に対する感謝状"
+    },
+    {
+      "en": "Darvazeh Melal Jahan — appreciation for informatics and network services",
+      "fa": "دروازه ملل جهان — تقدیر بابت خدمات انفورماتیک و شبکه",
+      "ar": "دروازه ملل جهان — تقدير لخدمات المعلوماتية والشبكات",
+      "de": "Darvazeh Melal Jahan — Anerkennung für Informatik- und Netzwerkdienste",
+      "es": "Darvazeh Melal Jahan — reconocimiento por servicios de informática y redes",
+      "fr": "Darvazeh Melal Jahan — remerciements pour les services informatiques et réseau",
+      "tr": "Darvazeh Melal Jahan — bilişim ve ağ hizmetleri için takdir",
+      "zh": "Darvazeh Melal Jahan — 表彰信息与网络服务",
+      "ja": "Darvazeh Melal Jahan — 情報・ネットワーク業務に対する感謝状"
+    },
+    {
+      "en": "Daryaye Noor Zeous Trading Company — letter of appreciation",
+      "fa": "شرکت بازرگانی دریای نور زئوس — لوح سپاس",
+      "ar": "شركة درياي نور زئوس التجارية — خطاب تقدير",
+      "de": "Daryaye Noor Zeous Trading Company — Anerkennungsschreiben",
+      "es": "Daryaye Noor Zeous Trading Company — carta de agradecimiento",
+      "fr": "Daryaye Noor Zeous Trading Company — lettre de remerciement",
+      "tr": "Daryaye Noor Zeous Ticaret Şirketi — teşekkür mektubu",
+      "zh": "Daryaye Noor Zeous 贸易公司 — 感谢信",
+      "ja": "Daryaye Noor Zeous 商事 — 感謝状"
+    },
+    {
+      "en": "Amin Yaran Sivan Trading Company — letter of appreciation",
+      "fa": "شرکت بازرگانی امین یاران سیوان — لوح سپاس",
+      "ar": "شركة أمين ياران سيوان التجارية — خطاب تقدير",
+      "de": "Amin Yaran Sivan Trading Company — Anerkennungsschreiben",
+      "es": "Amin Yaran Sivan Trading Company — carta de agradecimiento",
+      "fr": "Amin Yaran Sivan Trading Company — lettre de remerciement",
+      "tr": "Amin Yaran Sivan Ticaret Şirketi — teşekkür mektubu",
+      "zh": "Amin Yaran Sivan 贸易公司 — 感谢信",
+      "ja": "Amin Yaran Sivan 商事 — 感謝状"
+    },
+    {
+      "en": "Academic acceptance letter — article on cloud migration and backup",
+      "fa": "پذیرش مقالهٔ علمی — مقاله دربارهٔ مهاجرت به رایانش ابری و پشتیبان‌گیری",
+      "ar": "خطاب قبول أكاديمي — مقال حول الترحيل السحابي والنسخ الاحتياطي",
+      "de": "Wissenschaftliches Annahmeschreiben — Artikel zu Cloud-Migration und Backup",
+      "es": "Carta de aceptación académica — artículo sobre migración a la nube y copias de seguridad",
+      "fr": "Lettre d'acceptation académique — article sur la migration cloud et la sauvegarde",
+      "tr": "Akademik kabul mektubu — bulut geçişi ve yedekleme üzerine makale",
+      "zh": "学术录用通知 — 关于云迁移与备份的论文",
+      "ja": "学術採択通知 — クラウド移行とバックアップに関する論文"
+    }
+  ],
+  "skills": {
+    "ai": {
+      "label": {
+        "en": "AI",
+        "fa": "هوش مصنوعی",
+        "ar": "الذكاء الاصطناعي",
+        "de": "KI",
+        "es": "IA",
+        "fr": "IA",
+        "tr": "Yapay Zekâ",
+        "zh": "人工智能",
+        "ja": "AI"
+      },
+      "items": "AI Agent, LLM Integration, AI Avatar, Prompt Engineering, Open-Source AI Platforms"
+    },
+    "security": {
+      "label": {
+        "en": "Cybersecurity",
+        "fa": "امنیت سایبری",
+        "ar": "الأمن السيبراني",
+        "de": "Cybersicherheit",
+        "es": "Ciberseguridad",
+        "fr": "Cybersécurité",
+        "tr": "Siber Güvenlik",
+        "zh": "网络安全",
+        "ja": "サイバーセキュリティ"
+      },
+      "items": "Network Security, Penetration Testing, SIEM, Firewalls, Digital Forensics, Incident Handling"
+    },
+    "infra": {
+      "label": {
+        "en": "Infrastructure",
+        "fa": "زیرساخت",
+        "ar": "البنية التحتية",
+        "de": "Infrastruktur",
+        "es": "Infraestructura",
+        "fr": "Infrastructure",
+        "tr": "Altyapı",
+        "zh": "基础设施",
+        "ja": "インフラ"
+      },
+      "items": "VMware, Windows Server, Linux, Enterprise Storage, Backup & Disaster Recovery, MikroTik"
+    },
+    "products": {
+      "label": {
+        "en": "Products",
+        "fa": "محصولات",
+        "ar": "المنتجات",
+        "de": "Produkte",
+        "es": "Productos",
+        "fr": "Produits",
+        "tr": "Ürünler",
+        "zh": "产品",
+        "ja": "プロダクト"
+      },
+      "items": "Padyar AI Avatar, HomaYar, MeetYar, BlogYar, NetYar, HomeYar, AI Agent Platform, National Open-Source AI Platform (Sako)"
+    }
+  },
+  "languages": {
+    "en": "Persian (native) · English (advanced — IELTS 6.5, Cambridge B1) · Arabic (reading)",
+    "fa": "فارسی (زبان مادری) · انگلیسی (پیشرفته — آیلتس ۶٫۵، کمبریج B1) · عربی (درک مطلب)",
+    "ar": "الفارسية (اللغة الأم) · الإنجليزية (متقدم — IELTS 6.5، Cambridge B1) · العربية (قراءة)",
+    "de": "Persisch (Muttersprache) · Englisch (fortgeschritten — IELTS 6.5, Cambridge B1) · Arabisch (Lesen)",
+    "es": "Persa (nativo) · Inglés (avanzado — IELTS 6.5, Cambridge B1) · Árabe (lectura)",
+    "fr": "Persan (langue maternelle) · Anglais (avancé — IELTS 6.5, Cambridge B1) · Arabe (lecture)",
+    "tr": "Farsça (ana dil) · İngilizce (ileri — IELTS 6.5, Cambridge B1) · Arapça (okuma)",
+    "zh": "波斯语（母语）· 英语（高级 — 雅思 6.5，剑桥 B1）· 阿拉伯语（阅读）",
+    "ja": "ペルシア語（母語）· 英語（上級 — IELTS 6.5、Cambridge B1）· アラビア語（読解）"
+  },
+  "sectors": {
+    "en": "Banking, mining and metals, agro-industry, telecommunications, higher education, healthcare, chambers of commerce and public institutions across Iran.",
+    "fa": "بانکداری، معدن و فلزات، کشت و صنعت، مخابرات، آموزش عالی، سلامت، اتاق‌های بازرگانی و نهادهای عمومی در سراسر ایران.",
+    "ar": "القطاع المصرفي، التعدين والمعادن، الصناعات الزراعية، الاتصالات، التعليم العالي، الرعاية الصحية، الغرف التجارية والمؤسسات العامة في إيران.",
+    "de": "Bankwesen, Bergbau und Metalle, Agrarindustrie, Telekommunikation, Hochschulbildung, Gesundheitswesen, Handelskammern und öffentliche Institutionen im Iran.",
+    "es": "Banca, minería y metales, agroindustria, telecomunicaciones, educación superior, sanidad, cámaras de comercio e instituciones públicas de Irán.",
+    "fr": "Banque, mines et métaux, agro-industrie, télécommunications, enseignement supérieur, santé, chambres de commerce et institutions publiques en Iran.",
+    "tr": "Bankacılık, madencilik ve metaller, tarım-sanayi, telekomünikasyon, yükseköğretim, sağlık, ticaret odaları ve İran genelindeki kamu kurumları.",
+    "zh": "银行、矿业与金属、农工业、电信、高等教育、医疗健康、商会及伊朗各地公共机构。",
+    "ja": "銀行、鉱業・金属、農工業、通信、高等教育、医療、商工会議所、およびイラン各地の公共機関。"
+  }
+}

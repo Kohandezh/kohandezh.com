@@ -1,0 +1,292 @@
+/*!
+ * certificates-i18n.js — translates the Certificates archive page.
+ *
+ * The page already had a small inline i18n script covering the header/hero
+ * (a positional copy[0..9] array). This file extends coverage to everything
+ * that was still hard-coded English — the section index, all four section
+ * headings, the "Reading this archive" note and the footer link — using a
+ * KEYED dictionary rather than extending that positional array, so adding or
+ * reordering a string can't silently shift every later translation.
+ *
+ * Translations are hand-written, not machine-generated.
+ *
+ * NOTE ON `noteFacts`: that one sentence carries the only verifiable factual
+ * claims on the page (an MCPS month mismatch, and a 2011 MCTS artifact held
+ * separate from the September 2014 MCTS credential). It is deliberately its
+ * own key in every locale so that if those facts need correcting it is one
+ * short edit per language, not a re-translation of the surrounding paragraph.
+ */
+(function () {
+  "use strict";
+
+  var SUPPORTED = ["en", "fa", "ar", "de", "es", "fr", "tr", "zh", "ja"];
+
+  var T = {
+    en: {
+      nav1: "Certificate artifacts", nav2: "Appreciation & awards",
+      nav3: "Commission & committee appointments", nav4: "LinkedIn-listed credentials",
+      nav5: "Reading this archive",
+      s1k: "Documented artifacts", s1t: "Certificate-backed records",
+      s1d: "Forty-three unique certificate images, reconciled against the archive, normalized to one canvas size and ordered newest to oldest by earned or issued date. Select any image to inspect the full-size record.",
+      s2k: "Professional recognition", s2t: "Certificates of Appreciation & Awards",
+      s2d: "Sixteen unique appreciation letters, satisfaction records and awards, ordered newest to oldest. One satisfaction letter uses the service date referenced in its text. All PDF pages are preserved as equal-size images.",
+      s3k: "Governance & industry roles", s3t: "Commission & Committee Appointment Decrees",
+      s3d: "Four official appointment letters naming Mohammad Ali Kohandezh to specialized industry commissions and committee leadership, ordered newest to oldest.",
+      s4k: "LinkedIn record", s4t: "Matched public credentials",
+      s4d: "Ten records currently visible on the public LinkedIn profile, reconciled with the local certificate archive and ordered by earned date.",
+      nk: "Reading this archive", nt: "A transparent portfolio index",
+      np1: "This page is a curated professional record, not an issuer-operated verification portal. <em>Certificate artifact</em> means the full image is retained locally; <em>LinkedIn + artifact matched</em> means the title and issuer also appear in the current public LinkedIn record.",
+      np2: "Multiple PDFs or JPGs for the same issuer, title and achievement are represented by one card. Exact days come from the certificate artifact; appreciation records without a visible document date are labeled rather than guessed.",
+      noteFacts: "The one MCPS month mismatch is shown explicitly, and the 2011 MCTS artifact remains separate from the September 2014 MCTS credential.",
+      st1: "Certificate artifacts", st2: "Appreciation & awards", st3: "Commission appointments", st4: "LinkedIn record", st5: "Archive order", dRec: "documented records", dMatch: "matched credentials", dOrder: "Newest earned first", note: "Source before shorthand — issuer names, titles and dates follow the certificate artifact or LinkedIn record. Curated portfolio record, not a live verification service.", 
+      footPortfolio: "Portfolio"
+    },
+    fa: {
+      nav1: "اسناد گواهینامه", nav2: "تقدیرنامه‌ها و جوایز",
+      nav3: "احکام کمیسیون و کمیته", nav4: "مدارک ثبت‌شده در لینکدین",
+      nav5: "راهنمای این آرشیو",
+      s1k: "اسناد مستند", s1t: "سوابق مبتنی بر گواهینامه",
+      s1d: "چهل‌وسه تصویر گواهینامهٔ یکتا، مطابقت‌داده‌شده با آرشیو، یکسان‌سازی‌شده در یک اندازهٔ واحد و مرتب‌شده از جدیدترین به قدیمی‌ترین بر پایهٔ تاریخ اخذ یا صدور. برای دیدن نسخهٔ کامل، روی هر تصویر کلیک کنید.",
+      s2k: "قدردانی حرفه‌ای", s2t: "تقدیرنامه‌ها و جوایز",
+      s2d: "شانزده تقدیرنامه، رضایت‌نامه و جایزهٔ یکتا، مرتب‌شده از جدید به قدیم. یکی از رضایت‌نامه‌ها تاریخ خدمت ذکرشده در متن خود را مبنا قرار داده است. تمام صفحات PDF به‌صورت تصاویر هم‌اندازه نگهداری شده‌اند.",
+      s3k: "نقش‌های صنفی و حاکمیتی", s3t: "احکام انتصاب در کمیسیون‌ها و کمیته‌ها",
+      s3d: "چهار حکم رسمی انتصاب محمدعلی کهن‌دژ در کمیسیون‌های تخصصی صنعت و ریاست کمیته، مرتب‌شده از جدید به قدیم.",
+      s4k: "سوابق لینکدین", s4t: "مدارک عمومی تطبیق‌داده‌شده",
+      s4d: "ده مدرک که هم‌اکنون در پروفایل عمومی لینکدین قابل مشاهده‌اند، با آرشیو محلی گواهینامه‌ها تطبیق داده شده و بر اساس تاریخ اخذ مرتب شده‌اند.",
+      nk: "راهنمای این آرشیو", nt: "یک فهرست شفاف از کارنامه",
+      np1: "این صفحه یک سابقهٔ حرفه‌ای گردآوری‌شده است، نه سامانهٔ استعلام رسمی صادرکننده. <em>سند گواهینامه</em> یعنی تصویر کامل مدرک به‌صورت محلی نگهداری می‌شود؛ <em>تطبیق‌داده‌شده با لینکدین</em> یعنی عنوان و صادرکننده در پروفایل عمومی فعلی لینکدین نیز دیده می‌شود.",
+      np2: "اگر برای یک صادرکننده، عنوان و دستاورد یکسان چند فایل PDF یا JPG وجود داشته باشد، همگی در قالب یک کارت نمایش داده می‌شوند. روزِ دقیق از خود سند گواهینامه استخراج شده است؛ تقدیرنامه‌هایی که تاریخ مشخصی روی سند ندارند به‌جای حدس‌زدن، برچسب‌گذاری شده‌اند.",
+      noteFacts: "تنها مورد مغایرت ماه در مدرک MCPS به‌صراحت نشان داده شده است، و سند MCTS سال ۲۰۱۱ جدا از مدرک MCTS سپتامبر ۲۰۱۴ نگهداری می‌شود.",
+      st1: "اسناد گواهینامه", st2: "تقدیرنامه\u200cها و جوایز", st3: "احکام کمیسیون", st4: "سوابق لینکدین", st5: "ترتیب آرشیو", dRec: "سند مستند", dMatch: "مدرک تطبیق\u200cداده\u200cشده", dOrder: "جدیدترین در ابتدا", note: "اولویت با سند اصلی است — نام صادرکننده، عنوان و تاریخ\u200cها از خود گواهینامه یا سوابق لینکدین گرفته شده\u200cاند. این یک آرشیو گردآوری\u200cشده است، نه سرویس استعلام برخط.", 
+      footPortfolio: "رزومه"
+    },
+    ar: {
+      nav1: "وثائق الشهادات", nav2: "شهادات التقدير والجوائز",
+      nav3: "قرارات اللجان والهيئات", nav4: "الشهادات المدرجة على لينكدإن",
+      nav5: "كيف تقرأ هذا الأرشيف",
+      s1k: "وثائق موثقة", s1t: "سجلات مدعومة بالشهادات",
+      s1d: "ثلاث وأربعون صورة شهادة فريدة، تمت مطابقتها مع الأرشيف وتوحيد مقاسها وترتيبها من الأحدث إلى الأقدم حسب تاريخ الحصول أو الإصدار. اختر أي صورة لعرض السجل بالحجم الكامل.",
+      s2k: "تقدير مهني", s2t: "شهادات التقدير والجوائز",
+      s2d: "ست عشرة رسالة تقدير وشهادة رضا وجائزة فريدة، مرتبة من الأحدث إلى الأقدم. تعتمد إحدى رسائل الرضا تاريخ الخدمة المذكور في نصها. جميع صفحات PDF محفوظة كصور متساوية الحجم.",
+      s3k: "أدوار الحوكمة والقطاع", s3t: "قرارات التعيين في اللجان والهيئات",
+      s3d: "أربعة قرارات تعيين رسمية (حکم) تسمي محمد علي كهن‌دژ في لجان متخصصة بالقطاع وفي رئاسة إحدى اللجان، مرتبة من الأحدث إلى الأقدم.",
+      s4k: "سجل لينكدإن", s4t: "شهادات عامة مطابَقة",
+      s4d: "عشرة سجلات ظاهرة حاليًا على ملف لينكدإن العام، تمت مطابقتها مع الأرشيف المحلي وترتيبها حسب تاريخ الحصول.",
+      nk: "كيف تقرأ هذا الأرشيف", nt: "فهرس شفاف للأعمال",
+      np1: "هذه الصفحة سجل مهني منسق، وليست بوابة تحقق تديرها الجهات المانحة. <em>وثيقة الشهادة</em> تعني أن الصورة الكاملة محفوظة محليًا؛ و<em>مطابقة مع لينكدإن</em> تعني أن العنوان والجهة المانحة يظهران أيضًا في ملف لينكدإن العام الحالي.",
+      np2: "تُعرض الملفات المتعددة (PDF أو JPG) لنفس الجهة والعنوان والإنجاز في بطاقة واحدة. تؤخذ الأيام الدقيقة من وثيقة الشهادة؛ أما سجلات التقدير التي لا تحمل تاريخًا ظاهرًا فتوسم بدل تخمين تاريخها.",
+      noteFacts: "يُعرض التباين الوحيد في شهر شهادة MCPS بشكل صريح، وتبقى وثيقة MCTS لعام 2011 منفصلة عن شهادة MCTS الصادرة في سبتمبر 2014.",
+      st1: "وثائق الشهادات", st2: "شهادات التقدير والجوائز", st3: "قرارات اللجان", st4: "سجل لينكدإن", st5: "ترتيب الأرشيف", dRec: "سجل موثق", dMatch: "شهادة مطابَقة", dOrder: "الأحدث أولاً", note: "المصدر قبل الاختصار — أسماء الجهات المانحة والعناوين والتواريخ مأخوذة من وثيقة الشهادة أو سجل لينكدإن. هذا أرشيف منسق وليس خدمة تحقق مباشرة.", 
+      footPortfolio: "الملف الشخصي"
+    },
+    de: {
+      nav1: "Zertifikatsnachweise", nav2: "Anerkennungen & Auszeichnungen",
+      nav3: "Berufungen in Kommissionen & Ausschüsse", nav4: "Auf LinkedIn gelistete Nachweise",
+      nav5: "Hinweise zu diesem Archiv",
+      s1k: "Dokumentierte Nachweise", s1t: "Zertifikatsbelegte Einträge",
+      s1d: "Dreiundvierzig eindeutige Zertifikatsbilder, mit dem Archiv abgeglichen, auf ein einheitliches Format gebracht und nach Erwerbs- bzw. Ausstellungsdatum absteigend sortiert. Für die vollständige Ansicht ein Bild auswählen.",
+      s2k: "Berufliche Anerkennung", s2t: "Anerkennungsschreiben & Auszeichnungen",
+      s2d: "Sechzehn eindeutige Anerkennungsschreiben, Zufriedenheitsnachweise und Auszeichnungen, absteigend sortiert. Ein Zufriedenheitsschreiben verwendet das im Text genannte Leistungsdatum. Alle PDF-Seiten sind als gleich große Bilder erhalten.",
+      s3k: "Gremien- & Branchenrollen", s3t: "Berufungsurkunden für Kommissionen & Ausschüsse",
+      s3d: "Vier offizielle Berufungsschreiben, die Mohammad Ali Kohandezh in Fachkommissionen der Branche und in eine Ausschussleitung berufen, absteigend sortiert.",
+      s4k: "LinkedIn-Eintrag", s4t: "Abgeglichene öffentliche Nachweise",
+      s4d: "Zehn derzeit im öffentlichen LinkedIn-Profil sichtbare Einträge, mit dem lokalen Zertifikatsarchiv abgeglichen und nach Erwerbsdatum sortiert.",
+      nk: "Hinweise zu diesem Archiv", nt: "Ein transparentes Portfolio-Verzeichnis",
+      np1: "Diese Seite ist ein kuratierter beruflicher Nachweis, kein vom Aussteller betriebenes Verifizierungsportal. <em>Zertifikatsnachweis</em> bedeutet, dass das vollständige Bild lokal vorliegt; <em>mit LinkedIn abgeglichen</em> bedeutet, dass Titel und Aussteller auch im aktuellen öffentlichen LinkedIn-Profil erscheinen.",
+      np2: "Mehrere PDFs oder JPGs zu demselben Aussteller, Titel und Abschluss werden durch eine Karte dargestellt. Genaue Tagesangaben stammen aus dem Zertifikat selbst; Anerkennungen ohne sichtbares Datum werden gekennzeichnet statt geschätzt.",
+      noteFacts: "Die einzige Monatsabweichung bei MCPS wird ausdrücklich ausgewiesen, und der MCTS-Nachweis von 2011 bleibt vom MCTS-Zertifikat vom September 2014 getrennt.",
+      st1: "Zertifikatsnachweise", st2: "Anerkennungen & Auszeichnungen", st3: "Berufungen", st4: "LinkedIn-Eintrag", st5: "Archivsortierung", dRec: "dokumentierte Einträge", dMatch: "abgeglichene Nachweise", dOrder: "Neueste zuerst", note: "Quelle vor Kurzform — Aussteller, Titel und Daten folgen dem Zertifikat selbst oder dem LinkedIn-Eintrag. Kuratiertes Portfolio, kein Live-Verifizierungsdienst.", 
+      footPortfolio: "Portfolio"
+    },
+    es: {
+      nav1: "Documentos de certificados", nav2: "Reconocimientos y premios",
+      nav3: "Nombramientos en comisiones y comités", nav4: "Credenciales listadas en LinkedIn",
+      nav5: "Cómo leer este archivo",
+      s1k: "Documentos acreditados", s1t: "Registros respaldados por certificados",
+      s1d: "Cuarenta y tres imágenes de certificados únicas, cotejadas con el archivo, normalizadas a un mismo tamaño y ordenadas de más reciente a más antigua según la fecha de obtención o emisión. Seleccione cualquier imagen para ver el registro completo.",
+      s2k: "Reconocimiento profesional", s2t: "Certificados de agradecimiento y premios",
+      s2d: "Dieciséis cartas de agradecimiento, registros de satisfacción y premios únicos, ordenados de más reciente a más antiguo. Una carta de satisfacción usa la fecha de servicio citada en su texto. Todas las páginas PDF se conservan como imágenes del mismo tamaño.",
+      s3k: "Gobernanza y roles sectoriales", s3t: "Decretos de nombramiento en comisiones y comités",
+      s3d: "Cuatro cartas oficiales de nombramiento que designan a Mohammad Ali Kohandezh en comisiones sectoriales especializadas y en la dirección de un comité, ordenadas de más reciente a más antigua.",
+      s4k: "Registro de LinkedIn", s4t: "Credenciales públicas cotejadas",
+      s4d: "Diez registros visibles actualmente en el perfil público de LinkedIn, cotejados con el archivo local de certificados y ordenados por fecha de obtención.",
+      nk: "Cómo leer este archivo", nt: "Un índice de portafolio transparente",
+      np1: "Esta página es un registro profesional curado, no un portal de verificación operado por la entidad emisora. <em>Documento de certificado</em> significa que la imagen completa se conserva localmente; <em>cotejado con LinkedIn</em> significa que el título y el emisor también aparecen en el perfil público actual de LinkedIn.",
+      np2: "Varios PDF o JPG del mismo emisor, título y logro se representan en una sola tarjeta. Los días exactos proceden del propio certificado; los reconocimientos sin fecha visible se etiquetan en lugar de suponerla.",
+      noteFacts: "La única discrepancia de mes en MCPS se indica de forma explícita, y el documento MCTS de 2011 se mantiene separado de la credencial MCTS de septiembre de 2014.",
+      st1: "Documentos de certificados", st2: "Reconocimientos y premios", st3: "Nombramientos", st4: "Registro de LinkedIn", st5: "Orden del archivo", dRec: "registros documentados", dMatch: "credenciales cotejadas", dOrder: "Más recientes primero", note: "La fuente antes que el resumen: emisores, títulos y fechas siguen el certificado o el registro de LinkedIn. Archivo curado, no un servicio de verificación en vivo.", 
+      footPortfolio: "Portafolio"
+    },
+    fr: {
+      nav1: "Documents de certification", nav2: "Remerciements et distinctions",
+      nav3: "Nominations en commissions et comités", nav4: "Certifications listées sur LinkedIn",
+      nav5: "Lire cette archive",
+      s1k: "Documents attestés", s1t: "Références appuyées par certificat",
+      s1d: "Quarante-trois images de certificats uniques, rapprochées de l’archive, normalisées à un même format et classées de la plus récente à la plus ancienne selon la date d’obtention ou de délivrance. Sélectionnez une image pour consulter le document en taille réelle.",
+      s2k: "Reconnaissance professionnelle", s2t: "Lettres de remerciement et distinctions",
+      s2d: "Seize lettres de remerciement, attestations de satisfaction et distinctions uniques, classées de la plus récente à la plus ancienne. Une attestation retient la date de prestation citée dans son texte. Toutes les pages PDF sont conservées en images de taille identique.",
+      s3k: "Gouvernance et rôles sectoriels", s3t: "Décrets de nomination en commissions et comités",
+      s3d: "Quatre lettres officielles de nomination désignant Mohammad Ali Kohandezh au sein de commissions sectorielles spécialisées et à la présidence d’un comité, classées de la plus récente à la plus ancienne.",
+      s4k: "Profil LinkedIn", s4t: "Certifications publiques rapprochées",
+      s4d: "Dix éléments actuellement visibles sur le profil public LinkedIn, rapprochés de l’archive locale et classés par date d’obtention.",
+      nk: "Lire cette archive", nt: "Un index de portfolio transparent",
+      np1: "Cette page est un dossier professionnel organisé, et non un portail de vérification exploité par l’organisme émetteur. <em>Document de certification</em> signifie que l’image complète est conservée localement ; <em>rapproché de LinkedIn</em> signifie que l’intitulé et l’émetteur figurent aussi sur le profil LinkedIn public actuel.",
+      np2: "Plusieurs PDF ou JPG correspondant au même émetteur, intitulé et résultat sont regroupés sur une seule fiche. Les jours exacts proviennent du certificat lui-même ; les remerciements sans date visible sont signalés plutôt que devinés.",
+      noteFacts: "Le seul écart de mois concernant MCPS est indiqué explicitement, et le document MCTS de 2011 reste distinct de la certification MCTS de septembre 2014.",
+      st1: "Documents de certification", st2: "Remerciements et distinctions", st3: "Nominations", st4: "Profil LinkedIn", st5: "Ordre de l’archive", dRec: "documents référencés", dMatch: "certifications rapprochées", dOrder: "Les plus récentes d’abord", note: "La source prime sur le raccourci : émetteurs, intitulés et dates suivent le certificat ou le profil LinkedIn. Archive organisée, et non un service de vérification en direct.", 
+      footPortfolio: "Portfolio"
+    },
+    tr: {
+      nav1: "Sertifika belgeleri", nav2: "Takdir ve ödüller",
+      nav3: "Komisyon ve komite atamaları", nav4: "LinkedIn’de listelenen belgeler",
+      nav5: "Bu arşiv nasıl okunur",
+      s1k: "Belgelenmiş kayıtlar", s1t: "Sertifikaya dayalı kayıtlar",
+      s1d: "Arşivle karşılaştırılmış, tek bir boyuta göre düzenlenmiş ve alınma veya düzenlenme tarihine göre yeniden eskiye sıralanmış kırk üç benzersiz sertifika görseli. Tam boyutlu kaydı görmek için herhangi bir görsele tıklayın.",
+      s2k: "Mesleki takdir", s2t: "Takdir Belgeleri ve Ödüller",
+      s2d: "On altı benzersiz takdir mektubu, memnuniyet kaydı ve ödül, yeniden eskiye sıralanmıştır. Bir memnuniyet mektubu metninde geçen hizmet tarihini esas alır. Tüm PDF sayfaları eşit boyutlu görseller olarak saklanmıştır.",
+      s3k: "Yönetişim ve sektör rolleri", s3t: "Komisyon ve Komite Atama Kararları",
+      s3d: "Mohammad Ali Kohandezh’i uzmanlık komisyonlarına ve bir komite başkanlığına atayan dört resmî atama yazısı, yeniden eskiye sıralanmıştır.",
+      s4k: "LinkedIn kaydı", s4t: "Eşleştirilmiş herkese açık belgeler",
+      s4d: "Herkese açık LinkedIn profilinde şu anda görünen, yerel sertifika arşiviyle eşleştirilmiş ve alınma tarihine göre sıralanmış on kayıt.",
+      nk: "Bu arşiv nasıl okunur", nt: "Şeffaf bir portföy dizini",
+      np1: "Bu sayfa özenle derlenmiş bir mesleki kayıttır; belgeyi veren kurum tarafından işletilen bir doğrulama portalı değildir. <em>Sertifika belgesi</em>, görselin tamamının yerel olarak saklandığı anlamına gelir; <em>LinkedIn ile eşleşti</em> ise unvan ve kurumun güncel herkese açık LinkedIn kaydında da göründüğü anlamına gelir.",
+      np2: "Aynı kurum, unvan ve başarıya ait birden fazla PDF veya JPG tek bir kartta gösterilir. Kesin günler sertifikanın kendisinden alınır; üzerinde görünür tarih bulunmayan takdir kayıtları tahmin edilmek yerine etiketlenir.",
+      noteFacts: "MCPS’teki tek ay uyuşmazlığı açıkça belirtilmiştir ve 2011 tarihli MCTS belgesi, Eylül 2014 tarihli MCTS sertifikasından ayrı tutulmaktadır.",
+      st1: "Sertifika belgeleri", st2: "Takdir ve ödüller", st3: "Komisyon atamaları", st4: "LinkedIn kaydı", st5: "Arşiv sırası", dRec: "belgelenmiş kayıt", dMatch: "eşleştirilmiş belge", dOrder: "En yeni önce", note: "Kısaltmadan önce kaynak — kurum adları, unvanlar ve tarihler sertifikanın kendisini veya LinkedIn kaydını izler. Bu derlenmiş bir arşivdir, canlı doğrulama hizmeti değildir.", 
+      footPortfolio: "Portföy"
+    },
+    zh: {
+      nav1: "证书文件", nav2: "感谢信与奖项",
+      nav3: "委员会任命文件", nav4: "领英所列资历",
+      nav5: "如何阅读本档案",
+      s1k: "存档文件", s1t: "有证书佐证的记录",
+      s1d: "四十三张独立的证书图像，已与档案核对、统一尺寸，并按取得或颁发日期由新到旧排列。点击任一图像可查看完整尺寸的记录。",
+      s2k: "专业认可", s2t: "感谢证书与奖项",
+      s2d: "十六份独立的感谢信、满意度记录与奖项，按由新到旧排列。其中一份满意度信函采用其正文所述的服务日期。所有 PDF 页面均以等尺寸图像保存。",
+      s3k: "治理与行业角色", s3t: "委员会任命文件",
+      s3d: "四份正式任命函，任命 Mohammad Ali Kohandezh 进入专业行业委员会并担任委员会负责人，按由新到旧排列。",
+      s4k: "领英记录", s4t: "已核对的公开资历",
+      s4d: "领英公开档案中目前可见的十项记录，已与本地证书档案核对，并按取得日期排列。",
+      nk: "如何阅读本档案", nt: "一份透明的作品与资历索引",
+      np1: "本页是经过整理的专业记录，并非由颁发机构运营的验证门户。<em>证书文件</em>表示完整图像保存在本地；<em>与领英匹配</em>表示该名称与颁发机构也出现在当前的公开领英记录中。",
+      np2: "同一颁发机构、名称与成果的多个 PDF 或 JPG 会合并为一张卡片。确切日期取自证书文件本身；没有可见日期的感谢记录会加以标注，而不作推测。",
+      noteFacts: "MCPS 中唯一的月份差异已明确标示，2011 年的 MCTS 文件与 2014 年 9 月的 MCTS 资历仍分别保留。",
+      st1: "证书文件", st2: "感谢信与奖项", st3: "委员会任命", st4: "领英记录", st5: "档案排序", dRec: "项存档记录", dMatch: "项已核对资历", dOrder: "最新取得优先", note: "以来源为准——颁发机构、名称与日期均依据证书文件或领英记录。这是一份整理过的档案，并非实时验证服务。", 
+      footPortfolio: "作品集"
+    },
+    ja: {
+      nav1: "証明書の資料", nav2: "感謝状と表彰",
+      nav3: "委員会への任命書", nav4: "LinkedIn 掲載の資格",
+      nav5: "このアーカイブの読み方",
+      s1k: "記録された資料", s1t: "証明書に裏付けられた記録",
+      s1d: "アーカイブと照合し、同一サイズに統一したうえで、取得日または発行日の新しい順に並べた43点の証明書画像です。画像を選ぶと原寸の記録を確認できます。",
+      s2k: "専門的な評価", s2t: "感謝状・表彰",
+      s2d: "16点の感謝状、満足度に関する記録および表彰を新しい順に掲載しています。うち1点は本文に記載された実施日を採用しています。PDFの全ページを同一サイズの画像として保存しています。",
+      s3k: "ガバナンスと業界での役割", s3t: "委員会任命書",
+      s3d: "Mohammad Ali Kohandezh を業界の専門委員会および委員長職に任命する4通の正式な任命書を、新しい順に掲載しています。",
+      s4k: "LinkedIn の記録", s4t: "照合済みの公開資格",
+      s4d: "現在 LinkedIn の公開プロフィールに表示されている10件の記録を、ローカルの証明書アーカイブと照合し、取得日順に並べています。",
+      nk: "このアーカイブの読み方", nt: "透明性のあるポートフォリオ索引",
+      np1: "このページは整理された専門的な記録であり、発行機関が運営する検証ポータルではありません。<em>証明書の資料</em>は原本画像をローカルに保持していることを、<em>LinkedIn と照合済み</em>は名称と発行機関が現在の公開 LinkedIn 記録にも表示されていることを意味します。",
+      np2: "同一の発行機関・名称・成果に対する複数の PDF や JPG は1枚のカードにまとめています。正確な日付は証明書そのものに基づきます。文書上に日付が見当たらない感謝記録は、推測せずにその旨を明示しています。",
+      noteFacts: "MCPS における唯一の月の不一致は明示しており、2011年の MCTS 資料は2014年9月の MCTS 資格とは別に保持しています。",
+      st1: "証明書の資料", st2: "感謝状と表彰", st3: "委員会への任命", st4: "LinkedIn の記録", st5: "アーカイブの並び順", dRec: "件の記録", dMatch: "件の照合済み資格", dOrder: "取得日の新しい順", note: "略称よりも出典を優先しています。発行機関・名称・日付は証明書そのものまたは LinkedIn の記録に従います。整理されたアーカイブであり、リアルタイムの検証サービスではありません。", 
+      footPortfolio: "ポートフォリオ"
+    }
+  };
+
+  function pick() {
+    var q = new URLSearchParams(window.location.search).get("lang");
+    if (q && SUPPORTED.indexOf(q.toLowerCase()) > -1) return q.toLowerCase();
+    // Fall back to the locale the visitor chose on the CV pages, so arriving
+    // here from a translated page without ?lang= keeps their language.
+    try {
+      var stored = window.localStorage.getItem("siteLang");
+      if (stored && SUPPORTED.indexOf(stored) > -1) return stored;
+    } catch (e) {}
+    var docLang = (document.documentElement.lang || "en").toLowerCase().split("-")[0];
+    return SUPPORTED.indexOf(docLang) > -1 ? docLang : "en";
+  }
+
+  function apply() {
+    var loc = pick();
+    if (loc === "en") return; // Source markup is already English.
+    var t = T[loc];
+    if (!t) return;
+
+    function text(sel, value, idx) {
+      var nodes = document.querySelectorAll(sel);
+      var node = typeof idx === "number" ? nodes[idx] : nodes[0];
+      if (node && value) node.textContent = value;
+    }
+
+    // Section index: each link is "<span>NN</span> Label" — replace only the
+    // trailing text node so the number stays untouched.
+    var navLinks = document.querySelectorAll(".certificate-directory a");
+    var navText = [t.nav1, t.nav2, t.nav3, t.nav4, t.nav5];
+    for (var i = 0; i < navLinks.length && i < navText.length; i++) {
+      var last = navLinks[i].lastChild;
+      if (last && last.nodeType === 3) last.textContent = " " + navText[i];
+    }
+
+    var kickers = [t.s1k, t.s2k, t.s3k, t.s4k, t.nk];
+    var kNodes = document.querySelectorAll(".certificate-section-kicker");
+    for (var k = 0; k < kNodes.length && k < kickers.length; k++) kNodes[k].textContent = kickers[k];
+
+    text("#records-title", t.s1t);
+    text("#appreciation-title", t.s2t);
+    text("#commission-title", t.s3t);
+    text("#linkedin-title", t.s4t);
+    text("#archive-note-title", t.nt);
+
+    // Section descriptions sit as the <p> right after each <h2>.
+    [["#records-title", t.s1d], ["#appreciation-title", t.s2d],
+     ["#commission-title", t.s3d], ["#linkedin-title", t.s4d]].forEach(function (pair) {
+      var h = document.querySelector(pair[0]);
+      var p = h && h.nextElementSibling;
+      if (p && p.tagName === "P" && pair[1]) p.textContent = pair[1];
+    });
+
+    // The note paragraphs carry <em> emphasis, so innerHTML is required here.
+    // Values are authored in this file only — no user or network input.
+    var notes = document.querySelectorAll(".certificate-note-copy p");
+    if (notes[0]) notes[0].innerHTML = t.np1;
+    if (notes[1]) notes[1].innerHTML = t.np2 + " " + t.noteFacts;
+
+    // Stat bar: each <dd> is "<count> <unit>" — keep the number the markup
+    // already carries and translate only the unit, so the counts stay the
+    // single source of truth in the HTML.
+    var statLabels = [t.st1, t.st2, t.st3, t.st4, t.st5];
+    var statUnits = [t.dRec, t.dRec, t.dRec, t.dMatch, null];
+    var rows = document.querySelectorAll(".certificate-stat-bar > div");
+    for (var r = 0; r < rows.length && r < statLabels.length; r++) {
+      var dt = rows[r].querySelector("dt");
+      var dd = rows[r].querySelector("dd");
+      if (dt && statLabels[r]) dt.textContent = statLabels[r];
+      if (!dd) continue;
+      if (statUnits[r]) {
+        var num = (dd.textContent.match(/\d+/) || [""])[0];
+        dd.textContent = num ? num + " " + statUnits[r] : statUnits[r];
+      } else if (t.dOrder) {
+        dd.textContent = t.dOrder;
+      }
+    }
+
+    var statNote = document.querySelector(".certificate-stat-note");
+    if (statNote && t.note) {
+      // Preserve the decorative <span> the markup opens with.
+      var mark = statNote.querySelector("span[aria-hidden]");
+      statNote.textContent = " " + t.note;
+      if (mark) statNote.insertBefore(mark, statNote.firstChild);
+    }
+
+    var portfolioLink = document.querySelector(".certificate-footer-links a[data-back-link]");
+    if (portfolioLink && t.footPortfolio) portfolioLink.textContent = t.footPortfolio;
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", apply, { once: true });
+  } else {
+    apply();
+  }
+})();

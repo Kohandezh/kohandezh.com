@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "kdcv", "runtimeExecutable": "php", "runtimeArgs": ["-S", "127.0.0.1:8735", "dev-server.php"], "port": 8735 }
+  ]
+}

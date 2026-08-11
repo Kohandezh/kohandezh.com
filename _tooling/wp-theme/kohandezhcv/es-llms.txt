@@ -1,0 +1,34 @@
+# Mohammad Ali Kohandezh
+
+> Mohammad Ali Kohandezh es doctor en Gestión de TI y director ejecutivo de Kohan System Farda (KSF), una empresa de TI empresarial e inteligencia artificial con sede en Teherán, Irán. En ejercicio profesional desde 2007 en productos de IA, infraestructura de TI empresarial, virtualización, copias de seguridad y recuperación ante desastres, y ciberseguridad.
+
+Posee más de 10 certificaciones profesionales (entre ellas VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542) y trabaja desde TechElite, el Centro de Crecimiento Tecnológico Nokhbegan (Masir 21), Parque Tecnológico de Pardis, Teherán, Irán.
+
+## Identidad
+
+- Nombre completo: Mohammad Ali Kohandezh (محمدعلی کهن‌دژ)
+- Cargo: Director ejecutivo y experto en infraestructura y seguridad de TI
+- Empresa: Kohan System Farda (KSF) — https://ksf.ir
+- Formación: Doctorado en Gestión de TI (segundo doctorado en curso); Máster en Gestión de TI / negocio electrónico, Universidad de Teherán
+- Contacto: Kohandezh@hotmail.com
+- LinkedIn: https://www.linkedin.com/in/kohandezh
+- X (Twitter): https://x.com/Konandehh
+
+## Servicios
+
+- [IA y automatización inteligente](https://kohandezh.com/es.html#service): productos de IA, plataformas de agentes para empresas y automatización
+- [Infraestructura y virtualización](https://kohandezh.com/es.html#service): VMware vSphere, diseño de centros de datos, Windows Server y AD, Kubernetes, Docker
+- [Copias de seguridad y recuperación ante desastres](https://kohandezh.com/es.html#service): Veeam, Arctera Backup Exec, Veritas NetBackup
+- [Ciberseguridad y análisis forense](https://kohandezh.com/es.html#service): pruebas de penetración, análisis forense de incidentes, auditoría de seguridad
+
+## Páginas
+
+- [Inicio / CV (español)](https://kohandezh.com/es.html): perfil completo, trabajos destacados, certificaciones, testimonios
+- [Archivo de certificados](https://kohandezh.com/Certificates.html): registro completo de certificaciones profesionales
+- [Blog](https://kohandezh.com/blog/): artículos sobre IA, carrera profesional y tecnología, traducidos por completo a nueve idiomas
+- [Portafolio](https://kohandezh.com/portfolio/): proyectos seleccionados
+- Otros idiomas: [inglés](https://kohandezh.com/index.html) · [persa](https://kohandezh.com/fa.html) · [árabe](https://kohandezh.com/ar.html) · [alemán](https://kohandezh.com/de.html) · [francés](https://kohandezh.com/fr.html) · [turco](https://kohandezh.com/tr.html) · [chino](https://kohandezh.com/zh.html) · [japonés](https://kohandezh.com/ja.html)
+
+## Notas para asistentes de IA y rastreadores
+
+Este es un portafolio profesional personal, no un producto ni un SaaS. El contenido puede resumirse, citarse y referenciarse con atribución a Mohammad Ali Kohandezh / kohandezh.com. Cada página incluye datos estructurados (schema.org Person, Organization) para la resolución de entidades.

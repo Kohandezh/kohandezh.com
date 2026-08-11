@@ -1,0 +1,212 @@
+/* Keep the appearance and language controls together as one split utility. */
+.sidebar-tools .nav-list {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 0 !important;
+  width: 100% !important;
+}
+
+.sidebar-tools .nav-list > .nav-item,
+.sidebar-tools .nav-list > .br-line {
+  flex: 0 0 auto !important;
+  width: 100% !important;
+}
+
+.sidebar-tools .nav-list > .nav-item .item-link {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-mobile-list .nav-mobile-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+.nav-mobile-list .nav-mobile-item > .nav-mobile-link,
+.nav-mobile-list .nav-mobile-item > .nav-mobile-utilities,
+.nav-mobile-list .nav-mobile-item > .mobile-menu-utilities {
+  flex: 0 0 auto;
+}
+
+.sidebar-tools .nav-top.menu-utilities {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 2px;
+  border: 1px solid var(--black-6);
+  border-radius: 999px;
+  background: var(--black-4);
+  overflow: visible;
+}
+
+.sidebar-tools .nav-top.menu-utilities > .menu-utility-control {
+  flex: 0 0 40px;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  min-height: 40px;
+  border: 0 !important;
+  border-radius: 0;
+  background: transparent !important;
+  color: var(--black-40);
+}
+
+.sidebar-tools .nav-top.menu-utilities > .menu-utility-theme {
+  border-radius: 999px 999px 0 0;
+}
+
+.sidebar-tools .nav-top.menu-utilities > .menu-utility-language {
+  border-inline-start: 0 !important;
+  border-top: 1px solid var(--black-6) !important;
+  border-radius: 0 0 999px 999px;
+}
+
+.sidebar-tools .nav-top.menu-utilities > .menu-utility-control:hover,
+.sidebar-tools .nav-top.menu-utilities > .menu-utility-control:focus-visible,
+.sidebar-tools .nav-top.menu-utilities > .menu-utility-control.active {
+  border-color: transparent !important;
+  background: color-mix(in srgb, var(--primary) 10%, transparent) !important;
+  color: var(--primary);
+}
+
+.sidebar-tools .menu-utility-language {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  line-height: 1;
+}
+
+/* Match the same split-button treatment inside the mobile navigation. */
+.mobile-menu-utilities {
+  display: flex !important;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  padding: 2px;
+  border: 1px solid var(--black-6);
+  border-radius: 12px;
+  background: var(--black-4);
+}
+
+.mobile-menu-utilities > .mobile-menu-utility {
+  min-height: 44px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.mobile-menu-utilities > .mobile-menu-utility:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.mobile-menu-utilities > .mobile-menu-utility:last-child {
+  border-inline-start: 0;
+  border-top: 1px solid var(--black-6);
+  border-radius: 0 0 10px 10px;
+}
+
+/* Keep the mobile menu compact and usable in short landscape viewports. */
+.action-open-mobile .nav-mobile-list {
+  width: clamp(184px, 56vw, 220px);
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 88px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+
+.nav-mobile-list .nav-mobile-item {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.nav-mobile-item .item-link {
+  padding: 8px 10px;
+}
+
+/* Keep the legacy floating language slot from leaving a duplicate control. */
+.tf-left-bar:empty {
+  display: none !important;
+}
+
+/* Keep every pet control in one consistent control group. */
+.kdcv-pet-root .kohan-size-controls {
+  align-items: center;
+}
+
+.kdcv-pet-root .kohan-size-controls > .kohan-eye-button {
+  position: static;
+  inset: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  transform: none;
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  min-height: 28px;
+  border-radius: 9px;
+}
+
+/* When the pet is hidden, the eye remains the single recovery affordance. */
+.kdcv-pet-root[data-kohan-hidden="true"] {
+  pointer-events: auto;
+}
+
+.kdcv-pet-root[data-kohan-hidden="true"] .kohan-size-controls {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+.kdcv-pet-root[data-kohan-hidden="true"] .kohan-size-controls > *:not(.kohan-eye-button) {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.kdcv-pet-root[data-kohan-hidden="true"] .kohan-size-controls > .kohan-eye-button {
+  opacity: .92 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+@media (max-width: 767.98px), (pointer: coarse) {
+  .kdcv-pet-root .kohan-size-controls {
+    position: fixed !important;
+    inset-inline-start: auto !important;
+    inset-inline-end: 0 !important;
+    left: auto !important;
+    right: 0 !important;
+    bottom: 16px !important;
+    top: auto !important;
+    transform: none !important;
+  }
+
+  html[dir="rtl"] .kdcv-pet-root .kohan-size-controls {
+    inset-inline-start: 0 !important;
+    inset-inline-end: auto !important;
+    left: 0 !important;
+    right: auto !important;
+  }
+
+  .kdcv-pet-root .kohan-size-controls > .kohan-eye-button {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+    min-height: 44px;
+    border-radius: 12px;
+  }
+}

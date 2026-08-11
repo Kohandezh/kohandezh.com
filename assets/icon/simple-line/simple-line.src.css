@@ -1,0 +1,74 @@
+/*
+ * Simple Line Icons — SVG replacement for the icomoon glyph font.
+ *
+ * THIS IS THE TEMPLATE. The file the site loads is simple-line.css, which is
+ * generated from this one by _tooling/inline-icon-masks.py with every mask
+ * baked in as a data: URI. Edit here, then run that script. Editing
+ * simple-line.css directly will be overwritten.
+ * Loads AFTER icomoon/style.css and overrides each mapped .icon-* glyph
+ * with a mask-rendered SVG. Markup stays untouched (<i class="icon icon-home">)
+ * and colors keep following the text color (hover states, dark mode) because
+ * the SVG is painted with background-color: currentColor through a mask.
+ *
+ * Unmapped on purpose (no faithful Simple Line equivalent):
+ *   .icon-x     — X (Twitter) brand mark; the set only has the old bird logo
+ *   .icon-quote — no quote glyph in Simple Line Icons
+ * Both keep rendering from the icomoon font.
+ */
+
+.icon-home::before,
+.icon-user-circle::before,
+.icon-edu::before,
+.icon-tech-stack::before,
+.icon-service::before,
+.icon-high-light::before,
+.icon-tes::before,
+.icon-send::before,
+.icon-global-elip::before,
+.icon-download::before,
+.icon-close::before,
+.icon-close2::before,
+.icon-arrow-top::before,
+.icon-arrow-caret-left::before,
+.icon-arrow-caret-right::before,
+.icon-arrow-right-top::before,
+.icon-linkin::before,
+.icon-light::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.icon-home::before          { -webkit-mask-image: url("home.svg");            mask-image: url("home.svg"); }
+.icon-user-circle::before   { -webkit-mask-image: url("user.svg");            mask-image: url("user.svg"); }
+.icon-edu::before           { -webkit-mask-image: url("graduation.svg");      mask-image: url("graduation.svg"); }
+.icon-tech-stack::before    { -webkit-mask-image: url("layers.svg");          mask-image: url("layers.svg"); }
+.icon-service::before       { -webkit-mask-image: url("settings.svg");        mask-image: url("settings.svg"); }
+.icon-high-light::before    { -webkit-mask-image: url("star.svg");            mask-image: url("star.svg"); }
+.icon-tes::before           { -webkit-mask-image: url("bubbles.svg");         mask-image: url("bubbles.svg"); }
+.icon-send::before          { -webkit-mask-image: url("paper-plane.svg");     mask-image: url("paper-plane.svg"); }
+.icon-global-elip::before   { -webkit-mask-image: url("globe.svg");           mask-image: url("globe.svg"); }
+.icon-download::before      { -webkit-mask-image: url("cloud-download.svg");  mask-image: url("cloud-download.svg"); }
+.icon-close::before,
+.icon-close2::before        { -webkit-mask-image: url("close.svg");           mask-image: url("close.svg"); }
+.icon-arrow-top::before     { -webkit-mask-image: url("arrow-up.svg");        mask-image: url("arrow-up.svg"); }
+.icon-arrow-caret-left::before  { -webkit-mask-image: url("arrow-left.svg");  mask-image: url("arrow-left.svg"); }
+.icon-arrow-caret-right::before { -webkit-mask-image: url("arrow-right.svg"); mask-image: url("arrow-right.svg"); }
+.icon-linkin::before        { -webkit-mask-image: url("social-linkedin.svg"); mask-image: url("social-linkedin.svg"); }
+.icon-light::before         { -webkit-mask-image: url("bulb.svg");            mask-image: url("bulb.svg"); }
+
+/* No diagonal arrow in the set: arrow-up rotated 45° = the ↗ CTA arrow. */
+.icon-arrow-right-top::before {
+  -webkit-mask-image: url("arrow-up.svg");
+  mask-image: url("arrow-up.svg");
+  transform: rotate(45deg);
+}

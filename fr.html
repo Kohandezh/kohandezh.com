@@ -1,0 +1,2565 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr" data-kdcv-router-mode="static">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mohammad Ali Kohandezh - Spécialiste IA, cybersécurité et infrastructure informatique</title>
+    <meta name="author" content="Mohammad Ali Kohandezh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/locale-router.min.js?v=99"></script>
+    <meta name="description" content="Mohammad Ali Kohandezh — Doctorat en gestion des technologies de l'information et PDG de Kohan System Farda (KSF), avec une expérience professionnelle depuis 2007 en IA, infrastructure et cybersécurité.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- font -->
+    <link rel="preload" as="image" href="assets/images/avatar/avatar-professional.webp?v=3" fetchpriority="high">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/fonts/inter/inter.css">
+    <link rel="stylesheet" href="assets/icon/icomoon/style.css">
+    <link rel="stylesheet" href="assets/icon/simple-line/simple-line.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css?v=98">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/swiper-bundle.min.css"></noscript></noscript>
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.min.css?v=151">
+    <link rel="stylesheet" href="assets/css/shiny-button.min.css?v=98">
+    <link rel="stylesheet" href="assets/css/limelight-nav.min.css?v=96">
+    <link rel="stylesheet" href="assets/css/pixel-canvas.min.css?v=97" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/pixel-canvas.min.css?v=97"></noscript>
+    <link rel="stylesheet" href="assets/css/glowing-effect.min.css?v=97" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/glowing-effect.min.css?v=97"></noscript>
+    <link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=112" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=112"></noscript>
+    <link rel="stylesheet" href="assets/css/glare-card.min.css?v=92">
+    <link rel="stylesheet" href="assets/css/hud-button.min.css?v=92">
+    <link rel="stylesheet" href="assets/css/pearl-button.min.css?v=86">
+    <link rel="stylesheet" href="assets/css/kdcv-interaction-fix.css?v=9">
+    <link rel="stylesheet" href="assets/css/wisdom-quotes.min.css?v=100" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/wisdom-quotes.min.css?v=100"></noscript>
+
+    <!-- Kohandezh overrides -->
+    <style>
+        .kohandezh svg { display: none; }
+        .kohandezh::after {
+            content: "KOHANDEZH";
+            display: block;
+            font-family: "Apfel Grotezk", "Inter", sans-serif;
+            font-weight: 700;
+            font-size: clamp(44px, 9vw, 104px);
+            letter-spacing: -0.02em;
+            line-height: 1;
+            color: var(--black-72);
+        }
+        .foot-bottom .kohandezh::after {
+            content: "KSF";
+            font-size: clamp(36px, 7vw, 84px);
+            color: transparent;
+            -webkit-text-stroke: 1.5px var(--black-56);
+        }
+        .eco-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            max-width: 464px;
+        }
+        .eco-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex: 1 1 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--black-15);
+            border-radius: 10px;
+            text-decoration: none;
+            transition: border-color .2s ease, background .2s ease;
+        }
+        .eco-card:hover {
+            border-color: var(--primary);
+            background: var(--black-6);
+        }
+        .eco-card .eco-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            min-width: 0;
+        }
+        .eco-card .eco-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--black-72);
+        }
+        .eco-card .eco-tag {
+            font-size: 11px;
+            color: var(--black-56);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .eco-card .icon {
+            flex-shrink: 0;
+            font-size: 14px;
+            color: var(--black-56);
+        }
+        .eco-card:hover .icon {
+            color: var(--primary);
+        }
+        .eco-marquee {
+            max-width: 464px;
+        }
+        .eco-marquee .eco-card {
+            flex: none;
+            width: 236px;
+            margin-right: 12px;
+        }
+        .blog-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+        .blog-list .blog-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            padding: 18px 0;
+            border-top: 1px solid var(--black-6);
+            text-decoration: none;
+        }
+        .blog-list .blog-item:last-child {
+            border-bottom: 1px solid var(--black-6);
+        }
+        .blog-list .blog-item .blog-title {
+            color: var(--black-72);
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+        .blog-list .blog-item .blog-date {
+            color: var(--black-56);
+            font-size: 13px;
+            white-space: nowrap;
+        }
+        .blog-list .blog-item:hover .blog-title {
+            color: var(--primary);
+        }
+        .lang-item {
+            border-radius: 10px;
+            padding: 10px 14px;
+            border: 1px solid transparent;
+            transition: background .2s ease, border-color .2s ease;
+            cursor: pointer;
+        }
+        .lang-item:hover {
+            background: rgba(255, 255, 255, 0.06);
+        }
+        .lang-item.is-active {
+            border-color: var(--primary);
+            background: rgba(0, 222, 81, 0.1);
+        }
+        .lang-item.is-active .text {
+            color: var(--primary);
+            font-weight: 600;
+        }
+            .demo-mode-toggle {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 8px 0 28px;
+        }
+        .demo-mode-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 18px;
+            border: 1px solid var(--black-15);
+            border-radius: 999px;
+            background: transparent;
+            color: var(--black-72);
+            font-size: 14px;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: border-color .2s ease, background .2s ease, color .2s ease;
+        }
+        .demo-mode-btn:hover {
+            border-color: var(--primary);
+        }
+        .demo-mode-btn.is-active {
+            border-color: var(--primary);
+            background: var(--primary);
+            color: #06130a;
+        }
+        .demo-mode-note {
+            max-width: 560px;
+            margin: 0 0 28px;
+            color: var(--black-56);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .contact-schedule {
+            margin-top: 40px;
+            padding: 28px;
+            border: 1px solid var(--black-15);
+            border-radius: 20px;
+        }
+        .contact-schedule h5 {
+            margin: 0 0 8px;
+            color: var(--black-72);
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .contact-schedule p {
+            margin: 0 0 20px;
+            color: var(--black-56);
+            font-size: 14px;
+        }
+        .schedule-embed {
+            position: relative;
+            min-height: 96px;
+        }
+        .schedule-embed iframe {
+            display: none;
+            width: 100%;
+            height: 640px;
+            border: 0;
+            border-radius: 14px;
+        }
+        .schedule-embed.is-ready iframe {
+            display: block;
+        }
+        .schedule-embed.is-ready .schedule-fallback {
+            display: none;
+        }
+        .schedule-fallback {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 16px;
+            padding: 20px;
+            border: 1px dashed var(--black-15);
+            border-radius: 14px;
+            background: var(--black-6);
+        }
+        .schedule-fallback p {
+            flex: 1 1 240px;
+            margin: 0;
+        }
+    </style>
+
+    <!-- Favicon and Touch Icons (MK brand mark from kohandezh.com) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/favicon-32.png?v=2">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/assets/images/logo/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo/favicon-16.png?v=2">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/logo/favicon-192.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/apple-touch-icon.png?v=2">
+
+    <!-- ===== SEO BLOCK (kohandezh.com) ===== -->
+    <!-- SEO: canonical -->
+    <link rel="canonical" href="https://kohandezh.com/fr.html">
+    <!-- Machine-readable summary of this site in this page's language. The
+         llms.txt convention has no discovery mechanism, so answer engines are
+         pointed at the right one from the page they are actually reading. -->
+    <link rel="alternate" type="text/plain" hreflang="fr" title="llms.txt" href="/fr-llms.txt">
+  <link rel="alternate" type="application/rss+xml" title="Mohammad Ali Kohandezh — نوشته‌های منتخب" href="/feed.xml">
+    <!-- SEO: alternate languages (hreflang) -->
+    <link rel="alternate" hreflang="en" href="https://kohandezh.com/">
+    <link rel="alternate" hreflang="fa" href="https://kohandezh.com/fa.html">
+    <link rel="alternate" hreflang="ar" href="https://kohandezh.com/ar.html">
+    <link rel="alternate" hreflang="de" href="https://kohandezh.com/de.html">
+    <link rel="alternate" hreflang="es" href="https://kohandezh.com/es.html">
+    <link rel="alternate" hreflang="fr" href="https://kohandezh.com/fr.html">
+    <link rel="alternate" hreflang="tr" href="https://kohandezh.com/tr.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://kohandezh.com/zh.html">
+    <link rel="alternate" hreflang="ja" href="https://kohandezh.com/ja.html">
+    <link rel="alternate" hreflang="x-default" href="https://kohandezh.com/">
+    <!-- SEO: Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Mohammad Ali Kohandezh">
+    <meta property="og:url" content="https://kohandezh.com/fr.html">
+    <meta property="og:title" content="Mohammad Ali Kohandezh - Spécialiste IA, cybersécurité et infrastructure informatique">
+    <meta property="og:description" content="Mohammad Ali Kohandezh — Doctorat en gestion des technologies de l'information et PDG de Kohan System Farda (KSF), avec une expérience professionnelle depuis 2007 en IA, infrastructure et cybersécurité.">
+    <meta property="og:image" content="https://kohandezh.com/assets/images/og/og-image.jpg">
+    <meta property="og:image:secure_url" content="https://kohandezh.com/assets/images/og/og-image.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="fa_IR">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mohammad Ali Kohandezh - Spécialiste IA, cybersécurité et infrastructure informatique">
+    <meta name="twitter:description" content="Mohammad Ali Kohandezh — Doctorat en gestion des technologies de l'information et PDG de Kohan System Farda (KSF), avec une expérience professionnelle depuis 2007 en IA, infrastructure et cybersécurité.">
+    <meta name="twitter:image" content="https://kohandezh.com/assets/images/og/og-image.jpg">
+    <!-- SEO: structured data (Person) -->
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://kohandezh.com/#person",
+        "name": "Mohammad Ali Kohandezh",
+        "givenName": "Mohammad Ali",
+        "familyName": "Kohandezh",
+        "jobTitle": "CEO & IT Infrastructure and Security Expert",
+        "description": "PhD in IT Management and CEO of Kohan System Farda (KSF), specializing in enterprise IT infrastructure, virtualization, backup and recovery, AI, and cybersecurity.",
+        "url": "https://kohandezh.com/",
+        "image": "https://kohandezh.com/assets/images/avatar/avatar-professional.webp",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Kohan System Farda (KSF)",
+            "url": "https://ksf.ir"
+        },
+        "knowsAbout": [
+            "IT Infrastructure",
+            "Cybersecurity",
+            "Virtualization",
+            "Backup and Recovery",
+            "Artificial Intelligence",
+            "IT Management",
+            "Network Security"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IR"
+        },
+        "sameAs": [
+            "https://kohandezh.com/blog/",
+            "https://www.linkedin.com/in/kohandezh",
+            "https://x.com/Konandehh",
+            "https://ksf.ir",
+            "https://kohansystemfarda.com"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Who is Mohammad Ali Kohandezh?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Mohammad Ali Kohandezh is a PhD holder in IT Management and CEO of Kohan System Farda (KSF), an enterprise IT and AI company based in Tehran, Iran. He has been professionally active since 2007 across AI products, enterprise IT infrastructure, virtualization, backup and recovery, and cybersecurity."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is Kohan System Farda (KSF)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kohan System Farda (KSF) is an enterprise IT and AI company founded and led by Mohammad Ali Kohandezh, based at TechElite, the Nokhbegan Technology Growth Center (Masir 21), Pardis Technology Park, Tehran, Iran. KSF's website is https://ksf.ir."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What services does Mohammad Ali Kohandezh offer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Four core service areas: AI & Smart Automation (AI products and enterprise automation), Infrastructure & Virtualization (VMware vSphere, data center design, Kubernetes, Docker), Backup & Disaster Recovery (Veeam, Arctera Backup Exec, Veritas NetBackup), and Cybersecurity & Forensics (penetration testing, incident forensics, security auditing)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many years of experience does Mohammad Ali Kohandezh have?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Over 18 years of professional experience dating back to 2007, and 10 professional certifications including VMware VCP-DCV, EC-Council CEH and CHFI, HPE Accredited Technical Professional, and GIAC/SANS SEC504 and SEC542."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I contact Mohammad Ali Kohandezh?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "By email at Kohandezh@hotmail.com, via LinkedIn at linkedin.com/in/kohandezh, or through the contact form at kohandezh.com."
+                }
+            }
+        ]
+    }
+    </script>
+    <!-- ============================================================ -->
+    <!-- P2 (2026-08): Richer entity schemas for AI/GEO discovery.     -->
+    <!-- Adds Organization (KSF), 3 SoftwareApplication products,     -->
+    <!-- ProfessionalService (the consulting offer), and WebSite.     -->
+    <!-- All reference the existing Person schema via @id URLs so     -->
+    <!-- Google/Perplexity/ChatGPT can resolve the entity graph.      -->
+    <!-- ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://kohandezh.com/#ksf-organization",
+      "name": "Kohan System Farda",
+      "alternateName": "KSF",
+      "url": "https://ksf.ir",
+      "description": "Enterprise IT and AI company based in Tehran, Iran. Specializes in AI products, virtualization, backup and disaster recovery, and cybersecurity.",
+      "logo": "https://kohandezh.com/assets/images/logo/KohanSystemFarda.avif",
+      "foundingDate": "2007",
+      "founder": { "@id": "https://kohandezh.com/#person" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "TechElite, Nokhbegan Technology Growth Center (Masir 21), Pardis Technology Park",
+        "addressLocality": "Tehran",
+        "addressCountry": "IR"
+      },
+      "sameAs": [
+        "https://ksf.ir",
+        "https://kohansystemfarda.com",
+        "https://padyar.com",
+        "https://homayar.com",
+        "https://netyar.com"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "@id": "https://kohandezh.com/#padyar",
+      "name": "Padyar",
+      "alternateName": "پادیار",
+      "url": "https://padyar.com",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "AI Avatar Platform",
+      "operatingSystem": "Web",
+      "description": "Enterprise AI avatar platform: customer-facing avatars for sales, support, and internal training. Built by Kohan System Farda (KSF).",
+      "publisher": { "@id": "https://kohandezh.com/#ksf-organization" },
+      "author": { "@id": "https://kohandezh.com/#person" },
+      "inLanguage": ["fa", "en"],
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "IRR",
+          "description": "Enterprise licensing — contact KSF for pricing."
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "@id": "https://kohandezh.com/#homayar",
+      "name": "Homayar",
+      "alternateName": "همایار",
+      "url": "https://homayar.com",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Intelligent Call Analytics",
+      "operatingSystem": "Web",
+      "description": "AI-powered call analytics and workflow automation for enterprise contact centers. Built by Kohan System Farda (KSF).",
+      "publisher": { "@id": "https://kohandezh.com/#ksf-organization" },
+      "author": { "@id": "https://kohandezh.com/#person" },
+      "inLanguage": ["fa", "en"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "@id": "https://kohandezh.com/#netyar",
+      "name": "Netyar",
+      "alternateName": "نت‌یار",
+      "url": "https://netyar.com",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Network Management",
+      "operatingSystem": "Web",
+      "description": "AI-driven network monitoring and management platform for enterprise IT teams. Built by Kohan System Farda (KSF).",
+      "publisher": { "@id": "https://kohandezh.com/#ksf-organization" },
+      "author": { "@id": "https://kohandezh.com/#person" },
+      "inLanguage": ["fa", "en"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://kohandezh.com/#services",
+      "name": "Mohammad Ali Kohandezh — IT Infrastructure, Cybersecurity & AI Consulting",
+      "url": "https://kohandezh.com/#service",
+      "provider": { "@id": "https://kohandezh.com/#person" },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Iran"
+      },
+      "serviceType": [
+        "AI & Smart Automation",
+        "Infrastructure & Virtualization",
+        "Backup & Disaster Recovery",
+        "Cybersecurity & Forensics"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Core service areas",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI & Smart Automation",
+              "description": "AI products, enterprise agent platforms, and automation."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Infrastructure & Virtualization",
+              "description": "VMware vSphere, data center design, Windows Server & AD, Kubernetes, Docker."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Backup & Disaster Recovery",
+              "description": "Veeam, Arctera Backup Exec, Veritas NetBackup."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cybersecurity & Forensics",
+              "description": "Penetration testing, incident forensics, security auditing."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://kohandezh.com/#website",
+      "url": "https://kohandezh.com/",
+      "name": "Mohammad Ali Kohandezh — Personal Professional Portfolio",
+      "description": "PhD in IT Management and CEO of Kohan System Farda (KSF). Professional experience dating back to 2007 across AI, enterprise IT infrastructure, virtualization, backup & recovery, and cybersecurity.",
+      "inLanguage": ["en", "fa", "ar", "de", "es", "fr", "tr", "zh", "ja"],
+      "publisher": { "@id": "https://kohandezh.com/#person" }
+    }
+    </script>
+    <!-- ===== /SEO BLOCK ===== -->
+
+    <!-- ===== /SEO BLOCK ===== -->
+  <link rel="stylesheet" href="assets/css/chat-ui.min.css?v=96" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/chat-ui.min.css?v=96"></noscript>
+  <!-- ProfilePage: Google's container type for a person's own page. It
+       points at the Person node declared above by @id rather than
+       repeating it, adds the freshness dates answer engines look for,
+       and marks the two blocks a voice assistant should read. -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://kohandezh.com/fr.html#profilepage",
+  "url": "https://kohandezh.com/fr.html",
+  "inLanguage": "fr",
+  "dateCreated": "2024-01-15",
+  "dateModified": "2026-08-08",
+  "isPartOf": {
+    "@id": "https://kohandezh.com/#website"
+  },
+  "mainEntity": {
+    "@id": "https://kohandezh.com/#person"
+  },
+  "about": {
+    "@id": "https://kohandezh.com/#person"
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".intro-title",
+      ".section-about p"
+    ]
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://kohandezh.com/#person",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "PhD, Information Technology Management"
+  },
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Chief Executive Officer",
+    "occupationLocation": {
+      "@type": "City",
+      "name": "Tehran"
+    },
+    "skills": "Enterprise IT infrastructure, virtualization, backup and recovery, cybersecurity, applied artificial intelligence"
+  },
+  "email": "mailto:Kohandezh@hotmail.com",
+  "nationality": {
+    "@type": "Country",
+    "name": "Iran"
+  },
+  "workLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tehran",
+      "addressCountry": "IR"
+    }
+  }
+}
+  </script>
+</head>
+
+<body data-default-mode="dark" class="counter-scroll">
+<script>/* Theme boot — runs before paint so a page never flashes the wrong theme on navigation. Mirrors main.js: stored choice wins, then data-default-mode, then light. `light` is the class portfolio.js uses. */(function(){try{var s=localStorage.getItem("darkMode"),d;if(s!==null){d=s==="enabled";}else{d=document.body.getAttribute("data-default-mode")==="dark";}document.body.classList.toggle("dark-mode",d);document.body.classList.toggle("light",!d);document.documentElement.setAttribute("data-kdcv-theme",d?"dark":"light");}catch(e){}})();</script>
+  <a class="kd-skip-link" href="#wrapper">Aller au contenu</a>
+    <!-- <canvas class="cursor-trail d-none d-xl-block" id="trail"></canvas> -->
+
+    <!-- Body Background -->
+    <div class="body-background">
+        <div class="bg-item">
+            <picture><source srcset="assets/images/item/cloud-bg.avif" type="image/avif"><img loading="lazy" width="1440" height="900" src="assets/images/item/cloud-bg.webp" alt=""></picture>
+        </div>
+        <div class="bg-video video-dark" aria-hidden="true">
+            <div class="overlay-1"></div>
+        </div>
+    </div>
+    <!-- /Body Background -->
+    <!-- Btn Open Language -->
+    <div class="tf-left-bar">
+        <a class="btn-setting-color tf-btn-icon style-2" data-bs-toggle="offcanvas" href="#languageMenu" aria-label="Choisir la langue"><span class="language-button-label" aria-hidden="true">FR</span></a>
+    </div>
+    <!-- /Btn Open Language -->
+    <!-- Language Menu -->
+    <div class="offcanvas offcanvas-end offcanvas-color" id="languageMenu">
+        <div class="offcanvas-content">
+            <div class="canvas-header">
+                <h5 class="letter-space--2">Langue</h5>
+                <span class="icon-close-popup" data-bs-dismiss="offcanvas">
+                    <i class="icon-close"></i>
+                </span>
+            </div>
+            <div class="canvas-body">
+                <h6 class="title">Choisir la langue</h6>
+                <div class="settings-color list-choose lang-list">
+                    <button type="button" class="btn-color choose-item lang-item" data-lang="en" data-dir="ltr" data-href="index.html">
+                        <span class="text">🇬🇧 EN — English</span>
+                    </button>
+                    <button type="button" class="btn-color choose-item lang-item" data-lang="fa" data-dir="rtl" data-href="fa.html">
+                        <span class="text">🇮🇷 FA — فارسی</span>
+                    </button>
+                    <button type="button" class="btn-color choose-item lang-item" data-lang="ar" data-dir="rtl" data-href="ar.html">
+                        <span class="text">🇸🇦 AR — العربية</span>
+                    </button>
+                    <button type="button" class="btn-color choose-item lang-item" data-lang="de" data-dir="ltr" data-href="de.html">
+                        <span class="text">🇩🇪 DE — Deutsch</span>
+                    </button>
+                    <button type="button" class="btn-color choose-item lang-item is-active" data-lang="fr" data-dir="ltr">
+                        <span class="text">🇫🇷 FR — Français</span>
+                    </button>
+                    <button type="button" class="btn-color choose-item lang-item" data-lang="es" data-dir="ltr" data-href="es.html">
+                        <span class="text">🇪🇸 ES — Español</span>
+                    </button>
+                    <button type="button" class="btn-color choose-item lang-item" data-lang="tr" data-dir="ltr" data-href="tr.html">
+                        <span class="text">🇹🇷 TR — Türkçe</span>
+                    </button>
+                    <button type="button" class="btn-color choose-item lang-item" data-lang="zh" data-dir="ltr" data-href="zh.html">
+                        <span class="text">🇨🇳 ZH — 中文</span>
+                    </button>
+                    <button type="button" class="btn-color choose-item lang-item" data-lang="ja" data-dir="ltr" data-href="ja.html">
+                        <span class="text">🇯🇵 JA — 日本語</span>
+                    </button>
+                </div>
+                <p class="text-body-3 text-black-56" style="margin-top:16px;">
+                    Choisissez une langue pour consulter le profil, le CV et les options de contact dans cette langue.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- /Language Menu -->
+
+    <!-- Menu Mobile -->
+    <div class="action-open-mobile d-lg-none" role="button" tabindex="0" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+        <div class="tf-btn-icon style-2">
+            <div class="btn-mobile-menu">
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-mobile-list">
+            <ul class="nav-mobile-item">
+                <li class="nav-item">
+                    <a href="#home" class="item-link scroll-link">
+                        <i class="icon icon-home"></i>
+                        <p class="tool-tip text-caption">Accueil</p>
+                    </a>
+                </li>
+                <li class="br-line"></li>
+                <li class="nav-item">
+                    <a href="#about" class="item-link scroll-link">
+                        <i class="icon icon-user-circle"></i>
+                        <p class="tool-tip text-caption">À propos</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="item-link scroll-link">
+                        <i class="icon icon-certificate" aria-hidden="true"></i>
+                        <p class="tool-tip text-caption">Certificats</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="item-link scroll-link">
+                        <i class="icon icon-edu"></i>
+                        <p class="tool-tip text-caption">Formation et expérience</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#work" class="item-link scroll-link">
+                        <i class="icon icon-high-light"></i>
+                        <p class="tool-tip text-caption">Projets</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service" class="item-link scroll-link">
+                        <i class="icon icon-service"></i>
+                        <p class="tool-tip text-caption">Services</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tech" class="item-link scroll-link">
+                        <i class="icon icon-tech-stack"></i>
+                        <p class="tool-tip text-caption">Technologies</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="item-link scroll-link">
+                        <i class="icon icon-send"></i>
+                        <p class="tool-tip text-caption">Articles</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonial" class="item-link scroll-link">
+                        <i class="icon icon-tes"></i>
+                        <p class="tool-tip text-caption">Témoignages</p>
+                    </a>
+                </li>
+                <li class="br-line"></li>
+                <li class="nav-item">
+                    <a href="#contact" class="item-link scroll-link">
+                        <i class="icon icon-send"></i>
+                        <p class="tool-tip text-caption">Contact</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /Menu Mobile -->
+
+    <!-- Tool Sidebar -->
+    <div class="sidebar-tools pst-v1">
+        <div class="nav-top">
+            <div class="tf-btn-icon toggle-switch-mode">
+                <i class="icon icon-light"></i>
+            </div>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#home" class="item-link scroll-link">
+                    <i class="icon icon-home"></i>
+                    <p class="tool-tip text-caption">Accueil</p>
+                </a>
+            </li>
+            <li class="br-line"></li>
+            <li class="nav-item">
+                <a href="#about" class="item-link scroll-link">
+                    <i class="icon icon-user-circle"></i>
+                    <p class="tool-tip text-caption">À propos</p>
+                </a>
+            </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="item-link scroll-link">
+                        <i class="icon icon-certificate" aria-hidden="true"></i>
+                        <p class="tool-tip text-caption">Certificats</p>
+                    </a>
+                </li>
+            <li class="nav-item">
+                <a href="#education" class="item-link scroll-link">
+                    <i class="icon icon-edu"></i>
+                    <p class="tool-tip text-caption">Formation et expérience</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#work" class="item-link scroll-link">
+                    <i class="icon icon-high-light"></i>
+                    <p class="tool-tip text-caption">Projets</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#service" class="item-link scroll-link">
+                    <i class="icon icon-service"></i>
+                    <p class="tool-tip text-caption">Services</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#tech" class="item-link scroll-link">
+                    <i class="icon icon-tech-stack"></i>
+                    <p class="tool-tip text-caption">Technologies</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#blog" class="item-link scroll-link">
+                    <i class="icon icon-send"></i>
+                    <p class="tool-tip text-caption">Articles</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#testimonial" class="item-link scroll-link">
+                    <i class="icon icon-tes"></i>
+                    <p class="tool-tip text-caption">Témoignages</p>
+                </a>
+            </li>
+            <li class="br-line"></li>
+            <li class="nav-item">
+                <a href="#contact" class="item-link scroll-link">
+                    <i class="icon icon-send"></i>
+                    <p class="tool-tip text-caption">Contact</p>
+                </a>
+            </li>
+        </ul>
+        <div class="nav-bottom">
+            <a href="#home" class="tf-btn-icon go-top">
+                <i class="icon icon-arrow-top"></i>
+            </a>
+        </div>
+    </div>
+    <!-- /Tool Sidebar -->
+
+    <div class="overlay-pop"></div>
+    <main id="wrapper">
+
+        <!-- Time Local -->
+        <header class="tf-header-wrap">
+            <a href="index.html" class="logo-site d-lg-none">
+                <img class="image-switch" data-light="assets/images/logo/logo.svg" data-dark="assets/images/logo/logo.webp" loading="lazy" width="40"
+                    height="40" src="assets/images/logo/logo.svg" alt="Mohammad Ali Kohandezh">
+            </a>
+            <div class="left">
+                <div class="time-local text-body-3">
+                    <p class="date"></p>
+                    <p class="clock"></p>
+                </div>
+
+            </div>
+        </header>
+        <!-- /Time Local -->
+
+        <!-- User Sidebar -->
+        <div class="sidebar-user">
+            <div class="wrap">
+                <div class="user-image">
+                    <div class="image">
+                        <img class="profile-avatar-image" loading="eager" fetchpriority="high" decoding="async" width="1086" height="1448" src="assets/images/avatar/avatar-professional.webp?v=3" alt="Mohammad Ali Kohandezh">
+                    </div>
+                    </div>
+                <div class="user-logo d-none d-lg-block">
+                    <img class="image-switch" data-light="assets/images/logo/logo.svg" data-dark="assets/images/logo/logo.webp" loading="lazy"
+                        width="40" height="40" src="assets/images/logo/logo.svg" alt="Mohammad Ali Kohandezh">
+                </div>
+                <ul class="tf-social-icon-2 user-social d-grid">
+                    <li><a href="https://x.com/Konandehh" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="icon icon-x"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kohandezh" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="icon icon-linkin"></i></a></li>
+                    <li><a href="https://ksf.ir" target="_blank" rel="noopener" aria-label="Visiter KSF">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.72">
+                                    <path opacity="0.2"
+                                        d="M1.51502 11.2356L1.55752 4.87313C1.56502 3.72125 2.37065 2.73375 3.48252 2.51375L9.6269 1.29563C11.1031 1.00313 12.4738 2.15813 12.4638 3.6875L12.4213 10.0513C12.4131 11.2025 11.6075 12.1894 10.4956 12.41L4.35127 13.6281C2.87502 13.9206 1.50502 12.7656 1.51502 11.2356Z"
+                                        fill="black" />
+                                    <path opacity="0.5"
+                                        d="M4.52563 13.7744L4.56813 7.41062C4.575 6.25999 5.38125 5.27312 6.49313 5.05249L12.6375 3.83499C14.1138 3.54249 15.4844 4.69749 15.4744 6.22687L15.4319 12.5906C15.4244 13.7419 14.6188 14.7287 13.5069 14.9494L7.3625 16.1675C5.88625 16.46 4.51563 15.305 4.52563 13.7756V13.7744Z"
+                                        fill="black" />
+                                    <path opacity="0.8"
+                                        d="M7.53625 16.3125L7.57875 9.94875C7.58625 8.79687 8.39187 7.81062 9.50375 7.59L15.6481 6.37187C17.1244 6.07937 18.495 7.23437 18.485 8.76375L18.4425 15.1275C18.435 16.2794 17.6294 17.2662 16.5175 17.4862L10.3731 18.7044C8.89687 18.9969 7.52625 17.8419 7.53625 16.3125Z"
+                                        fill="black" />
+                                </g>
+                            </svg>
+                        </a></li>
+                    <li><a href="PSN.html" class="psn-profile-link" aria-label="Voir les trophées PlayStation de Mohammad Ali Kohandezh">
+                            <svg class="psn-profile-mark" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="black" fill-opacity="0.72" d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241 6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg>
+                        </a></li>
+                    <li><a href="Certificates.html?lang=fr" class="certificate-profile-link" aria-label="Ouvrir l’archive des certificats"><i class="icon icon-edu" aria-hidden="true"></i></a></li>
+                </ul>
+                <div class="user-info">
+                    <h5 class="greeting letter-space--2 text-white animationtext clip">
+                        Bonjour, je suis
+                        <span class="cd-words-wrapper">
+                            <span class="item-text is-visible">Mohammad</span>
+                            <span class="item-text is-hidden">Stratège IT</span>
+                            <span class="item-text is-hidden">PDG de KSF</span>
+                        </span>
+                    </h5>
+                    <p class="introduce text-white-56 letter-space--05 text-body-3">
+                        J'aide les entreprises à construire une infrastructure
+                        informatique sécurisée et résiliente, basé à TechElite,
+                        le centre de croissance technologique Nokhbegan
+                        (Masir 21) du parc technologique de Pardis, Téhéran, Iran.
+                    </p>
+                    <div class="br-line"></div>
+                    <div class="action-group">
+                        <a href="#contact" class="tf-btn-action">
+                            <span class="ic-wrap">
+                                <i class="icon icon-arrow-right-top"></i>
+                            </span>
+                            <span class="text text-body-3 letter-space--05 fw-medium">
+                                Discutons
+                            </span>
+                            <span class="ic-wrap">
+                                <i class="icon icon-arrow-right-top"></i>
+                            </span>
+                        </a>
+                        <a href="assets/contact/Mohammad-Kohandezh-CV-ATS-FR.pdf" download class="action-down" aria-label="Télécharger le CV">
+                            <i class="icon icon-download"></i>
+                            <span class="text-body-3">
+                                Télécharger CV
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /User Sidebar -->
+
+        <div class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-8 ms-auto">
+                        <div class="wrap-container">
+                            <!-- Intro -->
+                            <div id="home" class="section-intro flat-spacing">
+                                <div class="intro-author effectFade fadeUp no-div">
+                                    <div class="author-image">
+                                        <img class="profile-avatar-thumb" loading="eager" fetchpriority="high" decoding="async" width="48" height="48" src="assets/images/avatar/avatar-thumb-img0031.webp?v=1" alt="Portrait of Mohammad Ali Kohandezh">
+                                    </div>
+                                    <div class="author-info letter-space--05">
+                                        <p class="info_name text-black">Mohammad Ali Kohandezh</p>
+                                        <p class="info_duty text-black-50 text-body-3">Spécialiste IA, cybersécurité et infrastructure informatique
+                                        </p>
+                                    </div>
+                                </div>
+                                <h1 class="intro-title letter-space--2 split-text effect-blur-fade">
+                                    Je construis de l’
+                                    <span class="">IA</span><br>
+                                    <span class="type-2">et une infrastructure sécurisée</span>
+                                    en laquelle les entreprises ont confiance
+                                </h1>
+                                <div class="intro-item">
+                                    <div class="scribble-wrap">
+                                        <svg class="scribble" viewBox="0 0 772 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <linearGradient id="paint0_linear_268_462" x1="12" y1="107" x2="752" y2="66"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#F5F5F5" />
+                                                    <stop class="bred" offset="0.466346" stop-color="#00DE51" />
+                                                    <stop offset="1" stop-color="#F5F5F5" />
+                                                </linearGradient>
+                                            </defs>
+
+                                            <path id="scribblePath"
+                                                d="M12 104.315C34.6667 116.269 92.8 137.913 144 128.853C208 117.528 317 33.5324 356 27.8698C395 22.2072 502 20 530 79.1463C557.711 137.682 582 217 477 281.743C423.902 314.483 308 281.433 365 188C422 94.5672 544 65.6205 597 81.6645C650 97.7085 732 88.2708 752 64.6767"
+                                                stroke="url(#paint0_linear_268_462)" stroke-width="50" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="wg-curve-text">
+                                        <div class="icon">
+                                            <picture><source srcset="assets/images/logo/KohanSystemFarda.avif" type="image/avif"><img src="assets/images/logo/KohanSystemFarda.webp?v=1" width="82" height="96" alt="Kohan System Farda" style="display:block;width:82px;height:96px;object-fit:contain" loading="eager" decoding="async"></picture>
+                                        </div>
+                                        <div class="text-rotate">
+                                            <div class="circle">
+                                                <div class="text" id="circularText"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-counter effectFade fadeUp no-div">
+                                    <div class="wg-counter">
+                                        <p class="counter h1 d-flex font-2 letter-space--2">
+                                            <span class="number" data-speed="1000" data-to="18">0</span>
+                                            +
+                                        </p>
+                                        <p class="text text-black-56 text-body-3">
+                                            Years of experience
+                                        </p>
+                                    </div>
+                                    <div class="wg-counter">
+                                        <p class="counter h1 d-flex font-2 letter-space--2">
+                                            <span class="number" data-speed="1000" data-to="33">0</span>
+                                            +
+                                        </p>
+                                        <p class="text text-black-56 text-body-3">
+                                            Professional certifications
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="intro-client letter-space--05 text-body-3">
+                                    <i class="icon icon-global-elip"></i>
+                                    Trusted by banks &amp; enterprises
+                                </p>
+
+                                <div class="infiniteSlide-brand">
+                                    <div class="brand-track">
+                                        <!-- Set 1 -->
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-1_dark.svg" width="132" height="24"
+                                                src="assets/images/brand/brand-1.svg" alt="Parsian Bank" loading="lazy" decoding="async">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-2_dark.svg" width="122" height="24"
+                                                src="assets/images/brand/brand-2.svg" alt="Sarmayeh Bank" loading="lazy" decoding="async">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-3_dark.svg" width="125" height="24"
+                                                src="assets/images/brand/brand-3.svg" alt="Mehr Eghtesad Bank" loading="lazy" decoding="async">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-4_dark.svg" width="112" height="24"
+                                                src="assets/images/brand/brand-4.svg" alt="Tehran Chamber of Commerce" loading="lazy" decoding="async">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-5_dark.svg" width="112" height="24"
+                                                src="assets/images/brand/brand-5.svg" alt="Noor Hospital" loading="lazy" decoding="async">
+                                        </div>
+                                        <!-- Set 2 -->
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-1_dark.svg" width="132" height="24"
+                                                src="assets/images/brand/brand-1.svg" alt="Parsian Bank" loading="lazy" decoding="async">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-2_dark.svg" width="122" height="24"
+                                                src="assets/images/brand/brand-2.svg" alt="Sarmayeh Bank" loading="lazy" decoding="async">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-3_dark.svg" width="125" height="24"
+                                                src="assets/images/brand/brand-3.svg" alt="Mehr Eghtesad Bank" loading="lazy" decoding="async">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-4_dark.svg" width="112" height="24"
+                                                src="assets/images/brand/brand-4.svg" alt="Tehran Chamber of Commerce" loading="lazy" decoding="async">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-5_dark.svg" width="112" height="24"
+                                                src="assets/images/brand/brand-5.svg" alt="Noor Hospital" loading="lazy" decoding="async">
+                                        </div>
+                                        <!-- Set 3 -->
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-1_dark.svg" width="132" height="24"
+                                                src="assets/images/brand/brand-1.svg" alt="Parsian Bank" loading="lazy" decoding="async">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-2_dark.svg" width="122" height="24"
+                                                src="assets/images/brand/brand-2.svg" alt="Sarmayeh Bank" loading="lazy" decoding="async">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-3_dark.svg" width="125" height="24"
+                                                src="assets/images/brand/brand-3.svg" alt="Mehr Eghtesad Bank" loading="lazy" decoding="async">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-4_dark.svg" width="112" height="24"
+                                                src="assets/images/brand/brand-4.svg" alt="Tehran Chamber of Commerce" loading="lazy" decoding="async">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/brand-5_dark.svg" width="112" height="24"
+                                                src="assets/images/brand/brand-5.svg" alt="Noor Hospital" loading="lazy" decoding="async">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="intro-client letter-space--05 text-body-3" style="margin-top:20px;">
+                                    <i class="icon icon-global-elip"></i>
+                                    Ma présence en ligne
+                                </p>
+
+                                <div class="infiniteSlide-brand eco-marquee">
+                                    <div class="eco-slide">
+                                        <!-- Clone 1 -->
+                                    <a href="https://ksf.ir" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">KSF.ir</span>
+                                            <span class="eco-tag">Kohan System Farda</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://padyar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Padyar.com</span>
+                                            <span class="eco-tag">AI Assistant Platform</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://homayar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Homayar.com</span>
+                                            <span class="eco-tag">Produit d'assistance et de workflows IA</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://netyar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Netyar.com</span>
+                                            <span class="eco-tag">Un autre produit de l'écosystème KSF</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://kohansystemfarda.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">KohanSystemFarda.com</span>
+                                            <span class="eco-tag">Site officiel de l'entreprise</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                
+                                        <!-- Clone 2 -->
+                                    <a href="https://ksf.ir" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">KSF.ir</span>
+                                            <span class="eco-tag">Kohan System Farda</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://padyar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Padyar.com</span>
+                                            <span class="eco-tag">AI Assistant Platform</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://homayar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Homayar.com</span>
+                                            <span class="eco-tag">Produit d'assistance et de workflows IA</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://netyar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Netyar.com</span>
+                                            <span class="eco-tag">Un autre produit de l'écosystème KSF</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://kohansystemfarda.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">KohanSystemFarda.com</span>
+                                            <span class="eco-tag">Site officiel de l'entreprise</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                
+                                        <!-- Clone 3 -->
+                                    <a href="https://ksf.ir" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">KSF.ir</span>
+                                            <span class="eco-tag">Kohan System Farda</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://padyar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Padyar.com</span>
+                                            <span class="eco-tag">AI Assistant Platform</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://homayar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Homayar.com</span>
+                                            <span class="eco-tag">Produit d'assistance et de workflows IA</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://netyar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Netyar.com</span>
+                                            <span class="eco-tag">Un autre produit de l'écosystème KSF</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://kohansystemfarda.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">KohanSystemFarda.com</span>
+                                            <span class="eco-tag">Site officiel de l'entreprise</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Intro -->
+
+                            <!-- About -->
+                            <div id="about" class="section-about flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-user-circle"></i>
+                                    À propos
+                                </div>
+                                <h2 class="s-title letter-space--2 text-black-72 split-text effect-blur-fade">
+                                    Créer des produits IA et une <br class="d-none d-lg-block">
+                                    infrastructure sécurisée avec <br class="d-none d-lg-block">
+                                    une expérience professionnelle depuis 2007
+                                </h2>
+                                <p class="s-desc text-black-56 scrolling-effect effectTop">
+                                    Je conçois et développe des produits pilotés par l'IA — dont la plateforme<br class="d-none d-lg-block">
+                                    d'assistant Padyar AI, une plateforme AI Agent et les produits HomaYar, MeetYar, BlogYar, NetYar et HomeYar — aux côtés <br>
+                                    de l'infrastructure informatique d'entreprise, de la virtualisation et de la cybersécurité. <br>
+                                    <br>
+                                    En tant que PDG de Kohan System Farda (KSF), titulaire d'un doctorat en gestion des TI et <br class="d-none d-lg-block">
+                                    actuellement candidat à un second doctorat, j'aborde chaque projet avec
+                                    rigueur technique et sens des affaires. Je mène aussi des recherches sur
+                                    l'informatique quantique et la sécurité post-quantique comme couche future
+                                    des systèmes d'entreprise résilients.
+                                </p>
+                                <div class="professional-roles">
+                                    <h3 id="professional-roles-title" class="h5 professional-roles__heading letter-space--2 text-black-72">
+                                        Fonctions professionnelles et associatives
+                                    </h3>
+                                    <ul class="professional-roles__list">
+                                        <li class="professional-role">
+                                            <div>
+                                                <h4 class="h6 professional-role__title letter-space--05 text-black-72">Président du comité de cybersécurité</h4>
+                                                <p class="professional-role__org text-body-3 text-black-56">ONG de l’Internet des objets et de la science des données</p>
+                                            </div>
+                                            <span class="professional-role__badge">Direction</span>
+                                        </li>
+                                        <li class="professional-role">
+                                            <div>
+                                                <h4 class="h6 professional-role__title letter-space--05 text-black-72">Responsable de l’initiative bénévole</h4>
+                                                <p class="professional-role__org text-body-3 text-black-56">Nehzate Noor va Danesh</p>
+                                            </div>
+                                            <span class="professional-role__badge">Engagement social</span>
+                                        </li>
+                                        <li class="professional-role">
+                                            <div>
+                                                <h4 class="h6 professional-role__title letter-space--05 text-black-72">Membre des commissions IA et science des données, Réseaux et IoT</h4>
+                                                <p class="professional-role__org text-body-3 text-black-56">Guilde iranienne des TIC (IranNSR)</p>
+                                            </div>
+                                            <span class="professional-role__badge">Adhésion professionnelle</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /About -->
+
+                            <!-- Certificates -->
+                            <div id="certificates" class="section-about flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-edu"></i>
+                                    Certificats
+                                </div>
+                                <h2 class="s-title letter-space--2 text-black-72 split-text effect-blur-fade">
+                                    Certifications à l'appui de ce travail
+                                </h2>
+                                <ul class="award-list">
+                                    <li class="award-item hover-cursor-img">
+                                        <div class="left">
+                                            <h3 class="h6 award_name letter-space--2 text-black-72">VCP-DCV 2021 — Data Center Virtualization</h3>
+                                            <p class="award_desc text-black-56">VMware</p>
+                                        </div>
+                                        <h4 class="h6 award_year text-black-72">
+                                            Virtualisation
+                                        </h4>
+                                        <div class="award_img hover-image">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="assets/images/section/award-1.webp" alt="VMware VCP-DCV 2021 certificate">
+                                        </div>
+                                    </li>
+                                    <li class="award-item hover-cursor-img">
+                                        <div class="left">
+                                            <h3 class="h6 award_name letter-space--2 text-black-72">CEH — Certified Ethical Hacker</h3>
+                                            <p class="award_desc text-black-56">SABA Safe Village</p>
+                                        </div>
+                                        <h4 class="h6 award_year text-black-72">
+                                            Sécurité
+                                        </h4>
+                                        <div class="award_img hover-image">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="assets/images/section/award-2.webp" alt="CEH certificate">
+                                        </div>
+                                    </li>
+                                    <li class="award-item hover-cursor-img">
+                                        <div class="left">
+                                            <h3 class="h6 award_name letter-space--2 text-black-72">CHFI — Computer Hacking Forensic Investigator
+                                            </h3>
+                                            <p class="award_desc text-black-56">SABA Safe Village</p>
+                                        </div>
+                                        <h4 class="h6 award_year text-black-72">
+                                            Forensique
+                                        </h4>
+                                        <div class="award_img hover-image">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="assets/images/section/award-3.webp" alt="CHFI certificate">
+                                        </div>
+                                    </li>
+                                    <li class="award-item hover-cursor-img">
+                                        <div class="left">
+                                            <h3 class="h6 award_name letter-space--2 text-black-72">SEC504 — Hacker Techniques Training</h3>
+                                            <p class="award_desc text-black-56">SABA Safe Village</p>
+                                        </div>
+                                        <h4 class="h6 award_year text-black-72">
+                                            Tests d'intrusion
+                                        </h4>
+                                        <div class="award_img hover-image">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="assets/images/section/award-4.webp" alt="SEC504 certificate">
+                                        </div>
+                                    </li>
+                                    <li class="award-item hover-cursor-img">
+                                        <div class="left">
+                                            <h3 class="h6 award_name letter-space--2 text-black-72">SEC542 — Web Application Penetration Testing Training</h3>
+                                            <p class="award_desc text-black-56">SABA Safe Village</p>
+                                        </div>
+                                        <h4 class="h6 award_year text-black-72">
+                                            Tests d'intrusion
+                                        </h4>
+                                        <div class="award_img hover-image">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="assets/images/section/award-6.webp" alt="SEC542 certificate">
+                                        </div>
+                                    </li>
+                                    <li class="award-item hover-cursor-img">
+                                        <div class="left">
+                                            <h3 class="h6 award_name letter-space--2 text-black-72">HPE Accredited Technical Professional — Server Solutions V4</h3>
+                                            <p class="award_desc text-black-56">Hewlett Packard Enterprise</p>
+                                        </div>
+                                        <h4 class="h6 award_year text-black-72">
+                                            Systèmes
+                                        </h4>
+                                        <div class="award_img hover-image">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="assets/images/section/award-5.webp" alt="HPE ATP Server Solutions certificate">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /Certificates -->
+
+                            <!-- Education &amp; Experience -->
+                            <div id="education" class="section-education-experience flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-edu"></i>
+                                    Formation et expérience
+                                </div>
+                                <div class="timeline scroll-down">
+                                    <div class="timeline-line">
+                                        <div class="prg-line"></div>
+                                    </div>
+                                    <!-- Item 1 -->
+                                    <div class="timeline-item effectFade fadeUp no-div">
+                                        <p class="timeline-date text-black-56">Actuellement</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
+                                                    src="assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <p class="timeline-role fw-medium text-black-72">Doctorant</p>
+                                            <p class="timeline-desc text-body-3 text-black-56">
+                                                Poursuit actuellement un second doctorat, tout en dirigeant KSF.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 2 -->
+                                    <div class="timeline-item effectFade fadeUp no-div">
+                                        <p class="timeline-date text-black-56">2024 - Now</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/item/edu-ksf.svg?v=2" loading="lazy" width="32"
+                                                    height="32" src="assets/images/item/edu-ksf.svg?v=2" alt="Kohan System Farda">
+                                            </div>
+                                            <p class="timeline-role fw-medium text-black-72">PDG — Kohan System Farda
+                                                (KSF)</p>
+                                            <p class="timeline-desc text-body-3 text-black-56">
+                                                Direction des activités IA, cybersécurité et infrastructure informatique —
+                                                dont la plateforme d'assistant Padyar AI, une plateforme AI Agent,
+                                                et les produits HomaYar, MeetYar, BlogYar, NetYar et HomeYar.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 3 -->
+                                    <div class="timeline-item effectFade fadeUp no-div">
+                                        <p class="timeline-date text-black-56">2018 - 2023</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
+                                                    src="assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <p class="timeline-role fw-medium text-black-72">Doctorat — Gestion des TI,
+                                                Smart Business</p>
+                                            <p class="timeline-desc text-body-3 text-black-56">
+                                                Université Islamique Azad, antenne du centre de Téhéran. Obtenu en
+                                                parallèle d'un poste à temps plein en infrastructure.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 4 -->
+                                    <div class="timeline-item effectFade fadeUp no-div">
+                                        <p class="timeline-date text-black-56">2018 - 2023</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/item/edu-3_dark.svg?v=2" width="120" height="32"
+                                                    src="assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <p class="timeline-role fw-medium text-black-72">Spécialiste senior du support technique
+                                                — Modaberan Fanavari Pasargad</p>
+                                            <p class="timeline-desc text-body-3 text-black-56">
+                                                Virtualisation, infrastructure de sauvegarde, VMware et solutions
+                                                de stockage d'entreprise.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 5 -->
+                                    <div class="timeline-item effectFade fadeUp no-div">
+                                        <p class="timeline-date text-black-56">2015 - 2017</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
+                                                    src="assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <p class="timeline-role fw-medium text-black-72">Master — Gestion des TI,
+                                                e-Business</p>
+                                            <p class="timeline-desc text-body-3 text-black-56">
+                                                Université de Téhéran.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Education &amp; Experience -->
+
+                            <!-- Work Highlight -->
+                            <div id="work" class="section-work flat-spacing">
+                                <div class="sect-tag text-caption fw-medium">
+                                    <i class="icon icon-high-light"></i>
+                                    Projets phares
+                                </div>
+                                <div class="work-list element-sticky">
+                                    <div class="sticky-item">
+                                        <div class="wg-work">
+                                            <div class="work-image">
+                                                <img loading="lazy" width="1600" height="900" src="assets/images/section/work-ksf-localized.webp" alt="KSF.ir screenshot">
+                                            </div>
+                                            <div class="wrap">
+                                                <div class="work-content">
+                                                    <div class="w-image">
+                                                        <img loading="lazy" width="468" height="856" src="assets/images/section/work-ksf-localized.webp"
+                                                            alt="KSF.ir screenshot">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="content-top">
+                                                            <div class="w-logo">
+                                                                <img loading="lazy" width="40" height="40" src="assets/images/logo/logo.webp"
+                                                                    alt="Mohammad Ali Kohandezh">
+                                                            </div>
+                                                            <h3 class="w-title letter-space--2 text-white-72">
+                                                                Kohan System Farda (KSF)
+                                                            </h3>
+                                                            <p class="w-desc text-white-56 text-body-3">
+                                                                Ma société holding — infrastructure informatique, produits IA et conseil en cybersécurité
+                                                            </p>
+                                                            <div class="w-highlight">
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">
+                                                                        Société holding
+                                                                    </p>
+                                                                    <p class="text-body-1 text-white-72">
+                                                                        Société holding
+                                                                    </p>
+                                                                </div>
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">
+                                                                        PDG et fondateur
+                                                                    </p>
+                                                                    <p class="text-body-1 text-white-72">
+                                                                        PDG et fondateur
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-tag-list">
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        VMware
+                                                                    </span>
+                                                                </div>
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Produits IA
+                                                                    </span>
+                                                                </div>
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Cybersécurité
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-bottom">
+                                                            <div class="br-line"></div>
+                                                            <div class="group-action">
+                                                                <a href="#contact" class="tf-btn-action style-white">
+                                                                    <span class="ic-wrap">
+                                                                        <i class="icon icon-arrow-right-top"></i>
+                                                                    </span>
+                                                                    <span class="text text-body-3 letter-space--05 fw-medium">
+                                                                        Discutons
+                                                                    </span>
+                                                                    <span class="ic-wrap">
+                                                                        <i class="icon icon-arrow-right-top"></i>
+                                                                    </span>
+                                                                </a>
+                                                                <p class="text-white-40">
+                                                                    <span class="text-white-72">01</span> / 03
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sticky-item">
+                                        <div class="wg-work">
+                                            <div class="work-image">
+                                                <img loading="lazy" width="1600" height="900" src="assets/images/section/work-padyar-localized.webp" alt="Padyar.com screenshot">
+                                            </div>
+                                            <div class="wrap">
+                                                <div class="work-content">
+                                                    <div class="w-image">
+                                                        <img loading="lazy" width="468" height="856" src="assets/images/section/work-padyar-localized.webp"
+                                                            alt="Padyar.com screenshot">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="content-top">
+                                                            <div class="w-logo">
+                                                                <img loading="lazy" width="40" height="40" src="assets/images/logo/logo.webp"
+                                                                    alt="Mohammad Ali Kohandezh">
+                                                            </div>
+                                                            <h3 class="w-title letter-space--2 text-white-72">
+                                                                Padyar — Plateforme d'avatar IA
+                                                            </h3>
+                                                            <p class="w-desc text-white-56 text-body-3">
+                                                                Une plateforme d'avatar IA — donnant aux organisations un visage humain pour leur IA, avec synthèse vocale naturelle
+                                                            </p>
+                                                            <div class="w-highlight">
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">
+                                                                        Produits IA
+                                                                    </p>
+                                                                    <p class="text-body-1 text-white-72">
+                                                                        Produits IA
+                                                                    </p>
+                                                                </div>
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">
+                                                                        Fondateur
+                                                                    </p>
+                                                                    <p class="text-body-1 text-white-72">
+                                                                        Fondateur
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-tag-list">
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Avatar IA
+                                                                    </span>
+                                                                </div>
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Synthèse vocale
+                                                                    </span>
+                                                                </div>
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        IA d'entreprise
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-bottom">
+                                                            <div class="br-line"></div>
+                                                            <div class="group-action">
+                                                                <a href="#contact" class="tf-btn-action style-white">
+                                                                    <span class="ic-wrap">
+                                                                        <i class="icon icon-arrow-right-top"></i>
+                                                                    </span>
+                                                                    <span class="text text-body-3 letter-space--05 fw-medium">
+                                                                        Discutons
+                                                                    </span>
+                                                                    <span class="ic-wrap">
+                                                                        <i class="icon icon-arrow-right-top"></i>
+                                                                    </span>
+                                                                </a>
+                                                                <p class="text-white-40">
+                                                                    <span class="text-white-72">02</span> / 03
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sticky-item">
+                                        <div class="wg-work">
+                                            <div class="work-image">
+                                                <img loading="lazy" width="1600" height="900" src="assets/images/section/work-homayar-localized.webp" alt="Aperçu du produit Homayar.com">
+                                            </div>
+                                            <div class="wrap">
+                                                <div class="work-content">
+                                                    <div class="w-image">
+                                                        <img loading="lazy" width="468" height="856" src="assets/images/section/work-homayar-localized.webp"
+                                                            alt="Aperçu du produit Homayar.com">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="content-top">
+                                                            <div class="w-logo">
+                                                                <img loading="lazy" width="40" height="40" src="assets/images/logo/logo.webp"
+                                                                    alt="Mohammad Ali Kohandezh">
+                                                            </div>
+                                                            <h3 class="w-title letter-space--2 text-white-72">
+                                                                Homayar
+                                                            </h3>
+                                                            <p class="w-desc text-white-56 text-body-3">
+                                                                Un autre produit piloté par l'IA de l'écosystème technologique de Kohan System Farda
+                                                            </p>
+                                                            <div class="w-highlight">
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">
+                                                                        Produits IA
+                                                                    </p>
+                                                                    <p class="text-body-1 text-white-72">
+                                                                        Produits IA
+                                                                    </p>
+                                                                </div>
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">
+                                                                        Fondateur
+                                                                    </p>
+                                                                    <p class="text-body-1 text-white-72">
+                                                                        Fondateur
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-tag-list">
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Produit IA
+                                                                    </span>
+                                                                </div>
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Écosystème KSF
+                                                                    </span>
+                                                                </div>
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Innovation
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-bottom">
+                                                            <div class="br-line"></div>
+                                                            <div class="group-action">
+                                                                <a href="#contact" class="tf-btn-action style-white">
+                                                                    <span class="ic-wrap">
+                                                                        <i class="icon icon-arrow-right-top"></i>
+                                                                    </span>
+                                                                    <span class="text text-body-3 letter-space--05 fw-medium">
+                                                                        Discutons
+                                                                    </span>
+                                                                    <span class="ic-wrap">
+                                                                        <i class="icon icon-arrow-right-top"></i>
+                                                                    </span>
+                                                                </a>
+                                                                <p class="text-white-40">
+                                                                    <span class="text-white-72">03</span> / 03
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="work-cta effectFade fadeUp no-div">
+                                    <div>
+                                        <h3 class="h5 letter-space--2 text-black-72">Vous avez un projet en tête ?</h3>
+                                        <p class="text-body-3 text-black-56">Parlez-moi de votre défi d'infrastructure, de sécurité ou d'IA — je réponds personnellement sous un jour ouvré.</p>
+                                    </div>
+                                    <a href="#contact" class="tf-btn-action">
+                                        <span class="ic-wrap"><i class="icon icon-arrow-right-top"></i></span>
+                                        <span class="text text-body-3 letter-space--05 fw-medium">Demander une collaboration</span>
+                                        <span class="ic-wrap"><i class="icon icon-arrow-right-top"></i></span>
+                                    </a>
+                                </div>
+                            <!-- /Work Highlight -->
+
+                            <!-- Service -->
+                            <div id="service" class="section-service flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div mb-0">
+                                    <i class="icon icon-service"></i>
+                                    Services
+                                </div>
+                                <div class="" id="accordion-service">
+                                    <div class="service-accordion_item scrolling-effect effectBottom" role="presentation">
+                                        <div class="accordion-action collapsed" data-bs-target="#service-ai" role="button" data-bs-toggle="collapse"
+                                            aria-controls="service-ai" aria-expanded="true">
+                                            <h3 class="text letter-space--2 text-black-72">Intelligence artificielle &amp; automatisation intelligente</h3>
+                                            <div class="ic-wrap">
+                                                <span class="ic-accordion-custom"></span>
+                                            </div>
+                                        </div>
+                                        <div id="service-ai" class="collapse" data-bs-parent="#accordion-service">
+                                            <div class="accordion-content">
+                                                <div class="tf-grid-layout sm-col-2 lg-col-3">
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="assets/images/section/work-padyar-localized.webp" alt="Padyar — plateforme d'avatar IA d'entreprise">
+                                                        </div>
+                                                    </div>
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="assets/images/section/work-homayar-localized.webp" alt="Homayar — analyse d'appels par IA">
+                                                        </div>
+                                                    </div>
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="assets/images/section/work-ksf-localized.webp" alt="Solutions IA d'entreprise KSF">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="service-tag">
+                                                    <a href="#service" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Avatar IA d'entreprise (Padyar)
+                                                    </a>
+                                                    <a href="#service" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Analyse d'appels par IA (Homayar)
+                                                    </a>
+                                                    <a href="#service" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Agents IA &amp; automatisation
+                                                    </a>
+                                                </div>
+                                                <p class="service-desc text-black-56">
+                                                    Conception et déploiement d'IA d'entreprise — avatars parlants, jumeaux numériques,
+                                                    analyse de la qualité des appels et automatisation des processus par agents IA.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="br-line scrolling-effect effectBottom"></div>
+                                    <div class="service-accordion_item scrolling-effect effectBottom" role="presentation">
+                                        <div class="accordion-action collapsed" data-bs-target="#service-1" role="button" data-bs-toggle="collapse"
+                                            aria-controls="service-1" aria-expanded="true">
+                                            <h3 class="text letter-space--2 text-black-72">Infrastructure et virtualisation</h3>
+                                            <div class="ic-wrap">
+                                                <span class="ic-accordion-custom"></span>
+                                            </div>
+                                        </div>
+                                        <div id="service-1" class="collapse" data-bs-parent="#accordion-service">
+                                            <div class="accordion-content">
+                                                <div class="tf-grid-layout sm-col-2 lg-col-3">
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="assets/images/section/service-infra-vmware.webp?v=1" alt="VMware ESXi virtualization architecture">
+                                                        </div>
+                                                    </div>
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="assets/images/section/service-infra-kubernetes.webp?v=1" alt="Kubernetes container orchestration">
+                                                        </div>
+                                                    </div>
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="assets/images/section/service-infra-docker.webp?v=1" alt="Docker container platform">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="service-tag">
+                                                    <a href="#service" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        VMware vSphere
+                                                    </a>
+                                                    <a href="#service" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Conception de centres de données
+                                                    </a>
+                                                    <a href="#service" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Windows Server &amp; AD
+                                                    </a>
+                                                </div>
+                                                <p class="service-desc text-black-56">
+                                                    Je conçois et exploite des centres de données d'entreprise —
+                                                    virtualisation, serveurs et stockage — conçus
+                                                    pour la performance, la disponibilité et la croissance.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="br-line scrolling-effect effectBottom"></div>
+                                    <div class="service-accordion_item scrolling-effect effectBottom" role="presentation">
+                                        <div class="accordion-action collapsed" data-bs-target="#service-2" role="button" data-bs-toggle="collapse"
+                                            aria-controls="service-2" aria-expanded="true">
+                                            <h3 class="text letter-space--2 text-black-72">Sauvegarde et reprise après sinistre</h3>
+                                            <div class="ic-wrap">
+                                                <span class="ic-accordion-custom"></span>
+                                            </div>
+                                        </div>
+                                        <div id="service-2" class="collapse" data-bs-parent="#accordion-service">
+                                            <div class="accordion-content">
+                                                <div class="tf-grid-layout sm-col-2 lg-col-3">
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="assets/images/section/service-backup-arctera.webp?v=1" alt="Arctera Backup Exec data protection">
+                                                        </div>
+                                                    </div>
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="assets/images/section/service-backup-veeam.webp?v=1" alt="Veeam backup and recovery">
+                                                        </div>
+                                                    </div>
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="assets/images/section/service-backup-netbackup.webp?v=1" alt="Veritas NetBackup data protection">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="service-tag">
+                                                    <a href="#service" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Veeam
+                                                    </a>
+                                                    <a href="#service" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Arctera Backup Exec
+                                                    </a>
+                                                    <a href="#service" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Veritas NetBackup
+                                                    </a>
+                                                </div>
+                                                <p class="service-desc text-black-56">
+                                                    Solutions de sauvegarde et de reprise après sinistre d'entreprise avec
+                                                    Arctera Backup Exec, Veeam et Veritas NetBackup — protection des
+                                                    données critiques avec des plans de restauration et de réplication testés.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="br-line scrolling-effect effectBottom"></div>
+                                    <div class="service-accordion_item scrolling-effect effectBottom" role="presentation">
+                                        <div class="accordion-action collapsed" data-bs-target="#service-3" role="button" data-bs-toggle="collapse"
+                                            aria-controls="service-3" aria-expanded="true">
+                                            <h3 class="text letter-space--2 text-black-72">Cybersécurité et forensique</h3>
+                                            <div class="ic-wrap">
+                                                <span class="ic-accordion-custom"></span>
+                                            </div>
+                                        </div>
+                                        <div id="service-3" class="collapse" data-bs-parent="#accordion-service">
+                                            <div class="accordion-content">
+                                                <div class="tf-grid-layout sm-col-2">
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="assets/images/section/service-5.webp?v=2" alt="Digital forensics and biometric investigation">
+                                                        </div>
+                                                    </div>
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="assets/images/section/service-6.webp?v=2" alt="Kali Linux security research environment">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="service-tag">
+                                                    <a href="#service" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Tests d'intrusion
+                                                    </a>
+                                                    <a href="#service" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Durcissement de la sécurité
+                                                    </a>
+                                                    <a href="#service" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Forensique numérique
+                                                    </a>
+                                                </div>
+                                                <p class="service-desc text-black-56">
+                                                    Évaluation de sécurité, durcissement et réponse aux incidents
+                                                    appuyés par une formation CEH, CHFI et en sécurité —
+                                                    pour garder votre organisation sûre et prête pour l'audit.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Service -->
+
+                            <!-- Tech Stack -->
+                            <div id="tech" class="section-tech-stack flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-tech-stack"></i>
+                                    Stack technique
+                                </div>
+                                <h2 class="s-title letter-space--2 text-black-72 split-text effect-blur-fade">
+                                    Découvrez comment mon expertise sur ces <br class="d-none d-sm-block">
+                                    plateformes génère de meilleurs résultats
+                                </h2>
+                                <ul class="tech-list">
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img loading="lazy" width="19" height="28" src="assets/images/section/tech-1.svg?v=2" alt="">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">VMware vSphere</p>
+                                                <p class="info__duty text-black-56 text-body-3">Virtualisation d'entreprise</p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="80">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="80">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="br-line"></li>
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img class="image-switch" data-dark="assets/images/section/tech-2_dark.svg?v=2" width="18" height="28"
+                                                    src="assets/images/section/tech-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">Veeam Backup &amp; Replication</p>
+                                                <p class="info__duty text-black-56 text-body-3">Protection et récupération des données
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="90">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="90">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="br-line"></li>
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img loading="lazy" width="29" height="28" src="assets/images/section/tech-3.svg?v=2" alt="">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">Windows Server et sécurité</p>
+                                                <p class="info__duty text-black-56 text-body-3">HPE ATP, CEH et formation en sécurité
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="85">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="85">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="br-line"></li>
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img loading="lazy" width="29" height="28" src="assets/images/section/tech-4.svg?v=2" alt="Icône de recherche quantique">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">Recherche en informatique quantique</p>
+                                                <p class="info__duty text-black-56 text-body-3">Sécurité post-quantique et futurs systèmes d'IA
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="35">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="35">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="br-line"></li>
+                                    <li class="wg-tech" data-tech-brand="arctera">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image tech_image--wordmark"><img loading="lazy" width="160" height="43" src="assets/images/section/tech-arctera.svg?v=1" alt="Logo Arctera"></div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">Arctera Backup Exec</p>
+                                                <p class="info__duty text-black-56 text-body-3">Opérations de sauvegarde, restauration et reprise après sinistre</p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress"><div class="progress-line" data-progress="100"><p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="100">10</span>%</span></p></div></div>
+                                    </li>
+                                    <li class="br-line"></li>
+                                    <li class="wg-tech" data-tech-brand="veritas">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image tech_image--wordmark"><img loading="lazy" width="24" height="24" src="assets/images/section/tech-veritas.svg?v=1" alt="Logo Veritas"></div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">Veritas NetBackup</p>
+                                                <p class="info__duty text-black-56 text-body-3">Sauvegarde et restauration d’entreprise à grande échelle</p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress"><div class="progress-line" data-progress="85"><p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="85">10</span>%</span></p></div></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /Tech Stack -->
+
+                            <!-- Blog -->
+                            <div id="blog" class="section-blog flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-send"></i>
+                                    Articles
+                                </div>
+                                <h2 class="s-title letter-space--2 text-black-72 split-text effect-blur-fade">
+                                    Articles sélectionnés de kohandezh.com
+                                </h2>
+                                <div class="blog-local-list">
+                                    <article class="blog-local-item">
+                                        <div class="blog-local-top">
+                                            <h3 class="blog-local-title">IA générative : de l'idée à l'exécution</h3>
+                                            <span class="blog-local-date">11 mai 2025</span>
+                                        </div>
+                                        <p class="blog-local-summary">
+                                            Un échange concret sur l'usage de l'IA par les petites entreprises pour le support client,
+                                            le contenu, l'automatisation, les avatars et une meilleure gestion du temps.
+                                        </p>
+                                        <div class="blog-local-meta">
+                                            <span class="blog-local-tag">IA générative</span>
+                                            <a class="blog-local-link" href="blog/generative-ai-tools.html">Lire l'original <i class="icon icon-arrow-right-top"></i></a>
+                                        </div>
+                                    </article>
+                                    <article class="blog-local-item">
+                                        <div class="blog-local-top">
+                                            <h3 class="blog-local-title">L'IA comme levier de transformation professionnelle</h3>
+                                            <span class="blog-local-date">10 mai 2025</span>
+                                        </div>
+                                        <p class="blog-local-summary">
+                                            Une lecture de l'avenir du travail et de la façon dont la maîtrise des outils intelligents
+                                            peut rendre les talents plus difficiles à remplacer.
+                                        </p>
+                                        <div class="blog-local-meta">
+                                            <span class="blog-local-tag">Avenir du travail</span>
+                                            <a class="blog-local-link" href="blog/ai-career-transformation.html">Lire l'original <i class="icon icon-arrow-right-top"></i></a>
+                                        </div>
+                                    </article>
+                                    <article class="blog-local-item">
+                                        <div class="blog-local-top">
+                                            <h3 class="blog-local-title">Prix de gestion de quartier</h3>
+                                            <span class="blog-local-date">23 juillet 2021</span>
+                                        </div>
+                                        <p class="blog-local-summary">
+                                            Une reconnaissance pour un travail de gestion de terrain et d'engagement social à Pardis New Town.
+                                        </p>
+                                        <div class="blog-local-meta">
+                                            <span class="blog-local-tag">Engagement local</span>
+                                            <a class="blog-local-link" href="blog/neighborhood-management-award.html">Lire l'original <i class="icon icon-arrow-right-top"></i></a>
+                                        </div>
+                                    </article>
+                                    <article class="blog-local-item">
+                                        <div class="blog-local-top">
+                                            <h3 class="blog-local-title">De l'idée au marché à l'Université de Téhéran</h3>
+                                            <span class="blog-local-date">8 mars 2017</span>
+                                        </div>
+                                        <p class="blog-local-summary">
+                                            Retour sur le festival d'innovation du campus Farabi et sur Digi Carwash parmi les concepts
+                                            entrepreneuriaux retenus.
+                                        </p>
+                                        <div class="blog-local-meta">
+                                            <span class="blog-local-tag">Entrepreneuriat</span>
+                                            <a class="blog-local-link" href="blog/farabi-innovation-festival.html">Lire l'original <i class="icon icon-arrow-right-top"></i></a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <a href="blog/" class="tf-btn-action" style="margin-top:24px;">
+                                    <span class="text text-body-3 letter-space--05 fw-medium">Ouvrir l'archive complète du blog</span>
+                                    <span class="ic-wrap"><i class="icon icon-arrow-right-top"></i></span>
+                                </a>
+                            </div>
+                            <!-- /Blog -->
+
+                            <!-- Testimonial -->
+                            <div id="testimonial" class="section-testimonial flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-tes"></i>
+                                    Témoignages
+                                </div>
+                                <div class="heading overflow-hidden">
+                                    <div class="head-left">
+                                        <h2 class="s-title letter-space--2 text-black-72 split-text effect-blur-fade">
+                                            Ce que disent <br class="d-none d-lg-block">
+                                            mes clients
+                                        </h2>
+                                        <div class="box-counter effectFade fadeUp no-div">
+                                            <div class="wg-counter">
+                                                <p class="counter h1 d-flex font-2 letter-space--2 text-black-72">
+                                                    <span class="number" data-speed="1000" data-to="100">0</span>
+                                                    +
+                                                </p>
+                                                <p class="text text-black-56">
+                                                    Projets livrés
+                                                </p>
+                                            </div>
+                                            <div class="wg-counter">
+                                                <p class="counter h1 d-flex font-2 letter-space--2 text-black-72">
+                                                    <span class="number" data-speed="1000" data-to="98">0</span>
+                                                    %
+                                                </p>
+                                                <p class="text text-black-56">
+                                                    Satisfaction client
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div dir="ltr" class="swiper sw-main-image effectFade fadeRight no-div">
+                                        <div class="swiper-wrapper">
+                                            <!-- item 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="head-image">
+                                                    <div class="wrap-image">
+                                                        <picture><source srcset="assets/images/section/tes-1.avif" type="image/avif"><img loading="lazy" width="236" height="297" src="assets/images/section/tes-1.webp"
+                                                            alt=""></picture>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- item 2 -->
+                                            <div class="swiper-slide">
+                                                <div class="head-image">
+                                                    <div class="wrap-image">
+                                                        <picture><source srcset="assets/images/section/tes-2.avif" type="image/avif"><img loading="lazy" width="236" height="297" src="assets/images/section/tes-2.webp"
+                                                            alt=""></picture>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- item 3 -->
+                                            <div class="swiper-slide">
+                                                <div class="head-image">
+                                                    <div class="wrap-image">
+                                                        <picture><source srcset="assets/images/section/tes-3.avif" type="image/avif"><img loading="lazy" width="236" height="297" src="assets/images/section/tes-3.webp"
+                                                            alt=""></picture>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-testimonial_wrap effectFade fadeUp no-div">
+                                    <div dir="ltr" class="swiper tf-swiper swiper-testimonial">
+                                        <div class="swiper-wrapper">
+                                            <!-- item 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="testimonial-v01">
+                                                    <div class="tes-icon">
+                                                        <i class="icon icon-quote"></i>
+                                                    </div>
+                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                        Notre plateforme de virtualisation a été entièrement
+                                                        repensée — stable, documentée et
+                                                        maintenable
+                                                        par notre propre équipe.
+                                                    </h5>
+                                                    <div class="tes-author">
+                                                        <p class="author_name fw-medium text-black-72">Responsable informatique</p>
+                                                        <p class="text-body-3 text-black-56">Secteur bancaire
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- item 2 -->
+                                            <div class="swiper-slide">
+                                                <div class="testimonial-v01">
+                                                    <div class="tes-icon">
+                                                        <i class="icon icon-quote"></i>
+                                                    </div>
+                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                        Quand le rançongiciel a frappé, le plan de reprise qu'il avait
+                                                        conçu a fonctionné exactement comme prévu — nous étions
+                                                        de nouveau en ligne sans aucune perte de données.
+                                                    </h5>
+                                                    <div class="tes-author">
+                                                        <p class="author_name fw-medium text-black-72">Responsable infrastructure</p>
+                                                        <p class="text-body-3 text-black-56">Client grand compte
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- item 3 -->
+                                            <div class="swiper-slide">
+                                                <div class="testimonial-v01">
+                                                    <div class="tes-icon">
+                                                        <i class="icon icon-quote"></i>
+                                                    </div>
+                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                        Son évaluation de sécurité a trouvé ce que deux audits
+                                                        précédents avaient manqué — et la feuille de route de
+                                                        durcissement était pratique, pas théorique.
+                                                    </h5>
+                                                    <div class="tes-author">
+                                                        <p class="author_name fw-medium text-black-72">RSSI
+                                                        </p>
+                                                        <p class="text-body-3 text-black-56">Services financiers
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="number-pagination"></div>
+                                    <div class="group-btn">
+                                        <div class="sw-nav sw-nav-prev link">
+                                            <i class="icon icon-arrow-caret-left"></i>
+                                        </div>
+                                        <div class="sw-nav sw-nav-next link">
+                                            <i class="icon icon-arrow-caret-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Testimonial -->
+
+                            <!-- Demo Request -->
+                            <div id="demo" class="section-demo flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-send"></i>
+                                    Demander une démo
+                                </div>
+                                <h2 class="s-title letter-space--2 split-text effect-blur-fade">
+                                    Parlez directement au Dr Kohandezh, ou <br class="d-none d-lg-block">
+                                    à son avatar IA et jumeau numérique
+                                </h2>
+                                <div class="demo-mode-toggle" role="tablist" aria-label="Type de démonstration">
+                                    <button type="button" class="demo-mode-btn is-active" data-mode="human" role="tab" aria-selected="true">
+                                        <i class="icon icon-user-circle" aria-hidden="true"></i>
+                                        <span>Parler au Dr Kohandezh</span>
+                                    </button>
+                                    <button type="button" class="demo-mode-btn" data-mode="avatar" role="tab" aria-selected="false">
+                                        <i class="icon icon-tech-stack" aria-hidden="true"></i>
+                                        <span>Parler à l'avatar IA</span>
+                                    </button>
+                                </div>
+                                <p class="demo-mode-note" data-mode-note="human">Une conversation en direct avec Mohammad Ali Kohandezh — pour des échanges stratégiques, exécutifs ou techniques.</p>
+                                <p class="demo-mode-note" data-mode-note="avatar" hidden>Une conversation guidée avec l'avatar IA et le jumeau numérique du Dr Kohandezh, formé sur son expertise et disponible à tout moment. Laissez vos coordonnées et nous vous enverrons le lien de la session.</p>
+                                <form class="form-contact form-demo" id="demoform" action="https://api.web3forms.com/submit" method="POST">
+                                    <input type="hidden" name="access_key" value="3439c263-4bdb-40aa-b4a7-8718425c528e">
+                                    <input type="hidden" name="subject" value="New demo request from kohandezh.com">
+                                    <input type="hidden" name="from_name" value="Kohandezh.com — Demo Request">
+                                    <input type="hidden" name="contact_mode" id="demo-mode-field" value="Parler au Dr Kohandezh">
+                                    <input type="checkbox" name="botcheck" class="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
+                                    <div class="form-content effectFade fadeUp no-div">
+                                        <fieldset class="field-ip">
+                                            <input type="text" name="name" id="demo-name" placeholder="Votre nom *" required>
+                                        </fieldset>
+                                        <fieldset class="field-ip">
+                                            <input type="email" name="email" id="demo-email" placeholder="Adresse e-mail *" required>
+                                        </fieldset>
+                                        <fieldset class="field-ip">
+                                            <input type="tel" name="phone" id="demo-phone" placeholder="Téléphone / WhatsApp *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}">
+                                        </fieldset>
+                                        <fieldset class="field-ip">
+                                            <input type="text" name="company" id="demo-company" placeholder="Entreprise / Organisation">
+                                        </fieldset>
+                                        <fieldset class="field-ip">
+                                            <select name="field_of_interest" id="demo-field" required>
+                                                <option value="" disabled selected>De quoi avez-vous besoin ? *</option>
+                                                <option value="AI Consulting">Conseil en IA</option>
+                                                <option value="AI Services &amp; Implementation">Services et mise en œuvre de l'IA</option>
+                                                <option value="IT Infrastructure">Infrastructure informatique</option>
+                                                <option value="Cybersecurity">Cybersécurité</option>
+                                                <option value="Backup &amp; Disaster Recovery">Sauvegarde et reprise après sinistre</option>
+                                                <option value="Other">Autre</option>
+                                            </select>
+                                        </fieldset>
+                                        <fieldset class="field-ip">
+                                            <textarea name="message" id="demo-message" placeholder="En bref, de quoi souhaitez-vous parler ?"></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="form-action effectFade fadeUp no-div">
+                                        <div class="send-wrap">
+                                            <button type="submit" class="tf-btn animate-btn animate-dark">
+                                                <span class="text-body-3" data-mode-cta="human">Demander un appel</span>
+                                                <span class="text-body-3" data-mode-cta="avatar" hidden>Parler à l'avatar IA</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /Demo Request -->
+
+                            <!-- Contact -->
+                            <div id="contact" class="section-contact flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-send"></i>
+                                    Contact
+                                </div>
+                                <h2 class="s-title letter-space--2 split-text effect-blur-fade">
+                                    Pour toute question générale ou de <br class="d-none d-lg-block">
+                                    projet, envoyez-moi un e-mail <br class="d-none d-lg-block">
+                                    ou remplissez le formulaire - disponible maintenant
+                                </h2>
+                                <form class="form-contact" id="contactform" action="https://api.web3forms.com/submit" method="POST"
+                                   >
+                                    <!-- Web3Forms: active access key (delivers to the Gmail used to create it) -->
+                                    <input type="hidden" name="access_key" value="3439c263-4bdb-40aa-b4a7-8718425c528e">
+                                    <input type="hidden" name="subject" value="New contact from kohandezh.com">
+                                    <input type="hidden" name="from_name" value="Kohandezh.com">
+                                    <input type="checkbox" name="botcheck" class="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
+                                    <div class="form-content effectFade fadeUp no-div">
+                                        <fieldset class="field-ip">
+                                            <input type="text" name="name" id="name" placeholder="Votre nom *" required>
+                                        </fieldset>
+                                        <fieldset class="field-ip">
+                                            <input type="email" name="email" id="email" placeholder="Adresse e-mail *" required>
+                                        </fieldset>
+                                        <fieldset class="field-ip">
+                                            <input type="tel" name="phone" id="phone" placeholder="Numéro de téléphone *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}">
+                                        </fieldset>
+                                        <fieldset class="field-ip">
+                                            <textarea name="message" id="message" required placeholder="Description du projet *"></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <p class="kdcv-form-note">Tous les champs marqués d’un * sont obligatoires.</p>
+                                    <div class="form-action effectFade fadeUp no-div">
+                                        <div class="send-wrap">
+                                            <button type="submit" class="tf-btn animate-btn animate-dark">
+                                                <span class="text-body-3">
+                                                    Envoyer le message
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a href="mailto:Kohandezh@hotmail.com" class="text-body-1 link letter-space--2 text-black-72">
+                                            Kohandezh@hotmail.com
+                                        </a>
+                                    </div>
+                                </form>
+                                <div class="contact-schedule">
+                                    <h3 class="h5">Vous préférez réserver un créneau directement ?</h3>
+                                    <p>Choisissez un créneau ci-dessous et vous recevrez automatiquement un lien Google Meet une fois confirmé.</p>
+                                    <!-- GOOGLE_CALENDAR_BOOKING_URL: paste the Google Calendar "Appointment schedule" booking page link (from the kohansystemfarda.com Google account) into data-booking-url below to go live. -->
+                                    <div class="schedule-embed" data-booking-url="">
+                                        <iframe title="Réserver un entretien avec Mohammad Ali Kohandezh" loading="lazy"></iframe>
+                                        <div class="schedule-fallback">
+                                            <p>La réservation en ligne est en cours de mise en place. En attendant, envoyez un e-mail directement et un lien Google Meet vous sera transmis.</p>
+                                            <a href="mailto:Kohandezh@hotmail.com" class="tf-btn-action"><span class="text text-body-3 fw-medium">Envoyer un e-mail pour planifier</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Contact -->
+
+                            <!-- Footer -->
+                            <footer id="footer" class="tf-footer flat-spacing">
+                                <div class="block-quote effectFade fadeUp no-div">
+                                    <p class="h5 quote-text font-3 fw-normal text-black-72">
+                                        <span class="text-black-56">“</span>
+                                        Le design n'est pas seulement l'apparence et la sensation. Le design, c'est le fonctionnement.
+                                        <span class="text-black-56">”</span>
+                                    </p>
+                                    <p class="quote-author font-3 text-black-56 h6 text-end ">
+                                        Steve Jobs
+                                    </p>
+                                </div>
+                                <div class="br-line"></div>
+                                <div class="foot-inner">
+                                    <div class="kohandezh effectFade fadeUp no-div" aria-hidden="true"></div>
+                                    <a href="#home" class="f-logo effectFade fadeZoom">
+                                        <div class="logo">
+                                            <img loading="lazy" width="42" height="28"
+                                                src="assets/images/logo/footer-logo.webp" alt="Mohammad Ali Kohandezh">
+                                        </div>
+                                    </a>
+                                </div>
+                                <nav class="foot-nav effectFade fadeUp no-div" aria-label="Pages du site">
+                                    <a href="blog/">Blog</a>
+                                    <a href="portfolio/?lang=fr">Portfolio</a>
+                                    <a href="Certificates.html?lang=fr">Certificats</a>
+                                    <a href="PSN.html">Salle des trophées PSN</a>
+              <a href="privacy.html">Confidentialité</a>
+              <a href="terms.html">Conditions d’utilisation</a>
+                                </nav>
+                                <div class="foot-bottom">
+                                    <p class="text-nocopy text-black-56 effectFade fadeUp no-div">
+                                        Tous droits réservés <br>
+                                        © 2026 Mohammad Ali Kohandezh
+                                    </p>
+                                    
+                                </div>
+                            </footer>
+                            <!-- /Footer -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <noscript>
+        <style>
+            .section-testimonial { display: none !important; }
+            .linkedin-noscript { max-width: 900px; margin: 48px auto; padding: 28px; border: 1px solid rgba(0, 0, 0, .14); border-radius: 18px; background: rgba(255, 255, 255, .78); color: #101817; }
+            .linkedin-noscript h2, .linkedin-noscript h3 { margin-top: 0; }
+            .linkedin-noscript ul { padding-left: 20px; }
+            .linkedin-noscript li + li { margin-top: 10px; }
+            .linkedin-noscript a { color: #195f50; font-weight: 700; }
+        </style>
+        <section class="linkedin-noscript" aria-labelledby="linkedin-noscript-title">
+            <h2 id="linkedin-noscript-title">Recommandations et activité LinkedIn</h2>
+            <p>Noms et dates des recommandations originales, avec les liens vers l’activité publique LinkedIn.</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/nextnoble/" target="_blank" rel="noopener noreferrer">Mohammad Abdellahi</a> · <time datetime="2023-11-25">25 nov. 2023</time></li>
+                <li><a href="https://www.linkedin.com/in/shahram-dehghani/" target="_blank" rel="noopener noreferrer">Shahram Dehghani</a> · <time datetime="2023-04-05">5 avr. 2023</time></li>
+                <li><a href="https://www.linkedin.com/in/ihadijafari/" target="_blank" rel="noopener noreferrer">Hadi Jafari</a> · <time datetime="2023-01-17">17 janv. 2023</time></li>
+                <li><a href="https://www.linkedin.com/in/shahramgolzar/" target="_blank" rel="noopener noreferrer">Shahram Golzar</a> · <time datetime="2023-01-16">16 janv. 2023</time></li>
+            </ul>
+            <h3>Activité LinkedIn récente</h3>
+            <ul><li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7388299488152424448/" target="_blank" rel="noopener noreferrer">GITEX 2025</a> · <time datetime="2025-10-26">26 oct. 2025</time></li><li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7382455627651919872/" target="_blank" rel="noopener noreferrer">Expand North Star</a> · <time datetime="2025-10-10">10 oct. 2025</time></li></ul>
+        </section>
+    </noscript>
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery.shim.min.js?v=95" defer></script>
+    <script src="assets/js/bs-lite.min.js?v=63" defer></script>
+    <script src="assets/js/linkedin-content.min.js?v=108" defer></script>
+  <script src="assets/js/resume-timeline.min.js?v=102" defer></script>
+  <script src="assets/js/kdcv-resume-entry-fix.js?v=1" defer></script>
+    <script src="assets/js/home-blog-feed.min.js?v=96" defer></script>
+    <script src="assets/js/accessibility-enhancements.min.js?v=99" defer></script>
+    <script src="assets/js/work-image-localization.min.js?v=97" defer></script>
+    <!-- <script src="assets/js/odometer.min.js" defer></script> -->    <script src="assets/js/page-context.min.js?v=96" defer></script>
+  <script src="assets/js/lazy-bundle.min.js?v=98" defer></script>
+    <script src="assets/js/gsap-bundle.min.js?v=60" defer></script>
+    <script src="assets/js/gsapAnimation.min.js?v=102" defer></script>
+
+    <script src="assets/js/countto.min.js?v=96" defer></script>
+    <script src="assets/js/animation-change-text.min.js" defer></script>
+    <script src="assets/js/demo-and-schedule.min.js" defer></script>
+
+    <script src="assets/js/clock.min.js?v=95" defer></script>
+  <script src="assets/js/main.min.js?v=106" defer></script>
+    <script src="assets/js/limelight-nav.min.js?v=98" defer></script>
+    <script src="assets/js/pixel-canvas.min.js?v=97" defer></script>
+    <script src="assets/js/glowing-effect.min.js?v=97" defer></script>
+    <script src="assets/js/cwv-rum.min.js" defer></script>
+    <script src="assets/js/kohan-avatar.min.js?v=115" defer></script>
+  <script src="assets/js/kohan-avatar-enhance.min.js?v=100" defer></script>
+  <script src="assets/js/kdcv-interaction-fix.js?v=5" defer></script>
+  <script src="assets/js/wisdom-quotes.min.js?v=100" defer></script>
+<script>
+(function(){
+  function msg(lang){
+    var m = {
+      en: "Right-click is disabled",
+      fa: "راست‌کلیک نداریم",
+      ar: "لا يوجد زر يمين",
+      de: "Rechtsklick deaktiviert",
+      es: "Clic derecho desactivado",
+      fr: "Clic droit désactivé",
+      tr: "Sağ tık devre dışı",
+      zh: "右键已禁用",
+      ja: "右クリックは無効です"
+    };
+    return m[lang] || m.en;
+  }
+  function toast(text){
+    var old = document.getElementById('kdcv-nocontext-toast');
+    if (old) old.remove();
+    var el = document.createElement('div');
+    el.id = 'kdcv-nocontext-toast';
+    el.textContent = text;
+    el.style.cssText = 'position:fixed;left:50%;bottom:32px;transform:translateX(-50%) translateY(20px);background:rgba(11,18,18,.92);color:#6cf3a4;padding:12px 22px;border-radius:12px;font:600 13px/1.4 -apple-system,system-ui,sans-serif;letter-spacing:.02em;z-index:2147483647;box-shadow:0 8px 24px rgba(0,0,0,.4);opacity:0;transition:opacity 180ms ease,transform 220ms cubic-bezier(.2,.8,.2,1);pointer-events:none;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(108,243,164,.25)';
+    document.body.appendChild(el);
+    requestAnimationFrame(function(){
+      el.style.opacity = '1';
+      el.style.transform = 'translateX(-50%) translateY(0)';
+    });
+    setTimeout(function(){
+      el.style.opacity = '0';
+      el.style.transform = 'translateX(-50%) translateY(20px)';
+      setTimeout(function(){ el.remove(); }, 220);
+    }, 2200);
+  }
+  function speak(text, lang){
+    if (!('speechSynthesis' in window) || typeof window.SpeechSynthesisUtterance !== 'function') return;
+    try {
+      window.speechSynthesis.cancel();
+      var u = new window.SpeechSynthesisUtterance(text);
+      var langMap = {en:'en-US',fa:'fa-IR',ar:'ar-SA',de:'de-DE',es:'es-ES',fr:'fr-FR',tr:'tr-TR',zh:'zh-CN',ja:'ja-JP'};
+      u.lang = langMap[lang] || 'en-US';
+      u.rate = 0.95;
+      u.pitch = 0.85;
+      var voices = window.speechSynthesis.getVoices() || [];
+      var v = voices.find(function(vx){ return String(vx.lang||'').toLowerCase().split('-')[0] === lang; });
+      if (v) u.voice = v;
+      window.speechSynthesis.speak(u);
+    } catch(e){}
+  }
+  function triggerWeapon(){
+    if (!window.KohanAvatar || !window.KohanAvatar.play) return;
+    try {
+      // Temporarily enable weapon moods so the avatar draws steel
+      if (window.KohanAvatar.setOptions) {
+        window.KohanAvatar.setOptions({ enableWeaponMoods: true });
+      }
+      // 65% chance russian-roulette (the dramatic camera-facing draw),
+      // 35% chance guarded (low-ready hold). Both are fictional/non-graphic.
+      var mood = Math.random() < 0.65 ? 'russian-roulette' : 'guarded';
+      window.KohanAvatar.play(mood, { duration: 3200, returnTo: 'idle' });
+      // Disable weapon moods again for normal operation
+      setTimeout(function(){
+        if (window.KohanAvatar && window.KohanAvatar.setOptions) {
+          window.KohanAvatar.setOptions({ enableWeaponMoods: false });
+        }
+      }, 3500);
+    } catch(e){}
+  }
+  document.addEventListener('contextmenu', function(e){
+    e.preventDefault();
+    var lang = (document.documentElement.lang || 'en').slice(0,2).toLowerCase();
+    var text = msg(lang);
+    toast(text);
+    speak(text, lang);
+    triggerWeapon();
+    return false;
+  }, true);
+})();
+</script>
+  <script src="/assets/js/pwa-register.min.js?v=95" defer></script>
+  <script src="assets/js/chat-ui.min.js?v=96" defer></script>
+    <script src="assets/js/glare-card.min.js?v=92" defer></script>
+    <script src="assets/js/hud-button.min.js?v=91" defer></script>
+    <script src="assets/js/pearl-button.min.js?v=86" defer></script>
+    <script src="assets/js/timeline-date-fix.min.js?v=82" defer></script>
+    <script src="assets/js/contact-forms.min.js?v=67" defer></script>
+</body>
+
+</html>

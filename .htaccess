@@ -1,0 +1,99 @@
+# kohandezh.com — static multilingual portfolio
+# Served by LiteSpeed (Apache-compatible)
+
+DirectoryIndex index.html
+Options -Indexes
+AddDefaultCharset utf-8
+
+# ---------- Block sensitive/dot files from ever being served ----------
+<FilesMatch "(^\.|\.(bak|sql|log|zip|env|md)$)">
+  Require all denied
+</FilesMatch>
+
+# Keep the missing URL's real HTTP 404 status while rendering a random game.
+ErrorDocument 404 /404.html
+
+# ---------- 301 redirects: old WordPress permalinks -> static blog pages ----------
+RedirectMatch 301 ^/2025/05/11/ https://kohandezh.com/blog/generative-ai-tools.html
+RedirectMatch 301 ^/2025/05/10/ https://kohandezh.com/blog/ai-career-transformation.html
+RedirectMatch 301 ^/2021/07/23/ https://kohandezh.com/blog/neighborhood-management-award.html
+RedirectMatch 301 ^/2017/03/08/ https://kohandezh.com/blog/farabi-innovation-festival.html
+# Any other old dated WordPress permalink -> blog index
+RedirectMatch 301 ^/20[0-9]{2}/[0-9]{2}/[0-9]{2}/ https://kohandezh.com/blog/
+
+# ---------- Security headers ----------
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(self), geolocation=(), payment=(), interest-cohort=()"
+  # Enable HSTS only while the whole site is HTTPS (it already is).
+  # `preload` is deliberately NOT set: it is only meaningful once the domain is
+  # submitted to hstspreload.org, and removal from that list takes months.
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+  # Isolate the browsing context (blocks cross-origin window handles) and stop
+  # other sites hot-linking our assets into their pages.
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set Cross-Origin-Resource-Policy "same-origin"
+  Header always set X-Permitted-Cross-Domain-Policies "none"
+  Header always set X-DNS-Prefetch-Control "off"
+
+  # ---- Content-Security-Policy: ENFORCING ----
+  # Promoted from Report-Only after auditing what the pages actually load:
+  #   * every script, stylesheet, font, image and media file is same-origin —
+  #     there is not one external <script>, <link> or <img> in any page;
+  #   * no eval / new Function / new Worker / new Blob / createObjectURL
+  #     anywhere in assets/js, so 'unsafe-eval', blob: and a wider worker-src
+  #     are all unnecessary;
+  #   * the only cross-origin subresources are two iframe embeds (Aparat video,
+  #     Google Calendar booking) and one form endpoint.
+  # 'unsafe-inline' stays required: the pages carry inline <style>/<script>
+  # blocks (theme boot, KDCV config) and element style attributes.
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://fontiran.com; font-src 'self' data:; media-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; frame-src https://calendar.google.com https://www.aparat.com https://aparat.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+</IfModule>
+
+# ---------- Browser caching ----------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 30 days"
+  ExpiresByType application/javascript "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresByType video/mp4 "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType application/pdf "access plus 7 days"
+</IfModule>
+
+# ---------- Service worker / manifest must never be long-cached ----------
+# sw.js is matched by the 30-day application/javascript rule above, which would
+# pin an outdated worker for a month and keep serving stale cached pages.
+# The browser re-checks the worker on every navigation, so it must stay fresh.
+<FilesMatch "^(sw\.js|manifest\.json)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+    Header unset Expires
+  </IfModule>
+</FilesMatch>
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+</IfModule>
+
+# ---------- Compression ----------
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/plain text/xml
+  AddOutputFilterByType BROTLI_COMPRESS application/javascript application/json
+  AddOutputFilterByType BROTLI_COMPRESS image/svg+xml
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>

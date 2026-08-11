@@ -1,0 +1,59 @@
+# Local WordPress test stack for the kohandezhcv theme.
+# WP: http://localhost:8888  |  Admin: http://localhost:8888/wp-admin
+# Theme is bind-mounted from ../wp-theme/kohandezhcv so edits are live.
+services:
+  db:
+    image: mariadb:10.11
+    container_name: kohandezh_db
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpass
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wp
+      MARIADB_PASSWORD: wppass
+    volumes:
+      - kohandezh_db_data:/var/lib/mysql
+    restart: unless-stopped
+
+  wordpress:
+    image: wordpress:latest
+    container_name: kohandezh_wp
+    depends_on:
+      - db
+    ports:
+      - "8888:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wp
+      WORDPRESS_DB_PASSWORD: wppass
+      WORDPRESS_DEBUG: 1
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_DEBUG_LOG', true);
+        define('WP_DEBUG_DISPLAY', false);
+        define('FS_METHOD', 'direct');
+    volumes:
+      - kohandezh_wp_data:/var/www/html
+      - ../wp-theme/kohandezhcv:/var/www/html/wp-content/themes/kohandezhcv:rw
+    restart: unless-stopped
+
+  # wp-cli sidecar — run one-off commands via: docker compose run --rm cli <cmd>
+  cli:
+    image: wordpress:cli
+    container_name: kohandezh_cli
+    depends_on:
+      - wordpress
+    volumes:
+      - kohandezh_wp_data:/var/www/html
+      - ../wp-theme/kohandezhcv:/var/www/html/wp-content/themes/kohandezhcv:rw
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wp
+      WORDPRESS_DB_PASSWORD: wppass
+    entrypoint: ["wp"]
+    command: ["--info"]
+    profiles: ["cli"]
+
+volumes:
+  kohandezh_db_data:
+  kohandezh_wp_data:

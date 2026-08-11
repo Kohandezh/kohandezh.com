@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "avatarId": "kohan",
+  "displayName": "Kohan",
+  "singleAvatar": true,
+  "requestedActive": true,
+  "activationMechanism": "The installed Codex runtime patch selects Kohan when no other avatar is selected and wakes the overlay once per app session.",
+  "avatarRuntimeContract": {
+    "spriteVersionNumber": 2,
+    "nativeStates": [
+      "idle",
+      "running-right",
+      "running-left",
+      "waving",
+      "jumping",
+      "failed",
+      "waiting",
+      "running",
+      "review"
+    ],
+    "lookDirectionCount": 16,
+    "customMoodRegistration": "supported-by-installed-kohan-runtime-controller",
+    "stateSelection": "Host lifecycle states plus random click and idle controller",
+    "hoverBehavior": "none; pointer enter never forces jumping"
+  },
+  "idleController": {
+    "script": "kohan-idle-controller.js",
+    "enabled": true,
+    "intervalRangeMs": [
+      30000,
+      75000
+    ],
+    "smallActionPool": [
+      "wink",
+      "waving",
+      "macbook-work",
+      "ipad-review",
+      "confused-vision",
+      "walking-patrol"
+    ],
+    "russianRouletteEveryIdleIntervals": 3,
+    "fireProbability": 0.5,
+    "outcomes": [
+      "fire",
+      "dry-click"
+    ],
+    "afterOutcome": "fire -> fall-scared -> confused-vision -> idle; dry-click -> idle"
+  },
+  "interactionController": {
+    "hoverAction": "none",
+    "hoverLookOnly": true,
+    "clickEvent": "kohan:avatar:click",
+    "clickActionSelection": "random",
+    "clickActionPool": [
+      "wink",
+      "waving",
+      "jumping",
+      "angry-still",
+      "confused-vision",
+      "macbook-work",
+      "ipad-review",
+      "guarded",
+      "russian-roulette",
+      "walking-patrol"
+    ],
+    "dragDoesNotCountAsClick": true,
+    "returnAfterAction": "idle"
+  },
+  "nativeMoodMap": [
+    {
+      "mood": "calm",
+      "label": "Calm / Idle",
+      "runtimeState": "idle",
+      "characteristic": "Quiet breathing and blinking while resting."
+    },
+    {
+      "mood": "moving-right",
+      "label": "Run Right",
+      "runtimeState": "running-right",
+      "characteristic": "Travels or is dragged toward screen-right."
+    },
+    {
+      "mood": "moving-left",
+      "label": "Run Left",
+      "runtimeState": "running-left",
+      "characteristic": "Travels or is dragged toward screen-left."
+    },
+    {
+      "mood": "friendly",
+      "label": "Wave / Hello",
+      "runtimeState": "waving",
+      "characteristic": "Greets the user and supplies the native fallback for wink and goodbye."
+    },
+    {
+      "mood": "excited",
+      "label": "Jump",
+      "runtimeState": "jumping",
+      "characteristic": "Playful jump or positive hover reaction."
+    },
+    {
+      "mood": "annoyed",
+      "label": "Angry / Annoyed",
+      "runtimeState": "failed",
+      "characteristic": "Angry or blocked reaction; also the native fallback after an unpleasant drag or fall."
+    },
+    {
+      "mood": "confused",
+      "label": "Confused / Needs Input",
+      "runtimeState": "waiting",
+      "characteristic": "Uses the spatial-computing headset while waiting for approval, help, or clarification."
+    },
+    {
+      "mood": "focused",
+      "label": "MacBook Work",
+      "runtimeState": "running",
+      "characteristic": "Focused task work using the Apple-logo laptop."
+    },
+    {
+      "mood": "reviewing",
+      "label": "iPad Review",
+      "runtimeState": "review",
+      "characteristic": "Reviews completed work on the Apple-logo tablet."
+    },
+    {
+      "mood": "looking",
+      "label": "Directional Attention",
+      "runtimeState": "look",
+      "characteristic": "Sixteen clockwise gaze directions driven by the pointer."
+    },
+    {
+      "mood": "walking-patrol",
+      "label": "Five Steps Out / Five Steps Back",
+      "runtimeState": "running-right|running-left",
+      "characteristic": "Uses only approved atlas frames, moves five short steps toward screen-right, then five steps back to the exact origin."
+    }
+  ],
+  "supplementalMoodMap": [
+    {
+      "mood": "wink",
+      "label": "Wink",
+      "asset": "../supplemental-artwork/wink.png",
+      "frames": 1,
+      "nativeFallback": "waving",
+      "runtimeActivation": "manual-custom-event"
+    },
+    {
+      "mood": "angry-still",
+      "label": "Angry Still",
+      "asset": "../supplemental-artwork/angry.png",
+      "frames": 1,
+      "nativeFallback": "failed",
+      "runtimeActivation": "manual-custom-event"
+    },
+    {
+      "mood": "confused-vision",
+      "label": "Confused with Vision Headset",
+      "asset": "../supplemental-artwork/confused-vision.png",
+      "frames": 1,
+      "nativeFallback": "waiting",
+      "runtimeActivation": "manual-custom-event"
+    },
+    {
+      "mood": "guarded",
+      "label": "Colt Kodiak Low Ready",
+      "asset": "../supplemental-artwork/colt-kodiak-threat.png",
+      "frames": 4,
+      "nativeFallback": "failed",
+      "runtimeActivation": "manual-custom-event"
+    },
+    {
+      "mood": "chamber-camera",
+      "label": "Chamber and Camera Sequence",
+      "asset": "../supplemental-artwork/chamber-game-camera.png",
+      "frames": 6,
+      "nativeFallback": "failed",
+      "runtimeActivation": "manual-custom-event",
+      "aliasFor": "russian-roulette"
+    },
+    {
+      "mood": "russian-roulette",
+      "label": "Russian Roulette (Fictional Camera Sequence)",
+      "asset": "../supplemental-artwork/chamber-game-camera.png",
+      "frames": 6,
+      "sequence": [
+        "low-ready",
+        "open-cylinder",
+        "spin-cylinder",
+        "aim-at-camera",
+        "dry-click",
+        "muzzle-flash"
+      ],
+      "nativeFallback": "failed",
+      "runtimeActivation": "manual-custom-event",
+      "contentNote": "Fictional, non-graphic camera-facing sequence with no depicted victim or injury."
+    },
+    {
+      "mood": "drag-annoyed",
+      "label": "Dragged and Annoyed",
+      "asset": "../supplemental-artwork/drag-annoyed.png",
+      "frames": 6,
+      "nativeFallback": "running-left|running-right -> failed",
+      "runtimeActivation": "manual-custom-event"
+    },
+    {
+      "mood": "fall-scared",
+      "label": "Falling and Scared",
+      "asset": "../supplemental-artwork/fall-scared.png",
+      "frames": 6,
+      "nativeFallback": "jumping -> failed",
+      "runtimeActivation": "manual-custom-event"
+    },
+    {
+      "mood": "goodbye-smoke",
+      "label": "Wave, Snap, Smoke, Gone",
+      "asset": "../supplemental-artwork/goodbye-snap-smoke.png",
+      "frames": 7,
+      "nativeFallback": "waving",
+      "runtimeActivation": "manual-custom-event"
+    }
+  ]
+}

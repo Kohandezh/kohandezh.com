@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Apfel Grotezk";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    /* WOFF2 first (16.5K -> 11.7K, and it is the format every browser since
+       2016 prefers); the original OTF stays as the fallback so nothing
+       regresses on anything older. Same face, same metrics — this is a
+       container change, not a new font. */
+    src: url("ApfelGrotezk-Regular.woff2") format("woff2"),
+         url("ApfelGrotezk-Regular.otf") format("opentype");
+}

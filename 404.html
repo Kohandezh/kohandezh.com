@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#050706">
+    <title>404 Arcade | Kohandezh</title>
+    <meta name="description" content="The requested page is missing. Play a randomly selected 404 arcade game and return to the Kohandezh portfolio.">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/favicon-32.png?v=2">
+    <link rel="stylesheet" href="assets/fonts/inter/inter.css">
+    <link rel="stylesheet" href="assets/css/404-games.min.css?v=44">
+</head>
+<body class="arcade-page" data-game="random">
+<script>/* Theme boot — runs before paint so a page never flashes the wrong theme on navigation. Mirrors main.js: stored choice wins, then data-default-mode, then light. `light` is the class portfolio.js uses. */(function(){try{var s=localStorage.getItem("darkMode"),d;if(s!==null){d=s==="enabled";}else{d=document.body.getAttribute("data-default-mode")==="dark";}document.body.classList.toggle("dark-mode",d);document.body.classList.toggle("light",!d);document.documentElement.setAttribute("data-kdcv-theme",d?"dark":"light");}catch(e){}})();</script>
+    <a class="arcade-skip-link" href="#arcade-main">Skip to game</a>
+    <div class="arcade-shell">
+        <header class="arcade-topbar">
+            <a class="arcade-brand" href="index.html" aria-label="Return to the Kohandezh portfolio">
+                <img src="assets/images/logo/logo.webp" width="38" height="38" alt="">
+                <span>KOHANDEZH / LOST SIGNAL</span>
+            </a>
+            <a class="arcade-home-link" href="index.html">Return home</a>
+        </header>
+
+        <main id="arcade-main">
+            <section class="arcade-heading" aria-labelledby="arcade-title">
+                <div>
+                    <p class="arcade-kicker">Error protocol · playable response</p>
+                    <h1 class="arcade-title" id="arcade-title"><span>404</span> ARCADE</h1>
+                </div>
+                <p class="arcade-route"><strong>The route left the network.</strong><span data-requested-path></span></p>
+            </section>
+
+            <div class="arcade-layout">
+                <section class="arcade-machine" aria-labelledby="game-title">
+                    <div class="arcade-hud">
+                        <div class="arcade-stat">
+                            <span class="arcade-stat-label">Game</span>
+                            <strong class="arcade-stat-value" id="game-title" data-game-title>Loading…</strong>
+                        </div>
+                        <div class="arcade-stat">
+                            <span class="arcade-stat-label">Score</span>
+                            <strong class="arcade-stat-value" data-score>000000</strong>
+                        </div>
+                        <div class="arcade-stat">
+                            <span class="arcade-stat-label" data-secondary-label>Lives</span>
+                            <strong class="arcade-stat-value" data-secondary>03</strong>
+                        </div>
+                    </div>
+
+                    <div class="arcade-canvas-wrap">
+                        <canvas id="arcade-canvas" width="960" height="540" tabindex="0" aria-label="Interactive 404 arcade game"></canvas>
+
+                        <div class="arcade-start-panel" data-start-panel>
+                            <div class="arcade-panel-inner">
+                                <span class="arcade-panel-index">PLAYER REGISTRATION</span>
+                                <h2 data-start-title>Enter the lost sector</h2>
+                                <p data-start-copy>Your name and high score will be saved to this browser's local leaderboard.</p>
+                                <form class="arcade-name-form" data-name-form>
+                                    <label for="arcade-player-name">Player name</label>
+                                    <input id="arcade-player-name" name="player" type="text" maxlength="24" autocomplete="nickname" placeholder="Your name" required>
+                                    <button class="arcade-primary-button" type="submit">Start</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="arcade-game-over" data-game-over hidden>
+                            <div class="arcade-panel-inner">
+                                <span class="arcade-panel-index">RUN COMPLETE</span>
+                                <h2 data-game-over-title>Signal lost</h2>
+                                <p data-final-score>Score: 0</p>
+                                <button class="arcade-primary-button" type="button" data-restart>Play again</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="arcade-controls">
+                        <p class="arcade-control-hint" data-control-hint>Use arrow keys and Space. Touch controls are available on mobile.</p>
+                        <div class="arcade-touch-controls" role="group" aria-label="Game controls">
+                            <button class="arcade-control-button" type="button" data-control="left" aria-label="Move left">←</button>
+                            <button class="arcade-control-button" type="button" data-control="fire" aria-label="Action">ACTION</button>
+                            <button class="arcade-control-button" type="button" data-control="right" aria-label="Move right">→</button>
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="arcade-scoreboard" aria-labelledby="scoreboard-title">
+                    <p class="arcade-kicker">Local records</p>
+                    <h2 id="scoreboard-title">High scores</h2>
+                    <p class="arcade-scoreboard-note">Stored only on this device. A global leaderboard would require a server-side database.</p>
+                    <ol class="arcade-score-list" data-score-list></ol>
+                    <button class="arcade-text-button" type="button" data-clear-scores>Clear local scores</button>
+                    <nav class="arcade-page-picker" aria-label="Choose a 404 game">
+                        <a href="404.html?game=invaders" data-game-link="invaders">Invaders</a>
+                        <a href="404.html?game=breakout" data-game-link="breakout">Breakout</a>
+                        <a href="404.html?game=pulse" data-game-link="pulse">Neural Pulse</a>
+                        <a href="404.html?game=packet" data-game-link="packet">Packet Escape</a>
+                        <a href="404.html" data-game-link="random">Random</a>
+                    </nav>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="arcade-footer">
+            <span>© 2026 Mohammad Ali Kohandezh</span>
+            <span>404 is still an HTTP error — this one simply fights back.</span>
+        </footer>
+    </div>
+    <p class="visually-hidden" aria-live="polite" data-live-region></p>
+    <script src="assets/js/404-games.min.js?v=47" defer></script>
+<script>
+(function(){
+  function msg(lang){
+    var m = {
+      en: "Right-click is disabled",
+      fa: "راست‌کلیک نداریم",
+      ar: "لا يوجد زر يمين",
+      de: "Rechtsklick deaktiviert",
+      es: "Clic derecho desactivado",
+      fr: "Clic droit désactivé",
+      tr: "Sağ tık devre dışı",
+      zh: "右键已禁用",
+      ja: "右クリックは無効です"
+    };
+    return m[lang] || m.en;
+  }
+  function toast(text){
+    var old = document.getElementById('kdcv-nocontext-toast');
+    if (old) old.remove();
+    var el = document.createElement('div');
+    el.id = 'kdcv-nocontext-toast';
+    el.textContent = text;
+    el.style.cssText = 'position:fixed;left:50%;bottom:32px;transform:translateX(-50%) translateY(20px);background:rgba(11,18,18,.92);color:#6cf3a4;padding:12px 22px;border-radius:12px;font:600 13px/1.4 -apple-system,system-ui,sans-serif;letter-spacing:.02em;z-index:2147483647;box-shadow:0 8px 24px rgba(0,0,0,.4);opacity:0;transition:opacity 180ms ease,transform 220ms cubic-bezier(.2,.8,.2,1);pointer-events:none;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(108,243,164,.25)';
+    document.body.appendChild(el);
+    requestAnimationFrame(function(){
+      el.style.opacity = '1';
+      el.style.transform = 'translateX(-50%) translateY(0)';
+    });
+    setTimeout(function(){
+      el.style.opacity = '0';
+      el.style.transform = 'translateX(-50%) translateY(20px)';
+      setTimeout(function(){ el.remove(); }, 220);
+    }, 2200);
+  }
+  function speak(text, lang){
+    if (!('speechSynthesis' in window) || typeof window.SpeechSynthesisUtterance !== 'function') return;
+    try {
+      window.speechSynthesis.cancel();
+      var u = new window.SpeechSynthesisUtterance(text);
+      var langMap = {en:'en-US',fa:'fa-IR',ar:'ar-SA',de:'de-DE',es:'es-ES',fr:'fr-FR',tr:'tr-TR',zh:'zh-CN',ja:'ja-JP'};
+      u.lang = langMap[lang] || 'en-US';
+      u.rate = 0.95;
+      u.pitch = 0.85;
+      var voices = window.speechSynthesis.getVoices() || [];
+      var v = voices.find(function(vx){ return String(vx.lang||'').toLowerCase().split('-')[0] === lang; });
+      if (v) u.voice = v;
+      window.speechSynthesis.speak(u);
+    } catch(e){}
+  }
+  function triggerWeapon(){
+    if (!window.KohanAvatar || !window.KohanAvatar.play) return;
+    try {
+      // Temporarily enable weapon moods so the avatar draws steel
+      if (window.KohanAvatar.setOptions) {
+        window.KohanAvatar.setOptions({ enableWeaponMoods: true });
+      }
+      // 65% chance russian-roulette (the dramatic camera-facing draw),
+      // 35% chance guarded (low-ready hold). Both are fictional/non-graphic.
+      var mood = Math.random() < 0.65 ? 'russian-roulette' : 'guarded';
+      window.KohanAvatar.play(mood, { duration: 3200, returnTo: 'idle' });
+      // Disable weapon moods again for normal operation
+      setTimeout(function(){
+        if (window.KohanAvatar && window.KohanAvatar.setOptions) {
+          window.KohanAvatar.setOptions({ enableWeaponMoods: false });
+        }
+      }, 3500);
+    } catch(e){}
+  }
+  document.addEventListener('contextmenu', function(e){
+    e.preventDefault();
+    var lang = (document.documentElement.lang || 'en').slice(0,2).toLowerCase();
+    var text = msg(lang);
+    toast(text);
+    speak(text, lang);
+    triggerWeapon();
+    return false;
+  }, true);
+})();
+</script>
+</body>
+</html>

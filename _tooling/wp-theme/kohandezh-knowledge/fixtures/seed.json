@@ -1,0 +1,79 @@
+{
+  "_comment": "Controlled seed fixtures for Kohandezh Knowledge (Layer B). All entries are tagged with _kbk_fixture=1 so KBK_Seed::remove() can purge them cleanly. Glossary definitions are factual/widely-documented (evidence_status=secondary). Knowledge drafts are post_status=draft (NOT published) so no placeholder ships as real content. Editable; removable.",
+  "glossary": [
+    {
+      "slug": "generative-ai",
+      "title": "Generative AI",
+      "summary": "AI systems that produce new content (text, images, audio, code) from learned distributions.",
+      "body": "Generative AI refers to machine-learning systems trained to synthesize novel outputs that reflect patterns in their training data. Prominent examples include large language models, diffusion image models, and code-generation assistants. In the enterprise, generative AI underpins content automation, copilots, and agent workflows.",
+      "language": "en",
+      "evidence_status": "secondary",
+      "topics": ["generative-ai", "artificial-intelligence"],
+      "domains": { "kbk_ai_domain": ["generative-ai"] }
+    },
+    {
+      "slug": "large-language-model",
+      "title": "Large Language Model (LLM)",
+      "summary": "A neural model with billions of parameters trained on large text corpora to predict and generate language.",
+      "body": "A Large Language Model is a transformer-based neural network trained on broad text corpora at scale, used for generation, summarization, retrieval, classification, and agentic tool use. Enterprise adoption depends on governance, evaluation, and retrieval-augmentation controls.",
+      "language": "en",
+      "evidence_status": "secondary",
+      "topics": ["large-language-models", "artificial-intelligence"],
+      "domains": { "kbk_ai_domain": ["large-language-models"] }
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "title": "Retrieval-Augmented Generation (RAG)",
+      "summary": "A pattern that grounds model generation in documents retrieved at query time.",
+      "body": "Retrieval-Augmented Generation combines a retriever (often vector search over an index) with a generator (an LLM) so the model's answer is grounded in fetched source passages, improving factual accuracy and source attribution.",
+      "language": "en",
+      "evidence_status": "secondary",
+      "topics": ["rag", "generative-ai"],
+      "domains": { "kbk_ai_domain": ["rag"] }
+    },
+    {
+      "slug": "quantum-computing",
+      "title": "Quantum Computing",
+      "summary": "Computation that uses quantum-mechanical phenomena (superposition, entanglement) to process information.",
+      "body": "Quantum computing uses qubits, which can exist in superpositions of states, enabling algorithms (e.g., Shor, Grover) that can outperform classical counterparts on specific problems. It remains largely experimental, with hardware from superconducting, trapped-ion, and photonic platforms.",
+      "language": "en",
+      "evidence_status": "secondary",
+      "topics": ["quantum-computing"],
+      "domains": { "kbk_quantum_domain": ["quantum-computing"] }
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "title": "Post-Quantum Cryptography (PQC)",
+      "summary": "Cryptographic algorithms believed secure against large-scale quantum attacks.",
+      "body": "Post-Quantum Cryptography comprises cryptographic schemes (lattice-, code-, hash-, and isogeny-based) designed to resist attacks by large quantum computers. NIST has standardized selected PQC algorithms; migration requires cryptographic agility.",
+      "language": "en",
+      "evidence_status": "secondary",
+      "topics": ["post-quantum-cryptography", "quantum-security"],
+      "domains": { "kbk_quantum_domain": ["post-quantum-cryptography"] }
+    }
+  ],
+  "knowledge_drafts": [
+    {
+      "slug": "enterprise-ai-strategy-overview",
+      "title": "Enterprise AI Strategy — Overview (DRAFT)",
+      "summary": "Placeholder draft for the Enterprise AI Strategy pillar. Not for publication until reviewed and evidenced.",
+      "body": "<!-- DRAFT PLACEHOLDER -- do not publish -->\n<p>This is a controlled seed draft for the Enterprise AI Strategy pillar page. It must be reviewed, expanded with verified evidence, and approved before publication. It is intentionally not published.</p>",
+      "language": "en",
+      "evidence_status": "unverified",
+      "editorial_status": "draft",
+      "topics": ["ai-strategy"],
+      "domains": { "kbk_ai_domain": ["ai-strategy"] }
+    },
+    {
+      "slug": "quantum-readiness-overview",
+      "title": "Quantum Readiness — Overview (DRAFT)",
+      "summary": "Placeholder draft for the Quantum Readiness pillar. Not for publication until reviewed and evidenced.",
+      "body": "<!-- DRAFT PLACEHOLDER -- do not publish -->\n<p>Controlled seed draft for the Quantum Readiness pillar page. Requires review and evidence before publication.</p>",
+      "language": "en",
+      "evidence_status": "unverified",
+      "editorial_status": "draft",
+      "topics": ["quantum-readiness"],
+      "domains": { "kbk_quantum_domain": ["quantum-readiness"] }
+    }
+  ]
+}

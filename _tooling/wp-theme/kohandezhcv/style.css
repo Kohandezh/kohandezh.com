@@ -1,0 +1,18 @@
+/*
+Theme Name: KohandezhCV
+Theme URI: https://kohandezh.com
+Author: Mohammad Ali Kohandezh
+Author URI: https://kohandezh.com
+Description: Multilingual CV/portfolio theme for kohandezh.com — 9 language pages (EN, FA, AR, DE, ES, FR, TR, ZH, JA), a native WordPress blog, Certificates, and a PSN trophy page. Generated CV templates stay synchronized with the canonical static source.
+Version: 1.3.0
+Requires at least: 6.0
+Tested up to: 7.0
+Requires PHP: 7.4
+Text Domain: kohandezhcv
+*/
+
+/*
+All real styles live in assets/css/ (styles.css, blog.css, psn.css) and are
+referenced directly by the self-contained templates. This file exists for the
+theme header above.
+*/

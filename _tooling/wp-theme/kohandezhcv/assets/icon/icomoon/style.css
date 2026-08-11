@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'icomoon';
+  /* WOFF2 first (8.2K -> 3.8K). WOFF and TTF stay as fallbacks. The EOT and
+     SVG entries are gone: EOT is IE-only and SVG fonts were dropped from every
+     engine years ago, so they were 35 KB of files no visitor could ever use —
+     and the leading `src: url(.eot)` line made IE the only browser the
+     declaration spoke to first. */
+  src:  url('fonts/icomoon.woff2?7t5i9j') format('woff2'),
+    url('fonts/icomoon.woff?7t5i9j') format('woff'),
+    url('fonts/icomoon.ttf?7t5i9j') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gear:before {
+  content: "\e913";
+}
+.icon-close:before {
+  content: "\e914";
+}
+.icon-global-elip:before {
+  content: "\e910";
+}
+.icon-stack .path1:before {
+  content: "\e90b";
+  color: rgb(0, 0, 0);
+  opacity: 0.144;
+}
+.icon-stack .path2:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.36;
+}
+.icon-stack .path3:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.576;
+}
+.icon-arrow-right-top:before {
+  content: "\e900";
+}
+.icon-arrow-caret-left:before {
+  content: "\e901";
+}
+.icon-arrow-caret-right:before {
+  content: "\e902";
+}
+.icon-quote:before {
+  content: "\e903";
+}
+.icon-user-circle:before {
+  content: "\e904";
+}
+.icon-edu:before {
+  content: "\e905";
+}
+.icon-arrow-top:before {
+  content: "\e906";
+}
+.icon-send:before {
+  content: "\e907";
+}
+.icon-tes:before {
+  content: "\e908";
+}
+.icon-tech-stack:before {
+  content: "\e909";
+}
+.icon-service:before {
+  content: "\e90a";
+}
+.icon-high-light:before {
+  content: "\e90d";
+}
+.icon-home:before {
+  content: "\e90e";
+}
+.icon-light:before {
+  content: "\e90f";
+}
+.icon-download:before {
+  content: "\e911";
+}
+.icon-linkin:before {
+  content: "\e915";
+}
+.icon-x:before {
+  content: "\e916";
+}

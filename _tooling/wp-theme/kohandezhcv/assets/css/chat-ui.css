@@ -1,0 +1,864 @@
+/*!
+ * chat-ui.css — chat panel restyle.
+ *
+ * Ports the requested React/Tailwind chat design to this site's vanilla stack.
+ * The panel DOM is built by ai-pet.min.js (minified, no source), so this styles
+ * the classes it already emits rather than replacing the markup:
+ *   .kdcv-pet-panel > .kdcv-pet-panel-header / .kdcv-pet-log / .kdcv-pet-chips
+ *                     / .kdcv-pet-form / .kdcv-pet-footer
+ *
+ * The reference design's indigo/violet is replaced with the site's lime — the
+ * only colour change requested. Persian text uses IRANSansX, which the panel
+ * already inherits; the sizing/leading below is tuned for it because Persian
+ * needs more line-height than Latin at the same size to stay readable.
+ */
+
+.kdcv-pet-panel {
+    --chat-accent: #a8ff46;
+    --chat-accent-2: #6eea7b;
+    --chat-ink: #0b120c;
+    --chat-surface: #0d1510;
+    --chat-line: rgba(168, 255, 70, .16);
+    --chat-text: #eef7ea;
+    --chat-muted: rgba(232, 247, 232, .58);
+    font-family: "IRANSansX", "Estedad", "Inter", system-ui, sans-serif;
+}
+
+/* ---- header ------------------------------------------------------------ */
+.kdcv-pet-panel-header {
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--chat-line) !important;
+    background: rgba(168, 255, 70, .04) !important;
+}
+/* Assistant avatar. The reference uses an abstract gradient blob; here the
+   assistant speaks AS the site owner, so it carries his actual headshot with
+   the green ring kept as the accent. */
+.kdcv-pet-panel-header::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: url("../images/avatar/avatar-thumb-img0031.webp") center/cover no-repeat, #0d1310;
+    border: 1.5px solid var(--chat-accent);
+    box-shadow: 0 4px 14px rgba(168, 255, 70, .28);
+}
+.kdcv-pet-title { font-size: 14px !important; font-weight: 700 !important; letter-spacing: -.01em; }
+.kdcv-pet-subtitle { color: var(--chat-muted) !important; font-size: 11px !important; }
+
+/* ---- message log ------------------------------------------------------- */
+.kdcv-pet-log { scrollbar-color: rgba(168, 255, 70, .28) transparent; }
+.kdcv-pet-log::-webkit-scrollbar { width: 6px; }
+.kdcv-pet-log::-webkit-scrollbar-track { background: transparent; }
+.kdcv-pet-log::-webkit-scrollbar-thumb { border-radius: 3px; background: rgba(168, 255, 70, .28); }
+
+.kdcv-pet-message { position: relative; }
+
+/* Assistant: dark card, hairline border, one squared corner toward the avatar. */
+.kdcv-pet-message-assistant .kdcv-pet-message-bubble {
+    border: 1px solid var(--chat-line) !important;
+    border-radius: 16px 16px 16px 6px !important;
+    background: rgba(20, 30, 24, .92) !important;
+    color: var(--chat-text) !important;
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, .3) !important;
+    /* Persian needs more leading than Latin at the same size. */
+    font-size: 13px !important;
+    line-height: 1.85 !important;
+}
+html[dir="rtl"] .kdcv-pet-message-assistant .kdcv-pet-message-bubble {
+    border-radius: 16px 16px 6px 16px !important;
+}
+
+/* User: lime gradient, dark ink — the design's indigo swapped for brand. */
+.kdcv-pet-message-user .kdcv-pet-message-bubble {
+    border: 1px solid transparent !important;
+    border-radius: 16px 16px 6px 16px !important;
+    background: linear-gradient(135deg, var(--chat-accent-2), var(--chat-accent)) !important;
+    color: var(--chat-ink) !important;
+    font-weight: 600;
+    box-shadow: 0 8px 24px -4px rgba(168, 255, 70, .34) !important;
+    font-size: 13px !important;
+    line-height: 1.8 !important;
+}
+html[dir="rtl"] .kdcv-pet-message-user .kdcv-pet-message-bubble {
+    border-radius: 16px 16px 16px 6px !important;
+}
+
+/* Typing dots */
+.kdcv-pet-typing-dots { border-radius: 16px 16px 16px 6px !important; }
+
+/* ---- wisdom quote rows -------------------------------------------------- */
+/* Marked as a quote, and dismissible — the X is injected by chat-ui.js. */
+.kdcv-wisdom-quote .kdcv-pet-message-bubble {
+    position: relative;
+    border-color: rgba(168, 255, 70, .3) !important;
+    background: linear-gradient(140deg, rgba(168, 255, 70, .1), rgba(20, 30, 24, .92) 55%) !important;
+    padding-inline-end: 34px !important;
+    font-style: italic;
+}
+.kdcv-quote-close {
+    position: absolute;
+    top: 6px;
+    inset-inline-end: 6px;
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .28);
+    color: var(--chat-muted);
+    font: 700 14px/1 system-ui, sans-serif;
+    cursor: pointer;
+    transition: background-color .18s ease, color .18s ease;
+}
+.kdcv-quote-close:hover { background: var(--chat-accent); color: var(--chat-ink); }
+.kdcv-quote-close:focus-visible { outline: 2px solid var(--chat-accent); outline-offset: 2px; }
+
+/* The floating bubble outside the panel gets its own dismiss. */
+.kdcv-wisdom-bubble { position: relative; }
+.kdcv-bubble-close {
+    position: absolute;
+    top: -8px;
+    /* Physical, not `inset-inline-end` — the corner is decided by the [dir]
+       rules further down this file and a logical property here would fight
+       them under RTL. */
+    right: -8px;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    border: 1px solid var(--chat-line);
+    border-radius: 50%;
+    background: #0d1510;
+    color: #e9f6e4;
+    font: 700 13px/1 system-ui, sans-serif;
+    cursor: pointer;
+}
+.kdcv-bubble-close:hover { background: var(--chat-accent); color: var(--chat-ink); }
+.kdcv-bubble-close:focus-visible { outline: 2px solid var(--chat-accent); outline-offset: 2px; }
+
+/* ---- suggestion chips --------------------------------------------------- */
+.kdcv-pet-chip {
+    border-color: var(--chat-line) !important;
+    background: rgba(168, 255, 70, .06) !important;
+    font-size: 11px !important;
+}
+.kdcv-pet-chip:hover { border-color: var(--chat-accent) !important; color: var(--chat-text) !important; }
+
+/* ---- composer ----------------------------------------------------------- */
+.kdcv-pet-form {
+    border-top: 1px solid var(--chat-line) !important;
+    background: rgba(0, 0, 0, .16) !important;
+}
+.kdcv-pet-input {
+    border-color: var(--chat-line) !important;
+    background: rgba(255, 255, 255, .05) !important;
+    caret-color: var(--chat-accent) !important;
+    font-size: 13px !important;
+}
+.kdcv-pet-input:focus-visible { border-color: var(--chat-accent) !important; }
+.kdcv-pet-send {
+    background: linear-gradient(135deg, var(--chat-accent-2), var(--chat-accent)) !important;
+    color: var(--chat-ink) !important;
+    box-shadow: 0 8px 20px rgba(168, 255, 70, .22) !important;
+}
+
+/* ---- action row (language + mic) ---------------------------------------- */
+.kdcv-chat-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px 10px;
+    border-top: 1px solid var(--chat-line);
+    background: rgba(0, 0, 0, .16);
+}
+.kdcv-chat-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 34px;
+    min-height: 34px;
+    padding: 0 12px;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--chat-muted);
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+}
+.kdcv-chat-action:hover { color: var(--chat-text); background: rgba(168, 255, 70, .08); }
+.kdcv-chat-action:focus-visible { outline: 2px solid var(--chat-accent); outline-offset: 2px; }
+.kdcv-chat-action[aria-expanded="true"],
+.kdcv-chat-action.is-active {
+    border-color: var(--chat-accent);
+    background: rgba(168, 255, 70, .15);
+    color: var(--chat-accent);
+}
+.kdcv-chat-action svg { width: 16px; height: 16px; flex: 0 0 auto; }
+.kdcv-chat-action.is-recording { border-color: #ff6b6b; background: rgba(255, 107, 107, .14); color: #ff8e8e; }
+.kdcv-chat-action.is-recording svg { animation: kdcv-mic-pulse 1.1s ease-in-out infinite; }
+@keyframes kdcv-mic-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .45; } }
+
+.kdcv-chat-lang { position: relative; }
+.kdcv-chat-lang-menu {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    /* Anchored to the toggle's START edge, not its end.
+       The language button is the third control in the action row, so with
+       `inset-inline-end: 0` the 168px menu grew LEFTWARD — past the panel's
+       left edge. The panel is `overflow: hidden`, so the whole first column
+       (FA, DE, TR) was clipped away: three of the nine languages could not be
+       seen or clicked. Opening inward keeps all three columns inside. */
+    inset-inline-start: 0;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(44px, 1fr));
+    gap: 4px;
+    min-width: 168px;
+    margin: 0;
+    padding: 8px;
+    list-style: none;
+    border: 1px solid var(--chat-line);
+    border-radius: 14px;
+    background: rgba(10, 16, 12, .98);
+    box-shadow: 0 18px 44px rgba(0, 0, 0, .5);
+}
+.kdcv-chat-lang-menu[hidden] { display: none; }
+.kdcv-chat-lang-menu button {
+    min-height: 34px;
+    padding: 0;
+    border: 0;
+    border-radius: 9px;
+    background: transparent;
+    color: var(--chat-text);
+    font: inherit;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.kdcv-chat-lang-menu button:hover { background: rgba(168, 255, 70, .16); }
+.kdcv-chat-lang-menu button[aria-current="true"] { background: var(--chat-accent); color: var(--chat-ink); }
+
+@media (pointer: coarse), (max-width: 767.98px) {
+    .kdcv-chat-action { height: 44px; min-height: 44px; }
+    .kdcv-chat-lang-menu button { min-height: 44px; }
+    .kdcv-quote-close { width: 28px; height: 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .kdcv-chat-action, .kdcv-quote-close { transition: none; }
+    .kdcv-chat-action.is-recording svg { animation: none; }
+}
+
+/* ---- direction handling -------------------------------------------------
+   Quotes and replies mix Persian, Arabic and Latin. `unicode-bidi: plaintext`
+   makes each paragraph pick its own base direction from its FIRST strong
+   character, so a Persian quote renders RTL and an English one LTR inside the
+   very same panel — instead of every line inheriting the page direction and
+   English quotes coming out reversed/mis-aligned. `text-align: start` then
+   follows whichever direction was resolved. */
+.kdcv-pet-message-bubble,
+.kdcv-wisdom-bubble,
+.kdcv-pet-nudge-button {
+    unicode-bidi: plaintext;
+    text-align: start;
+}
+/* The quote's attribution line sits on its own row and follows the quote. */
+.kdcv-wisdom-quote .kdcv-pet-message-bubble { unicode-bidi: plaintext; }
+
+/* ---- polish -------------------------------------------------------------
+   Depth without noise: a hairline top highlight, a soft inner floor, and a
+   restrained entrance. Kept subtle because the panel is read, not admired. */
+.kdcv-pet-panel {
+    overflow: hidden;
+    animation: kdcv-panel-in 260ms cubic-bezier(.22, 1, .36, 1) both;
+}
+.kdcv-pet-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(168, 255, 70, .55), transparent);
+    pointer-events: none;
+}
+@keyframes kdcv-panel-in {
+    from { opacity: 0; transform: translateY(10px) scale(.985); }
+    to   { opacity: 1; transform: none; }
+}
+
+.kdcv-pet-message { animation: kdcv-msg-in 300ms cubic-bezier(.22, 1, .36, 1) both; }
+@keyframes kdcv-msg-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: none; }
+}
+
+/* Assistant rows get a small mark so the column reads as a conversation. */
+.kdcv-pet-message-assistant { position: relative; padding-inline-start: 26px; }
+.kdcv-pet-message-assistant::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    top: 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: url("../images/avatar/avatar-thumb-img0031.webp") center/cover no-repeat, #0d1310;
+    border: 1px solid rgba(168, 255, 70, .55);
+    box-shadow: 0 2px 8px rgba(168, 255, 70, .3);
+}
+.kdcv-pet-message-user { padding-inline-start: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+    .kdcv-pet-panel, .kdcv-pet-message { animation: none; }
+}
+
+/* ==========================================================================
+   Composer row: mic · contact · language
+   ========================================================================== */
+.kdcv-chat-contact { text-decoration: none; }
+
+/* The host bundle's plain-text Contact link is replaced by the icon above. */
+.kdcv-pet-contact.kdcv-is-promoted { display: none !important; }
+
+/* Footer meta row — was three unstyled text links reading as fine print. */
+.kdcv-pet-footer {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 16px 12px !important;
+    border-top: 1px solid rgba(168, 255, 70, .1);
+}
+.kdcv-pet-footer-note {
+    margin: 0;
+    font-size: 11px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    opacity: .42;
+}
+.kdcv-pet-reset {
+    min-height: 32px;
+    padding: 0 12px;
+    border: 1px solid rgba(168, 255, 70, .22);
+    border-radius: 999px;
+    background: transparent;
+    color: inherit;
+    font-size: 11px;
+    opacity: .72;
+    cursor: pointer;
+    transition: opacity .2s ease, border-color .2s ease, background-color .2s ease;
+}
+.kdcv-pet-reset:hover {
+    opacity: 1;
+    border-color: rgba(168, 255, 70, .5);
+    background: rgba(168, 255, 70, .1);
+}
+
+/* Topic chips used to clip the last chip ("Contact") off the panel edge.
+   Scroll them instead of hiding them. */
+.kdcv-pet-chips {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 8px;
+    overflow-x: auto;
+    padding-inline: 16px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-inline: contain;
+}
+.kdcv-pet-chips::-webkit-scrollbar { display: none; }
+.kdcv-pet-chip { flex: 0 0 auto; }
+
+/* ==========================================================================
+   Responsive: bottom sheet under 640px
+   --------------------------------------------------------------------------
+   The panel is normally a draggable floating card positioned with inline
+   left/top. `.kdcv-chat-sheet` is added by chat-ui.js AFTER it clears those
+   inline values — a stylesheet rule alone cannot beat an inline !important.
+   ========================================================================== */
+.kdcv-pet-panel.kdcv-chat-sheet {
+    position: fixed !important;
+    inset-inline: 8px !important;
+    inset-block-end: 8px !important;
+    inset-block-start: auto !important;
+    width: auto !important;
+    max-width: none !important;
+    max-height: min(82vh, 640px) !important;
+    max-height: min(82dvh, 640px) !important;
+    border-radius: 20px !important;
+    display: flex;
+    flex-direction: column;
+}
+.kdcv-pet-panel.kdcv-chat-sheet .kdcv-pet-log {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+@media (max-width: 640px) {
+    .kdcv-pet-panel .kdcv-pet-title { font-size: 15px; }
+    .kdcv-pet-panel .kdcv-pet-subtitle { font-size: 11px; }
+    .kdcv-pet-footer { padding: 6px 12px 10px !important; }
+    .kdcv-pet-footer-note { display: none; }
+    .kdcv-pet-chips { padding-inline: 12px; }
+}
+
+/* Landscape phones have very little vertical room; keep the composer visible. */
+@media (max-height: 480px) and (orientation: landscape) {
+    .kdcv-pet-panel.kdcv-chat-sheet { max-height: 94vh !important; }
+    .kdcv-pet-panel.kdcv-chat-sheet .kdcv-pet-chips { display: none !important; }
+}
+
+/* ==========================================================================
+   Wisdom-quote dismiss + chat button sizing
+   ==========================================================================
+   The X belongs to the QUOTE, so it sits on the quote box's own top-left
+   border corner. It used to be tucked inside the bubble at the inline end,
+   which in an RTL panel put it right next to the assistant avatar mark and
+   made it read as the avatar's close button.
+
+   A quote is not a reply from the assistant, so the quote rows also drop the
+   avatar mark; that both frees the corner and stops the quotes from looking
+   like messages the assistant just sent. */
+.kdcv-wisdom-quote.kdcv-pet-message-assistant { padding-inline-start: 0; }
+.kdcv-wisdom-quote.kdcv-pet-message-assistant::before { display: none; }
+
+.kdcv-wisdom-quote .kdcv-pet-message-bubble { position: relative; overflow: visible; }
+
+.kdcv-quote-close {
+    top: -9px;
+    left: -9px;
+    inset-inline-end: auto;
+    right: auto;
+    width: 22px;
+    height: 22px;
+    border: 1px solid var(--chat-line);
+    background: #0b120c;
+    color: var(--chat-ink);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .45);
+}
+
+/* ---- chat button sizing -------------------------------------------------
+   One scale for the composer: icon actions and send share a 44px square (the
+   minimum comfortable tap target), chips sit a step below at 34px. */
+.kdcv-pet-panel .kdcv-chat-action.kdcv-hud,
+.kdcv-pet-panel .kdcv-pet-send.kdcv-hud {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+    min-height: 44px;
+    padding: 0;
+    flex: 0 0 auto;
+}
+.kdcv-pet-panel .kdcv-chat-action.kdcv-hud svg,
+.kdcv-pet-panel .kdcv-pet-send.kdcv-hud svg { width: 18px; height: 18px; }
+
+.kdcv-pet-panel .kdcv-pet-chip.kdcv-hud {
+    height: 34px;
+    min-height: 34px;
+    padding: 0 12px;
+    font-size: 11px;
+    letter-spacing: .06em;
+}
+
+/* The HUD frame's corner dots are sized for a wide button; on a 44px square
+   and on the chips they crowd the glyph, so they scale down with the frame. */
+.kdcv-pet-panel .kdcv-hud .kdcv-hud-dots { top: 5px; inset-inline-end: 5px; transform: scale(.8); }
+.kdcv-pet-panel .kdcv-hud:hover .kdcv-hud-dots { transform: scale(.95); }
+
+/* The composer row keeps the buttons on one line with even spacing. */
+.kdcv-chat-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 8px 16px;
+}
+
+
+@media (max-width: 640px) {
+    .kdcv-chat-actions { padding: 6px 12px; }
+    .kdcv-pet-panel .kdcv-pet-chip.kdcv-hud { height: 32px; min-height: 32px; padding: 0 10px; }
+}
+
+/* ==========================================================================
+   One control group, one side
+   --------------------------------------------------------------------------
+   Mic, contact, reset and language all live together at the START of the
+   composer row. They used to be split — language pushed to the far end with
+   `margin-inline-start: auto` and Reset stranded in the footer on the
+   opposite side — which read as three unrelated clusters.
+   ========================================================================== */
+.kdcv-chat-reset { text-decoration: none; }
+
+/* The footer's own text links are superseded by the icons in the row. */
+.kdcv-pet-reset.kdcv-is-promoted { display: none !important; }
+
+/* With both links promoted the footer holds only the product name. */
+.kdcv-pet-footer { justify-content: flex-start !important; }
+.kdcv-pet-footer .kdcv-pet-panel-actions:empty { display: none; }
+.kdcv-pet-footer-note {
+    text-transform: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    opacity: .55;
+}
+
+/* ==========================================================================
+   Wisdom quotes belong to the AVATAR, not to the chat log
+   --------------------------------------------------------------------------
+   The quote was rendered twice: as a message row inside the chat panel and as
+   the floating bubble beside the avatar. Inside the panel it read as something
+   the assistant had just said, and it pushed the real conversation out of
+   view. The panel copy is dropped; the bubble by the avatar is the only one.
+
+   Its dismiss circle sits OUTSIDE the bubble, straddling the border corner,
+   so it never covers the text it is attached to.
+   ========================================================================== */
+.kdcv-pet-panel .kdcv-wisdom-quote { display: none !important; }
+
+.kdcv-wisdom-bubble { position: relative; overflow: visible; }
+
+/* The dismiss sits on the corner the reader's eye ENDS at, so it never covers
+   the first word: top-RIGHT in LTR, top-LEFT in RTL.
+
+   Written as physical `left`/`right` under an explicit `[dir]` selector rather
+   than as `inset-inline-end`. The logical property was tried first and was the
+   source of a bug: in RTL `inset-inline-end` resolves to `left`, so whichever
+   of the two was declared last silently reset the other and the button drifted
+   to the wrong corner. Two mutually exclusive rules cannot fight. */
+.kdcv-bubble-close {
+    position: absolute;
+    /* Sits clear of the bubble's corner rather than overlapping it — at -11px
+       it still clipped the first line of the quote. */
+    top: -14px;
+    right: -14px;
+    left: auto;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    border: 1px solid var(--chat-line);
+    border-radius: 50%;
+    background: #0b120c;
+    color: var(--chat-ink);
+    font: 700 15px/1 system-ui, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .5);
+    transition: background-color .18s ease, color .18s ease, transform .18s ease;
+}
+/* RTL (fa, ar): mirror to the top-left corner. */
+[dir="rtl"] .kdcv-bubble-close,
+html[dir="rtl"] .kdcv-bubble-close {
+    right: auto;
+    left: -14px;
+}
+
+.kdcv-bubble-close:hover { background: var(--chat-accent); color: var(--chat-ink); transform: scale(1.08); }
+.kdcv-bubble-close:focus-visible { outline: 2px solid var(--chat-accent); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+    .kdcv-bubble-close { transition: none; }
+    .kdcv-bubble-close:hover { transform: none; }
+}
+
+/* ==========================================================================
+   Composer: one row, taller log
+   ========================================================================== */
+
+/* Visually hidden but still announced — the language button is icon-only now,
+   so the active code has to reach assistive tech some other way. */
+.kdcv-sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    margin: -1px; padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Every control in the row is the same centred square. */
+.kdcv-pet-panel .kdcv-chat-lang-toggle.kdcv-hud {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+    min-height: 44px;
+    padding: 0;
+    place-items: center;
+}
+.kdcv-pet-panel .kdcv-chat-lang-toggle.kdcv-hud svg { width: 18px; height: 18px; }
+
+/* Send now lives at the end of the control row rather than inside the input. */
+.kdcv-chat-send-inline {
+    order: 90;
+    margin-inline-start: auto;
+}
+.kdcv-chat-actions { flex-wrap: wrap; }
+
+/* With send removed, the input takes the full composer width. */
+.kdcv-pet-form { display: flex; }
+.kdcv-pet-input { flex: 1 1 auto; width: 100%; }
+
+/* The log is the point of the panel — give it twice the room it had. */
+.kdcv-pet-log {
+    min-height: 260px;
+    max-height: min(58vh, 520px);
+    max-height: min(58dvh, 520px);
+}
+.kdcv-pet-panel.kdcv-chat-sheet .kdcv-pet-log { min-height: 0; }
+
+@media (max-width: 640px) {
+    .kdcv-pet-log { min-height: 200px; }
+}
+
+/* ==========================================================================
+   Composer shell
+   --------------------------------------------------------------------------
+   The field and its controls share ONE rounded surface, the way a modern chat
+   composer reads. Previously the input was a bare bordered box with a green
+   arrow button floating beside it, and the controls sat on a separate strip
+   below — three visual pieces where there should be one.
+
+   The host bundle's <input> is reused rather than replaced with a <textarea>:
+   ai-pet.min.js is minified with no source and holds a reference to that exact
+   element, so swapping the node would break sending. See chat-ui.js.
+   ========================================================================== */
+.kdcv-composer {
+    margin: 10px 16px 12px;
+    padding: 6px 6px 6px 8px;
+    border: 1px solid var(--chat-line);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, .03);
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+.kdcv-composer:focus-within {
+    border-color: rgba(168, 255, 70, .5);
+    box-shadow: 0 0 0 3px rgba(168, 255, 70, .1);
+}
+
+/* The field itself is now chrome-free — the shell carries the border. */
+.kdcv-composer .kdcv-pet-form {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+}
+.kdcv-composer .kdcv-pet-input {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 10px 6px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: var(--chat-text);
+    font-size: 14px;
+    line-height: 1.5;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.kdcv-composer .kdcv-pet-input::placeholder { color: var(--chat-muted); opacity: .8; }
+
+/* Controls sit inside the shell, on its floor. */
+.kdcv-composer .kdcv-chat-actions {
+    padding: 4px 2px 0 !important;
+    gap: 6px;
+    background: transparent;
+    border: 0;
+}
+
+/* Send is the one filled control, anchored to the trailing corner. */
+.kdcv-pet-panel .kdcv-pet-send.kdcv-chat-send-inline {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    min-height: 36px;
+    border-radius: 50% !important;
+    font-size: 0;
+}
+.kdcv-pet-panel .kdcv-pet-send.kdcv-chat-send-inline svg { width: 17px; height: 17px; }
+
+/* The other controls are quieter than send: ghost squares, not filled ones. */
+.kdcv-composer .kdcv-chat-action:not(.kdcv-pet-send) {
+    width: 34px;
+    min-width: 34px;
+    height: 34px;
+    min-height: 34px;
+}
+.kdcv-composer .kdcv-chat-action:not(.kdcv-pet-send) svg { width: 16px; height: 16px; }
+.kdcv-composer .kdcv-chat-lang-toggle.kdcv-hud {
+    width: 34px !important;
+    min-width: 34px !important;
+    height: 34px !important;
+    min-height: 34px !important;
+}
+.kdcv-composer .kdcv-chat-lang-toggle.kdcv-hud svg { width: 16px; height: 16px; }
+
+
+@media (max-width: 640px) {
+    .kdcv-composer { margin: 8px 12px 10px; border-radius: 20px; }
+    .kdcv-composer .kdcv-chat-action:not(.kdcv-pet-send),
+    .kdcv-composer .kdcv-chat-lang-toggle.kdcv-hud {
+        width: 32px !important; min-width: 32px !important;
+        height: 32px !important; min-height: 32px !important;
+    }
+}
+
+/* ==========================================================================
+   Multi-line field
+   --------------------------------------------------------------------------
+   The original <input> stays in the DOM as the form's real field — the host
+   bundle holds a reference to it — but is taken out of the visual and
+   accessibility trees. It must NOT be display:none: a hidden field can still
+   be submitted, and some browsers skip value/event handling on fully removed
+   boxes. Clipping keeps it live but invisible.
+   ========================================================================== */
+.kdcv-input-mirrored {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    border: 0 !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    clip-path: inset(50%) !important;
+    pointer-events: none !important;
+}
+
+.kdcv-pet-textarea {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    max-height: 160px;
+    padding: 11px 10px 7px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: var(--chat-text);
+    font: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: none;
+    outline: none;
+    overflow-y: hidden;
+    /* Mixed-direction input: the field follows what is actually typed, so a
+       Persian question and an English one each read correctly in one panel. */
+    unicode-bidi: plaintext;
+    text-align: start;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(168, 255, 70, .28) transparent;
+}
+.kdcv-pet-textarea::placeholder { color: var(--chat-muted); opacity: .8; }
+.kdcv-pet-textarea::-webkit-scrollbar { width: 6px; }
+.kdcv-pet-textarea::-webkit-scrollbar-thumb { border-radius: 3px; background: rgba(168, 255, 70, .28); }
+
+@media (max-width: 640px) {
+    .kdcv-pet-textarea { max-height: 120px; font-size: 16px; } /* 16px stops iOS zooming on focus */
+}
+
+/* ==========================================================================
+   Wisdom-bubble dismiss
+   --------------------------------------------------------------------------
+   The bubble is `position: absolute` (anchored above the avatar by
+   wisdom-quotes.css), so an inline-block wrapper collapsed to 0x0 around it
+   and the dismiss landed nowhere near the corner.
+
+   The wrapper therefore TAKES OVER the bubble's anchoring — same offsets,
+   same transform — and the bubble goes static inside it. The wrapper then
+   genuinely hugs the bubble, so the dismiss can pin to its top-left corner.
+   ========================================================================== */
+.kdcv-pet-root .kdcv-wisdom-wrap {
+    position: absolute;
+    z-index: 14;
+    inset-inline-start: 50%;
+    bottom: calc(100% + 12px);
+    transform: translateX(-50%);
+    width: min(320px, calc(100vw - 32px));
+}
+.kdcv-pet-root .kdcv-wisdom-wrap .kdcv-wisdom-bubble {
+    position: static !important;
+    inset: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    z-index: auto !important;
+}
+
+/* On a phone the bubble is centred on the pet (`inset-inline-start: 50%` +
+   `translateX(-50%)`), and the pet sits 16px from the left edge — so a 320px
+   bubble started at 16 + 66 - 160 = -78px and its first ~78px were off-screen.
+   Measured on a 375px viewport.
+
+   The document itself never scrolled horizontally, which is why the earlier
+   overflow sweep missed this: the pet is `position: fixed`, so it was excluded
+   from that check. Below the tablet breakpoint the bubble is left-aligned to
+   the pet instead of centred on it, which keeps all 320px on-screen while the
+   tail still points at the avatar. */
+@media (max-width: 767.98px) {
+    .kdcv-pet-root .kdcv-wisdom-wrap {
+        inset-inline-start: 0;
+        transform: none;
+        width: min(320px, calc(100vw - 32px));
+    }
+    .kdcv-pet-root .kdcv-wisdom-bubble::after {
+        inset-inline-start: 28px;
+    }
+}
+
+/* ==========================================================================
+   Panel height — extend to the bottom of the frame
+   --------------------------------------------------------------------------
+   The panel used to be sized by its content, so the log stopped well short of
+   the bottom and the composer floated mid-screen with dead space beneath it.
+   The panel now claims the vertical space down to the bottom edge and the log
+   takes whatever is left after the header and composer — so the conversation
+   fills the box instead of the box hugging the conversation.
+   ========================================================================== */
+.kdcv-pet-panel {
+    display: flex;
+    flex-direction: column;
+    height: min(78vh, 760px);
+    height: min(78dvh, 760px);
+    max-height: calc(100vh - 24px);
+    max-height: calc(100dvh - 24px);
+}
+
+/* Header and composer keep their natural size; the log absorbs the rest. */
+.kdcv-pet-panel-header,
+.kdcv-pet-panel > .kdcv-composer,
+.kdcv-pet-footer { flex: 0 0 auto; }
+
+.kdcv-pet-panel .kdcv-pet-log {
+    flex: 1 1 auto;
+    min-height: 0;      /* lets a flex child actually shrink and scroll */
+    max-height: none;
+    overflow-y: auto;
+}
+
+/* The topic chips sit between the log and the composer and must not stretch. */
+.kdcv-pet-panel .kdcv-pet-chips { flex: 0 0 auto; }
+
+@media (max-width: 640px) {
+    .kdcv-pet-panel {
+        height: min(82vh, 100vh - 16px);
+        height: min(82dvh, 100dvh - 16px);
+    }
+}

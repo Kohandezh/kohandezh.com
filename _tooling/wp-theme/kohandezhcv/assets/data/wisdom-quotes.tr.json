@@ -1,0 +1,443 @@
+{
+  "version": "1.0.0",
+  "language": "tr-TR",
+  "selection_strategy": "brand_fit",
+  "selection_mode": "weighted_random",
+  "categories": [
+    {
+      "id": "iranian_wisdom",
+      "title": "Fars hikmeti ve tasavvuf",
+      "weight_percent": 25,
+      "quotes": [
+        {
+          "id": "rumi-001",
+          "author": "Mevlânâ",
+          "text": "Bu sırrı bilirsen her şeyi bilirsin: aradığın şey, zaten sensin.",
+          "source": "Divan-ı Şems, rubai 1815",
+          "tags": [
+            "هدف",
+            "هویت",
+            "خودشناسی"
+          ],
+          "tone": "deep",
+          "priority": 10,
+          "verification_ref": "S01",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "saadi-001",
+          "author": "Sadi",
+          "text": "İnsanoğlu bir bedenin uzuvlarıdır; yaratılışta aynı özdendir.",
+          "source": "Gülistan, I. bap, 10. hikâye",
+          "tags": [
+            "انسانیت",
+            "همدلی",
+            "جامعه"
+          ],
+          "tone": "human",
+          "priority": 9,
+          "verification_ref": "S02",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "hafez-001",
+          "author": "Hâfız",
+          "text": "İki cihanın huzuru iki sözdedir: dostlara mürüvvet, düşmanlara müdara.",
+          "source": "Hafız Divanı, 5. gazel",
+          "tags": [
+            "رهبری",
+            "روابط",
+            "مدارا"
+          ],
+          "tone": "wise",
+          "priority": 10,
+          "verification_ref": "S03",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "ferdowsi-001",
+          "author": "Firdevsî",
+          "text": "Bilen güçlüdür; bilgiyle yaşlı gönül gençleşir.",
+          "source": "Şehname, kitabın başlangıcı",
+          "tags": [
+            "دانش",
+            "قدرت",
+            "یادگیری"
+          ],
+          "tone": "strong",
+          "priority": 10,
+          "verification_ref": "S04",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "attar-001",
+          "author": "Feridüddin Attâr",
+          "text": "Yola adımını at ve hiçbir şey sorma; yol sana nasıl gidileceğini söyler.",
+          "source": "Muhtarname, 18. bap, 25. şiir",
+          "tags": [
+            "اقدام",
+            "مسیر",
+            "شجاعت"
+          ],
+          "tone": "action",
+          "priority": 10,
+          "verification_ref": "S05",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "stoicism",
+      "title": "Stoacı felsefe",
+      "weight_percent": 25,
+      "quotes": [
+        {
+          "id": "marcus-001",
+          "author": "Marcus Aurelius",
+          "text": "Eyleme engel olan şey eylemi ilerletir. Yolu kapatan, yolun kendisi olur.",
+          "source": "Kendime Düşünceler, V. kitap",
+          "tags": [
+            "مانع",
+            "تاب‌آوری",
+            "عمل"
+          ],
+          "tone": "resilient",
+          "priority": 10,
+          "verification_ref": "S06",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "marcus-002",
+          "author": "Marcus Aurelius",
+          "text": "İnsan, kendi ruhundan daha sakin bir sığınak bulamaz.",
+          "source": "Kendime Düşünceler, IV. kitap",
+          "tags": [
+            "تمرکز",
+            "آرامش",
+            "خودآگاهی"
+          ],
+          "tone": "calm",
+          "priority": 8,
+          "verification_ref": "S07",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "seneca-001",
+          "author": "Seneca",
+          "text": "Gerçekte olduğundan çok, hayalimizde acı çekeriz.",
+          "source": "Lucilius’a Mektuplar, 13. mektup",
+          "tags": [
+            "ترس",
+            "اضطراب",
+            "واقعیت"
+          ],
+          "tone": "direct",
+          "priority": 10,
+          "verification_ref": "S08",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "epictetus-001",
+          "author": "Epiktetos",
+          "text": "İnsanları şeyler değil, şeyler hakkındaki görüşleri tedirgin eder.",
+          "source": "Enkhiridion, 5. bölüm",
+          "tags": [
+            "ادراک",
+            "قضاوت",
+            "کنترل"
+          ],
+          "tone": "analytical",
+          "priority": 10,
+          "verification_ref": "S09",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "marcus-003",
+          "author": "Marcus Aurelius",
+          "text": "İnsanın başına, doğasının taşıyamayacağı hiçbir şey gelmez.",
+          "source": "Kendime Düşünceler, V. kitap",
+          "tags": [
+            "سختی",
+            "استقامت",
+            "توانایی"
+          ],
+          "tone": "resilient",
+          "priority": 9,
+          "verification_ref": "S10",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "science_engineering",
+      "title": "Bilim, teknoloji ve mühendislik",
+      "weight_percent": 20,
+      "quotes": [
+        {
+          "id": "feynman-001",
+          "author": "Richard Feynman",
+          "text": "Yaratamadığım şeyi anlamış değilim.",
+          "source": "Feynman’ın ofisindeki karatahtada kalan yazı",
+          "tags": [
+            "ساختن",
+            "مهندسی",
+            "درک"
+          ],
+          "tone": "technical",
+          "priority": 10,
+          "verification_ref": "S11",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "turing-001",
+          "author": "Alan Turing",
+          "text": "Yalnızca kısa bir mesafeyi görebiliriz, ama orada yapılacak çok iş var.",
+          "source": "Computing Machinery and Intelligence",
+          "tags": [
+            "آینده",
+            "هوش مصنوعی",
+            "اقدام"
+          ],
+          "tone": "visionary",
+          "priority": 10,
+          "verification_ref": "S12",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "tesla-001",
+          "author": "Nikola Tesla",
+          "text": "Bugün onların; asıl uğrunda çalıştığım gelecek ise benim.",
+          "source": "The Transmission of Electrical Energy Without Wires, 1905",
+          "tags": [
+            "آینده",
+            "نوآوری",
+            "میراث"
+          ],
+          "tone": "visionary",
+          "priority": 9,
+          "verification_ref": "S13",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "einstein-001",
+          "author": "Albert Einstein",
+          "text": "Hayal gücü bilgiden önemlidir; bilgi sınırlıdır, hayal gücü dünyayı kuşatır.",
+          "source": "George Sylvester Viereck ile söyleşi, 1929",
+          "tags": [
+            "تخیل",
+            "دانش",
+            "نوآوری"
+          ],
+          "tone": "creative",
+          "priority": 10,
+          "verification_ref": "S14",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "shannon-001",
+          "author": "Claude Shannon",
+          "text": "Zihnim gece gündüz dolaşır, farklı şeyler hayal eder ve hep sorar: ya olsaydı?",
+          "source": "Söyleşiler ve Nokia Bell Labs arşivi",
+          "tags": [
+            "کنجکاوی",
+            "فرضیه",
+            "اختراع"
+          ],
+          "tone": "curious",
+          "priority": 8,
+          "verification_ref": "S15",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "management_entrepreneurship",
+      "title": "Yönetim ve girişimcilik",
+      "weight_percent": 20,
+      "quotes": [
+        {
+          "id": "drucker-001",
+          "author": "Peter Drucker",
+          "text": "Hiç yapılmaması gereken bir işi verimli yapmaktan daha beyhude bir şey yoktur.",
+          "source": "Peter Drucker’ın yönetim yazıları",
+          "tags": [
+            "اولویت",
+            "بهره‌وری",
+            "استراتژی"
+          ],
+          "tone": "strategic",
+          "priority": 10,
+          "verification_ref": "S16",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "grove-001",
+          "author": "Andy Grove",
+          "text": "Yalnızca paranoyaklar hayatta kalır.",
+          "source": "Only the Paranoid Survive",
+          "tags": [
+            "رقابت",
+            "ریسک",
+            "بقا"
+          ],
+          "tone": "competitive",
+          "priority": 10,
+          "verification_ref": "S17",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "jobs-001",
+          "author": "Steve Jobs",
+          "text": "Zamanınız sınırlı; onu başkasının hayatını yaşayarak harcamayın.",
+          "source": "Stanford Üniversitesi konuşması, 2005",
+          "tags": [
+            "زمان",
+            "استقلال",
+            "تصمیم"
+          ],
+          "tone": "direct",
+          "priority": 10,
+          "verification_ref": "S18",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "bezos-001",
+          "author": "Jeff Bezos",
+          "text": "Vizyonda inatçı, ayrıntılarda esnek olun.",
+          "source": "Amazon’un resmî kaynaklarında Jeff Bezos’a atfedilen yönetim ilkesi",
+          "tags": [
+            "چشم‌انداز",
+            "انعطاف",
+            "اجرا"
+          ],
+          "tone": "strategic",
+          "priority": 10,
+          "verification_ref": "S19",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "graham-001",
+          "author": "Paul Graham",
+          "text": "İnsanların gerçekten istediği bir şey yapın.",
+          "source": "Y Combinator’ın sloganı ve “Be Good” makalesi",
+          "tags": [
+            "محصول",
+            "مشتری",
+            "استارتاپ"
+          ],
+          "tone": "product",
+          "priority": 10,
+          "verification_ref": "S20",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "psychology_human_behavior",
+      "title": "Psikoloji ve insan davranışı",
+      "weight_percent": 10,
+      "quotes": [
+        {
+          "id": "kahneman-001",
+          "author": "Daniel Kahneman",
+          "text": "Hayatta hiçbir şey, onu düşünürken sandığınız kadar önemli değildir.",
+          "source": "Odaklanma yanılsaması",
+          "tags": [
+            "سوگیری",
+            "تمرکز",
+            "تصمیم‌گیری"
+          ],
+          "tone": "analytical",
+          "priority": 10,
+          "verification_ref": "S21",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "frankl-001",
+          "author": "Viktor Frankl",
+          "text": "Bir durumu artık değiştiremediğimizde, kendimizi değiştirmeye çağrılırız.",
+          "source": "İnsanın Anlam Arayışı",
+          "tags": [
+            "معنا",
+            "تغییر",
+            "تاب‌آوری"
+          ],
+          "tone": "resilient",
+          "priority": 10,
+          "verification_ref": "S22",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "jung-001",
+          "author": "Carl Jung",
+          "text": "Dışarı bakan düş görür; içeri bakan uyanır.",
+          "source": "Carl Jung’un mektupları ve derlenmiş sözleri",
+          "tags": [
+            "خودشناسی",
+            "درون‌نگری",
+            "آگاهی"
+          ],
+          "tone": "deep",
+          "priority": 9,
+          "verification_ref": "S23",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "james-001",
+          "author": "William James",
+          "text": "İnsan karakterinde, kararlı ile kararsız arasındaki farktan daha çarpıcı bir ayrım yoktur.",
+          "source": "The Principles of Psychology, 26. bölüm",
+          "tags": [
+            "اراده",
+            "تصمیم",
+            "شخصیت"
+          ],
+          "tone": "analytical",
+          "priority": 9,
+          "verification_ref": "S24",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "schopenhauer-001",
+          "author": "Arthur Schopenhauer",
+          "text": "Ulaşılan hiçbir istek kalıcı doyum vermez; yalnızca geçici bir haz getirir.",
+          "source": "İsteme ve Tasarım Olarak Dünya",
+          "tags": [
+            "خواستن",
+            "رضایت",
+            "انسان"
+          ],
+          "tone": "philosophical",
+          "priority": 8,
+          "verification_ref": "S25",
+          "verified": true,
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

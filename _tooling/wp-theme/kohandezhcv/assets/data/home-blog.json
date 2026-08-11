@@ -1,0 +1,597 @@
+{
+  "version": 1,
+  "source": "blog/index.html",
+  "limit": 4,
+  "pinned": [
+    "digital-economy-15-percent-elecomp"
+  ],
+  "fillWithLatest": true,
+  "fallbackLocale": "fa",
+  "locales": {
+    "en": {
+      "readLabel": "Read original",
+      "posts": {
+        "digital-economy-15-percent-elecomp": {
+          "title": "A 15% Digital Economy Share Needs a Sustainable Ecosystem",
+          "date": "July 12, 2026",
+          "summary": "An analysis of why Iran's digital-economy target depends on stable infrastructure, private-sector cooperation and follow-through after Elecomp.",
+          "tag": "Digital Economy"
+        },
+        "generative-ai-tools": {
+          "title": "Generative AI Tools: From Idea to Execution",
+          "date": "May 11, 2025",
+          "summary": "A practical conversation about how small businesses can use AI for customer support, content, automation, avatars and smarter use of time.",
+          "tag": "Generative AI"
+        },
+        "ai-career-transformation": {
+          "title": "AI as a Career Transformation Opportunity",
+          "date": "May 10, 2025",
+          "summary": "A look at the future of work and why people who learn intelligent tools can become harder to replace instead of being pushed aside.",
+          "tag": "Future of Work"
+        },
+        "masire-21": {
+          "title": "Path 21: Kohan System Farda Joins the Nokhbegan Technology Incubator",
+          "date": "June 10, 2024",
+          "summary": "A first-person account of Kohan System Farda's acceptance into the 21st admission call of the Nokhbegan Technology Incubator at Pardis Technology Park, selected from about 150 applicants.",
+          "tag": "Entrepreneurship"
+        },
+        "neighborhood-management-award": {
+          "title": "Neighborhood Management Award",
+          "date": "July 23, 2021",
+          "summary": "Recognition for community management work in Pardis New Town, highlighting operational leadership outside the technical field.",
+          "tag": "Community Leadership"
+        },
+        "farabi-innovation-festival": {
+          "title": "From Idea to Market at University of Tehran",
+          "date": "March 8, 2017",
+          "summary": "A record of the Farabi Campus innovation festival and the Digi Carwash concept among selected entrepreneurial ideas.",
+          "tag": "Entrepreneurship"
+        },
+        "gitex-2025": {
+          "title": "GITEX 2025 Under the Microscope",
+          "date": "October 26, 2025",
+          "summary": "An analytical look at the technologies and innovation themes at GITEX 2025 — from generative AI to operational AI agents and enterprise-scale infrastructure.",
+          "tag": "Events & Innovation"
+        },
+        "expand-north-star-2025": {
+          "title": "Alongside Me at Expand North Star 2025",
+          "date": "October 10, 2025",
+          "summary": "Attending Expand North Star 2025, one of the world's largest startup events, connecting professional work with the region's startup and innovation ecosystem.",
+          "tag": "Events & Innovation"
+        },
+        "elecomp-talks-1404-ai-for-children": {
+          "title": "AI for Children: Opportunity or Threat?",
+          "date": "October 1, 2025",
+          "summary": "An excerpt from an exclusive Elecomp 1404 interview on where the line falls between opportunity and risk when children meet AI.",
+          "tag": "Artificial Intelligence"
+        },
+        "ayno-tv-elecomp-1404": {
+          "title": "Ayno TV Interview on the Final Day of Elecomp 1404",
+          "date": "September 29, 2025",
+          "summary": "Wrapping up the Elecomp 1404 international exhibition in conversation with the CEO of Kohan System Farda.",
+          "tag": "Events"
+        }
+      }
+    },
+    "fa": {
+      "readLabel": "خواندن اصل نوشته",
+      "posts": {
+        "digital-economy-15-percent-elecomp": {
+          "title": "سهم ۱۵ درصدی اقتصاد دیجیتال؛ نقش اکوسیستم و الکامپ",
+          "date": "۲۱ تیر ۱۴۰۵",
+          "summary": "تحلیلی درباره اینکه چرا تحقق هدف اقتصاد دیجیتال ایران به زیرساخت پایدار، همکاری بخش خصوصی و پیگیری فرصت‌های الکامپ نیاز دارد.",
+          "tag": "اقتصاد دیجیتال"
+        },
+        "generative-ai-tools": {
+          "title": "ابزارهای هوش مصنوعی مولد؛ از ایده تا اجرا",
+          "date": "۲۱ اردیبهشت ۱۴۰۴",
+          "summary": "گفت‌وگویی کاربردی درباره استفاده کسب‌وکارهای کوچک از هوش مصنوعی برای پشتیبانی مشتری، تولید محتوا، خودکارسازی، آواتار مجازی و استفاده هوشمندتر از زمان.",
+          "tag": "هوش مصنوعی مولد"
+        },
+        "ai-career-transformation": {
+          "title": "هوش مصنوعی؛ فرصتی برای تحول شغلی",
+          "date": "۲۰ اردیبهشت ۱۴۰۴",
+          "summary": "نگاهی به آینده بازار کار و اینکه یادگیری ابزارهای هوشمند چگونه می‌تواند انسان را توانمندتر و کمتر قابل جایگزینی کند.",
+          "tag": "آینده کار"
+        },
+        "masire-21": {
+          "title": "مسیر ۲۱؛ پذیرش کهن سیستم فردا در مرکز رشد فناوری نخبگان",
+          "date": "۲۱ خرداد ۱۴۰۳",
+          "summary": "روایت پذیرش شرکت کهن سیستم فردا در بیست‌ویکمین فراخوان مرکز رشد فناوری نخبگان پارک فناوری پردیس از میان حدود ۱۵۰ شرکت و ایده‌پرداز.",
+          "tag": "کارآفرینی"
+        },
+        "neighborhood-management-award": {
+          "title": "مسابقه مدیریت برتر محله",
+          "date": "۱ مرداد ۱۴۰۰",
+          "summary": "ثبت کسب مقام سوم در مسابقه مدیریت برتر محله شهر جدید پردیس؛ نمونه‌ای از تجربه مدیریت اجرایی و مسئولیت‌پذیری اجتماعی.",
+          "tag": "مدیریت اجتماعی"
+        },
+        "farabi-innovation-festival": {
+          "title": "جشنواره از ایده تا بازار در دانشگاه تهران",
+          "date": "۱۸ اسفند ۱۳۹۵",
+          "summary": "گزارشی از جشنواره نوآوری پردیس فارابی دانشگاه تهران و حضور ایده دیجی‌کارواش در میان طرح‌های منتخب کارآفرینی.",
+          "tag": "کارآفرینی"
+        },
+        "gitex-2025": {
+          "title": "جیتکس ۲۰۲۵ زیر ذره‌بین",
+          "date": "۴ آبان ۱۴۰۴",
+          "summary": "نگاهی تحلیلی به فناوری‌ها و محورهای نوآوری جیتکس ۲۰۲۵؛ از هوش مصنوعی مولد تا AI Agent‌های عملیاتی و زیرساخت آماده برای مقیاس سازمانی.",
+          "tag": "رویدادها و نوآوری"
+        },
+        "expand-north-star-2025": {
+          "title": "همراه من در Expand North Star 2025",
+          "date": "۱۸ مهر ۱۴۰۴",
+          "summary": "حضور در بزرگ‌ترین رویداد استارتاپی جهان و پیوند فعالیت‌های حرفه‌ای با زیست‌بوم استارتاپ و نوآوری.",
+          "tag": "رویدادها و نوآوری"
+        },
+        "elecomp-talks-1404-ai-for-children": {
+          "title": "هوش مصنوعی برای کودکان؛ فرصت یا تهدید؟",
+          "date": "۹ مهر ۱۴۰۴",
+          "summary": "بخشی از مصاحبهٔ اختصاصی در الکامپ ۱۴۰۴؛ مرز میان فرصت و تهدید در مواجههٔ کودکان با هوش مصنوعی کجاست؟",
+          "tag": "هوش مصنوعی"
+        },
+        "ayno-tv-elecomp-1404": {
+          "title": "گفت‌وگوی آینو تی‌وی در روز پایانی الکامپ ۱۴۰۴",
+          "date": "۷ مهر ۱۴۰۴",
+          "summary": "جمع‌بندی نمایشگاه بین‌المللی الکامپ ۱۴۰۴ در گفت‌وگو با مدیرعامل شرکت کهن سیستم فردا.",
+          "tag": "رویدادها"
+        }
+      }
+    },
+    "ar": {
+      "readLabel": "قراءة الأصل",
+      "posts": {
+        "digital-economy-15-percent-elecomp": {
+          "title": "حصة 15٪ للاقتصاد الرقمي تتطلب منظومة مستدامة",
+          "date": "12 يوليو 2026",
+          "summary": "تحليل لدور البنية التحتية المستقرة وتعاون القطاع الخاص ومتابعة فرص معرض Elecomp في تحقيق هدف الاقتصاد الرقمي الإيراني.",
+          "tag": "الاقتصاد الرقمي"
+        },
+        "generative-ai-tools": {
+          "title": "الذكاء الاصطناعي التوليدي: من الفكرة إلى التنفيذ",
+          "date": "11 مايو 2025",
+          "summary": "حوار عملي حول كيف يمكن للشركات الصغيرة استخدام الذكاء الاصطناعي في خدمة العملاء، إنتاج المحتوى، الأتمتة، الصور الرمزية وإدارة الوقت بذكاء أكبر.",
+          "tag": "ذكاء اصطناعي توليدي"
+        },
+        "ai-career-transformation": {
+          "title": "الذكاء الاصطناعي كفرصة للتحول المهني",
+          "date": "10 مايو 2025",
+          "summary": "قراءة في مستقبل العمل وكيف يمكن لمن يتقن الأدوات الذكية أن يصبح أكثر قيمة وأصعب استبدالاً في سوق العمل.",
+          "tag": "مستقبل العمل"
+        },
+        "masire-21": {
+          "title": "المسار 21: انضمام كهن سيستم فردا إلى حاضنة نخبكان التقنية",
+          "date": "10 يونيو 2024",
+          "summary": "رواية شخصية عن قبول شركة كهن سيستم فردا في الدعوة الحادية والعشرين لحاضنة نخبكان التقنية في حديقة برديس التكنولوجية من بين نحو 150 متقدماً.",
+          "tag": "ريادة الأعمال"
+        },
+        "neighborhood-management-award": {
+          "title": "تكريم في إدارة الحي",
+          "date": "23 يوليو 2021",
+          "summary": "تسجيل لتجربة قيادة تشغيلية ومسؤولية اجتماعية في إدارة حي بمدينة برديس الجديدة.",
+          "tag": "قيادة مجتمعية"
+        },
+        "farabi-innovation-festival": {
+          "title": "من الفكرة إلى السوق في جامعة طهران",
+          "date": "8 مارس 2017",
+          "summary": "لمحة عن مهرجان الابتكار في حرم فارابي وفكرة Digi Carwash ضمن المشاريع الريادية المختارة.",
+          "tag": "ريادة الأعمال"
+        },
+        "gitex-2025": {
+          "title": "جيتكس 2025 تحت المجهر",
+          "date": "26 أكتوبر 2025",
+          "summary": "نظرة تحليلية على تقنيات ومحاور الابتكار في جيتكس 2025، من الذكاء الاصطناعي التوليدي إلى وكلاء الذكاء الاصطناعي التشغيليين والبنية التحتية الجاهزة للمقياس المؤسسي.",
+          "tag": "الفعاليات والابتكار"
+        },
+        "expand-north-star-2025": {
+          "title": "معي في Expand North Star 2025",
+          "date": "10 أكتوبر 2025",
+          "summary": "حضور واحدة من أكبر فعاليات الشركات الناشئة في العالم، وربط العمل المهني بمنظومة الشركات الناشئة والابتكار في المنطقة.",
+          "tag": "الفعاليات والابتكار"
+        },
+        "elecomp-talks-1404-ai-for-children": {
+          "title": "الذكاء الاصطناعي للأطفال: فرصة أم تهديد؟",
+          "date": "١ أكتوبر ٢٠٢٥",
+          "summary": "مقتطف من مقابلة حصرية في معرض إليكامب ١٤٠٤ حول الحد الفاصل بين الفرصة والخطر عند تعامل الأطفال مع الذكاء الاصطناعي.",
+          "tag": "الذكاء الاصطناعي"
+        },
+        "ayno-tv-elecomp-1404": {
+          "title": "حوار آينو تي في في اليوم الختامي لمعرض إليكامب ١٤٠٤",
+          "date": "٢٩ سبتمبر ٢٠٢٥",
+          "summary": "خلاصة معرض إليكامب الدولي ١٤٠٤ في حوار مع الرئيس التنفيذي لشركة كهن سيستم فردا.",
+          "tag": "فعاليات"
+        }
+      }
+    },
+    "de": {
+      "readLabel": "Original lesen",
+      "posts": {
+        "digital-economy-15-percent-elecomp": {
+          "title": "15 Prozent Digitalwirtschaft brauchen ein stabiles Ökosystem",
+          "date": "12. Juli 2026",
+          "summary": "Eine Analyse dazu, warum Irans Digitalziel stabile Infrastruktur, Zusammenarbeit der Privatwirtschaft und konsequente Elecomp-Nachbereitung braucht.",
+          "tag": "Digitalwirtschaft"
+        },
+        "generative-ai-tools": {
+          "title": "Generative KI: Von der Idee zur Umsetzung",
+          "date": "11. Mai 2025",
+          "summary": "Ein praxisnahes Gespräch darüber, wie kleine Unternehmen KI für Kundendienst, Inhalte, Automatisierung, Avatare und bessere Zeitnutzung einsetzen können.",
+          "tag": "Generative KI"
+        },
+        "ai-career-transformation": {
+          "title": "KI als Chance für berufliche Veränderung",
+          "date": "10. Mai 2025",
+          "summary": "Ein Blick auf die Zukunft der Arbeit und darauf, warum der souveräne Umgang mit intelligenten Werkzeugen Menschen schwerer ersetzbar macht.",
+          "tag": "Zukunft der Arbeit"
+        },
+        "masire-21": {
+          "title": "Pfad 21: Kohan System Farda im Nokhbegan-Technologie-Inkubator",
+          "date": "10. Juni 2024",
+          "summary": "Ein persönlicher Bericht über die Aufnahme von Kohan System Farda in die 21. Auswahlrunde des Nokhbegan-Inkubators im Pardis Technology Park, ausgewählt aus rund 150 Bewerbern.",
+          "tag": "Unternehmertum"
+        },
+        "neighborhood-management-award": {
+          "title": "Auszeichnung für Nachbarschaftsmanagement",
+          "date": "23. Juli 2021",
+          "summary": "Eine Anerkennung für operatives und soziales Engagement im Pardis New Town.",
+          "tag": "Gemeinschaft"
+        },
+        "farabi-innovation-festival": {
+          "title": "Von der Idee zum Markt an der Universität Teheran",
+          "date": "8. März 2017",
+          "summary": "Ein Rückblick auf das Innovationsfestival am Farabi Campus und die Idee Digi Carwash unter den ausgewählten unternehmerischen Konzepten.",
+          "tag": "Unternehmertum"
+        },
+        "gitex-2025": {
+          "title": "GITEX 2025 unter der Lupe",
+          "date": "26. Oktober 2025",
+          "summary": "Eine analytische Betrachtung der Technologien und Innovationsthemen der GITEX 2025 — von generativer KI bis zu operativen KI-Agenten und unternehmenstauglicher Infrastruktur.",
+          "tag": "Events & Innovation"
+        },
+        "expand-north-star-2025": {
+          "title": "Mit mir bei der Expand North Star 2025",
+          "date": "10. Oktober 2025",
+          "summary": "Teilnahme an einem der größten Startup-Events der Welt und Verbindung der eigenen Arbeit mit dem Startup- und Innovationsökosystem der Region.",
+          "tag": "Events & Innovation"
+        },
+        "elecomp-talks-1404-ai-for-children": {
+          "title": "KI für Kinder: Chance oder Gefahr?",
+          "date": "1. Oktober 2025",
+          "summary": "Ein Ausschnitt aus einem exklusiven Interview auf der Elecomp 1404 über die Grenze zwischen Chance und Risiko, wenn Kinder auf KI treffen.",
+          "tag": "Künstliche Intelligenz"
+        },
+        "ayno-tv-elecomp-1404": {
+          "title": "Ayno-TV-Interview am letzten Tag der Elecomp 1404",
+          "date": "29. September 2025",
+          "summary": "Ein Fazit der internationalen Messe Elecomp 1404 im Gespräch mit dem CEO von Kohan System Farda.",
+          "tag": "Veranstaltungen"
+        }
+      }
+    },
+    "es": {
+      "readLabel": "Leer original",
+      "posts": {
+        "digital-economy-15-percent-elecomp": {
+          "title": "Una economía digital del 15 % exige un ecosistema sostenible",
+          "date": "12 de julio de 2026",
+          "summary": "Un análisis sobre infraestructura estable, cooperación privada y seguimiento de Elecomp para alcanzar el objetivo digital de Irán.",
+          "tag": "Economía digital"
+        },
+        "generative-ai-tools": {
+          "title": "IA generativa: de la idea a la ejecución",
+          "date": "11 de mayo de 2025",
+          "summary": "Una conversación práctica sobre cómo las pequeñas empresas pueden usar IA en atención al cliente, contenido, automatización, avatares y gestión más inteligente del tiempo.",
+          "tag": "IA generativa"
+        },
+        "ai-career-transformation": {
+          "title": "La IA como oportunidad de transformación profesional",
+          "date": "10 de mayo de 2025",
+          "summary": "Una mirada al futuro del trabajo y a cómo dominar herramientas inteligentes puede hacer que una persona sea más valiosa y difícil de reemplazar.",
+          "tag": "Futuro del trabajo"
+        },
+        "masire-21": {
+          "title": "Ruta 21: Kohan System Farda entra en la incubadora tecnológica Nokhbegan",
+          "date": "10 de junio de 2024",
+          "summary": "Un relato en primera persona sobre la aceptación de Kohan System Farda en la 21.ª convocatoria de la incubadora Nokhbegan del Pardis Technology Park, seleccionada entre unos 150 aspirantes.",
+          "tag": "Emprendimiento"
+        },
+        "neighborhood-management-award": {
+          "title": "Reconocimiento en gestión vecinal",
+          "date": "23 de julio de 2021",
+          "summary": "Un reconocimiento por liderazgo operativo y compromiso comunitario en Pardis New Town.",
+          "tag": "Comunidad"
+        },
+        "farabi-innovation-festival": {
+          "title": "De la idea al mercado en la Universidad de Teherán",
+          "date": "8 de marzo de 2017",
+          "summary": "Una nota sobre el festival de innovación del campus Farabi y la idea Digi Carwash entre los conceptos emprendedores seleccionados.",
+          "tag": "Emprendimiento"
+        },
+        "gitex-2025": {
+          "title": "GITEX 2025 bajo la lupa",
+          "date": "26 de octubre de 2025",
+          "summary": "Un análisis de las tecnologías y ejes de innovación de GITEX 2025, desde la IA generativa hasta los agentes de IA operativos y la infraestructura lista para escala empresarial.",
+          "tag": "Eventos e innovación"
+        },
+        "expand-north-star-2025": {
+          "title": "Conmigo en Expand North Star 2025",
+          "date": "10 de octubre de 2025",
+          "summary": "Asistencia a uno de los mayores eventos de startups del mundo, conectando el trabajo profesional con el ecosistema de startups e innovación de la región.",
+          "tag": "Eventos e innovación"
+        },
+        "elecomp-talks-1404-ai-for-children": {
+          "title": "IA para niños: ¿oportunidad o amenaza?",
+          "date": "1 de octubre de 2025",
+          "summary": "Un extracto de una entrevista exclusiva en Elecomp 1404 sobre dónde está el límite entre la oportunidad y el riesgo cuando los niños usan IA.",
+          "tag": "Inteligencia Artificial"
+        },
+        "ayno-tv-elecomp-1404": {
+          "title": "Entrevista de Ayno TV en el último día de Elecomp 1404",
+          "date": "29 de septiembre de 2025",
+          "summary": "Balance de la feria internacional Elecomp 1404 en conversación con el CEO de Kohan System Farda.",
+          "tag": "Eventos"
+        }
+      }
+    },
+    "fr": {
+      "readLabel": "Lire l'original",
+      "posts": {
+        "digital-economy-15-percent-elecomp": {
+          "title": "Une économie numérique à 15 % exige un écosystème durable",
+          "date": "12 juillet 2026",
+          "summary": "Une analyse du rôle des infrastructures stables, de la coopération privée et du suivi d’Elecomp dans l’objectif numérique iranien.",
+          "tag": "Économie numérique"
+        },
+        "generative-ai-tools": {
+          "title": "IA générative : de l'idée à l'exécution",
+          "date": "11 mai 2025",
+          "summary": "Un échange concret sur l'usage de l'IA par les petites entreprises pour le support client, le contenu, l'automatisation, les avatars et une meilleure gestion du temps.",
+          "tag": "IA générative"
+        },
+        "ai-career-transformation": {
+          "title": "L'IA comme levier de transformation professionnelle",
+          "date": "10 mai 2025",
+          "summary": "Une lecture de l'avenir du travail et de la façon dont la maîtrise des outils intelligents peut rendre les talents plus difficiles à remplacer.",
+          "tag": "Avenir du travail"
+        },
+        "masire-21": {
+          "title": "Parcours 21 : Kohan System Farda rejoint l'incubateur technologique Nokhbegan",
+          "date": "10 juin 2024",
+          "summary": "Un récit à la première personne de l'admission de Kohan System Farda au 21e appel de l'incubateur Nokhbegan du Pardis Technology Park, retenue parmi environ 150 candidats.",
+          "tag": "Entrepreneuriat"
+        },
+        "neighborhood-management-award": {
+          "title": "Prix de gestion de quartier",
+          "date": "23 juillet 2021",
+          "summary": "Une reconnaissance pour un travail de gestion de terrain et d'engagement social à Pardis New Town.",
+          "tag": "Engagement local"
+        },
+        "farabi-innovation-festival": {
+          "title": "De l'idée au marché à l'Université de Téhéran",
+          "date": "8 mars 2017",
+          "summary": "Retour sur le festival d'innovation du campus Farabi et sur Digi Carwash parmi les concepts entrepreneuriaux retenus.",
+          "tag": "Entrepreneuriat"
+        },
+        "gitex-2025": {
+          "title": "GITEX 2025 à la loupe",
+          "date": "26 octobre 2025",
+          "summary": "Un regard analytique sur les technologies et thèmes d'innovation du GITEX 2025, de l'IA générative aux agents IA opérationnels et à l'infrastructure prête pour l'échelle entreprise.",
+          "tag": "Événements et innovation"
+        },
+        "expand-north-star-2025": {
+          "title": "Avec moi à Expand North Star 2025",
+          "date": "10 octobre 2025",
+          "summary": "Participation à l'un des plus grands événements startup au monde, reliant mon travail professionnel à l'écosystème startup et innovation de la région.",
+          "tag": "Événements et innovation"
+        },
+        "elecomp-talks-1404-ai-for-children": {
+          "title": "L'IA pour les enfants : opportunité ou menace ?",
+          "date": "1 octobre 2025",
+          "summary": "Extrait d'un entretien exclusif à Elecomp 1404 sur la frontière entre opportunité et risque lorsque les enfants rencontrent l'IA.",
+          "tag": "Intelligence artificielle"
+        },
+        "ayno-tv-elecomp-1404": {
+          "title": "Entretien Ayno TV lors du dernier jour d'Elecomp 1404",
+          "date": "29 septembre 2025",
+          "summary": "Bilan du salon international Elecomp 1404 en conversation avec le PDG de Kohan System Farda.",
+          "tag": "Événements"
+        }
+      }
+    },
+    "tr": {
+      "readLabel": "Orijinali oku",
+      "posts": {
+        "digital-economy-15-percent-elecomp": {
+          "title": "Yüzde 15 dijital ekonomi için sürdürülebilir ekosistem şart",
+          "date": "12 Temmuz 2026",
+          "summary": "İran'ın dijital ekonomi hedefinde istikrarlı altyapı, özel sektör iş birliği ve Elecomp sonrası takibin rolüne ilişkin bir analiz.",
+          "tag": "Dijital ekonomi"
+        },
+        "generative-ai-tools": {
+          "title": "Üretken yapay zeka: fikirden uygulamaya",
+          "date": "11 Mayıs 2025",
+          "summary": "Küçük işletmelerin müşteri desteği, içerik üretimi, otomasyon, avatarlar ve zamanı daha akıllı kullanmak için yapay zekadan nasıl yararlanabileceğine dair pratik bir sohbet.",
+          "tag": "Üretken yapay zeka"
+        },
+        "ai-career-transformation": {
+          "title": "Yapay zeka kariyer dönüşümü için bir fırsat",
+          "date": "10 Mayıs 2025",
+          "summary": "İşin geleceğine ve akıllı araçları öğrenen insanların nasıl daha değerli, daha zor ikame edilen profesyonellere dönüşebileceğine dair bir değerlendirme.",
+          "tag": "İşin geleceği"
+        },
+        "masire-21": {
+          "title": "Rota 21: Kohan System Farda, Nokhbegan Teknoloji Kuluçka Merkezi'nde",
+          "date": "10 Haziran 2024",
+          "summary": "Kohan System Farda'nın Pardis Teknoloji Parkı Nokhbegan Kuluçka Merkezi'nin 21. kabul çağrısında yaklaşık 150 başvuru arasından seçilme hikâyesi.",
+          "tag": "Girişimcilik"
+        },
+        "neighborhood-management-award": {
+          "title": "Mahalle yönetimi ödülü",
+          "date": "23 Temmuz 2021",
+          "summary": "Pardis New Town'da operasyonel liderlik ve toplumsal sorumluluk içeren mahalle yönetimi çalışması için alınan bir başarı kaydı.",
+          "tag": "Topluluk"
+        },
+        "farabi-innovation-festival": {
+          "title": "Tahran Üniversitesi'nde fikirden pazara",
+          "date": "8 Mart 2017",
+          "summary": "Farabi Kampüsü'ndeki inovasyon festivaline ve seçilen girişim fikirleri arasındaki Digi Carwash konseptine kısa bir bakış.",
+          "tag": "Girişimcilik"
+        },
+        "gitex-2025": {
+          "title": "Mercek Altında GITEX 2025",
+          "date": "26 Ekim 2025",
+          "summary": "GITEX 2025'teki teknolojilere ve inovasyon eksenlerine analitik bir bakış: üretken yapay zekadan operasyonel AI Agent'lara ve kurumsal ölçekli altyapıya.",
+          "tag": "Etkinlikler ve İnovasyon"
+        },
+        "expand-north-star-2025": {
+          "title": "Expand North Star 2025'te Benimle",
+          "date": "10 Ekim 2025",
+          "summary": "Dünyanın en büyük girişim etkinliklerinden birine katılım ve profesyonel çalışmaların bölgenin girişim ve inovasyon ekosistemiyle buluşturulması.",
+          "tag": "Etkinlikler ve İnovasyon"
+        },
+        "elecomp-talks-1404-ai-for-children": {
+          "title": "Çocuklar için yapay zeka: fırsat mı, tehdit mi?",
+          "date": "1 Ekim 2025",
+          "summary": "Elecomp 1404'teki özel röportajdan bir kesit: çocuklar yapay zeka ile buluştuğunda fırsat ile risk arasındaki sınır nerede?",
+          "tag": "Yapay Zeka"
+        },
+        "ayno-tv-elecomp-1404": {
+          "title": "Elecomp 1404'ün son gününde Ayno TV söyleşisi",
+          "date": "29 Eylül 2025",
+          "summary": "Kohan System Farda CEO'su ile Elecomp 1404 uluslararası fuarının değerlendirmesi.",
+          "tag": "Etkinlikler"
+        }
+      }
+    },
+    "ja": {
+      "readLabel": "原文を読む",
+      "posts": {
+        "digital-economy-15-percent-elecomp": {
+          "title": "デジタル経済15％の実現には持続可能なエコシステムが必要",
+          "date": "2026年7月12日",
+          "summary": "イランのデジタル経済目標における安定した基盤、民間協力、Elecomp後の継続的な取り組みを分析します。",
+          "tag": "デジタル経済"
+        },
+        "generative-ai-tools": {
+          "title": "生成AIツール：アイデアから実行まで",
+          "date": "2025年5月11日",
+          "summary": "中小企業がカスタマーサポート、コンテンツ制作、自動化、アバター、時間活用にAIをどう使えるかを語る実践的な対話。",
+          "tag": "生成AI"
+        },
+        "ai-career-transformation": {
+          "title": "キャリア転換の機会としてのAI",
+          "date": "2025年5月10日",
+          "summary": "仕事の未来と、インテリジェントなツールを学ぶ人ほど代替されにくくなる理由についての考察。",
+          "tag": "仕事の未来"
+        },
+        "masire-21": {
+          "title": "パス21：コハン・システム・ファルダ、ノフベガン技術インキュベーターに採択",
+          "date": "2024年6月10日",
+          "summary": "パルディス・テクノロジーパークのノフベガン・インキュベーター第21期公募で、約150の応募者の中から採択されたコハン・システム・ファルダの体験記。",
+          "tag": "起業家精神"
+        },
+        "neighborhood-management-award": {
+          "title": "地域マネジメント賞",
+          "date": "2021年7月23日",
+          "summary": "パルディス・ニュータウンでの地域運営が評価された記録。技術分野以外での実行リーダーシップを示すもの。",
+          "tag": "コミュニティリーダーシップ"
+        },
+        "farabi-innovation-festival": {
+          "title": "テヘラン大学『アイデアから市場へ』",
+          "date": "2017年3月8日",
+          "summary": "ファラビキャンパスのイノベーションフェスティバルと、選出された起業アイデアの一つDigi Carwashの記録。",
+          "tag": "起業家精神"
+        },
+        "gitex-2025": {
+          "title": "GITEX 2025を読み解く",
+          "date": "2025年10月26日",
+          "summary": "GITEX 2025のテクノロジーとイノベーションのテーマを分析。生成AIから実運用AIエージェント、エンタープライズ規模のインフラまで。",
+          "tag": "イベントとイノベーション"
+        },
+        "expand-north-star-2025": {
+          "title": "Expand North Star 2025に参加して",
+          "date": "2025年10月10日",
+          "summary": "世界最大級のスタートアップイベントの一つに参加し、専門的な活動を地域のスタートアップ・イノベーションエコシステムと結び付けた記録。",
+          "tag": "イベントとイノベーション"
+        },
+        "elecomp-talks-1404-ai-for-children": {
+          "title": "子どもと人工知能——好機か脅威か",
+          "date": "2025年10月1日",
+          "summary": "エレコンプ1404での独占インタビュー抜粋。子どもがAIに触れるとき、好機とリスクの境界はどこにあるのか。",
+          "tag": "人工知能"
+        },
+        "ayno-tv-elecomp-1404": {
+          "title": "エレコンプ1404最終日のAyno TVインタビュー",
+          "date": "2025年9月29日",
+          "summary": "コハン・システム・ファルダCEOとの対話による、エレコンプ1404国際展示会の総括。",
+          "tag": "イベント"
+        }
+      }
+    },
+    "zh-Hans": {
+      "readLabel": "阅读原文",
+      "posts": {
+        "digital-economy-15-percent-elecomp": {
+          "title": "数字经济占比达到15%需要可持续生态系统",
+          "date": "2026年7月12日",
+          "summary": "分析稳定基础设施、私营部门协作以及Elecomp会后跟进对伊朗数字经济目标的重要性。",
+          "tag": "数字经济"
+        },
+        "generative-ai-tools": {
+          "title": "生成式 AI：从想法到落地",
+          "date": "2025年5月11日",
+          "summary": "一次面向中小企业的实用讨论，介绍如何把 AI 用在客户服务、内容生产、自动化、虚拟形象以及更高效的时间管理上。",
+          "tag": "生成式 AI"
+        },
+        "ai-career-transformation": {
+          "title": "AI 带来的职业转型机会",
+          "date": "2025年5月10日",
+          "summary": "关于未来工作的一篇分析：学会使用智能工具的人，不是更容易被替代，而是更有能力创造不可替代的价值。",
+          "tag": "未来工作"
+        },
+        "masire-21": {
+          "title": "21号之路：Kohan System Farda 入驻 Nokhbegan 技术孵化中心",
+          "date": "2024年6月10日",
+          "summary": "记录 Kohan System Farda 在帕尔迪斯科技园 Nokhbegan 孵化中心第21期招募中从约150家申请团队中脱颖而出的经历。",
+          "tag": "创业"
+        },
+        "neighborhood-management-award": {
+          "title": "社区管理奖项记录",
+          "date": "2021年7月23日",
+          "summary": "一段关于 Pardis New Town 社区管理工作的记录，体现运营管理和社会责任方面的实践。",
+          "tag": "社区领导力"
+        },
+        "farabi-innovation-festival": {
+          "title": "德黑兰大学“从想法到市场”创新活动",
+          "date": "2017年3月8日",
+          "summary": "记录 Farabi 校区创新活动，以及 Digi Carwash 作为入选创业概念之一的经历。",
+          "tag": "创业"
+        },
+        "gitex-2025": {
+          "title": "透视 GITEX 2025",
+          "date": "2025年10月26日",
+          "summary": "对 GITEX 2025 技术与创新主题的分析:从生成式 AI 到可投入运营的 AI Agent,再到面向企业规模的基础设施。",
+          "tag": "活动与创新"
+        },
+        "expand-north-star-2025": {
+          "title": "与我同行:Expand North Star 2025",
+          "date": "2025年10月10日",
+          "summary": "参加全球最大的创业活动之一,将专业工作与该地区的创业和创新生态系统联系起来。",
+          "tag": "活动与创新"
+        },
+        "elecomp-talks-1404-ai-for-children": {
+          "title": "儿童与人工智能：机遇还是威胁？",
+          "date": "2025年10月1日",
+          "summary": "Elecomp 1404 独家采访节选：当儿童接触人工智能时，机遇与风险的界限在哪里？",
+          "tag": "人工智能"
+        },
+        "ayno-tv-elecomp-1404": {
+          "title": "Elecomp 1404 闭幕日 Ayno TV 专访",
+          "date": "2025年9月29日",
+          "summary": "与科汉系统未来首席执行官对话，总结 Elecomp 1404 国际展会。",
+          "tag": "活动"
+        }
+      }
+    }
+  }
+}

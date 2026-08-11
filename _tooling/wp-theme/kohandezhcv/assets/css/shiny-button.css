@@ -1,0 +1,119 @@
+/* Shiny CTA effect — vanilla port of the shiny-button React component.
+   Buttons keep their original background, text color and sizing; the effect
+   only adds an animated conic-gradient border in the page's own accent color.
+   Browsers without @property support show a static gradient border instead. */
+@property --gradient-angle { syntax: "<angle>"; initial-value: 0deg; inherits: false }
+@property --gradient-angle-offset { syntax: "<angle>"; initial-value: 0deg; inherits: false }
+@property --gradient-percent { syntax: "<percentage>"; initial-value: 5%; inherits: false }
+@property --gradient-shine { syntax: "<color>"; initial-value: #ffffff; inherits: false }
+
+.shiny-cta,
+.tf-btn.animate-btn,
+.portfolio-home,
+.client-dialog-close {
+  --shiny-cta-bg: #10151b;
+  --shiny-cta-highlight: #70e1b5;
+  --gradient-shine: rgba(255, 255, 255, .85);
+  position: relative;
+  isolation: isolate;
+  border: 1px solid transparent !important;
+  background:
+    linear-gradient(var(--shiny-cta-bg), var(--shiny-cta-bg)) padding-box,
+    conic-gradient(
+      from calc(var(--gradient-angle) - var(--gradient-angle-offset)),
+      transparent,
+      var(--shiny-cta-highlight) var(--gradient-percent),
+      var(--gradient-shine) calc(var(--gradient-percent) * 2),
+      var(--shiny-cta-highlight) calc(var(--gradient-percent) * 3),
+      transparent calc(var(--gradient-percent) * 4)
+    ) border-box !important;
+  animation: shiny-angle 3s linear infinite;
+  transition: --gradient-angle-offset .8s cubic-bezier(.25, 1, .5, 1), --gradient-percent .8s cubic-bezier(.25, 1, .5, 1);
+}
+
+.shiny-cta:is(:hover, :focus-visible),
+.tf-btn.animate-btn:is(:hover, :focus-visible),
+.portfolio-home:is(:hover, :focus-visible),
+.client-dialog-close:is(:hover, :focus-visible) {
+  --gradient-percent: 20%;
+  --gradient-angle-offset: 95deg;
+}
+
+/* Per-context colors: keep each page's original palette */
+.tf-btn.animate-btn {
+  --shiny-cta-bg: var(--white, #ffffff);
+  --shiny-cta-highlight: var(--primary, #00de51);
+}
+
+.tf-btn.animate-btn.animate-dark {
+  --gradient-shine: rgba(255, 255, 255, .95);
+}
+
+.portfolio-home,
+.client-dialog-close {
+  --shiny-cta-bg: var(--panel, #10151b);
+  --shiny-cta-highlight: var(--accent, #70e1b5);
+}
+
+@keyframes shiny-angle {
+  to { --gradient-angle: 360deg }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shiny-cta,
+  .tf-btn.animate-btn,
+  .portfolio-home,
+  .client-dialog-close { animation: none }
+}
+
+/* --- Extension: action-pill CTAs and demo segmented control -------------
+   Same conic-border shine, applied to the .tf-btn-action text pill and the
+   active demo-mode tab. Each variant keeps its own original background. */
+.tf-btn-action .text,
+.demo-mode-btn.is-active {
+  --shiny-cta-bg: var(--primary, #00de51);
+  --shiny-cta-highlight: rgba(255, 255, 255, 0.9);
+  --gradient-shine: rgba(255, 255, 255, 0.95);
+  position: relative;
+  isolation: isolate;
+  border: 1px solid transparent !important;
+  background:
+    linear-gradient(var(--shiny-cta-bg), var(--shiny-cta-bg)) padding-box,
+    conic-gradient(
+      from calc(var(--gradient-angle) - var(--gradient-angle-offset)),
+      transparent,
+      var(--shiny-cta-highlight) var(--gradient-percent),
+      var(--gradient-shine) calc(var(--gradient-percent) * 2),
+      var(--shiny-cta-highlight) calc(var(--gradient-percent) * 3),
+      transparent calc(var(--gradient-percent) * 4)
+    ) border-box !important;
+  animation: shiny-angle 3s linear infinite;
+}
+.tf-btn-action:is(:hover, :focus-visible) .text {
+  --gradient-percent: 20%;
+  --gradient-angle-offset: 95deg;
+}
+.tf-btn-action.style-white .text {
+  --shiny-cta-bg: var(--white-92, rgba(255, 255, 255, 0.92));
+  --shiny-cta-highlight: var(--primary, #00de51);
+  --gradient-shine: rgba(255, 255, 255, 0.85);
+}
+.dark-mode .tf-btn-action.style-white .text {
+  --shiny-cta-highlight: var(--primary, #00de51);
+}
+.demo-mode-btn.is-active {
+  --gradient-percent: 12%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tf-btn-action .text,
+  .demo-mode-btn.is-active {
+    animation: none;
+  }
+}
+
+/* The pill labels (.sect-tag, .professional-role__badge) previously carried
+   this same rotating conic-gradient border, driven by the `shiny-angle`
+   animation. It has been removed: the pills now use the Pearl treatment in
+   pearl-button.css, and the two effects fought each other on the same
+   elements. */

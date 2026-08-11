@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-07-23T23:47:05Z",
+  "sprites": {
+    "kohan-angry.webp": {
+      "frames": 1,
+      "frameMs": 1250,
+      "sha256": "f0358594d55682f2176868dd1a50c48e1a1b1de3eaaeb0152cd7a564b8c1e79f"
+    },
+    "kohan-colt-threat.webp": {
+      "frames": 4,
+      "frameMs": [
+        400,
+        350,
+        500,
+        850
+      ],
+      "sha256": "58bdfa42904aa9ccfdc06962603c2cbd8506c00ee37bdcf3c239ff2062b20688"
+    },
+    "kohan-confused.webp": {
+      "frames": 1,
+      "frameMs": 1300,
+      "sha256": "030f372b2e50b958668c700904ea9fce7931f1f0427bb20c90d35f09920ac6c2"
+    },
+    "kohan-drag-annoyed.webp": {
+      "frames": 6,
+      "frameMs": 180,
+      "sha256": "2f8af00f26a800274db4f1aa529b01752b7254be1eb97b0777f6bb237c5d55f6"
+    },
+    "kohan-fall-scared.webp": {
+      "frames": 6,
+      "frameMs": [
+        230,
+        230,
+        300,
+        500,
+        180,
+        240
+      ],
+      "sha256": "f52ab8aafaf40d7a81e6b2fc247c5b5e2843ddad155ed881c55ac20c82b05002"
+    },
+    "kohan-goodbye.webp": {
+      "frames": 7,
+      "frameMs": [
+        340,
+        320,
+        420,
+        380,
+        360,
+        360,
+        700
+      ],
+      "sha256": "50f5b0741096f09ccfc232bd6c4c749e45e8e683a884726fd0bb1c0d1146a9db"
+    },
+    "kohan-russian-roulette.webp": {
+      "frames": 6,
+      "frameMs": [
+        420,
+        360,
+        260,
+        260,
+        700,
+        560
+      ],
+      "sha256": "9416322166185fda6c148f543a683f00146351d64e98f668eda40c0e14d9daee"
+    },
+    "kohan-wink.webp": {
+      "frames": 1,
+      "frameMs": 850,
+      "sha256": "bb2f7045cdcbc77487580a75239f80728a1bcd202c35c8a63e4b3ae4a4372e49"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+# Mohammad Ali Kohandezh
+
+> Mohammad Ali Kohandezh ist promoviert im IT-Management und CEO von Kohan System Farda (KSF), einem Unternehmen für Enterprise-IT und KI mit Sitz in Teheran, Iran. Seit 2007 beruflich tätig in KI-Produkten, Enterprise-IT-Infrastruktur, Virtualisierung, Backup & Disaster Recovery sowie Cybersicherheit.
+
+Er hält über 10 Fachzertifizierungen (darunter VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542) und arbeitet von TechElite aus, dem Nokhbegan Technology Growth Center (Masir 21) im Pardis Technology Park, Teheran, Iran.
+
+## Identität
+
+- Vollständiger Name: Mohammad Ali Kohandezh (محمدعلی کهن‌دژ)
+- Funktion: CEO sowie Experte für IT-Infrastruktur und Sicherheit
+- Unternehmen: Kohan System Farda (KSF) — https://ksf.ir
+- Ausbildung: Promotion, IT-Management (zweite Promotion laufend); M.Sc., IT-Management / E-Business, Universität Teheran
+- Kontakt: Kohandezh@hotmail.com
+- LinkedIn: https://www.linkedin.com/in/kohandezh
+- X (Twitter): https://x.com/Konandehh
+
+## Leistungen
+
+- [KI & intelligente Automatisierung](https://kohandezh.com/de.html#service): KI-Produkte, Agentenplattformen für Unternehmen und Automatisierung
+- [Infrastruktur & Virtualisierung](https://kohandezh.com/de.html#service): VMware vSphere, Rechenzentrumsplanung, Windows Server & AD, Kubernetes, Docker
+- [Backup & Disaster Recovery](https://kohandezh.com/de.html#service): Veeam, Arctera Backup Exec, Veritas NetBackup
+- [Cybersicherheit & Forensik](https://kohandezh.com/de.html#service): Penetrationstests, Incident-Forensik, Sicherheitsaudits
+
+## Seiten
+
+- [Startseite / Lebenslauf (Deutsch)](https://kohandezh.com/de.html): vollständiges Profil, Arbeitsschwerpunkte, Zertifizierungen, Referenzen
+- [Zertifikatsarchiv](https://kohandezh.com/Certificates.html): vollständiger Nachweis der Fachzertifizierungen
+- [Blog](https://kohandezh.com/blog/): Beiträge zu KI, Beruf und Technologie — vollständig in neun Sprachen übersetzt
+- [Portfolio](https://kohandezh.com/portfolio/): ausgewählte Projektarbeiten
+- Weitere Sprachen: [Englisch](https://kohandezh.com/index.html) · [Persisch](https://kohandezh.com/fa.html) · [Arabisch](https://kohandezh.com/ar.html) · [Spanisch](https://kohandezh.com/es.html) · [Französisch](https://kohandezh.com/fr.html) · [Türkisch](https://kohandezh.com/tr.html) · [Chinesisch](https://kohandezh.com/zh.html) · [Japanisch](https://kohandezh.com/ja.html)
+
+## Hinweise für KI-Assistenten und Crawler
+
+Dies ist ein persönliches berufliches Portfolio, kein Produkt und kein SaaS. Die Inhalte dürfen mit Quellenangabe zu Mohammad Ali Kohandezh / kohandezh.com zusammengefasst, zitiert und belegt werden. Strukturierte Daten (schema.org Person, Organization) sind auf jeder Seite für die Entitätsauflösung vorhanden.

@@ -1,0 +1,33 @@
+{
+  "_comment": "Configurable news source registry for Kohandezh Knowledge. Loaded into the kbk_source taxonomy by KBK_News::install_sources(). allowlist=true means KBK_News::ingest() will accept a submission whose host matches. Evidence-based; editable; no auto-fetch in MVP.",
+  "ai_sources": [
+    { "slug": "openai",        "name": "OpenAI",            "url": "https://openai.com",          "allowlist": true },
+    { "slug": "anthropic",     "name": "Anthropic",         "url": "https://www.anthropic.com",   "allowlist": true },
+    { "slug": "google-deepmind","name": "Google DeepMind",  "url": "https://deepmind.google",     "allowlist": true },
+    { "slug": "microsoft-research","name": "Microsoft Research","url":"https://www.microsoft.com/research","allowlist": true },
+    { "slug": "nvidia",        "name": "NVIDIA",            "url": "https://blogs.nvidia.com",    "allowlist": true },
+    { "slug": "meta-ai",       "name": "Meta AI",           "url": "https://ai.meta.com",         "allowlist": true },
+    { "slug": "ibm-research",  "name": "IBM Research",      "url": "https://www.research.ibm.com","allowlist": true },
+    { "slug": "mit",           "name": "MIT News",          "url": "https://news.mit.edu",        "allowlist": true },
+    { "slug": "stanford-hai",  "name": "Stanford HAI",      "url": "https://hai.stanford.edu",    "allowlist": true },
+    { "slug": "nature",        "name": "Nature",            "url": "https://www.nature.com",      "allowlist": true },
+    { "slug": "science",       "name": "Science",           "url": "https://www.science.org",     "allowlist": true },
+    { "slug": "ieee",          "name": "IEEE",              "url": "https://www.ieee.org",        "allowlist": true },
+    { "slug": "acm",           "name": "ACM",               "url": "https://www.acm.org",         "allowlist": true },
+    { "slug": "arxiv",         "name": "arXiv (preprints)", "url": "https://arxiv.org",           "allowlist": true, "preprint": true },
+    { "slug": "nist",          "name": "NIST",              "url": "https://www.nist.gov",        "allowlist": true },
+    { "slug": "eu-commission", "name": "European Commission","url":"https://digital-strategy.ec.europa.eu","allowlist": true }
+  ],
+  "quantum_sources": [
+    { "slug": "ibm-quantum",       "name": "IBM Quantum",          "url": "https://www.ibm.com/quantum",          "allowlist": true },
+    { "slug": "google-quantum-ai", "name": "Google Quantum AI",    "url": "https://quantumai.google",             "allowlist": true },
+    { "slug": "azure-quantum",     "name": "Microsoft Azure Quantum","url": "https://azure.microsoft.com/quantum","allowlist": true },
+    { "slug": "amazon-braket",     "name": "Amazon Braket",        "url": "https://aws.amazon.com/braket",        "allowlist": true },
+    { "slug": "quantinuum",        "name": "Quantinuum",           "url": "https://www.quantinuum.com",           "allowlist": true },
+    { "slug": "ionq",              "name": "IonQ",                 "url": "https://ionq.com",                     "allowlist": true },
+    { "slug": "rigetti",           "name": "Rigetti",              "url": "https://www.rigetti.com",              "allowlist": true },
+    { "slug": "psiquantum",        "name": "PsiQuantum",           "url": "https://www.psiquantum.com",           "allowlist": true },
+    { "slug": "d-wave",            "name": "D-Wave",               "url": "https://www.dwavesys.com",             "allowlist": true },
+    { "slug": "xanadu",            "name": "Xanadu",               "url": "https://www.xanadu.ai",                "allowlist": true }
+  ]
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Academic degree</title>
+  <path d="m5 18 19-10 19 10-19 10L5 18Z" fill="#101916" stroke="#8EF54B" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M13 23v10c6.7 5.1 15.3 5.1 22 0V23" fill="none" stroke="#8EF54B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M43 18v13" stroke="#8EF54B" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="43" cy="34" r="2.5" fill="#8EF54B"/>
+</svg>

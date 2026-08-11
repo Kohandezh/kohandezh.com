@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 48" role="img" aria-labelledby="title">
+  <title id="title">Modaberan Fanavari Pasargad</title>
+  <rect x="1" y="1" width="70" height="46" rx="13" fill="#F4F8F5" stroke="#69C92E" stroke-width="2"/>
+  <path d="M14 32V16h4.2l4.8 7.4 4.8-7.4H32v16h-4.5v-9l-4.5 6.7-4.5-6.7v9H14Z" fill="#101916"/>
+  <path d="M37 16h12v4H41.5v2.8h6.7v3.8h-6.7V32H37V16Zm16 0h5.7c5.1 0 8.3 3.1 8.3 7.9S63.7 32 58.5 32H53V16Zm4.5 4v8h1.2c2.3 0 3.8-1.4 3.8-4.1S61 20 58.7 20h-1.2Z" fill="#2C6A16"/>
+</svg>

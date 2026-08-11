@@ -1,0 +1,199 @@
+/**
+ * Kohan Avatar chat panel — glowing assistant styling.
+ * Opens beside the avatar (data-side), never above it. Uses the site's own
+ * green accent so it stays in harmony with the rest of the page.
+ */
+@property --kohan-chat-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.kohan-chat-launcher {
+  position: fixed;
+  z-index: 1041;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(108, 243, 164, 0.45);
+  border-radius: 50%;
+  background: #10151b;
+  color: #6cf3a4;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35), 0 0 0 4px rgba(108, 243, 164, 0.08);
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.kohan-chat-launcher:hover,
+.kohan-chat-launcher:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(108, 243, 164, 0.9);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4), 0 0 0 5px rgba(108, 243, 164, 0.14);
+  outline: none;
+}
+
+.kohan-chat-panel {
+  position: fixed;
+  z-index: 1042;
+  width: min(340px, calc(100vw - 24px));
+  max-height: min(460px, calc(100dvh - 24px));
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  border-radius: 20px;
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0.05), transparent 40%),
+    rgba(14, 20, 22, 0.94);
+  color: #eafff4;
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(22px) saturate(1.1);
+  -webkit-backdrop-filter: blur(22px) saturate(1.1);
+  opacity: 0;
+  transform: translateY(8px) scale(0.98);
+  transform-origin: bottom left;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.24s cubic-bezier(0.2, 0.8, 0.2, 1);
+  overflow: hidden;
+  isolation: isolate;
+}
+.kohan-chat-panel[data-side="left"] {
+  transform-origin: bottom right;
+}
+.kohan-chat-panel.is-open {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+/* Animated glowing conic border in the site accent. */
+.kohan-chat-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  padding: 1px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--kohan-chat-angle),
+    transparent 0deg,
+    rgba(108, 243, 164, 0.9) 60deg,
+    rgba(255, 255, 255, 0.85) 90deg,
+    rgba(108, 243, 164, 0.9) 120deg,
+    transparent 200deg
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: kohan-chat-spin 5s linear infinite;
+}
+@keyframes kohan-chat-spin {
+  to { --kohan-chat-angle: 360deg; }
+}
+
+.kohan-chat-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.kohan-chat-title strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.kohan-chat-title span {
+  display: block;
+  font-size: 11px;
+  color: rgba(234, 255, 244, 0.6);
+}
+.kohan-chat-close {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 9px;
+  background: transparent;
+  color: #eafff4;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+.kohan-chat-close:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.kohan-chat-log {
+  padding: 14px 16px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.kohan-chat-msg {
+  max-width: 84%;
+  padding: 9px 12px;
+  border-radius: 14px;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  unicode-bidi: plaintext;
+}
+.kohan-chat-bot {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.kohan-chat-user {
+  align-self: flex-end;
+  background: rgba(108, 243, 164, 0.16);
+  border: 1px solid rgba(108, 243, 164, 0.28);
+}
+.kohan-chat-pending {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.kohan-chat-form {
+  display: flex;
+  gap: 8px;
+  padding: 12px 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.kohan-chat-input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.28);
+  color: #eafff4;
+  font: inherit;
+  font-size: 13px;
+}
+.kohan-chat-input:focus-visible {
+  outline: none;
+  border-color: rgba(108, 243, 164, 0.7);
+}
+.kohan-chat-send {
+  width: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: #6cf3a4;
+  color: #06130a;
+  cursor: pointer;
+  transition: filter 0.15s ease;
+}
+.kohan-chat-send:hover {
+  filter: brightness(1.06);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kohan-chat-panel,
+  .kohan-chat-launcher { transition: none; }
+  .kohan-chat-panel::before { animation: none; }
+}

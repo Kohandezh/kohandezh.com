@@ -1,0 +1,1109 @@
+:root {
+  color-scheme: dark;
+  --psn-bg: #0f0f0f;
+  --psn-bg-deep: #080a0b;
+  --psn-panel: rgba(22, 24, 24, 0.78);
+  --psn-panel-strong: rgba(28, 31, 31, 0.94);
+  --psn-line: rgba(255, 255, 255, 0.11);
+  --psn-line-strong: rgba(255, 255, 255, 0.18);
+  --psn-text: rgba(255, 255, 255, 0.94);
+  --psn-muted: rgba(255, 255, 255, 0.58);
+  --psn-subtle: rgba(255, 255, 255, 0.48);
+  --psn-primary: #00de51;
+  --psn-primary-soft: rgba(0, 222, 81, 0.13);
+  --psn-blue: #0070d1;
+  --psn-blue-soft: rgba(0, 112, 209, 0.16);
+  --psn-platinum: #d9f5ff;
+  --psn-gold: #ffd166;
+  --psn-silver: #bdcadc;
+  --psn-bronze: #c7895f;
+  --psn-radius-sm: 14px;
+  --psn-radius: 22px;
+  --psn-radius-lg: 30px;
+  --psn-shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
+  /* `--psn-primary` is a SURFACE (a green pill with near-black ink on it) and
+     works in both themes. `--psn-primary-ink` is the same idea as TEXT, where
+     #00de51 on a light page is only ~1.9:1 and has to darken. */
+  --psn-primary-ink: #00de51;
+  --psn-grid: rgba(255, 255, 255, 0.018);
+  --psn-fill-1: rgba(255, 255, 255, 0.035);
+  --psn-fill-2: rgba(255, 255, 255, 0.075);
+  --psn-bg-top: #141616;
+  --psn-surface: rgba(15, 15, 15, 0.72);
+  --psn-shadow-soft: rgba(0, 0, 0, 0.22);
+  --psn-blue-plate: #0b1524;
+  --psn-blue-ink: rgba(224, 241, 255, 0.9);
+}
+
+/* ==========================================================================
+   Light theme
+   --------------------------------------------------------------------------
+   This page shipped hard-coded dark: `color-scheme: dark` and not one light
+   rule, so the site-wide toggle did nothing here and a visitor in light mode
+   landed on a black page. Every colour already came from a token, so the light
+   skin is a single re-declaration.
+
+   Keyed off `data-kdcv-theme` on <html> (set pre-paint by the theme boot in
+   the page head, and kept in sync by page-chrome.js) rather than
+   `body.dark-mode`, because <html> itself is painted here.
+   ========================================================================== */
+html[data-kdcv-theme="light"] {
+  color-scheme: light;
+  --psn-bg: #ebebeb;
+  --psn-bg-deep: #f5f5f5;
+  --psn-panel: rgba(255, 255, 255, 0.88);
+  --psn-panel-strong: #ffffff;
+  --psn-line: rgba(15, 15, 15, 0.12);
+  --psn-line-strong: rgba(15, 15, 15, 0.2);
+  --psn-text: rgba(15, 15, 15, 0.94);
+  --psn-muted: rgba(15, 15, 15, 0.62);
+  --psn-subtle: rgba(15, 15, 15, 0.66);
+  --psn-primary-ink: #067a30;
+  --psn-primary-soft: rgba(0, 222, 81, 0.16);
+  --psn-blue: #005ba8;
+  --psn-blue-soft: rgba(0, 112, 209, 0.12);
+  /* Trophy tiers are metals: on a light page the pale ones vanish, so each is
+     darkened to its own legible value rather than replaced. */
+  --psn-platinum: #17697f;
+  --psn-gold: #7a5600;
+  --psn-silver: #4f5a6b;
+  --psn-bronze: #8a5330;
+  --psn-shadow: 0 24px 80px rgba(15, 15, 15, 0.12);
+  --psn-grid: rgba(15, 15, 15, 0.03);
+  --psn-fill-1: rgba(15, 15, 15, 0.04);
+  --psn-fill-2: rgba(15, 15, 15, 0.07);
+  --psn-bg-top: #f7f7f7;
+  --psn-surface: rgba(255, 255, 255, 0.82);
+  --psn-shadow-soft: rgba(15, 15, 15, 0.1);
+  --psn-blue-plate: #0070d1;
+  --psn-blue-ink: #00468a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.psn-page {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--psn-text);
+  background:
+    radial-gradient(circle at 13% 8%, rgba(0, 222, 81, 0.09), transparent 25rem),
+    radial-gradient(circle at 88% 18%, rgba(0, 112, 209, 0.16), transparent 28rem),
+    linear-gradient(180deg, var(--psn-bg-top) 0%, var(--psn-bg) 38%, var(--psn-bg-deep) 100%);
+  font-family: "Apfel Grotezk", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body.psn-page::before {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  content: "";
+  background-image: url("../images/item/cloud-bg.webp");
+  background-position: center top;
+  background-size: cover;
+  opacity: 0.12;
+  filter: saturate(0.7) contrast(1.08);
+}
+
+body.psn-page::after {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(var(--psn-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--psn-grid) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 70%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 70%);
+}
+
+/* `.psn-page a` is (0,1,1); a plain component class like `.psn-skip-link` or
+   `.psn-button--primary` is only (0,1,0), so this reset was silently beating
+   every anchor-based component that declares its own ink. Measured result: the
+   primary CTA rendered white-on-green at 1.73:1. `:where()` contributes zero
+   specificity, so the reset still applies to bare links but can no longer
+   outrank a component. */
+.psn-page :where(a) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.psn-page img,
+.psn-page svg {
+  display: block;
+  max-width: 100%;
+}
+
+.psn-page button,
+.psn-page a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.psn-page :focus-visible {
+  outline: 3px solid var(--psn-primary);
+  outline-offset: 4px;
+}
+
+.psn-skip-link {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  z-index: 100;
+  min-height: 44px;
+  padding: 11px 16px;
+  border-radius: 999px;
+  color: #06130a;
+  background: var(--psn-primary);
+  font-weight: 700;
+  transform: translate(-50%, -150%);
+  transition: transform 0.2s ease;
+}
+
+.psn-skip-link:focus {
+  transform: translate(-50%, 0);
+}
+
+.psn-shell {
+  width: min(1180px, calc(100% - 40px));
+  margin-inline: auto;
+  padding: 24px 0 40px;
+}
+
+.psn-topbar {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 70px;
+  margin-bottom: 18px;
+  padding: 12px 14px 12px 18px;
+  border: 1px solid var(--psn-line);
+  border-radius: 20px;
+  background: var(--psn-surface);
+  box-shadow: 0 12px 44px var(--psn-shadow-soft);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.psn-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 44px;
+  border-radius: 12px;
+}
+
+.psn-brand img {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+}
+
+.psn-brand-copy {
+  display: grid;
+  gap: 1px;
+}
+
+.psn-brand-name {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.psn-brand-context {
+  color: var(--psn-muted);
+  font-size: 11px;
+}
+
+.psn-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.psn-top-link,
+.psn-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 46px;
+  border: 1px solid var(--psn-line);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.psn-top-link {
+  padding: 0 16px;
+  color: var(--psn-muted);
+  background: var(--psn-fill-1);
+}
+
+.psn-top-link:hover,
+.psn-button--secondary:hover {
+  color: var(--psn-text);
+  border-color: var(--psn-line-strong);
+  background: var(--psn-fill-2);
+  transform: translateY(-2px);
+}
+
+.psn-top-link svg,
+.psn-button svg {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
+
+.psn-hero {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1.14fr) minmax(330px, 0.86fr);
+  gap: 22px;
+  min-height: 610px;
+  overflow: hidden;
+  padding: 22px;
+  border: 1px solid var(--psn-line);
+  border-radius: var(--psn-radius-lg);
+  background:
+    linear-gradient(125deg, var(--psn-fill-2), transparent 38%),
+    var(--psn-surface);
+  box-shadow: var(--psn-shadow);
+}
+
+.psn-hero::before {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  top: -230px;
+  right: -150px;
+  z-index: -1;
+  border: 1px solid rgba(0, 112, 209, 0.26);
+  border-radius: 50%;
+  content: "";
+  box-shadow:
+    0 0 0 52px rgba(0, 112, 209, 0.025),
+    0 0 0 104px rgba(0, 112, 209, 0.018);
+}
+
+.psn-hero::after {
+  position: absolute;
+  inset: auto auto -180px -120px;
+  z-index: -1;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  content: "";
+  background: rgba(0, 222, 81, 0.12);
+  filter: blur(110px);
+}
+
+.psn-hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(24px, 5vw, 58px);
+}
+
+.psn-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  min-height: 34px;
+  padding: 6px 11px;
+  border: 1px solid rgba(0, 112, 209, 0.32);
+  border-radius: 999px;
+  color: var(--psn-blue-ink);
+  background: var(--psn-blue-soft);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.psn-eyebrow img {
+  width: 20px;
+  height: 20px;
+}
+
+.psn-title {
+  max-width: 750px;
+  margin: 25px 0 20px;
+  font-size: clamp(48px, 7vw, 88px);
+  font-weight: 400;
+  line-height: 0.94;
+  letter-spacing: -0.065em;
+}
+
+.psn-title span {
+  display: block;
+  color: var(--psn-primary-ink);
+}
+
+.psn-lead {
+  max-width: 660px;
+  margin: 0;
+  color: var(--psn-muted);
+  font-size: clamp(16px, 1.6vw, 19px);
+  line-height: 1.72;
+}
+
+.psn-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.psn-button {
+  min-height: 50px;
+  padding: 0 19px;
+}
+
+.psn-button--primary {
+  border-color: var(--psn-primary);
+  color: #06130a;
+  background: var(--psn-primary);
+  box-shadow: 0 12px 30px rgba(0, 222, 81, 0.15);
+}
+
+.psn-button--primary:hover {
+  border-color: #2ff56e;
+  background: #2ff56e;
+  transform: translateY(-2px);
+}
+
+.psn-button--secondary {
+  color: var(--psn-text);
+  background: var(--psn-fill-1);
+}
+
+.psn-snapshot-note {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 29px;
+  color: var(--psn-subtle);
+  font-size: 12px;
+}
+
+.psn-snapshot-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--psn-primary);
+  box-shadow: 0 0 0 5px var(--psn-primary-soft);
+}
+
+.psn-profile-card {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  padding: clamp(22px, 3vw, 32px);
+  overflow: hidden;
+  border: 1px solid var(--psn-line);
+  border-radius: calc(var(--psn-radius-lg) - 8px);
+  background:
+    linear-gradient(145deg, rgba(0, 112, 209, 0.14), transparent 44%),
+    var(--psn-panel-strong);
+}
+
+.psn-profile-card::after {
+  position: absolute;
+  right: -70px;
+  bottom: -80px;
+  width: 230px;
+  height: 230px;
+  border: 1px solid var(--psn-line);
+  border-radius: 50%;
+  content: "";
+  box-shadow: 0 0 0 34px var(--psn-grid);
+}
+
+.psn-profile-head,
+.psn-profile-level,
+.psn-card-image,
+.psn-profile-meta {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- portrait as the whole card ----------------------------------------
+   The photo used to sit in a 72px tile inside this card and read as a
+   thumbnail. It is the profile picture for the handle beside it, so it now
+   fills the outer frame and everything else is composited over it.
+
+   `cover` is right here (the earlier tile needed `contain` only because a
+   square crop cut the head off); at this aspect the full-body composite has
+   room, and `object-position` is biased upward so the face stays clear of the
+   metadata row at the bottom. */
+.psn-profile-card--photo {
+  min-height: 420px;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.psn-profile-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  pointer-events: none;
+}
+
+.psn-profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+}
+
+/* The scrim AND per-block plates.
+   The source photograph is a bright studio composite on a near-white ground,
+   so a gentle top-to-bottom gradient was not enough on its own: the handle and
+   the level number rendered white-on-white and disappeared. Two layers now do
+   the work — a mild overall scrim for depth, plus an opaque plate behind each
+   copy block, which is what actually guarantees the contrast wherever the
+   photo happens to be light. */
+.psn-profile-card--photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(3, 8, 18, .30) 0%,
+    rgba(3, 8, 18, .18) 34%,
+    rgba(3, 8, 18, .55) 74%,
+    rgba(3, 8, 18, .86) 100%
+  );
+}
+
+.psn-profile-card--photo .psn-profile-head,
+.psn-profile-card--photo .psn-profile-level,
+.psn-profile-card--photo .psn-profile-meta {
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 14px;
+  background: rgba(3, 8, 18, .72);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* Light or dark page, the plate underneath is the same dark glass, so the copy
+   on it is always light. */
+.psn-profile-card--photo .psn-handle,
+.psn-profile-card--photo .psn-profile-label,
+.psn-profile-card--photo .psn-level-label,
+.psn-profile-card--photo .psn-level-value,
+.psn-profile-card--photo .psn-profile-meta span {
+  color: #f2f7ff;
+}
+
+/* The decorative ring would otherwise be drawn on top of the portrait. */
+.psn-profile-card--photo::after {
+  opacity: .35;
+  z-index: 0;
+}
+
+/* The PlayStation mark keeps its plate, but as a standalone badge beside the
+   handle now that there is no avatar tile to pin it to. */
+.psn-profile-card--photo .psn-profile-mark {
+  position: static;
+  flex: 0 0 auto;
+}
+
+
+
+.psn-profile-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* The profile picture, with the PlayStation mark as a corner badge.
+   The source art is a 512x768 portrait, so `object-fit: cover` with a top-
+   biased `object-position` keeps the face in frame inside a square. */
+.psn-profile-avatar {
+  position: relative;
+  display: block;
+  width: 72px;
+  height: 72px;
+  flex: 0 0 auto;
+  border: 1px solid rgba(0, 112, 209, 0.34);
+  border-radius: 18px;
+  background: rgba(0, 112, 209, 0.11);
+  overflow: hidden;
+}
+
+.psn-profile-avatar > picture,
+.psn-profile-avatar img:not(.psn-profile-mark img) {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.psn-profile-avatar picture img {
+  width: 100%;
+  height: 100%;
+  /* `contain`, not `cover`. The source is a full-body 512x768 composite (the
+     portrait plus the miniature avatar beside it) and `cover` cropped the head
+     off inside a square tile. The whole composition has to survive. */
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
+.psn-profile-mark {
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  /* Sits ON the portrait, so it needs its own opaque plate to stay legible. */
+  border: 1px solid rgba(0, 112, 209, 0.5);
+  border-radius: 9px;
+  background: var(--psn-blue-plate);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .45);
+}
+
+.psn-profile-mark img {
+  width: 16px;
+  height: 16px;
+}
+
+.psn-handle {
+  margin: 0 0 3px;
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+.psn-profile-label {
+  color: var(--psn-muted);
+  font-size: 12px;
+}
+
+.psn-profile-level {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 42px 0 34px;
+}
+
+.psn-level-copy {
+  display: grid;
+  gap: 5px;
+}
+
+.psn-level-label {
+  color: var(--psn-muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.psn-level-value {
+  font-size: clamp(74px, 10vw, 118px);
+  font-weight: 400;
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+}
+
+.psn-level-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 30px;
+  padding: 6px 10px;
+  border: 1px solid var(--psn-line);
+  border-radius: 999px;
+  color: var(--psn-muted);
+  background: var(--psn-fill-1);
+  font-size: 11px;
+}
+
+.psn-card-image {
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  border: 1px solid var(--psn-line-strong);
+  border-radius: 12px;
+  background: var(--psn-fill-1);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.25);
+}
+
+.psn-profile-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  color: var(--psn-subtle);
+  font-size: 11px;
+}
+
+.psn-section {
+  padding-top: 92px;
+  scroll-margin-top: 20px;
+}
+
+.psn-section-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+  margin-bottom: 28px;
+}
+
+.psn-section-index {
+  display: inline-grid;
+  width: 48px;
+  height: 32px;
+  place-items: center;
+  border: 1px solid var(--psn-line);
+  border-radius: 999px;
+  color: var(--psn-muted);
+  background: var(--psn-fill-1);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.psn-section-title {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 54px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.psn-section-copy {
+  max-width: 630px;
+  margin: 10px 0 0;
+  color: var(--psn-muted);
+  line-height: 1.65;
+}
+
+.psn-stats {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--psn-line);
+  border-radius: var(--psn-radius);
+  background: var(--psn-panel);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
+}
+
+.psn-stat {
+  min-width: 0;
+  padding: 25px 22px 24px;
+}
+
+.psn-stat:not(:last-child) {
+  border-right: 1px solid var(--psn-line);
+}
+
+.psn-stat dt {
+  margin-bottom: 12px;
+  color: var(--psn-muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.psn-stat dd {
+  margin: 0;
+  font-size: clamp(27px, 3vw, 38px);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+}
+
+.psn-cabinet {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.psn-trophy {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  padding: 25px;
+  border: 1px solid var(--psn-line);
+  border-radius: var(--psn-radius);
+  background: var(--psn-panel);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.14);
+}
+
+.psn-trophy::after {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: -76px;
+  right: -60px;
+  border-radius: 50%;
+  content: "";
+  background: currentColor;
+  opacity: 0.11;
+  filter: blur(12px);
+}
+
+.psn-trophy--platinum { color: var(--psn-platinum); }
+.psn-trophy--gold { color: var(--psn-gold); }
+.psn-trophy--silver { color: var(--psn-silver); }
+.psn-trophy--bronze { color: var(--psn-bronze); }
+
+.psn-trophy-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.psn-trophy-medal {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 15px;
+  background: color-mix(in srgb, currentColor 9%, transparent);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+}
+
+.psn-trophy-type {
+  color: var(--psn-muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.psn-trophy-value {
+  display: block;
+  margin-top: 38px;
+  color: var(--psn-text);
+  font-size: clamp(45px, 6vw, 68px);
+  font-weight: 400;
+  line-height: 0.85;
+  letter-spacing: -0.06em;
+  font-variant-numeric: tabular-nums;
+}
+
+.psn-trophy-label {
+  display: block;
+  margin-top: 12px;
+  color: var(--psn-muted);
+  font-size: 13px;
+}
+
+.psn-source {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 30px;
+  overflow: hidden;
+  padding: clamp(28px, 5vw, 52px);
+  border: 1px solid rgba(0, 222, 81, 0.22);
+  border-radius: var(--psn-radius-lg);
+  background:
+    radial-gradient(circle at 95% 20%, rgba(0, 222, 81, 0.09), transparent 16rem),
+    var(--psn-panel);
+}
+
+.psn-source::after {
+  position: absolute;
+  right: 28%;
+  bottom: -88px;
+  width: 210px;
+  height: 210px;
+  border: 1px solid rgba(0, 222, 81, 0.12);
+  border-radius: 50%;
+  content: "";
+  box-shadow: 0 0 0 36px rgba(0, 222, 81, 0.018);
+}
+
+.psn-source-copy,
+.psn-source .psn-button {
+  position: relative;
+  z-index: 1;
+}
+
+.psn-source-title {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.psn-source-text {
+  max-width: 640px;
+  margin: 13px 0 0;
+  color: var(--psn-muted);
+  line-height: 1.65;
+}
+
+.psn-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 80px;
+  padding: 24px 4px 8px;
+  border-top: 1px solid var(--psn-line);
+  color: var(--psn-subtle);
+  font-size: 12px;
+}
+
+.psn-footer-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.psn-footer a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--psn-muted);
+}
+
+.psn-footer a:hover {
+  color: var(--psn-text);
+}
+
+@supports not (color: color-mix(in srgb, white 10%, transparent)) {
+  .psn-trophy-medal {
+    background: var(--psn-fill-2);
+  }
+}
+
+@media (max-width: 991px) {
+  .psn-shell {
+    width: min(100% - 30px, 760px);
+  }
+
+  .psn-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .psn-hero-copy {
+    min-height: 480px;
+  }
+
+  .psn-profile-card {
+    min-height: 530px;
+  }
+
+  .psn-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .psn-stat:not(:last-child) {
+    border-right: 0;
+  }
+
+  .psn-stat {
+    border-right: 1px solid var(--psn-line);
+    border-bottom: 1px solid var(--psn-line);
+  }
+
+  .psn-stat:nth-child(3n) {
+    border-right: 0;
+  }
+
+  .psn-stat:nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+
+  .psn-cabinet {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .psn-shell {
+    width: min(100% - 20px, 600px);
+    padding-top: 10px;
+  }
+
+  .psn-topbar {
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding: 11px;
+  }
+
+  .psn-brand-context {
+    display: none;
+  }
+
+  .psn-top-actions .psn-top-link:last-child {
+    display: none;
+  }
+
+  .psn-top-link {
+    padding-inline: 13px;
+  }
+
+  .psn-top-link span {
+    display: none;
+  }
+
+  .psn-hero {
+    padding: 10px;
+    border-radius: 24px;
+  }
+
+  .psn-hero-copy {
+    min-height: 430px;
+    padding: 26px 16px 30px;
+  }
+
+  .psn-title {
+    margin-top: 22px;
+    font-size: clamp(45px, 15vw, 66px);
+  }
+
+  .psn-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .psn-button {
+    width: 100%;
+  }
+
+  .psn-profile-card {
+    min-height: 460px;
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .psn-level-value {
+    font-size: 82px;
+  }
+
+  .psn-level-badge {
+    display: none;
+  }
+
+  .psn-profile-meta {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .psn-section {
+    padding-top: 72px;
+  }
+
+  .psn-section-head {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .psn-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .psn-stat,
+  .psn-stat:nth-child(3n) {
+    border-right: 1px solid var(--psn-line);
+    border-bottom: 1px solid var(--psn-line);
+  }
+
+  .psn-stat:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .psn-stat:nth-last-child(-n + 2) {
+    border-bottom: 1px solid var(--psn-line);
+  }
+
+  .psn-stat:last-child {
+    grid-column: 1 / -1;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  .psn-cabinet {
+    gap: 9px;
+  }
+
+  .psn-trophy {
+    padding: 20px;
+  }
+
+  .psn-source {
+    grid-template-columns: 1fr;
+    padding: 28px 22px;
+    border-radius: 22px;
+  }
+
+  .psn-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 64px;
+  }
+}
+
+@media (max-width: 359px) {
+  .psn-cabinet {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .psn-page *,
+  .psn-page *::before,
+  .psn-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

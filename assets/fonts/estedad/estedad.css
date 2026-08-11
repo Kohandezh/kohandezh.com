@@ -1,0 +1,9 @@
+/* Estedad — فونت آزاد فارسی (لایسنس SIL OFL) — نزدیک‌ترین جایگزین رایگان IRANSansX
+   Source: https://github.com/aminabedi68/Estedad (v8.5, variable) */
+@font-face {
+    font-family: "Estedad";
+    src: url("Estedad-VF.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
