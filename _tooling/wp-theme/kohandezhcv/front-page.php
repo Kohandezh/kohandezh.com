@@ -1612,7 +1612,7 @@
                                                         <div class="content-bottom">
                                                             <div class="br-line"></div>
                                                             <div class="group-action">
-                                                                <a href="https://ksf.ir" target="_blank" rel="noopener" class="tf-btn-action style-white">
+                                                                <a href="#contact" class="tf-btn-action style-white">
                                                                     <span class="ic-wrap">
                                                                         <i class="icon icon-arrow-right-top"></i>
                                                                     </span>
@@ -1697,7 +1697,7 @@
                                                         <div class="content-bottom">
                                                             <div class="br-line"></div>
                                                             <div class="group-action">
-                                                                <a href="https://padyar.com" target="_blank" rel="noopener" class="tf-btn-action style-white">
+                                                                <a href="#contact" class="tf-btn-action style-white">
                                                                     <span class="ic-wrap">
                                                                         <i class="icon icon-arrow-right-top"></i>
                                                                     </span>
@@ -1781,7 +1781,7 @@
                                                         <div class="content-bottom">
                                                             <div class="br-line"></div>
                                                             <div class="group-action">
-                                                                <a href="https://homayar.com" target="_blank" rel="noopener" class="tf-btn-action style-white">
+                                                                <a href="#contact" class="tf-btn-action style-white">
                                                                     <span class="ic-wrap">
                                                                         <i class="icon icon-arrow-right-top"></i>
                                                                     </span>
@@ -2512,7 +2512,7 @@
     <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=62" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=107" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=101" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kdcv-resume-entry-fix.js?v=6" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kdcv-resume-entry-fix.js?v=7" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=2" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=98" defer></script>

@@ -88,6 +88,11 @@
     var social = document.querySelector(".sidebar-user .user-social");
     if (!social || social.querySelector("[data-kdcv-messenger]")) return;
 
+    // The product/site shortcut is already represented in the work section.
+    // Keep the compact profile rail limited to personal channels.
+    var companyLink = social.querySelector('a[href="https://ksf.ir"], a[href="https://ksf.ir/"]');
+    if (companyLink && companyLink.parentElement) companyLink.parentElement.remove();
+
     if (!document.getElementById("kdcv-messenger-theme")) {
       var style = document.createElement("style");
       style.id = "kdcv-messenger-theme";
@@ -99,8 +104,7 @@
       { name: "Telegram", href: "https://t.me/kohandezh", className: "telegram", color: "#229ed9", icon: "telegram" },
       { name: "Bale", href: "https://ble.ir/kohandezh", className: "bale", color: "#08a88a", icon: "bale" },
       { name: "Eitaa", href: "https://eitaa.com/kohandezhh", className: "eitaa", color: "#e37600", icon: "eitaa" },
-      { name: "WhatsApp", href: "https://wa.me/18106662283", className: "whatsapp", color: "#25d366", icon: "whatsapp" },
-      { name: "Email", href: "mailto:Kohandezh@hotmail.com", className: "email", color: "#5e6774", icon: "email" }
+      { name: "WhatsApp", href: "https://wa.me/18106662283", className: "whatsapp", color: "#25d366", icon: "whatsapp" }
     ];
 
     function vector(path) {
@@ -139,7 +143,7 @@
       link.href = service.href;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      link.setAttribute("aria-label", service.name + " — " + (service.name === "WhatsApp" ? "+1 810 666 2283" : service.name === "Email" ? "Kohandezh@hotmail.com" : "@kohandezh"));
+      link.setAttribute("aria-label", service.name + " — " + (service.name === "WhatsApp" ? "+1 810 666 2283" : "@kohandezh"));
       link.title = link.getAttribute("aria-label");
       link.style.backgroundColor = service.color;
       link.style.color = "#fff";

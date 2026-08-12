@@ -11432,7 +11432,19 @@ html { scrollbar-color: rgba(168,255,70,.34) transparent; scrollbar-width: thin;
     top: 58px;
     left: 20px;
     right: auto;
+    display: grid !important;
+    grid-template-columns: repeat(2, 44px);
+    grid-auto-rows: 44px;
+    gap: 8px;
+    width: 96px;
+    max-width: 96px;
+    overflow: visible;
+    contain: layout paint;
   }
+  .sidebar-user .user-social > li { min-width: 0; min-height: 0; }
+  .sidebar-user .user-social a { width: 44px; height: 44px; }
+  .timeline,
+  .timeline-item[data-kdcv-sako] { overflow-anchor: none; }
 }
 
 /* --- Contact form: required-field note ----------------------------------

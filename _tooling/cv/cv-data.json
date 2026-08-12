@@ -25,7 +25,7 @@
     },
     "title": {
       "en": "CEO, Kohan System Farda (KSF) — PhD in IT Management",
-      "fa": "مدیرعامل کهن سیستم فردا (KSF) — دکترای مدیریت فناوری اطلاعات",
+      "fa": "مدیرعامل کهن سیستم فردا (KSF) — دکتریی مدیریت فناوری اطلاعات",
       "ar": "الرئيس التنفيذي، Kohan System Farda (KSF) — دكتوراه في إدارة تقنية المعلومات",
       "de": "CEO, Kohan System Farda (KSF) — PhD in IT-Management",
       "es": "CEO, Kohan System Farda (KSF) — Doctorado en Gestión de TI",
@@ -517,7 +517,7 @@
     {
       "degree": {
         "en": "PhD Candidate (second doctorate)",
-        "fa": "دانشجوی دکترا (دکترای دوم)",
+        "fa": "دانشجوی دکتری (دکتریی دوم)",
         "ar": "مرشح لنيل الدكتوراه (الدكتوراه الثانية)",
         "de": "Doktorand (zweite Promotion)",
         "es": "Candidato a Doctor (segundo doctorado)",
@@ -543,7 +543,7 @@
     {
       "degree": {
         "en": "PhD, IT Management — Smart Business",
-        "fa": "دکترای مدیریت فناوری اطلاعات — کسب‌وکار هوشمند",
+        "fa": "دکتریی مدیریت فناوری اطلاعات — کسب‌وکار هوشمند",
         "ar": "دكتوراه في إدارة تقنية المعلومات — الأعمال الذكية",
         "de": "PhD, IT-Management — Smart Business",
         "es": "Doctorado en Gestión de TI — Negocios Inteligentes",

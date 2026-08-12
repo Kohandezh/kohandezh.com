@@ -2489,7 +2489,7 @@
     <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=63" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=108" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=102" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kdcv-resume-entry-fix.js?v=6" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kdcv-resume-entry-fix.js?v=7" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=2" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=99" defer></script>

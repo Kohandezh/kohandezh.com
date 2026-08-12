@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=98"></script>
     <meta name="description"
-        content="محمدعلی کهن‌دژ — دکترای مدیریت فناوری اطلاعات و مدیرعامل شرکت کهن سیستم فردا (KSF)؛ فعال حرفه‌ای از سال ۲۰۰۷ در هوش مصنوعی، زیرساخت فناوری اطلاعات و امنیت سایبری.">
+        content="محمدعلی کهن‌دژ — دکتریی مدیریت فناوری اطلاعات و مدیرعامل شرکت کهن سیستم فردا (KSF)؛ فعال حرفه‌ای از سال ۲۰۰۷ در هوش مصنوعی، زیرساخت فناوری اطلاعات و امنیت سایبری.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <!-- font -->
@@ -388,7 +388,7 @@
     <meta property="og:site_name" content="Mohammad Ali Kohandezh">
     <meta property="og:url" content="https://kohandezh.com/fa/">
     <meta property="og:title" content="محمدعلی کهن‌دژ - متخصص هوش مصنوعی، امنیت سایبری و زیرساخت فناوری اطلاعات">
-    <meta property="og:description" content="محمدعلی کهن‌دژ — دکترای مدیریت فناوری اطلاعات و مدیرعامل شرکت کهن سیستم فردا (KSF)؛ فعال حرفه‌ای از سال ۲۰۰۷ در هوش مصنوعی، زیرساخت فناوری اطلاعات و امنیت سایبری.">
+    <meta property="og:description" content="محمدعلی کهن‌دژ — دکتریی مدیریت فناوری اطلاعات و مدیرعامل شرکت کهن سیستم فردا (KSF)؛ فعال حرفه‌ای از سال ۲۰۰۷ در هوش مصنوعی، زیرساخت فناوری اطلاعات و امنیت سایبری.">
     <meta property="og:image" content="<?php echo KDCV; ?>/assets/images/og/og-image.jpg">
     <meta property="og:image:secure_url" content="<?php echo KDCV; ?>/assets/images/og/og-image.jpg">
     <meta property="og:image:type" content="image/jpeg">
@@ -406,7 +406,7 @@
     <!-- SEO: Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="محمدعلی کهن‌دژ - متخصص هوش مصنوعی، امنیت سایبری و زیرساخت فناوری اطلاعات">
-    <meta name="twitter:description" content="محمدعلی کهن‌دژ — دکترای مدیریت فناوری اطلاعات و مدیرعامل شرکت کهن سیستم فردا (KSF)؛ فعال حرفه‌ای از سال ۲۰۰۷ در هوش مصنوعی، زیرساخت فناوری اطلاعات و امنیت سایبری.">
+    <meta name="twitter:description" content="محمدعلی کهن‌دژ — دکتریی مدیریت فناوری اطلاعات و مدیرعامل شرکت کهن سیستم فردا (KSF)؛ فعال حرفه‌ای از سال ۲۰۰۷ در هوش مصنوعی، زیرساخت فناوری اطلاعات و امنیت سایبری.">
     <meta name="twitter:image" content="<?php echo KDCV; ?>/assets/images/og/og-image.jpg">
     <!-- SEO: structured data (Person) -->
     <script type="application/ld+json">
@@ -1333,8 +1333,8 @@
                                     پیاده‌سازی و مدیریت زیرساخت‌های IT، امنیت سایبری، مجازی‌سازی و محصولات <br>
                                     مبتنی بر هوش مصنوعی، از جمله پلتفرم Padyar AI و محصولات HomaYar، MeetYar، BlogYar، NetYar و HomeYar. <br>
                                     <br>
-                                    مدیرعامل شرکت کهن سیستم فردا (KSF)، دارای دکترای مدیریت فناوری اطلاعات و
-                                    اکنون دانشجوی دکترای دوم — با نگاهی توأمان به دقت مهندسی و بینش کسب‌وکار.
+                                    مدیرعامل شرکت کهن سیستم فردا (KSF)، دارای دکتریی مدیریت فناوری اطلاعات و
+                                    اکنون دانشجوی دکتریی دوم — با نگاهی توأمان به دقت مهندسی و بینش کسب‌وکار.
                                     همچنین در حال پژوهش روی رایانش کوانتومی و امنیت پساکوانتومی هستم تا لایه‌های
                                     آینده زیرساخت‌های امن و هوش مصنوعی سازمانی را بهتر بشناسم.
                                 </p>
@@ -1475,9 +1475,9 @@
                                                 <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
                                                     src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">دانشجوی دکترای دوم</p>
+                                            <p class="timeline-role fw-medium text-black-72">دانشجوی دکتریی دوم</p>
                                             <p class="timeline-desc text-body-3 text-black-56">
-                                                در حال گذراندن دومین مقطع دکترا، همزمان با مدیریت KSF.
+                                                در حال گذراندن دومین مقطع دکتری، همزمان با مدیریت KSF.
                                             </p>
                                         </div>
                                     </div>
@@ -1522,7 +1522,7 @@
                                                 <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
                                                     src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">دکترا — مدیریت فناوری
+                                            <p class="timeline-role fw-medium text-black-72">دکتری — مدیریت فناوری
                                                 اطلاعات، کسب‌وکار هوشمند</p>
                                             <p class="timeline-desc text-body-3 text-black-56">
                                                 دانشگاه آزاد اسلامی، واحد تهران مرکزی. همزمان با فعالیت تمام‌وقت در
@@ -1635,7 +1635,7 @@
                                                         <div class="content-bottom">
                                                             <div class="br-line"></div>
                                                             <div class="group-action">
-                                                                <a href="https://ksf.ir" target="_blank" rel="noopener" class="tf-btn-action style-white">
+                                                                <a href="#contact" class="tf-btn-action style-white">
                                                                     <span class="ic-wrap">
                                                                         <i class="icon icon-arrow-right-top"></i>
                                                                     </span>
@@ -1718,7 +1718,7 @@
                                                         <div class="content-bottom">
                                                             <div class="br-line"></div>
                                                             <div class="group-action">
-                                                                <a href="https://padyar.com" target="_blank" rel="noopener" class="tf-btn-action style-white">
+                                                                <a href="#contact" class="tf-btn-action style-white">
                                                                     <span class="ic-wrap">
                                                                         <i class="icon icon-arrow-right-top"></i>
                                                                     </span>
@@ -1802,7 +1802,7 @@
                                                         <div class="content-bottom">
                                                             <div class="br-line"></div>
                                                             <div class="group-action">
-                                                                <a href="https://homayar.com" target="_blank" rel="noopener" class="tf-btn-action style-white">
+                                                                <a href="#contact" class="tf-btn-action style-white">
                                                                     <span class="ic-wrap">
                                                                         <i class="icon icon-arrow-right-top"></i>
                                                                     </span>
@@ -2534,7 +2534,7 @@
     <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=62" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=107" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=101" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kdcv-resume-entry-fix.js?v=6" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kdcv-resume-entry-fix.js?v=7" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=2" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=98" defer></script>
