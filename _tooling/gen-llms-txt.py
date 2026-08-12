@@ -10,8 +10,8 @@ that is what keeps them from drifting apart as the CV changes.
 import io, os
 
 LANGS = ["ar", "de", "es", "fr", "tr", "zh", "ja"]
-PAGE = {"ar":"ar.html","de":"de.html","es":"es.html","fr":"fr.html",
-        "tr":"tr.html","zh":"zh.html","ja":"ja.html"}
+PAGE = {"ar":"ar/","de":"de/","es":"es/","fr":"fr/",
+        "tr":"tr/","zh":"zh/","ja":"ja/"}
 
 T = {
 "ar": dict(
@@ -155,13 +155,13 @@ FIX = {"ja": [("professional に従事", "専門的に従事"),
               ("個人の professional なポートフォリオ", "個人の専門的なポートフォリオ")]}
 
 OTHER = {
- "ar":[("الفارسية","fa.html"),("الإنجليزية","index.html"),("الألمانية","de.html"),("الإسبانية","es.html"),("الفرنسية","fr.html"),("التركية","tr.html"),("الصينية","zh.html"),("اليابانية","ja.html")],
- "de":[("Englisch","index.html"),("Persisch","fa.html"),("Arabisch","ar.html"),("Spanisch","es.html"),("Französisch","fr.html"),("Türkisch","tr.html"),("Chinesisch","zh.html"),("Japanisch","ja.html")],
- "es":[("inglés","index.html"),("persa","fa.html"),("árabe","ar.html"),("alemán","de.html"),("francés","fr.html"),("turco","tr.html"),("chino","zh.html"),("japonés","ja.html")],
- "fr":[("anglais","index.html"),("persan","fa.html"),("arabe","ar.html"),("allemand","de.html"),("espagnol","es.html"),("turc","tr.html"),("chinois","zh.html"),("japonais","ja.html")],
- "tr":[("İngilizce","index.html"),("Farsça","fa.html"),("Arapça","ar.html"),("Almanca","de.html"),("İspanyolca","es.html"),("Fransızca","fr.html"),("Çince","zh.html"),("Japonca","ja.html")],
- "zh":[("英语","index.html"),("波斯语","fa.html"),("阿拉伯语","ar.html"),("德语","de.html"),("西班牙语","es.html"),("法语","fr.html"),("土耳其语","tr.html"),("日语","ja.html")],
- "ja":[("英語","index.html"),("ペルシア語","fa.html"),("アラビア語","ar.html"),("ドイツ語","de.html"),("スペイン語","es.html"),("フランス語","fr.html"),("トルコ語","tr.html"),("中国語","zh.html")],
+ "ar":[("الفارسية","fa/"),("الإنجليزية",""),("الألمانية","de/"),("الإسبانية","es/"),("الفرنسية","fr/"),("التركية","tr/"),("الصينية","zh/"),("اليابانية","ja/")],
+ "de":[("Englisch",""),("Persisch","fa/"),("Arabisch","ar/"),("Spanisch","es/"),("Französisch","fr/"),("Türkisch","tr/"),("Chinesisch","zh/"),("Japanisch","ja/")],
+ "es":[("inglés",""),("persa","fa/"),("árabe","ar/"),("alemán","de/"),("francés","fr/"),("turco","tr/"),("chino","zh/"),("japonés","ja/")],
+ "fr":[("anglais",""),("persan","fa/"),("arabe","ar/"),("allemand","de/"),("espagnol","es/"),("turc","tr/"),("chinois","zh/"),("japonais","ja/")],
+ "tr":[("İngilizce",""),("Farsça","fa/"),("Arapça","ar/"),("Almanca","de/"),("İspanyolca","es/"),("Fransızca","fr/"),("Çince","zh/"),("Japonca","ja/")],
+ "zh":[("英语",""),("波斯语","fa/"),("阿拉伯语","ar/"),("德语","de/"),("西班牙语","es/"),("法语","fr/"),("土耳其语","tr/"),("日语","ja/")],
+ "ja":[("英語",""),("ペルシア語","fa/"),("アラビア語","ar/"),("ドイツ語","de/"),("スペイン語","es/"),("フランス語","fr/"),("トルコ語","tr/"),("中国語","zh/")],
 }
 
 B = "https://kohandezh.com/"
@@ -177,7 +177,7 @@ for lg in LANGS:
     w("- %s: %s\n" % (t["f_title"], t["v_title"]))
     w("- %s: Kohan System Farda (KSF) — https://ksf.ir\n" % t["f_company"])
     w("- %s: %s\n" % (t["f_edu"], t["v_edu"]))
-    w("- %s: Kohandezh@hotmail.com\n" % t["f_contact"])
+    w("- %s: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283\n" % t["f_contact"])
     w("- LinkedIn: https://www.linkedin.com/in/kohandezh\n")
     w("- X (Twitter): https://x.com/Konandehh\n\n")
     w("## %s\n\n" % t["h_srv"])
@@ -185,7 +185,7 @@ for lg in LANGS:
         w("- [%s](%s%s#service): %s\n" % (t["s"+k], B, PAGE[lg], t["s"+k+"d"]))
     w("\n## %s\n\n" % t["h_pg"])
     w("- [%s](%s%s): %s\n" % (t["p_home"], B, PAGE[lg], t["p_home_d"]))
-    w("- [%s](%sCertificates.html): %s\n" % (t["p_certs"], B, t["p_certs_d"]))
+    w("- [%s](%scertificates/): %s\n" % (t["p_certs"], B, t["p_certs_d"]))
     w("- [%s](%sblog/): %s\n" % (t["p_blog"], B, t["p_blog_d"]))
     w("- [%s](%sportfolio/): %s\n" % (t["p_port"], B, t["p_port_d"]))
     w("- %s: %s\n" % (t["p_other"], " · ".join("[%s](%s%s)" % (n, B, u) for n, u in OTHER[lg])))

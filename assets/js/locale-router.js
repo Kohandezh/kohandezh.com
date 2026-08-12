@@ -27,7 +27,7 @@
     // Where a visitor with NO usable language signal lands. English stays the
     // canonical URL for crawlers; this only affects real browsers that tell us
     // nothing about their preference.
-    var DEFAULT_LOCALE = "fa";
+    var DEFAULT_LOCALE = "en";
 
     var BOT_PATTERN = /(bot|spider|crawler|slurp|bingpreview|facebookexternalhit|twitterbot|linkedinbot|whatsapp|telegrambot|skypeuripreview|google-?structured|feedfetcher|ia_archiver|archive\.org_bot|perplexity|gptbot|claudebot|bytespider|applebot|yandex|baidu|duckduckbot|seznambot|facebot|semrush|ahrefsbot|dotbot|petalbot|dataforseo|mj12bot|sitesucker)/i;
 
@@ -113,9 +113,7 @@
     //   1. The browser's own preferred language — the strongest signal we have
     //      client-side, and it beats geography (an Iranian in Berlin whose
     //      browser is set to Persian wants Persian, not German).
-    //   2. Nothing usable → PERSIAN. The site owner is Iranian and the primary
-    //      audience is Persian-speaking, so "no signal" resolves to fa rather
-    //      than to English.
+    //   2. Nothing usable → ENGLISH, the stable canonical/x-default URL.
     //
     // `detected === "en"` is a SIGNAL, not an absence: an English browser stays
     // on English. Only a genuinely unknown preference falls through to fa.

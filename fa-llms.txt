@@ -10,7 +10,7 @@
 - سمت: مدیرعامل و متخصص زیرساخت و امنیت فناوری اطلاعات
 - شرکت: کهن سیستم فردا (KSF) — https://ksf.ir
 - تحصیلات: دکترای مدیریت فناوری اطلاعات (دکترای دوم در حال انجام)؛ کارشناسی ارشد مدیریت فناوری اطلاعات / تجارت الکترونیک، دانشگاه تهران
-- تماس: Kohandezh@hotmail.com
+- تماس: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283
 - لینکدین: https://www.linkedin.com/in/kohandezh
 - ایکس (توییتر): https://x.com/Konandehh
 
@@ -30,8 +30,8 @@
 ## صفحات
 
 - [صفحه اصلی / رزومه (انگلیسی)](https://kohandezh.com/)
-- [فارسی](https://kohandezh.com/fa.html) · [عربی](https://kohandezh.com/ar.html) · [آلمانی](https://kohandezh.com/de.html) · [اسپانیایی](https://kohandezh.com/es.html) · [فرانسوی](https://kohandezh.com/fr.html) · [ترکی](https://kohandezh.com/tr.html) · [چینی](https://kohandezh.com/zh.html) · [ژاپنی](https://kohandezh.com/ja.html)
-- [آرشیو گواهینامه‌ها](https://kohandezh.com/Certificates.html): سوابق کامل گواهینامه‌های حرفه‌ای
+- [فارسی](https://kohandezh.com/fa/) · [عربی](https://kohandezh.com/ar/) · [آلمانی](https://kohandezh.com/de/) · [اسپانیایی](https://kohandezh.com/es/) · [فرانسوی](https://kohandezh.com/fr/) · [ترکی](https://kohandezh.com/tr/) · [چینی](https://kohandezh.com/zh/) · [ژاپنی](https://kohandezh.com/ja/)
+- [آرشیو گواهینامه‌ها](https://kohandezh.com/certificates/): سوابق کامل گواهینامه‌های حرفه‌ای
 - [وبلاگ](https://kohandezh.com/blog/): مقالات در حوزه هوش مصنوعی، مسیر شغلی و فناوری
 - [نمونه‌کارها](https://kohandezh.com/portfolio/): منتخب پروژه‌ها
 

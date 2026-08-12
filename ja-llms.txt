@@ -10,24 +10,24 @@
 - 役職: 最高経営責任者／IT インフラ・セキュリティ専門家
 - 会社: Kohan System Farda (KSF) — https://ksf.ir
 - 学歴: IT マネジメント博士（二つめの博士課程在籍中）／テヘラン大学 IT マネジメント・e ビジネス修士
-- 連絡先: Kohandezh@hotmail.com
+- 連絡先: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283
 - LinkedIn: https://www.linkedin.com/in/kohandezh
 - X (Twitter): https://x.com/Konandehh
 
 ## サービス
 
-- [AI とスマート自動化](https://kohandezh.com/ja.html#service): AI 製品、企業向けエージェント基盤、業務自動化
-- [インフラと仮想化](https://kohandezh.com/ja.html#service): VMware vSphere、データセンター設計、Windows Server と AD、Kubernetes、Docker
-- [バックアップと災害復旧](https://kohandezh.com/ja.html#service): Veeam、Arctera Backup Exec、Veritas NetBackup
-- [サイバーセキュリティとフォレンジック](https://kohandezh.com/ja.html#service): ペネトレーションテスト、インシデントフォレンジック、セキュリティ監査
+- [AI とスマート自動化](https://kohandezh.com/ja/#service): AI 製品、企業向けエージェント基盤、業務自動化
+- [インフラと仮想化](https://kohandezh.com/ja/#service): VMware vSphere、データセンター設計、Windows Server と AD、Kubernetes、Docker
+- [バックアップと災害復旧](https://kohandezh.com/ja/#service): Veeam、Arctera Backup Exec、Veritas NetBackup
+- [サイバーセキュリティとフォレンジック](https://kohandezh.com/ja/#service): ペネトレーションテスト、インシデントフォレンジック、セキュリティ監査
 
 ## ページ
 
-- [ホーム／履歴（日本語）](https://kohandezh.com/ja.html): 詳細プロフィール、主な実績、資格、推薦の声
-- [資格アーカイブ](https://kohandezh.com/Certificates.html): 専門資格の完全な記録
+- [ホーム／履歴（日本語）](https://kohandezh.com/ja/): 詳細プロフィール、主な実績、資格、推薦の声
+- [資格アーカイブ](https://kohandezh.com/certificates/): 専門資格の完全な記録
 - [ブログ](https://kohandezh.com/blog/): AI、キャリア、技術に関する記事 — 9 言語に全文翻訳済み
 - [ポートフォリオ](https://kohandezh.com/portfolio/): 厳選したプロジェクト
-- 他の言語: [英語](https://kohandezh.com/index.html) · [ペルシア語](https://kohandezh.com/fa.html) · [アラビア語](https://kohandezh.com/ar.html) · [ドイツ語](https://kohandezh.com/de.html) · [スペイン語](https://kohandezh.com/es.html) · [フランス語](https://kohandezh.com/fr.html) · [トルコ語](https://kohandezh.com/tr.html) · [中国語](https://kohandezh.com/zh.html)
+- 他の言語: [英語](https://kohandezh.com/) · [ペルシア語](https://kohandezh.com/fa/) · [アラビア語](https://kohandezh.com/ar/) · [ドイツ語](https://kohandezh.com/de/) · [スペイン語](https://kohandezh.com/es/) · [フランス語](https://kohandezh.com/fr/) · [トルコ語](https://kohandezh.com/tr/) · [中国語](https://kohandezh.com/zh/)
 
 ## AI アシスタントおよびクローラーへの注記
 

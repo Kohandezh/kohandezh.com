@@ -78,7 +78,7 @@ console.log("wisdom-quotes dataset + selector tests\n");
   raw.categories.forEach(function (c) { c.quotes.forEach(function (q) {
     if (q.verified === true && q.enabled !== false) allRaw.push(q.id);
   }); });
-  ok("T1 only verified&enabled selectable", allSelectable.length === allRaw.length && allSelectable.length === 25);
+  ok("T1 only verified&enabled selectable", allSelectable.length === allRaw.length && allSelectable.length === 28);
 })();
 
 // Test 6: malformed JSON rejected safely

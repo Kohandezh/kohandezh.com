@@ -10,24 +10,24 @@
 - Unvan: Genel müdür; BT altyapısı ve güvenlik uzmanı
 - Şirket: Kohan System Farda (KSF) — https://ksf.ir
 - Eğitim: BT Yönetimi doktorası (ikinci doktora sürüyor); BT Yönetimi / e-İş yüksek lisansı, Tahran Üniversitesi
-- İletişim: Kohandezh@hotmail.com
+- İletişim: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283
 - LinkedIn: https://www.linkedin.com/in/kohandezh
 - X (Twitter): https://x.com/Konandehh
 
 ## Hizmetler
 
-- [Yapay zekâ ve akıllı otomasyon](https://kohandezh.com/tr.html#service): yapay zekâ ürünleri, kurumsal ajan platformları ve otomasyon
-- [Altyapı ve sanallaştırma](https://kohandezh.com/tr.html#service): VMware vSphere, veri merkezi tasarımı, Windows Server ve AD, Kubernetes, Docker
-- [Yedekleme ve olağanüstü durum kurtarma](https://kohandezh.com/tr.html#service): Veeam, Arctera Backup Exec, Veritas NetBackup
-- [Siber güvenlik ve adli bilişim](https://kohandezh.com/tr.html#service): sızma testi, olay sonrası adli inceleme, güvenlik denetimi
+- [Yapay zekâ ve akıllı otomasyon](https://kohandezh.com/tr/#service): yapay zekâ ürünleri, kurumsal ajan platformları ve otomasyon
+- [Altyapı ve sanallaştırma](https://kohandezh.com/tr/#service): VMware vSphere, veri merkezi tasarımı, Windows Server ve AD, Kubernetes, Docker
+- [Yedekleme ve olağanüstü durum kurtarma](https://kohandezh.com/tr/#service): Veeam, Arctera Backup Exec, Veritas NetBackup
+- [Siber güvenlik ve adli bilişim](https://kohandezh.com/tr/#service): sızma testi, olay sonrası adli inceleme, güvenlik denetimi
 
 ## Sayfalar
 
-- [Ana sayfa / özgeçmiş (Türkçe)](https://kohandezh.com/tr.html): tam profil, öne çıkan işler, sertifikalar, referanslar
-- [Sertifika arşivi](https://kohandezh.com/Certificates.html): mesleki sertifikaların tam kaydı
+- [Ana sayfa / özgeçmiş (Türkçe)](https://kohandezh.com/tr/): tam profil, öne çıkan işler, sertifikalar, referanslar
+- [Sertifika arşivi](https://kohandezh.com/certificates/): mesleki sertifikaların tam kaydı
 - [Blog](https://kohandezh.com/blog/): yapay zekâ, kariyer ve teknoloji üzerine yazılar — dokuz dile tümüyle çevrildi
 - [Portföy](https://kohandezh.com/portfolio/): seçilmiş proje çalışmaları
-- Diğer diller: [İngilizce](https://kohandezh.com/index.html) · [Farsça](https://kohandezh.com/fa.html) · [Arapça](https://kohandezh.com/ar.html) · [Almanca](https://kohandezh.com/de.html) · [İspanyolca](https://kohandezh.com/es.html) · [Fransızca](https://kohandezh.com/fr.html) · [Çince](https://kohandezh.com/zh.html) · [Japonca](https://kohandezh.com/ja.html)
+- Diğer diller: [İngilizce](https://kohandezh.com/) · [Farsça](https://kohandezh.com/fa/) · [Arapça](https://kohandezh.com/ar/) · [Almanca](https://kohandezh.com/de/) · [İspanyolca](https://kohandezh.com/es/) · [Fransızca](https://kohandezh.com/fr/) · [Çince](https://kohandezh.com/zh/) · [Japonca](https://kohandezh.com/ja/)
 
 ## Yapay zekâ asistanları ve tarayıcılar için notlar
 

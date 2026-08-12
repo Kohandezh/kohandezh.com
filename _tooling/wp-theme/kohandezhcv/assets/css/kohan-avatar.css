@@ -227,6 +227,27 @@
     html[dir="rtl"] .kohan-size-controls { transform: translateX(50%); }
 }
 
+/* Directional drag suspension. JS updates these variables at most once per
+   animation frame; transforms keep the effect on the compositor. */
+.kdcv-pet-root.kdcv-pet-dragging .kdcv-pet-visual {
+    transform: translate3d(var(--kohan-drag-lag-x, 0), var(--kohan-drag-bob, 0), 0)
+               rotate(var(--kohan-drag-rotate, 0deg));
+    transform-origin: 50% 20%;
+    transition: none;
+}
+.kdcv-pet-root.kohan-drag-settle .kdcv-pet-visual {
+    animation: kohan-drag-settle 240ms cubic-bezier(.2,.9,.3,1);
+}
+@keyframes kohan-drag-settle {
+    0% { transform: rotate(var(--kohan-release-rotate, 0deg)) translateY(-2px); }
+    65% { transform: rotate(calc(var(--kohan-release-rotate, 0deg) * -.22)) translateY(3px); }
+    100% { transform: rotate(0) translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .kdcv-pet-root.kdcv-pet-dragging .kdcv-pet-visual,
+    .kdcv-pet-root.kohan-drag-settle .kdcv-pet-visual { transform: none; animation: none; }
+}
+
 /* ---- eye toggle: hide/show the avatar ----------------------------------
    The eye is a sibling of .kohan-size-controls, not a child, because the
    whole control group is hidden together with the avatar. An eye nested
@@ -292,8 +313,13 @@
     /* Touch floor by WIDTH, not just pointer type: a narrow window on a mouse
        device gets the same cramped layout but reports `pointer: fine`, so the
        coarse-pointer rule never applied there. Measured 28x28 at 375px. */
-    .kdcv-pet-root .kohan-size-button { width: 44px; min-width: 44px; height: 44px; min-height: 44px; border-radius: 12px; }
-    .kohan-size-controls { gap: 8px; }
+    /* Size/mode controls are secondary configuration, not persistent mobile
+       navigation. Keep one accessible eye/settings control and remove the
+       200px strip that covered the CEO headline. */
+    .kdcv-pet-root { --kohan-avatar-size: 84px !important; }
+    .kdcv-pet-root .kohan-size-button { display: none !important; }
+    .kohan-size-controls { width: 44px; height: 44px; gap: 0; }
+    .kohan-size-controls .kohan-eye-button { display: grid !important; }
     .kohan-eye-button { top: auto; bottom: -34px; inset-inline-start: 50%; transform: translateX(-50%); }
     html[dir="rtl"] .kohan-eye-button { transform: translateX(50%); }
     .kdcv-pet-root[data-kohan-hidden="true"] .kohan-eye-button { bottom: 0; inset-inline-start: auto; transform: none; }

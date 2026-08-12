@@ -464,6 +464,22 @@
     var content = contentLocale();
     try { buildNav(content); } catch (e) {}
     try { localizeFooter(content); } catch (e) {}
+    try {
+      var contact = document.querySelector("#contact");
+      if (contact && !contact.querySelector(".kdcv-direct-contact")) {
+        var direct = document.createElement("div");
+        direct.className = "kdcv-direct-contact";
+        direct.setAttribute("dir", "ltr");
+        direct.setAttribute("aria-label", "Direct contact details");
+        direct.innerHTML = '<a href="tel:+989121491644">+98 912 149 1644</a>' +
+          '<span aria-hidden="true"> · </span>' +
+          '<a href="tel:+18106662283">+1 810 666 2283</a>' +
+          '<span aria-hidden="true"> · </span>' +
+          '<a href="mailto:Kohandezh@hotmail.com">Kohandezh@hotmail.com</a>';
+        var email = contact.querySelector('a[href^="mailto:"]');
+        (email && email.parentNode ? email.parentNode : contact).appendChild(direct);
+      }
+    } catch (e) {}
     applyTheme(isDark());
 
     var mount = null;

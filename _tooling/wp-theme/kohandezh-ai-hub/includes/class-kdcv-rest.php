@@ -40,6 +40,16 @@ class KDCV_AI_REST {
 	}
 
 	public static function handle( WP_REST_Request $req ) {
+		// Exact contact answers must work even when no model provider is configured.
+		$question = trim( (string) $req->get_param( 'question' ) );
+		if ( $question === '' || mb_strlen( $question ) > self::MAX_QUESTION ) {
+			return new WP_REST_Response( array( 'available' => false, 'reason' => 'bad-question' ), 400 );
+		}
+		if ( preg_match( '/(contact|phone|mobile|email|تماس|شماره|موبایل|ایمیل|تواصل|اتصال|هاتف|جوال|بريد|kontakt|telefon|e-?mail|contacto|tel[eé]fono|correo|contact|t[eé]l[eé]phone|courriel|iletişim|telefon|e-?posta|联系|电话|邮箱|連絡|電話|メール)/iu', $question ) ) {
+			$answer = 'Email: Kohandezh@hotmail.com | Iran: +98 912 149 1644 | United States: +1 810 666 2283';
+			return new WP_REST_Response( array( 'available' => true, 'answer' => $answer, 'provider' => '', 'model' => '' ), 200 );
+		}
+
 		// 1. Pick a provider — request override > Settings default > null.
 		$requested_provider = sanitize_text_field( (string) $req->get_param( 'provider' ) );
 		$provider = KDCV_AI_Provider::build( $requested_provider !== '' ? $requested_provider : null );
@@ -63,11 +73,6 @@ class KDCV_AI_REST {
 		}
 
 		// 2. Sanitize input.
-		$question = trim( (string) $req->get_param( 'question' ) );
-		if ( $question === '' || mb_strlen( $question ) > self::MAX_QUESTION ) {
-			return $unavailable( 'bad-question', 400 );
-		}
-
 		$locale = (string) $req->get_param( 'locale' );
 		if ( ! in_array( $locale, self::ALLOWED_LOCALES, true ) ) {
 			$locale = 'en';
@@ -102,8 +107,10 @@ class KDCV_AI_REST {
 
 		// 4. Build prompts.
 		$facts_block = self::build_facts_block( $req->get_param( 'facts' ) );
+		$site_block  = self::build_site_index_block( $question, $locale );
 		$system      = self::build_system_prompt( $locale );
-		$user        = "FACTS FROM THIS PAGE:\n" . ( $facts_block !== '' ? $facts_block : '(none extracted)' )
+		$user        = "VERIFIED SITE-WIDE FACTS:\n" . $site_block
+			. "\n\nFACTS FROM THE CURRENT PAGE:\n" . ( $facts_block !== '' ? $facts_block : '(none extracted)' )
 			. "\n\nQUESTION: " . $question;
 
 		// 5. Ask the provider.
@@ -157,6 +164,48 @@ class KDCV_AI_REST {
 		return implode( "\n", $out );
 	}
 
+	/**
+	 * Retrieve relevant published content from WordPress itself. This makes the
+	 * chatbot site-wide: posts, pages and the public Knowledge Base entities are
+	 * searchable even when the visitor is currently on a different page.
+	 * Contact details are pinned so a contact answer never depends on ranking.
+	 */
+	private static function build_site_index_block( $question, $locale ) {
+		$lines = array(
+			'• Official contact email: Kohandezh@hotmail.com',
+			'• Official mobile numbers: +98 912 149 1644 (Iran) and +1 810 666 2283 (United States)',
+			'• Official website: https://kohandezh.com/',
+			'• Mohammad Ali Kohandezh is the CEO of Kohan System Farda (KSF).',
+		);
+
+		$post_types = get_post_types( array( 'public' => true ), 'names' );
+		$post_types = array_values( array_diff( $post_types, array( 'attachment' ) ) );
+		$query      = new WP_Query( array(
+			'post_type'              => $post_types,
+			'post_status'            => 'publish',
+			's'                      => sanitize_text_field( $question ),
+			'posts_per_page'         => 12,
+			'no_found_rows'          => true,
+			'ignore_sticky_posts'    => true,
+			'update_post_meta_cache' => false,
+			'update_post_term_cache' => false,
+		) );
+
+		foreach ( $query->posts as $post ) {
+			$title = trim( wp_strip_all_tags( get_the_title( $post ) ) );
+			$body  = has_excerpt( $post ) ? $post->post_excerpt : $post->post_content;
+			$body  = preg_replace( '/\s+/u', ' ', wp_strip_all_tags( strip_shortcodes( $body ) ) );
+			$body  = mb_substr( trim( $body ), 0, 420 );
+			$url   = get_permalink( $post );
+			if ( $title !== '' || $body !== '' ) {
+				$lines[] = sprintf( '• %s — %s — Source: %s', $title, $body, esc_url_raw( $url ) );
+			}
+		}
+		wp_reset_postdata();
+
+		return implode( "\n", $lines );
+	}
+
 	private static function build_system_prompt( $locale ) {
 		$lang_names = array(
 			'en' => 'English', 'fa' => 'Persian (Farsi)', 'ar' => 'Arabic',
@@ -165,10 +214,11 @@ class KDCV_AI_REST {
 		);
 		$lang_name = isset( $lang_names[ $locale ] ) ? $lang_names[ $locale ] : 'English';
 		return sprintf(
-			'You are the CV assistant embedded on kohandezh.com. ' .
-			'Answer the visitor question using ONLY the facts extracted from this page below. ' .
+			'You are Kohan, the official website assistant embedded on kohandezh.com. ' .
+			'Answer the visitor question using ONLY the verified site-wide facts and current-page facts supplied below. ' .
 			'Do not invent information. If the facts do not contain the answer, say briefly that you could not find it on this page. ' .
-			'Keep the answer concise (1 to 3 short sentences). ' .
+			'When asked how to contact Mohammad, always provide the official email and both official mobile numbers exactly as supplied. ' .
+			'Keep the answer concise (1 to 4 short sentences). ' .
 			'Reply in %s. Do not use markdown, bullet lists, or code blocks.',
 			$lang_name
 		);

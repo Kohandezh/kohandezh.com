@@ -10,24 +10,24 @@
 - 职务: 首席执行官，IT 基础设施与安全专家
 - 公司: Kohan System Farda (KSF) — https://ksf.ir
 - 教育背景: 信息技术管理博士（第二个博士学位在读）；德黑兰大学信息技术管理／电子商务硕士
-- 联系方式: Kohandezh@hotmail.com
+- 联系方式: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283
 - LinkedIn: https://www.linkedin.com/in/kohandezh
 - X (Twitter): https://x.com/Konandehh
 
 ## 服务
 
-- [人工智能与智能自动化](https://kohandezh.com/zh.html#service): 人工智能产品、面向企业的智能体平台与自动化
-- [基础设施与虚拟化](https://kohandezh.com/zh.html#service): VMware vSphere、数据中心设计、Windows Server 与 AD、Kubernetes、Docker
-- [备份与灾难恢复](https://kohandezh.com/zh.html#service): Veeam、Arctera Backup Exec、Veritas NetBackup
-- [网络安全与数字取证](https://kohandezh.com/zh.html#service): 渗透测试、事件取证、安全审计
+- [人工智能与智能自动化](https://kohandezh.com/zh/#service): 人工智能产品、面向企业的智能体平台与自动化
+- [基础设施与虚拟化](https://kohandezh.com/zh/#service): VMware vSphere、数据中心设计、Windows Server 与 AD、Kubernetes、Docker
+- [备份与灾难恢复](https://kohandezh.com/zh/#service): Veeam、Arctera Backup Exec、Veritas NetBackup
+- [网络安全与数字取证](https://kohandezh.com/zh/#service): 渗透测试、事件取证、安全审计
 
 ## 页面
 
-- [首页／简历（中文）](https://kohandezh.com/zh.html): 完整档案、代表作、认证与客户评价
-- [证书存档](https://kohandezh.com/Certificates.html): 专业认证的完整记录
+- [首页／简历（中文）](https://kohandezh.com/zh/): 完整档案、代表作、认证与客户评价
+- [证书存档](https://kohandezh.com/certificates/): 专业认证的完整记录
 - [博客](https://kohandezh.com/blog/): 关于人工智能、职业与技术的文章——已完整翻译为九种语言
 - [作品集](https://kohandezh.com/portfolio/): 精选项目
-- 其他语言: [英语](https://kohandezh.com/index.html) · [波斯语](https://kohandezh.com/fa.html) · [阿拉伯语](https://kohandezh.com/ar.html) · [德语](https://kohandezh.com/de.html) · [西班牙语](https://kohandezh.com/es.html) · [法语](https://kohandezh.com/fr.html) · [土耳其语](https://kohandezh.com/tr.html) · [日语](https://kohandezh.com/ja.html)
+- 其他语言: [英语](https://kohandezh.com/) · [波斯语](https://kohandezh.com/fa/) · [阿拉伯语](https://kohandezh.com/ar/) · [德语](https://kohandezh.com/de/) · [西班牙语](https://kohandezh.com/es/) · [法语](https://kohandezh.com/fr/) · [土耳其语](https://kohandezh.com/tr/) · [日语](https://kohandezh.com/ja/)
 
 ## 给人工智能助手与爬虫的说明
 

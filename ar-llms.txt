@@ -10,24 +10,24 @@
 - المسمّى: الرئيس التنفيذي وخبير البنية التحتية والأمن في تقنية المعلومات
 - الشركة: Kohan System Farda (KSF) — https://ksf.ir
 - التعليم: دكتوراه في إدارة تقنية المعلومات (دكتوراه ثانية قيد الإنجاز)؛ ماجستير في إدارة تقنية المعلومات / الأعمال الإلكترونية، جامعة طهران
-- التواصل: Kohandezh@hotmail.com
+- التواصل: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283
 - LinkedIn: https://www.linkedin.com/in/kohandezh
 - X (Twitter): https://x.com/Konandehh
 
 ## الخدمات
 
-- [الذكاء الاصطناعي والأتمتة الذكية](https://kohandezh.com/ar.html#service): منتجات الذكاء الاصطناعي ومنصات الوكلاء المؤسسية والأتمتة
-- [البنية التحتية والمحاكاة الافتراضية](https://kohandezh.com/ar.html#service): VMware vSphere، وتصميم مراكز البيانات، وWindows Server وActive Directory، وKubernetes، وDocker
-- [النسخ الاحتياطي والتعافي من الكوارث](https://kohandezh.com/ar.html#service): Veeam، وArctera Backup Exec، وVeritas NetBackup
-- [الأمن السيبراني والأدلة الجنائية الرقمية](https://kohandezh.com/ar.html#service): اختبار الاختراق، والتحليل الجنائي للحوادث، وتدقيق الأمن
+- [الذكاء الاصطناعي والأتمتة الذكية](https://kohandezh.com/ar/#service): منتجات الذكاء الاصطناعي ومنصات الوكلاء المؤسسية والأتمتة
+- [البنية التحتية والمحاكاة الافتراضية](https://kohandezh.com/ar/#service): VMware vSphere، وتصميم مراكز البيانات، وWindows Server وActive Directory، وKubernetes، وDocker
+- [النسخ الاحتياطي والتعافي من الكوارث](https://kohandezh.com/ar/#service): Veeam، وArctera Backup Exec، وVeritas NetBackup
+- [الأمن السيبراني والأدلة الجنائية الرقمية](https://kohandezh.com/ar/#service): اختبار الاختراق، والتحليل الجنائي للحوادث، وتدقيق الأمن
 
 ## الصفحات
 
-- [الصفحة الرئيسية / السيرة الذاتية (بالعربية)](https://kohandezh.com/ar.html): الملف الكامل وأبرز الأعمال والشهادات وآراء العملاء
-- [أرشيف الشهادات](https://kohandezh.com/Certificates.html): السجل الكامل للشهادات المهنية
+- [الصفحة الرئيسية / السيرة الذاتية (بالعربية)](https://kohandezh.com/ar/): الملف الكامل وأبرز الأعمال والشهادات وآراء العملاء
+- [أرشيف الشهادات](https://kohandezh.com/certificates/): السجل الكامل للشهادات المهنية
 - [المدونة](https://kohandezh.com/blog/): مقالات عن الذكاء الاصطناعي والمسار المهني والتقنية — مترجمة بالكامل إلى تسع لغات
 - [معرض الأعمال](https://kohandezh.com/portfolio/): مشاريع مختارة
-- لغات أخرى: [الفارسية](https://kohandezh.com/fa.html) · [الإنجليزية](https://kohandezh.com/index.html) · [الألمانية](https://kohandezh.com/de.html) · [الإسبانية](https://kohandezh.com/es.html) · [الفرنسية](https://kohandezh.com/fr.html) · [التركية](https://kohandezh.com/tr.html) · [الصينية](https://kohandezh.com/zh.html) · [اليابانية](https://kohandezh.com/ja.html)
+- لغات أخرى: [الفارسية](https://kohandezh.com/fa/) · [الإنجليزية](https://kohandezh.com/) · [الألمانية](https://kohandezh.com/de/) · [الإسبانية](https://kohandezh.com/es/) · [الفرنسية](https://kohandezh.com/fr/) · [التركية](https://kohandezh.com/tr/) · [الصينية](https://kohandezh.com/zh/) · [اليابانية](https://kohandezh.com/ja/)
 
 ## ملاحظات لمساعدي الذكاء الاصطناعي وبرامج الزحف
 

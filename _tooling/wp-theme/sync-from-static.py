@@ -515,6 +515,24 @@ def rsync_dry_run(static_root: Path, theme_root: Path):
             deletes.append(name)
         elif code.startswith(">f") or code.startswith("<f"):
             if (theme_root / "assets" / name).exists():
+                # WordPress post dictionaries intentionally rewrite relative
+                # article asset URLs after rsync. Compare against that expected
+                # transformed form so a completed sync reports true parity.
+                src_path = static_root / "assets" / name
+                dst_path = theme_root / "assets" / name
+                expected_transform = name.startswith("data/i18n/post-") and name.endswith(".json")
+                if expected_transform:
+                    try:
+                        import json as _json
+                        data = _json.loads(src_path.read_text())
+                        for entries in data.values():
+                            if isinstance(entries, dict) and entries.get("__body"):
+                                entries["__body"] = entries["__body"].replace("../assets/", POST_BODY_PREFIX)
+                        expected = _json.dumps(data, ensure_ascii=False, indent=2)
+                        if dst_path.read_text() == expected:
+                            continue
+                    except (OSError, ValueError, TypeError):
+                        pass
                 updates.append(name)
             else:
                 creates.append(name)

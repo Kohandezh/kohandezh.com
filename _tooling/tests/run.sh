@@ -25,6 +25,18 @@ if command -v node >/dev/null 2>&1; then
   jsfail=0
   for j in "$ROOT"/assets/js/main.js "$ROOT"/assets/js/ai-pet.js; do [ -f "$j" ] && { node --check "$j" 2>/dev/null || { bad "node --check $j"; jsfail=1; }; }; done
   [ $jsfail -eq 0 ] && ok "node --check (custom JS) [optional]"
+
+  node "$ROOT/_tooling/wisdom-quotes.test.js" >/tmp/kdcv-wisdom-test.txt 2>&1 \
+    && ok "wisdom + quantum datasets" \
+    || { bad "wisdom + quantum datasets"; tail -20 /tmp/kdcv-wisdom-test.txt; }
+
+  if [ -d "$ROOT/node_modules/jsdom" ]; then
+    node "$ROOT/_tooling/jquery-shim.validate.test.js" >/tmp/kdcv-jquery-test.txt 2>&1 \
+      && ok "jQuery compatibility shim" \
+      || { bad "jQuery compatibility shim"; tail -20 /tmp/kdcv-jquery-test.txt; }
+  else
+    bad "jQuery compatibility shim (run npm ci to install test dependency)"
+  fi
 else
   echo "  (skip) node not available"
 fi
@@ -49,8 +61,8 @@ if curl -sf -o /dev/null "$BASE/" 2>/dev/null; then
   python3 "$ROOT/_tooling/tests/validate-jsonld.py" "$BASE/fa.html" >/tmp/kbk-vl-fa.txt 2>&1 && ok "JSON-LD valid on /fa.html" || { bad "JSON-LD on /fa.html"; tail -5 /tmp/kbk-vl-fa.txt; }
   # canonical/hreflang counts on a CV page
   canon=$(curl -s "$BASE/fa.html" | grep -c 'rel="canonical"')
-  href=$(curl -s "$BASE/fa.html" | grep -c hreflang)
-  [ "$canon" = "1" ] && [ "$href" = "11" ] && ok "fa.html canonical=1 hreflang=11" || bad "fa.html canonical=$canon hreflang=$href"
+  href=$(curl -s "$BASE/fa.html" | grep -c 'rel="alternate" hreflang=')
+  [ "$canon" = "1" ] && [ "$href" = "10" ] && ok "fa.html canonical=1 language hreflang=10" || bad "fa.html canonical=$canon language-hreflang=$href"
 else
   bad "dev server not reachable at $BASE (start ./run-dev.sh)"
 fi

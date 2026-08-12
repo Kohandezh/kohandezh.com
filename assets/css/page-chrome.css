@@ -187,3 +187,13 @@ body.dark-mode .kdcv-foot { color: rgba(255, 255, 255, .84); }
   align-items: center;
   min-height: 44px;
 }
+
+.kdcv-direct-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem .7rem;
+  margin-top: .75rem;
+  font: 600 1rem/1.6 "Inter", sans-serif;
+  unicode-bidi: isolate;
+}
+.kdcv-direct-contact a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .2em; }

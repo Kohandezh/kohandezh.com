@@ -4116,6 +4116,58 @@ html[dir="rtl"] .text-vertical {
   color: #111111;
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
+
+.sidebar-user .user-social .kdcv-messenger-link {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, .18);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .14);
+}
+.sidebar-user .user-social .kdcv-messenger-link:hover,
+.sidebar-user .user-social .kdcv-messenger-link:focus-visible {
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+.kdcv-messenger-link--telegram { background: #229ed9 !important; }
+.kdcv-messenger-link--bale { background: #43a047 !important; }
+.kdcv-messenger-link--eitaa { background: #f28c28 !important; }
+.kdcv-messenger-link--whatsapp { background: #25d366 !important; }
+.kdcv-messenger-link--email { background: #5e6774 !important; }
+.kdcv-messenger-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1em;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+.kdcv-messenger-link svg,
+.kdcv-messenger-brand-image {
+  display: block;
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+}
+.kdcv-messenger-brand-image {
+  filter: brightness(0) invert(1);
+}
+body.dark-mode .sidebar-user .user-social .kdcv-messenger-link {
+  background: #fff !important;
+  color: #080808 !important;
+  border-color: rgba(0, 0, 0, .12);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .34);
+}
+body.dark-mode .kdcv-messenger-brand-image {
+  filter: grayscale(1) brightness(0);
+}
+.kdcv-messenger-link--telegram .kdcv-messenger-mark {
+  font-size: 17px;
+  transform: translate(-1px, 1px) rotate(-8deg);
+}
 @media (max-width: 767px) {
   .sidebar-user .tf-social-icon-2 a {
     width: 44px;
@@ -11880,6 +11932,16 @@ body:not(.dark-mode) .wg-work .work-localized-feature { color: rgba(252, 254, 25
 body:not(.dark-mode) .wg-work .work-localized-kicker { color: rgb(174, 220, 255); }
 body:not(.dark-mode) .wg-work .work-image--padyar .work-localized-kicker { color: rgb(224, 193, 255); }
 
+/* Product imagery is intentionally dark in light mode; its overlay must keep
+   white typography even when utility classes are re-themed elsewhere. */
+body:not(.dark-mode) .wg-work .work-image .work-localized-copy,
+body:not(.dark-mode) .wg-work .work-image .work-localized-copy * { color: #fff !important; }
+body:not(.dark-mode) .wg-work .work-image .work-localized-copy {
+  background:
+    radial-gradient(circle at 18% 45%, rgba(var(--work-overlay-accent), .24), transparent 44%),
+    linear-gradient(90deg, rgba(var(--work-overlay-base), .99) 0%, rgba(var(--work-overlay-base), .94) 66%, rgba(var(--work-overlay-base), .5) 84%, transparent 100%);
+}
+
 /* ---- the floating rail on small screens ---------------------------------
    Below 992px the rail stops sitting in a margin and floats over the content
    — on the CV pages that means directly over the hero poster. Its dark-mode
@@ -11923,3 +11985,47 @@ body:not(.dark-mode) .wg-work .work-image--padyar .work-localized-kicker { color
     display: none !important;
   }
 }
+/* Arabic reading and responsive geometry: use logical sizing so RTL does not
+   inherit the narrow physical-right column from the original LTR template. */
+html[lang="ar"] body { font-family: "Cairo", sans-serif; }
+html[lang="ar"] .intro-title--ar .intro-title__line { display: block; width: 100%; }
+html[lang="ar"] .main-content,
+html[lang="ar"] .main-content > .row,
+html[lang="ar"] .main-content .col-lg-7 {
+  width: min(100%, 1440px);
+  max-width: 100%;
+  margin-inline: auto;
+}
+html[lang="ar"] p,
+html[lang="ar"] .text-body-3,
+html[lang="ar"] .info__duty,
+html[lang="ar"] .service-desc { font-size: max(1rem, 16px); line-height: 1.8; letter-spacing: 0; }
+@media (max-width: 767.98px) {
+  html[lang="ar"] .main-content,
+  html[lang="ar"] .main-content > .row,
+  html[lang="ar"] .main-content .col-lg-7 { width: 100%; padding-inline: 12px; }
+  html[lang="ar"] .section:not(.hero-section) { min-height: auto; }
+  html[lang="ar"] .intro-title {
+    max-width: 22ch;
+    margin-inline: auto;
+    font-size: clamp(2.15rem, 10vw, 3rem) !important;
+    line-height: 1.24 !important;
+    letter-spacing: 0 !important;
+    text-wrap: balance;
+  }
+  html[lang="ar"] .intro-title span { display: inline; }
+  html[lang="ar"] .intro-title--ar {
+    max-width: none;
+    font-size: clamp(2rem, 9.2vw, 2.55rem) !important;
+    line-height: 1.28 !important;
+  }
+  html[lang="ar"] .intro-title--ar .intro-title__line {
+    display: block;
+    white-space: nowrap;
+  }
+  html[lang="ar"] .intro-title br { display: none; }
+}
+.sako-project-visual { margin: 1rem 0 0; overflow: hidden; border-radius: 14px; background: #080b09; }
+.timeline-content > .sako-project-visual { grid-column: 1 / -1; width: 100%; }
+.sako-project-visual img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+.sako-project-visual figcaption { padding: .6rem .8rem; color: var(--black-56, #666); font-size: .78rem; line-height: 1.5; }

@@ -1,0 +1,11 @@
+{
+  "name": "kohandezh-release-tests",
+  "private": true,
+  "scripts": {
+    "test:wisdom": "node _tooling/wisdom-quotes.test.js",
+    "test:jquery": "node _tooling/jquery-shim.validate.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  }
+}

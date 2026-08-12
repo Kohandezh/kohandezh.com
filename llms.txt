@@ -10,7 +10,7 @@ He holds 10+ professional certifications (including VMware VCP-DCV, EC-Council C
 - Title: CEO & IT Infrastructure and Security Expert
 - Company: Kohan System Farda (KSF) — https://ksf.ir
 - Education: PhD, IT Management (second doctorate in progress); MSc, IT Management / e-Business, University of Tehran
-- Contact: Kohandezh@hotmail.com
+- Contact: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283
 - LinkedIn: https://www.linkedin.com/in/kohandezh
 - X (Twitter): https://x.com/Konandehh
 
@@ -24,8 +24,8 @@ He holds 10+ professional certifications (including VMware VCP-DCV, EC-Council C
 ## Pages
 
 - [Home / CV (English)](https://kohandezh.com/): full profile, work highlights, certifications, testimonials
-- [Persian](https://kohandezh.com/fa.html) · [Arabic](https://kohandezh.com/ar.html) · [German](https://kohandezh.com/de.html) · [Spanish](https://kohandezh.com/es.html) · [French](https://kohandezh.com/fr.html) · [Turkish](https://kohandezh.com/tr.html) · [Chinese](https://kohandezh.com/zh.html) · [Japanese](https://kohandezh.com/ja.html)
-- [Certificate archive](https://kohandezh.com/Certificates.html): full record of professional certifications
+- [Persian](https://kohandezh.com/fa/) · [Arabic](https://kohandezh.com/ar/) · [German](https://kohandezh.com/de/) · [Spanish](https://kohandezh.com/es/) · [French](https://kohandezh.com/fr/) · [Turkish](https://kohandezh.com/tr/) · [Chinese](https://kohandezh.com/zh/) · [Japanese](https://kohandezh.com/ja/)
+- [Certificate archive](https://kohandezh.com/certificates/): full record of professional certifications
 - [Blog](https://kohandezh.com/blog/): articles on AI, career, and technology
 - [Portfolio](https://kohandezh.com/portfolio/): selected project work
 

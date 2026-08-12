@@ -614,6 +614,12 @@
 }
 
 @media (max-width: 767.98px) {
+	.kdcv-mobile-hero-active .kdcv-pet-root {
+		opacity: 0 !important;
+		visibility: hidden !important;
+		pointer-events: none !important;
+	}
+
   .kdcv-pet-root,
   .kdcv-pet-root[dir="rtl"] {
     inset-inline-start: max(16px, env(safe-area-inset-left));

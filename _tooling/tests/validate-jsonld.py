@@ -28,10 +28,12 @@ KNOWN_TYPES = {
     "Person", "Organization", "WebSite", "WebPage", "ProfilePage", "AboutPage",
     "CollectionPage", "Article", "NewsArticle", "TechArticle", "ScholarlyArticle",
     "BlogPosting", "FAQPage", "BreadcrumbList", "DefinedTerm", "DefinedTermSet",
-    "ItemList", "Product", "Service", "Event", "PostalAddress", "Question", "Answer",
+    "ItemList", "Product", "Service", "ProfessionalService", "SoftwareApplication",
+    "Event", "PostalAddress", "Question", "Answer", "OfferCatalog", "Offer",
 }
 ENTITY_TYPES = {"Person", "Organization", "Article", "NewsArticle", "TechArticle",
-                "ScholarlyArticle", "BlogPosting", "DefinedTerm", "Service", "Product", "Event"}
+                "ScholarlyArticle", "BlogPosting", "DefinedTerm", "Service", "ProfessionalService",
+                "SoftwareApplication", "Product", "Event"}
 
 
 def fetch_text(target: str) -> str:

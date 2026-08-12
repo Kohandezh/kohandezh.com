@@ -338,6 +338,49 @@
           "enabled": true
         }
       ]
+    },
+    {
+      "id": "quantum_computing",
+      "title": "واقعیت‌های کوانتومی",
+      "weight_percent": 10,
+      "quotes": [
+        {
+          "id": "quantum-fact-001",
+          "author": "نکته علمی — NIST",
+          "text": "رمزنگاری پساکوانتومی روی رایانه‌های کلاسیک اجرا می‌شود؛ هدف آن مقاومت در برابر حمله‌های آیندهٔ رایانه‌های کوانتومی است.",
+          "source": "NIST Post-Quantum Cryptography Project — https://www.nist.gov/pqcrypto",
+          "tags": ["کوانتوم", "امنیت", "رمزنگاری"],
+          "tone": "technical",
+          "priority": 10,
+          "verification_ref": "Q01",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "quantum-fact-002",
+          "author": "نکته علمی — NIST",
+          "text": "NIST در سال ۲۰۲۴ سه استاندارد اصلی پساکوانتومی ML-KEM، ML-DSA و SLH-DSA را نهایی کرد.",
+          "source": "NIST FIPS 203, FIPS 204 and FIPS 205 — 13 August 2024",
+          "tags": ["کوانتوم", "استاندارد", "PQC"],
+          "tone": "technical",
+          "priority": 10,
+          "verification_ref": "Q02",
+          "verified": true,
+          "enabled": true
+        },
+        {
+          "id": "quantum-fact-003",
+          "author": "نکته علمی",
+          "text": "برتری کوانتومی عمومی نیست؛ شتاب کوانتومی به مسئله و الگوریتم مشخص وابسته است و رایانش کلاسیک را برای همهٔ کارها جایگزین نمی‌کند.",
+          "source": "اصل محدودبودن شتاب الگوریتم‌های کوانتومی؛ بیان تحریریهٔ Kohandezh.com",
+          "tags": ["کوانتوم", "الگوریتم", "واقعیت"],
+          "tone": "analytical",
+          "priority": 9,
+          "verification_ref": "Q03",
+          "verified": true,
+          "enabled": true
+        }
+      ]
     }
   ]
 }

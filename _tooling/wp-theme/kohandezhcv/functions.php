@@ -15,6 +15,20 @@ add_action( 'after_setup_theme', function () {
 	add_theme_support( 'automatic-feed-links' );
 } );
 
+// The curated root sitemap is the single crawl source of truth. WordPress's
+// generated sitemap otherwise exposes a thin author URL and duplicates URLs.
+add_filter( 'wp_sitemaps_enabled', '__return_false' );
+
+// This theme does not use WordPress emoji assets. Removing the loader avoids
+// third-party s.w.org requests and keeps the strict image CSP console-clean.
+add_action( 'init', function () {
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
+	remove_action( 'admin_print_styles', 'print_emoji_styles' );
+} );
+add_filter( 'emoji_svg_url', '__return_false' );
+
 /**
  * Hardening: this theme has no remote-publishing, pingback, or third-party
  * REST consumer that needs any of the below. Trims WP/theme fingerprinting
@@ -297,12 +311,29 @@ add_action( 'template_redirect', function () {
  * (see KDCV_CONTENT_SCHEMA_VERSION bump below).
  */
 add_filter( 'wpseo_canonical', function ( $canonical ) {
-	$cv_pages = array( 'fa', 'ar', 'de', 'es', 'fr', 'tr', 'zh', 'ja', 'psn', 'certificates', 'portfolio' );
-	if ( is_front_page() || is_page( $cv_pages ) ) {
+	$cv_pages = array( 'fa', 'ar', 'de', 'es', 'fr', 'tr', 'zh', 'ja', 'psn', 'certificates', 'portfolio', 'privacy', 'terms' );
+	if ( is_front_page() || is_home() || is_page( $cv_pages ) ) {
 		return false; // Yoast treats false as "skip this meta tag".
 	}
 	return $canonical;
 } );
+
+// CV templates carry their own localized canonical. Suppress WordPress core's
+// second rel=canonical output so crawlers receive one unambiguous signal.
+add_action( 'template_redirect', function () {
+	$cv_pages = array( 'fa', 'ar', 'de', 'es', 'fr', 'tr', 'zh', 'ja', 'psn', 'certificates', 'portfolio', 'privacy', 'terms' );
+	if ( is_front_page() || is_page( $cv_pages ) ) {
+		remove_action( 'wp_head', 'rel_canonical' );
+	}
+}, 1 );
+
+// The posts index has no singular object, so WordPress core does not emit a
+// canonical for it. Keep the curated sitemap destination self-canonical.
+add_action( 'wp_head', function () {
+	if ( is_home() ) {
+		echo '<link rel="canonical" href="' . esc_url( home_url( '/blog/' ) ) . '">' . "\n";
+	}
+}, 2 );
 
 /**
  * ============================================================
@@ -524,6 +555,11 @@ add_action( 'template_redirect', function () {
 		}
 	}
 
+	// The canonical homepage must remain a stable English 200 response. Saved
+	// and detected languages are offered in the UI; only an explicit ?lang=
+	// request above is allowed to redirect the document.
+	return;
+
 	// 2) Already-set cookie: respect user's previous choice.
 	if ( isset( $_COOKIE['kdcv_lang'] ) ) {
 		return; // user explicitly chose a language; leave them alone.
@@ -655,7 +691,7 @@ function kdcv_csp_value() {
 		"connect-src 'self' https://api.web3forms.com",
 		"form-action 'self' https://api.web3forms.com",
 		'frame-src https://calendar.google.com https://www.aparat.com https://aparat.com',
-		"worker-src 'self'",
+		"worker-src 'self' blob:",
 		"manifest-src 'self'",
 		"object-src 'none'",
 		"base-uri 'self'",
@@ -1519,6 +1555,65 @@ add_action( 'init', function () {
  * -------------------------------------------------------------------------- */
 
 define( 'KDCV_CONTACT_INBOX', 'Kohandezh@hotmail.com' );
+
+/**
+ * Zero-configuration assistant fallback. The optional AI Hub plugin can
+ * replace this route with a model-backed answer, but a freshly imported theme
+ * must still search the whole published site and answer contact questions.
+ */
+if ( ! class_exists( 'KDCV_AI_REST' ) ) {
+	add_action( 'rest_api_init', function () {
+		register_rest_route( 'kdcv/v1', '/ask', array(
+			'methods'             => 'POST',
+			'permission_callback' => '__return_true',
+			'callback'            => function ( WP_REST_Request $request ) {
+				$question = trim( sanitize_text_field( (string) $request->get_param( 'question' ) ) );
+				if ( $question === '' ) {
+					return new WP_REST_Response( array( 'available' => false, 'reason' => 'bad-question' ), 400 );
+				}
+				$contact_terms = '/(contact|phone|mobile|email|تماس|شماره|موبایل|ایمیل|تواصل|اتصال|هاتف|جوال|بريد|kontakt|telefon|e-?mail|contacto|tel[eé]fono|correo|contact|t[eé]l[eé]phone|courriel|iletişim|telefon|e-?posta|联系|电话|邮箱|連絡|電話|メール)/iu';
+				if ( preg_match( $contact_terms, $question ) ) {
+					return array( 'available' => true, 'answer' => 'Email: Kohandezh@hotmail.com | Iran: +98 912 149 1644 | United States: +1 810 666 2283' );
+				}
+				$types = array_values( array_diff( get_post_types( array( 'public' => true ), 'names' ), array( 'attachment' ) ) );
+				$query = new WP_Query( array(
+					'post_type' => $types, 'post_status' => 'publish', 's' => $question,
+					'posts_per_page' => 4, 'no_found_rows' => true,
+				) );
+				$matches = array();
+				foreach ( $query->posts as $post ) {
+					$text = preg_replace( '/\s+/u', ' ', wp_strip_all_tags( strip_shortcodes( $post->post_content ) ) );
+					$matches[] = get_the_title( $post ) . ': ' . mb_substr( trim( $text ), 0, 260 );
+				}
+				wp_reset_postdata();
+				$answer = $matches
+					? implode( "\n", $matches ) . "\nContact: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283"
+					: 'No verified matching information was found. Contact: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283';
+				return array( 'available' => true, 'answer' => $answer );
+			},
+		) );
+	} );
+}
+
+add_action( 'wp_head', function () {
+	$cv_pages = array( 'fa', 'ar', 'de', 'es', 'fr', 'tr', 'zh', 'ja' );
+	if ( ! is_front_page() && ! is_page( $cv_pages ) ) {
+		return;
+	}
+	$contact_graph = array(
+		'@context' => 'https://schema.org',
+		'@type'    => 'Person',
+		'@id'      => home_url( '/#person' ),
+		'name'     => 'Mohammad Ali Kohandezh',
+		'email'    => 'mailto:Kohandezh@hotmail.com',
+		'telephone'=> array( '+989121491644', '+18106662283' ),
+		'contactPoint' => array(
+			array( '@type' => 'ContactPoint', 'telephone' => '+989121491644', 'contactType' => 'professional inquiries', 'areaServed' => 'IR' ),
+			array( '@type' => 'ContactPoint', 'telephone' => '+18106662283', 'contactType' => 'professional inquiries', 'areaServed' => 'US' ),
+		),
+	);
+	echo '<script type="application/ld+json">' . wp_json_encode( $contact_graph, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) . '</script>' . "\n";
+}, 35 );
 
 function kdcv_contact_key() {
 	if ( defined( 'KDCV_WEB3FORMS_KEY' ) && KDCV_WEB3FORMS_KEY ) {

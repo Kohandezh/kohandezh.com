@@ -10,24 +10,24 @@ Il détient plus de 10 certifications professionnelles (dont VMware VCP-DCV, EC-
 - Fonction: Directeur général, expert en infrastructure et en sécurité informatiques
 - Entreprise: Kohan System Farda (KSF) — https://ksf.ir
 - Formation: Doctorat en gestion des TI (second doctorat en cours) ; Master en gestion des TI / commerce électronique, Université de Téhéran
-- Contact: Kohandezh@hotmail.com
+- Contact: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283
 - LinkedIn: https://www.linkedin.com/in/kohandezh
 - X (Twitter): https://x.com/Konandehh
 
 ## Services
 
-- [IA et automatisation intelligente](https://kohandezh.com/fr.html#service): produits d’IA, plateformes d’agents pour l’entreprise et automatisation
-- [Infrastructure et virtualisation](https://kohandezh.com/fr.html#service): VMware vSphere, conception de centres de données, Windows Server et AD, Kubernetes, Docker
-- [Sauvegarde et reprise après sinistre](https://kohandezh.com/fr.html#service): Veeam, Arctera Backup Exec, Veritas NetBackup
-- [Cybersécurité et investigation numérique](https://kohandezh.com/fr.html#service): tests d’intrusion, investigation d’incidents, audit de sécurité
+- [IA et automatisation intelligente](https://kohandezh.com/fr/#service): produits d’IA, plateformes d’agents pour l’entreprise et automatisation
+- [Infrastructure et virtualisation](https://kohandezh.com/fr/#service): VMware vSphere, conception de centres de données, Windows Server et AD, Kubernetes, Docker
+- [Sauvegarde et reprise après sinistre](https://kohandezh.com/fr/#service): Veeam, Arctera Backup Exec, Veritas NetBackup
+- [Cybersécurité et investigation numérique](https://kohandezh.com/fr/#service): tests d’intrusion, investigation d’incidents, audit de sécurité
 
 ## Pages
 
-- [Accueil / CV (français)](https://kohandezh.com/fr.html): profil complet, travaux marquants, certifications, témoignages
-- [Archive des certificats](https://kohandezh.com/Certificates.html): relevé complet des certifications professionnelles
+- [Accueil / CV (français)](https://kohandezh.com/fr/): profil complet, travaux marquants, certifications, témoignages
+- [Archive des certificats](https://kohandezh.com/certificates/): relevé complet des certifications professionnelles
 - [Blog](https://kohandezh.com/blog/): articles sur l’IA, la carrière et la technologie — intégralement traduits en neuf langues
 - [Portfolio](https://kohandezh.com/portfolio/): projets sélectionnés
-- Autres langues: [anglais](https://kohandezh.com/index.html) · [persan](https://kohandezh.com/fa.html) · [arabe](https://kohandezh.com/ar.html) · [allemand](https://kohandezh.com/de.html) · [espagnol](https://kohandezh.com/es.html) · [turc](https://kohandezh.com/tr.html) · [chinois](https://kohandezh.com/zh.html) · [japonais](https://kohandezh.com/ja.html)
+- Autres langues: [anglais](https://kohandezh.com/) · [persan](https://kohandezh.com/fa/) · [arabe](https://kohandezh.com/ar/) · [allemand](https://kohandezh.com/de/) · [espagnol](https://kohandezh.com/es/) · [turc](https://kohandezh.com/tr/) · [chinois](https://kohandezh.com/zh/) · [japonais](https://kohandezh.com/ja/)
 
 ## Notes pour les assistants IA et les robots d’indexation
 

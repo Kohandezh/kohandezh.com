@@ -1602,6 +1602,30 @@
 
     // 3) Drag mood: watch the host pet's drag class.
     var draggingPrev = false;
+    var dragMotion = { x: 0, y: 0, lastX: 0, lastY: 0, lastT: 0, raf: 0 };
+    var onDragMotion = function (event) {
+      if (!self.isDragging || self.reduceMotion) return;
+      dragMotion.x = event.clientX;
+      dragMotion.y = event.clientY;
+      if (dragMotion.raf) return;
+      dragMotion.raf = window.requestAnimationFrame(function () {
+        dragMotion.raf = 0;
+        var now = performance.now();
+        var dt = Math.max(16, now - (dragMotion.lastT || now));
+        var vx = (dragMotion.x - dragMotion.lastX) / dt;
+        var vy = (dragMotion.y - dragMotion.lastY) / dt;
+        var rotate = Math.max(-8, Math.min(8, vx * 38));
+        var lag = Math.max(-5, Math.min(5, -vx * 18));
+        var bob = Math.max(-4, Math.min(4, vy * 12));
+        root.style.setProperty("--kohan-drag-rotate", rotate.toFixed(2) + "deg");
+        root.style.setProperty("--kohan-drag-lag-x", lag.toFixed(2) + "px");
+        root.style.setProperty("--kohan-drag-bob", bob.toFixed(2) + "px");
+        dragMotion.lastX = dragMotion.x;
+        dragMotion.lastY = dragMotion.y;
+        dragMotion.lastT = now;
+      });
+    };
+    self.listen(document, "pointermove", onDragMotion, { passive: true });
     var dragObserver = new MutationObserver(function () {
       if (!root) return;
       var dragging = root.classList.contains("kdcv-pet-dragging");
@@ -1613,12 +1637,24 @@
         self.isDragging = true;
         self.beginActivity("drag");
         self.clearReturnTimer();
+        dragMotion.lastX = dragMotion.x;
+        dragMotion.lastY = dragMotion.y;
+        dragMotion.lastT = performance.now();
+        root.classList.remove("kohan-drag-settle");
         self.enterSupplemental(Math.random() < 0.5 ? "fall-scared" : "drag-annoyed", {
           loop: true,
           duration: Infinity
         });
       } else {
         self.isDragging = false;
+        root.style.setProperty("--kohan-release-rotate", root.style.getPropertyValue("--kohan-drag-rotate") || "0deg");
+        root.classList.add("kohan-drag-settle");
+        window.setTimeout(function () {
+          root.classList.remove("kohan-drag-settle");
+          root.style.removeProperty("--kohan-drag-rotate");
+          root.style.removeProperty("--kohan-drag-lag-x");
+          root.style.removeProperty("--kohan-drag-bob");
+        }, 260);
         // Drag ends: randomly angry or confused, then idle.
         self.playActivity(Math.random() < 0.5 ? "angry-still" : "confused-vision", {
           duration: 1100,

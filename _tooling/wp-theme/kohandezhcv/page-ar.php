@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/simple-line/simple-line.css">
     <!-- css -->
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=98">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css"></noscript></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css"></noscript>
 
 
     <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=151">
@@ -330,6 +330,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png?v=2">
   <link rel="manifest" href="/manifest.json">
   <link rel="apple-touch-icon" href="<?php echo KDCV; ?>/assets/images/logo/apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo KDCV; ?>/assets/images/logo/favicon-16.png?v=2">
@@ -648,7 +649,7 @@
   "url": "https://kohandezh.com/ar/",
   "inLanguage": "ar",
   "dateCreated": "2024-01-15",
-  "dateModified": "2026-08-08",
+  "dateModified": "2026-08-12",
   "isPartOf": {
     "@id": "https://kohandezh.com/#website"
   },
@@ -686,6 +687,7 @@
     "skills": "Enterprise IT infrastructure, virtualization, backup and recovery, cybersecurity, applied artificial intelligence"
   },
   "email": "mailto:Kohandezh@hotmail.com",
+  "telephone": ["+989121491644", "+18106662283"],
   "nationality": {
     "@type": "Country",
     "name": "Iran"
@@ -1037,11 +1039,10 @@
                                         </p>
                                     </div>
                                 </div>
-                                <h1 class="intro-title letter-space--2 split-text effect-blur-fade">
-                                    أبني
-                                    <span class="">الذكاء الاصطناعي</span><br>
-                                    <span class="type-2">والبنية التحتية الآمنة</span>
-                                    التي تثق بها المؤسسات
+                                <h1 class="intro-title intro-title--ar letter-space--2" aria-label="أبني الذكاء الاصطناعي والبنية التحتية الآمنة التي تثق بها المؤسسات">
+                                    <span class="intro-title__line">أبني <span class="intro-title__accent">الذكاء الاصطناعي</span></span>
+                                    <span class="intro-title__line"><span class="type-2">والبنية التحتية الآمنة</span></span>
+                                    <span class="intro-title__line">التي تثق بها المؤسسات</span>
                                 </h1>
                                 <div class="intro-item">
                                     <div class="scribble-wrap">
@@ -2488,7 +2489,7 @@
     <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=63" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=108" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=102" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kdcv-resume-entry-fix.js?v=1" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kdcv-resume-entry-fix.js?v=6" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=2" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=99" defer></script>
