@@ -35,7 +35,7 @@
   if (!PAGE) return;
 
   var SOURCE = (root.getAttribute("data-kdcv-i18n-source") || "fa").toLowerCase();
-  var SUPPORTED = ["en", "fa", "ar", "de", "es", "fr", "tr", "zh", "ja"];
+  var SUPPORTED = ["en", "fa", "ar", "de", "es", "fr", "tr", "zh", "ja", "ru"];
   var RTL = { fa: 1, ar: 1 };
 
   function known(code) {

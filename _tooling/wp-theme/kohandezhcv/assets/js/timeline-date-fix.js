@@ -33,6 +33,7 @@
     fr: "fr-FR-u-ca-gregory",
     tr: "tr-TR-u-ca-gregory",
     zh: "zh-CN-u-ca-gregory",
+    ru: "ru-RU-u-ca-gregory",
     ja: "ja-JP-u-ca-gregory"
   };
 
@@ -163,10 +164,10 @@
      is an en dash with non-breaking spaces so a range never wraps mid-dash. */
   var PRESENT = {
     en: "Present", fa: "اکنون", ar: "الآن", de: "heute", es: "Actualidad",
-    fr: "Aujourd’hui", tr: "Günümüz", zh: "至今", ja: "現在"
+    fr: "Aujourd’hui", tr: "Günümüz", zh: "至今", ja: "現在", ru: "наст. время"
   };
   // Any locale's word for "now", so an already-correct stamp is recognised.
-  var PRESENT_RE = /present|now|اکنون|الآن|heute|actualidad|aujourd|günümüz|至今|現在/i;
+  var PRESENT_RE = /present|now|اکنون|الآن|heute|actualidad|aujourd|günümüz|至今|現在|наст/i;
 
   function localDigits(n) {
     try {

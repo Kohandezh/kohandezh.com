@@ -22,7 +22,7 @@
     var root = document.documentElement;
     var mode = root.getAttribute("data-kdcv-router-mode") || "static";
     var current = (root.getAttribute("lang") || "en").toLowerCase().split("-")[0];
-    var supported = ["en", "fa", "ar", "de", "es", "fr", "tr", "zh", "ja"];
+    var supported = ["en", "fa", "ar", "de", "es", "fr", "tr", "zh", "ja", "ru"];
 
     // Where a visitor with NO usable language signal lands. English stays the
     // canonical URL for crawlers; this only affects real browsers that tell us

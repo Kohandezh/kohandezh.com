@@ -22,7 +22,7 @@
 
   var LOCALES = {
     en: "en-US", fa: "fa-IR", ar: "ar-EG", de: "de-DE", es: "es-ES",
-    fr: "fr-FR", tr: "tr-TR", ja: "ja-JP", zh: "zh-CN"
+    fr: "fr-FR", tr: "tr-TR", ja: "ja-JP", zh: "zh-CN", ru: "ru-RU"
   };
 
   function locale() {

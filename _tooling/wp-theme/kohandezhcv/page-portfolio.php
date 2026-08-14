@@ -18,12 +18,12 @@
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/fonts.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/estedad/estedad.css">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/portfolio.min.css?v=90">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=83">
-  <link rel="stylesheet" href="../assets/css/page-chrome.min.css?v=87">
-  <link rel="stylesheet" href="../assets/css/hud-button.min.css?v=80">
-  <link rel="stylesheet" href="../assets/css/kohan-avatar.min.css?v=98" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="../assets/css/kohan-avatar.min.css?v=98"></noscript>
-  <link rel="stylesheet" href="../assets/css/chat-ui.min.css?v=84" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="../assets/css/chat-ui.min.css?v=84"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/portfolio.min.css?v=91">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=84">
+  <link rel="stylesheet" href="../assets/css/page-chrome.min.css?v=88">
+  <link rel="stylesheet" href="../assets/css/hud-button.min.css?v=81">
+  <link rel="stylesheet" href="../assets/css/kohan-avatar.min.css?v=99" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="../assets/css/kohan-avatar.min.css?v=99"></noscript>
+  <link rel="stylesheet" href="../assets/css/chat-ui.min.css?v=85" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="../assets/css/chat-ui.min.css?v=85"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
        URL in results, and gives answer engines the page's place in the
        site rather than treating it as an orphan. -->
@@ -115,16 +115,16 @@
         </nav>
         <p class="kdcv-foot-legal">All rights reserved<br>© 2026 Mohammad Ali Kohandezh</p>
       </div></footer>
-  <script src="<?php echo KDCV; ?>/assets/js/cybernetic-grid.min.js?v=84" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/portfolio.min.js?v=84" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=83" defer></script>
-  <script src="../assets/js/page-context.min.js?v=84" defer></script>
-  <script src="../assets/js/lazy-bundle.min.js?v=84" defer></script>
-  <script src="../assets/js/kohan-avatar.min.js?v=103" defer></script>
-  <script src="../assets/js/kohan-avatar-enhance.min.js?v=88" defer></script>
-  <script src="../assets/js/page-chrome.min.js?v=83" defer></script>
-  <script src="../assets/js/chat-ui.min.js?v=84" defer></script>
-  <script src="../assets/js/hud-button.min.js?v=79" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/cybernetic-grid.min.js?v=85" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/portfolio.min.js?v=85" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=84" defer></script>
+  <script src="../assets/js/page-context.min.js?v=85" defer></script>
+  <script src="../assets/js/lazy-bundle.min.js?v=85" defer></script>
+  <script src="../assets/js/kohan-avatar.min.js?v=104" defer></script>
+  <script src="../assets/js/kohan-avatar-enhance.min.js?v=89" defer></script>
+  <script src="../assets/js/page-chrome.min.js?v=84" defer></script>
+  <script src="../assets/js/chat-ui.min.js?v=85" defer></script>
+  <script src="../assets/js/hud-button.min.js?v=80" defer></script>
     <?php wp_footer(); ?>
 </body>
 </html>

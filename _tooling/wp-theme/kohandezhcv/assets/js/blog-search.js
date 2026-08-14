@@ -74,7 +74,8 @@
       fr: ["articles trouvés", "Aucun résultat trouvé"],
       tr: ["yazı bulundu", "Sonuç bulunamadı"],
       zh: ["篇文章", "未找到结果"],
-      ja: ["件の記事", "結果が見つかりません"]
+      ja: ["件の記事", "結果が見つかりません"],
+      ru: ["записей найдено", "Ничего не найдено"]
     };
 
     function labels() {

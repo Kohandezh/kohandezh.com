@@ -39,7 +39,7 @@ THEME_ROOT = SCRIPT_DIR / "kohandezhcv"
 KDCV = "<?php echo KDCV; ?>"
 HOME = "<?php echo esc_url( home_url('/') ); ?>"
 
-LANGS = ["fa", "ar", "de", "es", "fr", "tr", "zh", "ja"]
+LANGS = ["fa", "ar", "de", "es", "fr", "tr", "zh", "ja", "ru"]
 
 # static filename -> (wp template filename, url slug or None for front page)
 PAGE_MAP = {
@@ -197,7 +197,7 @@ def sync_assets(static_root: Path, theme_root: Path):
 # a copy bundled in the theme when the site root has no static upload. That
 # fallback only works if the copies are actually IN the theme — they were not,
 # so on a WordPress-only deploy every one of these 404'd. They ride along now.
-LLMS_LOCALES = ["", "fa-", "ar-", "de-", "es-", "fr-", "tr-", "zh-", "ja-"]
+LLMS_LOCALES = ["", "fa-", "ar-", "de-", "es-", "fr-", "tr-", "zh-", "ja-", "ru-"]
 
 
 def copy_llms_files(static_root: Path, theme_root: Path):

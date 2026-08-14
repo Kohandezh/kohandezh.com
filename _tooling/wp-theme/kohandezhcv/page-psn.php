@@ -33,13 +33,13 @@
 
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/fonts.css">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/psn.min.css?v=85">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/flow-field-background.min.css?v=85">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=89">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=82">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=102" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=102"></noscript>
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=90" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=90"></noscript>
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=86" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=86"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/psn.min.css?v=86">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/flow-field-background.min.css?v=86">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=90">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=83">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=103" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=103"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=91" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=91"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=87" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=87"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
        URL in results, and gives answer engines the page's place in the
        site rather than treating it as an orphan. -->
@@ -423,18 +423,18 @@
   }, true);
 })();
 </script>
-  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=85" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=85" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=86" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=86" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=105" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=90" defer></script>
-<script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=90" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=11" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=85" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=86" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=85" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=81" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=86" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=86" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=87" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=87" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=106" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=91" defer></script>
+<script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=91" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=12" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=86" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=87" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=86" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=82" defer></script>
     <?php wp_footer(); ?>
 </body>
 </html>

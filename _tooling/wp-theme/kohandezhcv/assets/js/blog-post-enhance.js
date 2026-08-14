@@ -67,6 +67,11 @@
       share: "この記事を共有", linkedin: "LinkedIn で共有", x: "X で共有",
       telegram: "Telegram で共有", whatsapp: "WhatsApp で共有",
       copy: "リンクをコピー", copied: "コピーしました", progress: "読了率"
+    },
+    ru: {
+      share: "Поделиться записью", linkedin: "Поделиться в LinkedIn", x: "Поделиться в X",
+      telegram: "Поделиться в Telegram", whatsapp: "Поделиться в WhatsApp",
+      copy: "Скопировать ссылку", copied: "Скопировано", progress: "Прогресс чтения"
     }
   };
 
