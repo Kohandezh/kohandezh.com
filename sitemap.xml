@@ -204,6 +204,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://kohandezh.com/knowledge/</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://kohandezh.com/terms/</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>yearly</changefreq>

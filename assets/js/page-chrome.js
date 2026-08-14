@@ -38,7 +38,8 @@
     { code: "fr", label: "FR", page: "fr.html", dir: "ltr" },
     { code: "tr", label: "TR", page: "tr.html", dir: "ltr" },
     { code: "zh", label: "ZH", page: "zh.html", dir: "ltr" },
-    { code: "ja", label: "JA", page: "ja.html", dir: "ltr" }
+    { code: "ja", label: "JA", page: "ja.html", dir: "ltr" },
+    { code: "ru", label: "RU", page: "ru.html", dir: "ltr" }
   ];
 
   var LABELS = {
@@ -50,7 +51,8 @@
     fr: { theme: "Apparence", language: "Langue" },
     tr: { theme: "Görünüm", language: "Dil" },
     zh: { theme: "外观", language: "语言" },
-    ja: { theme: "外観", language: "言語" }
+    ja: { theme: "外観", language: "言語" },
+    ru: { theme: "Оформление", language: "Язык" }
   };
 
   /* Site menu + footer wording, per locale. The standalone pages used to carry
@@ -59,20 +61,22 @@
      heading). One dictionary, applied to every page, keeps each page in ONE
      language. */
   var NAV = {
-    en: { brand: "Mohammad Ali Kohandezh", blog: "Blog", portfolio: "Portfolio", certificates: "Certificates", psn: "PSN Trophy Room", privacy: "Privacy Policy", terms: "Terms of Use", rights: "All rights reserved", copy: "© 2026 Mohammad Ali Kohandezh", back: "Back to CV" },
-    fa: { brand: "محمدعلی کهن‌دژ", blog: "وبلاگ", portfolio: "نمونه‌کارها", certificates: "گواهی‌نامه‌ها", psn: "اتاق افتخارات PSN", privacy: "سیاست حریم خصوصی", terms: "شرایط استفاده", rights: "تمامی حقوق محفوظ است", copy: "© ۱۴۰۵ محمدعلی کهن‌دژ", back: "بازگشت به رزومه" },
-    ar: { brand: "محمد علي كهن‌دژ", blog: "المدونة", portfolio: "الأعمال", certificates: "الشهادات", psn: "قاعة جوائز PSN", privacy: "سياسة الخصوصية", terms: "شروط الاستخدام", rights: "جميع الحقوق محفوظة", copy: "© 2026 محمد علي كهن‌دژ", back: "العودة إلى السيرة الذاتية" },
-    de: { brand: "Mohammad Ali Kohandezh", blog: "Blog", portfolio: "Portfolio", certificates: "Zertifikate", psn: "PSN-Trophäenraum", privacy: "Datenschutzerklärung", terms: "Nutzungsbedingungen", rights: "Alle Rechte vorbehalten", copy: "© 2026 Mohammad Ali Kohandezh", back: "Zurück zum Lebenslauf" },
-    es: { brand: "Mohammad Ali Kohandezh", blog: "Blog", portfolio: "Portafolio", certificates: "Certificados", psn: "Sala de trofeos PSN", privacy: "Política de privacidad", terms: "Términos de uso", rights: "Todos los derechos reservados", copy: "© 2026 Mohammad Ali Kohandezh", back: "Volver al currículum" },
-    fr: { brand: "Mohammad Ali Kohandezh", blog: "Blog", portfolio: "Portfolio", certificates: "Certificats", psn: "Salle des trophées PSN", privacy: "Politique de confidentialité", terms: "Conditions d’utilisation", rights: "Tous droits réservés", copy: "© 2026 Mohammad Ali Kohandezh", back: "Retour au CV" },
-    tr: { brand: "Mohammad Ali Kohandezh", blog: "Blog", portfolio: "Portföy", certificates: "Sertifikalar", psn: "PSN Ödül Odası", privacy: "Gizlilik Politikası", terms: "Kullanım Şartları", rights: "Tüm hakları saklıdır", copy: "© 2026 Mohammad Ali Kohandezh", back: "Özgeçmişe dön" },
-    zh: { brand: "穆罕默德·阿里·科汉德兹", blog: "博客", portfolio: "作品集", certificates: "证书", psn: "PSN 奖杯室", privacy: "隐私政策", terms: "使用条款", rights: "版权所有", copy: "© 2026 穆罕默德·阿里·科汉德兹", back: "返回简历" },
-    ja: { brand: "モハンマド・アリ・コハンデズ", blog: "ブログ", portfolio: "ポートフォリオ", certificates: "資格・認定", psn: "PSN トロフィールーム", privacy: "プライバシーポリシー", terms: "利用規約", rights: "無断転載を禁じます", copy: "© 2026 モハンマド・アリ・コハンデズ", back: "履歴書に戻る" }
+    en: { brand: "Mohammad Ali Kohandezh", knowledge: "Knowledge Hub", blog: "Blog", portfolio: "Portfolio", certificates: "Certificates", psn: "PSN Trophy Room", privacy: "Privacy Policy", terms: "Terms of Use", rights: "All rights reserved", copy: "© 2026 Mohammad Ali Kohandezh", back: "Back to CV" },
+    fa: { brand: "محمدعلی کهن‌دژ", knowledge: "دانش‌نامه", blog: "وبلاگ", portfolio: "نمونه‌کارها", certificates: "گواهی‌نامه‌ها", psn: "اتاق افتخارات PSN", privacy: "سیاست حریم خصوصی", terms: "شرایط استفاده", rights: "تمامی حقوق محفوظ است", copy: "© ۱۴۰۵ محمدعلی کهن‌دژ", back: "بازگشت به رزومه" },
+    ar: { brand: "محمد علي كهن‌دژ", knowledge: "مركز المعرفة", blog: "المدونة", portfolio: "الأعمال", certificates: "الشهادات", psn: "قاعة جوائز PSN", privacy: "سياسة الخصوصية", terms: "شروط الاستخدام", rights: "جميع الحقوق محفوظة", copy: "© 2026 محمد علي كهن‌دژ", back: "العودة إلى السيرة الذاتية" },
+    de: { brand: "Mohammad Ali Kohandezh", knowledge: "Wissens-Hub", blog: "Blog", portfolio: "Portfolio", certificates: "Zertifikate", psn: "PSN-Trophäenraum", privacy: "Datenschutzerklärung", terms: "Nutzungsbedingungen", rights: "Alle Rechte vorbehalten", copy: "© 2026 Mohammad Ali Kohandezh", back: "Zurück zum Lebenslauf" },
+    es: { brand: "Mohammad Ali Kohandezh", knowledge: "Centro de conocimiento", blog: "Blog", portfolio: "Portafolio", certificates: "Certificados", psn: "Sala de trofeos PSN", privacy: "Política de privacidad", terms: "Términos de uso", rights: "Todos los derechos reservados", copy: "© 2026 Mohammad Ali Kohandezh", back: "Volver al currículum" },
+    fr: { brand: "Mohammad Ali Kohandezh", knowledge: "Pôle savoir", blog: "Blog", portfolio: "Portfolio", certificates: "Certificats", psn: "Salle des trophées PSN", privacy: "Politique de confidentialité", terms: "Conditions d’utilisation", rights: "Tous droits réservés", copy: "© 2026 Mohammad Ali Kohandezh", back: "Retour au CV" },
+    tr: { brand: "Mohammad Ali Kohandezh", knowledge: "Bilgi Merkezi", blog: "Blog", portfolio: "Portföy", certificates: "Sertifikalar", psn: "PSN Ödül Odası", privacy: "Gizlilik Politikası", terms: "Kullanım Şartları", rights: "Tüm hakları saklıdır", copy: "© 2026 Mohammad Ali Kohandezh", back: "Özgeçmişe dön" },
+    zh: { brand: "穆罕默德·阿里·科汉德兹", knowledge: "知识中心", blog: "博客", portfolio: "作品集", certificates: "证书", psn: "PSN 奖杯室", privacy: "隐私政策", terms: "使用条款", rights: "版权所有", copy: "© 2026 穆罕默德·阿里·科汉德兹", back: "返回简历" },
+    ja: { brand: "モハンマド・アリ・コハンデズ", knowledge: "ナレッジハブ", blog: "ブログ", portfolio: "ポートフォリオ", certificates: "資格・認定", psn: "PSN トロフィールーム", privacy: "プライバシーポリシー", terms: "利用規約", rights: "無断転載を禁じます", copy: "© 2026 モハンマド・アリ・コハンデズ", back: "履歴書に戻る" },
+    ru: { brand: "Мохаммад Али Кохандеж", knowledge: "База знаний", blog: "Блог", portfolio: "Портфолио", certificates: "Сертификаты", psn: "Зал трофеев PSN", privacy: "Политика конфиденциальности", terms: "Условия использования", rights: "Все права защищены", copy: "© 2026 Mohammad Ali Kohandezh", back: "Назад к резюме" }
   };
 
   // key -> path, relative to the site root. depth() prefixes sub-directories.
   var MENU = [
     { key: "blog", href: "blog/index.html" },
+    { key: "knowledge", href: "knowledge.html" },
     { key: "portfolio", href: "portfolio/index.html" },
     { key: "certificates", href: "Certificates.html" },
     { key: "psn", href: "PSN.html" },
@@ -272,7 +276,7 @@
      blog, videos — Persian only; PSN — English only) have no second version to
      switch to, so tagging their links would promise a translation that does not
      exist. */
-  var TRANSLATES_IN_PLACE = { certificates: 1, portfolio: 1, privacy: 1, terms: 1, psn: 1, blog: 1 };
+  var TRANSLATES_IN_PLACE = { certificates: 1, portfolio: 1, privacy: 1, terms: 1, psn: 1, blog: 1, knowledge: 1 };
 
   function withLang(href, key, loc) {
     if (!TRANSLATES_IN_PLACE[key]) return href;
@@ -520,4 +524,10 @@
   } else {
     init();
   }
+
+  /* page-i18n translates the standalone pages AFTER this module has built the
+     menu and footer, so on a ?lang= page the chrome kept its authored-language
+     labels (an English footer under a fully Russian article). Rebuilding on
+     the event re-reads document.lang, which page-i18n has just updated. */
+  window.addEventListener("kdcv:page-i18n", function () { init(); });
 })();

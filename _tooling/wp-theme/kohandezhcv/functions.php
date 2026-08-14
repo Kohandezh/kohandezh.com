@@ -8,7 +8,7 @@
  */
 
 define( 'KDCV', get_template_directory_uri() );
-define( 'KDCV_CONTENT_SCHEMA_VERSION', '1.9.0' ); // bump: Russian locale — page-ru, geo map, ru-llms
+define( 'KDCV_CONTENT_SCHEMA_VERSION', '2.0.0' ); // bump: Knowledge Hub page
 
 add_action( 'after_setup_theme', function () {
 	add_theme_support( 'post-thumbnails' );
@@ -311,7 +311,7 @@ add_action( 'template_redirect', function () {
  * (see KDCV_CONTENT_SCHEMA_VERSION bump below).
  */
 add_filter( 'wpseo_canonical', function ( $canonical ) {
-	$cv_pages = array( 'fa', 'ar', 'de', 'es', 'fr', 'tr', 'zh', 'ja', 'ru', 'psn', 'certificates', 'portfolio', 'privacy', 'terms' );
+	$cv_pages = array( 'fa', 'ar', 'de', 'es', 'fr', 'tr', 'zh', 'ja', 'ru', 'psn', 'certificates', 'portfolio', 'privacy', 'terms', 'knowledge' );
 	if ( is_front_page() || is_home() || is_page( $cv_pages ) ) {
 		return false; // Yoast treats false as "skip this meta tag".
 	}
@@ -321,7 +321,7 @@ add_filter( 'wpseo_canonical', function ( $canonical ) {
 // CV templates carry their own localized canonical. Suppress WordPress core's
 // second rel=canonical output so crawlers receive one unambiguous signal.
 add_action( 'template_redirect', function () {
-	$cv_pages = array( 'fa', 'ar', 'de', 'es', 'fr', 'tr', 'zh', 'ja', 'ru', 'psn', 'certificates', 'portfolio', 'privacy', 'terms' );
+	$cv_pages = array( 'fa', 'ar', 'de', 'es', 'fr', 'tr', 'zh', 'ja', 'ru', 'psn', 'certificates', 'portfolio', 'privacy', 'terms', 'knowledge' );
 	if ( is_front_page() || is_page( $cv_pages ) ) {
 		remove_action( 'wp_head', 'rel_canonical' );
 	}
@@ -798,6 +798,7 @@ function kdcv_required_pages() {
 		'certificates' => 'Certificates',
 		'blog' => 'Blog',
 		'portfolio' => 'Portfolio',
+		'knowledge' => 'Knowledge Hub',
 		'privacy' => 'Privacy Policy',
 		'terms' => 'Terms of Use',
 	);

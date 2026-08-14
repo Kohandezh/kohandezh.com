@@ -52,6 +52,7 @@ PAGE_MAP = {
     "portfolio/index.html": ("page-portfolio.php", "portfolio"),
     # The legal pages had no WP template at all — they existed only on the
     # static build, so the footer's Privacy/Terms links 404'd on production.
+    "knowledge.html": ("page-knowledge.php", "knowledge"),
     "privacy.html": ("page-privacy.php", "privacy"),
     "terms.html": ("page-terms.php", "terms"),
     # WP auto-loads the theme's 404.php for every not-found URL (no page slug
