@@ -2523,7 +2523,7 @@
     <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=109" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=107" defer></script>
     <!-- <script src="<?php echo KDCV; ?>/assets/js/odometer.min.js" defer></script> -->    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=106" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=109" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=110" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=70" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=112" defer></script>
 
@@ -2621,7 +2621,7 @@
 })();
 </script>
   <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=105" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=107" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=108" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=102" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=101" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=96" defer></script>

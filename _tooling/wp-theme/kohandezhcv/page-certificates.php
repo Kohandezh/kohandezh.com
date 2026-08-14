@@ -555,7 +555,7 @@
   }, true);
 })();
 </script>
-<script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=87" defer></script>
+<script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=88" defer></script>
 <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=105" defer></script>
 <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=89" defer></script>
 <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=91" defer></script>
@@ -567,7 +567,7 @@
     <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=17" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=85" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=86" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=87" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=88" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=81" defer></script>
     <?php wp_footer(); ?>
 </body>

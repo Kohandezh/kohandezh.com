@@ -139,7 +139,35 @@
 
   var RTL = { fa: 1, ar: 1 };
 
-  function applyPanelLang(panel, code) {
+  /* `reset` is true only for an explicit pick in the switcher.
+
+     A transcript cannot be retranslated — the exchange happened in the old
+     language and the answers came from the server in it. Rewriting only the
+     greeting (what this did before) left the visitor looking at a Persian
+     question and a Persian answer under a German header, which reads as the
+     assistant being broken. So an explicit switch CLEARS the conversation and
+     starts again with the greeting in the new language.
+
+     ai-pet.js clears the log too, on the same event. This repeats the work so
+     the panel is correct even if a cached copy of that file is serving. */
+  function resetTranscript(panel, P) {
+    var rows = panel.querySelectorAll(".kdcv-pet-message");
+    var keep = null;
+    for (var i = 0; i < rows.length; i++) {
+      var row = rows[i];
+      var isGreeting = !keep &&
+        row.classList.contains("kdcv-pet-message-assistant") &&
+        !row.classList.contains("kdcv-wisdom-quote");
+      if (isGreeting) { keep = row; continue; }
+      if (row.parentNode) row.parentNode.removeChild(row);
+    }
+    if (keep) {
+      var bubble = keep.querySelector(".kdcv-pet-message-bubble");
+      if (bubble) bubble.textContent = P.greet;
+    }
+  }
+
+  function applyPanelLang(panel, code, reset) {
     var P = PANEL[code] || PANEL.en;
 
     var title = panel.querySelector(".kdcv-pet-title");
@@ -153,10 +181,14 @@
     var ta = panel.querySelector(".kdcv-pet-textarea");
     if (ta) { ta.placeholder = P.ph; ta.setAttribute("aria-label", P.ph); }
 
-    // Only the opening message is rewritten — a real exchange must never be
-    // retranslated under the visitor mid-conversation.
-    var msgs = panel.querySelectorAll(".kdcv-pet-message-assistant:not(.kdcv-wisdom-quote) .kdcv-pet-message-bubble");
-    if (msgs.length === 1) msgs[0].textContent = P.greet;
+    if (reset) {
+      resetTranscript(panel, P);
+    } else {
+      // Initial render: rewrite the opening message, but never touch a real
+      // exchange that is already on screen.
+      var msgs = panel.querySelectorAll(".kdcv-pet-message-assistant:not(.kdcv-wisdom-quote) .kdcv-pet-message-bubble");
+      if (msgs.length === 1) msgs[0].textContent = P.greet;
+    }
 
     panel.querySelectorAll("[data-kdcv-pet-topic]").forEach(function (chip) {
       var key = chip.getAttribute("data-kdcv-pet-topic");
@@ -336,7 +368,7 @@
         toggle.querySelector("span").textContent = l.code.toUpperCase();
         // Re-render the panel copy; without this the switcher only changed a
         // stored value and looked broken.
-        try { applyPanelLang(panel, l.code); } catch (e) {}
+        try { applyPanelLang(panel, l.code, true); } catch (e) {}
         close();
       });
       li.appendChild(b);
