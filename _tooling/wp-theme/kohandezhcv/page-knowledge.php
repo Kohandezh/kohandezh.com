@@ -16,13 +16,13 @@
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.min.css?v=99">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=97">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png?v=2">
-  <link rel="canonical" href="https://kohandezh.com/knowledge.html">
+  <link rel="canonical" href="https://kohandezh.com/knowledge/">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Knowledge Hub — Learning AI & Quantum",
-    "url": "https://kohandezh.com/knowledge.html",
+    "url": "https://kohandezh.com/knowledge/",
     "author": { "@type": "Person", "@id": "https://kohandezh.com/#person", "name": "Mohammad Ali Kohandezh" },
     "hasPart": [
       { "@type": "LearningResource", "name": "AI learning track", "learningResourceType": "Learning path", "educationalLevel": "Beginner to practitioner", "teaches": "Applied artificial intelligence for professionals and organizations" },

@@ -2481,6 +2481,7 @@
                                 </div>
                                 <nav class="foot-nav effectFade fadeUp no-div" aria-label="صفحه‌های سایت">
                                     <a href="<?php echo esc_url( home_url('/blog/') ); ?>">وبلاگ</a>
+                                    <a href="<?php echo esc_url( home_url('/knowledge/') ); ?>?lang=fa">دانش‌نامه</a>
                                     <a href="<?php echo esc_url( home_url('/portfolio/') ); ?>?lang=fa">نمونه‌کارها</a>
                                     <a href="<?php echo esc_url( home_url('/certificates/') ); ?>?lang=fa">گواهینامه‌ها</a>
                                     <a href="<?php echo esc_url( home_url('/psn/') ); ?>">اتاق جوایز PSN</a>

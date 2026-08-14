@@ -311,6 +311,7 @@ def transform(html: str, note: str, has_home_blog: bool) -> str:
     s = s.replace("https://kohandezh.com/portfolio/index.html", "https://kohandezh.com/portfolio/")
     s = s.replace("https://kohandezh.com/privacy.html", "https://kohandezh.com/privacy/")
     s = s.replace("https://kohandezh.com/terms.html", "https://kohandezh.com/terms/")
+    s = s.replace("https://kohandezh.com/knowledge.html", "https://kohandezh.com/knowledge/")
 
     # The legal pages now have real WP templates and slugs. Their relative
     # links ("privacy.html") resolve against the current pretty permalink, so
@@ -332,6 +333,10 @@ def transform(html: str, note: str, has_home_blog: bool) -> str:
             f'"Photography.html?lang={locale}"',
             f'"{page_url("photography")}?lang={locale}"',
         )
+        s = s.replace(
+            f'"knowledge.html?lang={locale}"',
+            f'"{page_url("knowledge")}?lang={locale}"',
+        )
     # videos.html has no WP template: its ~40 MB of media lives in
     # assets/media/, which STATIC_ONLY_ASSETS deliberately keeps out of the
     # theme. The page therefore stays a real static file uploaded next to
@@ -350,6 +355,7 @@ def transform(html: str, note: str, has_home_blog: bool) -> str:
     s = s.replace('"PSN.html"', f'"{page_url("psn")}"')
     s = s.replace('"Certificates.html"', f'"{page_url("certificates")}"')
     s = s.replace('"Photography.html"', f'"{page_url("photography")}"')
+    s = s.replace('"knowledge.html"', f'"{page_url("knowledge")}"')
     s = s.replace('"portfolio/index.html"', f'"{page_url("portfolio")}"')
     s = s.replace('"portfolio/?lang=', f'"{page_url("portfolio")}?lang=')
     s = s.replace('"index.html"', f'"{HOME}"')

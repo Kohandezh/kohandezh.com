@@ -2353,6 +2353,7 @@
                                 </div>
                                 <nav class="foot-nav effectFade fadeUp no-div" aria-label="Páginas del sitio">
                                     <a href="<?php echo esc_url( home_url('/blog/') ); ?>">Blog</a>
+                                    <a href="<?php echo esc_url( home_url('/knowledge/') ); ?>?lang=es">Centro de conocimiento</a>
                                     <a href="<?php echo esc_url( home_url('/portfolio/') ); ?>?lang=es">Portafolio</a>
                                     <a href="<?php echo esc_url( home_url('/certificates/') ); ?>?lang=es">Certificados</a>
                                     <a href="<?php echo esc_url( home_url('/psn/') ); ?>">Sala de trofeos PSN</a>

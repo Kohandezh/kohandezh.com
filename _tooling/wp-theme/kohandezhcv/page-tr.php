@@ -2352,6 +2352,7 @@
                                 </div>
                                 <nav class="foot-nav effectFade fadeUp no-div" aria-label="Site sayfaları">
                                     <a href="<?php echo esc_url( home_url('/blog/') ); ?>">Blog</a>
+                                    <a href="<?php echo esc_url( home_url('/knowledge/') ); ?>?lang=tr">Bilgi Merkezi</a>
                                     <a href="<?php echo esc_url( home_url('/portfolio/') ); ?>?lang=tr">Portfolyo</a>
                                     <a href="<?php echo esc_url( home_url('/certificates/') ); ?>?lang=tr">Sertifikalar</a>
                                     <a href="<?php echo esc_url( home_url('/psn/') ); ?>">PSN Kupa Odası</a>

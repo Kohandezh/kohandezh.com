@@ -2462,8 +2462,9 @@
                                 </div>
                                 <nav class="foot-nav effectFade fadeUp no-div" aria-label="Страницы сайта">
                                     <a href="<?php echo esc_url( home_url('/blog/') ); ?>">Блог</a>
-                                    <a href="<?php echo esc_url( home_url('/portfolio/') ); ?>?lang=en">Портфолио</a>
-                                    <a href="<?php echo esc_url( home_url('/certificates/') ); ?>?lang=en">Сертификаты</a>
+                                    <a href="<?php echo esc_url( home_url('/knowledge/') ); ?>?lang=ru">База знаний</a>
+                                    <a href="<?php echo esc_url( home_url('/portfolio/') ); ?>?lang=ru">Портфолио</a>
+                                    <a href="<?php echo esc_url( home_url('/certificates/') ); ?>?lang=ru">Сертификаты</a>
                                     <a href="<?php echo esc_url( home_url('/psn/') ); ?>">Зал трофеев PSN</a>
               <a href="<?php echo esc_url( home_url('/privacy/') ); ?>">Политика конфиденциальности</a>
               <a href="<?php echo esc_url( home_url('/terms/') ); ?>">Условия использования</a>

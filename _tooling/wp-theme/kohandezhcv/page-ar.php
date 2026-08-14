@@ -2443,6 +2443,7 @@
                                 </div>
                                 <nav class="foot-nav effectFade fadeUp no-div" aria-label="صفحات الموقع">
                                     <a href="<?php echo esc_url( home_url('/blog/') ); ?>">المدونة</a>
+                                    <a href="<?php echo esc_url( home_url('/knowledge/') ); ?>?lang=ar">مركز المعرفة</a>
                                     <a href="<?php echo esc_url( home_url('/portfolio/') ); ?>?lang=ar">الأعمال</a>
                                     <a href="<?php echo esc_url( home_url('/certificates/') ); ?>?lang=ar">الشهادات</a>
                                     <a href="<?php echo esc_url( home_url('/psn/') ); ?>">غرفة جوائز PSN</a>

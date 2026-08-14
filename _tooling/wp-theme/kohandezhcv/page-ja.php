@@ -2336,6 +2336,7 @@
                                 </div>
                                 <nav class="foot-nav effectFade fadeUp no-div" aria-label="サイトのページ">
                                     <a href="<?php echo esc_url( home_url('/blog/') ); ?>">ブログ</a>
+                                    <a href="<?php echo esc_url( home_url('/knowledge/') ); ?>?lang=ja">ナレッジハブ</a>
                                     <a href="<?php echo esc_url( home_url('/portfolio/') ); ?>?lang=ja">ポートフォリオ</a>
                                     <a href="<?php echo esc_url( home_url('/certificates/') ); ?>?lang=ja">資格</a>
                                     <a href="<?php echo esc_url( home_url('/psn/') ); ?>">PSNトロフィールーム</a>

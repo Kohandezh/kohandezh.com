@@ -2369,6 +2369,7 @@
                                 </div>
                                 <nav class="foot-nav effectFade fadeUp no-div" aria-label="网站页面">
                                     <a href="<?php echo esc_url( home_url('/blog/') ); ?>">博客</a>
+                                    <a href="<?php echo esc_url( home_url('/knowledge/') ); ?>?lang=zh">知识中心</a>
                                     <a href="<?php echo esc_url( home_url('/portfolio/') ); ?>?lang=zh">作品集</a>
                                     <a href="<?php echo esc_url( home_url('/certificates/') ); ?>?lang=zh">证书</a>
                                     <a href="<?php echo esc_url( home_url('/psn/') ); ?>">PSN 奖杯室</a>
