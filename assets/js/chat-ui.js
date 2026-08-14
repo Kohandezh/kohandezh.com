@@ -32,7 +32,8 @@
     { code: "fr", label: "FR", speech: "fr-FR" },
     { code: "tr", label: "TR", speech: "tr-TR" },
     { code: "zh", label: "ZH", speech: "zh-CN" },
-    { code: "ja", label: "JA", speech: "ja-JP" }
+    { code: "ja", label: "JA", speech: "ja-JP" },
+    { code: "ru", label: "RU", speech: "ru-RU" }
   ];
 
   /* Tooltips / aria-labels for the composer controls, in every locale — these
@@ -47,7 +48,8 @@
     fr: { lang: "Langue du chat", mic: "Parler", stop: "Arrêter l’enregistrement", close: "Fermer la citation", reset: "Réinitialiser la position", send: "Envoyer", noMic: "Votre navigateur ne prend pas en charge la reconnaissance vocale" },
     tr: { lang: "Sohbet dili", mic: "Konuş", stop: "Kaydı durdur", close: "Alıntıyı kapat", reset: "Konumu sıfırla", send: "Gönder", noMic: "Tarayıcınız konuşma tanımayı desteklemiyor" },
     zh: { lang: "对话语言", mic: "语音输入", stop: "停止录音", close: "关闭引言", reset: "重置位置", send: "发送", noMic: "您的浏览器不支持语音识别" },
-    ja: { lang: "チャットの言語", mic: "音声入力", stop: "録音を停止", close: "引用を閉じる", reset: "位置をリセット", send: "送信", noMic: "お使いのブラウザは音声認識に対応していません" }
+    ja: { lang: "チャットの言語", mic: "音声入力", stop: "録音を停止", close: "引用を閉じる", reset: "位置をリセット", send: "送信", noMic: "お使いのブラウザは音声認識に対応していません" },
+    ru: { lang: "Язык чата", mic: "Голосовой ввод", stop: "Остановить запись", close: "Закрыть цитату", reset: "Сбросить позицию", send: "Отправить", noMic: "Ваш браузер не поддерживает распознавание речи" }
   };
 
   function t() {
@@ -129,7 +131,10 @@
           chips: { career: "职业经历", achievements: "成就", products: "项目", skills: "技能", education: "教育背景", contact: "联系方式" } },
     ja: { title: "コハンデズ履歴アシスタント", sub: "このページの内容から回答します", ph: "この履歴書について質問する…",
           greet: "こんにちは。このページに掲載された職歴、プロジェクト、スキル、学歴、実績、連絡先をご案内できます。\n\n質問するか、下のトピックをお選びください。",
-          chips: { career: "職歴", achievements: "実績", products: "プロジェクト", skills: "スキル", education: "学歴", contact: "連絡先" } }
+          chips: { career: "職歴", achievements: "実績", products: "プロジェクト", skills: "スキル", education: "学歴", contact: "連絡先" } },
+    ru: { title: "CV-ассистент Кохандежа", sub: "Ответы по содержимому этой страницы", ph: "Спросите об этом резюме…",
+          greet: "Здравствуйте! Я помогу вам изучить карьеру, проекты, навыки, образование, достижения и контактные данные, представленные на этой странице.\n\nЗадайте вопрос или выберите одну из тем ниже.",
+          chips: { career: "Карьера", achievements: "Достижения", products: "Проекты", skills: "Навыки", education: "Образование", contact: "Контакты" } }
   };
 
   var RTL = { fa: 1, ar: 1 };

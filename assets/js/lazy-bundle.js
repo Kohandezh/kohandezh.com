@@ -57,7 +57,7 @@
     function fire() {
       if (fired) return;
       fired = true;
-      load(PREFIX + "js/ai-pet.min.js?v=9");
+      load(PREFIX + "js/ai-pet.min.js?v=10");
       cleanup();
     }
     function cleanup() {

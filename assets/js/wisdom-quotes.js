@@ -47,9 +47,10 @@
     fr: function (a) { return a + " dit :"; },
     tr: function (a) { return a + " diyor ki:"; },
     zh: function (a) { return a + "\u8bf4\uff1a"; },
-    ja: function (a) { return a + "\u306f\u8a00\u3046\uff1a"; }
+    ja: function (a) { return a + "\u306f\u8a00\u3046\uff1a"; },
+    ru: function (a) { return a + " \u0433\u043e\u0432\u043e\u0440\u0438\u0442:"; }
   };
-  var SPEECH_LOCALE = { en: "en-US", fa: "fa-IR", ar: "ar-SA", de: "de-DE", es: "es-ES", fr: "fr-FR", tr: "tr-TR", zh: "zh-CN", ja: "ja-JP" };
+  var SPEECH_LOCALE = { en: "en-US", fa: "fa-IR", ar: "ar-SA", de: "de-DE", es: "es-ES", fr: "fr-FR", tr: "tr-TR", zh: "zh-CN", ja: "ja-JP", ru: "ru-RU" };
   function attribute(author) { return (SAYS[LOCALE] || SAYS.en)(author); }
 
   var HIST_KEY = "wisdom-quotes-history-v1";

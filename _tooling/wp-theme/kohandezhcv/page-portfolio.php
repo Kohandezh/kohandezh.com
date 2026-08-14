@@ -119,11 +119,11 @@
   <script src="<?php echo KDCV; ?>/assets/js/portfolio.min.js?v=86" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=85" defer></script>
   <script src="../assets/js/page-context.min.js?v=86" defer></script>
-  <script src="../assets/js/lazy-bundle.min.js?v=86" defer></script>
+  <script src="../assets/js/lazy-bundle.min.js?v=88" defer></script>
   <script src="../assets/js/kohan-avatar.min.js?v=105" defer></script>
   <script src="../assets/js/kohan-avatar-enhance.min.js?v=90" defer></script>
   <script src="../assets/js/page-chrome.min.js?v=85" defer></script>
-  <script src="../assets/js/chat-ui.min.js?v=86" defer></script>
+  <script src="../assets/js/chat-ui.min.js?v=88" defer></script>
   <script src="../assets/js/hud-button.min.js?v=81" defer></script>
     <?php wp_footer(); ?>
 </body>

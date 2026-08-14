@@ -1194,18 +1194,48 @@ function kdcv_render_home_blog_feed( $read_label = 'Read original', $limit = 6 )
 		return '';
 	}
 
+	// Each post is stored ONCE, in its authored language (mostly Persian), so
+	// rendering raw titles put Persian cards on every locale's page. The theme
+	// ships the same per-slug translations the static site uses
+	// (assets/data/home-blog.json); look the current page's language up there
+	// and override what it covers. A slug the file doesn't know keeps its
+	// authored text rather than borrowing another language's.
+	static $hb_locales = null;
+	if ( null === $hb_locales ) {
+		$hb_locales = array();
+		$raw = @file_get_contents( get_template_directory() . '/assets/data/home-blog.json' );
+		$dec = $raw ? json_decode( $raw, true ) : null;
+		if ( is_array( $dec ) && isset( $dec['locales'] ) && is_array( $dec['locales'] ) ) {
+			$hb_locales = $dec['locales'];
+		}
+	}
+	$obj    = get_queried_object();
+	$slug   = ( $obj && isset( $obj->post_name ) ) ? $obj->post_name : '';
+	$locale = in_array( $slug, array( 'fa', 'ar', 'de', 'es', 'fr', 'tr', 'zh', 'ja', 'ru' ), true ) ? $slug : 'en';
+	// The JSON keys Simplified Chinese as zh-Hans, the pages as zh.
+	$lkey = ( 'zh' === $locale && isset( $hb_locales['zh-Hans'] ) ) ? 'zh-Hans' : $locale;
+	$loc  = isset( $hb_locales[ $lkey ]['posts'] ) && is_array( $hb_locales[ $lkey ]['posts'] )
+		? $hb_locales[ $lkey ]['posts']
+		: array();
+
 	ob_start();
 	while ( $query->have_posts() ) : $query->the_post();
 		$cats = get_the_category();
+		$name = get_post_field( 'post_name' );
+		$o    = isset( $loc[ $name ] ) && is_array( $loc[ $name ] ) ? $loc[ $name ] : array();
+		$title   = ! empty( $o['title'] )   ? $o['title']   : get_the_title();
+		$date    = ! empty( $o['date'] )    ? $o['date']    : get_the_modified_date();
+		$summary = ! empty( $o['summary'] ) ? $o['summary'] : wp_trim_words( get_the_excerpt(), 28 );
+		$tag     = ! empty( $o['tag'] )     ? $o['tag']     : ( $cats ? $cats[0]->name : '' );
 		?>
 		<article class="blog-local-item">
 			<div class="blog-local-top">
-				<h5 class="blog-local-title"><?php the_title(); ?></h5>
-				<span class="blog-local-date"><?php echo esc_html( get_the_modified_date() ); ?></span>
+				<h5 class="blog-local-title"><?php echo esc_html( $title ); ?></h5>
+				<span class="blog-local-date"><?php echo esc_html( $date ); ?></span>
 			</div>
-			<p class="blog-local-summary"><?php echo esc_html( wp_trim_words( get_the_excerpt(), 28 ) ); ?></p>
+			<p class="blog-local-summary"><?php echo esc_html( $summary ); ?></p>
 			<div class="blog-local-meta">
-				<span class="blog-local-tag"><?php echo $cats ? esc_html( $cats[0]->name ) : ''; ?></span>
+				<span class="blog-local-tag"><?php echo esc_html( $tag ); ?></span>
 				<a class="blog-local-link" href="<?php the_permalink(); ?>">
 					<?php echo esc_html( $read_label ); ?> <i class="icon icon-arrow-right-top"></i>
 				</a>

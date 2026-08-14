@@ -426,13 +426,13 @@
   <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=87" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=87" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=88" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=88" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=89" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=107" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=92" defer></script>
-<script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=92" defer></script>
+<script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=93" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=13" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=87" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=88" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=89" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=87" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=83" defer></script>
     <?php wp_footer(); ?>

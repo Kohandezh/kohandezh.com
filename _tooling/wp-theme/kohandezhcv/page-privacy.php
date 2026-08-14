@@ -170,12 +170,12 @@
   <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=86" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=86" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=87" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=87" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=88" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=106" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=91" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=15" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=86" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=87" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=88" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=82" defer></script>
     <?php wp_footer(); ?>
 </body>
