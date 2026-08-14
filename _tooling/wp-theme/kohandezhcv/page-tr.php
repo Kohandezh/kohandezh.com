@@ -8,7 +8,7 @@
     <title>Mohammad Ali Kohandezh - Yapay Zeka, Siber Güvenlik ve BT Altyapısı Uzmanı</title>
     <meta name="author" content="Mohammad Ali Kohandezh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=107"></script>
+    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=109"></script>
     <meta name="description" content="Mohammad Ali Kohandezh — BT Yönetimi alanında doktora ve Kohan System Farda (KSF) CEO'su; 2007'den bu yana yapay zeka, BT altyapısı ve siber güvenlik alanlarında deneyimli.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
@@ -19,22 +19,22 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/simple-line/simple-line.css">
     <!-- css -->
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=106">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=108">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css"></noscript>
 
 
-    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=159">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=106">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=104">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=105" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=105"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=105" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=105"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=120" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=120"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=100">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=100">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=94">
+    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=161">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=108">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=106">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=107" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=107"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=107" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=107"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=122" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=122"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=102">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=102">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=96">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kdcv-interaction-fix.css?v=9">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=108"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=110" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=110"></noscript>
 
     <!-- Kohandezh overrides -->
     <style>
@@ -557,7 +557,7 @@
     <!-- ===== /SEO BLOCK ===== -->
 
     <!-- ===== /SEO BLOCK ===== -->
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=104" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=104"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=106" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=106"></noscript>
   <!-- ProfilePage: Google's container type for a person's own page. It
        points at the Person node declared above by @id rather than
        repeating it, adds the freshness dates answer engines look for,
@@ -2398,34 +2398,34 @@
     </noscript>
 
     <!-- Javascript -->
-    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=103" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=71" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=116" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=110" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=105" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=73" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=118" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=112" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kdcv-resume-entry-fix.js?v=7" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=2" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=107" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=105" defer></script>
-    <!-- <script src="<?php echo KDCV; ?>/assets/js/odometer.min.js" defer></script> -->    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=104" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=106" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=68" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=110" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=109" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=107" defer></script>
+    <!-- <script src="<?php echo KDCV; ?>/assets/js/odometer.min.js" defer></script> -->    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=106" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=108" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=70" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=112" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=104" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=106" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/animation-change-text.min.js" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/demo-and-schedule.min.js" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=103" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=114" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=106" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=105" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=105" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=105" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=116" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=108" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=107" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=107" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/cwv-rum.min.js" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=123" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=108" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=125" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=110" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kdcv-interaction-fix.js?v=5" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=108" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=110" defer></script>
 <script>
 (function(){
   function msg(lang){
@@ -2505,13 +2505,13 @@
   }, true);
 })();
 </script>
-  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=103" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=104" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=100" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=99" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=94" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=90" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=75" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=105" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=106" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=102" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=96" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=92" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=77" defer></script>
     <?php wp_footer(); ?>
 </body>
 

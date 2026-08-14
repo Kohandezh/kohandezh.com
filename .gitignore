@@ -28,3 +28,6 @@ tmp-blog-import/
 
 # Python bytecode cache from the sync script
 __pycache__/
+
+# Graphify knowledge graph — local navigation aid, not a release artifact
+graphify-out/

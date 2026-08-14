@@ -201,7 +201,32 @@
     if (out !== raw) node.textContent = out;
   }
 
+  /* ---- the generated sako row, on Russian pages --------------------------
+     kdcv-resume-entry-fix.js is written by the background tooling (not
+     editable here — same reason this file exists at all) and injects the
+     "National Open-Source AI Platform" row with English/Persian copy only.
+     On the Russian page those two strings were the last English left in the
+     timeline, so they are corrected after injection, exactly like the dates
+     above. Keyed on the full source strings: if the tooling ever changes
+     them, this silently stops matching rather than corrupting anything. */
+  var SAKO_RU = {
+    "Developer — National Open-Source AI Platform":
+      "Разработчик — Национальная открытая платформа ИИ",
+    "Developer on the National Open-Source AI Platform.":
+      "Разработчик Национальной открытой платформы ИИ."
+  };
+
+  function fixSako() {
+    if ((document.documentElement.lang || "").toLowerCase().split("-")[0] !== "ru") return;
+    var nodes = document.querySelectorAll(".timeline-role, .timeline-desc");
+    for (var i = 0; i < nodes.length; i++) {
+      var t = nodes[i].textContent.trim();
+      if (SAKO_RU[t]) nodes[i].textContent = SAKO_RU[t];
+    }
+  }
+
   function fix() {
+    fixSako();
     fixTimes();
     var nodes = document.querySelectorAll(".timeline-date");
     for (var i = 0; i < nodes.length; i++) {
