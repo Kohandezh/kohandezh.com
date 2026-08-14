@@ -144,6 +144,48 @@ abstract class KDCV_AI_Provider {
 	}
 
 	/**
+	 * Provider try-order for a request that did not name a provider,
+	 * honouring the routing mode chosen in Settings.
+	 *
+	 * 'single'      — the default provider only (the original behaviour).
+	 * 'random'      — every configured provider, shuffled per request.
+	 * 'round_robin' — every configured provider, rotated one step per
+	 *                 request via a persistent cursor.
+	 *
+	 * In the rotation modes the FULL list is returned, not just the pick:
+	 * the REST controller walks it in order, so a provider that errors is
+	 * automatically failed over to the next configured one.
+	 *
+	 * @return string[] Provider ids, best candidate first.
+	 */
+	public static function route_order() {
+		$settings = get_option( 'kdcv_ai_settings', array() );
+		$mode     = isset( $settings['routing'] ) ? $settings['routing'] : 'single';
+		$ready    = self::ready_ids();
+		$default  = isset( $settings['default_provider'] ) ? $settings['default_provider'] : '';
+
+		if ( 'single' === $mode || count( $ready ) <= 1 ) {
+			if ( $default !== '' && isset( self::$registry[ $default ] ) ) {
+				return array( $default );
+			}
+			return array_slice( $ready, 0, 1 );
+		}
+
+		if ( 'random' === $mode ) {
+			shuffle( $ready );
+			return $ready;
+		}
+
+		// round_robin: rotate the start point one step per request. The
+		// cursor is not autoloaded and a lost increment under concurrency
+		// only repeats a provider once — harmless for load spreading.
+		$n      = count( $ready );
+		$cursor = (int) get_option( 'kdcv_ai_rr_cursor', 0 ) % $n;
+		update_option( 'kdcv_ai_rr_cursor', ( $cursor + 1 ) % $n, false );
+		return array_merge( array_slice( $ready, $cursor ), array_slice( $ready, 0, $cursor ) );
+	}
+
+	/**
 	 * Build an instance of the given provider, merging stored Settings
 	 * (api_key, model override) on top of registration defaults.
 	 *

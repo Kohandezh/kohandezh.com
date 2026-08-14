@@ -20,7 +20,7 @@ class KDCV_AI_REST {
 	const MAX_QUESTION = 500;
 	const MAX_FACTS    = 80;
 	const MAX_FACT_LEN = 300;
-	const ALLOWED_LOCALES = array( 'en', 'fa', 'ar', 'de', 'es', 'fr', 'tr', 'zh', 'ja' );
+	const ALLOWED_LOCALES = array( 'en', 'fa', 'ar', 'de', 'es', 'fr', 'tr', 'zh', 'ja', 'ru' );
 
 	public static function register() {
 		add_action( 'rest_api_init', function () {
@@ -50,9 +50,23 @@ class KDCV_AI_REST {
 			return new WP_REST_Response( array( 'available' => true, 'answer' => $answer, 'provider' => '', 'model' => '' ), 200 );
 		}
 
-		// 1. Pick a provider — request override > Settings default > null.
+		// 1. Pick the provider try-order — an explicit request override wins;
+		// otherwise Settings decide (default only / random / round-robin).
+		// In the rotation modes the list holds every configured provider, so
+		// a failing provider is retried on the next one before giving up.
 		$requested_provider = sanitize_text_field( (string) $req->get_param( 'provider' ) );
-		$provider = KDCV_AI_Provider::build( $requested_provider !== '' ? $requested_provider : null );
+		$candidate_ids = $requested_provider !== ''
+			? array( $requested_provider )
+			: KDCV_AI_Provider::route_order();
+
+		$candidates = array();
+		foreach ( $candidate_ids as $cid ) {
+			$built = KDCV_AI_Provider::build( $cid );
+			if ( $built && $built->is_ready() ) {
+				$candidates[] = $built;
+			}
+		}
+		$provider = ! empty( $candidates ) ? $candidates[0] : null;
 
 		// Build the standard "not available" envelope the JS expects.
 		$unavailable = function ( $reason, $status = 503 ) use ( &$provider ) {
@@ -65,11 +79,10 @@ class KDCV_AI_REST {
 			), $status );
 		};
 
-		if ( ! $provider ) {
-			return $unavailable( 'no-provider', 503 );
-		}
-		if ( ! $provider->is_ready() ) {
-			return $unavailable( 'provider-not-configured', 503 );
+		if ( empty( $candidates ) ) {
+			// Distinguish "nothing registered/selected" from "selected but keyless".
+			$any = KDCV_AI_Provider::build( $requested_provider !== '' ? $requested_provider : null );
+			return $unavailable( $any ? 'provider-not-configured' : 'no-provider', 503 );
 		}
 
 		// 2. Sanitize input.
@@ -106,21 +119,34 @@ class KDCV_AI_REST {
 		}
 
 		// 4. Build prompts.
-		$facts_block = self::build_facts_block( $req->get_param( 'facts' ) );
-		$site_block  = self::build_site_index_block( $question, $locale );
-		$system      = self::build_system_prompt( $locale );
-		$user        = "VERIFIED SITE-WIDE FACTS:\n" . $site_block
+		$facts_block   = self::build_facts_block( $req->get_param( 'facts' ) );
+		$site_block    = self::build_site_index_block( $question, $locale );
+		$profile_block = self::build_profile_block( $locale );
+		$system        = self::build_system_prompt( $locale );
+		$user          = ( $profile_block !== '' ? "VERIFIED PROFILE:\n" . $profile_block . "\n\n" : '' )
+			. "VERIFIED SITE-WIDE FACTS:\n" . $site_block
 			. "\n\nFACTS FROM THE CURRENT PAGE:\n" . ( $facts_block !== '' ? $facts_block : '(none extracted)' )
 			. "\n\nQUESTION: " . $question;
 
-		// 5. Ask the provider.
-		$model_used = $provider->get_model();
-		$result     = $provider->ask( $system, $user, array() );
-
-		if ( ! $result['ok'] ) {
+		// 5. Ask, walking the candidate list. Each failure is logged under the
+		// provider that produced it, then the next configured provider gets
+		// the same prompts. Only when every candidate fails does the visitor
+		// see an error.
+		$result     = array( 'ok' => false, 'status' => 'no-provider', 'reason' => '' );
+		$model_used = '';
+		foreach ( $candidates as $candidate ) {
+			$provider   = $candidate;
+			$model_used = $provider->get_model();
+			$result     = $provider->ask( $system, $user, array() );
+			if ( ! empty( $result['ok'] ) ) {
+				break;
+			}
 			self::log( $provider, $ip_hash, $locale, $source, $question,
 				mb_substr( (string) $result['reason'], 0, 500 ),
 				(string) $result['status'] );
+		}
+
+		if ( empty( $result['ok'] ) ) {
 			return $unavailable( $result['status'], 502 );
 		}
 
@@ -162,6 +188,32 @@ class KDCV_AI_REST {
 			}
 		}
 		return implode( "\n", $out );
+	}
+
+	/**
+	 * The always-present grounding: the theme's llms.txt profile, in the
+	 * visitor's language when a localized variant exists. Without this the
+	 * model only sees whatever the keyword search below happens to match,
+	 * and a question like "what is his expertise?" — whose words appear in
+	 * no post — got an honest but useless "I could not find it".
+	 *
+	 * The files live in the active theme (the sync script ships all ten),
+	 * so the profile updates with the theme and needs no plugin setting.
+	 * Returns '' when the theme has no llms.txt — the plugin stays
+	 * theme-independent.
+	 */
+	private static function build_profile_block( $locale ) {
+		$dir  = trailingslashit( get_template_directory() );
+		$path = $dir . ( 'en' === $locale ? 'llms.txt' : $locale . '-llms.txt' );
+		if ( ! is_readable( $path ) ) {
+			$path = $dir . 'llms.txt';
+		}
+		if ( ! is_readable( $path ) ) {
+			return '';
+		}
+		$txt = trim( (string) file_get_contents( $path ) );
+		// Generous cap — the largest of the ten files is ~4.5 KB.
+		return mb_substr( $txt, 0, 6000 );
 	}
 
 	/**
@@ -211,12 +263,13 @@ class KDCV_AI_REST {
 			'en' => 'English', 'fa' => 'Persian (Farsi)', 'ar' => 'Arabic',
 			'de' => 'German', 'es' => 'Spanish', 'fr' => 'French',
 			'tr' => 'Turkish', 'zh' => 'Simplified Chinese', 'ja' => 'Japanese',
+			'ru' => 'Russian',
 		);
 		$lang_name = isset( $lang_names[ $locale ] ) ? $lang_names[ $locale ] : 'English';
 		return sprintf(
 			'You are Kohan, the official website assistant embedded on kohandezh.com. ' .
 			'Answer the visitor question using ONLY the verified site-wide facts and current-page facts supplied below. ' .
-			'Do not invent information. If the facts do not contain the answer, say briefly that you could not find it on this page. ' .
+			'Do not invent information. If the facts do not contain the answer, say briefly that you could not find it on kohandezh.com. ' .
 			'When asked how to contact Mohammad, always provide the official email and both official mobile numbers exactly as supplied. ' .
 			'Keep the answer concise (1 to 4 short sentences). ' .
 			'Reply in %s. Do not use markdown, bullet lists, or code blocks.',

@@ -8,7 +8,7 @@
  */
 
 define( 'KDCV', get_template_directory_uri() );
-define( 'KDCV_CONTENT_SCHEMA_VERSION', '2.0.0' ); // bump: Knowledge Hub page
+define( 'KDCV_CONTENT_SCHEMA_VERSION', '2.0.1' ); // bump: Russian CV page (ru was missing from required pages)
 
 add_action( 'after_setup_theme', function () {
 	add_theme_support( 'post-thumbnails' );
@@ -794,6 +794,7 @@ function kdcv_required_pages() {
 		'tr'   => 'CV — Türkçe',
 		'zh'   => 'CV — 中文',
 		'ja'   => 'CV — 日本語',
+		'ru'   => 'CV — Русский',
 		'psn'  => 'PSN Trophy Room',
 		'certificates' => 'Certificates',
 		'blog' => 'Blog',

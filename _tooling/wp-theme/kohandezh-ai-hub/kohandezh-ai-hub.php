@@ -3,7 +3,7 @@
  * Plugin Name:       Kohandezh AI Hub
  * Plugin URI:        https://kohandezh.com
  * Description:       Multi-provider AI proxy (z.ai, OpenAI, Anthropic, …) for the Kohandezh CV assistant widget. Exposes a public REST endpoint, a wp-admin chat playground, conversation logs, and a settings screen for API keys — independent of the active theme.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Mohammad Ali Kohandezh
@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'KDCV_AI_VERSION', '1.0.0' );
+define( 'KDCV_AI_VERSION', '1.1.0' );
 define( 'KDCV_AI_FILE', __FILE__ );
 define( 'KDCV_AI_DIR', plugin_dir_path( __FILE__ ) );
 define( 'KDCV_AI_URL', plugin_dir_url( __FILE__ ) );

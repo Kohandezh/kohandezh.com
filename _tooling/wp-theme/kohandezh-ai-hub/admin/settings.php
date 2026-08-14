@@ -49,6 +49,11 @@ function kdcv_ai_settings_sanitize( $input ) {
 		$out['default_provider'] = $ids[0];
 	}
 
+	$routing = isset( $clean['routing'] ) ? sanitize_text_field( $clean['routing'] ) : 'single';
+	$out['routing'] = in_array( $routing, array( 'single', 'random', 'round_robin' ), true )
+		? $routing
+		: 'single';
+
 	foreach ( $ids as $id ) {
 		$submitted = isset( $clean[ $id ] ) && is_array( $clean[ $id ] ) ? $clean[ $id ] : array();
 		$key       = isset( $submitted['api_key'] ) ? trim( (string) $submitted['api_key'] ) : '';
@@ -100,6 +105,20 @@ function kdcv_ai_settings_render() {
 							<?php endforeach; ?>
 						</select>
 						<p class="description">Switch any time — takes effect immediately on the next request.</p>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="kdcv-routing">Routing mode</label></th>
+					<td>
+						<?php $routing = isset( $settings['routing'] ) ? $settings['routing'] : 'single'; ?>
+						<select id="kdcv-routing" name="kdcv_ai_settings[routing]">
+							<option value="single"<?php selected( $routing, 'single' ); ?>>Default provider only</option>
+							<option value="random"<?php selected( $routing, 'random' ); ?>>Random — any configured provider, per request</option>
+							<option value="round_robin"<?php selected( $routing, 'round_robin' ); ?>>Round-robin — rotate through configured providers</option>
+						</select>
+						<p class="description">Random and round-robin spread visitor questions across every provider
+						that has an API key, and automatically fail over to the next one when a provider
+						errors or hits its quota. With one configured provider all three modes behave the same.</p>
 					</td>
 				</tr>
 			</table>
