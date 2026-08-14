@@ -36,6 +36,9 @@ define( 'KDCV_AI_TABLE', 'kdcv_ai_chats' );
 
 require_once KDCV_AI_DIR . 'includes/class-kdcv-provider.php';
 require_once KDCV_AI_DIR . 'includes/class-kdcv-provider-zai.php';
+require_once KDCV_AI_DIR . 'includes/class-kdcv-provider-openai.php';
+require_once KDCV_AI_DIR . 'includes/class-kdcv-provider-anthropic.php';
+require_once KDCV_AI_DIR . 'includes/class-kdcv-provider-custom.php';
 require_once KDCV_AI_DIR . 'includes/class-kdcv-logger.php';
 require_once KDCV_AI_DIR . 'includes/class-kdcv-rest.php';
 
@@ -49,10 +52,21 @@ add_action( 'plugins_loaded', function () {
 		'class'      => 'KDCV_AI_Provider_ZAI',
 		'default_mm' => 'glm-4.6',
 	) );
-	// Example slot for the next provider (uncomment when its class exists):
-	// kdcv_ai_register_provider( 'openai', array(
-	//     'label' => 'OpenAI', 'class' => 'KDCV_AI_Provider_OpenAI', 'default_mm' => 'gpt-4o-mini',
-	// ) );
+	kdcv_ai_register_provider( 'openai', array(
+		'label'      => 'OpenAI (GPT)',
+		'class'      => 'KDCV_AI_Provider_OpenAI',
+		'default_mm' => 'gpt-4o-mini',
+	) );
+	kdcv_ai_register_provider( 'anthropic', array(
+		'label'      => 'Anthropic (Claude)',
+		'class'      => 'KDCV_AI_Provider_Anthropic',
+		'default_mm' => 'claude-haiku-4-5-20251001',
+	) );
+	kdcv_ai_register_provider( 'custom', array(
+		'label'      => 'Custom (OpenAI-compatible)',
+		'class'      => 'KDCV_AI_Provider_Custom',
+		'default_mm' => '',
+	) );
 } );
 
 KDCV_AI_REST::register();

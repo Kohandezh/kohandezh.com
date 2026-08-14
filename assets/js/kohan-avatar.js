@@ -768,7 +768,7 @@
       cb(true);
     };
     img.onerror = function () { cb(false); };
-    img.src = ASSET_BASE + "spritesheet.webp";
+    img.src = ASSET_BASE + "spritesheet.webp?v=2"; // v2: near-lossless re-encode from the master (was q~85)
   };
 
   KohanAvatar.prototype.loadSupplemental = function (mood) {

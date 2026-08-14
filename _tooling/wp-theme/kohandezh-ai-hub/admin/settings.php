@@ -62,6 +62,11 @@ function kdcv_ai_settings_sanitize( $input ) {
 			'api_key' => $key,
 			'model'   => $model,
 		);
+		// Only the custom provider reads it, but keeping it per-provider means
+		// a future gateway provider gets the field for free.
+		if ( isset( $submitted['base_url'] ) ) {
+			$out[ $id ]['base_url'] = esc_url_raw( trim( (string) $submitted['base_url'] ), array( 'https' ) );
+		}
 	}
 	return $out;
 }
@@ -121,6 +126,18 @@ function kdcv_ai_settings_render() {
 							<?php endif; ?>
 						</td>
 					</tr>
+					<?php if ( 'custom' === $id ) : ?>
+					<tr>
+						<th scope="row"><label for="kdcv-url-<?php echo esc_attr( $id ); ?>">Base URL</label></th>
+						<td>
+							<input type="url" id="kdcv-url-<?php echo esc_attr( $id ); ?>"
+								name="kdcv_ai_settings[<?php echo esc_attr( $id ); ?>][base_url]"
+								value="<?php echo esc_attr( isset( $cfg['base_url'] ) ? $cfg['base_url'] : '' ); ?>"
+								class="regular-text" placeholder="https://api.deepseek.com/v1/chat/completions" autocomplete="off" />
+							<p class="description">The full <code>/chat/completions</code> address of any OpenAI-compatible API (DeepSeek, Groq, OpenRouter, a local gateway). HTTPS only.</p>
+						</td>
+					</tr>
+					<?php endif; ?>
 					<tr>
 						<th scope="row"><label for="kdcv-model-<?php echo esc_attr( $id ); ?>">Model override</label></th>
 						<td>
