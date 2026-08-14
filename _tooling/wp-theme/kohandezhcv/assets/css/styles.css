@@ -4161,6 +4161,15 @@ body.dark-mode .sidebar-user .user-social .kdcv-messenger-link {
   border-color: rgba(0, 0, 0, .12);
   box-shadow: 0 8px 18px rgba(0, 0, 0, .34);
 }
+/* The blanket `.dark-mode .tf-social-icon-2 a svg path { fill:#fff }` below
+   paints every social glyph white — right for the dark X/LinkedIn plates,
+   fatal here: dark mode gives the messenger links WHITE plates, so Telegram
+   and WhatsApp became invisible white-on-white circles. currentColor follows
+   the link's own dark-mode color (#080808), so the glyph always contrasts
+   with whatever plate the theme puts under it. */
+body.dark-mode .tf-social-icon-2 a.kdcv-messenger-link svg path {
+  fill: currentColor;
+}
 body.dark-mode .kdcv-messenger-brand-image {
   filter: grayscale(1) brightness(0);
 }
@@ -5369,7 +5378,13 @@ button.animate-btn::after,
 
 .wrap-container {
   width: 100%;
-  margin-left: auto;
+  /* Logical, not physical. margin-left:auto pushes the content column toward
+     the RIGHT in every direction — correct beside the left-fixed poster in
+     LTR, but in RTL the poster flips to the right and the same margin shoved
+     the 708px column 348px underneath it (the Arabic hero rendered on top of
+     the portrait). inline-start resolves to left in LTR (identical layout)
+     and to right in RTL (column pushes left — the faithful mirror). */
+  margin-inline-start: auto;
   /*-- min, between, max --*/
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
@@ -12000,14 +12015,28 @@ body:not(.dark-mode) .wg-work .work-image .work-localized-copy {
 /* Arabic reading and responsive geometry: use logical sizing so RTL does not
    inherit the narrow physical-right column from the original LTR template. */
 html[lang="ar"] body { font-family: "Cairo", sans-serif; }
-html[lang="ar"] .intro-title--ar .intro-title__line { display: block; width: 100%; }
+/* fit-content, not 100%: each line's ::after paints the green highlight pill
+   the full width of the line box, and at width:100% that pill ran 400px past
+   the end of the (shorter) Arabic text. Same treatment as the Persian hero:
+   the box shrinks to the words, and the auto inline-start margin keeps it on
+   the right edge. */
+html[lang="ar"] .intro-title--ar .intro-title__line {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline-start: auto;
+}
 html[lang="ar"] .main-content,
-html[lang="ar"] .main-content > .row,
-html[lang="ar"] .main-content .col-lg-7 {
+html[lang="ar"] .main-content > .row {
   width: min(100%, 1440px);
   max-width: 100%;
   margin-inline: auto;
 }
+/* The column is deliberately NOT in the group above. Forcing it to full width
+   discarded Bootstrap's col-xl-8 (784px became 1176px), and the fixed poster
+   card occupies the outer 480px of exactly that overflow — the two overlapped
+   by ~350px at 1440. The mobile variant below may keep the full-width column:
+   below 768px there is no fixed poster to collide with. */
 html[lang="ar"] p,
 html[lang="ar"] .text-body-3,
 html[lang="ar"] .info__duty,

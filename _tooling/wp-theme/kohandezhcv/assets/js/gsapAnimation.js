@@ -99,8 +99,19 @@ gsap.registerPlugin(ScrollTrigger);
                         opacity: 1,
                     });
                 } else if (hasClass("effect-blur-fade")) {
-                    pxl_split.split({ type: "lines" });
-                    split_type_set = pxl_split.lines;
+                    /* WORDS, not lines. The "lines" split rendered every word
+                     * as its own display:block div — the hero read
+                     * "I'm / building / AI / …" one word per line, and on
+                     * Arabic every headline collapsed into a one-word-wide
+                     * column (the line detector groups words by measured
+                     * offsetTop, and at split time that measurement put each
+                     * word on its own line). Words are inline-block, so the
+                     * text flows and wraps exactly like the un-split markup —
+                     * the layout cannot differ from the authored one, in
+                     * either direction. Stagger is per word now, so it is
+                     * shortened to keep the whole reveal under ~a second. */
+                    pxl_split.split({ type: "words" });
+                    split_type_set = pxl_split.words;
                     gsap.fromTo(
                         split_type_set,
                         { opacity: 0, filter: "blur(10px)", y: 20 },
@@ -109,7 +120,7 @@ gsap.registerPlugin(ScrollTrigger);
                             filter: "blur(0px)",
                             y: 0,
                             duration: 1,
-                            stagger: 0.1,
+                            stagger: 0.04,
                             ease: "power3.out",
                             scrollTrigger: {
                                 trigger: $target,

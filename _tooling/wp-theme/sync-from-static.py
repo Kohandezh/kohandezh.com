@@ -90,6 +90,10 @@ STATIC_ONLY_ASSETS = [
     # kohandezhcv.zip over the 32 MB upload_max_filesize most shared hosts
     # enforce, which made the theme impossible to install from wp-admin.
     "kohan/supplemental-source/",
+    # Source original for the sako portfolio art. The pages reference only the
+    # 168 KB .webp beside it; this 2.2 MB lossless PNG is the master kept in
+    # the repo and must not ship — it alone grew the theme zip by 9%.
+    "images/portfolio/sako-platform-concept.png",
 ]
 
 # The static site's home-page blog preview is a client-side fetch of

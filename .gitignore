@@ -25,3 +25,6 @@ node_modules/
 # ── Scratch ──────────────────────────────────────────────────────────────
 tmp-blog-import/
 *.log
+
+# Python bytecode cache from the sync script
+__pycache__/
