@@ -43,6 +43,7 @@ CUSTOM_JS=(
   kohan-avatar.js
   page-chrome.js
   page-i18n.js
+  knowledge-tabs.js
   chat-ui.js
   wisdom-quotes.js
   glare-card.js
@@ -89,6 +90,7 @@ CUSTOM_CSS=(
   glare-card.css
   hud-button.css
   pearl-button.css
+  knowledge.css
 )
 
 js_before=0; js_after=0

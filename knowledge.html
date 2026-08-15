@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A practitioner's learning guide to AI and quantum readiness — curated stages, resources and field notes by Mohammad Ali Kohandezh.">
+  <meta name="description" content="The advisory map Mohammad Ali Kohandezh works from: a knowledge tree of applied AI and quantum readiness, and where an outside specialist adds value.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="theme-color" content="#080b0d">
-  <title>Knowledge Hub — Learning AI &amp; Quantum | Mohammad Ali Kohandezh</title>
+  <title>Knowledge Tree — AI &amp; Quantum Advisory | Mohammad Ali Kohandezh</title>
   <link rel="preload" href="assets/fonts/estedad/Estedad-VF.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/fonts/estedad/estedad.css">
   <link rel="stylesheet" href="assets/fonts/inter/inter.css">
   <link rel="stylesheet" href="assets/icon/icomoon/style.css">
   <link rel="stylesheet" href="assets/icon/simple-line/simple-line.css">
   <link rel="stylesheet" href="assets/css/blog.min.css?v=99">
+  <link rel="stylesheet" href="assets/css/knowledge.min.css?v=1">
   <link rel="stylesheet" href="assets/css/page-chrome.min.css?v=97">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/favicon-32.png?v=2">
   <link rel="canonical" href="https://kohandezh.com/knowledge.html">
@@ -20,12 +21,16 @@
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Knowledge Hub — Learning AI & Quantum",
+    "name": "Knowledge Tree — AI & Quantum Advisory",
     "url": "https://kohandezh.com/knowledge.html",
     "author": { "@type": "Person", "@id": "https://kohandezh.com/#person", "name": "Mohammad Ali Kohandezh" },
+    "about": [
+      { "@type": "Thing", "name": "Applied artificial intelligence" },
+      { "@type": "Thing", "name": "Post-quantum cryptography readiness" }
+    ],
     "hasPart": [
-      { "@type": "LearningResource", "name": "AI learning track", "learningResourceType": "Learning path", "educationalLevel": "Beginner to practitioner", "teaches": "Applied artificial intelligence for professionals and organizations" },
-      { "@type": "LearningResource", "name": "Quantum readiness track", "learningResourceType": "Learning path", "educationalLevel": "Beginner to practitioner", "teaches": "Quantum computing awareness and post-quantum security readiness" }
+      { "@type": "DefinedTermSet", "name": "Applied AI knowledge tree", "description": "Foundations, retrieval and grounding, agentic systems, and enterprise adoption." },
+      { "@type": "DefinedTermSet", "name": "Quantum readiness knowledge tree", "description": "Fundamentals, the harvest-now-decrypt-later threat model, post-quantum standards, and migration programme." }
     ]
   }
   </script>
@@ -48,47 +53,206 @@
     </header>
 
     <main>
-      <article class="blog-article">
-        <header class="blog-article-header">
-          <span class="blog-eyebrow" data-i18n="k03">Public knowledge</span>
-          <h1 data-i18n="k04">Learning AI &amp; Quantum: a practitioner's map</h1>
-          <div class="blog-meta"><span data-i18n="k05">Curated learning paths</span><span data-i18n="k06">Updated regularly</span></div>
+      <article class="blog-article kh-page">
+
+        <header class="blog-article-header kh-hero">
+          <span class="blog-eyebrow" data-i18n="h_eyebrow">AI &amp; quantum advisory</span>
+          <h1 data-i18n="h_title">The map I work from</h1>
+          <p class="kh-lead" data-i18n="h_lead">Two technologies are arriving on very different timelines, and both land in the same place: the infrastructure an organization already depends on. This is the territory as I actually work it — what each field is made of, and the point at which an outside specialist earns their fee.</p>
+          <div class="kh-hero-actions">
+            <a class="kh-cta" href="index.html#contact" data-i18n="h_cta">Discuss an engagement <i class="icon icon-arrow-right-top" aria-hidden="true"></i></a>
+            <a class="kh-cta kh-cta--ghost" href="Certificates.html" data-i18n="h_cta2">See the credentials behind it</a>
+          </div>
         </header>
 
-        <div class="blog-article-body">
-          <p data-i18n="k07">Everything on this page comes from one conviction: technology creates value only when people can actually use it. These are the stages I recommend to colleagues, clients and students — not a course catalogue, but the shortest honest route from curiosity to competence, with my own field notes at each step.</p>
-
-          <h2 id="ai-track" data-i18n="k08">Track 1 — Artificial intelligence</h2>
-
-          <h3 data-i18n="k10">Stage 1 · Foundations: from spreadsheets to prompts</h3>
-          <p data-i18n="k11">Before any theory, learn to hold a useful conversation with a modern model. Practise asking for drafts, summaries and comparisons in your own daily work for two weeks. The goal is not technical knowledge — it is losing the fear, and discovering where the tools genuinely save you time and where they confidently mislead you.</p>
-          <p class="blog-source-note" data-i18n="k12"><strong>Field note:</strong> in our programmes at Kohan System Farda, the people who advance fastest are rarely the most technical — they are the ones who kept a daily log of what worked and what failed.</p>
-
-          <h3 data-i18n="k13">Stage 2 · Core concepts: how the machine actually thinks</h3>
-          <p data-i18n="k14">Learn what a language model really does: tokens, context windows, training versus inference, and why models hallucinate. Then study retrieval-augmented generation (RAG) — the pattern behind almost every serious enterprise assistant, including the one on this website. One good survey paper and one hands-on tutorial beat ten opinion videos.</p>
-
-          <h3 data-i18n="k15">Stage 3 · Enterprise practice: agents, safety and value</h3>
-          <p data-i18n="k16">The frontier is agentic AI: systems that plan, call tools and complete work. Study one real platform end-to-end — how it authenticates, what it is allowed to touch, how failures are contained. This is where AI meets security engineering, and it is exactly the intersection where the Padyar and HomaYar products live: an agent is only as trustworthy as the infrastructure underneath it.</p>
-
-          <h2 id="quantum-track" data-i18n="k17">Track 2 — Quantum</h2>
-
-          <h3 data-i18n="k19">Stage 1 · What quantum computing really is</h3>
-          <p data-i18n="k20">Skip the popular-science mystique. A quantum computer is a machine that solves a narrow class of problems — factoring, search, simulation — dramatically faster than classical machines. Learn the honest state of the hardware: what qubit counts mean, why error correction is the real bottleneck, and why the useful timeline is measured in years, not decades.</p>
-
-          <h3 data-i18n="k21">Stage 2 · The security consequence: harvest now, decrypt later</h3>
-          <p data-i18n="k22">The reason a security professional cannot ignore quantum: encrypted data stolen today can be stored and decrypted once the hardware matures. Learn which algorithms fall (RSA, classical Diffie-Hellman, elliptic curves) and which survive. This threat model — not the physics — is what boards and CIOs need explained to them.</p>
-          <p class="blog-source-note" data-i18n="k23"><strong>Field note:</strong> when I audit infrastructure, I now ask one added question: how long must this data stay secret? Anything sensitive beyond 2030 already deserves a post-quantum plan.</p>
-
-          <h3 data-i18n="k24">Stage 3 · Post-quantum readiness in practice</h3>
-          <p data-i18n="k25">NIST has already standardized post-quantum algorithms — ML-KEM for key exchange, ML-DSA for signatures. Practical readiness means three steps: inventory where cryptography lives in your organization, demand migration roadmaps from your vendors, and design new systems crypto-agile so an algorithm can be replaced without rebuilding the product.</p>
-
-          <h2 data-i18n="k26">How to use this page</h2>
-          <p data-i18n="k27">Pick one track and one stage. Spend two focused weeks on it before moving on. If you want to discuss a stage, a resource, or your organization's readiness — the assistant on this site answers in your language, and the contact form reaches me directly.</p>
+        <div class="kh-tabs" role="tablist" data-i18n-aria="a_tabs" aria-label="Knowledge domains">
+          <button type="button" role="tab" id="kh-tab-ai" aria-controls="kh-panel-ai" aria-selected="true" tabindex="0" class="kh-tab">
+            <span class="kh-tab-label" data-i18n="tab_ai">Artificial intelligence</span>
+            <span class="kh-tab-sub" data-i18n="tab_ai_sub">Here now</span>
+          </button>
+          <button type="button" role="tab" id="kh-tab-q" aria-controls="kh-panel-q" aria-selected="false" tabindex="-1" class="kh-tab">
+            <span class="kh-tab-label" data-i18n="tab_q">Quantum readiness</span>
+            <span class="kh-tab-sub" data-i18n="tab_q_sub">Arriving</span>
+          </button>
         </div>
 
+        <!-- ── AI panel ──────────────────────────────────────────────────── -->
+        <section class="kh-panel" role="tabpanel" id="kh-panel-ai" aria-labelledby="kh-tab-ai">
+          <div class="kh-root">
+            <span class="kh-root-kicker" data-i18n="ai_kicker">Domain</span>
+            <h2 class="kh-root-name" data-i18n="ai_name">Applied artificial intelligence</h2>
+            <p class="kh-root-desc" data-i18n="ai_intro">Almost every organization can now buy a model. Very few can say what it is allowed to touch, where its answers come from, or what happens when it is wrong. Those three questions are the whole job, and they are infrastructure questions before they are AI questions.</p>
+          </div>
+
+          <ol class="kh-tree" role="list">
+            <li class="kh-branch">
+              <div class="kh-branch-head">
+                <span class="kh-no" aria-hidden="true">01</span>
+                <h3 class="kh-branch-title" data-i18n="a1t">Foundations</h3>
+                <span class="kh-eng" data-i18n="eng_advisory">Advisory</span>
+              </div>
+              <p class="kh-branch-desc" data-i18n="a1d">What the machine is actually doing, stated plainly enough to make decisions on. Without this, every later choice is guesswork dressed as strategy.</p>
+              <ul class="kh-leaves" role="list">
+                <li data-i18n="a1l1">Tokens &amp; context windows</li>
+                <li data-i18n="a1l2">Training vs inference</li>
+                <li data-i18n="a1l3">Why models hallucinate</li>
+                <li data-i18n="a1l4">Prompting as specification</li>
+                <li data-i18n="a1l5">Evaluating an answer</li>
+              </ul>
+            </li>
+
+            <li class="kh-branch">
+              <div class="kh-branch-head">
+                <span class="kh-no" aria-hidden="true">02</span>
+                <h3 class="kh-branch-title" data-i18n="a2t">Knowledge &amp; retrieval</h3>
+                <span class="kh-eng" data-i18n="eng_design">Design</span>
+              </div>
+              <p class="kh-branch-desc" data-i18n="a2d">Making a model answer from your facts rather than its memory. This is the pattern behind almost every serious enterprise assistant — including the one on this site.</p>
+              <ul class="kh-leaves" role="list">
+                <li data-i18n="a2l1">Retrieval-augmented generation</li>
+                <li data-i18n="a2l2">Chunking &amp; embeddings</li>
+                <li data-i18n="a2l3">Vector stores</li>
+                <li data-i18n="a2l4">Source attribution</li>
+                <li data-i18n="a2l5">Data governance &amp; residency</li>
+              </ul>
+            </li>
+
+            <li class="kh-branch">
+              <div class="kh-branch-head">
+                <span class="kh-no" aria-hidden="true">03</span>
+                <h3 class="kh-branch-title" data-i18n="a3t">Agentic systems</h3>
+                <span class="kh-eng" data-i18n="eng_delivery">Delivery</span>
+              </div>
+              <p class="kh-branch-desc" data-i18n="a3d">Software that plans, calls tools and completes work. The frontier, and the point where AI stops being a text problem and becomes a security-engineering problem.</p>
+              <ul class="kh-leaves" role="list">
+                <li data-i18n="a3l1">Tool calling &amp; function schemas</li>
+                <li data-i18n="a3l2">Orchestration &amp; task decomposition</li>
+                <li data-i18n="a3l3">Guardrails &amp; sandboxing</li>
+                <li data-i18n="a3l4">Human-in-the-loop checkpoints</li>
+                <li data-i18n="a3l5">Failure containment &amp; rollback</li>
+              </ul>
+            </li>
+
+            <li class="kh-branch">
+              <div class="kh-branch-head">
+                <span class="kh-no" aria-hidden="true">04</span>
+                <h3 class="kh-branch-title" data-i18n="a4t">Enterprise adoption</h3>
+                <span class="kh-eng" data-i18n="eng_enable">Enablement</span>
+              </div>
+              <p class="kh-branch-desc" data-i18n="a4d">Everything that decides whether a working pilot survives contact with a real organization: who it authenticates as, what it costs, and who is accountable when it errs.</p>
+              <ul class="kh-leaves" role="list">
+                <li data-i18n="a4l1">Identity &amp; least privilege</li>
+                <li data-i18n="a4l2">Observability &amp; audit trails</li>
+                <li data-i18n="a4l3">Cost &amp; capacity control</li>
+                <li data-i18n="a4l4">Vendor &amp; model selection</li>
+                <li data-i18n="a4l5">Change management &amp; training</li>
+              </ul>
+            </li>
+          </ol>
+
+          <p class="kh-note" data-i18n="ai_note"><strong>Field note:</strong> in the programmes we run at Kohan System Farda, the people who advance fastest are rarely the most technical. They are the ones who kept a daily log of what worked and what failed — and an agent is only ever as trustworthy as the infrastructure underneath it.</p>
+        </section>
+
+        <!-- ── Quantum panel ─────────────────────────────────────────────── -->
+        <section class="kh-panel" role="tabpanel" id="kh-panel-q" aria-labelledby="kh-tab-q" hidden>
+          <div class="kh-root">
+            <span class="kh-root-kicker" data-i18n="q_kicker">Domain</span>
+            <h2 class="kh-root-name" data-i18n="q_name">Quantum readiness</h2>
+            <p class="kh-root-desc" data-i18n="q_intro">Nothing here depends on owning a quantum computer. It depends on one question a board can answer today: how long must this data stay secret? Anything sensitive beyond 2030 already needs a plan, because the data being stolen now can be decrypted later.</p>
+          </div>
+
+          <ol class="kh-tree" role="list">
+            <li class="kh-branch">
+              <div class="kh-branch-head">
+                <span class="kh-no" aria-hidden="true">01</span>
+                <h3 class="kh-branch-title" data-i18n="q1t">Fundamentals</h3>
+                <span class="kh-eng" data-i18n="eng_advisory">Advisory</span>
+              </div>
+              <p class="kh-branch-desc" data-i18n="q1d">The honest state of the hardware, without the popular-science mystique. A quantum computer is fast at a narrow class of problems, and slow to arrive — both halves matter.</p>
+              <ul class="kh-leaves" role="list">
+                <li data-i18n="q1l1">Qubits &amp; superposition</li>
+                <li data-i18n="q1l2">Entanglement</li>
+                <li data-i18n="q1l3">Error correction as the bottleneck</li>
+                <li data-i18n="q1l4">Reading qubit-count claims</li>
+                <li data-i18n="q1l5">Where advantage is real</li>
+              </ul>
+            </li>
+
+            <li class="kh-branch">
+              <div class="kh-branch-head">
+                <span class="kh-no" aria-hidden="true">02</span>
+                <h3 class="kh-branch-title" data-i18n="q2t">The threat model</h3>
+                <span class="kh-eng" data-i18n="eng_assess">Assessment</span>
+              </div>
+              <p class="kh-branch-desc" data-i18n="q2d">Why a security professional cannot postpone this. Encrypted traffic captured today can be stored and opened once the hardware matures — the risk is set by your data's lifetime, not by the vendor's roadmap.</p>
+              <ul class="kh-leaves" role="list">
+                <li data-i18n="q2l1">Harvest now, decrypt later</li>
+                <li data-i18n="q2l2">RSA &amp; Diffie-Hellman</li>
+                <li data-i18n="q2l3">Elliptic-curve exposure</li>
+                <li data-i18n="q2l4">What survives: AES-256, SHA-2</li>
+                <li data-i18n="q2l5">Data-lifetime analysis</li>
+              </ul>
+            </li>
+
+            <li class="kh-branch">
+              <div class="kh-branch-head">
+                <span class="kh-no" aria-hidden="true">03</span>
+                <h3 class="kh-branch-title" data-i18n="q3t">Post-quantum cryptography</h3>
+                <span class="kh-eng" data-i18n="eng_design">Design</span>
+              </div>
+              <p class="kh-branch-desc" data-i18n="q3d">The replacements are standardized, not theoretical. NIST has published them; the work now is choosing correctly and deploying without breaking what already runs.</p>
+              <ul class="kh-leaves" role="list">
+                <li data-i18n="q3l1">ML-KEM for key exchange</li>
+                <li data-i18n="q3l2">ML-DSA for signatures</li>
+                <li data-i18n="q3l3">SLH-DSA as a conservative fallback</li>
+                <li data-i18n="q3l4">Hybrid classical + PQC modes</li>
+                <li data-i18n="q3l5">Certificate &amp; TLS impact</li>
+              </ul>
+            </li>
+
+            <li class="kh-branch">
+              <div class="kh-branch-head">
+                <span class="kh-no" aria-hidden="true">04</span>
+                <h3 class="kh-branch-title" data-i18n="q4t">Migration programme</h3>
+                <span class="kh-eng" data-i18n="eng_delivery">Delivery</span>
+              </div>
+              <p class="kh-branch-desc" data-i18n="q4d">Turning a standard into a plan with dates. Most organizations cannot answer where their cryptography lives, and that inventory is the first deliverable, not the last.</p>
+              <ul class="kh-leaves" role="list">
+                <li data-i18n="q4l1">Cryptographic inventory</li>
+                <li data-i18n="q4l2">Crypto-agility by design</li>
+                <li data-i18n="q4l3">Vendor migration roadmaps</li>
+                <li data-i18n="q4l4">Prioritizing by data lifetime</li>
+                <li data-i18n="q4l5">Pilot, rollout &amp; verification</li>
+              </ul>
+            </li>
+          </ol>
+
+          <p class="kh-note" data-i18n="q_note"><strong>Field note:</strong> when I audit infrastructure I now ask one added question — how long must this data stay secret? It reframes the conversation from a physics debate the board cannot settle into a records-retention decision it already knows how to make.</p>
+        </section>
+
+        <!-- ── engagement ────────────────────────────────────────────────── -->
+        <section class="kh-work">
+          <h2 class="kh-work-h" data-i18n="w_h">How I work with organizations</h2>
+          <div class="kh-work-grid">
+            <div class="kh-work-item">
+              <h3 data-i18n="w1t">Assess</h3>
+              <p data-i18n="w1d">A short, evidence-based read of where you stand: what AI is already in use unofficially, where cryptography lives, and which data has a lifetime long enough to matter.</p>
+            </div>
+            <div class="kh-work-item">
+              <h3 data-i18n="w2t">Design</h3>
+              <p data-i18n="w2d">An architecture your team can build and defend — retrieval and permissions for AI, crypto-agility for the quantum side — sized to the organization you actually have.</p>
+            </div>
+            <div class="kh-work-item">
+              <h3 data-i18n="w3t">Enable</h3>
+              <p data-i18n="w3d">Handover that outlasts the engagement: your people trained, the decisions written down, and a roadmap with dates rather than intentions.</p>
+            </div>
+          </div>
+          <p class="kh-work-foot" data-i18n="w_foot">If one branch of either tree is a live question for your organization, that is a good place to start the conversation.</p>
+        </section>
+
         <footer class="blog-article-footer">
-          <a class="blog-read" href="blog/index.html" data-i18n="k28">All posts <i class="icon icon-arrow-right-top"></i></a>
           <a class="blog-read" href="index.html#contact" data-i18n="k29">Start a conversation <i class="icon icon-arrow-right-top"></i></a>
+          <a class="blog-read" href="blog/index.html" data-i18n="k28">All posts <i class="icon icon-arrow-right-top"></i></a>
         </footer>
       </article>
     </main>
@@ -97,6 +261,7 @@
   </div>
   <script src="assets/js/clock.min.js?v=5" defer></script>
   <script src="assets/js/page-i18n.min.js?v=5" defer></script>
+  <script src="assets/js/knowledge-tabs.min.js?v=1" defer></script>
   <script src="assets/js/page-chrome.min.js?v=5" defer></script>
   <script src="assets/js/page-context.min.js?v=5" defer></script>
 </body>

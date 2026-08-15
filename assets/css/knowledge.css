@@ -1,0 +1,297 @@
+/*!
+ * knowledge.css — the AI / Quantum knowledge tree.
+ *
+ * Loaded only by knowledge.html, on top of blog.css, and it introduces NO new
+ * colours: every value below resolves to a blog.css token, so the page follows
+ * the site's light/dark switch for free.
+ *
+ * Two things drive the whole layout:
+ *
+ *   1. LOGICAL PROPERTIES ONLY. The spine, the connector stubs and every
+ *      indent use inset-inline-start / margin-inline / padding-inline, never
+ *      left/right. Persian and Arabic then mirror the entire tree — spine on
+ *      the right, stubs pointing left — without a single [dir="rtl"] override.
+ *
+ *   2. The accent is a SURFACE, not an ink. Per the palette contract in
+ *      blog.css, --b-accent is only ever used as a background with
+ *      --b-on-accent on top; anywhere the accent had to be TEXT (the branch
+ *      number, the engagement tag) uses --b-accent-ink instead, which is the
+ *      contrast-safe variant.
+ */
+
+/* ── hero ──────────────────────────────────────────────────────────────── */
+.kh-hero .kh-lead {
+  max-width: 62ch;
+  margin: 18px 0 0;
+  color: var(--b-muted);
+  font-size: clamp(16px, 1.6vw, 19px);
+  line-height: 1.65;
+}
+.kh-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+.kh-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;            /* touch floor, same as the rest of the site */
+  padding: 11px 20px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--b-accent);
+  color: var(--b-on-accent);
+  font-weight: 650;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: transform .18s ease, opacity .18s ease;
+}
+.kh-cta:hover { transform: translateY(-1px); opacity: .92; }
+.kh-cta--ghost {
+  background: transparent;
+  border-color: var(--b-line);
+  color: var(--b-text);
+}
+.kh-cta i { font-size: .85em; }
+
+/* ── tabs ──────────────────────────────────────────────────────────────── */
+.kh-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 40px 0 8px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--b-line);
+}
+.kh-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1 1 220px;
+  min-height: 44px;
+  padding: 14px 18px;
+  border: 1px solid var(--b-line);
+  border-radius: 14px;
+  background: var(--b-panel);
+  color: var(--b-muted);
+  font: inherit;
+  text-align: start;           /* logical: flips for RTL */
+  cursor: pointer;
+  transition: border-color .18s ease, background .18s ease, color .18s ease;
+}
+.kh-tab:hover { background: var(--b-panel-hover); }
+.kh-tab .kh-tab-label { font-size: 17px; font-weight: 650; color: var(--b-text); }
+.kh-tab .kh-tab-sub { font-size: 12.5px; letter-spacing: .04em; text-transform: uppercase; }
+.kh-tab[aria-selected="true"] {
+  border-color: var(--b-accent-ink);
+  background: var(--b-tint);
+}
+.kh-tab[aria-selected="true"] .kh-tab-sub { color: var(--b-accent-ink); }
+.kh-tab:focus-visible { outline: 2px solid var(--b-accent-ink); outline-offset: 2px; }
+
+.kh-panel { padding-top: 30px; }
+.kh-panel[hidden] { display: none; }
+
+/* ── root node ─────────────────────────────────────────────────────────── */
+.kh-root {
+  padding: 22px 24px;
+  border: 1px solid var(--b-tint-line);
+  border-radius: 18px;
+  background: var(--b-tint);
+}
+.kh-root-kicker {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--b-accent-ink);
+}
+.kh-root-name {
+  margin: 6px 0 10px;
+  font-size: clamp(24px, 3.4vw, 34px);
+  line-height: 1.15;
+  color: var(--b-text);
+}
+.kh-root-desc {
+  margin: 0;
+  max-width: 70ch;
+  color: var(--b-ink-on-tint);
+  line-height: 1.6;
+}
+
+/* ── the tree ──────────────────────────────────────────────────────────── */
+.kh-tree {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0;
+  padding-inline-start: 34px;  /* room for the spine */
+  list-style: none;
+}
+/* the spine: one continuous line the branches hang off */
+.kh-tree::before {
+  content: "";
+  position: absolute;
+  inset-block: 6px 34px;
+  inset-inline-start: 7px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--b-accent-ink), var(--b-line));
+  opacity: .55;
+}
+.kh-branch {
+  position: relative;
+  margin-top: 20px;
+  padding: 20px 22px;
+  border: 1px solid var(--b-line);
+  border-radius: 16px;
+  background: var(--b-panel);
+}
+/* connector stub from the spine to this branch */
+.kh-branch::before {
+  content: "";
+  position: absolute;
+  top: 34px;
+  inset-inline-start: -27px;
+  width: 25px;
+  height: 2px;
+  background: var(--b-line);
+}
+/* the node dot sitting on the spine */
+.kh-branch::after {
+  content: "";
+  position: absolute;
+  top: 29px;
+  inset-inline-start: -32px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--b-accent-ink);
+  border-radius: 50%;
+  background: var(--b-bg);
+}
+.kh-branch-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.kh-no {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: var(--b-accent-ink);   /* accent as TEXT -> the ink token, never --b-accent */
+}
+.kh-branch-title {
+  margin: 0;
+  flex: 1 1 auto;
+  font-size: clamp(18px, 2.1vw, 21px);
+  line-height: 1.25;
+  color: var(--b-text);
+}
+.kh-eng {
+  padding: 4px 11px;
+  border-radius: 999px;
+  background: var(--b-accent);
+  color: var(--b-on-accent);    /* filled pill -> dark ink on the accent surface */
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.kh-branch-desc {
+  margin: 10px 0 0;
+  max-width: 68ch;
+  color: var(--b-muted);
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+.kh-leaves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.kh-leaves li {
+  padding: 7px 13px;
+  border: 1px solid var(--b-tint-line);
+  border-radius: 999px;
+  background: var(--b-inset);
+  color: var(--b-text);
+  font-size: 13.5px;
+  line-height: 1.35;
+}
+
+.kh-note {
+  margin: 26px 0 0;
+  padding: 16px 20px;
+  border-inline-start: 3px solid var(--b-accent-ink);
+  border-radius: 0 12px 12px 0;
+  background: var(--b-inset);
+  color: var(--b-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+/* The rounded corners above are physical, so they must flip by hand — a
+   logical border-radius shorthand does not exist. */
+[dir="rtl"] .kh-note { border-radius: 12px 0 0 12px; }
+.kh-note strong { color: var(--b-text); }
+
+/* ── engagement block ──────────────────────────────────────────────────── */
+.kh-work {
+  margin-top: 54px;
+  padding-top: 34px;
+  border-top: 1px solid var(--b-line);
+}
+.kh-work-h {
+  margin: 0 0 22px;
+  font-size: clamp(21px, 2.6vw, 27px);
+  color: var(--b-text);
+}
+.kh-work-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+.kh-work-item {
+  padding: 20px;
+  border: 1px solid var(--b-line);
+  border-radius: 16px;
+  background: var(--b-panel);
+}
+.kh-work-item h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  color: var(--b-accent-ink);
+}
+.kh-work-item p {
+  margin: 0;
+  color: var(--b-muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+.kh-work-foot {
+  margin: 22px 0 0;
+  max-width: 66ch;
+  color: var(--b-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ── narrow screens ────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .kh-tree { padding-inline-start: 24px; }
+  .kh-tree::before { inset-inline-start: 4px; }
+  .kh-branch { padding: 17px 16px; }
+  .kh-branch::before { inset-inline-start: -20px; width: 18px; }
+  .kh-branch::after { inset-inline-start: -25px; }
+  .kh-tab { flex: 1 1 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kh-cta { transition: none; }
+  .kh-cta:hover { transform: none; }
+}
