@@ -113,6 +113,44 @@ class Kohan_Avatar {
 	}
 
 	/**
+	 * Speech-to-text settings, stored separately from TTS.
+	 *
+	 * Kept as its own option rather than extra keys on the TTS array because the
+	 * two are independently useful: a site may want the server voice without
+	 * accepting microphone uploads, or the reverse. `reuse_tts_key` covers the
+	 * common case where both run on the same OpenAI account, so the operator
+	 * pastes the key once.
+	 */
+	const STT_OPTION = 'kohan_avatar_stt';
+
+	public static function stt_defaults() {
+		return array(
+			'enabled'       => 0,
+			'provider'      => 'openai', // openai | custom
+			'endpoint'      => 'https://api.openai.com/v1/audio/transcriptions',
+			'api_key'       => '',
+			'model'         => 'whisper-1',
+			'reuse_tts_key' => 1,
+		);
+	}
+
+	public function get_stt_options() {
+		$saved = get_option( self::STT_OPTION, array() );
+		$o     = wp_parse_args( is_array( $saved ) ? $saved : array(), self::stt_defaults() );
+		if ( ! empty( $o['reuse_tts_key'] ) && '' === trim( (string) $o['api_key'] ) ) {
+			$t             = $this->get_tts_options();
+			$o['api_key']  = $t['api_key'];
+		}
+		return $o;
+	}
+
+	/** Whether transcription can actually be served (enabled + key + endpoint). */
+	public function stt_configured() {
+		$s = $this->get_stt_options();
+		return ! empty( $s['enabled'] ) && ! empty( $s['api_key'] ) && ! empty( $s['endpoint'] );
+	}
+
+	/**
 	 * Whether a real server-side voice is configured (provider set + key present +
 	 * endpoint). Drives the boolean flag the browser receives.
 	 */
@@ -138,6 +176,13 @@ class Kohan_Avatar {
 			'configured' => $this->voice_configured(),
 			'endpoint'   => $this->voice_configured() ? esc_url_raw( rest_url( 'kohan-avatar/v1/tts' ) ) : '',
 			'voice'      => $t['voice'],
+			// Transcription is advertised the same way: a boolean and a route,
+			// never the key. The mic UI stays on the browser's own SpeechRecognition
+			// unless this says the server can do better.
+			'stt'        => array(
+				'configured' => $this->stt_configured(),
+				'endpoint'   => $this->stt_configured() ? esc_url_raw( rest_url( 'kohan-avatar/v1/stt' ) ) : '',
+			),
 		);
 	}
 
@@ -321,6 +366,41 @@ class Kohan_Avatar {
 			self::TTS_OPTION,
 			array( 'sanitize_callback' => array( $this, 'sanitize_tts_options' ) )
 		);
+
+		register_setting(
+			'kohan_avatar_stt_group',
+			self::STT_OPTION,
+			array( 'sanitize_callback' => array( $this, 'sanitize_stt_options' ) )
+		);
+	}
+
+	public function sanitize_stt_options( $input ) {
+		$d    = self::stt_defaults();
+		$prev = get_option( self::STT_OPTION, array() );
+		$prev = wp_parse_args( is_array( $prev ) ? $prev : array(), $d );
+		$out  = array();
+
+		$out['enabled']       = empty( $input['enabled'] ) ? 0 : 1;
+		$out['reuse_tts_key'] = empty( $input['reuse_tts_key'] ) ? 0 : 1;
+
+		$prov             = isset( $input['provider'] ) ? sanitize_key( $input['provider'] ) : $d['provider'];
+		$out['provider']  = in_array( $prov, array( 'openai', 'custom' ), true ) ? $prov : $d['provider'];
+		$out['endpoint']  = isset( $input['endpoint'] ) ? esc_url_raw( trim( $input['endpoint'] ) ) : '';
+		$out['model']     = isset( $input['model'] ) ? sanitize_text_field( trim( $input['model'] ) ) : $d['model'];
+		if ( '' === $out['endpoint'] ) {
+			$out['endpoint'] = $d['endpoint'];
+		}
+
+		// Same contract as the TTS key: never echoed back to the form, so a blank
+		// field means "keep what is stored", not "erase it".
+		if ( ! empty( $input['clear_key'] ) ) {
+			$out['api_key'] = '';
+		} elseif ( ! empty( $input['api_key'] ) ) {
+			$out['api_key'] = sanitize_text_field( trim( $input['api_key'] ) );
+		} else {
+			$out['api_key'] = $prev['api_key'];
+		}
+		return $out;
 	}
 
 	public function sanitize_tts_options( $input ) {

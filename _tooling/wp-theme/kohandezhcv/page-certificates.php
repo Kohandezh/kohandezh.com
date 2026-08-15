@@ -33,7 +33,7 @@
 
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/fonts.css">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/certificates.min.css?v=91">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/certificates.min.css?v=92">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/flow-field-background.min.css?v=85">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=101"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=90" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=90"></noscript>
@@ -410,7 +410,7 @@
 
     <script>
         (() => {
-            const supported = ["en", "fa", "ar", "de", "es", "fr", "tr", "zh", "ja"];
+            const supported = ["en", "fa", "ar", "de", "es", "fr", "tr", "zh", "ja", "ru"];
             /* Locale order: ?lang= -> the language the visitor was last reading
                -> English.
 
@@ -429,7 +429,7 @@
                          : supported.includes(stored) ? stored
                          : "en";
             const rtl = locale === "fa" || locale === "ar";
-            const portfolioPages = { en: "<?php echo esc_url( home_url('/') ); ?>", fa: "<?php echo esc_url( home_url('/fa/') ); ?>", ar: "<?php echo esc_url( home_url('/ar/') ); ?>", de: "<?php echo esc_url( home_url('/de/') ); ?>", es: "<?php echo esc_url( home_url('/es/') ); ?>", fr: "<?php echo esc_url( home_url('/fr/') ); ?>", tr: "<?php echo esc_url( home_url('/tr/') ); ?>", zh: "<?php echo esc_url( home_url('/zh/') ); ?>", ja: "<?php echo esc_url( home_url('/ja/') ); ?>" };
+            const portfolioPages = { en: "<?php echo esc_url( home_url('/') ); ?>", fa: "<?php echo esc_url( home_url('/fa/') ); ?>", ar: "<?php echo esc_url( home_url('/ar/') ); ?>", de: "<?php echo esc_url( home_url('/de/') ); ?>", es: "<?php echo esc_url( home_url('/es/') ); ?>", fr: "<?php echo esc_url( home_url('/fr/') ); ?>", tr: "<?php echo esc_url( home_url('/tr/') ); ?>", zh: "<?php echo esc_url( home_url('/zh/') ); ?>", ja: "<?php echo esc_url( home_url('/ja/') ); ?>", ru: "<?php echo esc_url( home_url('/ru/') ); ?>" };
             const copy = {
                 en: ["Skip to content", "Credential archive", "Page actions", "Back to portfolio", "LinkedIn credentials", "Professional certificates & training", "Credential Archive", "A source-aware record of selected professional certifications, training certificates and LinkedIn-listed credentials held by Mohammad Ali Kohandezh.", "Browse documented records", "View on LinkedIn"],
                 fa: ["رفتن به محتوای اصلی", "آرشیو مدارک", "عملیات صفحه", "بازگشت به رزومه", "مدارک لینکدین", "گواهینامه‌ها و آموزش‌های حرفه‌ای", "آرشیو مدارک", "فهرستی مستند و منبع‌محور از گواهینامه‌های حرفه‌ای، دوره‌های آموزشی و مدارک ثبت‌شده در لینکدین محمدعلی کهن‌دژ.", "مشاهده مدارک مستند", "مشاهده در لینکدین"],
@@ -439,7 +439,8 @@
                 fr: ["Aller au contenu", "Archive des certifications", "Actions de la page", "Retour au portfolio", "Certifications LinkedIn", "Certifications et formations professionnelles", "Archive des certifications", "Un registre documenté et sourcé des certifications professionnelles, formations et qualifications LinkedIn de Mohammad Ali Kohandezh.", "Parcourir les justificatifs", "Voir sur LinkedIn"],
                 tr: ["İçeriğe geç", "Yeterlilik arşivi", "Sayfa işlemleri", "Portföye dön", "LinkedIn yeterlilikleri", "Profesyonel sertifikalar ve eğitimler", "Yeterlilik arşivi", "Mohammad Ali Kohandezh'in profesyonel sertifikaları, eğitim belgeleri ve LinkedIn'de listelenen yeterliliklerinin kaynaklara dayalı kaydı.", "Belgelenmiş kayıtları incele", "LinkedIn'de görüntüle"],
                 zh: ["跳到主要内容", "资质档案", "页面操作", "返回个人作品集", "LinkedIn 资质", "专业证书与培训", "资质档案", "基于来源整理的 Mohammad Ali Kohandezh 专业认证、培训证书及 LinkedIn 公开资质记录。", "浏览已记录的证书", "在 LinkedIn 查看"],
-                ja: ["メインコンテンツへ移動", "資格アーカイブ", "ページ操作", "ポートフォリオへ戻る", "LinkedInの資格", "専門資格とトレーニング", "資格アーカイブ", "Mohammad Ali Kohandezh が取得した専門資格、研修修了証、LinkedIn掲載資格を出典に基づいて整理した記録です。", "記録済み資格を見る", "LinkedInで見る"]
+                ja: ["メインコンテンツへ移動", "資格アーカイブ", "ページ操作", "ポートフォリオへ戻る", "LinkedInの資格", "専門資格とトレーニング", "資格アーカイブ", "Mohammad Ali Kohandezh が取得した専門資格、研修修了証、LinkedIn掲載資格を出典に基づいて整理した記録です。", "記録済み資格を見る", "LinkedInで見る"],
+                ru: ["Перейти к содержимому", "Архив квалификаций", "Действия на странице", "Вернуться к портфолио", "Записи LinkedIn", "Профессиональные сертификаты и обучение", "Архив квалификаций", "Документированный и опирающийся на источники перечень профессиональных сертификатов, учебных свидетельств и указанных в LinkedIn квалификаций Мохаммада Али Кохандежа.", "Смотреть документированные записи", "Открыть в LinkedIn"]
             }[locale];
 
             document.documentElement.lang = locale;
@@ -563,7 +564,7 @@
   <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=85" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/certificate-lightbox.min.js?v=85" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=85" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/certificates-i18n.min.js?v=86" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/certificates-i18n.min.js?v=87" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=17" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=85" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=86" defer></script>

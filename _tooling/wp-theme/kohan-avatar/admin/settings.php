@@ -15,6 +15,12 @@ $info = $this->version_info();
 $hash = isset( $info['hash'] ) ? (string) $info['hash'] : '';
 $tts          = $this->get_tts_options();
 $tts_has_key  = ! empty( $tts['api_key'] );
+$stt          = $this->get_stt_options();
+// get_stt_options() falls back to the TTS key when "reuse" is on, so ask the
+// raw option whether a SEPARATE key was actually stored — otherwise the form
+// would claim a key of its own that does not exist.
+$stt_raw      = get_option( Kohan_Avatar::STT_OPTION, array() );
+$stt_has_key  = is_array( $stt_raw ) && ! empty( $stt_raw['api_key'] );
 ?>
 <div class="wrap">
 	<h1><?php esc_html_e( 'Kohan Avatar', 'kohan-avatar' ); ?></h1>
@@ -226,5 +232,71 @@ $tts_has_key  = ! empty( $tts['api_key'] );
 			</tr>
 		</table>
 		<?php submit_button( __( 'Save TTS settings', 'kohan-avatar' ) ); ?>
+	</form>
+
+	<hr>
+	<h2><?php esc_html_e( 'Speech-to-Text (microphone)', 'kohan-avatar' ); ?></h2>
+	<p class="description">
+		<?php esc_html_e( 'Transcribes what a visitor says into the chat microphone. Exactly like TTS, the key is stored server-side and used only by a WordPress REST proxy — the browser receives a boolean and a route, never the key. Leave this disabled and the mic keeps using the browser\'s built-in speech recognition, which is free but noticeably weaker for Persian, Arabic and Russian.', 'kohan-avatar' ); ?>
+	</p>
+	<form method="post" action="options.php">
+		<?php settings_fields( 'kohan_avatar_stt_group' ); ?>
+		<table class="form-table" role="presentation">
+			<tr>
+				<th scope="row"><?php esc_html_e( 'Enable server transcription', 'kohan-avatar' ); ?></th>
+				<td>
+					<label><input type="checkbox" name="kohan_avatar_stt[enabled]" value="1" <?php checked( $stt['enabled'], 1 ); ?>>
+					<?php esc_html_e( 'Send recorded audio to the provider instead of using browser recognition', 'kohan-avatar' ); ?></label>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><?php esc_html_e( 'Provider', 'kohan-avatar' ); ?></th>
+				<td>
+					<select name="kohan_avatar_stt[provider]">
+						<?php
+						$stt_providers = array(
+							'openai' => __( 'OpenAI Whisper (whisper-1 / gpt-4o-transcribe)', 'kohan-avatar' ),
+							'custom' => __( 'Custom OpenAI-compatible endpoint', 'kohan-avatar' ),
+						);
+						foreach ( $stt_providers as $val => $label ) {
+							printf( '<option value="%s" %s>%s</option>', esc_attr( $val ), selected( $stt['provider'], $val, false ), esc_html( $label ) );
+						}
+						?>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><label for="kohan_stt_endpoint"><?php esc_html_e( 'Endpoint URL', 'kohan-avatar' ); ?></label></th>
+				<td>
+					<input type="url" id="kohan_stt_endpoint" name="kohan_avatar_stt[endpoint]" class="regular-text" value="<?php echo esc_attr( $stt['endpoint'] ); ?>" placeholder="https://api.openai.com/v1/audio/transcriptions">
+					<p class="description"><?php esc_html_e( 'Receives multipart/form-data with the audio clip and returns JSON containing a "text" field.', 'kohan-avatar' ); ?></p>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><label for="kohan_stt_key"><?php esc_html_e( 'API key', 'kohan-avatar' ); ?></label></th>
+				<td>
+					<label><input type="checkbox" name="kohan_avatar_stt[reuse_tts_key]" value="1" <?php checked( $stt['reuse_tts_key'], 1 ); ?>>
+					<?php esc_html_e( 'Reuse the TTS key above (same OpenAI account)', 'kohan-avatar' ); ?></label>
+					<p style="margin:.6em 0 0">
+						<input type="password" id="kohan_stt_key" name="kohan_avatar_stt[api_key]" class="regular-text" value="" autocomplete="off" placeholder="<?php echo $stt_has_key ? esc_attr__( '•••••••• (key set, leave blank to keep)', 'kohan-avatar' ) : esc_attr__( 'Or paste a separate key…', 'kohan-avatar' ); ?>">
+					</p>
+					<?php if ( $stt_has_key ) : ?>
+						<p class="description" style="color:#3f8a55"><?php esc_html_e( 'A separate key is stored (masked). It never reaches the browser.', 'kohan-avatar' ); ?></p>
+						<label><input type="checkbox" name="kohan_avatar_stt[clear_key]" value="1"> <?php esc_html_e( 'Clear the stored key', 'kohan-avatar' ); ?></label>
+					<?php endif; ?>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><label for="kohan_stt_model"><?php esc_html_e( 'Model', 'kohan-avatar' ); ?></label></th>
+				<td>
+					<input type="text" id="kohan_stt_model" name="kohan_avatar_stt[model]" class="regular-text" value="<?php echo esc_attr( $stt['model'] ); ?>" placeholder="whisper-1">
+					<p class="description"><?php esc_html_e( 'Sent as the "model" field. The page language is forwarded as "language" to improve accuracy.', 'kohan-avatar' ); ?></p>
+				</td>
+			</tr>
+		</table>
+		<p class="description">
+			<?php esc_html_e( 'Limits enforced by the proxy: 10 requests/minute and 60/hour per visitor IP, 8 MB maximum per clip. On any provider failure the route returns no text and the browser recogniser takes over, so the microphone never appears broken.', 'kohan-avatar' ); ?>
+		</p>
+		<?php submit_button( __( 'Save speech-to-text settings', 'kohan-avatar' ) ); ?>
 	</form>
 </div>

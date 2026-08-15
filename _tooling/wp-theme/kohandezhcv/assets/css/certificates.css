@@ -126,7 +126,16 @@ body.certificate-page::after { background-image: linear-gradient(var(--certifica
 .certificate-hero-copy { align-self: center; max-width: 655px; padding: clamp(20px,4vw,48px); }
 .certificate-eyebrow, .certificate-section-kicker { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 20px; color: var(--certificate-cyan-text); font-size: 12px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
 .certificate-eyebrow-mark { display: inline-grid; width: 22px; height: 22px; place-items: center; border: 1px solid rgba(141,231,208,.46); border-radius: 50%; color: var(--certificate-primary-text); font-size: 12px; }
-.certificate-title { max-width: 9ch; margin: 0; color: var(--certificate-ink-strong); font-size: clamp(56px, 8vw, 104px); font-weight: 800; letter-spacing: -.065em; line-height: .88; }
+/* `9ch` is measured against the LATIN "0", so it sizes the box for about nine
+   English characters. "Credential Archive" fits that as two stacked words; a
+   single long compound does not — Russian «квалификаций» (12) and German
+   "Qualifikationsarchiv" (20) both overflow, and the `overflow-wrap: anywhere`
+   below then tore them apart mid-word with no hyphen. `hyphens: auto` gives the
+   browser a legitimate break point first, so those languages hyphenate against
+   their own dictionary (documentElement.lang is already set) instead of
+   snapping at an arbitrary letter. English is unaffected: it never reaches the
+   break. */
+.certificate-title { max-width: 9ch; margin: 0; color: var(--certificate-ink-strong); font-size: clamp(56px, 8vw, 104px); font-weight: 800; letter-spacing: -.065em; line-height: .88; -webkit-hyphens: auto; hyphens: auto; }
 .certificate-title span { display: block; color: var(--certificate-primary-text); }
 .certificate-lead { max-width: 600px; margin: 28px 0 0; color: var(--certificate-muted); font-size: clamp(17px, 2vw, 20px); line-height: 1.55; }
 .certificate-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }

@@ -67,6 +67,20 @@ class Kohan_Avatar_REST {
 				),
 			)
 		);
+
+		register_rest_route(
+			self::NS,
+			'/stt',
+			array(
+				'methods'             => 'POST',
+				'callback'            => array( $this, 'proxy_stt' ),
+				'permission_callback' => '__return_true', // anonymous speech; no secrets returned
+				'args'                => array(
+					'audio'  => array( 'required' => true, 'type' => 'string' ), // data: URI or bare base64
+					'locale' => array( 'type' => 'string' ),
+				),
+			)
+		);
 	}
 
 	public function can_manage() {
@@ -261,6 +275,126 @@ class Kohan_Avatar_REST {
 	/**
 	 * SSRF guard: only http(s), no private/loopback/link-local ranges.
 	 */
+	/**
+	 * Speech-to-text proxy — the mirror of proxy_tts().
+	 *
+	 * The browser POSTs {audio, locale} where `audio` is a recorded clip as a
+	 * data: URI (or bare base64). This route sends it to the configured provider
+	 * using the SERVER-side key and returns only {text}. The key never reaches
+	 * the browser, exactly as with TTS.
+	 *
+	 * When nothing is configured it answers {text: null, fallback: 'webspeech'},
+	 * so the existing browser SpeechRecognition path keeps working untouched —
+	 * the same silent-degradation contract the TTS route already uses.
+	 *
+	 * Uploads are the expensive, abusable direction (a paid key plus inbound
+	 * bytes), so the limits are tighter than TTS: 10/min, 60/hour, and a hard
+	 * cap on decoded audio size checked BEFORE the provider is called.
+	 */
+	public function proxy_stt( $request ) {
+		$avatar = Kohan_Avatar::instance();
+
+		$ip   = $this->client_ip();
+		$min  = (int) get_transient( $mk = 'kdcv_stt_rl_min_' . md5( $ip ) );
+		$hour = (int) get_transient( $hk = 'kdcv_stt_rl_hour_' . md5( $ip ) );
+		if ( $min >= 10 || $hour >= 60 ) {
+			return new WP_Error( 'rate_limited', 'Too many transcription requests. Please slow down.', array( 'status' => 429 ) );
+		}
+		set_transient( $mk, $min + 1, MINUTE_IN_SECONDS );
+		set_transient( $hk, $hour + 1, HOUR_IN_SECONDS );
+
+		if ( ! $avatar->stt_configured() ) {
+			return rest_ensure_response( array( 'text' => null, 'fallback' => 'webspeech' ) );
+		}
+
+		$s   = $avatar->get_stt_options();
+		$raw = (string) $request->get_param( 'audio' );
+
+		// Accept "data:audio/webm;codecs=opus;base64,AAAA..." or bare base64.
+		$mime = 'audio/webm';
+		if ( 0 === strpos( $raw, 'data:' ) ) {
+			if ( ! preg_match( '~^data:([\w.+-]+/[\w.+-]+)[^,]*;base64,(.*)$~s', $raw, $m ) ) {
+				return new WP_Error( 'bad_audio', 'Malformed audio payload.', array( 'status' => 400 ) );
+			}
+			$mime = strtolower( $m[1] );
+			$raw  = $m[2];
+		}
+
+		$bytes = base64_decode( strtr( $raw, ' ', '+' ), true );
+		if ( false === $bytes || '' === $bytes ) {
+			return new WP_Error( 'bad_audio', 'Audio could not be decoded.', array( 'status' => 400 ) );
+		}
+		// ~8 MB of decoded audio is far more than a chat utterance needs.
+		if ( strlen( $bytes ) > 8 * 1024 * 1024 ) {
+			return new WP_Error( 'audio_too_large', 'Audio clip is too large (8 MB max).', array( 'status' => 413 ) );
+		}
+		// Only formats the common providers actually accept.
+		$ext_map = array(
+			'audio/webm' => 'webm', 'audio/ogg' => 'ogg', 'audio/mpeg' => 'mp3',
+			'audio/mp4'  => 'mp4',  'audio/m4a' => 'm4a', 'audio/wav'  => 'wav',
+			'audio/x-wav' => 'wav', 'audio/mpga' => 'mp3',
+		);
+		$base = explode( ';', $mime )[0];
+		if ( ! isset( $ext_map[ $base ] ) ) {
+			return new WP_Error( 'bad_audio_type', 'Unsupported audio format.', array( 'status' => 415 ) );
+		}
+
+		$endpoint = $s['endpoint'];
+		if ( ! $this->endpoint_allowed( $endpoint ) ) {
+			return new WP_Error( 'bad_endpoint', 'STT endpoint not allowed.', array( 'status' => 400 ) );
+		}
+
+		// multipart/form-data, built by hand: wp_remote_post has no file helper.
+		$boundary = wp_generate_password( 24, false );
+		$eol      = "\r\n";
+		$locale   = strtolower( substr( (string) $request->get_param( 'locale' ), 0, 5 ) );
+		$fields   = array( 'model' => $s['model'] ?: 'whisper-1' );
+		if ( preg_match( '/^[a-z]{2}$/', substr( $locale, 0, 2 ) ) ) {
+			$fields['language'] = substr( $locale, 0, 2 );
+		}
+
+		$payload = '';
+		foreach ( $fields as $k => $v ) {
+			$payload .= '--' . $boundary . $eol;
+			$payload .= 'Content-Disposition: form-data; name="' . $k . '"' . $eol . $eol;
+			$payload .= $v . $eol;
+		}
+		$payload .= '--' . $boundary . $eol;
+		$payload .= 'Content-Disposition: form-data; name="file"; filename="clip.' . $ext_map[ $base ] . '"' . $eol;
+		$payload .= 'Content-Type: ' . $base . $eol . $eol;
+		$payload .= $bytes . $eol;
+		$payload .= '--' . $boundary . '--' . $eol;
+
+		$resp = wp_remote_post(
+			$endpoint,
+			array(
+				'timeout'     => 30, // transcription is slower than synthesis
+				'redirection' => 2,
+				'headers'     => array(
+					'Authorization' => 'Bearer ' . $s['api_key'],
+					'Content-Type'  => 'multipart/form-data; boundary=' . $boundary,
+				),
+				'body'        => $payload,
+			)
+		);
+
+		if ( is_wp_error( $resp ) ) {
+			return rest_ensure_response( array( 'text' => null, 'fallback' => 'webspeech' ) );
+		}
+		if ( 200 !== (int) wp_remote_retrieve_response_code( $resp ) ) {
+			// Fail silent to the browser recogniser rather than leak provider detail.
+			return rest_ensure_response( array( 'text' => null, 'fallback' => 'webspeech' ) );
+		}
+
+		$decoded = json_decode( wp_remote_retrieve_body( $resp ), true );
+		$text    = is_array( $decoded ) && isset( $decoded['text'] ) ? trim( (string) $decoded['text'] ) : '';
+		if ( '' === $text ) {
+			return rest_ensure_response( array( 'text' => null, 'fallback' => 'webspeech' ) );
+		}
+
+		return rest_ensure_response( array( 'text' => wp_strip_all_tags( $text ) ) );
+	}
+
 	private function endpoint_allowed( $url ) {
 		if ( ! is_string( $url ) || '' === $url ) {
 			return false;
