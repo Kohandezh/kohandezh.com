@@ -1087,15 +1087,21 @@ add_filter( 'login_message', function ( $message ) {
 	return $avatar . $message;
 } );
 
-add_action( 'login_enqueue_scripts', function () { ?>
+/*
+ * Also `login_head` at 20, for the reason documented on the logo block above:
+ * anything printed from `login_enqueue_scripts` lands BEFORE WordPress's own
+ * login.css and loses every same-specificity tie to it. That silently cost
+ * this palette its submit button (WordPress blue #3858e9 instead of the brand
+ * green), the form border and shadow, and the nav link colours — the rules
+ * were correct, they just never reached the page.
+ */
+add_action( 'login_head', function () { ?>
 	<style>
 		html, body.login { background: #080b0d !important; }
 		body.login {
 			font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 		}
-		/* The logo itself is styled in the late login_head block above — this
-		   early block loses every tie to WordPress's login.css, which is why
-		   hiding it from here never worked. */
+		/* The logo mark itself is styled in the block above. */
 		.kdcv-avatar-wrap { display: flex; justify-content: center; margin-bottom: 4px; }
 		.kdcv-avatar .kdcv-pupil { transition: transform .18s ease; }
 		.kdcv-avatar .kdcv-lid {
@@ -1167,7 +1173,7 @@ add_action( 'login_enqueue_scripts', function () { ?>
 		}
 		.login .privacy-policy-page-link a { color: rgba(255, 255, 255, 0.4); }
 	</style>
-<?php } );
+<?php }, 20 );
 
 add_action( 'login_footer', function () { ?>
 	<script>
@@ -1297,7 +1303,7 @@ function kdcv_render_home_blog_feed( $read_label = 'Read original', $limit = 6 )
  * The canvas sits behind the form and is purely decorative: aria-hidden, and
  * it never receives pointer events, so it cannot interfere with the fields.
  */
-add_action( 'login_enqueue_scripts', function () { ?>
+add_action( 'login_head', function () { ?>
 	<style>
 		#kdcv-neon {
 			position: fixed;
@@ -1336,7 +1342,7 @@ add_action( 'login_enqueue_scripts', function () { ?>
 			#kdcv-neon { display: none; }
 		}
 	</style>
-<?php } );
+<?php }, 20 );
 
 add_action( 'login_footer', function () { ?>
 	<canvas id="kdcv-neon" aria-hidden="true"></canvas>
