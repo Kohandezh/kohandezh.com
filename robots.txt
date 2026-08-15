@@ -65,3 +65,4 @@ Sitemap: https://kohandezh.com/sitemap.xml
 # https://kohandezh.com/tr-llms.txt
 # https://kohandezh.com/zh-llms.txt
 # https://kohandezh.com/ja-llms.txt
+# https://kohandezh.com/ru-llms.txt
