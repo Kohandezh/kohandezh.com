@@ -245,5 +245,33 @@
     "__chat": "会話を始める",
     "__all_posts_cta": "すべての記事 <i class=\"icon icon-arrow-right-top\"></i>",
     "__chat_cta": "会話を始める <i class=\"icon icon-arrow-right-top\"></i>"
+  },
+  "ru": {
+    "__all_posts_cta": "Все статьи <i class=\"icon icon-arrow-right-top\"></i>",
+    "__chat": "Начать разговор",
+    "__chat_cta": "Начать разговор <i class=\"icon icon-arrow-right-top\"></i>",
+    "__nav_all": "Все статьи",
+    "__desc": "Заметки с Expand North Star 2025 и о том, как эта работа связана со стартап- и инновационной экосистемой региона.",
+    "__title": "Вместе со мной на Expand North Star 2025 | Мохаммад Али Кохандеж",
+    "a_chat": "Начать разговор",
+    "a_home": "Вернуться на главную страницу Мохаммада Али Кохандежа",
+    "a_nav": "Навигация по блогу",
+    "p01": "Все статьи",
+    "p02": "<i class=\"icon icon-send\"></i><span>Начать разговор</span>",
+    "p03": "События и инновации",
+    "p04": "Вместе со мной на Expand North Star 2025",
+    "p05": "10 октября 2025 г.",
+    "p06": "2 мин чтения",
+    "p07": "Заметка",
+    "p08": "<strong>Expand North Star</strong> — одно из крупнейших стартап-событий в мире. Проходя ежегодно в Дубае, оно собирает тысячи стартапов, инвесторов и основателей со всего мира.",
+    "p09": "Присутствие там дало возможность соединить мою профессиональную работу в области искусственного интеллекта и ИТ-инфраструктуры со стартап- и инновационной экосистемой региона — тем же путём, которым мы идём с продуктами Padyar и Homayar в <strong>Kohan System Farda</strong>.",
+    "p10": "Больше подробностей и фотографий с мероприятия опубликовано в LinkedIn.",
+    "p11": "<a class=\"blog-read\" href=\"https://www.linkedin.com/feed/update/urn:li:activity:7382455627651919872/\" target=\"_blank\" rel=\"noopener noreferrer\">Читать оригинал публикации в LinkedIn <i class=\"icon icon-arrow-right-top\"></i></a>",
+    "p12": "Все статьи <i class=\"icon icon-arrow-right-top\"></i>",
+    "p13": "Начать разговор <i class=\"icon icon-arrow-right-top\"></i>",
+    "x01": "Мохаммад Али Кохандеж — избранные публикации",
+    "__body": "<p data-i18n=\"p08\"><strong>Expand North Star</strong> — одно из крупнейших стартап-событий в мире. Проходя ежегодно в Дубае, оно собирает тысячи стартапов, инвесторов и основателей со всего мира.</p>\n          <p data-i18n=\"p09\">Присутствие там дало возможность соединить мою профессиональную работу в области искусственного интеллекта и ИТ-инфраструктуры со стартап- и инновационной экосистемой региона — тем же путём, которым мы идём с продуктами Padyar и Homayar в <strong>Kohan System Farda</strong>.</p>\n          <p data-i18n=\"p10\">Больше подробностей и фотографий с мероприятия опубликовано в LinkedIn.</p>\n          <p data-i18n=\"p11\"><a class=\"blog-read\" href=\"https://www.linkedin.com/feed/update/urn:li:activity:7382455627651919872/\" target=\"_blank\" rel=\"noopener noreferrer\">Читать оригинал публикации в LinkedIn <i class=\"icon icon-arrow-right-top\"></i></a></p>",
+    "__h1": "Вместе со мной на Expand North Star 2025",
+    "__eyebrow": "События и инновации"
   }
 }

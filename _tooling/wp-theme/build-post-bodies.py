@@ -97,7 +97,7 @@ def section(html, cls):
             return html[m.end():t.start()]
     return None
 
-LOCS = ["en", "ar", "de", "es", "fr", "tr", "zh", "ja"]
+LOCS = ["en", "ar", "de", "es", "fr", "tr", "zh", "ja", "ru"]
 count = 0
 for path in sorted(glob.glob('blog/*.html')):
     if path.endswith('index.html'):
