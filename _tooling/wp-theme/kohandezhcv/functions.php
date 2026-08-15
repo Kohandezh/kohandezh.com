@@ -1022,6 +1022,36 @@ add_filter( 'login_headertext', function () {
 	return 'Mohammad Ali Kohandezh';
 } );
 
+/**
+ * The MK brand mark replaces WordPress's own logo above the login form.
+ *
+ * Printed on `login_head` at priority 20, NOT on `login_enqueue_scripts`.
+ * That distinction is the whole fix: `login_enqueue_scripts` fires before
+ * `wp_print_styles` (login_head, priority 8), so anything it emits sits
+ * EARLIER in the document than WordPress's own login.css. Both stylesheets
+ * write `.login h1 a` at identical specificity, so the later one wins — which
+ * is why the previous `.login h1 a { display: none }` never removed anything
+ * and the WordPress W stayed on screen above the avatar. At priority 20 this
+ * block is simply last, and no !important is needed to hold the override.
+ *
+ * WordPress's own `text-indent` and `overflow` are left in place, so the
+ * `login_headertext` above stays available to screen readers while the mark
+ * is what a sighted visitor sees.
+ */
+add_action( 'login_head', function () { ?>
+	<style>
+		.login h1 a {
+			background-image: url(<?php echo esc_url( KDCV . '/assets/images/logo/logo.svg' ); ?>);
+			background-size: 72px 72px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			width: 72px;
+			height: 72px;
+			margin: 0 auto 10px;
+		}
+	</style>
+<?php }, 20 );
+
 add_filter( 'login_message', function ( $message ) {
 	$avatar = '
 	<div class="kdcv-avatar-wrap">
@@ -1063,7 +1093,9 @@ add_action( 'login_enqueue_scripts', function () { ?>
 		body.login {
 			font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 		}
-		.login h1 a { display: none; }
+		/* The logo itself is styled in the late login_head block above — this
+		   early block loses every tie to WordPress's login.css, which is why
+		   hiding it from here never worked. */
 		.kdcv-avatar-wrap { display: flex; justify-content: center; margin-bottom: 4px; }
 		.kdcv-avatar .kdcv-pupil { transition: transform .18s ease; }
 		.kdcv-avatar .kdcv-lid {
