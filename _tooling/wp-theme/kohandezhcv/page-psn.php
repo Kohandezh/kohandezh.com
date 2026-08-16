@@ -434,7 +434,7 @@
 <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=93" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=13" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=87" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=90" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=91" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=87" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=83" defer></script>
     <?php wp_footer(); ?>

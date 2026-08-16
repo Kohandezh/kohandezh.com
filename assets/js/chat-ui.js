@@ -290,47 +290,141 @@
     var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
     var rec = null;
     var recording = false;
+    var media = null;      // MediaRecorder for the server path
+    var stream = null;     // its microphone stream
+    var maxTimer = 0;
 
-    function stopRec() {
+    /* Server transcription, when the operator has configured a provider in
+       Settings -> Kohan Avatar. The browser is told ONLY whether it exists and
+       where to post; the API key stays server-side. Everything below degrades
+       to the built-in recogniser, so a site with no key behaves exactly as it
+       does today. */
+    function serverStt() {
+      var v = window.KDCV_VOICE && window.KDCV_VOICE.stt;
+      var canRecord = window.MediaRecorder && navigator.mediaDevices &&
+        navigator.mediaDevices.getUserMedia;
+      return (v && v.configured && v.endpoint && canRecord) ? v.endpoint : null;
+    }
+
+    function insertText(text) {
+      var input = panel.querySelector(".kdcv-pet-input");
+      if (!input || !text) return;
+      input.value = input.value ? input.value + " " + text : text;
+      // Let the host bundle notice the change.
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+      input.focus();
+    }
+
+    function idleMic() {
       recording = false;
       mic.classList.remove("is-recording");
       mic.setAttribute("aria-label", L.mic);
       mic.title = L.mic;
-      if (rec) { try { rec.stop(); } catch (e) {} }
     }
 
-    mic.addEventListener("click", function () {
+    function busyMic() {
+      recording = true;
+      mic.classList.add("is-recording");
+      mic.setAttribute("aria-label", L.stop);
+      mic.title = L.stop;
+    }
+
+    /* Releasing the tracks is not optional: leave them open and the browser
+       keeps showing its "recording" indicator long after the chat is done. */
+    function releaseStream() {
+      if (stream) {
+        try { stream.getTracks().forEach(function (t) { t.stop(); }); } catch (e) {}
+        stream = null;
+      }
+      window.clearTimeout(maxTimer);
+    }
+
+    function stopRec() {
+      if (rec) { try { rec.stop(); } catch (e) {} }
+      if (media && media.state === "recording") { try { media.stop(); } catch (e) {} }
+      else { releaseStream(); idleMic(); }
+    }
+
+    function startBrowserRecognition() {
       if (!SR) {
         mic.title = L.noMic;
         mic.setAttribute("aria-label", L.noMic);
         return;
       }
-      if (recording) { stopRec(); return; }
-
       rec = new SR();
       var chosen = LOCALES.filter(function (l) { return l.code === chatLang(); })[0];
       rec.lang = chosen ? chosen.speech : "en-US";
       rec.interimResults = false;
       rec.maxAlternatives = 1;
-
       rec.onresult = function (ev) {
-        var text = (ev.results[0] && ev.results[0][0] && ev.results[0][0].transcript) || "";
-        var input = panel.querySelector(".kdcv-pet-input");
-        if (input && text) {
-          input.value = input.value ? input.value + " " + text : text;
-          // Let the host bundle notice the change.
-          input.dispatchEvent(new Event("input", { bubbles: true }));
-          input.focus();
-        }
+        insertText((ev.results[0] && ev.results[0][0] && ev.results[0][0].transcript) || "");
       };
-      rec.onerror = stopRec;
-      rec.onend = stopRec;
+      rec.onerror = function () { rec = null; idleMic(); };
+      rec.onend = function () { rec = null; idleMic(); };
+      busyMic();
+      try { rec.start(); } catch (e) { rec = null; idleMic(); }
+    }
 
-      recording = true;
-      mic.classList.add("is-recording");
-      mic.setAttribute("aria-label", L.stop);
-      mic.title = L.stop;
-      try { rec.start(); } catch (e) { stopRec(); }
+    function startServerRecording(endpoint) {
+      // Only formats the proxy's allow-list accepts, best first.
+      var types = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg"];
+      navigator.mediaDevices.getUserMedia({ audio: true }).then(function (s) {
+        stream = s;
+        var mime = "";
+        for (var i = 0; i < types.length; i++) {
+          if (window.MediaRecorder.isTypeSupported && window.MediaRecorder.isTypeSupported(types[i])) {
+            mime = types[i]; break;
+          }
+        }
+        media = mime ? new MediaRecorder(s, { mimeType: mime }) : new MediaRecorder(s);
+        var chunks = [];
+        media.ondataavailable = function (e) { if (e.data && e.data.size) chunks.push(e.data); };
+        media.onstop = function () {
+          releaseStream();
+          var blob = new Blob(chunks, { type: media.mimeType || mime || "audio/webm" });
+          media = null;
+          if (!blob.size) { idleMic(); return; }
+          var fr = new FileReader();
+          fr.onload = function () {
+            fetch(endpoint, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              credentials: "same-origin",
+              body: JSON.stringify({ audio: fr.result, locale: chatLang() })
+            })
+              .then(function (r) { return r.ok ? r.json() : null; })
+              .then(function (d) {
+                idleMic();
+                if (d && d.text) insertText(d.text);
+                // A null text means the provider failed or is unconfigured; the
+                // clip is gone either way, so hand the NEXT attempt to the
+                // browser recogniser rather than silently doing nothing.
+                else if (SR) startBrowserRecognition();
+              })
+              .catch(function () { idleMic(); });
+          };
+          fr.onerror = function () { idleMic(); };
+          fr.readAsDataURL(blob);   // data: URI — the shape the proxy expects
+        };
+        busyMic();
+        media.start();
+        // A forgotten mic must not upload minutes of audio; the proxy caps at
+        // 8 MB but the clip should never get near it.
+        maxTimer = window.setTimeout(function () { stopRec(); }, 30000);
+      }).catch(function () {
+        // Permission denied or no device: fall back rather than dead-end.
+        releaseStream();
+        idleMic();
+        if (SR) startBrowserRecognition();
+        else { mic.title = L.noMic; mic.setAttribute("aria-label", L.noMic); }
+      });
+    }
+
+    mic.addEventListener("click", function () {
+      if (recording) { stopRec(); return; }
+      var endpoint = serverStt();
+      if (endpoint) startServerRecording(endpoint);
+      else startBrowserRecognition();
     });
 
     /* Language ------------------------------------------------------------ */

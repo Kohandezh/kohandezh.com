@@ -2659,7 +2659,7 @@
 })();
 </script>
   <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=105" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=108" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=109" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=102" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=101" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=96" defer></script>

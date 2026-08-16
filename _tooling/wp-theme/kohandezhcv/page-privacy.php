@@ -177,7 +177,7 @@
   <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=15" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=86" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=89" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=90" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=82" defer></script>
     <?php wp_footer(); ?>
 </body>
