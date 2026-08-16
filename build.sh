@@ -54,6 +54,7 @@ CUSTOM_JS=(
   bs-lite.js
   cybernetic-grid.js
   kohan-avatar-enhance.js
+  kohan-drive.js
   # These eight shipped a .min.js sibling but were never listed here, so every
   # edit to them was silently dropped — the clock's page-i18n listener was
   # written, minified nowhere, and the standalone pages kept rendering their
@@ -84,6 +85,7 @@ CUSTOM_CSS=(
   pixel-canvas.css
   flow-field-background.css
   kohan-avatar.css
+  kohan-drive.css
   page-chrome.css
   chat-ui.css
   wisdom-quotes.css

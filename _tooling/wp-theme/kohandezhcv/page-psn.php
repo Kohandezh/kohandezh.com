@@ -38,6 +38,7 @@
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=91">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=84">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=104" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=104"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2"></noscript>
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=92" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=92"></noscript>
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=88" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=88"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
@@ -429,6 +430,7 @@
   <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=90" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=107" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=92" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2" defer></script>
 <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=93" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=13" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=87" defer></script>

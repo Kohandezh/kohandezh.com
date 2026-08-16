@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=89">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=82">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=100" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=100"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2"></noscript>
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=86" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=86"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
        URL in results, and gives answer engines the page's place in the
@@ -171,6 +172,7 @@
   <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=88" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=105" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=90" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=12" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=85" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=88" defer></script>

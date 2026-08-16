@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=107" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=107"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=122" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=122"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=102">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=102">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=96">
@@ -2442,6 +2443,7 @@
     <script src="<?php echo KDCV; ?>/assets/js/cwv-rum.min.js" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=125" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=110" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kdcv-interaction-fix.js?v=5" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=111" defer></script>
 <script>

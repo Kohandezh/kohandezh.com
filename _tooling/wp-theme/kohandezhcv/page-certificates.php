@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/certificates.min.css?v=92">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/flow-field-background.min.css?v=85">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=101"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=90" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=90"></noscript>
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=89">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=82">
@@ -559,6 +560,7 @@
 <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=88" defer></script>
 <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=105" defer></script>
 <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=89" defer></script>
+<script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2" defer></script>
 <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=91" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=85" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=85" defer></script>

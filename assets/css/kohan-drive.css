@@ -1,0 +1,105 @@
+/*!
+ * kohan-drive.css — the car the avatar drives.
+ *
+ * The car is a child of the avatar root, so it inherits the root's position and
+ * every existing movement path (double-click tween, arrow keys, drag) moves it
+ * for free. It is centred on the avatar and sits BEHIND it in the stack, which
+ * matters because the sprite already contains the driver: while driving the
+ * avatar itself is hidden and only the car is seen.
+ *
+ * Nothing here changes the avatar's own look. Every rule is scoped to
+ * .kohan-car or to [data-kohan-driving], an attribute that exists only while a
+ * drive is in progress.
+ */
+
+:root {
+  --kohan-car-w: 232px;   /* display width; sprites ship at 768px = ~3.3x for retina */
+  --kohan-car-door-ms: 420ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --kohan-car-door-ms: 0ms; }
+}
+
+.kohan-car {
+  position: absolute;
+  /* Centred on the avatar, sitting slightly low so the wheels line up with
+     where the avatar's feet were rather than with its middle. */
+  left: 50%;
+  top: 50%;
+  width: var(--kohan-car-w);
+  aspect-ratio: 768 / 516;
+  translate: -50% -38%;
+  z-index: 0;                 /* behind the avatar sprite */
+  pointer-events: none;       /* never steals a click from the avatar or page */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0;
+  scale: .92;
+  will-change: opacity, scale;
+}
+
+/* Appearance is a keyframe animation, NOT a transition.
+   The car is inserted and switched to "entering" inside the same task, so a
+   transition has no computed starting value to run from and the element stays
+   pinned at the base opacity 0 — fully wired, correctly positioned, invisible.
+   An animation needs no prior style, so it always runs. `forwards` holds the
+   end state after it finishes. */
+.kohan-car[data-kohan-car="entering"],
+.kohan-car[data-kohan-car="driving"],
+.kohan-car[data-kohan-car="exiting"] {
+  opacity: 1;
+  scale: 1;
+  animation: kohan-car-in 240ms cubic-bezier(.2,.9,.3,1.2) both;
+}
+@keyframes kohan-car-in {
+  from { opacity: 0; scale: .92; }
+  to   { opacity: 1; scale: 1; }
+}
+
+/* The right-facing sprite is its own render, so no mirroring is applied — a
+   flipped car would put the steering wheel on the wrong side. */
+
+/* A gentle settle while driving: enough to read as motion, small enough that it
+   never fights the position tween the movement code is already running. */
+/* Two animations: the entrance runs once, the roll loops behind it. */
+.kohan-car[data-kohan-car="driving"] {
+  animation: kohan-car-in 240ms cubic-bezier(.2,.9,.3,1.2) both,
+             kohan-car-roll 900ms ease-in-out 240ms infinite;
+}
+@keyframes kohan-car-roll {
+  0%, 100% { translate: -50% -38%; }
+  50%      { translate: -50% calc(-38% - 2px); }
+}
+
+/* Door frames get a touch more lift, so the dihedral swing reads as deliberate
+   rather than as a texture swap. */
+.kohan-car[data-kohan-car="entering"],
+.kohan-car[data-kohan-car="exiting"] {
+  transition: opacity var(--kohan-car-door-ms) ease, scale var(--kohan-car-door-ms) ease;
+}
+
+/* While driving, the walking avatar is hidden — the sprite already has him at
+   the wheel. Visibility rather than display so the root keeps its measured box
+   and the movement code's clamping maths stays correct. */
+[data-kohan-driving] > *:not(.kohan-car) {
+  visibility: hidden;
+}
+/* The chat panel is a child of the root on some pages and must stay usable, so
+   it is exempt from the hide above. */
+[data-kohan-driving] > .kdcv-pet-panel,
+[data-kohan-driving] > .kohan-chat-panel {
+  visibility: visible;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kohan-car { transition: none; }
+  .kohan-car[data-kohan-car="driving"] { animation: none; }
+}
+
+/* Small screens: a 232px car beside a ~92px avatar dominates a phone, so it is
+   scaled down rather than hidden — the behaviour stays identical. */
+@media (max-width: 640px) {
+  :root { --kohan-car-w: 168px; }
+}
