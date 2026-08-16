@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css"></noscript>
 
 
-    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=162">
+    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=165">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=109">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=107">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=108"></noscript>
@@ -321,7 +321,7 @@
         "name": "Mohammad Ali Kohandezh",
         "givenName": "Mohammad Ali",
         "familyName": "Kohandezh",
-        "jobTitle": "CEO & IT Infrastructure and Security Expert",
+        "jobTitle": "AI & Quantum-Readiness Advisor | CEO, Kohan System Farda",
         "description": "PhD in IT Management and CEO of Kohan System Farda (KSF), specializing in enterprise IT infrastructure, virtualization, backup and recovery, AI, and cybersecurity.",
         "url": "https://kohandezh.com/",
         "image": "<?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp",
@@ -337,7 +337,14 @@
             "Backup and Recovery",
             "Artificial Intelligence",
             "IT Management",
-            "Network Security"
+            "Network Security",
+            "Applied Artificial Intelligence",
+            "Agentic AI Systems",
+            "Retrieval-Augmented Generation",
+            "Post-Quantum Cryptography",
+            "Quantum Readiness",
+            "Cryptographic Inventory",
+            "Technology Advisory"
         ],
         "address": {
             "@type": "PostalAddress",
@@ -608,14 +615,43 @@
     "@type": "CollegeOrUniversity",
     "name": "PhD, Information Technology Management"
   },
+  "makesOffer": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "AI readiness assessment",
+                        "serviceType": "Advisory",
+                        "description": "Evidence-based review of where AI is already in use, what it is permitted to touch, where its answers come from and who is accountable when it errs."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Post-quantum readiness assessment",
+                        "serviceType": "Advisory",
+                        "description": "Cryptographic inventory, data-lifetime analysis and a dated migration roadmap to the NIST post-quantum standards (ML-KEM, ML-DSA)."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Secure AI architecture design",
+                        "serviceType": "Consulting",
+                        "description": "Retrieval, identity and least-privilege design for enterprise AI agents, sized so the client's own team can build and defend it."
+                    }
+                }
+            ],
   "hasOccupation": {
     "@type": "Occupation",
-    "name": "Chief Executive Officer",
+    "name": "AI and quantum-readiness advisor",
     "occupationLocation": {
       "@type": "City",
       "name": "Tehran"
     },
-    "skills": "Enterprise IT infrastructure, virtualization, backup and recovery, cybersecurity, applied artificial intelligence"
+    "skills": "Applied AI, agentic systems, retrieval-augmented generation, post-quantum cryptography, cryptographic inventory, enterprise IT infrastructure, cybersecurity"
   },
   "email": "mailto:Kohandezh@hotmail.com",
   "telephone": ["+989121491644", "+18106662283"],
