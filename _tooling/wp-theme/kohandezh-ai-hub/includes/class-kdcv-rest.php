@@ -101,9 +101,16 @@ class KDCV_AI_REST {
 			? sanitize_text_field( wp_unslash( $_SERVER['HTTP_X_FORWARDED_FOR'] ) )
 			: '';
 		if ( $forwarded !== '' ) {
-			$candidates = array_filter( array_map( 'trim', explode( ',', $forwarded ) ) );
-			if ( ! empty( $candidates ) ) {
-				$ip = $candidates[0];
+			/* Deliberately NOT named $candidates: that variable already holds the
+			   built provider objects from the routing block above, and reusing
+			   the name here replaced them with plain strings. The provider loop
+			   further down then called ->get_model() on a string, so ANY request
+			   carrying an X-Forwarded-For header returned an unauthenticated 500
+			   — and would have broken the chat outright the day Cloudflare goes
+			   in front, since a proxy sets that header on every request. */
+			$xff_parts = array_filter( array_map( 'trim', explode( ',', $forwarded ) ) );
+			if ( ! empty( $xff_parts ) ) {
+				$ip = $xff_parts[0];
 			}
 		}
 		$ip_hash = md5( (string) $ip . wp_salt() );
