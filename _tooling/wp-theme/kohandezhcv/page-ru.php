@@ -24,18 +24,18 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css"></noscript>
 
 
-    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=166">
+    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=169">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=109">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=107">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=108"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=108"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=123" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=123"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=124" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=124"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=103">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=103">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=97">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kdcv-interaction-fix.css?v=9">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=112" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=112"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=113" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=113"></noscript>
 
     <!-- Kohandezh overrides -->
     <style>
@@ -276,12 +276,13 @@
     <link rel="alternate" hreflang="tr" href="https://kohandezh.com/tr/">
     <link rel="alternate" hreflang="zh-Hans" href="https://kohandezh.com/zh/">
     <link rel="alternate" hreflang="ja" href="https://kohandezh.com/ja/">
+    <link rel="alternate" hreflang="ru" href="https://kohandezh.com/ru/">
     <link rel="alternate" hreflang="x-default" href="https://kohandezh.com/">
     <!-- SEO: Open Graph -->
     <meta property="og:type" content="profile">
     <meta property="og:site_name" content="Mohammad Ali Kohandezh">
     <meta property="og:url" content="https://kohandezh.com/ru/">
-    <meta property="og:title" content="Mohammad Ali Kohandezh - AI, Кибербезопасность &amp; ИТ-инфраструктура Specialist">
+    <meta property="og:title" content="Mohammad Ali Kohandezh — специалист по ИИ, кибербезопасности и ИТ-инфраструктуре">
     <meta property="og:description" content="Mohammad Ali Kohandezh — PhD в области менеджмента ИТ, генеральный директор компании Kohan System Farda (KSF). Профессиональный опыт с 2007 года в сферах ИИ, корпоративной ИТ-инфраструктуры, виртуализации, резервного копирования и восстановления, а также кибербезопасности.">
     <meta property="og:image" content="<?php echo KDCV; ?>/assets/images/og/og-image.jpg">
     <meta property="og:image:secure_url" content="<?php echo KDCV; ?>/assets/images/og/og-image.jpg">
@@ -423,7 +424,7 @@
       "alternateName": "KSF",
       "url": "https://ksf.ir",
       "description": "Enterprise IT and AI company based in Tehran, Iran. Specializes in AI products, virtualization, backup and disaster recovery, and cybersecurity.",
-      "logo": "<?php echo KDCV; ?>/assets/images/logo/KohanSystemFarda.avif",
+      "logo": "<?php echo KDCV; ?>/assets/images/logo/KohanSystemFarda.webp",
       "foundingDate": "2007",
       "founder": { "@id": "https://kohandezh.com/#person" },
       "address": {
@@ -572,7 +573,7 @@
     }
     </script>
     <!-- ===== /SEO BLOCK ===== -->
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=107" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=107"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=108"></noscript>
   <!-- ProfilePage: Google's container type for a person's own page. It
        points at the Person node declared above by @id rather than
        repeating it, adds the freshness dates answer engines look for,
@@ -609,10 +610,16 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "@id": "https://kohandezh.com/#person",
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "PhD, Information Technology Management"
-  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Islamic Azad University, Central Tehran Branch", "sameAs": "https://en.wikipedia.org/wiki/Islamic_Azad_University" },
+    { "@type": "CollegeOrUniversity", "name": "University of Tehran", "sameAs": "https://en.wikipedia.org/wiki/University_of_Tehran" },
+    { "@type": "CollegeOrUniversity", "name": "Ferdowsi University of Mashhad", "sameAs": "https://en.wikipedia.org/wiki/Ferdowsi_University_of_Mashhad" }
+  ],
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "educationalLevel": "Doctorate", "name": "PhD \u2014 IT Management, Smart Business", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Islamic Azad University, Central Tehran Branch" } },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "educationalLevel": "Master", "name": "MSc \u2014 IT Management, E-Business", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "University of Tehran" } },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "MCA \u2014 Computer Software Technology", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Ferdowsi University of Mashhad" } }
+  ],
   "makesOffer": [
                 {
                     "@type": "Offer",
@@ -949,7 +956,7 @@
                     <li><a href="<?php echo esc_url( home_url('/psn/') ); ?>" class="psn-profile-link" aria-label="Посмотреть трофеи Mohammad Ali Kohandezh на PlayStation">
                             <svg class="psn-profile-mark" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="black" fill-opacity="0.72" d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241 6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg>
                         </a></li>
-                    <li><a href="Сертификаты.html?lang=en" class="certificate-profile-link" aria-label="Открыть архив сертификатов"><i class="icon icon-edu" aria-hidden="true"></i></a></li>
+                    <li><a href="<?php echo esc_url( home_url('/certificates/') ); ?>?lang=ru" class="certificate-profile-link" aria-label="Открыть архив сертификатов"><i class="icon icon-edu" aria-hidden="true"></i></a></li>
                 </ul>
                 <div class="user-info">
                     <h5 class="greeting letter-space--2 text-white animationtext clip">
@@ -1010,9 +1017,9 @@
                                 </div>
                                 <h1 class="intro-title letter-space--2 split-text effect-blur-fade">
                                     Я создаю
-                                    <span class="">AI</span><br>
-                                    <span class="type-2">&amp; безопасная инфраструктура</span>
-                                    которым доверяют предприятия
+                                    <span class="">ИИ</span><br>
+                                    <span class="type-2">и безопасную инфраструктуру,</span>
+                                    которым доверяет бизнес
                                 </h1>
                                 <div class="intro-item">
                                     <div class="scribble-wrap">
@@ -1273,14 +1280,14 @@
                                 </h2>
                                 <p class="s-desc text-black-56 scrolling-effect effectTop">
                                     Я проектирую и создаю продукты на базе ИИ — в том числе ИИ-ассистента Padyar<br class="d-none d-lg-block">
-                                    платформу, платформу ИИ-агентов, а также продукты HomaYar, MeetYar, БлогYar, NetYar и ГлавнаяYar — вместе с <br>
+                                    платформу, платформу ИИ-агентов, а также продукты HomaYar, MeetYar, BlogYar, NetYar и HomeYar — вместе с <br>
                                     корпоративной ИТ-инфраструктуры, а также решений для виртуализации и кибербезопасности. <br>
                                     <br>
                                     Как генеральный директор Kohan System Farda (KSF), обладатель PhD в области управления информационными технологиями и <br class="d-none d-lg-block">
                                     в настоящее время — кандидат на вторую докторскую степень; я подхожу к каждому проекту
-                                    одновременно с инженерной строгостью и пониманием бизнеса. Кроме того, я активно исследую
-                                    квантовые вычисления и постквантовую безопасность как будущий слой защиты
-                                    отказоустойчивых корпоративных систем.
+                                    одновременно с инженерной строгостью и пониманием бизнеса. Кроме того, я консультирую организации
+                                    по квантовой готовности — криптографическая инвентаризация, анализ срока
+                                    жизни данных и переход на постквантовые стандарты NIST.
                                 </p>
                                 <div class="professional-roles">
                                     <h3 id="professional-roles-title" class="h5 professional-roles__heading letter-space--2 text-black-72">
@@ -1516,9 +1523,9 @@
                                                 <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" loading="lazy" width="120" height="32"
                                                     src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Computer Network &amp; System Engineer &mdash; Haft Tappeh Sugarcane</p>
+                                            <p class="timeline-role fw-medium text-black-72">Инженер компьютерных сетей и систем &mdash; Haft Tappeh Sugarcane</p>
                                             <p class="timeline-desc text-body-3 text-black-56">
-                                                Iran&rsquo;s oldest sugar factory, founded in the 1960s in Shush, Khuzestan.
+                                                Старейший сахарный завод Ирана, основан в 1960-х годах в Шуше, Хузестан.
                                             </p>
                                         </div>
                                     </div>
@@ -1531,7 +1538,7 @@
                                                 <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" loading="lazy" width="120" height="32"
                                                     src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Senior Computer Network Engineer &mdash; Power Control Engineering</p>
+                                            <p class="timeline-role fw-medium text-black-72">Старший инженер компьютерных сетей &mdash; Power Control Engineering</p>
                                             <p class="timeline-desc text-body-3 text-black-56">
                                                 Промышленные системы электроснабжения и управления (powercontrol.ir).
                                             </p>
@@ -1546,7 +1553,7 @@
                                                 <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" loading="lazy" width="120" height="32"
                                                     src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Information Analyst &mdash; Negarehia</p>
+                                            <p class="timeline-role fw-medium text-black-72">Аналитик информационных систем &mdash; Negarehia</p>
                                             <p class="timeline-desc text-body-3 text-black-56">
                                                 Поставщик решений для резервного копирования и хранения данных (negarehia.com).
                                             </p>
@@ -1554,16 +1561,16 @@
                                     </div>
                                     <!-- Item -->
                                     <div class="timeline-item effectFade fadeUp no-div">
-                                        <p class="timeline-date text-black-56">2009 - 2011</p>
+                                        <p class="timeline-date text-black-56">2011 - 2013</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
                                                 <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" loading="lazy" width="29" height="32"
                                                     src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">MCA &mdash; Computer Software Technology, Ferdowsi University of Mashhad</p>
+                                            <p class="timeline-role fw-medium text-black-72">MCA &mdash; технологии компьютерного программного обеспечения</p>
                                             <p class="timeline-desc text-body-3 text-black-56">
-                                                Средний балл — 16.69.
+                                                Мешхедский университет им. Фирдоуси &middot; средний балл 16,72/20.
                                             </p>
                                         </div>
                                     </div>
@@ -1576,7 +1583,7 @@
                                                 <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" loading="lazy" width="29" height="32"
                                                     src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Associate&rsquo;s &mdash; Computer Engineering, Islamic Azad University</p>
+                                            <p class="timeline-role fw-medium text-black-72">Степень ассоциата &mdash; вычислительная техника, Исламский университет Азад</p>
                                             <p class="timeline-desc text-body-3 text-black-56">
                                                 Основы аппаратного обеспечения и компьютерных сетей.
                                             </p>
@@ -2141,11 +2148,11 @@
                                     <li class="wg-tech">
                                         <div class="tech-infor effectFade fadeUp no-div">
                                             <div class="tech_image">
-                                                <img loading="lazy" width="29" height="28" src="<?php echo KDCV; ?>/assets/images/section/tech-4.svg?v=2" alt="Иконка квантовых исследований">
+                                                <img loading="lazy" width="29" height="28" src="<?php echo KDCV; ?>/assets/images/section/tech-4.svg?v=2" alt="Иконка консультирования по квантовой готовности">
                                             </div>
                                             <div class="tech_info">
-                                                <p class="info__name fw-medium text-black-72">Исследования в области квантовых вычислений</p>
-                                                <p class="info__duty text-black-56 text-body-3">Постквантовая безопасность и будущие системы ИИ
+                                                <p class="info__name fw-medium text-black-72">Консультирование по квантовой готовности</p>
+                                                <p class="info__duty text-black-56 text-body-3">Криптографическая инвентаризация и переход на постквантовые стандарты NIST
                                                 </p>
                                             </div>
                                         </div>
@@ -2561,14 +2568,14 @@
     <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=106" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=74" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=119" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=114" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=115" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kdcv-resume-entry-fix.js?v=7" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=2" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=110" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=108" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=107" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=111" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=71" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=72" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=113" defer></script>
 
     <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=107" defer></script>
@@ -2670,7 +2677,7 @@
     <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=103" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=102" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=97" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=93" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=96" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=78" defer></script>
     <?php wp_footer(); ?>
 </body>

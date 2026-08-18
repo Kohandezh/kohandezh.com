@@ -26,7 +26,7 @@ $kdcv_has_i18n  = file_exists( get_template_directory() . '/assets/data/i18n/' .
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.css?v=3">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=1">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=99">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png">
   <?php wp_head(); ?>
 </head>
@@ -89,11 +89,11 @@ $kdcv_has_i18n  = file_exists( get_template_directory() . '/assets/data/i18n/' .
        nothing when the wanted locale is the source (fa), so a Persian reader
        costs no extra request. blog-post-enhance rebuilds its share controls on
        the kdcv:page-i18n event. -->
-  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=1" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=15" defer></script>
   <?php endif; ?>
-  <script src="<?php echo KDCV; ?>/assets/js/blog-post-enhance.min.js?v=1" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=1" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=1" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/blog-post-enhance.min.js?v=51" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=106" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=96" defer></script>
   <?php wp_footer(); ?>
 </body>
 </html>

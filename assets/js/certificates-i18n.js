@@ -214,6 +214,55 @@
     }
   };
 
+  /* ---- per-card labels ---------------------------------------------------
+     Each of the 63 cards carries a source kicker ("Certificate artifact",
+     "Letter of appreciation", …) and two or three <dt> field labels. Those
+     were the last hard-coded English on the page: 189 nodes drawn from a
+     closed vocabulary of 28 strings.
+
+     They are keyed on the English source text rather than on a data-i18n
+     attribute per node, because the cards are generated and re-generated
+     from the archive — a key that lives in the markup would have to be
+     re-applied on every regeneration, while a key that lives in the text
+     survives it. A string the map does not know is left in English rather
+     than blanked, so a new card type degrades to the source language. */
+  var CARD_KEYS = ["Appreciation & evaluation", "Artifact + LinkedIn match", "Artifact · LinkedIn title match", "Certificate artifact", "Commission membership", "Committee chair appointment", "Congress certificate", "Deployment appreciation", "Festival recognition letter", "Implementation appreciation", "Legacy certificate artifact", "Letter of appreciation", "Professional credential", "Research acceptance", "Research certificate", "Research presentation", "Service appreciation", "Training certificate", "Training satisfaction", "Workshop certificate", "Accepted", "Completed", "Dated", "Earned", "Issued", "Issuer", "Presented", "Referenced date"];
+
+  var CARD = {
+    fa: ["تقدیر و ارزیابی", "سند + تطبیق لینکدین", "سند · تطبیق عنوان لینکدین", "سند گواهینامه", "عضویت در کمیسیون", "حکم ریاست کمیته", "گواهی کنگره", "تقدیر از پیاده‌سازی", "لوح تقدیر جشنواره", "تقدیر از اجرا", "سند گواهینامهٔ قدیمی", "تقدیرنامه", "مدرک حرفه‌ای", "پذیرش پژوهش", "گواهی پژوهش", "ارائهٔ پژوهش", "تقدیر از خدمات", "گواهی آموزش", "رضایت‌نامهٔ آموزش", "گواهی کارگاه", "پذیرش‌شده", "تکمیل‌شده", "تاریخ", "تاریخ اخذ", "تاریخ صدور", "صادرکننده", "ارائه‌شده", "تاریخ مرجع"],
+    ar: ["تقدير وتقييم", "سند + مطابقة لينكدإن", "سند · مطابقة عنوان لينكدإن", "سند شهادة", "عضوية لجنة", "حكم رئاسة لجنة", "شهادة مؤتمر", "تقدير للتنفيذ", "خطاب تقدير من مهرجان", "تقدير للتطبيق", "سند شهادة قديمة", "خطاب تقدير", "مؤهل مهني", "قبول بحث", "شهادة بحث", "عرض بحثي", "تقدير للخدمة", "شهادة تدريب", "رضا عن التدريب", "شهادة ورشة عمل", "مقبول", "مكتمل", "بتاريخ", "تاريخ الحصول", "تاريخ الإصدار", "الجهة المانحة", "قُدِّم", "التاريخ المرجعي"],
+    de: ["Würdigung & Bewertung", "Artefakt + LinkedIn-Treffer", "Artefakt · LinkedIn-Titeltreffer", "Zertifikatsartefakt", "Kommissionsmitgliedschaft", "Berufung zum Ausschussvorsitz", "Kongresszertifikat", "Anerkennung für Einführung", "Anerkennungsschreiben des Festivals", "Anerkennung für Umsetzung", "Historisches Zertifikatsartefakt", "Anerkennungsschreiben", "Berufliche Qualifikation", "Forschungsannahme", "Forschungszertifikat", "Forschungsvortrag", "Anerkennung für Serviceleistung", "Schulungszertifikat", "Schulungszufriedenheit", "Workshop-Zertifikat", "Angenommen", "Abgeschlossen", "Datiert", "Erworben", "Ausgestellt", "Aussteller", "Vorgestellt", "Bezugsdatum"],
+    es: ["Agradecimiento y evaluación", "Artefacto + coincidencia en LinkedIn", "Artefacto · coincidencia de título en LinkedIn", "Artefacto de certificado", "Membresía de comisión", "Nombramiento como presidente de comité", "Certificado de congreso", "Agradecimiento por implantación", "Carta de reconocimiento del festival", "Agradecimiento por implementación", "Artefacto de certificado histórico", "Carta de agradecimiento", "Credencial profesional", "Aceptación de investigación", "Certificado de investigación", "Presentación de investigación", "Agradecimiento por el servicio", "Certificado de formación", "Satisfacción con la formación", "Certificado de taller", "Aceptado", "Completado", "Fechado", "Obtenido", "Emitido", "Emisor", "Presentado", "Fecha de referencia"],
+    fr: ["Remerciement et évaluation", "Artefact + correspondance LinkedIn", "Artefact · correspondance de titre LinkedIn", "Artefact de certificat", "Membre de commission", "Nomination à la présidence du comité", "Certificat de congrès", "Remerciement pour le déploiement", "Lettre de reconnaissance du festival", "Remerciement pour la mise en œuvre", "Artefact de certificat ancien", "Lettre de remerciement", "Titre professionnel", "Acceptation de recherche", "Certificat de recherche", "Présentation de recherche", "Remerciement pour le service", "Certificat de formation", "Satisfaction de formation", "Certificat d’atelier", "Accepté", "Terminé", "Daté", "Obtenu", "Délivré", "Émetteur", "Présenté", "Date de référence"],
+    tr: ["Takdir ve değerlendirme", "Belge + LinkedIn eşleşmesi", "Belge · LinkedIn başlık eşleşmesi", "Sertifika belgesi", "Komisyon üyeliği", "Komite başkanlığı ataması", "Kongre sertifikası", "Kurulum takdiri", "Festival takdir mektubu", "Uygulama takdiri", "Eski sertifika belgesi", "Takdir mektubu", "Mesleki yeterlilik", "Araştırma kabulü", "Araştırma sertifikası", "Araştırma sunumu", "Hizmet takdiri", "Eğitim sertifikası", "Eğitim memnuniyeti", "Atölye sertifikası", "Kabul edildi", "Tamamlandı", "Tarihli", "Alındı", "Düzenlendi", "Veren kurum", "Sunuldu", "Referans tarihi"],
+    zh: ["感谢与评价", "证件 + LinkedIn 匹配", "证件 · LinkedIn 标题匹配", "证书原件", "委员会成员", "委员会主席任命", "大会证书", "部署致谢", "节展表彰函", "实施致谢", "早期证书原件", "感谢信", "专业资格", "研究录用", "研究证书", "研究报告", "服务致谢", "培训证书", "培训满意度", "工作坊证书", "录用日期", "完成日期", "日期", "取得日期", "签发日期", "签发机构", "发表日期", "参考日期"],
+    ja: ["感謝と評価", "実物 + LinkedIn 照合", "実物 · LinkedIn タイトル照合", "証明書実物", "委員会委員", "委員長就任辞令", "学会証明書", "導入感謝状", "フェスティバル表彰状", "実装感謝状", "旧証明書実物", "感謝状", "専門資格", "研究採択", "研究証明書", "研究発表", "業務感謝状", "研修証明書", "研修満足度", "ワークショップ証明書", "採択日", "修了日", "日付", "取得日", "発行日", "発行者", "発表日", "参照日"],
+    ru: ["Благодарность и оценка", "Документ + совпадение в LinkedIn", "Документ · совпадение названия в LinkedIn", "Документ сертификата", "Членство в комиссии", "Назначение председателем комитета", "Сертификат конгресса", "Благодарность за внедрение", "Письмо о признании фестиваля", "Благодарность за реализацию", "Архивный документ сертификата", "Благодарственное письмо", "Профессиональная квалификация", "Принятие исследования", "Сертификат исследования", "Представление исследования", "Благодарность за обслуживание", "Сертификат обучения", "Отзыв об обучении", "Сертификат воркшопа", "Принято", "Завершено", "Дата", "Получено", "Выдано", "Организация-эмитент", "Представлено", "Опорная дата"]
+  };
+
+  function cardMap(loc) {
+    var vals = CARD[loc];
+    if (!vals) return null;
+    var map = {};
+    for (var i = 0; i < CARD_KEYS.length; i++) map[CARD_KEYS[i]] = vals[i];
+    return map;
+  }
+  /* The tab title is the one string a translated page still showed in
+     English. Translating it client-side does not change what a crawler
+     indexes (that stays the authored <title>), but it is what the reader
+     sees in the tab strip, in history and in a bookmark. */
+  var DOC_TITLE = {
+      "fa": "آرشیو مدارک کهن‌دژ | گواهینامه‌ها و آموزش‌ها",
+      "ar": "أرشيف مؤهلات كهن‌دژ | الشهادات والتدريب",
+      "de": "Kohandezh Nachweisarchiv | Zertifikate & Weiterbildung",
+      "es": "Archivo de credenciales de Kohandezh | Certificados y formación",
+      "fr": "Archive des titres de Kohandezh | Certificats et formations",
+      "tr": "Kohandezh Belge Arşivi | Sertifikalar ve Eğitimler",
+      "zh": "科汉德泽资历存档 | 证书与培训",
+      "ja": "Kohandezh 資格アーカイブ | 証明書と研修",
+      "ru": "Архив квалификаций Кохандежа | Сертификаты и обучение"
+  };
+
   function pick() {
     var q = new URLSearchParams(window.location.search).get("lang");
     if (q && SUPPORTED.indexOf(q.toLowerCase()) > -1) return q.toLowerCase();
@@ -301,6 +350,21 @@
 
     var portfolioLink = document.querySelector(".certificate-footer-links a[data-back-link]");
     if (portfolioLink && t.footPortfolio) portfolioLink.textContent = t.footPortfolio;
+
+    // Scoped to .certificate-card on purpose: the stat bar has its own <dt>
+    // labels, already translated above, and must not be swept a second time.
+    if (DOC_TITLE[loc]) document.title = DOC_TITLE[loc];
+
+    var cards = cardMap(loc);
+    if (cards) {
+      var labels = document.querySelectorAll(
+        ".certificate-card .certificate-card-source, .certificate-card .certificate-meta dt"
+      );
+      for (var c = 0; c < labels.length; c++) {
+        var src = labels[c].textContent.trim();
+        if (cards[src]) labels[c].textContent = cards[src];
+      }
+    }
   }
 
   if (document.readyState === "loading") {

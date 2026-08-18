@@ -28,9 +28,9 @@
   <meta name="twitter:image" content="<?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=99">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=103">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=123" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=123"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=124" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=124"></noscript>
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2"></noscript>
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=107" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=107"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=108"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
        URL in results, and gives answer engines the page's place in the
        site rather than treating it as an orphan. -->
@@ -174,7 +174,7 @@
   <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=111" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=15" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=95" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=96" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=111" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=102" defer></script>
     <?php wp_footer(); ?>

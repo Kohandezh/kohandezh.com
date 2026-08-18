@@ -216,6 +216,39 @@ wp-admin visit. **Bump it whenever you add new admin_init work.**
 
 9. **TTS / voice-clone API keys live in WordPress, never in the browser.** The `kohan-avatar` plugin has **Settings → Kohan Avatar → Voice & TTS Services** (provider / endpoint / API key / voice). The key is stored server-side (`kohan_avatar_tts` option) and only ever used by the `kohan-avatar/v1/tts` REST proxy route. The browser receives only `window.KDCV_VOICE = {provider, configured, endpoint, voice}` (no key) via a `wp_footer` inline script. If no server voice is configured, `wisdom-quotes.js` and the avatar fall back to the Web Speech API (fa-IR). To add a Whisper voice clone: paste the key in that settings page — never hardcode it in JS.
 
+32. **A panel that is dark in BOTH themes must say so, not be inverted.**
+    `.section-blog` ("Field notes") paints a hard-coded dark gradient with no
+    light-mode variant, and its FIELD NOTES watermark is a light ink. A pass
+    that inverted the copy for light mode on the assumption the panel goes
+    light produced 1.14–1.23:1 — worse than the bug it fixed. Before writing a
+    `body:not(.dark-mode)` ink rule, check whether the SURFACE actually
+    changes. `.wg-work .work-localized-*` is the pattern to copy.
+33. **`.language-button-label` lives under `.btn-setting-color`, not
+    `.tf-left-bar`.** The pre-existing `.tf-left-bar .language-button-label`
+    rule matches nothing on the CV pages, which is how the chip ended up
+    inheriting `rgba(255,255,255,.4)` into light mode (1.04:1 — invisible).
+    When a colour bug survives an obvious-looking rule, check the rule matches.
+34. **AVIF is not automatically smaller than WebP either** (the sibling of
+    gotcha 17). All 27 certificate AVIFs were LARGER than their WebP twins, so
+    the `<picture>` blocks there correctly ship no AVIF `<source>` and the
+    files were dead weight (2.47 MB, deleted 2026-08-18). Before adding an
+    AVIF `<source>`, compare the two files; keep the smaller one.
+35. **`.icon-arrow-right-top` reusing `arrow-up.svg` is deliberate**, not a
+    duplicate asset: it is the same mask rotated 45°. An audit that compares
+    mask URLs will flag it — do not "de-duplicate" it.
+36. **The generated `kdcv-resume-entry-fix.js` has carried a Shamsi start date
+    a year ahead of the current one**, which rendered as "2027 – Present" — a
+    role that has not begun but is also current. `timeline-date-fix.js` now
+    drops the year and shows only the locale's word for "now" when a converted
+    start lands in the future. If the real start date is known, fix it at the
+    source instead; the guard is a floor, not an answer.
+37. **`_tooling/wp-root/` is a hand-kept mirror with rewritten paths, and it
+    goes stale silently.** `sw.js` sat at `CACHE_VERSION = "v4"` while the root
+    was at v7, `sitemap.xml` was missing 4 URLs and `offline.html` pinned
+    `?v=41` assets. Nothing syncs it — diff all five files against the root
+    copies whenever either side changes. Only the `/wp-content/themes/…` path
+    prefixes and manifest formatting are meant to differ.
+
 ## Environment
 
 - **Editor:** any (repo is plain HTML/CSS/JS/PHP).
@@ -226,8 +259,13 @@ wp-admin visit. **Bump it whenever you add new admin_init work.**
 ## Useful one-liners
 
 ```bash
-# Bump all ?v=N for .min files in all 9 HTML (after running build.sh)
-for f in index.html fa.html ar.html de.html es.html fr.html tr.html zh.html ja.html ru.html; do
+# Bump all ?v=N for .min files in EVERY HTML page (after running build.sh).
+# It must cover blog/ and portfolio/ too: 17 assets are shared between the CV
+# pages and the other 24 pages, so a CV-only loop re-creates the version split
+# it just fixed — and the service worker then caches each file twice.
+# NOTE: single.php in the WP theme is hand-maintained and NOT covered here;
+# check it too. So are the hardcoded keys inside lazy-bundle.js.
+for f in $(ls *.html blog/*.html portfolio/*.html); do
   perl -i -pe 's{((?:assets/css|assets/js)/[^"?]+\.min\.(?:css|js))\?v=(\d+)}{$1 . "?v=" . ($2+1)}ge' "$f"
 done
 

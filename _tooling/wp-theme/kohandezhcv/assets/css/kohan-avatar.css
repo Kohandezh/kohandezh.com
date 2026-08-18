@@ -420,3 +420,42 @@
 @media (max-width: 767.98px) {
     .kdcv-pet-root .kohan-size-controls { flex-direction: row !important; }
 }
+
+/* ==========================================================================
+   Avatar controls — 44px hit area without a 44px box
+   --------------------------------------------------------------------------
+   The eye, "+", "−" and the drive/walk switch paint at 28x28. That is the size
+   they should paint at: they float over the avatar and a 44px chrome button
+   there would cover the character the controls exist to reveal. But 28px is
+   under the 44px floor this site holds everywhere else, and these are the only
+   controls a touch user reaches for while the avatar is moving.
+
+   So the painted box stays 28px and the TARGET is grown underneath it with a
+   pseudo-element. `position: relative` is already implied by the grid centring;
+   the ::before is inert (no paint, no pointer capture of its own beyond the
+   button it belongs to) and the parent's `overflow` is visible, so nothing
+   about the layout or the look changes — only the region that answers a tap.
+
+   -8px on each side of a 28px box gives 44px. The controls sit in a column
+   with a 5px gap, so neighbouring targets overlap by 3px; the buttons are
+   stacked vertically and each ::before is centred on its own button, so the
+   nearest edge always belongs to the button under the finger. */
+.kdcv-pet-root .kohan-size-button,
+.kohan-eye-button {
+    position: relative;
+}
+
+.kdcv-pet-root .kohan-size-button::before,
+.kohan-eye-button::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 12px;
+    /* Paints nothing; exists only to widen the hit region. */
+    background: transparent;
+}
+
+/* A disabled control must not answer a tap through its enlarged region either. */
+.kdcv-pet-root .kohan-size-button:disabled::before {
+    display: none;
+}

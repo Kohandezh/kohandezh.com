@@ -822,3 +822,106 @@ the fields they actually carry, so a month-only credential never gains a day it
 did not have. The `datetime` attribute is never touched — machines still read
 ISO-8601 — and the original English text is kept in `data-kdcv-src` so an
 in-page language switch can re-render without a reload.
+
+---
+
+## 2026-08-18 — P6: audit remediation round 2 (facts, i18n, contrast, dead weight)
+
+Driven by the four facts the owner supplied (**43 certifications**, **delete the
+Arabic font**, **quantum is offered, not researched**, **degree = MCA at
+Ferdowsi**) plus the open items from the five-agent audit.
+
+### The four facts
+
+- **43 certifications.** The 10 CV pages already carried `data-to="43"`; the six
+  `*-llms.txt` files still said "10+". All ten now say 43. `ru-llms.txt` also had
+  `.html` URLs where every other locale had the WP pretty URLs — fixed.
+- **Arabic font.** `assets/fonts/ink-brush-arabic/` and its `@font-face` were
+  already gone; verified zero remaining references repo-wide.
+- **Quantum is offered.** The tech card said "Quantum Computing Research" and the
+  bio said "I also research quantum computing" in all ten languages. Both now
+  state the advisory service, matching the `makesOffer` schema that already
+  described a post-quantum readiness assessment.
+- **Degree = MCA (Ferdowsi).** The record contradicted itself: the English
+  `resume-timeline.js` entry read "MCA — …, Ferdowsi University of Mashhad" with
+  the description "Motahar Institute of Higher Education", while the other eight
+  locales called it a B.Sc. at Motahar. The static HTML in `index.html` said
+  2009–2011 / GPA 16.69 where the JS (which *replaces* the static rows at load)
+  said 2011–2013 / GPA 16.72. Normalised on the rendered values in all ten
+  locales; Motahar removed. `alumniOf` was a `CollegeOrUniversity` whose name was
+  a degree — replaced with the three real institutions plus a `hasCredential`
+  array. All 100 JSON-LD blocks re-validated.
+
+### Defects fixed
+
+- **"Field notes" was unreadable in light mode** (1.14–1.23:1 on all ten CV
+  pages). A previous pass inverted the card's ink for light mode on the premise
+  that `.section-blog` goes light. It does not — it paints a hard-coded dark
+  gradient in both themes. Ink is now stated rather than inverted: **7.87–14.54:1**.
+- **The sidebar language chip was invisible in light mode** (1.04:1) and under
+  the floor in dark (3.78:1). It inherits `rgba(255,255,255,.4)` from
+  `.btn-setting-color`, stated once for dark and never for light. Now
+  **11.94:1 / 8.43:1**. The pre-existing `.tf-left-bar .language-button-label`
+  rule matches nothing on the CV pages — the real host is `.btn-setting-color`.
+- **The RTL quote bubble was 0% on screen** for every Persian and Arabic desktop
+  visitor: `inset-inline-start` mirrors, `translateX(-50%)` does not. The mirror
+  now lives on `.kdcv-wisdom-wrap` (the bubble itself is pinned to
+  `transform: none !important`, so a fix on it could never execute). **96% visible.**
+- **A future-dated current role.** The generated `kdcv-resume-entry-fix.js`
+  carries a Shamsi start of `1405/12/24` ≈ March 2027, which rendered as
+  "2027 – Present". `timeline-date-fix.js` now drops the year when a converted
+  start lands ahead of today and shows only the locale's word for "now".
+- **`ru.html` linked to `Сертификаты.html?lang=en`** — the *filename* had been
+  machine-translated, so the certificates link 404'd for every Russian visitor,
+  and the language parameter was wrong as well.
+- **Avatar controls were 28px targets.** The painted box stays 28px (a 44px
+  chrome button there would cover the character); the hit area is grown to 44px
+  with an inert `::before`.
+
+### i18n
+
+- **189 hard-coded English labels on the Certificates archive** — 63 source
+  kickers and 126 `<dt>` field labels, drawn from a closed vocabulary of 28
+  strings — now translated into all nine locales. Keyed on the English source
+  text, not on per-node attributes, because the cards are regenerated from the
+  archive. The tab title is translated too.
+- **`portfolio.js` had no `ru` entry in its patch dictionary**, so Russian
+  visitors got `undefined` Details buttons, `aria-label="undefined"` and a
+  literal "all" chip. Added; verified in the browser.
+- Grammar: the German headline had neither a comma nor a pronoun covering both
+  nouns; the Russian one left the object of "создаю" in the nominative and wrote
+  "AI" where the page writes "ИИ"; the French one put a space inside the elided
+  "de l'". `ru.html` also had "БлогYar"/"ГлавнаяYar" (translated product names),
+  five untranslated timeline rows, a half-English `og:title`, and no
+  self-referencing `hreflang`.
+
+### Dead weight
+
+- **30 orphan AVIF files deleted (2.47 MB).** Every one was *larger* than its
+  WebP twin — the `<picture>` blocks correctly ship no AVIF `<source>` there, so
+  the files were unreachable. The theme zip went 26 MB → 21.9 MB.
+- The schema `logo` pointed at an AVIF (95 KB) that is bigger than its WebP
+  (63 KB) and is not a format Google documents for logos → switched.
+- `page-chrome.js` injected the 233 KB PWA icon into the footer at 36×36 →
+  `logo.svg`, 1.1 KB.
+- `_tooling/wp-root/` had drifted: `sw.js` at `CACHE_VERSION = "v4"` against the
+  root's v7, `sitemap.xml` missing four URLs, `offline.html` pinning `?v=41`
+  assets. All three re-synced; both service workers bumped to v8.
+
+### Not fixed, on purpose
+
+- The quote bubble still clips ~14px of its trailing rounded corner at desktop.
+  Every available fix moves or narrows the bubble, and the standing instruction
+  is no visual change. No text is lost.
+- `.icon-arrow-right-top` reusing `arrow-up.svg` is deliberate (same mask, 45°
+  rotation), not a duplicate asset.
+
+### Measurement note
+
+`getComputedStyle` on the CV pages returns **stale colours** while GSAP has
+inline styles in play, and toggling `sheet.disabled` to bisect the cascade
+leaves custom properties resolved against the wrong theme. Both produce
+convincing false failures — a full-page contrast sweep taken that way reported
+black-on-black for every `var(--black-72)` element, when `.dark-mode` redefines
+the whole `--black-*` scale correctly. Verify a contrast finding against the
+static CSS before acting on it.

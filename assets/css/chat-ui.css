@@ -794,6 +794,18 @@ html[dir="rtl"] .kdcv-bubble-close {
     transform: translateX(-50%);
     width: min(320px, calc(100vw - 32px));
 }
+/* RTL: `inset-inline-start` mirrors to the right edge, but `translateX(-50%)`
+   above is PHYSICAL and does not — so the wrapper was anchored right and then
+   shoved a further 160px LEFT, putting it entirely off-canvas. Measured on
+   fa.html at 768 and 1280: rect left -334, right -14 — 0% visible. Persian and
+   Arabic desktop visitors never saw the quote bubble at all.
+   NOTE for future fixes: the mirror MUST live here, on .kdcv-wisdom-wrap. The
+   rule in wisdom-quotes.css targets .kdcv-wisdom-bubble, which the block below
+   pins to `transform: none !important` — a fix placed there cannot execute. */
+[dir="rtl"] .kdcv-pet-root .kdcv-wisdom-wrap {
+    transform: translateX(50%);
+}
+
 .kdcv-pet-root .kdcv-wisdom-wrap .kdcv-wisdom-bubble {
     position: static !important;
     inset: auto !important;

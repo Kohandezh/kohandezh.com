@@ -8,7 +8,7 @@
  */
 
 define( 'KDCV', get_template_directory_uri() );
-define( 'KDCV_CONTENT_SCHEMA_VERSION', '2.0.2' ); // bump: Russian CV page (ru was missing from required pages)
+define( 'KDCV_CONTENT_SCHEMA_VERSION', '2.0.3' ); // bump: run kdcv_harden_htaccess() on theme UPDATE, not only on switch
 
 add_action( 'after_setup_theme', function () {
 	add_theme_support( 'post-thumbnails' );
@@ -886,6 +886,12 @@ add_action( 'admin_init', function () {
 
 	$created = kdcv_ensure_required_pages();
 	kdcv_configure_front_pages();
+	// Uploading a new build of the ACTIVE theme is an update, not a switch, so
+	// after_switch_theme never fires and the .htaccess block it writes would
+	// never reach a site that already runs this theme. The security headers and
+	// the /.git and /.env path rules therefore have to be (re)written here too.
+	// insert_with_markers is idempotent, so running it on both paths is safe.
+	kdcv_harden_htaccess();
 	update_option( 'kdcv_content_schema_version', KDCV_CONTENT_SCHEMA_VERSION );
 	// Always flush on schema version change — needed so new rewrite rules
 	// (e.g. /llms.txt) become active even when no new pages were created.

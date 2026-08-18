@@ -10341,32 +10341,48 @@ body:not(.dark-mode) .wg-work .wrap .w-tag-list .tag {
 }
 
 /* ==========================================================================
-   Home "Field notes" feed — light-mode legibility
+   Home "Field notes" feed — the panel is dark in BOTH themes
    --------------------------------------------------------------------------
-   Same class of bug as the Work Highlights above, in the other direction: these
-   cards are written for a dark surface (`#f0f8ee` titles, `#d4ffb0` tags) but
-   `.section-blog` is LIGHT in light mode, so every card measured 1.0–1.02 —
-   white on white, invisible. Only the ink and the two tints change.
+   A previous pass inverted this block's ink for light mode on the premise
+   that "`.section-blog` is LIGHT in light mode". It is not. `.section-blog`
+   paints a hard-coded dark gradient — rgba(20,30,29,.94) → rgba(11,16,17,.92)
+   — with no light-mode variant, and the FIELD NOTES watermark behind it is
+   rgba(225,255,208,.05), an ink that only reads on a dark ground. Inverting
+   the copy therefore produced dark-on-dark: the title measured 1.23:1, the
+   summary and date 1.14:1. Worse than the bug it was meant to fix.
+
+   So the ink is stated explicitly instead of inverted, the same way
+   `.wg-work .work-localized-*` is handled a few rules below: this is a dark
+   inset card that keeps its dark-mode treatment on a light page. Contrast is
+   measured against the composited gradient, not against the page shell.
    ========================================================================== */
 body:not(.dark-mode) .blog-local-item {
-  border-color: rgba(15, 15, 15, .12);
-  background: rgba(15, 15, 15, .03);
+  border-color: rgba(234, 255, 222, .1);
+  background: rgba(255, 255, 255, .035);
 }
 body:not(.dark-mode) .blog-local-item:hover {
-  border-color: rgba(0, 222, 81, .45);
-  background: rgba(0, 222, 81, .07);
+  border-color: rgba(168, 255, 70, .42);
+  background: rgba(168, 255, 70, .08);
 }
-body:not(.dark-mode) .blog-local-title { color: rgba(15, 15, 15, .92); }
+body:not(.dark-mode) .blog-local-title { color: #f0f8ee; }
 body:not(.dark-mode) .blog-local-summary,
-body:not(.dark-mode) .blog-local-date { color: rgba(15, 15, 15, .66); }
+body:not(.dark-mode) .blog-local-date { color: rgba(234, 247, 234, .78); }
 body:not(.dark-mode) .blog-local-tag {
-  border-color: rgba(0, 222, 81, .34);
-  color: #0a6b2f;
-  background: rgba(0, 222, 81, .08);
+  border-color: rgba(168, 255, 70, .26);
+  color: #d4ffb0;
+  background: rgba(168, 255, 70, .07);
 }
-body:not(.dark-mode) .blog-local-link { color: #0a6b2f; }
+body:not(.dark-mode) .blog-local-link { color: #e4ffd2; }
 body:not(.dark-mode) .blog-local-link:hover,
-body:not(.dark-mode) .blog-local-item:hover .blog-local-title { color: #06531f; }
+body:not(.dark-mode) .blog-local-item:hover .blog-local-title { color: var(--kohandezh-accent); }
+
+/* The section heading and its eyebrow sit on the same dark gradient and carry
+   the .text-black-* utilities, which are `!important` (see CLAUDE.md gotcha
+   20) — so they need `!important` to be reclaimed, not just specificity. */
+body:not(.dark-mode) .section-blog .s-title,
+body:not(.dark-mode) .section-blog .s-title * { color: #f2f8f0 !important; }
+body:not(.dark-mode) .section-blog .sect-tag,
+body:not(.dark-mode) .section-blog .s-desc { color: rgba(234, 247, 234, .78) !important; }
 
 /* `--primary` (#00de51) is a SURFACE colour — it carries dark ink on a filled
    pill. As TEXT on the light shell it measures 1.67:1, so the link that uses it
@@ -10492,3 +10508,31 @@ html[lang="ar"] .service-desc { font-size: max(1rem, 16px); line-height: 1.8; le
 .timeline-content > .sako-project-visual { grid-column: 1 / -1; width: 100%; }
 .sako-project-visual img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
 .sako-project-visual figcaption { padding: .6rem .8rem; color: var(--black-56, #666); font-size: .78rem; line-height: 1.5; }
+
+/* ==========================================================================
+   Sidebar language chip — state its ink in BOTH themes
+   --------------------------------------------------------------------------
+   `.language-button-label` sets no colour of its own; it inherits
+   `rgba(255, 255, 255, .4)` from `.btn-setting-color`. That value is written
+   once, for the dark shell, and never re-stated for light — so the chip
+   measured 3.78:1 on the dark page (11px text against a 4.5 floor) and
+   1.04:1 on the light one: white on #f5f5f5, the "EN" invisible.
+
+   Both halves are stated explicitly, the way the `.mobile-menu-utility`
+   sibling below already does. Note the host: the chip's real ancestor is
+   `.btn-setting-color` inside `.sidebar-tools`, NOT `.tf-left-bar` — the
+   existing `.tf-left-bar .language-button-label` rule above matches nothing
+   on the CV pages, which is part of why this went unnoticed. Both selectors
+   are listed so the rule holds wherever the chip is mounted. The chip stays
+   quieter than the surrounding copy — it is a label, not a heading — just
+   not quieter than legible.
+   ========================================================================== */
+.tf-left-bar .language-button-label,
+.btn-setting-color .language-button-label {
+  color: rgba(255, 255, 255, .78);
+}
+
+body:not(.dark-mode) .tf-left-bar .language-button-label,
+body:not(.dark-mode) .btn-setting-color .language-button-label {
+  color: rgba(17, 17, 17, .76);
+}

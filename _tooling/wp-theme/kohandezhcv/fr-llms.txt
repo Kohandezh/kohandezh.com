@@ -2,7 +2,7 @@
 
 > Mohammad Ali Kohandezh est docteur en gestion des technologies de l’information et directeur général de Kohan System Farda (KSF), une entreprise d’informatique d’entreprise et d’intelligence artificielle basée à Téhéran, en Iran. En activité professionnelle depuis 2007 dans les produits d’IA, l’infrastructure informatique d’entreprise, la virtualisation, la sauvegarde et la reprise après sinistre, et la cybersécurité.
 
-Il détient plus de 10 certifications professionnelles (dont VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542) et travaille depuis TechElite, le centre de croissance technologique Nokhbegan (Masir 21), Parc technologique de Pardis, Téhéran, Iran.
+Il détient 43 certifications professionnelles (dont VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542) et travaille depuis TechElite, le centre de croissance technologique Nokhbegan (Masir 21), Parc technologique de Pardis, Téhéran, Iran.
 
 ## Identité
 

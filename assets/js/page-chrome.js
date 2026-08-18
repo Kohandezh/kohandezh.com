@@ -387,7 +387,11 @@
       foot.className = "kdcv-foot";
       foot.innerHTML =
         '<a class="kdcv-foot-brand" href="' + homeHref(loc) + '">' +
-        '<img src="' + assetUrl("images/logo/logo.png") + '" width="36" height="36" alt="">' +
+        // logo.png is the 512px PWA icon (233 KB). Painted at 36 CSS px in the
+        // footer it was ~46x the bytes the slot can show, on every page that
+        // mounts the shared chrome. logo.svg is the same mark at 1.1 KB and
+        // stays sharp at any density.
+        '<img src="' + assetUrl("images/logo/logo.svg") + '" width="36" height="36" alt="">' +
         "<span></span></a>" +
         '<nav class="kdcv-foot-nav"></nav>' +
         '<p class="kdcv-foot-legal"></p>';

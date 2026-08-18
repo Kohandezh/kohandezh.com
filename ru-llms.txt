@@ -2,7 +2,7 @@
 
 > Мохаммад Али Кохандеж — доктор наук в области управления ИТ и генеральный директор компании Kohan System Farda (KSF), работающей в сфере корпоративных ИТ и искусственного интеллекта в Тегеране, Иран. Профессионально работает с 2007 года: продукты ИИ, корпоративная ИТ-инфраструктура, виртуализация, резервное копирование и аварийное восстановление, кибербезопасность.
 
-Обладатель более 10 профессиональных сертификаций (в том числе VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542). Работает в TechElite — Центре технологического роста «Нохбеган» (Masir 21), Технопарк Пардис, Тегеран, Иран.
+Обладатель 43 профессиональных сертификаций (в том числе VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542). Работает в TechElite — Центре технологического роста «Нохбеган» (Masir 21), Технопарк Пардис, Тегеран, Иран.
 
 ## Идентификация
 
@@ -16,15 +16,15 @@
 
 ## Услуги
 
-- [ИИ и интеллектуальная автоматизация](https://kohandezh.com/ru.html#service): продукты ИИ, корпоративные агентные платформы, автоматизация
-- [Инфраструктура и виртуализация](https://kohandezh.com/ru.html#service): VMware vSphere, проектирование ЦОД, Windows Server и AD, Kubernetes, Docker
-- [Резервное копирование и аварийное восстановление](https://kohandezh.com/ru.html#service): Veeam, Arctera Backup Exec, Veritas NetBackup
-- [Кибербезопасность и форензика](https://kohandezh.com/ru.html#service): тестирование на проникновение, расследование инцидентов, аудит безопасности
+- [ИИ и интеллектуальная автоматизация](https://kohandezh.com/ru/#service): продукты ИИ, корпоративные агентные платформы, автоматизация
+- [Инфраструктура и виртуализация](https://kohandezh.com/ru/#service): VMware vSphere, проектирование ЦОД, Windows Server и AD, Kubernetes, Docker
+- [Резервное копирование и аварийное восстановление](https://kohandezh.com/ru/#service): Veeam, Arctera Backup Exec, Veritas NetBackup
+- [Кибербезопасность и форензика](https://kohandezh.com/ru/#service): тестирование на проникновение, расследование инцидентов, аудит безопасности
 
 ## Страницы
 
-- [Главная / резюме (русский)](https://kohandezh.com/ru.html): полный профиль, ключевые работы, сертификации, отзывы
-- [Архив сертификатов](https://kohandezh.com/Certificates.html): полный перечень профессиональных сертификаций
+- [Главная / резюме (русский)](https://kohandezh.com/ru/): полный профиль, ключевые работы, сертификации, отзывы
+- [Архив сертификатов](https://kohandezh.com/certificates/): полный перечень профессиональных сертификаций
 - [Блог](https://kohandezh.com/blog/): статьи об ИИ, карьере и технологиях — полностью переведены на десять языков
 - [Портфолио](https://kohandezh.com/portfolio/): избранные проекты
 - Другие языки: [английский](https://kohandezh.com/index.html) · [персидский](https://kohandezh.com/fa.html) · [арабский](https://kohandezh.com/ar.html) · [немецкий](https://kohandezh.com/de.html) · [испанский](https://kohandezh.com/es.html) · [французский](https://kohandezh.com/fr.html) · [турецкий](https://kohandezh.com/tr.html) · [китайский](https://kohandezh.com/zh.html) · [японский](https://kohandezh.com/ja.html)

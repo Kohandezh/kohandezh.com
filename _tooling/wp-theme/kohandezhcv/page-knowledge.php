@@ -265,7 +265,7 @@
   <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=106" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=15" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/knowledge-tabs.min.js?v=1" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=95" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=96" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=107" defer></script>
     <?php wp_footer(); ?>
 </body>

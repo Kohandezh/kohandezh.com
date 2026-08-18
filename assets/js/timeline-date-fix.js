@@ -71,13 +71,18 @@
 
   var cache = {};
 
+  /* Set by render() to the Gregorian instant the stamp resolved to, so the
+     caller can tell a past start from a future one without converting twice. */
+  var lastResolved = null;
+
   function render(y, m, d) {
     var loc = locale();
     var key = loc + "|" + y + "-" + m + "-" + d;
-    if (cache[key]) return cache[key];
 
     var when = fromShamsi(y, m, d);
+    lastResolved = when;
     if (!when) return null;
+    if (cache[key]) return cache[key];
 
     try {
       cache[key] = new Intl.DateTimeFormat(CAL[loc], {
@@ -216,12 +221,29 @@
       "Разработчик Национальной открытой платформы ИИ."
   };
 
+  /* The same row's image alt is written from the generated file's `en` entry,
+     so it stayed English while the visible copy above it was corrected. Alt
+     text is the only version of this row a screen-reader user gets, so it is
+     mapped here too rather than left as the one English string left in the
+     Russian timeline. */
+  var SAKO_RU_ALT = {
+    "National Open-Source AI Platform logo":
+      "Логотип Национальной открытой платформы ИИ",
+    "National Open-Source AI Platform logo — conceptual editorial visualization":
+      "Логотип Национальной открытой платформы ИИ — концептуальная редакционная иллюстрация"
+  };
+
   function fixSako() {
     if ((document.documentElement.lang || "").toLowerCase().split("-")[0] !== "ru") return;
     var nodes = document.querySelectorAll(".timeline-role, .timeline-desc");
     for (var i = 0; i < nodes.length; i++) {
       var t = nodes[i].textContent.trim();
       if (SAKO_RU[t]) nodes[i].textContent = SAKO_RU[t];
+    }
+    var imgs = document.querySelectorAll(".timeline-item img[alt]");
+    for (var j = 0; j < imgs.length; j++) {
+      var a = imgs[j].getAttribute("alt").trim();
+      if (SAKO_RU_ALT[a]) imgs[j].setAttribute("alt", SAKO_RU_ALT[a]);
     }
   }
 
@@ -237,12 +259,26 @@
       if (m) {
         var out = render(Number(toLatin(m[1])), Number(toLatin(m[2])), Number(toLatin(m[3])));
         if (!out) continue;
-        node.textContent = out;
         /* A bare Shamsi stamp is the START of a role that is still running —
            that is the only shape the generated script emits. Flagged here so
            normalise() renders it as an open range rather than a lone year,
            which is how the same row is authored on the Persian page. */
         node.dataset.kdcvOngoing = "1";
+
+        /* The generated stamp has, at times, carried a Shamsi year one ahead
+           of the current one. Rendered literally that becomes "2027 – Present"
+           — a role that has not started yet but is also current, which reads
+           as a typo to every visitor. A start date cannot be in the future, so
+           when the conversion lands ahead of today the year is dropped and the
+           row is stamped with the locale's word for "now" alone. Nothing is
+           invented: an unknown start is shown as unknown. */
+        if (lastResolved && lastResolved.getTime() > Date.now()) {
+          node.textContent = PRESENT[locale()] || PRESENT.en;
+          normalise(node);
+          node.dataset.kdcvDate = "1";
+          continue;
+        }
+        node.textContent = out;
       }
 
       normalise(node);

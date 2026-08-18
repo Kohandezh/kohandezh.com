@@ -68,7 +68,8 @@
   }
 }
 
-/* RTL mirror for the physical transform above. */
-[dir="rtl"] .kdcv-pet-root .kdcv-wisdom-bubble {
-  transform: translateX(50%);
-}
+/* NOTE: the positioning above is INERT. chat-ui.css wraps the bubble in
+   .kdcv-wisdom-wrap and pins this element to `position:static; transform:none`
+   with !important, so the wrapper owns anchoring. Any positioning or RTL fix
+   must go on .kdcv-wisdom-wrap in chat-ui.css — an earlier RTL mirror was
+   added here and silently did nothing. */

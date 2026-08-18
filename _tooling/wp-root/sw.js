@@ -19,7 +19,7 @@
  * activate handler deletes any cache whose key is not the current RUNTIME or
  * PRECACHE, so bumping here is what actually evicts it.
  */
-var CACHE_VERSION = "v4";
+var CACHE_VERSION = "v8";
 var RUNTIME = "kdcv-runtime-" + CACHE_VERSION;
 var PRECACHE = "kdcv-precache-" + CACHE_VERSION;
 var OFFLINE_URL = "/offline.html";
