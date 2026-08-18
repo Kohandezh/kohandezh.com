@@ -9,7 +9,7 @@
   (PhD IT Management, CEO of Kohan System Farda / KSF, Tehran, Iran).
 - **Stack:** Static HTML/CSS/JS at repo root + a generated WordPress theme
   at `_tooling/wp-theme/kohandezhcv/` synced via `python3 _tooling/wp-theme/sync-from-static.py`.
-- **9 languages:** English (canonical) + fa, ar, de, es, fr, tr, zh, ja.
+- **10 languages:** English (canonical) + fa, ar, de, es, fr, tr, zh, ja, ru.
 - **Production:** WordPress on LiteSpeed at `31.25.91.5`. NOT behind Cloudflare (yet).
 - **Source of truth:** the static files at repo root. The WP theme is REGENERATED from them.
 
@@ -38,7 +38,7 @@
 
 | Path | Purpose |
 |---|---|
-| `index.html`, `fa.html`, …, `ja.html` | The 9 CV templates (source of truth for content) |
+| `index.html`, `fa.html`, …, `ru.html` | The 10 CV templates (source of truth for content) |
 | `PSN.html`, `Certificates.html` | Standalone pages (synced to WP as `/psn/`, `/certificates/`) |
 | `videos.html` | Static-only (uploaded separately via FTP) |
 | `404.html` | The **404 arcade** — single page, JS picks a random game each load (reads `?game=` / `data-game="random"` / sessionStorage anti-repeat) |
@@ -227,7 +227,7 @@ wp-admin visit. **Bump it whenever you add new admin_init work.**
 
 ```bash
 # Bump all ?v=N for .min files in all 9 HTML (after running build.sh)
-for f in index.html fa.html ar.html de.html es.html fr.html tr.html zh.html ja.html; do
+for f in index.html fa.html ar.html de.html es.html fr.html tr.html zh.html ja.html ru.html; do
   perl -i -pe 's{((?:assets/css|assets/js)/[^"?]+\.min\.(?:css|js))\?v=(\d+)}{$1 . "?v=" . ($2+1)}ge' "$f"
 done
 

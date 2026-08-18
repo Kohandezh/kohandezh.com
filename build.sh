@@ -27,7 +27,6 @@ CUSTOM_JS=(
   portfolio.js
   work-image-localization.js
   home-blog-feed.js
-  home-blog-scroll.js
   accessibility-enhancements.js
   carousel.js
   animation-change-text.js

@@ -9,6 +9,12 @@ AddDefaultCharset utf-8
 <FilesMatch "(^\.|\.(bak|sql|log|zip|env|md)$)">
   Require all denied
 </FilesMatch>
+# The FilesMatch rule above matches BASENAMES, so ".git/config" (basename
+# "config") was never caught and the repo was readable if .git ever lands in
+# the web root. Path-based rules close that.
+RedirectMatch 404 /\.git(/|$)
+RedirectMatch 404 /\.(env|hg|svn|bzr)(/|$)
+
 
 # Keep the missing URL's real HTTP 404 status while rendering a random game.
 ErrorDocument 404 /404.html

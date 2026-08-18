@@ -482,7 +482,7 @@ function kdcv_resolve_country() {
 	// ip-api.com free tier: HTTP only, 45 req/min, JSON. fields=countryCode
 	// keeps payload tiny. Timeout 2s — if the API is slow/down we cache a
 	// short-lived failure marker and fall through to English.
-	$url  = 'http://ip-api.com/json/' . rawurlencode( $ip ) . '?fields=countryCode';
+	$url  = 'https://ip-api.com/json/' . rawurlencode( $ip ) . '?fields=countryCode';
 	$resp = wp_remote_get( $url, array( 'timeout' => 2 ) );
 	if ( is_wp_error( $resp ) ) {
 		set_transient( $cache_key, '_FAIL_', 5 * MINUTE_IN_SECONDS );
@@ -501,10 +501,28 @@ function kdcv_resolve_country() {
 }
 
 /**
- * Get the visitor's real client IP, respecting common proxy headers.
- * Cloudflare and most CDNs set CF-Connecting-IP / X-Forwarded-For.
+ * The visitor's client IP, for rate limiting.
+ *
+ * REMOTE_ADDR is the ONLY value a client cannot forge: it is the peer address
+ * of the TCP connection. Proxy headers are honoured only when the request
+ * actually arrived from a trusted proxy, because otherwise anyone can send a
+ * fresh CF-Connecting-IP per request and land in a brand-new rate-limit bucket
+ * every time — which made every limit on this site decorative while the origin
+ * was reachable directly. Production is NOT behind Cloudflare today, so the
+ * trusted list is empty by default; add the edge ranges (or define
+ * KDCV_TRUSTED_PROXIES) when a proxy is actually put in front.
  */
+function kdcv_trusted_proxy() {
+	$trusted = defined( 'KDCV_TRUSTED_PROXIES' ) ? (array) KDCV_TRUSTED_PROXIES : array();
+	$peer    = isset( $_SERVER['REMOTE_ADDR'] ) ? (string) $_SERVER['REMOTE_ADDR'] : '';
+	return $peer !== '' && in_array( $peer, $trusted, true );
+}
+
 function kdcv_client_ip() {
+	if ( ! kdcv_trusted_proxy() ) {
+		$peer = isset( $_SERVER['REMOTE_ADDR'] ) ? (string) $_SERVER['REMOTE_ADDR'] : '';
+		return filter_var( $peer, FILTER_VALIDATE_IP ) ? $peer : '0.0.0.0';
+	}
 	$candidates = array( 'HTTP_CF_CONNECTING_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_REAL_IP', 'REMOTE_ADDR' );
 	foreach ( $candidates as $key ) {
 		if ( empty( $_SERVER[ $key ] ) ) {
@@ -719,7 +737,7 @@ add_action( 'send_headers', function () {
 	header( 'X-Permitted-Cross-Domain-Policies: none' );
 	header( 'X-DNS-Prefetch-Control: off' );
 
-	if ( ! is_admin() && ! is_user_logged_in() ) {
+	if ( ! is_admin() ) {
 		header( 'Content-Security-Policy: ' . kdcv_csp_value() );
 	}
 
@@ -1737,6 +1755,22 @@ function kdcv_handle_contact( WP_REST_Request $request ) {
 	if ( $request->get_param( 'botcheck' ) ) {
 		return new WP_REST_Response( array( 'success' => true ), 200 ); // silent drop
 	}
+
+	/* Rate limit. The honeypot alone stopped nothing: omit the field and this
+	   endpoint would send unlimited mail to the owner's inbox and burn the
+	   Web3Forms quota. Keyed on kdcv_client_ip(), which is REMOTE_ADDR unless
+	   the request genuinely came from a configured proxy, so it cannot be
+	   reset by setting a header. */
+	$ip     = kdcv_client_ip();
+	$bucket = 'kdcv_contact_rl_' . md5( $ip );
+	$hits   = (int) get_transient( $bucket );
+	if ( $hits >= 5 ) {
+		return new WP_REST_Response(
+			array( 'success' => false, 'message' => 'Too many messages. Please try again later.' ),
+			429
+		);
+	}
+	set_transient( $bucket, $hits + 1, HOUR_IN_SECONDS );
 
 	$name    = sanitize_text_field( (string) $request->get_param( 'name' ) );
 	$email   = sanitize_email( (string) $request->get_param( 'email' ) );

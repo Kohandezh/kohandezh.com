@@ -13,9 +13,9 @@
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/simple-line/simple-line.css">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.min.css?v=99">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.min.css?v=105">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/knowledge.min.css?v=1">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=97">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=99">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png?v=2">
   <link rel="canonical" href="https://kohandezh.com/knowledge/">
   <script type="application/ld+json">
@@ -262,11 +262,11 @@
 
     <footer class="blog-footer"></footer>
   </div>
-  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=5" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=5" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=106" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=15" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/knowledge-tabs.min.js?v=1" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=5" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=5" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=95" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=107" defer></script>
     <?php wp_footer(); ?>
 </body>
 </html>

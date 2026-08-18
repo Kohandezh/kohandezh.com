@@ -100,7 +100,11 @@ class KDCV_AI_REST {
 		$forwarded = isset( $_SERVER['HTTP_X_FORWARDED_FOR'] )
 			? sanitize_text_field( wp_unslash( $_SERVER['HTTP_X_FORWARDED_FOR'] ) )
 			: '';
-		if ( $forwarded !== '' ) {
+		/* Only honour X-Forwarded-For when the request actually arrived from a
+		   configured proxy. Otherwise any caller sets it per request and the
+		   10/min limit protecting a paid LLM key never triggers. */
+		$trusted = defined( 'KDCV_TRUSTED_PROXIES' ) ? (array) KDCV_TRUSTED_PROXIES : array();
+		if ( $forwarded !== '' && in_array( $ip, $trusted, true ) ) {
 			/* Deliberately NOT named $candidates: that variable already holds the
 			   built provider objects from the routing block above, and reusing
 			   the name here replaced them with plain strings. The provider loop

@@ -1,5 +1,16 @@
 <?php
 /**
+ * Neutralise spreadsheet formula injection. A visitor question beginning with
+ * = + - @ (or tab/CR) is executed as a formula when the export is opened in
+ * Excel or Sheets, so the cell is prefixed with an apostrophe. The visible
+ * text is unchanged for a reader.
+ */
+function kdcv_csv_safe( $v ) {
+	$v = (string) $v;
+	return ( $v !== '' && strpbrk( $v[0], "=+-@\t\r" ) !== false ) ? "'" . $v : $v;
+}
+
+/**
  * AI Chat admin page.
  *
  * Top-level menu item under the AI Hub group. Two halves:
@@ -329,10 +340,10 @@ function kdcv_ai_chat_export_csv() {
 	fwrite( $out, "\xEF\xBB\xBF" ); // UTF-8 BOM for Excel
 	fputcsv( $out, array( 'created_at_utc', 'source', 'provider', 'model', 'locale', 'status', 'ip_hash', 'question', 'answer' ) );
 	foreach ( $rows as $r ) {
-		fputcsv( $out, array(
+		fputcsv( $out, array_map( 'kdcv_csv_safe', array(
 			$r->created_at, $r->source, $r->provider, $r->model, $r->locale,
 			$r->status, $r->ip_hash, $r->question, $r->answer,
-		) );
+		) ) );
 	}
 	fclose( $out );
 }

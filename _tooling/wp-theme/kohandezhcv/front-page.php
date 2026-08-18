@@ -8,9 +8,9 @@
     <title>Mohammad Ali Kohandezh — AI &amp; Quantum-Readiness Advisor | Secure Enterprise AI</title>
     <meta name="author" content="Mohammad Ali Kohandezh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=109"></script>
+    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=110"></script>
     <meta name="description"
-        content="Mohammad Ali Kohandezh — PhD in IT Management, CEO of Kohan System Farda (KSF). Advises organizations on applied AI and post-quantum readiness: AI assessments, secure agent architecture, cryptographic inventory and migration to the NIST standards. Professionally active since 2007 across AI, enterprise IT infrastructure, virtualization, backup and recovery, and cybersecurity.">
+        content="AI &amp; quantum-readiness advisor. I help organizations deploy AI they can trust and prepare their cryptography for the post-quantum era.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <!-- font -->
@@ -20,22 +20,22 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/simple-line/simple-line.css">
     <!-- css -->
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=108">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=109">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css"></noscript>
 
 
-    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=164">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=108">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=106">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=107" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=107"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=107" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=107"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=122" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=122"></noscript>
+    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=166">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=109">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=107">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=108"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=108"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=123" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=123"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=102">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=102">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=96">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=103">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=103">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=97">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kdcv-interaction-fix.css?v=9">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=110" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=110"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=112" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=112"></noscript>
 
     <!-- Kohandezh overrides -->
     <style>
@@ -283,7 +283,7 @@
     <meta property="og:site_name" content="Mohammad Ali Kohandezh">
     <meta property="og:url" content="https://kohandezh.com/">
     <meta property="og:title" content="Mohammad Ali Kohandezh — AI &amp; Quantum-Readiness Advisor | Secure Enterprise AI">
-    <meta property="og:description" content="Mohammad Ali Kohandezh — PhD in IT Management, CEO of Kohan System Farda (KSF). Advises organizations on applied AI and post-quantum readiness: AI assessments, secure agent architecture, cryptographic inventory and migration to the NIST standards. Professionally active since 2007 across AI, enterprise IT infrastructure, virtualization, backup and recovery, and cybersecurity.">
+    <meta property="og:description" content="AI &amp; quantum-readiness advisor. I help organizations deploy AI they can trust and prepare their cryptography for the post-quantum era.">
     <meta property="og:image" content="<?php echo KDCV; ?>/assets/images/og/og-image.jpg">
     <meta property="og:image:secure_url" content="<?php echo KDCV; ?>/assets/images/og/og-image.jpg">
     <meta property="og:image:type" content="image/jpeg">
@@ -301,7 +301,7 @@
     <!-- SEO: Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mohammad Ali Kohandezh — AI &amp; Quantum-Readiness Advisor | Secure Enterprise AI">
-    <meta name="twitter:description" content="Mohammad Ali Kohandezh — PhD in IT Management, CEO of Kohan System Farda (KSF). Advises organizations on applied AI and post-quantum readiness: AI assessments, secure agent architecture, cryptographic inventory and migration to the NIST standards. Professionally active since 2007 across AI, enterprise IT infrastructure, virtualization, backup and recovery, and cybersecurity.">
+    <meta name="twitter:description" content="AI &amp; quantum-readiness advisor. I help organizations deploy AI they can trust and prepare their cryptography for the post-quantum era.">
     <meta name="twitter:image" content="<?php echo KDCV; ?>/assets/images/og/og-image.jpg">
     <!-- SEO: structured data (Person) -->
     <script type="application/ld+json">
@@ -384,7 +384,7 @@
                 "name": "How many years of experience does Mohammad Ali Kohandezh have?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Over 18 years of professional experience dating back to 2007, and 10 professional certifications including VMware VCP-DCV, EC-Council CEH and CHFI, HPE Accredited Technical Professional, and GIAC/SANS SEC504 and SEC542."
+                    "text": "Over 18 years of professional experience dating back to 2007, and 43 professional certifications including VMware VCP-DCV, EC-Council CEH and CHFI, HPE Accredited Technical Professional, and GIAC/SANS SEC504 and SEC542."
                 }
             },
             {
@@ -564,7 +564,7 @@
     }
     </script>
     <!-- ===== /SEO BLOCK ===== -->
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=106" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=106"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=107" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=107"></noscript>
   <!-- ProfilePage: Google's container type for a person's own page. It
        points at the Person node declared above by @id rather than
        repeating it, adds the freshness dates answer engines look for,
@@ -1026,7 +1026,7 @@
                                     </div>
                                     <div class="wg-curve-text">
                                         <div class="icon">
-                                            <picture><source srcset="<?php echo KDCV; ?>/assets/images/logo/KohanSystemFarda.avif" type="image/avif"><img src="<?php echo KDCV; ?>/assets/images/logo/KohanSystemFarda.webp?v=1" width="82" height="96" alt="Kohan System Farda" style="display:block;width:82px;height:96px;object-fit:contain" loading="eager" decoding="async"></picture>
+                                            <picture><img src="<?php echo KDCV; ?>/assets/images/logo/KohanSystemFarda.webp?v=1" width="82" height="96" alt="Kohan System Farda" style="display:block;width:82px;height:96px;object-fit:contain" loading="eager" decoding="async"></picture>
                                         </div>
                                         <div class="text-rotate">
                                             <div class="circle">
@@ -1047,7 +1047,7 @@
                                     </div>
                                     <div class="wg-counter">
                                         <p class="counter h1 d-flex font-2 letter-space--2">
-                                            <span class="number" data-speed="1000" data-to="33">0</span>
+                                            <span class="number" data-speed="1000" data-to="43">0</span>
                                             +
                                         </p>
                                         <p class="text text-black-56 text-body-3">
@@ -1270,9 +1270,9 @@
                                     <br>
                                     As CEO of Kohan System Farda (KSF), holder of a PhD in IT Management and <br class="d-none d-lg-block">
                                     currently a candidate for a second doctorate, I approach every project with
-                                    both engineering rigor and business insight. I am also actively researching
-                                    quantum computing and post-quantum security as a future layer for resilient
-                                    enterprise systems.
+                                    both engineering rigor and business insight. I also advise organizations on quantum readiness — cryptographic
+                                    inventory, data-lifetime analysis and migration to the NIST
+                                    post-quantum standards.
                                 </p>
                                 <div class="professional-roles">
                                     <h3 id="professional-roles-title" class="h5 professional-roles__heading letter-space--2 text-black-72">
@@ -2550,35 +2550,34 @@
     </noscript>
 
     <!-- Javascript -->
-    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=105" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=73" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=118" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=112" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=106" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=74" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=119" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=114" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kdcv-resume-entry-fix.js?v=7" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=2" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=109" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=107" defer></script>
-    <!-- <script src="<?php echo KDCV; ?>/assets/js/odometer.min.js" defer></script> -->    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=106" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=110" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=70" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=112" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=110" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=108" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=107" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=111" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=71" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=113" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=106" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=107" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/animation-change-text.min.js" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/demo-and-schedule.min.js" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=105" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=116" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=108" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=107" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=107" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=106" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=117" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=109" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=108" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=108" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/cwv-rum.min.js" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=125" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=110" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=126" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=111" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kdcv-interaction-fix.js?v=5" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=111" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=112" defer></script>
 <script>
 (function(){
   function msg(lang){
@@ -2658,13 +2657,13 @@
   }, true);
 })();
 </script>
-  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=105" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=109" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=102" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=96" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=92" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=77" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=106" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=111" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=103" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=102" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=97" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=93" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=78" defer></script>
     <?php wp_footer(); ?>
 </body>
 

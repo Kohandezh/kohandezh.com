@@ -14,6 +14,11 @@
   z-index: 14;
   inset-inline-start: 50%;
   bottom: calc(100% + 12px);
+  /* translateX is PHYSICAL and does not mirror, while inset-inline-start does.
+     In RTL the box was anchored from the right and then shoved a further
+     160px LEFT, putting it entirely off-canvas — the quote bubble was
+     invisible to every Persian and Arabic visitor. The RTL rule below
+     flips the direction so the two agree. */
   transform: translateX(-50%);
   width: min(320px, calc(100vw - 32px));
   max-height: min(180px, 36vh);
@@ -61,4 +66,9 @@
     max-height: 30vh;
     font-size: 12px;
   }
+}
+
+/* RTL mirror for the physical transform above. */
+[dir="rtl"] .kdcv-pet-root .kdcv-wisdom-bubble {
+  transform: translateX(50%);
 }

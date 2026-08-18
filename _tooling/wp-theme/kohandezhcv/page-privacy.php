@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/estedad/estedad.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.min.css?v=92">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/flow-field-background.min.css?v=86">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.min.css?v=105">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/flow-field-background.min.css?v=95">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png?v=2">
   <link rel="manifest" href="/manifest.json">
   <link rel="apple-touch-icon" href="<?php echo KDCV; ?>/assets/images/logo/apple-touch-icon.png">
@@ -26,11 +26,11 @@
   <meta name="twitter:title" content="سیاست حریم خصوصی | Privacy Policy — Kohandezh.com">
   <meta name="twitter:description" content="سیاست حریم خصوصی kohandezh.com — این وب‌سایت از کوکی، ابزار تحلیلی یا ردیابی استفاده نمی‌کند. توضیح دقیق داده‌هایی که جمع‌آوری می‌شوند.">
   <meta name="twitter:image" content="<?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=90">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=83">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=101"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=99">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=103">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=123" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=123"></noscript>
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2"></noscript>
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=87" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=87"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=107" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=107"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
        URL in results, and gives answer engines the page's place in the
        site rather than treating it as an orphan. -->
@@ -167,18 +167,18 @@
       </div>
     </footer>
   </div>
-  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=86" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=86" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=86" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=87" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=89" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=106" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=91" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=106" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=95" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=106" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=107" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=111" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=126" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=111" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=15" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=86" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=90" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=82" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=95" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=111" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=102" defer></script>
     <?php wp_footer(); ?>
 </body>
 </html>

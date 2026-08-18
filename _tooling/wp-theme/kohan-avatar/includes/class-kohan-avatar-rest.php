@@ -147,10 +147,19 @@ class Kohan_Avatar_REST {
 	 * the proxy's address) — kept out of scope here to avoid unsafe defaults.
 	 */
 	private function client_ip() {
-		if ( ! empty( $_SERVER['HTTP_CF_CONNECTING_IP'] ) ) {
+		/* REMOTE_ADDR is the only unforgeable value — it is the TCP peer. The
+		   CF header is trusted ONLY when the request actually came from a
+		   configured proxy address; otherwise an attacker sends a fresh
+		   CF-Connecting-IP per request and every call lands in a new bucket,
+		   which made the TTS/STT limits protecting a PAID key decorative.
+		   Production is not behind Cloudflare yet, so this list is empty
+		   unless KDCV_TRUSTED_PROXIES is defined. */
+		$trusted = defined( 'KDCV_TRUSTED_PROXIES' ) ? (array) KDCV_TRUSTED_PROXIES : array();
+		$peer    = (string) ( $_SERVER['REMOTE_ADDR'] ?? '' );
+		if ( in_array( $peer, $trusted, true ) && ! empty( $_SERVER['HTTP_CF_CONNECTING_IP'] ) ) {
 			return (string) $_SERVER['HTTP_CF_CONNECTING_IP'];
 		}
-		return (string) ( $_SERVER['REMOTE_ADDR'] ?? '' );
+		return $peer;
 	}
 
 	private function exec_disabled() {

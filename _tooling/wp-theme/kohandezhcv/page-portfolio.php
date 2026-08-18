@@ -18,12 +18,12 @@
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/fonts.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/estedad/estedad.css">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/portfolio.min.css?v=92">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=85">
-  <link rel="stylesheet" href="../assets/css/page-chrome.min.css?v=89">
-  <link rel="stylesheet" href="../assets/css/hud-button.min.css?v=82">
-  <link rel="stylesheet" href="../assets/css/kohan-avatar.min.css?v=100" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="../assets/css/kohan-avatar.min.css?v=100"></noscript>
-  <link rel="stylesheet" href="../assets/css/chat-ui.min.css?v=86" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="../assets/css/chat-ui.min.css?v=86"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/portfolio.min.css?v=93">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=109">
+  <link rel="stylesheet" href="../assets/css/page-chrome.min.css?v=99">
+  <link rel="stylesheet" href="../assets/css/hud-button.min.css?v=103">
+  <link rel="stylesheet" href="../assets/css/kohan-avatar.min.css?v=123" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="../assets/css/kohan-avatar.min.css?v=123"></noscript>
+  <link rel="stylesheet" href="../assets/css/chat-ui.min.css?v=107" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="../assets/css/chat-ui.min.css?v=107"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
        URL in results, and gives answer engines the page's place in the
        site rather than treating it as an orphan. -->
@@ -63,7 +63,8 @@
       <button class="portfolio-control" id="themeToggle" type="button" aria-label="حالت نمایش" title="حالت نمایش">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.64 5.64l1.42 1.42m9.88 9.88 1.42 1.42m0-12.72-1.42 1.42M7.06 16.94l-1.42 1.42M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </button>
-      <label class="portfolio-control language-wrap" aria-label="زبان" title="زبان"><span class="language-label" id="languageLabel">FA</span><select id="languageSelect"><option value="fa">فارسی</option><option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="tr">Türkçe</option><option value="zh">中文</option><option value="ja">日本語</option></select></label>
+      <label class="portfolio-control language-wrap" aria-label="زبان" title="زبان"><span class="language-label" id="languageLabel">FA</span><select id="languageSelect"><option value="fa">فارسی</option><option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="tr">Türkçe</option><option value="zh">中文</option><option value="ja">日本語</option>
+              <option value="ru">Русский</option></select></label>
       <a class="portfolio-home" href="/" data-i18n-aria="home"><span data-i18n="home">بازگشت به رزومه</span><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m7.5 5 5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </header>
@@ -89,10 +90,10 @@
         <article class="client-card" style="--brand:#c0504d"><div class="client-logo"><span class="client-mark">CQ</span><picture><source srcset="<?php echo KDCV; ?>/assets/images/portfolio/charity-qom.avif" type="image/avif"><img src="<?php echo KDCV; ?>/assets/images/portfolio/charity-qom.webp" width="460" height="333" alt="Charity in Qom" loading="lazy" decoding="async"></picture></div><div class="client-meta"><b data-org-fa="خیریه ایتام قم">Charity in Qom</b><span data-i18n="enterprise">Enterprise engagement</span></div><i class="client-index">12</i></article>
         <article class="client-card" style="--brand:#2f6db7"><div class="client-logo"><span class="client-mark">Noor</span><picture><source srcset="<?php echo KDCV; ?>/assets/images/portfolio/logos/noor-eye-hospital.avif" type="image/avif"><img src="<?php echo KDCV; ?>/assets/images/portfolio/logos/noor-eye-hospital.webp" width="200" height="200" alt="بیمارستان چشم پزشکی نور" loading="lazy" decoding="async"></picture></div><div class="client-meta"><b data-org-fa="بیمارستان چشم‌پزشکی نور">Noor Eye Hospital</b><span data-i18n="healthcare">Healthcare technology</span></div><i class="client-index">13</i></article>
         <article class="client-card" style="--brand:#2d7c9c"><div class="client-logo"><span class="client-mark">NASR</span><picture><source srcset="<?php echo KDCV; ?>/assets/images/portfolio/logos/sazman-nasr.avif" type="image/avif"><img src="<?php echo KDCV; ?>/assets/images/portfolio/logos/sazman-nasr.webp" width="150" height="150" alt="سازمان نظام صنفی رایانه‌ای کشور" loading="lazy" decoding="async"></picture></div><div class="client-meta"><b data-org-fa="سازمان نظام صنفی رایانه‌ای کشور">Iran Computer Systems &amp; IT Guild Organization</b><span data-i18n="enterprise">Enterprise engagement</span></div><i class="client-index">14</i></article>
-        <article class="client-card" style="--brand:#7c4b9f"><div class="client-logo"><span class="client-mark">KHU</span><picture><source srcset="<?php echo KDCV; ?>/assets/images/portfolio/logos/kharazmi-university.avif" type="image/avif"><img src="<?php echo KDCV; ?>/assets/images/portfolio/logos/kharazmi-university.webp" width="204" height="282" alt="دانشگاه خوارزمی" loading="lazy" decoding="async"></picture></div><div class="client-meta"><b data-org-fa="دانشگاه خوارزمی">Kharazmi University</b><span data-i18n="education">Education technology</span></div><i class="client-index">15</i></article>
-        <article class="client-card" style="--brand:#d46b29"><div class="client-logo"><span class="client-mark">HP</span><picture><source srcset="<?php echo KDCV; ?>/assets/images/portfolio/logos/hamrahpeyda.avif" type="image/avif"><img src="<?php echo KDCV; ?>/assets/images/portfolio/logos/hamrahpeyda.webp" width="97" height="100" alt="فناوری همراه پیدا" loading="lazy" decoding="async"></picture></div><div class="client-meta"><b data-org-fa="فناوری همراه پیدا">Hamrah Peyda Technology</b><span data-i18n="backup">Backup &amp; recovery</span></div><i class="client-index">16</i></article>
+        <article class="client-card" style="--brand:#7c4b9f"><div class="client-logo"><span class="client-mark">KHU</span><picture><img src="<?php echo KDCV; ?>/assets/images/portfolio/logos/kharazmi-university.webp" width="204" height="282" alt="دانشگاه خوارزمی" loading="lazy" decoding="async"></picture></div><div class="client-meta"><b data-org-fa="دانشگاه خوارزمی">Kharazmi University</b><span data-i18n="education">Education technology</span></div><i class="client-index">15</i></article>
+        <article class="client-card" style="--brand:#d46b29"><div class="client-logo"><span class="client-mark">HP</span><picture><img src="<?php echo KDCV; ?>/assets/images/portfolio/logos/hamrahpeyda.webp" width="97" height="100" alt="فناوری همراه پیدا" loading="lazy" decoding="async"></picture></div><div class="client-meta"><b data-org-fa="فناوری همراه پیدا">Hamrah Peyda Technology</b><span data-i18n="backup">Backup &amp; recovery</span></div><i class="client-index">16</i></article>
         <article class="client-card" style="--brand:#c28e1f"><div class="client-logo"><span class="client-mark">MFT</span><picture><source srcset="<?php echo KDCV; ?>/assets/images/portfolio/logos/tehran-fani-center.avif" type="image/avif"><img src="<?php echo KDCV; ?>/assets/images/portfolio/logos/tehran-fani-center.webp" width="256" height="176" alt="مجتمع فنی تهران" loading="lazy" decoding="async"></picture></div><div class="client-meta"><b data-org-fa="مجتمع فنی تهران">Tehran Technical Complex</b><span data-i18n="education">Education technology</span></div><i class="client-index">17</i></article>
-        <article class="client-card" style="--brand:#6b8e23"><div class="client-logo"><span class="client-mark">HRB</span><picture><source srcset="<?php echo KDCV; ?>/assets/images/portfolio/logos/hirbodan.avif" type="image/avif"><img src="<?php echo KDCV; ?>/assets/images/portfolio/logos/hirbodan.webp" width="230" height="110" alt="مدیریت هیربدان" loading="lazy" decoding="async"></picture></div><div class="client-meta"><b data-org-fa="مدیریت هیربدان">Hirbodan Management</b><span data-i18n="enterprise">Enterprise engagement</span></div><i class="client-index">18</i></article>
+        <article class="client-card" style="--brand:#6b8e23"><div class="client-logo"><span class="client-mark">HRB</span><picture><img src="<?php echo KDCV; ?>/assets/images/portfolio/logos/hirbodan.webp" width="230" height="110" alt="مدیریت هیربدان" loading="lazy" decoding="async"></picture></div><div class="client-meta"><b data-org-fa="مدیریت هیربدان">Hirbodan Management</b><span data-i18n="enterprise">Enterprise engagement</span></div><i class="client-index">18</i></article>
         <article class="client-card" style="--brand:#1f6f8b"><div class="client-logo"><span class="client-mark">ALB</span><picture><source srcset="<?php echo KDCV; ?>/assets/images/portfolio/logos/alborz-industrial-town.avif" type="image/avif"><img src="<?php echo KDCV; ?>/assets/images/portfolio/logos/alborz-industrial-town.webp" width="280" height="80" alt="شهرک صنعتی استان البرز" loading="lazy" decoding="async"></picture></div><div class="client-meta"><b data-org-fa="شهرک صنعتی استان البرز">Alborz Industrial Town</b><span data-i18n="infrastructure">Infrastructure &amp; continuity</span></div><i class="client-index">19</i></article>
         <article class="client-card" style="--brand:#b8692c"><div class="client-logo"><span class="client-mark">AAA</span><picture><source srcset="<?php echo KDCV; ?>/assets/images/portfolio/logos/aliazh-josh-ariya.avif" type="image/avif"><img src="<?php echo KDCV; ?>/assets/images/portfolio/logos/aliazh-josh-ariya.webp" width="460" height="460" alt="آلیاژ جوش آریا" loading="lazy" decoding="async"></picture></div><div class="client-meta"><b data-org-fa="آلیاژ جوش آریا">Aliazh Josh Ariya</b><span data-i18n="enterprise">Enterprise engagement</span></div><i class="client-index">20</i></article>
         <article class="client-card" style="--brand:#0f5c7a"><div class="client-logo"><span class="client-mark">SOO</span><picture><source srcset="<?php echo KDCV; ?>/assets/images/portfolio/logos/nisoc.avif" type="image/avif"><img src="<?php echo KDCV; ?>/assets/images/portfolio/logos/nisoc.webp" width="240" height="64" alt="مناطق نفت‌خیز جنوب" loading="lazy" decoding="async"></picture></div><div class="client-meta"><b data-org-fa="مناطق نفت‌خیز جنوب">South Oil Regions</b><span data-i18n="infrastructure">Infrastructure &amp; continuity</span></div><i class="client-index">21</i></article>
@@ -116,15 +117,15 @@
         <p class="kdcv-foot-legal">All rights reserved<br>© 2026 Mohammad Ali Kohandezh</p>
       </div></footer>
   <script src="<?php echo KDCV; ?>/assets/js/cybernetic-grid.min.js?v=86" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/portfolio.min.js?v=86" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=85" defer></script>
-  <script src="../assets/js/page-context.min.js?v=86" defer></script>
-  <script src="../assets/js/lazy-bundle.min.js?v=90" defer></script>
-  <script src="../assets/js/kohan-avatar.min.js?v=105" defer></script>
-  <script src="../assets/js/kohan-avatar-enhance.min.js?v=90" defer></script>
-  <script src="../assets/js/page-chrome.min.js?v=85" defer></script>
-  <script src="../assets/js/chat-ui.min.js?v=91" defer></script>
-  <script src="../assets/js/hud-button.min.js?v=81" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/portfolio.min.js?v=87" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=106" defer></script>
+  <script src="../assets/js/page-context.min.js?v=107" defer></script>
+  <script src="../assets/js/lazy-bundle.min.js?v=111" defer></script>
+  <script src="../assets/js/kohan-avatar.min.js?v=126" defer></script>
+  <script src="../assets/js/kohan-avatar-enhance.min.js?v=111" defer></script>
+  <script src="../assets/js/page-chrome.min.js?v=95" defer></script>
+  <script src="../assets/js/chat-ui.min.js?v=111" defer></script>
+  <script src="../assets/js/hud-button.min.js?v=102" defer></script>
     <?php wp_footer(); ?>
 </body>
 </html>
