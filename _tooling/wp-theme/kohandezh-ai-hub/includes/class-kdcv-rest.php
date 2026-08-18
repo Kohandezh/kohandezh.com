@@ -112,7 +112,7 @@ class KDCV_AI_REST {
 			   carrying an X-Forwarded-For header returned an unauthenticated 500
 			   — and would have broken the chat outright the day Cloudflare goes
 			   in front, since a proxy sets that header on every request. */
-			$xff_parts = array_filter( array_map( 'trim', explode( ',', $forwarded ) ) );
+			$xff_parts = array_values( array_filter( array_map( 'trim', explode( ',', $forwarded ) ) ) );
 			if ( ! empty( $xff_parts ) ) {
 				$ip = $xff_parts[0];
 			}

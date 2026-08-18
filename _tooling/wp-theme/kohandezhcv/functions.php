@@ -8,7 +8,7 @@
  */
 
 define( 'KDCV', get_template_directory_uri() );
-define( 'KDCV_CONTENT_SCHEMA_VERSION', '2.0.1' ); // bump: Russian CV page (ru was missing from required pages)
+define( 'KDCV_CONTENT_SCHEMA_VERSION', '2.0.2' ); // bump: Russian CV page (ru was missing from required pages)
 
 add_action( 'after_setup_theme', function () {
 	add_theme_support( 'post-thumbnails' );
@@ -479,10 +479,14 @@ function kdcv_resolve_country() {
 		return strtoupper( $cached );
 	}
 
-	// ip-api.com free tier: HTTP only, 45 req/min, JSON. fields=countryCode
+	// ip-api.com free tier: HTTP only (https 403s — verified), 45 req/min, JSON.
+	// The cleartext call is a KNOWN privacy trade-off: the visitor IP is visible
+	// to the network. Switching the scheme to https does not fix that, it just
+	// kills geo-routing silently — only a paid/HTTPS provider actually does.
+	// fields=countryCode
 	// keeps payload tiny. Timeout 2s — if the API is slow/down we cache a
 	// short-lived failure marker and fall through to English.
-	$url  = 'https://ip-api.com/json/' . rawurlencode( $ip ) . '?fields=countryCode';
+	$url  = 'http://ip-api.com/json/' . rawurlencode( $ip ) . '?fields=countryCode';
 	$resp = wp_remote_get( $url, array( 'timeout' => 2 ) );
 	if ( is_wp_error( $resp ) ) {
 		set_transient( $cache_key, '_FAIL_', 5 * MINUTE_IN_SECONDS );
@@ -926,6 +930,12 @@ function kdcv_harden_htaccess() {
 		'<FilesMatch "(^readme\.html$|^license\.txt$|^wp-config-sample\.php$)">',
 		'  Require all denied',
 		'</FilesMatch>',
+		'# FilesMatch tests BASENAMES, so ".git/config" (basename "config") is never',
+		'# caught by a dotfile rule. These are PATH rules, and they are what protects',
+		'# production: the copy in the repo root .htaccess governs only the static',
+		'# deploy, while this generator writes the file WordPress actually serves.',
+		'RedirectMatch 404 /\\.git(/|$)',
+		'RedirectMatch 404 /\\.(env|hg|svn|bzr)(/|$)',
 		'<IfModule mod_rewrite.c>',
 		'  RewriteRule ^wp-content/debug\.log$ - [F,L]',
 		'</IfModule>',

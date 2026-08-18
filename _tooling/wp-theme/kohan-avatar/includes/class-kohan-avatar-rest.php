@@ -200,10 +200,15 @@ class Kohan_Avatar_REST {
 		$t        = $avatar->get_tts_options();
 		$text     = trim( (string) $request->get_param( 'text' ) );
 		$locale   = (string) $request->get_param( 'locale' );
-		$voice    = (string) $request->get_param( 'voice' );
-		if ( $voice === '' ) {
-			$voice = $t['voice'];
-		}
+		/* The `voice` parameter used to pass straight through to the provider as
+		   the billed `model`, on an UNAUTHENTICATED route holding a paid key —
+		   so any visitor could select a more expensive model on the owner's
+		   account. The request may now only pick from what the operator has
+		   actually configured; anything else falls back to the configured
+		   voice. */
+		$requested = (string) $request->get_param( 'voice' );
+		$allowed   = array_filter( array_map( 'trim', array( $t['voice'], 'tts-1', 'tts-1-hd' ) ) );
+		$voice     = in_array( $requested, $allowed, true ) ? $requested : (string) $t['voice'];
 		if ( $text === '' || strlen( $text ) > 1200 ) {
 			return new WP_Error( 'bad_text', 'Text required (max 1200 chars).', array( 'status' => 400 ) );
 		}
