@@ -86,6 +86,17 @@
 [data-kohan-driving] > *:not(.kohan-car) {
   visibility: hidden;
 }
+/* ...and the root's OWN sprite, which the rule above cannot reach.
+   The theme's avatar paints into child elements, so hiding children was
+   enough there. The kohan-avatar PLUGIN — the one that actually renders on
+   WordPress — paints the atlas as an inline `background-image` on the root
+   itself, so the walking sprite kept drawing underneath the car: two of him
+   at once, one running and one at the wheel. Inline styles are beaten only
+   by !important (the plugin uses the same trick for its own overlays).
+   Harmless on the theme root, which paints no background of its own. */
+[data-kohan-driving] {
+  background-image: none !important;
+}
 /* The chat panel is a child of the root on some pages and must stay usable, so
    it is exempt from the hide above. */
 [data-kohan-driving] > .kdcv-pet-panel,
