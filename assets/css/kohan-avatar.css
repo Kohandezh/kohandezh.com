@@ -20,7 +20,7 @@
   border-radius: calc(var(--kohan-avatar-radius, 32px) - 2px);
 }
 
-.kohan-size-controls {
+.kdcv-pet-root .kohan-size-controls {
   position: absolute;
   z-index: 8;
   inset-inline-start: calc(var(--kohan-avatar-size, 132px) + 7px);
@@ -216,7 +216,7 @@
    tucked under the avatar, which is bounded by the avatar's own footprint
    and so can't overflow regardless of where it sits. */
 @media (max-width: 767.98px) {
-    .kohan-size-controls {
+    .kdcv-pet-root .kohan-size-controls {
         inset-inline-start: 50%;
         top: 100%;
         flex-direction: row;
@@ -224,7 +224,7 @@
         margin-top: 6px;
         transform: translateX(-50%);
     }
-    html[dir="rtl"] .kohan-size-controls { transform: translateX(50%); }
+    html[dir="rtl"] .kdcv-pet-root .kohan-size-controls { transform: translateX(50%); }
 }
 
 /* Directional drag suspension. JS updates these variables at most once per
@@ -252,7 +252,7 @@
    The eye is a sibling of .kohan-size-controls, not a child, because the
    whole control group is hidden together with the avatar. An eye nested
    inside it would disappear with everything else and strand the user. */
-.kohan-eye-button {
+.kdcv-pet-root .kohan-eye-button {
     /* A flex item at the top of .kohan-size-controls — directly above "−",
        sharing the column's gap and alignment. It used to be absolutely
        positioned with a guessed `bottom: calc(50% + 79px)`, which could not
@@ -278,11 +278,11 @@
     touch-action: manipulation;
     transition: border-color .2s ease, background .2s ease, color .2s ease;
 }
-.kohan-eye-button:hover { border-color: #6cf3a4; background: rgba(20, 35, 31, .96); }
-.kohan-eye-button:focus-visible { outline: 2px solid #6cf3a4; outline-offset: 2px; }
-.kohan-eye-button .kohan-eye-closed { display: none; }
-.kohan-eye-button[aria-pressed="true"] .kohan-eye-open { display: none; }
-.kohan-eye-button[aria-pressed="true"] .kohan-eye-closed { display: block; }
+.kdcv-pet-root .kohan-eye-button:hover { border-color: #6cf3a4; background: rgba(20, 35, 31, .96); }
+.kdcv-pet-root .kohan-eye-button:focus-visible { outline: 2px solid #6cf3a4; outline-offset: 2px; }
+.kdcv-pet-root .kohan-eye-button .kohan-eye-closed { display: none; }
+.kdcv-pet-root .kohan-eye-button[aria-pressed="true"] .kohan-eye-open { display: none; }
+.kdcv-pet-root .kohan-eye-button[aria-pressed="true"] .kohan-eye-closed { display: block; }
 
 /* Hidden state: everything goes except the eye itself. */
 .kdcv-pet-root[data-kohan-hidden="true"] .kdcv-pet-trigger,
@@ -318,17 +318,17 @@
        200px strip that covered the CEO headline. */
     .kdcv-pet-root { --kohan-avatar-size: 84px !important; }
     .kdcv-pet-root .kohan-size-button { display: none !important; }
-    .kohan-size-controls { width: 44px; height: 44px; gap: 0; }
-    .kohan-size-controls .kohan-eye-button { display: grid !important; }
-    .kohan-eye-button { top: auto; bottom: -34px; inset-inline-start: 50%; transform: translateX(-50%); }
-    html[dir="rtl"] .kohan-eye-button { transform: translateX(50%); }
+    .kdcv-pet-root .kohan-size-controls { width: 44px; height: 44px; gap: 0; }
+    .kdcv-pet-root .kohan-size-controls .kohan-eye-button { display: grid !important; }
+    .kdcv-pet-root .kohan-eye-button { top: auto; bottom: -34px; inset-inline-start: 50%; transform: translateX(-50%); }
+    html[dir="rtl"] .kdcv-pet-root .kohan-eye-button { transform: translateX(50%); }
     .kdcv-pet-root[data-kohan-hidden="true"] .kohan-eye-button { bottom: 0; inset-inline-start: auto; transform: none; }
 }
 @media (pointer: coarse) {
-    .kohan-eye-button { width: 44px; min-width: 44px; height: 44px; min-height: 44px; border-radius: 12px; }
+    .kdcv-pet-root .kohan-eye-button { width: 44px; min-width: 44px; height: 44px; min-height: 44px; border-radius: 12px; }
 }
 @media (prefers-reduced-motion: reduce) {
-    .kohan-eye-button { transition: none; }
+    .kdcv-pet-root .kohan-eye-button { transition: none; }
 }
 
 
@@ -387,14 +387,14 @@
 
 /* The control buttons pick up the same surface so nothing looks bolted on. */
 .kdcv-pet-root .kohan-size-button,
-.kohan-eye-button {
+.kdcv-pet-root .kohan-eye-button {
     background-color: var(--kdcv-badge-bg);
     background-image: var(--kdcv-badge-dots);
     border-color: var(--kdcv-badge-bd);
     box-shadow: var(--kdcv-badge-shadow);
 }
 .kdcv-pet-root .kohan-size-button:hover,
-.kohan-eye-button:hover { box-shadow: var(--kdcv-badge-shadow-hover); }
+.kdcv-pet-root .kohan-eye-button:hover { box-shadow: var(--kdcv-badge-shadow-hover); }
 
 @media (prefers-reduced-motion: reduce) {
     .kdcv-pet-root .kdcv-pet-image-shell::before { transition: none; }
@@ -441,12 +441,12 @@
    stacked vertically and each ::before is centred on its own button, so the
    nearest edge always belongs to the button under the finger. */
 .kdcv-pet-root .kohan-size-button,
-.kohan-eye-button {
+.kdcv-pet-root .kohan-eye-button {
     position: relative;
 }
 
 .kdcv-pet-root .kohan-size-button::before,
-.kohan-eye-button::before {
+.kdcv-pet-root .kohan-eye-button::before {
     content: "";
     position: absolute;
     inset: -8px;

@@ -86,7 +86,16 @@
   position: absolute;
   top: 50%;
   translate: 0 -50%;
+  /* The theme ships rules for these same class names for ITS avatar. They are
+     scoped to .kdcv-pet-root now, but stating the layout fully here means this
+     column cannot be reshaped by anything that arrives later in the cascade —
+     one stray `width: 44px` collapsed the whole column onto the character. */
+  transform: none;
+  width: max-content;
+  height: auto;
   display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
   gap: 6px;
   z-index: 30;
   /* Default dock: to the right of the avatar (it parks bottom-left). */
