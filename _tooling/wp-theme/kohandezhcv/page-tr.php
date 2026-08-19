@@ -2466,7 +2466,7 @@
     <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=108" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/cwv-rum.min.js" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=126" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=111" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=112" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kdcv-interaction-fix.js?v=5" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=112" defer></script>

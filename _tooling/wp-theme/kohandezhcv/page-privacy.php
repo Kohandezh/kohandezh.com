@@ -173,7 +173,7 @@
   <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=107" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=111" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=126" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=111" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=112" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=15" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=96" defer></script>

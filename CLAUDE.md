@@ -249,6 +249,29 @@ wp-admin visit. **Bump it whenever you add new admin_init work.**
     copies whenever either side changes. Only the `/wp-content/themes/…` path
     prefixes and manifest formatting are meant to differ.
 
+38. **On WordPress the AVATAR IS THE PLUGIN'S, not the theme's.** `kohan-avatar`
+    mounts `.kohan-avatar-root` and sets `window.__KDCV_PET_BOOTSTRAPPED__`, so
+    the theme's `ai-pet.js` never builds `.kdcv-pet-root` — that selector matches
+    nothing in production while matching fine on the static dev server. Any
+    avatar-adjacent script must name BOTH roots. `kohan-avatar-enhance.js` named
+    only the theme root, so `boot()` retried forever, the double-click tween and
+    the arrow-key loop never bound, and `data-kohan-walking` was never written —
+    which is the one attribute `kohan-drive.js` watches, so the McLaren was
+    built, positioned, and then waited for a signal that could not arrive.
+    Test avatar features against a real WP install, not only `dev-server.php`.
+39. **The plugin ships its OWN copy of `assets/kohan/spritesheet.webp`.** It was a
+    lower-quality re-encode of the same 1536x2288 8x11 atlas — 460 KB against the
+    theme's 794 KB — with visible compression blocks around the face and hands.
+    Because the plugin's avatar is the one that renders, that degraded copy was
+    what every visitor saw. The two files must be kept identical; after changing
+    `assets/kohan/`, copy it into `_tooling/wp-theme/kohan-avatar/assets/kohan/`
+    and rebuild the plugin zip, or the theme's artwork never reaches anyone.
+40. **A hidden browser tab does not advance CSS animations**, so
+    `animation: ... both` reports its `from` keyframe forever. The drive-mode car
+    read `opacity: 0` at every step of a correct state machine purely because of
+    this. Suppress the animation (`el.style.animation = "none"`) and read the
+    DECLARED value before concluding an element is invisible. Sibling of gotcha 19.
+
 ## Environment
 
 - **Editor:** any (repo is plain HTML/CSS/JS/PHP).
