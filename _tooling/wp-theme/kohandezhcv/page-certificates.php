@@ -559,8 +559,8 @@
 </script>
 <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=111" defer></script>
 <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=126" defer></script>
-<script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=112" defer></script>
-<script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2" defer></script>
+<script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=113" defer></script>
+<script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=3" defer></script>
 <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=112" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=106" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=95" defer></script>

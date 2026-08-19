@@ -230,7 +230,10 @@ class Kohan_Avatar {
 		$config = array(
 			'assetBase' => esc_url_raw( KOHAN_AVATAR_URL . 'assets/kohan' ),
 			'ariaLabel' => 'Kohan avatar',
-			'chatRoute' => esc_url_raw( rest_url( 'kdcv/v1/chat' ) ),
+			// kdcv/v1/chat has never existed. The AI Hub registers kdcv/v1/ask and
+			// nothing else, so every message the avatar sent 404'd: the bubble sat
+			// on "pending" forever and the assistant looked dead.
+			'chatRoute' => esc_url_raw( rest_url( 'kdcv/v1/ask' ) ),
 			'options'   => array(
 				'enabled'         => true,
 				'position'        => sanitize_key( $o['position'] ),

@@ -124,13 +124,58 @@
     }, DOOR_MS + 160);
   }
 
-  /* The single integration point: data-kohan-walking is written by BOTH the
-     double-click tween and the arrow-key loop in kohan-avatar-enhance.js, and
-     removed the moment either finishes. */
+  /* ---- triggers ----------------------------------------------------------
+     Two independent ways in, because two different avatars can own the page.
+
+     1. `data-kohan-walking` — written by kohan-avatar-enhance.js while the
+        THEME's avatar walks. Unchanged; that path still works exactly as it
+        did, and drive mode stays a passive observer of it.
+
+     2. Our own double-click and arrow keys — needed because on WordPress the
+        avatar is the PLUGIN's, and enhance.js deliberately does not touch it
+        (moving that root detaches the plugin's chat launcher and can push the
+        avatar off-screen). So drive mode triggers itself there and moves
+        NOTHING but its own car: the avatar root keeps the position the plugin
+        gave it, the launcher and panel stay anchored to it, and the drive is
+        the car rolling in place with the door and wheel animation. */
+  var selfExit = 0;
+
+  function selfDrive(dir) {
+    window.clearTimeout(selfExit);
+    if (state === "driving") steer(dir); else enter(dir);
+    // No walk is running to tell us when to stop, so the drive is timed.
+    selfExit = window.setTimeout(exit, 2600);
+  }
+
+  function bindSelfTriggers(r) {
+    // Only when nothing else is driving the signal — the theme's avatar has
+    // enhance.js for that, and doubling up would fight it.
+    if (document.querySelector(".kdcv-pet-root")) return;
+
+    document.addEventListener("dblclick", function (e) {
+      if (!(e.target instanceof Element)) return;
+      if (e.target.closest("a,button,input,textarea,select,[contenteditable]")) return;
+      if (e.target.closest(ROOT_SEL)) return;      // double-clicking him is not a drive
+      var b = r.getBoundingClientRect();
+      selfDrive(e.clientX >= b.left + b.width / 2 ? "right" : "left");
+    });
+
+    document.addEventListener("keydown", function (e) {
+      var ae = document.activeElement;
+      if (ae && (ae.tagName === "INPUT" || ae.tagName === "TEXTAREA" || ae.isContentEditable)) return;
+      if (!ae || (ae !== r && !r.contains(ae))) return;   // avatar must be focused
+      var dir = e.key === "ArrowLeft" ? "left" : e.key === "ArrowRight" ? "right" : null;
+      if (!dir) return;
+      e.preventDefault();
+      selfDrive(dir);
+    });
+  }
+
   function watch() {
     var r = root();
     if (!r) return void setTimeout(watch, 300);
     build();
+    bindSelfTriggers(r);
 
     new MutationObserver(function () {
       var dir = r.getAttribute("data-kohan-walking");

@@ -71,3 +71,99 @@
     height: calc(113px * var(--kohan-scale));
   }
 }
+
+/* ==========================================================================
+   Eye / size controls — a column BESIDE the avatar's box
+   --------------------------------------------------------------------------
+   Built by buildControls() in kohan-avatar.js. They dock to the edge of the
+   avatar that faces the middle of the screen, so they never cover the
+   character and never hang off the side the avatar is parked on.
+
+   The root has no `overflow`, so an absolutely-positioned child is free to sit
+   outside its box. Keep it that way.
+   ========================================================================== */
+.kohan-avatar-root .kohan-size-controls {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  display: grid;
+  gap: 6px;
+  z-index: 30;
+  /* Default dock: to the right of the avatar (it parks bottom-left). */
+  inset-inline-start: 100%;
+  margin-inline-start: 8px;
+}
+
+/* Parked on a right-hand edge? Dock the column on the other side instead. */
+.kohan-avatar-root[data-position$="-right"] .kohan-size-controls {
+  inset-inline-start: auto;
+  inset-inline-end: 100%;
+  margin-inline-start: 0;
+  margin-inline-end: 8px;
+}
+
+.kohan-avatar-root .kohan-size-button,
+.kohan-avatar-root .kohan-eye-button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid rgba(108, 243, 164, 0.38);
+  border-radius: 9px;
+  background: rgba(11, 18, 18, 0.9);
+  color: #d7ffe8;
+  font: 700 16px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+
+.kohan-avatar-root .kohan-eye-button { color: #6cf3a4; font-size: 14px; }
+
+.kohan-avatar-root .kohan-size-button:hover,
+.kohan-avatar-root .kohan-eye-button:hover {
+  border-color: rgba(108, 243, 164, 0.85);
+  background: rgba(20, 35, 31, 0.96);
+}
+
+.kohan-avatar-root .kohan-size-button:focus-visible,
+.kohan-avatar-root .kohan-eye-button:focus-visible {
+  outline: 2px solid #6cf3a4;
+  outline-offset: 2px;
+}
+
+.kohan-avatar-root .kohan-size-button:disabled { opacity: 0.35; cursor: default; }
+
+/* 28px is the right PAINTED size — a 44px chrome button here would cover the
+   character these controls exist to reveal. The target is grown underneath
+   instead, so touch still gets its 44px without changing the look. */
+.kohan-avatar-root .kohan-size-button::before,
+.kohan-avatar-root .kohan-eye-button::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 12px;
+  background: transparent;
+}
+.kohan-avatar-root .kohan-size-button:disabled::before { display: none; }
+
+/* Eye glyph swaps with the toggle state. */
+.kohan-avatar-root .kohan-eye-closed { display: none; }
+.kohan-avatar-root .kohan-eye-button[aria-pressed="true"] .kohan-eye-open { display: none; }
+.kohan-avatar-root .kohan-eye-button[aria-pressed="true"] .kohan-eye-closed { display: block; }
+
+/* Eye toggled off: the CHARACTER goes, the column stays.
+   This uses its own attribute rather than `data-kohan-hidden`, which the
+   plugin's goodbye-smoke sequence owns and implements as `opacity: 0` on the
+   root. Opacity applies to the entire subtree — a child cannot opt out — so
+   borrowing that attribute would fade this column away too and leave no way
+   back. Dropping the background instead removes only the sprite. */
+.kohan-avatar-root[data-kohan-eye-hidden="true"] {
+  background-image: none !important;
+}
+.kohan-avatar-root[data-kohan-eye-hidden="true"] .kohan-size-button { display: none; }

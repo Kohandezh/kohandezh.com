@@ -165,6 +165,7 @@
     root.style.setProperty("--kohan-scale", scale);
 
     document.body.appendChild(root);
+    buildControls();
 
     // Preload the atlas so first paint has no flash.
     atlas = new Image();
@@ -555,6 +556,113 @@
         .catch(function () { return null; });
     },
   };
+  /* ---- eye / size controls, beside the avatar --------------------------
+     These used to live in the THEME (kohan-avatar.js + kdcv-interaction-fix.js)
+     and were gated on `#kdcv-pet-root`, an element that exists only on the
+     static build. On WordPress this plugin owns the avatar, that id is never
+     in the document, and the controls were therefore never created at all.
+     They belong to whoever owns the avatar, so they are built here.
+
+     Placement is BESIDE the avatar's box — a column pinned to the edge that
+     faces the middle of the screen, so it never sits on top of the character
+     and never runs off the edge it is docked to. */
+  var SCALES = [0.7, 0.85, 1, 1.2, 1.4];
+  var SCALE_KEY = "kohanAvatarScale";
+  var CTRL_TEXT = {
+    en: { group: "Avatar controls", bigger: "Bigger", smaller: "Smaller", hide: "Hide avatar", show: "Show avatar" },
+    fa: { group: "کنترل‌های آواتار", bigger: "بزرگ‌تر", smaller: "کوچک‌تر", hide: "پنهان کردن آواتار", show: "نمایش آواتار" },
+    ar: { group: "عناصر التحكم", bigger: "أكبر", smaller: "أصغر", hide: "إخفاء الشخصية", show: "إظهار الشخصية" }
+  };
+
+  function ctrlText() {
+    var l = (document.documentElement.getAttribute("lang") || "en").slice(0, 2).toLowerCase();
+    return CTRL_TEXT[l] || CTRL_TEXT.en;
+  }
+
+  function readScale() {
+    var v;
+    try { v = parseFloat(window.localStorage.getItem(SCALE_KEY)); } catch (e) { v = NaN; }
+    return SCALES.indexOf(v) > -1 ? v : (parseFloat(OPTS.scale) || 1);
+  }
+
+  function writeScale(v) {
+    try { window.localStorage.setItem(SCALE_KEY, String(v)); } catch (e) {}
+  }
+
+  function ctrlButton(cls, label, glyph) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = cls;
+    b.setAttribute("aria-label", label);
+    b.title = label;
+    if (glyph) b.textContent = glyph;
+    // The root is draggable (cursor: grab, touch-action: none), so a press on a
+    // control must never begin a drag of the character underneath it.
+    ["pointerdown", "mousedown", "touchstart"].forEach(function (ev) {
+      b.addEventListener(ev, function (e) { e.stopPropagation(); }, { passive: true });
+    });
+    return b;
+  }
+
+  function buildControls() {
+    if (!root || root.querySelector(".kohan-size-controls")) return;
+    var t = ctrlText();
+
+    var wrap = document.createElement("div");
+    wrap.className = "kohan-size-controls";
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", t.group);
+
+    var eye = ctrlButton("kohan-eye-button", t.hide, "");
+    eye.innerHTML = '<span class="kohan-eye-open" aria-hidden="true">◉</span>' +
+                    '<span class="kohan-eye-closed" aria-hidden="true">◌</span>';
+    eye.setAttribute("aria-pressed", "false");
+
+    var minus = ctrlButton("kohan-size-button", t.smaller, "−");
+    var plus  = ctrlButton("kohan-size-button", t.bigger, "+");
+
+    function applyScale(v) {
+      root.style.setProperty("--kohan-scale", v);
+      writeScale(v);
+      var i = SCALES.indexOf(v);
+      minus.disabled = i <= 0;
+      plus.disabled = i >= SCALES.length - 1;
+    }
+
+    minus.addEventListener("click", function (e) {
+      e.preventDefault();
+      var i = SCALES.indexOf(readScale());
+      applyScale(SCALES[Math.max(0, (i < 0 ? 2 : i) - 1)]);
+    });
+    plus.addEventListener("click", function (e) {
+      e.preventDefault();
+      var i = SCALES.indexOf(readScale());
+      applyScale(SCALES[Math.min(SCALES.length - 1, (i < 0 ? 2 : i) + 1)]);
+    });
+    eye.addEventListener("click", function (e) {
+      e.preventDefault();
+      // Deliberately NOT `data-kohan-hidden` — that one belongs to the
+      // goodbye-smoke sequence, which sets `opacity: 0` on the root. Opacity
+      // applies to the whole subtree, so reusing it would fade this control
+      // column to nothing as well and strand the visitor with no way to bring
+      // the avatar back. Our attribute removes the sprite and leaves the
+      // column at full strength.
+      var nowHidden = root.getAttribute("data-kohan-eye-hidden") !== "true";
+      if (nowHidden) root.setAttribute("data-kohan-eye-hidden", "true");
+      else root.removeAttribute("data-kohan-eye-hidden");
+      eye.setAttribute("aria-pressed", nowHidden ? "true" : "false");
+      var label = nowHidden ? t.show : t.hide;
+      eye.setAttribute("aria-label", label);
+      eye.title = label;
+    });
+
+    wrap.appendChild(eye);
+    wrap.appendChild(minus);
+    wrap.appendChild(plus);
+    root.appendChild(wrap);
+    applyScale(readScale());
+  }
+
   window.KohanAvatar = API;
 
   /* ---- lifecycle event bridge ----------------------------------------- */

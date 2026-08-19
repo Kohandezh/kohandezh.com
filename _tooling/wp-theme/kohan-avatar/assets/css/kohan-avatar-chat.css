@@ -35,8 +35,12 @@
 .kohan-chat-panel {
   position: fixed;
   z-index: 1042;
-  width: min(340px, calc(100vw - 24px));
-  max-height: min(460px, calc(100dvh - 24px));
+  /* 340x460 was too small to hold a conversation — three exchanges and the
+     log was scrolling. Sized off the viewport now, with fixed ceilings so it
+     never dominates a large screen. */
+  width: min(420px, calc(100vw - 24px));
+  height: min(640px, calc(100dvh - 120px));
+  max-height: calc(100dvh - 24px);
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
   border-radius: 20px;
@@ -196,4 +200,37 @@
   .kohan-chat-panel,
   .kohan-chat-launcher { transition: none; }
   .kohan-chat-panel::before { animation: none; }
+}
+
+/* ==========================================================================
+   Small screens — the panel becomes a sheet
+   --------------------------------------------------------------------------
+   There was no responsive rule at all: on a phone the panel kept its desktop
+   footprint and its left/top were computed from the avatar, which pushed it
+   partly off-canvas. Below 560px it spans the width and sits above the
+   avatar's corner instead of beside it. `!important` because the coordinates
+   are written inline by positionPanel().
+   ========================================================================== */
+@media (max-width: 560px) {
+  .kohan-chat-panel {
+    left: 12px !important;
+    right: 12px !important;
+    width: auto !important;
+    top: auto !important;
+    bottom: 84px !important;
+    height: min(70dvh, calc(100dvh - 140px));
+    max-height: calc(100dvh - 120px);
+    border-radius: 18px;
+  }
+}
+
+/* Comfortable reading size for the transcript — 13px was tight for Persian,
+   which sets smaller than Latin at the same nominal size. */
+.kohan-chat-msg {
+  font-size: 14px;
+}
+html[lang="fa"] .kohan-chat-msg,
+html[lang="ar"] .kohan-chat-msg {
+  font-size: 15px;
+  line-height: 1.85;
 }

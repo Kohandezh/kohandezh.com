@@ -196,7 +196,16 @@
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "same-origin",
-      body: JSON.stringify({ message: q }),
+      // kdcv/v1/ask requires `question`; `message` was silently dropped and the
+      // request failed validation even once the route was right. `locale` keeps
+      // the answer in the page's language, and `page` gives the model the
+      // context block the CV pages publish.
+      body: JSON.stringify({
+        question: q,
+        locale: LANG,
+        source: "visitor",
+        page: (window.KDCV_PAGE_CONTEXT || null)
+      }),
     })
       .then(function (r) { return r.ok ? r.json() : Promise.reject(r); })
       .then(function (j) {

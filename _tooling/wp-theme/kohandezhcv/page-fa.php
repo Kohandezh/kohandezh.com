@@ -8,7 +8,7 @@
     <title>محمدعلی کهن‌دژ - متخصص هوش مصنوعی، امنیت سایبری و زیرساخت فناوری اطلاعات</title>
     <meta name="author" content="Mohammad Ali Kohandezh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=110"></script>
+    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=111"></script>
     <meta name="description"
         content="محمدعلی کهن‌دژ — دکتریی مدیریت فناوری اطلاعات و مدیرعامل شرکت کهن سیستم فردا (KSF)؛ فعال حرفه‌ای از سال ۲۰۰۷ در هوش مصنوعی، زیرساخت فناوری اطلاعات و امنیت سایبری.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -2602,8 +2602,8 @@
     <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=108" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/cwv-rum.min.js" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=126" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=112" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=113" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=3" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kdcv-interaction-fix.js?v=5" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=112" defer></script>
 <script>

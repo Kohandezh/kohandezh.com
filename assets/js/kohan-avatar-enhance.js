@@ -16,17 +16,19 @@
   if (window.__KOHAN_ENHANCE__) return;
   window.__KOHAN_ENHANCE__ = true;
 
-  /* Two avatars can own the page. The theme mounts `.kdcv-pet-root`
-     (ai-pet.js); the kohan-avatar PLUGIN mounts `.kohan-avatar-root` and
-     sets `__KDCV_PET_BOOTSTRAPPED__` so the theme one never builds. On a
-     production WordPress install the plugin wins, so a selector that only
-     names the theme root matches nothing: boot() retried forever, the
-     double-click tween and the arrow-key loop never bound, and
-     `data-kohan-walking` was therefore never written — which is the single
-     attribute kohan-drive.js watches, so the car was built and then waited
-     for a signal that could not arrive. Both roots are named here.
-     Everything below uses generic DOM APIs on the root, so either works. */
-  var ROOT_SEL = ".kdcv-pet-root, .kohan-avatar-root";
+  /* THEME AVATAR ONLY — do not widen this to `.kohan-avatar-root`.
+     It was widened once so drive mode could see a signal, and it broke the
+     plugin's avatar: everything below repositions the root with
+     `inset/left/top/transform !important` and adds `kdcv-pet-has-position`,
+     which is correct for the theme's avatar (this file owns its layout) and
+     wrong for the plugin's (the plugin owns its own). The plugin's chat
+     launcher is `position: fixed` from CSS and never follows the root, so the
+     moment this code moved the avatar the launcher stayed behind — the button
+     stopped tracking the character and the avatar could be pushed off-screen
+     entirely. On WordPress the plugin's avatar is the one that renders, so
+     this selector matching nothing there is the CORRECT outcome.
+     Drive mode no longer depends on this file; it binds its own triggers. */
+  var ROOT_SEL = ".kdcv-pet-root";
   var PANEL_SEL = ".kdcv-pet-panel";
 
   function root() { return document.querySelector(ROOT_SEL); }
