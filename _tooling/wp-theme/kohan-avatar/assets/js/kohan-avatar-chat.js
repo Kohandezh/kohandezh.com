@@ -128,15 +128,18 @@
      bubble stayed where the avatar used to be. The avatar script announces
      every reposition with a `kohan:moved` event; a rAF gate keeps this to one
      layout read per frame while a drag streams events. */
-  var followRAF = 0;
+  var followTimer = 0;
   function followAvatar() {
-    if (followRAF) return;
-    followRAF = requestAnimationFrame(function () {
-      followRAF = 0;
+    if (followTimer) return;
+    // setTimeout, not requestAnimationFrame: rAF is paused whenever the tab is
+    // hidden, and a paused gate here left the bubble stranded until the next
+    // unrelated repaint. 16ms keeps it one update per frame while dragging.
+    followTimer = window.setTimeout(function () {
+      followTimer = 0;
       positionLauncher();
       var panel = document.querySelector(".kohan-chat-panel.is-open");
       if (panel) positionPanel();
-    });
+    }, 16);
   }
 
   function buildPanel() {
