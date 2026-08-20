@@ -579,10 +579,26 @@
     return CTRL_TEXT[l] || CTRL_TEXT.en;
   }
 
-  function readScale() {
-    var v;
-    try { v = parseFloat(window.localStorage.getItem(SCALE_KEY)); } catch (e) { v = NaN; }
-    return SCALES.indexOf(v) > -1 ? v : (parseFloat(OPTS.scale) || 1);
+  /* Snap to the NEAREST step rather than requiring an exact hit. The admin
+     setting is a free float (0.9, 1.05, …), so an exact lookup returned -1 and
+     the "smaller" button came up disabled on load — which is what "resize does
+     not work" looked like from the outside. An index is the state; the float
+     is only how it is stored. */
+  function nearestIndex(v) {
+    var best = 2, dist = Infinity;
+    for (var i = 0; i < SCALES.length; i++) {
+      var d = Math.abs(SCALES[i] - v);
+      if (d < dist) { dist = d; best = i; }
+    }
+    return best;
+  }
+
+  function readScaleIndex() {
+    var v = NaN;
+    try { v = parseFloat(window.localStorage.getItem(SCALE_KEY)); } catch (e) {}
+    if (!isFinite(v)) v = parseFloat(OPTS.scale);
+    if (!isFinite(v)) v = 1;
+    return nearestIndex(v);
   }
 
   function writeScale(v) {
@@ -621,23 +637,26 @@
     var minus = ctrlButton("kohan-size-button", t.smaller, "−");
     var plus  = ctrlButton("kohan-size-button", t.bigger, "+");
 
-    function applyScale(v) {
-      root.style.setProperty("--kohan-scale", v);
+    var index = readScaleIndex();
+
+    function applyIndex(i) {
+      index = Math.max(0, Math.min(SCALES.length - 1, i));
+      var v = SCALES[index];
+      // setProperty with a priority so nothing in either stylesheet can pin the
+      // custom property and make the buttons look inert.
+      root.style.setProperty("--kohan-scale", String(v), "important");
       writeScale(v);
-      var i = SCALES.indexOf(v);
-      minus.disabled = i <= 0;
-      plus.disabled = i >= SCALES.length - 1;
+      minus.disabled = index === 0;
+      plus.disabled = index === SCALES.length - 1;
     }
 
     minus.addEventListener("click", function (e) {
       e.preventDefault();
-      var i = SCALES.indexOf(readScale());
-      applyScale(SCALES[Math.max(0, (i < 0 ? 2 : i) - 1)]);
+      applyIndex(index - 1);
     });
     plus.addEventListener("click", function (e) {
       e.preventDefault();
-      var i = SCALES.indexOf(readScale());
-      applyScale(SCALES[Math.min(SCALES.length - 1, (i < 0 ? 2 : i) + 1)]);
+      applyIndex(index + 1);
     });
     eye.addEventListener("click", function (e) {
       e.preventDefault();
@@ -660,7 +679,7 @@
     wrap.appendChild(minus);
     wrap.appendChild(plus);
     root.appendChild(wrap);
-    applyScale(readScale());
+    applyIndex(index);
   }
 
   window.KohanAvatar = API;
