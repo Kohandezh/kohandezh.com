@@ -123,6 +123,22 @@
     launcher.style.left = (side === "right" ? r.right - 20 : r.left - 16) + "px";
   }
 
+  /* The launcher is position:fixed and was placed once at build (plus resize
+     and scroll). The avatar, however, MOVES — dragged by the visitor — and the
+     bubble stayed where the avatar used to be. The avatar script announces
+     every reposition with a `kohan:moved` event; a rAF gate keeps this to one
+     layout read per frame while a drag streams events. */
+  var followRAF = 0;
+  function followAvatar() {
+    if (followRAF) return;
+    followRAF = requestAnimationFrame(function () {
+      followRAF = 0;
+      positionLauncher();
+      var panel = document.querySelector(".kohan-chat-panel.is-open");
+      if (panel) positionPanel();
+    });
+  }
+
   function buildPanel() {
     panel = el("section", "kohan-chat-panel", { role: "dialog", "aria-label": L.title });
     dir = document.documentElement.getAttribute("dir") || "ltr";
@@ -247,6 +263,7 @@
     buildLauncher();
     window.addEventListener("resize", reflow, { passive: true });
     window.addEventListener("scroll", reflow, { passive: true });
+    if (root) root.addEventListener("kohan:moved", followAvatar);
   }
 
   if (document.readyState === "loading") {

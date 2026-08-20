@@ -424,24 +424,74 @@
     document.addEventListener("pointerdown", function (e) {
       if (e.button !== 0 || !(e.target instanceof Element)) return;
       if (!e.target.closest('[data-avatar-mascot="true"]')) return;
-      pointer = { id: e.pointerId, x: e.clientX, y: e.clientY };
+      // Never capture a press on an interactive child. setPointerCapture
+      // retargets every later pointer event — and the click composed from
+      // them — onto the ROOT, so with capture in place a real mouse press on
+      // the eye or +/- buttons produced a click on the avatar instead of the
+      // button. (A programmatic el.click() bypasses pointer events entirely,
+      // which is how this survived testing.)
+      if (e.target.closest("button, a, input, textarea, .kohan-size-controls, .kohan-chat-launcher, .kohan-chat-panel")) return;
+      pointer = { id: e.pointerId, x: e.clientX, y: e.clientY, ox: 0, oy: 0 };
+      var b = root.getBoundingClientRect();
+      pointer.ox = e.clientX - b.left;
+      pointer.oy = e.clientY - b.top;
       dragging = false;
       try { root.setPointerCapture(e.pointerId); } catch (er) {}
     }, true);
 
+    /* The drag used to play the scared overlay and nothing else — no code
+       ever updated the root's position, so the character stayed put while
+       the pointer left without him. The overlay stays; the movement is new. */
+    function placeRoot(x, y) {
+      var b = root.getBoundingClientRect();
+      var maxX = window.innerWidth - b.width;
+      var maxY = window.innerHeight - b.height;
+      var nx = Math.max(0, Math.min(maxX, x));
+      var ny = Math.max(0, Math.min(maxY, y));
+      root.style.setProperty("inset", "auto", "important");
+      root.style.setProperty("left", nx + "px", "important");
+      root.style.setProperty("top", ny + "px", "important");
+      // Near the right edge there is no room for the control column on his
+      // right — flip it to his left so it can never be pushed off screen.
+      root.setAttribute("data-kohan-side",
+        nx + b.width + 44 > window.innerWidth ? "right" : "left");
+      return { x: nx, y: ny };
+    }
+
+    function persistPosition(pos) {
+      try { window.localStorage.setItem("kohanAvatarPos", JSON.stringify(pos)); } catch (er) {}
+    }
+
+    // Restore a previous drag's position, clamped to the current viewport.
+    (function restorePosition() {
+      var raw = null;
+      try { raw = window.localStorage.getItem("kohanAvatarPos"); } catch (er) {}
+      if (!raw) return;
+      try {
+        var pos = JSON.parse(raw);
+        if (typeof pos.x === "number" && typeof pos.y === "number") placeRoot(pos.x, pos.y);
+      } catch (er) {}
+    })();
+
     document.addEventListener("pointermove", function (e) {
-      if (!pointer || pointer.id !== e.pointerId || dragging) return;
-      if (Math.hypot(e.clientX - pointer.x, e.clientY - pointer.y) < 6) return;
-      dragging = true;
-      var scared = Math.random() < 0.5;
-      root.setAttribute("data-avatar-state", "drag");
-      playOverlay({
-        asset: scared ? "fallScared" : "dragAnnoyed",
-        frameCount: 6,
-        order: [0, 1, 2, 3, 4, 5],
-        delays: [180, 180, 180, 180, 180, 240],
-        whileDragging: true,
-      });
+      if (!pointer || pointer.id !== e.pointerId) return;
+      if (!dragging) {
+        if (Math.hypot(e.clientX - pointer.x, e.clientY - pointer.y) < 6) return;
+        dragging = true;
+        var scared = Math.random() < 0.5;
+        root.setAttribute("data-avatar-state", "drag");
+        playOverlay({
+          asset: scared ? "fallScared" : "dragAnnoyed",
+          frameCount: 6,
+          order: [0, 1, 2, 3, 4, 5],
+          delays: [180, 180, 180, 180, 180, 240],
+          whileDragging: true,
+        });
+      }
+      // Keep the grab point under the finger: position = pointer - grab offset.
+      var pos = placeRoot(e.clientX - pointer.ox, e.clientY - pointer.oy);
+      persistPosition(pos);
+      root.dispatchEvent(new CustomEvent("kohan:moved", { bubbles: false }));
     }, true);
 
     function finish(e) {

@@ -176,3 +176,12 @@
   background-image: none !important;
 }
 .kohan-avatar-root[data-kohan-eye-hidden="true"] .kohan-size-button { display: none; }
+
+/* Dragged against the right edge: no room for the column on his right, so it
+   docks on his left. Written by placeRoot() on every drag frame. */
+.kohan-avatar-root[data-kohan-side="right"] .kohan-size-controls {
+  inset-inline-start: auto;
+  inset-inline-end: 100%;
+  margin-inline-start: 0;
+  margin-inline-end: 8px;
+}
