@@ -1646,6 +1646,20 @@ html[lang="fa"] .tes-text {
   unicode-bidi: plaintext;
 }
 
+/* Arabic needs the same bidi isolation Persian already had. These fields mix
+   Arabic with Latin runs on one line, so without `plaintext` the neutral
+   characters at a run boundary take the paragraph direction and visually
+   reorder the Latin fragment. */
+html[lang="ar"] .info__name,
+html[lang="ar"] .info__duty,
+html[lang="ar"] .timeline-role,
+html[lang="ar"] .timeline-desc,
+html[lang="ar"] .timeline-date,
+html[lang="ar"] .tag-item,
+html[lang="ar"] .tes-text {
+    unicode-bidi: plaintext;
+}
+
 html[lang="fa"][dir="rtl"] .offcanvas-color.offcanvas-end {
   right: auto;
   left: 0;
@@ -7129,6 +7143,12 @@ a.image-brand:focus-visible {
   .service-accordion_item .service-image:nth-child(2) {
     transform: translateX(calc(-100% + 76px));
   }
+
+/* translateX() does not mirror in RTL, so this card slid the wrong way on the
+   Persian and Arabic pages. */
+[dir="rtl"] .service-accordion_item .service-image:nth-child(2) {
+    transform: translateX(calc(100% - 76px));
+}
   .service-accordion_item .accordion-content:hover .service-image:nth-child(2) {
     transform: translateX(0);
   }

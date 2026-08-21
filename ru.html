@@ -7,7 +7,7 @@
     <title>Mohammad Ali Kohandezh — специалист по ИИ, кибербезопасности и ИТ-инфраструктуре</title>
     <meta name="author" content="Mohammad Ali Kohandezh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="assets/js/locale-router.min.js?v=111"></script>
+    <script src="assets/js/locale-router.min.js?v=112"></script>
     <meta name="description"
         content="Mohammad Ali Kohandezh — PhD в области управления информационными технологиями, генеральный директор Kohan System Farda (KSF). Профессиональный опыт с 2007 года в сфере ИИ, корпоративной ИТ-инфраструктуры, виртуализации, резервного копирования и восстановления, а также кибербезопасности.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -19,22 +19,22 @@
     <link rel="stylesheet" href="assets/icon/icomoon/style.css">
     <link rel="stylesheet" href="assets/icon/simple-line/simple-line.css">
     <!-- css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css?v=109">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css?v=110">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/swiper-bundle.min.css"></noscript>
 
 
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.min.css?v=169">
-    <link rel="stylesheet" href="assets/css/shiny-button.min.css?v=109">
-    <link rel="stylesheet" href="assets/css/limelight-nav.min.css?v=107">
-    <link rel="stylesheet" href="assets/css/pixel-canvas.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/pixel-canvas.min.css?v=108"></noscript>
-    <link rel="stylesheet" href="assets/css/glowing-effect.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/glowing-effect.min.css?v=108"></noscript>
-    <link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=125" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=125"></noscript>
-    <link rel="stylesheet" href="assets/css/kohan-drive.min.css?v=3" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/kohan-drive.min.css?v=3"></noscript>
-    <link rel="stylesheet" href="assets/css/glare-card.min.css?v=103">
-    <link rel="stylesheet" href="assets/css/hud-button.min.css?v=103">
-    <link rel="stylesheet" href="assets/css/pearl-button.min.css?v=97">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.min.css?v=170">
+    <link rel="stylesheet" href="assets/css/shiny-button.min.css?v=110">
+    <link rel="stylesheet" href="assets/css/limelight-nav.min.css?v=108">
+    <link rel="stylesheet" href="assets/css/pixel-canvas.min.css?v=109" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/pixel-canvas.min.css?v=109"></noscript>
+    <link rel="stylesheet" href="assets/css/glowing-effect.min.css?v=109" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/glowing-effect.min.css?v=109"></noscript>
+    <link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=126" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=126"></noscript>
+    <link rel="stylesheet" href="assets/css/kohan-drive.min.css?v=4" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/kohan-drive.min.css?v=4"></noscript>
+    <link rel="stylesheet" href="assets/css/glare-card.min.css?v=104">
+    <link rel="stylesheet" href="assets/css/hud-button.min.css?v=104">
+    <link rel="stylesheet" href="assets/css/pearl-button.min.css?v=98">
     <link rel="stylesheet" href="assets/css/kdcv-interaction-fix.css?v=9">
-    <link rel="stylesheet" href="assets/css/wisdom-quotes.min.css?v=113" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/wisdom-quotes.min.css?v=113"></noscript>
+    <link rel="stylesheet" href="assets/css/wisdom-quotes.min.css?v=114" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/wisdom-quotes.min.css?v=114"></noscript>
 
     <!-- Kohandezh overrides -->
     <style>
@@ -159,6 +159,26 @@
         .lang-item.is-active .text {
             color: var(--primary);
             font-weight: 600;
+        }
+
+        /* Russian typography: Inter ships only `latin` and `latin-ext`
+           subsets, so its unicode-range never covers U+0400-04FF. Cyrillic was
+           falling through to the browser's generic sans-serif while Latin runs
+           on the same line ("Kohan System Farda", "VMware") rendered in Inter
+           -- one page set in two unrelated typefaces.
+
+           Follows the zh/ja precedent: a system stack rather than a new
+           webfont. Every target platform ships a good Cyrillic face already,
+           and adding a multi-hundred-KB download to fix a fallback would cost
+           more than the problem. */
+        html[lang="ru"] body,
+        html[lang="ru"] h1, html[lang="ru"] h2, html[lang="ru"] h3,
+        html[lang="ru"] h4, html[lang="ru"] h5, html[lang="ru"] h6,
+        html[lang="ru"] p, html[lang="ru"] a, html[lang="ru"] span,
+        html[lang="ru"] li, html[lang="ru"] div, html[lang="ru"] blockquote,
+        html[lang="ru"] button, html[lang="ru"] input,
+        html[lang="ru"] select, html[lang="ru"] textarea {
+            font-family: "Inter", "PT Sans", "Segoe UI", "Helvetica Neue", Roboto, "Noto Sans", Arial, sans-serif;
         }
         .demo-mode-toggle {
             display: flex;
@@ -572,7 +592,7 @@
     }
     </script>
     <!-- ===== /SEO BLOCK ===== -->
-  <link rel="stylesheet" href="assets/css/chat-ui.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/chat-ui.min.css?v=108"></noscript>
+  <link rel="stylesheet" href="assets/css/chat-ui.min.css?v=109" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/chat-ui.min.css?v=109"></noscript>
   <!-- ProfilePage: Google's container type for a person's own page. It
        points at the Person node declared above by @id rather than
        repeating it, adds the freshness dates answer engines look for,
@@ -1050,7 +1070,7 @@
                                 <div class="box-counter effectFade fadeUp no-div">
                                     <div class="wg-counter">
                                         <p class="counter h1 d-flex font-2 letter-space--2">
-                                            <span class="number" data-speed="1000" data-to="18">0</span>
+                                            <span class="number" data-speed="1000" data-to="18" data-from="0">18</span>
                                             +
                                         </p>
                                         <p class="text text-black-56 text-body-3">
@@ -1059,7 +1079,7 @@
                                     </div>
                                     <div class="wg-counter">
                                         <p class="counter h1 d-flex font-2 letter-space--2">
-                                            <span class="number" data-speed="1000" data-to="43">0</span>
+                                            <span class="number" data-speed="1000" data-to="43" data-from="0">43</span>
                                             +
                                         </p>
                                         <p class="text text-black-56 text-body-3">
@@ -1415,177 +1435,242 @@
                                         <div class="prg-line"></div>
                                     </div>
                                     <!-- Item 1 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
-                                        <p class="timeline-date text-black-56">Сейчас</p>
+<!-- CV:BEGIN generated from assets/data/cv.json by _tooling/cv/build.py -- do not edit by hand -->
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="phd-candidate" data-cv-type="education">
+                                        <p class="timeline-date text-black-56">наст. время</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
-                                                    src="assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Соискатель степени PhD</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                В настоящее время получаю вторую докторскую степень, одновременно возглавляя KSF.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Соискатель степени PhD</p>
+                                                <p class="timeline-desc text-black-56">В настоящее время получаю вторую докторскую степень, одновременно возглавляя KSF.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                                                        <div class="timeline-item effectFade fadeUp no-div">
-                                        <p class="timeline-date text-black-56">2026 — настоящее время</p>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="national-ai-platform" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">2026 — наст. время</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img loading="lazy" width="32" height="32" src="assets/images/item/sako.webp" alt="Национальная платформа ИИ с открытым исходным кодом">
+                                                <img class="image-switch" data-dark="assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Разработчик — национальная платформа ИИ с открытым исходным кодом</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">Участник разработки национальной платформы ИИ с открытым исходным кодом в Иране.</p>
-                                            <figure class="sako-project-visual">
-                                                <img src="assets/images/portfolio/sako-platform-concept.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Концептуальная редакционная визуализация открытой модульной инфраструктуры национальной ИИ-платформы">
-                                            </figure>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Разработчик — национальная платформа ИИ с открытым исходным кодом</p>
+                                                <p class="timeline-desc text-black-56">Участник разработки национальной платформы ИИ с открытым исходным кодом в Иране.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item 2 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
-                                        <p class="timeline-date text-black-56">2024 — настоящее время</p>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="ksf-ceo" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">2024 - наст. время</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="assets/images/item/edu-ksf.svg?v=2" loading="lazy" width="32"
-                                                    height="32" src="assets/images/item/edu-ksf.svg?v=2" alt="Kohan System Farda">
+                                                <img class="image-switch" data-dark="assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Генеральный директор — Kohan System Farda
-                                                (KSF)</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Руковожу работами в области ИИ, кибербезопасности и ИТ-инфраструктуры — включая
-                                                платформу ИИ-ассистента Padyar, платформу ИИ-агентов, а также продукты HomaYar,
-                                                MeetYar, БлогYar, NetYar и ГлавнаяYar.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Генеральный директор — Kohan System Farda (KSF)</p>
+                                                <p class="timeline-desc text-black-56">Руковожу продуктами в сфере искусственного интеллекта, услугами кибербезопасности и корпоративной инфраструктурой, включая Padyar, HomaYar, MeetYar и BlogYar.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item 3 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="phd-it-management" data-cv-type="education">
                                         <p class="timeline-date text-black-56">2018 - 2023</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
-                                                    src="assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">PhD — менеджмент ИТ,
-                                                умный бизнес</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Исламский университет Азад, Центральный тегеранский филиал. Завершено параллельно
-                                                с полноценной работой над инфраструктурой.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Доктор философии (PhD) — менеджмент информационных технологий, интеллектуальный бизнес</p>
+                                                <p class="timeline-desc text-black-56">Исламский университет Азад, Центральный Тегеранский филиал · средний балл 17,70/20.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item 4 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
-                                        <p class="timeline-date text-black-56">2018 - 2023</p>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="modaberan" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Jul 2018 - 2023</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="assets/images/item/edu-3_dark.svg?v=2" width="120" height="32"
-                                                    src="assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Старший специалист технической поддержки
-                                                — Modaberan Fanavari Pasargad</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Виртуализация, инфраструктура резервного копирования, решения VMware
-                                                и корпоративные системы хранения данных.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Ведущий инженер компьютерных сетей и систем — Modaberan Fanavari Pasargad</p>
+                                                <p class="timeline-desc text-black-56">Корпоративные сети, продукты в области кибербезопасности, инфраструктура резервного копирования, VMware, решения для хранения данных и техническая поддержка.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item 5 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="saba-safe-village" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">2018 - 2019</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Преподаватель (по совместительству) — Saba Safe Village</p>
+                                                <p class="timeline-desc text-black-56">Проводил обучение по Backup Exec, кибербезопасности и инфраструктуре.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="haft-tappeh" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Sep 2016 - Jul 2018</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Ведущий инженер компьютерных сетей и систем — Haft Tappeh Sugarcane Agro-Industry Co.</p>
+                                                <p class="timeline-desc text-black-56">Управлял ИТ-инфраструктурой, виртуализацией, корпоративными сетями, мониторингом безопасности и автоматизацией.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="msc-it-management" data-cv-type="education">
                                         <p class="timeline-date text-black-56">2015 - 2017</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
-                                                    src="assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">MSc — менеджмент ИТ,
-                                                электронный бизнес</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Тегеранский университет.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Магистр (MSc) — менеджмент информационных технологий, электронный бизнес</p>
+                                                <p class="timeline-desc text-black-56">Тегеранский университет · средний балл 15,97/20.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
-                                        <p class="timeline-date text-black-56">2016 - 2018</p>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="golzar-ettesal" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Nov 2015 - Sep 2016</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="assets/images/item/edu-3_dark.svg?v=2" loading="lazy" width="120" height="32"
-                                                    src="assets/images/item/edu-3.svg?v=2" alt="">
+                                                <img class="image-switch" data-dark="assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Инженер компьютерных сетей и систем &mdash; Haft Tappeh Sugarcane</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Старейший сахарный завод Ирана, основан в 1960-х годах в Шуше, Хузестан.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Ведущий инженер компьютерных сетей — Golzar Ettesal</p>
+                                                <p class="timeline-desc text-black-56">Оказывал услуги по корпоративным сетям, инфраструктуре и технической поддержке.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
-                                        <p class="timeline-date text-black-56">2013 - 2015</p>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="azad-university" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">2014 - 2016</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="assets/images/item/edu-3_dark.svg?v=2" loading="lazy" width="120" height="32"
-                                                    src="assets/images/item/edu-3.svg?v=2" alt="">
+                                                <img class="image-switch" data-dark="assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Старший инженер компьютерных сетей &mdash; Power Control Engineering</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Промышленные системы электроснабжения и управления (powercontrol.ir).
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Ведущий специалист по сетям и Интернету — Исламский университет Азад</p>
+                                                <p class="timeline-desc text-black-56">Администрировал сетевые и Интернет-услуги в Центральном Тегеранском филиале.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="power-control" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Dec 2013 - Nov 2015</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Инженер компьютерных сетей и систем — Power Control Engineering</p>
+                                                <p class="timeline-desc text-black-56">Проектировал, обслуживал и поддерживал компьютерные сети и системы.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="mca-computer-software" data-cv-type="education">
                                         <p class="timeline-date text-black-56">2011 - 2013</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="assets/images/item/edu-3_dark.svg?v=2" loading="lazy" width="120" height="32"
-                                                    src="assets/images/item/edu-3.svg?v=2" alt="">
+                                                <img class="image-switch" data-dark="assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Аналитик информационных систем &mdash; Negarehia</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Поставщик решений для резервного копирования и хранения данных (negarehia.com).
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">MCA — технологии компьютерного программного обеспечения</p>
+                                                <p class="timeline-desc text-black-56">Мешхедский университет им. Фирдоуси · средний балл 16,72/20.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
-                                        <p class="timeline-date text-black-56">2011 - 2013</p>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="negareh" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Aug 2011 - Dec 2013</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="assets/images/item/edu-2_dark.svg?v=2" loading="lazy" width="29" height="32"
-                                                    src="assets/images/item/edu-2.svg?v=2" alt="">
+                                                <img class="image-switch" data-dark="assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">MCA &mdash; технологии компьютерного программного обеспечения</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Мешхедский университет им. Фирдоуси &middot; средний балл 16,72/20.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Инженер компьютерных сетей — Negareh Information Analysts</p>
+                                                <p class="timeline-desc text-black-56">Обеспечивал хранение данных, резервное копирование, мониторинг сетей и поддержку систем для корпоративных заказчиков.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="best-design" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">2010 - 2011</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">ИТ-специалист (по совместительству) — Best Design</p>
+                                                <p class="timeline-desc text-black-56">Обеспечивал поддержку сетей и ИТ для рабочих станций отдела дизайна интерьеров и офисных систем.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="novin-gostar-aysa" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Oct 2009 - Aug 2011</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Инженер компьютерных сетей — Novin Gostar-e Aysa</p>
+                                                <p class="timeline-desc text-black-56">Выполнял установку, настройку и обслуживание сетевых и компьютерных систем.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="culham" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Mar - Oct 2009</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Инженер компьютерных сетей и систем — Culham Engineering</p>
+                                                <p class="timeline-desc text-black-56">Обеспечивал поддержку офисных операций, компьютерных сетей и систем.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="associate-computer-software" data-cv-type="education">
                                         <p class="timeline-date text-black-56">2007 - 2009</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="assets/images/item/edu-2_dark.svg?v=2" loading="lazy" width="29" height="32"
-                                                    src="assets/images/item/edu-2.svg?v=2" alt="">
+                                                <img class="image-switch" data-dark="assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Степень ассоциата &mdash; вычислительная техника, Исламский университет Азад</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Основы аппаратного обеспечения и компьютерных сетей.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Степень ассоциата — разработка компьютерного программного обеспечения</p>
+                                                <p class="timeline-desc text-black-56">Исламский университет Азад, Фирузкухский филиал · завершено в июле 2009 года.</p>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="amen-behin" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Jul 2007 - Mar 2009</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Эксперт по аппаратному обеспечению и компьютерным сетям — Amen Behin System</p>
+                                                <p class="timeline-desc text-black-56">Оказывал поддержку компьютерного оборудования, сетей и систем.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- CV:END -->
                                 </div>
                             </div>
                             <!-- /Education &amp; Experience -->
@@ -2087,7 +2172,7 @@
                                             <div class="progress-line" data-progress="80">
                                                 <p class="progress-num text-caption">
                                                     <span class="counter">
-                                                        <span class="number" data-speed="1500" data-to="80">10</span>
+                                                        <span class="number" data-speed="1500" data-to="80" data-from="0">80</span>
                                                         %
                                                     </span>
                                                 </p>
@@ -2111,7 +2196,7 @@
                                             <div class="progress-line" data-progress="90">
                                                 <p class="progress-num text-caption">
                                                     <span class="counter">
-                                                        <span class="number" data-speed="1500" data-to="90">10</span>
+                                                        <span class="number" data-speed="1500" data-to="90" data-from="0">90</span>
                                                         %
                                                     </span>
                                                 </p>
@@ -2134,7 +2219,7 @@
                                             <div class="progress-line" data-progress="85">
                                                 <p class="progress-num text-caption">
                                                     <span class="counter">
-                                                        <span class="number" data-speed="1500" data-to="85">10</span>
+                                                        <span class="number" data-speed="1500" data-to="85" data-from="0">85</span>
                                                         %
                                                     </span>
                                                 </p>
@@ -2157,7 +2242,7 @@
                                             <div class="progress-line" data-progress="35">
                                                 <p class="progress-num text-caption">
                                                     <span class="counter">
-                                                        <span class="number" data-speed="1500" data-to="35">10</span>
+                                                        <span class="number" data-speed="1500" data-to="35" data-from="0">35</span>
                                                         %
                                                     </span>
                                                 </p>
@@ -2177,7 +2262,7 @@
                                         </div>
                                         <div class="tech-progress">
                                             <div class="progress-line" data-progress="100">
-                                                <p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="100">10</span>%</span></p>
+                                                <p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="100" data-from="0">100</span>%</span></p>
                                             </div>
                                         </div>
                                     </li>
@@ -2194,7 +2279,7 @@
                                         </div>
                                         <div class="tech-progress">
                                             <div class="progress-line" data-progress="85">
-                                                <p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="85">10</span>%</span></p>
+                                                <p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="85" data-from="0">85</span>%</span></p>
                                             </div>
                                         </div>
                                     </li>
@@ -2299,7 +2384,7 @@
                                         <div class="box-counter effectFade fadeUp no-div">
                                             <div class="wg-counter">
                                                 <p class="counter h1 d-flex font-2 letter-space--2 text-black-72">
-                                                    <span class="number" data-speed="1000" data-to="100">0</span>
+                                                    <span class="number" data-speed="1000" data-to="100" data-from="0">100</span>
                                                     +
                                                 </p>
                                                 <p class="text text-black-56">
@@ -2308,7 +2393,7 @@
                                             </div>
                                             <div class="wg-counter">
                                                 <p class="counter h1 d-flex font-2 letter-space--2 text-black-72">
-                                                    <span class="number" data-speed="1000" data-to="98">0</span>
+                                                    <span class="number" data-speed="1000" data-to="98" data-from="0">98</span>
                                                     %
                                                 </p>
                                                 <p class="text text-black-56">
@@ -2627,33 +2712,32 @@
     </noscript>
 
     <!-- Javascript -->
-    <script src="assets/js/jquery.shim.min.js?v=106" defer></script>
-    <script src="assets/js/bs-lite.min.js?v=74" defer></script>
-    <script src="assets/js/linkedin-content.min.js?v=119" defer></script>
-  <script src="assets/js/resume-timeline.min.js?v=115" defer></script>
-  <script src="assets/js/kdcv-resume-entry-fix.js?v=7" defer></script>
-    <script src="assets/js/home-blog-feed.min.js?v=107" defer></script>
-    <script src="assets/js/accessibility-enhancements.min.js?v=110" defer></script>
-    <script src="assets/js/work-image-localization.min.js?v=108" defer></script>    <script src="assets/js/page-context.min.js?v=107" defer></script>
-  <script src="assets/js/lazy-bundle.min.js?v=111" defer></script>
-    <script src="assets/js/gsap-bundle.min.js?v=72" defer></script>
-    <script src="assets/js/gsapAnimation.min.js?v=113" defer></script>
+    <script src="assets/js/jquery.shim.min.js?v=107" defer></script>
+    <script src="assets/js/bs-lite.min.js?v=75" defer></script>
+    <script src="assets/js/linkedin-content.min.js?v=120" defer></script>
+  <script src="assets/js/resume-timeline.min.js?v=116" defer></script>
+<script src="assets/js/home-blog-feed.min.js?v=108" defer></script>
+    <script src="assets/js/accessibility-enhancements.min.js?v=111" defer></script>
+    <script src="assets/js/work-image-localization.min.js?v=109" defer></script>    <script src="assets/js/page-context.min.js?v=108" defer></script>
+  <script src="assets/js/lazy-bundle.min.js?v=112" defer></script>
+    <script src="assets/js/gsap-bundle.min.js?v=73" defer></script>
+    <script src="assets/js/gsapAnimation.min.js?v=114" defer></script>
 
-    <script src="assets/js/countto.min.js?v=107" defer></script>
+    <script src="assets/js/countto.min.js?v=108" defer></script>
     <script src="assets/js/animation-change-text.min.js" defer></script>
     <script src="assets/js/demo-and-schedule.min.js" defer></script>
 
-    <script src="assets/js/clock.min.js?v=106" defer></script>
-  <script src="assets/js/main.min.js?v=117" defer></script>
-    <script src="assets/js/limelight-nav.min.js?v=109" defer></script>
-    <script src="assets/js/pixel-canvas.min.js?v=108" defer></script>
-    <script src="assets/js/glowing-effect.min.js?v=108" defer></script>
+    <script src="assets/js/clock.min.js?v=107" defer></script>
+  <script src="assets/js/main.min.js?v=118" defer></script>
+    <script src="assets/js/limelight-nav.min.js?v=110" defer></script>
+    <script src="assets/js/pixel-canvas.min.js?v=109" defer></script>
+    <script src="assets/js/glowing-effect.min.js?v=109" defer></script>
     <script src="assets/js/cwv-rum.min.js" defer></script>
-    <script src="assets/js/kohan-avatar.min.js?v=126" defer></script>
-    <script src="assets/js/kohan-avatar-enhance.min.js?v=113" defer></script>
-    <script src="assets/js/kohan-drive.min.js?v=3" defer></script>
+    <script src="assets/js/kohan-avatar.min.js?v=127" defer></script>
+    <script src="assets/js/kohan-avatar-enhance.min.js?v=114" defer></script>
+    <script src="assets/js/kohan-drive.min.js?v=4" defer></script>
   <script src="assets/js/kdcv-interaction-fix.js?v=5" defer></script>
-    <script src="assets/js/wisdom-quotes.min.js?v=112" defer></script>
+    <script src="assets/js/wisdom-quotes.min.js?v=113" defer></script>
 <script>
 (function(){
   function msg(lang){
@@ -2733,13 +2817,13 @@
   }, true);
 })();
 </script>
-  <script src="/assets/js/pwa-register.min.js?v=106" defer></script>
-  <script src="assets/js/chat-ui.min.js?v=111" defer></script>
-    <script src="assets/js/glare-card.min.js?v=103" defer></script>
-    <script src="assets/js/hud-button.min.js?v=102" defer></script>
-    <script src="assets/js/pearl-button.min.js?v=97" defer></script>
-    <script src="assets/js/timeline-date-fix.min.js?v=96" defer></script>
-    <script src="assets/js/contact-forms.min.js?v=78" defer></script>
+  <script src="/assets/js/pwa-register.min.js?v=107" defer></script>
+  <script src="assets/js/chat-ui.min.js?v=112" defer></script>
+    <script src="assets/js/glare-card.min.js?v=104" defer></script>
+    <script src="assets/js/hud-button.min.js?v=103" defer></script>
+    <script src="assets/js/pearl-button.min.js?v=98" defer></script>
+    <script src="assets/js/timeline-date-fix.min.js?v=97" defer></script>
+    <script src="assets/js/contact-forms.min.js?v=79" defer></script>
 </body>
 
 </html>

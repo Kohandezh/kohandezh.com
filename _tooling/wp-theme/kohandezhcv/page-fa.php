@@ -8,7 +8,7 @@
     <title>محمدعلی کهن‌دژ - متخصص هوش مصنوعی، امنیت سایبری و زیرساخت فناوری اطلاعات</title>
     <meta name="author" content="Mohammad Ali Kohandezh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=111"></script>
+    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=112"></script>
     <meta name="description"
         content="محمدعلی کهن‌دژ — دکتریی مدیریت فناوری اطلاعات و مدیرعامل شرکت کهن سیستم فردا (KSF)؛ فعال حرفه‌ای از سال ۲۰۰۷ در هوش مصنوعی، زیرساخت فناوری اطلاعات و امنیت سایبری.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -24,23 +24,23 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/simple-line/simple-line.css">
     <!-- css -->
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=109">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=110">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css"></noscript>
 
 
-    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=169">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=109">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=107">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=108"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=108" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=108"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=125" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=125"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=3" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=3"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=103">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=103">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=97">
+    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=170">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=110">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=108">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=109" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=109"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=109" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=109"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=126" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=126"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=4" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=4"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=104">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=104">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=98">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kdcv-interaction-fix.css?v=9">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=113" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=113"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=114" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=114"></noscript>
 
     <!-- Kohandezh overrides -->
     <style>
@@ -672,7 +672,7 @@
     <!-- ===== /SEO BLOCK ===== -->
 
     <!-- ===== /SEO BLOCK ===== -->
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=108"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=109" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=109"></noscript>
   <!-- ProfilePage: Google's container type for a person's own page. It
        points at the Person node declared above by @id rather than
        repeating it, adds the freshness dates answer engines look for,
@@ -1105,7 +1105,7 @@
                             <div id="home" class="section-intro flat-spacing">
                                 <div class="intro-author effectFade fadeUp no-div">
                                     <div class="author-image">
-                                        <img class="profile-avatar-thumb" loading="eager" fetchpriority="high" decoding="async" width="48" height="48" src="<?php echo KDCV; ?>/assets/images/avatar/avatar-thumb-img0031.webp?v=1" alt="Portrait of Mohammad Ali Kohandezh">
+                                        <img class="profile-avatar-thumb" loading="eager" fetchpriority="high" decoding="async" width="48" height="48" src="<?php echo KDCV; ?>/assets/images/avatar/avatar-thumb-img0031.webp?v=1" alt="پرترهٔ محمدعلی کهن‌دژ">
                                     </div>
                                     <div class="author-info letter-space--05">
                                         <p class="info_name text-black">محمدعلی کهن‌دژ</p>
@@ -1150,7 +1150,7 @@
                                 <div class="box-counter effectFade fadeUp no-div">
                                     <div class="wg-counter">
                                         <p class="counter h1 d-flex font-2 letter-space--2">
-                                            <span class="number" data-speed="1000" data-to="18">0</span>
+                                            <span class="number" data-speed="1000" data-to="18" data-from="0">18</span>
                                             +
                                         </p>
                                         <p class="text text-black-56 text-body-3">
@@ -1159,7 +1159,7 @@
                                     </div>
                                     <div class="wg-counter">
                                         <p class="counter h1 d-flex font-2 letter-space--2">
-                                            <span class="number" data-speed="1000" data-to="43">0</span>
+                                            <span class="number" data-speed="1000" data-to="43" data-from="0">43</span>
                                             +
                                         </p>
                                         <p class="text text-black-56 text-body-3">
@@ -1435,7 +1435,7 @@
                                             مجازی‌سازی
                                         </h4>
                                         <div class="award_img hover-image">
-                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-1.webp" alt="VMware VCP-DCV 2021 certificate">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-1.webp" alt="گواهی‌نامهٔ VMware VCP-DCV 2021">
                                         </div>
                                     </li>
                                     <li class="award-item hover-cursor-img">
@@ -1447,7 +1447,7 @@
                                             امنیت
                                         </h4>
                                         <div class="award_img hover-image">
-                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-2.webp" alt="CEH certificate">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-2.webp" alt="گواهی‌نامهٔ CEH">
                                         </div>
                                     </li>
                                     <li class="award-item hover-cursor-img">
@@ -1460,7 +1460,7 @@
                                             فارنزیک
                                         </h4>
                                         <div class="award_img hover-image">
-                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-3.webp" alt="CHFI certificate">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-3.webp" alt="گواهی‌نامهٔ CHFI">
                                         </div>
                                     </li>
                                     <li class="award-item hover-cursor-img">
@@ -1472,7 +1472,7 @@
                                             تست نفوذ
                                         </h4>
                                         <div class="award_img hover-image">
-                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-4.webp" alt="SEC504 certificate">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-4.webp" alt="گواهی‌نامهٔ SEC504">
                                         </div>
                                     </li>
                                     <li class="award-item hover-cursor-img">
@@ -1484,7 +1484,7 @@
                                             تست نفوذ
                                         </h4>
                                         <div class="award_img hover-image">
-                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-6.webp" alt="SEC542 certificate">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-6.webp" alt="گواهی‌نامهٔ SEC542">
                                         </div>
                                     </li>
                                     <li class="award-item hover-cursor-img">
@@ -1496,7 +1496,7 @@
                                             سیستم‌ها
                                         </h4>
                                         <div class="award_img hover-image">
-                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-5.webp" alt="HPE ATP Server Solutions certificate">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-5.webp" alt="گواهی‌نامهٔ HPE ATP Server Solutions">
                                         </div>
                                     </li>
                                 </ul>
@@ -1514,101 +1514,242 @@
                                         <div class="prg-line"></div>
                                     </div>
                                     <!-- Item 1 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+<!-- CV:BEGIN generated from assets/data/cv.json by _tooling/cv/build.py -- do not edit by hand -->
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="phd-candidate" data-cv-type="education">
                                         <p class="timeline-date text-black-56">اکنون</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
-                                                    src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">دانشجوی دکتریی دوم</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                در حال گذراندن دومین مقطع دکتری، همزمان با مدیریت KSF.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">دانشجوی دکترای دوم</p>
+                                                <p class="timeline-desc text-black-56">در حال گذراندن دومین مقطع دکتری، همزمان با مدیریت KSF.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                                                        <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="national-ai-platform" data-cv-type="work">
                                         <p class="timeline-date text-black-56">۱۴۰۵ - اکنون</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img loading="lazy" width="32" height="32" src="<?php echo KDCV; ?>/assets/images/item/sako.webp" alt="سکوی ملی متن‌باز هوش مصنوعی">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Developer — سکوی ملی متن‌باز هوش مصنوعی</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">همکاری توسعه‌ای در سکوی ملی متن‌باز هوش مصنوعی.</p>
-                                            <figure class="sako-project-visual">
-                                                <img src="<?php echo KDCV; ?>/assets/images/portfolio/sako-platform-concept.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="تصویر مفهومی زیرساخت باز و ماژولار سکوی ملی هوش مصنوعی">
-                                            </figure>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">توسعه‌دهنده — سکوی ملی متن‌باز هوش مصنوعی</p>
+                                                <p class="timeline-desc text-black-56">همکاری توسعه‌ای در سکوی ملی متن‌باز هوش مصنوعی.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item 2 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="ksf-ceo" data-cv-type="work">
                                         <p class="timeline-date text-black-56">۱۴۰۳ - اکنون</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-ksf.svg?v=2" loading="lazy" width="32"
-                                                    height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-ksf.svg?v=2" alt="Kohan System Farda">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">مدیرعامل — شرکت کهن سیستم فردا
-                                                (KSF)</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                هدایت فعالیت‌های هوش مصنوعی، امنیت سایبری و زیرساخت فناوری اطلاعات —
-                                                شامل پلتفرم دستیار هوشمند Padyar AI، پلتفرم AI Agent و محصولات
-                                                HomaYar، MeetYar، BlogYar، NetYar و HomeYar.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">مدیرعامل — شرکت کهن سیستم فردا (KSF)</p>
+                                                <p class="timeline-desc text-black-56">راهبری محصولات هوش مصنوعی، خدمات امنیت سایبری و زیرساخت سازمانی؛ شامل پادیار، HomaYar، MeetYar و BlogYar.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item 3 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="phd-it-management" data-cv-type="education">
                                         <p class="timeline-date text-black-56">۱۳۹۷ - ۱۴۰۲</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
-                                                    src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">دکتری — مدیریت فناوری
-                                                اطلاعات، کسب‌وکار هوشمند</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                دانشگاه آزاد اسلامی، واحد تهران مرکزی. همزمان با فعالیت تمام‌وقت در
-                                                حوزه زیرساخت به پایان رسید.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">دکتری — مدیریت فناوری اطلاعات، کسب‌وکار هوشمند</p>
+                                                <p class="timeline-desc text-black-56">دانشگاه آزاد اسلامی واحد تهران مرکزی · معدل ۱۷٫۷۰ از ۲۰.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item 4 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
-                                        <p class="timeline-date text-black-56">۱۳۹۷ - ۱۴۰۲</p>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="modaberan" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">تیر ۱۳۹۷ - ۱۴۰۲</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" width="120" height="32"
-                                                    src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">کارشناس ارشد پشتیبانی فنی
-                                                — مدبران فناوری پاسارگاد</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                مجازی‌سازی، زیرساخت بکاپ، VMware و راهکارهای ذخیره‌سازی سازمانی.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">کارشناس ارشد شبکه و سیستم — مدبران فناوری پاسارگاد</p>
+                                                <p class="timeline-desc text-black-56">شبکه سازمانی، محصولات امنیت سایبری، زیرساخت پشتیبان‌گیری، VMware، ذخیره‌سازی و پشتیبانی فنی.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item 5 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="saba-safe-village" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">۱۳۹۷ - ۱۳۹۸</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">مدرس پاره‌وقت — دهکده امن صبا</p>
+                                                <p class="timeline-desc text-black-56">تدریس Backup Exec، امنیت سایبری و دوره‌های زیرساخت.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="haft-tappeh" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">مهر ۱۳۹۵ - تیر ۱۳۹۷</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">کارشناس ارشد شبکه و سیستم — شرکت کشت و صنعت هفت‌تپه</p>
+                                                <p class="timeline-desc text-black-56">مدیریت زیرساخت IT، مجازی‌سازی، شبکه سازمانی، پایش امنیت و اتوماسیون.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="msc-it-management" data-cv-type="education">
                                         <p class="timeline-date text-black-56">۱۳۹۴ - ۱۳۹۶</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
-                                                    src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">کارشناسی ارشد — مدیریت
-                                                فناوری اطلاعات، کسب‌وکار الکترونیک</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                دانشگاه تهران.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">کارشناسی ارشد — مدیریت فناوری اطلاعات، کسب‌وکار الکترونیک</p>
+                                                <p class="timeline-desc text-black-56">دانشگاه تهران · معدل ۱۵٫۹۷ از ۲۰.</p>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="golzar-ettesal" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">آذر ۱۳۹۴ - شهریور ۱۳۹۵</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">کارشناس ارشد شبکه — شرکت اتصالات گلزار</p>
+                                                <p class="timeline-desc text-black-56">ارائه خدمات شبکه سازمانی، زیرساخت و پشتیبانی فنی.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="azad-university" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">۱۳۹۳ - ۱۳۹۵</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">کارشناس ارشد شبکه و اینترنت — دانشگاه آزاد اسلامی</p>
+                                                <p class="timeline-desc text-black-56">مدیریت شبکه و سرویس‌های اینترنت واحد تهران مرکزی.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="power-control" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">دی ۱۳۹۲ - آبان ۱۳۹۴</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">کارشناس شبکه و سیستم — شرکت مهندسی پاور کنترل</p>
+                                                <p class="timeline-desc text-black-56">طراحی، نگهداری و پشتیبانی شبکه‌ها و سامانه‌های رایانه‌ای.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="mca-computer-software" data-cv-type="education">
+                                        <p class="timeline-date text-black-56">۱۳۹۰ - ۱۳۹۲</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">MCA — فناوری نرم‌افزار کامپیوتر</p>
+                                                <p class="timeline-desc text-black-56">دانشگاه فردوسی مشهد · معدل ۱۶٫۷۲ از ۲۰.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="negareh" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">شهریور ۱۳۹۰ - آذر ۱۳۹۲</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">کارشناس شبکه — تحلیلگران اطلاعات نگاره</p>
+                                                <p class="timeline-desc text-black-56">اجرای راهکارهای ذخیره‌سازی، پشتیبان‌گیری، پایش شبکه و پشتیبانی سیستم برای مشتریان سازمانی.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="best-design" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">۱۳۸۹ - ۱۳۹۰</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">کارشناس IT پاره‌وقت — Best Design</p>
+                                                <p class="timeline-desc text-black-56">پشتیبانی شبکه، رایانه‌های طراحی و سامانه‌های اداری شرکت دکوراسیون داخلی.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="novin-gostar-aysa" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">آبان ۱۳۸۸ - مرداد ۱۳۹۰</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">کارشناس شبکه — شرکت نوین‌گستر آیسا</p>
+                                                <p class="timeline-desc text-black-56">نصب، پیکربندی و نگهداری شبکه و سامانه‌های رایانه‌ای.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="culham" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">فروردین - مهر ۱۳۸۸</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">کارشناس شبکه و سیستم — شرکت مهندسی کولهام</p>
+                                                <p class="timeline-desc text-black-56">پشتیبانی امور دفتر، شبکه رایانه‌ای و سامانه‌های شرکت.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="associate-computer-software" data-cv-type="education">
+                                        <p class="timeline-date text-black-56">۱۳۸۶ - ۱۳۸۸</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">کاردانی — مهندسی نرم‌افزار کامپیوتر</p>
+                                                <p class="timeline-desc text-black-56">دانشگاه آزاد اسلامی واحد فیروزکوه · پایان تحصیل در تیر ۱۳۸۸.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="amen-behin" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">تیر ۱۳۸۶ - اسفند ۱۳۸۷</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">کارشناس سخت‌افزار و شبکه — شرکت امن بهین سیستم</p>
+                                                <p class="timeline-desc text-black-56">پشتیبانی سخت‌افزار، شبکه و سامانه‌های رایانه‌ای.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- CV:END -->
                                 </div>
                             </div>
                             <!-- /Education &amp; Experience -->
@@ -1646,7 +1787,7 @@
                                                             <div class="w-highlight">
                                                                 <div class="box-high">
                                                                     <p class="text-body-3 text-white-56">
-                                                                        هلدینگ
+                                                                        حوزه
                                                                     </p>
                                                                     <p class="text-body-1 text-white-72">
                                                                         هلدینگ
@@ -1654,7 +1795,7 @@
                                                                 </div>
                                                                 <div class="box-high">
                                                                     <p class="text-body-3 text-white-56">
-                                                                        مدیرعامل و بنیان‌گذار
+                                                                        نقش
                                                                     </p>
                                                                     <p class="text-body-1 text-white-72">
                                                                         مدیرعامل و بنیان‌گذار
@@ -1729,7 +1870,7 @@
                                                             <div class="w-highlight">
                                                                 <div class="box-high">
                                                                     <p class="text-body-3 text-white-56">
-                                                                        محصولات هوش مصنوعی
+                                                                        حوزه
                                                                     </p>
                                                                     <p class="text-body-1 text-white-72">
                                                                         محصولات هوش مصنوعی
@@ -1737,7 +1878,7 @@
                                                                 </div>
                                                                 <div class="box-high">
                                                                     <p class="text-body-3 text-white-56">
-                                                                        بنیان‌گذار
+                                                                        نقش
                                                                     </p>
                                                                     <p class="text-body-1 text-white-72">
                                                                         بنیان‌گذار
@@ -1813,7 +1954,7 @@
                                                             <div class="w-highlight">
                                                                 <div class="box-high">
                                                                     <p class="text-body-3 text-white-56">
-                                                                        محصولات هوش مصنوعی
+                                                                        حوزه
                                                                     </p>
                                                                     <p class="text-body-1 text-white-72">
                                                                         محصولات هوش مصنوعی
@@ -1821,7 +1962,7 @@
                                                                 </div>
                                                                 <div class="box-high">
                                                                     <p class="text-body-3 text-white-56">
-                                                                        بنیان‌گذار
+                                                                        نقش
                                                                     </p>
                                                                     <p class="text-body-1 text-white-72">
                                                                         بنیان‌گذار
@@ -2099,7 +2240,7 @@
                                             <div class="progress-line" data-progress="80">
                                                 <p class="progress-num text-caption">
                                                     <span class="counter">
-                                                        <span class="number" data-speed="1500" data-to="80">10</span>
+                                                        <span class="number" data-speed="1500" data-to="80" data-from="0">80</span>
                                                         %
                                                     </span>
                                                 </p>
@@ -2123,7 +2264,7 @@
                                             <div class="progress-line" data-progress="90">
                                                 <p class="progress-num text-caption">
                                                     <span class="counter">
-                                                        <span class="number" data-speed="1500" data-to="90">10</span>
+                                                        <span class="number" data-speed="1500" data-to="90" data-from="0">90</span>
                                                         %
                                                     </span>
                                                 </p>
@@ -2146,7 +2287,7 @@
                                             <div class="progress-line" data-progress="85">
                                                 <p class="progress-num text-caption">
                                                     <span class="counter">
-                                                        <span class="number" data-speed="1500" data-to="85">10</span>
+                                                        <span class="number" data-speed="1500" data-to="85" data-from="0">85</span>
                                                         %
                                                     </span>
                                                 </p>
@@ -2169,7 +2310,7 @@
                                             <div class="progress-line" data-progress="35">
                                                 <p class="progress-num text-caption">
                                                     <span class="counter">
-                                                        <span class="number" data-speed="1500" data-to="35">10</span>
+                                                        <span class="number" data-speed="1500" data-to="35" data-from="0">35</span>
                                                         %
                                                     </span>
                                                 </p>
@@ -2189,7 +2330,7 @@
                                         </div>
                                         <div class="tech-progress">
                                             <div class="progress-line" data-progress="100">
-                                                <p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="100">10</span>%</span></p>
+                                                <p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="100" data-from="0">100</span>%</span></p>
                                             </div>
                                         </div>
                                     </li>
@@ -2206,7 +2347,7 @@
                                         </div>
                                         <div class="tech-progress">
                                             <div class="progress-line" data-progress="85">
-                                                <p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="85">10</span>%</span></p>
+                                                <p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="85" data-from="0">85</span>%</span></p>
                                             </div>
                                         </div>
                                     </li>
@@ -2248,7 +2389,7 @@
                                         <div class="box-counter effectFade fadeUp no-div">
                                             <div class="wg-counter">
                                                 <p class="counter h1 d-flex font-2 letter-space--2 text-black-72">
-                                                    <span class="number" data-speed="1000" data-to="100">0</span>
+                                                    <span class="number" data-speed="1000" data-to="100" data-from="0">100</span>
                                                     +
                                                 </p>
                                                 <p class="text text-black-56">
@@ -2257,7 +2398,7 @@
                                             </div>
                                             <div class="wg-counter">
                                                 <p class="counter h1 d-flex font-2 letter-space--2 text-black-72">
-                                                    <span class="number" data-speed="1000" data-to="98">0</span>
+                                                    <span class="number" data-speed="1000" data-to="98" data-from="0">98</span>
                                                     %
                                                 </p>
                                                 <p class="text text-black-56">
@@ -2578,34 +2719,33 @@
     </noscript>
 
     <!-- Javascript -->
-    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=106" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=74" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=119" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=115" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kdcv-resume-entry-fix.js?v=7" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=107" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=75" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=120" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=116" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=2" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=110" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=108" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=107" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=111" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=72" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=113" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=111" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=109" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=108" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=112" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=73" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=114" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=107" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=108" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/animation-change-text.min.js" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/demo-and-schedule.min.js" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=106" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=117" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=109" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=108" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=108" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=107" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=118" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=110" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=109" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=109" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/cwv-rum.min.js" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=126" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=113" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=3" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=127" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=114" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=4" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kdcv-interaction-fix.js?v=5" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=112" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=113" defer></script>
 <script>
 (function(){
   function msg(lang){
@@ -2685,13 +2825,13 @@
   }, true);
 })();
 </script>
-  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=106" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=111" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=103" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=102" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=97" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=96" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=78" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=107" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=112" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=104" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=103" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=98" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=97" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=79" defer></script>
     <?php wp_footer(); ?>
 </body>
 

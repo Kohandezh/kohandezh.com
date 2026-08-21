@@ -3,7 +3,10 @@
   "private": true,
   "scripts": {
     "test:wisdom": "node _tooling/wisdom-quotes.test.js",
-    "test:jquery": "node _tooling/jquery-shim.validate.test.js"
+    "test:jquery": "node _tooling/jquery-shim.validate.test.js",
+    "test:crawler": "node _tooling/tests/crawler.test.js",
+    "test:cv": "python3 _tooling/cv/build.py --check",
+    "test": "npm run test:wisdom && npm run test:jquery && npm run test:cv && npm run test:crawler"
   },
   "devDependencies": {
     "jsdom": "26.1.0"

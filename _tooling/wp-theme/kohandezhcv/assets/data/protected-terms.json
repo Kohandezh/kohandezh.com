@@ -1,0 +1,35 @@
+{
+  "_comment": "Protected terminology policy. The Russian page shipped 'БлогYar' and 'ГлавнаяYar' -- a translation pass ran over the product names and half-Cyrillicised BlogYar while rendering HomeYar as 'MainPageYar'. A brand is an identity, not a phrase to translate. Any future translation tooling must consult this file first.",
+  "version": 1,
+
+  "never_translate": {
+    "_note": "Canonical Latin spelling in every locale, including RTL and CJK pages. These are product and company identities.",
+    "products": ["BlogYar", "Padyar", "HomaYar", "MeetYar", "NetYar", "HomeYar"],
+    "company": ["Kohan System Farda", "KSF"],
+    "platforms": ["WordPress", "Telegram", "Bale", "Eitaa", "GitHub", "LinkedIn"],
+    "certifications": ["VCP-DCV", "CEH", "CHFI", "SEC504", "SEC542", "HPE ATP"],
+    "technologies": ["VMware", "vSphere", "Veeam", "Veritas", "NetBackup", "Arctera", "Kubernetes", "Docker", "Kali Linux", "NIST", "ML-KEM", "ML-DSA", "SLH-DSA"]
+  },
+
+  "translate": {
+    "_note": "Generic vocabulary. These SHOULD be localized -- leaving them in English is the defect, not the fix.",
+    "roles": ["Developer", "Engineer", "Specialist", "Instructor", "Consultant", "Founder", "CEO"],
+    "labels": ["Sector", "Role", "Years of experience", "Professional certifications", "Projects delivered", "Client satisfaction", "Now", "Present"],
+    "descriptions": ["AI Assistant Platform", "Enterprise automation product", "Network operations product"]
+  },
+
+  "locale_transliteration": {
+    "_note": "Only where an established local form genuinely exists and the owner has chosen it. Absent an explicit entry here, the canonical Latin form is used -- a machine translator never decides brand identity.",
+    "fa": { "Kohan System Farda": "کهن سیستم فردا" },
+    "ar": { "Kohan System Farda": "كهن سيستم فردا" }
+  },
+
+  "known_corruptions": {
+    "_note": "Forms observed in shipped output. A regression test asserts none of these reappear.",
+    "БлогYar": "BlogYar",
+    "ГлавнаяYar": "HomeYar",
+    "МитYar": "MeetYar",
+    "СетьYar": "NetYar",
+    "بلاگ‌یار": "BlogYar"
+  }
+}

@@ -8,7 +8,7 @@
     <title>Mohammad Ali Kohandezh — AI &amp; Quantum-Readiness Advisor | Secure Enterprise AI</title>
     <meta name="author" content="Mohammad Ali Kohandezh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=111"></script>
+    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=112"></script>
     <meta name="description"
         content="AI &amp; quantum-readiness advisor. I help organizations deploy AI they can trust and prepare their cryptography for the post-quantum era.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -20,22 +20,22 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/simple-line/simple-line.css">
     <!-- css -->
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=109">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=110">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css"></noscript>
 
 
-    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=169">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=109">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=107">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=108"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=108"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=125" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=125"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=3" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=3"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=103">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=103">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=97">
+    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=170">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=110">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=108">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=109" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=109"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=109" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=109"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=126" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=126"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=4" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=4"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=104">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=104">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=98">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kdcv-interaction-fix.css?v=9">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=113" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=113"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=114" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=114"></noscript>
 
     <!-- Kohandezh overrides -->
     <style>
@@ -564,7 +564,7 @@
     }
     </script>
     <!-- ===== /SEO BLOCK ===== -->
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=108" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=108"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=109" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=109"></noscript>
   <!-- ProfilePage: Google's container type for a person's own page. It
        points at the Person node declared above by @id rather than
        repeating it, adds the freshness dates answer engines look for,
@@ -1044,7 +1044,7 @@
                                 <div class="box-counter effectFade fadeUp no-div">
                                     <div class="wg-counter">
                                         <p class="counter h1 d-flex font-2 letter-space--2">
-                                            <span class="number" data-speed="1000" data-to="18">0</span>
+                                            <span class="number" data-speed="1000" data-to="18" data-from="0">18</span>
                                             +
                                         </p>
                                         <p class="text text-black-56 text-body-3">
@@ -1053,7 +1053,7 @@
                                     </div>
                                     <div class="wg-counter">
                                         <p class="counter h1 d-flex font-2 letter-space--2">
-                                            <span class="number" data-speed="1000" data-to="43">0</span>
+                                            <span class="number" data-speed="1000" data-to="43" data-from="0">43</span>
                                             +
                                         </p>
                                         <p class="text text-black-56 text-body-3">
@@ -1409,177 +1409,242 @@
                                         <div class="prg-line"></div>
                                     </div>
                                     <!-- Item 1 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+<!-- CV:BEGIN generated from assets/data/cv.json by _tooling/cv/build.py -- do not edit by hand -->
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="phd-candidate" data-cv-type="education">
                                         <p class="timeline-date text-black-56">Now</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
-                                                    src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">PhD Candidate</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Currently pursuing a second doctorate, alongside leading KSF.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">PhD Candidate</p>
+                                                <p class="timeline-desc text-black-56">Currently pursuing a second doctorate, alongside leading KSF.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                                                        <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="national-ai-platform" data-cv-type="work">
                                         <p class="timeline-date text-black-56">2026 - Now</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img loading="lazy" width="32" height="32" src="<?php echo KDCV; ?>/assets/images/item/sako.webp" alt="National Open-Source AI Platform">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Developer — National Open-Source AI Platform</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">Development contributor on Iran's national open-source AI platform.</p>
-                                            <figure class="sako-project-visual">
-                                                <img src="<?php echo KDCV; ?>/assets/images/portfolio/sako-platform-concept.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Conceptual editorial visualization of an open, modular national AI platform infrastructure">
-                                            </figure>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Developer — National Open-Source AI Platform</p>
+                                                <p class="timeline-desc text-black-56">Development contributor on Iran&#x27;s national open-source AI platform.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item 2 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="ksf-ceo" data-cv-type="work">
                                         <p class="timeline-date text-black-56">2024 - Now</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-ksf.svg?v=2" loading="lazy" width="32"
-                                                    height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-ksf.svg?v=2" alt="Kohan System Farda">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">CEO — Kohan System Farda
-                                                (KSF)</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Leading AI, cybersecurity and IT infrastructure work — including the
-                                                Padyar AI assistant platform, an AI Agent platform, and the HomaYar,
-                                                MeetYar, BlogYar, NetYar and HomeYar products.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">CEO — Kohan System Farda (KSF)</p>
+                                                <p class="timeline-desc text-black-56">Leading AI products, cybersecurity services and enterprise infrastructure, including Padyar, HomaYar, MeetYar and BlogYar.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item 3 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="phd-it-management" data-cv-type="education">
                                         <p class="timeline-date text-black-56">2018 - 2023</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
-                                                    src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">PhD — IT Management,
-                                                Smart Business</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Islamic Azad University, Central Tehran Branch. Completed alongside
-                                                full-time infrastructure work.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">PhD — IT Management, Smart Business</p>
+                                                <p class="timeline-desc text-black-56">Islamic Azad University, Central Tehran Branch · GPA 17.70/20.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item 4 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
-                                        <p class="timeline-date text-black-56">2018 - 2023</p>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="modaberan" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Jul 2018 - 2023</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" width="120" height="32"
-                                                    src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Senior Technical Supporter
-                                                — Modaberan Fanavari Pasargad</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Virtualization, backup infrastructure, VMware and enterprise storage
-                                                solutions.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Senior Computer Network &amp; Systems Engineer — Modaberan Fanavari Pasargad</p>
+                                                <p class="timeline-desc text-black-56">Enterprise networking, cybersecurity products, backup infrastructure, VMware, storage solutions and technical support.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item 5 -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="saba-safe-village" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">2018 - 2019</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Instructor (part-time) — Saba Safe Village</p>
+                                                <p class="timeline-desc text-black-56">Delivered Backup Exec, cybersecurity and infrastructure training.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="haft-tappeh" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Sep 2016 - Jul 2018</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Senior Computer Network &amp; Systems Engineer — Haft Tappeh Sugarcane Agro-Industry Co.</p>
+                                                <p class="timeline-desc text-black-56">Managed IT infrastructure, virtualization, organizational networking, security monitoring and automation.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="msc-it-management" data-cv-type="education">
                                         <p class="timeline-date text-black-56">2015 - 2017</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32"
-                                                    src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">MSc — IT Management,
-                                                e-Business</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                University of Tehran.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">MSc — IT Management, E-Business</p>
+                                                <p class="timeline-desc text-black-56">University of Tehran · GPA 15.97/20.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
-                                        <p class="timeline-date text-black-56">2016 - 2018</p>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="golzar-ettesal" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Nov 2015 - Sep 2016</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" loading="lazy" width="120" height="32"
-                                                    src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Computer Network &amp; System Engineer &mdash; Haft Tappeh Sugarcane</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Iran&rsquo;s oldest sugar factory, founded in the 1960s in Shush, Khuzestan.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Senior Computer Network Engineer — Golzar Ettesal</p>
+                                                <p class="timeline-desc text-black-56">Delivered enterprise network, infrastructure and technical-support services.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
-                                        <p class="timeline-date text-black-56">2013 - 2015</p>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="azad-university" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">2014 - 2016</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" loading="lazy" width="120" height="32"
-                                                    src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Senior Computer Network Engineer &mdash; Power Control Engineering</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Industrial power &amp; control systems (powercontrol.ir).
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Senior Network &amp; Internet Specialist — Islamic Azad University</p>
+                                                <p class="timeline-desc text-black-56">Administered network and Internet services at the Central Tehran branch.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="power-control" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Dec 2013 - Nov 2015</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Computer Network &amp; Systems Engineer — Power Control Engineering</p>
+                                                <p class="timeline-desc text-black-56">Designed, maintained and supported computer networks and systems.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="mca-computer-software" data-cv-type="education">
                                         <p class="timeline-date text-black-56">2011 - 2013</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" loading="lazy" width="120" height="32"
-                                                    src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Information Analyst &mdash; Negarehia</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Backup and data-storage solutions provider (negarehia.com).
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">MCA — Computer Software Technology</p>
+                                                <p class="timeline-desc text-black-56">Ferdowsi University of Mashhad · GPA 16.72/20.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
-                                        <p class="timeline-date text-black-56">2011 - 2013</p>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="negareh" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Aug 2011 - Dec 2013</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" loading="lazy" width="29" height="32"
-                                                    src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">MCA &mdash; Computer Software Technology</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Ferdowsi University of Mashhad &middot; GPA 16.72/20.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Computer Network Engineer — Negareh Information Analysts</p>
+                                                <p class="timeline-desc text-black-56">Delivered storage, backup, network monitoring and systems support for enterprise clients.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Item -->
-                                    <div class="timeline-item effectFade fadeUp no-div">
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="best-design" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">2010 - 2011</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">IT Specialist (part-time) — Best Design</p>
+                                                <p class="timeline-desc text-black-56">Provided network and IT support for interior-design workstations and office systems.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="novin-gostar-aysa" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Oct 2009 - Aug 2011</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Computer Network Engineer — Novin Gostar-e Aysa</p>
+                                                <p class="timeline-desc text-black-56">Installed, configured and maintained network and computer systems.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="culham" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Mar - Oct 2009</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Computer Network &amp; Systems Engineer — Culham Engineering</p>
+                                                <p class="timeline-desc text-black-56">Supported office operations, computer networks and systems.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="associate-computer-software" data-cv-type="education">
                                         <p class="timeline-date text-black-56">2007 - 2009</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" loading="lazy" width="29" height="32"
-                                                    src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
-                                            <p class="timeline-role fw-medium text-black-72">Associate&rsquo;s &mdash; Computer Engineering, Islamic Azad University</p>
-                                            <p class="timeline-desc text-body-3 text-black-56">
-                                                Foundations of hardware and networking.
-                                            </p>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Associate Degree — Computer Software Engineering</p>
+                                                <p class="timeline-desc text-black-56">Islamic Azad University, Firuzkuh Branch · completed July 2009.</p>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="amen-behin" data-cv-type="work">
+                                        <p class="timeline-date text-black-56">Jul 2007 - Mar 2009</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="content">
+                                                <p class="timeline-role fw-6">Hardware &amp; Computer Network Expert — Amen Behin System</p>
+                                                <p class="timeline-desc text-black-56">Provided computer hardware, network and systems support.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- CV:END -->
                                 </div>
                             </div>
                             <!-- /Education &amp; Experience -->
@@ -2081,7 +2146,7 @@
                                             <div class="progress-line" data-progress="80">
                                                 <p class="progress-num text-caption">
                                                     <span class="counter">
-                                                        <span class="number" data-speed="1500" data-to="80">10</span>
+                                                        <span class="number" data-speed="1500" data-to="80" data-from="0">80</span>
                                                         %
                                                     </span>
                                                 </p>
@@ -2105,7 +2170,7 @@
                                             <div class="progress-line" data-progress="90">
                                                 <p class="progress-num text-caption">
                                                     <span class="counter">
-                                                        <span class="number" data-speed="1500" data-to="90">10</span>
+                                                        <span class="number" data-speed="1500" data-to="90" data-from="0">90</span>
                                                         %
                                                     </span>
                                                 </p>
@@ -2128,7 +2193,7 @@
                                             <div class="progress-line" data-progress="85">
                                                 <p class="progress-num text-caption">
                                                     <span class="counter">
-                                                        <span class="number" data-speed="1500" data-to="85">10</span>
+                                                        <span class="number" data-speed="1500" data-to="85" data-from="0">85</span>
                                                         %
                                                     </span>
                                                 </p>
@@ -2151,7 +2216,7 @@
                                             <div class="progress-line" data-progress="35">
                                                 <p class="progress-num text-caption">
                                                     <span class="counter">
-                                                        <span class="number" data-speed="1500" data-to="35">10</span>
+                                                        <span class="number" data-speed="1500" data-to="35" data-from="0">35</span>
                                                         %
                                                     </span>
                                                 </p>
@@ -2171,7 +2236,7 @@
                                         </div>
                                         <div class="tech-progress">
                                             <div class="progress-line" data-progress="100">
-                                                <p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="100">10</span>%</span></p>
+                                                <p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="100" data-from="0">100</span>%</span></p>
                                             </div>
                                         </div>
                                     </li>
@@ -2188,7 +2253,7 @@
                                         </div>
                                         <div class="tech-progress">
                                             <div class="progress-line" data-progress="85">
-                                                <p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="85">10</span>%</span></p>
+                                                <p class="progress-num text-caption"><span class="counter"><span class="number" data-speed="1500" data-to="85" data-from="0">85</span>%</span></p>
                                             </div>
                                         </div>
                                     </li>
@@ -2230,7 +2295,7 @@
                                         <div class="box-counter effectFade fadeUp no-div">
                                             <div class="wg-counter">
                                                 <p class="counter h1 d-flex font-2 letter-space--2 text-black-72">
-                                                    <span class="number" data-speed="1000" data-to="100">0</span>
+                                                    <span class="number" data-speed="1000" data-to="100" data-from="0">100</span>
                                                     +
                                                 </p>
                                                 <p class="text text-black-56">
@@ -2239,7 +2304,7 @@
                                             </div>
                                             <div class="wg-counter">
                                                 <p class="counter h1 d-flex font-2 letter-space--2 text-black-72">
-                                                    <span class="number" data-speed="1000" data-to="98">0</span>
+                                                    <span class="number" data-speed="1000" data-to="98" data-from="0">98</span>
                                                     %
                                                 </p>
                                                 <p class="text text-black-56">
@@ -2556,34 +2621,33 @@
     </noscript>
 
     <!-- Javascript -->
-    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=106" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=74" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=119" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=115" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kdcv-resume-entry-fix.js?v=7" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=107" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=75" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=120" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=116" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=2" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=110" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=108" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=107" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=111" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=72" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=113" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=111" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=109" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=108" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=112" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=73" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=114" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=107" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=108" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/animation-change-text.min.js" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/demo-and-schedule.min.js" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=106" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=117" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=109" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=108" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=108" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=107" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=118" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=110" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=109" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=109" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/cwv-rum.min.js" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=126" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=113" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=3" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=127" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=114" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=4" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kdcv-interaction-fix.js?v=5" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=112" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=113" defer></script>
 <script>
 (function(){
   function msg(lang){
@@ -2663,13 +2727,13 @@
   }, true);
 })();
 </script>
-  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=106" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=111" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=103" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=102" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=97" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=96" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=78" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=107" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=112" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=104" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=103" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=98" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=97" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=79" defer></script>
     <?php wp_footer(); ?>
 </body>
 

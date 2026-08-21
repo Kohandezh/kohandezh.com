@@ -1,0 +1,1044 @@
+{
+ "_comment": "CANONICAL career and education dataset. Static HTML, runtime enhancement and localized variants all derive from this file. Do not edit the rendered HTML directly -- run _tooling/cv/build.py.",
+ "version": 1,
+ "entries": [
+  {
+   "id": "phd-candidate",
+   "type": "education",
+   "current": true,
+   "locales": {
+    "en": {
+     "date": "Now",
+     "title": "PhD Candidate",
+     "desc": "Currently pursuing a second doctorate, alongside leading KSF."
+    },
+    "fa": {
+     "date": "اکنون",
+     "title": "دانشجوی دکترای دوم",
+     "desc": "در حال گذراندن دومین مقطع دکتری، همزمان با مدیریت KSF."
+    },
+    "ar": {
+     "date": "حتى الآن",
+     "title": "مرشح دكتوراه",
+     "desc": "يتابع حاليًا درجة دكتوراه ثانية، إلى جانب إدارة KSF."
+    },
+    "de": {
+     "date": "Heute",
+     "title": "Doktorand",
+     "desc": "Derzeit im zweiten Promotionsstudium, parallel zur Leitung von KSF."
+    },
+    "es": {
+     "date": "Actualidad",
+     "title": "Candidato a doctorado",
+     "desc": "Actualmente cursando un segundo doctorado, mientras dirige KSF."
+    },
+    "fr": {
+     "date": "Aujourd’hui",
+     "title": "Doctorant",
+     "desc": "Poursuit actuellement un second doctorat, tout en dirigeant KSF."
+    },
+    "tr": {
+     "date": "Günümüz",
+     "title": "Doktora Adayı",
+     "desc": "KSF'yi yönetirken aynı zamanda ikinci bir doktora yapıyor."
+    },
+    "zh": {
+     "date": "至今",
+     "title": "在读博士生",
+     "desc": "在领导KSF的同时，正在攻读第二个博士学位。"
+    },
+    "ja": {
+     "date": "現在",
+     "title": "博士課程在籍",
+     "desc": "KSFの経営と並行して、2つ目の博士号取得を目指しています。"
+    },
+    "ru": {
+     "date": "наст. время",
+     "title": "Соискатель степени PhD",
+     "desc": "В настоящее время получаю вторую докторскую степень, одновременно возглавляя KSF."
+    }
+   }
+  },
+  {
+   "id": "national-ai-platform",
+   "type": "work",
+   "current": true,
+   "locales": {
+    "en": {
+     "date": "2026 - Now",
+     "title": "Developer — National Open-Source AI Platform",
+     "desc": "Development contributor on Iran's national open-source AI platform."
+    },
+    "fa": {
+     "date": "۱۴۰۵ - اکنون",
+     "title": "توسعه‌دهنده — سکوی ملی متن‌باز هوش مصنوعی",
+     "desc": "همکاری توسعه‌ای در سکوی ملی متن‌باز هوش مصنوعی."
+    },
+    "ar": {
+     "date": "2026 - حتى الآن",
+     "title": "مطوّر — المنصة الوطنية مفتوحة المصدر للذكاء الاصطناعي",
+     "desc": "مطور في المنصة الوطنية مفتوحة المصدر للذكاء الاصطناعي."
+    },
+    "de": {
+     "date": "2026 - Heute",
+     "title": "Entwickler — Nationale Open-Source-KI-Plattform",
+     "desc": "Entwickler der nationalen Open-Source-KI-Plattform."
+    },
+    "es": {
+     "date": "2026 - Actualidad",
+     "title": "Desarrollador — Plataforma nacional de IA de código abierto",
+     "desc": "Desarrollador de la plataforma nacional de IA de código abierto."
+    },
+    "fr": {
+     "date": "2026 - Aujourd’hui",
+     "title": "Développeur — Plateforme nationale d’IA open source",
+     "desc": "Développeur de la plateforme nationale d’IA open source."
+    },
+    "tr": {
+     "date": "2026 - Günümüz",
+     "title": "Geliştirici — Ulusal Açık Kaynaklı Yapay Zekâ Platformu",
+     "desc": "Ulusal açık kaynaklı yapay zekâ platformunda geliştirici."
+    },
+    "zh": {
+     "date": "2026年至今",
+     "title": "开发者 — 国家开源人工智能平台",
+     "desc": "国家开源人工智能平台开发者。"
+    },
+    "ja": {
+     "date": "2026 - 現在",
+     "title": "開発者 — 国立オープンソースAIプラットフォーム",
+     "desc": "国立オープンソースAIプラットフォームの開発者。"
+    },
+    "ru": {
+     "date": "2026 — наст. время",
+     "title": "Разработчик — национальная платформа ИИ с открытым исходным кодом",
+     "desc": "Участник разработки национальной платформы ИИ с открытым исходным кодом в Иране."
+    }
+   }
+  },
+  {
+   "id": "ksf-ceo",
+   "type": "work",
+   "current": true,
+   "locales": {
+    "en": {
+     "date": "2024 - Now",
+     "title": "CEO — Kohan System Farda (KSF)",
+     "desc": "Leading AI products, cybersecurity services and enterprise infrastructure, including Padyar, HomaYar, MeetYar and BlogYar."
+    },
+    "fa": {
+     "date": "۱۴۰۳ - اکنون",
+     "title": "مدیرعامل — شرکت کهن سیستم فردا (KSF)",
+     "desc": "راهبری محصولات هوش مصنوعی، خدمات امنیت سایبری و زیرساخت سازمانی؛ شامل پادیار، HomaYar، MeetYar و BlogYar."
+    },
+    "ar": {
+     "date": "2024 - حتى الآن",
+     "title": "الرئيس التنفيذي — Kohan System Farda (KSF)",
+     "desc": "قيادة منتجات الذكاء الاصطناعي وخدمات الأمن السيبراني والبنية التحتية المؤسسية، بما في ذلك Padyar وHomaYar وMeetYar وBlogYar."
+    },
+    "de": {
+     "date": "2024 - Heute",
+     "title": "Geschäftsführer — Kohan System Farda (KSF)",
+     "desc": "Leitung von KI-Produkten, Cybersecurity-Services und Unternehmensinfrastruktur, darunter Padyar, HomaYar, MeetYar und BlogYar."
+    },
+    "es": {
+     "date": "2024 - Actualidad",
+     "title": "Director ejecutivo — Kohan System Farda (KSF)",
+     "desc": "Dirección de productos de IA, servicios de ciberseguridad e infraestructura empresarial, incluidos Padyar, HomaYar, MeetYar y BlogYar."
+    },
+    "fr": {
+     "date": "2024 - Aujourd’hui",
+     "title": "Directeur général — Kohan System Farda (KSF)",
+     "desc": "Pilotage de produits d’IA, de services de cybersécurité et d’infrastructures d’entreprise, dont Padyar, HomaYar, MeetYar et BlogYar."
+    },
+    "tr": {
+     "date": "2024 - Günümüz",
+     "title": "CEO — Kohan System Farda (KSF)",
+     "desc": "Padyar, HomaYar, MeetYar ve BlogYar dâhil yapay zekâ ürünleri, siber güvenlik hizmetleri ve kurumsal altyapı çalışmalarına liderlik."
+    },
+    "zh": {
+     "date": "2024年至今",
+     "title": "首席执行官 — Kohan System Farda（KSF）",
+     "desc": "领导人工智能产品、网络安全服务和企业基础设施，包括 Padyar、HomaYar、MeetYar 与 BlogYar。"
+    },
+    "ja": {
+     "date": "2024年 - 現在",
+     "title": "CEO — Kohan System Farda（KSF）",
+     "desc": "Padyar、HomaYar、MeetYar、BlogYarを含むAI製品、サイバーセキュリティ、企業インフラを統括。"
+    },
+    "ru": {
+     "date": "2024 - наст. время",
+     "title": "Генеральный директор — Kohan System Farda (KSF)",
+     "desc": "Руковожу продуктами в сфере искусственного интеллекта, услугами кибербезопасности и корпоративной инфраструктурой, включая Padyar, HomaYar, MeetYar и BlogYar."
+    }
+   }
+  },
+  {
+   "id": "phd-it-management",
+   "type": "education",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "2018 - 2023",
+     "title": "PhD — IT Management, Smart Business",
+     "desc": "Islamic Azad University, Central Tehran Branch · GPA 17.70/20."
+    },
+    "fa": {
+     "date": "۱۳۹۷ - ۱۴۰۲",
+     "title": "دکتری — مدیریت فناوری اطلاعات، کسب‌وکار هوشمند",
+     "desc": "دانشگاه آزاد اسلامی واحد تهران مرکزی · معدل ۱۷٫۷۰ از ۲۰."
+    },
+    "ar": {
+     "date": "2018 - 2023",
+     "title": "دكتوراه — إدارة تقنية المعلومات والأعمال الذكية",
+     "desc": "جامعة آزاد الإسلامية، فرع طهران المركزي · المعدل 17.70 من 20."
+    },
+    "de": {
+     "date": "2018 - 2023",
+     "title": "Promotion — IT-Management, Smart Business",
+     "desc": "Islamic Azad University, Central Tehran Branch · GPA 17,70/20."
+    },
+    "es": {
+     "date": "2018 - 2023",
+     "title": "Doctorado — Gestión de TI y negocios inteligentes",
+     "desc": "Universidad Islámica Azad, sede central de Teherán · promedio 17,70/20."
+    },
+    "fr": {
+     "date": "2018 - 2023",
+     "title": "Doctorat — Management des SI et Smart Business",
+     "desc": "Université islamique Azad, branche centrale de Téhéran · moyenne 17,70/20."
+    },
+    "tr": {
+     "date": "2018 - 2023",
+     "title": "Doktora — BT Yönetimi ve Akıllı İşletme",
+     "desc": "İslami Azad Üniversitesi, Tahran Merkez Şubesi · not ortalaması 17,70/20."
+    },
+    "zh": {
+     "date": "2018 - 2023",
+     "title": "博士 — 信息技术管理与智慧商业",
+     "desc": "伊斯兰阿扎德大学德黑兰中央分校 · 平均成绩 17.70/20。"
+    },
+    "ja": {
+     "date": "2018年 - 2023年",
+     "title": "博士号 — IT経営学・スマートビジネス",
+     "desc": "イスラム・アザド大学テヘラン中央校 · GPA 17.70/20。"
+    },
+    "ru": {
+     "date": "2018 - 2023",
+     "title": "Доктор философии (PhD) — менеджмент информационных технологий, интеллектуальный бизнес",
+     "desc": "Исламский университет Азад, Центральный Тегеранский филиал · средний балл 17,70/20."
+    }
+   }
+  },
+  {
+   "id": "modaberan",
+   "type": "work",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "Jul 2018 - 2023",
+     "title": "Senior Computer Network & Systems Engineer — Modaberan Fanavari Pasargad",
+     "desc": "Enterprise networking, cybersecurity products, backup infrastructure, VMware, storage solutions and technical support."
+    },
+    "fa": {
+     "date": "تیر ۱۳۹۷ - ۱۴۰۲",
+     "title": "کارشناس ارشد شبکه و سیستم — مدبران فناوری پاسارگاد",
+     "desc": "شبکه سازمانی، محصولات امنیت سایبری، زیرساخت پشتیبان‌گیری، VMware، ذخیره‌سازی و پشتیبانی فنی."
+    },
+    "ar": {
+     "date": "2018 - 2023",
+     "title": "مهندس شبكات وأنظمة أول — Modaberan Fanavari Pasargad",
+     "desc": "الشبكات المؤسسية ومنتجات الأمن السيبراني وبنية النسخ الاحتياطي وVMware والتخزين والدعم الفني."
+    },
+    "de": {
+     "date": "2018 - 2023",
+     "title": "Senior-Netzwerk- und Systemingenieur — Modaberan Fanavari Pasargad",
+     "desc": "Unternehmensnetzwerke, Cybersecurity-Produkte, Backup-Infrastruktur, VMware, Storage und technischer Support."
+    },
+    "es": {
+     "date": "2018 - 2023",
+     "title": "Ingeniero sénior de redes y sistemas — Modaberan Fanavari Pasargad",
+     "desc": "Redes empresariales, productos de ciberseguridad, copias de seguridad, VMware, almacenamiento y soporte técnico."
+    },
+    "fr": {
+     "date": "2018 - 2023",
+     "title": "Ingénieur senior réseaux et systèmes — Modaberan Fanavari Pasargad",
+     "desc": "Réseaux d’entreprise, produits de cybersécurité, sauvegarde, VMware, stockage et support technique."
+    },
+    "tr": {
+     "date": "2018 - 2023",
+     "title": "Kıdemli Ağ ve Sistem Mühendisi — Modaberan Fanavari Pasargad",
+     "desc": "Kurumsal ağ, siber güvenlik ürünleri, yedekleme, VMware, depolama ve teknik destek."
+    },
+    "zh": {
+     "date": "2018 - 2023",
+     "title": "高级网络与系统工程师 — Modaberan Fanavari Pasargad",
+     "desc": "企业网络、网络安全产品、备份、VMware、存储与技术支持。"
+    },
+    "ja": {
+     "date": "2018年 - 2023年",
+     "title": "シニアネットワーク・システムエンジニア — Modaberan Fanavari Pasargad",
+     "desc": "企業ネットワーク、サイバーセキュリティ製品、バックアップ、VMware、ストレージ、技術サポートを担当。"
+    },
+    "ru": {
+     "date": "Jul 2018 - 2023",
+     "title": "Ведущий инженер компьютерных сетей и систем — Modaberan Fanavari Pasargad",
+     "desc": "Корпоративные сети, продукты в области кибербезопасности, инфраструктура резервного копирования, VMware, решения для хранения данных и техническая поддержка."
+    }
+   }
+  },
+  {
+   "id": "saba-safe-village",
+   "type": "work",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "2018 - 2019",
+     "title": "Instructor (part-time) — Saba Safe Village",
+     "desc": "Delivered Backup Exec, cybersecurity and infrastructure training."
+    },
+    "fa": {
+     "date": "۱۳۹۷ - ۱۳۹۸",
+     "title": "مدرس پاره‌وقت — دهکده امن صبا",
+     "desc": "تدریس Backup Exec، امنیت سایبری و دوره‌های زیرساخت."
+    },
+    "ar": {
+     "date": "2018 - 2019",
+     "title": "مدرب بدوام جزئي — Saba Safe Village",
+     "desc": "تقديم دورات Backup Exec والأمن السيبراني والبنية التحتية."
+    },
+    "de": {
+     "date": "2018 - 2019",
+     "title": "Dozent (Teilzeit) — Saba Safe Village",
+     "desc": "Schulungen zu Backup Exec, Cybersecurity und IT-Infrastruktur."
+    },
+    "es": {
+     "date": "2018 - 2019",
+     "title": "Instructor a tiempo parcial — Saba Safe Village",
+     "desc": "Formación en Backup Exec, ciberseguridad e infraestructura."
+    },
+    "fr": {
+     "date": "2018 - 2019",
+     "title": "Formateur à temps partiel — Saba Safe Village",
+     "desc": "Formations Backup Exec, cybersécurité et infrastructure."
+    },
+    "tr": {
+     "date": "2018 - 2019",
+     "title": "Yarı zamanlı eğitmen — Saba Safe Village",
+     "desc": "Backup Exec, siber güvenlik ve altyapı eğitimleri."
+    },
+    "zh": {
+     "date": "2018 - 2019",
+     "title": "兼职讲师 — Saba Safe Village",
+     "desc": "讲授 Backup Exec、网络安全与基础设施课程。"
+    },
+    "ja": {
+     "date": "2018年 - 2019年",
+     "title": "非常勤講師 — Saba Safe Village",
+     "desc": "Backup Exec、サイバーセキュリティ、インフラ研修を担当。"
+    },
+    "ru": {
+     "date": "2018 - 2019",
+     "title": "Преподаватель (по совместительству) — Saba Safe Village",
+     "desc": "Проводил обучение по Backup Exec, кибербезопасности и инфраструктуре."
+    }
+   }
+  },
+  {
+   "id": "haft-tappeh",
+   "type": "work",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "Sep 2016 - Jul 2018",
+     "title": "Senior Computer Network & Systems Engineer — Haft Tappeh Sugarcane Agro-Industry Co.",
+     "desc": "Managed IT infrastructure, virtualization, organizational networking, security monitoring and automation."
+    },
+    "fa": {
+     "date": "مهر ۱۳۹۵ - تیر ۱۳۹۷",
+     "title": "کارشناس ارشد شبکه و سیستم — شرکت کشت و صنعت هفت‌تپه",
+     "desc": "مدیریت زیرساخت IT، مجازی‌سازی، شبکه سازمانی، پایش امنیت و اتوماسیون."
+    },
+    "ar": {
+     "date": "2016 - 2018",
+     "title": "مهندس شبكات وأنظمة أول — Haft Tappeh Sugarcane Agro-Industry",
+     "desc": "إدارة بنية IT والافتراضية والشبكة المؤسسية والمراقبة الأمنية والأتمتة."
+    },
+    "de": {
+     "date": "2016 - 2018",
+     "title": "Senior-Netzwerk- und Systemingenieur — Haft Tappeh Sugarcane Agro-Industry",
+     "desc": "IT-Infrastruktur, Virtualisierung, Unternehmensnetzwerk, Sicherheitsmonitoring und Automatisierung."
+    },
+    "es": {
+     "date": "2016 - 2018",
+     "title": "Ingeniero sénior de redes y sistemas — Haft Tappeh Sugarcane Agro-Industry",
+     "desc": "Infraestructura, virtualización, red empresarial, monitorización de seguridad y automatización."
+    },
+    "fr": {
+     "date": "2016 - 2018",
+     "title": "Ingénieur senior réseaux et systèmes — Haft Tappeh Sugarcane Agro-Industry",
+     "desc": "Infrastructure, virtualisation, réseau d’entreprise, supervision de sécurité et automatisation."
+    },
+    "tr": {
+     "date": "2016 - 2018",
+     "title": "Kıdemli Ağ ve Sistem Mühendisi — Haft Tappeh Sugarcane Agro-Industry",
+     "desc": "BT altyapısı, sanallaştırma, kurumsal ağ, güvenlik izleme ve otomasyon."
+    },
+    "zh": {
+     "date": "2016 - 2018",
+     "title": "高级网络与系统工程师 — Haft Tappeh Sugarcane Agro-Industry",
+     "desc": "负责 IT 基础设施、虚拟化、企业网络、安全监控与自动化。"
+    },
+    "ja": {
+     "date": "2016年 - 2018年",
+     "title": "シニアネットワーク・システムエンジニア — Haft Tappeh Sugarcane Agro-Industry",
+     "desc": "IT基盤、仮想化、社内ネットワーク、セキュリティ監視、自動化を担当。"
+    },
+    "ru": {
+     "date": "Sep 2016 - Jul 2018",
+     "title": "Ведущий инженер компьютерных сетей и систем — Haft Tappeh Sugarcane Agro-Industry Co.",
+     "desc": "Управлял ИТ-инфраструктурой, виртуализацией, корпоративными сетями, мониторингом безопасности и автоматизацией."
+    }
+   }
+  },
+  {
+   "id": "msc-it-management",
+   "type": "education",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "2015 - 2017",
+     "title": "MSc — IT Management, E-Business",
+     "desc": "University of Tehran · GPA 15.97/20."
+    },
+    "fa": {
+     "date": "۱۳۹۴ - ۱۳۹۶",
+     "title": "کارشناسی ارشد — مدیریت فناوری اطلاعات، کسب‌وکار الکترونیک",
+     "desc": "دانشگاه تهران · معدل ۱۵٫۹۷ از ۲۰."
+    },
+    "ar": {
+     "date": "2015 - 2017",
+     "title": "ماجستير — إدارة تقنية المعلومات والأعمال الإلكترونية",
+     "desc": "جامعة طهران · المعدل 15.97 من 20."
+    },
+    "de": {
+     "date": "2015 - 2017",
+     "title": "M.Sc. — IT-Management, E-Business",
+     "desc": "Universität Teheran · GPA 15,97/20."
+    },
+    "es": {
+     "date": "2015 - 2017",
+     "title": "Máster — Gestión de TI y comercio electrónico",
+     "desc": "Universidad de Teherán · promedio 15,97/20."
+    },
+    "fr": {
+     "date": "2015 - 2017",
+     "title": "Master — Management des SI et e-business",
+     "desc": "Université de Téhéran · moyenne 15,97/20."
+    },
+    "tr": {
+     "date": "2015 - 2017",
+     "title": "Yüksek Lisans — BT Yönetimi ve e-Ticaret",
+     "desc": "Tahran Üniversitesi · not ortalaması 15,97/20."
+    },
+    "zh": {
+     "date": "2015 - 2017",
+     "title": "硕士 — 信息技术管理与电子商务",
+     "desc": "德黑兰大学 · 平均成绩 15.97/20。"
+    },
+    "ja": {
+     "date": "2015年 - 2017年",
+     "title": "修士号 — IT経営学・eビジネス",
+     "desc": "テヘラン大学 · GPA 15.97/20。"
+    },
+    "ru": {
+     "date": "2015 - 2017",
+     "title": "Магистр (MSc) — менеджмент информационных технологий, электронный бизнес",
+     "desc": "Тегеранский университет · средний балл 15,97/20."
+    }
+   }
+  },
+  {
+   "id": "golzar-ettesal",
+   "type": "work",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "Nov 2015 - Sep 2016",
+     "title": "Senior Computer Network Engineer — Golzar Ettesal",
+     "desc": "Delivered enterprise network, infrastructure and technical-support services."
+    },
+    "fa": {
+     "date": "آذر ۱۳۹۴ - شهریور ۱۳۹۵",
+     "title": "کارشناس ارشد شبکه — شرکت اتصالات گلزار",
+     "desc": "ارائه خدمات شبکه سازمانی، زیرساخت و پشتیبانی فنی."
+    },
+    "ar": {
+     "date": "2015 - 2016",
+     "title": "مهندس شبكات أول — Golzar Ettesal",
+     "desc": "خدمات الشبكات المؤسسية والبنية التحتية والدعم الفني."
+    },
+    "de": {
+     "date": "2015 - 2016",
+     "title": "Senior-Netzwerkingenieur — Golzar Ettesal",
+     "desc": "Unternehmensnetzwerke, Infrastruktur und technischer Support."
+    },
+    "es": {
+     "date": "2015 - 2016",
+     "title": "Ingeniero sénior de redes — Golzar Ettesal",
+     "desc": "Servicios de red empresarial, infraestructura y soporte técnico."
+    },
+    "fr": {
+     "date": "2015 - 2016",
+     "title": "Ingénieur réseaux senior — Golzar Ettesal",
+     "desc": "Réseaux d’entreprise, infrastructure et support technique."
+    },
+    "tr": {
+     "date": "2015 - 2016",
+     "title": "Kıdemli Ağ Mühendisi — Golzar Ettesal",
+     "desc": "Kurumsal ağ, altyapı ve teknik destek hizmetleri."
+    },
+    "zh": {
+     "date": "2015 - 2016",
+     "title": "高级网络工程师 — Golzar Ettesal",
+     "desc": "提供企业网络、基础设施与技术支持服务。"
+    },
+    "ja": {
+     "date": "2015年 - 2016年",
+     "title": "シニアネットワークエンジニア — Golzar Ettesal",
+     "desc": "企業ネットワーク、インフラ、技術サポートを担当。"
+    },
+    "ru": {
+     "date": "Nov 2015 - Sep 2016",
+     "title": "Ведущий инженер компьютерных сетей — Golzar Ettesal",
+     "desc": "Оказывал услуги по корпоративным сетям, инфраструктуре и технической поддержке."
+    }
+   }
+  },
+  {
+   "id": "azad-university",
+   "type": "work",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "2014 - 2016",
+     "title": "Senior Network & Internet Specialist — Islamic Azad University",
+     "desc": "Administered network and Internet services at the Central Tehran branch."
+    },
+    "fa": {
+     "date": "۱۳۹۳ - ۱۳۹۵",
+     "title": "کارشناس ارشد شبکه و اینترنت — دانشگاه آزاد اسلامی",
+     "desc": "مدیریت شبکه و سرویس‌های اینترنت واحد تهران مرکزی."
+    },
+    "ar": {
+     "date": "2014 - 2016",
+     "title": "أخصائي أول للشبكات والإنترنت — جامعة آزاد الإسلامية",
+     "desc": "إدارة الشبكة وخدمات الإنترنت في فرع طهران المركزي."
+    },
+    "de": {
+     "date": "2014 - 2016",
+     "title": "Senior-Spezialist für Netzwerk und Internet — Islamic Azad University",
+     "desc": "Administration von Netzwerk- und Internetdiensten am Central Tehran Branch."
+    },
+    "es": {
+     "date": "2014 - 2016",
+     "title": "Especialista sénior de redes e Internet — Universidad Islámica Azad",
+     "desc": "Administración de red y servicios de Internet en la sede central de Teherán."
+    },
+    "fr": {
+     "date": "2014 - 2016",
+     "title": "Spécialiste senior réseaux et Internet — Université islamique Azad",
+     "desc": "Administration du réseau et des services Internet de la branche centrale de Téhéran."
+    },
+    "tr": {
+     "date": "2014 - 2016",
+     "title": "Kıdemli Ağ ve İnternet Uzmanı — İslami Azad Üniversitesi",
+     "desc": "Tahran Merkez Şubesi ağ ve internet hizmetlerinin yönetimi."
+    },
+    "zh": {
+     "date": "2014 - 2016",
+     "title": "高级网络与互联网专家 — 伊斯兰阿扎德大学",
+     "desc": "管理德黑兰中央分校的网络和互联网服务。"
+    },
+    "ja": {
+     "date": "2014年 - 2016年",
+     "title": "シニアネットワーク・インターネット担当 — イスラム・アザド大学",
+     "desc": "テヘラン中央校のネットワークとインターネットサービスを管理。"
+    },
+    "ru": {
+     "date": "2014 - 2016",
+     "title": "Ведущий специалист по сетям и Интернету — Исламский университет Азад",
+     "desc": "Администрировал сетевые и Интернет-услуги в Центральном Тегеранском филиале."
+    }
+   }
+  },
+  {
+   "id": "power-control",
+   "type": "work",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "Dec 2013 - Nov 2015",
+     "title": "Computer Network & Systems Engineer — Power Control Engineering",
+     "desc": "Designed, maintained and supported computer networks and systems."
+    },
+    "fa": {
+     "date": "دی ۱۳۹۲ - آبان ۱۳۹۴",
+     "title": "کارشناس شبکه و سیستم — شرکت مهندسی پاور کنترل",
+     "desc": "طراحی، نگهداری و پشتیبانی شبکه‌ها و سامانه‌های رایانه‌ای."
+    },
+    "ar": {
+     "date": "2013 - 2015",
+     "title": "مهندس شبكات وأنظمة — Power Control Engineering",
+     "desc": "تصميم شبكات وأنظمة الحاسوب وصيانتها ودعمها."
+    },
+    "de": {
+     "date": "2013 - 2015",
+     "title": "Netzwerk- und Systemingenieur — Power Control Engineering",
+     "desc": "Planung, Wartung und Support von Computernetzwerken und Systemen."
+    },
+    "es": {
+     "date": "2013 - 2015",
+     "title": "Ingeniero de redes y sistemas — Power Control Engineering",
+     "desc": "Diseño, mantenimiento y soporte de redes y sistemas informáticos."
+    },
+    "fr": {
+     "date": "2013 - 2015",
+     "title": "Ingénieur réseaux et systèmes — Power Control Engineering",
+     "desc": "Conception, maintenance et support de réseaux et systèmes informatiques."
+    },
+    "tr": {
+     "date": "2013 - 2015",
+     "title": "Ağ ve Sistem Mühendisi — Power Control Engineering",
+     "desc": "Bilgisayar ağları ve sistemlerinin tasarımı, bakımı ve desteği."
+    },
+    "zh": {
+     "date": "2013 - 2015",
+     "title": "网络与系统工程师 — Power Control Engineering",
+     "desc": "设计、维护并支持计算机网络和系统。"
+    },
+    "ja": {
+     "date": "2013年 - 2015年",
+     "title": "ネットワーク・システムエンジニア — Power Control Engineering",
+     "desc": "コンピュータネットワークとシステムの設計、保守、サポートを担当。"
+    },
+    "ru": {
+     "date": "Dec 2013 - Nov 2015",
+     "title": "Инженер компьютерных сетей и систем — Power Control Engineering",
+     "desc": "Проектировал, обслуживал и поддерживал компьютерные сети и системы."
+    }
+   }
+  },
+  {
+   "id": "mca-computer-software",
+   "type": "education",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "2011 - 2013",
+     "title": "MCA — Computer Software Technology",
+     "desc": "Ferdowsi University of Mashhad · GPA 16.72/20."
+    },
+    "fa": {
+     "date": "۱۳۹۰ - ۱۳۹۲",
+     "title": "MCA — فناوری نرم‌افزار کامپیوتر",
+     "desc": "دانشگاه فردوسی مشهد · معدل ۱۶٫۷۲ از ۲۰."
+    },
+    "ar": {
+     "date": "2011 - 2013",
+     "title": "MCA — تقنية برمجيات الحاسوب",
+     "desc": "جامعة فردوسي في مشهد · المعدل 16.72 من 20."
+    },
+    "de": {
+     "date": "2011 - 2013",
+     "title": "MCA — Computer-Softwaretechnologie",
+     "desc": "Ferdowsi-Universität Maschhad · GPA 16,72/20."
+    },
+    "es": {
+     "date": "2011 - 2013",
+     "title": "MCA — Tecnología de software informático",
+     "desc": "Universidad Ferdowsi de Mashhad · promedio 16,72/20."
+    },
+    "fr": {
+     "date": "2011 - 2013",
+     "title": "MCA — Technologie des logiciels informatiques",
+     "desc": "Université Ferdowsi de Machhad · moyenne 16,72/20."
+    },
+    "tr": {
+     "date": "2011 - 2013",
+     "title": "MCA — Bilgisayar Yazılım Teknolojisi",
+     "desc": "Meşhed Ferdowsi Üniversitesi · not ortalaması 16,72/20."
+    },
+    "zh": {
+     "date": "2011 - 2013",
+     "title": "MCA — 计算机软件技术",
+     "desc": "马什哈德费尔多西大学 · 平均成绩 16.72/20。"
+    },
+    "ja": {
+     "date": "2011年 - 2013年",
+     "title": "MCA — コンピュータソフトウェア技術",
+     "desc": "マシュハド・フェルドウスィー大学 · GPA 16.72/20。"
+    },
+    "ru": {
+     "date": "2011 - 2013",
+     "title": "MCA — технологии компьютерного программного обеспечения",
+     "desc": "Мешхедский университет им. Фирдоуси · средний балл 16,72/20."
+    }
+   }
+  },
+  {
+   "id": "negareh",
+   "type": "work",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "Aug 2011 - Dec 2013",
+     "title": "Computer Network Engineer — Negareh Information Analysts",
+     "desc": "Delivered storage, backup, network monitoring and systems support for enterprise clients."
+    },
+    "fa": {
+     "date": "شهریور ۱۳۹۰ - آذر ۱۳۹۲",
+     "title": "کارشناس شبکه — تحلیلگران اطلاعات نگاره",
+     "desc": "اجرای راهکارهای ذخیره‌سازی، پشتیبان‌گیری، پایش شبکه و پشتیبانی سیستم برای مشتریان سازمانی."
+    },
+    "ar": {
+     "date": "2011 - 2013",
+     "title": "مهندس شبكات — Negareh Information Analysts",
+     "desc": "حلول التخزين والنسخ الاحتياطي ومراقبة الشبكة ودعم الأنظمة لعملاء المؤسسات."
+    },
+    "de": {
+     "date": "2011 - 2013",
+     "title": "Netzwerkingenieur — Negareh Information Analysts",
+     "desc": "Storage, Backup, Netzwerkmonitoring und Systemsupport für Unternehmenskunden."
+    },
+    "es": {
+     "date": "2011 - 2013",
+     "title": "Ingeniero de redes — Negareh Information Analysts",
+     "desc": "Almacenamiento, copias de seguridad, monitorización de red y soporte de sistemas para clientes empresariales."
+    },
+    "fr": {
+     "date": "2011 - 2013",
+     "title": "Ingénieur réseaux — Negareh Information Analysts",
+     "desc": "Stockage, sauvegarde, supervision réseau et support système pour des clients d’entreprise."
+    },
+    "tr": {
+     "date": "2011 - 2013",
+     "title": "Ağ Mühendisi — Negareh Information Analysts",
+     "desc": "Kurumsal müşteriler için depolama, yedekleme, ağ izleme ve sistem desteği."
+    },
+    "zh": {
+     "date": "2011 - 2013",
+     "title": "网络工程师 — Negareh Information Analysts",
+     "desc": "为企业客户提供存储、备份、网络监控与系统支持。"
+    },
+    "ja": {
+     "date": "2011年 - 2013年",
+     "title": "ネットワークエンジニア — Negareh Information Analysts",
+     "desc": "企業顧客向けにストレージ、バックアップ、ネットワーク監視、システムサポートを提供。"
+    },
+    "ru": {
+     "date": "Aug 2011 - Dec 2013",
+     "title": "Инженер компьютерных сетей — Negareh Information Analysts",
+     "desc": "Обеспечивал хранение данных, резервное копирование, мониторинг сетей и поддержку систем для корпоративных заказчиков."
+    }
+   }
+  },
+  {
+   "id": "best-design",
+   "type": "work",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "2010 - 2011",
+     "title": "IT Specialist (part-time) — Best Design",
+     "desc": "Provided network and IT support for interior-design workstations and office systems."
+    },
+    "fa": {
+     "date": "۱۳۸۹ - ۱۳۹۰",
+     "title": "کارشناس IT پاره‌وقت — Best Design",
+     "desc": "پشتیبانی شبکه، رایانه‌های طراحی و سامانه‌های اداری شرکت دکوراسیون داخلی."
+    },
+    "ar": {
+     "date": "2010 - 2011",
+     "title": "أخصائي IT بدوام جزئي — Best Design",
+     "desc": "دعم الشبكة ومحطات التصميم وأنظمة المكتب لشركة تصميم داخلي."
+    },
+    "de": {
+     "date": "2010 - 2011",
+     "title": "IT-Spezialist (Teilzeit) — Best Design",
+     "desc": "Netzwerk- und IT-Support für Design-Arbeitsplätze und Bürosysteme."
+    },
+    "es": {
+     "date": "2010 - 2011",
+     "title": "Especialista de TI a tiempo parcial — Best Design",
+     "desc": "Soporte de red, estaciones de diseño y sistemas de oficina."
+    },
+    "fr": {
+     "date": "2010 - 2011",
+     "title": "Spécialiste IT à temps partiel — Best Design",
+     "desc": "Support réseau, postes de conception et systèmes bureautiques."
+    },
+    "tr": {
+     "date": "2010 - 2011",
+     "title": "Yarı zamanlı BT Uzmanı — Best Design",
+     "desc": "Tasarım iş istasyonları, ofis sistemleri ve ağ desteği."
+    },
+    "zh": {
+     "date": "2010 - 2011",
+     "title": "兼职 IT 专员 — Best Design",
+     "desc": "为室内设计工作站、办公系统和网络提供支持。"
+    },
+    "ja": {
+     "date": "2010年 - 2011年",
+     "title": "非常勤ITスペシャリスト — Best Design",
+     "desc": "デザイン端末、オフィスシステム、ネットワークを支援。"
+    },
+    "ru": {
+     "date": "2010 - 2011",
+     "title": "ИТ-специалист (по совместительству) — Best Design",
+     "desc": "Обеспечивал поддержку сетей и ИТ для рабочих станций отдела дизайна интерьеров и офисных систем."
+    }
+   }
+  },
+  {
+   "id": "novin-gostar-aysa",
+   "type": "work",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "Oct 2009 - Aug 2011",
+     "title": "Computer Network Engineer — Novin Gostar-e Aysa",
+     "desc": "Installed, configured and maintained network and computer systems."
+    },
+    "fa": {
+     "date": "آبان ۱۳۸۸ - مرداد ۱۳۹۰",
+     "title": "کارشناس شبکه — شرکت نوین‌گستر آیسا",
+     "desc": "نصب، پیکربندی و نگهداری شبکه و سامانه‌های رایانه‌ای."
+    },
+    "ar": {
+     "date": "2009 - 2011",
+     "title": "مهندس شبكات — Novin Gostar-e Aysa",
+     "desc": "تركيب شبكات وأنظمة الحاسوب وتهيئتها وصيانتها."
+    },
+    "de": {
+     "date": "2009 - 2011",
+     "title": "Netzwerkingenieur — Novin Gostar-e Aysa",
+     "desc": "Installation, Konfiguration und Wartung von Netzwerken und Computersystemen."
+    },
+    "es": {
+     "date": "2009 - 2011",
+     "title": "Ingeniero de redes — Novin Gostar-e Aysa",
+     "desc": "Instalación, configuración y mantenimiento de redes y sistemas informáticos."
+    },
+    "fr": {
+     "date": "2009 - 2011",
+     "title": "Ingénieur réseaux — Novin Gostar-e Aysa",
+     "desc": "Installation, configuration et maintenance des réseaux et systèmes informatiques."
+    },
+    "tr": {
+     "date": "2009 - 2011",
+     "title": "Ağ Mühendisi — Novin Gostar-e Aysa",
+     "desc": "Ağ ve bilgisayar sistemlerinin kurulumu, yapılandırılması ve bakımı."
+    },
+    "zh": {
+     "date": "2009 - 2011",
+     "title": "网络工程师 — Novin Gostar-e Aysa",
+     "desc": "安装、配置并维护网络和计算机系统。"
+    },
+    "ja": {
+     "date": "2009年 - 2011年",
+     "title": "ネットワークエンジニア — Novin Gostar-e Aysa",
+     "desc": "ネットワークとコンピュータシステムの導入、設定、保守を担当。"
+    },
+    "ru": {
+     "date": "Oct 2009 - Aug 2011",
+     "title": "Инженер компьютерных сетей — Novin Gostar-e Aysa",
+     "desc": "Выполнял установку, настройку и обслуживание сетевых и компьютерных систем."
+    }
+   }
+  },
+  {
+   "id": "culham",
+   "type": "work",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "Mar - Oct 2009",
+     "title": "Computer Network & Systems Engineer — Culham Engineering",
+     "desc": "Supported office operations, computer networks and systems."
+    },
+    "fa": {
+     "date": "فروردین - مهر ۱۳۸۸",
+     "title": "کارشناس شبکه و سیستم — شرکت مهندسی کولهام",
+     "desc": "پشتیبانی امور دفتر، شبکه رایانه‌ای و سامانه‌های شرکت."
+    },
+    "ar": {
+     "date": "2009",
+     "title": "مهندس شبكات وأنظمة — Culham Engineering",
+     "desc": "دعم أعمال المكتب وشبكات وأنظمة الحاسوب."
+    },
+    "de": {
+     "date": "2009",
+     "title": "Netzwerk- und Systemingenieur — Culham Engineering",
+     "desc": "Support für Bürobetrieb, Computernetzwerke und Systeme."
+    },
+    "es": {
+     "date": "2009",
+     "title": "Ingeniero de redes y sistemas — Culham Engineering",
+     "desc": "Soporte de operaciones de oficina, redes y sistemas informáticos."
+    },
+    "fr": {
+     "date": "2009",
+     "title": "Ingénieur réseaux et systèmes — Culham Engineering",
+     "desc": "Support des opérations de bureau, des réseaux et des systèmes informatiques."
+    },
+    "tr": {
+     "date": "2009",
+     "title": "Ağ ve Sistem Mühendisi — Culham Engineering",
+     "desc": "Ofis operasyonları, bilgisayar ağları ve sistem desteği."
+    },
+    "zh": {
+     "date": "2009",
+     "title": "网络与系统工程师 — Culham Engineering",
+     "desc": "支持办公室运营、计算机网络和系统。"
+    },
+    "ja": {
+     "date": "2009年",
+     "title": "ネットワーク・システムエンジニア — Culham Engineering",
+     "desc": "オフィス運用、コンピュータネットワーク、システムを支援。"
+    },
+    "ru": {
+     "date": "Mar - Oct 2009",
+     "title": "Инженер компьютерных сетей и систем — Culham Engineering",
+     "desc": "Обеспечивал поддержку офисных операций, компьютерных сетей и систем."
+    }
+   }
+  },
+  {
+   "id": "associate-computer-software",
+   "type": "education",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "2007 - 2009",
+     "title": "Associate Degree — Computer Software Engineering",
+     "desc": "Islamic Azad University, Firuzkuh Branch · completed July 2009."
+    },
+    "fa": {
+     "date": "۱۳۸۶ - ۱۳۸۸",
+     "title": "کاردانی — مهندسی نرم‌افزار کامپیوتر",
+     "desc": "دانشگاه آزاد اسلامی واحد فیروزکوه · پایان تحصیل در تیر ۱۳۸۸."
+    },
+    "ar": {
+     "date": "2007 - 2009",
+     "title": "دبلوم مشارك — هندسة برمجيات الحاسوب",
+     "desc": "جامعة آزاد الإسلامية، فرع فيروزكوه · أُنجز في يوليو 2009."
+    },
+    "de": {
+     "date": "2007 - 2009",
+     "title": "Associate Degree — Computer-Softwaretechnik",
+     "desc": "Islamic Azad University, Firuzkuh Branch · Abschluss Juli 2009."
+    },
+    "es": {
+     "date": "2007 - 2009",
+     "title": "Título asociado — Ingeniería de software informático",
+     "desc": "Universidad Islámica Azad, sede de Firuzkuh · finalizado en julio de 2009."
+    },
+    "fr": {
+     "date": "2007 - 2009",
+     "title": "Diplôme associé — Génie logiciel informatique",
+     "desc": "Université islamique Azad, branche de Firuzkuh · obtenu en juillet 2009."
+    },
+    "tr": {
+     "date": "2007 - 2009",
+     "title": "Ön Lisans — Bilgisayar Yazılım Mühendisliği",
+     "desc": "İslami Azad Üniversitesi, Firuzkuh Şubesi · Temmuz 2009’da tamamlandı."
+    },
+    "zh": {
+     "date": "2007 - 2009",
+     "title": "副学士 — 计算机软件工程",
+     "desc": "伊斯兰阿扎德大学菲鲁兹库分校 · 2009年7月完成。"
+    },
+    "ja": {
+     "date": "2007年 - 2009年",
+     "title": "準学士 — コンピュータソフトウェア工学",
+     "desc": "イスラム・アザド大学フィルズク校 · 2009年7月修了。"
+    },
+    "ru": {
+     "date": "2007 - 2009",
+     "title": "Степень ассоциата — разработка компьютерного программного обеспечения",
+     "desc": "Исламский университет Азад, Фирузкухский филиал · завершено в июле 2009 года."
+    }
+   }
+  },
+  {
+   "id": "amen-behin",
+   "type": "work",
+   "current": false,
+   "locales": {
+    "en": {
+     "date": "Jul 2007 - Mar 2009",
+     "title": "Hardware & Computer Network Expert — Amen Behin System",
+     "desc": "Provided computer hardware, network and systems support."
+    },
+    "fa": {
+     "date": "تیر ۱۳۸۶ - اسفند ۱۳۸۷",
+     "title": "کارشناس سخت‌افزار و شبکه — شرکت امن بهین سیستم",
+     "desc": "پشتیبانی سخت‌افزار، شبکه و سامانه‌های رایانه‌ای."
+    },
+    "ar": {
+     "date": "2007 - 2009",
+     "title": "خبير أجهزة وشبكات — Amen Behin System",
+     "desc": "دعم أجهزة الحاسوب والشبكات والأنظمة."
+    },
+    "de": {
+     "date": "2007 - 2009",
+     "title": "Hardware- und Netzwerkexperte — Amen Behin System",
+     "desc": "Support für Computerhardware, Netzwerke und Systeme."
+    },
+    "es": {
+     "date": "2007 - 2009",
+     "title": "Experto en hardware y redes — Amen Behin System",
+     "desc": "Soporte de hardware, redes y sistemas informáticos."
+    },
+    "fr": {
+     "date": "2007 - 2009",
+     "title": "Expert matériel et réseaux — Amen Behin System",
+     "desc": "Support du matériel, des réseaux et des systèmes informatiques."
+    },
+    "tr": {
+     "date": "2007 - 2009",
+     "title": "Donanım ve Ağ Uzmanı — Amen Behin System",
+     "desc": "Bilgisayar donanımı, ağ ve sistem desteği."
+    },
+    "zh": {
+     "date": "2007 - 2009",
+     "title": "硬件与网络专家 — Amen Behin System",
+     "desc": "提供计算机硬件、网络和系统支持。"
+    },
+    "ja": {
+     "date": "2007年 - 2009年",
+     "title": "ハードウェア・ネットワーク専門家 — Amen Behin System",
+     "desc": "コンピュータハードウェア、ネットワーク、システムを支援。"
+    },
+    "ru": {
+     "date": "Jul 2007 - Mar 2009",
+     "title": "Эксперт по аппаратному обеспечению и компьютерным сетям — Amen Behin System",
+     "desc": "Оказывал поддержку компьютерного оборудования, сетей и систем."
+    }
+   }
+  }
+ ],
+ "ongoing_word": {
+  "en": "Now",
+  "fa": "اکنون",
+  "ar": "حتى الآن",
+  "de": "Heute",
+  "es": "Actualidad",
+  "fr": "Aujourd’hui",
+  "tr": "Günümüz",
+  "zh": "至今",
+  "ja": "現在",
+  "ru": "наст. время"
+ }
+}
