@@ -8,7 +8,7 @@
     <title>モハンマド・アリ・コハンデジュ - AI・サイバーセキュリティ・ITインフラ専門家</title>
     <meta name="author" content="Mohammad Ali Kohandezh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=112"></script>
+    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=113"></script>
     <meta name="description"
         content="モハンマド・アリ・コハンデジュ — IT経営学博士、Kohan System Farda（KSF）CEO。2007年以来、AI、エンタープライズITインフラ、仮想化、バックアップ＆リカバリ、サイバーセキュリティの分野で活動。">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -20,23 +20,23 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/simple-line/simple-line.css">
     <!-- css -->
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=110">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=111">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css"></noscript>
 
 
-    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=170">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=110">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=108">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=109" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=109"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=109" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=109"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=126" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=126"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=4" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=4"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=104">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=104">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=98">
+    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=171">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=111">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=109">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=110" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=110"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=110" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=110"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=127" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=127"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=5" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=5"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=105">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=105">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=99">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kdcv-interaction-fix.css?v=9">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=114" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=114"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=115" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=115"></noscript>
 
     <!-- Kohandezh overrides -->
     <style>
@@ -274,7 +274,7 @@
          llms.txt convention has no discovery mechanism, so answer engines are
          pointed at the right one from the page they are actually reading. -->
     <link rel="alternate" type="text/plain" hreflang="ja" title="llms.txt" href="/ja-llms.txt">
-  <link rel="alternate" type="application/rss+xml" title="Mohammad Ali Kohandezh — نوشته‌های منتخب" href="/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Mohammad Ali Kohandezh — 選りすぐりの記事" href="/feed.xml">
     <!-- SEO: alternate languages (hreflang) -->
     <link rel="alternate" hreflang="en" href="https://kohandezh.com/">
     <link rel="alternate" hreflang="fa" href="https://kohandezh.com/fa/">
@@ -313,52 +313,154 @@
     <meta name="twitter:description" content="モハンマド・アリ・コハンデジュ — IT経営学博士、Kohan System Farda（KSF）CEO。2007年以来、AI、エンタープライズITインフラ、仮想化、バックアップ＆リカバリ、サイバーセキュリティの分野で活動。">
     <meta name="twitter:image" content="<?php echo KDCV; ?>/assets/images/og/og-image.jpg">
     <!-- SEO: structured data (Person) -->
-    <script type="application/ld+json">
-{
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://kohandezh.com/#person",
-        "name": "Mohammad Ali Kohandezh",
-        "givenName": "Mohammad Ali",
-        "familyName": "Kohandezh",
-        "jobTitle": "AI & Quantum-Readiness Advisor | CEO, Kohan System Farda",
-        "description": "PhD in IT Management and CEO of Kohan System Farda (KSF), specializing in enterprise IT infrastructure, virtualization, backup and recovery, AI, and cybersecurity.",
-        "url": "https://kohandezh.com/",
-        "image": "<?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp",
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Kohan System Farda (KSF)",
-            "url": "https://ksf.ir"
+    <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://kohandezh.com/#person",
+    "name": "Mohammad Ali Kohandezh",
+    "givenName": "Mohammad Ali",
+    "familyName": "Kohandezh",
+    "jobTitle": "AI & Quantum-Readiness Advisor | CEO, Kohan System Farda",
+    "description": "PhD in IT Management and CEO of Kohan System Farda (KSF), specializing in enterprise IT infrastructure, virtualization, backup and recovery, AI, and cybersecurity.",
+    "url": "https://kohandezh.com/",
+    "image": "<?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp",
+    "worksFor": {
+        "@id": "https://kohandezh.com/#ksf-organization"
+    },
+    "knowsAbout": [
+        "IT Infrastructure",
+        "Cybersecurity",
+        "Virtualization",
+        "Backup and Recovery",
+        "Artificial Intelligence",
+        "IT Management",
+        "Network Security",
+        "Applied Artificial Intelligence",
+        "Agentic AI Systems",
+        "Retrieval-Augmented Generation",
+        "Post-Quantum Cryptography",
+        "Quantum Readiness",
+        "Cryptographic Inventory",
+        "Technology Advisory"
+    ],
+    "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IR"
+    },
+    "sameAs": [
+        "https://kohandezh.com/blog/",
+        "https://www.linkedin.com/in/kohandezh",
+        "https://x.com/Konandehh",
+        "https://ksf.ir",
+        "https://kohansystemfarda.com"
+    ],
+    "alumniOf": [
+        {
+            "@type": "CollegeOrUniversity",
+            "name": "Islamic Azad University, Central Tehran Branch",
+            "sameAs": "https://en.wikipedia.org/wiki/Islamic_Azad_University"
         },
-        "knowsAbout": [
-            "IT Infrastructure",
-            "Cybersecurity",
-            "Virtualization",
-            "Backup and Recovery",
-            "Artificial Intelligence",
-            "IT Management",
-            "Network Security",
-            "Applied Artificial Intelligence",
-            "Agentic AI Systems",
-            "Retrieval-Augmented Generation",
-            "Post-Quantum Cryptography",
-            "Quantum Readiness",
-            "Cryptographic Inventory",
-            "Technology Advisory"
-        ],
+        {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Tehran",
+            "sameAs": "https://en.wikipedia.org/wiki/University_of_Tehran"
+        },
+        {
+            "@type": "CollegeOrUniversity",
+            "name": "Ferdowsi University of Mashhad",
+            "sameAs": "https://en.wikipedia.org/wiki/Ferdowsi_University_of_Mashhad"
+        }
+    ],
+    "hasCredential": [
+        {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "degree",
+            "educationalLevel": "Doctorate",
+            "name": "PhD — IT Management, Smart Business",
+            "recognizedBy": {
+                "@type": "CollegeOrUniversity",
+                "name": "Islamic Azad University, Central Tehran Branch"
+            }
+        },
+        {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "degree",
+            "educationalLevel": "Master",
+            "name": "MSc — IT Management, E-Business",
+            "recognizedBy": {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Tehran"
+            }
+        },
+        {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "degree",
+            "name": "MCA — Computer Software Technology",
+            "recognizedBy": {
+                "@type": "CollegeOrUniversity",
+                "name": "Ferdowsi University of Mashhad"
+            }
+        }
+    ],
+    "makesOffer": [
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "AI readiness assessment",
+                "serviceType": "Advisory",
+                "description": "Evidence-based review of where AI is already in use, what it is permitted to touch, where its answers come from and who is accountable when it errs."
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "Post-quantum readiness assessment",
+                "serviceType": "Advisory",
+                "description": "Cryptographic inventory, data-lifetime analysis and a dated migration roadmap to the NIST post-quantum standards (ML-KEM, ML-DSA)."
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "Secure AI architecture design",
+                "serviceType": "Consulting",
+                "description": "Retrieval, identity and least-privilege design for enterprise AI agents, sized so the client's own team can build and defend it."
+            }
+        }
+    ],
+    "hasOccupation": {
+        "@type": "Occupation",
+        "name": "AI and quantum-readiness advisor",
+        "occupationLocation": {
+            "@type": "City",
+            "name": "Tehran"
+        },
+        "skills": "Applied AI, agentic systems, retrieval-augmented generation, post-quantum cryptography, cryptographic inventory, enterprise IT infrastructure, cybersecurity"
+    },
+    "email": "mailto:Kohandezh@hotmail.com",
+    "telephone": [
+        "+989121491644",
+        "+18106662283"
+    ],
+    "nationality": {
+        "@type": "Country",
+        "name": "Iran"
+    },
+    "workLocation": {
+        "@type": "Place",
         "address": {
             "@type": "PostalAddress",
+            "addressLocality": "Tehran",
             "addressCountry": "IR"
-        },
-        "sameAs": [
-            "https://kohandezh.com/blog/",
-            "https://www.linkedin.com/in/kohandezh",
-            "https://x.com/Konandehh",
-            "https://ksf.ir",
-            "https://kohansystemfarda.com"
-        ]
+        }
+    },
+    "founder": {
+        "@id": "https://kohandezh.com/#ksf-organization"
     }
-    </script>
+}</script>
     <script type="application/ld+json">
 {
         "@context": "https://schema.org",
@@ -393,7 +495,7 @@
                 "name": "How many years of experience does Mohammad Ali Kohandezh have?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Over 18 years of professional experience dating back to 2007, and 43 professional certifications including VMware VCP-DCV, EC-Council CEH and CHFI, HPE Accredited Technical Professional, and GIAC/SANS SEC504 and SEC542."
+                    "text": "Over 19 years of professional experience dating back to 2007, and 43 professional certifications including VMware VCP-DCV, EC-Council CEH and CHFI, HPE Accredited Technical Professional, and GIAC/SANS SEC504 and SEC542."
                 }
             },
             {
@@ -574,7 +676,7 @@
     <!-- ===== /SEO BLOCK ===== -->
 
     <!-- ===== /SEO BLOCK ===== -->
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=109" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=109"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=110" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=110"></noscript>
   <!-- ProfilePage: Google's container type for a person's own page. It
        points at the Person node declared above by @id rather than
        repeating it, adds the freshness dates answer engines look for,
@@ -603,75 +705,6 @@
       ".intro-title",
       ".section-about p"
     ]
-  }
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://kohandezh.com/#person",
-  "alumniOf": [
-    { "@type": "CollegeOrUniversity", "name": "Islamic Azad University, Central Tehran Branch", "sameAs": "https://en.wikipedia.org/wiki/Islamic_Azad_University" },
-    { "@type": "CollegeOrUniversity", "name": "University of Tehran", "sameAs": "https://en.wikipedia.org/wiki/University_of_Tehran" },
-    { "@type": "CollegeOrUniversity", "name": "Ferdowsi University of Mashhad", "sameAs": "https://en.wikipedia.org/wiki/Ferdowsi_University_of_Mashhad" }
-  ],
-  "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "educationalLevel": "Doctorate", "name": "PhD \u2014 IT Management, Smart Business", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Islamic Azad University, Central Tehran Branch" } },
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "educationalLevel": "Master", "name": "MSc \u2014 IT Management, E-Business", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "University of Tehran" } },
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "MCA \u2014 Computer Software Technology", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Ferdowsi University of Mashhad" } }
-  ],
-  "makesOffer": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "AI readiness assessment",
-                        "serviceType": "Advisory",
-                        "description": "Evidence-based review of where AI is already in use, what it is permitted to touch, where its answers come from and who is accountable when it errs."
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Post-quantum readiness assessment",
-                        "serviceType": "Advisory",
-                        "description": "Cryptographic inventory, data-lifetime analysis and a dated migration roadmap to the NIST post-quantum standards (ML-KEM, ML-DSA)."
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Secure AI architecture design",
-                        "serviceType": "Consulting",
-                        "description": "Retrieval, identity and least-privilege design for enterprise AI agents, sized so the client's own team can build and defend it."
-                    }
-                }
-            ],
-  "hasOccupation": {
-    "@type": "Occupation",
-    "name": "AI and quantum-readiness advisor",
-    "occupationLocation": {
-      "@type": "City",
-      "name": "Tehran"
-    },
-    "skills": "Applied AI, agentic systems, retrieval-augmented generation, post-quantum cryptography, cryptographic inventory, enterprise IT infrastructure, cybersecurity"
-  },
-  "email": "mailto:Kohandezh@hotmail.com",
-  "telephone": ["+989121491644", "+18106662283"],
-  "nationality": {
-    "@type": "Country",
-    "name": "Iran"
-  },
-  "workLocation": {
-    "@type": "Place",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Tehran",
-      "addressCountry": "IR"
-    }
   }
 }
   </script>
@@ -711,36 +744,36 @@
             <div class="canvas-body">
                 <h6 class="title">言語を選択</h6>
                 <div class="settings-color list-choose lang-list">
-                    <button type="button" class="btn-color choose-item lang-item" data-lang="en" data-dir="ltr" data-href="<?php echo esc_url( home_url('/') ); ?>">
+                    <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn-color choose-item lang-item" data-lang="en" data-dir="ltr" data-href="<?php echo esc_url( home_url('/') ); ?>">
                         <span class="text">🇬🇧 EN — English</span>
-                    </button>
-                    <button type="button" class="btn-color choose-item lang-item" data-lang="fa" data-dir="rtl" data-href="<?php echo esc_url( home_url('/fa/') ); ?>">
+                    </a>
+                    <a href="<?php echo esc_url( home_url('/fa/') ); ?>" class="btn-color choose-item lang-item" data-lang="fa" data-dir="rtl" data-href="<?php echo esc_url( home_url('/fa/') ); ?>">
                         <span class="text">🇮🇷 FA — فارسی</span>
-                    </button>
-                    <button type="button" class="btn-color choose-item lang-item" data-lang="ar" data-dir="rtl" data-href="<?php echo esc_url( home_url('/ar/') ); ?>">
+                    </a>
+                    <a href="<?php echo esc_url( home_url('/ar/') ); ?>" class="btn-color choose-item lang-item" data-lang="ar" data-dir="rtl" data-href="<?php echo esc_url( home_url('/ar/') ); ?>">
                         <span class="text">🇸🇦 AR — العربية</span>
-                    </button>
-                    <button type="button" class="btn-color choose-item lang-item" data-lang="de" data-dir="ltr" data-href="<?php echo esc_url( home_url('/de/') ); ?>">
+                    </a>
+                    <a href="<?php echo esc_url( home_url('/de/') ); ?>" class="btn-color choose-item lang-item" data-lang="de" data-dir="ltr" data-href="<?php echo esc_url( home_url('/de/') ); ?>">
                         <span class="text">🇩🇪 DE — Deutsch</span>
-                    </button>
-                    <button type="button" class="btn-color choose-item lang-item" data-lang="fr" data-dir="ltr" data-href="<?php echo esc_url( home_url('/fr/') ); ?>">
+                    </a>
+                    <a href="<?php echo esc_url( home_url('/fr/') ); ?>" class="btn-color choose-item lang-item" data-lang="fr" data-dir="ltr" data-href="<?php echo esc_url( home_url('/fr/') ); ?>">
                         <span class="text">🇫🇷 FR — Français</span>
-                    </button>
-                    <button type="button" class="btn-color choose-item lang-item" data-lang="es" data-dir="ltr" data-href="<?php echo esc_url( home_url('/es/') ); ?>">
+                    </a>
+                    <a href="<?php echo esc_url( home_url('/es/') ); ?>" class="btn-color choose-item lang-item" data-lang="es" data-dir="ltr" data-href="<?php echo esc_url( home_url('/es/') ); ?>">
                         <span class="text">🇪🇸 ES — Español</span>
-                    </button>
-                    <button type="button" class="btn-color choose-item lang-item" data-lang="tr" data-dir="ltr" data-href="<?php echo esc_url( home_url('/tr/') ); ?>">
+                    </a>
+                    <a href="<?php echo esc_url( home_url('/tr/') ); ?>" class="btn-color choose-item lang-item" data-lang="tr" data-dir="ltr" data-href="<?php echo esc_url( home_url('/tr/') ); ?>">
                         <span class="text">🇹🇷 TR — Türkçe</span>
-                    </button>
-                    <button type="button" class="btn-color choose-item lang-item" data-lang="zh" data-dir="ltr" data-href="<?php echo esc_url( home_url('/zh/') ); ?>">
+                    </a>
+                    <a href="<?php echo esc_url( home_url('/zh/') ); ?>" class="btn-color choose-item lang-item" data-lang="zh" data-dir="ltr" data-href="<?php echo esc_url( home_url('/zh/') ); ?>">
                         <span class="text">🇨🇳 ZH — 中文</span>
-                    </button>
+                    </a>
                     <button type="button" class="btn-color choose-item lang-item is-active" data-lang="ja" data-dir="ltr">
                         <span class="text">🇯🇵 JA — 日本語</span>
                     </button>
-                    <button type="button" class="btn-color choose-item lang-item" data-lang="ru" data-dir="ltr" data-href="<?php echo esc_url( home_url('/ru/') ); ?>">
+                    <a href="<?php echo esc_url( home_url('/ru/') ); ?>" class="btn-color choose-item lang-item" data-lang="ru" data-dir="ltr" data-href="<?php echo esc_url( home_url('/ru/') ); ?>">
                         <span class="text">🇷🇺 RU — Русский</span>
-                    </button>
+                    </a>
                 </div>
                 <p class="text-body-3 text-black-56" style="margin-top:16px;">
                     お好みの言語でプロフィール・経歴・お問い合わせをご覧いただけます。
@@ -1051,7 +1084,7 @@
                                 <div class="box-counter effectFade fadeUp no-div">
                                     <div class="wg-counter">
                                         <p class="counter h1 d-flex font-2 letter-space--2">
-                                            <span class="number" data-speed="1000" data-to="18" data-from="0">18</span>
+                                            <span class="number" data-claim="a442c218-0d00-4a52-89f6-a755c3d5520b" data-speed="1000" data-to="19" data-from="0">19</span>
                                             +
                                         </p>
                                         <p class="text text-black-56 text-body-3">
@@ -1060,7 +1093,7 @@
                                     </div>
                                     <div class="wg-counter">
                                         <p class="counter h1 d-flex font-2 letter-space--2">
-                                            <span class="number" data-speed="1000" data-to="43" data-from="0">43</span>
+                                            <span class="number" data-claim="7a3affa3-4b27-4164-8b67-5d0121540501" data-speed="1000" data-to="43" data-from="0">43</span>
                                             +
                                         </p>
                                         <p class="text text-black-56 text-body-3">
@@ -2272,21 +2305,11 @@
                                         <div class="box-counter effectFade fadeUp no-div">
                                             <div class="wg-counter">
                                                 <p class="counter h1 d-flex font-2 letter-space--2 text-black-72">
-                                                    <span class="number" data-speed="1000" data-to="100" data-from="0">100</span>
-                                                    +
-                                                </p>
-                                                <p class="text text-black-56">
-                                                    件のプロジェクトを納品
-                                                </p>
+                                                    
                                             </div>
                                             <div class="wg-counter">
                                                 <p class="counter h1 d-flex font-2 letter-space--2 text-black-72">
-                                                    <span class="number" data-speed="1000" data-to="98" data-from="0">98</span>
-                                                    %
-                                                </p>
-                                                <p class="text text-black-56">
-                                                    顧客満足度
-                                                </p>
+                                                    
                                             </div>
                                         </div>
                                     </div>
@@ -2591,33 +2614,33 @@
     </noscript>
 
     <!-- Javascript -->
-    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=107" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=75" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=120" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=116" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=108" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=76" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=121" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=117" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=2" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=111" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=109" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=108" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=112" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=73" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=114" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=112" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=110" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=109" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=113" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=74" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=115" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=108" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=109" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/animation-change-text.min.js" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/demo-and-schedule.min.js" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=107" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=118" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=110" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=109" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=109" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=108" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=119" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=111" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=110" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=110" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/cwv-rum.min.js" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=127" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=114" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=4" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=128" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=115" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=5" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kdcv-interaction-fix.js?v=5" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=113" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=114" defer></script>
 <script>
 (function(){
   function msg(lang){
@@ -2697,13 +2720,13 @@
   }, true);
 })();
 </script>
-  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=107" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=112" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=104" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=103" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=98" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=97" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=79" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=108" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=113" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=105" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=104" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=99" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=98" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=80" defer></script>
     <?php wp_footer(); ?>
 </body>
 

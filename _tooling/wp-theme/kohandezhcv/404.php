@@ -10,7 +10,7 @@
     <meta name="description" content="The requested page is missing. Play a randomly selected 404 arcade game and return to the Kohandezh portfolio.">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png?v=2">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/404-games.min.css?v=45">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/404-games.min.css?v=46">
     <?php wp_head(); ?>
 </head>
 <body class="arcade-page" data-game="random">
@@ -111,7 +111,7 @@
         </footer>
     </div>
     <p class="visually-hidden" aria-live="polite" data-live-region></p>
-    <script src="<?php echo KDCV; ?>/assets/js/404-games.min.js?v=48" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/404-games.min.js?v=49" defer></script>
 <script>
 (function(){
   function msg(lang){

@@ -1,0 +1,100 @@
+{
+ "_comment": "Claim register for the numeric authority claims this site publishes. Mirrors the BlogYar Claim Ledger vocabulary (status / evidence / risk) so the same rules apply to the reference tenant's own pages. Phase 7 made these numbers crawlable; this file is where they are held to account. A number that is not VERIFIED here does not get server-rendered as fact.",
+ "version": 1,
+ "career_start_year": 2007,
+ "claims": {
+  "certifications": {
+   "uuid": "7a3affa3-4b27-4164-8b67-5d0121540501",
+   "statement": "Holds 43 professional certifications.",
+   "category": "certification",
+   "risk": "medium",
+   "status": "verified",
+   "value": 43,
+   "confidence": 0.9,
+   "evidence": [
+    {
+     "type": "direct",
+     "source": "Certificates.html",
+     "excerpt": "63 article.certificate-card elements, of which 20 carry the --appreciation modifier, leaving 43 certificates each with a name, issuer and <time datetime>.",
+     "strength": 0.9,
+     "note": "Enumerable artifact rather than a bare assertion: the number can be recounted from the page it describes, and drifts only if that page changes."
+    }
+   ],
+   "verification_rule": "count of article.certificate-card in Certificates.html minus those with --appreciation"
+  },
+  "years_experience": {
+   "uuid": "a442c218-0d00-4a52-89f6-a755c3d5520b",
+   "statement": "19 years of professional experience.",
+   "category": "statistic",
+   "risk": "medium",
+   "status": "verified",
+   "value": 19,
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "type": "inferred",
+     "source": "assets/data/cv.json",
+     "excerpt": "Earliest work entry: Hardware & Computer Network Expert, Amen Behin System, Jul 2007.",
+     "strength": 0.85,
+     "note": "Derived, not asserted. The site shipped 18, which was correct through mid-2025 and is now stale -- exactly the expiry case the ledger exists to catch. Recomputed from the canonical career start so it cannot silently rot again."
+    }
+   ],
+   "verification_rule": "current_year - career_start_year"
+  },
+  "projects_delivered": {
+   "uuid": "7dae9f3b-5795-4e22-8021-fea541d2ad6f",
+   "statement": "Over 100 projects delivered.",
+   "category": "statistic",
+   "risk": "medium",
+   "status": "unsupported",
+   "value": null,
+   "confidence": 0.0,
+   "evidence": [],
+   "resolution": "removed_from_ui",
+   "note": "No project register, no client list, no artifact anywhere in this repository enumerates projects. The number appeared in marketing copy and nothing corroborates it. Per the ledger's own rule an unsupported quantitative claim may not publish as fact, so the figure is removed and the wording softened rather than server-rendered."
+  },
+  "client_satisfaction": {
+   "uuid": "056dc9e0-463d-420b-8410-a29e9e339756",
+   "statement": "98% client satisfaction.",
+   "category": "statistic",
+   "risk": "high",
+   "status": "unsupported",
+   "value": null,
+   "confidence": 0.0,
+   "evidence": [],
+   "resolution": "removed_from_ui",
+   "note": "A satisfaction percentage implies a survey with a population, an instrument and a response rate. None exists here. High risk because it is a measurable claim about third parties who did not consent to being counted."
+  },
+  "associate_degree_field": {
+   "uuid": "a1e5c3d0-7b42-4f18-8c96-2d4e6f8a1b30",
+   "statement": "Associate Degree — Computer Software Engineering",
+   "category": "certification",
+   "risk": "low",
+   "status": "verified",
+   "value": null,
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "type": "direct",
+     "source": "assets/data/cv.json#associate-computer-software",
+     "excerpt": "Associate Degree — Computer Software Engineering, 2007 - 2009",
+     "strength": 0.8,
+     "note": "linkedin-content.js carried a hand-typed duplicate reading 'Computer Engineering' -- a different degree field for the same period. Treated as drift between one source and its copy, not as a two-source dispute, so the canonical dataset wins and the copy was aligned rather than the contested detail being dropped."
+    }
+   ],
+   "verification_rule": "must equal the associate-computer-software entry in cv.json"
+  }
+ },
+ "non_factual_ui": {
+  "_comment": "Self-assessed proficiency bars. These are opinion presented as a visual scale, not measurements, so they are exempt from the ledger -- but they are listed here explicitly so the audit cannot silently skip a number just because nobody classified it.",
+  "skill_proficiency": [
+   80,
+   90,
+   85,
+   35,
+   100,
+   85
+  ],
+  "rule": "Rendered inside .progress-bar / skill markup and labelled with a technology name. Never emitted into structured data."
+ }
+}

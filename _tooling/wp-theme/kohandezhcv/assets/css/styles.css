@@ -6479,13 +6479,17 @@ a.image-brand:focus-visible {
    the RTL faces, and a step down in size — the native strings are longer per
    glyph than the Latin one and have to fit the same circumference. */
 [dir="rtl"] .kdcv-ring-text {
-  font-family: "Estedad", "Inter", sans-serif;
+  /* Estedad is linked by the blog/legal pages, not the CV pages, so
+     naming it here silently fell back. Use the faces these pages load. */
+  font-family: "IRANSansX", "Cairo", "Inter", sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: none;
 }
 [lang="ar"] .kdcv-ring-text {
-  font-family: "Estedad", "Inter", sans-serif;
+  /* Estedad is linked by the blog/legal pages, not the CV pages, so
+     naming it here silently fell back. Use the faces these pages load. */
+  font-family: "IRANSansX", "Cairo", "Inter", sans-serif;
 }
 [lang="zh"] .kdcv-ring-text,
 [lang="ja"] .kdcv-ring-text {

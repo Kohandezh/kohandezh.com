@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/estedad/estedad.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.min.css?v=106">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/flow-field-background.min.css?v=96">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.min.css?v=107">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/flow-field-background.min.css?v=97">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png?v=2">
   <link rel="manifest" href="/manifest.json">
   <link rel="apple-touch-icon" href="<?php echo KDCV; ?>/assets/images/logo/apple-touch-icon.png">
@@ -26,11 +26,11 @@
   <meta name="twitter:title" content="شرایط استفاده | Terms of Use — Kohandezh.com">
   <meta name="twitter:description" content="شرایط استفاده از kohandezh.com — مالکیت محتوا، محدودیت مسئولیت، استفادهٔ مجاز و تماس.">
   <meta name="twitter:image" content="<?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=100">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=104">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=126" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=126"></noscript>
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=4" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=4"></noscript>
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=109" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=109"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=105">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=127" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=127"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=5" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=5"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=110" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=110"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
        URL in results, and gives answer engines the page's place in the
        site rather than treating it as an orphan. -->
@@ -165,18 +165,18 @@
       </div>
     </footer>
   </div>
-  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=107" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=96" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=107" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=108" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=112" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=127" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=114" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=4" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=16" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=97" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=112" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=103" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=108" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=97" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=108" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=109" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=113" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=128" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=115" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=5" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=17" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=98" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=113" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=104" defer></script>
     <?php wp_footer(); ?>
 </body>
 </html>

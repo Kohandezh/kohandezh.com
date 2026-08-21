@@ -66,8 +66,11 @@ for (const [f, L] of Object.entries(LOCALES)) {
 
 // The specific regression: a crawler must never ingest zero as the fact.
 const enText = visibleText(files['index.html']);
-ok(/\b18\b/.test(enText), 'the years-of-experience figure is in crawlable text');
-ok(/\b43\b/.test(enText), 'the certification count is in crawlable text');
+const _claims = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/claims.json'), 'utf8'));
+ok(new RegExp(`\\b${_claims.claims.years_experience.value}\\b`).test(enText),
+   'the reconciled years figure is in crawlable text');
+ok(new RegExp(`\\b${_claims.claims.certifications.value}\\b`).test(enText),
+   'the verified certification count is in crawlable text');
 ok(!/0\+\s*Years/i.test(enText), 'no "0+ Years" placeholder survives');
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -214,6 +217,231 @@ if (person) {
     ok(typeof person.jobTitle === 'string', 'Person declares a job title');
   }
 }
+
+
+// ─────────────────────────────────────────────────────────────────────────
+group('Claims — every published number is backed or exempt');
+
+const claims = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/claims.json'), 'utf8'));
+const ACCEPTED = new Set(['verified', 'restricted']);
+const exemptValues = new Set(claims.non_factual_ui.skill_proficiency.map(String));
+
+for (const [f, L] of Object.entries(LOCALES)) {
+  const html = files[f];
+  const counters = [...html.matchAll(/<span class="number"([^>]*)>(\d+)<\/span>/g)];
+
+  const unbacked = counters.filter(m => {
+    const uuid = (m[1].match(/data-claim="([^"]+)"/) || [])[1];
+    if (uuid) {
+      const claim = Object.values(claims.claims).find(c => c.uuid === uuid);
+      return !claim || !ACCEPTED.has(claim.status);
+    }
+    // No claim tag: only acceptable if it is a declared non-factual UI value.
+    return !exemptValues.has(m[2]);
+  });
+
+  ok(unbacked.length === 0,
+     `${L}: every numeric claim is VERIFIED or an exempt UI value`,
+     unbacked.map(m => m[2]).join(', '));
+}
+
+// The specific reconciliation: unsupported figures must be GONE, not softened
+// into a smaller number. A claim with no evidence does not get a value at all.
+for (const [f, L] of Object.entries(LOCALES)) {
+  const text = visibleText(files[f]);
+  for (const key of ['projects_delivered', 'client_satisfaction']) {
+    const c = claims.claims[key];
+    ok(c.status === 'unsupported' && c.value === null,
+       `${key} is recorded unsupported with no value`);
+  }
+  ok(!/Projects delivered|Client satisfaction|Реализованные проекты|完成项目/.test(text),
+     `${L}: no unsupported figure survives in visible text`);
+}
+
+// The retained numbers must match the register, not drift from it.
+const yearsClaim = claims.claims.years_experience;
+const certsClaim = claims.claims.certifications;
+ok(yearsClaim.value === new Date().getFullYear() - claims.career_start_year,
+   'the years figure is derived from the canonical career start, not asserted');
+ok(yearsClaim.evidence.length > 0, 'and carries evidence');
+
+// The certification count is recountable from the page it describes.
+const certHtml = fs.readFileSync(path.join(ROOT, 'Certificates.html'), 'utf8');
+const cards = [...certHtml.matchAll(/<article[^>]*class="[^"]*certificate-card[^"]*"/g)];
+const appreciation = cards.filter(m => m[0].includes('appreciation'));
+ok(cards.length - appreciation.length === certsClaim.value,
+   `the certification count matches the archive (${cards.length} - ${appreciation.length})`);
+
+for (const [f, L] of Object.entries(LOCALES)) {
+  const html = files[f];
+  ok(html.includes(`data-to="${yearsClaim.value}"`), `${L}: shows the reconciled years figure`);
+  ok(html.includes(`data-to="${certsClaim.value}"`), `${L}: shows the verified certification count`);
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+group('Schema — no claim stronger than the visible page');
+
+for (const [f, L] of Object.entries(LOCALES)) {
+  const blocks = [...files[f].matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+    .map(m => { try { return JSON.parse(m[1]); } catch (e) { return null; } });
+  ok(blocks.every(Boolean), `${L}: all JSON-LD parses`);
+
+  const people = blocks.filter(b => b && b['@type'] === 'Person');
+  ok(people.length === 1, `${L}: exactly one Person node`, `got ${people.length}`);
+
+  const p = people[0];
+  if (!p) continue;
+
+  ok(p['@id'] === 'https://kohandezh.com/#person',
+     `${L}: Person uses the one canonical @id`);
+
+  // Relationship truth: worksFor references the declared Organization rather
+  // than inlining an anonymous duplicate of it.
+  ok(p.worksFor && p.worksFor['@id'] === 'https://kohandezh.com/#ksf-organization',
+     `${L}: worksFor references the canonical Organization`);
+  ok(p.founder && p.founder['@id'] === 'https://kohandezh.com/#ksf-organization',
+     `${L}: the founder relationship is stated separately from employment`);
+
+  // A property must not conflate distinct relationship kinds.
+  if (p.alumniOf) {
+    const alumni = Array.isArray(p.alumniOf) ? p.alumniOf : [p.alumniOf];
+    const leaked = alumni.filter(a => JSON.stringify(a).includes('#ksf-organization'));
+    ok(leaked.length === 0, `${L}: the employer is not also listed as a school`);
+  }
+
+  // No unsupported number may enter structured data.
+  const json = JSON.stringify(blocks);
+  for (const key of ['projects_delivered', 'client_satisfaction']) {
+    ok(!new RegExp(`\\b(100\\+?\\s*projects|98\\s*%)`, 'i').test(json),
+       `${L}: no unsupported figure in structured data (${key})`);
+  }
+  // And the stale figure must be gone everywhere, including FAQ prose.
+  ok(!/\b18 years\b/i.test(json), `${L}: the stale years figure is not in JSON-LD`);
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+group('Crawl graph — every locale is reachable without JavaScript');
+
+for (const [f, L] of Object.entries(LOCALES)) {
+  const html = files[f];
+  const anchors = [...html.matchAll(/<a[^>]+href="([^"]+)"/g)].map(m => m[1]);
+  const localeLinks = anchors.filter(h => /^(fa|ar|de|es|fr|tr|zh|ja|ru)\.html$|^index\.html$|^\/$/.test(h));
+  ok(localeLinks.length >= 9,
+     `${L}: links to the other locales as real anchors`,
+     `got ${localeLinks.length}`);
+}
+
+// The language switcher must not be JS-only.
+ok(!/<button[^>]+data-href="[a-z]{2}\.html"/.test(files['index.html']),
+   'no locale is reachable only through a button');
+
+// ─────────────────────────────────────────────────────────────────────────
+group('Hreflang — the cluster is a reciprocal graph');
+
+// zh-Hans is the correct BCP-47 subtag for Simplified Chinese; `zh` alone
+// would be less specific, not more correct.
+const EXPECTED = new Set(['en','fa','ar','de','es','fr','tr','zh-Hans','ja','ru','x-default']);
+const graph = {};
+for (const [f, L] of Object.entries(LOCALES)) {
+  // Match each <link> tag first, then read its attributes. A single regex
+  // alternating attribute order backtracks catastrophically on a 400 KB page.
+  const tags = [...files[f].matchAll(/<link\b[^>]*>/g)]
+    .map(m => m[0])
+    .filter(tag => tag.includes('hreflang='))
+    // The llms.txt discovery links are rel=alternate for a different RESOURCE
+    // TYPE, not page-locale alternates, so they are not part of this graph.
+    .filter(tag => !/\.txt"/.test(tag))
+    .map(tag => ({
+      lang: (tag.match(/hreflang="([^"]+)"/) || [])[1],
+      href: (tag.match(/href="([^"]+)"/) || [])[1],
+    }))
+    .filter(t => t.lang);
+  graph[L] = tags;
+
+  const langs = new Set(tags.map(t => t.lang));
+  const missing = [...EXPECTED].filter(x => !langs.has(x));
+  ok(missing.length === 0, `${L}: declares every locale plus x-default`, missing.join(', '));
+
+  // Self-reference. The declared subtag may be more specific than the file
+  // stem -- zh.html correctly declares zh-Hans -- so match on prefix.
+  ok(tags.some(t => t.lang === L || t.lang.split('-')[0] === L),
+     `${L}: hreflang set includes a self-reference`);
+
+  // No duplicate locale codes.
+  ok(langs.size === tags.length, `${L}: no duplicated hreflang codes`);
+}
+
+// Reciprocity: every locale declares the same destination set.
+const reference = JSON.stringify(graph.en.map(t => t.lang).sort());
+for (const L of Object.keys(graph)) {
+  ok(JSON.stringify(graph[L].map(t => t.lang).sort()) === reference,
+     `${L}: hreflang set is reciprocal with the English cluster`);
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+group('Syndication — every feed URL resolves to a canonical shape');
+
+const feed = fs.readFileSync(path.join(ROOT, 'feed.xml'), 'utf8');
+const feedLinks = [...feed.matchAll(/<link>([^<]+)<\/link>/g)].map(m => m[1]);
+const feedGuids = [...feed.matchAll(/<guid[^>]*>([^<]+)<\/guid>/g)].map(m => m[1]);
+
+ok(feedLinks.length > 0, 'the feed has items');
+const deadPattern = feedLinks.filter(u => /\/blog\/[^/]+\.html$/.test(u));
+ok(deadPattern.length === 0,
+   'no feed item points at the dead /blog/*.html shape',
+   deadPattern.slice(0, 2).join(', '));
+
+const wpShape = feedLinks.filter(u => /\/\d{4}\/\d{2}\/\d{2}\/[^/]+\/$/.test(u));
+ok(wpShape.length === feedLinks.length - 1,
+   'every post item uses the published /YYYY/MM/DD/slug/ form');
+
+ok(feedGuids.every(g => !/\/blog\/[^/]+\.html$/.test(g)), 'guids were rewritten too');
+
+// Dates must be parseable and not in the future.
+const pubDates = [...feed.matchAll(/<pubDate>([^<]+)<\/pubDate>/g)].map(m => new Date(m[1]));
+ok(pubDates.every(d => !isNaN(d)), 'every pubDate parses');
+
+// Feed discovery titles must be in the page's own language.
+ok(!/title="Mohammad Ali Kohandezh — نوشته/.test(files['de.html']),
+   'a German page does not advertise a Persian feed title');
+
+// ─────────────────────────────────────────────────────────────────────────
+group('Runtime — no script repairs a canonical CV fact');
+
+const jsDir = path.join(ROOT, 'assets/js');
+const scripts = fs.readdirSync(jsDir).filter(f => f.endsWith('.js') && !f.endsWith('.min.js'));
+
+// The removed repair layer must stay removed.
+ok(!scripts.includes('kdcv-resume-entry-fix.js'),
+   'the obsolete resume-entry repair script is gone');
+for (const [f, L] of Object.entries(LOCALES)) {
+  ok(!files[f].includes('kdcv-resume-entry-fix'), `${L}: no reference to the removed repair script`);
+}
+
+// The enhancer must not rebuild the timeline.
+const enhancer = fs.readFileSync(path.join(jsDir, 'resume-timeline.js'), 'utf8');
+ok(!/timeline-item[^"]*"\s*\)/.test(enhancer) || !/createElement\("div"\)[\s\S]{0,200}timeline-item/.test(enhancer),
+   'resume-timeline.js does not construct timeline items');
+ok(enhancer.includes('data-cv-id'), 'it matches existing items by canonical id');
+
+// Any runtime copy of a canonical fact must agree with cv.json.
+const linkedin = fs.readFileSync(path.join(jsDir, 'linkedin-content.js'), 'utf8');
+const associate = cv.entries.find(e => e.id === 'associate-computer-software');
+const titles = [...linkedin.matchAll(/associateTitle:"([^"]*)"/g)].map(m => m[1]);
+ok(titles.length > 0, 'linkedin-content declares an associate-degree title');
+ok(titles.includes(associate.locales.en.title),
+   'and it agrees with the canonical CV entry',
+   `canonical: ${associate.locales.en.title}`);
+
+// ─────────────────────────────────────────────────────────────────────────
+group('Arabic — terminology and grammar rules hold');
+
+const ar = visibleText(files['ar.html']);
+ok(!ar.includes('أفاتار'), 'ar: one term for avatar, not a transliteration alongside it');
+ok(!/مشروع منجز(?!ة)/.test(ar), 'ar: the delivered-projects label is not singular');
+ok(!/وكلاء AI\b/.test(ar), 'ar: Latin "AI" does not appear where the Arabic term is used');
+ok(files['ar.html'].includes('unicode-bidi') || fs.readFileSync(path.join(ROOT, 'assets/css/styles.css'), 'utf8').includes('html[lang="ar"] .timeline-role'),
+   'ar: bidi isolation covers the mixed-script timeline fields');
 
 // ─────────────────────────────────────────────────────────────────────────
 console.log('\n' + '─'.repeat(56));
