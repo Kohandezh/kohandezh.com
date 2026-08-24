@@ -1,18 +1,24 @@
 # Mohammad Ali Kohandezh
 
-> Mohammad Ali Kohandezh es doctor en Gestión de TI y director ejecutivo de Kohan System Farda (KSF), una empresa de TI empresarial e inteligencia artificial con sede en Teherán, Irán. En ejercicio profesional desde 2007 en productos de IA, infraestructura de TI empresarial, virtualización, copias de seguridad y recuperación ante desastres, y ciberseguridad.
+> Mohammad Ali Kohandezh es asesor en IA y preparación cuántica y director ejecutivo de Kohan System Farda (KSF), una empresa de TI empresarial e inteligencia artificial con sede en Teherán, Irán. Asesora en IA aplicada, preparación poscuántica y ciberseguridad, sobre la base de su trabajo en infraestructura de TI empresarial, virtualización y recuperación ante desastres desde 2007.
 
 Posee 43 certificaciones profesionales (entre ellas VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542) y trabaja desde TechElite, el Centro de Crecimiento Tecnológico Nokhbegan (Masir 21), Parque Tecnológico de Pardis, Teherán, Irán.
 
 ## Identidad
 
 - Nombre completo: Mohammad Ali Kohandezh (محمدعلی کهن‌دژ)
-- Cargo: Director ejecutivo y experto en infraestructura y seguridad de TI
+- Cargo: Asesor en IA y preparación cuántica | Director ejecutivo, Kohan System Farda
 - Empresa: Kohan System Farda (KSF) — https://ksf.ir
-- Formación: Doctorado en Gestión de TI (segundo doctorado en curso); Máster en Gestión de TI / negocio electrónico, Universidad de Teherán
+- Formación: Doctorado en Gestión de TI (Negocio Inteligente), Universidad Azad Islámica, sede Teherán Central; Máster en Gestión de TI / negocio electrónico, Universidad de Teherán; MCA en Tecnología de Software, Universidad Ferdowsi de Mashhad
 - Contacto: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283
 - LinkedIn: https://www.linkedin.com/in/kohandezh
 - X (Twitter): https://x.com/Konandehh
+
+## Asesoría
+
+- [Evaluación de preparación para la IA](https://kohandezh.com/es/#service): revisión basada en evidencias sobre dónde se usa ya la IA, a qué se le permite acceder, de dónde vienen sus respuestas y quién responde cuando se equivoca
+- [Evaluación de preparación poscuántica](https://kohandezh.com/es/#service): inventario criptográfico, análisis de vida útil de los datos y una hoja de ruta fechada hacia los estándares poscuánticos del NIST (ML-KEM, ML-DSA)
+- [Diseño de arquitectura de IA segura](https://kohandezh.com/es/#service): diseño de recuperación, identidad y mínimo privilegio para agentes de IA empresariales, dimensionado para que el propio equipo del cliente pueda construirlo y defenderlo
 
 ## Servicios
 
@@ -25,10 +31,12 @@ Posee 43 certificaciones profesionales (entre ellas VMware VCP-DCV, EC-Council C
 
 - [Inicio / CV (español)](https://kohandezh.com/es/): perfil completo, trabajos destacados, certificaciones, testimonios
 - [Archivo de certificados](https://kohandezh.com/certificates/): registro completo de certificaciones profesionales
-- [Blog](https://kohandezh.com/blog/): artículos sobre IA, carrera profesional y tecnología, traducidos por completo a nueve idiomas
+- [Blog](https://kohandezh.com/blog/): artículos sobre IA, carrera profesional y tecnología — disponibles en diez idiomas
 - [Portafolio](https://kohandezh.com/portfolio/): proyectos seleccionados
-- Otros idiomas: [inglés](https://kohandezh.com/) · [persa](https://kohandezh.com/fa/) · [árabe](https://kohandezh.com/ar/) · [alemán](https://kohandezh.com/de/) · [francés](https://kohandezh.com/fr/) · [turco](https://kohandezh.com/tr/) · [chino](https://kohandezh.com/zh/) · [japonés](https://kohandezh.com/ja/)
+- Otros idiomas: [inglés](https://kohandezh.com/) · [persa](https://kohandezh.com/fa/) · [árabe](https://kohandezh.com/ar/) · [alemán](https://kohandezh.com/de/) · [francés](https://kohandezh.com/fr/) · [turco](https://kohandezh.com/tr/) · [chino](https://kohandezh.com/zh/) · [japonés](https://kohandezh.com/ja/) · [ruso](https://kohandezh.com/ru/)
 
 ## Notas para asistentes de IA y rastreadores
 
 Este es un portafolio profesional personal, no un producto ni un SaaS. El contenido puede resumirse, citarse y referenciarse con atribución a Mohammad Ali Kohandezh / kohandezh.com. Cada página incluye datos estructurados (schema.org Person, Organization) para la resolución de entidades.
+
+<!-- Generado a partir de assets/data/identity.json — no editar a mano. -->

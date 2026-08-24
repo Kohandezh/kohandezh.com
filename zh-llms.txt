@@ -1,18 +1,24 @@
 # Mohammad Ali Kohandezh（穆罕默德·阿里·科汉德泽）
 
-> Mohammad Ali Kohandezh 拥有信息技术管理博士学位，是总部位于伊朗德黑兰的企业级 IT 与人工智能公司 Kohan System Farda（KSF）的首席执行官。自 2007 年起从事人工智能产品、企业 IT 基础设施、虚拟化、备份与灾难恢复以及网络安全方面的专业工作。
+> Mohammad Ali Kohandezh 是人工智能与量子就绪顾问，也是总部位于伊朗德黑兰的企业级 IT 与人工智能公司 Kohan System Farda（KSF）的首席执行官。他就应用人工智能、后量子就绪与网络安全提供咨询，其基础是自 2007 年以来在企业 IT 基础设施、虚拟化与灾难恢复方面的工作。
 
 他持有 43 项专业认证（包括 VMware VCP-DCV、EC-Council CEH/CHFI、HPE ATP、GIAC/SANS SEC504/SEC542），办公地点为伊朗德黑兰帕迪斯科技园精英科技成长中心（Masir 21）内的 TechElite。
 
 ## 身份
 
 - 全名: Mohammad Ali Kohandezh (محمدعلی کهن‌دژ)
-- 职务: 首席执行官，IT 基础设施与安全专家
+- 职务: 人工智能与量子就绪顾问 ／ Kohan System Farda 首席执行官
 - 公司: Kohan System Farda (KSF) — https://ksf.ir
-- 教育背景: 信息技术管理博士（第二个博士学位在读）；德黑兰大学信息技术管理／电子商务硕士
+- 教育背景: 信息技术管理博士（智慧商业），伊斯兰阿扎德大学德黑兰中央分校；德黑兰大学信息技术管理／电子商务硕士；马什哈德菲尔多西大学计算机软件技术硕士（MCA）
 - 联系方式: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283
 - LinkedIn: https://www.linkedin.com/in/kohandezh
 - X (Twitter): https://x.com/Konandehh
+
+## 咨询
+
+- [人工智能就绪评估](https://kohandezh.com/zh/#service): 以证据为基础，审查人工智能已在何处使用、被允许接触什么、答案来自何处，以及出错时由谁负责
+- [后量子就绪评估](https://kohandezh.com/zh/#service): 密码资产盘点、数据生命周期分析，以及迁移至 NIST 后量子标准（ML-KEM、ML-DSA）的带日期路线图
+- [安全人工智能架构设计](https://kohandezh.com/zh/#service): 为企业人工智能智能体设计检索、身份与最小权限方案，其规模以客户团队自身能够构建与维护为准
 
 ## 服务
 
@@ -25,10 +31,12 @@
 
 - [首页／简历（中文）](https://kohandezh.com/zh/): 完整档案、代表作、认证与客户评价
 - [证书存档](https://kohandezh.com/certificates/): 专业认证的完整记录
-- [博客](https://kohandezh.com/blog/): 关于人工智能、职业与技术的文章——已完整翻译为九种语言
+- [博客](https://kohandezh.com/blog/): 关于人工智能、职业与技术的文章——提供 十 种语言
 - [作品集](https://kohandezh.com/portfolio/): 精选项目
-- 其他语言: [英语](https://kohandezh.com/) · [波斯语](https://kohandezh.com/fa/) · [阿拉伯语](https://kohandezh.com/ar/) · [德语](https://kohandezh.com/de/) · [西班牙语](https://kohandezh.com/es/) · [法语](https://kohandezh.com/fr/) · [土耳其语](https://kohandezh.com/tr/) · [日语](https://kohandezh.com/ja/)
+- 其他语言: [英语](https://kohandezh.com/) · [波斯语](https://kohandezh.com/fa/) · [阿拉伯语](https://kohandezh.com/ar/) · [德语](https://kohandezh.com/de/) · [西班牙语](https://kohandezh.com/es/) · [法语](https://kohandezh.com/fr/) · [土耳其语](https://kohandezh.com/tr/) · [日语](https://kohandezh.com/ja/) · [俄语](https://kohandezh.com/ru/)
 
 ## 给人工智能助手与爬虫的说明
 
 这是个人的专业作品集网站，并非产品或 SaaS。内容可在注明出处（Mohammad Ali Kohandezh / kohandezh.com）的前提下摘要、引用与征引。每个页面均包含结构化数据（schema.org Person、Organization）以便实体识别。
+
+<!-- 由 assets/data/identity.json 生成 — 请勿手动编辑。 -->

@@ -1,18 +1,24 @@
 # Mohammad Ali Kohandezh
 
-> Mohammad Ali Kohandezh, BT yönetimi alanında doktora sahibidir ve Tahran, İran merkezli kurumsal BT ile yapay zekâ şirketi Kohan System Farda’nın (KSF) genel müdürüdür. 2007’den bu yana yapay zekâ ürünleri, kurumsal BT altyapısı, sanallaştırma, yedekleme ve olağanüstü durum kurtarma ile siber güvenlik alanlarında mesleki olarak çalışmaktadır.
+> Mohammad Ali Kohandezh, yapay zekâ ve kuantum hazırlığı danışmanı ve Tahran, İran merkezli kurumsal BT ile yapay zekâ şirketi Kohan System Farda’nın (KSF) genel müdürüdür. Uygulamalı yapay zekâ, post-kuantum hazırlığı ve siber güvenlik alanlarında danışmanlık verir; bunu 2007’den bu yana yürüttüğü kurumsal BT altyapısı, sanallaştırma ve olağanüstü durum kurtarma çalışmalarına dayandırır.
 
 43 mesleki sertifikaya sahiptir (VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542 dâhil) ve Tahran, İran’daki Pardis Teknoloji Parkı, Nokhbegan Teknoloji Büyüme Merkezi (Masir 21) bünyesindeki TechElite’ten çalışmaktadır.
 
 ## Kimlik
 
 - Tam ad: Mohammad Ali Kohandezh (محمدعلی کهن‌دژ)
-- Unvan: Genel müdür; BT altyapısı ve güvenlik uzmanı
+- Unvan: Yapay zekâ ve kuantum hazırlığı danışmanı | Genel müdür, Kohan System Farda
 - Şirket: Kohan System Farda (KSF) — https://ksf.ir
-- Eğitim: BT Yönetimi doktorası (ikinci doktora sürüyor); BT Yönetimi / e-İş yüksek lisansı, Tahran Üniversitesi
+- Eğitim: BT Yönetimi doktorası (akıllı iş), İslami Azad Üniversitesi Merkez Tahran Şubesi; BT Yönetimi / e-İş yüksek lisansı, Tahran Üniversitesi; MCA, Bilgisayar Yazılım Teknolojisi, Meşhed Ferdowsi Üniversitesi
 - İletişim: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283
 - LinkedIn: https://www.linkedin.com/in/kohandezh
 - X (Twitter): https://x.com/Konandehh
+
+## Danışmanlık
+
+- [Yapay zekâ hazırlık değerlendirmesi](https://kohandezh.com/tr/#service): yapay zekânın nerede kullanıldığına, neye erişmesine izin verildiğine, yanıtlarının nereden geldiğine ve hata durumunda kimin sorumlu olduğuna dair kanıta dayalı inceleme
+- [Post-kuantum hazırlık değerlendirmesi](https://kohandezh.com/tr/#service): kriptografik envanter, veri ömrü analizi ve NIST post-kuantum standartlarına (ML-KEM, ML-DSA) tarihli geçiş yol haritası
+- [Güvenli yapay zekâ mimarisi tasarımı](https://kohandezh.com/tr/#service): kurumsal yapay zekâ ajanları için erişim, kimlik ve en az yetki tasarımı; müşterinin kendi ekibinin kurup savunabileceği ölçekte
 
 ## Hizmetler
 
@@ -25,10 +31,12 @@
 
 - [Ana sayfa / özgeçmiş (Türkçe)](https://kohandezh.com/tr/): tam profil, öne çıkan işler, sertifikalar, referanslar
 - [Sertifika arşivi](https://kohandezh.com/certificates/): mesleki sertifikaların tam kaydı
-- [Blog](https://kohandezh.com/blog/): yapay zekâ, kariyer ve teknoloji üzerine yazılar — dokuz dile tümüyle çevrildi
+- [Blog](https://kohandezh.com/blog/): yapay zekâ, kariyer ve teknoloji üzerine yazılar — on dilde mevcut
 - [Portföy](https://kohandezh.com/portfolio/): seçilmiş proje çalışmaları
-- Diğer diller: [İngilizce](https://kohandezh.com/) · [Farsça](https://kohandezh.com/fa/) · [Arapça](https://kohandezh.com/ar/) · [Almanca](https://kohandezh.com/de/) · [İspanyolca](https://kohandezh.com/es/) · [Fransızca](https://kohandezh.com/fr/) · [Çince](https://kohandezh.com/zh/) · [Japonca](https://kohandezh.com/ja/)
+- Diğer diller: [İngilizce](https://kohandezh.com/) · [Farsça](https://kohandezh.com/fa/) · [Arapça](https://kohandezh.com/ar/) · [Almanca](https://kohandezh.com/de/) · [İspanyolca](https://kohandezh.com/es/) · [Fransızca](https://kohandezh.com/fr/) · [Çince](https://kohandezh.com/zh/) · [Japonca](https://kohandezh.com/ja/) · [Rusça](https://kohandezh.com/ru/)
 
 ## Yapay zekâ asistanları ve tarayıcılar için notlar
 
 Burası kişisel bir mesleki portföydür; bir ürün ya da SaaS değildir. İçerik, Mohammad Ali Kohandezh / kohandezh.com kaynak gösterilerek özetlenebilir, alıntılanabilir ve kaynak olarak kullanılabilir. Varlık çözümlemesi için her sayfada yapılandırılmış veri (schema.org Person, Organization) bulunur.
+
+<!-- assets/data/identity.json dosyasından üretildi — elle düzenlemeyin. -->

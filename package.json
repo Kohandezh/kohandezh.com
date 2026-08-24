@@ -6,7 +6,8 @@
     "test:jquery": "node _tooling/jquery-shim.validate.test.js",
     "test:crawler": "node _tooling/tests/crawler.test.js",
     "test:cv": "python3 _tooling/cv/build.py --check",
-    "test": "npm run test:wisdom && npm run test:jquery && npm run test:cv && npm run test:crawler"
+    "test": "npm run test:wisdom && npm run test:jquery && npm run test:cv && npm run test:llms && npm run test:crawler",
+    "test:llms": "node _tooling/tests/llms.test.js"
   },
   "devDependencies": {
     "jsdom": "26.1.0"

@@ -1,0 +1,867 @@
+{
+  "_comment": "CANONICAL machine-readable identity. The ten *-llms.txt files are RENDERED from this by _tooling/llms/build.py -- do not hand-edit them. Before this file existed the ten were independent copies, and they drifted: all ten still carried an infrastructure-only title after index.html had moved to 'AI & Quantum-Readiness Advisor', five of ten asserted a 'second doctorate in progress' that no credential record supports, every one omitted Russian from its own language list while claiming the blog was in nine languages (it is ten), and ru-llms.txt had drifted to .html URLs and lost both phone numbers. Facts here are copied from the Person JSON-LD in index.html, which remains the canonical source; this file must agree with it and a test proves it.",
+  "version": 1,
+  "canonical": {
+    "name": {
+      "latin": "Mohammad Ali Kohandezh",
+      "fa": "محمدعلی کهن‌دژ",
+      "ar": "محمد علي كهن‌دژ"
+    },
+    "job_title": "AI & Quantum-Readiness Advisor | CEO, Kohan System Farda",
+    "positioning": [
+      "applied_ai",
+      "quantum_readiness",
+      "cybersecurity",
+      "enterprise_technology",
+      "ceo"
+    ],
+    "_positioning_note": "Order is the canonical hierarchy. Enterprise infrastructure and security are NOT removed -- they are the foundation the advisory rests on, and every locale summary must still state them. A positioning change is not a licence to erase history.",
+    "company": {
+      "name": "Kohan System Farda",
+      "short": "KSF",
+      "url": "https://ksf.ir"
+    },
+    "site": "https://kohandezh.com",
+    "active_since": 2007,
+    "certifications": 43,
+    "_certifications_claim": "certifications",
+    "contact": {
+      "email": "Kohandezh@hotmail.com",
+      "phones": [
+        "+98 912 149 1644",
+        "+1 810 666 2283"
+      ]
+    },
+    "profiles": {
+      "linkedin": "https://www.linkedin.com/in/kohandezh",
+      "x": "https://x.com/Konandehh"
+    },
+    "credentials": [
+      {
+        "level": "Doctorate",
+        "name": "PhD — IT Management, Smart Business",
+        "by": "Islamic Azad University, Central Tehran Branch"
+      },
+      {
+        "level": "Master",
+        "name": "MSc — IT Management, E-Business",
+        "by": "University of Tehran"
+      },
+      {
+        "level": "Master",
+        "name": "MCA — Computer Software Technology",
+        "by": "Ferdowsi University of Mashhad"
+      }
+    ],
+    "_credentials_note": "Exactly the three completed degrees in index.html's hasCredential. The 'second doctorate in progress' that five locale files carried is NOT here: nothing in the canonical credential record supports it. A regression test refuses to let it reappear.",
+    "locales": [
+      {
+        "code": "en",
+        "path": "/",
+        "file": "llms.txt"
+      },
+      {
+        "code": "fa",
+        "path": "/fa/",
+        "file": "fa-llms.txt"
+      },
+      {
+        "code": "ar",
+        "path": "/ar/",
+        "file": "ar-llms.txt"
+      },
+      {
+        "code": "de",
+        "path": "/de/",
+        "file": "de-llms.txt"
+      },
+      {
+        "code": "es",
+        "path": "/es/",
+        "file": "es-llms.txt"
+      },
+      {
+        "code": "fr",
+        "path": "/fr/",
+        "file": "fr-llms.txt"
+      },
+      {
+        "code": "tr",
+        "path": "/tr/",
+        "file": "tr-llms.txt"
+      },
+      {
+        "code": "zh",
+        "path": "/zh/",
+        "file": "zh-llms.txt"
+      },
+      {
+        "code": "ja",
+        "path": "/ja/",
+        "file": "ja-llms.txt"
+      },
+      {
+        "code": "ru",
+        "path": "/ru/",
+        "file": "ru-llms.txt"
+      }
+    ],
+    "resources": {
+      "certificates": "/certificates/",
+      "blog": "/blog/",
+      "portfolio": "/portfolio/"
+    }
+  },
+  "locales": {
+    "en": {
+      "heading": "Mohammad Ali Kohandezh",
+      "summary": "Mohammad Ali Kohandezh is an AI and quantum-readiness advisor and CEO of Kohan System Farda (KSF), an enterprise IT and AI company based in Tehran, Iran. He advises organisations on applied AI, post-quantum readiness and cybersecurity, drawing on enterprise IT infrastructure, virtualization and disaster-recovery work carried out since 2007.",
+      "certs": "He holds {certs} professional certifications (including VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542) and works out of TechElite, the Nokhbegan Technology Growth Center (Masir 21), Pardis Technology Park, Tehran, Iran.",
+      "h_identity": "Identity",
+      "h_advisory": "Advisory",
+      "h_services": "Services",
+      "h_pages": "Pages",
+      "h_notes": "Notes for AI assistants and crawlers",
+      "l_name": "Full name",
+      "l_title": "Title",
+      "l_company": "Company",
+      "l_education": "Education",
+      "l_contact": "Contact",
+      "l_linkedin": "LinkedIn",
+      "l_x": "X (Twitter)",
+      "title": "AI & Quantum-Readiness Advisor | CEO, Kohan System Farda",
+      "education": "PhD, IT Management (Smart Business), Islamic Azad University, Central Tehran Branch; MSc, IT Management / E-Business, University of Tehran; MCA, Computer Software Technology, Ferdowsi University of Mashhad",
+      "advisory": [
+        [
+          "AI readiness assessment",
+          "evidence-based review of where AI is already in use, what it is permitted to touch, where its answers come from and who is accountable when it errs"
+        ],
+        [
+          "Post-quantum readiness assessment",
+          "cryptographic inventory, data-lifetime analysis and a dated migration roadmap to the NIST post-quantum standards (ML-KEM, ML-DSA)"
+        ],
+        [
+          "Secure AI architecture design",
+          "retrieval, identity and least-privilege design for enterprise AI agents, sized so the client's own team can build and defend it"
+        ]
+      ],
+      "services": [
+        [
+          "AI & Smart Automation",
+          "AI products, enterprise agent platforms, and automation"
+        ],
+        [
+          "Infrastructure & Virtualization",
+          "VMware vSphere, data center design, Windows Server & AD, Kubernetes, Docker"
+        ],
+        [
+          "Backup & Disaster Recovery",
+          "Veeam, Arctera Backup Exec, Veritas NetBackup"
+        ],
+        [
+          "Cybersecurity & Forensics",
+          "penetration testing, incident forensics, security auditing"
+        ]
+      ],
+      "p_home": "Home / CV ({lang})",
+      "p_home_d": "full profile, work highlights, certifications, testimonials",
+      "p_certs": "Certificate archive",
+      "p_certs_d": "full record of professional certifications",
+      "p_blog": "Blog",
+      "p_blog_d": "articles on AI, career, and technology — available in {langcount} languages",
+      "p_portfolio": "Portfolio",
+      "p_portfolio_d": "selected project work",
+      "p_other": "Other languages",
+      "notes": "This is a personal professional portfolio, not a product or SaaS. Content is safe to summarize, cite, and quote with attribution to Mohammad Ali Kohandezh / kohandezh.com. Structured data (schema.org Person, Organization) is present on every page for entity resolution.",
+      "langs": {
+        "en": "English",
+        "fa": "Persian",
+        "ar": "Arabic",
+        "de": "German",
+        "es": "Spanish",
+        "fr": "French",
+        "tr": "Turkish",
+        "zh": "Chinese",
+        "ja": "Japanese",
+        "ru": "Russian"
+      },
+      "langname": "English",
+      "count": "ten"
+    },
+    "fa": {
+      "heading": "محمدعلی کهن‌دژ",
+      "summary": "محمدعلی کهن‌دژ مشاور هوش مصنوعی و آمادگی کوانتومی و مدیرعامل کهن سیستم فردا (KSF) است؛ شرکتی در حوزه فناوری اطلاعات سازمانی و هوش مصنوعی مستقر در تهران، ایران. او در زمینه هوش مصنوعی کاربردی، آمادگی پساکوانتومی و امنیت سایبری مشاوره می‌دهد، بر پایه‌ی کار حرفه‌ای در زیرساخت فناوری اطلاعات سازمانی، مجازی‌سازی و بازیابی از حادثه از سال ۲۰۰۷.",
+      "certs": "دارای {certs} گواهینامه‌ی حرفه‌ای (شامل VMware VCP-DCV، EC-Council CEH/CHFI، HPE ATP، GIAC/SANS SEC504/SEC542) و مستقر در TechElite، مرکز رشد فناوری نخبگان (مسیر ۲۱)، پارک فناوری پردیس، تهران، ایران.",
+      "h_identity": "هویت",
+      "h_advisory": "مشاوره",
+      "h_services": "خدمات",
+      "h_pages": "صفحات",
+      "h_notes": "یادداشت برای دستیارهای هوش مصنوعی و خزنده‌ها",
+      "l_name": "نام کامل",
+      "l_title": "سمت",
+      "l_company": "شرکت",
+      "l_education": "تحصیلات",
+      "l_contact": "تماس",
+      "l_linkedin": "لینکدین",
+      "l_x": "ایکس (توییتر)",
+      "title": "مشاور هوش مصنوعی و آمادگی کوانتومی | مدیرعامل کهن سیستم فردا",
+      "education": "دکتری مدیریت فناوری اطلاعات (کسب‌وکار هوشمند)، دانشگاه آزاد اسلامی واحد تهران مرکزی؛ کارشناسی ارشد مدیریت فناوری اطلاعات / تجارت الکترونیک، دانشگاه تهران؛ کارشناسی ارشد کامپیوتر (MCA)، فناوری نرم‌افزار، دانشگاه فردوسی مشهد",
+      "advisory": [
+        [
+          "ارزیابی آمادگی هوش مصنوعی",
+          "بررسی مبتنی بر شواهد از اینکه هوش مصنوعی کجا استفاده می‌شود، اجازه‌ی دسترسی به چه چیزی دارد، پاسخ‌هایش از کجا می‌آید و در خطا چه کسی پاسخ‌گوست"
+        ],
+        [
+          "ارزیابی آمادگی پساکوانتومی",
+          "سیاهه‌ی رمزنگاری، تحلیل طول عمر داده و نقشه‌راه زمان‌دار مهاجرت به استانداردهای پساکوانتومی NIST (ML-KEM، ML-DSA)"
+        ],
+        [
+          "طراحی معماری امن هوش مصنوعی",
+          "طراحی بازیابی، هویت و حداقل دسترسی برای عامل‌های هوش مصنوعی سازمانی، در اندازه‌ای که تیم خود کارفرما بتواند بسازد و نگه دارد"
+        ]
+      ],
+      "services": [
+        [
+          "هوش مصنوعی و اتوماسیون هوشمند",
+          "محصولات هوش مصنوعی، پلتفرم‌های عامل سازمانی، و اتوماسیون"
+        ],
+        [
+          "زیرساخت و مجازی‌سازی",
+          "VMware vSphere، طراحی دیتاسنتر، Windows Server & AD، Kubernetes، Docker"
+        ],
+        [
+          "پشتیبان‌گیری و بازیابی از حادثه",
+          "Veeam، Arctera Backup Exec، Veritas NetBackup"
+        ],
+        [
+          "امنیت سایبری و فارنزیک",
+          "تست نفوذ، فارنزیک حادثه، ممیزی امنیتی"
+        ]
+      ],
+      "p_home": "صفحه اصلی / رزومه ({lang})",
+      "p_home_d": "پروفایل کامل، نمونه کارها، گواهینامه‌ها، نظرات",
+      "p_certs": "آرشیو گواهینامه‌ها",
+      "p_certs_d": "سوابق کامل گواهینامه‌های حرفه‌ای",
+      "p_blog": "وبلاگ",
+      "p_blog_d": "مقالات در حوزه هوش مصنوعی، مسیر شغلی و فناوری — در دسترس به {langcount} زبان",
+      "p_portfolio": "نمونه‌کارها",
+      "p_portfolio_d": "منتخب پروژه‌ها",
+      "p_other": "زبان‌های دیگر",
+      "notes": "این یک نمونه‌کار شخصی و حرفه‌ای است، نه یک محصول یا SaaS. محتوا برای خلاصه‌سازی، ارجاع و نقل‌قول با ذکر منبع محمدعلی کهن‌دژ / kohandezh.com ایمن است. داده‌های ساختاریافته (schema.org Person، Organization) در همه‌ی صفحات برای تشخیص موجودیت موجود است.",
+      "langs": {
+        "en": "انگلیسی",
+        "fa": "فارسی",
+        "ar": "عربی",
+        "de": "آلمانی",
+        "es": "اسپانیایی",
+        "fr": "فرانسوی",
+        "tr": "ترکی",
+        "zh": "چینی",
+        "ja": "ژاپنی",
+        "ru": "روسی"
+      },
+      "langname": "فارسی",
+      "count": "ده"
+    },
+    "ar": {
+      "heading": "محمد علي كهن‌دژ",
+      "summary": "محمد علي كهن‌دژ مستشار في الذكاء الاصطناعي والجاهزية الكمّية، والرئيس التنفيذي لشركة Kohan System Farda (KSF)، وهي شركة لتقنية المعلومات المؤسسية والذكاء الاصطناعي مقرها طهران، إيران. يقدّم الاستشارات في الذكاء الاصطناعي التطبيقي والجاهزية لما بعد الكم والأمن السيبراني، استنادًا إلى عمله منذ عام ٢٠٠٧ في البنية التحتية المؤسسية والمحاكاة الافتراضية والتعافي من الكوارث.",
+      "certs": "يحمل {certs} شهادة مهنية (منها VMware VCP-DCV، وEC-Council CEH/CHFI، وHPE ATP، وGIAC/SANS SEC504/SEC542)، ويعمل من TechElite في مركز نمو تقنيات النخبة (مسير ٢١) بحديقة برديس التقنية، طهران، إيران.",
+      "h_identity": "الهوية",
+      "h_advisory": "الاستشارات",
+      "h_services": "الخدمات",
+      "h_pages": "الصفحات",
+      "h_notes": "ملاحظات لمساعدي الذكاء الاصطناعي وبرامج الزحف",
+      "l_name": "الاسم الكامل",
+      "l_title": "المسمّى",
+      "l_company": "الشركة",
+      "l_education": "التعليم",
+      "l_contact": "التواصل",
+      "l_linkedin": "LinkedIn",
+      "l_x": "X (Twitter)",
+      "title": "مستشار الذكاء الاصطناعي والجاهزية الكمّية | الرئيس التنفيذي لشركة Kohan System Farda",
+      "education": "دكتوراه في إدارة تقنية المعلومات (الأعمال الذكية)، جامعة آزاد الإسلامية فرع طهران المركزي؛ ماجستير في إدارة تقنية المعلومات / الأعمال الإلكترونية، جامعة طهران؛ ماجستير تطبيقات الحاسوب (MCA)، تقنية البرمجيات، جامعة فردوسي في مشهد",
+      "advisory": [
+        [
+          "تقييم الجاهزية للذكاء الاصطناعي",
+          "مراجعة قائمة على الأدلة لمواضع استخدام الذكاء الاصطناعي، وما يُسمح له بالوصول إليه، ومصدر إجاباته، ومن يتحمّل المسؤولية عند الخطأ"
+        ],
+        [
+          "تقييم الجاهزية لما بعد الكم",
+          "جرد التشفير، وتحليل عمر البيانات، وخارطة طريق مؤرّخة للانتقال إلى معايير NIST لما بعد الكم (ML-KEM، ML-DSA)"
+        ],
+        [
+          "تصميم معمارية آمنة للذكاء الاصطناعي",
+          "تصميم الاسترجاع والهوية وأقل الامتيازات لوكلاء الذكاء الاصطناعي المؤسسيين، بحجم يستطيع فريق العميل نفسه بناءه والدفاع عنه"
+        ]
+      ],
+      "services": [
+        [
+          "الذكاء الاصطناعي والأتمتة الذكية",
+          "منتجات الذكاء الاصطناعي ومنصات الوكلاء المؤسسية والأتمتة"
+        ],
+        [
+          "البنية التحتية والمحاكاة الافتراضية",
+          "VMware vSphere، وتصميم مراكز البيانات، وWindows Server وActive Directory، وKubernetes، وDocker"
+        ],
+        [
+          "النسخ الاحتياطي والتعافي من الكوارث",
+          "Veeam، وArctera Backup Exec، وVeritas NetBackup"
+        ],
+        [
+          "الأمن السيبراني والأدلة الجنائية الرقمية",
+          "اختبار الاختراق، والتحليل الجنائي للحوادث، وتدقيق الأمن"
+        ]
+      ],
+      "p_home": "الصفحة الرئيسية / السيرة الذاتية ({lang})",
+      "p_home_d": "الملف الكامل وأبرز الأعمال والشهادات وآراء العملاء",
+      "p_certs": "أرشيف الشهادات",
+      "p_certs_d": "السجل الكامل للشهادات المهنية",
+      "p_blog": "المدونة",
+      "p_blog_d": "مقالات عن الذكاء الاصطناعي والمسار المهني والتقنية — متاحة بـ{langcount} لغات",
+      "p_portfolio": "معرض الأعمال",
+      "p_portfolio_d": "مشاريع مختارة",
+      "p_other": "لغات أخرى",
+      "notes": "هذا موقع شخصي مهني، وليس منتجًا أو خدمة برمجية. المحتوى آمن للتلخيص والاقتباس والاستشهاد مع الإسناد إلى محمد علي كهن‌دژ / kohandezh.com. تتوفر بيانات منظّمة (schema.org Person وOrganization) في كل صفحة لتحديد الكيان.",
+      "langs": {
+        "en": "الإنجليزية",
+        "fa": "الفارسية",
+        "ar": "العربية",
+        "de": "الألمانية",
+        "es": "الإسبانية",
+        "fr": "الفرنسية",
+        "tr": "التركية",
+        "zh": "الصينية",
+        "ja": "اليابانية",
+        "ru": "الروسية"
+      },
+      "langname": "بالعربية",
+      "count": "عشر"
+    },
+    "de": {
+      "heading": "Mohammad Ali Kohandezh",
+      "summary": "Mohammad Ali Kohandezh ist Berater für KI und Quantum-Readiness sowie CEO von Kohan System Farda (KSF), einem Unternehmen für Enterprise-IT und KI mit Sitz in Teheran, Iran. Er berät zu angewandter KI, Post-Quanten-Readiness und Cybersicherheit — auf der Grundlage seiner Arbeit in Enterprise-IT-Infrastruktur, Virtualisierung und Disaster Recovery seit 2007.",
+      "certs": "Er hält {certs} Fachzertifizierungen (darunter VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542) und arbeitet von TechElite aus, dem Nokhbegan Technology Growth Center (Masir 21) im Pardis Technology Park, Teheran, Iran.",
+      "h_identity": "Identität",
+      "h_advisory": "Beratung",
+      "h_services": "Leistungen",
+      "h_pages": "Seiten",
+      "h_notes": "Hinweise für KI-Assistenten und Crawler",
+      "l_name": "Vollständiger Name",
+      "l_title": "Funktion",
+      "l_company": "Unternehmen",
+      "l_education": "Ausbildung",
+      "l_contact": "Kontakt",
+      "l_linkedin": "LinkedIn",
+      "l_x": "X (Twitter)",
+      "title": "Berater für KI und Quantum-Readiness | CEO, Kohan System Farda",
+      "education": "Promotion, IT-Management (Smart Business), Islamic Azad University, Central Tehran Branch; M.Sc., IT-Management / E-Business, Universität Teheran; MCA, Computer-Softwaretechnik, Ferdowsi-Universität Maschhad",
+      "advisory": [
+        [
+          "KI-Readiness-Assessment",
+          "evidenzbasierte Prüfung, wo KI bereits im Einsatz ist, worauf sie zugreifen darf, woher ihre Antworten stammen und wer bei Fehlern verantwortlich ist"
+        ],
+        [
+          "Post-Quanten-Readiness-Assessment",
+          "kryptografische Inventur, Analyse der Datenlebensdauer und ein datierter Migrationsfahrplan zu den NIST-Post-Quanten-Standards (ML-KEM, ML-DSA)"
+        ],
+        [
+          "Design sicherer KI-Architekturen",
+          "Retrieval-, Identitäts- und Least-Privilege-Design für Enterprise-KI-Agenten, dimensioniert für das eigene Team des Kunden"
+        ]
+      ],
+      "services": [
+        [
+          "KI & intelligente Automatisierung",
+          "KI-Produkte, Agentenplattformen für Unternehmen und Automatisierung"
+        ],
+        [
+          "Infrastruktur & Virtualisierung",
+          "VMware vSphere, Rechenzentrumsplanung, Windows Server & AD, Kubernetes, Docker"
+        ],
+        [
+          "Backup & Disaster Recovery",
+          "Veeam, Arctera Backup Exec, Veritas NetBackup"
+        ],
+        [
+          "Cybersicherheit & Forensik",
+          "Penetrationstests, Incident-Forensik, Sicherheitsaudits"
+        ]
+      ],
+      "p_home": "Startseite / Lebenslauf ({lang})",
+      "p_home_d": "vollständiges Profil, Arbeitsschwerpunkte, Zertifizierungen, Referenzen",
+      "p_certs": "Zertifikatsarchiv",
+      "p_certs_d": "vollständiger Nachweis der Fachzertifizierungen",
+      "p_blog": "Blog",
+      "p_blog_d": "Beiträge zu KI, Beruf und Technologie — verfügbar in {langcount} Sprachen",
+      "p_portfolio": "Portfolio",
+      "p_portfolio_d": "ausgewählte Projektarbeiten",
+      "p_other": "Weitere Sprachen",
+      "notes": "Dies ist ein persönliches berufliches Portfolio, kein Produkt und kein SaaS. Die Inhalte dürfen mit Quellenangabe zu Mohammad Ali Kohandezh / kohandezh.com zusammengefasst, zitiert und belegt werden. Strukturierte Daten (schema.org Person, Organization) sind auf jeder Seite für die Entitätsauflösung vorhanden.",
+      "langs": {
+        "en": "Englisch",
+        "fa": "Persisch",
+        "ar": "Arabisch",
+        "de": "Deutsch",
+        "es": "Spanisch",
+        "fr": "Französisch",
+        "tr": "Türkisch",
+        "zh": "Chinesisch",
+        "ja": "Japanisch",
+        "ru": "Russisch"
+      },
+      "langname": "Deutsch",
+      "count": "zehn"
+    },
+    "es": {
+      "heading": "Mohammad Ali Kohandezh",
+      "summary": "Mohammad Ali Kohandezh es asesor en IA y preparación cuántica y director ejecutivo de Kohan System Farda (KSF), una empresa de TI empresarial e inteligencia artificial con sede en Teherán, Irán. Asesora en IA aplicada, preparación poscuántica y ciberseguridad, sobre la base de su trabajo en infraestructura de TI empresarial, virtualización y recuperación ante desastres desde 2007.",
+      "certs": "Posee {certs} certificaciones profesionales (entre ellas VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542) y trabaja desde TechElite, el Centro de Crecimiento Tecnológico Nokhbegan (Masir 21), Parque Tecnológico de Pardis, Teherán, Irán.",
+      "h_identity": "Identidad",
+      "h_advisory": "Asesoría",
+      "h_services": "Servicios",
+      "h_pages": "Páginas",
+      "h_notes": "Notas para asistentes de IA y rastreadores",
+      "l_name": "Nombre completo",
+      "l_title": "Cargo",
+      "l_company": "Empresa",
+      "l_education": "Formación",
+      "l_contact": "Contacto",
+      "l_linkedin": "LinkedIn",
+      "l_x": "X (Twitter)",
+      "title": "Asesor en IA y preparación cuántica | Director ejecutivo, Kohan System Farda",
+      "education": "Doctorado en Gestión de TI (Negocio Inteligente), Universidad Azad Islámica, sede Teherán Central; Máster en Gestión de TI / negocio electrónico, Universidad de Teherán; MCA en Tecnología de Software, Universidad Ferdowsi de Mashhad",
+      "advisory": [
+        [
+          "Evaluación de preparación para la IA",
+          "revisión basada en evidencias sobre dónde se usa ya la IA, a qué se le permite acceder, de dónde vienen sus respuestas y quién responde cuando se equivoca"
+        ],
+        [
+          "Evaluación de preparación poscuántica",
+          "inventario criptográfico, análisis de vida útil de los datos y una hoja de ruta fechada hacia los estándares poscuánticos del NIST (ML-KEM, ML-DSA)"
+        ],
+        [
+          "Diseño de arquitectura de IA segura",
+          "diseño de recuperación, identidad y mínimo privilegio para agentes de IA empresariales, dimensionado para que el propio equipo del cliente pueda construirlo y defenderlo"
+        ]
+      ],
+      "services": [
+        [
+          "IA y automatización inteligente",
+          "productos de IA, plataformas de agentes para empresas y automatización"
+        ],
+        [
+          "Infraestructura y virtualización",
+          "VMware vSphere, diseño de centros de datos, Windows Server y AD, Kubernetes, Docker"
+        ],
+        [
+          "Copias de seguridad y recuperación ante desastres",
+          "Veeam, Arctera Backup Exec, Veritas NetBackup"
+        ],
+        [
+          "Ciberseguridad y análisis forense",
+          "pruebas de penetración, análisis forense de incidentes, auditoría de seguridad"
+        ]
+      ],
+      "p_home": "Inicio / CV ({lang})",
+      "p_home_d": "perfil completo, trabajos destacados, certificaciones, testimonios",
+      "p_certs": "Archivo de certificados",
+      "p_certs_d": "registro completo de certificaciones profesionales",
+      "p_blog": "Blog",
+      "p_blog_d": "artículos sobre IA, carrera profesional y tecnología — disponibles en {langcount} idiomas",
+      "p_portfolio": "Portafolio",
+      "p_portfolio_d": "proyectos seleccionados",
+      "p_other": "Otros idiomas",
+      "notes": "Este es un portafolio profesional personal, no un producto ni un SaaS. El contenido puede resumirse, citarse y referenciarse con atribución a Mohammad Ali Kohandezh / kohandezh.com. Cada página incluye datos estructurados (schema.org Person, Organization) para la resolución de entidades.",
+      "langs": {
+        "en": "inglés",
+        "fa": "persa",
+        "ar": "árabe",
+        "de": "alemán",
+        "es": "español",
+        "fr": "francés",
+        "tr": "turco",
+        "zh": "chino",
+        "ja": "japonés",
+        "ru": "ruso"
+      },
+      "langname": "español",
+      "count": "diez"
+    },
+    "fr": {
+      "heading": "Mohammad Ali Kohandezh",
+      "summary": "Mohammad Ali Kohandezh est conseiller en IA et en préparation quantique et directeur général de Kohan System Farda (KSF), une entreprise d’informatique d’entreprise et d’intelligence artificielle basée à Téhéran, en Iran. Il conseille en IA appliquée, en préparation post-quantique et en cybersécurité, en s’appuyant sur ses travaux en infrastructure informatique d’entreprise, virtualisation et reprise après sinistre menés depuis 2007.",
+      "certs": "Il détient {certs} certifications professionnelles (dont VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542) et travaille depuis TechElite, le centre de croissance technologique Nokhbegan (Masir 21), Parc technologique de Pardis, Téhéran, Iran.",
+      "h_identity": "Identité",
+      "h_advisory": "Conseil",
+      "h_services": "Services",
+      "h_pages": "Pages",
+      "h_notes": "Notes pour les assistants IA et les robots d’indexation",
+      "l_name": "Nom complet",
+      "l_title": "Fonction",
+      "l_company": "Entreprise",
+      "l_education": "Formation",
+      "l_contact": "Contact",
+      "l_linkedin": "LinkedIn",
+      "l_x": "X (Twitter)",
+      "title": "Conseiller en IA et en préparation quantique | Directeur général, Kohan System Farda",
+      "education": "Doctorat en gestion des TI (commerce intelligent), Université Azad islamique, antenne de Téhéran-Centre ; Master en gestion des TI / commerce électronique, Université de Téhéran ; MCA en technologie logicielle, Université Ferdowsi de Mashhad",
+      "advisory": [
+        [
+          "Évaluation de la préparation à l’IA",
+          "examen fondé sur des preuves de l’usage actuel de l’IA, de ce à quoi elle a le droit d’accéder, de l’origine de ses réponses et de qui répond de ses erreurs"
+        ],
+        [
+          "Évaluation de la préparation post-quantique",
+          "inventaire cryptographique, analyse de la durée de vie des données et feuille de route datée vers les normes post-quantiques du NIST (ML-KEM, ML-DSA)"
+        ],
+        [
+          "Conception d’architecture d’IA sécurisée",
+          "conception de la recherche, de l’identité et du moindre privilège pour les agents d’IA d’entreprise, dimensionnée pour l’équipe du client"
+        ]
+      ],
+      "services": [
+        [
+          "IA et automatisation intelligente",
+          "produits d’IA, plateformes d’agents pour l’entreprise et automatisation"
+        ],
+        [
+          "Infrastructure et virtualisation",
+          "VMware vSphere, conception de centres de données, Windows Server et AD, Kubernetes, Docker"
+        ],
+        [
+          "Sauvegarde et reprise après sinistre",
+          "Veeam, Arctera Backup Exec, Veritas NetBackup"
+        ],
+        [
+          "Cybersécurité et investigation numérique",
+          "tests d’intrusion, investigation d’incidents, audit de sécurité"
+        ]
+      ],
+      "p_home": "Accueil / CV ({lang})",
+      "p_home_d": "profil complet, travaux marquants, certifications, témoignages",
+      "p_certs": "Archive des certificats",
+      "p_certs_d": "relevé complet des certifications professionnelles",
+      "p_blog": "Blog",
+      "p_blog_d": "articles sur l’IA, la carrière et la technologie — disponibles en {langcount} langues",
+      "p_portfolio": "Portfolio",
+      "p_portfolio_d": "projets sélectionnés",
+      "p_other": "Autres langues",
+      "notes": "Il s’agit d’un portfolio professionnel personnel, non d’un produit ni d’un SaaS. Le contenu peut être résumé, cité et référencé avec attribution à Mohammad Ali Kohandezh / kohandezh.com. Des données structurées (schema.org Person, Organization) figurent sur chaque page pour la résolution d’entité.",
+      "langs": {
+        "en": "anglais",
+        "fa": "persan",
+        "ar": "arabe",
+        "de": "allemand",
+        "es": "espagnol",
+        "fr": "français",
+        "tr": "turc",
+        "zh": "chinois",
+        "ja": "japonais",
+        "ru": "russe"
+      },
+      "langname": "français",
+      "count": "dix"
+    },
+    "tr": {
+      "heading": "Mohammad Ali Kohandezh",
+      "summary": "Mohammad Ali Kohandezh, yapay zekâ ve kuantum hazırlığı danışmanı ve Tahran, İran merkezli kurumsal BT ile yapay zekâ şirketi Kohan System Farda’nın (KSF) genel müdürüdür. Uygulamalı yapay zekâ, post-kuantum hazırlığı ve siber güvenlik alanlarında danışmanlık verir; bunu 2007’den bu yana yürüttüğü kurumsal BT altyapısı, sanallaştırma ve olağanüstü durum kurtarma çalışmalarına dayandırır.",
+      "certs": "{certs} mesleki sertifikaya sahiptir (VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542 dâhil) ve Tahran, İran’daki Pardis Teknoloji Parkı, Nokhbegan Teknoloji Büyüme Merkezi (Masir 21) bünyesindeki TechElite’ten çalışmaktadır.",
+      "h_identity": "Kimlik",
+      "h_advisory": "Danışmanlık",
+      "h_services": "Hizmetler",
+      "h_pages": "Sayfalar",
+      "h_notes": "Yapay zekâ asistanları ve tarayıcılar için notlar",
+      "l_name": "Tam ad",
+      "l_title": "Unvan",
+      "l_company": "Şirket",
+      "l_education": "Eğitim",
+      "l_contact": "İletişim",
+      "l_linkedin": "LinkedIn",
+      "l_x": "X (Twitter)",
+      "title": "Yapay zekâ ve kuantum hazırlığı danışmanı | Genel müdür, Kohan System Farda",
+      "education": "BT Yönetimi doktorası (akıllı iş), İslami Azad Üniversitesi Merkez Tahran Şubesi; BT Yönetimi / e-İş yüksek lisansı, Tahran Üniversitesi; MCA, Bilgisayar Yazılım Teknolojisi, Meşhed Ferdowsi Üniversitesi",
+      "advisory": [
+        [
+          "Yapay zekâ hazırlık değerlendirmesi",
+          "yapay zekânın nerede kullanıldığına, neye erişmesine izin verildiğine, yanıtlarının nereden geldiğine ve hata durumunda kimin sorumlu olduğuna dair kanıta dayalı inceleme"
+        ],
+        [
+          "Post-kuantum hazırlık değerlendirmesi",
+          "kriptografik envanter, veri ömrü analizi ve NIST post-kuantum standartlarına (ML-KEM, ML-DSA) tarihli geçiş yol haritası"
+        ],
+        [
+          "Güvenli yapay zekâ mimarisi tasarımı",
+          "kurumsal yapay zekâ ajanları için erişim, kimlik ve en az yetki tasarımı; müşterinin kendi ekibinin kurup savunabileceği ölçekte"
+        ]
+      ],
+      "services": [
+        [
+          "Yapay zekâ ve akıllı otomasyon",
+          "yapay zekâ ürünleri, kurumsal ajan platformları ve otomasyon"
+        ],
+        [
+          "Altyapı ve sanallaştırma",
+          "VMware vSphere, veri merkezi tasarımı, Windows Server ve AD, Kubernetes, Docker"
+        ],
+        [
+          "Yedekleme ve olağanüstü durum kurtarma",
+          "Veeam, Arctera Backup Exec, Veritas NetBackup"
+        ],
+        [
+          "Siber güvenlik ve adli bilişim",
+          "sızma testi, olay sonrası adli inceleme, güvenlik denetimi"
+        ]
+      ],
+      "p_home": "Ana sayfa / özgeçmiş ({lang})",
+      "p_home_d": "tam profil, öne çıkan işler, sertifikalar, referanslar",
+      "p_certs": "Sertifika arşivi",
+      "p_certs_d": "mesleki sertifikaların tam kaydı",
+      "p_blog": "Blog",
+      "p_blog_d": "yapay zekâ, kariyer ve teknoloji üzerine yazılar — {langcount} dilde mevcut",
+      "p_portfolio": "Portföy",
+      "p_portfolio_d": "seçilmiş proje çalışmaları",
+      "p_other": "Diğer diller",
+      "notes": "Burası kişisel bir mesleki portföydür; bir ürün ya da SaaS değildir. İçerik, Mohammad Ali Kohandezh / kohandezh.com kaynak gösterilerek özetlenebilir, alıntılanabilir ve kaynak olarak kullanılabilir. Varlık çözümlemesi için her sayfada yapılandırılmış veri (schema.org Person, Organization) bulunur.",
+      "langs": {
+        "en": "İngilizce",
+        "fa": "Farsça",
+        "ar": "Arapça",
+        "de": "Almanca",
+        "es": "İspanyolca",
+        "fr": "Fransızca",
+        "tr": "Türkçe",
+        "zh": "Çince",
+        "ja": "Japonca",
+        "ru": "Rusça"
+      },
+      "langname": "Türkçe",
+      "count": "on"
+    },
+    "zh": {
+      "heading": "Mohammad Ali Kohandezh（穆罕默德·阿里·科汉德泽）",
+      "summary": "Mohammad Ali Kohandezh 是人工智能与量子就绪顾问，也是总部位于伊朗德黑兰的企业级 IT 与人工智能公司 Kohan System Farda（KSF）的首席执行官。他就应用人工智能、后量子就绪与网络安全提供咨询，其基础是自 2007 年以来在企业 IT 基础设施、虚拟化与灾难恢复方面的工作。",
+      "certs": "他持有 {certs} 项专业认证（包括 VMware VCP-DCV、EC-Council CEH/CHFI、HPE ATP、GIAC/SANS SEC504/SEC542），办公地点为伊朗德黑兰帕迪斯科技园精英科技成长中心（Masir 21）内的 TechElite。",
+      "h_identity": "身份",
+      "h_advisory": "咨询",
+      "h_services": "服务",
+      "h_pages": "页面",
+      "h_notes": "给人工智能助手与爬虫的说明",
+      "l_name": "全名",
+      "l_title": "职务",
+      "l_company": "公司",
+      "l_education": "教育背景",
+      "l_contact": "联系方式",
+      "l_linkedin": "LinkedIn",
+      "l_x": "X (Twitter)",
+      "title": "人工智能与量子就绪顾问 ／ Kohan System Farda 首席执行官",
+      "education": "信息技术管理博士（智慧商业），伊斯兰阿扎德大学德黑兰中央分校；德黑兰大学信息技术管理／电子商务硕士；马什哈德菲尔多西大学计算机软件技术硕士（MCA）",
+      "advisory": [
+        [
+          "人工智能就绪评估",
+          "以证据为基础，审查人工智能已在何处使用、被允许接触什么、答案来自何处，以及出错时由谁负责"
+        ],
+        [
+          "后量子就绪评估",
+          "密码资产盘点、数据生命周期分析，以及迁移至 NIST 后量子标准（ML-KEM、ML-DSA）的带日期路线图"
+        ],
+        [
+          "安全人工智能架构设计",
+          "为企业人工智能智能体设计检索、身份与最小权限方案，其规模以客户团队自身能够构建与维护为准"
+        ]
+      ],
+      "services": [
+        [
+          "人工智能与智能自动化",
+          "人工智能产品、面向企业的智能体平台与自动化"
+        ],
+        [
+          "基础设施与虚拟化",
+          "VMware vSphere、数据中心设计、Windows Server 与 AD、Kubernetes、Docker"
+        ],
+        [
+          "备份与灾难恢复",
+          "Veeam、Arctera Backup Exec、Veritas NetBackup"
+        ],
+        [
+          "网络安全与数字取证",
+          "渗透测试、事件取证、安全审计"
+        ]
+      ],
+      "p_home": "首页／简历（{lang}）",
+      "p_home_d": "完整档案、代表作、认证与客户评价",
+      "p_certs": "证书存档",
+      "p_certs_d": "专业认证的完整记录",
+      "p_blog": "博客",
+      "p_blog_d": "关于人工智能、职业与技术的文章——提供 {langcount} 种语言",
+      "p_portfolio": "作品集",
+      "p_portfolio_d": "精选项目",
+      "p_other": "其他语言",
+      "notes": "这是个人的专业作品集网站，并非产品或 SaaS。内容可在注明出处（Mohammad Ali Kohandezh / kohandezh.com）的前提下摘要、引用与征引。每个页面均包含结构化数据（schema.org Person、Organization）以便实体识别。",
+      "langs": {
+        "en": "英语",
+        "fa": "波斯语",
+        "ar": "阿拉伯语",
+        "de": "德语",
+        "es": "西班牙语",
+        "fr": "法语",
+        "tr": "土耳其语",
+        "zh": "中文",
+        "ja": "日语",
+        "ru": "俄语"
+      },
+      "langname": "中文",
+      "count": "十"
+    },
+    "ja": {
+      "heading": "Mohammad Ali Kohandezh（モハンマド・アリ・コハンデジュ）",
+      "summary": "Mohammad Ali Kohandezh は AI・量子対応アドバイザーであり、イラン・テヘランに拠点を置く企業向け IT および AI 企業 Kohan System Farda（KSF）の最高経営責任者です。応用 AI、ポスト量子対応、サイバーセキュリティについて助言しており、その基盤は 2007 年以来の企業 IT インフラ、仮想化、災害復旧の実務にあります。",
+      "certs": "{certs} 件の専門資格（VMware VCP-DCV、EC-Council CEH/CHFI、HPE ATP、GIAC/SANS SEC504/SEC542 など）を保有し、イラン・テヘランのパルディス・テクノロジーパーク内、ノフベガン技術成長センター（Masir 21）の TechElite を拠点としています。",
+      "h_identity": "プロフィール",
+      "h_advisory": "アドバイザリー",
+      "h_services": "サービス",
+      "h_pages": "ページ",
+      "h_notes": "AI アシスタントおよびクローラーへの注記",
+      "l_name": "氏名",
+      "l_title": "役職",
+      "l_company": "会社",
+      "l_education": "学歴",
+      "l_contact": "連絡先",
+      "l_linkedin": "LinkedIn",
+      "l_x": "X (Twitter)",
+      "title": "AI・量子対応アドバイザー／Kohan System Farda 最高経営責任者",
+      "education": "IT マネジメント博士（スマートビジネス）、イスラム・アザド大学テヘラン中央校／テヘラン大学 IT マネジメント・e ビジネス修士／マシュハド・フェルドウスィー大学 コンピュータソフトウェア技術修士（MCA）",
+      "advisory": [
+        [
+          "AI 対応度アセスメント",
+          "AI がすでにどこで使われ、何に触れることを許され、回答がどこから来て、誤ったとき誰が責任を負うのかを証拠に基づいて確認します"
+        ],
+        [
+          "ポスト量子対応アセスメント",
+          "暗号資産の棚卸し、データ保持期間の分析、および NIST ポスト量子標準（ML-KEM、ML-DSA）への日付入り移行ロードマップ"
+        ],
+        [
+          "セキュアな AI アーキテクチャ設計",
+          "企業向け AI エージェントの検索・ID・最小権限の設計を、顧客自身のチームが構築し守れる規模で行います"
+        ]
+      ],
+      "services": [
+        [
+          "AI とスマート自動化",
+          "AI 製品、企業向けエージェント基盤、業務自動化"
+        ],
+        [
+          "インフラと仮想化",
+          "VMware vSphere、データセンター設計、Windows Server と AD、Kubernetes、Docker"
+        ],
+        [
+          "バックアップと災害復旧",
+          "Veeam、Arctera Backup Exec、Veritas NetBackup"
+        ],
+        [
+          "サイバーセキュリティとフォレンジック",
+          "ペネトレーションテスト、インシデントフォレンジック、セキュリティ監査"
+        ]
+      ],
+      "p_home": "ホーム／履歴（{lang}）",
+      "p_home_d": "詳細プロフィール、主な実績、資格、推薦の声",
+      "p_certs": "資格アーカイブ",
+      "p_certs_d": "専門資格の完全な記録",
+      "p_blog": "ブログ",
+      "p_blog_d": "AI、キャリア、技術に関する記事 — {langcount} 言語で提供",
+      "p_portfolio": "ポートフォリオ",
+      "p_portfolio_d": "厳選したプロジェクト",
+      "p_other": "他の言語",
+      "notes": "これは個人の専門的なポートフォリオであり、製品でも SaaS でもありません。内容は Mohammad Ali Kohandezh / kohandezh.com への出典明記のうえで要約・引用・参照して差し支えありません。エンティティ解決のため、すべてのページに構造化データ（schema.org Person、Organization）を含めています。",
+      "langs": {
+        "en": "英語",
+        "fa": "ペルシア語",
+        "ar": "アラビア語",
+        "de": "ドイツ語",
+        "es": "スペイン語",
+        "fr": "フランス語",
+        "tr": "トルコ語",
+        "zh": "中国語",
+        "ja": "日本語",
+        "ru": "ロシア語"
+      },
+      "langname": "日本語",
+      "count": "10"
+    },
+    "ru": {
+      "heading": "Мохаммад Али Кохандеж (Mohammad Ali Kohandezh)",
+      "summary": "Мохаммад Али Кохандеж — консультант по искусственному интеллекту и квантовой готовности и генеральный директор компании Kohan System Farda (KSF), работающей в сфере корпоративных ИТ и искусственного интеллекта в Тегеране, Иран. Консультирует по прикладному ИИ, постквантовой готовности и кибербезопасности, опираясь на работу в корпоративной ИТ-инфраструктуре, виртуализации и аварийном восстановлении, которую ведёт с 2007 года.",
+      "certs": "Обладатель {certs} профессиональных сертификаций (в том числе VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542). Работает в TechElite — Центре технологического роста «Нохбеган» (Masir 21), Технопарк Пардис, Тегеран, Иран.",
+      "h_identity": "Идентификация",
+      "h_advisory": "Консалтинг",
+      "h_services": "Услуги",
+      "h_pages": "Страницы",
+      "h_notes": "Примечания для ИИ-ассистентов и краулеров",
+      "l_name": "Полное имя",
+      "l_title": "Должность",
+      "l_company": "Компания",
+      "l_education": "Образование",
+      "l_contact": "Контакт",
+      "l_linkedin": "LinkedIn",
+      "l_x": "X (Twitter)",
+      "title": "Консультант по ИИ и квантовой готовности | Генеральный директор Kohan System Farda",
+      "education": "Доктор наук по управлению ИТ (умный бизнес), Исламский университет Азад, Центральный тегеранский филиал; магистр по управлению ИТ / электронному бизнесу, Тегеранский университет; MCA по технологии программного обеспечения, Мешхедский университет имени Фердоуси",
+      "advisory": [
+        [
+          "Оценка готовности к ИИ",
+          "основанный на фактах обзор того, где ИИ уже применяется, к чему ему разрешён доступ, откуда берутся его ответы и кто отвечает за ошибки"
+        ],
+        [
+          "Оценка постквантовой готовности",
+          "криптографическая инвентаризация, анализ срока жизни данных и датированная дорожная карта перехода на постквантовые стандарты NIST (ML-KEM, ML-DSA)"
+        ],
+        [
+          "Проектирование безопасной архитектуры ИИ",
+          "проектирование поиска, идентификации и минимальных привилегий для корпоративных ИИ-агентов — в объёме, который команда клиента способна построить и защитить"
+        ]
+      ],
+      "services": [
+        [
+          "ИИ и интеллектуальная автоматизация",
+          "продукты ИИ, корпоративные агентные платформы, автоматизация"
+        ],
+        [
+          "Инфраструктура и виртуализация",
+          "VMware vSphere, проектирование ЦОД, Windows Server и AD, Kubernetes, Docker"
+        ],
+        [
+          "Резервное копирование и аварийное восстановление",
+          "Veeam, Arctera Backup Exec, Veritas NetBackup"
+        ],
+        [
+          "Кибербезопасность и форензика",
+          "тестирование на проникновение, расследование инцидентов, аудит безопасности"
+        ]
+      ],
+      "p_home": "Главная / резюме ({lang})",
+      "p_home_d": "полный профиль, ключевые работы, сертификации, отзывы",
+      "p_certs": "Архив сертификатов",
+      "p_certs_d": "полный перечень профессиональных сертификаций",
+      "p_blog": "Блог",
+      "p_blog_d": "статьи об ИИ, карьере и технологиях — доступны на {langcount} языках",
+      "p_portfolio": "Портфолио",
+      "p_portfolio_d": "избранные проекты",
+      "p_other": "Другие языки",
+      "notes": "Это персональное профессиональное портфолио, а не продукт и не SaaS. Содержимое можно резюмировать, цитировать и упоминать со ссылкой на Mohammad Ali Kohandezh / kohandezh.com. На каждой странице присутствуют структурированные данные (schema.org Person, Organization) для разрешения сущностей.",
+      "langs": {
+        "en": "английский",
+        "fa": "персидский",
+        "ar": "арабский",
+        "de": "немецкий",
+        "es": "испанский",
+        "fr": "французский",
+        "tr": "турецкий",
+        "zh": "китайский",
+        "ja": "японский",
+        "ru": "русский"
+      },
+      "langname": "русский",
+      "count": "десяти"
+    }
+  }
+}

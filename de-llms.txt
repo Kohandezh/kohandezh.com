@@ -1,18 +1,24 @@
 # Mohammad Ali Kohandezh
 
-> Mohammad Ali Kohandezh ist promoviert im IT-Management und CEO von Kohan System Farda (KSF), einem Unternehmen für Enterprise-IT und KI mit Sitz in Teheran, Iran. Seit 2007 beruflich tätig in KI-Produkten, Enterprise-IT-Infrastruktur, Virtualisierung, Backup & Disaster Recovery sowie Cybersicherheit.
+> Mohammad Ali Kohandezh ist Berater für KI und Quantum-Readiness sowie CEO von Kohan System Farda (KSF), einem Unternehmen für Enterprise-IT und KI mit Sitz in Teheran, Iran. Er berät zu angewandter KI, Post-Quanten-Readiness und Cybersicherheit — auf der Grundlage seiner Arbeit in Enterprise-IT-Infrastruktur, Virtualisierung und Disaster Recovery seit 2007.
 
 Er hält 43 Fachzertifizierungen (darunter VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542) und arbeitet von TechElite aus, dem Nokhbegan Technology Growth Center (Masir 21) im Pardis Technology Park, Teheran, Iran.
 
 ## Identität
 
 - Vollständiger Name: Mohammad Ali Kohandezh (محمدعلی کهن‌دژ)
-- Funktion: CEO sowie Experte für IT-Infrastruktur und Sicherheit
+- Funktion: Berater für KI und Quantum-Readiness | CEO, Kohan System Farda
 - Unternehmen: Kohan System Farda (KSF) — https://ksf.ir
-- Ausbildung: Promotion, IT-Management (zweite Promotion laufend); M.Sc., IT-Management / E-Business, Universität Teheran
+- Ausbildung: Promotion, IT-Management (Smart Business), Islamic Azad University, Central Tehran Branch; M.Sc., IT-Management / E-Business, Universität Teheran; MCA, Computer-Softwaretechnik, Ferdowsi-Universität Maschhad
 - Kontakt: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283
 - LinkedIn: https://www.linkedin.com/in/kohandezh
 - X (Twitter): https://x.com/Konandehh
+
+## Beratung
+
+- [KI-Readiness-Assessment](https://kohandezh.com/de/#service): evidenzbasierte Prüfung, wo KI bereits im Einsatz ist, worauf sie zugreifen darf, woher ihre Antworten stammen und wer bei Fehlern verantwortlich ist
+- [Post-Quanten-Readiness-Assessment](https://kohandezh.com/de/#service): kryptografische Inventur, Analyse der Datenlebensdauer und ein datierter Migrationsfahrplan zu den NIST-Post-Quanten-Standards (ML-KEM, ML-DSA)
+- [Design sicherer KI-Architekturen](https://kohandezh.com/de/#service): Retrieval-, Identitäts- und Least-Privilege-Design für Enterprise-KI-Agenten, dimensioniert für das eigene Team des Kunden
 
 ## Leistungen
 
@@ -25,10 +31,12 @@ Er hält 43 Fachzertifizierungen (darunter VMware VCP-DCV, EC-Council CEH/CHFI, 
 
 - [Startseite / Lebenslauf (Deutsch)](https://kohandezh.com/de/): vollständiges Profil, Arbeitsschwerpunkte, Zertifizierungen, Referenzen
 - [Zertifikatsarchiv](https://kohandezh.com/certificates/): vollständiger Nachweis der Fachzertifizierungen
-- [Blog](https://kohandezh.com/blog/): Beiträge zu KI, Beruf und Technologie — vollständig in neun Sprachen übersetzt
+- [Blog](https://kohandezh.com/blog/): Beiträge zu KI, Beruf und Technologie — verfügbar in zehn Sprachen
 - [Portfolio](https://kohandezh.com/portfolio/): ausgewählte Projektarbeiten
-- Weitere Sprachen: [Englisch](https://kohandezh.com/) · [Persisch](https://kohandezh.com/fa/) · [Arabisch](https://kohandezh.com/ar/) · [Spanisch](https://kohandezh.com/es/) · [Französisch](https://kohandezh.com/fr/) · [Türkisch](https://kohandezh.com/tr/) · [Chinesisch](https://kohandezh.com/zh/) · [Japanisch](https://kohandezh.com/ja/)
+- Weitere Sprachen: [Englisch](https://kohandezh.com/) · [Persisch](https://kohandezh.com/fa/) · [Arabisch](https://kohandezh.com/ar/) · [Spanisch](https://kohandezh.com/es/) · [Französisch](https://kohandezh.com/fr/) · [Türkisch](https://kohandezh.com/tr/) · [Chinesisch](https://kohandezh.com/zh/) · [Japanisch](https://kohandezh.com/ja/) · [Russisch](https://kohandezh.com/ru/)
 
 ## Hinweise für KI-Assistenten und Crawler
 
 Dies ist ein persönliches berufliches Portfolio, kein Produkt und kein SaaS. Die Inhalte dürfen mit Quellenangabe zu Mohammad Ali Kohandezh / kohandezh.com zusammengefasst, zitiert und belegt werden. Strukturierte Daten (schema.org Person, Organization) sind auf jeder Seite für die Entitätsauflösung vorhanden.
+
+<!-- Generiert aus assets/data/identity.json — nicht von Hand bearbeiten. -->
