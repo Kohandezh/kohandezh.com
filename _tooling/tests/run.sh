@@ -62,7 +62,11 @@ if curl -sf -o /dev/null "$BASE/" 2>/dev/null; then
   # canonical/hreflang counts on a CV page
   canon=$(curl -s "$BASE/fa.html" | grep -c 'rel="canonical"')
   href=$(curl -s "$BASE/fa.html" | grep -c 'rel="alternate" hreflang=')
-  [ "$canon" = "1" ] && [ "$href" = "10" ] && ok "fa.html canonical=1 language hreflang=10" || bad "fa.html canonical=$canon language-hreflang=$href"
+  # 10 languages + x-default = 11. The expectation used to read 10, which was
+  # right before x-default was added and has been silently wrong since: it is
+  # the tag that tells Google what to serve a visitor whose language is none of
+  # the ten, and dropping it to satisfy the count would be the wrong repair.
+  [ "$canon" = "1" ] && [ "$href" = "11" ] && ok "fa.html canonical=1 language hreflang=11 (10 locales + x-default)" || bad "fa.html canonical=$canon language-hreflang=$href"
 else
   bad "dev server not reachable at $BASE (start ./run-dev.sh)"
 fi
