@@ -206,14 +206,13 @@
     if (out !== raw) node.textContent = out;
   }
 
-  /* ---- the generated sako row, on Russian pages --------------------------
-     kdcv-resume-entry-fix.js is written by the background tooling (not
-     editable here — same reason this file exists at all) and injects the
-     "National Open-Source AI Platform" row with English/Persian copy only.
-     On the Russian page those two strings were the last English left in the
-     timeline, so they are corrected after injection, exactly like the dates
-     above. Keyed on the full source strings: if the tooling ever changes
-     them, this silently stops matching rather than corrupting anything. */
+  /* ---- the sako row, on Russian pages ------------------------------------
+     The timeline is now rendered from assets/data/cv.json by
+     _tooling/cv/build.py, which has real Russian copy for this row, so the
+     role/description below normally match nothing. They are kept as a safety
+     net for any cached or third-party page still serving the older English
+     injection; matching is keyed on the full source string, so a miss is a
+     no-op rather than a corruption. */
   var SAKO_RU = {
     "Developer — National Open-Source AI Platform":
       "Разработчик — Национальная открытая платформа ИИ",
@@ -221,16 +220,16 @@
       "Разработчик Национальной открытой платформы ИИ."
   };
 
-  /* The same row's image alt is written from the generated file's `en` entry,
-     so it stayed English while the visible copy above it was corrected. Alt
-     text is the only version of this row a screen-reader user gets, so it is
-     mapped here too rather than left as the one English string left in the
-     Russian timeline. */
+  /* The row's logo alt is a proper noun written once in cv.json, so it stays
+     English in every locale's markup. Alt text is the only version of this
+     row a screen-reader user gets, so the Russian page maps it here.
+     The decorative platform illustration that used to sit below the logo was
+     removed, and so was its alt: there is no second image in this row. */
   var SAKO_RU_ALT = {
-    "National Open-Source AI Platform logo":
+    "National Open-Source AI Platform":
       "Логотип Национальной открытой платформы ИИ",
-    "National Open-Source AI Platform logo — conceptual editorial visualization":
-      "Логотип Национальной открытой платформы ИИ — концептуальная редакционная иллюстрация"
+    "National Open-Source AI Platform logo":
+      "Логотип Национальной открытой платформы ИИ"
   };
 
   function fixSako() {

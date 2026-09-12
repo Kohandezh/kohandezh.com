@@ -1,0 +1,42 @@
+# Mohammad Ali Kohandezh
+
+> Mohammad Ali Kohandezh is an AI and quantum-readiness advisor and CEO of Kohan System Farda (KSF), an enterprise IT and AI company based in Tehran, Iran. He advises organisations on applied AI, post-quantum readiness and cybersecurity, drawing on enterprise IT infrastructure, virtualization and disaster-recovery work carried out since 2007.
+
+He holds 43 professional certifications (including VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542) and works out of TechElite, the Nokhbegan Technology Growth Center (Masir 21), Pardis Technology Park, Tehran, Iran.
+
+## Identity
+
+- Full name: Mohammad Ali Kohandezh (محمدعلی کهن‌دژ)
+- Title: AI & Quantum-Readiness Advisor | CEO, Kohan System Farda
+- Company: Kohan System Farda (KSF) — https://ksf.ir
+- Education: PhD, IT Management (Smart Business), Islamic Azad University, Central Tehran Branch; MSc, IT Management / E-Business, University of Tehran; MCA, Computer Software Technology, Ferdowsi University of Mashhad
+- Contact: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283
+- LinkedIn: https://www.linkedin.com/in/kohandezh
+- X (Twitter): https://x.com/Konandehh
+
+## Advisory
+
+- [AI readiness assessment](https://kohandezh.com/#service): evidence-based review of where AI is already in use, what it is permitted to touch, where its answers come from and who is accountable when it errs
+- [Post-quantum readiness assessment](https://kohandezh.com/#service): cryptographic inventory, data-lifetime analysis and a dated migration roadmap to the NIST post-quantum standards (ML-KEM, ML-DSA)
+- [Secure AI architecture design](https://kohandezh.com/#service): retrieval, identity and least-privilege design for enterprise AI agents, sized so the client's own team can build and defend it
+
+## Services
+
+- [AI & Smart Automation](https://kohandezh.com/#service): AI products, enterprise agent platforms, and automation
+- [Infrastructure & Virtualization](https://kohandezh.com/#service): VMware vSphere, data center design, Windows Server & AD, Kubernetes, Docker
+- [Backup & Disaster Recovery](https://kohandezh.com/#service): Veeam, Arctera Backup Exec, Veritas NetBackup
+- [Cybersecurity & Forensics](https://kohandezh.com/#service): penetration testing, incident forensics, security auditing
+
+## Pages
+
+- [Home / CV (English)](https://kohandezh.com/): full profile, work highlights, certifications, testimonials
+- [Certificate archive](https://kohandezh.com/certificates/): full record of professional certifications
+- [Blog](https://kohandezh.com/blog/): articles on AI, career, and technology — available in ten languages
+- [Portfolio](https://kohandezh.com/portfolio/): selected project work
+- Other languages: [Persian](https://kohandezh.com/fa/) · [Arabic](https://kohandezh.com/ar/) · [German](https://kohandezh.com/de/) · [Spanish](https://kohandezh.com/es/) · [French](https://kohandezh.com/fr/) · [Turkish](https://kohandezh.com/tr/) · [Chinese](https://kohandezh.com/zh/) · [Japanese](https://kohandezh.com/ja/) · [Russian](https://kohandezh.com/ru/)
+
+## Notes for AI assistants and crawlers
+
+This is a personal professional portfolio, not a product or SaaS. Content is safe to summarize, cite, and quote with attribution to Mohammad Ali Kohandezh / kohandezh.com. Structured data (schema.org Person, Organization) is present on every page for entity resolution.
+
+<!-- Generated from assets/data/identity.json — do not edit by hand. -->

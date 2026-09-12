@@ -13,24 +13,24 @@
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/estedad/estedad.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.min.css?v=107">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/flow-field-background.min.css?v=97">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.min.css?v=2026091101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/flow-field-background.min.css?v=2026091101">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png?v=2">
   <link rel="manifest" href="/manifest.json">
   <link rel="apple-touch-icon" href="<?php echo KDCV; ?>/assets/images/logo/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="canonical" href="https://kohandezh.com/terms/">
+  <link rel="canonical" href="<?php echo esc_url( home_url('/terms/') ); ?>">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@kohandezh">
   <meta name="twitter:title" content="شرایط استفاده | Terms of Use — Kohandezh.com">
   <meta name="twitter:description" content="شرایط استفاده از kohandezh.com — مالکیت محتوا، محدودیت مسئولیت، استفادهٔ مجاز و تماس.">
   <meta name="twitter:image" content="<?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=101">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=105">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=127" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=127"></noscript>
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=5" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=5"></noscript>
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=110" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=110"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=2026091101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091101"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091101"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091101"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
        URL in results, and gives answer engines the page's place in the
        site rather than treating it as an orphan. -->
@@ -67,7 +67,7 @@
       </a>
       <nav class="blog-nav" aria-label="ناوبری">
         <a href="<?php echo esc_url( home_url('/') ); ?>">صفحه اصلی</a>
-        <a href="blog/index.html">وبلاگ</a>
+        <a href="<?php echo esc_url( home_url('/blog/') ); ?>">وبلاگ</a>
         <a href="<?php echo esc_url( home_url('/privacy/') ); ?>">حریم خصوصی</a>
       </nav>
       <div class="time-local text-body-3"><p class="date"></p><p class="clock"></p></div>
@@ -122,7 +122,7 @@
           <p data-i18n="k26">این شرایط ممکن است به‌روزرسانی شود. تاریخ آخرین تغییر در بالای صفحه درج می‌شود و ادامهٔ استفاده از سایت به معنای پذیرش نسخهٔ جدید است.</p>
 
           <h2 id="contact" data-i18n="k27">تماس</h2>
-          <p data-i18n="k28">برای هر پرسشی دربارهٔ این شرایط، از <a href="index.html#contact">فرم تماس</a> استفاده کنید.</p>
+          <p data-i18n="k28">برای هر پرسشی دربارهٔ این شرایط، از <a href="<?php echo esc_url( home_url('/') ); ?>#contact">فرم تماس</a> استفاده کنید.</p>
 
           <hr data-kdcv-i18n-drop>
 
@@ -135,7 +135,7 @@
             <p data-i18n="k34"><strong>AI assistant:</strong> where enabled, responses are generated automatically and may be inaccurate or incomplete. Do not enter confidential information.</p>
             <p data-i18n="k35"><strong>Acceptable use:</strong> no intrusion attempts, bulk scraping, spam, or impersonation.</p>
             <p data-i18n="k36"><strong>Liability:</strong> the site is provided "as is", without warranty of continuous availability. To the extent permitted by law, no liability is accepted for damages arising from its use or unavailability.</p>
-            <p data-i18n="k37">Questions? Use the <a href="index.html#contact">contact form</a>.</p>
+            <p data-i18n="k37">Questions? Use the <a href="<?php echo esc_url( home_url('/') ); ?>#contact">contact form</a>.</p>
           </div>
         </div>
 
@@ -154,7 +154,7 @@
           <span>Mohammad Ali Kohandezh</span>
         </a>
         <nav class="kdcv-foot-nav" aria-label="Site">
-          <a href="blog/index.html">Blog</a>
+          <a href="<?php echo esc_url( home_url('/blog/') ); ?>">Blog</a>
           <a href="<?php echo esc_url( home_url('/portfolio/') ); ?>">Portfolio</a>
           <a href="<?php echo esc_url( home_url('/certificates/') ); ?>">Certificates</a>
           <a href="<?php echo esc_url( home_url('/psn/') ); ?>">PSN Trophy Room</a>
@@ -165,18 +165,18 @@
       </div>
     </footer>
   </div>
-  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=108" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=97" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=108" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=109" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=113" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=128" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=115" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=5" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=17" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=98" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=113" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=104" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=2026091101" defer></script>
     <?php wp_footer(); ?>
 </body>
 </html>

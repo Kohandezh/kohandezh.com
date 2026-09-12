@@ -3,66 +3,15 @@
  "version": 1,
  "entries": [
   {
-   "id": "phd-candidate",
-   "type": "education",
-   "current": true,
-   "locales": {
-    "en": {
-     "date": "Now",
-     "title": "PhD Candidate",
-     "desc": "Currently pursuing a second doctorate, alongside leading KSF."
-    },
-    "fa": {
-     "date": "اکنون",
-     "title": "دانشجوی دکترای دوم",
-     "desc": "در حال گذراندن دومین مقطع دکتری، همزمان با مدیریت KSF."
-    },
-    "ar": {
-     "date": "حتى الآن",
-     "title": "مرشح دكتوراه",
-     "desc": "يتابع حاليًا درجة دكتوراه ثانية، إلى جانب إدارة KSF."
-    },
-    "de": {
-     "date": "Heute",
-     "title": "Doktorand",
-     "desc": "Derzeit im zweiten Promotionsstudium, parallel zur Leitung von KSF."
-    },
-    "es": {
-     "date": "Actualidad",
-     "title": "Candidato a doctorado",
-     "desc": "Actualmente cursando un segundo doctorado, mientras dirige KSF."
-    },
-    "fr": {
-     "date": "Aujourd’hui",
-     "title": "Doctorant",
-     "desc": "Poursuit actuellement un second doctorat, tout en dirigeant KSF."
-    },
-    "tr": {
-     "date": "Günümüz",
-     "title": "Doktora Adayı",
-     "desc": "KSF'yi yönetirken aynı zamanda ikinci bir doktora yapıyor."
-    },
-    "zh": {
-     "date": "至今",
-     "title": "在读博士生",
-     "desc": "在领导KSF的同时，正在攻读第二个博士学位。"
-    },
-    "ja": {
-     "date": "現在",
-     "title": "博士課程在籍",
-     "desc": "KSFの経営と並行して、2つ目の博士号取得を目指しています。"
-    },
-    "ru": {
-     "date": "наст. время",
-     "title": "Соискатель степени PhD",
-     "desc": "В настоящее время получаю вторую докторскую степень, одновременно возглавляя KSF."
-    }
-   }
-  },
-  {
    "id": "national-ai-platform",
    "type": "work",
    "current": true,
+   "icon": {
+    "src": "assets/images/item/sako.webp",
+    "alt": "National Open-Source AI Platform",
+    "width": 32,
+    "height": 32
+   },
    "locales": {
     "en": {
      "date": "2026 - Now",
@@ -120,6 +69,12 @@
    "id": "ksf-ceo",
    "type": "work",
    "current": true,
+   "icon": {
+    "src": "assets/images/item/edu-ksf.svg",
+    "alt": "Kohan System Farda",
+    "width": 32,
+    "height": 32
+   },
    "locales": {
     "en": {
      "date": "2024 - Now",

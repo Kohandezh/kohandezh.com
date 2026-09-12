@@ -29,6 +29,16 @@
     return m ? m[1] + "assets/data/" : "assets/data/";
   })();
   var LOCALE = (document.documentElement.getAttribute("lang") || "fa").toLowerCase().split("-")[0];
+
+  // Spoken purpose of the quote bubble, appended after the quote itself so the
+  // accessible name still contains the visible text (see setAttribute below).
+  var OPEN_CHAT = {
+    en: "Open the avatar chat", fa: "گفت‌وگو با آواتار را باز کنید",
+    ar: "افتح محادثة الأفاتار", de: "Avatar-Chat öffnen",
+    es: "Abrir el chat del avatar", fr: "Ouvrir le chat de l\u2019avatar",
+    tr: "Avatar sohbetini aç", zh: "打开虚拟形象对话",
+    ja: "アバターチャットを開く", ru: "Открыть чат с аватаром"
+  };
   var DATA_URL = DATA_BASE + "wisdom-quotes." + LOCALE + ".json";
   // Fall back to English, not Persian: a missing dataset must not drop another
   // language's page into Persian.
@@ -239,7 +249,6 @@
       bubble.type = "button";
       bubble.id = "kdcv-pet-wisdom-bubble";
       bubble.className = "kdcv-wisdom-bubble";
-      bubble.setAttribute("aria-label", "Open the avatar chat");
       root.insertBefore(bubble, root.firstChild);
       bubble.addEventListener("click", function (event) {
         event.preventDefault();
@@ -268,6 +277,12 @@
     }
     bubble.setAttribute("data-message", quoteText(q));
     bubble.textContent = quoteText(q);
+    // WCAG 2.5.3 (Label in Name): the accessible name has to CONTAIN the
+    // visible text. A fixed aria-label of "Open the avatar chat" replaced the
+    // quote outright, so a screen-reader user was read the control's purpose
+    // and never the quote itself -- and axe failed the page on the mismatch.
+    // Lead with the visible quote, then state what activating it does.
+    bubble.setAttribute("aria-label", quoteText(q) + " \u2014 " + (OPEN_CHAT[LOCALE] || OPEN_CHAT.en));
     bubble.hidden = false;
     bubble.setAttribute("aria-hidden", "false");
     return true;

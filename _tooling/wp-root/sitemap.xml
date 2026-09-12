@@ -186,18 +186,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kohandezh.com/2024/06/10/masire-21/</loc>
-    <lastmod>2024-06-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kohandezh.com/2026/07/12/digital-economy-15-percent-elecomp/</loc>
-    <lastmod>2026-07-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://kohandezh.com/privacy/</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>yearly</changefreq>
@@ -214,53 +202,5 @@
     <lastmod>2026-08-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://kohandezh.com/2025/09/29/ayno-tv-elecomp-1404/</loc>
-    <lastmod>2025-09-29</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kohandezh.com/2025/10/01/elecomp-talks-1404-ai-for-children/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kohandezh.com/2025/10/26/gitex-2025/</loc>
-    <lastmod>2025-10-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kohandezh.com/2025/10/10/expand-north-star-2025/</loc>
-    <lastmod>2025-10-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kohandezh.com/2025/05/11/generative-ai-tools/</loc>
-    <lastmod>2025-05-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://kohandezh.com/2025/05/10/ai-career-transformation/</loc>
-    <lastmod>2025-05-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://kohandezh.com/2021/07/23/neighborhood-management-award/</loc>
-    <lastmod>2021-07-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://kohandezh.com/2017/03/08/farabi-innovation-festival/</loc>
-    <lastmod>2017-03-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
   </url>
 </urlset>

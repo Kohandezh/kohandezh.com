@@ -13,11 +13,11 @@
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/simple-line/simple-line.css">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.min.css?v=107">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/knowledge.min.css?v=3">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.min.css?v=2026091101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/knowledge.min.css?v=2026091101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=2026091101">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png?v=2">
-  <link rel="canonical" href="https://kohandezh.com/knowledge/">
+  <link rel="canonical" href="<?php echo esc_url( home_url('/knowledge/') ); ?>">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -47,11 +47,11 @@
         <span>MOHAMMAD ALI KOHANDEZH</span>
       </a>
       <nav class="blog-nav" data-i18n-aria="a_nav" aria-label="Knowledge hub navigation">
-        <a href="blog/index.html" data-i18n="k01">All posts</a>
+        <a href="<?php echo esc_url( home_url('/blog/') ); ?>" data-i18n="k01">All posts</a>
       </nav>
       <div class="time-local text-body-3"><p class="date"></p><p class="clock"></p></div>
       <div class="blog-header-actions">
-        <a href="index.html#contact" data-i18n-aria="a_chat" aria-label="Start a conversation" data-i18n="k02"><i class="icon icon-send"></i><span>Start a conversation</span></a>
+        <a href="<?php echo esc_url( home_url('/') ); ?>#contact" data-i18n-aria="a_chat" aria-label="Start a conversation" data-i18n="k02"><i class="icon icon-send"></i><span>Start a conversation</span></a>
       </div>
     </header>
 
@@ -63,7 +63,7 @@
           <h1 data-i18n="h_title">The map I work from</h1>
           <p class="kh-lead" data-i18n="h_lead">Two technologies are arriving on very different timelines, and both land in the same place: the infrastructure an organization already depends on. This is the territory as I actually work it — what each field is made of, and the point at which an outside specialist earns their fee.</p>
           <div class="kh-hero-actions">
-            <a class="kh-cta" href="index.html#contact" data-i18n="h_cta">Discuss an engagement <i class="icon icon-arrow-right-top" aria-hidden="true"></i></a>
+            <a class="kh-cta" href="<?php echo esc_url( home_url('/') ); ?>#contact" data-i18n="h_cta">Discuss an engagement <i class="icon icon-arrow-right-top" aria-hidden="true"></i></a>
             <a class="kh-cta kh-cta--ghost" href="<?php echo esc_url( home_url('/certificates/') ); ?>" data-i18n="h_cta2">See the credentials behind it</a>
           </div>
         </header>
@@ -254,19 +254,19 @@
         </section>
 
         <footer class="blog-article-footer">
-          <a class="blog-read" href="index.html#contact" data-i18n="k29">Start a conversation <i class="icon icon-arrow-right-top"></i></a>
-          <a class="blog-read" href="blog/index.html" data-i18n="k28">All posts <i class="icon icon-arrow-right-top"></i></a>
+          <a class="blog-read" href="<?php echo esc_url( home_url('/') ); ?>#contact" data-i18n="k29">Start a conversation <i class="icon icon-arrow-right-top"></i></a>
+          <a class="blog-read" href="<?php echo esc_url( home_url('/blog/') ); ?>" data-i18n="k28">All posts <i class="icon icon-arrow-right-top"></i></a>
         </footer>
       </article>
     </main>
 
     <footer class="blog-footer"></footer>
   </div>
-  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=108" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=17" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/knowledge-tabs.min.js?v=3" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=98" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=109" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/knowledge-tabs.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091101" defer></script>
     <?php wp_footer(); ?>
 </body>
 </html>

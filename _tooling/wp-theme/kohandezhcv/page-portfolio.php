@@ -8,7 +8,7 @@
   <meta name="description" content="Selected organizations and enterprise engagements from Mohammad Ali Kohandezh's technology portfolio.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#080b0f">
-  <link rel="canonical" href="https://kohandezh.com/portfolio/">
+  <link rel="canonical" href="<?php echo esc_url( home_url('/portfolio/') ); ?>">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@kohandezh">
   <meta name="twitter:title" content="Portfolio | Mohammad Ali Kohandezh">
@@ -18,12 +18,12 @@
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/fonts.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/estedad/estedad.css">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/portfolio.min.css?v=95">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=111">
-  <link rel="stylesheet" href="../assets/css/page-chrome.min.css?v=101">
-  <link rel="stylesheet" href="../assets/css/hud-button.min.css?v=105">
-  <link rel="stylesheet" href="../assets/css/kohan-avatar.min.css?v=127" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="../assets/css/kohan-avatar.min.css?v=127"></noscript>
-  <link rel="stylesheet" href="../assets/css/chat-ui.min.css?v=110" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="../assets/css/chat-ui.min.css?v=110"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/portfolio.min.css?v=2026091101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=2026091101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=2026091101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091101"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091101"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
        URL in results, and gives answer engines the page's place in the
        site rather than treating it as an orphan. -->
@@ -102,30 +102,30 @@
   </main>
   <footer class="portfolio-footer portfolio-main">
       <div class="kdcv-foot">
-        <a class="kdcv-foot-brand" href="../index.html" aria-label="Mohammad Ali Kohandezh">
-          <img src="../assets/images/logo/logo.webp" width="36" height="36" alt="">
+        <a class="kdcv-foot-brand" href="<?php echo esc_url( home_url('/') ); ?>" aria-label="Mohammad Ali Kohandezh">
+          <img src="<?php echo KDCV; ?>/assets/images/logo/logo.webp" width="36" height="36" alt="">
           <span>Mohammad Ali Kohandezh</span>
         </a>
         <nav class="kdcv-foot-nav" aria-label="Site">
-          <a href="../blog/index.html">Blog</a>
-          <a href="../portfolio/index.html">Portfolio</a>
-          <a href="../Certificates.html">Certificates</a>
-          <a href="../PSN.html">PSN Trophy Room</a>
+          <a href="<?php echo esc_url( home_url('/blog/') ); ?>">Blog</a>
+          <a href="<?php echo esc_url( home_url('/portfolio/') ); ?>">Portfolio</a>
+          <a href="<?php echo esc_url( home_url('/certificates/') ); ?>">Certificates</a>
+          <a href="<?php echo esc_url( home_url('/psn/') ); ?>">PSN Trophy Room</a>
           <a href="<?php echo esc_url( home_url('/privacy/') ); ?>">Privacy Policy</a>
           <a href="<?php echo esc_url( home_url('/terms/') ); ?>">Terms of Use</a>
         </nav>
         <p class="kdcv-foot-legal">All rights reserved<br>© 2026 Mohammad Ali Kohandezh</p>
       </div></footer>
-  <script src="<?php echo KDCV; ?>/assets/js/cybernetic-grid.min.js?v=88" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/portfolio.min.js?v=90" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=108" defer></script>
-  <script src="../assets/js/page-context.min.js?v=109" defer></script>
-  <script src="../assets/js/lazy-bundle.min.js?v=113" defer></script>
-  <script src="../assets/js/kohan-avatar.min.js?v=128" defer></script>
-  <script src="../assets/js/kohan-avatar-enhance.min.js?v=115" defer></script>
-  <script src="../assets/js/page-chrome.min.js?v=98" defer></script>
-  <script src="../assets/js/chat-ui.min.js?v=113" defer></script>
-  <script src="../assets/js/hud-button.min.js?v=104" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/cybernetic-grid.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/portfolio.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=2026091101" defer></script>
     <?php wp_footer(); ?>
 </body>
 </html>

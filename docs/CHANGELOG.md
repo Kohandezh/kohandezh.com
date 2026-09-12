@@ -2,6 +2,12 @@
 
 > Meaningful changes only. Newest first. Aligned with Agent.md addendum §23.
 
+## 2026-09-07 — Post-audit repair package (local, not deployed)
+- Fixed fragment/query/relative navigation when generating WordPress templates; added failing-before/passing-after regression coverage.
+- Static 10-locale messenger profiles restored with real app marks, correct Eitaa/WhatsApp, no extra KSF/mail profile buttons; typography/Spanish/Russian controls corrected. Pet and prelaunch Live Avatar unchanged.
+- Publication dates keyed to posts instead of array order; post metadata/BlogPosting schema and published-only dynamic sitemap added, with external SEO ownership guard.
+- Read-only Site Health diagnostics and coherent theme/root release packaging + public hash verifier added. Details, validation limits and production gates: `RELEASE-2026-09-07.fa.md`.
+
 ## [Phase 6–13] — 2026-07-25 — Hub MVP → Verified
 - **Phase 6 (Hub MVP):** `_tooling/wp-theme/kohandezh-knowledge/templates/` (layer-b.php + partial-hub/archive/entity) — standalone full-HTML render; `KBK_Routes` (virtual routes `/enterprise-ai/`, `/quantum/`, `/entity/{slug}` + CPT archive interception + `is_layer_b()` isolation gate); `KBK_Schema` (JSON-LD + BreadcrumbList, emitted ONLY on Layer B); `KBK_Seed` + `fixtures/seed.json` (5 glossary terms published + 2 drafts; `_kbk_fixture` marker; Tools admin install/remove).
 - **Phase 7:** `docs/PILLAR_ROADMAP.md`, `TOPIC_CLUSTERS.md`, `INTERNAL_LINKING.md` (design, not bulk-publish).

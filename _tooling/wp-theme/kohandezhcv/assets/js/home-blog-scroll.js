@@ -33,9 +33,10 @@
         var title = document.createElement("h5");
         title.className = "blog-local-title";
         title.textContent = stripHtml(post.title.rendered);
-        var date = document.createElement("span");
+        var date = document.createElement("time");
         date.className = "blog-local-date";
-        date.textContent = formatDate(post.modified);
+        date.dateTime = post.date;
+        date.textContent = formatDate(post.date);
         top.appendChild(title);
         top.appendChild(date);
 

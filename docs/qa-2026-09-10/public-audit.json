@@ -1,0 +1,70 @@
+{
+  "at": "2026-09-10T18:24:06.832Z",
+  "note": "HTTP transfer timings are not Lighthouse, LCP, INP or field CWV.",
+  "records": [
+    {
+      "url": "https://kohandezh.com/",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/fa/",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/ar/",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/de/",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/es/",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/fr/",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/tr/",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/zh/",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/ja/",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/ru/",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/robots.txt",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/sitemap.xml",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/?kdcv_sitemap=index",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/wp-sitemap.xml",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/llms.txt",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://kohandezh.com/fa-llms.txt",
+      "error": "fetch failed"
+    }
+  ]
+}

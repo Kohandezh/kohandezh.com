@@ -4,6 +4,17 @@
 
 ---
 
+## ADR-0007 — Separate static page inventory from published WordPress posts
+- **Decision:** Keep the physical root sitemap for curated CV/pages. Advertise a separate query-routed, paginated sitemap index for DB-published, unpassworded posts in WordPress robots; ship both root and theme in one release manifest.
+- **Context:** The hand-maintained sitemap advertised two uninstalled/import-only posts; root llms files shadowed newer bundled summaries.
+- **Alternatives:** Keep manually removing broken posts; enable every WordPress sitemap provider; replace the webserver root route. These either preserve drift or expand routing/legacy crawl scope.
+- **Rationale:** No permalink change, rewrite flush, DB migration or home redesign. No generic user/taxonomy sitemap exposure. PHP dates and URLs come from published posts, not an import list.
+- **Tradeoffs:** Root files must ship with the theme; external SEO noindex/sitemap ownership still requires staging verification. Public response hashes verify delivery, not indexing.
+- **Reversibility:** Restore previous root package and theme together from the production backup; no data was migrated.
+- **Date:** 2026-09-07.
+
+---
+
 ## ADR-0001 — Layer B lives in a new plugin, not in the theme
 - **Decision:** Build all Layer B (hubs, KG, news, glossary, FAQ, REST `kohandezh/v1`) in a **new plugin `kohandezh-knowledge`**, not in `kohandezhcv`.
 - **Context:** Layer A has a strict static→theme sync invariant (`STATIC_WP_PARITY.md`). Putting Layer B in the theme would either require a static-source equivalent (none exists for DB-driven hub content) or break the sync parity model.

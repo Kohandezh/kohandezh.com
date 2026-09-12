@@ -8,7 +8,7 @@
     <title>Mohammad Ali Kohandezh - Yapay Zeka, Siber Güvenlik ve BT Altyapısı Uzmanı</title>
     <meta name="author" content="Mohammad Ali Kohandezh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=113"></script>
+    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=2026091101"></script>
     <meta name="description" content="Mohammad Ali Kohandezh — BT Yönetimi alanında doktora ve Kohan System Farda (KSF) CEO'su; 2007'den bu yana yapay zeka, BT altyapısı ve siber güvenlik alanlarında deneyimli.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
@@ -19,23 +19,23 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/simple-line/simple-line.css">
     <!-- css -->
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=111">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=2026091101">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css"></noscript>
 
 
-    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=171">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=111">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=109">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=110" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=110"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=110" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=110"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=127" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=127"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=5" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=5"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=105">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=105">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=99">
+    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=2026091101">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=2026091101">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=2026091101">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091101"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091101" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091101"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091101"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091101"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=2026091101">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091101">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=2026091101">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kdcv-interaction-fix.css?v=9">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=115" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=115"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=2026091101"></noscript>
 
     <!-- Kohandezh overrides -->
     <style>
@@ -260,23 +260,23 @@
 
     <!-- ===== SEO BLOCK (kohandezh.com) ===== -->
     <!-- SEO: canonical -->
-    <link rel="canonical" href="https://kohandezh.com/tr/">
+    <link rel="canonical" href="<?php echo esc_url( home_url('/tr/') ); ?>">
     <!-- Machine-readable summary of this site in this page's language. The
          llms.txt convention has no discovery mechanism, so answer engines are
          pointed at the right one from the page they are actually reading. -->
-    <link rel="alternate" type="text/plain" hreflang="tr" title="llms.txt" href="/tr-llms.txt">
+    <link rel="alternate" type="text/plain" title="llms.txt" href="https://kohandezh.com/tr-llms.txt">
   <link rel="alternate" type="application/rss+xml" title="Mohammad Ali Kohandezh — Seçilmiş yazılar" href="/feed.xml">
     <!-- SEO: alternate languages (hreflang) -->
     <link rel="alternate" hreflang="en" href="https://kohandezh.com/">
-    <link rel="alternate" hreflang="fa" href="https://kohandezh.com/fa/">
-    <link rel="alternate" hreflang="ar" href="https://kohandezh.com/ar/">
-    <link rel="alternate" hreflang="de" href="https://kohandezh.com/de/">
-    <link rel="alternate" hreflang="es" href="https://kohandezh.com/es/">
-    <link rel="alternate" hreflang="fr" href="https://kohandezh.com/fr/">
-    <link rel="alternate" hreflang="tr" href="https://kohandezh.com/tr/">
-    <link rel="alternate" hreflang="zh-Hans" href="https://kohandezh.com/zh/">
-    <link rel="alternate" hreflang="ja" href="https://kohandezh.com/ja/">
-    <link rel="alternate" hreflang="ru" href="https://kohandezh.com/ru/">
+    <link rel="alternate" hreflang="fa" href="<?php echo esc_url( home_url('/fa/') ); ?>">
+    <link rel="alternate" hreflang="ar" href="<?php echo esc_url( home_url('/ar/') ); ?>">
+    <link rel="alternate" hreflang="de" href="<?php echo esc_url( home_url('/de/') ); ?>">
+    <link rel="alternate" hreflang="es" href="<?php echo esc_url( home_url('/es/') ); ?>">
+    <link rel="alternate" hreflang="fr" href="<?php echo esc_url( home_url('/fr/') ); ?>">
+    <link rel="alternate" hreflang="tr" href="<?php echo esc_url( home_url('/tr/') ); ?>">
+    <link rel="alternate" hreflang="zh-Hans" href="<?php echo esc_url( home_url('/zh/') ); ?>">
+    <link rel="alternate" hreflang="ja" href="<?php echo esc_url( home_url('/ja/') ); ?>">
+    <link rel="alternate" hreflang="ru" href="<?php echo esc_url( home_url('/ru/') ); ?>">
     <link rel="alternate" hreflang="x-default" href="https://kohandezh.com/">
     <!-- SEO: Open Graph -->
     <meta property="og:type" content="profile">
@@ -667,7 +667,7 @@
     <!-- ===== /SEO BLOCK ===== -->
 
     <!-- ===== /SEO BLOCK ===== -->
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=110" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=110"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091101"></noscript>
   <!-- ProfilePage: Google's container type for a person's own page. It
        points at the Person node declared above by @id rather than
        repeating it, adds the freshness dates answer engines look for,
@@ -960,28 +960,17 @@
                     <img class="image-switch" data-light="<?php echo KDCV; ?>/assets/images/logo/logo.svg" data-dark="<?php echo KDCV; ?>/assets/images/logo/logo.webp" loading="lazy"
                         width="40" height="40" src="<?php echo KDCV; ?>/assets/images/logo/logo.svg" alt="Mohammad Ali Kohandezh">
                 </div>
-                <ul class="tf-social-icon-2 user-social d-grid">
+<ul class="tf-social-icon-2 user-social d-grid">
                     <li><a href="https://x.com/Konandehh" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="icon icon-x"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/kohandezh" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="icon icon-linkin"></i></a></li>
-                    <li><a href="https://ksf.ir" target="_blank" rel="noopener" aria-label="KSF'yi ziyaret et">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.72">
-                                    <path opacity="0.2"
-                                        d="M1.51502 11.2356L1.55752 4.87313C1.56502 3.72125 2.37065 2.73375 3.48252 2.51375L9.6269 1.29563C11.1031 1.00313 12.4738 2.15813 12.4638 3.6875L12.4213 10.0513C12.4131 11.2025 11.6075 12.1894 10.4956 12.41L4.35127 13.6281C2.87502 13.9206 1.50502 12.7656 1.51502 11.2356Z"
-                                        fill="black" />
-                                    <path opacity="0.5"
-                                        d="M4.52563 13.7744L4.56813 7.41062C4.575 6.25999 5.38125 5.27312 6.49313 5.05249L12.6375 3.83499C14.1138 3.54249 15.4844 4.69749 15.4744 6.22687L15.4319 12.5906C15.4244 13.7419 14.6188 14.7287 13.5069 14.9494L7.3625 16.1675C5.88625 16.46 4.51563 15.305 4.52563 13.7756V13.7744Z"
-                                        fill="black" />
-                                    <path opacity="0.8"
-                                        d="M7.53625 16.3125L7.57875 9.94875C7.58625 8.79687 8.39187 7.81062 9.50375 7.59L15.6481 6.37187C17.1244 6.07937 18.495 7.23437 18.485 8.76375L18.4425 15.1275C18.435 16.2794 17.6294 17.2662 16.5175 17.4862L10.3731 18.7044C8.89687 18.9969 7.52625 17.8419 7.53625 16.3125Z"
-                                        fill="black" />
-                                </g>
-                            </svg>
-                        </a></li>
                     <li><a href="<?php echo esc_url( home_url('/psn/') ); ?>" class="psn-profile-link" aria-label="Mohammad Ali Kohandezh'in PlayStation kupalarını görüntüle">
                             <svg class="psn-profile-mark" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="black" fill-opacity="0.72" d="M8.984 2.596v17.547l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.18.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.152 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.39-1.502zm4.656 16.241 6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.5V14.98l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.03 5.437.661 1.848.601 2.04 1.472 1.576 2.072-.465.6-1.622 1.036-1.622 1.036l-8.544 3.107V18.86zM1.807 18.6c-1.9-.545-2.214-1.668-1.352-2.32.801-.586 2.16-1.052 2.16-1.052l5.615-2.013v2.313L4.205 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.247 17v2.074c-.12.03-.256.044-.39.073-1.939.331-3.996.196-6.038-.479z"/></svg>
                         </a></li>
                     <li><a href="<?php echo esc_url( home_url('/certificates/') ); ?>?lang=tr" class="certificate-profile-link" aria-label="Sertifika arşivini aç"><i class="icon icon-edu" aria-hidden="true"></i></a></li>
+                    <li><a class="kdcv-messenger-link kdcv-messenger-link--telegram" href="https://t.me/kohandezh" target="_blank" rel="noopener noreferrer" aria-label="Telegram · @kohandezh"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.1 3.3 19.6 20.2c-.26 1.16-.95 1.44-1.92.9l-5.3-3.9-2.56 2.46c-.28.28-.52.52-1.07.52l.38-5.4L18.9 6.1c.43-.38-.09-.6-.66-.22L6.1 13.5.83 11.85c-1.14-.36-1.16-1.14.24-1.7L21.6 1.68c.95-.35 1.78.22 1.47 1.64z"/></svg></a></li>
+                    <li><a class="kdcv-messenger-link kdcv-messenger-link--bale" href="https://ble.ir/kohandezh" target="_blank" rel="noopener noreferrer" aria-label="Bale · @kohandezh"><img class="kdcv-messenger-brand-image" src="<?php echo KDCV; ?>/assets/images/social/bale-logo.png" width="21" height="21" alt="" loading="lazy"></a></li>
+                    <li><a class="kdcv-messenger-link kdcv-messenger-link--eitaa" href="https://eitaa.com/kohandezhh" target="_blank" rel="noopener noreferrer" aria-label="Eitaa · @kohandezhh"><img class="kdcv-messenger-brand-image" src="<?php echo KDCV; ?>/assets/images/social/eitaa.svg" width="21" height="21" alt="" loading="lazy"></a></li>
+                    <li><a class="kdcv-messenger-link kdcv-messenger-link--whatsapp" href="https://wa.me/18106662283" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp · +1 810 666 2283"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 2.16a9.8 9.8 0 0 0-8.3 15l-1.47 5.36 5.5-1.44a9.8 9.8 0 1 0 4.27-18.92zm0 17.82a8.03 8.03 0 0 1-4.1-1.13l-.3-.18-3.26.86.87-3.18-.2-.33a8.04 8.04 0 1 1 6.99 3.96zm4.4-6.03c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.48.1-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.65.57.24 1.02.39 1.37.5.58.19 1.1.16 1.51.1.46-.07 1.43-.59 1.63-1.15.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg></a></li>
                 </ul>
                 <div class="user-info">
                     <h5 class="greeting letter-space--2 text-white animationtext clip">
@@ -1308,8 +1297,8 @@
                                     dahil olmak üzere yapay zeka destekli ürünler tasarlıyor ve geliştiriyorum — bunun <br>
                                     yanı sıra kurumsal BT altyapısı, sanallaştırma ve siber güvenlik. <br>
                                     <br>
-                                    Kohan System Farda (KSF) CEO'su, BT Yönetimi alanında doktora sahibi ve <br class="d-none d-lg-block">
-                                    şu anda ikinci bir doktora adayı olarak, her projeye mühendislik titizliği
+                                    Kohan System Farda (KSF) CEO'su ve BT Yönetimi alanında doktora sahibi olarak, <br class="d-none d-lg-block">
+                                    her projeye mühendislik titizliği
                                     ve iş anlayışıyla yaklaşıyorum. Ayrıca kurumlara kuantum hazırlığı konusunda danışmanlık veriyorum: kriptografik
                                     envanter, veri ömrü analizi ve NIST kuantum sonrası standartlarına geçiş.
                                 </p>
@@ -1443,25 +1432,12 @@
                                     </div>
                                     <!-- Item 1 -->
 <!-- CV:BEGIN generated from assets/data/cv.json by _tooling/cv/build.py -- do not edit by hand -->
-                                    <div class="timeline-item effectFade fadeUp no-div" data-cv-id="phd-candidate" data-cv-type="education">
-                                        <p class="timeline-date text-black-56">Günümüz</p>
-                                        <div class="timeline-dot"></div>
-                                        <div class="timeline-content">
-                                            <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-2_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-2.svg?v=2" alt="" loading="lazy" decoding="async">
-                                            </div>
-                                            <div class="content">
-                                                <p class="timeline-role fw-6">Doktora Adayı</p>
-                                                <p class="timeline-desc text-black-56">KSF&#x27;yi yönetirken aynı zamanda ikinci bir doktora yapıyor.</p>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="timeline-item effectFade fadeUp no-div" data-cv-id="national-ai-platform" data-cv-type="work">
                                         <p class="timeline-date text-black-56">2026 - Günümüz</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img loading="lazy" decoding="async" width="32" height="32" src="<?php echo KDCV; ?>/assets/images/item/sako.webp" alt="National Open-Source AI Platform">
                                             </div>
                                             <div class="content">
                                                 <p class="timeline-role fw-6">Geliştirici — Ulusal Açık Kaynaklı Yapay Zekâ Platformu</p>
@@ -1474,7 +1450,7 @@
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img loading="lazy" decoding="async" width="32" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-ksf.svg" alt="Kohan System Farda">
                                             </div>
                                             <div class="content">
                                                 <p class="timeline-role fw-6">CEO — Kohan System Farda (KSF)</p>
@@ -1500,7 +1476,7 @@
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
                                             <div class="content">
                                                 <p class="timeline-role fw-6">Kıdemli Ağ ve Sistem Mühendisi — Modaberan Fanavari Pasargad</p>
@@ -1513,7 +1489,7 @@
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
                                             <div class="content">
                                                 <p class="timeline-role fw-6">Yarı zamanlı eğitmen — Saba Safe Village</p>
@@ -1526,7 +1502,7 @@
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
                                             <div class="content">
                                                 <p class="timeline-role fw-6">Kıdemli Ağ ve Sistem Mühendisi — Haft Tappeh Sugarcane Agro-Industry</p>
@@ -1552,7 +1528,7 @@
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
                                             <div class="content">
                                                 <p class="timeline-role fw-6">Kıdemli Ağ Mühendisi — Golzar Ettesal</p>
@@ -1565,7 +1541,7 @@
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
                                             <div class="content">
                                                 <p class="timeline-role fw-6">Kıdemli Ağ ve İnternet Uzmanı — İslami Azad Üniversitesi</p>
@@ -1578,7 +1554,7 @@
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
                                             <div class="content">
                                                 <p class="timeline-role fw-6">Ağ ve Sistem Mühendisi — Power Control Engineering</p>
@@ -1604,7 +1580,7 @@
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
                                             <div class="content">
                                                 <p class="timeline-role fw-6">Ağ Mühendisi — Negareh Information Analysts</p>
@@ -1617,7 +1593,7 @@
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
                                             <div class="content">
                                                 <p class="timeline-role fw-6">Yarı zamanlı BT Uzmanı — Best Design</p>
@@ -1630,7 +1606,7 @@
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
                                             <div class="content">
                                                 <p class="timeline-role fw-6">Ağ Mühendisi — Novin Gostar-e Aysa</p>
@@ -1643,7 +1619,7 @@
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
                                             <div class="content">
                                                 <p class="timeline-role fw-6">Ağ ve Sistem Mühendisi — Culham Engineering</p>
@@ -1669,7 +1645,7 @@
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/briefcase_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/briefcase.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/item/edu-3_dark.svg?v=2" width="29" height="32" src="<?php echo KDCV; ?>/assets/images/item/edu-3.svg?v=2" alt="" loading="lazy" decoding="async">
                                             </div>
                                             <div class="content">
                                                 <p class="timeline-role fw-6">Donanım ve Ağ Uzmanı — Amen Behin System</p>
@@ -2620,33 +2596,33 @@
     </noscript>
 
     <!-- Javascript -->
-    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=108" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=76" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=121" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=117" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=2026091101" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
-    <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=2" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=112" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=110" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=109" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=113" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=74" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=115" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=3" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=2026091101" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=2026091101" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=109" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=2026091101" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/animation-change-text.min.js" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/demo-and-schedule.min.js" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=108" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=119" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=111" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=110" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=110" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=2026091101" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/cwv-rum.min.js" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=128" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=115" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=5" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kdcv-interaction-fix.js?v=5" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=114" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kdcv-interaction-fix.js?v=2026090702" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=2026091101" defer></script>
 <script>
 (function(){
   function msg(lang){
@@ -2726,13 +2702,13 @@
   }, true);
 })();
 </script>
-  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=108" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=113" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=105" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=104" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=99" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=98" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=80" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=2026091101" defer></script>
     <?php wp_footer(); ?>
 </body>
 

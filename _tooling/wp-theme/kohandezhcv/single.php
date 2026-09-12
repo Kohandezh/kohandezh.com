@@ -26,7 +26,7 @@ $kdcv_has_i18n  = file_exists( get_template_directory() . '/assets/data/i18n/' .
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.css?v=3">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=99">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=2026091101">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png">
   <?php wp_head(); ?>
 </head>
@@ -54,7 +54,11 @@ $kdcv_has_i18n  = file_exists( get_template_directory() . '/assets/data/i18n/' .
           <span class="blog-eyebrow" data-i18n="__eyebrow"><?php echo $cats ? esc_html( $cats[0]->name ) : 'یادداشت'; ?></span>
           <h1 data-i18n="__h1"><?php the_title(); ?></h1>
           <div class="blog-meta">
-            <span><?php echo esc_html( get_the_modified_date() ); ?></span>
+            <time datetime="<?php echo esc_attr( get_the_date( DATE_W3C ) ); ?>"><?php echo esc_html( get_the_date() ); ?></time>
+            <?php if ( get_the_modified_date( 'U' ) !== get_the_date( 'U' ) ) : ?>
+            <span>به‌روزرسانی: <time datetime="<?php echo esc_attr( get_the_modified_date( DATE_W3C ) ); ?>"><?php echo esc_html( get_the_modified_date() ); ?></time></span>
+            <?php endif; ?>
+            <span><?php echo esc_html( get_the_author() ); ?></span>
             <span><?php echo esc_html( kdcv_reading_minutes() ); ?> دقیقه مطالعه</span>
             <span><?php echo esc_html( number_format_i18n( kdcv_get_views() ) ); ?> بازدید</span>
           </div>
@@ -89,11 +93,11 @@ $kdcv_has_i18n  = file_exists( get_template_directory() . '/assets/data/i18n/' .
        nothing when the wanted locale is the source (fa), so a Persian reader
        costs no extra request. blog-post-enhance rebuilds its share controls on
        the kdcv:page-i18n event. -->
-  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=15" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=2026091101" defer></script>
   <?php endif; ?>
-  <script src="<?php echo KDCV; ?>/assets/js/blog-post-enhance.min.js?v=51" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=106" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=96" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/blog-post-enhance.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=2026091101" defer></script>
   <?php wp_footer(); ?>
 </body>
 </html>

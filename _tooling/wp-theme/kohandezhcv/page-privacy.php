@@ -13,24 +13,24 @@
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/estedad/estedad.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.min.css?v=107">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/flow-field-background.min.css?v=97">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/blog.min.css?v=2026091101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/flow-field-background.min.css?v=2026091101">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png?v=2">
   <link rel="manifest" href="/manifest.json">
   <link rel="apple-touch-icon" href="<?php echo KDCV; ?>/assets/images/logo/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="canonical" href="https://kohandezh.com/privacy/">
+  <link rel="canonical" href="<?php echo esc_url( home_url('/privacy/') ); ?>">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@kohandezh">
   <meta name="twitter:title" content="سیاست حریم خصوصی | Privacy Policy — Kohandezh.com">
   <meta name="twitter:description" content="سیاست حریم خصوصی kohandezh.com — این وب‌سایت از کوکی، ابزار تحلیلی یا ردیابی استفاده نمی‌کند. توضیح دقیق داده‌هایی که جمع‌آوری می‌شوند.">
   <meta name="twitter:image" content="<?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=101">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=105">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=127" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=127"></noscript>
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=5" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=5"></noscript>
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=110" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=110"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=2026091101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091101">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091101"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091101"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091101"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
        URL in results, and gives answer engines the page's place in the
        site rather than treating it as an orphan. -->
@@ -67,7 +67,7 @@
       </a>
       <nav class="blog-nav" aria-label="ناوبری">
         <a href="<?php echo esc_url( home_url('/') ); ?>">صفحه اصلی</a>
-        <a href="blog/index.html">وبلاگ</a>
+        <a href="<?php echo esc_url( home_url('/blog/') ); ?>">وبلاگ</a>
         <a href="<?php echo esc_url( home_url('/terms/') ); ?>">شرایط استفاده</a>
       </nav>
       <div class="time-local text-body-3"><p class="date"></p><p class="clock"></p></div>
@@ -120,7 +120,7 @@
           <p data-i18n="k22">تنها برای پاسخ‌دادن به پیام شما و پیگیری همان درخواست. داده‌های شما فروخته نمی‌شوند، اجاره داده نمی‌شوند و برای تبلیغات یا فهرست ایمیل انبوه استفاده نمی‌شوند.</p>
 
           <h2 id="rights" data-i18n="k23">حقوق شما</h2>
-          <p data-i18n="k24">می‌توانید درخواست کنید که پیام‌های ارسالی‌تان حذف شوند، بخواهید بدانید چه اطلاعاتی از شما نگهداری می‌شود، یا اصلاح آن را بخواهید. کافی است از طریق <a href="index.html#contact">صفحهٔ تماس</a> اطلاع دهید.</p>
+          <p data-i18n="k24">می‌توانید درخواست کنید که پیام‌های ارسالی‌تان حذف شوند، بخواهید بدانید چه اطلاعاتی از شما نگهداری می‌شود، یا اصلاح آن را بخواهید. کافی است از طریق <a href="<?php echo esc_url( home_url('/') ); ?>#contact">صفحهٔ تماس</a> اطلاع دهید.</p>
 
           <h2 id="security" data-i18n="k25">امنیت</h2>
           <p data-i18n="k26">سایت روی HTTPS ارائه می‌شود و هدرهای امنیتی استاندارد روی آن فعال است. با این حال هیچ سامانه‌ای صددرصد ایمن نیست؛ لطفاً اطلاعات حساس (مانند رمز عبور، شمارهٔ کارت بانکی یا مدارک هویتی) را از طریق فرم تماس ارسال نکنید.</p>
@@ -136,7 +136,7 @@
             <p data-i18n="k31"><strong>What is collected:</strong> only what you type into the contact/demo form (name, email, phone, company, area of interest, message), and your question if you use the AI chat widget.</p>
             <p data-i18n="k32"><strong>Browser storage:</strong> four functional <code>localStorage</code> keys hold your theme, language and avatar preferences. They stay on your device and are never transmitted. Because none of them are used for tracking, no cookie-consent banner is required.</p>
             <p data-i18n="k33"><strong>Third parties:</strong> Web3Forms (form delivery), Aparat (embedded interview videos), social share links (only on click), and a language-model provider if the chat assistant is enabled. Each has its own privacy policy.</p>
-            <p data-i18n="k34"><strong>Your rights:</strong> you may ask what is held about you, request corrections, or request deletion — just <a href="index.html#contact">get in touch</a>.</p>
+            <p data-i18n="k34"><strong>Your rights:</strong> you may ask what is held about you, request corrections, or request deletion — just <a href="<?php echo esc_url( home_url('/') ); ?>#contact">get in touch</a>.</p>
             <p data-i18n="k35">Please do not send passwords, card numbers or identity documents through the contact form.</p>
           </div>
         </div>
@@ -156,7 +156,7 @@
           <span>Mohammad Ali Kohandezh</span>
         </a>
         <nav class="kdcv-foot-nav" aria-label="Site">
-          <a href="blog/index.html">Blog</a>
+          <a href="<?php echo esc_url( home_url('/blog/') ); ?>">Blog</a>
           <a href="<?php echo esc_url( home_url('/portfolio/') ); ?>">Portfolio</a>
           <a href="<?php echo esc_url( home_url('/certificates/') ); ?>">Certificates</a>
           <a href="<?php echo esc_url( home_url('/psn/') ); ?>">PSN Trophy Room</a>
@@ -167,18 +167,18 @@
       </div>
     </footer>
   </div>
-  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=108" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=97" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=108" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=109" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=113" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=128" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=115" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=5" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=17" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=98" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=113" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=104" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-i18n.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=2026091101" defer></script>
     <?php wp_footer(); ?>
 </body>
 </html>
