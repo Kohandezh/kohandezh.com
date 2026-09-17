@@ -9,6 +9,8 @@
 
 define( 'KDCV', get_template_directory_uri() );
 define( 'KDCV_CONTENT_SCHEMA_VERSION', '2.0.3' ); // bump: run kdcv_harden_htaccess() on theme UPDATE, not only on switch
+require_once __DIR__ . '/inc/publication.php';
+require_once __DIR__ . '/inc/diagnostics.php';
 
 add_action( 'after_setup_theme', function () {
 	add_theme_support( 'post-thumbnails' );
@@ -654,6 +656,9 @@ add_filter( 'robots_txt', function ( $output, $public ) {
 
 	$ai_allow =
 		"\n# ---------- AI training / retrieval crawlers (public portfolio: allow) ----------\n"
+		// ElevenLabs Agents knowledge-base crawler — explicit allow per
+		// elevenlabs.io docs; kept identical to the static robots.txt.
+		. "User-agent: ElevenlabsBot\nAllow: /\n\n"
 		. "User-agent: GPTBot\nAllow: /\n\n"
 		. "User-agent: ChatGPT-User\nAllow: /\n\n"
 		. "User-agent: OAI-SearchBot\nAllow: /\n\n"
@@ -673,7 +678,8 @@ add_filter( 'robots_txt', function ( $output, $public ) {
 	// Prefer the static multilingual sitemap (richer: has hreflang alternates
 	// for all 9 languages). Falls back to wp-sitemap.xml if the static file
 	// is ever removed.
-	$static_sitemap = "\nSitemap: " . home_url( '/sitemap.xml' ) . "\n";
+	$static_sitemap = "\nSitemap: " . home_url( '/sitemap.xml' ) . "\n"
+		. 'Sitemap: ' . home_url( '/?kdcv_sitemap=index' ) . "\n";
 
 	// The llms.txt convention has no discovery mechanism of its own, so the
 	// nine localized summaries are advertised here — robots.txt is the file
@@ -1296,14 +1302,14 @@ function kdcv_render_home_blog_feed( $read_label = 'Read original', $limit = 6 )
 		$name = get_post_field( 'post_name' );
 		$o    = isset( $loc[ $name ] ) && is_array( $loc[ $name ] ) ? $loc[ $name ] : array();
 		$title   = ! empty( $o['title'] )   ? $o['title']   : get_the_title();
-		$date    = ! empty( $o['date'] )    ? $o['date']    : get_the_modified_date();
+		$date    = ! empty( $o['date'] )    ? $o['date']    : get_the_date();
 		$summary = ! empty( $o['summary'] ) ? $o['summary'] : wp_trim_words( get_the_excerpt(), 28 );
 		$tag     = ! empty( $o['tag'] )     ? $o['tag']     : ( $cats ? $cats[0]->name : '' );
 		?>
 		<article class="blog-local-item">
 			<div class="blog-local-top">
 				<h5 class="blog-local-title"><?php echo esc_html( $title ); ?></h5>
-				<span class="blog-local-date"><?php echo esc_html( $date ); ?></span>
+				<time class="blog-local-date" datetime="<?php echo esc_attr( get_the_date( DATE_W3C ) ); ?>"><?php echo esc_html( $date ); ?></time>
 			</div>
 			<p class="blog-local-summary"><?php echo esc_html( $summary ); ?></p>
 			<div class="blog-local-meta">

@@ -43,7 +43,31 @@ FILES = {
 BEGIN = '<!-- CV:BEGIN generated from assets/data/cv.json by _tooling/cv/build.py -- do not edit by hand -->'
 END = '<!-- CV:END -->'
 
-ICON = {'work': 'briefcase', 'education': 'edu-2'}
+# Theme-switched default icons. Both of these have a matching *_dark.svg in
+# assets/images/item/ -- an icon named here without one renders a broken image
+# in dark mode, and an icon that is not on disk at all renders broken in both.
+ICON = {'work': 'edu-3', 'education': 'edu-2'}
+
+
+def icon_markup(entry, indent):
+    """Per-entry logo when the dataset supplies one, else the type default.
+
+    A real employer logo (Sako, KSF) is a single-file brand mark with no dark
+    variant, so it is emitted as a plain <img> with a real alt. The generic
+    type icons are decorative, theme-switched, and stay alt="".
+    """
+    custom = entry.get('icon')
+    if custom:
+        return (
+            f'{indent}            <img loading="lazy" decoding="async" '
+            f'width="{custom.get("width", 32)}" height="{custom.get("height", 32)}" '
+            f'src="{html.escape(custom["src"])}" alt="{html.escape(custom.get("alt", ""))}">'
+        )
+    name = ICON.get(entry['type'], ICON['work'])
+    return (
+        f'{indent}            <img class="image-switch" data-dark="assets/images/item/{name}_dark.svg?v=2" '
+        f'width="29" height="32" src="assets/images/item/{name}.svg?v=2" alt="" loading="lazy" decoding="async">'
+    )
 
 
 def render(entries, locale, indent='                                    '):
@@ -51,7 +75,6 @@ def render(entries, locale, indent='                                    '):
     out = [BEGIN]
     for e in entries:
         loc = e['locales'][locale]
-        icon = ICON.get(e['type'], 'briefcase')
         # data-cv-id is the join key: the runtime enhancer matches on it rather
         # than on array position, so reordering the dataset cannot silently
         # attach an employer logo to the wrong job.
@@ -63,10 +86,7 @@ def render(entries, locale, indent='                                    '):
         out.append(f'{indent}    <div class="timeline-dot"></div>')
         out.append(f'{indent}    <div class="timeline-content">')
         out.append(f'{indent}        <div class="icon">')
-        out.append(
-            f'{indent}            <img class="image-switch" data-dark="assets/images/item/{icon}_dark.svg?v=2" '
-            f'width="29" height="32" src="assets/images/item/{icon}.svg?v=2" alt="" loading="lazy" decoding="async">'
-        )
+        out.append(icon_markup(e, indent))
         out.append(f'{indent}        </div>')
         out.append(f'{indent}        <div class="content">')
         out.append(f'{indent}            <p class="timeline-role fw-6">{html.escape(loc["title"])}</p>')

@@ -5,8 +5,11 @@
     "test:wisdom": "node _tooling/wisdom-quotes.test.js",
     "test:jquery": "node _tooling/jquery-shim.validate.test.js",
     "test:crawler": "node _tooling/tests/crawler.test.js",
-    "test:cv": "python3 _tooling/cv/build.py --check",
-    "test": "npm run test:wisdom && npm run test:jquery && npm run test:cv && npm run test:llms && npm run test:crawler",
+    "test:cv": "python3 _tooling/cv/build.py --check && node _tooling/tests/credentials-regression.test.js",
+    "test": "npm run test:wisdom && npm run test:jquery && npm run test:cv && npm run test:llms && npm run test:crawler && npm run test:release",
+    "test:release": "python3 _tooling/tests/wp-links.test.py && node _tooling/tests/frontend-regressions.test.js && node _tooling/tests/rightclick-guard.test.js && node _tooling/tests/name-variants.test.js && php _tooling/tests/publication.test.php && python3 _tooling/tests/release-package.test.py",
+    "release:prepare": "bash build.sh && python3 _tooling/llms/build.py && python3 _tooling/wp-theme/sync-from-static.py && python3 _tooling/release.py prepare",
+    "release:verify": "python3 _tooling/release.py verify",
     "test:llms": "node _tooling/tests/llms.test.js"
   },
   "devDependencies": {

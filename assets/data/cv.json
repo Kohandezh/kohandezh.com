@@ -3,66 +3,15 @@
  "version": 1,
  "entries": [
   {
-   "id": "phd-candidate",
-   "type": "education",
-   "current": true,
-   "locales": {
-    "en": {
-     "date": "Now",
-     "title": "PhD Candidate",
-     "desc": "Currently pursuing a second doctorate, alongside leading KSF."
-    },
-    "fa": {
-     "date": "اکنون",
-     "title": "دانشجوی دکترای دوم",
-     "desc": "در حال گذراندن دومین مقطع دکتری، همزمان با مدیریت KSF."
-    },
-    "ar": {
-     "date": "حتى الآن",
-     "title": "مرشح دكتوراه",
-     "desc": "يتابع حاليًا درجة دكتوراه ثانية، إلى جانب إدارة KSF."
-    },
-    "de": {
-     "date": "Heute",
-     "title": "Doktorand",
-     "desc": "Derzeit im zweiten Promotionsstudium, parallel zur Leitung von KSF."
-    },
-    "es": {
-     "date": "Actualidad",
-     "title": "Candidato a doctorado",
-     "desc": "Actualmente cursando un segundo doctorado, mientras dirige KSF."
-    },
-    "fr": {
-     "date": "Aujourd’hui",
-     "title": "Doctorant",
-     "desc": "Poursuit actuellement un second doctorat, tout en dirigeant KSF."
-    },
-    "tr": {
-     "date": "Günümüz",
-     "title": "Doktora Adayı",
-     "desc": "KSF'yi yönetirken aynı zamanda ikinci bir doktora yapıyor."
-    },
-    "zh": {
-     "date": "至今",
-     "title": "在读博士生",
-     "desc": "在领导KSF的同时，正在攻读第二个博士学位。"
-    },
-    "ja": {
-     "date": "現在",
-     "title": "博士課程在籍",
-     "desc": "KSFの経営と並行して、2つ目の博士号取得を目指しています。"
-    },
-    "ru": {
-     "date": "наст. время",
-     "title": "Соискатель степени PhD",
-     "desc": "В настоящее время получаю вторую докторскую степень, одновременно возглавляя KSF."
-    }
-   }
-  },
-  {
    "id": "national-ai-platform",
    "type": "work",
    "current": true,
+   "icon": {
+    "src": "assets/images/item/sako.webp",
+    "alt": "National Open-Source AI Platform",
+    "width": 32,
+    "height": 32
+   },
    "locales": {
     "en": {
      "date": "2026 - Now",
@@ -120,54 +69,60 @@
    "id": "ksf-ceo",
    "type": "work",
    "current": true,
+   "icon": {
+    "src": "assets/images/item/edu-ksf.svg",
+    "alt": "Kohan System Farda",
+    "width": 32,
+    "height": 32
+   },
    "locales": {
     "en": {
-     "date": "2024 - Now",
+     "date": "Dec 2013 - Present",
      "title": "CEO — Kohan System Farda (KSF)",
      "desc": "Leading AI products, cybersecurity services and enterprise infrastructure, including Padyar, HomaYar, MeetYar and BlogYar."
     },
     "fa": {
-     "date": "۱۴۰۳ - اکنون",
+     "date": "دسامبر ۲۰۱۳ - اکنون",
      "title": "مدیرعامل — شرکت کهن سیستم فردا (KSF)",
      "desc": "راهبری محصولات هوش مصنوعی، خدمات امنیت سایبری و زیرساخت سازمانی؛ شامل پادیار، HomaYar، MeetYar و BlogYar."
     },
     "ar": {
-     "date": "2024 - حتى الآن",
+     "date": "ديسمبر 2013 - حتى الآن",
      "title": "الرئيس التنفيذي — Kohan System Farda (KSF)",
      "desc": "قيادة منتجات الذكاء الاصطناعي وخدمات الأمن السيبراني والبنية التحتية المؤسسية، بما في ذلك Padyar وHomaYar وMeetYar وBlogYar."
     },
     "de": {
-     "date": "2024 - Heute",
+     "date": "Dez. 2013 - heute",
      "title": "Geschäftsführer — Kohan System Farda (KSF)",
      "desc": "Leitung von KI-Produkten, Cybersecurity-Services und Unternehmensinfrastruktur, darunter Padyar, HomaYar, MeetYar und BlogYar."
     },
     "es": {
-     "date": "2024 - Actualidad",
+     "date": "Dic. 2013 - Actualidad",
      "title": "Director ejecutivo — Kohan System Farda (KSF)",
      "desc": "Dirección de productos de IA, servicios de ciberseguridad e infraestructura empresarial, incluidos Padyar, HomaYar, MeetYar y BlogYar."
     },
     "fr": {
-     "date": "2024 - Aujourd’hui",
+     "date": "Déc. 2013 - Aujourd’hui",
      "title": "Directeur général — Kohan System Farda (KSF)",
      "desc": "Pilotage de produits d’IA, de services de cybersécurité et d’infrastructures d’entreprise, dont Padyar, HomaYar, MeetYar et BlogYar."
     },
     "tr": {
-     "date": "2024 - Günümüz",
+     "date": "Aralık 2013 - Günümüz",
      "title": "CEO — Kohan System Farda (KSF)",
      "desc": "Padyar, HomaYar, MeetYar ve BlogYar dâhil yapay zekâ ürünleri, siber güvenlik hizmetleri ve kurumsal altyapı çalışmalarına liderlik."
     },
     "zh": {
-     "date": "2024年至今",
+     "date": "2013年12月至今",
      "title": "首席执行官 — Kohan System Farda（KSF）",
      "desc": "领导人工智能产品、网络安全服务和企业基础设施，包括 Padyar、HomaYar、MeetYar 与 BlogYar。"
     },
     "ja": {
-     "date": "2024年 - 現在",
+     "date": "2013年12月 - 現在",
      "title": "CEO — Kohan System Farda（KSF）",
      "desc": "Padyar、HomaYar、MeetYar、BlogYarを含むAI製品、サイバーセキュリティ、企業インフラを統括。"
     },
     "ru": {
-     "date": "2024 - наст. время",
+     "date": "Дек. 2013 - наст. время",
      "title": "Генеральный директор — Kohan System Farda (KSF)",
      "desc": "Руковожу продуктами в сфере искусственного интеллекта, услугами кибербезопасности и корпоративной инфраструктурой, включая Padyar, HomaYar, MeetYar и BlogYar."
     }
@@ -236,52 +191,52 @@
    "current": false,
    "locales": {
     "en": {
-     "date": "Jul 2018 - 2023",
+     "date": "Jul 2018 - Feb 2024",
      "title": "Senior Computer Network & Systems Engineer — Modaberan Fanavari Pasargad",
      "desc": "Enterprise networking, cybersecurity products, backup infrastructure, VMware, storage solutions and technical support."
     },
     "fa": {
-     "date": "تیر ۱۳۹۷ - ۱۴۰۲",
+     "date": "ژوئیهٔ ۲۰۱۸ - فوریهٔ ۲۰۲۴",
      "title": "کارشناس ارشد شبکه و سیستم — مدبران فناوری پاسارگاد",
      "desc": "شبکه سازمانی، محصولات امنیت سایبری، زیرساخت پشتیبان‌گیری، VMware، ذخیره‌سازی و پشتیبانی فنی."
     },
     "ar": {
-     "date": "2018 - 2023",
+     "date": "يوليو 2018 - فبراير 2024",
      "title": "مهندس شبكات وأنظمة أول — Modaberan Fanavari Pasargad",
      "desc": "الشبكات المؤسسية ومنتجات الأمن السيبراني وبنية النسخ الاحتياطي وVMware والتخزين والدعم الفني."
     },
     "de": {
-     "date": "2018 - 2023",
+     "date": "Juli 2018 - Feb. 2024",
      "title": "Senior-Netzwerk- und Systemingenieur — Modaberan Fanavari Pasargad",
      "desc": "Unternehmensnetzwerke, Cybersecurity-Produkte, Backup-Infrastruktur, VMware, Storage und technischer Support."
     },
     "es": {
-     "date": "2018 - 2023",
+     "date": "Jul. 2018 - Feb. 2024",
      "title": "Ingeniero sénior de redes y sistemas — Modaberan Fanavari Pasargad",
      "desc": "Redes empresariales, productos de ciberseguridad, copias de seguridad, VMware, almacenamiento y soporte técnico."
     },
     "fr": {
-     "date": "2018 - 2023",
+     "date": "Juil. 2018 - Févr. 2024",
      "title": "Ingénieur senior réseaux et systèmes — Modaberan Fanavari Pasargad",
      "desc": "Réseaux d’entreprise, produits de cybersécurité, sauvegarde, VMware, stockage et support technique."
     },
     "tr": {
-     "date": "2018 - 2023",
+     "date": "Temmuz 2018 - Şubat 2024",
      "title": "Kıdemli Ağ ve Sistem Mühendisi — Modaberan Fanavari Pasargad",
      "desc": "Kurumsal ağ, siber güvenlik ürünleri, yedekleme, VMware, depolama ve teknik destek."
     },
     "zh": {
-     "date": "2018 - 2023",
+     "date": "2018年7月 - 2024年2月",
      "title": "高级网络与系统工程师 — Modaberan Fanavari Pasargad",
      "desc": "企业网络、网络安全产品、备份、VMware、存储与技术支持。"
     },
     "ja": {
-     "date": "2018年 - 2023年",
+     "date": "2018年7月 - 2024年2月",
      "title": "シニアネットワーク・システムエンジニア — Modaberan Fanavari Pasargad",
      "desc": "企業ネットワーク、サイバーセキュリティ製品、バックアップ、VMware、ストレージ、技術サポートを担当。"
     },
     "ru": {
-     "date": "Jul 2018 - 2023",
+     "date": "Июль 2018 - Фев. 2024",
      "title": "Ведущий инженер компьютерных сетей и систем — Modaberan Fanavari Pasargad",
      "desc": "Корпоративные сети, продукты в области кибербезопасности, инфраструктура резервного копирования, VMware, решения для хранения данных и техническая поддержка."
     }

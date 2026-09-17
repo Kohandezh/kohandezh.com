@@ -8,9 +8,9 @@
     <meta name="theme-color" content="#050706">
     <title>404 Arcade | Kohandezh</title>
     <meta name="description" content="The requested page is missing. Play a randomly selected 404 arcade game and return to the Kohandezh portfolio.">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png?v=2026091701">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/404-games.min.css?v=46">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/404-games.min.css?v=2026091701">
     <?php wp_head(); ?>
 </head>
 <body class="arcade-page" data-game="random">
@@ -111,7 +111,7 @@
         </footer>
     </div>
     <p class="visually-hidden" aria-live="polite" data-live-region></p>
-    <script src="<?php echo KDCV; ?>/assets/js/404-games.min.js?v=49" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/404-games.min.js?v=2026091701" defer></script>
 <script>
 (function(){
   function msg(lang){
@@ -124,7 +124,8 @@
       fr: "Clic droit désactivé",
       tr: "Sağ tık devre dışı",
       zh: "右键已禁用",
-      ja: "右クリックは無効です"
+      ja: "右クリックは無効です",
+      ru: "Правый клик отключён"
     };
     return m[lang] || m.en;
   }
@@ -151,7 +152,7 @@
     try {
       window.speechSynthesis.cancel();
       var u = new window.SpeechSynthesisUtterance(text);
-      var langMap = {en:'en-US',fa:'fa-IR',ar:'ar-SA',de:'de-DE',es:'es-ES',fr:'fr-FR',tr:'tr-TR',zh:'zh-CN',ja:'ja-JP'};
+      var langMap = {en:'en-US',fa:'fa-IR',ar:'ar-SA',de:'de-DE',es:'es-ES',fr:'fr-FR',tr:'tr-TR',zh:'zh-CN',ja:'ja-JP',ru:'ru-RU'};
       u.lang = langMap[lang] || 'en-US';
       u.rate = 0.95;
       u.pitch = 0.85;
@@ -181,6 +182,11 @@
     } catch(e){}
   }
   document.addEventListener('contextmenu', function(e){
+    // The KDCV Right-Click Guard plugin sets this flag from the WordPress
+    // setting. Read per event, not at registration, so the flag works no
+    // matter whether it is printed before or after this block. Undefined
+    // (the static site, with no plugin) keeps the guard on.
+    if (window.KDCV_RIGHTCLICK_GUARD === false) return;
     e.preventDefault();
     var lang = (document.documentElement.lang || 'en').slice(0,2).toLowerCase();
     var text = msg(lang);

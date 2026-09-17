@@ -31,3 +31,5 @@ __pycache__/
 
 # Graphify knowledge graph — local navigation aid, not a release artifact
 graphify-out/
+_tooling/releases/
+_tooling/backups/

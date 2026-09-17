@@ -2,6 +2,10 @@
 
 > Every change is reversible. Layer B is feature-flagged + plugin-isolated, so rollback is typically "disable the plugin". Layer A rollback re-runs sync from the static source of truth. Aligned with Agent.md addendum §22.
 
+## September 2026 publication/profile repair
+
+The local code base before this change is `dfa2105`, but that is **not proof of the production backup version**. Before installation, back up the currently installed theme and the 15 root targets from `release-manifest.json`; retain a DB backup even though this release contains no migration. Restore theme and root files as a pair, then rebuild the existing cache assets before purging cached HTML. Do not replace `wp-config.php` or change plugin activation, Pet settings, post content, or permalink structure. A disposable worktree/copy at the prior commit can reproduce local artifacts without resetting the user's checkout. Production rollback remains untested until authorized server/staging access is available.
+
 ## 1. Layer B rollback (the common case)
 
 Layer B lives entirely in the `kohandezh-knowledge` plugin. To roll back:

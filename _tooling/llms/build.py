@@ -91,6 +91,14 @@ def render(code, doc):
         name = '%s (%s)' % (c['name']['latin'], c['name']['fa'])
 
     out.append('- %s: %s' % (s['l_name'], name))
+
+    # Every way the same name is actually spelled. A crawler or model that met
+    # "محمد کهن دژ" or "Mohammadali Kohandezh" previously found no match here
+    # and no match in the Person schema either, so the page and the human did
+    # not connect. Same list as schema.org alternateName, from identity.json.
+    aka = c['name'].get('aka') or []
+    if aka:
+        out.append('- %s: %s' % (s['l_aka'], ', '.join(aka)))
     out.append('- %s: %s' % (s['l_title'], s['title']))
     out.append('- %s: %s (%s) — %s' % (s['l_company'], c['company']['name'], c['company']['short'], c['company']['url']))
     out.append('- %s: %s' % (s['l_education'], s['education']))

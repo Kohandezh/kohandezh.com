@@ -1,5 +1,13 @@
 # چک‌لیست دیپلوی kohandezh.com
 
+## انتشار یکپارچهٔ سپتامبر ۲۰۲۶ — مقدم بر دستورهای قدیمی پایین
+
+`npm test` و `npm run release:prepare` قالب کامل و ZIP فایل‌های ریشه را می‌سازند؛ دومی خودش deploy نمی‌کند. خروجی‌ها در `_tooling/wp-theme/kohandezhcv.zip` و `_tooling/releases/current/` هستند. `npm run release:verify` فقط پاسخ عمومی فایل‌ها را با manifest تطبیق می‌دهد.
+
+قالب و ۱۵ فایل ریشه باید با هم منتشر شوند: `llms.txt` ده‌زبانه، robots، sitemap، service worker، manifest و offline. **فایل فیزیکی قدیمی در ریشه با نصب قالب عوض نمی‌شود.** سایت‌مپ ریشهٔ وردپرس فقط صفحات ثابت را دارد؛ sitemap نوشته‌های منتشرشده به‌صورت پویا در `/?kdcv_sitemap=index` از robots معرفی می‌شود. فایل sitemap استاتیک پروژه را روی وردپرس کپی نکنید.
+
+مراحل، محدودیت‌های بررسی و بکاپ/بازگشت در [گزارش انتشار](docs/RELEASE-2026-09-07.fa.md) و `docs/DEPLOYMENT_GATES.md` آمده‌اند. این بسته هنوز روی سایت اصلی نصب نشده است. Live Avatar پیش از لانچ و افزونهٔ Pet بدون تغییر هستند.
+
 > **P0 release 2026-08-02** — اصلاحات بحرانی SEO/GEO/LLM:
 > - FAQ آپدیت شد ("9+ years" → "Over 18 years" در ۹ زبان)
 > - locale-router v2: bot/SEO-safe، تشخیص زبان مرورگر، English به‌عنوان canonical پیش‌فرض

@@ -11,11 +11,7 @@
   "theme_color": "#080b0d",
   "dir": "auto",
   "lang": "fa-IR",
-  "categories": [
-    "business",
-    "education",
-    "productivity"
-  ],
+  "categories": ["business", "education", "productivity"],
   "icons": [
     {
       "src": "/wp-content/themes/kohandezhcv/assets/images/logo/favicon-192.png",
@@ -47,34 +43,19 @@
       "name": "Blog",
       "short_name": "Blog",
       "url": "/blog/",
-      "icons": [
-        {
-          "src": "/wp-content/themes/kohandezhcv/assets/images/logo/favicon-192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "icons": [{ "src": "/wp-content/themes/kohandezhcv/assets/images/logo/favicon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Portfolio",
       "short_name": "Portfolio",
       "url": "/portfolio/",
-      "icons": [
-        {
-          "src": "/wp-content/themes/kohandezhcv/assets/images/logo/favicon-192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "icons": [{ "src": "/wp-content/themes/kohandezhcv/assets/images/logo/favicon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Certificates",
       "short_name": "Certificates",
       "url": "/Certificates.html",
-      "icons": [
-        {
-          "src": "/wp-content/themes/kohandezhcv/assets/images/logo/favicon-192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "icons": [{ "src": "/wp-content/themes/kohandezhcv/assets/images/logo/favicon-192.png", "sizes": "192x192" }]
     }
   ]
 }

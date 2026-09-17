@@ -25,7 +25,7 @@
     },
     "title": {
       "en": "CEO, Kohan System Farda (KSF) — PhD in IT Management",
-      "fa": "مدیرعامل کهن سیستم فردا (KSF) — دکتریی مدیریت فناوری اطلاعات",
+      "fa": "مدیرعامل کهن سیستم فردا (KSF) — دکتری مدیریت فناوری اطلاعات",
       "ar": "الرئيس التنفيذي، Kohan System Farda (KSF) — دكتوراه في إدارة تقنية المعلومات",
       "de": "CEO, Kohan System Farda (KSF) — PhD in IT-Management",
       "es": "CEO, Kohan System Farda (KSF) — Doctorado en Gestión de TI",
@@ -220,15 +220,15 @@
       },
       "org": "Kohan System Farda (KSF)",
       "period": {
-        "en": "2024 – Present",
-        "fa": "۱۴۰۳ – اکنون",
-        "ar": "2024 – الآن",
-        "de": "2024 – heute",
-        "es": "2024 – Actualidad",
-        "fr": "2024 – Aujourd'hui",
-        "tr": "2024 – Günümüz",
-        "zh": "2024 – 至今",
-        "ja": "2024年 – 現在"
+        "en": "Dec 2013 - Present",
+        "fa": "دسامبر ۲۰۱۳ - اکنون",
+        "ar": "ديسمبر 2013 - حتى الآن",
+        "de": "Dez. 2013 - heute",
+        "es": "Dic. 2013 - Actualidad",
+        "fr": "Déc. 2013 - Aujourd’hui",
+        "tr": "Aralık 2013 - Günümüz",
+        "zh": "2013年12月至今",
+        "ja": "2013年12月 - 現在"
       },
       "bullets": {
         "en": [
@@ -292,15 +292,15 @@
       },
       "org": "Modabberan Fanavari Pasargad",
       "period": {
-        "en": "2018 – 2023",
-        "fa": "۱۳۹۷ – ۱۴۰۲",
-        "ar": "2018 – 2023",
-        "de": "2018 – 2023",
-        "es": "2018 – 2023",
-        "fr": "2018 – 2023",
-        "tr": "2018 – 2023",
-        "zh": "2018 – 2023",
-        "ja": "2018年 – 2023年"
+        "en": "Jul 2018 - Feb 2024",
+        "fa": "ژوئیهٔ ۲۰۱۸ - فوریهٔ ۲۰۲۴",
+        "ar": "يوليو 2018 - فبراير 2024",
+        "de": "Juli 2018 - Feb. 2024",
+        "es": "Jul. 2018 - Feb. 2024",
+        "fr": "Juil. 2018 - Févr. 2024",
+        "tr": "Temmuz 2018 - Şubat 2024",
+        "zh": "2018年7月 - 2024年2月",
+        "ja": "2018年7月 - 2024年2月"
       },
       "bullets": {
         "en": [
@@ -516,34 +516,8 @@
   "education": [
     {
       "degree": {
-        "en": "PhD Candidate (second doctorate)",
-        "fa": "دانشجوی دکتری (دکتریی دوم)",
-        "ar": "مرشح لنيل الدكتوراه (الدكتوراه الثانية)",
-        "de": "Doktorand (zweite Promotion)",
-        "es": "Candidato a Doctor (segundo doctorado)",
-        "fr": "Doctorant (second doctorat)",
-        "tr": "Doktora Adayı (ikinci doktora)",
-        "zh": "博士研究生（第二个博士学位）",
-        "ja": "博士課程在籍（2つ目の博士号）"
-      },
-      "school": "",
-      "period": {
-        "en": "In progress",
-        "fa": "در حال تحصیل",
-        "ar": "قيد الدراسة",
-        "de": "laufend",
-        "es": "En curso",
-        "fr": "En cours",
-        "tr": "Devam ediyor",
-        "zh": "在读",
-        "ja": "在学中"
-      },
-      "note": ""
-    },
-    {
-      "degree": {
         "en": "PhD, IT Management — Smart Business",
-        "fa": "دکتریی مدیریت فناوری اطلاعات — کسب‌وکار هوشمند",
+        "fa": "دکتری مدیریت فناوری اطلاعات — کسب‌وکار هوشمند",
         "ar": "دكتوراه في إدارة تقنية المعلومات — الأعمال الذكية",
         "de": "PhD, IT-Management — Smart Business",
         "es": "Doctorado en Gestión de TI — Negocios Inteligentes",

@@ -26,6 +26,7 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import urljoin, urlsplit
 
 # All paths derive from the script's own location (cwd-independent).
 # Script lives at <project_root>/_tooling/wp-theme/sync-from-static.py, so:
@@ -91,10 +92,6 @@ STATIC_ONLY_ASSETS = [
     # kohandezhcv.zip over the 32 MB upload_max_filesize most shared hosts
     # enforce, which made the theme impossible to install from wp-admin.
     "kohan/supplemental-source/",
-    # Source original for the sako portfolio art. The pages reference only the
-    # 168 KB .webp beside it; this 2.2 MB lossless PNG is the master kept in
-    # the repo and must not ship — it alone grew the theme zip by 9%.
-    "images/portfolio/sako-platform-concept.png",
 ]
 
 # The static site's home-page blog preview is a client-side fetch of
@@ -116,7 +113,7 @@ WP_HOME_BLOG_SCRIPTS = (
     "restPostsUrl: \"<?php echo esc_url( rest_url('wp/v2/posts') ); ?>\", "
     "askUrl: \"<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>\" "
     "}};</script>"
-    '\n    <script src="{kdcv}/assets/js/home-blog-scroll.js?v=2" defer></script>'
+    '\n    <script src="{kdcv}/assets/js/home-blog-scroll.js?v=3" defer></script>'
 ).format(kdcv=KDCV)
 
 
@@ -267,8 +264,41 @@ def copy_import_media(static_root: Path, theme_root: Path):
         print(f"  + import media: assets/{rel}")
 
 
-def transform(html: str, note: str, has_home_blog: bool) -> str:
-    s = html
+def rewrite_navigation(source: str, source_name: str = "index.html") -> str:
+    """Resolve known static routes before moving the document to a WP permalink.
+
+    Only href values and an explicit route allowlist are touched. Query/fragment
+    suffixes survive verbatim; external links, media and PHP are never inferred.
+    """
+    routes = {"/index.html": HOME, "/blog/": page_url("blog"),
+              "/blog/index.html": page_url("blog")}
+    for name, (_, slug) in PAGE_MAP.items():
+        if slug and slug != "__404__":
+            routes["/" + name] = page_url(slug)
+    routes["/portfolio/"] = page_url("portfolio")
+
+    def replace(match):
+        value = match.group(2)
+        if not value or value.startswith(("#", "?")) or "<?" in value:
+            return match.group(0)
+        parsed = urlsplit(value)
+        if parsed.scheme not in ("", "http", "https"):
+            return match.group(0)
+        if parsed.netloc and parsed.netloc.lower() != "kohandezh.com":
+            return match.group(0)
+        path = urlsplit(urljoin("https://kohandezh.com/" + source_name, value)).path
+        target = routes.get(path)
+        if target is None:
+            return match.group(0)
+        suffix = value[len(value.split("?", 1)[0].split("#", 1)[0]):]
+        # PHP contains single quotes: always use a double-quoted HTML attribute.
+        return 'href="' + target + suffix.replace('"', '&quot;') + '"'
+
+    return re.sub(r'\bhref\s*=\s*([\'\"])(.*?)\1', replace, source, flags=re.IGNORECASE)
+
+
+def transform(html: str, note: str, has_home_blog: bool, source_name: str = "index.html") -> str:
+    s = rewrite_navigation(html, source_name)
     s = s.replace(
         'data-kdcv-router-mode="static"',
         'data-kdcv-router-mode="wordpress" data-kdcv-site-base="<?php echo esc_url(home_url(\'/\')); ?>"',
@@ -360,7 +390,21 @@ def transform(html: str, note: str, has_home_blog: bool) -> str:
     s = s.replace('"portfolio/?lang=', f'"{page_url("portfolio")}?lang=')
     s = s.replace('"index.html"', f'"{HOME}"')
 
+    # Skip hardcoded legacy downloads when the enabled plugin owns the Pet.
+    # Bootstrap flags alone stop execution, not browser network requests.
+    legacy_tag = r'<script\b[^>]*\bsrc="[^"]*/(?:ai-pet|kohan-avatar)(?:\.min)?\.js[^" ]*"[^>]*>\s*</script>|<link\b[^>]*\bhref="[^"]*/kohan-avatar(?:\.min)?\.css[^" ]*"[^>]*>'
+    s = re.sub(legacy_tag, lambda m: "<?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?>" + m.group(0) + "<?php endif; ?>", s)
+
+    # Every candidate in srcset needs the theme prefix, not just the first.
+    s = re.sub(r'\b(?:imagesrcset|srcset)="[^"]*"', lambda m: m.group(0).replace('assets/', f'{KDCV}/assets/'), s)
+
     # theme asset base (relative + absolute forms)
+    # portfolio/index.html sits one directory down, so it writes "../assets/".
+    # Left alone that resolves to /assets/ under the WordPress permalink and
+    # every stylesheet and script on /portfolio/ 404s into the HTML 404 page --
+    # which the browser then rejects on MIME as well. Rewrite it first: the
+    # plain '"assets/' rule below cannot match this form.
+    s = s.replace('"../assets/', f'"{KDCV}/assets/')
     s = s.replace('"assets/', f'"{KDCV}/assets/')
     s = s.replace('"/assets/', f'"{KDCV}/assets/')
     s = s.replace("https://kohandezh.com/assets/", f"{KDCV}/assets/")
@@ -414,7 +458,7 @@ def sync_pages(static_root: Path, theme_root: Path):
         src = static_root / static_name
         note = page_note(slug)
         has_home_blog = slug is None or slug in LANGS  # every CV-type page has the "Blog and News" section
-        out = transform(src.read_text(encoding="utf-8"), note, has_home_blog)
+        out = transform(src.read_text(encoding="utf-8"), note, has_home_blog, static_name)
         (theme_root / php_name).write_text(out, encoding="utf-8")
         print(f"  {static_name:24} -> {php_name}")
 
@@ -563,7 +607,7 @@ def compute_dry_run(static_root: Path, theme_root: Path):
             continue
         has_home_blog = slug is None or slug in LANGS
         try:
-            new = transform(src.read_text(encoding="utf-8"), page_note(slug), has_home_blog)
+            new = transform(src.read_text(encoding="utf-8"), page_note(slug), has_home_blog, static_name)
         except Exception as e:
             rep["page_errors"].append(f"{php_name}: {e}")
             continue

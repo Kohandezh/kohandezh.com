@@ -6,6 +6,11 @@ User-agent: *
 Allow: /
 
 # ---------- AI training / retrieval crawlers (public portfolio: allow) ----------
+# ElevenLabs Agents knowledge-base crawler (docs: elevenlabs.io → Manage documents).
+# Explicit allow so a future wildcard Disallow can never silently block it.
+User-agent: ElevenlabsBot
+Allow: /
+
 User-agent: GPTBot
 Allow: /
 

@@ -925,3 +925,31 @@ convincing false failures — a full-page contrast sweep taken that way reported
 black-on-black for every `var(--black-72)` element, when `.dark-mode` redefines
 the whole `--black-*` scale correctly. Verify a contrast finding against the
 static CSS before acting on it.
+
+---
+
+## 2026-09-17 — Stage 1 (ElevenLabs), right-click guard plugin, final packaging
+
+Full delivery report: `docs/RELEASE-2026-09-17.fa.md`. Nothing deployed, committed
+or pushed; all changes live in the checkout.
+
+- **ElevenlabsBot explicitly allowed** in `robots.txt` AND the `robots_txt` filter
+  in functions.php (edit-both-together rule). Every site-side crawl surface
+  verified green from outside (robots, UA fetch 200/no-redirect/rate-limit-none,
+  raw-HTML content completeness, sitemap, no anti-bot rules). Root cause stays
+  "undetermined without the owner's job error text" — ElevenLabs docs facts
+  (attach-doc-to-agent, blocked-fetch = empty document, crawl params) are in the
+  report. Backup before edit: `_tooling/backups/kdcv-stage1-elevenlabs-backup.tar.gz`.
+- **Default locale = fa re-verified** (locale-router.js:34, functions.php:632) —
+  no-signal humans land Persian on static AND WordPress; bots keep the English
+  canonical. No change needed.
+- **New plugin `_tooling/wp-theme/kdcv-rightclick-guard/`** v1.0.0: frontend
+  context-menu blocker with a Settings → Right-Click Guard ON/OFF switch
+  (default ON; wp-admin never affected). Verified on the local WP container:
+  ON present on `/` and `/fa/`, OFF absent, admin page renders, debug.log clean.
+  docker-compose gained a read-only mount for it.
+- **Packages rebuilt and verified** (hashes in the delivery report):
+  theme zip 22.7 MB, root-files.zip (16 files incl. refreshed wp-root mirror),
+  kohan-avatar.zip, kdcv-rightclick-guard.zip. Junk/secret scans clean.
+- **Final battery: npm test exit 0 (695 PASS), shell suite 32/0, sync parity
+  0/0/0, git diff --check clean.**

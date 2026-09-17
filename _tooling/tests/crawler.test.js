@@ -427,7 +427,7 @@ ok(enhancer.includes('data-cv-id'), 'it matches existing items by canonical id')
 // Any runtime copy of a canonical fact must agree with cv.json.
 const linkedin = fs.readFileSync(path.join(jsDir, 'linkedin-content.js'), 'utf8');
 const associate = cv.entries.find(e => e.id === 'associate-computer-software');
-const titles = [...linkedin.matchAll(/associateTitle:"([^"]*)"/g)].map(m => m[1]);
+const titles = [...linkedin.matchAll(/associateTitle\s*:\s*"([^"]*)"/g)].map(m => m[1]);
 ok(titles.length > 0, 'linkedin-content declares an associate-degree title');
 ok(titles.includes(associate.locales.en.title),
    'and it agrees with the canonical CV entry',

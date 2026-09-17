@@ -22,17 +22,17 @@
   <meta name="twitter:image" content="https://kohandezh.com/assets/media/posters/interview.jpg">
     <meta property="og:video" content="https://kohandezh.com/assets/media/mohammad-kohandezh-interview.mp4">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/favicon-32.png?v=2">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/favicon-32.png?v=2026091701">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/apple-touch-icon.png?v=2026091701">
     <link rel="stylesheet" href="assets/fonts/inter/inter.css">
     <link rel="stylesheet" href="assets/fonts/estedad/estedad.css">
-    <link rel="stylesheet" href="assets/css/videos.min.css?v=87">
-  <link rel="stylesheet" href="assets/css/page-chrome.min.css?v=101">
-  <link rel="stylesheet" href="assets/css/hud-button.min.css?v=105">
-  <link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=127" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=127"></noscript>
-  <link rel="stylesheet" href="assets/css/kohan-drive.min.css?v=5" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/kohan-drive.min.css?v=5"></noscript>
-  <link rel="stylesheet" href="assets/css/wisdom-quotes.min.css?v=115" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/wisdom-quotes.min.css?v=115"></noscript>
-  <link rel="stylesheet" href="assets/css/chat-ui.min.css?v=110" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/chat-ui.min.css?v=110"></noscript>
+    <link rel="stylesheet" href="assets/css/videos.min.css?v=2026091701">
+  <link rel="stylesheet" href="assets/css/page-chrome.min.css?v=2026091701">
+  <link rel="stylesheet" href="assets/css/hud-button.min.css?v=2026091701">
+  <link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=2026091701" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=2026091701"></noscript>
+  <link rel="stylesheet" href="assets/css/kohan-drive.min.css?v=2026091701" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/kohan-drive.min.css?v=2026091701"></noscript>
+  <link rel="stylesheet" href="assets/css/wisdom-quotes.min.css?v=2026091701" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/wisdom-quotes.min.css?v=2026091701"></noscript>
+  <link rel="stylesheet" href="assets/css/chat-ui.min.css?v=2026091701" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/chat-ui.min.css?v=2026091701"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
        URL in results, and gives answer engines the page's place in the
        site rather than treating it as an orphan. -->
@@ -191,7 +191,8 @@
       fr: "Clic droit désactivé",
       tr: "Sağ tık devre dışı",
       zh: "右键已禁用",
-      ja: "右クリックは無効です"
+      ja: "右クリックは無効です",
+      ru: "Правый клик отключён"
     };
     return m[lang] || m.en;
   }
@@ -218,7 +219,7 @@
     try {
       window.speechSynthesis.cancel();
       var u = new window.SpeechSynthesisUtterance(text);
-      var langMap = {en:'en-US',fa:'fa-IR',ar:'ar-SA',de:'de-DE',es:'es-ES',fr:'fr-FR',tr:'tr-TR',zh:'zh-CN',ja:'ja-JP'};
+      var langMap = {en:'en-US',fa:'fa-IR',ar:'ar-SA',de:'de-DE',es:'es-ES',fr:'fr-FR',tr:'tr-TR',zh:'zh-CN',ja:'ja-JP',ru:'ru-RU'};
       u.lang = langMap[lang] || 'en-US';
       u.rate = 0.95;
       u.pitch = 0.85;
@@ -248,6 +249,11 @@
     } catch(e){}
   }
   document.addEventListener('contextmenu', function(e){
+    // The KDCV Right-Click Guard plugin sets this flag from the WordPress
+    // setting. Read per event, not at registration, so the flag works no
+    // matter whether it is printed before or after this block. Undefined
+    // (the static site, with no plugin) keeps the guard on.
+    if (window.KDCV_RIGHTCLICK_GUARD === false) return;
     e.preventDefault();
     var lang = (document.documentElement.lang || 'en').slice(0,2).toLowerCase();
     var text = msg(lang);
@@ -258,16 +264,16 @@
   }, true);
 })();
 </script>
-  <script src="assets/js/clock.min.js?v=108" defer></script>
-  <script src="assets/js/page-context.min.js?v=109" defer></script>
-  <script src="assets/js/lazy-bundle.min.js?v=113" defer></script>
-  <script src="assets/js/kohan-avatar.min.js?v=128" defer></script>
-  <script src="assets/js/kohan-avatar-enhance.min.js?v=115" defer></script>
-  <script src="assets/js/kohan-drive.min.js?v=5" defer></script>
-<script src="assets/js/wisdom-quotes.min.js?v=114" defer></script>
-  <script src="assets/js/page-i18n.min.js?v=17" defer></script>
-  <script src="assets/js/page-chrome.min.js?v=98" defer></script>
-  <script src="assets/js/chat-ui.min.js?v=113" defer></script>
-  <script src="assets/js/hud-button.min.js?v=104" defer></script>
+  <script src="assets/js/clock.min.js?v=2026091701" defer></script>
+  <script src="assets/js/page-context.min.js?v=2026091701" defer></script>
+  <script src="assets/js/lazy-bundle.min.js?v=2026091702" defer></script>
+  <script src="assets/js/kohan-avatar.min.js?v=2026091701" defer></script>
+  <script src="assets/js/kohan-avatar-enhance.min.js?v=2026091701" defer></script>
+  <script src="assets/js/kohan-drive.min.js?v=2026091701" defer></script>
+<script src="assets/js/wisdom-quotes.min.js?v=2026091701" defer></script>
+  <script src="assets/js/page-i18n.min.js?v=2026091701" defer></script>
+  <script src="assets/js/page-chrome.min.js?v=2026091701" defer></script>
+  <script src="assets/js/chat-ui.min.js?v=2026091701" defer></script>
+  <script src="assets/js/hud-button.min.js?v=2026091701" defer></script>
 </body>
 </html>

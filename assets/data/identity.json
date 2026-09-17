@@ -5,7 +5,38 @@
     "name": {
       "latin": "Mohammad Ali Kohandezh",
       "fa": "محمدعلی کهن‌دژ",
-      "ar": "محمد علي كهن‌دژ"
+      "ar": "محمد علي كهن‌دژ",
+      "aka": [
+        "محمدعلی کهن‌دژ",
+        "محمدعلی کهن دژ",
+        "محمدعلی کهندژ",
+        "محمد علی کهن‌دژ",
+        "محمد علی کهن دژ",
+        "محمد علی کهندژ",
+        "محمد کهن‌دژ",
+        "محمد کهندژ",
+        "محمدعلی کوهن‌دژ",
+        "محمدعلی کوهن دژ",
+        "محمدعلی کوهندژ",
+        "محمد علی کوهن دژ",
+        "محمد کوهندژ",
+        "کهن‌دژ",
+        "کهندژ",
+        "محمد علي كهندژ",
+        "محمد علي كهندج",
+        "محمدعلي كهن دژ",
+        "Mohammadali Kohandezh",
+        "Mohammad Kohandezh",
+        "Muhammad Ali Kohandezh",
+        "Mohamad Ali Kohandezh",
+        "Mohammed Ali Kohandezh",
+        "Mohammad Ali Kohan Dezh",
+        "Mohammad Ali Kohandej",
+        "Mohammad Ali Kuhandezh",
+        "M. A. Kohandezh",
+        "Kohandezh"
+      ],
+      "_aka_note": "Spelling and transliteration variants of the SAME name -- not aliases, pseudonyms or additional people. Mirrored into schema.org Person alternateName in all ten HTML files; _tooling/tests/name-variants.test.js fails if the two drift apart."
     },
     "job_title": "AI & Quantum-Readiness Advisor | CEO, Kohan System Farda",
     "positioning": [
@@ -186,7 +217,8 @@
         "ru": "Russian"
       },
       "langname": "English",
-      "count": "ten"
+      "count": "ten",
+      "l_aka": "Also written as"
     },
     "fa": {
       "heading": "محمدعلی کهن‌دژ",
@@ -261,7 +293,8 @@
         "ru": "روسی"
       },
       "langname": "فارسی",
-      "count": "ده"
+      "count": "ده",
+      "l_aka": "نگارش‌های دیگر"
     },
     "ar": {
       "heading": "محمد علي كهن‌دژ",
@@ -336,7 +369,8 @@
         "ru": "الروسية"
       },
       "langname": "بالعربية",
-      "count": "عشر"
+      "count": "عشر",
+      "l_aka": "صيغ أخرى للاسم"
     },
     "de": {
       "heading": "Mohammad Ali Kohandezh",
@@ -411,7 +445,8 @@
         "ru": "Russisch"
       },
       "langname": "Deutsch",
-      "count": "zehn"
+      "count": "zehn",
+      "l_aka": "Auch geschrieben als"
     },
     "es": {
       "heading": "Mohammad Ali Kohandezh",
@@ -486,7 +521,8 @@
         "ru": "ruso"
       },
       "langname": "español",
-      "count": "diez"
+      "count": "diez",
+      "l_aka": "También escrito como"
     },
     "fr": {
       "heading": "Mohammad Ali Kohandezh",
@@ -561,7 +597,8 @@
         "ru": "russe"
       },
       "langname": "français",
-      "count": "dix"
+      "count": "dix",
+      "l_aka": "Également écrit"
     },
     "tr": {
       "heading": "Mohammad Ali Kohandezh",
@@ -636,7 +673,8 @@
         "ru": "Rusça"
       },
       "langname": "Türkçe",
-      "count": "on"
+      "count": "on",
+      "l_aka": "Diğer yazımları"
     },
     "zh": {
       "heading": "Mohammad Ali Kohandezh（穆罕默德·阿里·科汉德泽）",
@@ -711,7 +749,8 @@
         "ru": "俄语"
       },
       "langname": "中文",
-      "count": "十"
+      "count": "十",
+      "l_aka": "其他写法"
     },
     "ja": {
       "heading": "Mohammad Ali Kohandezh（モハンマド・アリ・コハンデジュ）",
@@ -786,7 +825,8 @@
         "ru": "ロシア語"
       },
       "langname": "日本語",
-      "count": "10"
+      "count": "10",
+      "l_aka": "その他の表記"
     },
     "ru": {
       "heading": "Мохаммад Али Кохандеж (Mohammad Ali Kohandezh)",
@@ -861,7 +901,8 @@
         "ru": "русский"
       },
       "langname": "русский",
-      "count": "десяти"
+      "count": "десяти",
+      "l_aka": "Другие написания"
     }
   }
 }

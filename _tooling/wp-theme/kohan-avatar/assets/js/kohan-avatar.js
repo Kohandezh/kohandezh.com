@@ -155,7 +155,7 @@
     root.setAttribute("aria-label", CFG.ariaLabel || "Kohan avatar");
     root.style.setProperty("--kohan-cols", COLS);
     root.style.setProperty("--kohan-rows", ROWS);
-    root.style.backgroundImage = 'url("' + BASE + '/spritesheet.webp")';
+    root.style.backgroundImage = 'url("' + (CFG.atlasUrl || BASE + '/spritesheet.webp') + '")';
     root.style.backgroundSize = COLS * 100 + "% " + ROWS * 100 + "%";
     root.style.backgroundPosition = cellPosition(NEUTRAL.row, NEUTRAL.col);
 
@@ -169,7 +169,7 @@
 
     // Preload the atlas so first paint has no flash.
     atlas = new Image();
-    atlas.src = BASE + "/spritesheet.webp";
+    atlas.src = CFG.atlasUrl || BASE + "/spritesheet.webp";
 
     wireInteractions();
   }
