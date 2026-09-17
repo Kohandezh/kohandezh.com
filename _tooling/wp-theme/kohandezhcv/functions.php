@@ -170,17 +170,13 @@ add_action( 'template_redirect', function () {
 }, 1 );
 
 /**
- * Remove legacy pages from wp-sitemap.xml so they aren't advertised to
- * crawlers. Pairs with the 301 redirects above — redirects handle any
- * visitor who actually lands on the URL; this stops Google from even
- * trying to crawl them.
+ * The stale page slugs, in one place.
+ *
+ * Every one of these is 301'd by the redirect block above. Three consumers
+ * read this list, so a slug added here is handled everywhere at once.
  */
-add_filter( 'wp_sitemaps_posts_query_args', function ( $args ) {
-	if ( ! isset( $args['post_type'] ) || ! in_array( 'page', (array) $args['post_type'], true ) ) {
-		return $args;
-	}
-
-	$legacy_slugs = array(
+function kdcv_legacy_page_slugs() {
+	return array(
 		'connections', 'members', 'following', 'followers',
 		'shop', 'cart', 'checkout', 'my-account',
 		'search-engine-optimization', 'local-business-marketing',
@@ -205,6 +201,20 @@ add_filter( 'wp_sitemaps_posts_query_args', function ( $args ) {
 		// profile/* are pages too — exclude them all. Slug is 'profile' for /profile.
 		'profile',
 	);
+}
+
+/**
+ * Keep the legacy pages out of wp-sitemap.xml so they aren't advertised to
+ * crawlers. Pairs with the 301 redirects above — redirects handle any
+ * visitor who actually lands on the URL; this stops Google from even
+ * trying to crawl them.
+ */
+add_filter( 'wp_sitemaps_posts_query_args', function ( $args ) {
+	if ( ! isset( $args['post_type'] ) || ! in_array( 'page', (array) $args['post_type'], true ) ) {
+		return $args;
+	}
+
+	$legacy_slugs = kdcv_legacy_page_slugs();
 
 	$args['post_name__not_in'] = isset( $args['post_name__not_in'] )
 		? array_merge( (array) $args['post_name__not_in'], $legacy_slugs )
@@ -212,6 +222,37 @@ add_filter( 'wp_sitemaps_posts_query_args', function ( $args ) {
 
 	return $args;
 } );
+
+/**
+ * Same exclusion, applied to Rank Math's sitemap.
+ *
+ * Rank Math replaces wp-sitemap.xml with its own, and the filter above does
+ * not reach it -- so /sitemap_index.xml was advertising every legacy page as
+ * a normal, crawlable URL while the redirect block above 301s each one. A
+ * crawler that follows them records "Page with redirect", never a page. The
+ * slug list is shared with the redirects so the two cannot drift.
+ */
+add_filter( 'rank_math/sitemap/entry', function ( $url, $type, $object ) {
+	if ( 'post' !== $type || empty( $url['loc'] ) ) {
+		return $url;
+	}
+
+	$path = trim( (string) wp_parse_url( $url['loc'], PHP_URL_PATH ), '/' );
+	if ( '' === $path ) {
+		return $url;
+	}
+
+	if ( in_array( $path, kdcv_legacy_page_slugs(), true ) ) {
+		return false;
+	}
+
+	// /profile and every subpath under it, matching $legacy_prefix above.
+	if ( 'profile' === $path || 0 === strpos( $path, 'profile/' ) ) {
+		return false;
+	}
+
+	return $url;
+}, 10, 3 );
 
 /**
  * Serve llms.txt and fa-llms.txt directly from the theme, so WordPress
