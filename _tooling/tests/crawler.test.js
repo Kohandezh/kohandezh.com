@@ -299,8 +299,16 @@ for (const [f, L] of Object.entries(LOCALES)) {
   // than inlining an anonymous duplicate of it.
   ok(p.worksFor && p.worksFor['@id'] === 'https://kohandezh.com/#ksf-organization',
      `${L}: worksFor references the canonical Organization`);
-  ok(p.founder && p.founder['@id'] === 'https://kohandezh.com/#ksf-organization',
-     `${L}: the founder relationship is stated separately from employment`);
+  // schema.org gives `founder` domainIncludes Organization ONLY (range is the
+  // person or organization that founded it). Written on the Person it reads as
+  // "this person founded this person" -- the relationship must live on the
+  // Organization node, which already carries it.
+  ok(!p.founder,
+     `${L}: the founder relationship is not written backwards onto the Person`);
+  const orgs = blocks.filter(b => b && b['@id'] === 'https://kohandezh.com/#ksf-organization');
+  ok(orgs.length === 1 && orgs[0].founder
+       && orgs[0].founder['@id'] === 'https://kohandezh.com/#person',
+     `${L}: the Organization names its founder`);
 
   // A property must not conflate distinct relationship kinds.
   if (p.alumniOf) {
