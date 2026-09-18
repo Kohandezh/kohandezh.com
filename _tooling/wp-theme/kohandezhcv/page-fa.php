@@ -78,6 +78,18 @@
             text-decoration: none;
             transition: border-color .2s ease, background .2s ease;
         }
+        /* Two of these domains are registered but not built yet. The card is a
+           span, not a link, so nothing here can be clicked into a dead end. */
+        .eco-card--soon {
+            cursor: default;
+            opacity: .58;
+        }
+        .eco-card--soon:hover {
+            transform: none;
+        }
+        .eco-card--soon .eco-tag {
+            font-style: italic;
+        }
         .eco-card:hover {
             border-color: var(--primary);
             background: var(--black-6);
@@ -666,7 +678,8 @@
         "https://kohansystemfarda.com",
         "https://padyar.com",
         "https://homayar.com",
-        "https://netyar.com"
+        "https://netyar.com",
+        "https://blogyar.com"
       ]
     }
     </script>
@@ -1335,6 +1348,25 @@
                                         </span>
                                         <i class="icon icon-arrow-right-top"></i>
                                     </a>
+                                    <a href="https://blogyar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">BlogYar.com</span>
+                                            <span class="eco-tag">تیم تحریریهٔ هوش مصنوعی برای وردپرس</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <span class="eco-card eco-card--soon" aria-disabled="true">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Abryar.com</span>
+                                            <span class="eco-tag">به‌زودی</span>
+                                        </span>
+                                    </span>
+                                    <span class="eco-card eco-card--soon" aria-disabled="true">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Sanatyar.org</span>
+                                            <span class="eco-tag">به‌زودی</span>
+                                        </span>
+                                    </span>
                                 
                                         <!-- Clone 2 -->
                                     <a href="https://ksf.ir" target="_blank" rel="noopener" class="eco-card">
@@ -1372,6 +1404,25 @@
                                         </span>
                                         <i class="icon icon-arrow-right-top"></i>
                                     </a>
+                                    <a href="https://blogyar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">BlogYar.com</span>
+                                            <span class="eco-tag">تیم تحریریهٔ هوش مصنوعی برای وردپرس</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <span class="eco-card eco-card--soon" aria-disabled="true">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Abryar.com</span>
+                                            <span class="eco-tag">به‌زودی</span>
+                                        </span>
+                                    </span>
+                                    <span class="eco-card eco-card--soon" aria-disabled="true">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Sanatyar.org</span>
+                                            <span class="eco-tag">به‌زودی</span>
+                                        </span>
+                                    </span>
                                 
                                         <!-- Clone 3 -->
                                     <a href="https://ksf.ir" target="_blank" rel="noopener" class="eco-card">
@@ -1409,6 +1460,25 @@
                                         </span>
                                         <i class="icon icon-arrow-right-top"></i>
                                     </a>
+                                    <a href="https://blogyar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">BlogYar.com</span>
+                                            <span class="eco-tag">تیم تحریریهٔ هوش مصنوعی برای وردپرس</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <span class="eco-card eco-card--soon" aria-disabled="true">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Abryar.com</span>
+                                            <span class="eco-tag">به‌زودی</span>
+                                        </span>
+                                    </span>
+                                    <span class="eco-card eco-card--soon" aria-disabled="true">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Sanatyar.org</span>
+                                            <span class="eco-tag">به‌زودی</span>
+                                        </span>
+                                    </span>
                                 
                                     </div>
                                 </div>
