@@ -20,7 +20,7 @@
   <div class="blog-shell">
     <header class="blog-header">
       <a class="blog-brand" href="<?php echo esc_url( home_url('/') ); ?>" aria-label="بازگشت به صفحه اصلی محمدعلی کهن‌دژ">
-        <img src="<?php echo KDCV; ?>/assets/images/logo/logo-2.svg" width="40" height="40" alt="MK">
+        <img src="<?php echo KDCV; ?>/assets/images/logo/logo.svg" width="40" height="40" alt="MK">
         <span>MOHAMMAD ALI KOHANDEZH</span>
       </a>
       <nav class="blog-nav" aria-label="ناوبری وبلاگ">
