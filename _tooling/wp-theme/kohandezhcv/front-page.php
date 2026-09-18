@@ -8,7 +8,7 @@
     <title>Mohammad Ali Kohandezh — AI &amp; Quantum-Readiness Advisor | Secure Enterprise AI</title>
     <meta name="author" content="Mohammad Ali Kohandezh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=2026091701"></script>
+    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=2026091704"></script>
     <meta name="description"
         content="AI &amp; quantum-readiness advisor. I help organizations deploy AI they can trust and prepare their cryptography for the post-quantum era.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -20,22 +20,22 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/simple-line/simple-line.css">
     <!-- css -->
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=2026091701">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=2026091704">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css"></noscript>
 
 
-    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=2026091701">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=2026091701">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=2026091701">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091701" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091701"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091701" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091701"></noscript>
-    <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091701" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091701"><?php endif; ?></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091701" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091701"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=2026091701">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091701">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=2026091701">
+    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=2026091704">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=2026091704">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=2026091704">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091704" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091704"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091704" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091704"></noscript>
+    <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091704" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091704"><?php endif; ?></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091704" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091704"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=2026091704">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091704">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=2026091704">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kdcv-interaction-fix.css?v=2026091701">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=2026091701" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=2026091701"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=2026091704" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=2026091704"></noscript>
 
     <!-- Kohandezh overrides -->
     <style>
@@ -74,17 +74,12 @@
             text-decoration: none;
             transition: border-color .2s ease, background .2s ease;
         }
-        /* Two of these domains are registered but not built yet. The card is a
-           span, not a link, so nothing here can be clicked into a dead end. */
-        .eco-card--soon {
-            cursor: default;
-            opacity: .58;
-        }
-        .eco-card--soon:hover {
-            transform: none;
-        }
+        /* Registered, linked, but not built yet: the owner will point them at
+           real sites. Only the tag is marked, so the card still reads and
+           behaves as the live link it is. */
         .eco-card--soon .eco-tag {
             font-style: italic;
+            opacity: .8;
         }
         .eco-card:hover {
             border-color: var(--primary);
@@ -115,9 +110,6 @@
         }
         .eco-card:hover .icon {
             color: var(--primary);
-        }
-        .eco-marquee {
-            max-width: 464px;
         }
         .eco-marquee .eco-card {
             flex: none;
@@ -574,7 +566,9 @@
         "https://padyar.com",
         "https://homayar.com",
         "https://netyar.com",
-        "https://blogyar.com"
+        "https://blogyar.com",
+        "https://abryar.com",
+        "https://sanatyar.org"
       ]
     }
     </script>
@@ -709,7 +703,7 @@
     }
     </script>
     <!-- ===== /SEO BLOCK ===== -->
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091701" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091701"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091704" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091704"></noscript>
   <!-- ProfilePage: Google's container type for a person's own page. It
        points at the Person node declared above by @id rather than
        repeating it, adds the freshness dates answer engines look for,
@@ -1250,18 +1244,20 @@
                                         </span>
                                         <i class="icon icon-arrow-right-top"></i>
                                     </a>
-                                    <span class="eco-card eco-card--soon" aria-disabled="true">
+                                    <a href="https://abryar.com" target="_blank" rel="noopener" class="eco-card eco-card--soon">
                                         <span class="eco-text">
                                             <span class="eco-name">Abryar.com</span>
                                             <span class="eco-tag">Coming soon</span>
                                         </span>
-                                    </span>
-                                    <span class="eco-card eco-card--soon" aria-disabled="true">
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://sanatyar.org" target="_blank" rel="noopener" class="eco-card eco-card--soon">
                                         <span class="eco-text">
                                             <span class="eco-name">Sanatyar.org</span>
                                             <span class="eco-tag">Coming soon</span>
                                         </span>
-                                    </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
                                 
                                         <!-- Clone 2 -->
                                     <a href="https://ksf.ir" target="_blank" rel="noopener" class="eco-card">
@@ -1306,18 +1302,20 @@
                                         </span>
                                         <i class="icon icon-arrow-right-top"></i>
                                     </a>
-                                    <span class="eco-card eco-card--soon" aria-disabled="true">
+                                    <a href="https://abryar.com" target="_blank" rel="noopener" class="eco-card eco-card--soon">
                                         <span class="eco-text">
                                             <span class="eco-name">Abryar.com</span>
                                             <span class="eco-tag">Coming soon</span>
                                         </span>
-                                    </span>
-                                    <span class="eco-card eco-card--soon" aria-disabled="true">
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://sanatyar.org" target="_blank" rel="noopener" class="eco-card eco-card--soon">
                                         <span class="eco-text">
                                             <span class="eco-name">Sanatyar.org</span>
                                             <span class="eco-tag">Coming soon</span>
                                         </span>
-                                    </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
                                 
                                         <!-- Clone 3 -->
                                     <a href="https://ksf.ir" target="_blank" rel="noopener" class="eco-card">
@@ -1362,18 +1360,20 @@
                                         </span>
                                         <i class="icon icon-arrow-right-top"></i>
                                     </a>
-                                    <span class="eco-card eco-card--soon" aria-disabled="true">
+                                    <a href="https://abryar.com" target="_blank" rel="noopener" class="eco-card eco-card--soon">
                                         <span class="eco-text">
                                             <span class="eco-name">Abryar.com</span>
                                             <span class="eco-tag">Coming soon</span>
                                         </span>
-                                    </span>
-                                    <span class="eco-card eco-card--soon" aria-disabled="true">
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://sanatyar.org" target="_blank" rel="noopener" class="eco-card eco-card--soon">
                                         <span class="eco-text">
                                             <span class="eco-name">Sanatyar.org</span>
                                             <span class="eco-tag">Coming soon</span>
                                         </span>
-                                    </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
                                 
                                     </div>
                                 </div>
@@ -2720,33 +2720,33 @@
     </noscript>
 
     <!-- Javascript -->
-    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=2026091703" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=2026091701" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=2026091704" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=2026091704" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=3" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=2026091701" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091701" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091702" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=2026091701" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=2026091704" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091704" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=2026091704" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=2026091701" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=2026091704" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/animation-change-text.min.js" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/demo-and-schedule.min.js" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=2026091701" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=2026091701" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=2026091704" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=2026091704" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/cwv-rum.min.js" defer></script>
-    <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=2026091701" defer></script><?php endif; ?>
-    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2026091701" defer></script>
+    <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=2026091704" defer></script><?php endif; ?>
+    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2026091704" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kdcv-interaction-fix.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=2026091701" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=2026091704" defer></script>
 <script>
 (function(){
   function msg(lang){
@@ -2832,13 +2832,13 @@
   }, true);
 })();
 </script>
-  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=2026091701" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=2026091701" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=2026091701" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=2026091704" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=2026091704" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=2026091704" defer></script>
     <?php wp_footer(); ?>
 </body>
 

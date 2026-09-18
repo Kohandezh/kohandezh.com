@@ -18,12 +18,12 @@
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/fonts.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/estedad/estedad.css">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/portfolio.min.css?v=2026091701">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=2026091701">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=2026091701">
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091701">
-  <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091701" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091701"><?php endif; ?></noscript>
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091701" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091701"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/portfolio.min.css?v=2026091704">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=2026091704">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=2026091704">
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091704">
+  <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091704" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091704"><?php endif; ?></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091704" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091704"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
        URL in results, and gives answer engines the page's place in the
        site rather than treating it as an orphan. -->
@@ -116,16 +116,16 @@
         </nav>
         <p class="kdcv-foot-legal">All rights reserved<br>© 2026 Mohammad Ali Kohandezh</p>
       </div></footer>
-  <script src="<?php echo KDCV; ?>/assets/js/cybernetic-grid.min.js?v=2026091701" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/portfolio.min.js?v=2026091701" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=2026091701" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091701" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091702" defer></script>
-  <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=2026091701" defer></script><?php endif; ?>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=2026091701" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=2026091701" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=2026091701" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=2026091701" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/cybernetic-grid.min.js?v=2026091704" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/portfolio.min.js?v=2026091704" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=2026091704" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091704" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091704" defer></script>
+  <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=2026091704" defer></script><?php endif; ?>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=2026091704" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/page-chrome.min.js?v=2026091704" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=2026091704" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=2026091704" defer></script>
     <?php wp_footer(); ?>
 </body>
 </html>

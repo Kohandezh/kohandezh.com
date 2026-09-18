@@ -8705,7 +8705,12 @@ html.ai-site-loading body { overflow: hidden !important; }
 }
 
 .eco-marquee {
-  max-width: 464px;
+  /* No cap. 464px held this strip to about two cards while the column beside
+     it is 700+ wide, so it read as a row that starts and then stops halfway
+     across the page. The banks ticker above it fills its container; this one
+     now does too. Declared after the 992px rule that caps .infiniteSlide-brand
+     at 480px, so it wins on source order at equal specificity. */
+  max-width: none;
   padding: 4px 0;
 }
 
