@@ -58,7 +58,7 @@
       if (fired) return;
       fired = true;
       if (!window.__KDCV_PET_BOOTSTRAPPED__) {
-        load(PREFIX + "js/ai-pet.min.js?v=2026091704");
+        load(PREFIX + "js/ai-pet.min.js?v=2026091705");
       }
       cleanup();
     }
@@ -98,7 +98,7 @@
     if (!target) return; // page has no swiper; skip the load entirely
     if (!("IntersectionObserver" in window)) {
       // No IO support → just load them after window.load
-      var go = function () { loadOrdered([PREFIX + "js/swiper-bundle.min.js", PREFIX + "js/carousel.min.js?v=2026091704"]); };
+      var go = function () { loadOrdered([PREFIX + "js/swiper-bundle.min.js", PREFIX + "js/carousel.min.js?v=2026091705"]); };
       if (document.readyState === "complete") go();
       else window.addEventListener("load", go);
       return;
@@ -106,7 +106,7 @@
     var io = new IntersectionObserver(function (entries) {
       for (var i = 0; i < entries.length; i++) {
         if (entries[i].isIntersecting) {
-          loadOrdered([PREFIX + "js/swiper-bundle.min.js", PREFIX + "js/carousel.min.js?v=2026091704"]);
+          loadOrdered([PREFIX + "js/swiper-bundle.min.js", PREFIX + "js/carousel.min.js?v=2026091705"]);
           io.disconnect();
           break;
         }

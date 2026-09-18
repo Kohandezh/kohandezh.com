@@ -5991,11 +5991,9 @@ a.image-brand:focus-visible {
     transform: translate3d(-33.3333%, 0, 0);
   }
 }
-@media (min-width: 992px) {
-  .infiniteSlide-brand {
-    max-width: 480px;
-  }
-}
+/* No desktop cap on either ticker. Both sit in the same column and both are
+   meant to run its full width; 480px left the banks strip short of the text
+   above it, and the web-presence strip was capped narrower still. */
 
 .award-list .award-item {
   padding: 23px 0px 24px;
