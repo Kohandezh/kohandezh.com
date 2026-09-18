@@ -189,6 +189,7 @@ def sync_assets(static_root: Path, theme_root: Path):
     copy_import_media(static_root, theme_root)
     rewrite_post_body_urls(theme_root)
     copy_llms_files(static_root, theme_root)
+    copy_root_files(static_root, theme_root)
 
 
 # functions.php serves /{locale}-llms.txt with a rewrite rule, falling back to
@@ -209,6 +210,46 @@ def copy_llms_files(static_root: Path, theme_root: Path):
         copied += 1
     print(f"  + {copied} llms.txt files bundled into the theme")
 
+
+
+# The five remaining site-root files. They used to exist ONLY as uploads next
+# to wp-config.php, which made every deploy depend on an FTP client setting
+# the right permissions -- twice in one day a fresh upload answered 403 for
+# all of them, taking robots, the sitemap, the feed, the manifest and the
+# service worker down together. functions.php now serves each one from the
+# theme when the root has no readable copy, so a theme upload is enough.
+#
+# Asset URLs inside them are absolute ("/assets/..."), which resolves to
+# nothing under WordPress; they are rewritten to the theme exactly as
+# _tooling/release.py does it for the uploadable package.
+THEME_ASSET_BASE = "/wp-content/themes/kohandezhcv/"
+
+# feed.xml is deliberately NOT rewritten: its URLs are absolute post
+# permalinks, not theme assets. sitemap.xml comes from the wp-root mirror,
+# whose list is WordPress-specific (see release.py root_payload).
+ROOT_FILES_REWRITTEN = ["sw.js", "offline.html", "manifest.json"]
+
+
+def copy_root_files(static_root: Path, theme_root: Path):
+    copied = 0
+    for name in ROOT_FILES_REWRITTEN:
+        src = static_root / name
+        if not src.is_file():
+            fail(f"root file missing from static site: {name}")
+        text = src.read_text(encoding="utf-8").replace("/assets/", THEME_ASSET_BASE + "assets/")
+        (theme_root / name).write_text(text, encoding="utf-8")
+        copied += 1
+
+    for name, src in (
+        ("feed.xml", static_root / "feed.xml"),
+        ("sitemap.xml", static_root / "_tooling" / "wp-root" / "sitemap.xml"),
+    ):
+        if not src.is_file():
+            fail(f"root file missing: {src}")
+        shutil.copy2(src, theme_root / name)
+        copied += 1
+
+    print(f"  + {copied} site-root files bundled into the theme")
 
 # The whole-article translations (`__body`) are composed from the STATIC blog
 # files, so every asset URL inside them is written relative to /blog/ — e.g.
