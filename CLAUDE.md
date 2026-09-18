@@ -10,7 +10,7 @@
 - **Stack:** Static HTML/CSS/JS at repo root + a generated WordPress theme
   at `_tooling/wp-theme/kohandezhcv/` synced via `python3 _tooling/wp-theme/sync-from-static.py`.
 - **10 languages:** English (canonical) + fa, ar, de, es, fr, tr, zh, ja, ru.
-- **Production:** WordPress on LiteSpeed at `31.25.91.5`. NOT behind Cloudflare (yet).
+- **Production:** WordPress on LiteSpeed at `31.25.91.5`, **behind Cloudflare** (edge cache + 4h Browser Cache TTL rewrite; `curl --resolve kohandezh.com:443:31.25.91.5` to read the true origin).
 - **Source of truth:** the static files at repo root. The WP theme is REGENERATED from them.
 
 ## Critical conventions (do not violate)
