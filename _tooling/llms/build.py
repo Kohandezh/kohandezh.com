@@ -102,7 +102,12 @@ def render(code, doc):
     out.append('- %s: %s' % (s['l_title'], s['title']))
     out.append('- %s: %s (%s) — %s' % (s['l_company'], c['company']['name'], c['company']['short'], c['company']['url']))
     out.append('- %s: %s' % (s['l_education'], s['education']))
-    out.append('- %s: %s | %s' % (s['l_contact'], c['contact']['email'], ' | '.join(c['contact']['phones'])))
+    # One number per audience. The Persian file is read by people in Iran,
+    # so it carries the Iranian line; every other language carries the
+    # international one, which is also the WhatsApp number. Offering both
+    # everywhere just made an assistant pick the wrong one.
+    phone = c['contact']['phones'][0] if code == 'fa' else c['contact']['phones'][1]
+    out.append('- %s: %s | %s' % (s['l_contact'], c['contact']['email'], phone))
     out.append('- %s: %s' % (s['l_linkedin'], c['profiles']['linkedin']))
     out.append('- %s: %s' % (s['l_x'], c['profiles']['x']))
     out.append('')

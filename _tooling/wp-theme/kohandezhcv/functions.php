@@ -170,6 +170,28 @@ add_action( 'template_redirect', function () {
 }, 1 );
 
 /**
+ * Serve the site owner's own portrait instead of a Gravatar.
+ *
+ * Every avatar on the site pointed at secure.gravatar.com, which does not
+ * resolve for a good share of visitors (and did not resolve here at all) --
+ * the admin bar showed a broken image. There is exactly one author on this
+ * site and his portrait already ships with the theme, so the remote lookup
+ * buys nothing and costs a third-party request on every admin page.
+ */
+add_filter( 'pre_get_avatar_data', function ( $args, $id_or_email ) {
+	$size = isset( $args['size'] ) ? (int) $args['size'] : 96;
+
+	$args['url']          = KDCV . '/assets/images/avatar/avatar-thumb-img0031-w160.webp';
+	$args['found_avatar'] = true;
+	// Gravatar's own srcset points back at gravatar.com; drop it with the URL.
+	$args['srcset']       = '';
+	$args['width']        = $size;
+	$args['height']       = $size;
+
+	return $args;
+}, 10, 2 );
+
+/**
  * The stale page slugs, in one place.
  *
  * Every one of these is 301'd by the redirect block above. Three consumers
@@ -223,36 +245,6 @@ add_filter( 'wp_sitemaps_posts_query_args', function ( $args ) {
 	return $args;
 } );
 
-/**
- * Same exclusion, applied to Rank Math's sitemap.
- *
- * Rank Math replaces wp-sitemap.xml with its own, and the filter above does
- * not reach it -- so /sitemap_index.xml was advertising every legacy page as
- * a normal, crawlable URL while the redirect block above 301s each one. A
- * crawler that follows them records "Page with redirect", never a page. The
- * slug list is shared with the redirects so the two cannot drift.
- */
-add_filter( 'rank_math/sitemap/entry', function ( $url, $type, $object ) {
-	if ( 'post' !== $type || empty( $url['loc'] ) ) {
-		return $url;
-	}
-
-	$path = trim( (string) wp_parse_url( $url['loc'], PHP_URL_PATH ), '/' );
-	if ( '' === $path ) {
-		return $url;
-	}
-
-	if ( in_array( $path, kdcv_legacy_page_slugs(), true ) ) {
-		return false;
-	}
-
-	// /profile and every subpath under it, matching $legacy_prefix above.
-	if ( 'profile' === $path || 0 === strpos( $path, 'profile/' ) ) {
-		return false;
-	}
-
-	return $url;
-}, 10, 3 );
 
 /**
  * Serve llms.txt and fa-llms.txt directly from the theme, so WordPress
@@ -697,9 +689,6 @@ add_filter( 'robots_txt', function ( $output, $public ) {
 
 	$ai_allow =
 		"\n# ---------- AI training / retrieval crawlers (public portfolio: allow) ----------\n"
-		// ElevenLabs Agents knowledge-base crawler — explicit allow per
-		// elevenlabs.io docs; kept identical to the static robots.txt.
-		. "User-agent: ElevenlabsBot\nAllow: /\n\n"
 		. "User-agent: GPTBot\nAllow: /\n\n"
 		. "User-agent: ChatGPT-User\nAllow: /\n\n"
 		. "User-agent: OAI-SearchBot\nAllow: /\n\n"

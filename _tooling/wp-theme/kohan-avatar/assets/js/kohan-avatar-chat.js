@@ -41,6 +41,89 @@
       error: "تعذّر الوصول إلى المساعد الآن. يُرجى استخدام نموذج الاتصال.",
     },
   };
+  // Panel title. The assistant is presented as the owner's digital twin, so
+  // the header names it that way in every language the site serves.
+  var TITLES = {
+    "en": "Chat with Kohandezh's digital twin",
+    "fa": "صحبت با دوقلوی دیجیتال کهن‌دژ",
+    "ar": "دردشة مع التوأم الرقمي لكهندژ",
+    "de": "Chat mit Kohandezhs digitalem Zwilling",
+    "es": "Habla con el gemelo digital de Kohandezh",
+    "fr": "Discutez avec le jumeau numérique de Kohandezh",
+    "tr": "Kohandezh’in dijital ikiziyle sohbet",
+    "zh": "与科汉德泽的数字分身对话",
+    "ja": "コハンデジュのデジタルツインと対話",
+    "ru": "Чат с цифровым двойником Кохандежа"
+  };
+
+  // Voice, call and live-avatar controls. They are rendered DISABLED on
+  // purpose: the features are not built yet, and a grey, clearly-inert
+  // control is honest about that while reserving its place in the layout,
+  // so turning them on later is a one-line change and not a redesign.
+  var SOON = {
+    "en": [
+      "Voice input",
+      "Voice call",
+      "Video call with the live avatar",
+      "coming soon"
+    ],
+    "fa": [
+      "ورودی صوتی",
+      "تماس صوتی",
+      "تماس تصویری با آواتار زنده",
+      "به‌زودی"
+    ],
+    "ar": [
+      "إدخال صوتي",
+      "مكالمة صوتية",
+      "مكالمة مرئية مع الأفاتار المباشر",
+      "قريبًا"
+    ],
+    "de": [
+      "Spracheingabe",
+      "Sprachanruf",
+      "Videoanruf mit dem Live-Avatar",
+      "in Kürze"
+    ],
+    "es": [
+      "Entrada de voz",
+      "Llamada de voz",
+      "Videollamada con el avatar en vivo",
+      "próximamente"
+    ],
+    "fr": [
+      "Saisie vocale",
+      "Appel vocal",
+      "Appel vidéo avec l’avatar en direct",
+      "bientôt"
+    ],
+    "tr": [
+      "Sesli giriş",
+      "Sesli arama",
+      "Canlı avatarla görüntülü arama",
+      "çok yakında"
+    ],
+    "zh": [
+      "语音输入",
+      "语音通话",
+      "与实时分身视频通话",
+      "即将推出"
+    ],
+    "ja": [
+      "音声入力",
+      "音声通話",
+      "ライブアバターとビデオ通話",
+      "近日公開"
+    ],
+    "ru": [
+      "Голосовой ввод",
+      "Голосовой звонок",
+      "Видеозвонок с живым аватаром",
+      "скоро"
+    ]
+  };
+  var SOON_LIST = SOON[LANG] || SOON.en;
+
   var P = PACKS[LANG] || PACKS.en;
   var T = CFG.strings || {};
   // Server strings win only if the page language matches the server locale;
@@ -50,6 +133,29 @@
   ["title", "status", "placeholder", "send", "open", "close", "greeting", "error"].forEach(function (k) {
     L[k] = (useServer && T[k]) || P[k];
   });
+  // The header shows the full "digital twin" title in the page language; the
+  // short name stays as the status line underneath it.
+  L.status = L.title;
+  L.title = TITLES[LANG] || TITLES.en;
+
+  // The six opening questions the theme's own chat UI has always offered,
+  // copied verbatim from assets/js/chat-ui.js so the two never disagree.
+  // They vanished from WordPress when the theme stopped loading ai-pet.js
+  // (the plugin now owns the avatar), which left this panel with nothing
+  // between the greeting and the input box.
+  var TOPICS = {
+    en: ["Career", "Achievements", "Projects", "Skills", "Education", "Contact"],
+    fa: ["سوابق شغلی", "دستاوردها", "پروژه‌ها", "مهارت‌ها", "تحصیلات", "تماس"],
+    ar: ["المسيرة المهنية", "الإنجازات", "المشاريع", "المهارات", "التعليم", "التواصل"],
+    de: ["Werdegang", "Erfolge", "Projekte", "Fähigkeiten", "Ausbildung", "Kontakt"],
+    es: ["Trayectoria", "Logros", "Proyectos", "Habilidades", "Formación", "Contacto"],
+    fr: ["Parcours", "Réalisations", "Projets", "Compétences", "Formation", "Contact"],
+    tr: ["Kariyer", "Başarılar", "Projeler", "Yetkinlikler", "Eğitim", "İletişim"],
+    zh: ["职业经历", "成就", "项目", "技能", "教育背景", "联系方式"],
+    ja: ["職歴", "実績", "プロジェクト", "スキル", "学歴", "連絡先"],
+    ru: ["Карьера", "Достижения", "Проекты", "Навыки", "Образование", "Контакты"],
+  };
+  var TOPIC_LIST = TOPICS[LANG] || TOPICS.en;
 
   var root = null,   // avatar root
     launcher = null,
@@ -148,10 +254,26 @@
     panel.setAttribute("dir", dir);
 
     var head = el("header", "kohan-chat-head");
+
+    // A real portrait of the person this twin speaks for. It ships with the
+    // plugin; when the URL is missing the header simply has no image rather
+    // than a broken one.
+    if (CFG.chatAvatar) {
+      var face = el("img", "kohan-chat-face", {
+        src: CFG.chatAvatar,
+        alt: "",
+        width: "40",
+        height: "40",
+        loading: "lazy",
+        decoding: "async",
+      });
+      head.appendChild(face);
+    }
+
     var title = el("div", "kohan-chat-title");
     title.innerHTML = "<strong>" + escapeHtml(L.title) + "</strong><span>" + escapeHtml(L.status) + "</span>";
     var close = el("button", "kohan-chat-close", { type: "button", "aria-label": L.close });
-    close.textContent = "×";
+    close.textContent = "\u00d7";
     close.addEventListener("click", toggle);
     head.appendChild(title);
     head.appendChild(close);
@@ -165,15 +287,43 @@
       autocomplete: "off",
       "aria-label": L.placeholder,
     });
+    // Voice / call / video, reserved and disabled. See SOON above.
+    var tools = el("div", "kohan-chat-tools");
+    [
+      ["mic", SOON_LIST[0], "M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-2.08A7 7 0 0 0 19 12z"],
+      ["call", SOON_LIST[1], "M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"],
+      ["video", SOON_LIST[2], "M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"],
+    ].forEach(function (spec) {
+      var b = el("button", "kohan-chat-tool kohan-chat-tool--" + spec[0], {
+        type: "button",
+        disabled: "disabled",
+        "aria-disabled": "true",
+        title: spec[1] + " \u2014 " + SOON_LIST[3],
+        "aria-label": spec[1] + " \u2014 " + SOON_LIST[3],
+      });
+      b.innerHTML = '<svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="' + spec[2] + '"/></svg>';
+      tools.appendChild(b);
+    });
+
     var sendBtn = el("button", "kohan-chat-send", { type: "submit", "aria-label": L.send });
     sendBtn.innerHTML =
       '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M3 20.5 21 12 3 3.5 3 10l12 2-12 2z"/></svg>';
+    form.appendChild(tools);
     form.appendChild(input);
     form.appendChild(sendBtn);
     form.addEventListener("submit", onSend);
 
+    var chips = el("div", "kohan-chat-chips");
+    TOPIC_LIST.forEach(function (label) {
+      var chip = el("button", "kohan-chat-chip", { type: "button" });
+      chip.textContent = label;
+      chip.addEventListener("click", function () { ask(label); });
+      chips.appendChild(chip);
+    });
+
     panel.appendChild(head);
     panel.appendChild(log);
+    panel.appendChild(chips);
     panel.appendChild(form);
     document.body.appendChild(panel);
 
@@ -198,8 +348,15 @@
     e.preventDefault();
     var q = (input.value || "").trim();
     if (!q) return;
-    addMessage("user", q);
     input.value = "";
+    ask(q);
+  }
+
+  // One send path for the input box and the topic chips alike.
+  function ask(q) {
+    q = (q || "").trim();
+    if (!q) return;
+    addMessage("user", q);
     var pending = addMessage("bot", "…");
     pending.classList.add("kohan-chat-pending");
     fire("macbook-work"); // avatar reacts: generating

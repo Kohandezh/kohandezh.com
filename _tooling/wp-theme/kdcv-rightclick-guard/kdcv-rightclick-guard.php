@@ -3,7 +3,7 @@
  * Plugin Name:       KDCV Right-Click Guard
  * Plugin URI:        https://kohandezh.com/
  * Description:       Disables the right-click context menu on the public site. One on/off switch under Settings → Right-Click Guard; when it is off, right-click works normally everywhere.
- * Version:           1.1.0
+ * Version:           1.2.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Kohan System Farda
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'KDCV_RCG_VERSION', '1.1.0' );
+define( 'KDCV_RCG_VERSION', '1.2.0' );
 define( 'KDCV_RCG_OPTION', 'kdcv_rcg_enabled' );
 
 /**
@@ -121,7 +121,7 @@ function kdcv_rcg_render_settings_page() {
 						</label>
 						<p class="description">
 							فقط بخش عمومی سایت (frontend) تحت تأثیر است؛ wp-admin همیشه آزاد است.
-							اگر LiteSpeed Cache فعال است، پس از تغییر این کلید کش سایت را پاک کنید.
+							با هر تغییر این کلید، کش صفحات خودکار پاک می‌شود.
 						</p>
 					</td>
 				</tr>
@@ -188,6 +188,56 @@ add_action( 'wp_enqueue_scripts', function () {
 			. '}());'
 	);
 }, 99 );
+
+/**
+ * Purge the page cache the moment the switch moves.
+ *
+ * The flag is printed INTO every cached page, so saving the setting without
+ * purging changes nothing a visitor sees. Measured on production: the option
+ * saved correctly and the browser still received the previous value, because
+ * LiteSpeed serves this HTML with max-age=604800 -- a returning visitor would
+ * have kept the old behaviour for a week.
+ *
+ * update_option_* only fires when the value actually changed, and add_option_*
+ * covers the very first save, when no row exists yet.
+ */
+add_action( 'update_option_' . KDCV_RCG_OPTION, 'kdcv_rcg_purge_page_cache' );
+add_action( 'add_option_' . KDCV_RCG_OPTION, 'kdcv_rcg_purge_page_cache' );
+
+/**
+ * Ask whichever page cache is installed to drop everything.
+ *
+ * Each of these is a no-op when its plugin is absent, so the function is safe
+ * on a site with no caching at all.
+ */
+function kdcv_rcg_purge_page_cache() {
+	// LiteSpeed Cache (the one this site runs).
+	do_action( 'litespeed_purge_all' );
+
+	// WP Rocket and W3 Total Cache, if either ever replaces it.
+	if ( function_exists( 'rocket_clean_domain' ) ) {
+		rocket_clean_domain();
+	}
+	if ( function_exists( 'w3tc_flush_all' ) ) {
+		w3tc_flush_all();
+	}
+}
+
+/**
+ * Tell the user the purge happened, on the screen where they changed it.
+ */
+add_action( 'admin_notices', function () {
+	$screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
+	if ( ! $screen || 'settings_page_kdcv-rightclick-guard' !== $screen->id ) {
+		return;
+	}
+	if ( ! isset( $_GET['settings-updated'] ) || 'true' !== $_GET['settings-updated'] ) {
+		return;
+	}
+	echo '<div class="notice notice-info is-dismissible"><p>'
+		. 'کش صفحات به‌صورت خودکار پاک شد؛ تغییر بلافاصله روی سایت اعمال است.'
+		. '</p></div>';
+} );
 
 /**
  * Clean up on uninstall.

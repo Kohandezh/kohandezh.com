@@ -52,7 +52,7 @@
 | `_tooling/wp-theme/kohandezhcv.zip` | Built theme (deploy target) |
 | `_tooling/wp-theme/kohandezhcv/functions.php` | Hand-maintained WP theme bootstrap |
 | `llms.txt`, `fa-llms.txt` | LLM crawler summaries (served via WP rewrite rule) |
-| `robots.txt`, `sitemap.xml` | Static versions. **robots.txt = 16 AI bots + catch-all**, kept in sync with the `robots_txt` filter in functions.php — edit BOTH together |
+| `robots.txt`, `sitemap.xml` | Static versions. **robots.txt = 15 AI bots + catch-all**, kept in sync with the `robots_txt` filter in functions.php — edit BOTH together |
 | `.htaccess` | Apache/LiteSpeed rules (legacy redirects + security headers). `ErrorDocument 404 /404.html` (static side; WP uses theme's `404.php`) |
 | `DEPLOY.md` | Deploy checklist + test commands |
 | `SETUP-GUIDES.md` | Manual setup guides (LiteSpeed Cache, Wikidata, Cloudflare) |

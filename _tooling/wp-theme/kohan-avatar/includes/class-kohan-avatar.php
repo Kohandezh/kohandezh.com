@@ -249,6 +249,9 @@ class Kohan_Avatar {
 				'rouletteEvery'   => 3,
 				'fireProbability' => (float) $o['fire_probability'],
 			),
+			// Square portrait for the chat header. Shipped with the plugin so the
+			// panel does not depend on the active theme's asset paths.
+			'chatAvatar' => KOHAN_AVATAR_URL . 'assets/avatar/kohandezh-160.webp',
 			'strings'   => array(
 				'title'       => 'Kohan',
 				'status'      => __( 'AI assistant', 'kohan-avatar' ),
