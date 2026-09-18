@@ -680,8 +680,18 @@
     wrap.setAttribute("aria-label", t.group);
 
     var eye = ctrlButton("kohan-eye-button", t.hide, "");
-    eye.innerHTML = '<span class="kohan-eye-open" aria-hidden="true">◉</span>' +
-                    '<span class="kohan-eye-closed" aria-hidden="true">◌</span>';
+    // These were the glyphs ◉ and ◌, which render as two plain circles in
+    // most UI fonts -- the control read as a dot, not as an eye. Real paths.
+    eye.innerHTML =
+      '<svg class="kohan-eye-open" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">' +
+        '<path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" ' +
+          'd="M1.8 12S5.6 5.5 12 5.5 22.2 12 22.2 12 18.4 18.5 12 18.5 1.8 12 1.8 12z"/>' +
+        '<circle cx="12" cy="12" r="3.1" fill="none" stroke="currentColor" stroke-width="1.8"/>' +
+      '</svg>' +
+      '<svg class="kohan-eye-closed" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">' +
+        '<path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" ' +
+          'd="M3 5l18 14M1.8 12S5.6 5.5 12 5.5c1.9 0 3.6.6 5 1.4M22.2 12s-1.4 2.4-3.9 4.1c-1.7 1.2-3.8 2.4-6.3 2.4-1.2 0-2.3-.2-3.3-.6"/>' +
+      '</svg>';
     eye.setAttribute("aria-pressed", "false");
 
     var minus = ctrlButton("kohan-size-button", t.smaller, "−");

@@ -12,8 +12,10 @@
 .kohan-chat-launcher {
   position: fixed;
   z-index: 1041;
-  width: 34px;
-  height: 34px;
+  /* 28px, matching the eye and the +/- buttons it now stacks with. At 34 it
+     was visibly the odd one out in a column of four. */
+  width: 28px;
+  height: 28px;
   display: grid;
   place-items: center;
   border: 1px solid rgba(108, 243, 164, 0.45);
@@ -182,13 +184,29 @@
 /* Opening topics. They sit between the log and the input, so the log keeps
    all the flexible height and a long conversation never pushes them off. */
 .kohan-chat-chips {
+  /* One line that scrolls sideways. A grid stretched each topic into a wide
+     block and a wrapping flex row left the sixth chip stranded underneath;
+     a single strip keeps every chip its own natural width and costs one row. */
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 6px;
   padding: 0 14px 12px;
   flex: 0 0 auto;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  /* The scrollbar is hidden, so the trailing edge fades instead: without some
+     affordance a half-cut chip just looks clipped. */
+  -webkit-mask-image: linear-gradient(to left, transparent 0, #000 18px, #000 calc(100% - 18px), transparent 100%);
+  mask-image: linear-gradient(to left, transparent 0, #000 18px, #000 calc(100% - 18px), transparent 100%);
+}
+.kohan-chat-chips::-webkit-scrollbar {
+  display: none;
 }
 .kohan-chat-chip {
+  flex: 0 0 auto;
+  white-space: nowrap;
   padding: 6px 11px;
   border: 1px solid rgba(108, 243, 164, 0.3);
   border-radius: 999px;

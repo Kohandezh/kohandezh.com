@@ -134,6 +134,19 @@
 
 .kohan-avatar-root .kohan-eye-button { color: #6cf3a4; font-size: 14px; }
 
+/* The two eye states are stacked in the same 28px box, so the button cannot
+   grow to the height of both. Only one is ever visible. */
+.kohan-avatar-root .kohan-eye-button {
+  height: 28px;
+  min-height: 28px;
+  max-height: 28px;
+  padding: 0;
+  overflow: hidden;
+}
+.kohan-avatar-root .kohan-eye-button > svg {
+  grid-area: 1 / 1;
+}
+
 .kohan-avatar-root .kohan-size-button:hover,
 .kohan-avatar-root .kohan-eye-button:hover {
   border-color: rgba(108, 243, 164, 0.85);

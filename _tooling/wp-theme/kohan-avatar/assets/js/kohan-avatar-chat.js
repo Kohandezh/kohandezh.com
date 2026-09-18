@@ -41,6 +41,21 @@
       error: "تعذّر الوصول إلى المساعد الآن. يُرجى استخدام نموذج الاتصال.",
     },
   };
+  // The line under the title names the human the twin speaks for, not the
+  // assistant's short handle.
+  var NAMES = {
+    "en": "Mohammad Kohandezh",
+    "de": "Mohammad Kohandezh",
+    "es": "Mohammad Kohandezh",
+    "fr": "Mohammad Kohandezh",
+    "tr": "Mohammad Kohandezh",
+    "fa": "محمد کهن‌دژ",
+    "ar": "محمد كهن‌دژ",
+    "zh": "穆罕默德·科汉德泽",
+    "ja": "モハンマド・コハンデジュ",
+    "ru": "Мохаммад Кохандеж"
+  };
+
   // Panel title. The assistant is presented as the owner's digital twin, so
   // the header names it that way in every language the site serves.
   var TITLES = {
@@ -135,7 +150,7 @@
   });
   // The header shows the full "digital twin" title in the page language; the
   // short name stays as the status line underneath it.
-  L.status = L.title;
+  L.status = NAMES[LANG] || NAMES.en;
   L.title = TITLES[LANG] || TITLES.en;
 
   // The six opening questions the theme's own chat UI has always offered,
@@ -223,6 +238,22 @@
 
   function positionLauncher() {
     if (!launcher || !root) return;
+
+    // The launcher used to be pinned to the avatar's own box, which put it
+    // straight on top of the eye control -- two round buttons, same spot.
+    // When the control column exists, sit directly above it and share its
+    // centre line, so the stack reads eye-first from the top down.
+    var col = root.querySelector(".kohan-size-controls");
+    if (col) {
+      var c = col.getBoundingClientRect();
+      if (c.width && c.height) {
+        var size = launcher.offsetWidth || 34;
+        launcher.style.top = c.top - size - 6 + "px";
+        launcher.style.left = c.left + (c.width - size) / 2 + "px";
+        return;
+      }
+    }
+
     var r = root.getBoundingClientRect();
     var side = sideOfAvatar();
     launcher.style.top = r.top - 6 + "px";
@@ -424,6 +455,23 @@
     window.addEventListener("resize", reflow, { passive: true });
     window.addEventListener("scroll", reflow, { passive: true });
     if (root) root.addEventListener("kohan:moved", followAvatar);
+
+    // Resizing the avatar with the +/- controls fires none of the events above,
+    // so the bubble stayed at the old coordinates while the control column moved
+    // out from under it. Watch the root's box and its attributes instead: the
+    // scale is applied as an inline custom property, which both of these catch.
+    if (root && window.ResizeObserver) {
+      var ro = new ResizeObserver(followAvatar);
+      ro.observe(root);
+      var col = root.querySelector(".kohan-size-controls");
+      if (col) ro.observe(col);
+    }
+    if (root && window.MutationObserver) {
+      new MutationObserver(followAvatar).observe(root, {
+        attributes: true,
+        attributeFilter: ["style", "class", "data-position"],
+      });
+    }
   }
 
   if (document.readyState === "loading") {
