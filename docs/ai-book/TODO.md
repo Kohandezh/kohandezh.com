@@ -16,8 +16,10 @@
 
 - [x] Implement and verify a read-only PHP artifact-schema boundary for book, content IDs and citations.
 - [x] Implement and verify the read-only canonical repository, summaries and ID/citation lookups.
+- [x] Add fail-closed, feature-flagged WordPress landing/read routes and frozen template port.
+- [ ] **NEXT:** Add allowlisted dynamic part/chapter/section routing and route tests.
 - [ ] Resolve `/knowledge/` ownership and P06 route collision.
-- [ ] **NEXT:** Port the frozen book home, part and chapter templates to isolated WordPress/PHP behind a feature flag.
+- [ ] Complete part/chapter selection and stable deep-link behavior in the WordPress reader.
 - [ ] Add search, glossary, sources and templates.
 - [ ] Add cited Ask/RAG integration.
 - [ ] Add bounded accessible KG explorer.

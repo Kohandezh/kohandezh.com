@@ -26,6 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'KBK_VERSION', '0.1.0' );
+define( 'KBK_PLUGIN_FILE', __FILE__ );
 define( 'KBK_REST_NAMESPACE', 'kohandezh/v1' );
 define( 'KBK_ENTITY_BASE', 'https://kohandezh.com/entity/' );
 
@@ -41,6 +42,7 @@ $kbk_default_flags = array(
 	'KBK_FEATURE_RESEARCH'  => true,
 	'KBK_FEATURE_REST'      => true,
 	'KBK_FEATURE_NEWS_FETCH'=> false, // default OFF — never auto-fetch in MVP
+	'KBK_FEATURE_AI_BOOK'   => false, // opt-in until canonical artifact root is configured
 );
 foreach ( $kbk_default_flags as $flag => $default ) {
 	if ( ! defined( $flag ) ) {
@@ -57,6 +59,7 @@ require_once __DIR__ . '/includes/class-kbk-seed.php';
 require_once __DIR__ . '/includes/class-kbk-news.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-artifacts.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-repository.php';
+require_once __DIR__ . '/includes/class-kbk-ai-book.php';
 
 /**
  * Activation: flush rewrite rules so new CPT archives + virtual hubs resolve.
@@ -68,6 +71,7 @@ function kbk_activate() {
 	KBK_Post_Types::register_all();
 	KBK_Routes::rewrite_rules();
 	KBK_News::install_sources();
+	KBK_AI_Book::rewrite_rules();
 	flush_rewrite_rules();
 	update_option( 'kbk_schema_version', KBK_VERSION );
 }
@@ -87,6 +91,7 @@ KBK_Routes::hooks();
 KBK_Schema::hooks();
 KBK_Seed::hooks();
 KBK_News::hooks();
+KBK_AI_Book::hooks();
 add_action( 'rest_api_init', array( 'KBK_REST', 'register_routes' ) );
 
 /**

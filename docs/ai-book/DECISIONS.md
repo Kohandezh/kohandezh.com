@@ -69,3 +69,13 @@
 - **Tradeoffs:** A new edition/schema may require an explicit validator update.
 - **Reversibility:** High, but weakening validation requires a new ADR.
 - **Date:** 2026-09-19
+
+## ADR-AB-0008 — Keep WordPress book routing opt-in and non-indexable by default
+
+- **Decision:** `KBK_FEATURE_AI_BOOK` defaults false; a readable `KBK_AI_BOOK_ROOT` is mandatory; `KBK_AI_BOOK_INDEXABLE` defaults false.
+- **Context:** The implementation is local, canonical artifacts live outside the public root, and duplicate/canonical behavior is not yet production-approved.
+- **Alternatives:** Hardcode the local path; silently fall back to sample content; index incomplete routes.
+- **Rationale:** Prevents secrets/path leakage, guessed content and premature search indexing.
+- **Tradeoffs:** Local WordPress needs explicit configuration before routes activate.
+- **Reversibility:** High after final SEO/security gates.
+- **Date:** 2026-09-19

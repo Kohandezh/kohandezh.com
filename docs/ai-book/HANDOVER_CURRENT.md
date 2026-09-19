@@ -27,6 +27,8 @@ Canonical book root is `/Users/emperor/Documents/AI/AiBook` (corrected from the 
 - `KBK_AI_Book_Artifacts` validates master book, content-ID registry and citation registry, rejects unsupported origin/ID/URL/count contracts, and cross-checks edition and IDs.
 - Fixture test passed with one valid bundle and four rejected invalid cases. The real canonical bundle also passed all validation.
 - `KBK_AI_Book_Repository` now owns validated loading, book summary, part/chapter lookup, structural/content-ID section lookup and citation lookup; its full canonical test passed.
+- `KBK_AI_Book` now registers opt-in `/ai-book/` and `/ai-book/read/` rewrites, conditionally loads isolated assets/template, defaults to noindex, and returns `CONFIG_REQUIRED` instead of guessing when data is unavailable.
+- The PHP template renders the real edition summary, seven parts, first canonical chapter, origin labels, content IDs and canonical citation links through the repository.
 - Full existing `npm test` suite passed after the visual shell and validator changes; no existing-site regression was detected.
 - `jq empty docs/ai-book/STATE.json` is the state validation command.
 
@@ -46,12 +48,13 @@ python3 -m py_compile _tooling/ai-book/build_visual_shell.py
 node --check assets/js/ai-book.js
 php _tooling/tests/ai-book-artifacts.test.php
 php _tooling/tests/ai-book-repository.test.php ../AiBook
+php _tooling/tests/ai-book-wordpress-route.test.php
 npm run test:ai-book
 jq empty docs/ai-book/STATE.json
 git diff --check
 ```
 
-No environment variables are required for the visual shell. Ask runtime, request delivery/SMS/email, personalized PDF and publisher signing remain configuration-required; do not invent credentials.
+No environment variables are required for the static visual shell. WordPress reader activation currently requires explicit local configuration in `wp-config.php`: `KBK_FEATURE_AI_BOOK=true` and `KBK_AI_BOOK_ROOT` pointing to the canonical repo outside the public root. Keep `KBK_AI_BOOK_INDEXABLE` unset/false until canonical and duplicate-content review passes. Ask runtime, request delivery/SMS/email, personalized PDF and publisher signing remain configuration-required; do not invent credentials.
 
 ## Git scope
 
@@ -59,4 +62,4 @@ Base checkpoint is `main@ae8689f`. Pre-existing untracked `.agents/` and `skills
 
 ## Exact next task
 
-Add feature-flagged `/ai-book/` and `/ai-book/read/` WordPress routes/templates without visual changes. Obtain data only through `KBK_AI_Book_Repository`. Keep the source root configurable and outside the public web root, add safe unavailable/error states, and do not expose raw artifacts. Preserve `/fa/ai-book/*` canonical citations. Update all handoff files and run targeted PHP and existing-site regression tests.
+Add allowlisted dynamic part/chapter/section routing to the WordPress reader and cover it with isolated tests. Continue to obtain data only through `KBK_AI_Book_Repository`. Preserve `/fa/ai-book/*` canonical citations, noindex safety and frozen visuals. Resolve the three P06 truncated-slug collisions before publishing chapter routes.

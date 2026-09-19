@@ -8,6 +8,7 @@ after the visual system is frozen.
 
 from pathlib import Path
 from html import escape
+from shutil import copyfile
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "ai-book"
@@ -194,6 +195,10 @@ def main() -> None:
         directory = OUT if not slug else OUT / slug
         directory.mkdir(parents=True, exist_ok=True)
         (directory / "index.html").write_text(render(key), encoding="utf-8")
+    plugin_assets = ROOT / "_tooling/wp-theme/kohandezh-knowledge/assets"
+    plugin_assets.mkdir(parents=True, exist_ok=True)
+    copyfile(ROOT / "assets/css/ai-book.css", plugin_assets / "ai-book.css")
+    copyfile(ROOT / "assets/js/ai-book.js", plugin_assets / "ai-book.js")
     print(f"Built {len(ROUTES)} AI Book visual routes under {OUT}")
 
 
