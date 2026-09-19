@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-19T00:00:00-04:00",
+  "project": "Kohandezh Persian AI Book / Knowledge Hub",
+  "website_root": "/Users/emperor/Documents/AI/kohandezh.com",
+  "book_root": "/Users/emperor/Documents/AI/AiBook",
+  "phase": "DESIGN_FREEZE_COMPLETE",
+  "design_status": "FROZEN",
+  "current_task": "Begin validated PHP artifact-schema integration spike",
+  "completed": ["repository discovery", "skills bootstrap", "design system snapshot", "information architecture", "responsive prototype", "browser QA", "design freeze"],
+  "in_progress": [],
+  "blocked": [],
+  "skills": {
+    "phase_a": {
+      "design_system": {"name": "uiux-pro-max", "status": "ACTIVE"},
+      "type_safety": {"name": "MANUAL_POLICY", "status": "ACTIVE"},
+      "browser_qa": {"name": "browse", "status": "ACTIVE"},
+      "accessibility": {"name": "uiux-pro-max", "status": "ACTIVE"},
+      "handoff": {"name": "MANUAL_POLICY", "status": "ACTIVE"}
+    },
+    "phase_b": {
+      "security": {"name": "cso", "status": "DEFERRED"},
+      "seo": {"name": "MANUAL_POLICY", "status": "DEFERRED"},
+      "performance": {"name": "performance-analysis", "status": "DEFERRED"},
+      "pdf": {"name": "pdf", "status": "DEFERRED"}
+    }
+  },
+  "verification": {
+    "prototype": "docs/ai-book/prototype/index.html",
+    "browser_viewports": ["375x812", "768x1024", "1280x720"],
+    "horizontal_overflow": false,
+    "console_errors": 0,
+    "accessibility_snapshot": "PASS"
+  },
+  "git": {"branch": "main", "base_head": "c44efcb", "checkpoint_commit": "LOCAL_COMMIT_CREATED", "checkpoint_subject": "ai-book: freeze design and handover state", "pushed": false},
+  "next_action": "Create a scoped PHP validator/read-model spike for canonical book, provenance and citation fixtures; do not reopen design."
+}
