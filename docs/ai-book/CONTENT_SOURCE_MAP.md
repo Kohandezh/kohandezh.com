@@ -27,4 +27,3 @@ Verified canonical root: `/Users/emperor/Documents/AI/AiBook` (read-only). Websi
 - KG entity: independent `entity_id` namespace.
 
 These identifiers are related but never interchangeable.
-

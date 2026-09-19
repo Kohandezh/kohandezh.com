@@ -15,6 +15,7 @@
 ## Functional integration
 
 - [x] Implement and verify a read-only PHP artifact-schema boundary for book, content IDs and citations.
+- [x] Implement and verify the read-only canonical repository, summaries and ID/citation lookups.
 - [ ] Resolve `/knowledge/` ownership and P06 route collision.
 - [ ] **NEXT:** Port the frozen book home, part and chapter templates to isolated WordPress/PHP behind a feature flag.
 - [ ] Add search, glossary, sources and templates.

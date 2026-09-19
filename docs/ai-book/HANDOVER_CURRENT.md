@@ -26,6 +26,7 @@ Canonical book root is `/Users/emperor/Documents/AI/AiBook` (corrected from the 
 - Static pages remain `noindex,nofollow` until functional canonical/duplicate-content behavior is implemented.
 - `KBK_AI_Book_Artifacts` validates master book, content-ID registry and citation registry, rejects unsupported origin/ID/URL/count contracts, and cross-checks edition and IDs.
 - Fixture test passed with one valid bundle and four rejected invalid cases. The real canonical bundle also passed all validation.
+- `KBK_AI_Book_Repository` now owns validated loading, book summary, part/chapter lookup, structural/content-ID section lookup and citation lookup; its full canonical test passed.
 - Full existing `npm test` suite passed after the visual shell and validator changes; no existing-site regression was detected.
 - `jq empty docs/ai-book/STATE.json` is the state validation command.
 
@@ -44,6 +45,7 @@ python3 _tooling/ai-book/build_visual_shell.py
 python3 -m py_compile _tooling/ai-book/build_visual_shell.py
 node --check assets/js/ai-book.js
 php _tooling/tests/ai-book-artifacts.test.php
+php _tooling/tests/ai-book-repository.test.php ../AiBook
 npm run test:ai-book
 jq empty docs/ai-book/STATE.json
 git diff --check
@@ -57,4 +59,4 @@ Base checkpoint is `main@ae8689f`. Pre-existing untracked `.agents/` and `skills
 
 ## Exact next task
 
-Port the frozen reader/landing shell into isolated Layer-B PHP without visual changes. Load data only after `KBK_AI_Book_Artifacts` validation. Keep the source path configurable and outside the public web root, add safe unavailable/error states, and do not expose raw artifacts. Resolve route behavior without breaking `/fa/ai-book/*` canonical citations. Update all handoff files and run targeted PHP and existing-site regression tests.
+Add feature-flagged `/ai-book/` and `/ai-book/read/` WordPress routes/templates without visual changes. Obtain data only through `KBK_AI_Book_Repository`. Keep the source root configurable and outside the public web root, add safe unavailable/error states, and do not expose raw artifacts. Preserve `/fa/ai-book/*` canonical citations. Update all handoff files and run targeted PHP and existing-site regression tests.
