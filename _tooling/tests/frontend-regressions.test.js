@@ -5,6 +5,10 @@ const { JSDOM } = require('jsdom');
 const root = path.resolve(__dirname, '../..');
 const read = f => fs.readFileSync(path.join(root, f), 'utf8');
 
+const functionsPhp = read('_tooling/wp-theme/kohandezhcv/functions.php');
+assert.match(functionsPhp, /<h3 class="blog-local-title">/, 'WordPress blog cards use the section-level heading');
+assert.doesNotMatch(functionsPhp, /<h5 class="blog-local-title">/, 'WordPress blog cards must not skip from the section h2 to h5');
+
 // A WordPress feed is ordered by publication, not the four-card static fixture.
 const dom = new JSDOM('<html lang="en"><body><section class="section-blog"><article class="blog-local-item"><span class="blog-local-date" datetime="2025-10-26T09:00:00+03:30">October 26, 2025</span><a class="blog-local-link" href="/2025/10/26/gitex-2025/">Read</a></article><article class="blog-local-item"><span class="blog-local-date">Original date</span><a class="blog-local-link" href="/future-post/">Read</a></article></section></body></html>', {url:'https://kohandezh.com/', runScripts:'outside-only'});
 dom.window.eval(read('assets/js/linkedin-content.js'));

@@ -1441,7 +1441,7 @@ function kdcv_render_home_blog_feed( $read_label = 'Read original', $limit = 6 )
 		?>
 		<article class="blog-local-item">
 			<div class="blog-local-top">
-				<h5 class="blog-local-title"><?php echo esc_html( $title ); ?></h5>
+				<h3 class="blog-local-title"><?php echo esc_html( $title ); ?></h3>
 				<time class="blog-local-date" datetime="<?php echo esc_attr( get_the_date( DATE_W3C ) ); ?>"><?php echo esc_html( $date ); ?></time>
 			</div>
 			<p class="blog-local-summary"><?php echo esc_html( $summary ); ?></p>
