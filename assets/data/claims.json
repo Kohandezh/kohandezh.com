@@ -5,8 +5,8 @@
  "claims": {
   "certifications": {
    "uuid": "7a3affa3-4b27-4164-8b67-5d0121540501",
-   "statement": "Holds 43 professional certifications.",
-   "category": "certification",
+   "statement": "The public archive documents 43 credential and professional-development records.",
+   "category": "credential_record",
    "risk": "medium",
    "status": "verified",
    "value": 43,
@@ -15,12 +15,12 @@
     {
      "type": "direct",
      "source": "Certificates.html",
-     "excerpt": "63 article.certificate-card elements, of which 20 carry the --appreciation modifier, leaving 43 certificates each with a name, issuer and <time datetime>.",
+     "excerpt": "63 article.certificate-card elements, of which 20 carry the --appreciation modifier, leaving 43 credential and professional-development records with a name, issuer and <time datetime>.",
      "strength": 0.9,
      "note": "Enumerable artifact rather than a bare assertion: the number can be recounted from the page it describes, and drifts only if that page changes."
     }
    ],
-   "verification_rule": "count of article.certificate-card in Certificates.html minus those with --appreciation"
+   "verification_rule": "count of article.certificate-card in Certificates.html minus those with --appreciation; the result must be described as records, not as 43 issuer certifications"
   },
   "years_experience": {
    "uuid": "a442c218-0d00-4a52-89f6-a755c3d5520b",

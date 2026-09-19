@@ -102,6 +102,14 @@ eq(canonical.credentials.length, pageCreds,
 eq(canonical.credentials.filter((c) => c.level === 'Doctorate').length, 1,
   'exactly one doctorate is recorded');
 
+const machineCopy = JSON.stringify(identity.locales);
+ok(!/EC-Council CEH\/CHFI|GIAC\/SANS SEC504\/SEC542/.test(machineCopy),
+  'training records are not attributed to certification issuers');
+ok(!/present on every page|in every page|every page includes/i.test(machineCopy),
+  'profile schema coverage is not overstated as site-wide coverage');
+ok(!/available in \{langcount\} languages|provided in \{langcount\} languages/i.test(machineCopy),
+  'blog language coverage is not stated as a blanket ten-language claim');
+
 // ─────────────────────────────────────────────────────────────────────────
 g('Every locale is rendered from the canonical source');
 

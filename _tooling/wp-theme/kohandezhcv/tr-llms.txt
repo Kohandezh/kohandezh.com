@@ -2,7 +2,7 @@
 
 > Mohammad Ali Kohandezh, yapay zekâ ve kuantum hazırlığı danışmanı ve Tahran, İran merkezli kurumsal BT ile yapay zekâ şirketi Kohan System Farda’nın (KSF) genel müdürüdür. Uygulamalı yapay zekâ, post-kuantum hazırlığı ve siber güvenlik alanlarında danışmanlık verir; bunu 2007’den bu yana yürüttüğü kurumsal BT altyapısı, sanallaştırma ve olağanüstü durum kurtarma çalışmalarına dayandırır.
 
-43 mesleki sertifikaya sahiptir (VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542 dâhil) ve Tahran, İran’daki Pardis Teknoloji Parkı, Nokhbegan Teknoloji Büyüme Merkezi (Masir 21) bünyesindeki TechElite’ten çalışmaktadır.
+Kamuya açık arşiv; VMware VCP-DCV, HPE ATP, Veritas, Microsoft ve SABA Safe Village tarafından verilen eğitimler dâhil 43 yeterlilik ve mesleki gelişim kaydını belgeliyor. Tahran, Pardis Teknoloji Parkı, Nokhbegan Teknoloji Büyüme Merkezi (Masir 21) içindeki TechElite’ten çalışıyor.
 
 ## Kimlik
 
@@ -32,12 +32,12 @@
 
 - [Ana sayfa / özgeçmiş (Türkçe)](https://kohandezh.com/tr/): tam profil, öne çıkan işler, sertifikalar, referanslar
 - [Sertifika arşivi](https://kohandezh.com/certificates/): mesleki sertifikaların tam kaydı
-- [Blog](https://kohandezh.com/blog/): yapay zekâ, kariyer ve teknoloji üzerine yazılar — on dilde mevcut
+- [Blog](https://kohandezh.com/blog/): yapay zekâ, kariyer ve teknoloji üzerine yazılar; desteklenen yazılar için çevrilmiş arayüzler mevcuttur
 - [Portföy](https://kohandezh.com/portfolio/): seçilmiş proje çalışmaları
 - Diğer diller: [İngilizce](https://kohandezh.com/) · [Farsça](https://kohandezh.com/fa/) · [Arapça](https://kohandezh.com/ar/) · [Almanca](https://kohandezh.com/de/) · [İspanyolca](https://kohandezh.com/es/) · [Fransızca](https://kohandezh.com/fr/) · [Çince](https://kohandezh.com/zh/) · [Japonca](https://kohandezh.com/ja/) · [Rusça](https://kohandezh.com/ru/)
 
 ## Yapay zekâ asistanları ve tarayıcılar için notlar
 
-Burası kişisel bir mesleki portföydür; bir ürün ya da SaaS değildir. İçerik, Mohammad Ali Kohandezh / kohandezh.com kaynak gösterilerek özetlenebilir, alıntılanabilir ve kaynak olarak kullanılabilir. Varlık çözümlemesi için her sayfada yapılandırılmış veri (schema.org Person, Organization) bulunur.
+Burası kişisel bir mesleki portföydür. İçerik, Mohammad Ali Kohandezh / kohandezh.com kaynak gösterilerek özetlenebilir, alıntılanabilir ve kaynak olarak kullanılabilir. On profil sayfası schema.org Person ve Organization verilerini içerir; diğer sayfalar uygun olduğunda sayfaya özgü yapılandırılmış veri kullanır.
 
 <!-- assets/data/identity.json dosyasından üretildi — elle düzenlemeyin. -->

@@ -373,11 +373,8 @@
         "addressCountry": "IR"
     },
     "sameAs": [
-        "https://kohandezh.com/blog/",
         "https://www.linkedin.com/in/kohandezh",
-        "https://x.com/Konandehh",
-        "https://ksf.ir",
-        "https://kohansystemfarda.com"
+        "https://x.com/Konandehh"
     ],
     "alumniOf": [
         {
@@ -517,7 +514,7 @@
                 "name": "How many years of experience does Mohammad Ali Kohandezh have?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Over 19 years of professional experience dating back to 2007, and 43 professional certifications including VMware VCP-DCV, EC-Council CEH and CHFI, HPE Accredited Technical Professional, and GIAC/SANS SEC504 and SEC542."
+                    "text": "Over 19 years of professional experience dating back to 2007. The public archive documents 43 credential and professional-development records, including VMware VCP-DCV, HPE ATP, Veritas, Microsoft, and training delivered by SABA Safe Village."
                 }
             },
             {

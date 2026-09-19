@@ -305,6 +305,9 @@ for (const [f, L] of Object.entries(LOCALES)) {
   // Organization node, which already carries it.
   ok(!p.founder,
      `${L}: the founder relationship is not written backwards onto the Person`);
+  const personSameAs = Array.isArray(p.sameAs) ? p.sameAs : [];
+  ok(personSameAs.every(url => /linkedin\.com|x\.com/.test(url)),
+     `${L}: Person sameAs contains identity profiles only`);
   const orgs = blocks.filter(b => b && b['@id'] === 'https://kohandezh.com/#ksf-organization');
   ok(orgs.length === 1 && orgs[0].founder
        && orgs[0].founder['@id'] === 'https://kohandezh.com/#person',

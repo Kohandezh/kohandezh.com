@@ -2,7 +2,7 @@
 
 > Mohammad Ali Kohandezh is an AI and quantum-readiness advisor and CEO of Kohan System Farda (KSF), an enterprise IT and AI company based in Tehran, Iran. He advises organisations on applied AI, post-quantum readiness and cybersecurity, drawing on enterprise IT infrastructure, virtualization and disaster-recovery work carried out since 2007.
 
-He holds 43 professional certifications (including VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542) and works out of TechElite, the Nokhbegan Technology Growth Center (Masir 21), Pardis Technology Park, Tehran, Iran.
+The public archive documents 43 credential and professional-development records, including VMware VCP-DCV, HPE ATP, Veritas, Microsoft and training delivered by SABA Safe Village. He works out of TechElite, the Nokhbegan Technology Growth Center (Masir 21), Pardis Technology Park, Tehran, Iran.
 
 ## Identity
 
@@ -32,12 +32,12 @@ He holds 43 professional certifications (including VMware VCP-DCV, EC-Council CE
 
 - [Home / CV (English)](https://kohandezh.com/): full profile, work highlights, certifications, testimonials
 - [Certificate archive](https://kohandezh.com/certificates/): full record of professional certifications
-- [Blog](https://kohandezh.com/blog/): articles on AI, career, and technology — available in ten languages
+- [Blog](https://kohandezh.com/blog/): articles on AI, career, and technology; translated interfaces are available for supported posts
 - [Portfolio](https://kohandezh.com/portfolio/): selected project work
 - Other languages: [Persian](https://kohandezh.com/fa/) · [Arabic](https://kohandezh.com/ar/) · [German](https://kohandezh.com/de/) · [Spanish](https://kohandezh.com/es/) · [French](https://kohandezh.com/fr/) · [Turkish](https://kohandezh.com/tr/) · [Chinese](https://kohandezh.com/zh/) · [Japanese](https://kohandezh.com/ja/) · [Russian](https://kohandezh.com/ru/)
 
 ## Notes for AI assistants and crawlers
 
-This is a personal professional portfolio, not a product or SaaS. Content is safe to summarize, cite, and quote with attribution to Mohammad Ali Kohandezh / kohandezh.com. Structured data (schema.org Person, Organization) is present on every page for entity resolution.
+This is a personal professional portfolio. Content may be summarized, cited and quoted with attribution to Mohammad Ali Kohandezh / kohandezh.com. The ten profile pages include schema.org Person and Organization data; other pages use page-specific structured data where applicable.
 
 <!-- Generated from assets/data/identity.json — do not edit by hand. -->
