@@ -80,6 +80,6 @@
   },
   "known_issues": ["WordPress landing/read routes require KBK_FEATURE_AI_BOOK and KBK_AI_BOOK_ROOT configuration", "Current Hub pages are noindex until canonical/duplicate-content behavior is integrated", "Publisher signing key is required before publisher-signed status", "Ask provider, PDF request delivery and personalized issuance require configuration", "No local WordPress install exists to browser-test the Hub end-to-end; verified via isolated PHP unit tests instead (dev-server.php has no WP core, per gotcha 1)"],
   "blockers": [],
-  "git": {"branch": "main", "base_checkpoint": "4fb19d0", "new_checkpoint": "LOCAL_CHECKPOINT_PENDING", "pushed": false},
+  "git": {"branch": "claude/kohandezh-reader-data-phase-9-8f7e49", "base_checkpoint": "4fb19d0", "new_checkpoint": "2ae489e", "pushed": false},
   "next_action": "Add search across the book (titles/parts/chapters/sections/body/terminology), then glossary/sources/templates data integration, per docs/ai-book/CONTENT_SOURCE_MAP.md's Search and Glossary/Sources/Templates rows. Do not begin Ask/RAG or the Knowledge Graph before Search is verified."
 }
