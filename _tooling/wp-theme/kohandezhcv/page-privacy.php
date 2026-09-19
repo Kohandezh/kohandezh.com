@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="سیاست حریم خصوصی kohandezh.com — این وب‌سایت از کوکی، ابزار تحلیلی یا ردیابی استفاده نمی‌کند. توضیح دقیق داده‌هایی که جمع‌آوری می‌شوند.">
+  <meta name="description" content="سیاست حریم خصوصی kohandezh.com — کوکی‌های عملکردی، حافظهٔ مرورگر، فرم‌ها و سرویس‌های شخص ثالث را شفاف توضیح می‌دهد؛ بدون ابزار تحلیل یا ردیابی تبلیغاتی.">
   <meta name="theme-color" content="#080b0d">
   <meta name="author" content="Mohammad Ali Kohandezh">
   <meta name="robots" content="index, follow">
@@ -24,7 +24,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@kohandezh">
   <meta name="twitter:title" content="سیاست حریم خصوصی | Privacy Policy — Kohandezh.com">
-  <meta name="twitter:description" content="سیاست حریم خصوصی kohandezh.com — این وب‌سایت از کوکی، ابزار تحلیلی یا ردیابی استفاده نمی‌کند. توضیح دقیق داده‌هایی که جمع‌آوری می‌شوند.">
+  <meta name="twitter:description" content="سیاست حریم خصوصی kohandezh.com — کوکی‌های عملکردی، حافظهٔ مرورگر، فرم‌ها و سرویس‌های شخص ثالث را شفاف توضیح می‌دهد؛ بدون ابزار تحلیل یا ردیابی تبلیغاتی.">
   <meta name="twitter:image" content="<?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=2026091705">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091705">
@@ -80,13 +80,13 @@
         <header class="blog-article-header">
           <span class="blog-eyebrow" data-i18n="e01">حریم خصوصی</span>
           <h1 data-i18n="k01">سیاست حریم خصوصی</h1>
-          <div class="blog-meta"><span data-i18n="m01">آخرین به‌روزرسانی: مرداد ۱۴۰۵</span><span data-i18n="m02">Privacy Policy</span></div>
+          <div class="blog-meta"><span data-i18n="m01">آخرین به‌روزرسانی: شهریور ۱۴۰۵</span><span data-i18n="m02">Privacy Policy</span></div>
         </header>
 
         <div class="blog-article-body">
           <aside class="blog-source-note" aria-label="خلاصه">
             <strong data-i18n="k32">خلاصهٔ کوتاه</strong>
-            <p data-i18n="k02">این وب‌سایت <strong>هیچ کوکی‌ای تنظیم نمی‌کند</strong>، از <strong>هیچ ابزار تحلیلی یا ردیابی</strong> (مانند Google Analytics، Meta Pixel یا مشابه) استفاده نمی‌کند و رفتار شما را دنبال نمی‌کند. تنها زمانی داده‌ای از شما ذخیره می‌شود که خودتان فرم تماس را پر کنید.</p>
+            <p data-i18n="k02">این وب‌سایت از <strong>کوکی‌های عملکردی ضروری</strong> برای ترجیح زبان یا مدیریت نشست فنی استفاده می‌کند، اما از <strong>ابزار تحلیل، تبلیغات یا ردیابی رفتاری</strong> مانند Google Analytics یا Meta Pixel استفاده نمی‌کند. دادهٔ فرم فقط زمانی ارسال می‌شود که خودتان آن را ثبت کنید.</p>
           </aside>
 
           <h2 id="collect" data-i18n="k03">چه داده‌هایی جمع‌آوری می‌شود؟</h2>
@@ -98,13 +98,13 @@
           <p data-i18n="k07">هیچ اطلاعاتی دربارهٔ صفحاتی که بازدید می‌کنید، مدت حضور شما یا مسیر حرکت‌تان در سایت ثبت یا تحلیل نمی‌شود.</p>
 
           <h2 id="cookies" data-i18n="k08">کوکی‌ها و حافظهٔ مرورگر</h2>
-          <p data-i18n="k09">این سایت کوکی تنظیم نمی‌کند. برای اینکه تنظیمات شما بین بازدیدها حفظ شود، از <code>localStorage</code> مرورگر خودتان استفاده می‌شود. این داده‌ها روی دستگاه شما می‌مانند و هرگز به سرور ارسال نمی‌شوند:</p>
+          <p data-i18n="k09">سایت ممکن است کوکی‌های ضروری مانند <code>kdcv_lang</code> برای زبان انتخابی و یک شناسهٔ نشست فنی از سوی WordPress یا میزبان تنظیم کند. این کوکی‌ها برای تحلیل یا تبلیغات استفاده نمی‌شوند. ترجیحات نمایشی زیر نیز در <code>localStorage</code> مرورگر شما ذخیره می‌شوند و به‌طور خودکار به سرور ارسال نمی‌شوند:</p>
           <ul>
             <li data-i18n="k10"><code>darkMode</code> — حالت تیره یا روشن</li>
             <li data-i18n="k11"><code>siteLang</code> — زبان انتخابی شما</li>
             <li data-i18n="k12"><code>kohan-avatar-size-v1</code> و <code>kohan-avatar-classic-v1</code> — تنظیمات نمایش آواتار</li>
           </ul>
-          <p data-i18n="k13">چون هیچ‌کدام از این موارد برای ردیابی یا تبلیغات به کار نمی‌روند و همگی برای عملکرد سایت ضروری‌اند، نمایش «بنر پذیرش کوکی» لازم نیست. می‌توانید هر زمان این داده‌ها را از تنظیمات مرورگر خود پاک کنید.</p>
+          <p data-i18n="k13">این موارد برای ردیابی یا تبلیغات به کار نمی‌روند. می‌توانید کوکی‌ها و داده‌های محلی را هر زمان از تنظیمات مرورگر پاک کنید؛ در این صورت ممکن است زبان یا ظاهر انتخابی شما بازنشانی شود.</p>
 
           <h2 id="third-party" data-i18n="k14">سرویس‌های شخص ثالث</h2>
           <p data-i18n="k15">برای شفافیت کامل، این سرویس‌های بیرونی در سایت استفاده می‌شوند:</p>
@@ -132,9 +132,9 @@
 
           <h2 id="en" lang="en" dir="ltr" data-kdcv-i18n-drop data-i18n="k29">Privacy Policy (English summary)</h2>
           <div lang="en" dir="ltr" data-kdcv-i18n-drop>
-            <p data-i18n="k30"><strong>This site sets no cookies and uses no analytics or tracking tools</strong> — no Google Analytics, no advertising pixels, no behavioural profiling.</p>
+            <p data-i18n="k30"><strong>This site may set essential first-party cookies, but uses no analytics, advertising or behavioural-tracking tools.</strong> Functional cookies can remember a language choice or support a technical session.</p>
             <p data-i18n="k31"><strong>What is collected:</strong> only what you type into the contact/demo form (name, email, phone, company, area of interest, message), and your question if you use the AI chat widget.</p>
-            <p data-i18n="k32"><strong>Browser storage:</strong> four functional <code>localStorage</code> keys hold your theme, language and avatar preferences. They stay on your device and are never transmitted. Because none of them are used for tracking, no cookie-consent banner is required.</p>
+            <p data-i18n="k32"><strong>Cookies and browser storage:</strong> essential first-party cookies may remember language or support a technical session. Functional <code>localStorage</code> keys hold theme, language and avatar preferences on your device. None of these are used for analytics or advertising.</p>
             <p data-i18n="k33"><strong>Third parties:</strong> Web3Forms (form delivery), Aparat (embedded interview videos), social share links (only on click), and a language-model provider if the chat assistant is enabled. Each has its own privacy policy.</p>
             <p data-i18n="k34"><strong>Your rights:</strong> you may ask what is held about you, request corrections, or request deletion — just <a href="<?php echo esc_url( home_url('/') ); ?>#contact">get in touch</a>.</p>
             <p data-i18n="k35">Please do not send passwords, card numbers or identity documents through the contact form.</p>
