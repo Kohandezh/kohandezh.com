@@ -56,6 +56,11 @@ final class KBK_AI_Book_Repository {
 		);
 	}
 
+	/** The validated absolute canonical root. */
+	public function root(): string {
+		return $this->root;
+	}
+
 	/** @return array<string,mixed> */
 	public function book(): array {
 		return $this->bundle()['book'];

@@ -2,18 +2,20 @@
   "schema_version": 2,
   "project": "kohandezh-ai-book",
   "language": "fa",
-  "updated_at": "2026-09-19T19:10:00-04:00",
+  "updated_at": "2026-09-19T22:05:00-04:00",
   "website_root": "/Users/emperor/Documents/AI/kohandezh.com",
   "book_root": "/Users/emperor/Documents/AI/AiBook",
-  "current_phase": "READER_DATA_INTEGRATION",
-  "completed_phases": ["PREFLIGHT", "REPOSITORY_DISCOVERY", "BOOK_ARTIFACT_DISCOVERY", "DESIGN_SYSTEM", "INFORMATION_ARCHITECTURE", "DESIGN_SPEC", "COMPONENT_ARCHITECTURE", "VISUAL_SHELL", "VISUAL_QA", "DESIGN_FREEZE", "ARTIFACT_SCHEMA_BOUNDARY", "DYNAMIC_READER_ROUTING"],
-  "active_phase": "SEARCH",
-  "next_phase": "ASK_RAG",
+  "worktree": "/Users/emperor/Documents/AI/kohandezh.com/.claude/worktrees/kohandezh-reader-data-phase-9-8f7e49",
+  "current_phase": "SEARCH",
+  "completed_phases": ["PREFLIGHT", "REPOSITORY_DISCOVERY", "BOOK_ARTIFACT_DISCOVERY", "DESIGN_SYSTEM", "INFORMATION_ARCHITECTURE", "DESIGN_SPEC", "COMPONENT_ARCHITECTURE", "VISUAL_SHELL", "VISUAL_QA", "DESIGN_FREEZE", "ARTIFACT_SCHEMA_BOUNDARY", "DYNAMIC_READER_ROUTING", "SEARCH"],
+  "active_phase": "CONCEPTS_GLOSSARY_SOURCES_TEMPLATES",
+  "next_phase": "KNOWLEDGE_GRAPH",
   "design_frozen": true,
   "design_status": "FROZEN_REVISION_2",
   "routes": {
     "planned": ["/ai-book/", "/ai-book/read/", "/ai-book/search/", "/ai-book/ask/", "/ai-book/concepts/", "/ai-book/graph/", "/ai-book/templates/", "/ai-book/sources/", "/ai-book/glossary/", "/ai-book/pdf/", "/ai-book/request-pdf/", "/ai-book/cite/", "/ai-book/verify/"],
-    "implemented": ["/ai-book/", "/ai-book/read/", "/ai-book/search/", "/ai-book/ask/", "/ai-book/concepts/", "/ai-book/graph/", "/ai-book/templates/", "/ai-book/sources/", "/ai-book/glossary/", "/ai-book/pdf/", "/ai-book/request-pdf/", "/ai-book/cite/", "/ai-book/verify/"],
+    "implemented": ["/ai-book/", "/ai-book/read/", "/ai-book/search/", "/ai-book/glossary/", "/ai-book/ask/", "/ai-book/concepts/", "/ai-book/graph/", "/ai-book/templates/", "/ai-book/sources/", "/ai-book/pdf/", "/ai-book/request-pdf/", "/ai-book/cite/", "/ai-book/verify/"],
+    "wordpress_live_views": ["home", "read", "search", "glossary"],
     "verified": ["/ai-book/", "/ai-book/read/", "/ai-book/search/", "/ai-book/ask/", "/ai-book/graph/", "/ai-book/pdf/", "/ai-book/request-pdf/"],
     "canonical_content_namespace": "/fa/ai-book/*"
   },
@@ -31,11 +33,11 @@
   "design": {"tokens_extracted": true, "components_defined": true, "responsive_verified": true, "rtl_verified": true, "design_freeze": true, "revision": 2},
   "features": {
     "reader": "DYNAMIC_PART_CHAPTER_SECTION_ROUTING_IMPLEMENTED_CONFIG_REQUIRED",
-    "search": "VISUAL_COMPLETE_DATA_PENDING",
+    "search": "IMPLEMENTED_CONFIG_REQUIRED",
+    "glossary": "MINIMAL_DEEP_LINK_TERM_VIEW_IMPLEMENTED_CONFIG_REQUIRED",
     "ask": "VISUAL_COMPLETE_CONFIG_REQUIRED",
     "concepts": "VISUAL_COMPLETE_DATA_PENDING",
     "graph": "VISUAL_COMPLETE_DATA_PENDING",
-    "glossary": "VISUAL_COMPLETE_DATA_PENDING",
     "sources": "VISUAL_COMPLETE_DATA_PENDING",
     "templates": "VISUAL_COMPLETE_DATA_PENDING",
     "pdf_viewer": "VISUAL_COMPLETE_INTEGRATION_PENDING",
@@ -45,7 +47,7 @@
     "verification": "VISUAL_COMPLETE_DATA_PENDING"
   },
   "skills": {
-    "environment_note": "Session-dependent; see docs/ai-book/SKILLS_MANIFEST.md for the exact reconciliation done in this session (Claude Sonnet 5, 2026-09-19) vs. the prior session's local /Users/emperor/.agents/skills/* binaries.",
+    "environment_note": "Session-dependent; see docs/ai-book/SKILLS_MANIFEST.md. The Search phase required no new Skills beyond those already reconciled (Claude Sonnet 5, 2026-09-19).",
     "phase_a": {
       "design_system": {"name": "uiux-pro-max", "status": "ACTIVE"},
       "type_safety": {"name": "MANUAL_POLICY", "status": "ACTIVE"},
@@ -75,11 +77,12 @@
     "repository_lookup_test": "PASS",
     "wordpress_route_test": "PASS",
     "reader_routing_test": "PASS",
+    "search_subsystem_test": "PASS",
     "existing_repository_test_suite": "PASS",
     "full_npm_test_suite": "PASS_394_ASSERTIONS_NO_REGRESSION"
   },
-  "known_issues": ["WordPress landing/read routes require KBK_FEATURE_AI_BOOK and KBK_AI_BOOK_ROOT configuration", "Current Hub pages are noindex until canonical/duplicate-content behavior is integrated", "Publisher signing key is required before publisher-signed status", "Ask provider, PDF request delivery and personalized issuance require configuration", "No local WordPress install exists to browser-test the Hub end-to-end; verified via isolated PHP unit tests instead (dev-server.php has no WP core, per gotcha 1)"],
+  "known_issues": ["WordPress ai-book routes (home/read/search/glossary) require KBK_FEATURE_AI_BOOK and KBK_AI_BOOK_ROOT configuration", "Current Hub pages are noindex until canonical/duplicate-content behavior is integrated", "Publisher signing key is required before publisher-signed status", "Ask provider, PDF request delivery and personalized issuance require configuration", "No local WordPress install exists to browser-test the Hub end-to-end; verified via isolated PHP unit tests instead (dev-server.php has no WP core, per gotcha 1)", "Glossary Hub view is intentionally minimal (deep-link term target only); full term browsing is the next phase's job"],
   "blockers": [],
-  "git": {"branch": "claude/kohandezh-reader-data-phase-9-8f7e49", "base_checkpoint": "4fb19d0", "new_checkpoint": "2ae489e", "pushed": false},
-  "next_action": "Add search across the book (titles/parts/chapters/sections/body/terminology), then glossary/sources/templates data integration, per docs/ai-book/CONTENT_SOURCE_MAP.md's Search and Glossary/Sources/Templates rows. Do not begin Ask/RAG or the Knowledge Graph before Search is verified."
+  "git": {"branch": "claude/kohandezh-reader-data-phase-9-8f7e49", "base_checkpoint": "4c1c998", "new_checkpoint": "LOCAL_CHECKPOINT_PENDING", "pushed": false},
+  "next_action": "Concepts/Glossary/Sources/Templates data integration per docs/ai-book/CONTENT_SOURCE_MAP.md, then the bounded Knowledge Graph explorer and wiring Related Concepts/Related Sections into the Reader. Do not begin Ask/RAG or PDF integration before those are verified."
 }

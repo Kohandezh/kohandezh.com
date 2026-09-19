@@ -138,6 +138,92 @@ final class KBK_AI_Book_Artifacts {
 	}
 
 	/**
+	 * Validate html/search/index.json — the pipeline's bounded per-section
+	 * search index. Snippets are the only body text this artifact may carry,
+	 * so the validator enforces their presence and bounded length.
+	 *
+	 * @param array<string,mixed> $artifact Decoded search index.
+	 * @return array<string,mixed>
+	 */
+	public static function validate_search_index( array $artifact ): array {
+		self::require_keys( $artifact, array( 'edition', 'count', 'entries' ), 'search_index' );
+		$edition = self::edition( $artifact['edition'], 'search_index.edition' );
+		self::non_negative_int( $artifact['count'], 'search_index.count' );
+		self::list_value( $artifact['entries'], 'search_index.entries' );
+		self::same( $artifact['count'], count( $artifact['entries'] ), 'search_index.count' );
+		foreach ( $artifact['entries'] as $index => $entry ) {
+			$path = 'search_index.entries[' . $index . ']';
+			self::object_value( $entry, $path );
+			self::require_keys( $entry, array( 'id', 'structural_id', 'url', 'title_fa', 'part', 'chapter', 'origin', 'docs', 'keywords_fa', 'keywords_en', 'acronyms', 'snippet' ), $path );
+			self::content_id( $entry['id'], $path . '.id', $edition );
+			self::structural_id( $entry['structural_id'], $path . '.structural_id', $edition );
+			self::canonical_url( $entry['url'], $entry['structural_id'] );
+			self::non_empty_string( $entry['title_fa'], $path . '.title_fa' );
+			self::non_empty_string( $entry['part'], $path . '.part' );
+			self::non_empty_string( $entry['chapter'], $path . '.chapter' );
+			self::origin( $entry['origin'], $path . '.origin' );
+			self::list_value( $entry['docs'], $path . '.docs' );
+			self::list_value( $entry['keywords_fa'], $path . '.keywords_fa' );
+			self::list_value( $entry['keywords_en'], $path . '.keywords_en' );
+			self::list_value( $entry['acronyms'], $path . '.acronyms' );
+			foreach ( array( 'docs', 'keywords_fa', 'keywords_en', 'acronyms' ) as $list_field ) {
+				foreach ( $entry[ $list_field ] as $value ) {
+					if ( ! is_string( $value ) ) {
+						throw new UnexpectedValueException( $path . '.' . $list_field . ' must contain only strings' );
+					}
+				}
+			}
+			if ( ! is_string( $entry['snippet'] ) || mb_strlen( $entry['snippet'] ) > 2000 ) {
+				throw new UnexpectedValueException( $path . '.snippet must be a bounded string' );
+			}
+		}
+		return $artifact;
+	}
+
+	/**
+	 * Validate release/09_glossary.json. Reviewer metadata (reviewer,
+	 * review_mode, rationale) is deliberately NOT part of the validated
+	 * contract the public layer may rely on; consumers must surface only
+	 * approved term fields.
+	 *
+	 * @param array<string,mixed> $artifact Decoded glossary.
+	 * @return array<string,mixed>
+	 */
+	public static function validate_glossary( array $artifact ): array {
+		self::require_keys( $artifact, array( 'glossary_version', 'terms' ), 'glossary' );
+		self::non_empty_string( $artifact['glossary_version'], 'glossary.glossary_version' );
+		self::object_value( $artifact['terms'], 'glossary.terms' );
+		foreach ( $artifact['terms'] as $key => $term ) {
+			$path = 'glossary.terms[' . $key . ']';
+			self::object_value( $term, $path );
+			self::require_keys( $term, array( 'concept_id', 'english', 'preferred_fa', 'acronym', 'alternatives_fa', 'definition_fa', 'definition_en', 'domain', 'status', 'source_documents' ), $path );
+			self::matches( '/^[A-Za-z][A-Za-z0-9_ ]{0,63}$/', $term['concept_id'], $path . '.concept_id' );
+			self::non_empty_string( $term['english'], $path . '.english' );
+			self::non_empty_string( $term['preferred_fa'], $path . '.preferred_fa' );
+			if ( ! is_string( $term['acronym'] ) ) {
+				throw new UnexpectedValueException( $path . '.acronym must be a string' );
+			}
+			foreach ( array( 'alternatives_fa', 'source_documents' ) as $list_field ) {
+				self::list_value( $term[ $list_field ], $path . '.' . $list_field );
+				foreach ( $term[ $list_field ] as $value ) {
+					if ( ! is_string( $value ) ) {
+						throw new UnexpectedValueException( $path . '.' . $list_field . ' must contain only strings' );
+					}
+				}
+			}
+			foreach ( array( 'definition_fa', 'definition_en', 'domain', 'status' ) as $string_field ) {
+				if ( ! is_string( $term[ $string_field ] ) ) {
+					throw new UnexpectedValueException( $path . '.' . $string_field . ' must be a string' );
+				}
+			}
+			if ( ! in_array( $term['status'], array( 'approved', 'proposed', 'english_only' ), true ) ) {
+				throw new UnexpectedValueException( $path . '.status has an unsupported value' );
+			}
+		}
+		return $artifact;
+	}
+
+	/**
 	 * Validate that the three artifact families describe the same edition/IDs.
 	 *
 	 * @param array<string,mixed> $book Master book.

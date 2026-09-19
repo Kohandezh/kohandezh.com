@@ -15,6 +15,8 @@ final class KBK_AI_Book {
 	const PART_QUERY_VAR    = 'kbk_part';
 	const CHAPTER_QUERY_VAR = 'kbk_chapter';
 	const SECTION_QUERY_VAR = 'kbk_section';
+	const SEARCH_QUERY_VAR  = 'kbk_q';
+	const CONCEPT_QUERY_VAR = 'kbk_concept';
 
 	/**
 	 * Bounds any hand-typed or linked identifier before it ever reaches the
@@ -29,6 +31,12 @@ final class KBK_AI_Book {
 
 	/** @var string|null */
 	private static $repository_error;
+
+	/** @var KBK_AI_Book_Search|null */
+	private static $search;
+
+	/** @var string|null */
+	private static $search_error;
 
 	public static function hooks(): void {
 		if ( ! defined( 'KBK_FEATURE_AI_BOOK' ) || ! KBK_FEATURE_AI_BOOK ) {
@@ -47,6 +55,8 @@ final class KBK_AI_Book {
 		$vars[] = self::PART_QUERY_VAR;
 		$vars[] = self::CHAPTER_QUERY_VAR;
 		$vars[] = self::SECTION_QUERY_VAR;
+		$vars[] = self::SEARCH_QUERY_VAR;
+		$vars[] = self::CONCEPT_QUERY_VAR;
 		return $vars;
 	}
 
@@ -134,17 +144,127 @@ final class KBK_AI_Book {
 		return $selection;
 	}
 
+	/**
+	 * The raw search query for the current /ai-book/search/ request, with
+	 * control characters and NUL bytes removed and the length capped before
+	 * any further use. Unlike identifiers, a query is free Persian/English
+	 * text, so it is sanitized (not allowlisted); the search engine treats
+	 * anything that survives as plain text and the template escapes it again.
+	 */
+	public static function requested_search_query(): ?string {
+		$value = get_query_var( self::SEARCH_QUERY_VAR );
+		if ( is_array( $value ) ) {
+			return null;
+		}
+		$value = trim( (string) wp_unslash( $value ) );
+		if ( '' === $value ) {
+			return null;
+		}
+		$clean = str_replace( "\0", '', $value );
+		$clean = preg_replace( '/[\x00-\x1F\x7F]/u', ' ', $clean );
+		if ( null === $clean ) {
+			$clean = preg_replace( '/[^\x20-\x7E]/', '', $value );
+		}
+		$clean = trim( (string) $clean );
+		if ( '' === $clean ) {
+			return null;
+		}
+		if ( 1 === preg_match( '/^.{0,120}/us', $clean, $m ) ) {
+			return rtrim( $m[0] );
+		}
+		return substr( $clean, 0, 120 );
+	}
+
+	/**
+	 * The allowlisted concept-ID query for the current /ai-book/glossary/
+	 * request, or null.
+	 */
+	public static function requested_concept(): ?string {
+		$value = (string) get_query_var( self::CONCEPT_QUERY_VAR );
+		if ( '' === $value || 1 !== preg_match( '/^[A-Za-z][A-Za-z0-9_]{0,63}$/', $value ) ) {
+			return null;
+		}
+		return $value;
+	}
+
+	/** @return KBK_AI_Book_Search|null */
+	public static function search_engine() {
+		if ( null !== self::$search || null !== self::$search_error ) {
+			return self::$search;
+		}
+		$repository = self::repository();
+		if ( null === $repository ) {
+			self::$search_error = 'CONFIG_REQUIRED';
+			return null;
+		}
+		try {
+			self::$search = new KBK_AI_Book_Search( $repository );
+			self::$search->find_term( 'RISK' ); // force artifact load/validation now, not on first render
+		} catch ( InvalidArgumentException | UnexpectedValueException $error ) {
+			self::$search        = null;
+			self::$search_error  = 'ARTIFACT_INVALID';
+		}
+		return self::$search;
+	}
+
+	public static function search_status(): string {
+		self::search_engine();
+		return null === self::$search_error ? ( self::$search ? self::$search->status() : 'CONFIG_REQUIRED' ) : self::$search_error;
+	}
+
+	/**
+	 * Resolved state of the current /ai-book/search/ request. Never throws;
+	 * every failure mode degrades to an honest, bounded empty state.
+	 *
+	 * @return array{status:string,query:?string,tokens:int,results:array<int,array<string,mixed>>,total:int,limit:int,truncated:bool}
+	 */
+	public static function current_search(): array {
+		$engine = self::search_engine();
+		if ( null === $engine ) {
+			return array(
+				'status'    => self::$search_error ?? 'CONFIG_REQUIRED',
+				'query'     => self::requested_search_query(),
+				'tokens'    => 0,
+				'results'   => array(),
+				'total'     => 0,
+				'limit'     => KBK_AI_Book_Search::DEFAULT_LIMIT,
+				'truncated' => false,
+			);
+		}
+		return $engine->search( (string) self::requested_search_query() );
+	}
+
+	/**
+	 * The resolved glossary term for the current /ai-book/glossary/ request,
+	 * or null (fail closed) for absent/unknown identifiers.
+	 *
+	 * @return array<string,mixed>|null
+	 */
+	public static function current_glossary_term(): ?array {
+		$concept = self::requested_concept();
+		if ( null === $concept ) {
+			return null;
+		}
+		$engine = self::search_engine();
+		if ( null === $engine ) {
+			return null;
+		}
+		return $engine->find_term( strtoupper( $concept ) );
+	}
+
 	public static function rewrite_rules(): void {
 		if ( ! defined( 'KBK_FEATURE_AI_BOOK' ) || ! KBK_FEATURE_AI_BOOK ) {
 			return;
 		}
 		add_rewrite_rule( '^ai-book/?$', 'index.php?' . self::QUERY_VAR . '=home', 'top' );
 		add_rewrite_rule( '^ai-book/read/?$', 'index.php?' . self::QUERY_VAR . '=read', 'top' );
+		add_rewrite_rule( '^ai-book/search/?$', 'index.php?' . self::QUERY_VAR . '=search', 'top' );
+		add_rewrite_rule( '^ai-book/glossary/?$', 'index.php?' . self::QUERY_VAR . '=glossary', 'top' );
 	}
 
 	public static function current_view(): string {
 		$value = (string) get_query_var( self::QUERY_VAR );
-		return in_array( $value, array( 'home', 'read' ), true ) ? $value : '';
+		return in_array( $value, array( 'home', 'read', 'search', 'glossary' ), true ) ? $value : '';
 	}
 
 	public static function is_request(): bool {

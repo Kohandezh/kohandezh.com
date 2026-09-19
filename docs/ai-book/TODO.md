@@ -20,9 +20,11 @@
 - [x] Add allowlisted dynamic part/chapter/section routing and route tests (`ai-book-reader-routing.test.php`).
 - [x] Resolve `/knowledge/` ownership and P06 route collision (ADR-AB-0009).
 - [x] Complete part/chapter selection and stable deep-link behavior in the WordPress reader (breadcrumb, prev/next chapter nav, section anchor/query-var deep link).
-- [ ] **NEXT:** Add search, glossary, sources and templates.
+- [x] Add Search (`/ai-book/search/`) over titles/body/English terms/acronyms/glossary/source IDs/content IDs with highlighted bounded snippets, stable deep links and the validator boundary (`ai-book-search.test.php`, ADR-AB-0010).
+- [x] Add minimal `/ai-book/glossary/` deep-link term view (search result target).
+- [ ] **NEXT:** Enrich glossary browsing; add Sources (18 docs), Templates and Concepts data integration.
 - [ ] Add cited Ask/RAG integration.
-- [ ] Add bounded accessible KG explorer.
+- [ ] Add bounded accessible KG explorer and wire Related Concepts/Related Sections into the Reader.
 - [ ] Add PDF viewer/request/issuance workflow.
 
 ## Deferred gates

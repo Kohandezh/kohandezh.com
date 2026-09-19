@@ -11,12 +11,36 @@ $selection  = 'read' === $view ? KBK_AI_Book::current_reader_selection() : null;
 $part       = $selection['part'] ?? null;
 $chapter    = $selection['chapter'] ?? null;
 $adjacent   = ( $repository && $part && $chapter ) ? $repository->adjacent_chapters( $part['part_id'], $chapter['chapter_id'] ) : array( 'prev' => null, 'next' => null );
-$page_title = 'home' === $view ? 'کتاب مرجع هوش مصنوعی کهن‌دژ' : ( $chapter['title_fa'] ?? 'مطالعه آنلاین کتاب هوش مصنوعی' );
+$page_title = 'home' === $view ? 'کتاب مرجع هوش مصنوعی کهن‌دژ' : ( 'search' === $view ? 'جست‌وجو — کتاب هوش مصنوعی کهن‌دژ' : ( 'glossary' === $view ? 'واژه‌نامه — کتاب هوش مصنوعی کهن‌دژ' : ( $chapter['title_fa'] ?? 'مطالعه آنلاین کتاب هوش مصنوعی' ) ) );
 $origin_map = array(
 	'source_translation'        => array( 'class' => 'ab-layer-source', 'label' => 'ترجمهٔ منبع' ),
 	'editorial_synthesis'       => array( 'class' => 'ab-layer-editorial', 'label' => 'جمع‌بندی تدوینگر' ),
 	'editorial_localization_ir' => array( 'class' => 'ab-layer-local', 'label' => 'کاربرد در سازمان‌های ایرانی' ),
 );
+$glossary_status_map = array(
+	'approved'     => 'تأییدشده',
+	'proposed'     => 'پیشنهادی',
+	'english_only' => 'فقط انگلیسی',
+);
+/** Escaped segment renderer: text is always escaped, <mark> is template-owned. */
+$render_segments = static function ( array $segments ): string {
+	$output = '';
+	foreach ( $segments as $segment ) {
+		$escaped = esc_html( (string) $segment['text'] );
+		$output .= $segment['mark'] ? '<mark>' . $escaped . '</mark>' : $escaped;
+	}
+	return $output;
+};
+$read_link = static function ( string $part_id, ?string $chapter_id = null, ?string $section_id = null ): string {
+	$url = home_url( '/ai-book/read/?' . KBK_AI_Book::PART_QUERY_VAR . '=' . rawurlencode( $part_id ) );
+	if ( null !== $chapter_id ) {
+		$url .= '&' . KBK_AI_Book::CHAPTER_QUERY_VAR . '=' . rawurlencode( $chapter_id );
+	}
+	if ( null !== $section_id ) {
+		$url .= '&' . KBK_AI_Book::SECTION_QUERY_VAR . '=' . rawurlencode( $section_id ) . '#' . rawurlencode( $section_id );
+	}
+	return $url;
+};
 ?>
 <!doctype html>
 <html lang="fa" dir="rtl">
@@ -46,6 +70,48 @@ $origin_map = array(
 			<a class="ab-card" href="<?php echo esc_url( home_url( '/ai-book/read/?' . KBK_AI_Book::PART_QUERY_VAR . '=' . rawurlencode( $part_card['part_id'] ) ) ); ?>"><span class="ab-card-meta"><?php echo esc_html( $part_card['part_id'] ); ?></span><h3><?php echo esc_html( $part_card['title_fa'] ); ?></h3><p><?php echo esc_html( count( $part_card['chapters'] ) ); ?> فصل</p><span class="ab-card-link">مطالعه</span></a>
 		<?php endforeach; ?>
 		</div></section>
+	<?php elseif ( 'search' === $view ) :
+		$search = KBK_AI_Book::current_search();
+		?>
+		<header class="ab-page-hero"><p class="ab-kicker">جست‌وجوی فارسی و انگلیسی</p><h1>در کتاب چه می‌خواهید پیدا کنید؟</h1><p class="ab-lead">عنوان، متن، مفهوم، واژه‌نامه، نام منبع، سرواژه و شناسهٔ محتوا قابل جست‌وجو است.</p></header>
+		<form class="ab-search" role="search" method="get" action="<?php echo esc_url( home_url( '/ai-book/search/' ) ); ?>"><label for="q">عبارت جست‌وجو</label><div><input id="q" name="<?php echo esc_attr( KBK_AI_Book::SEARCH_QUERY_VAR ); ?>" value="<?php echo esc_attr( (string) $search['query'] ); ?>" autocomplete="off"><button class="ab-button ab-button-primary" type="submit">جست‌وجو</button></div></form>
+		<?php if ( 'READY' !== $search['status'] ) : ?>
+		<section class="ab-section"><div class="ab-section-head"><div><p class="ab-kicker">وضعیت داده</p><h2>جست‌وجو موقتاً در دسترس نیست</h2></div></div><p class="ab-lead">پیکربندی منبع canonical کامل نشده یا اعتبار داده تأیید نشده است. هیچ محتوای حدسی نمایش داده نمی‌شود.</p><p><bdi><?php echo esc_html( $search['status'] ); ?></bdi></p></section>
+		<?php elseif ( null === $search['query'] ) : ?>
+		<section class="ab-section"><div class="ab-section-head"><div><p class="ab-kicker">راهنما</p><h2>عبارتی برای جست‌وجو وارد کنید</h2></div></div><p class="ab-lead">می‌توانید متن فارسی، اصطلاح یا سرواژهٔ انگلیسی (مانند <bdi>RMF</bdi>)، نام سند (مانند <bdi>NIST AI 100-1</bdi>) یا شناسهٔ محتوا (مانند <bdi>KDJ-AI-2026E1-P01-C01-S01</bdi>) را جست‌وجو کنید.</p></section>
+		<?php elseif ( 0 === $search['total'] ) : ?>
+		<section class="ab-section"><div class="ab-section-head"><div><p class="ab-kicker">نتیجه‌ای یافت نشد</p><h2>نتیجه‌ای برای «<?php echo esc_html( $search['query'] ); ?>» وجود ندارد</h2></div></div><p class="ab-lead">جست‌وجو دقیق است و نتیجهٔ حدسی تولید نمی‌کند؛ عبارت کوتاه‌تر یا دیگری را امتحان کنید.</p></section>
+		<?php else : ?>
+		<section class="ab-section"><div class="ab-section-head"><div><p class="ab-kicker"><?php echo esc_html( $search['total'] ); ?> نتیجه<?php echo $search['truncated'] ? ' · نمایش اولین ' . esc_html( $search['limit'] ) . ' نتیجه' : ''; ?></p><h2>نتایج برای «<?php echo esc_html( $search['query'] ); ?>»</h2></div></div><div class="ab-results">
+			<?php foreach ( $search['results'] as $result ) : ?>
+			<?php if ( 'part' === $result['type'] ) : ?>
+			<a class="ab-card" href="<?php echo esc_url( $read_link( $result['part']['id'] ) ); ?>"><span class="ab-card-meta">بخش · <?php echo esc_html( $result['part']['id'] ); ?></span><h3><?php echo esc_html( $result['title'] ); ?></h3><p><?php echo esc_html( $result['chapters'] ); ?> فصل</p><span class="ab-card-link">مطالعه بخش</span></a>
+			<?php elseif ( 'chapter' === $result['type'] ) : ?>
+			<a class="ab-card" href="<?php echo esc_url( $read_link( $result['part']['id'], $result['chapter']['id'] ) ); ?>"><span class="ab-card-meta"><?php echo esc_html( $result['part']['id'] . ' · ' . $result['chapter']['id'] ); ?></span><h3><?php echo esc_html( $result['title'] ); ?></h3><p>فصل در بخش «<?php echo esc_html( $result['part']['title_fa'] ); ?>»</p><span class="ab-card-link">مطالعه فصل</span></a>
+			<?php elseif ( 'glossary' === $result['type'] ) : ?>
+			<a class="ab-card" href="<?php echo esc_url( home_url( '/ai-book/glossary/?' . KBK_AI_Book::CONCEPT_QUERY_VAR . '=' . rawurlencode( $result['concept_id'] ) ) ); ?>"><span class="ab-card-meta">واژه‌نامه<?php echo '' !== $result['acronym'] ? ' · ' . esc_html( $result['acronym'] ) : ''; ?></span><h3><?php echo esc_html( $result['title'] ); ?></h3><p><?php echo $render_segments( $result['snippet_segments'] ); ?></p><span class="ab-card-link">واژه‌نامه</span></a>
+			<?php else : ?>
+			<a class="ab-card" href="<?php echo esc_url( $read_link( $result['part']['id'], $result['chapter']['id'], $result['section']['structural_id'] ) ); ?>"><span class="ab-card-meta"><?php echo esc_html( $result['part']['id'] . ' · ' . $result['chapter']['id'] . ( $result['docs'] ? ' · ' . implode( '، ', $result['docs'] ) : '' ) ); ?></span><h3><?php echo esc_html( $result['title'] ); ?></h3><p><?php echo $render_segments( $result['snippet_segments'] ); ?></p><span class="ab-card-meta"><bdi><?php echo esc_html( $result['section']['content_id'] ); ?></bdi> · <?php echo esc_html( $origin_map[ $result['origin'] ]['label'] ); ?></span><span class="ab-card-link">مشاهده بخش</span></a>
+			<?php endif; ?>
+			<?php endforeach; ?>
+		</div></section>
+		<?php endif; ?>
+	<?php elseif ( 'glossary' === $view ) :
+		$glossary_term     = KBK_AI_Book::current_glossary_term();
+		$requested_concept = KBK_AI_Book::requested_concept();
+		?>
+		<?php if ( null === $glossary_term && null !== $requested_concept ) : ?>
+		<header class="ab-page-hero"><p class="ab-kicker">یافت نشد</p><h1>این واژه در واژه‌نامه موجود نیست</h1><p class="ab-lead">شناسهٔ مفهوم درخواستی با هیچ واژهٔ تأییدشده‌ای مطابقت ندارد.</p><div class="ab-actions"><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/search/' ) ); ?>">جست‌وجو در کتاب</a></div></header>
+		<?php elseif ( null === $glossary_term ) : ?>
+		<header class="ab-page-hero"><p class="ab-kicker">واژه‌نامه</p><h1>واژه‌نامهٔ کتاب</h1><p class="ab-lead">این صفحه مقصد پیوند عمیق واژه‌ها است؛ واژه‌ها را از طریق جست‌وجوی کتاب باز کنید.</p><div class="ab-actions"><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/search/' ) ); ?>">جست‌وجو در کتاب</a></div></header>
+		<?php else : ?>
+		<nav class="ab-breadcrumb" aria-label="مسیر"><a href="<?php echo esc_url( home_url( '/ai-book/' ) ); ?>">کتاب</a><span aria-current="page">واژه‌نامه</span></nav>
+		<article class="ab-prose"><header class="ab-page-hero"><p class="ab-kicker">واژه‌نامه · <?php echo esc_html( $glossary_status_map[ $glossary_term['status'] ] ?? $glossary_term['status'] ); ?><?php echo '' !== $glossary_term['domain'] ? ' · ' . esc_html( $glossary_term['domain'] ) : ''; ?></p><h1><?php echo esc_html( $glossary_term['title'] ); ?></h1><p class="ab-lead"><bdi><?php echo esc_html( $glossary_term['english'] ); ?></bdi><?php echo '' !== $glossary_term['acronym'] ? ' · <bdi>' . esc_html( $glossary_term['acronym'] ) . '</bdi>' : ''; ?></p></header>
+		<section><h2>تعریف</h2><div class="ab-layer ab-layer-source"><span>واژه‌نامهٔ تأییدشده</span><p><?php echo $render_segments( $glossary_term['snippet_segments'] ); ?></p></div>
+		<?php if ( $glossary_term['alternatives_fa'] ) : ?><p class="ab-lead">نام‌های دیگر: <?php echo esc_html( implode( '، ', $glossary_term['alternatives_fa'] ) ); ?></p><?php endif; ?>
+		<?php if ( $glossary_term['source_documents'] ) : ?><p class="ab-card-meta">منابع: <bdi><?php echo esc_html( implode( '، ', $glossary_term['source_documents'] ) ); ?></bdi></p><?php endif; ?>
+		<p class="ab-card-meta"><bdi><?php echo esc_html( $glossary_term['concept_id'] ); ?></bdi></p></section></article>
+		<?php endif; ?>
 	<?php elseif ( $selection['part_not_found'] ) : ?>
 		<header class="ab-page-hero"><p class="ab-kicker">یافت نشد</p><h1>این بخش از کتاب موجود نیست</h1><p class="ab-lead">شناسهٔ درخواستی با هیچ‌یک از هفت بخش canonical کتاب مطابقت ندارد.</p><div class="ab-actions"><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/' ) ); ?>">بازگشت به فهرست بخش‌ها</a></div></header>
 	<?php elseif ( $part && $chapter ) : ?>
