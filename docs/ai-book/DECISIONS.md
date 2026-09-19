@@ -39,3 +39,33 @@
 - **Tradeoffs:** Production components must adapt generated semantics.
 - **Reversibility:** Visual changes require freeze revision.
 - **Date:** 2026-09-19
+
+## ADR-AB-0005 — Supersede the incomplete first freeze
+
+- **Decision:** Reopen revision 1, implement all 13 route shells, run the required cross-viewport QA, then issue freeze revision 2.
+- **Context:** The full Master Prompt defines design Done as complete landing/reader/search/ask/graph/knowledge/PDF/request shells; revision 1 covered only a reader sample.
+- **Alternatives:** Treat the sample as sufficient and begin backend work.
+- **Rationale:** A successor must inherit a finished visual product, not design missing pages.
+- **Tradeoffs:** Adds a static generator and generated shell before WordPress integration.
+- **Reversibility:** High; generator output is isolated and local.
+- **Date:** 2026-09-19
+
+## ADR-AB-0006 — Separate Hub routes from canonical content URLs
+
+- **Decision:** Use `/ai-book/*` for application surfaces while preserving `/fa/ai-book/*` as canonical content/citation URLs.
+- **Context:** The Master Prompt requires Hub routes but the finalized book already publishes stable Persian citation URLs.
+- **Alternatives:** Replace existing canonical routes; duplicate indexable text.
+- **Rationale:** Satisfies the product IA without breaking provenance.
+- **Tradeoffs:** Integration must prevent duplicate indexation and make deep-link behavior explicit.
+- **Reversibility:** Medium before production.
+- **Date:** 2026-09-19
+
+## ADR-AB-0007 — Reject canonical data before rendering when contracts drift
+
+- **Decision:** All book, content-ID and citation JSON crosses `KBK_AI_Book_Artifacts`; edition, count, IDs, origins, locale, canonical URL and cross-registry relationships are mandatory.
+- **Context:** Canonical artifacts are external to the website and have distinct shapes and namespaces.
+- **Alternatives:** Ad-hoc array access; trust the build outputs without runtime/build validation.
+- **Rationale:** Fail closed before malformed or mismatched provenance becomes public HTML.
+- **Tradeoffs:** A new edition/schema may require an explicit validator update.
+- **Reversibility:** High, but weakening validation requires a new ADR.
+- **Date:** 2026-09-19

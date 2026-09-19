@@ -2,7 +2,7 @@
 
 ## Current state
 
-`DESIGN_STATUS = FROZEN`. Design discovery, responsive prototype and browser QA are complete. Do not restart discovery or redesign the frozen reader. The next task is a scoped PHP ingestion/schema spike.
+`DESIGN_STATUS = FROZEN_REVISION_2`. All 13 Master Prompt route shells, shared components and required responsive QA are complete. The PHP artifact boundary now validates fixtures and the full 479-section canonical bundle. Do not restart discovery or redesign the frozen UI. The next task is the faithful WordPress/PHP landing and reader port.
 
 Canonical book root is `/Users/emperor/Documents/AI/AiBook` (corrected from the prompt). Treat it as read-only. Do not read `.env` or private signing keys. Current edition `2026E1` is development-signed, not publisher-signed.
 
@@ -18,16 +18,43 @@ Canonical book root is `/Users/emperor/Documents/AI/AiBook` (corrected from the 
 
 ## Verified evidence
 
-- Prototype: `docs/ai-book/prototype/index.html`.
-- Chromium QA passed at 375×812, 768×1024 and 1280×720.
-- No page-level horizontal overflow and no console errors.
-- Accessibility snapshot includes landmarks, skip link, heading hierarchy, labeled regions and table.
+- Visual implementation: `ai-book/`; source generator: `_tooling/ai-book/build_visual_shell.py`; shared assets: `assets/css/ai-book.css` and `assets/js/ai-book.js`.
+- Implemented routes: `/ai-book/`, read, search, ask, concepts, graph, templates, sources, glossary, PDF, request PDF, cite and verify.
+- Chromium QA passed the seven mandatory routes at 375×812, 768×1024 and 1280×720 (21 checks).
+- No page-level horizontal overflow or console errors. Every checked page had Persian/RTL, an H1, main landmark and loaded styles.
+- Reference screenshots are in `docs/ai-book/screenshots/`.
+- Static pages remain `noindex,nofollow` until functional canonical/duplicate-content behavior is implemented.
+- `KBK_AI_Book_Artifacts` validates master book, content-ID registry and citation registry, rejects unsupported origin/ID/URL/count contracts, and cross-checks edition and IDs.
+- Fixture test passed with one valid bundle and four rejected invalid cases. The real canonical bundle also passed all validation.
+- Full existing `npm test` suite passed after the visual shell and validator changes; no existing-site regression was detected.
 - `jq empty docs/ai-book/STATE.json` is the state validation command.
+
+## Exact files changed in revision 2
+
+- `_tooling/ai-book/build_visual_shell.py`
+- `assets/css/ai-book.css`
+- `assets/js/ai-book.js`
+- `ai-book/**/index.html` (13 generated route pages; do not hand-edit)
+- `docs/ai-book/CONTENT_SOURCE_MAP.md`, design/IA/freeze/plan/decision/state/TODO/handover/successor files and four screenshots
+
+## Commands to continue and test
+
+```bash
+python3 _tooling/ai-book/build_visual_shell.py
+python3 -m py_compile _tooling/ai-book/build_visual_shell.py
+node --check assets/js/ai-book.js
+php _tooling/tests/ai-book-artifacts.test.php
+npm run test:ai-book
+jq empty docs/ai-book/STATE.json
+git diff --check
+```
+
+No environment variables are required for the visual shell. Ask runtime, request delivery/SMS/email, personalized PDF and publisher signing remain configuration-required; do not invent credentials.
 
 ## Git scope
 
-Base was `main@c44efcb`. A scoped local checkpoint with subject `ai-book: freeze design and handover state` contains only `docs/ai-book/`; resolve its environment-specific hash with `git log -1 --oneline`. Pre-existing untracked `.agents/` and `skills-lock.json` were not created by this design work and were excluded. No push, merge or deploy.
+Base checkpoint is `main@ae8689f`. Pre-existing untracked `.agents/` and `skills-lock.json` are unrelated to revision 2 and must remain excluded. No push, merge or deploy.
 
 ## Exact next task
 
-Implement a read-only PHP validator/read-model spike, using small sanitized fixtures derived from `master/book.json`, `provenance/content_ids.json`, and `citation-registry.json`. Validate version, required fields, origins, IDs, locale, URLs and unexpected shapes. Then update all handoff files and run targeted PHP tests.
+Port the frozen reader/landing shell into isolated Layer-B PHP without visual changes. Load data only after `KBK_AI_Book_Artifacts` validation. Keep the source path configurable and outside the public web root, add safe unavailable/error states, and do not expose raw artifacts. Resolve route behavior without breaking `/fa/ai-book/*` canonical citations. Update all handoff files and run targeted PHP and existing-site regression tests.

@@ -55,6 +55,7 @@ require_once __DIR__ . '/includes/class-kbk-routes.php';
 require_once __DIR__ . '/includes/class-kbk-schema.php';
 require_once __DIR__ . '/includes/class-kbk-seed.php';
 require_once __DIR__ . '/includes/class-kbk-news.php';
+require_once __DIR__ . '/includes/class-kbk-ai-book-artifacts.php';
 
 /**
  * Activation: flush rewrite rules so new CPT archives + virtual hubs resolve.

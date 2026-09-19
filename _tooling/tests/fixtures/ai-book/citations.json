@@ -1,0 +1,14 @@
+{
+  "edition_id": "2026E1",
+  "count": 1,
+  "registry": {
+    "KDJ-AI-2026E1-P01-C01-S01": {
+      "content_id": "KDJ-AI-2026E1-P01-C01-S01-04D3A306",
+      "title_fa": "دامنهٔ بخش و اسناد پشتوانهٔ آن",
+      "origin": "editorial_synthesis",
+      "canonical_url": "https://kohandezh.com/fa/ai-book/foundations/foundations-reading-guide/#KDJ-AI-2026E1-P01-C01-S01",
+      "citation_fa": "محمدعلی کهن‌دژ، راهنمای جامع حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی، شناسه بخش: KDJ-AI-2026E1-P01-C01-S01",
+      "source_documents": ["NIST-AI-100-3", "NIST-PAPER-1-FOUNDATIONAL"]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "edition_id": "2026E1",
+  "count": 1,
+  "ids": {
+    "KDJ-AI-2026E1-P01-C01-S01-04D3A306": {
+      "structural_id": "KDJ-AI-2026E1-P01-C01-S01",
+      "part": "P01",
+      "chapter": "C01",
+      "section": "S01",
+      "origin": "editorial_synthesis",
+      "hash": "04d3a3062421a1d660e2e2d32b5e302c10a50e59895348fcd52673917abf0c63",
+      "locale": "fa"
+    }
+  }
+}

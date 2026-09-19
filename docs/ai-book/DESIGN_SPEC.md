@@ -18,6 +18,12 @@ Reader measure is 52–70 characters for prose. Body text should be at least 16p
 8. Verification: edition/public-key status, content-ID/hash verification, honest development/publisher-signature status.
 9. Ask/RAG, KG, PDF and request pages: Phase B functional surfaces using the same shell.
 
+All 13 visual templates are implemented in `ai-book/` and generated from reusable presentation functions. The generator is the visual source of truth until the WordPress template port; editing generated HTML directly is prohibited.
+
+## Frozen component architecture
+
+`AiBookShell`, `AiBookHeader`, `AiBookNavigation`, `PageHero`, `BookMeta`, `BookTOC`, `BookSection`, `ContentLayer`, `SourceTranslationBlock`, `EditorialSynthesisBlock`, `LocalizationBlock`, `SourceCard`, `ConceptCard`, `ContentIdBadge`, `SearchBox`, `SearchResult`, `AskInput`, `AnswerCitation`, `KnowledgeGraphShell`, `GlossaryTerm`, `TemplateCard`, `PdfViewerShell`, `PdfRequestForm`, `VerificationCard`, `PreviousNextNavigation`, and the mobile navigation disclosure are represented by generator functions and `.ab-*` styles. WordPress/PHP may rename them to project conventions but must preserve behavior and visual contracts.
+
 ## Content origin presentation
 
 Every section exposes a machine-readable and visible origin. Translation is the default prose treatment. Editorial synthesis and Iran localization use distinct labeled callouts; labels cannot rely on color alone. Derived sections link to their source content IDs. Citations show source document/page/block evidence when available.

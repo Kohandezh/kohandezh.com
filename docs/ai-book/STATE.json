@@ -1,15 +1,49 @@
 {
-  "schema_version": 1,
-  "updated_at": "2026-09-19T00:00:00-04:00",
-  "project": "Kohandezh Persian AI Book / Knowledge Hub",
+  "schema_version": 2,
+  "project": "kohandezh-ai-book",
+  "language": "fa",
+  "updated_at": "2026-09-19T18:25:00-04:00",
   "website_root": "/Users/emperor/Documents/AI/kohandezh.com",
   "book_root": "/Users/emperor/Documents/AI/AiBook",
-  "phase": "DESIGN_FREEZE_COMPLETE",
-  "design_status": "FROZEN",
-  "current_task": "Begin validated PHP artifact-schema integration spike",
-  "completed": ["repository discovery", "skills bootstrap", "design system snapshot", "information architecture", "responsive prototype", "browser QA", "design freeze"],
-  "in_progress": [],
-  "blocked": [],
+  "current_phase": "READER_DATA_INTEGRATION",
+  "completed_phases": ["PREFLIGHT", "REPOSITORY_DISCOVERY", "BOOK_ARTIFACT_DISCOVERY", "DESIGN_SYSTEM", "INFORMATION_ARCHITECTURE", "DESIGN_SPEC", "COMPONENT_ARCHITECTURE", "VISUAL_SHELL", "VISUAL_QA", "DESIGN_FREEZE", "ARTIFACT_SCHEMA_BOUNDARY"],
+  "active_phase": "WORDPRESS_READER_PORT",
+  "next_phase": "READER_ROUTES_AND_RENDERING",
+  "design_frozen": true,
+  "design_status": "FROZEN_REVISION_2",
+  "routes": {
+    "planned": ["/ai-book/", "/ai-book/read/", "/ai-book/search/", "/ai-book/ask/", "/ai-book/concepts/", "/ai-book/graph/", "/ai-book/templates/", "/ai-book/sources/", "/ai-book/glossary/", "/ai-book/pdf/", "/ai-book/request-pdf/", "/ai-book/cite/", "/ai-book/verify/"],
+    "implemented": ["/ai-book/", "/ai-book/read/", "/ai-book/search/", "/ai-book/ask/", "/ai-book/concepts/", "/ai-book/graph/", "/ai-book/templates/", "/ai-book/sources/", "/ai-book/glossary/", "/ai-book/pdf/", "/ai-book/request-pdf/", "/ai-book/cite/", "/ai-book/verify/"],
+    "verified": ["/ai-book/", "/ai-book/read/", "/ai-book/search/", "/ai-book/ask/", "/ai-book/graph/", "/ai-book/pdf/", "/ai-book/request-pdf/"],
+    "canonical_content_namespace": "/fa/ai-book/*"
+  },
+  "book_sources": {
+    "edition": "2026E1",
+    "parts": 7,
+    "chapters": 53,
+    "sections": 479,
+    "sources": 18,
+    "rag_chunks": 2420,
+    "kg_nodes": 3671,
+    "kg_edges": 10474,
+    "map": "docs/ai-book/CONTENT_SOURCE_MAP.md"
+  },
+  "design": {"tokens_extracted": true, "components_defined": true, "responsive_verified": true, "rtl_verified": true, "design_freeze": true, "revision": 2},
+  "features": {
+    "reader": "SCHEMA_VALIDATED_RENDERING_PENDING",
+    "search": "VISUAL_COMPLETE_DATA_PENDING",
+    "ask": "VISUAL_COMPLETE_CONFIG_REQUIRED",
+    "concepts": "VISUAL_COMPLETE_DATA_PENDING",
+    "graph": "VISUAL_COMPLETE_DATA_PENDING",
+    "glossary": "VISUAL_COMPLETE_DATA_PENDING",
+    "sources": "VISUAL_COMPLETE_DATA_PENDING",
+    "templates": "VISUAL_COMPLETE_DATA_PENDING",
+    "pdf_viewer": "VISUAL_COMPLETE_INTEGRATION_PENDING",
+    "pdf_request": "VISUAL_COMPLETE_BACKEND_PENDING",
+    "personalized_pdf": "DEFERRED",
+    "citation": "VISUAL_COMPLETE_DATA_PENDING",
+    "verification": "VISUAL_COMPLETE_DATA_PENDING"
+  },
   "skills": {
     "phase_a": {
       "design_system": {"name": "uiux-pro-max", "status": "ACTIVE"},
@@ -25,13 +59,22 @@
       "pdf": {"name": "pdf", "status": "DEFERRED"}
     }
   },
-  "verification": {
-    "prototype": "docs/ai-book/prototype/index.html",
-    "browser_viewports": ["375x812", "768x1024", "1280x720"],
-    "horizontal_overflow": false,
+  "tests": {
+    "generated_html_count": 13,
+    "mandatory_route_viewport_checks": 21,
+    "viewports": ["375x812", "768x1024", "1280x720"],
+    "horizontal_overflow_failures": 0,
     "console_errors": 0,
-    "accessibility_snapshot": "PASS"
+    "html_parse": "PASS",
+    "python_compile": "PASS",
+    "javascript_syntax": "PASS",
+    "php_lint": "PASS",
+    "artifact_fixture_test": "PASS",
+    "canonical_bundle_validation": "PASS_479",
+    "existing_repository_test_suite": "PASS"
   },
-  "git": {"branch": "main", "base_head": "c44efcb", "checkpoint_commit": "LOCAL_COMMIT_CREATED", "checkpoint_subject": "ai-book: freeze design and handover state", "pushed": false},
-  "next_action": "Create a scoped PHP validator/read-model spike for canonical book, provenance and citation fixtures; do not reopen design."
+  "known_issues": ["Visual HTML is static generator output and not yet ported to WordPress", "Current Hub pages are noindex until canonical/duplicate-content behavior is integrated", "P06 duplicate/truncated canonical route mapping needs resolution", "Publisher signing key is required before publisher-signed status", "Ask provider, PDF request delivery and personalized issuance require configuration"],
+  "blockers": [],
+  "git": {"branch": "main", "base_checkpoint": "ae8689f", "new_checkpoint": "LOCAL_CHECKPOINT_PENDING", "pushed": false},
+  "next_action": "Port the frozen landing/reader shell to isolated Layer-B PHP routes using only KBK_AI_Book_Artifacts-validated data; do not redesign."
 }
