@@ -11,7 +11,18 @@ if ( ! defined( 'ABSPATH' ) && ! defined( 'KBK_TESTING' ) ) {
 
 final class KBK_AI_Book {
 
-	const QUERY_VAR = 'kbk_ai_book';
+	const QUERY_VAR         = 'kbk_ai_book';
+	const PART_QUERY_VAR    = 'kbk_part';
+	const CHAPTER_QUERY_VAR = 'kbk_chapter';
+	const SECTION_QUERY_VAR = 'kbk_section';
+
+	/**
+	 * Bounds any hand-typed or linked identifier before it ever reaches the
+	 * repository. The repository only ever compares this value against known
+	 * IDs/slugs (never uses it to build a filesystem path), but request input
+	 * is validated at the boundary regardless of how it is later used.
+	 */
+	const IDENTIFIER_PATTERN = '/^[A-Za-z0-9-]{1,80}$/';
 
 	/** @var KBK_AI_Book_Repository|null */
 	private static $repository;
@@ -33,7 +44,94 @@ final class KBK_AI_Book {
 	/** @param string[] $vars @return string[] */
 	public static function query_vars( array $vars ): array {
 		$vars[] = self::QUERY_VAR;
+		$vars[] = self::PART_QUERY_VAR;
+		$vars[] = self::CHAPTER_QUERY_VAR;
+		$vars[] = self::SECTION_QUERY_VAR;
 		return $vars;
+	}
+
+	/**
+	 * A registered query var's raw value, allowlisted to a safe identifier
+	 * shape. Returns null for absent, empty or out-of-shape input rather than
+	 * guessing — the caller then falls back to a documented default.
+	 */
+	public static function requested_identifier( string $query_var ): ?string {
+		$value = (string) get_query_var( $query_var );
+		if ( '' === $value || 1 !== preg_match( self::IDENTIFIER_PATTERN, $value ) ) {
+			return null;
+		}
+		return $value;
+	}
+
+	/**
+	 * Resolve the current /ai-book/read/ request against the repository.
+	 *
+	 * Selection rules (fail closed, never guess):
+	 * - No `part` requested → default to the first canonical part/chapter.
+	 * - `part` requested but unknown → part/chapter stay null, `part_not_found` is set.
+	 * - `part` known, no `chapter` requested → default to that part's first chapter.
+	 * - `part` known, `chapter` requested but unknown/ambiguous in that part → chapter stays
+	 *   null, `chapter_not_found` is set; the part's chapter list can still render.
+	 * - `section` is only honored when it resolves within the selected chapter; otherwise
+	 *   it is silently ignored (it only ever affects which in-page anchor is pre-highlighted).
+	 *
+	 * @return array{part:?array<string,mixed>,chapter:?array<string,mixed>,section:?array<string,mixed>,part_not_found:bool,chapter_not_found:bool}
+	 */
+	public static function current_reader_selection(): array {
+		$selection = array(
+			'part'              => null,
+			'chapter'           => null,
+			'section'           => null,
+			'part_not_found'    => false,
+			'chapter_not_found' => false,
+		);
+		$repository = self::repository();
+		if ( null === $repository ) {
+			return $selection;
+		}
+
+		$requested_part = self::requested_identifier( self::PART_QUERY_VAR );
+		if ( null === $requested_part ) {
+			$parts                = $repository->parts();
+			$selection['part']    = $parts[0] ?? null;
+		} else {
+			$part = $repository->find_part( $requested_part );
+			if ( null === $part ) {
+				$selection['part_not_found'] = true;
+				return $selection;
+			}
+			$selection['part'] = $part;
+		}
+		if ( null === $selection['part'] ) {
+			return $selection;
+		}
+
+		$requested_chapter = self::requested_identifier( self::CHAPTER_QUERY_VAR );
+		if ( null === $requested_chapter ) {
+			$chapters              = $selection['part']['chapters'];
+			$selection['chapter']  = $chapters[0] ?? null;
+		} else {
+			$chapter = $repository->find_chapter( $selection['part']['part_id'], $requested_chapter );
+			if ( null === $chapter ) {
+				$selection['chapter_not_found'] = true;
+				return $selection;
+			}
+			$selection['chapter'] = $chapter;
+		}
+		if ( null === $selection['chapter'] ) {
+			return $selection;
+		}
+
+		$requested_section = self::requested_identifier( self::SECTION_QUERY_VAR );
+		if ( null !== $requested_section ) {
+			foreach ( $selection['chapter']['sections'] as $section ) {
+				if ( $section['structural_id'] === $requested_section || $section['content_id'] === $requested_section ) {
+					$selection['section'] = $section;
+					break;
+				}
+			}
+		}
+		return $selection;
 	}
 
 	public static function rewrite_rules(): void {

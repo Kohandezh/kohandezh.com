@@ -81,7 +81,15 @@ final class KBK_AI_Book_Repository {
 	}
 
 	/**
-	 * Find a chapter within one part by stable ID or slug.
+	 * Find a chapter within one part by stable ID, or by slug when unambiguous.
+	 *
+	 * A stable `chapter_id` match always wins and is returned immediately: IDs
+	 * are unique within a part by construction. A slug match is only returned
+	 * when exactly one chapter in the part carries it; some parts (e.g. P06)
+	 * contain chapters that share a truncated slug, and guessing among them
+	 * would silently serve the wrong chapter, so an ambiguous slug fails
+	 * closed to null instead. All generated navigation in this project links
+	 * by `chapter_id`, so this only affects hand-typed/legacy slug URLs.
 	 *
 	 * @return array<string,mixed>|null
 	 */
@@ -91,11 +99,45 @@ final class KBK_AI_Book_Repository {
 			return null;
 		}
 		foreach ( $part['chapters'] as $chapter ) {
-			if ( $chapter['chapter_id'] === $chapter_id_or_slug || $chapter['slug'] === $chapter_id_or_slug ) {
+			if ( $chapter['chapter_id'] === $chapter_id_or_slug ) {
 				return $chapter;
 			}
 		}
-		return null;
+		$slug_matches = array();
+		foreach ( $part['chapters'] as $chapter ) {
+			if ( $chapter['slug'] === $chapter_id_or_slug ) {
+				$slug_matches[] = $chapter;
+			}
+		}
+		return 1 === count( $slug_matches ) ? $slug_matches[0] : null;
+	}
+
+	/**
+	 * The chapter immediately before/after the given chapter within its part,
+	 * in document order, for stable next/previous navigation.
+	 *
+	 * @return array{prev:?array<string,mixed>,next:?array<string,mixed>}
+	 */
+	public function adjacent_chapters( string $part_id, string $chapter_id ): array {
+		$part = $this->find_part( $part_id );
+		if ( null === $part ) {
+			return array( 'prev' => null, 'next' => null );
+		}
+		$chapters = $part['chapters'];
+		$index    = null;
+		foreach ( $chapters as $i => $chapter ) {
+			if ( $chapter['chapter_id'] === $chapter_id ) {
+				$index = $i;
+				break;
+			}
+		}
+		if ( null === $index ) {
+			return array( 'prev' => null, 'next' => null );
+		}
+		return array(
+			'prev' => $chapters[ $index - 1 ] ?? null,
+			'next' => $chapters[ $index + 1 ] ?? null,
+		);
 	}
 
 	/**

@@ -70,6 +70,17 @@
 - **Reversibility:** High, but weakening validation requires a new ADR.
 - **Date:** 2026-09-19
 
+## ADR-AB-0009 — Resolve the P06 chapter-slug collision by ID-first lookup, fail-closed on ambiguity
+
+- **Decision:** `KBK_AI_Book_Repository::find_chapter()` now matches the stable `chapter_id` first (always unambiguous within a part) and only falls back to a slug match when exactly one chapter in the part carries it; an ambiguous slug returns `null` instead of guessing. All Hub navigation this project generates (`/ai-book/read/?kbk_part=...&kbk_chapter=...`) links by `chapter_id`, never by slug.
+- **Context:** P06's chapters C43, C44 and C45 all reduce to the identical truncated slug `artificial-intelligence-and-the-courts-materials-for-judges-`, and — separately, in the external canonical data itself — all three chapters' `canonical_url` values share the exact same `/fa/ai-book/ai-law/.../` page path, differing only by URL fragment (`#KDJ-AI-2026E1-P06-C4{3,4,5}-S01`). That external citation-URL shape is part of the immutable, already-published `citation-registry.json`/`content_ids.json` contract and is out of this project's control; each *section's* fragment is still unique, so per-section outbound citation links (already emitted per-section by the reader template) are unaffected.
+- **Alternatives:** (a) Guess the first slug match — rejected, silently serves the wrong chapter's content under another chapter's link. (b) Invent a new disambiguating slug/suffix for routing — rejected, would diverge from the frozen external identifiers and title text with no source authority to do so. (c) Block all P06 chapter routing until the external data is fixed — rejected, unnecessary: ID-based routing already fully and correctly serves all three chapters today.
+- **Rationale:** Fail closed on genuine ambiguity (mirrors ADR-AB-0007's stance at the routing layer instead of the artifact-validation layer); never fabricate a disambiguating identifier the source data doesn't provide; real content stays reachable via its stable ID.
+- **Scope:** This closes the collision for the `/ai-book/read/` Hub built in Phase 9. It does not build or touch a `/fa/ai-book/*` route — no such route exists in this codebase; that string is only ever read as an external citation link target. Building a `/fa/ai-book/*` canonical page for this three-chapter cluster (were that ever undertaken) would face the same shared-page-path shape and needs its own explicit decision at that time — out of scope here.
+- **Also resolved:** the TODO's paired `/knowledge/` ownership question. `KBK_Routes` already owns a pre-existing `/knowledge/` CPT-archive route (Layer B "Knowledge Hub", unrelated claim/evidence content). The AI Book registers routes only under `/ai-book/*` and never touches `/knowledge/`; the two `knowledge/` mentions (the CPT archive slug and the canonical repo's `knowledge/*.jsonl` data folder) are unrelated same-named things, not a routing collision.
+- **Reversibility:** High; a future ADR can add a disambiguating routing scheme if the source data itself changes.
+- **Date:** 2026-09-19
+
 ## ADR-AB-0008 — Keep WordPress book routing opt-in and non-indexable by default
 
 - **Decision:** `KBK_FEATURE_AI_BOOK` defaults false; a readable `KBK_AI_BOOK_ROOT` is mandatory; `KBK_AI_BOOK_INDEXABLE` defaults false.
