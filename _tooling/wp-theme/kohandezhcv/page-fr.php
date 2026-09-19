@@ -2607,7 +2607,7 @@
                                 </form>
                                 <div class="contact-schedule">
                                     <h3 class="h5">Vous préférez réserver un créneau directement ?</h3>
-                                    <p>Choisissez un créneau ci-dessous et vous recevrez automatiquement un lien Google Meet une fois confirmé.</p>
+                                    <p>La réservation en ligne n’est pas encore disponible. Utilisez l’e-mail ci-dessous pour demander un créneau et recevoir un lien Google Meet.</p>
                                     <!-- GOOGLE_CALENDAR_BOOKING_URL: paste the Google Calendar "Appointment schedule" booking page link (from the kohansystemfarda.com Google account) into data-booking-url below to go live. -->
                                     <div class="schedule-embed" data-booking-url="">
                                         <iframe title="Réserver un entretien avec Mohammad Ali Kohandezh" loading="lazy"></iframe>

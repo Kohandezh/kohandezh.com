@@ -2606,7 +2606,7 @@
                                 </form>
                                 <div class="contact-schedule">
                                     <h3 class="h5">Doğrudan bir zaman ayırtmayı mı tercih edersiniz?</h3>
-                                    <p>Aşağıdan bir zaman seçin; onaylandığında otomatik olarak bir Google Meet bağlantısı alacaksınız.</p>
+                                    <p>Çevrimiçi randevu henüz kullanılamıyor. Bir zaman ve Google Meet bağlantısı istemek için aşağıdaki e-posta seçeneğini kullanın.</p>
                                     <!-- GOOGLE_CALENDAR_BOOKING_URL: paste the Google Calendar "Appointment schedule" booking page link (from the kohansystemfarda.com Google account) into data-booking-url below to go live. -->
                                     <div class="schedule-embed" data-booking-url="">
                                         <iframe title="Mohammad Ali Kohandezh ile toplantı planla" loading="lazy"></iframe>

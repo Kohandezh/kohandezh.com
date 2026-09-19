@@ -2656,7 +2656,7 @@
                                 </form>
                                 <div class="contact-schedule">
                                     <h3 class="h5">Предпочитаете назначить время напрямую?</h3>
-                                    <p>Выберите удобное время ниже — после подтверждения вы автоматически получите ссылку на Google Meet.</p>
+                                    <p>Онлайн-запись пока недоступна. Используйте email ниже, чтобы запросить время и получить ссылку на Google Meet.</p>
                                     <!-- GOOGLE_CALENDAR_BOOKING_URL: paste the Google Calendar "Appointment schedule" booking page link (from the kohansystemfarda.com Google account) into data-booking-url below to go live. -->
                                     <div class="schedule-embed" data-booking-url="">
                                         <iframe title="Назначить встречу с Mohammad Ali Kohandezh" loading="lazy"></iframe>

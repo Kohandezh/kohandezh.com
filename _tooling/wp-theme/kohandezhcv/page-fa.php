@@ -2720,7 +2720,7 @@
                                 </form>
                                 <div class="contact-schedule">
                                     <h3 class="h5">ترجیح می‌دهید مستقیم یک زمان رزرو کنید؟</h3>
-                                    <p>یک زمان را انتخاب کنید تا به‌محض تأیید، لینک Google Meet به‌صورت خودکار برایتان ارسال شود.</p>
+                                    <p>رزرو آنلاین هنوز فعال نیست. برای درخواست زمان و دریافت لینک Google Meet از گزینهٔ ایمیل زیر استفاده کنید.</p>
                                     <!-- GOOGLE_CALENDAR_BOOKING_URL: paste the Google Calendar "Appointment schedule" booking page link (from the kohansystemfarda.com Google account) into data-booking-url below to go live. -->
                                     <div class="schedule-embed" data-booking-url="">
                                         <iframe title="رزرو جلسه با محمدعلی کهن‌دژ" loading="lazy"></iframe>

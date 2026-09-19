@@ -2597,7 +2597,7 @@
                                 </form>
                                 <div class="contact-schedule">
                                     <h3 class="h5">直接日時を予約しますか？</h3>
-                                    <p>下記から時間帯を選択すると、確定後にGoogle Meetのリンクが自動送信されます。</p>
+                                    <p>オンライン予約はまだ利用できません。下記のメールから日時を依頼すると、Google Meet のリンクが届きます。</p>
                                     <!-- GOOGLE_CALENDAR_BOOKING_URL: paste the Google Calendar "Appointment schedule" booking page link (from the kohansystemfarda.com Google account) into data-booking-url below to go live. -->
                                     <div class="schedule-embed" data-booking-url="">
                                         <iframe title="モハンマド・アリ・コハンデジュとの面談を予約" loading="lazy"></iframe>

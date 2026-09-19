@@ -34,6 +34,8 @@ for (const locale of ['index','fa','ar','de','es','fr','tr','zh','ja','ru']) {
   assert.ok(doc.querySelector('.action-group a[href="#contact"]'), `${locale}: conversation targets contact`);
   assert.ok(doc.querySelector('[data-cv-id="national-ai-platform"]'), `${locale}: preserve Sako role`);
   assert.ok(!html.includes('دکتریی'));
+  const booking = doc.querySelector('.contact-schedule');
+  assert.ok(booking && !/pick a slot|یک زمان را انتخاب کنید|اختر موعدًا|Wählen Sie unten|Elige un horario|Choisissez un créneau|Aşağıdan bir zaman|在下方选择|下記から時間帯|Выберите удобное время/i.test(booking.textContent), `${locale}: booking copy does not promise an unavailable slot picker`);
 }
 console.log('PASS: ordered blog dates and 10-locale profile/contact regressions');
 

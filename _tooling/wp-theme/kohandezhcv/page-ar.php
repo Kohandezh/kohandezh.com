@@ -2696,7 +2696,7 @@
                                 </form>
                                 <div class="contact-schedule">
                                     <h3 class="h5">تفضل حجز موعد مباشرة؟</h3>
-                                    <p>اختر موعدًا أدناه وستحصل على رابط Google Meet تلقائيًا بمجرد التأكيد.</p>
+                                    <p>الحجز عبر الإنترنت غير متاح بعد. استخدم البريد أدناه لطلب موعد والحصول على رابط Google Meet.</p>
                                     <!-- GOOGLE_CALENDAR_BOOKING_URL: paste the Google Calendar "Appointment schedule" booking page link (from the kohansystemfarda.com Google account) into data-booking-url below to go live. -->
                                     <div class="schedule-embed" data-booking-url="">
                                         <iframe title="حجز اجتماع مع محمد علي كهن‌دژ" loading="lazy"></iframe>

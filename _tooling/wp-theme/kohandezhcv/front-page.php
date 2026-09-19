@@ -2627,7 +2627,7 @@
                                 </form>
                                 <div class="contact-schedule">
                                     <h3 class="h5">Prefer to book a time directly?</h3>
-                                    <p>Pick a slot below and you'll get a Google Meet link automatically once it's confirmed.</p>
+                                    <p>Online booking is not available yet. Use the email option below to request a time and receive a Google Meet link.</p>
                                     <!-- GOOGLE_CALENDAR_BOOKING_URL: paste the Google Calendar "Appointment schedule" booking page link (from the kohansystemfarda.com Google account) into data-booking-url below to go live. -->
                                     <div class="schedule-embed" data-booking-url="">
                                         <iframe title="Book a meeting with Mohammad Ali Kohandezh" loading="lazy"></iframe>
