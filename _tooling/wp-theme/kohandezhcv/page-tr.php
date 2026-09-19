@@ -2225,6 +2225,7 @@
                                     Bu platformlardaki uzmanlığımın <br class="d-none d-sm-block">
                                     nasıl daha iyi sonuçlar getirdiğini görün
                                 </h2>
+                                <p class="tech-scale-note text-body-3 text-black-56">Yüzdeler bu portföy için öz değerlendirmeye dayalı göreli göstergelerdir; sınav puanı veya üçüncü taraf ölçümü değildir.</p>
                                 <ul class="tech-list">
                                     <li class="wg-tech">
                                         <div class="tech-infor effectFade fadeUp no-div">

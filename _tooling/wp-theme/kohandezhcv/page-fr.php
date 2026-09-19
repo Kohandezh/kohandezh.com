@@ -2226,6 +2226,7 @@
                                     Découvrez comment mon expertise sur ces <br class="d-none d-sm-block">
                                     plateformes génère de meilleurs résultats
                                 </h2>
+                                <p class="tech-scale-note text-body-3 text-black-56">Les pourcentages sont des indicateurs relatifs autoévalués pour ce portfolio ; ce ne sont ni des notes d’examen ni des mesures tierces.</p>
                                 <ul class="tech-list">
                                     <li class="wg-tech">
                                         <div class="tech-infor effectFade fadeUp no-div">

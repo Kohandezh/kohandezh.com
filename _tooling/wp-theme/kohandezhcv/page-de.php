@@ -2226,6 +2226,7 @@
                                     Sehen Sie, wie meine Expertise mit diesen <br class="d-none d-sm-block">
                                     Plattformen bessere Ergebnisse erzielt
                                 </h2>
+                                <p class="tech-scale-note text-body-3 text-black-56">Die Prozentwerte sind selbst eingeschätzte relative Angaben für dieses Portfolio; sie sind weder Prüfungsergebnisse noch Messungen Dritter.</p>
                                 <ul class="tech-list">
                                     <li class="wg-tech">
                                         <div class="tech-infor effectFade fadeUp no-div">

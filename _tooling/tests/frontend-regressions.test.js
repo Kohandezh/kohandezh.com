@@ -36,6 +36,7 @@ for (const locale of ['index','fa','ar','de','es','fr','tr','zh','ja','ru']) {
   assert.ok(!html.includes('دکتریی'));
   const booking = doc.querySelector('.contact-schedule');
   assert.ok(booking && !/pick a slot|یک زمان را انتخاب کنید|اختر موعدًا|Wählen Sie unten|Elige un horario|Choisissez un créneau|Aşağıdan bir zaman|在下方选择|下記から時間帯|Выберите удобное время/i.test(booking.textContent), `${locale}: booking copy does not promise an unavailable slot picker`);
+  assert.ok(doc.querySelector('.section-tech-stack .tech-scale-note'), `${locale}: skill percentages carry a measurement disclaimer`);
 }
 console.log('PASS: ordered blog dates and 10-locale profile/contact regressions');
 

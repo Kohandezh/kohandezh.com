@@ -1074,6 +1074,11 @@ h6,
   gap: 12px;
 }
 
+.tech-scale-note {
+  max-width: 68ch;
+  margin: 14px 0 22px;
+}
+
 .section-tech-stack .tech-list > .br-line {
   display: none;
 }

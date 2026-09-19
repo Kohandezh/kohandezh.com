@@ -2223,6 +2223,7 @@
                                     これらのプラットフォームの専門性が <br class="d-none d-sm-block">
                                     成果につながる理由をご覧ください
                                 </h2>
+                                <p class="tech-scale-note text-body-3 text-black-56">パーセンテージはこのポートフォリオ用の自己評価による相対指標であり、試験得点や第三者による測定値ではありません。</p>
                                 <ul class="tech-list">
                                     <li class="wg-tech">
                                         <div class="tech-infor effectFade fadeUp no-div">
