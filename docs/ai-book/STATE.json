@@ -202,10 +202,10 @@
  "git": {
   "branch": "claude/kohandezh-reader-data-phase-9-8f7e49",
   "base_checkpoint": "4c1c998",
-  "new_checkpoint": "b08426a",
+  "new_checkpoint": "c37341f",
   "pushed": false,
   "session_base_checkpoint": "ff6884a",
-  "checkpoint_role": "Phase 13 ask/RAG committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
+  "checkpoint_role": "Phase 14 pdf viewer/request committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
  },
  "next_action": "Security review gate, then SEO and Performance gates per sequencing (personalized PDF remains deferred). Update all handover files after the gate."
 }
