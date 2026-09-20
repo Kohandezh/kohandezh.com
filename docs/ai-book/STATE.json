@@ -193,7 +193,7 @@
  "git": {
   "branch": "claude/kohandezh-reader-data-phase-9-8f7e49",
   "base_checkpoint": "4c1c998",
-  "new_checkpoint": "b227752",
+  "new_checkpoint": "8c63eec",
   "pushed": false
  },
  "next_action": "Cited Ask/RAG integration per CONTENT_SOURCE_MAP.md sequencing (bounded retrieval over rag chunks with citation-enforced answers, configuration-required provider), then the PDF viewer/request workflow. Do not begin PDF work before Ask/RAG is verified."
