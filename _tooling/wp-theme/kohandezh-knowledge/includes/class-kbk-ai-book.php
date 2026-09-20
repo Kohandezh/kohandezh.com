@@ -572,6 +572,16 @@ final class KBK_AI_Book {
 			nocache_headers();
 			exit;
 		}
+		$if_none_match = isset( $_SERVER['HTTP_IF_NONE_MATCH'] ) && is_string( $_SERVER['HTTP_IF_NONE_MATCH'] )
+			? $_SERVER['HTTP_IF_NONE_MATCH']
+			: null;
+		if ( KBK_AI_Book_Pdf::etag_matches( $if_none_match, (string) $plan['etag'] ) ) {
+			header( 'ETag: ' . $plan['etag'] );
+			header( 'X-Robots-Tag: noindex, nofollow' );
+			header( 'Cache-Control: private, max-age=0, must-revalidate' );
+			status_header( 304 );
+			exit;
+		}
 		foreach ( $plan['headers'] as $header ) {
 			header( $header );
 		}

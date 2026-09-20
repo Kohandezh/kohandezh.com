@@ -38,3 +38,7 @@
 1. **Rate limiting** — delegated to the provider endpoint (see NOTE above); revisit only if a same-site issuance pipeline is ever built.
 2. **Clickjacking headers** — platform-level; add to the production WordPress hardening checklist.
 3. **Provider availability** — an attacker can cause the site to attempt outbound provider calls for valid nonces only; the nonce requirement (fresh per page render) and the 30s timeout bound this to a nuisance, not an amplification vector.
+
+## Addendum (Performance gate, 2026-09-20)
+
+The stream's `Cache-Control` evolved from `no-store` (SEC-1) to `private, max-age=0, must-revalidate` with a strong sha256-derived `ETag` (PERF-1, see `PERFORMANCE_REVIEW.md`): privacy posture unchanged (no shared/proxy caching), integrity now verifiable via the ETag itself, and conditional 304 responses skip the file read entirely. The `X-Robots-Tag: noindex, nofollow` header is also sent on 304 responses.

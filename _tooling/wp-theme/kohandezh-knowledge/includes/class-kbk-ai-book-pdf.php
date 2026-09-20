@@ -83,20 +83,39 @@ class KBK_AI_Book_Pdf {
 			);
 		}
 		$filename = 'kohandezh-ai-book-' . $this->meta['edition'] . '-fa.pdf';
+		$etag     = '"' . $this->meta['sha256'] . '"';
 		return array(
 			'status'   => self::STATUS_READY,
 			'path'     => $this->meta['path'],
 			'filename' => $filename,
 			'bytes'    => $this->meta['bytes'],
+			'etag'     => $etag,
 			'headers'  => array(
 				'Content-Type: application/pdf',
 				'Content-Length: ' . (string) $this->meta['bytes'],
 				'Content-Disposition: inline; filename="' . $filename . '"',
 				'X-Robots-Tag: noindex, nofollow',
 				'Accept-Ranges: none',
-				'Cache-Control: no-store',
+				'ETag: ' . $etag,
+				'Cache-Control: private, max-age=0, must-revalidate',
 			),
 		);
+	}
+
+	/**
+	 * Pure conditional-request decision for the stream executor: the strong
+	 * ETag is the artifact's manifest sha256, so a matching If-None-Match
+	 * yields a bodyless 304 without re-reading the 38MB file.
+	 */
+	public static function etag_matches( ?string $if_none_match, string $etag ): bool {
+		if ( null === $if_none_match || '' === $if_none_match ) {
+			return false;
+		}
+		$candidates = array_map( 'trim', explode( ',', $if_none_match ) );
+		if ( in_array( '*', $candidates, true ) ) {
+			return true;
+		}
+		return in_array( $etag, $candidates, true ) || in_array( 'W/' . $etag, $candidates, true );
 	}
 
 	private function load(): void {

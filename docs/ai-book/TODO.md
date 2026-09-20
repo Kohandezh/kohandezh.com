@@ -28,7 +28,8 @@
 - [x] Add PDF viewer (`/ai-book/pdf/`, manifest-verified local stream, no third-party embedding, ADR-AB-0014) and storage-free configuration-gated request intake (`/ai-book/request-pdf/`, ADR-AB-0015) (`ai-book-pdf.test.php`).
 - [x] Security review gate over the whole `/ai-book/*` surface — PASS with SEC-1 (cache-control token) and SEC-2 (CSRF nonce) fixed (`docs/ai-book/SECURITY_REVIEW.md`).
 - [x] Technical SEO review gate — PASS with SEO-1 fixed (Layer B isolation on the shared `kbk_entity` query var; `docs/ai-book/SEO_REVIEW.md`).
-- [ ] **NEXT:** Performance review gate.
+- [x] Performance review gate — PASS with PERF-1 fixed (sha256 ETag + conditional 304 on the 38MB stream; measured per-view cost map in `docs/ai-book/PERFORMANCE_REVIEW.md`).
+- [ ] **NEXT:** Final browser/accessibility QA.
 
 ## Deferred gates
 

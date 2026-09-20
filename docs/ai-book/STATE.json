@@ -2,11 +2,11 @@
  "schema_version": 2,
  "project": "kohandezh-ai-book",
  "language": "fa",
- "updated_at": "2026-09-20T02:05:00-04:00",
+ "updated_at": "2026-09-20T02:30:00-04:00",
  "website_root": "/Users/emperor/Documents/AI/kohandezh.com",
  "book_root": "/Users/emperor/Documents/AI/AiBook",
  "worktree": "/Users/emperor/Documents/AI/kohandezh.com/.claude/worktrees/kohandezh-reader-data-phase-9-8f7e49",
- "current_phase": "SEO",
+ "current_phase": "PERFORMANCE",
  "completed_phases": [
   "PREFLIGHT",
   "REPOSITORY_DISCOVERY",
@@ -27,10 +27,11 @@
   "PDF_VIEWER",
   "PDF_REQUEST",
   "SECURITY",
-  "SEO"
+  "SEO",
+  "PERFORMANCE"
  ],
- "active_phase": "PERFORMANCE",
- "next_phase": "FINAL_QA",
+ "active_phase": "FINAL_QA",
+ "next_phase": "PRODUCTION_BUILD",
  "design_frozen": true,
  "design_status": "FROZEN_REVISION_2",
  "routes": {
@@ -122,7 +123,8 @@
   "citation": "VISUAL_COMPLETE_DATA_PENDING",
   "verification": "VISUAL_COMPLETE_DATA_PENDING",
   "security_review": "PASS_GATE_REPORT_PRESENT",
-  "seo_review": "PASS_GATE_REPORT_PRESENT"
+  "seo_review": "PASS_GATE_REPORT_PRESENT",
+  "performance_review": "PASS_GATE_REPORT_PRESENT"
  },
  "skills": {
   "environment_note": "Session-dependent; see docs/ai-book/SKILLS_MANIFEST.md. The Search phase required no new Skills beyond those already reconciled (Claude Sonnet 5, 2026-09-19).",
@@ -194,7 +196,8 @@
   "ask_subsystem_test": "PASS",
   "pdf_subsystem_test": "PASS",
   "security_gate": "PASS",
-  "seo_gate": "PASS"
+  "seo_gate": "PASS",
+  "performance_gate": "PASS"
  },
  "known_issues": [
   "WordPress ai-book routes (home/read/search/glossary) require KBK_FEATURE_AI_BOOK and KBK_AI_BOOK_ROOT configuration",
@@ -213,5 +216,5 @@
   "session_base_checkpoint": "ff6884a",
   "checkpoint_role": "SEO review gate committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
  },
- "next_action": "Performance review gate over /ai-book/* (payload, lazy artifacts, per-view cost bounds, caching posture), then Final browser/accessibility QA and Production Build per sequencing. Personalized PDF remains deferred."
+ "next_action": "Final browser/accessibility QA over the 13 static shells + live WordPress views (needs a local WP run for the latter), then the Production Build per sequencing. Personalized PDF remains deferred."
 }

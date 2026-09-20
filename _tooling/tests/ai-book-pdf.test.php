@@ -81,6 +81,21 @@ $headers = implode( "\n", $plan['headers'] );
 if ( false === strpos( $headers, 'Content-Type: application/pdf' ) || false === strpos( $headers, 'noindex' ) || false === strpos( $headers, 'Content-Disposition: inline; filename="kohandezh-ai-book-2026E1-fa.pdf"' ) || false !== strpos( $headers, $root ) ) {
 	fail( 'stream headers must be typed, noindexed, named and free of local paths' );
 }
+if ( false === strpos( $headers, 'ETag: "' . $meta['sha256'] . '"' ) || false === strpos( $headers, 'Cache-Control: private, max-age=0, must-revalidate' ) ) {
+	fail( 'stream must carry a sha256 ETag with revalidation-only private caching' );
+}
+if ( '"' . $meta['sha256'] . '"' !== $plan['etag'] ) {
+	fail( 'stream plan etag must mirror the manifest sha256' );
+}
+if ( ! KBK_AI_Book_Pdf::etag_matches( '"' . $meta['sha256'] . '"', $plan['etag'] )
+	|| ! KBK_AI_Book_Pdf::etag_matches( '"stale", ' . '"' . $meta['sha256'] . '"', $plan['etag'] )
+	|| ! KBK_AI_Book_Pdf::etag_matches( '*', $plan['etag'] )
+	|| ! KBK_AI_Book_Pdf::etag_matches( 'W/' . $plan['etag'], $plan['etag'] )
+	|| KBK_AI_Book_Pdf::etag_matches( '"deadbeef"', $plan['etag'] )
+	|| KBK_AI_Book_Pdf::etag_matches( null, $plan['etag'] )
+	|| KBK_AI_Book_Pdf::etag_matches( '', $plan['etag'] ) ) {
+	fail( 'etag conditional must accept exact/weak/list matches and reject mismatches' );
+}
 if ( '/ai-book/pdf/file/' !== $meta['stream_url'] ) {
 	fail( 'stream url must live in the canonical ai-book namespace' );
 }
