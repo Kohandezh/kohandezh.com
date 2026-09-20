@@ -2,11 +2,11 @@
  "schema_version": 2,
  "project": "kohandezh-ai-book",
  "language": "fa",
- "updated_at": "2026-09-20T02:30:00-04:00",
+ "updated_at": "2026-09-20T03:30:00-04:00",
  "website_root": "/Users/emperor/Documents/AI/kohandezh.com",
  "book_root": "/Users/emperor/Documents/AI/AiBook",
  "worktree": "/Users/emperor/Documents/AI/kohandezh.com/.claude/worktrees/kohandezh-reader-data-phase-9-8f7e49",
- "current_phase": "PERFORMANCE",
+ "current_phase": "FINAL_QA",
  "completed_phases": [
   "PREFLIGHT",
   "REPOSITORY_DISCOVERY",
@@ -27,11 +27,12 @@
   "PDF_VIEWER",
   "PDF_REQUEST",
   "SECURITY",
-  "SEO",
-  "PERFORMANCE"
- ],
- "active_phase": "FINAL_QA",
- "next_phase": "PRODUCTION_BUILD",
+   "SEO",
+   "PERFORMANCE",
+   "FINAL_QA"
+  ],
+  "active_phase": "PRODUCTION_BUILD",
+  "next_phase": "PUBLISHER_SIGNING_HUMAN_GATED",
  "design_frozen": true,
  "design_status": "FROZEN_REVISION_2",
  "routes": {
@@ -124,8 +125,9 @@
   "verification": "VISUAL_COMPLETE_DATA_PENDING",
   "security_review": "PASS_GATE_REPORT_PRESENT",
   "seo_review": "PASS_GATE_REPORT_PRESENT",
-  "performance_review": "PASS_GATE_REPORT_PRESENT"
- },
+   "performance_review": "PASS_GATE_REPORT_PRESENT",
+   "final_qa": "PASS_REPORT_PRESENT"
+  },
  "skills": {
   "environment_note": "Session-dependent; see docs/ai-book/SKILLS_MANIFEST.md. The Search phase required no new Skills beyond those already reconciled (Claude Sonnet 5, 2026-09-19).",
   "phase_a": {
@@ -195,10 +197,15 @@
   "graph_subsystem_test": "PASS",
   "ask_subsystem_test": "PASS",
   "pdf_subsystem_test": "PASS",
-  "security_gate": "PASS",
-  "seo_gate": "PASS",
-  "performance_gate": "PASS"
- },
+   "security_gate": "PASS",
+   "seo_gate": "PASS",
+   "performance_gate": "PASS",
+   "final_qa_page_load_checks": "PASS_39_OF_39",
+   "final_qa_keyboard": "PASS",
+   "final_qa_view_assertions": "PASS",
+   "final_qa_findings_fixed": 1,
+   "qa_screenshots": 12
+  },
  "known_issues": [
   "WordPress ai-book routes (home/read/search/glossary) require KBK_FEATURE_AI_BOOK and KBK_AI_BOOK_ROOT configuration",
   "Current Hub pages are noindex until canonical/duplicate-content behavior is integrated",
@@ -216,5 +223,5 @@
   "session_base_checkpoint": "ff6884a",
   "checkpoint_role": "Performance review gate committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
  },
- "next_action": "Final browser/accessibility QA over the 13 static shells + live WordPress views (needs a local WP run for the latter), then the Production Build per sequencing. Personalized PDF remains deferred."
+ "next_action": "Production Build per sequencing (final asset/build verification, full suite green, handover docs), then human-gated publisher signing/deployment. Personalized PDF remains deferred."
 }

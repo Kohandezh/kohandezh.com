@@ -29,12 +29,9 @@
 - [x] Security review gate over the whole `/ai-book/*` surface — PASS with SEC-1 (cache-control token) and SEC-2 (CSRF nonce) fixed (`docs/ai-book/SECURITY_REVIEW.md`).
 - [x] Technical SEO review gate — PASS with SEO-1 fixed (Layer B isolation on the shared `kbk_entity` query var; `docs/ai-book/SEO_REVIEW.md`).
 - [x] Performance review gate — PASS with PERF-1 fixed (sha256 ETag + conditional 304 on the 38MB stream; measured per-view cost map in `docs/ai-book/PERFORMANCE_REVIEW.md`).
-- [ ] **NEXT:** Final browser/accessibility QA.
+- [x] Final browser/accessibility QA — PASS: 39/39 page-load checks (13 routes × 3 viewports, zero console errors / no overflow / RTL / skip link), keyboard skip-link→main verified, QA-1 fixed (graph canvas `role="img"` in the shell builder); report + 12 screenshots in `docs/ai-book/FINAL_QA.md` and `docs/ai-book/screenshots/`.
+- [ ] **NEXT:** Production Build per sequencing.
 
 ## Deferred gates
 
-- [ ] Security review.
-- [ ] Technical SEO review.
-- [ ] Performance review.
-- [ ] Final browser and accessibility QA.
 - [ ] Publisher signing and production deployment (human-gated, out of scope here).
