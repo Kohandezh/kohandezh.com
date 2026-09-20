@@ -190,7 +190,7 @@
  "git": {
   "branch": "claude/kohandezh-reader-data-phase-9-8f7e49",
   "base_checkpoint": "4c1c998",
-  "new_checkpoint": "ff6884a",
+  "new_checkpoint": "b227752",
   "pushed": false
  },
  "next_action": "Bounded Knowledge Graph explorer over knowledge/graph.json (3,671 nodes / 10,474 edges, capped neighborhoods, no bulk export) at /ai-book/graph/, then wire Related Concepts/Related Sections into the Reader. Do not begin Ask/RAG or PDF integration before the graph explorer is verified."
