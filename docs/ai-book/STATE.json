@@ -196,8 +196,10 @@
  "git": {
   "branch": "claude/kohandezh-reader-data-phase-9-8f7e49",
   "base_checkpoint": "4c1c998",
-  "new_checkpoint": "8c63eec",
-  "pushed": false
+  "new_checkpoint": "b08426a",
+  "pushed": false,
+  "session_base_checkpoint": "ff6884a",
+  "checkpoint_role": "Phase 13 ask/RAG committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
  },
  "next_action": "PDF viewer/request workflow per CONTENT_SOURCE_MAP.md sequencing (viewer over release/06_book_fa.pdf with honest degradation, request form with bounded storage-free behavior), then Security/SEO/Performance gates. Personalized PDF remains deferred."
 }
