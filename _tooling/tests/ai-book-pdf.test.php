@@ -26,6 +26,9 @@ function status_header( $code ) { $GLOBALS['kbk_test_status'] = $code; }
 function nocache_headers() {}
 function add_filter( $name, $callback, $priority = 10 ) {}
 function add_action( $name, $callback, $priority = 10 ) {}
+function wp_create_nonce( $action ) { return 'test-nonce-' . $action; }
+function wp_verify_nonce( $nonce, $action ) { return 'test-nonce-' . $action === $nonce ? 1 : false; }
+function wp_nonce_field( $action, $name ) {}
 function wp_remote_post( $url, $args ) {
 	$queue = $GLOBALS['kbk_request_stub_responses'] ?? array();
 	$GLOBALS['kbk_request_calls'][] = array( 'url' => $url, 'args' => $args );
@@ -211,5 +214,25 @@ $request_state = KBK_AI_Book::current_request();
 if ( 'CONFIG_REQUIRED' !== $request_state['status'] || array() !== $request_state['errors'] || null !== $request_state['reference'] || '' !== $request_state['reposted']['email'] || false !== $request_state['provider'] ) {
 	fail( 'route layer request must degrade to a safe empty state' );
 }
+$_SERVER['REQUEST_METHOD'] = 'POST';
+$_POST                     = array( 'kbk_nonce' => 'forged-token' );
+$forged = KBK_AI_Book::current_request();
+if ( 'INPUT_INVALID' !== $forged['status'] || array( array( 'field' => 'session', 'code' => 'EXPIRED' ) ) !== $forged['errors'] ) {
+	fail( 'forged nonce must be rejected before any provider call' );
+}
+$_POST = array(
+	KBK_AI_Book_Request::NONCE_FIELD => wp_create_nonce( KBK_AI_Book_Request::NONCE_ACTION ),
+	'name'                           => 'سارا',
+	'email'                          => 'sara@example.com',
+	'use'                            => 'personal',
+	'reason'                         => '',
+	'consent'                        => '1',
+);
+$clean = KBK_AI_Book::current_request();
+if ( 'CONFIG_REQUIRED' !== $clean['status'] || array() !== $clean['errors'] || null !== $clean['reference'] ) {
+	fail( 'valid nonce without provider must stay honest' );
+}
+$_SERVER['REQUEST_METHOD'] = 'GET';
+$_POST                     = array();
 
 echo "PASS ai-book-pdf: manifest-backed viewer facts with offline sha256 verification, typed noindexed stream plan, tampered manifest/file fail-closed paths, bounded request intake with per-field errors, honest unconfigured state and provider contract (unavailable/invalid/rejected/ok)\n";

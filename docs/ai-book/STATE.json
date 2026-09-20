@@ -2,11 +2,11 @@
  "schema_version": 2,
  "project": "kohandezh-ai-book",
  "language": "fa",
- "updated_at": "2026-09-20T01:05:00-04:00",
+ "updated_at": "2026-09-20T01:40:00-04:00",
  "website_root": "/Users/emperor/Documents/AI/kohandezh.com",
  "book_root": "/Users/emperor/Documents/AI/AiBook",
  "worktree": "/Users/emperor/Documents/AI/kohandezh.com/.claude/worktrees/kohandezh-reader-data-phase-9-8f7e49",
- "current_phase": "PDF_REQUEST",
+ "current_phase": "SECURITY",
  "completed_phases": [
   "PREFLIGHT",
   "REPOSITORY_DISCOVERY",
@@ -25,10 +25,11 @@
   "KNOWLEDGE_GRAPH",
   "ASK_RAG",
   "PDF_VIEWER",
-  "PDF_REQUEST"
+  "PDF_REQUEST",
+  "SECURITY"
  ],
- "active_phase": "SECURITY",
- "next_phase": "SEO",
+ "active_phase": "SEO",
+ "next_phase": "PERFORMANCE",
  "design_frozen": true,
  "design_status": "FROZEN_REVISION_2",
  "routes": {
@@ -118,7 +119,8 @@
   "pdf_request": "IMPLEMENTED_PROVIDER_REQUIRED",
   "personalized_pdf": "DEFERRED",
   "citation": "VISUAL_COMPLETE_DATA_PENDING",
-  "verification": "VISUAL_COMPLETE_DATA_PENDING"
+  "verification": "VISUAL_COMPLETE_DATA_PENDING",
+  "security_review": "PASS_GATE_REPORT_PRESENT"
  },
  "skills": {
   "environment_note": "Session-dependent; see docs/ai-book/SKILLS_MANIFEST.md. The Search phase required no new Skills beyond those already reconciled (Claude Sonnet 5, 2026-09-19).",
@@ -188,7 +190,8 @@
   "catalog_subsystem_test": "PASS",
   "graph_subsystem_test": "PASS",
   "ask_subsystem_test": "PASS",
-  "pdf_subsystem_test": "PASS"
+  "pdf_subsystem_test": "PASS",
+  "security_gate": "PASS"
  },
  "known_issues": [
   "WordPress ai-book routes (home/read/search/glossary) require KBK_FEATURE_AI_BOOK and KBK_AI_BOOK_ROOT configuration",
@@ -207,5 +210,5 @@
   "session_base_checkpoint": "ff6884a",
   "checkpoint_role": "Phase 14 pdf viewer/request committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
  },
- "next_action": "Security review gate, then SEO and Performance gates per sequencing (personalized PDF remains deferred). Update all handover files after the gate."
+ "next_action": "Technical SEO review gate over /ai-book/* (noindex posture, canonical namespace, structured data honesty, sitemap exclusion), then Performance gate, Final QA and Production Build per sequencing. Personalized PDF remains deferred."
 }

@@ -523,12 +523,29 @@ final class KBK_AI_Book {
 				'reposted'  => $reposted,
 			);
 		}
+		$nonce = isset( $_POST[ KBK_AI_Book_Request::NONCE_FIELD ] ) && is_string( $_POST[ KBK_AI_Book_Request::NONCE_FIELD ] )
+			? $_POST[ KBK_AI_Book_Request::NONCE_FIELD ]
+			: '';
+		if ( 1 !== wp_verify_nonce( $nonce, KBK_AI_Book_Request::NONCE_ACTION ) ) {
+			return array(
+				'status'    => 'INPUT_INVALID',
+				'errors'    => array(
+					array(
+						'field' => 'session',
+						'code'  => 'EXPIRED',
+					),
+				),
+				'reference' => null,
+				'provider'  => $engine->provider_configured(),
+				'reposted'  => $reposted,
+			);
+		}
 		$payload = array(
 			'name'    => $reposted['name'],
 			'email'   => $reposted['email'],
 			'use'     => $reposted['use'],
 			'reason'  => $reposted['reason'],
-			'consent' => isset( $_POST['consent'] ) && is_string( $_POST['consent'] ) ? $_POST['consent'] : '',
+			'consent' => $reposted['consent'],
 		);
 		$result = $engine->submit( $payload );
 		return array(

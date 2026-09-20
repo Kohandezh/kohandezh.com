@@ -18,6 +18,9 @@ function sanitize_text_field( $value ) { return is_scalar( $value ) ? trim( stri
 function sanitize_textarea_field( $value ) { return is_scalar( $value ) ? trim( strip_tags( (string) $value ) ) : ''; }
 function status_header( $code ) { $GLOBALS['kbk_test_status'] = $code; }
 function nocache_headers() {}
+function wp_create_nonce( $action ) { return 'test-nonce-' . $action; }
+function wp_verify_nonce( $nonce, $action ) { return 'test-nonce-' . $action === $nonce ? 1 : false; }
+function wp_nonce_field( $action, $name ) {}
 function plugins_url( $path, $file ) { return 'https://example.test/plugin/' . $path; }
 function wp_enqueue_style( $handle, $src, $deps, $version ) { $GLOBALS['kbk_test_assets'][] = array( 'style', $handle, $src, $version ); }
 function wp_enqueue_script( $handle, $src, $deps, $version, $footer ) { $GLOBALS['kbk_test_assets'][] = array( 'script', $handle, $src, $version, $footer ); }
@@ -117,6 +120,26 @@ $request_state = KBK_AI_Book::current_request();
 if ( 'CONFIG_REQUIRED' !== $request_state['status'] || false !== $request_state['provider'] || array() !== $request_state['errors'] || null !== $request_state['reference'] ) {
 	fwrite( STDERR, "FAIL request without provider must degrade to a safe empty state\n" ); exit( 1 );
 }
+$_SERVER['REQUEST_METHOD'] = 'POST';
+$_POST                     = array( 'kbk_nonce' => 'forged' );
+$forged = KBK_AI_Book::current_request();
+if ( 'INPUT_INVALID' !== $forged['status'] || array( array( 'field' => 'session', 'code' => 'EXPIRED' ) ) !== $forged['errors'] ) {
+	fwrite( STDERR, "FAIL forged nonce must be rejected before any provider call\n" ); exit( 1 );
+}
+$_POST = array(
+	KBK_AI_Book_Request::NONCE_FIELD => wp_create_nonce( KBK_AI_Book_Request::NONCE_ACTION ),
+	'name'                           => 'سارا',
+	'email'                          => 'sara@example.com',
+	'use'                            => 'personal',
+	'reason'                         => '',
+	'consent'                        => '1',
+);
+$valid_nonce = KBK_AI_Book::current_request();
+if ( 'CONFIG_REQUIRED' !== $valid_nonce['status'] || array() !== $valid_nonce['errors'] ) {
+	fwrite( STDERR, "FAIL valid nonce without provider must degrade honestly\n" ); exit( 1 );
+}
+$_SERVER['REQUEST_METHOD'] = 'GET';
+$_POST                     = array();
 $GLOBALS['kbk_test_query']['kbk_ai_book'] = 'pdf';
 $GLOBALS['kbk_test_query'][ KBK_AI_Book::PDF_FILE_QUERY_VAR ] = '1';
 if ( '' === KBK_AI_Book::current_view() ) {

@@ -33,6 +33,9 @@ class KBK_AI_Book_Request {
 
 	const USE_PURPOSES = array( 'personal', 'education', 'research' );
 
+	const NONCE_ACTION = 'kbk_ai_book_request';
+	const NONCE_FIELD  = 'kbk_nonce';
+
 	/** @var array{endpoint:string,api_key:string}|null */
 	private $provider;
 

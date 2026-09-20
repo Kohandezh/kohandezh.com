@@ -94,7 +94,7 @@ class KBK_AI_Book_Pdf {
 				'Content-Disposition: inline; filename="' . $filename . '"',
 				'X-Robots-Tag: noindex, nofollow',
 				'Accept-Ranges: none',
-				'Cache-Control: nostore',
+				'Cache-Control: no-store',
 			),
 		);
 	}

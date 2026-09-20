@@ -26,7 +26,8 @@
 - [x] Add bounded accessible KG explorer (`/ai-book/graph/` over `knowledge/graph.json`, depth-1, capped) and wire Related Concepts/Related Sections into the Reader (`ai-book-graph.test.php`, ADR-AB-0012).
 - [x] Add cited Ask/RAG (`/ai-book/ask/`): local bounded retrieval over the 2,420-chunk corpus with repository-resolvable citations, answer provider strictly configuration-gated under a `used ⊆ offered` contract, honest PROVIDER_REQUIRED/unavailable states (`ai-book-ask.test.php`, ADR-AB-0013).
 - [x] Add PDF viewer (`/ai-book/pdf/`, manifest-verified local stream, no third-party embedding, ADR-AB-0014) and storage-free configuration-gated request intake (`/ai-book/request-pdf/`, ADR-AB-0015) (`ai-book-pdf.test.php`).
-- [ ] **NEXT:** Security review gate.
+- [x] Security review gate over the whole `/ai-book/*` surface — PASS with SEC-1 (cache-control token) and SEC-2 (CSRF nonce) fixed (`docs/ai-book/SECURITY_REVIEW.md`).
+- [ ] **NEXT:** Technical SEO review gate.
 
 ## Deferred gates
 
