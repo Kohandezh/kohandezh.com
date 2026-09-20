@@ -224,6 +224,146 @@ final class KBK_AI_Book_Artifacts {
 	}
 
 	/**
+	 * Validate manifests/sources.json — the audited 18-document source list.
+	 *
+	 * @param array<string,mixed> $artifact Decoded manifest.
+	 * @return array<string,mixed>
+	 */
+	public static function validate_sources_manifest( array $artifact ): array {
+		self::require_keys( $artifact, array( 'unique_source_document_count', 'documents' ), 'sources' );
+		self::positive_int( $artifact['unique_source_document_count'], 'sources.unique_source_document_count' );
+		self::list_value( $artifact['documents'], 'sources.documents' );
+		self::same( $artifact['unique_source_document_count'], count( $artifact['documents'] ), 'sources.unique_source_document_count' );
+		$seen = array();
+		foreach ( $artifact['documents'] as $index => $document ) {
+			$path = 'sources.documents[' . $index . ']';
+			self::object_value( $document, $path );
+			self::require_keys( $document, array( 'doc_key', 'filename', 'sha256', 'pages', 'title' ), $path );
+			self::doc_key( $document['doc_key'], $path . '.doc_key' );
+			if ( isset( $seen[ $document['doc_key'] ] ) ) {
+				throw new UnexpectedValueException( $path . ' duplicates a document key' );
+			}
+			$seen[ $document['doc_key'] ] = true;
+			self::non_empty_string( $document['filename'], $path . '.filename' );
+			self::matches( '/^[a-f0-9]{64}$/', $document['sha256'], $path . '.sha256' );
+			self::positive_int( $document['pages'], $path . '.pages' );
+			self::non_empty_string( $document['title'], $path . '.title' );
+		}
+		return $artifact;
+	}
+
+	/**
+	 * Validate master/bibliography.json.
+	 *
+	 * @param array<string,mixed> $artifact Decoded bibliography.
+	 * @return array<string,mixed>
+	 */
+	public static function validate_bibliography( array $artifact ): array {
+		self::require_keys( $artifact, array( 'entries' ), 'bibliography' );
+		self::list_value( $artifact['entries'], 'bibliography.entries' );
+		$seen = array();
+		foreach ( $artifact['entries'] as $index => $entry ) {
+			$path = 'bibliography.entries[' . $index . ']';
+			self::object_value( $entry, $path );
+			self::require_keys( $entry, array( 'doc_key', 'title', 'organization', 'publication_type', 'publication_status', 'sha256' ), $path );
+			self::doc_key( $entry['doc_key'], $path . '.doc_key' );
+			if ( isset( $seen[ $entry['doc_key'] ] ) ) {
+				throw new UnexpectedValueException( $path . ' duplicates a document key' );
+			}
+			$seen[ $entry['doc_key'] ] = true;
+			self::non_empty_string( $entry['title'], $path . '.title' );
+			self::non_empty_string( $entry['organization'], $path . '.organization' );
+			self::non_empty_string( $entry['publication_type'], $path . '.publication_type' );
+			self::non_empty_string( $entry['publication_status'], $path . '.publication_status' );
+			self::matches( '/^[a-f0-9]{64}$/', $entry['sha256'], $path . '.sha256' );
+		}
+		return $artifact;
+	}
+
+	/**
+	 * Validate master/source_map.json — the per-section source mapping.
+	 *
+	 * @param array<string,mixed> $artifact Decoded source map.
+	 * @param string              $edition  Expected edition for content IDs.
+	 * @return array<string,mixed>
+	 */
+	public static function validate_source_map( array $artifact, string $edition ): array {
+		self::list_value( $artifact, 'source_map' );
+		foreach ( $artifact as $index => $entry ) {
+			$path = 'source_map[' . $index . ']';
+			self::object_value( $entry, $path );
+			self::require_keys( $entry, array( 'content_id', 'structural_id', 'origin', 'source_doc' ), $path );
+			self::content_id( $entry['content_id'], $path . '.content_id', $edition );
+			self::structural_id( $entry['structural_id'], $path . '.structural_id', $edition );
+			self::origin( $entry['origin'], $path . '.origin' );
+			self::doc_key( $entry['source_doc'], $path . '.source_doc' );
+		}
+		return $artifact;
+	}
+
+	/**
+	 * Validate one templates/TPL-*.json template card.
+	 *
+	 * @param array<string,mixed> $template Decoded template.
+	 * @return array<string,mixed>
+	 */
+	public static function validate_template( array $template ): array {
+		self::require_keys( $template, array( 'template_id', 'title_fa', 'fields', 'origin' ), 'template' );
+		self::matches( '/^TPL-P\d{2}-\d{1,2}$/', $template['template_id'], 'template.template_id' );
+		self::non_empty_string( $template['title_fa'], 'template.title_fa' );
+		if ( 'editorial_template_ir' !== $template['origin'] ) {
+			throw new UnexpectedValueException( 'template.origin has an unsupported value' );
+		}
+		if ( isset( $template['note_fa'] ) && ! is_string( $template['note_fa'] ) ) {
+			throw new UnexpectedValueException( 'template.note_fa must be a string' );
+		}
+		self::list_value( $template['fields'], 'template.fields' );
+		foreach ( $template['fields'] as $index => $field ) {
+			$path = 'template.fields[' . $index . ']';
+			self::object_value( $field, $path );
+			self::require_keys( $field, array( 'name_fa', 'name_en', 'description_fa' ), $path );
+			self::non_empty_string( $field['name_fa'], $path . '.name_fa' );
+			self::non_empty_string( $field['name_en'], $path . '.name_en' );
+			self::non_empty_string( $field['description_fa'], $path . '.description_fa' );
+			if ( isset( $field['example_fa'] ) && ! is_string( $field['example_fa'] ) ) {
+				throw new UnexpectedValueException( $path . '.example_fa must be a string' );
+			}
+		}
+		return $template;
+	}
+
+	/**
+	 * Validate one knowledge/entities.jsonl entity line (filtered public read
+	 * model source). Mentions must be real content IDs of this edition.
+	 *
+	 * @param array<string,mixed> $entity  Decoded line.
+	 * @param string              $edition Expected edition.
+	 * @return array<string,mixed>
+	 */
+	public static function validate_entity( array $entity, string $edition ): array {
+		self::require_keys( $entity, array( 'entity_id', 'type', 'labels', 'origin', 'documents' ), 'entity' );
+		self::matches( '/^E:[A-Za-z][A-Za-z0-9]{0,40}:[a-z0-9_-]{1,100}$/', $entity['entity_id'], 'entity.entity_id' );
+		self::matches( '/^[A-Za-z][A-Za-z0-9]{0,40}$/', $entity['type'], 'entity.type' );
+		self::object_value( $entity['labels'], 'entity.labels' );
+		foreach ( array( 'en', 'fa' ) as $lang ) {
+			if ( isset( $entity['labels'][ $lang ] ) && ! is_string( $entity['labels'][ $lang ] ) ) {
+				throw new UnexpectedValueException( 'entity.labels.' . $lang . ' must be a string' );
+			}
+		}
+		if ( ! in_array( $entity['origin'], array( 'source', 'editorial' ), true ) ) {
+			throw new UnexpectedValueException( 'entity.origin has an unsupported value' );
+		}
+		self::list_value( $entity['documents'], 'entity.documents' );
+		if ( isset( $entity['mentions'] ) ) {
+			self::list_value( $entity['mentions'], 'entity.mentions' );
+			foreach ( $entity['mentions'] as $content_id ) {
+				self::content_id( $content_id, 'entity.mentions entry', $edition );
+			}
+		}
+		return $entity;
+	}
+
+	/**
 	 * Validate that the three artifact families describe the same edition/IDs.
 	 *
 	 * @param array<string,mixed> $book Master book.
@@ -270,6 +410,13 @@ final class KBK_AI_Book_Artifacts {
 			if ( ! array_key_exists( $key, $value ) ) {
 				throw new UnexpectedValueException( 'Missing required field ' . $path . '.' . $key );
 			}
+		}
+	}
+
+	/** @param mixed $value */
+	private static function doc_key( $value, string $path ): void {
+		if ( ! is_string( $value ) || 1 !== preg_match( '/^[A-Za-z0-9][A-Za-z0-9._-]{1,63}$/', $value ) ) {
+			throw new UnexpectedValueException( $path . ' has an invalid document key format' );
 		}
 	}
 

@@ -100,17 +100,92 @@ $read_link = static function ( string $part_id, ?string $chapter_id = null, ?str
 		$glossary_term     = KBK_AI_Book::current_glossary_term();
 		$requested_concept = KBK_AI_Book::requested_concept();
 		?>
-		<?php if ( null === $glossary_term && null !== $requested_concept ) : ?>
-		<header class="ab-page-hero"><p class="ab-kicker">یافت نشد</p><h1>این واژه در واژه‌نامه موجود نیست</h1><p class="ab-lead">شناسهٔ مفهوم درخواستی با هیچ واژهٔ تأییدشده‌ای مطابقت ندارد.</p><div class="ab-actions"><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/search/' ) ); ?>">جست‌وجو در کتاب</a></div></header>
-		<?php elseif ( null === $glossary_term ) : ?>
-		<header class="ab-page-hero"><p class="ab-kicker">واژه‌نامه</p><h1>واژه‌نامهٔ کتاب</h1><p class="ab-lead">این صفحه مقصد پیوند عمیق واژه‌ها است؛ واژه‌ها را از طریق جست‌وجوی کتاب باز کنید.</p><div class="ab-actions"><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/search/' ) ); ?>">جست‌وجو در کتاب</a></div></header>
-		<?php else : ?>
-		<nav class="ab-breadcrumb" aria-label="مسیر"><a href="<?php echo esc_url( home_url( '/ai-book/' ) ); ?>">کتاب</a><span aria-current="page">واژه‌نامه</span></nav>
+		<?php if ( null !== $glossary_term ) : ?>
+		<nav class="ab-breadcrumb" aria-label="مسیر"><a href="<?php echo esc_url( home_url( '/ai-book/' ) ); ?>">کتاب</a><a href="<?php echo esc_url( home_url( '/ai-book/glossary/' ) ); ?>">واژه‌نامه</a><span aria-current="page"><?php echo esc_html( $glossary_term['title'] ); ?></span></nav>
 		<article class="ab-prose"><header class="ab-page-hero"><p class="ab-kicker">واژه‌نامه · <?php echo esc_html( $glossary_status_map[ $glossary_term['status'] ] ?? $glossary_term['status'] ); ?><?php echo '' !== $glossary_term['domain'] ? ' · ' . esc_html( $glossary_term['domain'] ) : ''; ?></p><h1><?php echo esc_html( $glossary_term['title'] ); ?></h1><p class="ab-lead"><bdi><?php echo esc_html( $glossary_term['english'] ); ?></bdi><?php echo '' !== $glossary_term['acronym'] ? ' · <bdi>' . esc_html( $glossary_term['acronym'] ) . '</bdi>' : ''; ?></p></header>
 		<section><h2>تعریف</h2><div class="ab-layer ab-layer-source"><span>واژه‌نامهٔ تأییدشده</span><p><?php echo $render_segments( $glossary_term['snippet_segments'] ); ?></p></div>
 		<?php if ( $glossary_term['alternatives_fa'] ) : ?><p class="ab-lead">نام‌های دیگر: <?php echo esc_html( implode( '، ', $glossary_term['alternatives_fa'] ) ); ?></p><?php endif; ?>
 		<?php if ( $glossary_term['source_documents'] ) : ?><p class="ab-card-meta">منابع: <bdi><?php echo esc_html( implode( '، ', $glossary_term['source_documents'] ) ); ?></bdi></p><?php endif; ?>
 		<p class="ab-card-meta"><bdi><?php echo esc_html( $glossary_term['concept_id'] ); ?></bdi></p></section></article>
+		<?php else :
+			$glossary_catalog = KBK_AI_Book::catalog();
+			$glossary_terms   = $glossary_catalog ? $glossary_catalog->glossary_terms() : array();
+			?>
+			<?php if ( null !== $requested_concept ) : ?>
+			<header class="ab-page-hero"><p class="ab-kicker">یافت نشد</p><h1>این واژه در واژه‌نامه موجود نیست</h1><p class="ab-lead">شناسهٔ مفهوم درخواستی با هیچ واژهٔ تأییدشده‌ای مطابقت ندارد.</p><div class="ab-actions"><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/glossary/' ) ); ?>">فهرست واژه‌ها</a></div></header>
+			<?php elseif ( ! $glossary_catalog || array() === $glossary_terms ) : ?>
+			<header class="ab-page-hero"><p class="ab-kicker">وضعیت داده</p><h1>واژه‌نامه موقتاً در دسترس نیست</h1><p class="ab-lead">پیکربندی منبع canonical کامل نشده یا اعتبار داده تأیید نشده است.</p><p><bdi><?php echo esc_html( KBK_AI_Book::catalog_status() ); ?></bdi></p></header>
+			<?php else : ?>
+			<header class="ab-page-hero"><p class="ab-kicker">واژه‌نامه · <?php echo esc_html( count( $glossary_terms ) ); ?> واژه</p><h1>واژه‌نامهٔ کتاب</h1><p class="ab-lead">واژه‌های تأییدشدهٔ فارسی با معادل انگلیسی و سرواژه؛ مرتب بر پایهٔ واژهٔ فارسی.</p></header>
+			<section class="ab-section"><nav class="ab-term-list" aria-label="فهرست واژه‌ها"><?php foreach ( $glossary_terms as $term_row ) : ?><a href="<?php echo esc_url( home_url( '/ai-book/glossary/?' . KBK_AI_Book::CONCEPT_QUERY_VAR . '=' . rawurlencode( $term_row['concept_id'] ) ) ); ?>"><b><?php echo esc_html( $term_row['preferred_fa'] ); ?></b><bdi><?php echo '' !== $term_row['acronym'] ? esc_html( $term_row['acronym'] ) : esc_html( $term_row['english'] ); ?></bdi></a><?php endforeach; ?></nav></section>
+			<?php endif; ?>
+		<?php endif; ?>
+	<?php elseif ( 'sources' === $view ) :
+		$sources_catalog = KBK_AI_Book::catalog();
+		$sources         = $sources_catalog ? $sources_catalog->sources() : array();
+		?>
+		<?php if ( ! $sources_catalog || array() === $sources ) : ?>
+		<header class="ab-page-hero"><p class="ab-kicker">وضعیت داده</p><h1>فهرست منابع موقتاً در دسترس نیست</h1><p class="ab-lead">پیکربندی منبع canonical کامل نشده یا اعتبار داده تأیید نشده است.</p><p><bdi><?php echo esc_html( KBK_AI_Book::catalog_status() ); ?></bdi></p></header>
+		<?php else : ?>
+		<header class="ab-page-hero"><p class="ab-kicker">مستندات پایه · <?php echo esc_html( count( $sources ) ); ?> سند</p><h1>منابع کتاب</h1><p class="ab-lead">هجده سند اصلی ممیزی‌شده؛ هر فصل کتاب به سند و صفحات منبع خود ارجاع می‌دهد.</p></header>
+		<section class="ab-section"><div class="ab-results">
+			<?php foreach ( $sources as $source ) : ?>
+			<article class="ab-card"><span class="ab-card-meta"><?php echo esc_html( $source['doc_key'] ); ?></span><h3><?php echo esc_html( $source['title'] ); ?></h3><p><?php echo esc_html( trim( $source['organization'] . ( $source['publication_date'] ? ' · ' . $source['publication_date'] : '' ) . ( $source['publication_type'] ? ' · ' . $source['publication_type'] : '' ) . ( $source['publication_status'] ? ' · ' . $source['publication_status'] : '' ) ) ); ?></p><p class="ab-card-meta"><?php echo esc_html( $source['sections_count'] ); ?> بخش از کتاب · <?php echo esc_html( $source['pages'] ); ?> صفحه<?php echo '' !== $source['doi_url'] ? ' · <bdi><a href="' . esc_url( $source['doi_url'] ) . '">DOI</a></bdi>' : ''; ?></p><span class="ab-card-meta"><bdi><?php echo esc_html( substr( $source['sha256'], 0, 16 ) ); ?>…</bdi></span></article>
+			<?php endforeach; ?>
+		</div></section>
+		<?php endif; ?>
+	<?php elseif ( 'templates' === $view ) :
+		$templates_catalog = KBK_AI_Book::catalog();
+		$templates         = $templates_catalog ? $templates_catalog->templates() : array();
+		$template_detail   = $templates_catalog ? $templates_catalog->template( (string) KBK_AI_Book::requested_template() ) : null;
+		?>
+		<?php if ( ! $templates_catalog || array() === $templates ) : ?>
+		<header class="ab-page-hero"><p class="ab-kicker">وضعیت داده</p><h1>قالب‌ها موقتاً در دسترس نیستند</h1><p class="ab-lead">پیکربندی منبع canonical کامل نشده یا اعتبار داده تأیید نشده است.</p><p><bdi><?php echo esc_html( KBK_AI_Book::catalog_status() ); ?></bdi></p></header>
+		<?php elseif ( null !== $template_detail ) : ?>
+		<nav class="ab-breadcrumb" aria-label="مسیر"><a href="<?php echo esc_url( home_url( '/ai-book/' ) ); ?>">کتاب</a><a href="<?php echo esc_url( home_url( '/ai-book/templates/' ) ); ?>">قالب‌ها</a><span aria-current="page"><?php echo esc_html( $template_detail['template_id'] ); ?></span></nav>
+		<article class="ab-prose"><header class="ab-page-hero"><p class="ab-kicker">قالب · <?php echo esc_html( $template_detail['template_id'] ); ?></p><h1><?php echo esc_html( $template_detail['title_fa'] ); ?></h1><p class="ab-lead"><?php echo esc_html( $template_detail['note_fa'] ); ?></p></header>
+		<section><h2>فیلدهای قالب</h2><?php foreach ( $template_detail['fields'] as $field ) : ?><div class="ab-layer ab-layer-editorial"><span><bdi><?php echo esc_html( $field['name_en'] ); ?></bdi></span><p><b><?php echo esc_html( $field['name_fa'] ); ?></b> — <?php echo esc_html( $field['description_fa'] ); ?><?php echo '' !== $field['example_fa'] ? '<br>نمونه: ' . esc_html( $field['example_fa'] ) : ''; ?></p></div><?php endforeach; ?>
+		<?php if ( $template_detail['derived_from'] ) : ?><p class="ab-card-meta">برگرفته از: <bdi><?php echo esc_html( implode( '، ', $template_detail['derived_from'] ) ); ?></bdi></p><?php endif; ?></section></article>
+		<?php else : ?>
+		<header class="ab-page-hero"><p class="ab-kicker">قالب‌های کاربردی · <?php echo esc_html( count( $templates ) ); ?> قالب</p><h1>قالب‌های کتاب</h1><p class="ab-lead">نمونه‌های پیشنهادی تدوینگر برای پیاده‌سازی حاکمیت هوش مصنوعی در سازمان.</p></header>
+		<section class="ab-section"><div class="ab-results">
+			<?php foreach ( $templates as $template_card ) : ?>
+			<a class="ab-card" href="<?php echo esc_url( home_url( '/ai-book/templates/?' . KBK_AI_Book::TEMPLATE_QUERY_VAR . '=' . rawurlencode( $template_card['template_id'] ) ) ); ?>"><span class="ab-card-meta"><?php echo esc_html( $template_card['template_id'] ); ?></span><h3><?php echo esc_html( $template_card['title_fa'] ); ?></h3><p><?php echo esc_html( count( $template_card['fields'] ) ); ?> فیلد</p><span class="ab-card-link">مشاهده قالب</span></a>
+			<?php endforeach; ?>
+		</div></section>
+		<?php endif; ?>
+	<?php elseif ( 'concepts' === $view ) :
+		$concepts_catalog = KBK_AI_Book::catalog();
+		$entity_detail    = $concepts_catalog ? $concepts_catalog->entity( (string) KBK_AI_Book::requested_entity() ) : null;
+		?>
+		<?php if ( ! $concepts_catalog ) : ?>
+		<header class="ab-page-hero"><p class="ab-kicker">وضعیت داده</p><h1>مفاهیم موقتاً در دسترس نیستند</h1><p class="ab-lead">پیکربندی منبع canonical کامل نشده یا اعتبار داده تأیید نشده است.</p><p><bdi><?php echo esc_html( KBK_AI_Book::catalog_status() ); ?></bdi></p></header>
+		<?php elseif ( null !== $entity_detail ) : ?>
+		<nav class="ab-breadcrumb" aria-label="مسیر"><a href="<?php echo esc_url( home_url( '/ai-book/' ) ); ?>">کتاب</a><a href="<?php echo esc_url( home_url( '/ai-book/concepts/' ) ); ?>">مفاهیم</a><span aria-current="page"><?php echo esc_html( $entity_detail['label_fa'] !== '' ? $entity_detail['label_fa'] : $entity_detail['label_en'] ); ?></span></nav>
+		<article class="ab-prose"><header class="ab-page-hero"><p class="ab-kicker">مفهوم · <?php echo esc_html( $entity_detail['type'] ); ?></p><h1><?php echo esc_html( '' !== $entity_detail['label_fa'] ? $entity_detail['label_fa'] : $entity_detail['label_en'] ); ?></h1><p class="ab-lead"><bdi><?php echo esc_html( $entity_detail['label_en'] ); ?></bdi></p></header>
+		<section><h2>ارجاع در کتاب</h2><div class="ab-layer <?php echo esc_attr( 'editorial' === $entity_detail['origin'] ? 'ab-layer-editorial' : 'ab-layer-source' ); ?>"><span><?php echo esc_html( 'editorial' === $entity_detail['origin'] ? 'جمع‌بندی تدوینگر' : 'استخراج از منبع' ); ?></span>
+		<?php if ( '' !== $entity_detail['definition_en'] ) : ?><p><bdi><?php echo esc_html( $entity_detail['definition_en'] ); ?></bdi></p><?php endif; ?>
+		<?php if ( $entity_detail['documents'] ) : ?><p class="ab-card-meta">اسناد: <bdi><?php echo esc_html( implode( '، ', $entity_detail['documents'] ) ); ?></bdi></p><?php endif; ?></div>
+		<?php if ( $entity_detail['sections'] ) : ?><p class="ab-lead"><?php echo esc_html( $entity_detail['mentions_total'] ); ?> بخش از کتاب به این مفهوم ارجاع می‌دهد<?php echo $entity_detail['mentions_total'] > count( $entity_detail['sections'] ) ? '؛ نمایش اولین ' . esc_html( count( $entity_detail['sections'] ) ) . ' بخش' : ''; ?>:</p><div class="ab-results"><?php foreach ( $entity_detail['sections'] as $mention ) : ?><a class="ab-card" href="<?php echo esc_url( $read_link( $mention['part_id'], $mention['chapter_id'], $mention['structural_id'] ) ); ?>"><span class="ab-card-meta"><?php echo esc_html( $mention['part_id'] . ' · ' . $mention['chapter_id'] ); ?></span><h3><?php echo esc_html( $mention['title_fa'] ); ?></h3><p class="ab-card-meta"><bdi><?php echo esc_html( $mention['content_id'] ); ?></bdi> · <?php echo esc_html( $origin_map[ $mention['origin'] ]['label'] ); ?></p><span class="ab-card-link">مشاهده بخش</span></a><?php endforeach; ?></div><?php endif; ?>
+		<p class="ab-card-meta"><bdi><?php echo esc_html( $entity_detail['entity_id'] ); ?></bdi></p></section></article>
+		<?php else :
+			$entity_type   = KBK_AI_Book::requested_entity_type();
+			$entities_page = $concepts_catalog->entities( $entity_type, KBK_AI_Book::requested_page() );
+			$entity_types  = $concepts_catalog->entity_types();
+			?>
+			<?php if ( array() === $entities_page['items'] ) : ?>
+			<header class="ab-page-hero"><p class="ab-kicker">یافت نشد</p><h1>این دسته از مفاهیم موجود نیست</h1><p class="ab-lead">نوع درخواستی با هیچ مفهومی مطابقت ندارد یا شمارهٔ صفحه بیرون از محدوده است.</p><div class="ab-actions"><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/concepts/' ) ); ?>">همهٔ مفاهیم</a></div></header>
+			<?php else : ?>
+			<header class="ab-page-hero"><p class="ab-kicker">مفاهیم · <?php echo esc_html( $entities_page['total'] ); ?> مورد<?php echo null !== $entity_type ? ' · نوع ' . esc_html( $entity_type ) : ''; ?></p><h1>مفاهیم کتاب</h1><p class="ab-lead">موجودیت‌های استخراج‌شده از منابع و تدوین، با ارجاع به بخش‌های کتاب.</p></header>
+			<nav class="ab-breadcrumb" aria-label="فیلتر نوع"><a href="<?php echo esc_url( home_url( '/ai-book/concepts/' ) ); ?>"<?php echo null === $entity_type ? ' aria-current="page"' : ''; ?>>همه</a><?php foreach ( $entity_types as $type_name => $type_count ) : ?><a href="<?php echo esc_url( home_url( '/ai-book/concepts/?' . KBK_AI_Book::TYPE_QUERY_VAR . '=' . rawurlencode( $type_name ) ) ); ?>"<?php echo $type_name === $entity_type ? ' aria-current="page"' : ''; ?>><?php echo esc_html( $type_name ); ?> (<?php echo esc_html( $type_count ); ?>)</a><?php endforeach; ?></nav>
+			<section class="ab-section"><div class="ab-results">
+				<?php foreach ( $entities_page['items'] as $entity_card ) : ?>
+				<a class="ab-card" href="<?php echo esc_url( home_url( '/ai-book/concepts/?' . KBK_AI_Book::ENTITY_QUERY_VAR . '=' . rawurlencode( $entity_card['entity_id'] ) ) ); ?>"><span class="ab-card-meta"><?php echo esc_html( $entity_card['type'] ); ?></span><h3><?php echo esc_html( '' !== $entity_card['labels']['fa'] ? $entity_card['labels']['fa'] : $entity_card['labels']['en'] ); ?></h3><p><bdi><?php echo esc_html( $entity_card['labels']['en'] ); ?></bdi></p><span class="ab-card-meta"><?php echo esc_html( $entity_card['mentions_count'] ); ?> ارجاع</span></a>
+				<?php endforeach; ?>
+			</div>
+			<?php if ( $entities_page['pages'] > 1 ) : ?><nav class="ab-prev-next" aria-label="صفحه‌بندی"><?php if ( $entities_page['page'] > 1 ) : ?><a href="<?php echo esc_url( home_url( '/ai-book/concepts/?' . KBK_AI_Book::TYPE_QUERY_VAR . '=' . rawurlencode( (string) $entity_type ) . '&' . KBK_AI_Book::PAGE_QUERY_VAR . '=' . ( $entities_page['page'] - 1 ) ) ); ?>">« صفحهٔ قبل</a><?php else : ?><span></span><?php endif; ?><span>صفحهٔ <?php echo esc_html( $entities_page['page'] ); ?> از <?php echo esc_html( $entities_page['pages'] ); ?></span><?php if ( $entities_page['page'] < $entities_page['pages'] ) : ?><a href="<?php echo esc_url( home_url( '/ai-book/concepts/?' . KBK_AI_Book::TYPE_QUERY_VAR . '=' . rawurlencode( (string) $entity_type ) . '&' . KBK_AI_Book::PAGE_QUERY_VAR . '=' . ( $entities_page['page'] + 1 ) ) ); ?>">صفحهٔ بعد »</a><?php endif; ?></nav><?php endif; ?>
+			</section>
+			<?php endif; ?>
 		<?php endif; ?>
 	<?php elseif ( $selection['part_not_found'] ) : ?>
 		<header class="ab-page-hero"><p class="ab-kicker">یافت نشد</p><h1>این بخش از کتاب موجود نیست</h1><p class="ab-lead">شناسهٔ درخواستی با هیچ‌یک از هفت بخش canonical کتاب مطابقت ندارد.</p><div class="ab-actions"><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/' ) ); ?>">بازگشت به فهرست بخش‌ها</a></div></header>

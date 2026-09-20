@@ -21,10 +21,10 @@
 - [x] Resolve `/knowledge/` ownership and P06 route collision (ADR-AB-0009).
 - [x] Complete part/chapter selection and stable deep-link behavior in the WordPress reader (breadcrumb, prev/next chapter nav, section anchor/query-var deep link).
 - [x] Add Search (`/ai-book/search/`) over titles/body/English terms/acronyms/glossary/source IDs/content IDs with highlighted bounded snippets, stable deep links and the validator boundary (`ai-book-search.test.php`, ADR-AB-0010).
-- [x] Add minimal `/ai-book/glossary/` deep-link term view (search result target).
-- [ ] **NEXT:** Enrich glossary browsing; add Sources (18 docs), Templates and Concepts data integration.
+- [x] Add full `/ai-book/glossary/` term index + per-term deep-link view (safe fields only, no reviewer secrets).
+- [x] Add Sources (18 audited docs, bibliography merge, 660 section counts), Templates (20 validated cards + details) and Concepts (3,671 entities, type filter, pagination, bounded mention resolution) via `KBK_AI_Book_Catalog` (`ai-book-catalog.test.php`, ADR-AB-0011).
+- [ ] **NEXT:** Add bounded accessible KG explorer (`/ai-book/graph/` over `knowledge/graph.json`) and wire Related Concepts/Related Sections into the Reader.
 - [ ] Add cited Ask/RAG integration.
-- [ ] Add bounded accessible KG explorer and wire Related Concepts/Related Sections into the Reader.
 - [ ] Add PDF viewer/request/issuance workflow.
 
 ## Deferred gates

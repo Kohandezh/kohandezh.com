@@ -17,6 +17,10 @@ final class KBK_AI_Book {
 	const SECTION_QUERY_VAR = 'kbk_section';
 	const SEARCH_QUERY_VAR  = 'kbk_q';
 	const CONCEPT_QUERY_VAR = 'kbk_concept';
+	const TEMPLATE_QUERY_VAR = 'kbk_template';
+	const ENTITY_QUERY_VAR  = 'kbk_entity';
+	const TYPE_QUERY_VAR    = 'kbk_type';
+	const PAGE_QUERY_VAR    = 'kbk_page';
 
 	/**
 	 * Bounds any hand-typed or linked identifier before it ever reaches the
@@ -38,6 +42,12 @@ final class KBK_AI_Book {
 	/** @var string|null */
 	private static $search_error;
 
+	/** @var KBK_AI_Book_Catalog|null */
+	private static $catalog;
+
+	/** @var string|null */
+	private static $catalog_error;
+
 	public static function hooks(): void {
 		if ( ! defined( 'KBK_FEATURE_AI_BOOK' ) || ! KBK_FEATURE_AI_BOOK ) {
 			return;
@@ -57,6 +67,10 @@ final class KBK_AI_Book {
 		$vars[] = self::SECTION_QUERY_VAR;
 		$vars[] = self::SEARCH_QUERY_VAR;
 		$vars[] = self::CONCEPT_QUERY_VAR;
+		$vars[] = self::TEMPLATE_QUERY_VAR;
+		$vars[] = self::ENTITY_QUERY_VAR;
+		$vars[] = self::TYPE_QUERY_VAR;
+		$vars[] = self::PAGE_QUERY_VAR;
 		return $vars;
 	}
 
@@ -252,6 +266,69 @@ final class KBK_AI_Book {
 		return $engine->find_term( strtoupper( $concept ) );
 	}
 
+	/** @return KBK_AI_Book_Catalog|null */
+	public static function catalog() {
+		if ( null !== self::$catalog || null !== self::$catalog_error ) {
+			return self::$catalog;
+		}
+		$repository = self::repository();
+		if ( null === $repository ) {
+			self::$catalog_error = 'CONFIG_REQUIRED';
+			return null;
+		}
+		try {
+			self::$catalog = new KBK_AI_Book_Catalog( $repository );
+			self::$catalog->glossary_terms(); // force artifact load/validation now
+		} catch ( InvalidArgumentException | UnexpectedValueException $error ) {
+			self::$catalog       = null;
+			self::$catalog_error = 'ARTIFACT_INVALID';
+		}
+		return self::$catalog;
+	}
+
+	public static function catalog_status(): string {
+		self::catalog();
+		return null === self::$catalog_error ? ( self::$catalog ? self::$catalog->status() : 'CONFIG_REQUIRED' ) : self::$catalog_error;
+	}
+
+	/**
+	 * Allowlisted template ID for the current /ai-book/templates/ request.
+	 */
+	public static function requested_template(): ?string {
+		$value = (string) get_query_var( self::TEMPLATE_QUERY_VAR );
+		if ( '' === $value || 1 !== preg_match( '/^TPL-P\d{2}-\d{1,2}$/', $value ) ) {
+			return null;
+		}
+		return $value;
+	}
+
+	/** Allowlisted entity ID for the current /ai-book/concepts/ request. */
+	public static function requested_entity(): ?string {
+		$value = (string) get_query_var( self::ENTITY_QUERY_VAR );
+		if ( '' === $value || 1 !== preg_match( '/^E:[A-Za-z][A-Za-z0-9]{0,40}:[a-z0-9_-]{1,100}$/', $value ) ) {
+			return null;
+		}
+		return $value;
+	}
+
+	/** Allowlisted entity type filter for the current /ai-book/concepts/ request. */
+	public static function requested_entity_type(): ?string {
+		$value = (string) get_query_var( self::TYPE_QUERY_VAR );
+		if ( '' === $value || 1 !== preg_match( '/^[A-Za-z][A-Za-z0-9]{0,40}$/', $value ) ) {
+			return null;
+		}
+		return $value;
+	}
+
+	/** Clamped page number for paginated catalog views. */
+	public static function requested_page(): int {
+		$value = (string) get_query_var( self::PAGE_QUERY_VAR );
+		if ( '' === $value || 1 !== preg_match( '/^\d{1,4}$/', $value ) ) {
+			return 1;
+		}
+		return max( 1, (int) $value );
+	}
+
 	public static function rewrite_rules(): void {
 		if ( ! defined( 'KBK_FEATURE_AI_BOOK' ) || ! KBK_FEATURE_AI_BOOK ) {
 			return;
@@ -260,11 +337,14 @@ final class KBK_AI_Book {
 		add_rewrite_rule( '^ai-book/read/?$', 'index.php?' . self::QUERY_VAR . '=read', 'top' );
 		add_rewrite_rule( '^ai-book/search/?$', 'index.php?' . self::QUERY_VAR . '=search', 'top' );
 		add_rewrite_rule( '^ai-book/glossary/?$', 'index.php?' . self::QUERY_VAR . '=glossary', 'top' );
+		add_rewrite_rule( '^ai-book/sources/?$', 'index.php?' . self::QUERY_VAR . '=sources', 'top' );
+		add_rewrite_rule( '^ai-book/templates/?$', 'index.php?' . self::QUERY_VAR . '=templates', 'top' );
+		add_rewrite_rule( '^ai-book/concepts/?$', 'index.php?' . self::QUERY_VAR . '=concepts', 'top' );
 	}
 
 	public static function current_view(): string {
 		$value = (string) get_query_var( self::QUERY_VAR );
-		return in_array( $value, array( 'home', 'read', 'search', 'glossary' ), true ) ? $value : '';
+		return in_array( $value, array( 'home', 'read', 'search', 'glossary', 'sources', 'templates', 'concepts' ), true ) ? $value : '';
 	}
 
 	public static function is_request(): bool {

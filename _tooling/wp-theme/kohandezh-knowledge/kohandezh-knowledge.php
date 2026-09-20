@@ -60,6 +60,7 @@ require_once __DIR__ . '/includes/class-kbk-news.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-artifacts.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-repository.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-search.php';
+require_once __DIR__ . '/includes/class-kbk-ai-book-catalog.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book.php';
 
 /**

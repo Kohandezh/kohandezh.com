@@ -15,3 +15,11 @@
 /* Search-phase additive rule: highlighted query matches inside result cards,
    using the frozen design tokens (same accent/ink pair as .ab-brand-mark). */
 .ab-results mark{background:var(--ab-accent);color:var(--ab-ink);border-radius:4px;padding:0 3px}
+/* Catalog-phase additive rules: glossary term grid (ai-book/glossary index),
+   using frozen design tokens only (panel, line, accent, radius). */
+.ab-term-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.ab-term-list a{display:flex;align-items:baseline;justify-content:space-between;gap:10px;min-height:48px;padding:11px 14px;border:1px solid var(--ab-line);border-radius:12px;background:var(--ab-panel);transition:border-color .2s var(--ab-ease),background .2s var(--ab-ease)}
+.ab-term-list a:hover{border-color:rgba(168,255,70,.45);background:var(--ab-panel-2)}
+.ab-term-list b{font-size:14px;font-weight:750}
+.ab-term-list bdi{color:var(--ab-muted);font:700 11px Inter,sans-serif;direction:ltr;text-align:left}
+@media(max-width:760px){.ab-term-list{grid-template-columns:1fr}}
