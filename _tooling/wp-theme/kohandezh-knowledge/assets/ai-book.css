@@ -23,3 +23,10 @@
 .ab-term-list b{font-size:14px;font-weight:750}
 .ab-term-list bdi{color:var(--ab-muted);font:700 11px Inter,sans-serif;direction:ltr;text-align:left}
 @media(max-width:760px){.ab-term-list{grid-template-columns:1fr}}
+/* Graph-phase additive rules: reader "Related Concepts/Sections" inline block
+   and graph node link cards, using frozen design tokens only. */
+.ab-related-inline{display:grid;gap:8px;margin-top:18px;padding:14px 16px;border:1px solid var(--ab-line);border-radius:14px;background:var(--ab-panel)}
+.ab-related-inline>div>span{color:var(--ab-accent-text);font-size:12px;font-weight:850}
+.ab-related-inline p{margin:4px 0 0;color:var(--ab-muted);font-size:14px}
+.ab-related-inline a{border-bottom:1px solid var(--ab-line-strong)}
+.ab-graph-canvas .ab-node{max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}

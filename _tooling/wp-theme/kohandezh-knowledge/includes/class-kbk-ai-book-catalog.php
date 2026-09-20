@@ -92,6 +92,16 @@ final class KBK_AI_Book_Catalog {
 	}
 
 	/**
+	 * All validated entity models, keyed by entity ID (internal use for the
+	 * graph wiring). Empty when the catalog failed closed.
+	 *
+	 * @return array<string,array<string,mixed>>
+	 */
+	public function all_entities(): array {
+		return $this->load() ? $this->entities : array();
+	}
+
+	/**
 	 * One paginated entities page. Unknown type → empty honest page; page
 	 * numbers are clamped into range.
 	 *

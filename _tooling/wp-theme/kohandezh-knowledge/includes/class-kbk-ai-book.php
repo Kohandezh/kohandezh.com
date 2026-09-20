@@ -48,6 +48,12 @@ final class KBK_AI_Book {
 	/** @var string|null */
 	private static $catalog_error;
 
+	/** @var KBK_AI_Book_Graph|null */
+	private static $graph;
+
+	/** @var string|null */
+	private static $graph_error;
+
 	public static function hooks(): void {
 		if ( ! defined( 'KBK_FEATURE_AI_BOOK' ) || ! KBK_FEATURE_AI_BOOK ) {
 			return;
@@ -291,6 +297,35 @@ final class KBK_AI_Book {
 		return null === self::$catalog_error ? ( self::$catalog ? self::$catalog->status() : 'CONFIG_REQUIRED' ) : self::$catalog_error;
 	}
 
+	/** @return KBK_AI_Book_Graph|null */
+	public static function graph() {
+		if ( null !== self::$graph || null !== self::$graph_error ) {
+			return self::$graph;
+		}
+		$catalog = self::catalog();
+		if ( null === $catalog || KBK_AI_Book_Catalog::STATUS_READY !== $catalog->status() ) {
+			self::$graph_error = null === $catalog ? 'CONFIG_REQUIRED' : 'ARTIFACT_INVALID';
+			return null;
+		}
+		$repository = self::repository();
+		if ( null === $repository ) {
+			self::$graph_error = 'CONFIG_REQUIRED';
+			return null;
+		}
+		try {
+			self::$graph = new KBK_AI_Book_Graph( $repository, $catalog );
+		} catch ( InvalidArgumentException | UnexpectedValueException $error ) {
+			self::$graph       = null;
+			self::$graph_error = 'ARTIFACT_INVALID';
+		}
+		return self::$graph;
+	}
+
+	public static function graph_status(): string {
+		self::graph();
+		return null === self::$graph_error ? ( self::$graph ? self::$graph->status() : 'CONFIG_REQUIRED' ) : self::$graph_error;
+	}
+
 	/**
 	 * Allowlisted template ID for the current /ai-book/templates/ request.
 	 */
@@ -340,11 +375,12 @@ final class KBK_AI_Book {
 		add_rewrite_rule( '^ai-book/sources/?$', 'index.php?' . self::QUERY_VAR . '=sources', 'top' );
 		add_rewrite_rule( '^ai-book/templates/?$', 'index.php?' . self::QUERY_VAR . '=templates', 'top' );
 		add_rewrite_rule( '^ai-book/concepts/?$', 'index.php?' . self::QUERY_VAR . '=concepts', 'top' );
+		add_rewrite_rule( '^ai-book/graph/?$', 'index.php?' . self::QUERY_VAR . '=graph', 'top' );
 	}
 
 	public static function current_view(): string {
 		$value = (string) get_query_var( self::QUERY_VAR );
-		return in_array( $value, array( 'home', 'read', 'search', 'glossary', 'sources', 'templates', 'concepts' ), true ) ? $value : '';
+		return in_array( $value, array( 'home', 'read', 'search', 'glossary', 'sources', 'templates', 'concepts', 'graph' ), true ) ? $value : '';
 	}
 
 	public static function is_request(): bool {

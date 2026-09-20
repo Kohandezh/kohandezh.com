@@ -2,11 +2,11 @@
  "schema_version": 2,
  "project": "kohandezh-ai-book",
  "language": "fa",
- "updated_at": "2026-09-19T23:05:00-04:00",
+ "updated_at": "2026-09-19T23:45:00-04:00",
  "website_root": "/Users/emperor/Documents/AI/kohandezh.com",
  "book_root": "/Users/emperor/Documents/AI/AiBook",
  "worktree": "/Users/emperor/Documents/AI/kohandezh.com/.claude/worktrees/kohandezh-reader-data-phase-9-8f7e49",
- "current_phase": "CONCEPTS_GLOSSARY_SOURCES_TEMPLATES",
+ "current_phase": "KNOWLEDGE_GRAPH",
  "completed_phases": [
   "PREFLIGHT",
   "REPOSITORY_DISCOVERY",
@@ -21,10 +21,11 @@
   "ARTIFACT_SCHEMA_BOUNDARY",
   "DYNAMIC_READER_ROUTING",
   "SEARCH",
-  "CONCEPTS_GLOSSARY_SOURCES_TEMPLATES"
+  "CONCEPTS_GLOSSARY_SOURCES_TEMPLATES",
+  "KNOWLEDGE_GRAPH"
  ],
- "active_phase": "KNOWLEDGE_GRAPH",
- "next_phase": "ASK_RAG",
+ "active_phase": "ASK_RAG",
+ "next_phase": "PDF_VIEWER",
  "design_frozen": true,
  "design_status": "FROZEN_REVISION_2",
  "routes": {
@@ -65,7 +66,8 @@
    "glossary",
    "sources",
    "templates",
-   "concepts"
+   "concepts",
+   "graph"
   ],
   "verified": [
    "/ai-book/",
@@ -98,12 +100,12 @@
   "revision": 2
  },
  "features": {
-  "reader": "DYNAMIC_PART_CHAPTER_SECTION_ROUTING_IMPLEMENTED_CONFIG_REQUIRED",
+  "reader": "DYNAMIC_PART_CHAPTER_SECTION_ROUTING_WITH_RELATED_CONCEPTS_SECTIONS_IMPLEMENTED_CONFIG_REQUIRED",
   "search": "IMPLEMENTED_CONFIG_REQUIRED",
   "glossary": "FULL_INDEX_IMPLEMENTED_CONFIG_REQUIRED",
   "ask": "VISUAL_COMPLETE_CONFIG_REQUIRED",
   "concepts": "IMPLEMENTED_CONFIG_REQUIRED",
-  "graph": "VISUAL_COMPLETE_DATA_PENDING",
+  "graph": "IMPLEMENTED_CONFIG_REQUIRED",
   "sources": "IMPLEMENTED_CONFIG_REQUIRED",
   "templates": "IMPLEMENTED_CONFIG_REQUIRED",
   "pdf_viewer": "VISUAL_COMPLETE_INTEGRATION_PENDING",
@@ -177,7 +179,8 @@
   "search_subsystem_test": "PASS",
   "existing_repository_test_suite": "PASS",
   "full_npm_test_suite": "PASS_394_ASSERTIONS_NO_REGRESSION",
-  "catalog_subsystem_test": "PASS"
+  "catalog_subsystem_test": "PASS",
+  "graph_subsystem_test": "PASS"
  },
  "known_issues": [
   "WordPress ai-book routes (home/read/search/glossary) require KBK_FEATURE_AI_BOOK and KBK_AI_BOOK_ROOT configuration",
@@ -193,5 +196,5 @@
   "new_checkpoint": "b227752",
   "pushed": false
  },
- "next_action": "Bounded Knowledge Graph explorer over knowledge/graph.json (3,671 nodes / 10,474 edges, capped neighborhoods, no bulk export) at /ai-book/graph/, then wire Related Concepts/Related Sections into the Reader. Do not begin Ask/RAG or PDF integration before the graph explorer is verified."
+ "next_action": "Cited Ask/RAG integration per CONTENT_SOURCE_MAP.md sequencing (bounded retrieval over rag chunks with citation-enforced answers, configuration-required provider), then the PDF viewer/request workflow. Do not begin PDF work before Ask/RAG is verified."
 }

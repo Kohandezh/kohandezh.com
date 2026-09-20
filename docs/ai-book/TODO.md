@@ -23,8 +23,8 @@
 - [x] Add Search (`/ai-book/search/`) over titles/body/English terms/acronyms/glossary/source IDs/content IDs with highlighted bounded snippets, stable deep links and the validator boundary (`ai-book-search.test.php`, ADR-AB-0010).
 - [x] Add full `/ai-book/glossary/` term index + per-term deep-link view (safe fields only, no reviewer secrets).
 - [x] Add Sources (18 audited docs, bibliography merge, 660 section counts), Templates (20 validated cards + details) and Concepts (3,671 entities, type filter, pagination, bounded mention resolution) via `KBK_AI_Book_Catalog` (`ai-book-catalog.test.php`, ADR-AB-0011).
-- [ ] **NEXT:** Add bounded accessible KG explorer (`/ai-book/graph/` over `knowledge/graph.json`) and wire Related Concepts/Related Sections into the Reader.
-- [ ] Add cited Ask/RAG integration.
+- [x] Add bounded accessible KG explorer (`/ai-book/graph/` over `knowledge/graph.json`, depth-1, capped) and wire Related Concepts/Related Sections into the Reader (`ai-book-graph.test.php`, ADR-AB-0012).
+- [ ] **NEXT:** Add cited Ask/RAG integration.
 - [ ] Add PDF viewer/request/issuance workflow.
 
 ## Deferred gates

@@ -364,6 +364,68 @@ final class KBK_AI_Book_Artifacts {
 	}
 
 	/**
+	 * Validate knowledge/graph.json — the bounded Knowledge Graph artifact.
+	 * Endpoints must exist; edges must anchor to real content IDs of this
+	 * edition; evidence quotes stay bounded.
+	 *
+	 * @param array<string,mixed> $graph   Decoded graph.
+	 * @param string              $edition Expected edition.
+	 * @return array<string,mixed>
+	 */
+	public static function validate_graph( array $graph, string $edition ): array {
+		self::require_keys( $graph, array( 'edition', 'nodes', 'edges', 'entity_types', 'relation_types' ), 'graph' );
+		self::same( $edition, $graph['edition'], 'graph.edition' );
+		self::list_value( $graph['entity_types'], 'graph.entity_types' );
+		self::list_value( $graph['relation_types'], 'graph.relation_types' );
+		$relations = array();
+		foreach ( $graph['relation_types'] as $relation ) {
+			if ( ! is_string( $relation ) || 1 !== preg_match( '/^[A-Z][A-Z_]{1,39}$/', $relation ) ) {
+				throw new UnexpectedValueException( 'graph.relation_types carries an invalid relation name' );
+			}
+			$relations[ $relation ] = true;
+		}
+		$known_nodes = array();
+		foreach ( $graph['nodes'] as $index => $node ) {
+			$node = self::validate_entity( $node, $edition );
+			$known_nodes[ (string) $node['entity_id'] ] = true;
+		}
+		if ( array() === $known_nodes ) {
+			throw new UnexpectedValueException( 'graph.nodes must not be empty' );
+		}
+		foreach ( $graph['edges'] as $index => $edge ) {
+			$path = 'graph.edges[' . $index . ']';
+			self::object_value( $edge, $path );
+			self::require_keys( $edge, array( 'source', 'relation', 'target', 'content_id', 'origin' ), $path );
+			foreach ( array( 'source', 'target' ) as $endpoint ) {
+				if ( ! isset( $known_nodes[ $edge[ $endpoint ] ] ) ) {
+					throw new UnexpectedValueException( $path . '.' . $endpoint . ' references an unknown node' );
+				}
+			}
+			if ( ! isset( $relations[ $edge['relation'] ] ) ) {
+				throw new UnexpectedValueException( $path . '.relation has an unsupported value' );
+			}
+			self::content_id( $edge['content_id'], $path . '.content_id', $edition );
+			if ( ! in_array( $edge['origin'], array( 'source', 'editorial' ), true ) ) {
+				throw new UnexpectedValueException( $path . '.origin has an unsupported value' );
+			}
+			if ( isset( $edge['evidence'] ) ) {
+				self::object_value( $edge['evidence'], $path . '.evidence' );
+				if ( isset( $edge['evidence']['quote'] ) ) {
+					if ( ! is_string( $edge['evidence']['quote'] ) || mb_strlen( $edge['evidence']['quote'] ) > 200 ) {
+						throw new UnexpectedValueException( $path . '.evidence.quote must be a bounded string' );
+					}
+				}
+				if ( isset( $edge['evidence']['block_id'] ) && null !== $edge['evidence']['block_id'] ) {
+					if ( ! is_string( $edge['evidence']['block_id'] ) || mb_strlen( $edge['evidence']['block_id'] ) > 128 ) {
+						throw new UnexpectedValueException( $path . '.evidence.block_id must be null or a bounded string' );
+					}
+				}
+			}
+		}
+		return $graph;
+	}
+
+	/**
 	 * Validate that the three artifact families describe the same edition/IDs.
 	 *
 	 * @param array<string,mixed> $book Master book.

@@ -187,15 +187,55 @@ $read_link = static function ( string $part_id, ?string $chapter_id = null, ?str
 			</section>
 			<?php endif; ?>
 		<?php endif; ?>
+	<?php elseif ( 'graph' === $view ) :
+		$graph_engine = KBK_AI_Book::graph();
+		$graph_node   = $graph_engine ? $graph_engine->node( (string) KBK_AI_Book::requested_entity() ) : null;
+		?>
+		<?php if ( ! $graph_engine ) : ?>
+		<header class="ab-page-hero"><p class="ab-kicker">وضعیت داده</p><h1>نگارهٔ مفاهیم موقتاً در دسترس نیست</h1><p class="ab-lead">پیکربندی منبع canonical کامل نشده یا اعتبار داده تأیید نشده است.</p><p><bdi><?php echo esc_html( KBK_AI_Book::graph_status() ); ?></bdi></p></header>
+		<?php elseif ( null !== $graph_node ) :
+			$graph_hood = $graph_engine->neighborhood( $graph_node['entity_id'] );
+			$hood_edges = $graph_hood ? $graph_hood['edges'] : array();
+			$viz_edges  = array_slice( $hood_edges, 0, KBK_AI_Book_Graph::MAX_VIZ_NODES );
+			$viz_count  = max( 1, count( $viz_edges ) );
+			?>
+		<nav class="ab-breadcrumb" aria-label="مسیر"><a href="<?php echo esc_url( home_url( '/ai-book/' ) ); ?>">کتاب</a><a href="<?php echo esc_url( home_url( '/ai-book/graph/' ) ); ?>">نگارهٔ مفاهیم</a><span aria-current="page"><?php echo esc_html( '' !== $graph_node['label_fa'] ? $graph_node['label_fa'] : $graph_node['label_en'] ); ?></span></nav>
+		<article class="ab-prose"><header class="ab-page-hero"><p class="ab-kicker">گره · <?php echo esc_html( $graph_node['type'] ); ?></p><h1><?php echo esc_html( '' !== $graph_node['label_fa'] ? $graph_node['label_fa'] : $graph_node['label_en'] ); ?></h1><p class="ab-lead"><bdi><?php echo esc_html( $graph_node['label_en'] ); ?></bdi></p></header>
+		<section><h2>همسایگی در نگاره</h2><div class="ab-layer <?php echo esc_attr( 'editorial' === $graph_node['origin'] ? 'ab-layer-editorial' : 'ab-layer-source' ); ?>"><span><?php echo esc_html( 'editorial' === $graph_node['origin'] ? 'جمع‌بندی تدوینگر' : 'استخراج از منبع' ); ?></span><?php if ( '' !== $graph_node['definition_en'] ) : ?><p><bdi><?php echo esc_html( $graph_node['definition_en'] ); ?></bdi></p><?php endif; ?><?php if ( $graph_node['documents'] ) : ?><p class="ab-card-meta">اسناد: <bdi><?php echo esc_html( implode( '، ', $graph_node['documents'] ) ); ?></bdi></p><?php endif; ?></div>
+		<?php if ( $hood_edges ) : ?>
+		<div class="ab-graph-canvas" role="img" aria-label="نمودار همسایگی؛ فهرست متنی زیر مرجع کامل است"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><?php foreach ( $viz_edges as $viz_index => $viz_edge ) : $angle = ( $viz_index / $viz_count ) * 2 * M_PI; $x = 50 + 38 * cos( $angle ); $y = 50 + 38 * sin( $angle ); ?><line x1="50" y1="50" x2="<?php echo esc_attr( round( $x, 1 ) ); ?>" y2="<?php echo esc_attr( round( $y, 1 ) ); ?>" /><?php endforeach; ?></svg><span class="ab-node ab-node-main" style="top:50%;right:auto;left:50%;transform:translate(-50%,-50%)"><?php echo esc_html( '' !== $graph_node['label_fa'] ? $graph_node['label_fa'] : $graph_node['label_en'] ); ?></span><?php foreach ( $viz_edges as $viz_index => $viz_edge ) : if ( null === $viz_edge['other'] ) { continue; } $angle = ( $viz_index / $viz_count ) * 2 * M_PI; $x = 50 + 38 * cos( $angle ); $y = 50 + 38 * sin( $angle ); ?><a class="ab-node" style="top:<?php echo esc_attr( round( $y, 1 ) ); ?>%;left:<?php echo esc_attr( round( $x, 1 ) ); ?>%;transform:translate(-50%,-50%)" href="<?php echo esc_url( home_url( '/ai-book/graph/?' . KBK_AI_Book::ENTITY_QUERY_VAR . '=' . rawurlencode( $viz_edge['other']['entity_id'] ) ) ); ?>"><?php echo esc_html( '' !== $viz_edge['other']['label_fa'] ? $viz_edge['other']['label_fa'] : $viz_edge['other']['label_en'] ); ?></a><?php endforeach; ?></div>
+		<p class="ab-card-meta"><?php echo esc_html( $graph_hood['total'] ); ?> یال مستقیم<?php echo $graph_hood['total'] > count( $hood_edges ) ? '؛ نمایش ' . esc_html( count( $hood_edges ) ) . ' یال' : ''; ?></p>
+		<div class="ab-results"><?php foreach ( $hood_edges as $hood_edge ) : ?><div class="ab-card"><span class="ab-card-meta"><?php echo esc_attr( $hood_edge['direction_out'] ? $hood_edge['relation'] . ' ←' : '→ ' . $hood_edge['relation'] ); ?></span><?php if ( null !== $hood_edge['other'] ) : ?><h3><a href="<?php echo esc_url( home_url( '/ai-book/graph/?' . KBK_AI_Book::ENTITY_QUERY_VAR . '=' . rawurlencode( $hood_edge['other']['entity_id'] ) ) ); ?>"><?php echo esc_html( '' !== $hood_edge['other']['label_fa'] ? $hood_edge['other']['label_fa'] : $hood_edge['other']['label_en'] ); ?></a></h3><p><bdi><?php echo esc_html( $hood_edge['other']['label_en'] ); ?></bdi> · <?php echo esc_html( $hood_edge['other']['type'] ); ?></p><?php endif; ?><?php if ( '' !== $hood_edge['quote'] ) : ?><p>شاهد: «<?php echo esc_html( $hood_edge['quote'] ); ?>»</p><?php endif; ?><?php if ( $hood_edge['anchor_section'] ) : ?><span class="ab-card-meta"><a href="<?php echo esc_url( $read_link( $hood_edge['anchor_section']['part_id'], $hood_edge['anchor_section']['chapter_id'], $hood_edge['anchor_section']['structural_id'] ) ); ?>"><?php echo esc_html( $hood_edge['anchor_section']['title_fa'] ); ?></a> · <bdi><?php echo esc_html( $hood_edge['anchor_section']['content_id'] ); ?></bdi></span><?php endif; ?></div><?php endforeach; ?></div>
+		<?php else : ?><div class="ab-fallback"><p>این گره در نگارهٔ فعلی یال مستقیمی ندارد.</p></div><?php endif; ?>
+		<p class="ab-card-meta"><bdi><?php echo esc_html( $graph_node['entity_id'] ); ?></bdi></p></section></article>
+		<?php else :
+			$graph_stats = $graph_engine->stats();
+			$graph_relations = $graph_engine->relation_counts();
+			?>
+		<header class="ab-page-hero"><p class="ab-kicker">نگارهٔ مفاهیم · <?php echo esc_html( $graph_stats['nodes'] ); ?> گره · <?php echo esc_html( $graph_stats['edges'] ); ?> یال</p><h1>نگارهٔ مفاهیم کتاب</h1><p class="ab-lead">شبکهٔ روابط میان مفاهیم، ریسک‌ها، چارچوب‌ها و اسناد؛ برای گره‌ها از فهرست مفاهیم شروع کنید.</p><div class="ab-actions"><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/concepts/' ) ); ?>">فهرست مفاهیم</a></div></header>
+		<section class="ab-section"><h2>نوع روابط</h2><div class="ab-term-list"><?php foreach ( $graph_relations as $relation_name => $relation_count ) : ?><span><b><bdi><?php echo esc_html( $relation_name ); ?></bdi></b><bdi><?php echo esc_html( $relation_count ); ?> یال</bdi></span><?php endforeach; ?></div></section>
+		<?php endif; ?>
 	<?php elseif ( $selection['part_not_found'] ) : ?>
 		<header class="ab-page-hero"><p class="ab-kicker">یافت نشد</p><h1>این بخش از کتاب موجود نیست</h1><p class="ab-lead">شناسهٔ درخواستی با هیچ‌یک از هفت بخش canonical کتاب مطابقت ندارد.</p><div class="ab-actions"><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/' ) ); ?>">بازگشت به فهرست بخش‌ها</a></div></header>
-	<?php elseif ( $part && $chapter ) : ?>
+	<?php elseif ( $part && $chapter ) :
+		$related_map = array();
+		$graph_engine = KBK_AI_Book::graph();
+		if ( null !== $graph_engine ) {
+			$related_map = $graph_engine->related_map( array_column( $chapter['sections'], 'content_id' ) );
+		}
+		?>
 		<nav class="ab-breadcrumb" aria-label="مسیر"><a href="<?php echo esc_url( home_url( '/ai-book/' ) ); ?>">کتاب</a><a href="<?php echo esc_url( home_url( '/ai-book/read/?' . KBK_AI_Book::PART_QUERY_VAR . '=' . rawurlencode( $part['part_id'] ) ) ); ?>"><?php echo esc_html( $part['title_fa'] ); ?></a><span aria-current="page"><?php echo esc_html( $chapter['title_fa'] ); ?></span></nav>
 		<div class="ab-reader"><aside class="ab-toc" aria-label="فهرست فصل"><p class="ab-kicker"><?php echo esc_html( $part['part_id'] . ' · ' . $chapter['chapter_id'] ); ?></p><h2><?php echo esc_html( $chapter['title_fa'] ); ?></h2><?php foreach ( $chapter['sections'] as $index => $section ) : ?><a<?php echo 0 === $index ? ' class="is-current"' : ''; ?> href="#<?php echo esc_attr( $section['structural_id'] ); ?>"><?php echo esc_html( $section['title_fa'] ); ?></a><?php endforeach; ?></aside>
 		<article class="ab-prose"><?php if ( $selection['chapter_not_found'] ) : ?><p class="ab-lead">فصل درخواستی در این بخش یافت نشد؛ نخستین فصل بخش <bdi><?php echo esc_html( $part['title_fa'] ); ?></bdi> نمایش داده می‌شود.</p><?php endif; ?>
 		<header class="ab-page-hero"><p class="ab-kicker"><?php echo esc_html( $part['part_id'] . ' · ' . $chapter['chapter_id'] ); ?></p><h1><?php echo esc_html( $chapter['title_fa'] ); ?></h1><p class="ab-lead">متن canonical فارسی با منشأ، شناسه و پیوند استناد پایدار.</p></header>
-		<?php foreach ( $chapter['sections'] as $section ) : $origin = $origin_map[ $section['origin'] ]; ?>
-		<section id="<?php echo esc_attr( $section['structural_id'] ); ?>"><h2><?php echo esc_html( $section['title_fa'] ); ?></h2><div class="ab-layer <?php echo esc_attr( $origin['class'] ); ?>"><span><?php echo esc_html( $origin['label'] ); ?></span><?php echo wp_kses_post( wpautop( esc_html( $section['fa_text'] ) ) ); ?></div><p class="ab-card-meta"><bdi><?php echo esc_html( $section['content_id'] ); ?></bdi></p><a href="<?php echo esc_url( $section['canonical_url'] ); ?>">پیوند canonical این بخش</a></section>
+		<?php foreach ( $chapter['sections'] as $section ) : $origin = $origin_map[ $section['origin'] ]; $related = $related_map[ $section['content_id'] ] ?? null; ?>
+		<section id="<?php echo esc_attr( $section['structural_id'] ); ?>"><h2><?php echo esc_html( $section['title_fa'] ); ?></h2><div class="ab-layer <?php echo esc_attr( $origin['class'] ); ?>"><span><?php echo esc_html( $origin['label'] ); ?></span><?php echo wp_kses_post( wpautop( esc_html( $section['fa_text'] ) ) ); ?></div><p class="ab-card-meta"><bdi><?php echo esc_html( $section['content_id'] ); ?></bdi></p><a href="<?php echo esc_url( $section['canonical_url'] ); ?>">پیوند canonical این بخش</a>
+		<?php if ( $related ) : ?>
+		<div class="ab-related-inline"><div><span>مفاهیم مرتبط</span><p><?php $related_concept_links = array(); foreach ( $related['concepts'] as $related_concept ) : $related_concept_links[] = '<a href="' . esc_url( home_url( '/ai-book/concepts/?' . KBK_AI_Book::ENTITY_QUERY_VAR . '=' . rawurlencode( $related_concept['entity_id'] ) ) ) . '">' . esc_html( '' !== $related_concept['label_fa'] ? $related_concept['label_fa'] : $related_concept['label_en'] ) . '</a>'; endforeach; echo implode( '، ', $related_concept_links ); ?></p></div>
+		<?php if ( $related['sections'] ) : ?><div><span>بخش‌های مرتبط</span><p><?php $related_section_links = array(); foreach ( $related['sections'] as $related_section ) : $related_section_links[] = '<a href="' . esc_url( $read_link( $related_section['part_id'], $related_section['chapter_id'], $related_section['structural_id'] ) ) . '">' . esc_html( $related_section['title_fa'] ) . '</a>'; endforeach; echo implode( '، ', $related_section_links ); ?></p></div><?php endif; ?>
+		</div>
+		<?php endif; ?>
+		</section>
 		<?php endforeach; ?>
 		<nav class="ab-prev-next" aria-label="فصل قبل و بعد">
 		<?php if ( $adjacent['prev'] ) : ?><a href="<?php echo esc_url( home_url( '/ai-book/read/?' . KBK_AI_Book::PART_QUERY_VAR . '=' . rawurlencode( $part['part_id'] ) . '&' . KBK_AI_Book::CHAPTER_QUERY_VAR . '=' . rawurlencode( $adjacent['prev']['chapter_id'] ) ) ); ?>">« <?php echo esc_html( $adjacent['prev']['title_fa'] ); ?></a><?php else : ?><span></span><?php endif; ?>
