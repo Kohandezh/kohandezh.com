@@ -215,6 +215,34 @@ $read_link = static function ( string $part_id, ?string $chapter_id = null, ?str
 		<header class="ab-page-hero"><p class="ab-kicker">نگارهٔ مفاهیم · <?php echo esc_html( $graph_stats['nodes'] ); ?> گره · <?php echo esc_html( $graph_stats['edges'] ); ?> یال</p><h1>نگارهٔ مفاهیم کتاب</h1><p class="ab-lead">شبکهٔ روابط میان مفاهیم، ریسک‌ها، چارچوب‌ها و اسناد؛ برای گره‌ها از فهرست مفاهیم شروع کنید.</p><div class="ab-actions"><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/concepts/' ) ); ?>">فهرست مفاهیم</a></div></header>
 		<section class="ab-section"><h2>نوع روابط</h2><div class="ab-term-list"><?php foreach ( $graph_relations as $relation_name => $relation_count ) : ?><span><b><bdi><?php echo esc_html( $relation_name ); ?></bdi></b><bdi><?php echo esc_html( $relation_count ); ?> یال</bdi></span><?php endforeach; ?></div></section>
 		<?php endif; ?>
+	<?php elseif ( 'ask' === $view ) :
+		$ask_state = KBK_AI_Book::current_ask();
+		$ask_status = KBK_AI_Book::ask_status();
+		?>
+		<header class="ab-page-hero"><p class="ab-kicker">پرسش با استناد</p><h1>از کتاب بپرسید</h1><p class="ab-lead">پاسخ‌ها فقط از متن canonical همین کتاب ساخته می‌شوند و به بخش‌های کتاب ارجاع می‌دهند.</p></header>
+		<form class="ab-ask-form" method="get" action="<?php echo esc_url( home_url( '/ai-book/ask/' ) ); ?>"><label for="ab-ask-q">پرسش شما (حداقل دو واژه)</label><div><input id="ab-ask-q" type="search" name="<?php echo esc_attr( KBK_AI_Book::SEARCH_QUERY_VAR ); ?>" value="<?php echo esc_attr( (string) $ask_state['query'] ); ?>" maxlength="120" dir="auto" required><button class="ab-button ab-button-primary" type="submit">پرسش</button></div><p><?php echo 'READY' === $ask_status ? 'موتور پاسخ پیکربندی شده است.' : 'موتور تولید پاسخ هنوز پیکربندی نشده است؛ گذرواژه‌ها به‌صورت محلی نگه‌داری می‌شوند و این‌جا وارد نمی‌شوند. با این حال، بازیابی ارجاع‌دار انجام می‌شود.'; ?></p></form>
+		<?php if ( 'ARTIFACT_INVALID' === $ask_state['status'] ) : ?>
+		<section class="ab-section"><div class="ab-fallback"><p>پیکرهٔ پرسش‌وپاسخ موقتاً نامعتبر است.</p></div></section>
+		<?php elseif ( null !== $ask_state['query'] ) : ?>
+		<section class="ab-section">
+			<?php if ( null !== $ask_state['answer'] ) : ?>
+			<div class="ab-message ab-message-answer"><span class="ab-kicker">پاسخ</span><p><?php echo esc_html( $ask_state['answer']['text'] ); ?></p><?php if ( '' !== $ask_state['answer']['model'] ) : ?><p class="ab-card-meta">مدل: <bdi><?php echo esc_html( $ask_state['answer']['model'] ); ?></bdi></p><?php endif; ?></div>
+			<?php elseif ( null !== $ask_state['provider_error'] ) : ?>
+			<div class="ab-fallback"><p>تولید پاسخ در دسترس نبود؛ گذرواژه‌های بازیابی‌شده در ادامه ارجاع دارند.</p></div>
+			<?php endif; ?>
+			<?php if ( $ask_state['retrieval'] ) : ?>
+			<h2>گذرواژه‌های بازیابی‌شده با استناد</h2><div class="ab-citations">
+			<?php foreach ( $ask_state['retrieval'] as $ask_item ) : ?>
+			<div class="ab-card"><span class="ab-card-meta"><?php echo esc_html( $ask_item['part_id'] . ' · ' . $ask_item['chapter_id'] ); ?> · <?php echo esc_html( $origin_map[ $ask_item['origin'] ]['label'] ); ?></span><h3><?php echo esc_html( $ask_item['section_fa'] ); ?></h3><p><?php echo $render_segments( $ask_item['excerpt_segments'] ); ?><?php echo $ask_item['reader_resolvable'] ? '' : ' <bdi>(ارجاع در دسترس نیست)</bdi>'; ?></p><?php if ( $ask_item['reader_resolvable'] ) : ?><a class="ab-card-link" href="<?php echo esc_url( $read_link( $ask_item['part_id'], $ask_item['chapter_id'], $ask_item['structural_id'] ) ); ?>">مطالعهٔ بخش مستند</a><?php endif; ?><span class="ab-card-meta"><bdi><a href="<?php echo esc_url( $ask_item['citation_url'] ); ?>"><?php echo esc_html( $ask_item['content_id'] ); ?></a></bdi></span></div>
+			<?php endforeach; ?>
+			</div>
+			<?php else : ?>
+			<div class="ab-fallback"><p>برای این پرسش گذرواژهٔ مستند مرتبطی یافت نشد.</p></div>
+			<?php endif; ?>
+		</section>
+		<?php elseif ( 'PROVIDER_REQUIRED' === $ask_status || 'READY' === $ask_status ) : ?>
+		<section class="ab-section"><div class="ab-fallback"><p>برای شروع، پرسش خود را بنویسید؛ پاسخ‌ها همیشه به بخش‌های کتاب استناد می‌دهند.</p></div></section>
+		<?php endif; ?>
 	<?php elseif ( $selection['part_not_found'] ) : ?>
 		<header class="ab-page-hero"><p class="ab-kicker">یافت نشد</p><h1>این بخش از کتاب موجود نیست</h1><p class="ab-lead">شناسهٔ درخواستی با هیچ‌یک از هفت بخش canonical کتاب مطابقت ندارد.</p><div class="ab-actions"><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/' ) ); ?>">بازگشت به فهرست بخش‌ها</a></div></header>
 	<?php elseif ( $part && $chapter ) :

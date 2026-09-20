@@ -23,6 +23,7 @@ require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-b
 require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-search.php';
 require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-catalog.php';
 require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-graph.php';
+require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-ask.php';
 require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book.php';
 
 KBK_AI_Book::hooks();
@@ -30,7 +31,7 @@ if ( 5 !== count( $GLOBALS['kbk_test_hooks'] ) ) {
 	fwrite( STDERR, "FAIL hook registration\n" ); exit( 1 );
 }
 KBK_AI_Book::rewrite_rules();
-if ( 8 !== count( $GLOBALS['kbk_test_rewrites'] ) || '^ai-book/?$' !== $GLOBALS['kbk_test_rewrites'][0]['regex'] || '^ai-book/read/?$' !== $GLOBALS['kbk_test_rewrites'][1]['regex'] || '^ai-book/search/?$' !== $GLOBALS['kbk_test_rewrites'][2]['regex'] || '^ai-book/glossary/?$' !== $GLOBALS['kbk_test_rewrites'][3]['regex'] || '^ai-book/sources/?$' !== $GLOBALS['kbk_test_rewrites'][4]['regex'] || '^ai-book/templates/?$' !== $GLOBALS['kbk_test_rewrites'][5]['regex'] || '^ai-book/concepts/?$' !== $GLOBALS['kbk_test_rewrites'][6]['regex'] || '^ai-book/graph/?$' !== $GLOBALS['kbk_test_rewrites'][7]['regex'] ) {
+if ( 9 !== count( $GLOBALS['kbk_test_rewrites'] ) || '^ai-book/?$' !== $GLOBALS['kbk_test_rewrites'][0]['regex'] || '^ai-book/read/?$' !== $GLOBALS['kbk_test_rewrites'][1]['regex'] || '^ai-book/search/?$' !== $GLOBALS['kbk_test_rewrites'][2]['regex'] || '^ai-book/glossary/?$' !== $GLOBALS['kbk_test_rewrites'][3]['regex'] || '^ai-book/sources/?$' !== $GLOBALS['kbk_test_rewrites'][4]['regex'] || '^ai-book/templates/?$' !== $GLOBALS['kbk_test_rewrites'][5]['regex'] || '^ai-book/concepts/?$' !== $GLOBALS['kbk_test_rewrites'][6]['regex'] || '^ai-book/graph/?$' !== $GLOBALS['kbk_test_rewrites'][7]['regex'] || '^ai-book/ask/?$' !== $GLOBALS['kbk_test_rewrites'][8]['regex'] ) {
 	fwrite( STDERR, "FAIL rewrite rules\n" ); exit( 1 );
 }
 
@@ -59,7 +60,7 @@ if ( '' !== KBK_AI_Book::current_view() || KBK_AI_Book::is_request() ) {
 	fwrite( STDERR, "FAIL invalid route allowlist\n" ); exit( 1 );
 }
 
-foreach ( array( 'search', 'glossary', 'sources', 'templates', 'concepts', 'graph' ) as $view ) {
+foreach ( array( 'search', 'glossary', 'sources', 'templates', 'concepts', 'graph', 'ask' ) as $view ) {
 	$GLOBALS['kbk_test_query']['kbk_ai_book'] = $view;
 	if ( $view !== KBK_AI_Book::current_view() || ! KBK_AI_Book::is_request() ) {
 		fwrite( STDERR, "FAIL {$view} route detection\n" ); exit( 1 );
@@ -86,6 +87,14 @@ if ( 'CONFIG_REQUIRED' !== KBK_AI_Book::graph_status() ) {
 }
 if ( null !== KBK_AI_Book::graph() ) {
 	fwrite( STDERR, "FAIL graph without root must fail closed\n" ); exit( 1 );
+}
+$GLOBALS['kbk_test_query']['kbk_ai_book'] = 'ask';
+if ( 'CONFIG_REQUIRED' !== KBK_AI_Book::ask_status() ) {
+	fwrite( STDERR, "FAIL ask without root must be CONFIG_REQUIRED\n" ); exit( 1 );
+}
+$ask_state = KBK_AI_Book::current_ask();
+if ( 'CONFIG_REQUIRED' !== $ask_state['status'] || array() !== $ask_state['retrieval'] || null !== $ask_state['answer'] ) {
+	fwrite( STDERR, "FAIL ask without root must degrade to a safe empty state\n" ); exit( 1 );
 }
 
 $GLOBALS['kbk_test_query'][ KBK_AI_Book::SEARCH_QUERY_VAR ] = "  سوگیری\x00\x07  " ;
@@ -143,4 +152,4 @@ if ( 1 !== KBK_AI_Book::requested_page() ) {
 }
 $GLOBALS['kbk_test_query'] = array();
 
-echo "PASS ai-book-wordpress-route: hooks, rewrites (8), allowlist, noindex, config state, assets, template and search/glossary/catalog/graph request hygiene\n";
+echo "PASS ai-book-wordpress-route: hooks, rewrites (9), allowlist, noindex, config state, assets, template and search/glossary/catalog/graph/ask request hygiene\n";

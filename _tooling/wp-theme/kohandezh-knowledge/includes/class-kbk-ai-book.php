@@ -54,6 +54,12 @@ final class KBK_AI_Book {
 	/** @var string|null */
 	private static $graph_error;
 
+	/** @var KBK_AI_Book_Ask|null */
+	private static $ask;
+
+	/** @var string|null */
+	private static $ask_error;
+
 	public static function hooks(): void {
 		if ( ! defined( 'KBK_FEATURE_AI_BOOK' ) || ! KBK_FEATURE_AI_BOOK ) {
 			return;
@@ -326,6 +332,48 @@ final class KBK_AI_Book {
 		return null === self::$graph_error ? ( self::$graph ? self::$graph->status() : 'CONFIG_REQUIRED' ) : self::$graph_error;
 	}
 
+	/** @return KBK_AI_Book_Ask|null */
+	public static function ask() {
+		if ( null !== self::$ask || null !== self::$ask_error ) {
+			return self::$ask;
+		}
+		$repository = self::repository();
+		if ( null === $repository ) {
+			self::$ask_error = 'CONFIG_REQUIRED';
+			return null;
+		}
+		try {
+			$provider = null;
+			if ( defined( 'KBK_AI_BOOK_ASK_ENDPOINT' ) && defined( 'KBK_AI_BOOK_ASK_API_KEY' ) ) {
+				$provider = array(
+					'endpoint' => (string) constant( 'KBK_AI_BOOK_ASK_ENDPOINT' ),
+					'api_key'  => (string) constant( 'KBK_AI_BOOK_ASK_API_KEY' ),
+					'model'    => defined( 'KBK_AI_BOOK_ASK_MODEL' ) ? (string) constant( 'KBK_AI_BOOK_ASK_MODEL' ) : '',
+				);
+			}
+			self::$ask = new KBK_AI_Book_Ask( $repository, null, $provider );
+			self::$ask->status(); // force corpus load/validation now
+		} catch ( InvalidArgumentException | UnexpectedValueException $error ) {
+			self::$ask       = null;
+			self::$ask_error = 'ARTIFACT_INVALID';
+		}
+		return self::$ask;
+	}
+
+	public static function ask_status(): string {
+		self::ask();
+		if ( null !== self::$ask_error ) {
+			return self::$ask_error;
+		}
+		if ( null === self::$ask ) {
+			return 'CONFIG_REQUIRED';
+		}
+		if ( KBK_AI_Book_Ask::STATUS_READY !== self::$ask->status() ) {
+			return self::$ask->status();
+		}
+		return self::$ask->provider_configured() ? 'READY' : 'PROVIDER_REQUIRED';
+	}
+
 	/**
 	 * Allowlisted template ID for the current /ai-book/templates/ request.
 	 */
@@ -364,6 +412,28 @@ final class KBK_AI_Book {
 		return max( 1, (int) $value );
 	}
 
+	/**
+	 * The current ask request: sanitized question plus a bounded engine
+	 * answer (retrieval runs locally; generation is provider-gated).
+	 *
+	 * @return array<string,mixed>
+	 */
+	public static function current_ask(): array {
+		$engine = self::ask();
+		if ( null === $engine ) {
+			return array(
+				'status'    => 'CONFIG_REQUIRED',
+				'query'     => null,
+				'tokens'    => 0,
+				'provider'  => null,
+				'provider_error' => null,
+				'retrieval' => array(),
+				'answer'    => null,
+			);
+		}
+		return $engine->ask( self::requested_search_query() ?? '' );
+	}
+
 	public static function rewrite_rules(): void {
 		if ( ! defined( 'KBK_FEATURE_AI_BOOK' ) || ! KBK_FEATURE_AI_BOOK ) {
 			return;
@@ -376,11 +446,12 @@ final class KBK_AI_Book {
 		add_rewrite_rule( '^ai-book/templates/?$', 'index.php?' . self::QUERY_VAR . '=templates', 'top' );
 		add_rewrite_rule( '^ai-book/concepts/?$', 'index.php?' . self::QUERY_VAR . '=concepts', 'top' );
 		add_rewrite_rule( '^ai-book/graph/?$', 'index.php?' . self::QUERY_VAR . '=graph', 'top' );
+		add_rewrite_rule( '^ai-book/ask/?$', 'index.php?' . self::QUERY_VAR . '=ask', 'top' );
 	}
 
 	public static function current_view(): string {
 		$value = (string) get_query_var( self::QUERY_VAR );
-		return in_array( $value, array( 'home', 'read', 'search', 'glossary', 'sources', 'templates', 'concepts', 'graph' ), true ) ? $value : '';
+		return in_array( $value, array( 'home', 'read', 'search', 'glossary', 'sources', 'templates', 'concepts', 'graph', 'ask' ), true ) ? $value : '';
 	}
 
 	public static function is_request(): bool {

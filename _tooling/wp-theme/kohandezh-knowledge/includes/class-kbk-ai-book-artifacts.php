@@ -364,6 +364,46 @@ final class KBK_AI_Book_Artifacts {
 	}
 
 	/**
+	 * Validate one RAG corpus chunk (release/14_rag_corpus_fa.jsonl line).
+	 * Chunks are retrieval units: bounded text, real content IDs, canonical
+	 * citation URL pointing at the /fa/ai-book/ namespace with the chunk's
+	 * own content ID fragment.
+	 *
+	 * @param array<string,mixed> $chunk   Decoded chunk line.
+	 * @param string              $edition Expected edition.
+	 * @return array<string,mixed>
+	 */
+	public static function validate_rag_chunk( array $chunk, string $edition ): array {
+		self::require_keys( $chunk, array( 'chunk_id', 'content_id', 'structural_id', 'language', 'origin', 'label_fa', 'fa_text', 'part_id', 'chapter_id', 'section_id', 'keywords_fa', 'keywords_en', 'source_documents', 'canonical_url' ), 'rag_chunk' );
+		self::content_id( $chunk['content_id'], 'rag_chunk.content_id', $edition );
+		self::structural_id( $chunk['structural_id'], 'rag_chunk.structural_id', $edition );
+		self::matches( '/^' . $chunk['content_id'] . '#r\d{1,3}$/', $chunk['chunk_id'], 'rag_chunk.chunk_id' );
+		self::same( 'fa', $chunk['language'], 'rag_chunk.language' );
+		self::origin( $chunk['origin'], 'rag_chunk.origin' );
+		if ( isset( $chunk['label_fa'] ) && null !== $chunk['label_fa'] && ( ! is_string( $chunk['label_fa'] ) || mb_strlen( $chunk['label_fa'] ) > 200 ) ) {
+			throw new UnexpectedValueException( 'rag_chunk.label_fa must be null or a bounded string' );
+		}
+		if ( ! is_string( $chunk['fa_text'] ) || '' === trim( $chunk['fa_text'] ) || mb_strlen( $chunk['fa_text'] ) > 5000 ) {
+			throw new UnexpectedValueException( 'rag_chunk.fa_text must be a bounded non-empty string' );
+		}
+		foreach ( array( 'part_id', 'chapter_id', 'section_id' ) as $structural_part ) {
+			self::matches( '/^[PCS]\d{2}$/', $chunk[ $structural_part ], 'rag_chunk.' . $structural_part );
+		}
+		foreach ( array( 'keywords_fa', 'keywords_en', 'source_documents' ) as $list_field ) {
+			self::list_value( $chunk[ $list_field ], 'rag_chunk.' . $list_field );
+			foreach ( $chunk[ $list_field ] as $value ) {
+				if ( ! is_string( $value ) ) {
+					throw new UnexpectedValueException( 'rag_chunk.' . $list_field . ' must contain only strings' );
+				}
+			}
+		}
+		if ( ! is_string( $chunk['canonical_url'] ) || 0 !== strpos( $chunk['canonical_url'], 'https://kohandezh.com/fa/ai-book/' ) || false === strpos( $chunk['canonical_url'], '#' . $chunk['structural_id'] ) ) {
+			throw new UnexpectedValueException( 'rag_chunk.canonical_url must stay in the canonical /fa/ai-book/ namespace with its section fragment' );
+		}
+		return $chunk;
+	}
+
+	/**
 	 * Validate knowledge/graph.json — the bounded Knowledge Graph artifact.
 	 * Endpoints must exist; edges must anchor to real content IDs of this
 	 * edition; evidence quotes stay bounded.
