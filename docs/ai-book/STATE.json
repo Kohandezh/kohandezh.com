@@ -208,10 +208,10 @@
  "git": {
   "branch": "claude/kohandezh-reader-data-phase-9-8f7e49",
   "base_checkpoint": "4c1c998",
-  "new_checkpoint": "cb20307",
+  "new_checkpoint": "572a284",
   "pushed": false,
   "session_base_checkpoint": "ff6884a",
-  "checkpoint_role": "Security review gate committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
+  "checkpoint_role": "SEO review gate committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
  },
  "next_action": "Performance review gate over /ai-book/* (payload, lazy artifacts, per-view cost bounds, caching posture), then Final browser/accessibility QA and Production Build per sequencing. Personalized PDF remains deferred."
 }
