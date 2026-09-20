@@ -243,6 +243,58 @@ $read_link = static function ( string $part_id, ?string $chapter_id = null, ?str
 		<?php elseif ( 'PROVIDER_REQUIRED' === $ask_status || 'READY' === $ask_status ) : ?>
 		<section class="ab-section"><div class="ab-fallback"><p>برای شروع، پرسش خود را بنویسید؛ پاسخ‌ها همیشه به بخش‌های کتاب استناد می‌دهند.</p></div></section>
 		<?php endif; ?>
+	<?php elseif ( 'pdf' === $view ) :
+		$pdf_engine = KBK_AI_Book::pdf();
+		$pdf_meta   = null === $pdf_engine ? null : $pdf_engine->meta();
+		$pdf_status = KBK_AI_Book::pdf_status();
+		$pdf_stream = home_url( KBK_AI_Book_Pdf::STREAM_PATH );
+		?>
+		<header class="ab-page-hero"><p class="ab-kicker">نسخهٔ PDF · <?php echo esc_html( null !== $pdf_meta ? $pdf_meta['edition'] : '' ); ?></p><h1>نسخهٔ PDF کتاب</h1><p class="ab-lead">همان متن canonical در قالب کتاب؛ نمایش در مرورگر شما و بدون سرویس شخص ثالث.</p></header>
+		<?php if ( null !== $pdf_meta ) : ?>
+		<div class="ab-pdf">
+			<div class="ab-pdf-toolbar"><span>نوار ابزار تعاملی PDF.js در فاز بعدی فعال می‌شود؛ تا آن زمان مرورگر شما فایل را مستقیم نمایش می‌دهد.</span><a class="ab-button" href="<?php echo esc_url( $pdf_stream ); ?>">دانلود فایل</a></div>
+			<div class="ab-pdf-stage"><object class="ab-pdf-embed" type="application/pdf" data="<?php echo esc_url( $pdf_stream ); ?>" aria-label="نمایش نسخهٔ PDF کتاب"><div class="ab-fallback"><p>مرورگر شما نمایش PDF داخلی ندارد.</p><p><a href="<?php echo esc_url( $pdf_stream ); ?>">دانلود نسخهٔ PDF</a> · یا <a href="<?php echo esc_url( home_url( '/ai-book/read/' ) ); ?>">مطالعهٔ متنی همان محتوا</a></p></div></object></div>
+			<aside><h2>دربارهٔ نسخه</h2><dl><dt>ویرایش</dt><dd><?php echo esc_html( $pdf_meta['edition'] ); ?></dd><dt>وضعیت امضا</dt><dd>امضای توسعه؛ امضای ناشر لازم است</dd><dt>ریشهٔ مرکل</dt><dd><bdi><?php echo esc_html( substr( $pdf_meta['merkle_root'], 0, 8 ) ); ?>…<?php echo esc_html( substr( $pdf_meta['merkle_root'], -7 ) ); ?></bdi></dd><dt>اثر انگشت SHA-256</dt><dd><bdi><?php echo esc_html( substr( $pdf_meta['sha256'], 0, 8 ) ); ?>…<?php echo esc_html( substr( $pdf_meta['sha256'], -7 ) ); ?></bdi></dd><dt>حجم</dt><dd><?php echo esc_html( number_format_i18n( $pdf_meta['bytes'] ) ); ?> بایت</dd><dt>ساخت</dt><dd><bdi><?php echo esc_html( $pdf_meta['build_date'] ); ?></bdi></dd></dl><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/request-pdf/' ) ); ?>">درخواست نسخهٔ شخصی</a></aside>
+		</div>
+		<?php else : ?>
+		<section class="ab-section"><div class="ab-fallback"><p><?php echo 'CONFIG_REQUIRED' === $pdf_status ? 'نسخهٔ PDF هنوز پیکربندی نشده است.' : 'نسخهٔ PDF موقتاً در دسترس نیست؛ یکپارچگی فایل تأیید نشد.'; ?></p><p>تا آن زمان می‌توانید <a href="<?php echo esc_url( home_url( '/ai-book/read/' ) ); ?>">همان محتوا را متنی بخوانید</a>.</p></div></section>
+		<?php endif; ?>
+	<?php elseif ( 'request-pdf' === $view ) :
+		$request_state = KBK_AI_Book::current_request();
+		$request_provider = $request_state['provider'];
+		$error_labels = array(
+			'name'    => 'نام',
+			'email'   => 'نشانی رایانامه',
+			'use'     => 'نوع استفاده',
+			'reason'  => 'دلیل درخواست',
+			'consent' => 'رضایت ثبت اطلاعات',
+		);
+		$code_labels  = array(
+			'REQUIRED' => 'الزامی است',
+			'INVALID'  => 'نامعتبر است',
+			'BOUNDED'  => 'بیش از حد مجاز است',
+		);
+		?>
+		<header class="ab-page-hero"><p class="ab-kicker">درخواست PDF</p><h1>درخواست نسخهٔ شخصی‌سازی‌شده</h1><p class="ab-lead">هیچ داده‌ای در همین سایت ذخیره نمی‌شود؛ درخواست شما فقط پس از پیکربندی سرویس صدور ارسال می‌شود.</p></header>
+		<div class="ab-form-layout">
+			<div>
+			<?php if ( 'SUBMITTED' === $request_state['status'] && null !== $request_state['reference'] ) : ?>
+			<div class="ab-message"><span class="ab-kicker">ثبت شد</span><p>درخواست شما با کد رهگیری <bdi><?php echo esc_html( $request_state['reference'] ); ?></bdi> ثبت شد. پاسخ از طریق رایانامه اعلام می‌شود.</p></div>
+			<?php elseif ( 'PROVIDER_UNAVAILABLE' === $request_state['status'] ) : ?>
+			<div class="ab-fallback"><p>سرویس صدور در دسترس نبود؛ لطفاً بعداً دوباره تلاش کنید.</p></div>
+			<?php elseif ( 'PROVIDER_INVALID' === $request_state['status'] ) : ?>
+			<div class="ab-fallback"><p>پاسخ سرویس صدور نامعتبر بود؛ درخواست شما ثبت نشد.</p></div>
+			<?php elseif ( 'REJECTED' === $request_state['status'] ) : ?>
+			<div class="ab-fallback"><p>درخواست شما پذیرفته نشد؛ برای بررسی با ما در تماس باشید.</p></div>
+			<?php elseif ( $request_state['errors'] ) : ?>
+			<div class="ab-fallback"><p>چند مورد نیاز به اصلاح دارد:</p><ul><?php foreach ( $request_state['errors'] as $request_error ) : ?><li><?php echo esc_html( ( $error_labels[ $request_error['field'] ] ?? $request_error['field'] ) . ' ' . ( $code_labels[ $request_error['code'] ] ?? $request_error['code'] ) ); ?></li><?php endforeach; ?></ul></div>
+			<?php elseif ( ! $request_provider ) : ?>
+			<div class="ab-fallback"><p>سرویس صدور نسخهٔ شخصی هنوز پیکربندی نشده است؛ فرم فعلاً ارسال نمی‌شود.</p></div>
+			<?php endif; ?>
+			<form class="ab-request-form" method="post" action="<?php echo esc_url( home_url( '/ai-book/request-pdf/' ) ); ?>"><div class="ab-form-grid"><label for="ab-req-name">نام (اختیاری)</label><input id="ab-req-name" type="text" name="name" value="<?php echo esc_attr( (string) $request_state['reposted']['name'] ); ?>" maxlength="80"><label for="ab-req-email">نشانی رایانامه</label><input id="ab-req-email" type="email" name="email" value="<?php echo esc_attr( (string) $request_state['reposted']['email'] ); ?>" maxlength="120" required><label class="ab-span-2" for="ab-req-use">نوع استفاده</label><select class="ab-span-2" id="ab-req-use" name="use"><option value="personal"<?php echo 'personal' === $request_state['reposted']['use'] ? ' selected' : ''; ?>>مطالعهٔ شخصی</option><option value="education"<?php echo 'education' === $request_state['reposted']['use'] ? ' selected' : ''; ?>>آموزش سازمانی</option><option value="research"<?php echo 'research' === $request_state['reposted']['use'] ? ' selected' : ''; ?>>پژوهش و استناد</option></select><label class="ab-span-2" for="ab-req-reason">دلیل درخواست (اختیاری)</label><textarea class="ab-span-2" id="ab-req-reason" name="reason" rows="4" maxlength="500"><?php echo esc_textarea( (string) $request_state['reposted']['reason'] ); ?></textarea></div><label class="ab-consent"><input type="checkbox" name="consent" value="1"<?php echo '1' === $request_state['reposted']['consent'] ? ' checked' : ''; ?> required> اطلاعات بالا برای بررسی و صدور نسخه ثبت شود.</label><button class="ab-button ab-button-primary" type="submit"<?php echo $request_provider ? '' : ' disabled'; ?>>ثبت درخواست</button></form>
+			</div>
+			<aside class="ab-process"><h2>مسیر درخواست</h2><ol><li class="is-active">ثبت درخواست</li><li>اعتبارسنجی تماس</li><li>بررسی</li><li>تأیید و شخصی‌سازی</li><li>صدور قابل رهگیری</li></ol><p>درخواست شما فقط برای ویرایش فعال کتاب پردازش می‌شود و هیچ داده‌ای در همین سایت باقی نمی‌ماند.</p></aside>
+		</div>
 	<?php elseif ( $selection['part_not_found'] ) : ?>
 		<header class="ab-page-hero"><p class="ab-kicker">یافت نشد</p><h1>این بخش از کتاب موجود نیست</h1><p class="ab-lead">شناسهٔ درخواستی با هیچ‌یک از هفت بخش canonical کتاب مطابقت ندارد.</p><div class="ab-actions"><a class="ab-button ab-button-primary" href="<?php echo esc_url( home_url( '/ai-book/' ) ); ?>">بازگشت به فهرست بخش‌ها</a></div></header>
 	<?php elseif ( $part && $chapter ) :

@@ -466,6 +466,84 @@ final class KBK_AI_Book_Artifacts {
 	}
 
 	/**
+	 * Validate the release provenance manifest and return the bounded PDF facts.
+	 *
+	 * @return array{edition_id:string,build_date:string,publisher:string,merkle_root:string,bytes:int,sha256:string}
+	 */
+	public static function validate_release_manifest( $manifest, string $edition ): array {
+		self::object_value( $manifest, 'release-manifest' );
+		self::require_keys( $manifest, array( 'edition_id', 'build_date', 'publisher', 'merkle_root', 'artifacts', 'missing_deliverables' ), 'release-manifest' );
+		if ( ! is_string( $manifest['edition_id'] ) || 1 !== preg_match( self::EDITION_PATTERN, $manifest['edition_id'] ) ) {
+			throw new UnexpectedValueException( 'release-manifest.edition_id has an unsupported format' );
+		}
+		self::same( $edition, $manifest['edition_id'], 'release-manifest edition' );
+		if ( ! is_string( $manifest['build_date'] ) || '' === trim( $manifest['build_date'] ) || mb_strlen( $manifest['build_date'] ) > 32 ) {
+			throw new UnexpectedValueException( 'release-manifest.build_date must be a bounded string' );
+		}
+		if ( ! is_string( $manifest['publisher'] ) || '' === trim( $manifest['publisher'] ) || mb_strlen( $manifest['publisher'] ) > 120 ) {
+			throw new UnexpectedValueException( 'release-manifest.publisher must be a bounded string' );
+		}
+		if ( ! is_string( $manifest['merkle_root'] ) || 1 !== preg_match( '/^[0-9a-f]{8,128}$/', $manifest['merkle_root'] ) ) {
+			throw new UnexpectedValueException( 'release-manifest.merkle_root has an unsupported format' );
+		}
+		self::object_value( $manifest['artifacts'], 'release-manifest.artifacts' );
+		if ( count( $manifest['artifacts'] ) < 1 || count( $manifest['artifacts'] ) > 32 ) {
+			throw new UnexpectedValueException( 'release-manifest.artifacts must list 1..32 artifacts' );
+		}
+		foreach ( $manifest['artifacts'] as $name => $entry ) {
+			if ( ! is_string( $name ) || '' === $name || mb_strlen( $name ) > 80 ) {
+				throw new UnexpectedValueException( 'release-manifest.artifacts keys must be bounded names' );
+			}
+			self::object_value( $entry, 'release-manifest.artifacts.' . $name );
+			self::non_negative_int( $entry['bytes'] ?? null, 'release-manifest.artifacts.' . $name . '.bytes' );
+			if ( ! isset( $entry['sha256'] ) || ! is_string( $entry['sha256'] ) || 1 !== preg_match( '/^[0-9a-f]{64}$/', $entry['sha256'] ) ) {
+				throw new UnexpectedValueException( 'release-manifest.artifacts.' . $name . '.sha256 has an unsupported format' );
+			}
+		}
+		if ( ! isset( $manifest['artifacts']['06_book_fa.pdf'] ) ) {
+			throw new UnexpectedValueException( 'release-manifest.artifacts must contain 06_book_fa.pdf' );
+		}
+		self::list_value( $manifest['missing_deliverables'], 'release-manifest.missing_deliverables' );
+		if ( count( $manifest['missing_deliverables'] ) > 50 ) {
+			throw new UnexpectedValueException( 'release-manifest.missing_deliverables must stay bounded' );
+		}
+		foreach ( $manifest['missing_deliverables'] as $missing ) {
+			if ( ! is_string( $missing ) || mb_strlen( $missing ) > 200 ) {
+				throw new UnexpectedValueException( 'release-manifest.missing_deliverables entries must be bounded strings' );
+			}
+		}
+		$pdf = $manifest['artifacts']['06_book_fa.pdf'];
+		return array(
+			'edition_id'  => $manifest['edition_id'],
+			'build_date'  => $manifest['build_date'],
+			'publisher'   => $manifest['publisher'],
+			'merkle_root' => $manifest['merkle_root'],
+			'bytes'       => (int) $pdf['bytes'],
+			'sha256'      => $pdf['sha256'],
+		);
+	}
+
+	/**
+	 * Verify the canonical PDF file header and size; returns the byte size.
+	 */
+	public static function validate_pdf_file( string $path, int $expected_bytes ): int {
+		$handle = @fopen( $path, 'rb' );
+		if ( false === $handle ) {
+			throw new UnexpectedValueException( 'pdf file is not readable' );
+		}
+		$head = (string) fread( $handle, 5 );
+		fclose( $handle );
+		if ( '%PDF-' !== $head ) {
+			throw new UnexpectedValueException( 'pdf file has an unsupported header' );
+		}
+		$bytes = (int) @filesize( $path );
+		if ( $bytes < 1 || $bytes !== $expected_bytes ) {
+			throw new UnexpectedValueException( 'pdf file size does not match the release manifest' );
+		}
+		return $bytes;
+	}
+
+	/**
 	 * Validate that the three artifact families describe the same edition/IDs.
 	 *
 	 * @param array<string,mixed> $book Master book.

@@ -30,3 +30,4 @@
 .ab-related-inline p{margin:4px 0 0;color:var(--ab-muted);font-size:14px}
 .ab-related-inline a{border-bottom:1px solid var(--ab-line-strong)}
 .ab-graph-canvas .ab-node{max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ab-pdf-embed{display:block;width:100%;min-height:500px;height:72vh;border:1px solid var(--ab-line);border-radius:var(--ab-radius);background:var(--ab-panel)}

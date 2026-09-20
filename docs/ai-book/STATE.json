@@ -2,11 +2,11 @@
  "schema_version": 2,
  "project": "kohandezh-ai-book",
  "language": "fa",
- "updated_at": "2026-09-20T00:20:00-04:00",
+ "updated_at": "2026-09-20T01:05:00-04:00",
  "website_root": "/Users/emperor/Documents/AI/kohandezh.com",
  "book_root": "/Users/emperor/Documents/AI/AiBook",
  "worktree": "/Users/emperor/Documents/AI/kohandezh.com/.claude/worktrees/kohandezh-reader-data-phase-9-8f7e49",
- "current_phase": "ASK_RAG",
+ "current_phase": "PDF_REQUEST",
  "completed_phases": [
   "PREFLIGHT",
   "REPOSITORY_DISCOVERY",
@@ -23,10 +23,12 @@
   "SEARCH",
   "CONCEPTS_GLOSSARY_SOURCES_TEMPLATES",
   "KNOWLEDGE_GRAPH",
-  "ASK_RAG"
+  "ASK_RAG",
+  "PDF_VIEWER",
+  "PDF_REQUEST"
  ],
- "active_phase": "PDF_VIEWER",
- "next_phase": "PDF_REQUEST",
+ "active_phase": "SECURITY",
+ "next_phase": "SEO",
  "design_frozen": true,
  "design_status": "FROZEN_REVISION_2",
  "routes": {
@@ -69,7 +71,9 @@
    "templates",
    "concepts",
    "graph",
-   "ask"
+   "ask",
+   "pdf",
+   "request-pdf"
   ],
   "verified": [
    "/ai-book/",
@@ -110,8 +114,8 @@
   "graph": "IMPLEMENTED_CONFIG_REQUIRED",
   "sources": "IMPLEMENTED_CONFIG_REQUIRED",
   "templates": "IMPLEMENTED_CONFIG_REQUIRED",
-  "pdf_viewer": "VISUAL_COMPLETE_INTEGRATION_PENDING",
-  "pdf_request": "VISUAL_COMPLETE_BACKEND_PENDING",
+  "pdf_viewer": "IMPLEMENTED",
+  "pdf_request": "IMPLEMENTED_PROVIDER_REQUIRED",
   "personalized_pdf": "DEFERRED",
   "citation": "VISUAL_COMPLETE_DATA_PENDING",
   "verification": "VISUAL_COMPLETE_DATA_PENDING"
@@ -183,14 +187,16 @@
   "full_npm_test_suite": "PASS_394_ASSERTIONS_NO_REGRESSION",
   "catalog_subsystem_test": "PASS",
   "graph_subsystem_test": "PASS",
-  "ask_subsystem_test": "PASS"
+  "ask_subsystem_test": "PASS",
+  "pdf_subsystem_test": "PASS"
  },
  "known_issues": [
   "WordPress ai-book routes (home/read/search/glossary) require KBK_FEATURE_AI_BOOK and KBK_AI_BOOK_ROOT configuration",
   "Current Hub pages are noindex until canonical/duplicate-content behavior is integrated",
   "Publisher signing key is required before publisher-signed status",
   "No local WordPress install exists to browser-test the Hub end-to-end; verified via isolated PHP unit tests instead (dev-server.php has no WP core, per gotcha 1)",
-  "Ask answer generation requires KBK_AI_BOOK_ASK_ENDPOINT/KBK_AI_BOOK_ASK_API_KEY (optional KBK_AI_BOOK_ASK_MODEL); cited retrieval works without it"
+  "Ask answer generation requires KBK_AI_BOOK_ASK_ENDPOINT/KBK_AI_BOOK_ASK_API_KEY (optional KBK_AI_BOOK_ASK_MODEL); cited retrieval works without it",
+  "Ask generation requires KBK_AI_BOOK_ASK_ENDPOINT/KBK_AI_BOOK_ASK_API_KEY; PDF request delivery requires KBK_AI_BOOK_REQUEST_ENDPOINT/KBK_AI_BOOK_REQUEST_API_KEY (all optional, honest degradation without them)"
  ],
  "blockers": [],
  "git": {
@@ -201,5 +207,5 @@
   "session_base_checkpoint": "ff6884a",
   "checkpoint_role": "Phase 13 ask/RAG committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
  },
- "next_action": "PDF viewer/request workflow per CONTENT_SOURCE_MAP.md sequencing (viewer over release/06_book_fa.pdf with honest degradation, request form with bounded storage-free behavior), then Security/SEO/Performance gates. Personalized PDF remains deferred."
+ "next_action": "Security review gate, then SEO and Performance gates per sequencing (personalized PDF remains deferred). Update all handover files after the gate."
 }

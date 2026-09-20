@@ -2,7 +2,7 @@
 
 ## Current state
 
-`DESIGN_STATUS = FROZEN_REVISION_2` (unchanged, not touched this session). This session implemented and tested three phases: **Phase 11 (Catalog)**, **Phase 12 (Knowledge Graph)**, and **Phase 13 (Ask/RAG)** — the `/ai-book/ask/` view with local cited retrieval over the RAG corpus and a strictly configuration-gated answer provider. All prior subsystems are unchanged and still green. The next task is the **PDF viewer/request workflow** per `CONTENT_SOURCE_MAP.md` sequencing.
+`DESIGN_STATUS = FROZEN_REVISION_2` (unchanged, not touched this session). This session implemented and tested four phases: **Phase 11 (Catalog)**, **Phase 12 (Knowledge Graph)**, **Phase 13 (Ask/RAG)**, and **Phase 14 (PDF viewer + request intake)** — the `/ai-book/pdf/` viewer with a manifest-verified local stream and the storage-free, configuration-gated `/ai-book/request-pdf/` intake. All prior subsystems are unchanged and still green. The next task is the **Security review gate**, then SEO and Performance gates per sequencing.
 
 Canonical book root is `/Users/emperor/Documents/AI/AiBook` (read-only). Do not read `.env` or private signing keys. Current edition `2026E1` is development-signed, not publisher-signed. All work happens in the linked worktree `.claude/worktrees/kohandezh-reader-data-phase-9-8f7e49` on branch `claude/kohandezh-reader-data-phase-9-8f7e49`.
 
@@ -25,9 +25,17 @@ Canonical book root is `/Users/emperor/Documents/AI/AiBook` (read-only). Do not 
 - `templates/ai-book.php`: ask view (frozen hero copy, form, answer block when present, honest provider-error note, cited passage cards with Reader deep links + canonical citation links, honest no-match fallback). No new CSS needed (reuses `.ab-ask-form`/`.ab-message`/`.ab-citations`/`.ab-fallback` frozen components).
 - New test `_tooling/tests/ai-book-ask.test.php` (8 blocks, real canonical corpus): retrieval + repository resolution + no-body-leak, honest empty states, hostile inputs, provider response contract (7 invalid fixtures), rag chunk validator (8 tamper fixtures), stubbed provider paths (unreachable/invalid/valid), corrupted-corpus fail-closed, route-layer hygiene. Route test extended to 9 rewrites + ask CONFIG_REQUIRED states. Wired into `test:ai-book`.
 
+## What changed this session (Phase 14: PDF viewer + request intake)
+
+- New `KBK_AI_Book_Pdf` (`includes/class-kbk-ai-book-pdf.php`): fail-closed facts over `provenance/release-manifest.json` + `release/06_book_fa.pdf`. Two new validators (`validate_release_manifest`, `validate_pdf_file`: `%PDF-` header + exact byte-size match). `/ai-book/pdf/` shows real edition facts (edition, dev-sign status, truncated merkle root/SHA-256, bytes, build date) and embeds the file via `<object>` pointing at the local stream route `^ai-book/pdf/file/?$` — native browser rendering, no third-party viewer, PDF.js toolbar honestly disabled (ADR-AB-0014). The stream executor (template_redirect) emits typed, noindexed headers from a pure testable plan; the full sha256 is verified offline in the test suite.
+- New `KBK_AI_Book_Request` (`includes/class-kbk-ai-book-request.php`): storage-free intake — per-field validation (name ≤80 optional, email ≤120 + filter_var, `use` enum, reason ≤500, consent exactly `1`), then provider forwarding only when `KBK_AI_BOOK_REQUEST_ENDPOINT`/`KBK_AI_BOOK_REQUEST_API_KEY` exist. Response contract: `{status: ok|rejected, reference: ≤32 opaque}`; violations/unreachable/non-2xx degrade honestly (ADR-AB-0015). Without configuration the submit button is disabled and the state is honest CONFIG_REQUIRED. Nothing is persisted locally; the API key appears only in the Authorization header.
+- `KBK_AI_Book`: `pdf`/`request-pdf` views + rewrites 10–12 (`^ai-book/pdf/?$`, `^ai-book/request-pdf/?$`, `^ai-book/pdf/file/?$` with `kbk_pdf_file` query var), `pdf()`/`pdf_status()`, `request_engine()`/`request_status()`, `current_request()` (sanitized repost values + bounded submission outcome), `maybe_stream_pdf()` executor hook.
+- Template: real pdf view (edition panel, honest degraded states, text alternative to the Reader) and real request view (working POST form with per-field error rendering, four provider states, success reference, process aside); one additive CSS block (`.ab-pdf-embed`).
+- New test `_tooling/tests/ai-book-pdf.test.php` (5 blocks, real canonical data incl. offline sha256 verification of the 38MB file): manifest-backed meta, typed noindexed stream plan, tampered manifest/file fail-closed paths (invalid manifest, missing manifest, wrong header, size mismatch), bounded intake field errors, honest unconfigured state, provider contract (unavailable/invalid contract fixtures/rejected/ok with stubbed HTTP). Route test extended to 12 rewrites + pdf/request states. Wired into `test:ai-book`.
+
 ## Skills / Agent Capabilities
 
-- See `docs/ai-book/SKILLS_MANIFEST.md` (reconciled 2026-09-19). No new Skills were needed for any phase this session; `MANUAL_POLICY` covered PHP type safety and SEO-safe noindex behavior.
+- See `docs/ai-book/SKILLS_MANIFEST.md` (reconciled 2026-09-19). No new Skills were needed for any phase this session; `MANUAL_POLICY` covered PHP type safety and SEO-safe noindex behavior. The PDF phase used only byte/manifest inspection — no PDF-creation Skill was activated.
 - No successor must install an identical Skill or the generic `claude-flow`/`sparc`/`swarm` catalogue — unrelated to this project.
 
 ## Verified evidence
@@ -39,8 +47,9 @@ Canonical book root is `/Users/emperor/Documents/AI/AiBook` (read-only). Do not 
 - `php _tooling/tests/ai-book-search.test.php /Users/emperor/Documents/AI/AiBook` → PASS
 - `php _tooling/tests/ai-book-catalog.test.php /Users/emperor/Documents/AI/AiBook` → PASS
 - `php _tooling/tests/ai-book-graph.test.php /Users/emperor/Documents/AI/AiBook` → PASS
-- `php _tooling/tests/ai-book-ask.test.php /Users/emperor/Documents/AI/AiBook` → PASS (new)
-- `npm run test:ai-book` → PASS end to end (8 test suites + visual shell build)
+- `php _tooling/tests/ai-book-ask.test.php /Users/emperor/Documents/AI/AiBook` → PASS
+- `php _tooling/tests/ai-book-pdf.test.php /Users/emperor/Documents/AI/AiBook` → PASS (new; includes offline sha256 verification of `release/06_book_fa.pdf` against the release manifest)
+- `npm run test:ai-book` → PASS end to end (10 test suites + visual shell build)
 - `npm test` (full existing site suite) → PASS, zero regression
 - `php -l` clean on all touched PHP files
 - No local WordPress install exists to browser-test end to end (gotcha 1); verified via isolated PHP unit tests consistent with prior sessions. The provider HTTP path is stubbed in tests — no live provider exists locally and none must be invented.
@@ -50,11 +59,13 @@ Canonical book root is `/Users/emperor/Documents/AI/AiBook` (read-only). Do not 
 - `_tooling/wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-catalog.php` (new, Phase 11)
 - `_tooling/wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-graph.php` (new, Phase 12)
 - `_tooling/wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-ask.php` (new, Phase 13)
-- `_tooling/wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-artifacts.php` (7 new validators)
-- `_tooling/wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book.php` (views: glossary index/sources/templates/concepts/graph/ask; query vars; catalog+graph+ask accessors)
+- `_tooling/wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-pdf.php` (new, Phase 14)
+- `_tooling/wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-request.php` (new, Phase 14)
+- `_tooling/wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-artifacts.php` (9 new validators)
+- `_tooling/wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book.php` (views: glossary index/sources/templates/concepts/graph/ask/pdf/request-pdf; query vars incl. `kbk_pdf_file`; catalog+graph+ask+pdf+request accessors; stream executor)
 - `_tooling/wp-theme/kohandezh-knowledge/templates/ai-book.php` (all new branches + Reader related wiring)
-- `assets/css/ai-book.css` (two additive blocks, Phases 11–12; none for ask)
-- `_tooling/tests/ai-book-catalog.test.php` (new), `_tooling/tests/ai-book-graph.test.php` (new), `_tooling/tests/ai-book-ask.test.php` (new), `_tooling/tests/ai-book-wordpress-route.test.php`
+- `assets/css/ai-book.css` (three additive blocks, Phases 11–14)
+- `_tooling/tests/ai-book-catalog.test.php` (new), `_tooling/tests/ai-book-graph.test.php` (new), `_tooling/tests/ai-book-ask.test.php` (new), `_tooling/tests/ai-book-pdf.test.php` (new), `_tooling/tests/ai-book-wordpress-route.test.php`
 - `kohandezh-knowledge.php` (loader lines), `package.json` (`test:ai-book` chain)
 - `docs/ai-book/*` handover files
 
@@ -70,18 +81,19 @@ php _tooling/tests/ai-book-search.test.php /Users/emperor/Documents/AI/AiBook
 php _tooling/tests/ai-book-catalog.test.php /Users/emperor/Documents/AI/AiBook
 php _tooling/tests/ai-book-graph.test.php /Users/emperor/Documents/AI/AiBook
 php _tooling/tests/ai-book-ask.test.php /Users/emperor/Documents/AI/AiBook
+php _tooling/tests/ai-book-pdf.test.php /Users/emperor/Documents/AI/AiBook
 npm run test:ai-book
 npm test
 jq empty docs/ai-book/STATE.json
 git diff --check
 ```
 
-WordPress activation still requires `wp-config.php`: `KBK_FEATURE_AI_BOOK=true` and `KBK_AI_BOOK_ROOT` pointing at the canonical repo. Keep `KBK_AI_BOOK_INDEXABLE` unset/false. Ask generation additionally needs `KBK_AI_BOOK_ASK_ENDPOINT` + `KBK_AI_BOOK_ASK_API_KEY` (never commit them). Request delivery, personalized PDF and publisher signing remain configuration-required; do not invent credentials.
+WordPress activation still requires `wp-config.php`: `KBK_FEATURE_AI_BOOK=true` and `KBK_AI_BOOK_ROOT` pointing at the canonical repo. Keep `KBK_AI_BOOK_INDEXABLE` unset/false. Ask generation needs `KBK_AI_BOOK_ASK_ENDPOINT` + `KBK_AI_BOOK_ASK_API_KEY` (optional `KBK_AI_BOOK_ASK_MODEL`); PDF request delivery needs `KBK_AI_BOOK_REQUEST_ENDPOINT` + `KBK_AI_BOOK_REQUEST_API_KEY` — never commit any of them. Personalized PDF issuance and publisher signing remain deferred and human-gated; do not invent credentials.
 
 ## Git scope
 
-Base checkpoint for this session: `ff6884a` on branch `claude/kohandezh-reader-data-phase-9-8f7e49`. Checkpoints so far: `b227752` (Phase 11 catalog), `8c63eec` (Phase 12 graph), Phase 13 ask commit (see `git log`). Untracked `.agents/`/`skills-lock.json` in the main checkout are unrelated and excluded. No push, merge or deploy.
+Base checkpoint for this session: `ff6884a` on branch `claude/kohandezh-reader-data-phase-9-8f7e49`. Checkpoints so far: `b227752` (Phase 11 catalog), `8c63eec` (Phase 12 graph), `b08426a` (Phase 13 ask/RAG), Phase 14 pdf/request commit (see `git log`). Untracked `.agents/`/`skills-lock.json` in the main checkout are unrelated and excluded. No push, merge or deploy.
 
 ## Exact next task
 
-PDF viewer/request workflow per `docs/ai-book/CONTENT_SOURCE_MAP.md`: `/ai-book/pdf/` viewer over `release/06_book_fa.pdf` (honest degradation where the file/config is absent; no third-party cloud embedding that leaks reader data) and `/ai-book/request-pdf/` request workflow (bounded, storage-free, configuration-required delivery — no invented credentials; explicit consent checkbox honored). Personalized PDF remains deferred. Then Security → SEO → Performance gates per sequencing; update all handover files after the phase.
+Security review gate over the whole `/ai-book/*` surface: input boundaries (query vars, POST intake, stream executor), fail-closed degradation, secret handling (no key logging/rendering), the PDF stream headers, provider payloads, and template escaping — then Technical SEO and Performance gates per `NEXT_AGENT_PROMPT.md` sequencing. Personalized PDF issuance remains deferred. Update all handover files after the gate.

@@ -63,6 +63,8 @@ require_once __DIR__ . '/includes/class-kbk-ai-book-search.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-catalog.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-graph.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-ask.php';
+require_once __DIR__ . '/includes/class-kbk-ai-book-pdf.php';
+require_once __DIR__ . '/includes/class-kbk-ai-book-request.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book.php';
 
 /**

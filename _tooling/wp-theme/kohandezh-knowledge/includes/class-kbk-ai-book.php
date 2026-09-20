@@ -21,6 +21,7 @@ final class KBK_AI_Book {
 	const ENTITY_QUERY_VAR  = 'kbk_entity';
 	const TYPE_QUERY_VAR    = 'kbk_type';
 	const PAGE_QUERY_VAR    = 'kbk_page';
+	const PDF_FILE_QUERY_VAR = 'kbk_pdf_file';
 
 	/**
 	 * Bounds any hand-typed or linked identifier before it ever reaches the
@@ -60,6 +61,18 @@ final class KBK_AI_Book {
 	/** @var string|null */
 	private static $ask_error;
 
+	/** @var KBK_AI_Book_Pdf|null */
+	private static $pdf;
+
+	/** @var string|null */
+	private static $pdf_error;
+
+	/** @var KBK_AI_Book_Request|null */
+	private static $request;
+
+	/** @var string|null */
+	private static $request_error;
+
 	public static function hooks(): void {
 		if ( ! defined( 'KBK_FEATURE_AI_BOOK' ) || ! KBK_FEATURE_AI_BOOK ) {
 			return;
@@ -67,6 +80,7 @@ final class KBK_AI_Book {
 		add_filter( 'query_vars', array( __CLASS__, 'query_vars' ) );
 		add_action( 'init', array( __CLASS__, 'rewrite_rules' ), 20 );
 		add_filter( 'template_include', array( __CLASS__, 'template_include' ), 30 );
+		add_action( 'template_redirect', array( __CLASS__, 'maybe_stream_pdf' ), 1 );
 		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_assets' ) );
 		add_filter( 'wp_robots', array( __CLASS__, 'robots' ) );
 	}
@@ -83,6 +97,7 @@ final class KBK_AI_Book {
 		$vars[] = self::ENTITY_QUERY_VAR;
 		$vars[] = self::TYPE_QUERY_VAR;
 		$vars[] = self::PAGE_QUERY_VAR;
+		$vars[] = self::PDF_FILE_QUERY_VAR;
 		return $vars;
 	}
 
@@ -434,6 +449,131 @@ final class KBK_AI_Book {
 		return $engine->ask( self::requested_search_query() ?? '' );
 	}
 
+	/** The validated PDF subsystem, or null in a degraded state. */
+	public static function pdf() {
+		if ( null !== self::$pdf || null !== self::$pdf_error ) {
+			return self::$pdf;
+		}
+		$repository = self::repository();
+		if ( null === $repository ) {
+			self::$pdf_error = 'CONFIG_REQUIRED';
+			return null;
+		}
+		try {
+			self::$pdf = new KBK_AI_Book_Pdf( $repository );
+			self::$pdf->status(); // force manifest + file validation now
+		} catch ( InvalidArgumentException | UnexpectedValueException $error ) {
+			self::$pdf       = null;
+			self::$pdf_error = 'ARTIFACT_INVALID';
+		}
+		return self::$pdf;
+	}
+
+	public static function pdf_status(): string {
+		self::pdf();
+		return null !== self::$pdf_error ? self::$pdf_error : ( null === self::$pdf ? 'CONFIG_REQUIRED' : self::$pdf->status() );
+	}
+
+	/** The request intake, or null when unconfigured. */
+	public static function request_engine() {
+		if ( null !== self::$request ) {
+			return self::$request;
+		}
+		$provider = null;
+		if ( defined( 'KBK_AI_BOOK_REQUEST_ENDPOINT' ) && defined( 'KBK_AI_BOOK_REQUEST_API_KEY' ) ) {
+			$provider = array(
+				'endpoint' => (string) constant( 'KBK_AI_BOOK_REQUEST_ENDPOINT' ),
+				'api_key'  => (string) constant( 'KBK_AI_BOOK_REQUEST_API_KEY' ),
+			);
+		}
+		$edition = '';
+		if ( null !== self::repository() ) {
+			$edition = (string) self::repository()->summary()['edition_id'];
+		}
+		self::$request = new KBK_AI_Book_Request( $provider, $edition );
+		return self::$request;
+	}
+
+	public static function request_status(): string {
+		$engine = self::request_engine();
+		return $engine->provider_configured() ? 'READY' : 'CONFIG_REQUIRED';
+	}
+
+	/**
+	 * The current request view state: intake engine, submitted payload
+	 * outcome (bounded, storage-free) and sanitized repost values.
+	 *
+	 * @return array<string,mixed>
+	 */
+	public static function current_request(): array {
+		$engine   = self::request_engine();
+		$reposted = array(
+			'name'    => isset( $_POST['name'] ) && is_string( $_POST['name'] ) ? sanitize_text_field( wp_unslash( $_POST['name'] ) ) : '',
+			'email'   => isset( $_POST['email'] ) && is_string( $_POST['email'] ) ? sanitize_text_field( wp_unslash( $_POST['email'] ) ) : '',
+			'use'     => isset( $_POST['use'] ) && is_string( $_POST['use'] ) ? $_POST['use'] : '',
+			'reason'  => isset( $_POST['reason'] ) && is_string( $_POST['reason'] ) ? sanitize_textarea_field( wp_unslash( $_POST['reason'] ) ) : '',
+			'consent' => isset( $_POST['consent'] ) && is_string( $_POST['consent'] ) ? $_POST['consent'] : '',
+		);
+		if ( 'POST' !== ( $_SERVER['REQUEST_METHOD'] ?? '' ) ) {
+			return array(
+				'status'    => $engine->provider_configured() ? 'READY' : 'CONFIG_REQUIRED',
+				'errors'    => array(),
+				'reference' => null,
+				'provider'  => $engine->provider_configured(),
+				'reposted'  => $reposted,
+			);
+		}
+		$payload = array(
+			'name'    => $reposted['name'],
+			'email'   => $reposted['email'],
+			'use'     => $reposted['use'],
+			'reason'  => $reposted['reason'],
+			'consent' => isset( $_POST['consent'] ) && is_string( $_POST['consent'] ) ? $_POST['consent'] : '',
+		);
+		$result = $engine->submit( $payload );
+		return array(
+			'status'    => $result['status'],
+			'errors'    => $result['errors'],
+			'reference' => $result['reference'],
+			'provider'  => $engine->provider_configured(),
+			'reposted'  => $reposted,
+		);
+	}
+
+	/**
+	 * Execute the PDF stream plan on /ai-book/pdf/file/ before any theme
+	 * output; every request for the file itself carries noindex headers.
+	 */
+	public static function maybe_stream_pdf(): void {
+		if ( '1' !== (string) get_query_var( self::PDF_FILE_QUERY_VAR ) || '' === self::current_view() ) {
+			return;
+		}
+		$pdf  = self::pdf();
+		$plan = null === $pdf ? array() : $pdf->stream_plan();
+		if ( empty( $plan['path'] ) ) {
+			status_header( 404 );
+			nocache_headers();
+			exit;
+		}
+		foreach ( $plan['headers'] as $header ) {
+			header( $header );
+		}
+		$handle = @fopen( $plan['path'], 'rb' );
+		if ( false === $handle ) {
+			status_header( 404 );
+			nocache_headers();
+			exit;
+		}
+		while ( ! feof( $handle ) ) {
+			echo (string) fread( $handle, 65536 );
+			if ( connection_aborted() ) {
+				break;
+			}
+		}
+		fclose( $handle );
+		exit;
+	}
+
 	public static function rewrite_rules(): void {
 		if ( ! defined( 'KBK_FEATURE_AI_BOOK' ) || ! KBK_FEATURE_AI_BOOK ) {
 			return;
@@ -447,11 +587,14 @@ final class KBK_AI_Book {
 		add_rewrite_rule( '^ai-book/concepts/?$', 'index.php?' . self::QUERY_VAR . '=concepts', 'top' );
 		add_rewrite_rule( '^ai-book/graph/?$', 'index.php?' . self::QUERY_VAR . '=graph', 'top' );
 		add_rewrite_rule( '^ai-book/ask/?$', 'index.php?' . self::QUERY_VAR . '=ask', 'top' );
+		add_rewrite_rule( '^ai-book/pdf/?$', 'index.php?' . self::QUERY_VAR . '=pdf', 'top' );
+		add_rewrite_rule( '^ai-book/request-pdf/?$', 'index.php?' . self::QUERY_VAR . '=request-pdf', 'top' );
+		add_rewrite_rule( '^ai-book/pdf/file/?$', 'index.php?' . self::QUERY_VAR . '=pdf&' . self::PDF_FILE_QUERY_VAR . '=1', 'top' );
 	}
 
 	public static function current_view(): string {
 		$value = (string) get_query_var( self::QUERY_VAR );
-		return in_array( $value, array( 'home', 'read', 'search', 'glossary', 'sources', 'templates', 'concepts', 'graph', 'ask' ), true ) ? $value : '';
+		return in_array( $value, array( 'home', 'read', 'search', 'glossary', 'sources', 'templates', 'concepts', 'graph', 'ask', 'pdf', 'request-pdf' ), true ) ? $value : '';
 	}
 
 	public static function is_request(): bool {
