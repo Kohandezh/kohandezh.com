@@ -27,7 +27,8 @@
 - [x] Add cited Ask/RAG (`/ai-book/ask/`): local bounded retrieval over the 2,420-chunk corpus with repository-resolvable citations, answer provider strictly configuration-gated under a `used ⊆ offered` contract, honest PROVIDER_REQUIRED/unavailable states (`ai-book-ask.test.php`, ADR-AB-0013).
 - [x] Add PDF viewer (`/ai-book/pdf/`, manifest-verified local stream, no third-party embedding, ADR-AB-0014) and storage-free configuration-gated request intake (`/ai-book/request-pdf/`, ADR-AB-0015) (`ai-book-pdf.test.php`).
 - [x] Security review gate over the whole `/ai-book/*` surface — PASS with SEC-1 (cache-control token) and SEC-2 (CSRF nonce) fixed (`docs/ai-book/SECURITY_REVIEW.md`).
-- [ ] **NEXT:** Technical SEO review gate.
+- [x] Technical SEO review gate — PASS with SEO-1 fixed (Layer B isolation on the shared `kbk_entity` query var; `docs/ai-book/SEO_REVIEW.md`).
+- [ ] **NEXT:** Performance review gate.
 
 ## Deferred gates
 

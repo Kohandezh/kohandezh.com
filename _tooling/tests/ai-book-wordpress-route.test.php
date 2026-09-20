@@ -34,6 +34,10 @@ require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-b
 require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-pdf.php';
 require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-request.php';
 require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book.php';
+function is_post_type_archive( $types = array() ) { return false; }
+function is_tax( $taxonomies = array() ) { return false; }
+function is_single() { return false; }
+require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-routes.php';
 
 KBK_AI_Book::hooks();
 if ( 6 !== count( $GLOBALS['kbk_test_hooks'] ) ) {
@@ -148,6 +152,15 @@ if ( '' === KBK_AI_Book::current_view() ) {
 $GLOBALS['kbk_test_query'][ KBK_AI_Book::PDF_FILE_QUERY_VAR ] = 'yes';
 if ( '' === KBK_AI_Book::current_view() ) {
 	fwrite( STDERR, "FAIL pdf file view detection is view-level, not var-level\n" ); exit( 1 );
+}
+$GLOBALS['kbk_test_query']['kbk_ai_book'] = 'graph';
+$GLOBALS['kbk_test_query']['kbk_entity']  = 'E:Risk:supply_chain';
+if ( KBK_Routes::is_layer_b() || KBK_Routes::is_entity_request() ) {
+	fwrite( STDERR, "FAIL ai-book views must never enter the Layer B gate (shared kbk_entity var)\n" ); exit( 1 );
+}
+$GLOBALS['kbk_test_query']['kbk_ai_book'] = '';
+if ( ! KBK_Routes::is_entity_request() ) {
+	fwrite( STDERR, "FAIL entity route must stay Layer B outside ai-book views\n" ); exit( 1 );
 }
 $GLOBALS['kbk_test_query'] = array();
 

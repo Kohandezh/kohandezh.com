@@ -2,7 +2,7 @@
 
 ## Current state
 
-`DESIGN_STATUS = FROZEN_REVISION_2` (unchanged, not touched this session). This session implemented and tested four phases: **Phase 11 (Catalog)**, **Phase 12 (Knowledge Graph)**, **Phase 13 (Ask/RAG)**, and **Phase 14 (PDF viewer + request intake)** — the `/ai-book/pdf/` viewer with a manifest-verified local stream and the storage-free, configuration-gated `/ai-book/request-pdf/` intake. All prior subsystems are unchanged and still green. The Security review gate is complete (PASS). The next task is the **Technical SEO review gate**, then Performance, Final QA and Production Build per sequencing.
+`DESIGN_STATUS = FROZEN_REVISION_2` (unchanged, not touched this session). This session implemented and tested four phases: **Phase 11 (Catalog)**, **Phase 12 (Knowledge Graph)**, **Phase 13 (Ask/RAG)**, and **Phase 14 (PDF viewer + request intake)** — the `/ai-book/pdf/` viewer with a manifest-verified local stream and the storage-free, configuration-gated `/ai-book/request-pdf/` intake. All prior subsystems are unchanged and still green. The Security and Technical SEO review gates are complete (both PASS). The next task is the **Performance review gate**, then Final QA and Production Build per sequencing.
 
 Canonical book root is `/Users/emperor/Documents/AI/AiBook` (read-only). Do not read `.env` or private signing keys. Current edition `2026E1` is development-signed, not publisher-signed. All work happens in the linked worktree `.claude/worktrees/kohandezh-reader-data-phase-9-8f7e49` on branch `claude/kohandezh-reader-data-phase-9-8f7e49`.
 
@@ -98,6 +98,6 @@ Base checkpoint for this session: `ff6884a` on branch `claude/kohandezh-reader-d
 
 Technical SEO review gate over `/ai-book/*`: verify the noindex-default posture end to end (pages + PDF stream), canonical `/fa/ai-book/` namespace integrity (no duplicate/competing canonicals), no fake locale pages, honest/absent structured data, and sitemap exclusion while `KBK_AI_BOOK_INDEXABLE` is unset. Then Performance gate, Final browser/accessibility QA and Production Build per sequencing. Personalized PDF issuance remains deferred. Update all handover files after the gate.
 
-## Security review gate (2026-09-20)
+## Technical SEO review gate (2026-09-20)
 
-**PASS** — see `docs/ai-book/SECURITY_REVIEW.md` for the full checklist. Two findings were fixed in-gate: SEC-1 (stream `Cache-Control: nostore` → `no-store`) and SEC-2 (CSRF nonce `wp_nonce_field`/`wp_verify_nonce` on the request POST, forged nonces rejected with an honest session error before any provider call — tested in both suites). Documented notes: rate limiting delegated to the provider endpoint (storage-free design), clickjacking headers are a platform concern.
+**PASS** — see `docs/ai-book/SEO_REVIEW.md`. One finding fixed in-gate: SEO-1 — AI Book graph/concept views reused the shared `kbk_entity` query var, which made `KBK_Routes::is_entity_request()` classify them as Layer B (Layer B JSON-LD would print and the Layer B template filter would 404 those URLs). Fixed in `is_entity_request()` (ai-book views never enter Layer B); regression-tested both directions; Layer B site suite still green. Notes: platform robots.txt/llms.txt out of feature scope; the indexability flip (`KBK_AI_BOOK_INDEXABLE=true`) explicitly requires a future canonical/sitemap/content review first.
