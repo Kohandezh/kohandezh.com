@@ -30,8 +30,10 @@
 - [x] Technical SEO review gate — PASS with SEO-1 fixed (Layer B isolation on the shared `kbk_entity` query var; `docs/ai-book/SEO_REVIEW.md`).
 - [x] Performance review gate — PASS with PERF-1 fixed (sha256 ETag + conditional 304 on the 38MB stream; measured per-view cost map in `docs/ai-book/PERFORMANCE_REVIEW.md`).
 - [x] Final browser/accessibility QA — PASS: 39/39 page-load checks (13 routes × 3 viewports, zero console errors / no overflow / RTL / skip link), keyboard skip-link→main verified, QA-1 fixed (graph canvas `role="img"` in the shell builder); report + 12 screenshots in `docs/ai-book/FINAL_QA.md` and `docs/ai-book/screenshots/`.
-- [ ] **NEXT:** Production Build per sequencing.
+- [x] Production Build — VERIFIED: theme asset copies byte-identical to sources, loader order intact (artifacts → repository → search → catalog → graph → ask → pdf → request → ai-book), `php -l` clean on all touched PHP, both suites green, shell regeneration deterministic (no diff after rebuild), JS/PHP hygiene clean (no debug artifacts, no whitespace errors).
+- [ ] **NEXT (human-gated):** Publisher signing with the real publisher key (current edition is development-signed), then production deployment.
 
 ## Deferred gates
 
-- [ ] Publisher signing and production deployment (human-gated, out of scope here).
+- [ ] Personalized PDF issuance (deferred by scope decision).
+- [ ] Publisher signing and production deployment (human-gated, requires real credentials — do not invent).

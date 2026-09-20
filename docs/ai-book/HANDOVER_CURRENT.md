@@ -2,7 +2,7 @@
 
 ## Current state
 
-`DESIGN_STATUS = FROZEN_REVISION_2` (unchanged, not touched this session). This session implemented and tested four phases: **Phase 11 (Catalog)**, **Phase 12 (Knowledge Graph)**, **Phase 13 (Ask/RAG)**, and **Phase 14 (PDF viewer + request intake)** — the `/ai-book/pdf/` viewer with a manifest-verified local stream and the storage-free, configuration-gated `/ai-book/request-pdf/` intake. All prior subsystems are unchanged and still green. The Security, Technical SEO and Performance review gates are complete (all PASS). **Final browser/accessibility QA is complete (PASS)** — see `docs/ai-book/FINAL_QA.md`. The next task is the **Production Build** per sequencing; publisher signing/deployment stays human-gated.
+`DESIGN_STATUS = FROZEN_REVISION_2` (unchanged, not touched this session). This session implemented and tested four phases: **Phase 11 (Catalog)**, **Phase 12 (Knowledge Graph)**, **Phase 13 (Ask/RAG)**, and **Phase 14 (PDF viewer + request intake)** — the `/ai-book/pdf/` viewer with a manifest-verified local stream and the storage-free, configuration-gated `/ai-book/request-pdf/` intake. All prior subsystems are unchanged and still green. The Security, Technical SEO and Performance review gates are complete (all PASS), **Final browser/accessibility QA is complete (PASS** — `docs/ai-book/FINAL_QA.md`), and the **Production Build is VERIFIED** (asset parity, loader order, lint, full suites, deterministic shell regeneration). Every agent-executable phase in the sequencing is now done. The remaining items are **human-gated**: publisher signing, production deployment, and the deferred personalized-PDF issuance.
 
 Canonical book root is `/Users/emperor/Documents/AI/AiBook` (read-only). Do not read `.env` or private signing keys. Current edition `2026E1` is development-signed, not publisher-signed. All work happens in the linked worktree `.claude/worktrees/kohandezh-reader-data-phase-9-8f7e49` on branch `claude/kohandezh-reader-data-phase-9-8f7e49`.
 
@@ -36,6 +36,10 @@ Canonical book root is `/Users/emperor/Documents/AI/AiBook` (read-only). Do not 
 ## Final browser/accessibility QA (2026-09-20)
 
 **PASS** — see `docs/ai-book/FINAL_QA.md`. 13 static shells × 3 viewports = 39/39 page-load checks (zero console errors, no horizontal overflow, `dir=rtl`, one skip link). Keyboard: skip link is the first Tab target and Enter moves focus into `<main>`; landmarks/census verified on the Reader. View-level DOM assertions pass on search/ask/request-pdf/graph/pdf (pdf toolbar controls honestly disabled). One finding fixed: QA-1 — the shell builder omitted `role="img"` on `.ab-graph-canvas` (live template already had it); fixed in `build_visual_shell.py`, shells regenerated and re-verified. 12 evidence screenshots in `docs/ai-book/screenshots/` (DOM assertions are the pass criteria; PNGs preserved for human review). Live WordPress views remain browser-untested (no local WP, gotcha 1).
+
+## Production Build (2026-09-20)
+
+**VERIFIED.** Production-facing build surface checked end to end: (1) theme asset copies byte-identical to sources (`_tooling/wp-theme/kohandezh-knowledge/assets/ai-book.css` = `assets/css/ai-book.css`, 19,593 bytes; `ai-book.js` 600B), enqueued via `plugins_url` on ai-book views only (route-test asserted); (2) loader order intact in `kohandezh-knowledge.php:60-68` — artifacts → repository → search → catalog → graph → ask → pdf → request → ai-book; (3) `php -l` clean on all 8 ai-book includes, the template, and the plugin bootstrap; (4) `npm run test:ai-book` (10 suites) and `npm test` fully green immediately before the phase; (5) visual shell regeneration is deterministic — `git status ai-book/` clean before and after a rebuild; (6) hygiene: no `console.log`/`debugger` in shipped JS, no `error_log`/`var_dump`/`print_r` in ai-book includes, `git diff --check` clean, working tree clean before the docs commit.
 
 ## Skills / Agent Capabilities
 
@@ -102,7 +106,7 @@ Base checkpoint for this session: `ff6884a` on branch `claude/kohandezh-reader-d
 
 ## Exact next task
 
-**Production Build** per sequencing: verify the production-facing build surface end to end — theme asset copies match sources (`ai-book.css`/`ai-book.js`), loader order intact, `php -l` clean on every touched PHP file, full `npm run test:ai-book` + `npm test` green, visual shells regenerate deterministically from the builder — then finalize handover docs and STATE.json. After that, the remaining items are human-gated (publisher signing, deployment, personalized PDF) — do not attempt them locally and do not invent credentials. Update all handover files after the phase.
+No agent-executable tasks remain. The remaining work is **human-gated** and must not be simulated locally: (1) **publisher signing** — the current edition `2026E1` is development-signed; signing requires the real publisher signing key in the canonical repo (never read `.env`/private keys); (2) **production deployment** — activate `KBK_FEATURE_AI_BOOK=true` + `KBK_AI_BOOK_ROOT` in real `wp-config.php`, keep `KBK_AI_BOOK_INDEXABLE` unset until the go-live decision, and configure the ask/request provider endpoints+keys as environment secrets (never committed); (3) **personalized PDF issuance** — deferred by scope decision. A successor agent should only pick up work if a human explicitly re-opens a phase; otherwise update handover docs only when something actually changes.
 
 ## Performance review gate (2026-09-20)
 

@@ -2,11 +2,11 @@
  "schema_version": 2,
  "project": "kohandezh-ai-book",
  "language": "fa",
- "updated_at": "2026-09-20T03:30:00-04:00",
+ "updated_at": "2026-09-20T04:00:00-04:00",
  "website_root": "/Users/emperor/Documents/AI/kohandezh.com",
  "book_root": "/Users/emperor/Documents/AI/AiBook",
  "worktree": "/Users/emperor/Documents/AI/kohandezh.com/.claude/worktrees/kohandezh-reader-data-phase-9-8f7e49",
- "current_phase": "FINAL_QA",
+ "current_phase": "PRODUCTION_BUILD",
  "completed_phases": [
   "PREFLIGHT",
   "REPOSITORY_DISCOVERY",
@@ -29,10 +29,11 @@
   "SECURITY",
    "SEO",
    "PERFORMANCE",
-   "FINAL_QA"
+   "FINAL_QA",
+   "PRODUCTION_BUILD"
   ],
-  "active_phase": "PRODUCTION_BUILD",
-  "next_phase": "PUBLISHER_SIGNING_HUMAN_GATED",
+  "active_phase": "PUBLISHER_SIGNING_HUMAN_GATED",
+  "next_phase": "PRODUCTION_DEPLOYMENT_HUMAN_GATED",
  "design_frozen": true,
  "design_status": "FROZEN_REVISION_2",
  "routes": {
@@ -126,7 +127,8 @@
   "security_review": "PASS_GATE_REPORT_PRESENT",
   "seo_review": "PASS_GATE_REPORT_PRESENT",
    "performance_review": "PASS_GATE_REPORT_PRESENT",
-   "final_qa": "PASS_REPORT_PRESENT"
+   "final_qa": "PASS_REPORT_PRESENT",
+   "production_build": "VERIFIED"
   },
  "skills": {
   "environment_note": "Session-dependent; see docs/ai-book/SKILLS_MANIFEST.md. The Search phase required no new Skills beyond those already reconciled (Claude Sonnet 5, 2026-09-19).",
@@ -204,7 +206,12 @@
    "final_qa_keyboard": "PASS",
    "final_qa_view_assertions": "PASS",
    "final_qa_findings_fixed": 1,
-   "qa_screenshots": 12
+   "qa_screenshots": 12,
+   "production_build_asset_parity": "PASS",
+   "production_build_loader_order": "PASS",
+   "production_build_shell_determinism": "PASS",
+   "production_build_php_lint": "PASS",
+   "production_build_hygiene": "PASS"
   },
  "known_issues": [
   "WordPress ai-book routes (home/read/search/glossary) require KBK_FEATURE_AI_BOOK and KBK_AI_BOOK_ROOT configuration",
@@ -223,5 +230,5 @@
    "session_base_checkpoint": "ff6884a",
    "checkpoint_role": "Final browser/accessibility QA committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
  },
- "next_action": "Production Build per sequencing (final asset/build verification, full suite green, handover docs), then human-gated publisher signing/deployment. Personalized PDF remains deferred."
+ "next_action": "All agent-executable phases are complete. Remaining work is human-gated: publisher signing (requires the publisher signing key; current edition is development-signed), production deployment, and the deferred personalized-PDF issuance. Do not invent credentials or push/merge/deploy locally."
 }
