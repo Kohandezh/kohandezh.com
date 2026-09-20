@@ -211,10 +211,10 @@
  "git": {
   "branch": "claude/kohandezh-reader-data-phase-9-8f7e49",
   "base_checkpoint": "4c1c998",
-  "new_checkpoint": "572a284",
+  "new_checkpoint": "52cc5fa",
   "pushed": false,
   "session_base_checkpoint": "ff6884a",
-  "checkpoint_role": "SEO review gate committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
+  "checkpoint_role": "Performance review gate committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
  },
  "next_action": "Final browser/accessibility QA over the 13 static shells + live WordPress views (needs a local WP run for the latter), then the Production Build per sequencing. Personalized PDF remains deferred."
 }
