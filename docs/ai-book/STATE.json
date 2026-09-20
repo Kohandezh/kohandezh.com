@@ -218,10 +218,10 @@
  "git": {
   "branch": "claude/kohandezh-reader-data-phase-9-8f7e49",
   "base_checkpoint": "4c1c998",
-  "new_checkpoint": "52cc5fa",
-  "pushed": false,
-  "session_base_checkpoint": "ff6884a",
-  "checkpoint_role": "Performance review gate committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
+ "new_checkpoint": "55f52a2",
+   "pushed": false,
+   "session_base_checkpoint": "ff6884a",
+   "checkpoint_role": "Final browser/accessibility QA committed on claude/kohandezh-reader-data-phase-9-8f7e49 (LOCAL only)"
  },
  "next_action": "Production Build per sequencing (final asset/build verification, full suite green, handover docs), then human-gated publisher signing/deployment. Personalized PDF remains deferred."
 }
