@@ -51,6 +51,7 @@
 | `_tooling/wp-theme/sync-from-static.py` | Static → WP theme generator. `PAGE_MAP` includes `404.html → 404.php` (slug `"__404__"` sentinel — no WP page registered; WP auto-loads theme's `404.php`) |
 | `_tooling/wp-theme/kohandezhcv.zip` | Built theme (deploy target) |
 | `_tooling/wp-theme/kohandezhcv/functions.php` | Hand-maintained WP theme bootstrap |
+| `_tooling/waiting/` | **"Waiting" page loader** (MK-logo loading motion). `waiting.partial.html` is the source; `build.py [--check]` stamps it right after `<body>` of every page + `home.php`/`single.php`; `preview.html?hold=1&dark=1` to look at it. See gotcha 41 |
 | `llms.txt`, `fa-llms.txt` | LLM crawler summaries (served via WP rewrite rule) |
 | `robots.txt`, `sitemap.xml` | Static versions. **robots.txt = 15 AI bots + catch-all**, kept in sync with the `robots_txt` filter in functions.php — edit BOTH together |
 | `.htaccess` | Apache/LiteSpeed rules (legacy redirects + security headers). `ErrorDocument 404 /404.html` (static side; WP uses theme's `404.php`) |
@@ -271,6 +272,17 @@ wp-admin visit. **Bump it whenever you add new admin_init work.**
     read `opacity: 0` at every step of a correct state machine purely because of
     this. Suppress the animation (`el.style.animation = "none"`) and read the
     DECLARED value before concluding an element is invisible. Sibling of gotcha 19.
+
+41. **The "Waiting" loader is STAMPED — edit `_tooling/waiting/waiting.partial.html`,
+    never a page**, then run `python3 _tooling/waiting/build.py` (and the WP sync).
+    It is inline on purpose: it must paint with the first frame, and a block with no
+    URLs cannot break on the static-vs-WordPress asset-path split. Dismissal
+    contract: load, or parser-done + 1.2 s (first view of the session) / + 0 s
+    (later views), never before the 940 ms first-view minimum (skipped under reduced
+    motion), 3 s hard cap, any key/pointer dismisses; removed at once for crawlers,
+    an already-complete document and bfcache restores; a CSS-only failsafe hides it
+    at 6 s if the script never runs. Chrome starves `setTimeout` while deferred
+    scripts load, so the caps are also re-checked on the page's own `load` events.
 
 ## Environment
 
