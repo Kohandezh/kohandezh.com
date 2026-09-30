@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091705"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091705" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091705"></noscript>
-    <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091705" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091705"><?php endif; ?></noscript>
+    <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091901" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091901"><?php endif; ?></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091705"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=2026091705">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091705">
@@ -2470,9 +2470,9 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         仮想化基盤を端から端まで再設計してもらいました。安定していて、文書化され、自社チームで保守できる状態です。
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">ITマネージャー</p>
                                                         <p class="text-body-3 text-black-56">銀行業界
@@ -2486,9 +2486,9 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         ランサムウェア被害の際、彼が構築した復旧計画が設計どおりに機能し、データ損失ゼロで復旧できました。
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">インフラリード</p>
                                                         <p class="text-body-3 text-black-56">エンタープライズ顧客
@@ -2502,9 +2502,9 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         彼のセキュリティ診断は、過去2回の監査が見逃していた問題を発見しました。強化ロードマップも机上論ではなく実践的でした。
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">CISO
                                                         </p>
@@ -2557,19 +2557,19 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                     <input type="checkbox" name="botcheck" class="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                                     <div class="form-content effectFade fadeUp no-div">
                                         <fieldset class="field-ip">
-                                            <input type="text" name="name" id="demo-name" placeholder="お名前 *" required>
+                                            <input type="text" name="name" id="demo-name" placeholder="お名前 *" required aria-label="お名前 *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="email" name="email" id="demo-email" placeholder="メールアドレス *" required>
+                                            <input type="email" name="email" id="demo-email" placeholder="メールアドレス *" required aria-label="メールアドレス *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="tel" name="phone" id="demo-phone" placeholder="電話 / WhatsApp *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}">
+                                            <input type="tel" name="phone" id="demo-phone" placeholder="電話 / WhatsApp *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}" aria-label="電話 / WhatsApp *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="text" name="company" id="demo-company" placeholder="会社名 / 組織名">
+                                            <input type="text" name="company" id="demo-company" placeholder="会社名 / 組織名" aria-label="会社名 / 組織名">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <select name="field_of_interest" id="demo-field" required>
+                                            <select name="field_of_interest" id="demo-field" required aria-label="ご希望の内容 *">
                                                 <option value="" disabled selected>ご希望の内容 *</option>
                                                 <option value="AI Consulting">AIコンサルティング</option>
                                                 <option value="AI Services &amp; Implementation">AIサービスと導入</option>
@@ -2580,7 +2580,7 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                             </select>
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <textarea name="message" id="demo-message" placeholder="ご相談内容を簡単にご記入ください"></textarea>
+                                            <textarea name="message" id="demo-message" placeholder="ご相談内容を簡単にご記入ください" aria-label="ご相談内容を簡単にご記入ください"></textarea>
                                         </fieldset>
                                     </div>
                                     <div class="form-action effectFade fadeUp no-div">
@@ -2614,16 +2614,16 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                     <input type="checkbox" name="botcheck" class="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                                     <div class="form-content effectFade fadeUp no-div">
                                         <fieldset class="field-ip">
-                                            <input type="text" name="name" id="name" placeholder="お名前 *" required>
+                                            <input type="text" name="name" id="name" placeholder="お名前 *" required aria-label="お名前 *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="email" name="email" id="email" placeholder="メールアドレス *" required>
+                                            <input type="email" name="email" id="email" placeholder="メールアドレス *" required aria-label="メールアドレス *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="tel" name="phone" id="phone" placeholder="電話番号 *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}">
+                                            <input type="tel" name="phone" id="phone" placeholder="電話番号 *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}" aria-label="電話番号 *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <textarea name="message" id="message" required placeholder="プロジェクトの概要 *"></textarea>
+                                            <textarea name="message" id="message" required placeholder="プロジェクトの概要 *" aria-label="プロジェクトの概要 *"></textarea>
                                         </fieldset>
                                     </div>
                                     <p class="kdcv-form-note">* の付いた項目はすべて必須です。</p>
@@ -2731,13 +2731,13 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
     <!-- Javascript -->
     <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=2026091705" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=2026091705" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=2026091901" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=2026091705" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=3" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=2026091705" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=2026091705" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091705" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091705" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091901" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=2026091705" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=2026091705" defer></script>
 

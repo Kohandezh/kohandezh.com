@@ -286,7 +286,7 @@ class Kohan_Avatar {
 
 	public function preload_atlas() {
 		$href = esc_url( KOHAN_AVATAR_URL . 'assets/kohan/spritesheet.webp?v=' . $this->asset_version() );
-		echo '<link rel="preload" as="image" href="' . $href . '" type="image/webp">' . "\n";
+		echo '<link rel="preload" as="image" href="' . $href . '" type="image/webp" media="(min-width: 561px)">' . "\n";
 	}
 
 	/**

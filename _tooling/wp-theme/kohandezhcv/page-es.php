@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091705"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091705" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091705"></noscript>
-    <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091705" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091705"><?php endif; ?></noscript>
+    <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091901" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091901"><?php endif; ?></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091705"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=2026091705">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091705">
@@ -2472,12 +2472,12 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         Nuestra plataforma de virtualización fue rediseñada de
                                                         principio a fin — estable, documentada y
                                                         mantenible
                                                         por nuestro propio equipo.
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">Gerente de TI</p>
                                                         <p class="text-body-3 text-black-56">Sector bancario
@@ -2491,11 +2491,11 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         Cuando el ransomware nos golpeó, el plan de recuperación que
                                                         había creado funcionó exactamente como estaba previsto — volvimos
                                                         a estar en línea sin pérdida de datos.
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">Líder de infraestructura</p>
                                                         <p class="text-body-3 text-black-56">Cliente empresarial
@@ -2509,11 +2509,11 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         Su evaluación de seguridad encontró lo que dos auditorías
                                                         anteriores habían pasado por alto — y la hoja de ruta de
                                                         refuerzo fue práctica, no teórica.
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">CISO
                                                         </p>
@@ -2566,19 +2566,19 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                     <input type="checkbox" name="botcheck" class="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                                     <div class="form-content effectFade fadeUp no-div">
                                         <fieldset class="field-ip">
-                                            <input type="text" name="name" id="demo-name" placeholder="Tu nombre *" required>
+                                            <input type="text" name="name" id="demo-name" placeholder="Tu nombre *" required aria-label="Tu nombre *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="email" name="email" id="demo-email" placeholder="Correo electrónico *" required>
+                                            <input type="email" name="email" id="demo-email" placeholder="Correo electrónico *" required aria-label="Correo electrónico *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="tel" name="phone" id="demo-phone" placeholder="Teléfono / WhatsApp *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}">
+                                            <input type="tel" name="phone" id="demo-phone" placeholder="Teléfono / WhatsApp *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}" aria-label="Teléfono / WhatsApp *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="text" name="company" id="demo-company" placeholder="Empresa / Organización">
+                                            <input type="text" name="company" id="demo-company" placeholder="Empresa / Organización" aria-label="Empresa / Organización">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <select name="field_of_interest" id="demo-field" required>
+                                            <select name="field_of_interest" id="demo-field" required aria-label="¿Qué necesitas? *">
                                                 <option value="" disabled selected>¿Qué necesitas? *</option>
                                                 <option value="AI Consulting">Consultoría de IA</option>
                                                 <option value="AI Services &amp; Implementation">Servicios e implementación de IA</option>
@@ -2589,7 +2589,7 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                             </select>
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <textarea name="message" id="demo-message" placeholder="Brevemente, ¿de qué te gustaría hablar?"></textarea>
+                                            <textarea name="message" id="demo-message" placeholder="Brevemente, ¿de qué te gustaría hablar?" aria-label="Brevemente, ¿de qué te gustaría hablar?"></textarea>
                                         </fieldset>
                                     </div>
                                     <div class="form-action effectFade fadeUp no-div">
@@ -2623,16 +2623,16 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                     <input type="checkbox" name="botcheck" class="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                                     <div class="form-content effectFade fadeUp no-div">
                                         <fieldset class="field-ip">
-                                            <input type="text" name="name" id="name" placeholder="Su nombre *" required>
+                                            <input type="text" name="name" id="name" placeholder="Su nombre *" required aria-label="Su nombre *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="email" name="email" id="email" placeholder="Correo electrónico *" required>
+                                            <input type="email" name="email" id="email" placeholder="Correo electrónico *" required aria-label="Correo electrónico *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="tel" name="phone" id="phone" placeholder="Número de teléfono *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}">
+                                            <input type="tel" name="phone" id="phone" placeholder="Número de teléfono *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}" aria-label="Número de teléfono *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <textarea name="message" id="message" required placeholder="Descripción del proyecto *"></textarea>
+                                            <textarea name="message" id="message" required placeholder="Descripción del proyecto *" aria-label="Descripción del proyecto *"></textarea>
                                         </fieldset>
                                     </div>
                                     <p class="kdcv-form-note">Todos los campos marcados con * son obligatorios.</p>
@@ -2737,13 +2737,13 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
     <!-- Javascript -->
     <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=2026091705" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=2026091705" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=2026091901" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=2026091705" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=3" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=2026091705" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=2026091705" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091705" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091705" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091901" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=2026091705" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=2026091705" defer></script>
 

@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="assets/css/pixel-canvas.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/pixel-canvas.min.css?v=2026091705"></noscript>
     <link rel="stylesheet" href="assets/css/glowing-effect.min.css?v=2026091705" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="assets/css/glowing-effect.min.css?v=2026091705"></noscript>
-    <link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=2026091705"></noscript>
+    <link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=2026091901" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=2026091901"></noscript>
     <link rel="stylesheet" href="assets/css/kohan-drive.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/kohan-drive.min.css?v=2026091705"></noscript>
     <link rel="stylesheet" href="assets/css/glare-card.min.css?v=2026091705">
     <link rel="stylesheet" href="assets/css/hud-button.min.css?v=2026091705">
@@ -2539,12 +2539,12 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         我们的虚拟化平台被彻底重新设计——
                                                         稳定、文档完善，
                                                         并且可由我们
                                                         自己的团队维护。
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">IT经理</p>
                                                         <p class="text-body-3 text-black-56">银行业
@@ -2558,11 +2558,11 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         遭遇勒索软件攻击时，他制定的恢复
                                                         方案完全按预期运作——我们
                                                         在零数据丢失的情况下恢复上线。
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">基础设施负责人</p>
                                                         <p class="text-body-3 text-black-56">企业客户
@@ -2576,11 +2576,11 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         他的安全评估发现了此前两次审计
                                                         都遗漏的问题——而且加固
                                                         路线图切实可行，而非纸上谈兵。
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">首席信息安全官
                                                         </p>
@@ -2634,19 +2634,19 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                     <input type="checkbox" name="botcheck" class="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                                     <div class="form-content effectFade fadeUp no-div">
                                         <fieldset class="field-ip">
-                                            <input type="text" name="name" id="demo-name" placeholder="您的姓名 *" required>
+                                            <input type="text" name="name" id="demo-name" placeholder="您的姓名 *" required aria-label="您的姓名 *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="email" name="email" id="demo-email" placeholder="电子邮箱 *" required>
+                                            <input type="email" name="email" id="demo-email" placeholder="电子邮箱 *" required aria-label="电子邮箱 *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="tel" name="phone" id="demo-phone" placeholder="电话 / WhatsApp *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}">
+                                            <input type="tel" name="phone" id="demo-phone" placeholder="电话 / WhatsApp *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}" aria-label="电话 / WhatsApp *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="text" name="company" id="demo-company" placeholder="公司 / 组织">
+                                            <input type="text" name="company" id="demo-company" placeholder="公司 / 组织" aria-label="公司 / 组织">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <select name="field_of_interest" id="demo-field" required>
+                                            <select name="field_of_interest" id="demo-field" required aria-label="您需要什么？*">
                                                 <option value="" disabled selected>您需要什么？*</option>
                                                 <option value="AI Consulting">AI 咨询</option>
                                                 <option value="AI Services &amp; Implementation">AI 服务与实施</option>
@@ -2657,7 +2657,7 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                             </select>
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <textarea name="message" id="demo-message" placeholder="请简要说明您想讨论的内容"></textarea>
+                                            <textarea name="message" id="demo-message" placeholder="请简要说明您想讨论的内容" aria-label="请简要说明您想讨论的内容"></textarea>
                                         </fieldset>
                                     </div>
                                     <div class="form-action effectFade fadeUp no-div">
@@ -2692,16 +2692,16 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                     <input type="checkbox" name="botcheck" class="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                                     <div class="form-content effectFade fadeUp no-div">
                                         <fieldset class="field-ip">
-                                            <input type="text" name="name" id="name" placeholder="您的姓名 *" required>
+                                            <input type="text" name="name" id="name" placeholder="您的姓名 *" required aria-label="您的姓名 *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="email" name="email" id="email" placeholder="电子邮箱 *" required>
+                                            <input type="email" name="email" id="email" placeholder="电子邮箱 *" required aria-label="电子邮箱 *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="tel" name="phone" id="phone" placeholder="联系电话 *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}">
+                                            <input type="tel" name="phone" id="phone" placeholder="联系电话 *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}" aria-label="联系电话 *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <textarea name="message" id="message" required placeholder="项目描述 *"></textarea>
+                                            <textarea name="message" id="message" required placeholder="项目描述 *" aria-label="项目描述 *"></textarea>
                                         </fieldset>
                                     </div>
                                     <p class="kdcv-form-note">标有 * 的字段均为必填项。</p>
@@ -2806,12 +2806,12 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
     <!-- Javascript -->
     <script src="assets/js/jquery.shim.min.js?v=2026091705" defer></script>
     <script src="assets/js/bs-lite.min.js?v=2026091705" defer></script>
-    <script src="assets/js/linkedin-content.min.js?v=2026091705" defer></script>
+    <script src="assets/js/linkedin-content.min.js?v=2026091901" defer></script>
   <script src="assets/js/resume-timeline.min.js?v=2026091705" defer></script>
 <script src="assets/js/home-blog-feed.min.js?v=2026091705" defer></script>
     <script src="assets/js/accessibility-enhancements.min.js?v=2026091705" defer></script>
     <script src="assets/js/work-image-localization.min.js?v=2026091705" defer></script>    <script src="assets/js/page-context.min.js?v=2026091705" defer></script>
-  <script src="assets/js/lazy-bundle.min.js?v=2026091705" defer></script>
+  <script src="assets/js/lazy-bundle.min.js?v=2026091901" defer></script>
     <script src="assets/js/gsap-bundle.min.js?v=2026091705" defer></script>
     <script src="assets/js/gsapAnimation.min.js?v=2026091705" defer></script>
 

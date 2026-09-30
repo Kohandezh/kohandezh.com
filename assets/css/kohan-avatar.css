@@ -310,6 +310,9 @@
 .kdcv-pet-root[data-kohan-hidden="true"] .kohan-eye-button:hover { opacity: 1; }
 
 @media (max-width: 767.98px) {
+    /* The fixed avatar and its quote bubble cover the mobile hero and can
+       intercept navigation taps. The dedicated demo section remains available. */
+    .kdcv-pet-root { display: none !important; }
     /* Touch floor by WIDTH, not just pointer type: a narrow window on a mouse
        device gets the same cramped layout but reports `pointer: fine`, so the
        coarse-pointer rule never applied there. Measured 28x28 at 375px. */

@@ -28,7 +28,7 @@
   <meta name="twitter:image" content="<?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/page-chrome.min.css?v=2026091705">
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091705">
-  <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091705" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091705"><?php endif; ?></noscript>
+  <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091901" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091901"><?php endif; ?></noscript>
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091705"></noscript>
   <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091705"></noscript>
   <!-- Breadcrumb trail: lets Google render the path instead of a bare
@@ -213,7 +213,7 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
   <script src="<?php echo KDCV; ?>/assets/js/flow-field-background.min.js?v=2026091705" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=2026091705" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091705" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091705" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091901" defer></script>
   <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=2026091705" defer></script><?php endif; ?>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=2026091705" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2026091705" defer></script>

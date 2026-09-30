@@ -67,8 +67,7 @@
 /* Small screens: nudge scale down a touch so it never dominates. */
 @media (max-width: 560px) {
   .kohan-avatar-root {
-    width: calc(104px * var(--kohan-scale));
-    height: calc(113px * var(--kohan-scale));
+    display: none !important;
   }
 }
 

@@ -58,7 +58,7 @@
       if (fired) return;
       fired = true;
       if (!window.__KDCV_PET_BOOTSTRAPPED__) {
-        load(PREFIX + "js/ai-pet.min.js?v=2026091705");
+        load(PREFIX + "js/ai-pet.min.js?v=2026091901");
       }
       cleanup();
     }

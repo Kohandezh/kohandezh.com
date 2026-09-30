@@ -52,6 +52,10 @@ function assertRetainedRoles(doc, locale, label) {
   }
   assert.ok(doc.querySelector('[data-cv-id="national-ai-platform"] img[src*="sako.webp"]'),
     `${label}: real Sako logo survives`);
+  assert.equal(doc.querySelectorAll('[data-cv-id="associate-computer-software"]').length, 1,
+    `${label}: exactly one canonical associate degree`);
+  assert.equal(doc.querySelectorAll('.linkedin-education-item').length, 0,
+    `${label}: runtime must not append a duplicate associate degree`);
   assert.equal(doc.querySelectorAll('img[src*="sako-platform-concept"]').length, 0,
     `${label}: generated Sako illustration stays removed`);
   for (const entry of [doctorate, sako]) {

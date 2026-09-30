@@ -33,6 +33,10 @@
   var enabled = OPTS.enabled !== false;
   if (!enabled) return;
 
+  // CSS hides the floating companion on narrow screens. Stop before building
+  // it so those visitors do not download the 794 KB sprite atlas needlessly.
+  if (window.matchMedia && window.matchMedia("(max-width: 560px)").matches) return;
+
   var prefersReduced =
     window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 

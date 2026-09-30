@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091705"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091705" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091705"></noscript>
-    <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091705" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091705"><?php endif; ?></noscript>
+    <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091901" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091901"><?php endif; ?></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091705"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=2026091705">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091705">
@@ -2472,12 +2472,12 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         Sanallaştırma platformumuz baştan sona yeniden
                                                         tasarlandı — kararlı, belgelenmiş ve
                                                         kendi ekibimiz tarafından
                                                         sürdürülebilir.
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">BT Müdürü</p>
                                                         <p class="text-body-3 text-black-56">Bankacılık sektörü
@@ -2491,11 +2491,11 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         Fidye yazılımı sistemimize saldırdığında, onun hazırladığı
                                                         kurtarma planı tam olarak tasarlandığı gibi çalıştı — hiçbir
                                                         veri kaybı olmadan tekrar çevrimiçi olduk.
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">Altyapı Lideri</p>
                                                         <p class="text-body-3 text-black-56">Kurumsal müşteri
@@ -2509,11 +2509,11 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         Güvenlik değerlendirmesi, önceki iki denetimin gözden
                                                         kaçırdığı şeyi buldu — ve sıkılaştırma yol haritası
                                                         teorik değil, pratikti.
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">CISO
                                                         </p>
@@ -2566,19 +2566,19 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                     <input type="checkbox" name="botcheck" class="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                                     <div class="form-content effectFade fadeUp no-div">
                                         <fieldset class="field-ip">
-                                            <input type="text" name="name" id="demo-name" placeholder="Adınız *" required>
+                                            <input type="text" name="name" id="demo-name" placeholder="Adınız *" required aria-label="Adınız *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="email" name="email" id="demo-email" placeholder="E-posta Adresi *" required>
+                                            <input type="email" name="email" id="demo-email" placeholder="E-posta Adresi *" required aria-label="E-posta Adresi *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="tel" name="phone" id="demo-phone" placeholder="Telefon / WhatsApp *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}">
+                                            <input type="tel" name="phone" id="demo-phone" placeholder="Telefon / WhatsApp *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}" aria-label="Telefon / WhatsApp *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="text" name="company" id="demo-company" placeholder="Şirket / Kurum">
+                                            <input type="text" name="company" id="demo-company" placeholder="Şirket / Kurum" aria-label="Şirket / Kurum">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <select name="field_of_interest" id="demo-field" required>
+                                            <select name="field_of_interest" id="demo-field" required aria-label="Neye ihtiyacınız var? *">
                                                 <option value="" disabled selected>Neye ihtiyacınız var? *</option>
                                                 <option value="AI Consulting">Yapay Zekâ Danışmanlığı</option>
                                                 <option value="AI Services &amp; Implementation">Yapay Zekâ Hizmetleri ve Uygulama</option>
@@ -2589,7 +2589,7 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                             </select>
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <textarea name="message" id="demo-message" placeholder="Kısaca, ne hakkında konuşmak istersiniz?"></textarea>
+                                            <textarea name="message" id="demo-message" placeholder="Kısaca, ne hakkında konuşmak istersiniz?" aria-label="Kısaca, ne hakkında konuşmak istersiniz?"></textarea>
                                         </fieldset>
                                     </div>
                                     <div class="form-action effectFade fadeUp no-div">
@@ -2623,16 +2623,16 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                                     <input type="checkbox" name="botcheck" class="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                                     <div class="form-content effectFade fadeUp no-div">
                                         <fieldset class="field-ip">
-                                            <input type="text" name="name" id="name" placeholder="Adınız *" required>
+                                            <input type="text" name="name" id="name" placeholder="Adınız *" required aria-label="Adınız *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="email" name="email" id="email" placeholder="E-posta Adresi *" required>
+                                            <input type="email" name="email" id="email" placeholder="E-posta Adresi *" required aria-label="E-posta Adresi *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="tel" name="phone" id="phone" placeholder="Telefon Numarası *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}">
+                                            <input type="tel" name="phone" id="phone" placeholder="Telefon Numarası *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}" aria-label="Telefon Numarası *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <textarea name="message" id="message" required placeholder="Proje Açıklaması *"></textarea>
+                                            <textarea name="message" id="message" required placeholder="Proje Açıklaması *" aria-label="Proje Açıklaması *"></textarea>
                                         </fieldset>
                                     </div>
                                     <p class="kdcv-form-note">* ile işaretli tüm alanlar zorunludur.</p>
@@ -2737,13 +2737,13 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
     <!-- Javascript -->
     <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=2026091705" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=2026091705" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=2026091901" defer></script>
   <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=2026091705" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=3" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=2026091705" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=2026091705" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091705" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091705" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091901" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=2026091705" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=2026091705" defer></script>
 

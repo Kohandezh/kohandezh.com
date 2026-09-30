@@ -6,8 +6,18 @@ const root = path.resolve(__dirname, '../..');
 const read = f => fs.readFileSync(path.join(root, f), 'utf8');
 
 const functionsPhp = read('_tooling/wp-theme/kohandezhcv/functions.php');
+const themeAvatarCss = read('assets/css/kohan-avatar.css');
+const pluginAvatarCss = read('_tooling/wp-theme/kohan-avatar/assets/css/kohan-avatar.css');
+const pluginAvatarJs = read('_tooling/wp-theme/kohan-avatar/assets/js/kohan-avatar.js');
+const pluginAvatarPhp = read('_tooling/wp-theme/kohan-avatar/includes/class-kohan-avatar.php');
+const legacyAvatarJs = read('assets/js/ai-pet.js');
 assert.match(functionsPhp, /<h3 class="blog-local-title">/, 'WordPress blog cards use the section-level heading');
 assert.doesNotMatch(functionsPhp, /<h5 class="blog-local-title">/, 'WordPress blog cards must not skip from the section h2 to h5');
+assert.match(themeAvatarCss, /@media \(max-width: 767\.98px\)[\s\S]*?\.kdcv-pet-root\s*\{\s*display:\s*none\s*!important;/, 'legacy floating avatar stays off mobile content');
+assert.match(pluginAvatarCss, /@media \(max-width: 560px\)[\s\S]*?\.kohan-avatar-root\s*\{\s*display:\s*none\s*!important;/, 'plugin floating avatar stays off mobile content');
+assert.match(pluginAvatarJs, /matchMedia\("\(max-width: 560px\)"\)\.matches\) return;/, 'plugin skips its atlas runtime on mobile');
+assert.match(pluginAvatarPhp, /media="\(min-width: 561px\)"/, 'atlas preload is restricted to desktop viewports');
+assert.match(legacyAvatarJs, /matchMedia\("\(max-width: 767\.98px\)"\)\.matches/, 'legacy avatar skips mobile runtime and media');
 
 const privacyHtml = read('privacy.html');
 const privacyLocales = read('assets/data/i18n/privacy.json');
@@ -23,6 +33,11 @@ assert.equal(dom.window.document.querySelector('.blog-local-date').textContent, 
 assert.equal(dom.window.document.querySelectorAll('.blog-local-date')[1].textContent, 'Original date', 'unknown posts keep their own dates');
 dom.window.close();
 
+const badgeDom = new JSDOM('<html lang="en"><body><section id="certificates"><div class="award-list"></div></section></body></html>', {url:'https://kohandezh.com/', runScripts:'outside-only'});
+badgeDom.window.eval(read('assets/js/linkedin-content.js'));
+assert.equal(badgeDom.window.document.querySelector('.badge-metro-title')?.tagName, 'H3', 'Badge Metro uses the section-level heading');
+badgeDom.window.close();
+
 for (const locale of ['index','fa','ar','de','es','fr','tr','zh','ja','ru']) {
   const html = read(locale + '.html');
   const doc = new JSDOM(html).window.document;
@@ -37,6 +52,12 @@ for (const locale of ['index','fa','ar','de','es','fr','tr','zh','ja','ru']) {
   const booking = doc.querySelector('.contact-schedule');
   assert.ok(booking && !/pick a slot|یک زمان را انتخاب کنید|اختر موعدًا|Wählen Sie unten|Elige un horario|Choisissez un créneau|Aşağıdan bir zaman|在下方选择|下記から時間帯|Выберите удобное время/i.test(booking.textContent), `${locale}: booking copy does not promise an unavailable slot picker`);
   assert.ok(doc.querySelector('.section-tech-stack .tech-scale-note'), `${locale}: skill percentages carry a measurement disclaimer`);
+  assert.equal(doc.querySelectorAll('h5.tes-text').length, 0, `${locale}: testimonial quotes are not headings`);
+  assert.equal(doc.querySelectorAll('blockquote.tes-text').length, 3, `${locale}: authored testimonial quotes use blockquote semantics`);
+  const unlabeledFields = [...doc.querySelectorAll('input:not([type="hidden"]):not([type="checkbox"]), textarea, select')]
+    .filter(field => !(field.getAttribute('aria-label') || field.getAttribute('aria-labelledby') ||
+      (field.id && doc.querySelector(`label[for="${field.id}"]`)) || field.closest('label')));
+  assert.equal(unlabeledFields.length, 0, `${locale}: every visible form control has a static accessible name`);
 }
 console.log('PASS: ordered blog dates and 10-locale profile/contact regressions');
 
