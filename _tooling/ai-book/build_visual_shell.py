@@ -84,9 +84,42 @@ def home(key: str) -> str:
     ]
     part_cards = "".join(card(t, f"{n} · بخش {pid}", url(key, "read"), pid) for pid, t, n in parts)
     return f'''{hero("نسخهٔ فارسی · 2026E1", "دانش فنی، با مسیر روشن تا منبع", "یک کتاب مرجع زنده برای فهم، تصمیم‌گیری و اجرای مسئولانهٔ هوش مصنوعی؛ ۴۷۹ بخش قابل استناد بر پایهٔ ۱۸ سند NIST و AAAS.", f'<div class="ab-actions"><a class="ab-button ab-button-primary" href="{url(key,"read")}">مطالعه آنلاین</a><a class="ab-button" href="{url(key,"search")}">جست‌وجو در کتاب</a><a class="ab-button" href="{url(key,"ask")}">از کتاب بپرس</a><a class="ab-button" href="{url(key,"request-pdf")}">درخواست PDF</a></div>')}
-<section class="ab-stat-grid" aria-label="مشخصات نسخه"><div><b>۷</b><span>بخش</span></div><div><b>۵۳</b><span>فصل</span></div><div><b>۴۷۹</b><span>بخش محتوایی</span></div><div><b>۱۸</b><span>منبع اصلی</span></div></section>
+<section class="ab-stat-grid" aria-label="مشخصات نسخه"><div><b>۷</b><span>بخش</span></div><div><b>۵۳</b><span>فصل</span></div><div><b>۴۷۹</b><span>بخش محتوایی</span></div><div><b>۱۸</b><span>منبع اصلی</span></div></section>{shelf(key, "../assets/images/books/")}
 <section class="ab-section"><div class="ab-section-head"><div><p class="ab-kicker">ساختار کتاب</p><h2>از زبان مشترک تا اقدام سازمانی</h2></div><a href="{url(key,'concepts')}">کاوش مفاهیم</a></div><div class="ab-card-grid">{part_cards}</div></section>
 <section class="ab-proof"><div><p class="ab-kicker">اعتبار قابل بررسی</p><h2>هر ادعا یک مسیر بازگشت دارد</h2><p>شناسهٔ محتوا، منبع، نسخه و اثر انگشت در کنار متن باقی می‌مانند؛ یادداشت تدوینگر و بومی‌سازی نیز از ترجمهٔ منبع جدا هستند.</p></div><a class="ab-button ab-button-primary" href="{url(key,'verify')}">اعتبارسنجی نسخه</a></section>'''
+
+
+# The library shelf on the book home. Facts come only from the covers the owner
+# supplied (title, subtitle, authors, date); nothing is added to them. The second
+# title has no digital edition yet, so it carries a "coming soon" status and no
+# link. The WordPress template (kohandezh-knowledge/templates/ai-book.php) mirrors
+# this markup -- change both together.
+BOOKS = (
+    ("ai-governance-cover", "جلد کتاب AI Governance — حاکمیت هوش مصنوعی، نوشتهٔ محمدعلی کهن‌دژ",
+     "live", "نسخهٔ آنلاین در دسترس", "حاکمیت هوش مصنوعی",
+     "راهنمای جامع حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی", "محمدعلی کهن‌دژ", "", "read"),
+    ("ics-cybersecurity-cover", "جلد کتاب امنیت سایبری در سیستم‌های اتوماسیون صنعتی",
+     "soon", "انتشار دیجیتال به‌زودی", "امنیت سایبری در سیستم‌های اتوماسیون صنعتی",
+     "راهنمای جامع بر اساس استانداردهای IEC 62443", "محمدعلی کهن‌دژ، روزبه بابازاده، نیلوفر کریمی آذر · تابستان ۱۴۰۴",
+     "نسخهٔ دیجیتال این کتاب به‌زودی در همین بخش منتشر می‌شود.", ""),
+)
+
+
+def shelf(key: str, img: str) -> str:
+    books = []
+    for stem, alt, state, badge, title, sub, meta, note, target in BOOKS:
+        action = f'<a class="ab-button ab-button-primary" href="{url(key, target)}">مطالعه آنلاین</a>' if target else ""
+        note_html = f'<p class="ab-book-note">{note}</p>' if note else ""
+        books.append(
+            f'<article class="ab-book"><img class="ab-book-cover" src="{img}{stem}-w320.webp" '
+            f'srcset="{img}{stem}-w320.webp 320w, {img}{stem}-w640.webp 640w" sizes="(max-width: 420px) 110px, 200px" '
+            f'width="320" height="512" alt="{alt}" loading="lazy" decoding="async">'
+            f'<div class="ab-book-body"><span class="ab-book-status ab-book-status-{state}">{badge}</span>'
+            f'<h3>{title}</h3><p class="ab-book-sub">{sub}</p><p class="ab-book-meta">{meta}</p>{note_html}{action}</div></article>'
+        )
+    return ('<section class="ab-section ab-shelf" aria-labelledby="ab-shelf-title"><div class="ab-section-head"><div>'
+            '<p class="ab-kicker">کتابخانه</p><h2 id="ab-shelf-title">کتاب‌های کهن‌دژ</h2></div></div>'
+            f'<div class="ab-shelf-grid">{"".join(books)}</div></section>')
 
 
 def read(key: str) -> str:
@@ -186,7 +219,7 @@ def render(key: str) -> str:
     canonical = "https://kohandezh.com/ai-book/" + (f"{slug}/" if slug else "")
     return f'''<!doctype html>
 <html lang="fa" dir="rtl" data-ab-page="{escape(key)}">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{escape(description)}"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#080b0d"><title>{escape(label)} — کتاب هوش مصنوعی کهن‌دژ</title><link rel="canonical" href="{canonical}"><link rel="stylesheet" href="{prefix}assets/fonts/estedad/estedad.css"><link rel="stylesheet" href="{prefix}assets/fonts/inter/inter.css"><link rel="stylesheet" href="{prefix}assets/css/ai-book.css?v=2026091901"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{escape(description)}"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#080b0d"><title>{escape(label)} — کتاب هوش مصنوعی کهن‌دژ</title><link rel="canonical" href="{canonical}"><link rel="stylesheet" href="{prefix}assets/fonts/estedad/estedad.css"><link rel="stylesheet" href="{prefix}assets/fonts/inter/inter.css"><link rel="stylesheet" href="{prefix}assets/css/ai-book.css?v=2026092901"></head>
 <body>{page_header(key)}<main id="main" class="ab-main" tabindex="-1">{content(key)}</main>{footer(key)}<script src="{prefix}assets/js/ai-book.js?v=2026091901" defer></script></body></html>'''
 
 
@@ -199,6 +232,9 @@ def main() -> None:
     plugin_assets.mkdir(parents=True, exist_ok=True)
     copyfile(ROOT / "assets/css/ai-book.css", plugin_assets / "ai-book.css")
     copyfile(ROOT / "assets/js/ai-book.js", plugin_assets / "ai-book.js")
+    (plugin_assets / "books").mkdir(exist_ok=True)
+    for cover in sorted((ROOT / "assets/images/books").glob("*.webp")):
+        copyfile(cover, plugin_assets / "books" / cover.name)
     print(f"Built {len(ROUTES)} AI Book visual routes under {OUT}")
 
 
