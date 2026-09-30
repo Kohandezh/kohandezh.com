@@ -19,9 +19,18 @@ foreach ( $expected as $key => $value ) {
 	}
 }
 
+// The content id ends in the first 8 hex digits of the section's content hash,
+// so it changes every time the book regenerates that section's text (it went
+// 04D3A306 -> 6FC077B0 on 2026-09-21). Pinning it made this test fail against a
+// perfectly valid newer edition. Derive it from the structural id instead and
+// assert its SHAPE; the lookups below still prove both ids reach one section.
 $structural_id = 'KDJ-AI-2026E1-P01-C01-S01';
-$content_id    = 'KDJ-AI-2026E1-P01-C01-S01-04D3A306';
 $by_structure  = $repository->find_section( $structural_id );
+$content_id    = $by_structure['content_id'] ?? '';
+if ( ! preg_match( '/^' . preg_quote( $structural_id, '/' ) . '-[0-9A-F]{8}$/', $content_id ) ) {
+	fwrite( STDERR, "FAIL content id shape\n" );
+	exit( 1 );
+}
 $by_content    = $repository->find_section( $content_id );
 if ( null === $by_structure || $by_structure !== $by_content || $content_id !== $by_structure['content_id'] ) {
 	fwrite( STDERR, "FAIL section lookup\n" );
