@@ -26,7 +26,7 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=2026091705">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=2026091705">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=2026091705">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=2026100101">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091705"></noscript>
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091705"></noscript>
     <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091901" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091901"><?php endif; ?></noscript>
@@ -912,6 +912,12 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="/books/" class="item-link nav-books">
+                        <i class="icon icon-books" aria-hidden="true"></i>
+                        <p class="tool-tip text-caption">Книги</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="#work" class="item-link scroll-link">
                         <i class="icon icon-high-light"></i>
                         <p class="tool-tip text-caption">Опыт работы</p>
@@ -948,7 +954,7 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                         <p class="tool-tip text-caption">Контакты</p>
                     </a>
                 </li>
-            </ul>
+</ul>
         </div>
     </div>
     <!-- /Menu Mobile -->
@@ -984,6 +990,12 @@ d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("read
                 <a href="#education" class="item-link scroll-link">
                     <i class="icon icon-edu"></i>
                     <p class="tool-tip text-caption">Образование</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/books/" class="item-link nav-books">
+                    <i class="icon icon-books" aria-hidden="true"></i>
+                    <p class="tool-tip text-caption">Книги</p>
                 </a>
             </li>
             <li class="nav-item">
