@@ -59,6 +59,17 @@ ok(checkOk, 'build.py --check: every target is up to date', checkOut.split('\n')
 ok(PARTIAL.startsWith(BEGIN + '\n') && PARTIAL.endsWith('\n' + END), 'partial is delimited by the exact BEGIN / END marker lines');
 const bytes = Buffer.byteLength(PARTIAL, 'utf8');
 ok(bytes <= 6144, `block stays under the 6 KB hard cap (${bytes} bytes)`);
+
+// A PHP template may echo inside its body tag; the block must land after the
+// whole tag (and after wp_body_open), never split it. ai-book.php was split at
+// the "?>" inside class="... <?php echo ... ?> dark-mode" and rendered `dark-mode">`.
+{
+  const book = read('_tooling/wp-theme/kohandezh-knowledge/templates/ai-book.php');
+  const tag = book.match(/<body(?=[\s>])(?:<\?php[\s\S]*?\?>|[^>])*>/i);
+  ok(tag && !tag[0].includes('WAITING'), 'book template: the body tag is intact (no block inside it)');
+  const after = book.indexOf('<?php wp_body_open(); ?>');
+  ok(after !== -1 && book.indexOf('<!-- WAITING:BEGIN') > after, 'book template: the block follows wp_body_open()');
+}
 ok(!/<\?|<\/?(body|head)\b|\bsrc=|\bhref=|https?:|@import/i.test(PARTIAL), 'block has no PHP opener, no body/head tag, no external URL');
 ok((PARTIAL.match(/url\(([^)]*)\)/g) || []).every((u) => u.startsWith('url(#')), 'only in-document url(#…) references');
 

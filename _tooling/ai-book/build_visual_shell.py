@@ -58,17 +58,21 @@ def page_header(key: str) -> str:
         f'<a href="{url(key, route)}" {"aria-current=page" if key == route else ""}>{text}</a>'
         for route, text in NAV
     )
+    mobile_nav = "".join(
+        f'<a href="{url(key, route)}" {"aria-current=page" if key == route else ""}>{ROUTES[route][1]}</a>'
+        for route in ("read", "search", "ask", "concepts", "graph", "glossary", "sources", "templates", "pdf")
+    )
     return f'''<a class="ab-skip" href="#main">رفتن به محتوای اصلی</a>
 <header class="ab-header">
   <a class="ab-brand" href="{url(key)}" aria-label="خانهٔ کتاب هوش مصنوعی کهن‌دژ"><span class="ab-brand-mark">ک</span><span><b>کهن‌دژ</b><small>کتاب مرجع هوش مصنوعی</small></span></a>
   <nav class="ab-primary" aria-label="ناوبری اصلی کتاب">{nav}</nav>
-  <div class="ab-tools"><a href="{url(key, 'sources')}">منابع</a><a href="{url(key, 'verify')}">اعتبارسنجی</a><button class="ab-menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">فهرست</button></div>
+  <div class="ab-tools"><a href="{url(key, 'sources')}" {"aria-current=page" if key == "sources" else ""}>منابع</a><a href="{url(key, 'verify')}" {"aria-current=page" if key == "verify" else ""}>اعتبارسنجی</a><button class="ab-theme-toggle" type="button" aria-pressed="false" aria-label="فعال‌کردن حالت روشن"><span class="ab-theme-icon" aria-hidden="true">☀</span><span class="ab-theme-label">حالت روشن</span></button><button class="ab-menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">فهرست کتاب</button></div>
 </header>
-<nav id="mobile-nav" class="ab-mobile-nav" aria-label="فهرست همراه" hidden>{nav}<a href="{url(key, 'graph')}">نقشه دانش</a><a href="{url(key, 'pdf')}">PDF</a></nav>'''
+<nav id="mobile-nav" class="ab-mobile-nav" aria-label="فهرست کتاب" hidden>{mobile_nav}</nav>'''
 
 
 def footer(key: str) -> str:
-    return f'''<footer class="ab-footer"><div><b>راهنمای جامع حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی</b><p>ترجمه، تدوین و بازآرایی فارسی: محمدعلی کهن‌دژ · نسخهٔ 2026E1</p></div><nav aria-label="پیوندهای انتهایی"><a href="{url(key, 'cite')}">استناد</a><a href="{url(key, 'verify')}">اعتبارسنجی</a><a href="{url(key, 'request-pdf')}">درخواست PDF</a></nav><p class="ab-disclaimer">این اثر ترجمهٔ رسمی NIST نیست و NIST آن را تأیید نکرده است.</p></footer>'''
+    return f'''<footer class="ab-footer"><div><b>راهنمای جامع حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی</b><p>ترجمه، تدوین و بازآرایی فارسی: محمدعلی کهن‌دژ · نسخهٔ 2026E1</p></div><nav aria-label="پیوندهای انتهایی"><a href="{url(key, 'cite')}">استناد</a><a href="{url(key, 'verify')}">اعتبارسنجی</a><a href="{url(key, 'request-pdf')}">درخواست PDF</a></nav><p class="ab-disclaimer">این اثر ترجمهٔ رسمی NIST نمی‌باشد و توسط محمدعلی کهن‌دژ جهت آموزش و آگاهی‌رسانی حاکمیت هوش مصنوعی طراحی و توسعه داده شده است.</p></footer>'''
 
 
 def hero(kicker: str, title: str, lead: str, actions: str = "") -> str:
@@ -83,59 +87,23 @@ def home(key: str) -> str:
         ("P07", "استانداردها و نقشهٔ راه", "۵ فصل"),
     ]
     part_cards = "".join(card(t, f"{n} · بخش {pid}", url(key, "read"), pid) for pid, t, n in parts)
-    return f'''{hero("کتابخانه", "کتاب‌های کهن‌دژ", "کتاب‌های محمدعلی کهن‌دژ؛ هر کتاب با ساختار، منبع و وضعیت انتشار خودش.")}
-{shelf(key, "../assets/images/books/")}
-<section class="ab-section ab-book-detail" id="ai-governance" aria-labelledby="ab-ai-governance-title"><div class="ab-section-head"><div><p class="ab-kicker">حاکمیت هوش مصنوعی · نسخهٔ فارسی 2026E1</p><h2 id="ab-ai-governance-title">ساختار کتاب: هفت بخش اصلی</h2></div><a href="{url(key,'read')}">مطالعه آنلاین</a></div>
-<p class="ab-book-lead">یک کتاب مرجع زنده برای فهم، تصمیم‌گیری و اجرای مسئولانهٔ هوش مصنوعی؛ ۴۷۹ بخش قابل استناد بر پایهٔ ۱۸ سند NIST و AAAS.</p>
+    return f'''{hero("نسخهٔ فارسی · 2026E1", "دانش فنی، با مسیر روشن تا منبع", "یک کتاب مرجع زنده برای فهم، تصمیم‌گیری و اجرای مسئولانهٔ هوش مصنوعی؛ ۴۷۹ بخش قابل استناد بر پایهٔ ۱۸ سند NIST و AAAS.", f'<div class="ab-actions"><a class="ab-button ab-button-primary" href="{url(key,"read")}">مطالعه آنلاین</a><a class="ab-button" href="{url(key,"search")}">جست‌وجو در کتاب</a><a class="ab-button" href="{url(key,"ask")}">از کتاب بپرس</a><a class="ab-button" href="{url(key,"request-pdf")}">درخواست PDF</a></div>')}
 <section class="ab-stat-grid" aria-label="مشخصات نسخه"><div><b>۷</b><span>بخش</span></div><div><b>۵۳</b><span>فصل</span></div><div><b>۴۷۹</b><span>بخش محتوایی</span></div><div><b>۱۸</b><span>منبع اصلی</span></div></section>
-<div class="ab-card-grid">{part_cards}</div></section>
+<section class="ab-section"><div class="ab-section-head"><div><p class="ab-kicker">ساختار کتاب</p><h2>از زبان مشترک تا اقدام سازمانی</h2></div><a href="{url(key,'concepts')}">کاوش مفاهیم</a></div><div class="ab-card-grid">{part_cards}</div></section>
 <section class="ab-proof"><div><p class="ab-kicker">اعتبار قابل بررسی</p><h2>هر ادعا یک مسیر بازگشت دارد</h2><p>شناسهٔ محتوا، منبع، نسخه و اثر انگشت در کنار متن باقی می‌مانند؛ یادداشت تدوینگر و بومی‌سازی نیز از ترجمهٔ منبع جدا هستند.</p></div><a class="ab-button ab-button-primary" href="{url(key,'verify')}">اعتبارسنجی نسخه</a></section>'''
-
-
-# The library shelf on the book home. Facts come only from the covers the owner
-# supplied (title, subtitle, authors, date); nothing is added to them. The second
-# title has no digital edition yet, so it carries a "coming soon" status and no
-# link. The WordPress template (kohandezh-knowledge/templates/ai-book.php) mirrors
-# this markup -- change both together.
-BOOKS = (
-    ("ai-governance-cover", "جلد کتاب AI Governance — حاکمیت هوش مصنوعی، نوشتهٔ محمدعلی کهن‌دژ",
-     "live", "نسخهٔ آنلاین در دسترس", "حاکمیت هوش مصنوعی",
-     "راهنمای جامع حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی", "محمدعلی کهن‌دژ", "", "read"),
-    ("ics-cybersecurity-cover", "جلد کتاب امنیت سایبری در سیستم‌های اتوماسیون صنعتی",
-     "soon", "انتشار دیجیتال به‌زودی", "امنیت سایبری در سیستم‌های اتوماسیون صنعتی",
-     "راهنمای جامع بر اساس استانداردهای IEC 62443", "محمدعلی کهن‌دژ، روزبه بابازاده، نیلوفر کریمی آذر · تابستان ۱۴۰۴",
-     "نسخهٔ دیجیتال این کتاب به‌زودی در همین بخش منتشر می‌شود.", ""),
-)
-
-
-def shelf(key: str, img: str) -> str:
-    books = []
-    for stem, alt, state, badge, title, sub, meta, note, target in BOOKS:
-        action = (f'<div class="ab-book-actions"><a class="ab-button ab-button-primary" href="{url(key, target)}">مطالعه آنلاین</a>'
-                  f'<a class="ab-button" href="#{stem.replace("-cover", "")}">ساختار کتاب</a></div>') if target else ""
-        note_html = f'<p class="ab-book-note">{note}</p>' if note else ""
-        books.append(
-            f'<article class="ab-book"><img class="ab-book-cover" src="{img}{stem}-w320.webp" '
-            f'srcset="{img}{stem}-w320.webp 320w, {img}{stem}-w640.webp 640w" sizes="(max-width: 420px) 110px, 200px" '
-            f'width="320" height="512" alt="{alt}" loading="lazy" decoding="async">'
-            f'<div class="ab-book-body"><span class="ab-book-status ab-book-status-{state}">{badge}</span>'
-            f'<h3>{title}</h3><p class="ab-book-sub">{sub}</p><p class="ab-book-meta">{meta}</p>{note_html}{action}</div></article>'
-        )
-    return ('<section class="ab-section ab-shelf" aria-label="کتاب‌ها">'
-            f'<div class="ab-shelf-grid">{"".join(books)}</div></section>')
 
 
 def read(key: str) -> str:
     return f'''<div class="ab-reader">
 <aside class="ab-toc" aria-label="فهرست کتاب"><p class="ab-kicker">بخش نخست</p><h2>مبانی و زبان مشترک</h2><a class="is-current" href="#s1">دامنه و اسناد پشتوانه</a><a href="#s2">ترتیب پیشنهادی مطالعه</a><a href="#s3">راهنمای مخاطبان</a></aside>
 <article class="ab-prose"><nav class="ab-breadcrumb" aria-label="مسیر صفحه"><a href="{url(key)}">کتاب</a><span>/</span><span>P01</span><span>/</span><span>فصل نخست</span></nav>
-{hero("P01 · فصل ۱ · جمع‌بندی تدوینگر", "مبانی و زبان مشترک هوش مصنوعی", "این بخش شالودهٔ مفهومی و واژگانی کتاب را بر پایهٔ NIST AI 100-3 و سند آموزشی AAAS–NIST می‌سازد.")}
+<details class="ab-reader-index"><summary><span>فهرست این فصل</span><bdi>P01 · C01</bdi></summary><nav aria-label="فهرست فصل در نمایش فشرده"><a class="is-current" aria-current="location" href="#s1">دامنه و اسناد پشتوانه</a><a href="#s2">ترتیب پیشنهادی مطالعه</a><a href="#s3">راهنمای مخاطبان</a></nav></details>
+<header class="ab-page-hero ab-reader-hero"><p class="ab-kicker">P01 · فصل ۱ · جمع‌بندی تدوینگر</p><h1>مبانی و زبان مشترک هوش مصنوعی</h1><p class="ab-lead">این بخش شالودهٔ مفهومی و واژگانی کتاب را بر پایهٔ NIST AI 100-3 و سند آموزشی AAAS–NIST می‌سازد.</p></header>
 <dl class="ab-meta"><div><dt>شناسه محتوا</dt><dd><bdi>KDJ-AI-2026E1-P01-C01-S01-04D3A306</bdi></dd></div><div><dt>منابع</dt><dd><bdi>NIST-AI-100-3</bdi> · <bdi>NIST-PAPER-1</bdi></dd></div><div><dt>نسخه</dt><dd><bdi>2026E1</bdi></dd></div></dl>
-<section id="s1"><h2>دامنهٔ بخش و اسناد پشتوانهٔ آن</h2><div class="ab-layer ab-layer-editorial"><span>جمع‌بندی تدوینگر</span><p>بخش نخست شالودهٔ مفهومی و واژگانی کل کتاب را می‌سازد و بر دو سند استوار است: سند آموزشی «مسائل بنیادین و واژه‌نامه» و واژه‌نامهٔ ژرف NIST دربارهٔ زبان هوش مصنوعی اعتمادپذیر.</p></div><p>این دو منبع مکمل یکدیگرند. یکی زبان در دسترس برای فهم چرخهٔ حیات و محدودیت‌های سامانه ارائه می‌کند و دیگری تعریف‌های دقیق را در اختیار خواننده می‌گذارد.</p></section>
-<section id="s2"><h2>ترتیب پیشنهادی مطالعه</h2><div class="ab-layer ab-layer-source"><span>ترجمهٔ منبع</span><p>سامانهٔ هوش مصنوعی تنها یک مدل نیست؛ داده، زمینهٔ استفاده، انسان و فرایندهای پیرامون آن در عملکرد و ریسک نهایی نقش دارند.</p></div><div class="ab-layer ab-layer-local"><span>کاربرد در سازمان‌های ایرانی</span><p>پیش از خرید یا استقرار، شناسنامهٔ دارایی هوش مصنوعی را با مالک کسب‌وکار، منبع داده، محدودیت استفاده و مسیر ارجاع خطا تکمیل کنید.</p></div></section>
+<section id="s1"><h2>دامنهٔ بخش و اسناد پشتوانهٔ آن</h2><div class="ab-layer ab-layer-editorial"><span>جمع‌بندی تدوینگر</span><div class="ab-reader-content"><p>بخش نخست شالودهٔ مفهومی و واژگانی کل کتاب را می‌سازد و بر دو سند استوار است: سند آموزشی «مسائل بنیادین و واژه‌نامه» و واژه‌نامهٔ ژرف NIST دربارهٔ زبان هوش مصنوعی اعتمادپذیر.</p><p>این دو منبع مکمل یکدیگرند. یکی زبان در دسترس برای فهم چرخهٔ حیات و محدودیت‌های سامانه ارائه می‌کند و دیگری تعریف‌های دقیق را در اختیار خواننده می‌گذارد.</p></div></div></section>
+<section id="s2"><h2>ترتیب پیشنهادی مطالعه</h2><div class="ab-layer ab-layer-source"><span>ترجمهٔ منبع</span><div class="ab-reader-content"><p>سامانهٔ هوش مصنوعی تنها یک مدل نیست؛ داده، زمینهٔ استفاده، انسان و فرایندهای پیرامون آن در عملکرد و ریسک نهایی نقش دارند.</p></div></div><div class="ab-layer ab-layer-local"><span>کاربرد در سازمان‌های ایرانی</span><div class="ab-reader-content"><p>پیش از خرید یا استقرار، شناسنامهٔ دارایی هوش مصنوعی را با مالک کسب‌وکار، منبع داده، محدودیت استفاده و مسیر ارجاع خطا تکمیل کنید.</p></div></div></section>
 <section id="s3"><h2>راهنمای مخاطبان</h2><div class="ab-table-wrap" tabindex="0" role="region" aria-label="راهنمای مطالعه برای نقش‌های سازمانی"><table><thead><tr><th>مخاطب</th><th>تمرکز اصلی</th><th>بخش‌های کلیدی</th></tr></thead><tbody><tr><td>مدیران</td><td>تصویر کلان برای تصمیم‌گیری</td><td>تعریف AI، عملکرد، نتیجه‌گیری</td></tr><tr><td>تیم فنی</td><td>چرخهٔ حیات و محدودیت‌ها</td><td>طراحی، استقرار و پایش</td></tr><tr><td>ممیزان</td><td>زبان دقیق و نقاط ضعف</td><td>عدم قطعیت، سوگیری و امنیت</td></tr></tbody></table></div></section>
-<nav class="ab-prev-next" aria-label="پیمایش فصل"><a href="#">فصل پیشین</a><a href="#">فصل بعدی: زبان هوش مصنوعی اعتمادپذیر</a></nav></article>
-<aside class="ab-related" aria-label="دانش مرتبط"><p class="ab-kicker">دانش مرتبط</p>{card("ریسک", "معیار مرکب احتمال و پیامد", url(key,"glossary"), "RISK")}{card("نقشهٔ مفهومی", "پیوند این فصل با چارچوب AI RMF", url(key,"graph"), "۳۷ پیوند")}</aside></div>'''
+<nav class="ab-prev-next" aria-label="پیمایش فصل"><a href="#">فصل پیشین</a><a href="#">فصل بعدی: زبان هوش مصنوعی اعتمادپذیر</a></nav></article></div>'''
 
 
 def search_page(key: str) -> str:
@@ -166,7 +134,7 @@ def concepts_page(key: str) -> str:
 
 def graph_page(key: str) -> str:
     return f'''{hero("۳٬۶۷۱ گره · ۱۰٬۴۷۴ یال", "نقشهٔ دانش کتاب", "نمای دیداری برای کشف رابطه‌ها؛ فهرست ساختاریافته همواره جایگزین دسترس‌پذیر آن است.")}
-<div class="ab-graph-layout"><section class="ab-graph-canvas" aria-label="نمای نمایندهٔ نقشهٔ دانش"><div class="ab-node ab-node-main">مدیریت ریسک</div><div class="ab-node n1">AI RMF</div><div class="ab-node n2">حاکمیت</div><div class="ab-node n3">ارزیابی</div><div class="ab-node n4">NIST AI 100-1</div><svg aria-hidden="true" viewBox="0 0 800 480"><path d="M400 240 180 120M400 240 620 110M400 240 180 370M400 240 640 360"/></svg><div class="ab-graph-controls"><button type="button" aria-label="بزرگ‌نمایی">+</button><button type="button" aria-label="کوچک‌نمایی">−</button><button type="button">بازنشانی</button></div></section><aside class="ab-detail"><p class="ab-kicker">مفهوم انتخاب‌شده</p><h2>مدیریت ریسک هوش مصنوعی</h2><p>فرایندی پیوسته برای نگاشت، سنجش، مدیریت و حاکمیت ریسک‌های سامانهٔ هوش مصنوعی.</p><dl><dt>بخش‌های مرتبط</dt><dd>۴۲</dd><dt>منابع</dt><dd>۶</dd><dt>شناسه</dt><dd><bdi>AI_RISK_MANAGEMENT</bdi></dd></dl><a class="ab-button" href="{url(key,'read')}">مطالعه در کتاب</a></aside></div>
+<div class="ab-graph-layout"><section class="ab-graph-canvas" role="img" aria-label="نمای نمایندهٔ نقشهٔ دانش"><div class="ab-node ab-node-main">مدیریت ریسک</div><div class="ab-node n1">AI RMF</div><div class="ab-node n2">حاکمیت</div><div class="ab-node n3">ارزیابی</div><div class="ab-node n4">NIST AI 100-1</div><svg aria-hidden="true" viewBox="0 0 800 480"><path d="M400 240 180 120M400 240 620 110M400 240 180 370M400 240 640 360"/></svg><div class="ab-graph-controls"><button type="button" aria-label="بزرگ‌نمایی">+</button><button type="button" aria-label="کوچک‌نمایی">−</button><button type="button">بازنشانی</button></div></section><aside class="ab-detail"><p class="ab-kicker">مفهوم انتخاب‌شده</p><h2>مدیریت ریسک هوش مصنوعی</h2><p>فرایندی پیوسته برای نگاشت، سنجش، مدیریت و حاکمیت ریسک‌های سامانهٔ هوش مصنوعی.</p><dl><dt>بخش‌های مرتبط</dt><dd>۴۲</dd><dt>منابع</dt><dd>۶</dd><dt>شناسه</dt><dd><bdi>AI_RISK_MANAGEMENT</bdi></dd></dl><a class="ab-button" href="{url(key,'read')}">مطالعه در کتاب</a></aside></div>
 <details class="ab-fallback"><summary>نمای فهرستی دسترس‌پذیر</summary><ul><li>مدیریت ریسک ← چارچوب AI RMF</li><li>مدیریت ریسک ← حاکمیت</li><li>مدیریت ریسک ← ارزیابی</li><li>مفهوم ← منبع NIST AI 100-1</li></ul></details>'''
 
 
@@ -224,13 +192,13 @@ WAITING = (ROOT / "_tooling/waiting/waiting.partial.html").read_text(encoding="u
 def render(key: str) -> str:
     slug, label, description = ROUTES[key]
     prefix = "../" if key == "index" else "../../"
-    canonical = "https://kohandezh.com/books/" + (f"{slug}/" if slug else "")
+    canonical = "https://kohandezh.com/ai-book/" + (f"{slug}/" if slug else "")
     return f'''<!doctype html>
 <html lang="fa" dir="rtl" data-ab-page="{escape(key)}">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{escape(description)}"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#080b0d"><title>{escape(label)} — کتاب هوش مصنوعی کهن‌دژ</title><link rel="canonical" href="{canonical}"><link rel="stylesheet" href="{prefix}assets/fonts/estedad/estedad.css"><link rel="stylesheet" href="{prefix}assets/fonts/inter/inter.css"><link rel="stylesheet" href="{prefix}assets/css/ai-book.css?v=2026100101"></head>
-<body>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{escape(description)}"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#080b0d"><title>{escape(label)} — کتاب هوش مصنوعی کهن‌دژ</title><link rel="canonical" href="{canonical}"><script>(function(){{try{{var l=localStorage.getItem('kbk-ai-book-theme'),s=localStorage.getItem('darkMode'),t;if(l==='light'||l==='dark'){{t=l;localStorage.setItem('darkMode',t==='light'?'disabled':'enabled');localStorage.removeItem('kbk-ai-book-theme');}}else if(s==='disabled'||s==='light'){{t='light';}}else if(s==='enabled'||s==='dark'){{t='dark';}}else{{t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}}document.documentElement.setAttribute('data-ab-theme',t);}}catch(e){{}}}})();</script><link rel="stylesheet" href="{prefix}assets/fonts/estedad/estedad.css"><link rel="stylesheet" href="{prefix}assets/fonts/inter/inter.css"><link rel="stylesheet" href="{prefix}assets/css/ai-book.css?v=2026092401"></head>
+<body class="kbk-ai-book-page ab-view-{escape(key)} dark-mode">
 {WAITING}
-{page_header(key)}<main id="main" class="ab-main" tabindex="-1">{content(key)}</main>{footer(key)}<script src="{prefix}assets/js/ai-book.js?v=2026091901" defer></script></body></html>'''
+{page_header(key)}<main id="main" class="ab-main" tabindex="-1">{content(key)}</main>{footer(key)}<script src="{prefix}assets/js/ai-book.js?v=2026092401" defer></script></body></html>'''
 
 
 def main() -> None:
@@ -242,9 +210,6 @@ def main() -> None:
     plugin_assets.mkdir(parents=True, exist_ok=True)
     copyfile(ROOT / "assets/css/ai-book.css", plugin_assets / "ai-book.css")
     copyfile(ROOT / "assets/js/ai-book.js", plugin_assets / "ai-book.js")
-    (plugin_assets / "books").mkdir(exist_ok=True)
-    for cover in sorted((ROOT / "assets/images/books").glob("*.webp")):
-        copyfile(cover, plugin_assets / "books" / cover.name)
     print(f"Built {len(ROUTES)} AI Book visual routes under {OUT}")
 
 

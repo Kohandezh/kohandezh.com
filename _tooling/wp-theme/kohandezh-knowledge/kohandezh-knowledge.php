@@ -3,7 +3,7 @@
  * Plugin Name:       Kohandezh Knowledge
  * Plugin URI:        https://kohandezh.com
  * Description:       Layer B — Enterprise AI & Quantum Knowledge Platform. Additive, isolated from the personal-brand Layer A. Registers knowledge content types, taxonomies, the claim/evidence model, and a read-only REST API (kohandezh/v1). No homepage or Layer A changes; conditionally loaded and feature-flagged.
- * Version:           0.1.3
+ * Version:           0.4.2
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Mohammad Ali Kohandezh
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'KBK_VERSION', '0.1.3' );
+define( 'KBK_VERSION', '0.4.2' );
 define( 'KBK_PLUGIN_FILE', __FILE__ );
 define( 'KBK_REST_NAMESPACE', 'kohandezh/v1' );
 define( 'KBK_ENTITY_BASE', 'https://kohandezh.com/entity/' );
@@ -59,6 +59,12 @@ require_once __DIR__ . '/includes/class-kbk-seed.php';
 require_once __DIR__ . '/includes/class-kbk-news.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-artifacts.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-repository.php';
+require_once __DIR__ . '/includes/class-kbk-ai-book-search.php';
+require_once __DIR__ . '/includes/class-kbk-ai-book-catalog.php';
+require_once __DIR__ . '/includes/class-kbk-ai-book-graph.php';
+require_once __DIR__ . '/includes/class-kbk-ai-book-ask.php';
+require_once __DIR__ . '/includes/class-kbk-ai-book-pdf.php';
+require_once __DIR__ . '/includes/class-kbk-ai-book-request.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book.php';
 
 /**
@@ -83,6 +89,21 @@ function kbk_activate() {
 register_deactivation_hook( __FILE__, 'kbk_deactivate' );
 function kbk_deactivate() {
 	flush_rewrite_rules();
+}
+
+/**
+ * Upgrade: "Replace current with uploaded" keeps the plugin active, so the
+ * activation hook never runs again and new routes (such as /books/) answer 404
+ * until someone re-saves Permalinks. Flush once per version instead, after
+ * every init-time rewrite rule has been registered (priority 20).
+ */
+add_action( 'init', 'kbk_maybe_upgrade', 99 );
+function kbk_maybe_upgrade() {
+	if ( get_option( 'kbk_schema_version' ) === KBK_VERSION ) {
+		return;
+	}
+	flush_rewrite_rules( false );
+	update_option( 'kbk_schema_version', KBK_VERSION );
 }
 
 // Bootstrap.

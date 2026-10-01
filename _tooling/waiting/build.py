@@ -77,7 +77,9 @@ WP_HAND = ['_tooling/wp-theme/kohandezhcv/home.php',
 PREVIEW = ['_tooling/waiting/preview.html']
 EXCLUDED_FIXED = ['offline.html']
 
-BODY_RE = re.compile(r'<body(?=[\s>])[^>]*>', re.I)
+# A PHP template can echo inside the tag (<body class="<?php ... ?>">): its "?>"
+# is not the end of the tag, so PHP blocks are consumed whole before the real ">".
+BODY_RE = re.compile(r'<body(?=[\s>])(?:<\?php.*?\?>|[^>])*>', re.I | re.S)
 WP_BODY_OPEN_RE = re.compile(r'[ \t]*\n?[ \t]*<\?php\s+wp_body_open\(\s*\)\s*;\s*\?>')
 COMMENT_RE = re.compile(r'<!--.*?-->', re.S)
 BLOCK_RE = re.compile(r'\n?[ \t]*' + re.escape(BEGIN_ANY) + r'\b.*?' + re.escape(END), re.S)

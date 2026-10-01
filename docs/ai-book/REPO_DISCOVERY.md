@@ -25,7 +25,7 @@ No TypeScript migration is authorized. PHP typing, sanitization, validation, and
 
 ## Canonical book inventory
 
-The final Persian release is edition `2026E1`: 7 parts, 53 chapters, 479 canonical content sections, 63 RTL HTML pages, 2,420 RAG chunks, and a knowledge graph with 3,671 nodes and 10,474 edges. Primary inputs are:
+The final Persian release is edition `2026E1`: 7 parts, 53 chapters, 479 canonical content sections, 64 crawlable RTL HTML pages plus utility pages, 2,427 RAG chunks, and a knowledge graph with 3,671 nodes and 10,474 edges. Primary inputs are:
 
 - `master/book.json` and `master/book.md`
 - `provenance/content_ids.json` and `citation-registry.json`
@@ -38,7 +38,7 @@ Origins must remain visible: 365 `source_translation`, 53 `editorial_synthesis`,
 
 1. Preserve canonical `/fa/ai-book/.../` URLs and stable anchors/IDs.
 2. Validate every external JSON/JSONL artifact at ingestion; shapes differ (`book.units` is a number, source map is an array, registries are keyed objects).
-3. Never confuse 479 content IDs, 2,420 RAG chunk IDs, or KG entity IDs.
+3. Never confuse 479 content IDs, 2,427 RAG chunk IDs, or KG entity IDs.
 4. Do not copy generated book HTML/CSS wholesale into global `/assets`; adapt semantics into namespaced plugin components.
 5. Resolve the existing `/knowledge/` static-page versus CPT-archive ownership collision before adding rewrites.
 6. Investigate the three P06 chapters that currently share a truncated generated route before importing them.

@@ -35,6 +35,9 @@ function kdcv_post_schema( $post ) {
 		'dateModified' => get_the_modified_date( DATE_W3C, $post ),
 	);
 	$name = get_the_author_meta( 'display_name', $post->post_author );
+	if ( function_exists( 'get_post_meta' ) && 'ai-governance' === get_post_meta( $post->ID, '_kbk_book_editorial', true ) ) {
+		$name = 'محمدعلی کهن‌دژ';
+	}
 	if ( $name ) {
 		$data['author'] = array( '@type' => 'Person', 'name' => $name );
 		$author_url = esc_url_raw( get_the_author_meta( 'user_url', $post->post_author ), array( 'http', 'https' ) );
@@ -44,6 +47,10 @@ function kdcv_post_schema( $post ) {
 	if ( $image ) { $data['image'] = array( $image ); }
 	return $data;
 }
+
+add_filter( 'the_author', function ( $name ) {
+	return 'ai-governance' === get_post_meta( get_the_ID(), '_kbk_book_editorial', true ) ? 'محمدعلی کهن‌دژ' : $name;
+} );
 
 add_action( 'wp_head', function () {
 	if ( ! is_singular( 'post' ) || is_preview() || kdcv_external_post_seo() ) { return; }
@@ -85,11 +92,39 @@ function kdcv_sitemap_xml( $entries, $index = false ) {
 	return $xml . '</' . $root . ">\n";
 }
 
+/** @return array<int,array{loc:string}> */
+function kdcv_ai_governance_sitemap_entries() {
+	if ( ! defined( 'KBK_FEATURE_AI_BOOK' ) || ! KBK_FEATURE_AI_BOOK || ! defined( 'KBK_AI_BOOK_INDEXABLE' ) || ! KBK_AI_BOOK_INDEXABLE ) {
+		return array();
+	}
+	$paths = array(
+		'/fa/books/ai-governance/',
+		'/fa/books/ai-governance/read/?kbk_part=P02&kbk_chapter=C09',
+		'/fa/books/ai-governance/news/',
+		'/fa/books/ai-governance/glossary/',
+		'/fa/books/ai-governance/sources/',
+		'/fa/books/ai-governance/templates/',
+		'/fa/books/ai-governance/concepts/',
+		'/fa/books/ai-governance/graph/',
+		'/fa/books/ai-governance/pdf/',
+	);
+	return array_map( static function ( $path ) { return array( 'loc' => home_url( $path ) ); }, $paths );
+}
+
 add_action( 'template_redirect', function () {
 	$mode = get_query_var( 'kdcv_sitemap' );
 	if ( ! $mode ) { return; }
-	if ( ! in_array( $mode, array( 'index', 'posts' ), true ) || ! get_option( 'blog_public' ) ) {
+	if ( ! in_array( $mode, array( 'index', 'posts', 'ai-governance' ), true ) || ! get_option( 'blog_public' ) ) {
 		status_header( 404 ); nocache_headers(); exit;
+	}
+	if ( 'ai-governance' === $mode ) {
+		$entries = kdcv_ai_governance_sitemap_entries();
+		if ( ! $entries ) { status_header( 404 ); nocache_headers(); exit; }
+		status_header( 200 );
+		header( 'Content-Type: application/xml; charset=UTF-8' );
+		header( 'Cache-Control: public, max-age=300, must-revalidate' );
+		echo kdcv_sitemap_xml( $entries, false );
+		exit;
 	}
 	$page = max( 1, absint( get_query_var( 'kdcv_sitemap_page', 1 ) ) );
 	$args = kdcv_sitemap_query_args( 'index' === $mode ? 1 : $page );
@@ -99,6 +134,9 @@ add_action( 'template_redirect', function () {
 	if ( 'index' === $mode ) {
 		for ( $i = 1; $i <= (int) $query->max_num_pages; $i++ ) {
 			$entries[] = array( 'loc' => add_query_arg( array( 'kdcv_sitemap' => 'posts', 'kdcv_sitemap_page' => $i ), home_url( '/' ) ) );
+		}
+		if ( kdcv_ai_governance_sitemap_entries() ) {
+			$entries[] = array( 'loc' => add_query_arg( array( 'kdcv_sitemap' => 'ai-governance' ), home_url( '/' ) ) );
 		}
 	} else {
 		if ( $page > max( 1, (int) $query->max_num_pages ) ) { status_header( 404 ); nocache_headers(); exit; }

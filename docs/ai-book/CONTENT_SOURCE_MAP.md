@@ -6,7 +6,7 @@ Verified canonical root: `/Users/emperor/Documents/AI/AiBook` (read-only). Websi
 | --- | --- | --- | --- |
 | Reader | `master/book.json`, `master/book.md` | `book.json` is authoritative structured input: 7 parts, 53 chapters, 479 sections; preserve section text, origin, IDs, slugs, source links and hashes | Render bounded route/section HTML only |
 | Search | `html/search/index.json`; canonical headings/text from `master/book.json` | Build a bounded Persian/English index containing title, excerpt, hierarchy, origin, source and canonical anchor | Search endpoint/index only; never raw master or corpus dump |
-| Ask / RAG | `knowledge/chunks.jsonl` | 2,420 chunks; retrieve by `chunk_id`, return section `content_id`, source documents/pages/blocks and canonical URL with every answer | Server-side retrieval; do not publish raw JSONL |
+| Ask / RAG | `knowledge/chunks.jsonl` | 2,427 chunks; retrieve by `chunk_id`, return section `content_id`, source documents/pages/blocks and canonical URL with every answer | Server-side retrieval; do not publish raw JSONL |
 | Concepts | `knowledge/entities.jsonl`, `knowledge/relations.jsonl`, `translation_memory/glossary.json` | Concept identity, labels, mentions and evidence relationships | Filtered/paginated read models |
 | Knowledge Graph | `knowledge/graph.json`, `knowledge/graph.graphml` | 3,671 nodes and 10,474 edges; convert/filter only when needed; evidence belongs to edges | Bounded graph slices and accessible list, never full eager payload |
 | Glossary | `translation_memory/glossary.json`, `release/09_glossary.json`, `release/08_glossary_fa_en.csv` | Approved Persian term, English term/acronym, definition, domain, sources and review status | Per-term pages/search; no reviewer secrets |

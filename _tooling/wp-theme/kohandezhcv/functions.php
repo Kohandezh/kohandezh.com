@@ -468,7 +468,7 @@ add_action( 'template_redirect', function () {
 // The posts index has no singular object, so WordPress core does not emit a
 // canonical for it. Keep the curated sitemap destination self-canonical.
 add_action( 'wp_head', function () {
-	if ( is_home() ) {
+	if ( is_home() && ( ! class_exists( 'KBK_AI_Book' ) || ! KBK_AI_Book::is_request() ) ) {
 		echo '<link rel="canonical" href="' . esc_url( home_url( '/blog/' ) ) . '">' . "\n";
 	}
 }, 2 );
@@ -926,6 +926,10 @@ function kdcv_expose_urls() {
 	// videos.html is static-only (uploaded separately by FTP), so it has no
 	// registered page and its URL is stated directly.
 	$pages['videos'] = home_url( '/videos/' );
+	// Virtual knowledge-product route: only the real Persian edition exists.
+	// Exposing it here lets the shared site chrome link to the book without
+	// creating a fake WordPress Page or untranslated locale variants.
+	$pages['aiGovernance'] = home_url( '/fa/books/ai-governance/' );
 
 	$config = array(
 		'assets' => trailingslashit( KDCV ) . 'assets/',

@@ -56,6 +56,11 @@ final class KBK_AI_Book_Repository {
 		);
 	}
 
+	/** The validated absolute canonical root. */
+	public function root(): string {
+		return $this->root;
+	}
+
 	/** @return array<string,mixed> */
 	public function book(): array {
 		return $this->bundle()['book'];
@@ -81,7 +86,15 @@ final class KBK_AI_Book_Repository {
 	}
 
 	/**
-	 * Find a chapter within one part by stable ID or slug.
+	 * Find a chapter within one part by stable ID, or by slug when unambiguous.
+	 *
+	 * A stable `chapter_id` match always wins and is returned immediately: IDs
+	 * are unique within a part by construction. A slug match is only returned
+	 * when exactly one chapter in the part carries it; some parts (e.g. P06)
+	 * contain chapters that share a truncated slug, and guessing among them
+	 * would silently serve the wrong chapter, so an ambiguous slug fails
+	 * closed to null instead. All generated navigation in this project links
+	 * by `chapter_id`, so this only affects hand-typed/legacy slug URLs.
 	 *
 	 * @return array<string,mixed>|null
 	 */
@@ -91,11 +104,50 @@ final class KBK_AI_Book_Repository {
 			return null;
 		}
 		foreach ( $part['chapters'] as $chapter ) {
-			if ( $chapter['chapter_id'] === $chapter_id_or_slug || $chapter['slug'] === $chapter_id_or_slug ) {
+			if ( $chapter['chapter_id'] === $chapter_id_or_slug ) {
 				return $chapter;
 			}
 		}
-		return null;
+		$slug_matches = array();
+		foreach ( $part['chapters'] as $chapter ) {
+			if ( $chapter['slug'] === $chapter_id_or_slug ) {
+				$slug_matches[] = $chapter;
+			}
+		}
+		return 1 === count( $slug_matches ) ? $slug_matches[0] : null;
+	}
+
+	/**
+	 * The chapter immediately before/after the given chapter in whole-book
+	 * document order. Chapter numbers run across the book (C01..C53), so the
+	 * last chapter of a part leads into the first chapter of the next part
+	 * instead of stopping at the boundary. Each neighbour carries the
+	 * 'part_id' it belongs to, which the reader needs to build its link.
+	 *
+	 * @return array{prev:?array<string,mixed>,next:?array<string,mixed>}
+	 */
+	public function adjacent_chapters( string $part_id, string $chapter_id ): array {
+		$part = $this->find_part( $part_id );
+		if ( null === $part ) {
+			return array( 'prev' => null, 'next' => null );
+		}
+		$sequence = array();
+		$index    = null;
+		foreach ( $this->parts() as $book_part ) {
+			foreach ( $book_part['chapters'] as $book_chapter ) {
+				if ( $book_part['part_id'] === $part['part_id'] && $book_chapter['chapter_id'] === $chapter_id ) {
+					$index = count( $sequence );
+				}
+				$sequence[] = $book_chapter + array( 'part_id' => $book_part['part_id'] );
+			}
+		}
+		if ( null === $index ) {
+			return array( 'prev' => null, 'next' => null );
+		}
+		return array(
+			'prev' => $sequence[ $index - 1 ] ?? null,
+			'next' => $sequence[ $index + 1 ] ?? null,
+		);
 	}
 
 	/**
