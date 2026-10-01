@@ -41,3 +41,9 @@ html[dir="rtl"] .nav-limelight::after {
 @media (prefers-reduced-motion: reduce) {
     .nav-limelight { transition: none }
 }
+
+/* Books link: sits in the section list directly above Portfolio (#work).
+   Same 20px mask icon as .icon-certificate; it leaves the page, so it has no
+   scroll-link class and kdcv-interaction-fix.js never intercepts it. */
+.icon.icon-books{display:inline-block;width:20px;height:20px;flex:0 0 20px;background-color:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-width='2' stroke-linejoin='round' d='M12 6.6C9.8 5 6.6 4.6 3 5.6v13c3.6-1 6.8-.6 9 1 2.2-1.6 5.4-2 9-1v-13c-3.6-1-6.8-.6-9 1Zm0 0v13'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-width='2' stroke-linejoin='round' d='M12 6.6C9.8 5 6.6 4.6 3 5.6v13c3.6-1 6.8-.6 9 1 2.2-1.6 5.4-2 9-1v-13c-3.6-1-6.8-.6-9 1Zm0 0v13'/%3E%3C/svg%3E") center/contain no-repeat}
+.icon.icon-books::before{content:none}

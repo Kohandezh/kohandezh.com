@@ -1,0 +1,4317 @@
+{
+ "edition_id": "2026E1",
+ "count": 479,
+ "ids": {
+  "KDJ-AI-2026E1-P01-C01-S01-6FC077B0": {
+   "structural_id": "KDJ-AI-2026E1-P01-C01-S01",
+   "part": "P01",
+   "chapter": "C01",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "6fc077b066aba6ac3c03697629bf7cee42d36056b109d90e03416146aeb5557c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C01-S02-9D7D396F": {
+   "structural_id": "KDJ-AI-2026E1-P01-C01-S02",
+   "part": "P01",
+   "chapter": "C01",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "9d7d396fd466d4c8c84ba725e374114702d777df0c6af3ed281266287d4d38b3",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C01-S03-8A563A55": {
+   "structural_id": "KDJ-AI-2026E1-P01-C01-S03",
+   "part": "P01",
+   "chapter": "C01",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "8a563a552a5859adb53ea33c20c296b7bdbd65a77d905ad5aca0e74f585d6297",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C01-S04-2D457944": {
+   "structural_id": "KDJ-AI-2026E1-P01-C01-S04",
+   "part": "P01",
+   "chapter": "C01",
+   "section": "S04",
+   "origin": "editorial_synthesis",
+   "hash": "2d457944d14241d51e6ad970c40e97767e4d7482a1bb59ba4b446850507e59eb",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C02-S01-D572D88D": {
+   "structural_id": "KDJ-AI-2026E1-P01-C02-S01",
+   "part": "P01",
+   "chapter": "C02",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "d572d88d69f7d2640789865cac98e262631bab8dcbdfeffac783ead4ff51a826",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C02-S02-41B810B7": {
+   "structural_id": "KDJ-AI-2026E1-P01-C02-S02",
+   "part": "P01",
+   "chapter": "C02",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "41b810b7452c6263fe73863fd85d747cc4aa040d1c77a26cccb5df890b6f11d1",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C02-S03-EDB50B2C": {
+   "structural_id": "KDJ-AI-2026E1-P01-C02-S03",
+   "part": "P01",
+   "chapter": "C02",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "edb50b2c62f8d9ed068cb27128b25f9796d0e5a6dbe57662d9fc635b17a93954",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S01-380E4C6C": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S01",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "380e4c6cec521f191f7e0d839591e8e2a5fec21dae9d8240dd6b6956e0b944b2",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S02-7ED8F39A": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S02",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "7ed8f39a3ba4d7bc294c6a993198ca1a6577748c02fa64dfa42377b029aca3f8",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S03-4C118787": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S03",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "4c118787fd57f4689457b06ce1253c77449c3797841fd0bc98f9bf4e2393fef7",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S04-3F2F6A9D": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S04",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "3f2f6a9d8a5b3006e1185bdb92286a96be3b29602be6bf043cae523eed264f88",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S05-73FA98D8": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S05",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "73fa98d8eb80c272d11faa52c7c8fddedb6f8bfac8645c7b086dd31c2f4d5cdf",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S06-9FE2C2D1": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S06",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "9fe2c2d14bdcf3b11ff2489d62be294f368011bc2a5a881d33e3a2233447133d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S07-CC1EDDF5": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S07",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "cc1eddf5463f6178ec43c9b427c0a9bc0dc6f2f363d3820a4870e08a42216da4",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S08-B16F2790": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S08",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "b16f27906496b82b36ac34c3280a6a6ec40f0c48996fc07da7a286bd4a41f9b7",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S09-45520A88": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S09",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "45520a88ec12d85de76c694b82d246aaf48674462f7d63fecab7cfa384a7a49d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S10-E9FAE1B6": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S10",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "e9fae1b6c201bf56cafaa7b4e857a28690fd6e47b0b91d809733f35be0e85403",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S11-2F73F347": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S11",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "2f73f34747f8c60f3f1c10e0f9681d790124b0f015c9c0b0f79d2e259a901200",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S12-75304F74": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S12",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "75304f74a49a973ba33d3a9b876f09cf8e631aa2cf1c786b73202e7eb4600b1f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S13-ED17C843": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S13",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "ed17c84323a86755cf6fc076730821507691dbdb4cac391568bff582ba446407",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S14-D79F1016": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S14",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S14",
+   "origin": "source_translation",
+   "hash": "d79f10160d056b15848f7d365b5ac13a59d4cca1a2cb912f14a8664c52c36a00",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S15-D0B3E702": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S15",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S15",
+   "origin": "source_translation",
+   "hash": "d0b3e7028370ab30fac091c9faff75b8e04a8aa47a08572f74cde58affcce9d4",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S16-D4F31D0D": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S16",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S16",
+   "origin": "source_translation",
+   "hash": "d4f31d0dc35f83d84eb92aabd46bae9da54a1e20e4843d4f9e88468f8be83227",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S17-97C094FC": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S17",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S17",
+   "origin": "source_translation",
+   "hash": "97c094fc7f654625b594e00aa1ffc74487c18411fb6abc5841a5bff2d4fea613",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S18-16BE9A75": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S18",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S18",
+   "origin": "source_translation",
+   "hash": "16be9a75a2b7f87d47ea2f77b71ec92623a87049085ed4af35427dd7c7683f6b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S19-92EFA6D1": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S19",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S19",
+   "origin": "source_translation",
+   "hash": "92efa6d16dd8e5f6e0abe90c88e149b83a047534da1803a356b9722a39edfefc",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S20-2F22681D": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S20",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S20",
+   "origin": "source_translation",
+   "hash": "2f22681dec9176bdcf9a1e9d68741e40a6cc50774d414f6837fe36830796b9e8",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S21-8AA25E5A": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S21",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S21",
+   "origin": "source_translation",
+   "hash": "8aa25e5a397fc35f21f3d933fe7023bd039bdb8bd0184eca6c7fa83618cb7e16",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S22-ED2CC067": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S22",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S22",
+   "origin": "source_translation",
+   "hash": "ed2cc067ff568532d38f64c71a7a2b18155ddf09971c3aefce330ba8ffe7f677",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S23-B73D14E4": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S23",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S23",
+   "origin": "source_translation",
+   "hash": "b73d14e469017875b9a229652d2a29b4b9f51e21c1ebecb8b4b7162af922f585",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S24-43516383": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S24",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S24",
+   "origin": "source_translation",
+   "hash": "435163836e53f8263ddd697880615cf42dad866040a627a6c8852329957f3915",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S25-4F57629B": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S25",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S25",
+   "origin": "source_translation",
+   "hash": "4f57629bb0156a258f6b167ea7ce3a15f8cc29cfa879c4479ea7d3f8142ca6ca",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C03-S26-F6ED7368": {
+   "structural_id": "KDJ-AI-2026E1-P01-C03-S26",
+   "part": "P01",
+   "chapter": "C03",
+   "section": "S26",
+   "origin": "source_translation",
+   "hash": "f6ed7368d81a2f46d5897acf87e7faeae17d10e2993ae91e7c60eca854ed7764",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C04-S01-0CAD88E5": {
+   "structural_id": "KDJ-AI-2026E1-P01-C04-S01",
+   "part": "P01",
+   "chapter": "C04",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "0cad88e5839cfc799ce7d7468b396a7d62eac1fda17e88d64adcad5e968162de",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C04-S02-086B1A7E": {
+   "structural_id": "KDJ-AI-2026E1-P01-C04-S02",
+   "part": "P01",
+   "chapter": "C04",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "086b1a7ec427c30d2e98406c09504fa57ba97e2830235d4b3412dc8ed95c3271",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C04-S03-257EA1B0": {
+   "structural_id": "KDJ-AI-2026E1-P01-C04-S03",
+   "part": "P01",
+   "chapter": "C04",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "257ea1b001f990a83d384074e863e1609687c80ae376daeffe7899a2c5063ec4",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C05-S01-5AC7A267": {
+   "structural_id": "KDJ-AI-2026E1-P01-C05-S01",
+   "part": "P01",
+   "chapter": "C05",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "5ac7a26797a39b048d21bd955b03c54661b2be2223323511b17279d64cfd5b2c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C06-S01-0A4F866A": {
+   "structural_id": "KDJ-AI-2026E1-P01-C06-S01",
+   "part": "P01",
+   "chapter": "C06",
+   "section": "S01",
+   "origin": "editorial_localization_ir",
+   "hash": "0a4f866a6b6040a1f17f6db6d5ab5fd93ae8c4a5aa817aa1f7c063a59f0c5856",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C06-S02-63B55813": {
+   "structural_id": "KDJ-AI-2026E1-P01-C06-S02",
+   "part": "P01",
+   "chapter": "C06",
+   "section": "S02",
+   "origin": "editorial_localization_ir",
+   "hash": "63b55813b96d53e08fd60c47a559f0b0fdc8e9dfdfbcf3957dc0c473da6110ed",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C06-S03-7EF1DB1C": {
+   "structural_id": "KDJ-AI-2026E1-P01-C06-S03",
+   "part": "P01",
+   "chapter": "C06",
+   "section": "S03",
+   "origin": "editorial_localization_ir",
+   "hash": "7ef1db1cf07f3691cc7c846215f84b08e36143e8a6cba1a946eb7f51004b1294",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C06-S04-2CAE5D7E": {
+   "structural_id": "KDJ-AI-2026E1-P01-C06-S04",
+   "part": "P01",
+   "chapter": "C06",
+   "section": "S04",
+   "origin": "editorial_localization_ir",
+   "hash": "2cae5d7e3bbee4de287ce559ad9a7ba697518da83b5362732335f91ae014558b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C06-S05-9E1CB2A8": {
+   "structural_id": "KDJ-AI-2026E1-P01-C06-S05",
+   "part": "P01",
+   "chapter": "C06",
+   "section": "S05",
+   "origin": "editorial_localization_ir",
+   "hash": "9e1cb2a86d6f08a98887c0ba625eca09244753bd1f7a8f0b76adc1406b4e6b93",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C06-S06-54498A5E": {
+   "structural_id": "KDJ-AI-2026E1-P01-C06-S06",
+   "part": "P01",
+   "chapter": "C06",
+   "section": "S06",
+   "origin": "editorial_localization_ir",
+   "hash": "54498a5efb3395696f2c431d67e62e91ee3dad441ea929b3cb7548c17628866a",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C06-S07-1CB08DA9": {
+   "structural_id": "KDJ-AI-2026E1-P01-C06-S07",
+   "part": "P01",
+   "chapter": "C06",
+   "section": "S07",
+   "origin": "editorial_localization_ir",
+   "hash": "1cb08da91ab43d9b74323e6d5c124d17a2d45732b481dca2900060ef0cb89705",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C06-S08-3C21C304": {
+   "structural_id": "KDJ-AI-2026E1-P01-C06-S08",
+   "part": "P01",
+   "chapter": "C06",
+   "section": "S08",
+   "origin": "editorial_localization_ir",
+   "hash": "3c21c3047362074daebe2ea6b9a9ddad38caa9705b383ccddf338edc5a06d2ad",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P01-C06-S09-EED0222A": {
+   "structural_id": "KDJ-AI-2026E1-P01-C06-S09",
+   "part": "P01",
+   "chapter": "C06",
+   "section": "S09",
+   "origin": "editorial_localization_ir",
+   "hash": "eed0222a208e0fd52b8e5f7cbbb9c718bb4654e5893653ccedbcb8eba62e812f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C07-S01-020FDB3B": {
+   "structural_id": "KDJ-AI-2026E1-P02-C07-S01",
+   "part": "P02",
+   "chapter": "C07",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "020fdb3b6b00df0121e0646215d00ee181b5e782c5acfadeb437c652967baa83",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C07-S02-E5A3423F": {
+   "structural_id": "KDJ-AI-2026E1-P02-C07-S02",
+   "part": "P02",
+   "chapter": "C07",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "e5a3423f3bae911f5b0c48041fee039718eff6071909c468ccb96a335b0d071e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C07-S03-D273C882": {
+   "structural_id": "KDJ-AI-2026E1-P02-C07-S03",
+   "part": "P02",
+   "chapter": "C07",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "d273c882a1bd97cc3b602f02413580547cf9e415da3b880f200d9f4c2e62c700",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C08-S01-E7F4014E": {
+   "structural_id": "KDJ-AI-2026E1-P02-C08-S01",
+   "part": "P02",
+   "chapter": "C08",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "e7f4014e0f88594ffeaa01b2024ef2d24231ff90a052b1b5fa23b63c31e62c19",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C08-S02-A6D30928": {
+   "structural_id": "KDJ-AI-2026E1-P02-C08-S02",
+   "part": "P02",
+   "chapter": "C08",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "a6d30928399972ee8026cedd287a721923c608e06d259cc72b3c3b4e288c4a7b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C08-S03-7B18C80D": {
+   "structural_id": "KDJ-AI-2026E1-P02-C08-S03",
+   "part": "P02",
+   "chapter": "C08",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "7b18c80d39c79943e274ffe16b82e2378df67ccb26c38094052b9ba632329efd",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C08-S04-EC429101": {
+   "structural_id": "KDJ-AI-2026E1-P02-C08-S04",
+   "part": "P02",
+   "chapter": "C08",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "ec42910139c22337e54f9c200d118bd0ca3064a08d7cb0969f0177187af9952b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C08-S05-83D41AA5": {
+   "structural_id": "KDJ-AI-2026E1-P02-C08-S05",
+   "part": "P02",
+   "chapter": "C08",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "83d41aa5ab38197c1f0b1a651305139154d2ed80dce60b1869ef7de70e892edf",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C08-S06-270963BE": {
+   "structural_id": "KDJ-AI-2026E1-P02-C08-S06",
+   "part": "P02",
+   "chapter": "C08",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "270963be4a01e7dd927c09b942dc8aaea6a687e679a78faf3b977b726b02e115",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C08-S07-7F79BFBB": {
+   "structural_id": "KDJ-AI-2026E1-P02-C08-S07",
+   "part": "P02",
+   "chapter": "C08",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "7f79bfbb2fb01685ee2d49075ee53ddda7ab7e4951590da438800d7212d3465e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C08-S08-6CB4A289": {
+   "structural_id": "KDJ-AI-2026E1-P02-C08-S08",
+   "part": "P02",
+   "chapter": "C08",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "6cb4a28990856b84b6e340855c1c87c83a26c42cb3edc3aded042b4ba9c3f136",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C08-S09-C97E0B40": {
+   "structural_id": "KDJ-AI-2026E1-P02-C08-S09",
+   "part": "P02",
+   "chapter": "C08",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "c97e0b40258ecff57bde13f014e8e6db641452f96d0887cce8a29c4b9067d85a",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S01-49174427": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S01",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "49174427797326f8c2685794afcbe50c6cab39f994713240767a227b9bcb1779",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S02-CFFB4109": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S02",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "cffb410900376ae842ec393c6b64ffc44c4eed7b35da407c27172a8f69e6d040",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S03-266EEDAA": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S03",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "266eedaa925220f6e0fe2760fdae0524ba94c45af36f17170c5e8eb78fcec2d2",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S04-24E258BA": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S04",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "24e258ba3c0e1e1c476ba7f2dea58d7517ead285c03d99d76e4d82f91fac5e3e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S05-C9E8F1BF": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S05",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "c9e8f1bf91dd3e0dd4f87c677c8c40ff596178b90c338ab162e68f0162d11e8e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S06-03D5DB81": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S06",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "03d5db8125bf31616dfa2eb3bc7dc1d864bbed5f5f4fedc1be1cba116942b354",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S07-EBC0316C": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S07",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "ebc0316c1585d2221f2bdbd58b3b2fa7af96c8b4c8365ce741a800c9a21c9c39",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S08-8A0691E5": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S08",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "8a0691e5472bfbd0529f05a0a07b4d3ca165b57b5425f031602fe0840a92950e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S09-E7FDE544": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S09",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "e7fde5447e08f0e53c875e5c6951676c6f5c4882bc41fbf064f78919d783deb1",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S10-8F631612": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S10",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "8f63161209e24262446c4b6036554700c7920849fd91d702d3c74e34243dbf4d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S11-5E02A04A": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S11",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "5e02a04aafdfd26d606a89447cf6ce55ef20edf0f36fdc72802e55684aef9b42",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S12-2B5D28EE": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S12",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "2b5d28ee9db4fcc3cd2b10bf09d0f377316c506964f9d0b1496787347f286ec6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S13-E3D71175": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S13",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "e3d71175ebfd3685db8ea8e9711e82cc6854b4d4fb529c2d5fc062abf3500ca2",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S14-AB9BCC16": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S14",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S14",
+   "origin": "source_translation",
+   "hash": "ab9bcc162390a20d57d1de49e322f0371b5247608c32d6cee8093164b31afdf7",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S15-08B2E061": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S15",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S15",
+   "origin": "source_translation",
+   "hash": "08b2e0611b2d7e0bd3c2450833775b077c56039dead1ef5255fc31e5d71a80c8",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S16-D8D4FB56": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S16",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S16",
+   "origin": "source_translation",
+   "hash": "d8d4fb567aff4d06a59123759ae9029d2d1e14e1da2fd97425464474a5d8a6e6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S17-CDF82215": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S17",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S17",
+   "origin": "source_translation",
+   "hash": "cdf82215880749537fba78b234931291ac253e8e8c51606cc8a52c8f7f57ce5b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S18-72397DF8": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S18",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S18",
+   "origin": "source_translation",
+   "hash": "72397df8fcb4d89cf57a88f1d4c382687558cccb510aa7e1cbae6c17ea7db534",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S19-9D4FD3F0": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S19",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S19",
+   "origin": "source_translation",
+   "hash": "9d4fd3f0135b149b8a344767cba17e54d2dd359c0128fa8199b2b2116527e3bf",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C09-S20-924D0834": {
+   "structural_id": "KDJ-AI-2026E1-P02-C09-S20",
+   "part": "P02",
+   "chapter": "C09",
+   "section": "S20",
+   "origin": "source_translation",
+   "hash": "924d08343807252217982e7885215a2e58a324a1d53ae264f9d375417b164018",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C10-S01-CB96335E": {
+   "structural_id": "KDJ-AI-2026E1-P02-C10-S01",
+   "part": "P02",
+   "chapter": "C10",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "cb96335ee5e2ec586ccb4c84e40e7aaeba96a2396da124a6b255fbc6845f0acf",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C10-S02-0071AA62": {
+   "structural_id": "KDJ-AI-2026E1-P02-C10-S02",
+   "part": "P02",
+   "chapter": "C10",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "0071aa6275f2fd3c2494d9b609f2fba286a4aa78420f71cae2c9d0eb6413e4e1",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C10-S03-F6D9B361": {
+   "structural_id": "KDJ-AI-2026E1-P02-C10-S03",
+   "part": "P02",
+   "chapter": "C10",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "f6d9b361f09ad4c366f1c253e4a7bf4aa88f5931de7700903ac1858a850726d1",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C10-S04-F726E88B": {
+   "structural_id": "KDJ-AI-2026E1-P02-C10-S04",
+   "part": "P02",
+   "chapter": "C10",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "f726e88beef3a32276e7162a069f2679e329a5dd6875006d94fe2e0fce6b1107",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C10-S05-58410C64": {
+   "structural_id": "KDJ-AI-2026E1-P02-C10-S05",
+   "part": "P02",
+   "chapter": "C10",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "58410c64d30fdef2e558a597a560058f699cfd81efaf3706c6963c180a417f2b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C10-S06-C7C8A931": {
+   "structural_id": "KDJ-AI-2026E1-P02-C10-S06",
+   "part": "P02",
+   "chapter": "C10",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "c7c8a931c110140832831642fe796c20ecce19fc583b0b7cb6b7401a006a2a3c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C10-S07-E9A8A4DB": {
+   "structural_id": "KDJ-AI-2026E1-P02-C10-S07",
+   "part": "P02",
+   "chapter": "C10",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "e9a8a4dbd1a2120c343d6bdbd85b1e0f9eaece33e10dc5ea4c3946821033d784",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C10-S08-B766E4AE": {
+   "structural_id": "KDJ-AI-2026E1-P02-C10-S08",
+   "part": "P02",
+   "chapter": "C10",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "b766e4ae07ffd29ea0b3847fdeec94a3dbc0a7ca193ebd3db19999ab5305a7a4",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C10-S09-EDAA7079": {
+   "structural_id": "KDJ-AI-2026E1-P02-C10-S09",
+   "part": "P02",
+   "chapter": "C10",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "edaa7079aeefd28ade598bf7b461f5f45d323965f9ebdc5ea7f995bd593e6eab",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C10-S10-A351F886": {
+   "structural_id": "KDJ-AI-2026E1-P02-C10-S10",
+   "part": "P02",
+   "chapter": "C10",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "a351f886b85fc87ae741ec2e5c5b9e3543790ed28ff161eab30c77ad28ad21ba",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C10-S11-4266A17E": {
+   "structural_id": "KDJ-AI-2026E1-P02-C10-S11",
+   "part": "P02",
+   "chapter": "C10",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "4266a17e245b6aa87b046f5e163a330cf7bf915345b23a85b9a14b0dbd07c82a",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C10-S12-6408DBFB": {
+   "structural_id": "KDJ-AI-2026E1-P02-C10-S12",
+   "part": "P02",
+   "chapter": "C10",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "6408dbfb20dc1441692636f05203bcdae322d313bedaabf3dafe15f92a815731",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C10-S13-3AF2AE74": {
+   "structural_id": "KDJ-AI-2026E1-P02-C10-S13",
+   "part": "P02",
+   "chapter": "C10",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "3af2ae74ffb32464bd2e52677ed9271d57462f441793af2b3c3492bd90ce1d6c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S01-88BD2E1E": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S01",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "88bd2e1ea3604b7058e571e6f495e9c28ece63a6db1b1e5bff7f549d642f1f40",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S02-D1258926": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S02",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "d12589261827437f9b6de423c104e37db495851662814bb8a01a053977b18171",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S03-81B87DD4": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S03",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "81b87dd4f1fbcee8018442c4688fd4503ce9902fba211c3289ea2ae6a359e4b6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S04-D8D92ADA": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S04",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "d8d92adaff4c6f735a312e0d4e69b285b1905b8368ed00ee893f282ea1041ff0",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S05-B328D333": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S05",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "b328d333fe3c04786398d8c91e0def0924327e9501cd930f4f57d6b05143df7b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S06-E011866C": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S06",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "e011866c1cd4a78a56efce6d29d43a83a810e6ef8b47e9b53f0ba93b30c74808",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S07-B6A51385": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S07",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "b6a5138513cd44de9bf95a663cc190f9a39f475990f7aa886d0563e89df568f7",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S08-4FBB7F5A": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S08",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "4fbb7f5a2d5a0f4ef08c726ae5bed7a2ba549ae7ce08973e514da3841de2571d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S09-1C17BD6D": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S09",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "1c17bd6db1e0ea78a956467e88b3e7caa907029a068b4437b73616891db3bd49",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S10-25521F99": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S10",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "25521f9913266d958cbb032fddb0fd4e02264e5976e86d55a2e21763156afa75",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S11-DCC947DB": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S11",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "dcc947db91099bdba3489cfcf4ddd4f528156980cd61492bfe4c38529042a3b9",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S12-847DF45C": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S12",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "847df45c8bf5f67afff99d3cffb0617ac01233e44b0a4ad7cedeb82324b545ed",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S13-1127510B": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S13",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "1127510b973d7223902fe39897860c8640adf24714103580ebfc31ce947e13d8",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S14-CCC6DED1": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S14",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S14",
+   "origin": "source_translation",
+   "hash": "ccc6ded1dd452515f91b7f1d74f0435a1c517053e5d224ef4c3964360e5e1c87",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S15-C4280418": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S15",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S15",
+   "origin": "source_translation",
+   "hash": "c42804181e8445474016877355aa2bf1b94df62d63164832e77f18425edb274f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S16-5787542E": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S16",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S16",
+   "origin": "source_translation",
+   "hash": "5787542e749ba5b827e3091696bf75d07fd5803b02c4b06cc793a9527763b4e9",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S17-47A08D7C": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S17",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S17",
+   "origin": "source_translation",
+   "hash": "47a08d7c8fe01b90f6f85ec8ba4e34d4fa74a3748673d90555189ff3cfb75f2f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C11-S18-CFB35DDF": {
+   "structural_id": "KDJ-AI-2026E1-P02-C11-S18",
+   "part": "P02",
+   "chapter": "C11",
+   "section": "S18",
+   "origin": "source_translation",
+   "hash": "cfb35ddf7d5f4ad6d233d4903499d6186fb9c5632a1c1fc0488f68a2e56c11f0",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S01-6FAB79CD": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S01",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "6fab79cde1d4b50ad3b81cb71ba5bb632c3f89ac1977a29c5ac51ed18a58713d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S02-44B9E00D": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S02",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "44b9e00dc9a86d6639bca204d35ad97db267bce7ffaaa1441bc5ab704ed8f3df",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S03-DD27F201": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S03",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "dd27f201c45651f679d66bb410960d9ef80561cc00a42e2e0414cb2d8673cabc",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S04-7255C383": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S04",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "7255c38375b7cda774b58cabc71f8ad0061dbb938e1416a06508765cd6d2f42e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S05-77F6C7C8": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S05",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "77f6c7c82d81da580156942f838a4e865c2711f65c6bef6a20bdaa905c091bf1",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S06-051C8B22": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S06",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "051c8b22e9b57511038a13307fa82f6f164541821cf65973183f28b14a982714",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S07-6F905422": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S07",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "6f9054221ef9cea1f9abd96ea412d6eb12a2789a23e7eb918d2424713b9450af",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S08-41FC2DD6": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S08",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "41fc2dd6db9b83d3dd0954a01932c1fb7ec97fa9d939d3f76cdef0377e863c00",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S09-7EA765F8": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S09",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "7ea765f86a92fb72aa21edd845f01b9d81248d127861ae2525a92f45de11e87e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S10-4E9C090D": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S10",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "4e9c090d3ee19410af57dbc275806dec21f4720007eb355f43f95ffc603f6d86",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S11-60E3B64A": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S11",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "60e3b64a02f59a97346dd3a74c89e54cd973611e0cc45c95673103ec7ce3be67",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S12-54ECF270": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S12",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "54ecf2700b6eebb3aab521fb7693101cb782228e4e0dfa666c3f614b5e1e1128",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S13-C3991E8A": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S13",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "c3991e8a9316dbdf62fb6fa26d8a7d63e3021870658b703102f336709183affa",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S14-61C3C412": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S14",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S14",
+   "origin": "source_translation",
+   "hash": "61c3c412dd19631f522e0b464131527140a48740f2e5605e5b2e21c4e734403a",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S15-30A43119": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S15",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S15",
+   "origin": "source_translation",
+   "hash": "30a43119455c59b8ed39e78e8196d9a38c4f37b233f9ef01cab99bc8b1a8c650",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S16-677F4807": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S16",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S16",
+   "origin": "source_translation",
+   "hash": "677f48076c3ac3c025fb057d204f0ad931274e937745906b0fadc0cf4bdcf1a1",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S17-82FD75C5": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S17",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S17",
+   "origin": "source_translation",
+   "hash": "82fd75c54d95619272d94b05faf202e2fe275cfa7440679b242e2ace10be8110",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S18-64919527": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S18",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S18",
+   "origin": "source_translation",
+   "hash": "6491952743c8a7bec4e9926b1bba2bbd9586f3367585deb27cea3a488841715d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S19-E9751956": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S19",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S19",
+   "origin": "source_translation",
+   "hash": "e97519564e9398945c50473318801d402fd1a58dcf1e86a5d60f30e9a12017cd",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S20-40F1AD4B": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S20",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S20",
+   "origin": "source_translation",
+   "hash": "40f1ad4b09d2b3891cad6ed54c78054dcfdb163564d2a2480d9d4e2bed7a7a2c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S21-61DD947E": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S21",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S21",
+   "origin": "source_translation",
+   "hash": "61dd947e6b58342a7497f3a69f46009d5ef6e13ec3d226ce7462dd81d30d5ca7",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C12-S22-72BC64B2": {
+   "structural_id": "KDJ-AI-2026E1-P02-C12-S22",
+   "part": "P02",
+   "chapter": "C12",
+   "section": "S22",
+   "origin": "source_translation",
+   "hash": "72bc64b219a10aaa3e4779053c06d185c0ed2ce57e4011d32d8d96f7e5d0fe10",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S01-92349B86": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S01",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "92349b864b41ef4f49c4fe7ffb89793d460fae3c670c26e088aee551b5b37a2d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S02-C4D90480": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S02",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "c4d9048031508f48748c8c30002c77548d05f6de9efc147fd59633a9c3c10906",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S03-079D62F3": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S03",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "079d62f3882ef8b86b30aebfd0d6015e125ad6398164a055db5904c6d39c7c9d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S04-DC751B1D": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S04",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "dc751b1dc30585512dbb4c169155553ad1f8261aa638f07ecff6b6ab7a80f8f6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S05-220ECFB0": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S05",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "220ecfb0557393426540feb62fa090b10f87353b4b7ac81478e1dd6f9d673747",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S06-9F1BFDE0": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S06",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "9f1bfde06da9f5309f176d1b59b3e43d7c974a74280551bcf8ebe40c76fd0f03",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S07-0CAE65BD": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S07",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "0cae65bdc11584c0f7de7ba63dc34a788268157769d80c671c2d932e6d2522c8",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S08-BF53E7DA": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S08",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "bf53e7da9da6c3fde675f35f585dcdc90dfee8e7cd5631553e27ec4a40e94f48",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S09-932190C4": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S09",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "932190c4fc6e36cd5bb41a9341b4c8a02e705b6fb60c9f5abc86b84bb8da2387",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S10-60F951C8": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S10",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "60f951c8b9839bb79cdc56b16d72fb78f7f6de04d7940f746022888445d26f0b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S11-BC864942": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S11",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "bc864942f19a083e3c600cba7d846ad31b4bca7127ed559220519e0efeaca178",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S12-37B0772E": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S12",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "37b0772e7e48286fc9f888f2946c348fa324f7849d6783bf2e3c728e946e46cb",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S13-61A96B53": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S13",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "61a96b533121c17cd5142d7af04c7418d6d4cd4e33f6c4ec3cd633f8f0f8f519",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S14-35C6CDDE": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S14",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S14",
+   "origin": "source_translation",
+   "hash": "35c6cddee197f9b6a8c3ab65dce44f69b0f5fe5f2f1fb2f070a50291c19c2657",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S15-7A07FED7": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S15",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S15",
+   "origin": "source_translation",
+   "hash": "7a07fed74b944ac202e48c42a4cbbadb25094d3925a28a30932e91f614165e90",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S16-6222628C": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S16",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S16",
+   "origin": "source_translation",
+   "hash": "6222628cf864f48f8c603f59199f24af6dfcb52abc86f773520b6b052112b7ef",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S17-121BDB1C": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S17",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S17",
+   "origin": "source_translation",
+   "hash": "121bdb1c2d1b83992e6fbfd68461b04e210508724f7fc8acc3d761db8dca35d5",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S18-EB00DA70": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S18",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S18",
+   "origin": "source_translation",
+   "hash": "eb00da70ebe0d42b6a280d260a6f95595c1f43132c714a47933a31be8a42b0d3",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S19-717536F5": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S19",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S19",
+   "origin": "source_translation",
+   "hash": "717536f5a1efe7fac2ba75a2f790b8e35420f3928aefb255c4e541d4f5038b0f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C13-S20-E58D257A": {
+   "structural_id": "KDJ-AI-2026E1-P02-C13-S20",
+   "part": "P02",
+   "chapter": "C13",
+   "section": "S20",
+   "origin": "source_translation",
+   "hash": "e58d257aa92908333f61468322e71b53eaf11238c53fc5057dc59a3c5f13decb",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C14-S01-3A36956B": {
+   "structural_id": "KDJ-AI-2026E1-P02-C14-S01",
+   "part": "P02",
+   "chapter": "C14",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "3a36956bd336cbc94202e84d30c608c5cd32a41a34f1f0b32d680ac69b2b582e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C14-S02-81E35C05": {
+   "structural_id": "KDJ-AI-2026E1-P02-C14-S02",
+   "part": "P02",
+   "chapter": "C14",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "81e35c05d9d4df7f7ed36baaba91f02ed0c84541db1787c6e03d7c0b32bcf1fb",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C14-S03-D7B8E6FD": {
+   "structural_id": "KDJ-AI-2026E1-P02-C14-S03",
+   "part": "P02",
+   "chapter": "C14",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "d7b8e6fdc0051d0eadbf6397e0b5df0c9dd849eb966f5ad297ccf87d5b710ef5",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C15-S01-A35E56FE": {
+   "structural_id": "KDJ-AI-2026E1-P02-C15-S01",
+   "part": "P02",
+   "chapter": "C15",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "a35e56fe86ae25b261e0f9151390f950e430287f508894a9882b4e9de37ef005",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C16-S01-B8B3D5EA": {
+   "structural_id": "KDJ-AI-2026E1-P02-C16-S01",
+   "part": "P02",
+   "chapter": "C16",
+   "section": "S01",
+   "origin": "editorial_localization_ir",
+   "hash": "b8b3d5eabbb8db4aef8f7724967d58d5e066d7b4b01c02220bc1d2164ff27ea3",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C16-S02-28D5D8E2": {
+   "structural_id": "KDJ-AI-2026E1-P02-C16-S02",
+   "part": "P02",
+   "chapter": "C16",
+   "section": "S02",
+   "origin": "editorial_localization_ir",
+   "hash": "28d5d8e2695f28c6a0325cd032edd5463f77dd19a78432cc5577735f1a0cfb20",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C16-S03-99BB79CF": {
+   "structural_id": "KDJ-AI-2026E1-P02-C16-S03",
+   "part": "P02",
+   "chapter": "C16",
+   "section": "S03",
+   "origin": "editorial_localization_ir",
+   "hash": "99bb79cf5d4e32124e2a0f85950d25672b4b87a80119d41fd6f082bf0fb2ac8b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C16-S04-2969D71A": {
+   "structural_id": "KDJ-AI-2026E1-P02-C16-S04",
+   "part": "P02",
+   "chapter": "C16",
+   "section": "S04",
+   "origin": "editorial_localization_ir",
+   "hash": "2969d71aaf90979f2479a4356fe0f8c248c79be35aaa1fe31e40d2cecf79e5e9",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C16-S05-823C95BD": {
+   "structural_id": "KDJ-AI-2026E1-P02-C16-S05",
+   "part": "P02",
+   "chapter": "C16",
+   "section": "S05",
+   "origin": "editorial_localization_ir",
+   "hash": "823c95bd265959734aa931193d66458a68fa9503cf3e119d41e43c5f36f9b916",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C16-S06-CB34A49D": {
+   "structural_id": "KDJ-AI-2026E1-P02-C16-S06",
+   "part": "P02",
+   "chapter": "C16",
+   "section": "S06",
+   "origin": "editorial_localization_ir",
+   "hash": "cb34a49d89b19cf7c0c5c48f0e73bcf0f7f6fa083971956952cbef644ff1b768",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C16-S07-52435AD8": {
+   "structural_id": "KDJ-AI-2026E1-P02-C16-S07",
+   "part": "P02",
+   "chapter": "C16",
+   "section": "S07",
+   "origin": "editorial_localization_ir",
+   "hash": "52435ad88be3d83fb7f86c6ee9d68e7b1b14034dfe830aa574dec1c047dbd87d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C16-S08-79D3418F": {
+   "structural_id": "KDJ-AI-2026E1-P02-C16-S08",
+   "part": "P02",
+   "chapter": "C16",
+   "section": "S08",
+   "origin": "editorial_localization_ir",
+   "hash": "79d3418f558460ce086528209d48efad50d7f48321642087be527541653f22cc",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P02-C16-S09-F5BE4808": {
+   "structural_id": "KDJ-AI-2026E1-P02-C16-S09",
+   "part": "P02",
+   "chapter": "C16",
+   "section": "S09",
+   "origin": "editorial_localization_ir",
+   "hash": "f5be4808663a2069a5514c87cb4dd72c696c29cfb8aba882d03f3f4786d0e2d0",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C17-S01-B0F84ACA": {
+   "structural_id": "KDJ-AI-2026E1-P03-C17-S01",
+   "part": "P03",
+   "chapter": "C17",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "b0f84acaf6ff2765b70ec04012aa6594a500337fade918058407c667f0ed1ccd",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C17-S02-FA32D05E": {
+   "structural_id": "KDJ-AI-2026E1-P03-C17-S02",
+   "part": "P03",
+   "chapter": "C17",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "fa32d05e6896595ac859b4b9069e5f8fcfa26ec5b16183228bb7189ec7a3ceee",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C17-S03-82429293": {
+   "structural_id": "KDJ-AI-2026E1-P03-C17-S03",
+   "part": "P03",
+   "chapter": "C17",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "8242929384c163bf74fa8f1901a7e17499cc64b24d5de247b8716d47fbb81d44",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C18-S01-9EBB2155": {
+   "structural_id": "KDJ-AI-2026E1-P03-C18-S01",
+   "part": "P03",
+   "chapter": "C18",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "9ebb2155e33001978ef79f21420fffe5ba440f4ffc354fa2a38e64a390087502",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C18-S02-EBB0A761": {
+   "structural_id": "KDJ-AI-2026E1-P03-C18-S02",
+   "part": "P03",
+   "chapter": "C18",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "ebb0a761edf26dc1909adaa465cb1cc89932df74b82e2bf8d1c8bbb202acbb6f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C19-S01-032EAF3A": {
+   "structural_id": "KDJ-AI-2026E1-P03-C19-S01",
+   "part": "P03",
+   "chapter": "C19",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "032eaf3a05c67dec61633a470612ab126bc2aae7e2b9cdb63c8ae88b9ebef5bb",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S01-0DC3B9B4": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S01",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "0dc3b9b404bcbfa8de2114552c26e4950c64d663b2d684a8f3f3657b6dec4e9d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S02-B58240E8": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S02",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "b58240e8a15d4cc7265f0428ce47c0e742f33c2965d29796631e848af8261881",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S03-1C6A233C": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S03",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "1c6a233ce0dd20eed1f2f4a31dd0f4158c350eae0a11d83da942f6a11a819957",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S04-3D556E97": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S04",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "3d556e971d6dc6c9fcc85584a7787fc2ba13d140ca60db851048754c2d965b6d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S05-636F2118": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S05",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "636f21187f59335e9ed5ce1fa663fbbffa0fb69636a4042bbb7550b3d4b2c6b2",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S06-8DE9B5FF": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S06",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "8de9b5ff9bc704411ae2a1caa3706ba9b098f46713215850c2b7dce23cc51f48",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S07-3B73DC25": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S07",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "3b73dc256be1361e692f79cc0d4c790ecddf48a1c5c9dbbf1d7ed62f5550f385",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S08-ADCCAA04": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S08",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "adccaa046a8cb5599868b4b0af4339170264ab726dc410efc1711359107230b4",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S09-F5A1A548": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S09",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "f5a1a548ebccb0a7b5f74ce3f5df5a2c881848e3d20eba29bd1bdc1387234401",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S10-55C0BFC6": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S10",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "55c0bfc6d71a8462adc4d7b58db91ad3cabee19a747630002d811f2aaf4d94d9",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S11-8F836BD6": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S11",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "8f836bd661bf5f07ee5944031178a3c1dc82d9570d74ab0ae397b1b6845251c6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S12-EC9735A3": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S12",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "ec9735a3f56f307d4d9cd9cd151aab2c56df1cf8c63e3c1bf648283b3b171dec",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S13-E6E1357D": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S13",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "e6e1357da1b1cead8fa4d4b1b99a9683662b5890da749cfdad1a2cf26d5ec635",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S14-A6C06E52": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S14",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S14",
+   "origin": "source_translation",
+   "hash": "a6c06e5243ae0238d9cd0f47152cf288658c39a5ba66977179c1a669905db4ce",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S15-A1C7540E": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S15",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S15",
+   "origin": "source_translation",
+   "hash": "a1c7540e4269e2c85b37dac47baed837aab812a08fc7d311836d25d4e976df5b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S16-3FABC475": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S16",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S16",
+   "origin": "source_translation",
+   "hash": "3fabc47540651dcdd9e07d282f8516367dc9a6167b368319505bad267387c9bf",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S17-E8133972": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S17",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S17",
+   "origin": "source_translation",
+   "hash": "e8133972560abd240d9ff8d7dfbba9a0567c59c15c8a4dd49fe601d2d1fea770",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S18-E5862448": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S18",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S18",
+   "origin": "source_translation",
+   "hash": "e5862448d00c48b0619a0b24d6472e800a1f1bd2889df6685f05b4cb0c3e429c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S19-62C19D6D": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S19",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S19",
+   "origin": "source_translation",
+   "hash": "62c19d6de60470ff38a94dc88cbd1981225b8b7a23d1c6770607661e24c38d63",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S20-066E9C84": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S20",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S20",
+   "origin": "source_translation",
+   "hash": "066e9c84c41e881c1dedea338ed32939aea06537b7c5bf0cc6e32d23c7ea62a0",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S21-7688BCF1": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S21",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S21",
+   "origin": "source_translation",
+   "hash": "7688bcf1bb3306002723772942ccee5a273fb0e8009f7420b53468824df27002",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S22-A9DA6B54": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S22",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S22",
+   "origin": "source_translation",
+   "hash": "a9da6b54b96caf6f30ce637510f3ea4d3fcc9b41374c84e1d232f0cb96ce189e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S23-F1E441C4": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S23",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S23",
+   "origin": "source_translation",
+   "hash": "f1e441c4252dcf3e6e57635cf3a351acf6d100b732d03598d03272c950a68654",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C20-S24-A5DAF444": {
+   "structural_id": "KDJ-AI-2026E1-P03-C20-S24",
+   "part": "P03",
+   "chapter": "C20",
+   "section": "S24",
+   "origin": "source_translation",
+   "hash": "a5daf4449f67243d2dd994d44f7d0054c6781b49e1adae2494f4e9328ee9d6ca",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S01-91644AFD": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S01",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "91644afd761bd58db781b48c54b63ddc3d3e0591903bdae48c9b2697a7310567",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S02-6D53AA54": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S02",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "6d53aa54951bf5e936445ff5bec02bb29c11ce3e4463a6badbed40397d9c4465",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S03-9BCA2C5B": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S03",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "9bca2c5bee66e1af7e3898b6b797a3b4d477cff7a341c8590176179165ad3558",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S04-6C437BB1": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S04",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "6c437bb12e065c54769c847e41905ca4755238f03a77d422a6c6db7ca9e5ec2d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S05-8AF1A725": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S05",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "8af1a72559dcb56a67f709d81384bc087e9bdd30d02780fb860a9bd57da507eb",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S06-1865FC21": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S06",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "1865fc21bd5a1a6559ab6ea4f055a8dd4636cb16cf5321af1399f4c6d7626445",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S07-F1F2DFB8": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S07",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "f1f2dfb8c53824461fb76604cceba9c449cd35e8face0d5eb36c8c0b8bb46f4e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S08-38BA9133": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S08",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "38ba913390a7a988bd8f7ca8936993571c325e4be93954dbece40be5fdae6104",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S09-77C3D09B": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S09",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "77c3d09b83c3eebb50b832bb1b7f8318b6342b55e3e8ea75945b18c76d3329cd",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S10-81913A6B": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S10",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "81913a6bfd6b0822eda7c8a8f8bdedbd5a6a16d8205bb5a672ad2943a2e2deb3",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S11-A9C6B225": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S11",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "a9c6b225c061fe7120539dabbcc2f6af522ba713c7f29a9fe5254a132133e11b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S12-D4C9E885": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S12",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "d4c9e8850be4f9e1469c6bf9623f4e40962b51c8d564e8d47972f60f79331013",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S13-557EE10C": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S13",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "557ee10c1a7d6d4a38067fea5baf928fb22c86d63c5153da4d238668d23f8d59",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S14-F768AD5B": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S14",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S14",
+   "origin": "source_translation",
+   "hash": "f768ad5bcd21877363e72a6a11cd471e05338d382e9bbdc41daba93c42e5455f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S15-1D7F6D16": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S15",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S15",
+   "origin": "source_translation",
+   "hash": "1d7f6d16973a39c79e8e75a381de4ac029180c274d750d25384fca49fb73ca7b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S16-66F81ECA": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S16",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S16",
+   "origin": "source_translation",
+   "hash": "66f81ecaa59cc4f569eb3940a590111a15c4a5da5f81d15c042cbeb80e1658b2",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S17-87C15190": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S17",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S17",
+   "origin": "source_translation",
+   "hash": "87c15190a073766d33c1371b505c5661a42e15b68186aacf74358fc3db96e91d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S18-C117E97C": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S18",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S18",
+   "origin": "source_translation",
+   "hash": "c117e97c887fbc2e2fd8487090e383ca10ec0da822a2e9245648b909ed0d1ca4",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C21-S19-895E1728": {
+   "structural_id": "KDJ-AI-2026E1-P03-C21-S19",
+   "part": "P03",
+   "chapter": "C21",
+   "section": "S19",
+   "origin": "source_translation",
+   "hash": "895e172836b84832fa097ca5d77559d785745092ac63d28d91a069610e270c47",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S01-D95798B4": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S01",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "d95798b4a3a31ee9f5adc9d628eeb99126a38c5a72f852e0c93681e386c7947a",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S02-20929048": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S02",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "20929048a84bccf59998bb1bb255108259787618bdd6db1b7fb9ce774503c6ee",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S03-C5028B3A": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S03",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "c5028b3a5641d5ac6a8c96eb33e144b8062db38e9310954cbc7671a4a69fdbed",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S04-0850AED9": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S04",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "0850aed9105a6bde7a6643cc14c0dd44976c1630727b48fac4398d007b60ba78",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S05-387866DA": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S05",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "387866da9567ede6bc66391c3e126482625fd7487c0c85f57f5ad9f14d7ccb34",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S06-F424804A": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S06",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "f424804acc6e5673445926d6e5497e87e59e7608ba183373a88924ce43e8492b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S07-4E0F0ABB": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S07",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "4e0f0abbf83f89cdef3cc6c8a11e40a6375a928869e5ee691e0c88477e30d29e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S08-94D877A1": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S08",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "94d877a1eb0f46f8bff0612574a4f75193c4a253d59b79e8aacd9e52df487a6f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S09-CD37DF3E": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S09",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "cd37df3eb5127df8bd50e5bb94f3e1262b63183557d2978910f595948b218a05",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S10-7B0F4A6A": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S10",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "7b0f4a6a3dc006c62b1007117f5d7870abde475bbde267015c97972bced748a6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S11-89B3BCB4": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S11",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "89b3bcb4d2f34e4668a3b58ee7b8256210e86daa24dcfb6931e318b6525c12ae",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S12-19DC0EF2": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S12",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "19dc0ef252c10c763ad78ce09c3dd62a1a787a0e5f420d2900ac5036e19d4b4a",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S13-D6D530D2": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S13",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "d6d530d2e185260f247eb316c6ce2ce029c9a7dedea46010e196141a5be70689",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S14-EE8D28FF": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S14",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S14",
+   "origin": "source_translation",
+   "hash": "ee8d28ffe294d13860439212694f1bc6036476f2fbb519d4a1342da6b01ced7f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S15-26FF2CF0": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S15",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S15",
+   "origin": "source_translation",
+   "hash": "26ff2cf066509f5c2b7b93afc29b9e891264ddb99ac1057f54cb0d1bf4a20f50",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S16-55E87329": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S16",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S16",
+   "origin": "source_translation",
+   "hash": "55e87329484a29043692f87363a3cb79a0c0495da5fe63a4d65eb12f065b87e7",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S17-A9E0378A": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S17",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S17",
+   "origin": "source_translation",
+   "hash": "a9e0378ac90a8d6b363576d85c46eea3cab4370b8c87fb1d8e04a9a51a8b2375",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S18-A07950BD": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S18",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S18",
+   "origin": "source_translation",
+   "hash": "a07950bd2b807fa49f29a9f7b74744c76c2657b0c9f7e04fd2904a7544075fca",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S19-B36EFBA1": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S19",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S19",
+   "origin": "source_translation",
+   "hash": "b36efba1f290e695735728fbad56f952b3cd1524979bfbfacadb907cd61fe03f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S20-889A79F0": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S20",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S20",
+   "origin": "source_translation",
+   "hash": "889a79f07944e5fde3bc5d5611daf60d15f730031c50bab9f7a88ecf64f020b8",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S21-D51D0FBA": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S21",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S21",
+   "origin": "source_translation",
+   "hash": "d51d0fbaf04380e6fdd4108940fe2e05ff3e8834315d187b6650d86c99d714c5",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S22-0A4C3526": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S22",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S22",
+   "origin": "source_translation",
+   "hash": "0a4c35267532df8cdc6438fe2020928a47449c387154c93052e5c010d62263d0",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S23-FEA01DBD": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S23",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S23",
+   "origin": "source_translation",
+   "hash": "fea01dbd514a86c27bb27ba175794592e1428542ed5783a69344311f87c2ce56",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C22-S24-A057F17D": {
+   "structural_id": "KDJ-AI-2026E1-P03-C22-S24",
+   "part": "P03",
+   "chapter": "C22",
+   "section": "S24",
+   "origin": "source_translation",
+   "hash": "a057f17d57a839a5a047d611333197794acd71e3f2e18b25d94179a48ce36192",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C23-S01-ED4A393F": {
+   "structural_id": "KDJ-AI-2026E1-P03-C23-S01",
+   "part": "P03",
+   "chapter": "C23",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "ed4a393f09fdfc3d8c1b6bced2d20bbc0815f10eec9f798acd70119d1fa92618",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C23-S02-52706024": {
+   "structural_id": "KDJ-AI-2026E1-P03-C23-S02",
+   "part": "P03",
+   "chapter": "C23",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "5270602432a97e0ee1b8c847a71cfb24577bced4d57e8892054f5336e8e28b52",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C23-S03-08CA9832": {
+   "structural_id": "KDJ-AI-2026E1-P03-C23-S03",
+   "part": "P03",
+   "chapter": "C23",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "08ca983273d14b28c25ed47def4da2d0c48a3a860f1158d027e62ba63eaca103",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C23-S04-8E3780E1": {
+   "structural_id": "KDJ-AI-2026E1-P03-C23-S04",
+   "part": "P03",
+   "chapter": "C23",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "8e3780e1dbb0b87f2d3d0802cddba3879dff54071c6c32618d478be5a6d295a7",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C24-S01-D9759391": {
+   "structural_id": "KDJ-AI-2026E1-P03-C24-S01",
+   "part": "P03",
+   "chapter": "C24",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "d975939188b691541b2ce3c5ba47b8a892e2ba483ff979113d4f5591c227196b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C24-S02-E6137EFB": {
+   "structural_id": "KDJ-AI-2026E1-P03-C24-S02",
+   "part": "P03",
+   "chapter": "C24",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "e6137efbca7b969a88331063b95a6fc68a586c69d5e88ce2ece109e30c8bac7f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C24-S03-C1104C17": {
+   "structural_id": "KDJ-AI-2026E1-P03-C24-S03",
+   "part": "P03",
+   "chapter": "C24",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "c1104c172a9d16d948a277eb4533d598098d2f3b4e2f71a759ab8138e97019dd",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C24-S04-780D7557": {
+   "structural_id": "KDJ-AI-2026E1-P03-C24-S04",
+   "part": "P03",
+   "chapter": "C24",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "780d7557fb5919c3136ef7fc20f6f152dc295546a97ec6be90fa0f3870cd75e5",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C24-S05-A4888828": {
+   "structural_id": "KDJ-AI-2026E1-P03-C24-S05",
+   "part": "P03",
+   "chapter": "C24",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "a48888289ba2dc0ca19a718e0a8895c9e04a66986e9c6d0f6237c366adbde3f5",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C24-S06-55770843": {
+   "structural_id": "KDJ-AI-2026E1-P03-C24-S06",
+   "part": "P03",
+   "chapter": "C24",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "557708438a49e56e905e1c5da0546723d33cea8922dee61fe4feabaa4feb79dc",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C24-S07-FDF90590": {
+   "structural_id": "KDJ-AI-2026E1-P03-C24-S07",
+   "part": "P03",
+   "chapter": "C24",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "fdf905909592bbe5bcf423abafbb6dcd5227ba999fadc5367ccaf1a778b40bf9",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C25-S01-28C380A7": {
+   "structural_id": "KDJ-AI-2026E1-P03-C25-S01",
+   "part": "P03",
+   "chapter": "C25",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "28c380a7becdad73a538b588588a7e2ba56f70c8ec8da43f7711e5a4b3b25167",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C25-S02-53ECC804": {
+   "structural_id": "KDJ-AI-2026E1-P03-C25-S02",
+   "part": "P03",
+   "chapter": "C25",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "53ecc80474514d78155edb62e51bebc0a77976934cef9a6501455bb8c5482687",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C25-S03-977F8F90": {
+   "structural_id": "KDJ-AI-2026E1-P03-C25-S03",
+   "part": "P03",
+   "chapter": "C25",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "977f8f90bf571493de4bc4e414d768b6be1e2adc754f7c4e27e51ec9b22abbf7",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C26-S01-44D39BF0": {
+   "structural_id": "KDJ-AI-2026E1-P03-C26-S01",
+   "part": "P03",
+   "chapter": "C26",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "44d39bf0746ba1239d6bd318bd80bfe26772f117c780d9e5a654a81c8bc370ec",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C27-S01-3BD6EB29": {
+   "structural_id": "KDJ-AI-2026E1-P03-C27-S01",
+   "part": "P03",
+   "chapter": "C27",
+   "section": "S01",
+   "origin": "editorial_localization_ir",
+   "hash": "3bd6eb2944c90805642afe264ff369f8eb646d0ee72f40a9d7cee0a61bd7d3ca",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C27-S02-FA399DF4": {
+   "structural_id": "KDJ-AI-2026E1-P03-C27-S02",
+   "part": "P03",
+   "chapter": "C27",
+   "section": "S02",
+   "origin": "editorial_localization_ir",
+   "hash": "fa399df40a5258a803da4ff5c6ba433779ca77d3877ff47505280ee171461e9b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C27-S03-05C7A7FB": {
+   "structural_id": "KDJ-AI-2026E1-P03-C27-S03",
+   "part": "P03",
+   "chapter": "C27",
+   "section": "S03",
+   "origin": "editorial_localization_ir",
+   "hash": "05c7a7fb39ba2d1983e19c20897520e75e765497f6c3da04280ca4e712c5df83",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C27-S04-BD80CAE6": {
+   "structural_id": "KDJ-AI-2026E1-P03-C27-S04",
+   "part": "P03",
+   "chapter": "C27",
+   "section": "S04",
+   "origin": "editorial_localization_ir",
+   "hash": "bd80cae625d4ed72765c3533e9350a3676856add81745c747236c0176ab81550",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C27-S05-1D14F279": {
+   "structural_id": "KDJ-AI-2026E1-P03-C27-S05",
+   "part": "P03",
+   "chapter": "C27",
+   "section": "S05",
+   "origin": "editorial_localization_ir",
+   "hash": "1d14f2794e6f9bb24818463ee4ac9eef96c2a18dc01a80190968b2daed085008",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C27-S06-D21FB050": {
+   "structural_id": "KDJ-AI-2026E1-P03-C27-S06",
+   "part": "P03",
+   "chapter": "C27",
+   "section": "S06",
+   "origin": "editorial_localization_ir",
+   "hash": "d21fb050afd8ced9d316c52d9747d92115c0bc99d2e69bdc7fa5427abb5f52fa",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C27-S07-9046AA3C": {
+   "structural_id": "KDJ-AI-2026E1-P03-C27-S07",
+   "part": "P03",
+   "chapter": "C27",
+   "section": "S07",
+   "origin": "editorial_localization_ir",
+   "hash": "9046aa3cb68f7a0ea32ca0cfbf952349f4e92592b3f472833c135cffccc89eb1",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P03-C27-S08-C38EBDE2": {
+   "structural_id": "KDJ-AI-2026E1-P03-C27-S08",
+   "part": "P03",
+   "chapter": "C27",
+   "section": "S08",
+   "origin": "editorial_localization_ir",
+   "hash": "c38ebde286a8ed995d40faabdb3d85ced3817e37e01da609000224c9991cee25",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C28-S01-96B6BBFF": {
+   "structural_id": "KDJ-AI-2026E1-P04-C28-S01",
+   "part": "P04",
+   "chapter": "C28",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "96b6bbff0739444a7b775805d7a3c8a3c6d6f0d38ce581c8ef904decde4179aa",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C28-S02-3F2D4845": {
+   "structural_id": "KDJ-AI-2026E1-P04-C28-S02",
+   "part": "P04",
+   "chapter": "C28",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "3f2d48456cde294b283fc45cf6815d255b3b99230304a6e151a8977844f58e62",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C28-S03-F248BF32": {
+   "structural_id": "KDJ-AI-2026E1-P04-C28-S03",
+   "part": "P04",
+   "chapter": "C28",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "f248bf32065131043dd6a9a41113d11a147e9ab92f0167c380f3bd76009e215b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C28-S04-92C66080": {
+   "structural_id": "KDJ-AI-2026E1-P04-C28-S04",
+   "part": "P04",
+   "chapter": "C28",
+   "section": "S04",
+   "origin": "editorial_synthesis",
+   "hash": "92c6608035536e26248c6ff3090040d385def5e518a37d4508e2c2c6c29a33e7",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C29-S01-E8C5B7FF": {
+   "structural_id": "KDJ-AI-2026E1-P04-C29-S01",
+   "part": "P04",
+   "chapter": "C29",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "e8c5b7ff84dc690dc2ce4b93a1f7ef157b596fb88e66989966d77ba7beb4bfa7",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C29-S02-47F6E198": {
+   "structural_id": "KDJ-AI-2026E1-P04-C29-S02",
+   "part": "P04",
+   "chapter": "C29",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "47f6e1980d7d31573c4d2b5d4a854b1ea50b2ce9ffe0b323f65c1ecc015053ac",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C29-S03-D7F773D3": {
+   "structural_id": "KDJ-AI-2026E1-P04-C29-S03",
+   "part": "P04",
+   "chapter": "C29",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "d7f773d3fddc4826874d1231c6a89a26e6b3c2cf68dfd32791ccf68594ed01e3",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C29-S04-217B839C": {
+   "structural_id": "KDJ-AI-2026E1-P04-C29-S04",
+   "part": "P04",
+   "chapter": "C29",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "217b839c126e6f8b21736760ea597f5e214aaa8e68eb7415e029258c3b4c5404",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C29-S05-814FDB95": {
+   "structural_id": "KDJ-AI-2026E1-P04-C29-S05",
+   "part": "P04",
+   "chapter": "C29",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "814fdb95502bd78359e96b7af0c11a9d7f3d7d4cb6ea1f20306fa271065e294d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C29-S06-EC2CC32F": {
+   "structural_id": "KDJ-AI-2026E1-P04-C29-S06",
+   "part": "P04",
+   "chapter": "C29",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "ec2cc32fbc8c45df51d3b7c75faca7743d1d1835606b7820d188a1fc01e48663",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C29-S07-F34571C2": {
+   "structural_id": "KDJ-AI-2026E1-P04-C29-S07",
+   "part": "P04",
+   "chapter": "C29",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "f34571c28a463df48f365c230b6c7e2b97c2208f99120cca02de122d4df517b2",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C29-S08-C1EADAB2": {
+   "structural_id": "KDJ-AI-2026E1-P04-C29-S08",
+   "part": "P04",
+   "chapter": "C29",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "c1eadab24d588e4d001b05b8037050d1c48de457c1ac9958144031a081dedaca",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C29-S09-C7703C0B": {
+   "structural_id": "KDJ-AI-2026E1-P04-C29-S09",
+   "part": "P04",
+   "chapter": "C29",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "c7703c0b75f0c6178f713b531a2b6d6f9e09c2e4dae8bba3676daf7b8282fcbd",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C29-S10-CDFE093D": {
+   "structural_id": "KDJ-AI-2026E1-P04-C29-S10",
+   "part": "P04",
+   "chapter": "C29",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "cdfe093d4d5c03121681e884314577203dda82320035e63e29c5517ee9b90c2a",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C30-S01-44C7CD64": {
+   "structural_id": "KDJ-AI-2026E1-P04-C30-S01",
+   "part": "P04",
+   "chapter": "C30",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "44c7cd6404575d28f38475ddefdf93330fd5b426cc7fa8df4521e9c9e1164d9f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C30-S02-FCF40DA6": {
+   "structural_id": "KDJ-AI-2026E1-P04-C30-S02",
+   "part": "P04",
+   "chapter": "C30",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "fcf40da6e0bd705cd6fb343d642e20612ad9a91a1327f3cfa7c3192599277b70",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C30-S03-290936FF": {
+   "structural_id": "KDJ-AI-2026E1-P04-C30-S03",
+   "part": "P04",
+   "chapter": "C30",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "290936ff42e2414e0bb4edc7b3de3d187f83568b840491db298c56681d1e198d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C30-S04-1BD83495": {
+   "structural_id": "KDJ-AI-2026E1-P04-C30-S04",
+   "part": "P04",
+   "chapter": "C30",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "1bd8349519729a9d7eb14664efbcdd4457aa925b614d84fad20bc311b2e921fd",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C30-S05-F48CC02E": {
+   "structural_id": "KDJ-AI-2026E1-P04-C30-S05",
+   "part": "P04",
+   "chapter": "C30",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "f48cc02e38830534565cd3ac5999f8c83f67f819373d1839c7c5400cbd7e69f9",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C30-S06-8F95202A": {
+   "structural_id": "KDJ-AI-2026E1-P04-C30-S06",
+   "part": "P04",
+   "chapter": "C30",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "8f95202a1995121a443da7219fc676a9efe6c213cf18c437b418ab6a7d0345b0",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C31-S01-9970B5DC": {
+   "structural_id": "KDJ-AI-2026E1-P04-C31-S01",
+   "part": "P04",
+   "chapter": "C31",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "9970b5dc35b86328bc407b61b677184d015bc47a216c3c33c1a2cdaea821c1bb",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C31-S02-0EB5A1A7": {
+   "structural_id": "KDJ-AI-2026E1-P04-C31-S02",
+   "part": "P04",
+   "chapter": "C31",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "0eb5a1a7e4d06b074daf7053c489b21e9cad7dfeb0f4b37ea1b0351fcb754584",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C31-S03-BF34D9CD": {
+   "structural_id": "KDJ-AI-2026E1-P04-C31-S03",
+   "part": "P04",
+   "chapter": "C31",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "bf34d9cda762ceb8cf774f8ee3fa56bdf01846627171e8626a6adfb7f5e082a0",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C31-S04-04090909": {
+   "structural_id": "KDJ-AI-2026E1-P04-C31-S04",
+   "part": "P04",
+   "chapter": "C31",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "04090909675d8af9189119c8c96592f379fe1c13a668ff375ca2741f91ec1628",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C31-S05-755DC884": {
+   "structural_id": "KDJ-AI-2026E1-P04-C31-S05",
+   "part": "P04",
+   "chapter": "C31",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "755dc8843b27fcbc37c0d3726274ebac3ebedb3a2f95bff16bec94a0f45a4a52",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C32-S01-F2813082": {
+   "structural_id": "KDJ-AI-2026E1-P04-C32-S01",
+   "part": "P04",
+   "chapter": "C32",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "f2813082e0b9191082d759a2761866edf4cfdcf4b45a8c8d42bebf3d6429022e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C32-S02-CC827699": {
+   "structural_id": "KDJ-AI-2026E1-P04-C32-S02",
+   "part": "P04",
+   "chapter": "C32",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "cc827699d38ec66a9591ff37997dd9fa415079aa100c6d97b661770fa387b591",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C32-S03-08EBAFFE": {
+   "structural_id": "KDJ-AI-2026E1-P04-C32-S03",
+   "part": "P04",
+   "chapter": "C32",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "08ebaffe90d2a3b8237fca69beb3c0f89a3e7d368d222d9b3c4bce6003ed45aa",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C33-S01-106637B7": {
+   "structural_id": "KDJ-AI-2026E1-P04-C33-S01",
+   "part": "P04",
+   "chapter": "C33",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "106637b7c0325989b7aa44596992a6ba3f79724b4edeb10d95d5f887bb641fdf",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C34-S01-2AE3E87F": {
+   "structural_id": "KDJ-AI-2026E1-P04-C34-S01",
+   "part": "P04",
+   "chapter": "C34",
+   "section": "S01",
+   "origin": "editorial_localization_ir",
+   "hash": "2ae3e87f7ac5567ae86986016531270c189805f932954cbe52a52932003d97ba",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C34-S02-CE1D1EDA": {
+   "structural_id": "KDJ-AI-2026E1-P04-C34-S02",
+   "part": "P04",
+   "chapter": "C34",
+   "section": "S02",
+   "origin": "editorial_localization_ir",
+   "hash": "ce1d1edac38f3ffb3e8530da0e0ff3aa12029318d9356ab276d31bb9558a2373",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C34-S03-32B6A51C": {
+   "structural_id": "KDJ-AI-2026E1-P04-C34-S03",
+   "part": "P04",
+   "chapter": "C34",
+   "section": "S03",
+   "origin": "editorial_localization_ir",
+   "hash": "32b6a51c43c18b7ee6a1fc72b96cf1fa863a60f27d7f00592d72830514bc5565",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C34-S04-979A9012": {
+   "structural_id": "KDJ-AI-2026E1-P04-C34-S04",
+   "part": "P04",
+   "chapter": "C34",
+   "section": "S04",
+   "origin": "editorial_localization_ir",
+   "hash": "979a9012a86860a489c782a7a725192c3fbce9d85114ca844644d90df5be5fb6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C34-S05-BE63B7D3": {
+   "structural_id": "KDJ-AI-2026E1-P04-C34-S05",
+   "part": "P04",
+   "chapter": "C34",
+   "section": "S05",
+   "origin": "editorial_localization_ir",
+   "hash": "be63b7d3398e50465e655099afaed746cadb56e6b084297259defab7bb2447fe",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C34-S06-F527FD68": {
+   "structural_id": "KDJ-AI-2026E1-P04-C34-S06",
+   "part": "P04",
+   "chapter": "C34",
+   "section": "S06",
+   "origin": "editorial_localization_ir",
+   "hash": "f527fd686c91c02def9ac012427ca461786242e0e2425347b8da36c10734808e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C34-S07-A0C185E8": {
+   "structural_id": "KDJ-AI-2026E1-P04-C34-S07",
+   "part": "P04",
+   "chapter": "C34",
+   "section": "S07",
+   "origin": "editorial_localization_ir",
+   "hash": "a0c185e8fd237ab0ae47682c3b999e0dfc39a92e12e6391603b3fe15499467e8",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P04-C34-S08-287099FD": {
+   "structural_id": "KDJ-AI-2026E1-P04-C34-S08",
+   "part": "P04",
+   "chapter": "C34",
+   "section": "S08",
+   "origin": "editorial_localization_ir",
+   "hash": "287099fd4ef49113299b84c0ff280f747d0532ed22d9c6bfdd7301ea9a33ab6f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C35-S01-9AFC95B3": {
+   "structural_id": "KDJ-AI-2026E1-P05-C35-S01",
+   "part": "P05",
+   "chapter": "C35",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "9afc95b3b1ee758c18dc1b4d0e0c1f24a0be34006bab6923b57ba0cc7d2b93f6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C35-S02-F985332C": {
+   "structural_id": "KDJ-AI-2026E1-P05-C35-S02",
+   "part": "P05",
+   "chapter": "C35",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "f985332cd9c01cd476756f067cecf220f948ef25696eae9d560a4bcb133b4a6e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C35-S03-4CF1DA24": {
+   "structural_id": "KDJ-AI-2026E1-P05-C35-S03",
+   "part": "P05",
+   "chapter": "C35",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "4cf1da244f83b9cba6d863bb0ffde4e96cacbdd26f26d2cc9d34ce5a2350d713",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C35-S04-D3D3E30A": {
+   "structural_id": "KDJ-AI-2026E1-P05-C35-S04",
+   "part": "P05",
+   "chapter": "C35",
+   "section": "S04",
+   "origin": "editorial_synthesis",
+   "hash": "d3d3e30aa1e99c647192ebc81f9ae409d47d7b0199d453dbc279e3c000ce7e25",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C36-S01-0C20D5C9": {
+   "structural_id": "KDJ-AI-2026E1-P05-C36-S01",
+   "part": "P05",
+   "chapter": "C36",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "0c20d5c9f5b63bb3434ada05cfb5aacabff1c67e78fb5110ca096600d710d38e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C36-S02-58B531BF": {
+   "structural_id": "KDJ-AI-2026E1-P05-C36-S02",
+   "part": "P05",
+   "chapter": "C36",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "58b531bfabf812215ea616be19fc2df32232819b562fded4a3715c72ee66c3d1",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C36-S03-546D6F51": {
+   "structural_id": "KDJ-AI-2026E1-P05-C36-S03",
+   "part": "P05",
+   "chapter": "C36",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "546d6f51606c315e443b923a79b61b2dce95e6778b40c6f76270a4941e315ab6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C36-S04-772031F2": {
+   "structural_id": "KDJ-AI-2026E1-P05-C36-S04",
+   "part": "P05",
+   "chapter": "C36",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "772031f2f11d812b1bb0298e5215b1103f94153456caa2a1c9020f93a3f4180a",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C36-S05-901DA9A2": {
+   "structural_id": "KDJ-AI-2026E1-P05-C36-S05",
+   "part": "P05",
+   "chapter": "C36",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "901da9a2690e636c05ac6251a93ddbe6be93911a781d7d7f91d7207091062438",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C36-S06-2D1D3E04": {
+   "structural_id": "KDJ-AI-2026E1-P05-C36-S06",
+   "part": "P05",
+   "chapter": "C36",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "2d1d3e04188254054d005b0adff5a546e7e3d9931f7b02b255dfb59bb04a41d9",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C36-S07-526B02B1": {
+   "structural_id": "KDJ-AI-2026E1-P05-C36-S07",
+   "part": "P05",
+   "chapter": "C36",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "526b02b15e718fa3e03b18ba224e12f4064a8aa43bae37f4f9ef79cc75f5a9af",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C36-S08-32C00D45": {
+   "structural_id": "KDJ-AI-2026E1-P05-C36-S08",
+   "part": "P05",
+   "chapter": "C36",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "32c00d45902dcd173df5cce2f861d64391997811381f3d3ae00c6d255d6d451d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C36-S09-E58DE430": {
+   "structural_id": "KDJ-AI-2026E1-P05-C36-S09",
+   "part": "P05",
+   "chapter": "C36",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "e58de43075113b6a9de81003e4c797f30b142fc280a0e93348deeebd375b18b1",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C36-S10-2BD8CA1D": {
+   "structural_id": "KDJ-AI-2026E1-P05-C36-S10",
+   "part": "P05",
+   "chapter": "C36",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "2bd8ca1d850d0f127be087d8da31a9f7d540d14be2a726b5a4fd988be4797473",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C36-S11-A177B52F": {
+   "structural_id": "KDJ-AI-2026E1-P05-C36-S11",
+   "part": "P05",
+   "chapter": "C36",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "a177b52f7a1513ddfc95458c58fd362e336541c188337a1d68e91faf95257c01",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C36-S12-4BF67646": {
+   "structural_id": "KDJ-AI-2026E1-P05-C36-S12",
+   "part": "P05",
+   "chapter": "C36",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "4bf676461e3dd153a94adf2a4232877b273af63b8453c4e429068fdd96fe216a",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C37-S01-14A43229": {
+   "structural_id": "KDJ-AI-2026E1-P05-C37-S01",
+   "part": "P05",
+   "chapter": "C37",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "14a43229f20e022574f07b99cdc99c78dd59325e793864ebfaf7b1ee5d698cef",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C37-S02-D1856E61": {
+   "structural_id": "KDJ-AI-2026E1-P05-C37-S02",
+   "part": "P05",
+   "chapter": "C37",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "d1856e618cf2e8a9151b9c66f392ac0e51f08ba17b47008961d0264d294749ca",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C37-S03-E1515D1A": {
+   "structural_id": "KDJ-AI-2026E1-P05-C37-S03",
+   "part": "P05",
+   "chapter": "C37",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "e1515d1a3f1287061e0d7bd2d14789444b881064e5049f053544747bf620c97f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C37-S04-8130A164": {
+   "structural_id": "KDJ-AI-2026E1-P05-C37-S04",
+   "part": "P05",
+   "chapter": "C37",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "8130a16417111849e9e39bbb9674e15af734fbe2a05ac744d47766a0ca78a34d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C37-S05-D87E30DE": {
+   "structural_id": "KDJ-AI-2026E1-P05-C37-S05",
+   "part": "P05",
+   "chapter": "C37",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "d87e30deafd90336fdb0334ca0a10302241b5cc8cfc5793d8c358837d9fae10c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C37-S06-22E19A6F": {
+   "structural_id": "KDJ-AI-2026E1-P05-C37-S06",
+   "part": "P05",
+   "chapter": "C37",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "22e19a6f7725770c617a11a3f1c5070250ba588e160fcf1aeadf66ba1c40c553",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C37-S07-70A9AD0C": {
+   "structural_id": "KDJ-AI-2026E1-P05-C37-S07",
+   "part": "P05",
+   "chapter": "C37",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "70a9ad0c3dcdceafde87a1275d637ee3fd711e74cd767763a9e3d28888baa159",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C37-S08-AA6C677E": {
+   "structural_id": "KDJ-AI-2026E1-P05-C37-S08",
+   "part": "P05",
+   "chapter": "C37",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "aa6c677e6be7429e2a6101875ce1ff7bff526fca00a54f9baacc33a27f17ee44",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C37-S09-D1CB190D": {
+   "structural_id": "KDJ-AI-2026E1-P05-C37-S09",
+   "part": "P05",
+   "chapter": "C37",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "d1cb190d760a19c8273e1c4fe38c554f4b9ee380a5d6b11ee65f2d4ef1928620",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C37-S10-2A07E0D7": {
+   "structural_id": "KDJ-AI-2026E1-P05-C37-S10",
+   "part": "P05",
+   "chapter": "C37",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "2a07e0d7b0ebf07348f93d11f7ad334c35e24e135d20dd99f927dd6ed5c19b74",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C37-S11-F8E7EE63": {
+   "structural_id": "KDJ-AI-2026E1-P05-C37-S11",
+   "part": "P05",
+   "chapter": "C37",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "f8e7ee638f550b4688ac04aced97a508ed27856d866d6fe8092c61991b62b8d2",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C37-S12-311B1734": {
+   "structural_id": "KDJ-AI-2026E1-P05-C37-S12",
+   "part": "P05",
+   "chapter": "C37",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "311b173483f031c9a5848dc1c4f9fafb1325606355597e1fce3e89566f6f6dc8",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C37-S13-C20150AC": {
+   "structural_id": "KDJ-AI-2026E1-P05-C37-S13",
+   "part": "P05",
+   "chapter": "C37",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "c20150ac3f8bcc1da287bbef1fd3861897ebee9c5bd0ac00749a30ded4d1884d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S01-86662086": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S01",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "8666208608d539b2fab811f6ebe38520bfd57da0f536ce4c4b086085b7013ce9",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S02-3F3E5404": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S02",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "3f3e5404f026ca936050314805abadf8f09f77cb256ecb9ad1e2b8dcfd63f23c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S03-F686ADAE": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S03",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "f686adae67d4c5164a34ccd6b9979d63a66de8b33d03d67c1b1e982a5dc0597e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S04-5DC23AB6": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S04",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "5dc23ab6d28177fcea5191f0b88d24d92a17408a830e9deffcc1d8e19eaee36b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S05-1515F109": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S05",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "1515f10971855cdb57272c0cb7c5848b9e31af624573c7ba0a9e8999cdc7450e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S06-570651A0": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S06",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "570651a0396950001b2ddd2ef8075e0d437c5f97bd056c40c457ab5d837035fc",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S07-39754FC1": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S07",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "39754fc1983eafc62ad1a6520dd928e6ddba54dca774fc0e89a208ef4081a409",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S08-F09F88C9": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S08",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "f09f88c9985b864c63f10feaf9263e351a413a54e1abcc22f410497a17cdf497",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S09-19B8F56B": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S09",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "19b8f56b03989057cf50d854cc7ac47f3ea9a0544f554fa1bf0f6dd8edcddd4c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S10-37162624": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S10",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "371626245a24e65e690204111c74e95a53c25785727f26d7f21716eb8f2b7c4b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S11-ED40540D": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S11",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "ed40540d33b216616b4540121cae8818927f32b75ef4f2c2e481781f1360b190",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S12-229D0DB9": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S12",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "229d0db948f4891c0dba13bc9f957c30dcfe8347c60c3e9238d0dff2d2687227",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S13-D53B8F23": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S13",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "d53b8f23be9b599d9f9a3dbc32ee0c8e93e5270545212b582f5a6b0f7a6d0418",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S14-438AB865": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S14",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S14",
+   "origin": "source_translation",
+   "hash": "438ab865007e375d64daac8f930fbc8c1fdb2491517de33a1cefaf648ec92fa1",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S15-E24E1E1F": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S15",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S15",
+   "origin": "source_translation",
+   "hash": "e24e1e1fc626d48f2e1078f4565e8dcbd01960e5542218f12fe534ec9a1f6b14",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S16-1D1B4776": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S16",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S16",
+   "origin": "source_translation",
+   "hash": "1d1b4776d0dd3403aaa4e951be4fe16d3889c27b9e86274d3f3c5ba21edcd75e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S17-5E7A8BFC": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S17",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S17",
+   "origin": "source_translation",
+   "hash": "5e7a8bfc94783b09d8c8697cce67fae2112b30017f6b0e730b11a8b7ab58abc0",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S18-F7D3C58C": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S18",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S18",
+   "origin": "source_translation",
+   "hash": "f7d3c58ceeea9747fba8e4ce54aaaece6cfbb7f3c8521f68a448be6fa529df1f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S19-C58CA62D": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S19",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S19",
+   "origin": "source_translation",
+   "hash": "c58ca62dd1e0d63692c2429ba15e2cd19e44f6e4809a8d3f888e4b6134a06566",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S20-6F8F175A": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S20",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S20",
+   "origin": "source_translation",
+   "hash": "6f8f175a4ce0feab26f304e43cea3dc9dce4e1462bceb346fa186b7a5a3e9cf8",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S21-09BB9EC7": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S21",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S21",
+   "origin": "source_translation",
+   "hash": "09bb9ec7e0a0e3b5cc14a72a87de30e15281a3a7814f7d8b5153ecb049913787",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S22-8E0FA447": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S22",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S22",
+   "origin": "source_translation",
+   "hash": "8e0fa447d471ff171a92e61b934d6ac54632ac287f25f2ace77c883d1e0ca8af",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S23-2C2B4742": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S23",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S23",
+   "origin": "source_translation",
+   "hash": "2c2b47427a6ded8ed17ac6a1b42f7b30143f5e21e9461fdf4a99da2803ead121",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S24-D5BC17C3": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S24",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S24",
+   "origin": "source_translation",
+   "hash": "d5bc17c3d8ef3462948150a5b0c4472604c2c918c290e4d460a184815f8b1961",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S25-0837A359": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S25",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S25",
+   "origin": "source_translation",
+   "hash": "0837a359cd6e942b14e87fe8ee430155567f1ca9f111de3ad45ada03422f749b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S26-F7DA881B": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S26",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S26",
+   "origin": "source_translation",
+   "hash": "f7da881b354693820a169a1c3f1719dae52b2d4342dce6ca4c12fb3a3d98a6ac",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S27-8EA72266": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S27",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S27",
+   "origin": "source_translation",
+   "hash": "8ea72266dd0f94fb0c02881f0a97f7d6abae5862e2b9e121933c0689dd7bc3bd",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S28-CA825B4D": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S28",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S28",
+   "origin": "source_translation",
+   "hash": "ca825b4dddbf49988070ab897f1df92bb4815163d37795589eb90a3e1debb81b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S29-393A2AD0": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S29",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S29",
+   "origin": "source_translation",
+   "hash": "393a2ad07fa6a88233365d4861953babe5a976c00c9ecf00938a31f368808464",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S30-F247B358": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S30",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S30",
+   "origin": "source_translation",
+   "hash": "f247b358a6d00d65babfd68e37d936628bc801bfe413505b25a865134f594fad",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S31-9ABDE5E2": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S31",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S31",
+   "origin": "source_translation",
+   "hash": "9abde5e23c8eeb74109002183879b24cb077b799d4c572becdee7ae0d420f3c5",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S32-D7600234": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S32",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S32",
+   "origin": "source_translation",
+   "hash": "d7600234a2d6be37f2c0b280ca186b62b981d48ad19122722d6c40b95ab2835e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S33-EC496E96": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S33",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S33",
+   "origin": "source_translation",
+   "hash": "ec496e96d9fec09f91bd5709d5a61545da03ff10473af6ac9dc32b94a0c34c52",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S34-4855B022": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S34",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S34",
+   "origin": "source_translation",
+   "hash": "4855b0227bad61b2db91a2da2c85a279942291591ffafce0ef0bd34aeb354dd6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S35-56AB4ED5": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S35",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S35",
+   "origin": "source_translation",
+   "hash": "56ab4ed5a7b34603f10af824711c298005315ae6e9373bb8da72daa812ba418b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S36-78DA0367": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S36",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S36",
+   "origin": "source_translation",
+   "hash": "78da03671847c99e4163e83f3adbb80c96e77731c18c50cbabe4f13a9072c7ca",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S37-D3817417": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S37",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S37",
+   "origin": "source_translation",
+   "hash": "d381741733f7c1cedb31b9dc8917c07a058e0fe1bdfbd1ce7529538dbf409673",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S38-26576F14": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S38",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S38",
+   "origin": "source_translation",
+   "hash": "26576f14621ad4bfa21f417dc443697c66031ca66dfc5adee33d00076e63d353",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S39-6AA038CE": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S39",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S39",
+   "origin": "source_translation",
+   "hash": "6aa038cee7faef8e7b15eb296233d8c0a98d2a8a3e96a933eb87af30c5ae5694",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S40-CC38F49F": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S40",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S40",
+   "origin": "source_translation",
+   "hash": "cc38f49f764edae95aaf20909c7f28834999ab7ab5e104abff1b9bbaecdd2112",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S41-3B0A1737": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S41",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S41",
+   "origin": "source_translation",
+   "hash": "3b0a1737cac056d70cb402bfdb6afbddec304b5df03eb0b7d34e301d9c9ff82b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S42-BC236A80": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S42",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S42",
+   "origin": "source_translation",
+   "hash": "bc236a801cd634523e9011516d40812bac473ba6836598e0c128931316446421",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S43-6054BAE7": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S43",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S43",
+   "origin": "source_translation",
+   "hash": "6054bae703a879227a6dfb4d36fc8570fbf4bea1bec213963dc07babd3c500fc",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S44-FDBC2B04": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S44",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S44",
+   "origin": "source_translation",
+   "hash": "fdbc2b0476c23174d4e01fff3583669ea9229d9b262fd1bbc397fcb2a72944ea",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S45-F673D2D9": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S45",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S45",
+   "origin": "source_translation",
+   "hash": "f673d2d91afd7c67bda254e9ad05ea5dc0d46386ff554346b91e4aa9e9973e25",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S46-4F8C4FFD": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S46",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S46",
+   "origin": "source_translation",
+   "hash": "4f8c4ffd48a16f2ad78f7955f63bfa037cdb0c959ce8e6708ea16b16784ca854",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S47-BFEBF221": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S47",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S47",
+   "origin": "source_translation",
+   "hash": "bfebf221dabf1f5ba4c50718d61124754bf6b468c8880296ce801f8879327394",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C38-S48-B2459E5F": {
+   "structural_id": "KDJ-AI-2026E1-P05-C38-S48",
+   "part": "P05",
+   "chapter": "C38",
+   "section": "S48",
+   "origin": "source_translation",
+   "hash": "b2459e5fa3121fecb5407786d2f195dcbb3bec8204c80eeb95497a15e5bd5d84",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C39-S01-E712678F": {
+   "structural_id": "KDJ-AI-2026E1-P05-C39-S01",
+   "part": "P05",
+   "chapter": "C39",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "e712678f9e3b88dcca6f4be9e78c290e547c96e0670983aec6d19df69df1a47b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C39-S02-3DC37803": {
+   "structural_id": "KDJ-AI-2026E1-P05-C39-S02",
+   "part": "P05",
+   "chapter": "C39",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "3dc37803222434a3c60086edf10c3e2a27ccb9db3d7e8fef0cbf30165d04345d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C39-S03-8BCFA70A": {
+   "structural_id": "KDJ-AI-2026E1-P05-C39-S03",
+   "part": "P05",
+   "chapter": "C39",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "8bcfa70ac8bc0f8824b9290f67ca7206e005b14c7f6bb27b3c32b572ec3dce6b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C40-S01-275425BE": {
+   "structural_id": "KDJ-AI-2026E1-P05-C40-S01",
+   "part": "P05",
+   "chapter": "C40",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "275425be63422508c277589de6fa31c554f4a36e16ad73837c424e113d26d20b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C41-S01-426C038F": {
+   "structural_id": "KDJ-AI-2026E1-P05-C41-S01",
+   "part": "P05",
+   "chapter": "C41",
+   "section": "S01",
+   "origin": "editorial_localization_ir",
+   "hash": "426c038fa26c838ddcc20a626e1196d06cc2c95cfcea7fb4c351918031af8037",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C41-S02-0C1F257B": {
+   "structural_id": "KDJ-AI-2026E1-P05-C41-S02",
+   "part": "P05",
+   "chapter": "C41",
+   "section": "S02",
+   "origin": "editorial_localization_ir",
+   "hash": "0c1f257b972b1082188046bf06d7a8b848134ac27aefa12882e099f9c57250f0",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C41-S03-4B4B384A": {
+   "structural_id": "KDJ-AI-2026E1-P05-C41-S03",
+   "part": "P05",
+   "chapter": "C41",
+   "section": "S03",
+   "origin": "editorial_localization_ir",
+   "hash": "4b4b384a777776c4925632032a554545616cf9975175bf383026c15e680f70af",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C41-S04-65E75291": {
+   "structural_id": "KDJ-AI-2026E1-P05-C41-S04",
+   "part": "P05",
+   "chapter": "C41",
+   "section": "S04",
+   "origin": "editorial_localization_ir",
+   "hash": "65e7529171322ec260f97cde003872e406774f141da63e81af666aebad72e877",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C41-S05-3DC2E746": {
+   "structural_id": "KDJ-AI-2026E1-P05-C41-S05",
+   "part": "P05",
+   "chapter": "C41",
+   "section": "S05",
+   "origin": "editorial_localization_ir",
+   "hash": "3dc2e746e07b36cfe4e4f0c6ba98b67808d0283d197c6a435037982adc7f6a1b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C41-S06-8D71967D": {
+   "structural_id": "KDJ-AI-2026E1-P05-C41-S06",
+   "part": "P05",
+   "chapter": "C41",
+   "section": "S06",
+   "origin": "editorial_localization_ir",
+   "hash": "8d71967dae13189d9dcf72eed778c9ebe714b020d383d05a5e568130c1d06b72",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C41-S07-7BE1ED1B": {
+   "structural_id": "KDJ-AI-2026E1-P05-C41-S07",
+   "part": "P05",
+   "chapter": "C41",
+   "section": "S07",
+   "origin": "editorial_localization_ir",
+   "hash": "7be1ed1be9bf12822023ab73c66c6457c88b72170498a97c1bc25971cd5fc370",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C41-S08-45AD34AB": {
+   "structural_id": "KDJ-AI-2026E1-P05-C41-S08",
+   "part": "P05",
+   "chapter": "C41",
+   "section": "S08",
+   "origin": "editorial_localization_ir",
+   "hash": "45ad34abe10f05a5978ebffc6b5a2da4b9174c152947adf0593b3ff08d50eb6b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C41-S09-43B306C8": {
+   "structural_id": "KDJ-AI-2026E1-P05-C41-S09",
+   "part": "P05",
+   "chapter": "C41",
+   "section": "S09",
+   "origin": "editorial_localization_ir",
+   "hash": "43b306c8ad51dc1ba563c835818c053614d6570fa09af0f9c179c99a36eeb1c0",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P05-C41-S10-1AF4F660": {
+   "structural_id": "KDJ-AI-2026E1-P05-C41-S10",
+   "part": "P05",
+   "chapter": "C41",
+   "section": "S10",
+   "origin": "editorial_localization_ir",
+   "hash": "1af4f660715babada6cf5bc8f8728ba64d77fab865ef096d308e88efbce04b98",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C42-S01-84484585": {
+   "structural_id": "KDJ-AI-2026E1-P06-C42-S01",
+   "part": "P06",
+   "chapter": "C42",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "84484585f46d0c4f95b995beb16d4acb3ec0500d50432cbe74dd276e532f1ed3",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C42-S02-B9ED513B": {
+   "structural_id": "KDJ-AI-2026E1-P06-C42-S02",
+   "part": "P06",
+   "chapter": "C42",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "b9ed513b7158b22cb2c917aedd2c16e84e514d9b8e3cb7378fb7da5de5a95d51",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C42-S03-79661035": {
+   "structural_id": "KDJ-AI-2026E1-P06-C42-S03",
+   "part": "P06",
+   "chapter": "C42",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "79661035aff28038b446a1f02f531e2139e8c66415a1503ee35aee4a4fe953e6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C42-S04-EA3AF9E3": {
+   "structural_id": "KDJ-AI-2026E1-P06-C42-S04",
+   "part": "P06",
+   "chapter": "C42",
+   "section": "S04",
+   "origin": "editorial_synthesis",
+   "hash": "ea3af9e35ebeb9513e066750e931f0a9aebaf5e9b71cd009b6055ecaf3ca9ef3",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S01-F0C6F950": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S01",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "f0c6f9505932db8ab5283f4aa8cad629004f653d2955469ad6fddf80b0570356",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S02-59AD701E": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S02",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "59ad701e8056f6b7fd85b9a1c1432e65689d99cfcec7730d420fb5c18e204fb6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S03-4622A8A1": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S03",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "4622a8a12c149f8886661d8132757b385322f17f2ddf33618d5d094460307797",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S04-3845DE82": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S04",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "3845de827126ceedc6cf47c69344c71e1d9ade3fa422fbbc16350cc397b9196d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S05-1CC66922": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S05",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "1cc669228a97ed78a27ac8f018092e43e9fd4aaf36eb136819a3399a0dd08156",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S06-8D061FAA": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S06",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "8d061faad31f2ff06f373e0ffe7ae3878e83e11f59afb2e833b63853302684df",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S07-659E23F4": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S07",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "659e23f4c0d9b194fcba00370369ac33741c93df81f79748de99edc9ee4c0234",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S08-A9FE5F06": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S08",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "a9fe5f0677875c83331dfb09b8dd0c9ad4045e339fad940e7c4c445e1d220810",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S09-B67BEDA5": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S09",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "b67beda597f756f3f86d9c22feb6284ae9c25c29339cdc798de00999bf450289",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S10-531E76DB": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S10",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "531e76dbb7ffd3677d7bb9652b280ca5a41959374dce164b33dcd10994e2f9c5",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S11-512FEF87": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S11",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "512fef87486c2583b915c33e7d388f4daf6f64f9fa801d56873d5429428bc50b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S12-5CBBC43D": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S12",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "5cbbc43d72910f401d338e9e13dbdc5ae99e942f74f908a0c481685ef9717335",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S13-D357B366": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S13",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "d357b3664e268a4240b7e91eb9e835e5a65bcff6b335bff7a05241fc2f34d1ad",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S14-7C3C9F94": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S14",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S14",
+   "origin": "source_translation",
+   "hash": "7c3c9f94211249cec99e673a4d7da5c61369f486292687c8481cb4565ee6887c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S15-E9A443D3": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S15",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S15",
+   "origin": "source_translation",
+   "hash": "e9a443d31f7b4ab972f57d7447bd23be4cab327b75b222ecba7a6b8b27185fca",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S16-FAEB9EAA": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S16",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S16",
+   "origin": "source_translation",
+   "hash": "faeb9eaa02d2431a2b5a4effd7837141d5ad63939313eb9fe2e067e742e37bae",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S17-AC1856C2": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S17",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S17",
+   "origin": "source_translation",
+   "hash": "ac1856c2f64aea21b739edc0f0ea716d7e8aa77d96e3f86c5cff9ddcf99b6729",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S18-6405A0C2": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S18",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S18",
+   "origin": "source_translation",
+   "hash": "6405a0c2b2712ee8445ef330083277768c7b42cc7996be5cc23d05c136631ba2",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S19-9A06ABA4": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S19",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S19",
+   "origin": "source_translation",
+   "hash": "9a06aba4874265d1fa4e97e228378c5ff7e42896bc00922704ae1d55b2ec9d52",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S20-BBE1F18D": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S20",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S20",
+   "origin": "source_translation",
+   "hash": "bbe1f18db4d704c9c49ed3652e20413b228237016fee45fe641a63a040e74bf6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C43-S21-72893FC7": {
+   "structural_id": "KDJ-AI-2026E1-P06-C43-S21",
+   "part": "P06",
+   "chapter": "C43",
+   "section": "S21",
+   "origin": "source_translation",
+   "hash": "72893fc7a00059e0c1f196beb03cd61aa740cbfd86c252e1fed411f02829261b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C44-S01-F8842DBC": {
+   "structural_id": "KDJ-AI-2026E1-P06-C44-S01",
+   "part": "P06",
+   "chapter": "C44",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "f8842dbc3db2cdb06019a4a7229bd2efa3ca11cf092a9b6e0b738e66be0ac877",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C44-S02-CA51025C": {
+   "structural_id": "KDJ-AI-2026E1-P06-C44-S02",
+   "part": "P06",
+   "chapter": "C44",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "ca51025c35fc1a7e2ce254e1f6c101e5c0e379aeb9bc3f4aeb38b725609bd63d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C44-S03-C1D39FD4": {
+   "structural_id": "KDJ-AI-2026E1-P06-C44-S03",
+   "part": "P06",
+   "chapter": "C44",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "c1d39fd4e2d4318c17416994e90ef096357d8604cc6bc13ba88babb39b303d8b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C44-S04-A0C51D8B": {
+   "structural_id": "KDJ-AI-2026E1-P06-C44-S04",
+   "part": "P06",
+   "chapter": "C44",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "a0c51d8b86cf0405e95b2f2cbfb2208401eb0926dac180fcc8d7388bba48cebc",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C44-S05-2E05FAF9": {
+   "structural_id": "KDJ-AI-2026E1-P06-C44-S05",
+   "part": "P06",
+   "chapter": "C44",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "2e05faf9358012f98d99d1b943920d532ebb3b45dfaa5d5deb3a828fdd5311d6",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C44-S06-3610E4B6": {
+   "structural_id": "KDJ-AI-2026E1-P06-C44-S06",
+   "part": "P06",
+   "chapter": "C44",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "3610e4b683f3daa3e66915046cd8d69d100128416bc6debc4a82073fb008f0ee",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C44-S07-F404FC37": {
+   "structural_id": "KDJ-AI-2026E1-P06-C44-S07",
+   "part": "P06",
+   "chapter": "C44",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "f404fc373f4d77c1c21c515cad24836f104bb19458406cb47d8d5f0f83216187",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C44-S08-4D34A0A3": {
+   "structural_id": "KDJ-AI-2026E1-P06-C44-S08",
+   "part": "P06",
+   "chapter": "C44",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "4d34a0a3461142be55fcebdb33ca20f70b396e6faf7958292396f5426a9edec8",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C44-S09-D002D323": {
+   "structural_id": "KDJ-AI-2026E1-P06-C44-S09",
+   "part": "P06",
+   "chapter": "C44",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "d002d323f9ff40d5f2ee90bfd41b01f8bd88d1f8422500533be334c6fe45082d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S01-74A1F3E4": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S01",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "74a1f3e4d0a9f77359c5cde2db53e2259e574c42d1856e6bb3fa2a383f7c54eb",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S02-1AC84F0E": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S02",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "1ac84f0e5aa22b1e5e4e8c3cec7bed6efb5dcb2fafcfa980c9e130480bfefb02",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S03-2ACDF9C2": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S03",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "2acdf9c2d15ea1e3800c424c90f2ef0c6635da7f60cc79c18d19105fe4f24bfc",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S04-051E4F4C": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S04",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "051e4f4cd791f6a6d34b43f532941ec8a3639f5200434e606f6c4523c4bcc3a0",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S05-25E65F9F": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S05",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "25e65f9ff60dfcb3e042f66b3b2c5121b5c5676da82fef806b9458da3d527e21",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S06-64AA9747": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S06",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "64aa97477f855741f7afde8c85bd3c3b6fc69b405b84157ed35451cdec772aa4",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S07-D5A9DE7E": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S07",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "d5a9de7ebfb007d7138e593ff4273ccf8a93559dac1bdceb6ccdc92399853503",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S08-F2B54E4F": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S08",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "f2b54e4fa3b9acb520db02c854e94b102040959c5dda8997f79f12a573df8772",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S09-5AEFAF70": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S09",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "5aefaf70920abf2171fcb242e6124475b8729adf8010b68e17282e0f366126fb",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S10-6EB91957": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S10",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "6eb91957ff883b2407faea9422e4b3d4384d77b8dc8f60675e750ff6201d060b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S11-A520B77E": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S11",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "a520b77ef2cefafc70dec7888d5611748840d8aac3ae9941c5addb126831c60c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S12-D3EFC1FD": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S12",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "d3efc1fdbec18682704920b66198bc69ea96b0eb492baae5bb4e78006de79106",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S13-A4C74BD3": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S13",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "a4c74bd3af03cf028df322412b3af8277c91f95a85e4c69d31da67777439c2ff",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S14-AD390EEC": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S14",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S14",
+   "origin": "source_translation",
+   "hash": "ad390eec80ee7958371b7cef33c1918fde0c228bc5ef92ec47d0fd2921a4cc4a",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C45-S15-178D5DC0": {
+   "structural_id": "KDJ-AI-2026E1-P06-C45-S15",
+   "part": "P06",
+   "chapter": "C45",
+   "section": "S15",
+   "origin": "source_translation",
+   "hash": "178d5dc02d8c1daf2793c85f83dd97d831a8adeeeb8aa6c4bf11a13c6ede0490",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C46-S01-BE98BCD7": {
+   "structural_id": "KDJ-AI-2026E1-P06-C46-S01",
+   "part": "P06",
+   "chapter": "C46",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "be98bcd73826a179ae8e812f822cdbff42182f58ba90ec1351e4299f790ba5bd",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C46-S02-5F389F16": {
+   "structural_id": "KDJ-AI-2026E1-P06-C46-S02",
+   "part": "P06",
+   "chapter": "C46",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "5f389f16b39b4fec0660c7f6b0cc4a8f051c1617523c5f79885344632e665307",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C46-S03-A0EF3CC7": {
+   "structural_id": "KDJ-AI-2026E1-P06-C46-S03",
+   "part": "P06",
+   "chapter": "C46",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "a0ef3cc713a2c1c48273acb0ebc4cbb6deeec2799527c26037fb65ae546f2ce7",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C47-S01-6999533F": {
+   "structural_id": "KDJ-AI-2026E1-P06-C47-S01",
+   "part": "P06",
+   "chapter": "C47",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "6999533f91805cbf715b7436a5370b61552b4f6c869ff7108c8ec1709464a916",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C48-S01-45221CBF": {
+   "structural_id": "KDJ-AI-2026E1-P06-C48-S01",
+   "part": "P06",
+   "chapter": "C48",
+   "section": "S01",
+   "origin": "editorial_localization_ir",
+   "hash": "45221cbf455ee7a2faaa4201674453a799266bc2f3d5aa1efa8d6652cf74ff0f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C48-S02-2FE50A5C": {
+   "structural_id": "KDJ-AI-2026E1-P06-C48-S02",
+   "part": "P06",
+   "chapter": "C48",
+   "section": "S02",
+   "origin": "editorial_localization_ir",
+   "hash": "2fe50a5c80310f8eae166d2331195ff90637b0941fbadd440a5e796572e4ba16",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C48-S03-80E7943B": {
+   "structural_id": "KDJ-AI-2026E1-P06-C48-S03",
+   "part": "P06",
+   "chapter": "C48",
+   "section": "S03",
+   "origin": "editorial_localization_ir",
+   "hash": "80e7943bfc7424dae38f7e79e8a922524118ca64f63cf178e05ba5a0559b68cc",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C48-S04-109EC715": {
+   "structural_id": "KDJ-AI-2026E1-P06-C48-S04",
+   "part": "P06",
+   "chapter": "C48",
+   "section": "S04",
+   "origin": "editorial_localization_ir",
+   "hash": "109ec715c1cb41d300204bb72c05acce19f4c9755cf9dde7a7d5dd2661abaaf2",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C48-S05-DB9B21A3": {
+   "structural_id": "KDJ-AI-2026E1-P06-C48-S05",
+   "part": "P06",
+   "chapter": "C48",
+   "section": "S05",
+   "origin": "editorial_localization_ir",
+   "hash": "db9b21a391fb34f6555fbc38d777eef4252cbafd34b538f73db9936813b94656",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C48-S06-C363370E": {
+   "structural_id": "KDJ-AI-2026E1-P06-C48-S06",
+   "part": "P06",
+   "chapter": "C48",
+   "section": "S06",
+   "origin": "editorial_localization_ir",
+   "hash": "c363370e4a200bf2e6a53a0ad8975edb938d0b7079bcd80273f3e29469af8731",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C48-S07-0EEAC22D": {
+   "structural_id": "KDJ-AI-2026E1-P06-C48-S07",
+   "part": "P06",
+   "chapter": "C48",
+   "section": "S07",
+   "origin": "editorial_localization_ir",
+   "hash": "0eeac22d0e0b9bb52477b0616152d88ff217c553c609af4ff7d1e7271a83f9e9",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C48-S08-D612405A": {
+   "structural_id": "KDJ-AI-2026E1-P06-C48-S08",
+   "part": "P06",
+   "chapter": "C48",
+   "section": "S08",
+   "origin": "editorial_localization_ir",
+   "hash": "d612405ae717db26eefa609345c88e0d21ac9a31e7ed3015ab437bcaba951599",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P06-C48-S09-DC4DE95E": {
+   "structural_id": "KDJ-AI-2026E1-P06-C48-S09",
+   "part": "P06",
+   "chapter": "C48",
+   "section": "S09",
+   "origin": "editorial_localization_ir",
+   "hash": "dc4de95e453e894b4ce56c9fab37468757d5bae42984ecd7800b6ff358da2311",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C49-S01-1BF58DCC": {
+   "structural_id": "KDJ-AI-2026E1-P07-C49-S01",
+   "part": "P07",
+   "chapter": "C49",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "1bf58dcc5826edc75287d0f35471d05574bd0ac8b5140fe66e6c7791fa2dbb17",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C49-S02-315A4718": {
+   "structural_id": "KDJ-AI-2026E1-P07-C49-S02",
+   "part": "P07",
+   "chapter": "C49",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "315a4718f7ce54f0d8704427cda886a35a37c803c341efd9e8b2d520fec76efd",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C49-S03-2C7EB94D": {
+   "structural_id": "KDJ-AI-2026E1-P07-C49-S03",
+   "part": "P07",
+   "chapter": "C49",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "2c7eb94d7465b6f9ef3476a00e39a2c3adc88a56289cae65ba2f1eda67d9a16c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S01-3D90DFF8": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S01",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S01",
+   "origin": "source_translation",
+   "hash": "3d90dff8f27c70a08ea2b89aacbc1f94c6a043e1838fe8362000f3621404979f",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S02-F3E203E4": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S02",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S02",
+   "origin": "source_translation",
+   "hash": "f3e203e4368250b639a62b29b46258b2b710e6ad40a18d65f3e4b0591a44a77b",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S03-7DC814CD": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S03",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S03",
+   "origin": "source_translation",
+   "hash": "7dc814cdddbe4ec425cac1791a0cef5c17abf2191a76ff80e502462a355d35e2",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S04-DDB548CE": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S04",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S04",
+   "origin": "source_translation",
+   "hash": "ddb548ced1458df606a9bd7e6166c67c220f1e70b334b5f7a80fbf7ed5d3f03e",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S05-3E8F1B3B": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S05",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S05",
+   "origin": "source_translation",
+   "hash": "3e8f1b3b9cb6123b42f735c2c714d9663e17bfed3556a2502fa084d5c74f0a6a",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S06-7924877E": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S06",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S06",
+   "origin": "source_translation",
+   "hash": "7924877e06f40e0126a173bff07e24545d9b55a5d26794ca319c1804c9f73980",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S07-9898F56F": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S07",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S07",
+   "origin": "source_translation",
+   "hash": "9898f56fe1ca796d58fede63da422e1edaa07c5769094503c50f8706492b4e6c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S08-81E4523B": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S08",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S08",
+   "origin": "source_translation",
+   "hash": "81e4523b477e32fb70490bae73a9604cb54e38edc456d8f1a90aa51b3935c9df",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S09-4DF0EBF8": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S09",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S09",
+   "origin": "source_translation",
+   "hash": "4df0ebf887e0d58285127ef590fe74374d4ce165bb48b058509609394e31e020",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S10-BB374D7E": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S10",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S10",
+   "origin": "source_translation",
+   "hash": "bb374d7e905e740bfee27b9b0993bad3599af109803c27a8deda50e2d23d77b1",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S11-9E231012": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S11",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S11",
+   "origin": "source_translation",
+   "hash": "9e231012700c41c862a95a3b8a98d3f60a47e07bcace4133ea88b9dc09b43af1",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S12-5136B957": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S12",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S12",
+   "origin": "source_translation",
+   "hash": "5136b95749e9837a68813a32d5ed99ae8f1c31792becae802071f28278574482",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S13-BF8E8B66": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S13",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S13",
+   "origin": "source_translation",
+   "hash": "bf8e8b66c53cb0d95484e587efaf08485d897e0ea54e6d63d0d5603412e8aa53",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C50-S14-89644B20": {
+   "structural_id": "KDJ-AI-2026E1-P07-C50-S14",
+   "part": "P07",
+   "chapter": "C50",
+   "section": "S14",
+   "origin": "source_translation",
+   "hash": "89644b2046cc1a1b56ff5dc74e668b794548e87a3fc3598901cbad92aa00b2da",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C51-S01-05DE9635": {
+   "structural_id": "KDJ-AI-2026E1-P07-C51-S01",
+   "part": "P07",
+   "chapter": "C51",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "05de96356240b4fcf4970d66fe533b8d5d35fb5bc9e858d3a9d375f2ae9102a8",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C51-S02-E21F01AC": {
+   "structural_id": "KDJ-AI-2026E1-P07-C51-S02",
+   "part": "P07",
+   "chapter": "C51",
+   "section": "S02",
+   "origin": "editorial_synthesis",
+   "hash": "e21f01ac19848cf025bc9c82e9810de1e316e718d55d80c3cdc4288060c7bc65",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C51-S03-90CE05BF": {
+   "structural_id": "KDJ-AI-2026E1-P07-C51-S03",
+   "part": "P07",
+   "chapter": "C51",
+   "section": "S03",
+   "origin": "editorial_synthesis",
+   "hash": "90ce05bfaf1ab5795b93e698daf00f46eb5304ff41862c7cd4377ffeef830fca",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C52-S01-57C5C6DD": {
+   "structural_id": "KDJ-AI-2026E1-P07-C52-S01",
+   "part": "P07",
+   "chapter": "C52",
+   "section": "S01",
+   "origin": "editorial_synthesis",
+   "hash": "57c5c6ddf60106563895efa16b8e6ccc6108b9c8e69bfbe6d47fd9854d52a0fa",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C53-S01-A58BCA57": {
+   "structural_id": "KDJ-AI-2026E1-P07-C53-S01",
+   "part": "P07",
+   "chapter": "C53",
+   "section": "S01",
+   "origin": "editorial_localization_ir",
+   "hash": "a58bca5726a3945a52dd5b0513aa4dea43bcb55b2b33b5e2f2627c8d4712530c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C53-S02-20C2433C": {
+   "structural_id": "KDJ-AI-2026E1-P07-C53-S02",
+   "part": "P07",
+   "chapter": "C53",
+   "section": "S02",
+   "origin": "editorial_localization_ir",
+   "hash": "20c2433c877037504dea45a771f005c9370b1d0b5e0851937dba635aa8e2ea91",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C53-S03-9F292F77": {
+   "structural_id": "KDJ-AI-2026E1-P07-C53-S03",
+   "part": "P07",
+   "chapter": "C53",
+   "section": "S03",
+   "origin": "editorial_localization_ir",
+   "hash": "9f292f779cff8130465e8bf772de209a9f11852ada44ca34493ba0b87e0217f5",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C53-S04-E8C1A95C": {
+   "structural_id": "KDJ-AI-2026E1-P07-C53-S04",
+   "part": "P07",
+   "chapter": "C53",
+   "section": "S04",
+   "origin": "editorial_localization_ir",
+   "hash": "e8c1a95c463e8fd613a22a8785fced217617ab5594e07342fc238f2a2e15150d",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C53-S05-DDCBE626": {
+   "structural_id": "KDJ-AI-2026E1-P07-C53-S05",
+   "part": "P07",
+   "chapter": "C53",
+   "section": "S05",
+   "origin": "editorial_localization_ir",
+   "hash": "ddcbe6267854c677e8462b097b946534afc9e5f834296047958ea2060acbd564",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C53-S06-396DC010": {
+   "structural_id": "KDJ-AI-2026E1-P07-C53-S06",
+   "part": "P07",
+   "chapter": "C53",
+   "section": "S06",
+   "origin": "editorial_localization_ir",
+   "hash": "396dc01012e7d43d9d684dc380c121c90cdb3e0ed5d27eecc1b72a045d824678",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C53-S07-1F16CDE1": {
+   "structural_id": "KDJ-AI-2026E1-P07-C53-S07",
+   "part": "P07",
+   "chapter": "C53",
+   "section": "S07",
+   "origin": "editorial_localization_ir",
+   "hash": "1f16cde1283a719d5098b438d4820f60a41379392af579275f2023a8b9dadd4c",
+   "locale": "fa"
+  },
+  "KDJ-AI-2026E1-P07-C53-S08-54006082": {
+   "structural_id": "KDJ-AI-2026E1-P07-C53-S08",
+   "part": "P07",
+   "chapter": "C53",
+   "section": "S08",
+   "origin": "editorial_localization_ir",
+   "hash": "54006082b5bb121018e6657c8821cd42b4430351edc5ad0494908c78a4212bb2",
+   "locale": "fa"
+  }
+ }
+}

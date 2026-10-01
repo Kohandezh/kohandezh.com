@@ -1,0 +1,60 @@
+{
+ "template_id": "TPL-P02-4",
+ "title_fa": "نمونه فرم: طرح نظارت انسانی (Human Oversight Plan) بر سامانهٔ هوش مصنوعی",
+ "derived_from": [
+  "KDJ-AI-2026E1-P02-C09-S05",
+  "KDJ-AI-2026E1-P02-C09-S06"
+ ],
+ "fields": [
+  {
+   "name_fa": "شناسهٔ سامانه",
+   "name_en": "system_id",
+   "description_fa": "ارجاع به فهرست دارایی‌های هوش مصنوعی",
+   "example_fa": "AI-INV-014"
+  },
+  {
+   "name_fa": "نقطهٔ نظارت",
+   "name_en": "oversight_point",
+   "description_fa": "کجای گردش‌کار، انسان تصمیم یا تأیید نهایی دارد",
+   "example_fa": "پیش از ارسال پاسخ نهایی به مشتریان حساس"
+  },
+  {
+   "name_fa": "نوع نظارت",
+   "name_en": "oversight_type",
+   "description_fa": "انسان در حلقه (Human-in-the-loop)، انسان بر حلقه (Human-on-the-loop)، یا بازبینی پسینی",
+   "example_fa": "انسان در حلقه برای تصمیم‌های مالی بالای آستانه"
+  },
+  {
+   "name_fa": "مسئول نظارت",
+   "name_en": "oversight_owner",
+   "description_fa": "نقش مسئول اعمال نظارت",
+   "example_fa": "سرپرست شیفت خدمات مشتریان"
+  },
+  {
+   "name_fa": "اختیار مداخله",
+   "name_en": "intervention_authority",
+   "description_fa": "ناظر چه اختیاری برای رد، اصلاح یا توقف تصمیم مدل دارد",
+   "example_fa": "رد پاسخ و ارجاع به کارشناس انسانی"
+  },
+  {
+   "name_fa": "آستانهٔ تشدید",
+   "name_en": "escalation_threshold",
+   "description_fa": "چه شرایطی مورد را به سطح بالاتر ارجاع می‌دهد",
+   "example_fa": "اطمینان مدل زیر ۷۰ درصد یا مبلغ تراکنش بالای حد مصوب"
+  },
+  {
+   "name_fa": "شواهد قابل ممیزی",
+   "name_en": "audit_evidence",
+   "description_fa": "چه مدرکی از اعمال نظارت نگهداری می‌شود",
+   "example_fa": "لاگ تأیید/رد ناظر با مهر زمانی"
+  },
+  {
+   "name_fa": "تناوب بازبینی طرح",
+   "name_en": "review_frequency",
+   "description_fa": "طرح نظارت هر چند وقت یک‌بار بازبینی می‌شود",
+   "example_fa": "شش‌ماهه یا پس از هر رخداد مهم"
+  }
+ ],
+ "origin": "editorial_template_ir",
+ "note_fa": "نمونه پیشنهادی تدوینگر بر پایه مفاهیم مطرح‌شده در منابع این فصل"
+}

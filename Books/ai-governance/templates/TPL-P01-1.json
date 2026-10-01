@@ -1,0 +1,90 @@
+{
+ "template_id": "TPL-P01-1",
+ "title_fa": "فهرست دارایی‌ها و موارد کاربرد هوش مصنوعی",
+ "derived_from": [
+  "NIST-AI-100-3",
+  "AAAS-NIST-PAPER-1"
+ ],
+ "fields": [
+  {
+   "name_fa": "شناسهٔ دارایی",
+   "name_en": "Asset ID",
+   "description_fa": "شناسهٔ یکتا برای ارجاع در سایر اسناد حاکمیت",
+   "example_fa": "AIC-001"
+  },
+  {
+   "name_fa": "نام مورد کاربرد",
+   "name_en": "Use Case Name",
+   "description_fa": "نام شناخته‌شدهٔ مورد کاربرد نزد کسب‌وکار",
+   "example_fa": "دستیار پاسخ‌گویی مشتریان"
+  },
+  {
+   "name_fa": "هدف کسب‌وکار",
+   "name_en": "Business Objective",
+   "description_fa": "مسئله‌ای که این دارایی باید حل کند",
+   "example_fa": "کاهش زمان پاسخ به درخواست‌های متداول"
+  },
+  {
+   "name_fa": "فناوری/تکنیک",
+   "name_en": "AI Technique",
+   "description_fa": "نوع مدل یا تکنیک به‌کاررفته",
+   "example_fa": "NLP؛ مدل زبانی بزرگ (LLM)"
+  },
+  {
+   "name_fa": "مرحلهٔ چرخهٔ حیات",
+   "name_en": "Lifecycle Stage",
+   "description_fa": "فاز فعلی از انتخاب مورد کاربرد تا کنار گذاشتن",
+   "example_fa": "استقرار و پایش"
+  },
+  {
+   "name_fa": "مالک کسب‌وکار",
+   "name_en": "Business Owner",
+   "description_fa": "پاسخ‌گوی نتیجهٔ کسب‌وکاری دارایی",
+   "example_fa": "مدیر خدمات مشتریان"
+  },
+  {
+   "name_fa": "مالک سیستم",
+   "name_en": "System Owner",
+   "description_fa": "پاسخ‌گوی عملکرد و پایداری فنی",
+   "example_fa": "مدیر زیرساخت"
+  },
+  {
+   "name_fa": "داده‌های ورودی و منبع",
+   "name_en": "Input Data and Source",
+   "description_fa": "داده‌های مصرفی دارایی و خاستگاه آن‌ها",
+   "example_fa": "تیکت‌های پشتیبانی یک‌سال گذشته"
+  },
+  {
+   "name_fa": "خروجی و مصرف‌کننده",
+   "name_en": "Output and Consumers",
+   "description_fa": "خروجی دارایی و استفاده‌کنندگان از آن",
+   "example_fa": "پیش‌نویس پاسخ برای اپراتور انسانی"
+  },
+  {
+   "name_fa": "تصمیم‌های تأثیرپذیر",
+   "name_en": "Affected Decisions",
+   "description_fa": "تصمیم‌هایی که خروجی دارایی بر آن‌ها اثر می‌گذارد",
+   "example_fa": "اولویت‌بندی صف پاسخ‌گویی"
+  },
+  {
+   "name_fa": "نقش انسان",
+   "name_en": "Human Role",
+   "description_fa": "نحوهٔ نظارت و مداخلهٔ انسانی در حلقهٔ تصمیم",
+   "example_fa": "بازبینی اپراتور پیش از ارسال"
+  },
+  {
+   "name_fa": "محدودیت‌های شناخته‌شده",
+   "name_en": "Known Limitations",
+   "description_fa": "خطا، سوگیری و تاریک‌ساختگری ثبت‌شدهٔ دارایی",
+   "example_fa": "عدم قطعیت در پرسش‌های بسیار تخصصی"
+  },
+  {
+   "name_fa": "وضعیت ارزیابی",
+   "name_en": "Assessment Status",
+   "description_fa": "وضعیت ارزیابی محدودیت‌ها و انطباق",
+   "example_fa": "غربال اولیه انجام شده است"
+  }
+ ],
+ "origin": "editorial_template_ir",
+ "note_fa": "نمونه پیشنهادی تدوینگر بر پایه مفاهیم مطرح‌شده در منابع این فصل"
+}

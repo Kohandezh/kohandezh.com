@@ -1,0 +1,140 @@
+{
+ "GPT_TEXT_USAGE": 0,
+ "usage": [
+  {
+   "provider": "antigravity",
+   "model": "claude-sonnet-4-6",
+   "purpose": "editorial",
+   "calls": 4,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "errors": 4
+  },
+  {
+   "provider": "antigravity",
+   "model": "claude-sonnet-4-6",
+   "purpose": "review",
+   "calls": 104,
+   "input_tokens": 1684460,
+   "output_tokens": 162924,
+   "errors": 27
+  },
+  {
+   "provider": "antigravity",
+   "model": "claude-sonnet-4-6",
+   "purpose": "terminology",
+   "calls": 5,
+   "input_tokens": 93623,
+   "output_tokens": 37362,
+   "errors": 0
+  },
+  {
+   "provider": "google",
+   "model": "gemini-3.1-flash-lite",
+   "purpose": "translation",
+   "calls": 52,
+   "input_tokens": 103332,
+   "output_tokens": 63039,
+   "errors": 13
+  },
+  {
+   "provider": "google",
+   "model": "gemini-3.1-pro-preview",
+   "purpose": "benchmark",
+   "calls": 40,
+   "input_tokens": null,
+   "output_tokens": null,
+   "errors": 40
+  },
+  {
+   "provider": "google",
+   "model": "gemini-3.8-flash",
+   "purpose": "benchmark",
+   "calls": 40,
+   "input_tokens": null,
+   "output_tokens": null,
+   "errors": 40
+  },
+  {
+   "provider": "google",
+   "model": "gemini-3.8-flash",
+   "purpose": "translation",
+   "calls": 51,
+   "input_tokens": 7889,
+   "output_tokens": 5054,
+   "errors": 47
+  },
+  {
+   "provider": "openai",
+   "model": "gpt-image-1.5",
+   "purpose": "image",
+   "calls": 9,
+   "input_tokens": 1107,
+   "output_tokens": 17435,
+   "errors": 0
+  },
+  {
+   "provider": "typesafe",
+   "model": "jev-1.13.0",
+   "purpose": "terminology",
+   "calls": 68,
+   "input_tokens": 798558,
+   "output_tokens": 82446,
+   "errors": 0
+  },
+  {
+   "provider": "zai-coding-plan",
+   "model": "glm-5-turbo",
+   "purpose": "translation",
+   "calls": 9,
+   "input_tokens": 18689,
+   "output_tokens": 13663,
+   "errors": 0
+  },
+  {
+   "provider": "zai-coding-plan",
+   "model": "glm-5.2",
+   "purpose": "translation",
+   "calls": 8,
+   "input_tokens": 16222,
+   "output_tokens": 11603,
+   "errors": 0
+  },
+  {
+   "provider": "zai-coding-plan",
+   "model": "glm-5.3",
+   "purpose": "benchmark",
+   "calls": 8,
+   "input_tokens": 22813,
+   "output_tokens": 11851,
+   "errors": 0
+  },
+  {
+   "provider": "zai-coding-plan",
+   "model": "glm-5.3",
+   "purpose": "review_alt",
+   "calls": 507,
+   "input_tokens": 2325434,
+   "output_tokens": 1130190,
+   "errors": 0
+  },
+  {
+   "provider": "zai-coding-plan",
+   "model": "glm-5.3",
+   "purpose": "translation",
+   "calls": 931,
+   "input_tokens": 2270602,
+   "output_tokens": 1034635,
+   "errors": 110
+  },
+  {
+   "provider": "zai-coding-plan",
+   "model": "glm-5.3-flash",
+   "purpose": "translation",
+   "calls": 1463,
+   "input_tokens": 2065419,
+   "output_tokens": 1339104,
+   "errors": 586
+  }
+ ]
+}

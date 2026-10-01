@@ -228,6 +228,7 @@ class Kohan_Avatar {
 		wp_register_script( 'kohan-avatar', $js_url, array(), $this->file_ver( 'assets/js/kohan-avatar.js' ), true );
 
 		$config = array(
+			'atlasUrl'  => esc_url_raw( KOHAN_AVATAR_URL . 'assets/kohan/spritesheet.webp?v=' . $ver ),
 			'assetBase' => esc_url_raw( KOHAN_AVATAR_URL . 'assets/kohan' ),
 			'ariaLabel' => 'Kohan avatar',
 			// kdcv/v1/chat has never existed. The AI Hub registers kdcv/v1/ask and
@@ -248,6 +249,9 @@ class Kohan_Avatar {
 				'rouletteEvery'   => 3,
 				'fireProbability' => (float) $o['fire_probability'],
 			),
+			// Square portrait for the chat header. Shipped with the plugin so the
+			// panel does not depend on the active theme's asset paths.
+			'chatAvatar' => KOHAN_AVATAR_URL . 'assets/avatar/kohandezh-160.webp',
 			'strings'   => array(
 				'title'       => 'Kohan',
 				'status'      => __( 'AI assistant', 'kohan-avatar' ),
@@ -282,7 +286,7 @@ class Kohan_Avatar {
 
 	public function preload_atlas() {
 		$href = esc_url( KOHAN_AVATAR_URL . 'assets/kohan/spritesheet.webp?v=' . $this->asset_version() );
-		echo '<link rel="preload" as="image" href="' . $href . '" type="image/webp">' . "\n";
+		echo '<link rel="preload" as="image" href="' . $href . '" type="image/webp" media="(min-width: 561px)">' . "\n";
 	}
 
 	/**
@@ -319,6 +323,9 @@ class Kohan_Avatar {
 	}
 
 	public function dequeue_legacy_avatar() {
+		if ( empty( $this->get_options()['enabled'] ) ) {
+			return;
+		}
 		foreach ( array( 'ai-pet', 'kohan-avatar-legacy', 'kdcv-pet', 'kohan-avatar-theme' ) as $h ) {
 			wp_dequeue_script( $h );
 			wp_deregister_script( $h );
@@ -328,6 +335,9 @@ class Kohan_Avatar {
 	}
 
 	private function is_legacy_avatar_src( $src ) {
+		if ( empty( $this->get_options()['enabled'] ) ) {
+			return false;
+		}
 		if ( ! $src ) {
 			return false;
 		}

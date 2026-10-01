@@ -37,6 +37,27 @@ assert.equal(printable.experience.filter(entry => entry.org === 'Sako').length, 
 assert.equal(printable.experience.find(entry => entry.org === 'Sako').role.en, 'Developer — National Open-Source AI Platform');
 
 function assertRetainedRoles(doc, locale, label) {
+  for (const id of ['ksf-ceo', 'modaberan']) {
+    const entry = cv.entries.find(item => item.id === id);
+    const node = doc.querySelector(`[data-cv-id="${id}"] .timeline-date`);
+    assert.equal(node.textContent.trim(), entry.locales[locale].date,
+      `${label}: preserve verified month precision for ${id}`);
+    if (locale !== 'ru') {
+      const org = id === 'ksf-ceo' ? /Kohan System Farda/ : /^Modabberan Fanavari Pasargad$/;
+      const pdfEntry = printable.experience.find(item => org.test(item.org));
+      assert.ok(pdfEntry, `${id}: printable entry exists`);
+      assert.equal(pdfEntry.period[locale], entry.locales[locale].date,
+        `${label}: website and printable dates agree`);
+    }
+  }
+  assert.ok(doc.querySelector('[data-cv-id="national-ai-platform"] img[src*="sako.webp"]'),
+    `${label}: real Sako logo survives`);
+  assert.equal(doc.querySelectorAll('[data-cv-id="associate-computer-software"]').length, 1,
+    `${label}: exactly one canonical associate degree`);
+  assert.equal(doc.querySelectorAll('.linkedin-education-item').length, 0,
+    `${label}: runtime must not append a duplicate associate degree`);
+  assert.equal(doc.querySelectorAll('img[src*="sako-platform-concept"]').length, 0,
+    `${label}: generated Sako illustration stays removed`);
   for (const entry of [doctorate, sako]) {
     const nodes = doc.querySelectorAll(`[data-cv-id="${entry.id}"]`);
     assert.equal(nodes.length, 1, `${label}: exactly one ${entry.id}`);
@@ -68,6 +89,7 @@ for (const locale of locales) {
     });
     dom.window.eval(read(`assets/js/linkedin-content${suffix}.js`));
     dom.window.eval(read(`assets/js/resume-timeline${suffix}.js`));
+    dom.window.eval(read(`assets/js/timeline-date-fix${suffix}.js`));
     dom.window.document.dispatchEvent(new dom.window.Event('DOMContentLoaded'));
     assertRetainedRoles(dom.window.document, locale, `${file}, runtime${suffix || ' source'}`);
     assert.deepEqual([...dom.window.document.querySelectorAll('#education [data-cv-id]')].map(node => node.dataset.cvId),

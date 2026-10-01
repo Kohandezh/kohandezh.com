@@ -1,0 +1,146 @@
+{
+ "artifacts": {
+  "01_source_manifest.json": {
+   "bytes": 62523,
+   "sha256": "cec828af6cdfc7303aad603d026b64af047c3ca48fa388a74e4e79fe8c6a4f89"
+  },
+  "02_source_hashes.sha256": {
+   "bytes": 1692,
+   "sha256": "95aa1f00a5572a9250e2c5971941107bebf9d1410635a761d575954359fa82d2"
+  },
+  "03_book_master_fa.md": {
+   "bytes": 4289188,
+   "sha256": "802a975cf9a83a29acf19bf8c7536eb4f2c6da900a1ccd2b31bf63697257f331"
+  },
+  "04_book_master_fa.json": {
+   "bytes": 5437088,
+   "sha256": "71aceb3d9bbb79790e31231df4a33013e5c29efe1a531b9bf1a1ec8a608b9ecd"
+  },
+  "05_book_fa.docx": {
+   "bytes": 19261472,
+   "sha256": "aea459c7f7171d3bdaccef3a2cb02fc0f0373e47490b26ba781d816ecc141f93"
+  },
+  "06_book_fa.pdf": {
+   "bytes": 38456120,
+   "sha256": "6717296ddc54274c973d6e2b42983140d1e1064e52e2871fec62a2621c959ba5"
+  },
+  "07_html_book_fa.zip": {
+   "bytes": 1551124,
+   "sha256": "d1a44bf8ee5a53e97ae6324e3eeb09c02779f5f11f41a49857d86cdd088dd645"
+  },
+  "08_glossary_fa_en.csv": {
+   "bytes": 63720,
+   "sha256": "f55c1065852695186f9cbf6ce16a78fdc5fec59f09bb8389e1efb07a94cb1ffa"
+  },
+  "09_glossary.json": {
+   "bytes": 267769,
+   "sha256": "d1d10e815b33f79b854493f47fd8b11b72a04edc83fb5c85736bc9980305d206"
+  },
+  "10_translation_memory_fa.jsonl": {
+   "bytes": 273331,
+   "sha256": "7376c5ee605fa060e5907b9f277b18eb6a6d36eb06a841d468df215e80ae665e"
+  },
+  "11_source_mapping.csv": {
+   "bytes": 123831,
+   "sha256": "051b409fb0d68be92a8a42ed2b76d49828fe829f336320a5c33dc92f6aceb6e4"
+  },
+  "12_source_mapping.json": {
+   "bytes": 254461,
+   "sha256": "f73ae3c79b00db549d8f4784fead531ad9afb14267cc448f27643e073c81b97f"
+  },
+  "13_citation_registry.json": {
+   "bytes": 311445,
+   "sha256": "e988c7cde47c340f6f6672734b3d2923542b389f74545d4880af1027e829c38e"
+  },
+  "14_rag_corpus_fa.jsonl": {
+   "bytes": 16291695,
+   "sha256": "702a3a3cfaeb4f1f19c9cd8f806b4efacb254c6718f635e32463e917c5e425a4"
+  },
+  "15_knowledge_graph.json": {
+   "bytes": 4824998,
+   "sha256": "faab834a45fd2bdf420ae19cd3c88c5d833d48e01488f3c3fc396c754581a821"
+  },
+  "16_knowledge_graph.graphml": {
+   "bytes": 4289462,
+   "sha256": "ac5de2a0dea8cbc42b76bbd75924cc69cc936623b6047236a86b0e256291c852"
+  },
+  "17_bibliography.json": {
+   "bytes": 14107,
+   "sha256": "c03530c78e838654611869f47adb3a2e286c26753d9f76d45cbc8abb49bab200"
+  },
+  "18_translation_metrics.json": {
+   "bytes": 303,
+   "sha256": "5fd7c52b62562b3396c8e6e7a46a3ea18515f4ce17cceacda0262831e6a07432"
+  },
+  "19_model_usage.json": {
+   "bytes": 2746,
+   "sha256": "f5b0d9d3c7d7bad89f00c6d7ffd6f3fdba07a0e568c9fac02f89ad890c5c34e7"
+  },
+  "20_content_ids.json": {
+   "bytes": 138487,
+   "sha256": "12fceb8a4a3d3a55da0a4c34fa79da657a3f96e4ecf357f87096996f192afea9"
+  },
+  "21_merkle_tree.json": {
+   "bytes": 88312,
+   "sha256": "ecd7e47a8b77774ec0349edbbcda043a7c0097c5981390c7d5436036a8015a70"
+  },
+  "22_merkle_root.txt": {
+   "bytes": 65,
+   "sha256": "081f2e741ff593bda7ae7ada4f87acd08eab5b7e51fa3c06a79d3fb3ba305a10"
+  }
+ },
+ "build_date": "2026-09-21T10:45:05-0400",
+ "compiler": "محمدعلی کهن‌دژ",
+ "edition_id": "2026E1",
+ "hash_spec": "kdj-hash-1",
+ "master_json_sha256": "71aceb3d9bbb79790e31231df4a33013e5c29efe1a531b9bf1a1ec8a608b9ecd",
+ "master_md_sha256": "802a975cf9a83a29acf19bf8c7536eb4f2c6da900a1ccd2b31bf63697257f331",
+ "merkle_root": "72b9c984707b0d29adf99a1da7d2851bea2faf62afd95a253f95a309be09393b",
+ "missing_deliverables": [],
+ "model_routing_summary": {
+  "GPT_TEXT_USAGE": 0,
+  "escalation": "antigravity/claude-opus-4-6-thinking (REVIEW_ULTRA)",
+  "orchestrator": "claude-fable-5-1 (single instance)",
+  "review": "antigravity/claude-sonnet-4-6 (REVIEW_MAX)",
+  "translation": [
+   "gemini-3.1-flash-lite",
+   "gemini-3.8-flash",
+   "glm-5-turbo",
+   "glm-5.2",
+   "glm-5.3",
+   "glm-5.3-flash"
+  ]
+ },
+ "prompt_versions": {
+  "review": "review-v1",
+  "translate": "translate-v1"
+ },
+ "publisher": "کهن‌دژ",
+ "release_id": "RC1",
+ "source_hashes": {
+  "AI_RMF_Playbook.pdf": "65d6101d806502875aadb0fd19a75c3a9cc9a5e9461129e9398a39192d8202d2",
+  "NIST.AI.100-1.pdf": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+  "NIST.AI.100-2e2025.pdf": "4811fb6ad73f9c9121843ab77e029b5adc6f2c86d33c2fc5b2099ef133847646",
+  "NIST.AI.100-3.pdf": "9a4d9b9bd3bf3727e2bd5043e35e5155d1e0ca402163cb34fde2ff745bf4828c",
+  "NIST.AI.100-4.SyntheticContent.ipd.pdf": "c8a2775d912d18df3937e2d563404305ec2b018c3708c0b0ffc2b958ac1193f6",
+  "NIST.AI.600-1.pdf": "6e73620ab6b64e90ef2c04bf0e0d6246185a2f4b1b13cab0df494496cff89b6a",
+  "NIST.AI.700-1.pdf": "350262c39367d522d0f42b1579d6e7d73b49b44b1862b1ade708d31ab2ee2034",
+  "NIST.AI.700-2.pdf": "5478e8c37a182adaf9449d1d315689beba3db2808db430c54fe3fc8da04ea3b9",
+  "NIST.AI.800-1.ipd.pdf": "30ced091493af421d454ca138a3496a39b8c6079f74223e868325318ffa767e4",
+  "NIST.IR.8312.pdf": "cbfd3f8cd92a3dd01affdab036e9c30aa878588b336c6cba0938a9892a564546",
+  "NIST.IR.8367.pdf": "16d750362add11340ce63fa714c4b27554798b7266871a7a536ac35857216b99",
+  "NIST.SP.1270.pdf": "334042ba11ed24d7446cc31967e6e1eb4921f50a17eec4eb14ef1bff078f1e09",
+  "NIST.SP.800-218A.pdf": "e088c8bc75716824dae7c36a987f408364638561d381ed001b5c12254a7b10d8",
+  "Paper 1_AI Foundational Issues_NIST_FINAL.pdf": "46583bdc1c155994e758b519a3eef143e429670d6602a9c8d9104fcd7be8d417",
+  "Paper 2_AI and Trustworthiness_NIST_FINAL.pdf": "a40bab13d2f6f608aa1fe64c0f3055cfea1761bf88455e38f0b2d1262e42eb13",
+  "Paper 3_AI Legal Research and Judicial Analytics_NIST_FINAL_1.pdf": "6a818e27e20f2ec68b5e02c12adb836014497b71487264a150455806d93adc4c",
+  "Paper 4_AI and Bias_NIST_FINAL.pdf": "5070d17d2953c2f91bf42ac842b50f0335d231f3cb594933b1eaaf6940b4840e",
+  "ai_standards_fedengagement_plan_9aug2019.pdf": "d04576d061ba84d6de706e38380427c2abeaf599ffe616fcdbd68e624637b1f4"
+ },
+ "tool_versions": {
+  "pandoc": "pandoc 3.11",
+  "pymupdf": "1.28.2",
+  "python": "3.13.15"
+ },
+ "website": "https://kohandezh.com"
+}

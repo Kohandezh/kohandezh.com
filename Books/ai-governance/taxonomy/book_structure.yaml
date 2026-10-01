@@ -1,0 +1,2111 @@
+edition_id: 2026E1
+book_title_fa: راهنمای جامع حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی
+book_title_en: Comprehensive Guide to AI Governance, Security and Risk Management (Persian Edition based on NIST publications)
+generated: 2026-09-17T17:38:01-0400
+parts:
+- id: P01
+  slug: foundations
+  title_fa: مبانی و زبان مشترک هوش مصنوعی
+  title_en: ''
+  sources:
+  - NIST-AI-100-3
+  - NIST-PAPER-1-FOUNDATIONAL
+  chapters:
+  - id: C01
+    slug: foundations-reading-guide
+    origin: editorial_synthesis
+    kind: reading_guide
+    label_fa: راهنمای مطالعه
+    title_fa: ''
+    title_en: Reading guide — foundations
+    sections: []
+  - id: C02
+    slug: nist-ai-100-3-the-language-of-trustworthy-ai-an-in-depth-glo
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-100-3
+    title_fa: ''
+    title_en: 'The Language of Trustworthy AI: An In-Depth Glossary of Terms'
+    sections:
+    - title_en: 1. Glossary Aims
+      section_path: '1'
+      page: '7'
+      block_id: NIST-AI-100-3::P0007::SEC1::B0037
+    - title_en: 2. Glossary Development and Methodology
+      section_path: '2'
+      page: '8'
+      block_id: NIST-AI-100-3::P0008::SEC2::B0054
+    - title_en: 3. Glossary Visualization
+      section_path: '3'
+      page: '10'
+      block_id: NIST-AI-100-3::P0010::SEC3::B0069
+  - id: C03
+    slug: artificial-intelligence-and-the-courts-materials-for-judges-
+    origin: source_translation
+    kind: source
+    source_doc: NIST-PAPER-1-FOUNDATIONAL
+    title_fa: ''
+    title_en: Artificial Intelligence – Foundational Issues and Glossary
+    sections:
+    - title_en: 'Artificial Intelligence and the Courts: Materials for Judges'
+      section_path: ARTIFICIALINTELLIGENCEANDTHE
+      page: 2
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0002::SECARTIFICIALINTELLIGENCEANDTHE::B0009
+    - title_en: Artificial Intelligence – Foundational Issues and Glossary
+      section_path: ARTIFICIALINTELLIGENCEFOUNDA
+      page: 7
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0007::SECARTIFICIALINTELLIGENCEFOUNDA::B0040
+    - title_en: 1. How Artificial Intelligence (AI) Works
+      section_path: '1'
+      page: 7
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0007::SEC1::B0045
+    - title_en: 2. What is AI?
+      section_path: '2'
+      page: 7
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0007::SEC2::B0048
+    - title_en: '2.1. AI’s Features: Short List of Key Characteristics'
+      section_path: '2.1'
+      page: 9
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0009::SEC2.1::B0056
+    - title_en: '2.2. AI in the Courthouse: Several Key Examples'
+      section_path: '2.2'
+      page: 10
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0010::SEC2.2::B0072
+    - title_en: 3. Elements and Types of AI Systems
+      section_path: '3'
+      page: 12
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0012::SEC3::B0084
+    - title_en: 3.1. Use Case Selection
+      section_path: '3.1'
+      page: 13
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0013::SEC3.1::B0092
+    - title_en: 3.2. Design/Selection
+      section_path: '3.2'
+      page: 14
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0014::SEC3.2::B0099
+    - title_en: 3.3. Design/Development
+      section_path: '3.3'
+      page: 17
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0017::SEC3.3::B0122
+    - title_en: 3.4. Deployment and Monitoring
+      section_path: '3.4'
+      page: 20
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0020::SEC3.4::B0153
+    - title_en: 4. Performance of AI Systems
+      section_path: '4'
+      page: 22
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0022::SEC4::B0171
+    - title_en: 5. Inherent Limitations and Risks of AI Systems
+      section_path: '5'
+      page: 23
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0023::SEC5::B0178
+    - title_en: 5.1. Uncertainty and Error
+      section_path: '5.1'
+      page: 24
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0024::SEC5.1::B0188
+    - title_en: 5.2. Bias
+      section_path: '5.2'
+      page: 27
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0027::SEC5.2::B0207
+    - title_en: 5.3. Opaqueness
+      section_path: '5.3'
+      page: 28
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0028::SEC5.3::B0217
+    - title_en: 5.4. Security
+      section_path: '5.4'
+      page: 29
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0029::SEC5.4::B0222
+    - title_en: 6. Who is Regulating AI Systems?
+      section_path: '6'
+      page: 29
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0029::SEC6::B0224
+    - title_en: 7. Conclusion
+      section_path: '7'
+      page: 29
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0029::SEC7::B0226
+    - title_en: 'Annex A: Global Regulation Review<sup>38</sup>'
+      section_path: APPA
+      page: 30
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0030::SECAPPA::B0231
+    - title_en: A.1. United States
+      section_path: A1UNITEDSTATES
+      page: 30
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0030::SECA1UNITEDSTATES::B0234
+    - title_en: A.2. Global
+      section_path: A2GLOBAL
+      page: 31
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0031::SECA2GLOBAL::B0243
+    - title_en: A.3. Specific Countries
+      section_path: A3SPECIFICCOUNTRIES
+      page: 32
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0032::SECA3SPECIFICCOUNTRIES::B0246
+    - title_en: A.4. Global Civil Society
+      section_path: A4GLOBALCIVILSOCIETY
+      page: 34
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0034::SECA4GLOBALCIVILSOCIETY::B0263
+    - title_en: Glossary
+      section_path: GLOSSARY
+      page: 36
+      block_id: NIST-PAPER-1-FOUNDATIONAL::P0036::SECGLOSSARY::B0283
+  - id: C04
+    slug: foundations-synthesis
+    origin: editorial_synthesis
+    kind: comparative_synthesis
+    label_fa: جمع‌بندی تطبیقی
+    title_fa: ''
+    title_en: جمع‌بندی تطبیقی — foundations
+    sections: []
+  - id: C05
+    slug: foundations-for-executives
+    origin: editorial_synthesis
+    kind: executive
+    label_fa: برای مدیران
+    title_fa: ''
+    title_en: برای مدیران — foundations
+    sections: []
+  - id: C06
+    slug: foundations-iran-implementation
+    origin: editorial_localization_ir
+    kind: localization_ir
+    label_fa: کاربرد در سازمان‌های ایرانی
+    title_fa: ''
+    title_en: کاربرد در سازمان‌های ایرانی — foundations
+    sections: []
+- id: P02
+  slug: ai-risk-management
+  title_fa: حاکمیت و مدیریت ریسک هوش مصنوعی
+  title_en: ''
+  sources:
+  - NIST-AI-100-1
+  - NIST-AI-RMF-PLAYBOOK
+  - NIST-AI-600-1
+  chapters:
+  - id: C07
+    slug: ai-risk-management-reading-guide
+    origin: editorial_synthesis
+    kind: reading_guide
+    label_fa: راهنمای مطالعه
+    title_fa: ''
+    title_en: Reading guide — ai-risk-management
+    sections: []
+  - id: C08
+    slug: nist-ai-100-1-artificial-intelligence-risk-management-framew
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-100-1
+    title_fa: ''
+    title_en: Artificial Intelligence Risk Management Framework (AI RMF 1.0)
+    sections:
+    - title_en: Artificial Intelligence Risk Management Framework (AI RMF 1.0)
+      section_path: ARTIFICIALINTELLIGENCERISKMA
+      page: 2
+      block_id: NIST-AI-100-1::P0002::SECARTIFICIALINTELLIGENCERISKMA::B0005
+    - title_en: Executive Summary
+      section_path: EXECUTIVESUMMARY
+      page: 6
+      block_id: NIST-AI-100-1::P0006::SECEXECUTIVESUMMARY::B0021
+    - title_en: 'Part 1: Foundational Information'
+      section_path: PART1FOUNDATIONALINFORMATION
+      page: 9
+      block_id: NIST-AI-100-1::P0009::SECPART1FOUNDATIONALINFORMATION::B0037
+    - title_en: 'Part 2: Core and Profiles'
+      section_path: PART2COREANDPROFILES
+      page: 25
+      block_id: NIST-AI-100-1::P0025::SECPART2COREANDPROFILES::B0149
+    - title_en: 'Appendix A: Descriptions of AI Actor Tasks from Figures 2 and 3'
+      section_path: APPA
+      page: 40
+      block_id: NIST-AI-100-1::P0040::SECAPPA::B0239
+    - title_en: 'Appendix B: How AI Risks Differ from Traditional Software Risks'
+      section_path: APPB
+      page: 43
+      block_id: NIST-AI-100-1::P0043::SECAPPB::B0260
+    - title_en: 'Appendix C: AI Risk Management and Human-AI Interaction'
+      section_path: APPC
+      page: 45
+      block_id: NIST-AI-100-1::P0045::SECAPPC::B0285
+    - title_en: 'Appendix D: Attributes of the AI RMF'
+      section_path: APPD
+      page: 47
+      block_id: NIST-AI-100-1::P0047::SECAPPD::B0297
+  - id: C09
+    slug: nist-ai-risk-management-framework-playbook-govern
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-RMF-PLAYBOOK
+    title_fa: AI Governance — حاکمیت هوش مصنوعی
+    title_en: AI Governance (GOVERN)
+    source_section_root: GOVERN
+    sections:
+    - title_en: GOVERN 1.1
+      title_fa: AI Governance 1.1 — حاکمیت هوش مصنوعی ۱.۱
+      section_path: GOVERN-1.1
+      page: 6
+      block_id: NIST-AI-RMF-PLAYBOOK::P0006::SECGOVERN-1.1::B0017
+    - title_en: GOVERN 1.2
+      title_fa: AI Governance 1.2 — حاکمیت هوش مصنوعی ۱.۲
+      section_path: GOVERN-1.2
+      page: 7
+      block_id: NIST-AI-RMF-PLAYBOOK::P0007::SECGOVERN-1.2::B0040
+    - title_en: GOVERN 1.3
+      title_fa: AI Governance 1.3 — حاکمیت هوش مصنوعی ۱.۳
+      section_path: GOVERN-1.3
+      page: 9
+      block_id: NIST-AI-RMF-PLAYBOOK::P0009::SECGOVERN-1.3::B0083
+    - title_en: GOVERN 1.4
+      title_fa: AI Governance 1.4 — حاکمیت هوش مصنوعی ۱.۴
+      section_path: GOVERN-1.4
+      page: 11
+      block_id: NIST-AI-RMF-PLAYBOOK::P0011::SECGOVERN-1.4::B0106
+    - title_en: GOVERN 1.5
+      title_fa: AI Governance 1.5 — حاکمیت هوش مصنوعی ۱.۵
+      section_path: GOVERN-1.5
+      page: 13
+      block_id: NIST-AI-RMF-PLAYBOOK::P0013::SECGOVERN-1.5::B0149
+    - title_en: GOVERN 1.6
+      title_fa: AI Governance 1.6 — حاکمیت هوش مصنوعی ۱.۶
+      section_path: GOVERN-1.6
+      page: 14
+      block_id: NIST-AI-RMF-PLAYBOOK::P0014::SECGOVERN-1.6::B0174
+    - title_en: GOVERN 1.7
+      title_fa: AI Governance 1.7 — حاکمیت هوش مصنوعی ۱.۷
+      section_path: GOVERN-1.7
+      page: 15
+      block_id: NIST-AI-RMF-PLAYBOOK::P0015::SECGOVERN-1.7::B0198
+    - title_en: GOVERN 2.1
+      title_fa: AI Governance 2.1 — حاکمیت هوش مصنوعی ۲.۱
+      section_path: GOVERN-2.1
+      page: 17
+      block_id: NIST-AI-RMF-PLAYBOOK::P0017::SECGOVERN-2.1::B0228
+    - title_en: GOVERN 2.2
+      title_fa: AI Governance 2.2 — حاکمیت هوش مصنوعی ۲.۲
+      section_path: GOVERN-2.2
+      page: 19
+      block_id: NIST-AI-RMF-PLAYBOOK::P0019::SECGOVERN-2.2::B0268
+    - title_en: GOVERN 2.3
+      title_fa: AI Governance 2.3 — حاکمیت هوش مصنوعی ۲.۳
+      section_path: GOVERN-2.3
+      page: 20
+      block_id: NIST-AI-RMF-PLAYBOOK::P0020::SECGOVERN-2.3::B0299
+    - title_en: GOVERN 3.1
+      title_fa: AI Governance 3.1 — حاکمیت هوش مصنوعی ۳.۱
+      section_path: GOVERN-3.1
+      page: 21
+      block_id: NIST-AI-RMF-PLAYBOOK::P0021::SECGOVERN-3.1::B0324
+    - title_en: GOVERN 3.2
+      title_fa: AI Governance 3.2 — حاکمیت هوش مصنوعی ۳.۲
+      section_path: GOVERN-3.2
+      page: 23
+      block_id: NIST-AI-RMF-PLAYBOOK::P0023::SECGOVERN-3.2::B0356
+    - title_en: GOVERN 4.1
+      title_fa: AI Governance 4.1 — حاکمیت هوش مصنوعی ۴.۱
+      section_path: GOVERN-4.1
+      page: 25
+      block_id: NIST-AI-RMF-PLAYBOOK::P0025::SECGOVERN-4.1::B0386
+    - title_en: GOVERN 4.2
+      title_fa: AI Governance 4.2 — حاکمیت هوش مصنوعی ۴.۲
+      section_path: GOVERN-4.2
+      page: 26
+      block_id: NIST-AI-RMF-PLAYBOOK::P0026::SECGOVERN-4.2::B0416
+    - title_en: GOVERN 4.3
+      title_fa: AI Governance 4.3 — حاکمیت هوش مصنوعی ۴.۳
+      section_path: GOVERN-4.3
+      page: 29
+      block_id: NIST-AI-RMF-PLAYBOOK::P0029::SECGOVERN-4.3::B0456
+    - title_en: GOVERN 5.1
+      title_fa: AI Governance 5.1 — حاکمیت هوش مصنوعی ۵.۱
+      section_path: GOVERN-5.1
+      page: 30
+      block_id: NIST-AI-RMF-PLAYBOOK::P0030::SECGOVERN-5.1::B0485
+    - title_en: GOVERN 5.2
+      title_fa: AI Governance 5.2 — حاکمیت هوش مصنوعی ۵.۲
+      section_path: GOVERN-5.2
+      page: 32
+      block_id: NIST-AI-RMF-PLAYBOOK::P0032::SECGOVERN-5.2::B0521
+    - title_en: GOVERN 6.1
+      title_fa: AI Governance 6.1 — حاکمیت هوش مصنوعی ۶.۱
+      section_path: GOVERN-6.1
+      page: 34
+      block_id: NIST-AI-RMF-PLAYBOOK::P0034::SECGOVERN-6.1::B0551
+    - title_en: GOVERN 6.2
+      title_fa: AI Governance 6.2 — حاکمیت هوش مصنوعی ۶.۲
+      section_path: GOVERN-6.2
+      page: 35
+      block_id: NIST-AI-RMF-PLAYBOOK::P0035::SECGOVERN-6.2::B0582
+  - id: C10
+    slug: nist-ai-risk-management-framework-playbook-manage
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-RMF-PLAYBOOK
+    title_fa: ''
+    title_en: Manage
+    source_section_root: MANAGE
+    sections:
+    - title_en: MANAGE 1.1
+      section_path: MANAGE-1.1
+      page: 38
+      block_id: NIST-AI-RMF-PLAYBOOK::P0038::SECMANAGE-1.1::B0606
+    - title_en: MANAGE 1.2
+      section_path: MANAGE-1.2
+      page: 39
+      block_id: NIST-AI-RMF-PLAYBOOK::P0039::SECMANAGE-1.2::B0633
+    - title_en: MANAGE 1.3
+      section_path: MANAGE-1.3
+      page: 40
+      block_id: NIST-AI-RMF-PLAYBOOK::P0040::SECMANAGE-1.3::B0658
+    - title_en: MANAGE 1.4
+      section_path: MANAGE-1.4
+      page: 42
+      block_id: NIST-AI-RMF-PLAYBOOK::P0042::SECMANAGE-1.4::B0683
+    - title_en: MANAGE 2.1
+      section_path: MANAGE-2.1
+      page: 43
+      block_id: NIST-AI-RMF-PLAYBOOK::P0043::SECMANAGE-2.1::B0709
+    - title_en: MANAGE 2.2
+      section_path: MANAGE-2.2
+      page: 45
+      block_id: NIST-AI-RMF-PLAYBOOK::P0045::SECMANAGE-2.2::B0741
+    - title_en: MANAGE 2.3
+      section_path: MANAGE-2.3
+      page: 51
+      block_id: NIST-AI-RMF-PLAYBOOK::P0051::SECMANAGE-2.3::B0844
+    - title_en: MANAGE 2.4
+      section_path: MANAGE-2.4
+      page: 52
+      block_id: NIST-AI-RMF-PLAYBOOK::P0052::SECMANAGE-2.4::B0872
+    - title_en: MANAGE 3.1
+      section_path: MANAGE-3.1
+      page: 54
+      block_id: NIST-AI-RMF-PLAYBOOK::P0054::SECMANAGE-3.1::B0902
+    - title_en: MANAGE 3.2
+      section_path: MANAGE-3.2
+      page: 55
+      block_id: NIST-AI-RMF-PLAYBOOK::P0055::SECMANAGE-3.2::B0929
+    - title_en: MANAGE 4.1
+      section_path: MANAGE-4.1
+      page: 56
+      block_id: NIST-AI-RMF-PLAYBOOK::P0056::SECMANAGE-4.1::B0951
+    - title_en: MANAGE 4.2
+      section_path: MANAGE-4.2
+      page: 57
+      block_id: NIST-AI-RMF-PLAYBOOK::P0057::SECMANAGE-4.2::B0974
+    - title_en: MANAGE 4.3
+      section_path: MANAGE-4.3
+      page: 59
+      block_id: NIST-AI-RMF-PLAYBOOK::P0059::SECMANAGE-4.3::B0997
+  - id: C11
+    slug: nist-ai-risk-management-framework-playbook-map
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-RMF-PLAYBOOK
+    title_fa: ''
+    title_en: Map
+    source_section_root: MAP
+    sections:
+    - title_en: MAP 1.1
+      section_path: MAP-1.1
+      page: 62
+      block_id: NIST-AI-RMF-PLAYBOOK::P0062::SECMAP-1.1::B1025
+    - title_en: MAP 1.2
+      section_path: MAP-1.2
+      page: 66
+      block_id: NIST-AI-RMF-PLAYBOOK::P0066::SECMAP-1.2::B1104
+    - title_en: MAP 1.3
+      section_path: MAP-1.3
+      page: 67
+      block_id: NIST-AI-RMF-PLAYBOOK::P0067::SECMAP-1.3::B1131
+    - title_en: MAP 1.4
+      section_path: MAP-1.4
+      page: 69
+      block_id: NIST-AI-RMF-PLAYBOOK::P0069::SECMAP-1.4::B1157
+    - title_en: MAP 1.5
+      section_path: MAP-1.5
+      page: 70
+      block_id: NIST-AI-RMF-PLAYBOOK::P0070::SECMAP-1.5::B1180
+    - title_en: MAP 1.6
+      section_path: MAP-1.6
+      page: 72
+      block_id: NIST-AI-RMF-PLAYBOOK::P0072::SECMAP-1.6::B1212
+    - title_en: MAP 2.1
+      section_path: MAP-2.1
+      page: 74
+      block_id: NIST-AI-RMF-PLAYBOOK::P0074::SECMAP-2.1::B1246
+    - title_en: MAP 2.2
+      section_path: MAP-2.2
+      page: 75
+      block_id: NIST-AI-RMF-PLAYBOOK::P0075::SECMAP-2.2::B1268
+    - title_en: MAP 2.3
+      section_path: MAP-2.3
+      page: 78
+      block_id: NIST-AI-RMF-PLAYBOOK::P0078::SECMAP-2.3::B1308
+    - title_en: MAP 3.1
+      section_path: MAP-3.1
+      page: 81
+      block_id: NIST-AI-RMF-PLAYBOOK::P0081::SECMAP-3.1::B1370
+    - title_en: MAP 3.2
+      section_path: MAP-3.2
+      page: 83
+      block_id: NIST-AI-RMF-PLAYBOOK::P0083::SECMAP-3.2::B1398
+    - title_en: MAP 3.3
+      section_path: MAP-3.3
+      page: 84
+      block_id: NIST-AI-RMF-PLAYBOOK::P0084::SECMAP-3.3::B1425
+    - title_en: MAP 3.4
+      section_path: MAP-3.4
+      page: 86
+      block_id: NIST-AI-RMF-PLAYBOOK::P0086::SECMAP-3.4::B1449
+    - title_en: MAP 3.5
+      section_path: MAP-3.5
+      page: 88
+      block_id: NIST-AI-RMF-PLAYBOOK::P0088::SECMAP-3.5::B1489
+    - title_en: MAP 4.1
+      section_path: MAP-4.1
+      page: 90
+      block_id: NIST-AI-RMF-PLAYBOOK::P0090::SECMAP-4.1::B1518
+    - title_en: MAP 4.2
+      section_path: MAP-4.2
+      page: 92
+      block_id: NIST-AI-RMF-PLAYBOOK::P0092::SECMAP-4.2::B1545
+    - title_en: MAP 5.1
+      section_path: MAP-5.1
+      page: 93
+      block_id: NIST-AI-RMF-PLAYBOOK::P0093::SECMAP-5.1::B1567
+    - title_en: MAP 5.2
+      section_path: MAP-5.2
+      page: 94
+      block_id: NIST-AI-RMF-PLAYBOOK::P0094::SECMAP-5.2::B1593
+  - id: C12
+    slug: nist-ai-risk-management-framework-playbook-measure
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-RMF-PLAYBOOK
+    title_fa: ''
+    title_en: Measure
+    source_section_root: MEASURE
+    sections:
+    - title_en: MEASURE 1.1
+      section_path: MEASURE-1.1
+      page: 98
+      block_id: NIST-AI-RMF-PLAYBOOK::P0098::SECMEASURE-1.1::B1633
+    - title_en: MEASURE 1.2
+      section_path: MEASURE-1.2
+      page: 100
+      block_id: NIST-AI-RMF-PLAYBOOK::P0100::SECMEASURE-1.2::B1669
+    - title_en: MEASURE 1.3
+      section_path: MEASURE-1.3
+      page: 101
+      block_id: NIST-AI-RMF-PLAYBOOK::P0101::SECMEASURE-1.3::B1698
+    - title_en: MEASURE 2.1
+      section_path: MEASURE-2.1
+      page: 103
+      block_id: NIST-AI-RMF-PLAYBOOK::P0103::SECMEASURE-2.1::B1728
+    - title_en: MEASURE 2.2
+      section_path: MEASURE-2.2
+      page: 104
+      block_id: NIST-AI-RMF-PLAYBOOK::P0104::SECMEASURE-2.2::B1754
+    - title_en: MEASURE 2.3
+      section_path: MEASURE-2.3
+      page: 107
+      block_id: NIST-AI-RMF-PLAYBOOK::P0107::SECMEASURE-2.3::B1801
+    - title_en: MEASURE 2.4
+      section_path: MEASURE-2.4
+      page: 109
+      block_id: NIST-AI-RMF-PLAYBOOK::P0109::SECMEASURE-2.4::B1841
+    - title_en: MEASURE 2.5
+      section_path: MEASURE-2.5
+      page: 111
+      block_id: NIST-AI-RMF-PLAYBOOK::P0111::SECMEASURE-2.5::B1865
+    - title_en: MEASURE 2.6
+      section_path: MEASURE-2.6
+      page: 113
+      block_id: NIST-AI-RMF-PLAYBOOK::P0113::SECMEASURE-2.6::B1917
+    - title_en: MEASURE 2.7
+      section_path: MEASURE-2.7
+      page: 115
+      block_id: NIST-AI-RMF-PLAYBOOK::P0115::SECMEASURE-2.7::B1954
+    - title_en: MEASURE 2.8
+      section_path: MEASURE-2.8
+      page: 117
+      block_id: NIST-AI-RMF-PLAYBOOK::P0117::SECMEASURE-2.8::B1994
+    - title_en: MEASURE 2.9
+      section_path: MEASURE-2.9
+      page: 120
+      block_id: NIST-AI-RMF-PLAYBOOK::P0120::SECMEASURE-2.9::B2031
+    - title_en: MEASURE 2.10
+      section_path: MEASURE-2.10
+      page: 123
+      block_id: NIST-AI-RMF-PLAYBOOK::P0123::SECMEASURE-2.10::B2081
+    - title_en: MEASURE 2.11
+      section_path: MEASURE-2.11
+      page: 126
+      block_id: NIST-AI-RMF-PLAYBOOK::P0126::SECMEASURE-2.11::B2122
+    - title_en: MEASURE 2.12
+      section_path: MEASURE-2.12
+      page: 131
+      block_id: NIST-AI-RMF-PLAYBOOK::P0131::SECMEASURE-2.12::B2224
+    - title_en: MEASURE 2.13
+      section_path: MEASURE-2.13
+      page: 133
+      block_id: NIST-AI-RMF-PLAYBOOK::P0133::SECMEASURE-2.13::B2253
+    - title_en: MEASURE 3.1
+      section_path: MEASURE-3.1
+      page: 134
+      block_id: NIST-AI-RMF-PLAYBOOK::P0134::SECMEASURE-3.1::B2279
+    - title_en: MEASURE 3.2
+      section_path: MEASURE-3.2
+      page: 136
+      block_id: NIST-AI-RMF-PLAYBOOK::P0136::SECMEASURE-3.2::B2308
+    - title_en: MEASURE 3.3
+      section_path: MEASURE-3.3
+      page: 137
+      block_id: NIST-AI-RMF-PLAYBOOK::P0137::SECMEASURE-3.3::B2344
+    - title_en: MEASURE 4.1
+      section_path: MEASURE-4.1
+      page: 139
+      block_id: NIST-AI-RMF-PLAYBOOK::P0139::SECMEASURE-4.1::B2375
+    - title_en: MEASURE 4.2
+      section_path: MEASURE-4.2
+      page: 142
+      block_id: NIST-AI-RMF-PLAYBOOK::P0142::SECMEASURE-4.2::B2424
+    - title_en: MEASURE 4.3
+      section_path: MEASURE-4.3
+      page: 145
+      block_id: NIST-AI-RMF-PLAYBOOK::P0145::SECMEASURE-4.3::B2464
+  - id: C13
+    slug: nist-ai-600-1-artificial-intelligence-risk-management-framew
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-600-1
+    title_fa: ''
+    title_en: 'Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile'
+    sections:
+    - title_en: NIST Trustworthy and Responsible AI NIST AI 600-1
+      section_path: NISTTRUSTWORTHYANDRESPONSIBL
+      page: 1
+      block_id: NIST-AI-600-1::P0001::SECNISTTRUSTWORTHYANDRESPONSIBL::B0002
+    - title_en: 'Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile'
+      section_path: ARTIFICIALINTELLIGENCERISKMA
+      page: 2
+      block_id: NIST-AI-600-1::P0002::SECARTIFICIALINTELLIGENCERISKMA::B0007
+    - title_en: 1. Introduction
+      section_path: '1'
+      page: 5
+      block_id: NIST-AI-600-1::P0005::SEC1::B0026
+    - title_en: 2. Overview of Risks Unique to or Exacerbated by GAI
+      section_path: '2'
+      page: 6
+      block_id: NIST-AI-600-1::P0006::SEC2::B0037
+    - title_en: 2.1. CBRN Information or Capabilities
+      section_path: '2.1'
+      page: 9
+      block_id: NIST-AI-600-1::P0009::SEC2.1::B0063
+    - title_en: 2.2. Confabulation
+      section_path: '2.2'
+      page: 10
+      block_id: NIST-AI-600-1::P0010::SEC2.2::B0069
+    - title_en: 2.3. Dangerous, Violent, or Hateful Content
+      section_path: '2.3'
+      page: 10
+      block_id: NIST-AI-600-1::P0010::SEC2.3::B0076
+    - title_en: 2.4. Data Privacy
+      section_path: '2.4'
+      page: 11
+      block_id: NIST-AI-600-1::P0011::SEC2.4::B0082
+    - title_en: 2.5. Environmental Impacts
+      section_path: '2.5'
+      page: 12
+      block_id: NIST-AI-600-1::P0012::SEC2.5::B0088
+    - title_en: 2.6. Harmful Bias and Homogenization
+      section_path: '2.6'
+      page: 12
+      block_id: NIST-AI-600-1::P0012::SEC2.6::B0093
+    - title_en: 2.7. Human-AI Configuration
+      section_path: '2.7'
+      page: 13
+      block_id: NIST-AI-600-1::P0013::SEC2.7::B0099
+    - title_en: 2.8. Information Integrity
+      section_path: '2.8'
+      page: 13
+      block_id: NIST-AI-600-1::P0013::SEC2.8::B0104
+    - title_en: 2.9. Information Security
+      section_path: '2.9'
+      page: 14
+      block_id: NIST-AI-600-1::P0014::SEC2.9::B0112
+    - title_en: 2.10. Intellectual Property
+      section_path: '2.10'
+      page: 15
+      block_id: NIST-AI-600-1::P0015::SEC2.10::B0120
+    - title_en: 2.11. Obscene, Degrading, and/or Abusive Content
+      section_path: '2.11'
+      page: 15
+      block_id: NIST-AI-600-1::P0015::SEC2.11::B0123
+    - title_en: 2.12. Value Chain and Component Integration
+      section_path: '2.12'
+      page: 16
+      block_id: NIST-AI-600-1::P0016::SEC2.12::B0128
+    - title_en: 3. Suggested Actions to Manage GAI Risks
+      section_path: '3'
+      page: 16
+      block_id: NIST-AI-600-1::P0016::SEC3::B0132
+    - title_en: Appendix A. Primary GAI Considerations
+      section_path: APPA
+      page: 51
+      block_id: NIST-AI-600-1::P0051::SECAPPA::B0280
+    - title_en: A.1. Governance
+      section_path: A1GOVERNANCE
+      page: 51
+      block_id: NIST-AI-600-1::P0051::SECA1GOVERNANCE::B0283
+    - title_en: Appendix B. References
+      section_path: APPB
+      page: 58
+      block_id: NIST-AI-600-1::P0058::SECAPPB::B0366
+  - id: C14
+    slug: ai-risk-management-synthesis
+    origin: editorial_synthesis
+    kind: comparative_synthesis
+    label_fa: جمع‌بندی تطبیقی
+    title_fa: ''
+    title_en: جمع‌بندی تطبیقی — ai-risk-management
+    sections: []
+  - id: C15
+    slug: ai-risk-management-for-executives
+    origin: editorial_synthesis
+    kind: executive
+    label_fa: برای مدیران
+    title_fa: ''
+    title_en: برای مدیران — ai-risk-management
+    sections: []
+  - id: C16
+    slug: ai-risk-management-iran-implementation
+    origin: editorial_localization_ir
+    kind: localization_ir
+    label_fa: کاربرد در سازمان‌های ایرانی
+    title_fa: ''
+    title_en: کاربرد در سازمان‌های ایرانی — ai-risk-management
+    sections: []
+- id: P03
+  slug: ai-security
+  title_fa: امنیت هوش مصنوعی و مدل‌های بنیادین
+  title_en: ''
+  sources:
+  - NIST-AI-100-2E2025
+  - NIST-AI-800-1-IPD
+  - NIST-SP-800-218A
+  chapters:
+  - id: C17
+    slug: ai-security-reading-guide
+    origin: editorial_synthesis
+    kind: reading_guide
+    label_fa: راهنمای مطالعه
+    title_fa: ''
+    title_en: Reading guide — ai-security
+    sections: []
+  - id: C18
+    slug: nist-ai-100-2e2025-executive-summary
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-100-2E2025
+    title_fa: ''
+    title_en: Executive Summary
+    source_section_root: EXECUTIVESUMMARY
+    sections:
+    - title_en: 2. Predictive AI Taxonomy
+      section_path: '2'
+      page: '17'
+      block_id: NIST-AI-100-2E2025::P0017::SEC2::B0107
+    - title_en: model technology.
+      section_path: MODELTECHNOLOGY
+      page: '19'
+      block_id: NIST-AI-100-2E2025::P0019::SECMODELTECHNOLOGY::B0120
+    - title_en: '[ NISTAML.022 ] [Back to Index]'
+      section_path: NISTAML022BACKTOINDEX
+      page: '24'
+      block_id: NIST-AI-100-2E2025::P0024::SECNISTAML022BACKTOINDEX::B0158
+    - title_en: '[ NISTAML.025 ] [Back to Index]'
+      section_path: NISTAML025BACKTOINDEX
+      page: '28'
+      block_id: NIST-AI-100-2E2025::P0028::SECNISTAML025BACKTOINDEX::B0180
+    - title_en: '[ NISTAML.013 ] [Back to Index]'
+      section_path: NISTAML013BACKTOINDEX
+      page: '32'
+      block_id: NIST-AI-100-2E2025::P0032::SECNISTAML013BACKTOINDEX::B0209
+    - title_en: '[ NISTAML.024 ] [Back to Index]'
+      section_path: NISTAML024BACKTOINDEX
+      page: '34'
+      block_id: NIST-AI-100-2E2025::P0034::SECNISTAML024BACKTOINDEX::B0218
+    - title_en: '[ NISTAML.021, NISTAML.023 ] [Back to Index]'
+      section_path: NISTAML021NISTAML023BACKTOIN
+      page: '35'
+      block_id: NIST-AI-100-2E2025::P0035::SECNISTAML021NISTAML023BACKTOIN::B0225
+    - title_en: '[ NISTAML.011 , NISTAML.026 ] [Back to Index]'
+      section_path: NISTAML011NISTAML026BACKTOIN
+      page: '39'
+      block_id: NIST-AI-100-2E2025::P0039::SECNISTAML011NISTAML026BACKTOIN::B0242
+    - title_en: '[ NISTAML.03 ] [Back to Index]'
+      section_path: NISTAML03BACKTOINDEX
+      page: '41'
+      block_id: NIST-AI-100-2E2025::P0041::SECNISTAML03BACKTOINDEX::B0256
+    - title_en: '[ NISTAML.032 ] [Back to Index]'
+      section_path: NISTAML032BACKTOINDEX
+      page: '41'
+      block_id: NIST-AI-100-2E2025::P0041::SECNISTAML032BACKTOINDEX::B0260
+    - title_en: '[ NISTAML.033 ] [Back to Index]'
+      section_path: NISTAML033BACKTOINDEX
+      page: '42'
+      block_id: NIST-AI-100-2E2025::P0042::SECNISTAML033BACKTOINDEX::B0266
+    - title_en: '[ NISTAML.034 ] [Back to Index]'
+      section_path: NISTAML034BACKTOINDEX
+      page: '43'
+      block_id: NIST-AI-100-2E2025::P0043::SECNISTAML034BACKTOINDEX::B0273
+    - title_en: '[ NISTAML.031 ] [Back to Index]'
+      section_path: NISTAML031BACKTOINDEX
+      page: '44'
+      block_id: NIST-AI-100-2E2025::P0044::SECNISTAML031BACKTOINDEX::B0278
+    - title_en: neural network architectures.
+      section_path: NEURALNETWORKARCHITECTURES
+      page: '45'
+      block_id: NIST-AI-100-2E2025::P0045::SECNEURALNETWORKARCHITECTURES::B0281
+    - title_en: 3. Generative AI Taxonomy
+      section_path: '3'
+      page: '47'
+      block_id: NIST-AI-100-2E2025::P0047::SEC3::B0290
+    - title_en: '[ NISTAML.05 ] [Back to Index]'
+      section_path: NISTAML05BACKTOINDEX
+      page: '54'
+      block_id: NIST-AI-100-2E2025::P0054::SECNISTAML05BACKTOINDEX::B0333
+    - title_en: '[ NISTAML.051 ] [Back to Index]'
+      section_path: NISTAML051BACKTOINDEX
+      page: '55'
+      block_id: NIST-AI-100-2E2025::P0055::SECNISTAML051BACKTOINDEX::B0340
+    - title_en: '[ NISTAML.027] [Back to Index]'
+      section_path: NISTAML027BACKTOINDEX
+      page: '64'
+      block_id: NIST-AI-100-2E2025::P0064::SECNISTAML027BACKTOINDEX::B0404
+    - title_en: 4. Key Challenges and Discussion
+      section_path: '4'
+      page: '68'
+      block_id: NIST-AI-100-2E2025::P0068::SEC4::B0429
+    - title_en: References
+      section_path: REFERENCES
+      page: '74'
+      block_id: NIST-AI-100-2E2025::P0074::SECREFERENCES::B0468
+    - title_en: Appendix A. Glossary
+      section_path: APPA
+      page: '120'
+      block_id: NIST-AI-100-2E2025::P0120::SECAPPA::B0943
+    - title_en: A
+      section_path: A
+      page: '120'
+      block_id: NIST-AI-100-2E2025::P0120::SECA::B0945
+    - title_en: B
+      section_path: B
+      page: '120'
+      block_id: NIST-AI-100-2E2025::P0120::SECB::B0953
+    - title_en: C
+      section_path: C
+      page: '120'
+      block_id: NIST-AI-100-2E2025::P0120::SECC::B0956
+    - title_en: D
+      section_path: D
+      page: '121'
+      block_id: NIST-AI-100-2E2025::P0121::SECD::B0959
+    - title_en: E
+      section_path: E
+      page: '121'
+      block_id: NIST-AI-100-2E2025::P0121::SECE::B0969
+    - title_en: G
+      section_path: G
+      page: '122'
+      block_id: NIST-AI-100-2E2025::P0122::SECG::B0980
+    - title_en: H
+      section_path: H
+      page: '122'
+      block_id: NIST-AI-100-2E2025::P0122::SECH::B0984
+    - title_en: I
+      section_path: I
+      page: '123'
+      block_id: NIST-AI-100-2E2025::P0123::SECI::B0986
+    - title_en: M
+      section_path: M
+      page: '123'
+      block_id: NIST-AI-100-2E2025::P0123::SECM::B0995
+    - title_en: O
+      section_path: O
+      page: '124'
+      block_id: NIST-AI-100-2E2025::P0124::SECO::B1004
+    - title_en: P
+      section_path: P
+      page: '124'
+      block_id: NIST-AI-100-2E2025::P0124::SECP::B1006
+    - title_en: Q
+      section_path: Q
+      page: '124'
+      block_id: NIST-AI-100-2E2025::P0124::SECQ::B1013
+    - title_en: S
+      section_path: S
+      page: '125'
+      block_id: NIST-AI-100-2E2025::P0125::SECS::B1022
+  - id: C19
+    slug: nist-ai-100-2e2025-1-introduction
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-100-2E2025
+    title_fa: ''
+    title_en: 1. Introduction
+    source_section_root: '1'
+    sections: []
+  - id: C20
+    slug: nist-ai-100-2e2025-2-predictive-ai-taxonomy
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-100-2E2025
+    title_fa: ''
+    title_en: 2. Predictive AI Taxonomy
+    source_section_root: '2'
+    sections:
+    - title_en: 2.1. Attack Classification
+      section_path: '2.1'
+      page: 17
+      block_id: NIST-AI-100-2E2025::P0017::SEC2.1::B0108
+    - title_en: 2.1.1. Stages of Learning
+      section_path: 2.1.1
+      page: 18
+      block_id: NIST-AI-100-2E2025::P0018::SEC2.1.1::B0114
+    - title_en: 2.1.2. Attacker Goals and Objectives
+      section_path: 2.1.2
+      page: 19
+      block_id: NIST-AI-100-2E2025::P0019::SEC2.1.2::B0122
+    - title_en: 2.1.3. Attacker Capabilities
+      section_path: 2.1.3
+      page: 20
+      block_id: NIST-AI-100-2E2025::P0020::SEC2.1.3::B0129
+    - title_en: 2.1.4. Attacker Knowledge
+      section_path: 2.1.4
+      page: 21
+      block_id: NIST-AI-100-2E2025::P0021::SEC2.1.4::B0139
+    - title_en: 2.1.5. Data Modality
+      section_path: 2.1.5
+      page: 22
+      block_id: NIST-AI-100-2E2025::P0022::SEC2.1.5::B0144
+    - title_en: 2.2. Evasion Attacks and Mitigations
+      section_path: '2.2'
+      page: 24
+      block_id: NIST-AI-100-2E2025::P0024::SEC2.2::B0157
+    - title_en: 2.2.1. White-Box Evasion Attacks
+      section_path: 2.2.1
+      page: 25
+      block_id: NIST-AI-100-2E2025::P0025::SEC2.2.1::B0163
+    - title_en: 2.2.2. Black-Box Evasion Attacks
+      section_path: 2.2.2
+      page: 28
+      block_id: NIST-AI-100-2E2025::P0028::SEC2.2.2::B0179
+    - title_en: 2.2.3. Transferability of Attacks
+      section_path: 2.2.3
+      page: 28
+      block_id: NIST-AI-100-2E2025::P0028::SEC2.2.3::B0185
+    - title_en: 2.2.4. Evasion attacks in the real world
+      section_path: 2.2.4
+      page: 29
+      block_id: NIST-AI-100-2E2025::P0029::SEC2.2.4::B0188
+    - title_en: 2.2.5. Mitigations
+      section_path: 2.2.5
+      page: 30
+      block_id: NIST-AI-100-2E2025::P0030::SEC2.2.5::B0193
+    - title_en: 2.3. Poisoning Attacks and Mitigations
+      section_path: '2.3'
+      page: 32
+      block_id: NIST-AI-100-2E2025::P0032::SEC2.3::B0204
+    - title_en: 2.3.1. Availability Poisoning
+      section_path: 2.3.1
+      page: 32
+      block_id: NIST-AI-100-2E2025::P0032::SEC2.3.1::B0208
+    - title_en: 2.3.2. Targeted Poisoning
+      section_path: 2.3.2
+      page: 34
+      block_id: NIST-AI-100-2E2025::P0034::SEC2.3.2::B0217
+    - title_en: 2.3.3. Backdoor Poisoning
+      section_path: 2.3.3
+      page: 35
+      block_id: NIST-AI-100-2E2025::P0035::SEC2.3.3::B0224
+    - title_en: 2.3.4. Model Poisoning
+      section_path: 2.3.4
+      page: 39
+      block_id: NIST-AI-100-2E2025::P0039::SEC2.3.4::B0241
+    - title_en: 2.3.5. Poisoning Attacks in the Real World
+      section_path: 2.3.5
+      page: 40
+      block_id: NIST-AI-100-2E2025::P0040::SEC2.3.5::B0251
+    - title_en: 2.4. Privacy Attacks and Mitigations
+      section_path: '2.4'
+      page: 41
+      block_id: NIST-AI-100-2E2025::P0041::SEC2.4::B0255
+    - title_en: 2.4.1. Data Reconstruction
+      section_path: 2.4.1
+      page: 41
+      block_id: NIST-AI-100-2E2025::P0041::SEC2.4.1::B0259
+    - title_en: 2.4.2. Membership Inference
+      section_path: 2.4.2
+      page: 42
+      block_id: NIST-AI-100-2E2025::P0042::SEC2.4.2::B0265
+    - title_en: 2.4.3. Property Inference
+      section_path: 2.4.3
+      page: 43
+      block_id: NIST-AI-100-2E2025::P0043::SEC2.4.3::B0272
+    - title_en: 2.4.4. Model Extraction
+      section_path: 2.4.4
+      page: 44
+      block_id: NIST-AI-100-2E2025::P0044::SEC2.4.4::B0277
+    - title_en: 2.4.5. Mitigations
+      section_path: 2.4.5
+      page: 45
+      block_id: NIST-AI-100-2E2025::P0045::SEC2.4.5::B0283
+  - id: C21
+    slug: nist-ai-100-2e2025-3-generative-ai-taxonomy
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-100-2E2025
+    title_fa: ''
+    title_en: 3. Generative AI Taxonomy
+    source_section_root: '3'
+    sections:
+    - title_en: 3.1. Attack Classification
+      section_path: '3.1'
+      page: 47
+      block_id: NIST-AI-100-2E2025::P0047::SEC3.1::B0292
+    - title_en: 3.1.1. GenAI Stages of Learning
+      section_path: 3.1.1
+      page: 49
+      block_id: NIST-AI-100-2E2025::P0049::SEC3.1.1::B0298
+    - title_en: 3.1.2. Attacker Goals and Objectives
+      section_path: 3.1.2
+      page: 52
+      block_id: NIST-AI-100-2E2025::P0052::SEC3.1.2::B0318
+    - title_en: 3.1.3. Attacker Capabilities
+      section_path: 3.1.3
+      page: 53
+      block_id: NIST-AI-100-2E2025::P0053::SEC3.1.3::B0325
+    - title_en: 3.2. Supply Chain Attacks and Mitigations
+      section_path: '3.2'
+      page: 54
+      block_id: NIST-AI-100-2E2025::P0054::SEC3.2::B0332
+    - title_en: 3.2.1. Data Poisoning Attacks
+      section_path: 3.2.1
+      page: 55
+      block_id: NIST-AI-100-2E2025::P0055::SEC3.2.1::B0335
+    - title_en: 3.2.2. Model Poisoning Attacks
+      section_path: 3.2.2
+      page: 55
+      block_id: NIST-AI-100-2E2025::P0055::SEC3.2.2::B0339
+    - title_en: 3.2.3. Mitigations
+      section_path: 3.2.3
+      page: 55
+      block_id: NIST-AI-100-2E2025::P0055::SEC3.2.3::B0342
+    - title_en: 3.3. Direct Prompting Attacks and Mitigations
+      section_path: '3.3'
+      page: 56
+      block_id: NIST-AI-100-2E2025::P0056::SEC3.3::B0345
+    - title_en: 3.3.1. Attack Techniques
+      section_path: 3.3.1
+      page: 57
+      block_id: NIST-AI-100-2E2025::P0057::SEC3.3.1::B0352
+    - title_en: 3.3.2. Information Extraction
+      section_path: 3.3.2
+      page: 59
+      block_id: NIST-AI-100-2E2025::P0059::SEC3.3.2::B0371
+    - title_en: 3.3.3. Mitigations
+      section_path: 3.3.3
+      page: 61
+      block_id: NIST-AI-100-2E2025::P0061::SEC3.3.3::B0378
+    - title_en: 3.4. Indirect Prompt Injection Attacks and Mitigations
+      section_path: '3.4'
+      page: 63
+      block_id: NIST-AI-100-2E2025::P0063::SEC3.4::B0395
+    - title_en: 3.4.1. Availability Attacks
+      section_path: 3.4.1
+      page: 64
+      block_id: NIST-AI-100-2E2025::P0064::SEC3.4.1::B0397
+    - title_en: 3.4.2. Integrity Attacks
+      section_path: 3.4.2
+      page: 64
+      block_id: NIST-AI-100-2E2025::P0064::SEC3.4.2::B0403
+    - title_en: 3.4.3. Privacy Compromise
+      section_path: 3.4.3
+      page: 65
+      block_id: NIST-AI-100-2E2025::P0065::SEC3.4.3::B0413
+    - title_en: 3.4.4. Mitigations
+      section_path: 3.4.4
+      page: 66
+      block_id: NIST-AI-100-2E2025::P0066::SEC3.4.4::B0418
+    - title_en: 3.5. Security of Agents
+      section_path: '3.5'
+      page: 67
+      block_id: NIST-AI-100-2E2025::P0067::SEC3.5::B0424
+    - title_en: 3.6. Benchmarks for AML Vulnerabilities
+      section_path: '3.6'
+      page: 67
+      block_id: NIST-AI-100-2E2025::P0067::SEC3.6::B0427
+  - id: C22
+    slug: nist-ai-100-2e2025-4-key-challenges-and-discussion
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-100-2E2025
+    title_fa: ''
+    title_en: 4. Key Challenges and Discussion
+    source_section_root: '4'
+    sections:
+    - title_en: 4.1. Key Challenges in AML
+      section_path: '4.1'
+      page: 68
+      block_id: NIST-AI-100-2E2025::P0068::SEC4.1::B0430
+    - title_en: 4.1.1. Trade-Offs Between the Attributes of Trustworthy AI
+      section_path: 4.1.1
+      page: 68
+      block_id: NIST-AI-100-2E2025::P0068::SEC4.1.1::B0432
+    - title_en: 4.1.2. Theoretical Limitations on Adversarial Robustness
+      section_path: 4.1.2
+      page: 69
+      block_id: NIST-AI-100-2E2025::P0069::SEC4.1.2::B0437
+    - title_en: 4.1.3. Evaluation
+      section_path: 4.1.3
+      page: 70
+      block_id: NIST-AI-100-2E2025::P0070::SEC4.1.3::B0441
+    - title_en: 4.2. Discussion
+      section_path: '4.2'
+      page: 70
+      block_id: NIST-AI-100-2E2025::P0070::SEC4.2::B0445
+    - title_en: 4.2.1. The Scale Challenge
+      section_path: 4.2.1
+      page: 70
+      block_id: NIST-AI-100-2E2025::P0070::SEC4.2.1::B0446
+    - title_en: 4.2.2. Supply Chain Challenges
+      section_path: 4.2.2
+      page: 71
+      block_id: NIST-AI-100-2E2025::P0071::SEC4.2.2::B0450
+    - title_en: 4.2.3. Multimodal Models
+      section_path: 4.2.3
+      page: 71
+      block_id: NIST-AI-100-2E2025::P0071::SEC4.2.3::B0453
+    - title_en: 4.2.4. Quantized Models
+      section_path: 4.2.4
+      page: 72
+      block_id: NIST-AI-100-2E2025::P0072::SEC4.2.4::B0456
+    - title_en: 4.2.5. Risk Management in Light of AML
+      section_path: 4.2.5
+      page: 72
+      block_id: NIST-AI-100-2E2025::P0072::SEC4.2.5::B0459
+    - title_en: 4.2.6. AML and Other AI System Characteristics
+      section_path: 4.2.6
+      page: 73
+      block_id: NIST-AI-100-2E2025::P0073::SEC4.2.6::B0464
+    - title_en: References
+      section_path: REFERENCES
+      page: 74
+      block_id: NIST-AI-100-2E2025::P0074::SECREFERENCES::B0468
+    - title_en: Appendix A. Glossary
+      section_path: APPA
+      page: 120
+      block_id: NIST-AI-100-2E2025::P0120::SECAPPA::B0943
+    - title_en: A
+      section_path: A
+      page: 120
+      block_id: NIST-AI-100-2E2025::P0120::SECA::B0945
+    - title_en: B
+      section_path: B
+      page: 120
+      block_id: NIST-AI-100-2E2025::P0120::SECB::B0953
+    - title_en: C
+      section_path: C
+      page: 120
+      block_id: NIST-AI-100-2E2025::P0120::SECC::B0956
+    - title_en: D
+      section_path: D
+      page: 121
+      block_id: NIST-AI-100-2E2025::P0121::SECD::B0959
+    - title_en: E
+      section_path: E
+      page: 121
+      block_id: NIST-AI-100-2E2025::P0121::SECE::B0969
+    - title_en: G
+      section_path: G
+      page: 122
+      block_id: NIST-AI-100-2E2025::P0122::SECG::B0980
+    - title_en: H
+      section_path: H
+      page: 122
+      block_id: NIST-AI-100-2E2025::P0122::SECH::B0984
+    - title_en: I
+      section_path: I
+      page: 123
+      block_id: NIST-AI-100-2E2025::P0123::SECI::B0986
+    - title_en: M
+      section_path: M
+      page: 123
+      block_id: NIST-AI-100-2E2025::P0123::SECM::B0995
+    - title_en: O
+      section_path: O
+      page: 124
+      block_id: NIST-AI-100-2E2025::P0124::SECO::B1004
+    - title_en: P
+      section_path: P
+      page: 124
+      block_id: NIST-AI-100-2E2025::P0124::SECP::B1006
+    - title_en: Q
+      section_path: Q
+      page: 124
+      block_id: NIST-AI-100-2E2025::P0124::SECQ::B1013
+    - title_en: S
+      section_path: S
+      page: 125
+      block_id: NIST-AI-100-2E2025::P0125::SECS::B1022
+  - id: C23
+    slug: nist-ai-800-1-ipd-managing-misuse-risk-for-dual-use-foundati
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-800-1-IPD
+    title_fa: ''
+    title_en: Managing Misuse Risk for Dual-Use Foundation Models
+    sections:
+    - title_en: 1. INTRODUCTION
+      section_path: '1'
+      page: '5'
+      block_id: NIST-AI-800-1-IPD::P0005::SEC1::B0018
+    - title_en: 3. KEY CHALLENGES IN MAPPING AND MEASURING MISUSE RISKS
+      section_path: '3'
+      page: '7'
+      block_id: NIST-AI-800-1-IPD::P0007::SEC3::B0029
+    - title_en: 4. OBJECTIVES AND PRACTICES TO MANAGE MISUSE RISKS
+      section_path: '4'
+      page: '9'
+      block_id: NIST-AI-800-1-IPD::P0009::SEC4::B0042
+    - title_en: Appendix A. Glossary
+      section_path: APPA
+      page: '23'
+      block_id: NIST-AI-800-1-IPD::P0023::SECAPPA::B0345
+  - id: C24
+    slug: nist-sp-800-218a-secure-software-development-practices-for-g
+    origin: source_translation
+    kind: source
+    source_doc: NIST-SP-800-218A
+    title_fa: ''
+    title_en: Secure Software Development Practices for Generative AI and Dual-Use Foundation Models
+    sections:
+    - title_en: NIST Special Publication 800 NIST SP 800-218A
+      section_path: NISTSPECIALPUBLICATION800NIS
+      page: 1
+      block_id: NIST-SP-800-218A::P0001::SECNISTSPECIALPUBLICATION800NIS::B0002
+    - title_en: Secure Software Development Practices for Generative AI and Dual-Use Foundation Models
+      section_path: SECURESOFTWAREDEVELOPMENTPRA
+      page: 1
+      block_id: NIST-SP-800-218A::P0001::SECSECURESOFTWAREDEVELOPMENTPRA::B0003
+    - title_en: NIST Special Publication 800 NIST SP 800-218A
+      section_path: NISTSPECIALPUBLICATION800NIS
+      page: 2
+      block_id: NIST-SP-800-218A::P0002::SECNISTSPECIALPUBLICATION800NIS::B0008
+    - title_en: Secure Software Development Practices for Generative AI and Dual-Use Foundation Models
+      section_path: SECURESOFTWAREDEVELOPMENTPRA
+      page: 2
+      block_id: NIST-SP-800-218A::P0002::SECSECURESOFTWAREDEVELOPMENTPRA::B0009
+    - title_en: 1. Introduction
+      section_path: '1'
+      page: 9
+      block_id: NIST-SP-800-218A::P0009::SEC1::B0069
+    - title_en: 2. Using the SSDF Community Profile
+      section_path: '2'
+      page: 12
+      block_id: NIST-SP-800-218A::P0012::SEC2::B0095
+    - title_en: 3. SSDF Community Profile for AI Model Development
+      section_path: '3'
+      page: 14
+      block_id: NIST-SP-800-218A::P0014::SEC3::B0111
+    - title_en: References
+      section_path: REFERENCES
+      page: 28
+      block_id: NIST-SP-800-218A::P0028::SECREFERENCES::B0147
+    - title_en: Appendix A. Glossary
+      section_path: APPA
+      page: 30
+      block_id: NIST-SP-800-218A::P0030::SECAPPA::B0168
+  - id: C25
+    slug: ai-security-synthesis
+    origin: editorial_synthesis
+    kind: comparative_synthesis
+    label_fa: جمع‌بندی تطبیقی
+    title_fa: ''
+    title_en: جمع‌بندی تطبیقی — ai-security
+    sections: []
+  - id: C26
+    slug: ai-security-for-executives
+    origin: editorial_synthesis
+    kind: executive
+    label_fa: برای مدیران
+    title_fa: ''
+    title_en: برای مدیران — ai-security
+    sections: []
+  - id: C27
+    slug: ai-security-iran-implementation
+    origin: editorial_localization_ir
+    kind: localization_ir
+    label_fa: کاربرد در سازمان‌های ایرانی
+    title_fa: ''
+    title_en: کاربرد در سازمان‌های ایرانی — ai-security
+    sections: []
+- id: P04
+  slug: trust-bias-explainability
+  title_fa: اعتماد، سوگیری، توضیح‌پذیری و تفسیرپذیری
+  title_en: ''
+  sources:
+  - NIST-IR-8312
+  - NIST-IR-8367
+  - NIST-SP-1270
+  chapters:
+  - id: C28
+    slug: trust-bias-explainability-reading-guide
+    origin: editorial_synthesis
+    kind: reading_guide
+    label_fa: راهنمای مطالعه
+    title_fa: ''
+    title_en: Reading guide — trust-bias-explainability
+    sections: []
+  - id: C29
+    slug: nistir-8312-four-principles-of-explainable-artificial-intell
+    origin: source_translation
+    kind: source
+    source_doc: NIST-IR-8312
+    title_fa: ''
+    title_en: Four Principles of Explainable Artificial Intelligence
+    sections:
+    - title_en: 1. Introduction
+      section_path: '1'
+      page: '8'
+      block_id: NIST-IR-8312::P0008::SEC1::B0037
+    - title_en: 2. Four Principles of Explainable AI
+      section_path: '2'
+      page: '9'
+      block_id: NIST-IR-8312::P0009::SEC2::B0045
+    - title_en: 3. Purposes and styles of explanations
+      section_path: '3'
+      page: '13'
+      block_id: NIST-IR-8312::P0013::SEC3::B0073
+    - title_en: 4. Risk Management of Explainable AI
+      section_path: '4'
+      page: '15'
+      block_id: NIST-IR-8312::P0015::SEC4::B0087
+    - title_en: 5. Overview of Principles in the Literature
+      section_path: '5'
+      page: '17'
+      block_id: NIST-IR-8312::P0017::SEC5::B0100
+    - title_en: 6. Overview of Explainable AI Algorithms
+      section_path: '6'
+      page: '19'
+      block_id: NIST-IR-8312::P0019::SEC6::B0115
+    - title_en: 7. Evaluating Explainable AI Algorithms
+      section_path: '7'
+      page: '22'
+      block_id: NIST-IR-8312::P0022::SEC7::B0141
+    - title_en: 8. Humans as a Comparison Group for Explainable AI
+      section_path: '8'
+      page: '25'
+      block_id: NIST-IR-8312::P0025::SEC8::B0152
+    - title_en: 9. Discussion and Conclusions
+      section_path: '9'
+      page: '28'
+      block_id: NIST-IR-8312::P0028::SEC9::B0174
+  - id: C30
+    slug: nistir-8367-psychological-foundations-of-explainability-and-
+    origin: source_translation
+    kind: source
+    source_doc: NIST-IR-8367
+    title_fa: ''
+    title_en: Psychological Foundations of Explainability and Interpretability in Artificial Intelligence
+    sections:
+    - title_en: 1. Introduction
+      section_path: '1'
+      page: '9'
+      block_id: NIST-IR-8367::P0009::SEC1::B0046
+    - title_en: 2. The Psychology of Interpretability and Explainability
+      section_path: '2'
+      page: '17'
+      block_id: NIST-IR-8367::P0017::SEC2::B0087
+    - title_en: 3. Computer Science Definitions of Interpretability and Explainability
+      section_path: '3'
+      page: '28'
+      block_id: NIST-IR-8367::P0028::SEC3::B0143
+    - title_en: 4. Incorporating Insights from Psychology Into Design
+      section_path: '4'
+      page: '39'
+      block_id: NIST-IR-8367::P0039::SEC4::B0194
+    - title_en: 5. Conclusion
+      section_path: '5'
+      page: '46'
+      block_id: NIST-IR-8367::P0046::SEC5::B0223
+  - id: C31
+    slug: nist-special-publication-1270-nist-special-publication-1270
+    origin: source_translation
+    kind: source
+    source_doc: NIST-SP-1270
+    title_fa: ''
+    title_en: NIST Special Publication 1270
+    source_section_root: NISTSPECIALPUBLICATION1270
+    sections:
+    - title_en: 1. Purpose and Scope
+      section_path: '1'
+      page: '10'
+      block_id: NIST-SP-1270::P0010::SEC1::B0064
+    - title_en: '2. AI Bias: Context and Terminology'
+      section_path: '2'
+      page: '12'
+      block_id: NIST-SP-1270::P0012::SEC2::B0074
+    - title_en: '3. AI Bias: Challenges and Guidance'
+      section_path: '3'
+      page: '23'
+      block_id: NIST-SP-1270::P0023::SEC3::B0131
+    - title_en: 4. Conclusions
+      section_path: '4'
+      page: '56'
+      block_id: NIST-SP-1270::P0056::SEC4::B0319
+    - title_en: 5. Glossary
+      section_path: '5'
+      page: '58'
+      block_id: NIST-SP-1270::P0058::SEC5::B0328
+  - id: C32
+    slug: trust-bias-explainability-synthesis
+    origin: editorial_synthesis
+    kind: comparative_synthesis
+    label_fa: جمع‌بندی تطبیقی
+    title_fa: ''
+    title_en: جمع‌بندی تطبیقی — trust-bias-explainability
+    sections: []
+  - id: C33
+    slug: trust-bias-explainability-for-executives
+    origin: editorial_synthesis
+    kind: executive
+    label_fa: برای مدیران
+    title_fa: ''
+    title_en: برای مدیران — trust-bias-explainability
+    sections: []
+  - id: C34
+    slug: trust-bias-explainability-iran-implementation
+    origin: editorial_localization_ir
+    kind: localization_ir
+    label_fa: کاربرد در سازمان‌های ایرانی
+    title_fa: ''
+    title_en: کاربرد در سازمان‌های ایرانی — trust-bias-explainability
+    sections: []
+- id: P05
+  slug: genai-evaluation
+  title_fa: ارزیابی هوش مصنوعی مولد و محتوای مصنوعی
+  title_en: ''
+  sources:
+  - NIST-AI-700-1
+  - NIST-AI-700-2
+  - NIST-AI-100-4-IPD
+  chapters:
+  - id: C35
+    slug: genai-evaluation-reading-guide
+    origin: editorial_synthesis
+    kind: reading_guide
+    label_fa: راهنمای مطالعه
+    title_fa: ''
+    title_en: Reading guide — genai-evaluation
+    sections: []
+  - id: C36
+    slug: nist-ai-700-1-2024-nist-genai-pilot-study-text-to-text-evalu
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-700-1
+    title_fa: ''
+    title_en: '2024 NIST GenAI (Pilot Study): Text-to-Text Evaluation Overview and Results'
+    sections:
+    - title_en: 1. Introduction
+      section_path: '1'
+      page: '10'
+      block_id: NIST-AI-700-1::P0010::SEC1::B0049
+    - title_en: 2. Related Work
+      section_path: '2'
+      page: '11'
+      block_id: NIST-AI-700-1::P0011::SEC2::B0058
+    - title_en: 3. Evaluation Framework
+      section_path: '3'
+      page: '13'
+      block_id: NIST-AI-700-1::P0013::SEC3::B0078
+    - title_en: 4. Evaluation Infrastructure
+      section_path: '4'
+      page: '15'
+      block_id: NIST-AI-700-1::P0015::SEC4::B0088
+    - title_en: 5. Tasks
+      section_path: '5'
+      page: '23'
+      block_id: NIST-AI-700-1::P0023::SEC5::B0229
+    - title_en: 6. Performance Metrics
+      section_path: '6'
+      page: '25'
+      block_id: NIST-AI-700-1::P0025::SEC6::B0240
+    - title_en: 7. Data and Submissions
+      section_path: '7'
+      page: '29'
+      block_id: NIST-AI-700-1::P0029::SEC7::B0287
+    - title_en: 8. Data Analyses and Results
+      section_path: '8'
+      page: '35'
+      block_id: NIST-AI-700-1::P0035::SEC8::B0341
+    - title_en: 9. Strengths, Limitations, and Challenges
+      section_path: '9'
+      page: '50'
+      block_id: NIST-AI-700-1::P0050::SEC9::B0406
+    - title_en: 10. Conclusion
+      section_path: '10'
+      page: '52'
+      block_id: NIST-AI-700-1::P0052::SEC10::B0422
+    - title_en: 11. Recommendations for Future Work
+      section_path: '11'
+      page: '52'
+      block_id: NIST-AI-700-1::P0052::SEC11::B0424
+  - id: C37
+    slug: nist-ai-700-2-assessing-risks-and-impacts-of-ai-aria
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-700-2
+    title_fa: ''
+    title_en: Assessing Risks and Impacts of AI (ARIA)
+    sections:
+    - title_en: 1. Introduction
+      section_path: '1'
+      page: '8'
+      block_id: NIST-AI-700-2::P0008::SEC1::B0044
+    - title_en: 2. Testing Layer
+      section_path: '2'
+      page: '9'
+      block_id: NIST-AI-700-2::P0009::SEC2::B0052
+    - title_en: 3. Assessment Layer
+      section_path: '3'
+      page: '11'
+      block_id: NIST-AI-700-2::P0011::SEC3::B0079
+    - title_en: 4. Crosswalk
+      section_path: '4'
+      page: '14'
+      block_id: NIST-AI-700-2::P0014::SEC4::B0111
+    - title_en: 5. Measurement Layer
+      section_path: '5'
+      page: '15'
+      block_id: NIST-AI-700-2::P0015::SEC5::B0117
+    - title_en: 6. Future Directions
+      section_path: '6'
+      page: '20'
+      block_id: NIST-AI-700-2::P0020::SEC6::B0159
+    - title_en: 7. Conclusion
+      section_path: '7'
+      page: '21'
+      block_id: NIST-AI-700-2::P0021::SEC7::B0165
+    - title_en: Appendix A. Glossary
+      section_path: APPA
+      page: '23'
+      block_id: NIST-AI-700-2::P0023::SECAPPA::B0175
+    - title_en: Appendix B. Testing Materials
+      section_path: APPB
+      page: '26'
+      block_id: NIST-AI-700-2::P0026::SECAPPB::B0237
+    - title_en: Appendix C. Annotation Quantitative Summary
+      section_path: APPC
+      page: '29'
+      block_id: NIST-AI-700-2::P0029::SECAPPC::B0253
+    - title_en: Appendix D. Post-Task Questionnaires
+      section_path: APPD
+      page: '30'
+      block_id: NIST-AI-700-2::P0030::SECAPPD::B0261
+    - title_en: Appendix E. Example CoRIx Results
+      section_path: APPE
+      page: '33'
+      block_id: NIST-AI-700-2::P0033::SECAPPE::B0299
+  - id: C38
+    slug: nist-ai-100-4-reducing-risks-posed-by-synthetic-content
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-100-4-IPD
+    title_fa: ''
+    title_en: Reducing Risks Posed by Synthetic Content
+    source_section_root: REDUCINGRISKSPOSEDBYSYNTHETI
+    sections:
+    - title_en: Reducing Risks Posed by Synthetic Content
+      section_path: FM
+      page: '1'
+      block_id: NIST-AI-100-4-IPD::P0001::SECFM::B0002
+    - title_en: 2. Harms and Risks from Synthetic Content
+      section_path: '2'
+      page: '7'
+      block_id: NIST-AI-100-4-IPD::P0007::SEC2::B0055
+    - title_en: 3.1.1. Digital Watermarking
+      section_path: 3.1.1
+      page: '11'
+      block_id: NIST-AI-100-4-IPD::P0011::SEC3.1.1::B0102
+    - title_en: 3.1.2. Metadata Recording
+      section_path: 3.1.2
+      page: '19'
+      block_id: NIST-AI-100-4-IPD::P0019::SEC3.1.2::B0169
+    - title_en: 3.1.2.1. Authenticating Metadata
+      section_path: 3.1.2.1
+      page: '21'
+      block_id: NIST-AI-100-4-IPD::P0021::SEC3.1.2.1::B0190
+    - title_en: 3.1.2.2. Metadata and Content Authentication
+      section_path: 3.1.2.2
+      page: '21'
+      block_id: NIST-AI-100-4-IPD::P0021::SEC3.1.2.2::B0197
+    - title_en: 3.1.3. Effectiveness of Provenance Data Tracking Techniques Across Different Types of Content
+      section_path: 3.1.3
+      page: '23'
+      block_id: NIST-AI-100-4-IPD::P0023::SEC3.1.3::B0220
+    - title_en: 3.1.3.1. Images
+      section_path: 3.1.3.1
+      page: '24'
+      block_id: NIST-AI-100-4-IPD::P0024::SEC3.1.3.1::B0222
+    - title_en: 3.1.3.2. Text
+      section_path: 3.1.3.2
+      page: '24'
+      block_id: NIST-AI-100-4-IPD::P0024::SEC3.1.3.2::B0228
+    - title_en: 3.1.3.3. Audio
+      section_path: 3.1.3.3
+      page: '24'
+      block_id: NIST-AI-100-4-IPD::P0024::SEC3.1.3.3::B0231
+    - title_en: 3.1.3.4. Video
+      section_path: 3.1.3.4
+      page: '25'
+      block_id: NIST-AI-100-4-IPD::P0025::SEC3.1.3.4::B0237
+    - title_en: 3.1.4. Synthetic Content Detection
+      section_path: 3.1.4
+      page: '26'
+      block_id: NIST-AI-100-4-IPD::P0026::SEC3.1.4::B0242
+    - title_en: 3.1.4.2. Synthetic Image Detection
+      section_path: 3.1.4.2
+      page: '27'
+      block_id: NIST-AI-100-4-IPD::P0027::SEC3.1.4.2::B0265
+    - title_en: 3.1.4.3. Synthetic Video Detection
+      section_path: 3.1.4.3
+      page: '29'
+      block_id: NIST-AI-100-4-IPD::P0029::SEC3.1.4.3::B0302
+    - title_en: 3.1.4.4. Synthetic Text Detection
+      section_path: 3.1.4.4
+      page: '31'
+      block_id: NIST-AI-100-4-IPD::P0031::SEC3.1.4.4::B0322
+    - title_en: 3.1.4.5. Synthetic Audio Detection
+      section_path: 3.1.4.5
+      page: '34'
+      block_id: NIST-AI-100-4-IPD::P0034::SEC3.1.4.5::B0350
+    - title_en: 4.1.1. Testing and Evaluating Digital Watermarking Techniques
+      section_path: 4.1.1
+      page: '36'
+      block_id: NIST-AI-100-4-IPD::P0036::SEC4.1.1::B0378
+    - title_en: 4.1.2. Testing and Evaluating Metadata Recording Techniques
+      section_path: 4.1.2
+      page: '36'
+      block_id: NIST-AI-100-4-IPD::P0036::SEC4.1.2::B0383
+    - title_en: 4.2.1. Testing and Evaluating Automated Content-Based Detection Techniques
+      section_path: 4.2.1
+      page: '37'
+      block_id: NIST-AI-100-4-IPD::P0037::SEC4.2.1::B0395
+    - title_en: 4.2.3. Testing and Evaluating Human-Assisted Detection Techniques
+      section_path: 4.2.3
+      page: '38'
+      block_id: NIST-AI-100-4-IPD::P0038::SEC4.2.3::B0405
+    - title_en: 5. Preventing and Reducing Harms from Synthetic Child Sexual Abuse Material and Non-Consensual Intimate Imagery
+      section_path: '5'
+      page: '40'
+      block_id: NIST-AI-100-4-IPD::P0040::SEC5::B0426
+    - title_en: 5.1.1. Training Data Filtering
+      section_path: 5.1.1
+      page: '40'
+      block_id: NIST-AI-100-4-IPD::P0040::SEC5.1.1::B0444
+    - title_en: 5.1.2. Input Data Filtering
+      section_path: 5.1.2
+      page: '41'
+      block_id: NIST-AI-100-4-IPD::P0041::SEC5.1.2::B0455
+    - title_en: 5.1.2.1. Challenges and Limitations of Input Data Filtering
+      section_path: 5.1.2.1
+      page: '42'
+      block_id: NIST-AI-100-4-IPD::P0042::SEC5.1.2.1::B0466
+    - title_en: 5.1.3. Image Output Filtering
+      section_path: 5.1.3
+      page: '42'
+      block_id: NIST-AI-100-4-IPD::P0042::SEC5.1.3::B0475
+    - title_en: 5.1.3.1. Challenges and Limitations of Image Output Filtering
+      section_path: 5.1.3.1
+      page: '43'
+      block_id: NIST-AI-100-4-IPD::P0043::SEC5.1.3.1::B0477
+    - title_en: 5.1.5.1. Challenges and Limitations of Provenance Data Tracking Techniques for Synthetic CSAM and
+      section_path: 5.1.5.1
+      page: '45'
+      block_id: NIST-AI-100-4-IPD::P0045::SEC5.1.5.1::B0516
+    - title_en: 5.1.6. Red-Teaming and Testing for CSAM and NCII
+      section_path: 5.1.6
+      page: '46'
+      block_id: NIST-AI-100-4-IPD::P0046::SEC5.1.6::B0524
+    - title_en: 5.1.6.1. Challenges and Limitations of Red-Teaming and Testing for CSAM and NCII
+      section_path: 5.1.6.1
+      page: '46'
+      block_id: NIST-AI-100-4-IPD::P0046::SEC5.1.6.1::B0527
+    - title_en: 7. Conclusion
+      section_path: '7'
+      page: '49'
+      block_id: NIST-AI-100-4-IPD::P0049::SEC7::B0557
+    - title_en: Appendix A. Current Standards
+      section_path: APPA
+      page: '71'
+      block_id: NIST-AI-100-4-IPD::P0071::SECAPPA::B1051
+    - title_en: A.1. Synthetic Content Standards and Guidelines
+      section_path: A1SYNTHETICCONTENTSTANDARDSA
+      page: '71'
+      block_id: NIST-AI-100-4-IPD::P0071::SECA1SYNTHETICCONTENTSTANDARDSA::B1053
+    - title_en: A.2. Selected NIST Practices and Guidelines
+      section_path: A2SELECTEDNISTPRACTICESANDGU
+      page: '73'
+      block_id: NIST-AI-100-4-IPD::P0073::SECA2SELECTEDNISTPRACTICESANDGU::B1058
+    - title_en: A.3. Metadata Standards
+      section_path: A3METADATASTANDARDS
+      page: '73'
+      block_id: NIST-AI-100-4-IPD::P0073::SECA3METADATASTANDARDS::B1061
+    - title_en: 1 Appendix B. Technical Tools
+      section_path: '1'
+      page: '75'
+      block_id: NIST-AI-100-4-IPD::P0075::SEC1::B1075
+    - title_en: C.1. Example Digital Watermark Use Cases
+      section_path: C1EXAMPLEDIGITALWATERMARKUSE
+      page: '79'
+      block_id: NIST-AI-100-4-IPD::P0079::SECC1EXAMPLEDIGITALWATERMARKUSE::B1083
+    - title_en: C.2. Watermarking Applications Prior to Content Creation
+      section_path: C2WATERMARKINGAPPLICATIONSPR
+      page: '79'
+      block_id: NIST-AI-100-4-IPD::P0079::SECC2WATERMARKINGAPPLICATIONSPR::B1092
+    - title_en: C.3. Current Provenance-Related Initiatives
+      section_path: C3CURRENTPROVENANCERELATEDIN
+      page: '79'
+      block_id: NIST-AI-100-4-IPD::P0079::SECC3CURRENTPROVENANCERELATEDIN::B1095
+    - title_en: D.1. Synthetic Image Detection Datasets
+      section_path: D1SYNTHETICIMAGEDETECTIONDAT
+      page: '82'
+      block_id: NIST-AI-100-4-IPD::P0082::SECD1SYNTHETICIMAGEDETECTIONDAT::B1101
+    - title_en: D.2. Synthetic Video Detection Datasets
+      section_path: D2SYNTHETICVIDEODETECTIONDAT
+      page: '82'
+      block_id: NIST-AI-100-4-IPD::P0082::SECD2SYNTHETICVIDEODETECTIONDAT::B1106
+    - title_en: D.5. Benchmark Datasets for LLMs-generated Text Detection
+      section_path: D5BENCHMARKDATASETSFORLLMSGE
+      page: '87'
+      block_id: NIST-AI-100-4-IPD::P0087::SECD5BENCHMARKDATASETSFORLLMSGE::B1126
+    - title_en: D.6. Synthetic Audio Detection Methods Summary
+      section_path: D6SYNTHETICAUDIODETECTIONMET
+      page: '87'
+      block_id: NIST-AI-100-4-IPD::P0087::SECD6SYNTHETICAUDIODETECTIONMET::B1134
+    - title_en: D.7. Synthetic Audio Detection Datasets and Results Summary
+      section_path: D7SYNTHETICAUDIODETECTIONDAT
+      page: '88'
+      block_id: NIST-AI-100-4-IPD::P0088::SECD7SYNTHETICAUDIODETECTIONDAT::B1145
+    - title_en: Appendix E. Testing and Evaluation
+      section_path: APPE
+      page: '91'
+      block_id: NIST-AI-100-4-IPD::P0091::SECAPPE::B1162
+    - title_en: 'E.1. Background: Testing, and Evaluating Synthetic Content Generators'
+      section_path: E1BACKGROUNDTESTINGANDEVALUA
+      page: '91'
+      block_id: NIST-AI-100-4-IPD::P0091::SECE1BACKGROUNDTESTINGANDEVALUA::B1163
+    - title_en: 'E.2. Background: A Common Testing Experiment Framework'
+      section_path: E2BACKGROUNDACOMMONTESTINGEX
+      page: '91'
+      block_id: NIST-AI-100-4-IPD::P0091::SECE2BACKGROUNDACOMMONTESTINGEX::B1165
+    - title_en: 'E.3. Background: Frameworks for Model and Data Transparency'
+      section_path: E3BACKGROUNDFRAMEWORKSFORMOD
+      page: '91'
+      block_id: NIST-AI-100-4-IPD::P0091::SECE3BACKGROUNDFRAMEWORKSFORMOD::B1168
+    - title_en: E.4. Adversarial Attacks and Defenses on Synthetic Content
+      section_path: E4ADVERSARIALATTACKSANDDEFEN
+      page: '91'
+      block_id: NIST-AI-100-4-IPD::P0091::SECE4ADVERSARIALATTACKSANDDEFEN::B1170
+    - title_en: E.5. Theoretical Proofs To Support Synthetic Content Techniques
+      section_path: E5THEORETICALPROOFSTOSUPPORT
+      page: '92'
+      block_id: NIST-AI-100-4-IPD::P0092::SECE5THEORETICALPROOFSTOSUPPORT::B1176
+    - title_en: E.6. Similarity and Distance Metrics
+      section_path: E6SIMILARITYANDDISTANCEMETRI
+      page: '92'
+      block_id: NIST-AI-100-4-IPD::P0092::SECE6SIMILARITYANDDISTANCEMETRI::B1179
+  - id: C39
+    slug: genai-evaluation-synthesis
+    origin: editorial_synthesis
+    kind: comparative_synthesis
+    label_fa: جمع‌بندی تطبیقی
+    title_fa: ''
+    title_en: جمع‌بندی تطبیقی — genai-evaluation
+    sections: []
+  - id: C40
+    slug: genai-evaluation-for-executives
+    origin: editorial_synthesis
+    kind: executive
+    label_fa: برای مدیران
+    title_fa: ''
+    title_en: برای مدیران — genai-evaluation
+    sections: []
+  - id: C41
+    slug: genai-evaluation-iran-implementation
+    origin: editorial_localization_ir
+    kind: localization_ir
+    label_fa: کاربرد در سازمان‌های ایرانی
+    title_fa: ''
+    title_en: کاربرد در سازمان‌های ایرانی — genai-evaluation
+    sections: []
+- id: P06
+  slug: ai-law
+  title_fa: هوش مصنوعی، حقوق و نظام قضایی
+  title_en: ''
+  sources:
+  - NIST-PAPER-2-TRUSTWORTHINESS
+  - NIST-PAPER-3-LEGAL
+  - NIST-PAPER-4-BIAS
+  chapters:
+  - id: C42
+    slug: ai-law-reading-guide
+    origin: editorial_synthesis
+    kind: reading_guide
+    label_fa: راهنمای مطالعه
+    title_fa: ''
+    title_en: Reading guide — ai-law
+    sections: []
+  - id: C43
+    slug: artificial-intelligence-and-the-courts-materials-for-judges-
+    origin: source_translation
+    kind: source
+    source_doc: NIST-PAPER-2-TRUSTWORTHINESS
+    title_fa: ''
+    title_en: Artificial Intelligence, Trustworthiness, and Litigation
+    sections:
+    - title_en: 'Artificial Intelligence and the Courts: Materials for Judges'
+      section_path: ARTIFICIALINTELLIGENCEANDTHE
+      page: 2
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0002::SECARTIFICIALINTELLIGENCEANDTHE::B0009
+    - title_en: Artificial Intelligence, Trustworthiness, and Litigation
+      section_path: ARTIFICIALINTELLIGENCETRUSTW
+      page: 7
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0007::SECARTIFICIALINTELLIGENCETRUSTW::B0041
+    - title_en: 1. Introduction
+      section_path: '1'
+      page: 7
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0007::SEC1::B0047
+    - title_en: 2. Admissibility Issues
+      section_path: '2'
+      page: 9
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0009::SEC2::B0057
+    - title_en: 2.1. Relevance
+      section_path: '2.1'
+      page: 10
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0010::SEC2.1::B0061
+    - title_en: 2.2. Authentication of AI Evidence
+      section_path: '2.2'
+      page: 13
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0013::SEC2.2::B0081
+    - title_en: 2.3. Daubert Factors and the Admissibility of Expert Evidence
+      section_path: '2.3'
+      page: 17
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0017::SEC2.3::B0111
+    - title_en: 3. Conclusion
+      section_path: '3'
+      page: 19
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0019::SEC3::B0122
+    - title_en: 'Annex A: Practice Pointers for Lawyers and Judges'
+      section_path: APPA
+      page: 20
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0020::SECAPPA::B0125
+    - title_en: A.1. What was the AI Designed to Address?
+      section_path: A1WHATWASTHEAIDESIGNEDTOADDR
+      page: 20
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0020::SECA1WHATWASTHEAIDESIGNEDTOADDR::B0127
+    - title_en: A.2. How was the AI Developed and by Whom?
+      section_path: A2HOWWASTHEAIDEVELOPEDANDBYW
+      page: 21
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0021::SECA2HOWWASTHEAIDEVELOPEDANDBYW::B0139
+    - title_en: A.3. Were the Validity and Reliability of the AI Sufficiently Tested?
+      section_path: A3WERETHEVALIDITYANDRELIABIL
+      page: 22
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0022::SECA3WERETHEVALIDITYANDRELIABIL::B0154
+    - title_en: A.5. What is the Risk of Harm if AI Evidence that is Not Shown to be Trustworthy is Admitted?
+      section_path: A5WHATISTHERISKOFHARMIFAIEVI
+      page: 24
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0024::SECA5WHATISTHERISKOFHARMIFAIEVI::B0180
+    - title_en: A.6. Timing Issues
+      section_path: A6TIMINGISSUES
+      page: 25
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0025::SECA6TIMINGISSUES::B0194
+    - title_en: 'Annex B: Hypothetical on the Admissibility of Facial Recognition Testimony in a Criminal Matter'
+      section_path: APPB
+      page: 27
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0027::SECAPPB::B0199
+    - title_en: B.1. Factual Background
+      section_path: B1FACTUALBACKGROUND
+      page: 27
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0027::SECB1FACTUALBACKGROUND::B0200
+    - title_en: B.3. Specific Factual Considerations with Respect to the Admissibility of the Accu-Match Facial Recognition Software
+      section_path: B3SPECIFICFACTUALCONSIDERATI
+      page: 31
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0031::SECB3SPECIFICFACTUALCONSIDERATI::B0231
+    - title_en: B.4. Final Thoughts
+      section_path: B4FINALTHOUGHTS
+      page: 33
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0033::SECB4FINALTHOUGHTS::B0270
+    - title_en: 'Annex C: Hypothetical on Measuring a Machine Learning System’s Accuracy and Reliability—Problem Gambling'
+      section_path: APPC
+      page: 34
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0034::SECAPPC::B0274
+    - title_en: C.1. Forword
+      section_path: C1FORWORD
+      page: 34
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0034::SECC1FORWORD::B0275
+    - title_en: C.2. Fact Pattern
+      section_path: C2FACTPATTERN
+      page: 34
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0034::SECC2FACTPATTERN::B0277
+    - title_en: 'C.3. Conclusion / Sample Questions for Courts:'
+      section_path: C3CONCLUSIONSAMPLEQUESTIONSF
+      page: 36
+      block_id: NIST-PAPER-2-TRUSTWORTHINESS::P0036::SECC3CONCLUSIONSAMPLEQUESTIONSF::B0288
+  - id: C44
+    slug: artificial-intelligence-and-the-courts-materials-for-judges-
+    origin: source_translation
+    kind: source
+    source_doc: NIST-PAPER-3-LEGAL
+    title_fa: ''
+    title_en: Artificial Intelligence, Legal Research, and Judicial Analytics
+    sections:
+    - title_en: 'Artificial Intelligence and the Courts: Materials for Judges'
+      section_path: ARTIFICIALINTELLIGENCEANDTHE
+      page: 2
+      block_id: NIST-PAPER-3-LEGAL::P0002::SECARTIFICIALINTELLIGENCEANDTHE::B0009
+    - title_en: Artificial Intelligence, Legal Research, and Judicial Analytics
+      section_path: ARTIFICIALINTELLIGENCELEGALR
+      page: 7
+      block_id: NIST-PAPER-3-LEGAL::P0007::SECARTIFICIALINTELLIGENCELEGALR::B0038
+    - title_en: 1. Introduction
+      section_path: '1'
+      page: 7
+      block_id: NIST-PAPER-3-LEGAL::P0007::SEC1::B0042
+    - title_en: 2. The Pragmatic Use of Predictive Software
+      section_path: '2'
+      page: 9
+      block_id: NIST-PAPER-3-LEGAL::P0009::SEC2::B0051
+    - title_en: 2.1. AI and Research, Generally
+      section_path: '2.1'
+      page: 9
+      block_id: NIST-PAPER-3-LEGAL::P0009::SEC2.1::B0052
+    - title_en: 2.2. AI and Judicial Analytics
+      section_path: '2.2'
+      page: 13
+      block_id: NIST-PAPER-3-LEGAL::P0013::SEC2.2::B0082
+    - title_en: 3. Conclusions
+      section_path: '3'
+      page: 14
+      block_id: NIST-PAPER-3-LEGAL::P0014::SEC3::B0096
+    - title_en: 'Part B: Maintaining Perspective or Healthy Skepticism?'
+      section_path: PARTBMAINTAININGPERSPECTIVEO
+      page: 16
+      block_id: NIST-PAPER-3-LEGAL::P0016::SECPARTBMAINTAININGPERSPECTIVEO::B0112
+    - title_en: 'Annex A: Further Readings'
+      section_path: APPA
+      page: 17
+      block_id: NIST-PAPER-3-LEGAL::P0017::SECAPPA::B0115
+  - id: C45
+    slug: artificial-intelligence-and-the-courts-materials-for-judges-
+    origin: source_translation
+    kind: source
+    source_doc: NIST-PAPER-4-BIAS
+    title_fa: ''
+    title_en: Artificial Intelligence and Bias – An Evaluation
+    sections:
+    - title_en: Artificial Intelligence and the Courts – Materials for Judges
+      section_path: ARTIFICIALINTELLIGENCEANDTHE
+      page: 2
+      block_id: NIST-PAPER-4-BIAS::P0002::SECARTIFICIALINTELLIGENCEANDTHE::B0009
+    - title_en: Artificial Intelligence and Bias – An Evaluation
+      section_path: ARTIFICIALINTELLIGENCEANDBIA
+      page: 7
+      block_id: NIST-PAPER-4-BIAS::P0007::SECARTIFICIALINTELLIGENCEANDBIA::B0039
+    - title_en: 1. Introduction
+      section_path: '1'
+      page: 7
+      block_id: NIST-PAPER-4-BIAS::P0007::SEC1::B0043
+    - title_en: 2. Bias and the Legal System
+      section_path: '2'
+      page: 7
+      block_id: NIST-PAPER-4-BIAS::P0007::SEC2::B0046
+    - title_en: 3. The Origins of Bias in AI Systems
+      section_path: '3'
+      page: 11
+      block_id: NIST-PAPER-4-BIAS::P0011::SEC3::B0071
+    - title_en: 3.1. Bias and AI Design
+      section_path: '3.1'
+      page: 12
+      block_id: NIST-PAPER-4-BIAS::P0012::SEC3.1::B0078
+    - title_en: 3.2. Bias in AI Development
+      section_path: '3.2'
+      page: 13
+      block_id: NIST-PAPER-4-BIAS::P0013::SEC3.2::B0083
+    - title_en: 3.3. Collecting Data and Data Sets
+      section_path: '3.3'
+      page: 13
+      block_id: NIST-PAPER-4-BIAS::P0013::SEC3.3::B0085
+    - title_en: 3.4. Training AI Models
+      section_path: '3.4'
+      page: 14
+      block_id: NIST-PAPER-4-BIAS::P0014::SEC3.4::B0091
+    - title_en: 3.5. Validating and Optimizing Outputs
+      section_path: '3.5'
+      page: 14
+      block_id: NIST-PAPER-4-BIAS::P0014::SEC3.5::B0095
+    - title_en: 3.6. Bias in AI Deployment
+      section_path: '3.6'
+      page: 15
+      block_id: NIST-PAPER-4-BIAS::P0015::SEC3.6::B0101
+    - title_en: 4. Impacts of AI Bias on Law and Society
+      section_path: '4'
+      page: 17
+      block_id: NIST-PAPER-4-BIAS::P0017::SEC4::B0116
+    - title_en: 4.1. AI Bias and Traditional Legal Notions of Discrimination
+      section_path: '4.1'
+      page: 18
+      block_id: NIST-PAPER-4-BIAS::P0018::SEC4.1::B0119
+    - title_en: 5. Concluding Recommendations
+      section_path: '5'
+      page: 21
+      block_id: NIST-PAPER-4-BIAS::P0021::SEC5::B0132
+  - id: C46
+    slug: ai-law-synthesis
+    origin: editorial_synthesis
+    kind: comparative_synthesis
+    label_fa: جمع‌بندی تطبیقی
+    title_fa: ''
+    title_en: جمع‌بندی تطبیقی — ai-law
+    sections: []
+  - id: C47
+    slug: ai-law-for-executives
+    origin: editorial_synthesis
+    kind: executive
+    label_fa: برای مدیران
+    title_fa: ''
+    title_en: برای مدیران — ai-law
+    sections: []
+  - id: C48
+    slug: ai-law-iran-implementation
+    origin: editorial_localization_ir
+    kind: localization_ir
+    label_fa: کاربرد در سازمان‌های ایرانی
+    title_fa: ''
+    title_en: کاربرد در سازمان‌های ایرانی — ai-law
+    sections: []
+- id: P07
+  slug: standards
+  title_fa: اکوسیستم استانداردسازی هوش مصنوعی
+  title_en: ''
+  sources:
+  - NIST-AI-STD-FED-PLAN-2019
+  chapters:
+  - id: C49
+    slug: standards-reading-guide
+    origin: editorial_synthesis
+    kind: reading_guide
+    label_fa: راهنمای مطالعه
+    title_fa: ''
+    title_en: Reading guide — standards
+    sections: []
+  - id: C50
+    slug: u-s-leadership-in-ai-a-plan-for-federal-engageme
+    origin: source_translation
+    kind: source
+    source_doc: NIST-AI-STD-FED-PLAN-2019
+    title_fa: ''
+    title_en: 'U.S. Leadership in AI: A Plan for Federal Engagement in Developing Technical Standards and Related Tools'
+    sections:
+    - title_en: EXECUTIVE SUMMARY
+      section_path: EXECUTIVESUMMARY
+      page: 5
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0005::SECEXECUTIVESUMMARY::B0006
+    - title_en: 1. STANDARDS AND ARTIFICIAL INTELLIGENCE
+      section_path: '1'
+      page: 9
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0009::SEC1::B0064
+    - title_en: A. WHY IS A PLAN FOR FEDERAL ENGAGEMENT IN AI TECHNICAL STANDARDS NEEDED?
+      section_path: AWHYISAPLANFORFEDERALENGAGEM
+      page: 9
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0009::SECAWHYISAPLANFORFEDERALENGAGEM::B0065
+    - title_en: C. HOW ARE TECHNICAL STANDARDS DEVELOPED?
+      section_path: CHOWARETECHNICALSTANDARDSDEV
+      page: 11
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0011::SECCHOWARETECHNICALSTANDARDSDEV::B0089
+    - title_en: D. WHAT AI TECHNICAL STANDARDS ARE NEEDED?
+      section_path: DWHATAITECHNICALSTANDARDSARE
+      page: 12
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0012::SECDWHATAITECHNICALSTANDARDSARE::B0095
+    - title_en: E. WHAT AI STANDARDS-RELATED TOOLS ARE NEEDED?
+      section_path: EWHATAISTANDARDSRELATEDTOOLS
+      page: 15
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0015::SECEWHATAISTANDARDSRELATEDTOOLS::B0131
+    - title_en: F. WHAT ARE OTHER IMPORTANT CONSIDERATIONS?
+      section_path: FWHATAREOTHERIMPORTANTCONSID
+      page: 17
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0017::SECFWHATAREOTHERIMPORTANTCONSID::B0148
+    - title_en: 2. U.S. GOVERNMENT AI STANDARDS PRIORITIES
+      section_path: '2'
+      page: 19
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0019::SEC2::B0160
+    - title_en: A. PRIORITIES FOR FEDERAL GOVERNMENT INVOLVEMENT
+      section_path: APRIORITIESFORFEDERALGOVERNM
+      page: 19
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0019::SECAPRIORITIESFORFEDERALGOVERNM::B0161
+    - title_en: B. LEVELS OF U.S. GOVERNMENT ENGAGEMENT IN AI STANDARDS
+      section_path: BLEVELSOFUSGOVERNMENTENGAGEM
+      page: 21
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0021::SECBLEVELSOFUSGOVERNMENTENGAGEM::B0195
+    - title_en: C. PRACTICAL STEPS FOR AGENCY ENGAGEMENT IN AI STANDARDS
+      section_path: CPRACTICALSTEPSFORAGENCYENGA
+      page: 22
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0022::SECCPRACTICALSTEPSFORAGENCYENGA::B0204
+    - title_en: 3. RECOMMENDED FEDERAL GOVERNMENT STANDARDS ACTIONS TO ADVANCE U.S. AI LEADERSHIP
+      section_path: '3'
+      page: 24
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0024::SEC3::B0222
+    - title_en: 'APPENDIX II: AI STANDARDS'
+      section_path: APPII
+      page: 28
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0028::SECAPPII::B0260
+    - title_en: 'APPENDIX III: AI-RELATED TOOLS'
+      section_path: APPIII
+      page: 34
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0034::SECAPPIII::B0361
+    - title_en: 'APPENDIX IV: THE ASSIGNMENT AND APPROACH'
+      section_path: APPIV
+      page: 39
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0039::SECAPPIV::B0421
+    - title_en: EXECUTIVE ORDER ON MAINTAINING AMERICAN LEADERSHIP IN ARTIFICIAL INTELLIGENCE
+      section_path: EXECUTIVEORDERONMAINTAININGA
+      page: 39
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0039::SECEXECUTIVEORDERONMAINTAININGA::B0422
+    - title_en: THE PROCESS NIST USED TO DEVELOP THIS PLAN
+      section_path: THEPROCESSNISTUSEDTODEVELOPT
+      page: 39
+      block_id: NIST-AI-STD-FED-PLAN-2019::P0039::SECTHEPROCESSNISTUSEDTODEVELOPT::B0432
+  - id: C51
+    slug: standards-synthesis
+    origin: editorial_synthesis
+    kind: comparative_synthesis
+    label_fa: جمع‌بندی تطبیقی
+    title_fa: ''
+    title_en: جمع‌بندی تطبیقی — standards
+    sections: []
+  - id: C52
+    slug: standards-for-executives
+    origin: editorial_synthesis
+    kind: executive
+    label_fa: برای مدیران
+    title_fa: ''
+    title_en: برای مدیران — standards
+    sections: []
+  - id: C53
+    slug: standards-iran-implementation
+    origin: editorial_localization_ir
+    kind: localization_ir
+    label_fa: کاربرد در سازمان‌های ایرانی
+    title_fa: ''
+    title_en: کاربرد در سازمان‌های ایرانی — standards
+    sections: []

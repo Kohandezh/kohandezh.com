@@ -1,6 +1,8 @@
 <?php
 // Small WP API fixture: no DB, network or production writes.
 define('ABSPATH', __DIR__);
+define('KBK_FEATURE_AI_BOOK', true);
+define('KBK_AI_BOOK_INDEXABLE', true);
 $actions = array();
 function add_action($hook, $callback, ...$args) { global $actions; $actions[$hook] = $callback; }
 function add_filter(...$args) {}
@@ -20,6 +22,7 @@ function is_preview() { return false; }
 function get_queried_object() { global $post; return $post; }
 function esc_attr($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); }
 function wp_json_encode($value, $flags) { return json_encode($value, $flags); }
+function home_url($path = '/') { return 'https://kohandezh.com' . $path; }
 require __DIR__ . '/../wp-theme/kohandezhcv/inc/publication.php';
 function check($value, $label) { if (!$value) { fwrite(STDERR, "FAIL: $label\n"); exit(1); } echo "PASS: $label\n"; }
 $post = (object) array('post_type'=>'post','post_status'=>'publish','post_password'=>'', 'post_title'=>'A <b>real</b> title', 'post_excerpt'=>'<p>دربارهٔ هوش مصنوعی &amp; امنیت</p>', 'post_content'=>'Fallback', 'post_author'=>7,'post_name'=>'test','published'=>'2025-10-26T08:30:00+03:30','modified'=>'2026-08-24T10:00:00+03:30','image'=>false);
@@ -39,3 +42,5 @@ $args = kdcv_sitemap_query_args(2);
 check($args['post_status'] === 'publish' && $args['has_password'] === false && $args['paged'] === 2 && $args['posts_per_page'] === 1000, 'bounded published-only sitemap query');
 $xml = kdcv_sitemap_xml(array(array('loc'=>'https://kohandezh.com/?kdcv_sitemap=posts&kdcv_sitemap_page=2')), true);
 check(str_contains($xml, '&amp;') && simplexml_load_string($xml) !== false, 'valid escaped XML sitemap index');
+$governance_entries = kdcv_ai_governance_sitemap_entries();
+check(count($governance_entries) === 9 && $governance_entries[0]['loc'] === 'https://kohandezh.com/fa/books/ai-governance/', 'Persian AI Governance canonical URLs join the gated dynamic sitemap');

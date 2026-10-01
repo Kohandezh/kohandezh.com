@@ -36,6 +36,7 @@ services:
       - ../wp-theme/kohandezhcv:/var/www/html/wp-content/themes/kohandezhcv:rw
       - ../wp-theme/kohandezh-ai-hub:/var/www/html/wp-content/plugins/kohandezh-ai-hub:ro
       - ../wp-theme/kohan-avatar:/var/www/html/wp-content/plugins/kohan-avatar:ro
+      - ../wp-theme/kdcv-rightclick-guard:/var/www/html/wp-content/plugins/kdcv-rightclick-guard:ro
     restart: unless-stopped
 
   # wp-cli sidecar — run one-off commands via: docker compose run --rm cli <cmd>
@@ -49,6 +50,7 @@ services:
       - ../wp-theme/kohandezhcv:/var/www/html/wp-content/themes/kohandezhcv:rw
       - ../wp-theme/kohandezh-ai-hub:/var/www/html/wp-content/plugins/kohandezh-ai-hub:ro
       - ../wp-theme/kohan-avatar:/var/www/html/wp-content/plugins/kohan-avatar:ro
+      - ../wp-theme/kdcv-rightclick-guard:/var/www/html/wp-content/plugins/kdcv-rightclick-guard:ro
       - ../wp-theme/kohandezhcv-blog-import-fixed.wxr.xml:/imports/kohandezhcv-blog-import-fixed.wxr.xml:ro
     environment:
       WORDPRESS_DB_HOST: db:3306

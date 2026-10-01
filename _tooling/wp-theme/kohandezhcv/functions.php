@@ -8,7 +8,7 @@
  */
 
 define( 'KDCV', get_template_directory_uri() );
-define( 'KDCV_CONTENT_SCHEMA_VERSION', '2.0.3' ); // bump: run kdcv_harden_htaccess() on theme UPDATE, not only on switch
+define( 'KDCV_CONTENT_SCHEMA_VERSION', '2.0.4' ); // bump: flush rewrites so /sitemap.xml, /feed.xml, /manifest.json, /offline.html and /sw.js resolve from the theme
 require_once __DIR__ . '/inc/publication.php';
 require_once __DIR__ . '/inc/diagnostics.php';
 
@@ -170,17 +170,35 @@ add_action( 'template_redirect', function () {
 }, 1 );
 
 /**
- * Remove legacy pages from wp-sitemap.xml so they aren't advertised to
- * crawlers. Pairs with the 301 redirects above — redirects handle any
- * visitor who actually lands on the URL; this stops Google from even
- * trying to crawl them.
+ * Serve the site owner's own portrait instead of a Gravatar.
+ *
+ * Every avatar on the site pointed at secure.gravatar.com, which does not
+ * resolve for a good share of visitors (and did not resolve here at all) --
+ * the admin bar showed a broken image. There is exactly one author on this
+ * site and his portrait already ships with the theme, so the remote lookup
+ * buys nothing and costs a third-party request on every admin page.
  */
-add_filter( 'wp_sitemaps_posts_query_args', function ( $args ) {
-	if ( ! isset( $args['post_type'] ) || ! in_array( 'page', (array) $args['post_type'], true ) ) {
-		return $args;
-	}
+add_filter( 'pre_get_avatar_data', function ( $args, $id_or_email ) {
+	$size = isset( $args['size'] ) ? (int) $args['size'] : 96;
 
-	$legacy_slugs = array(
+	$args['url']          = KDCV . '/assets/images/avatar/avatar-thumb-img0031-w160.webp';
+	$args['found_avatar'] = true;
+	// Gravatar's own srcset points back at gravatar.com; drop it with the URL.
+	$args['srcset']       = '';
+	$args['width']        = $size;
+	$args['height']       = $size;
+
+	return $args;
+}, 10, 2 );
+
+/**
+ * The stale page slugs, in one place.
+ *
+ * Every one of these is 301'd by the redirect block above. Three consumers
+ * read this list, so a slug added here is handled everywhere at once.
+ */
+function kdcv_legacy_page_slugs() {
+	return array(
 		'connections', 'members', 'following', 'followers',
 		'shop', 'cart', 'checkout', 'my-account',
 		'search-engine-optimization', 'local-business-marketing',
@@ -205,6 +223,20 @@ add_filter( 'wp_sitemaps_posts_query_args', function ( $args ) {
 		// profile/* are pages too — exclude them all. Slug is 'profile' for /profile.
 		'profile',
 	);
+}
+
+/**
+ * Keep the legacy pages out of wp-sitemap.xml so they aren't advertised to
+ * crawlers. Pairs with the 301 redirects above — redirects handle any
+ * visitor who actually lands on the URL; this stops Google from even
+ * trying to crawl them.
+ */
+add_filter( 'wp_sitemaps_posts_query_args', function ( $args ) {
+	if ( ! isset( $args['post_type'] ) || ! in_array( 'page', (array) $args['post_type'], true ) ) {
+		return $args;
+	}
+
+	$legacy_slugs = kdcv_legacy_page_slugs();
 
 	$args['post_name__not_in'] = isset( $args['post_name__not_in'] )
 		? array_merge( (array) $args['post_name__not_in'], $legacy_slugs )
@@ -212,6 +244,7 @@ add_filter( 'wp_sitemaps_posts_query_args', function ( $args ) {
 
 	return $args;
 } );
+
 
 /**
  * Serve llms.txt and fa-llms.txt directly from the theme, so WordPress
@@ -235,6 +268,109 @@ add_filter( 'wp_sitemaps_posts_query_args', function ( $args ) {
  * rewrite rule + template_redirect handler that streams them with the
  * correct text/plain content-type, so they work without uploading.
  */
+/**
+ * Keep WordPress's virtual robots.txt on text/plain.
+ *
+ * Measured on a WordPress with no robots.txt in the site root: the body was
+ * correct -- rules and all -- but the response went out as text/html, which
+ * is a robots file some crawlers will decline to parse. do_robots() does set
+ * text/plain, and setting it again from do_robotstxt or the robots_txt filter
+ * changed nothing; only removing the queued header first takes. So this runs
+ * at template_redirect priority 0, before anything can emit a byte, and
+ * clears the entry rather than trying to overwrite it.
+ *
+ * It matters because the root file is now optional: with one deleted or
+ * unreadable upload, this is the path every crawler takes.
+ */
+add_action( 'template_redirect', function () {
+	if ( ! is_robots() || headers_sent() ) {
+		return;
+	}
+	header_remove( 'Content-Type' );
+	header( 'Content-Type: text/plain; charset=utf-8', true );
+}, 0 );
+
+/**
+ * Serve the remaining site-root files from the theme as well.
+ *
+ * sitemap.xml, feed.xml, manifest.json, offline.html and sw.js existed only
+ * as uploads beside wp-config.php. That made every deploy depend on an FTP
+ * client choosing the right permissions: twice in one day a fresh upload came
+ * back 403 for all of them at once, so robots, the sitemap, the feed, the PWA
+ * manifest and the service worker went down together, and the service worker
+ * being stale meant visitors kept a cached stylesheet for a week.
+ *
+ * They ride inside the theme now (sync-from-static.py copies them, rewriting
+ * the asset URLs) and are streamed from there. A readable copy in the site
+ * root still wins, so an existing upload keeps working untouched -- this is a
+ * floor, not a takeover.
+ */
+add_filter( 'query_vars', function ( $vars ) {
+	$vars[] = 'kdcv_rootfile';
+	return $vars;
+} );
+
+add_action( 'init', function () {
+	add_rewrite_rule( '^(sitemap\.xml|feed\.xml|manifest\.json|offline\.html|sw\.js)$', 'index.php?kdcv_rootfile=$matches[1]', 'top' );
+} );
+
+/**
+ * No trailing slash on these, for the same reason as the llms.txt rules.
+ */
+add_filter( 'redirect_canonical', function ( $redirect ) {
+	return get_query_var( 'kdcv_rootfile' ) ? false : $redirect;
+} );
+
+add_action( 'template_redirect', function () {
+	$which = get_query_var( 'kdcv_rootfile' );
+	if ( ! $which ) {
+		return;
+	}
+
+	// Allow-list, not a pattern: the value becomes part of a filesystem path.
+	$types = array(
+		'sitemap.xml'   => 'application/xml; charset=utf-8',
+		'feed.xml'      => 'application/rss+xml; charset=utf-8',
+		'manifest.json' => 'application/manifest+json; charset=utf-8',
+		'offline.html'  => 'text/html; charset=utf-8',
+		'sw.js'         => 'application/javascript; charset=utf-8',
+	);
+	if ( ! isset( $types[ $which ] ) ) {
+		status_header( 404 );
+		nocache_headers();
+		header( 'Content-Type: text/plain; charset=utf-8' );
+		echo "Not found.\n";
+		exit;
+	}
+
+	$root    = ABSPATH . $which;
+	$bundled = get_template_directory() . '/' . $which;
+	$path    = is_readable( $root ) ? $root : ( is_readable( $bundled ) ? $bundled : '' );
+
+	if ( '' === $path ) {
+		status_header( 404 );
+		nocache_headers();
+		header( 'Content-Type: text/plain; charset=utf-8' );
+		echo "Not found.\n";
+		exit;
+	}
+
+	header( 'Content-Type: ' . $types[ $which ] );
+
+	// A worker served from /sw.js already gets root scope, but say so
+	// explicitly: the header costs nothing and documents the intent.
+	if ( 'sw.js' === $which ) {
+		header( 'Service-Worker-Allowed: /' );
+		// The worker itself must never be the stale thing in the cache.
+		header( 'Cache-Control: public, max-age=0, must-revalidate' );
+	} else {
+		header( 'Cache-Control: public, max-age=3600' );
+	}
+
+	readfile( $path );
+	exit;
+} );
+
 add_filter( 'query_vars', function ( $vars ) {
 	$vars[] = 'kdcv_llms';
 	return $vars;
@@ -332,7 +468,7 @@ add_action( 'template_redirect', function () {
 // The posts index has no singular object, so WordPress core does not emit a
 // canonical for it. Keep the curated sitemap destination self-canonical.
 add_action( 'wp_head', function () {
-	if ( is_home() ) {
+	if ( is_home() && ( ! class_exists( 'KBK_AI_Book' ) || ! KBK_AI_Book::is_request() ) ) {
 		echo '<link rel="canonical" href="' . esc_url( home_url( '/blog/' ) ) . '">' . "\n";
 	}
 }, 2 );
@@ -790,6 +926,10 @@ function kdcv_expose_urls() {
 	// videos.html is static-only (uploaded separately by FTP), so it has no
 	// registered page and its URL is stated directly.
 	$pages['videos'] = home_url( '/videos/' );
+	// Virtual knowledge-product route: only the real Persian edition exists.
+	// Exposing it here lets the shared site chrome link to the book without
+	// creating a fake WordPress Page or untranslated locale variants.
+	$pages['aiGovernance'] = home_url( '/fa/books/ai-governance/' );
 
 	$config = array(
 		'assets' => trailingslashit( KDCV ) . 'assets/',
@@ -1305,7 +1445,7 @@ function kdcv_render_home_blog_feed( $read_label = 'Read original', $limit = 6 )
 		?>
 		<article class="blog-local-item">
 			<div class="blog-local-top">
-				<h5 class="blog-local-title"><?php echo esc_html( $title ); ?></h5>
+				<h3 class="blog-local-title"><?php echo esc_html( $title ); ?></h3>
 				<time class="blog-local-date" datetime="<?php echo esc_attr( get_the_date( DATE_W3C ) ); ?>"><?php echo esc_html( $date ); ?></time>
 			</div>
 			<p class="blog-local-summary"><?php echo esc_html( $summary ); ?></p>

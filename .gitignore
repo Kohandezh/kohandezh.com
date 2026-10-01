@@ -32,3 +32,36 @@ __pycache__/
 # Graphify knowledge graph — local navigation aid, not a release artifact
 graphify-out/
 _tooling/releases/
+_tooling/backups/
+
+# ---- Books/: one folder per title. Git keeps text, data and tools; the rest
+# stays on disk only (raw sources, binaries, generated output, environments).
+# Secrets are never committed, whatever folder they sit in.
+Books/**/.env
+Books/**/*.key
+Books/**/*.pem
+Books/**/state/
+Books/**/.venv*/
+Books/**/__pycache__/
+Books/**/*.pdf
+Books/**/*.docx
+Books/**/*.db
+Books/**/*.png
+Books/**/*.jpg
+Books/**/*.jpeg
+Books/**/*.webp
+Books/**/*.gz
+Books/**/*.onnx
+Books/**/*.so
+Books/**/*.dylib
+Books/ai-governance/Raw/
+Books/ai-governance/work/
+Books/ai-governance/jobs/
+Books/ai-governance/pdf/
+Books/ai-governance/docx/
+Books/ai-governance/images/
+Books/ai-governance/sources/
+Books/ai-governance/qa/
+Books/ai-governance/html/
+Books/ics-cybersecurity/02-Standards/
+Books/ics-cybersecurity/05-Archive/

@@ -1,0 +1,64 @@
+# Persistent local WordPress preview for the Persian AI Governance book.
+# Site: http://localhost:8890
+# No production credentials or provider secrets belong in this file.
+services:
+  db:
+    image: mariadb:10.11
+    environment:
+      MARIADB_ROOT_PASSWORD: local-root-only
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: local-wordpress-only
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: unless-stopped
+
+  wordpress:
+    image: wordpress:latest
+    depends_on:
+      db:
+        condition: service_started
+    ports:
+      - "8890:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: local-wordpress-only
+      WORDPRESS_DEBUG: 1
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_DEBUG_LOG', true);
+        define('WP_DEBUG_DISPLAY', false);
+        define('FS_METHOD', 'direct');
+        define('KBK_FEATURE_AI_BOOK', true);
+        define('KBK_AI_BOOK_ROOT', '/opt/kbk-ai-book');
+        define('KBK_AI_BOOK_INDEXABLE', false);
+    volumes:
+      - wordpress_data:/var/www/html
+      - ../wp-theme/kohandezhcv:/var/www/html/wp-content/themes/kohandezhcv:ro
+      - ../wp-theme/kohandezh-knowledge:/var/www/html/wp-content/plugins/kohandezh-knowledge:ro
+      - ../../Books/ai-governance:/opt/kbk-ai-book:ro
+    restart: unless-stopped
+
+  cli:
+    image: wordpress:cli
+    depends_on:
+      - wordpress
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: local-wordpress-only
+    volumes:
+      - wordpress_data:/var/www/html
+      - ../wp-theme/kohandezhcv:/var/www/html/wp-content/themes/kohandezhcv:ro
+      - ../wp-theme/kohandezh-knowledge:/var/www/html/wp-content/plugins/kohandezh-knowledge:ro
+      - ../../Books/ai-governance:/opt/kbk-ai-book:ro
+    entrypoint: ["wp"]
+    profiles: ["cli"]
+
+volumes:
+  db_data:
+    name: kohandezh_ai_book_local_db_data
+  wordpress_data:
+    name: kohandezh_ai_book_local_wp_data

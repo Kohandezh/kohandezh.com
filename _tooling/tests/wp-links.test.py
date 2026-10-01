@@ -6,6 +6,7 @@ import unittest
 import contextlib
 import io
 import tempfile
+import subprocess
 
 ROOT = Path(__file__).resolve().parents[2]
 spec = importlib.util.spec_from_file_location('sync', os.environ.get('KDCV_SYNC_TEST_SOURCE', str(ROOT / '_tooling/wp-theme/sync-from-static.py')))
@@ -14,6 +15,53 @@ spec.loader.exec_module(sync)
 
 
 class Links(unittest.TestCase):
+    def test_responsive_image_candidates_use_theme_urls(self):
+        source = '<img src="assets/images/avatar/avatar-professional-w480.webp" srcset="assets/images/avatar/avatar-professional-w480.webp 480w, assets/images/avatar/avatar-professional-w800.webp 800w">'
+        converted = sync.transform('<html><head></head><body>' + source + '</body></html>', 'test', False)
+        self.assertIn(sync.KDCV + '/assets/images/avatar/avatar-professional-w480.webp 480w, ' + sync.KDCV + '/assets/images/avatar/avatar-professional-w800.webp 800w', converted)
+
+    def test_portrait_preload_matches_display_candidates(self):
+        import re
+        for locale in ['index', 'fa', 'ar', 'de', 'es', 'fr', 'tr', 'zh', 'ja', 'ru']:
+            html = (ROOT / (locale + '.html')).read_text()
+            preload = re.search(r'imagesrcset="([^"]+)"', html)[1]
+            portrait = re.search(r'<img class="profile-avatar-image"[^>]+>', html)[0]
+            self.assertIn('srcset="' + preload + '"', portrait)
+            for candidate in preload.split(', '):
+                self.assertTrue((ROOT / candidate.split(' ')[0]).is_file())
+
+    def test_pet_assets_only_when_plugin_does_not_own_pet(self):
+        source = '<html><head><link rel="stylesheet" href="assets/css/kohan-avatar.min.css?v=1"></head><body><script src="assets/js/kohan-avatar.min.js?v=1" defer></script></body></html>'
+        converted = sync.transform(source, 'test', False)
+        for enabled in (False, True):
+            prelude = '<?php function home_url($x=""){return $x;} function wp_head(){} function wp_footer(){} function wp_body_open(){} define("KDCV", "/theme"); class Kohan_Avatar {static function instance(){return new self;} function get_options(){return ["enabled" => ' + ('true' if enabled else 'false') + '];}} ?>'
+            # Render only the guarded resource tags, avoiding unrelated template hooks.
+            import re
+            tags = re.findall(r'<\?php if \( ! class_exists\(\'Kohan_Avatar\'\).*?<\?php endif; \?>', converted)
+            self.assertEqual(len(tags), 2)
+            output = subprocess.check_output(['php'], input=prelude + ''.join(tags), text=True)
+            self.assertEqual('kohan-avatar.min.js' in output, not enabled)
+            self.assertEqual('kohan-avatar.min.css' in output, not enabled)
+
+    def test_plugin_atlas_url_is_shared_and_initialization_is_single(self):
+        script = r'''
+const {JSDOM}=require('jsdom'); const fs=require('fs'); const assert=require('assert');
+const dom=new JSDOM('<!doctype html><body></body>',{runScripts:'outside-only',pretendToBeVisual:true,url:'https://example.test/'});
+const w=dom.window; const urls=[];
+w.KohanAvatarConfig={assetBase:'/plugin/assets/kohan',atlasUrl:'/plugin/assets/kohan/spritesheet.webp?v=testhash',options:{enabled:true,chat:false,idleRangeMs:[999999,999999]}};
+w.matchMedia=()=>({matches:false,addEventListener(){},addListener(){}});
+w.addEventListener('error', e=>{throw e.error;});
+w.Image=class {set src(v){urls.push(v)} addEventListener(){} };
+const src=fs.readFileSync('_tooling/wp-theme/kohan-avatar/assets/js/kohan-avatar.js','utf8');
+w.eval(src); w.eval(src); w.document.dispatchEvent(new w.Event('DOMContentLoaded'));
+assert.equal(w.document.querySelectorAll('.kohan-avatar-root').length,1);
+assert(w.document.querySelector('.kohan-avatar-root').style.backgroundImage.includes(w.KohanAvatarConfig.atlasUrl));
+assert.deepEqual(urls.filter(x=>x.includes('spritesheet.webp')),[w.KohanAvatarConfig.atlasUrl]);
+assert.equal(typeof w.KohanAvatar.setMood,'function');
+w.close();
+'''
+        subprocess.run(['node', '-e', script], cwd=ROOT, check=True)
+
     def converted(self, value):
         return sync.transform('<html><head></head><body><a href="' + value + '">Go</a></body></html>', 'knowledge page', False)
 

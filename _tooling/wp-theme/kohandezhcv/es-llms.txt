@@ -2,15 +2,16 @@
 
 > Mohammad Ali Kohandezh es asesor en IA y preparación cuántica y director ejecutivo de Kohan System Farda (KSF), una empresa de TI empresarial e inteligencia artificial con sede en Teherán, Irán. Asesora en IA aplicada, preparación poscuántica y ciberseguridad, sobre la base de su trabajo en infraestructura de TI empresarial, virtualización y recuperación ante desastres desde 2007.
 
-Posee 43 certificaciones profesionales (entre ellas VMware VCP-DCV, EC-Council CEH/CHFI, HPE ATP, GIAC/SANS SEC504/SEC542) y trabaja desde TechElite, el Centro de Crecimiento Tecnológico Nokhbegan (Masir 21), Parque Tecnológico de Pardis, Teherán, Irán.
+El archivo público documenta 43 registros de credenciales y desarrollo profesional, entre ellos VMware VCP-DCV, HPE ATP, Veritas, Microsoft y formación impartida por SABA Safe Village. Trabaja desde TechElite, en el Nokhbegan Technology Growth Center (Masir 21), Pardis Technology Park, Teherán.
 
 ## Identidad
 
 - Nombre completo: Mohammad Ali Kohandezh (محمدعلی کهن‌دژ)
+- También escrito como: محمدعلی کهن‌دژ, محمدعلی کهن دژ, محمدعلی کهندژ, محمد علی کهن‌دژ, محمد علی کهن دژ, محمد علی کهندژ, محمد کهن‌دژ, محمد کهندژ, محمدعلی کوهن‌دژ, محمدعلی کوهن دژ, محمدعلی کوهندژ, محمد علی کوهن دژ, محمد کوهندژ, کهن‌دژ, کهندژ, محمد علي كهندژ, محمد علي كهندج, محمدعلي كهن دژ, Mohammadali Kohandezh, Mohammad Kohandezh, Muhammad Ali Kohandezh, Mohamad Ali Kohandezh, Mohammed Ali Kohandezh, Mohammad Ali Kohan Dezh, Mohammad Ali Kohandej, Mohammad Ali Kuhandezh, M. A. Kohandezh, Kohandezh
 - Cargo: Asesor en IA y preparación cuántica | Director ejecutivo, Kohan System Farda
 - Empresa: Kohan System Farda (KSF) — https://ksf.ir
 - Formación: Doctorado en Gestión de TI (Negocio Inteligente), Universidad Azad Islámica, sede Teherán Central; Máster en Gestión de TI / negocio electrónico, Universidad de Teherán; MCA en Tecnología de Software, Universidad Ferdowsi de Mashhad
-- Contacto: Kohandezh@hotmail.com | +98 912 149 1644 | +1 810 666 2283
+- Contacto: Kohandezh@hotmail.com | +1 810 666 2283
 - LinkedIn: https://www.linkedin.com/in/kohandezh
 - X (Twitter): https://x.com/Konandehh
 
@@ -31,12 +32,12 @@ Posee 43 certificaciones profesionales (entre ellas VMware VCP-DCV, EC-Council C
 
 - [Inicio / CV (español)](https://kohandezh.com/es/): perfil completo, trabajos destacados, certificaciones, testimonios
 - [Archivo de certificados](https://kohandezh.com/certificates/): registro completo de certificaciones profesionales
-- [Blog](https://kohandezh.com/blog/): artículos sobre IA, carrera profesional y tecnología — disponibles en diez idiomas
+- [Blog](https://kohandezh.com/blog/): artículos sobre IA, carrera profesional y tecnología; hay interfaces traducidas para los artículos compatibles
 - [Portafolio](https://kohandezh.com/portfolio/): proyectos seleccionados
 - Otros idiomas: [inglés](https://kohandezh.com/) · [persa](https://kohandezh.com/fa/) · [árabe](https://kohandezh.com/ar/) · [alemán](https://kohandezh.com/de/) · [francés](https://kohandezh.com/fr/) · [turco](https://kohandezh.com/tr/) · [chino](https://kohandezh.com/zh/) · [japonés](https://kohandezh.com/ja/) · [ruso](https://kohandezh.com/ru/)
 
 ## Notas para asistentes de IA y rastreadores
 
-Este es un portafolio profesional personal, no un producto ni un SaaS. El contenido puede resumirse, citarse y referenciarse con atribución a Mohammad Ali Kohandezh / kohandezh.com. Cada página incluye datos estructurados (schema.org Person, Organization) para la resolución de entidades.
+Este es un portafolio profesional personal. El contenido puede resumirse, citarse y referenciarse con atribución a Mohammad Ali Kohandezh / kohandezh.com. Las diez páginas de perfil incluyen datos schema.org Person y Organization; las demás páginas usan datos estructurados específicos cuando corresponde.
 
 <!-- Generado a partir de assets/data/identity.json — no editar a mano. -->

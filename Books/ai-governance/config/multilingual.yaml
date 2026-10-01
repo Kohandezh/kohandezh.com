@@ -1,0 +1,26 @@
+# Multilingual configuration (MasterPrompt §60–§69)
+primary_language: fa
+source_language: en
+
+# Phase A (current): Persian only.
+enabled_languages:
+  - fa
+
+# Phase B: to be populated with the exact kohandezh.com locale codes.
+# DO NOT invent locales. Workers for these languages stay OFF until
+# PERSIAN_RELEASE_CANDIDATE = PASS and this list is confirmed by the owner.
+future_languages:
+  - CONFIGURE_FROM_WEBSITE
+
+max_total_languages: 10
+
+translation_source_policy: "every target language translates DIRECTLY from canonical English blocks; never from Persian"
+
+content_id_policy:
+  structural_id_shared_across_languages: true
+  locale_variant_format: "<STRUCTURAL_ID>@<locale>"     # e.g. KDJ-AI-2026E1-P03-C07-S04@fa
+
+translation_memory_layout: "translation_memory/<locale>/"
+html_layout: "/<locale>/ai-book/<chapter-slug>/"
+hreflang: true
+per_language_docx_pdf: false      # opt-in per locale in config/publishing.yaml

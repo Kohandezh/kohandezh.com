@@ -1,0 +1,54 @@
+{
+ "template_id": "TPL-P02-6",
+ "title_fa": "نمونه فرم: گزارش دورهٔ پایش سامانهٔ هوش مصنوعی (Model Monitoring Report)",
+ "derived_from": [
+  "KDJ-AI-2026E1-P02-C09-S05",
+  "KDJ-AI-2026E1-P02-C10-S06"
+ ],
+ "fields": [
+  {
+   "name_fa": "شناسهٔ سامانه و بازهٔ گزارش",
+   "name_en": "system_id_period",
+   "description_fa": "ارجاع به فهرست دارایی‌ها و بازهٔ زمانی گزارش",
+   "example_fa": "AI-INV-014 — شهریور ۱۴۰۴"
+  },
+  {
+   "name_fa": "سنجه‌های کیفیت",
+   "name_en": "quality_metrics",
+   "description_fa": "سنجه‌های عملکرد در برابر آستانهٔ مصوب",
+   "example_fa": "دقت پاسخ ۹۲٪ (آستانه ۹۰٪)"
+  },
+  {
+   "name_fa": "نشانه‌های رانش",
+   "name_en": "drift_indicators",
+   "description_fa": "تغییر توزیع داده یا افت عملکرد نسبت به خط پایه",
+   "example_fa": "افزایش ۵٪ در نرخ رد پاسخ توسط ناظر انسانی"
+  },
+  {
+   "name_fa": "رخدادهای امنیتی یا سوءاستفاده",
+   "name_en": "security_misuse_events",
+   "description_fa": "موارد شناسایی‌شده در این بازه",
+   "example_fa": "دو تلاش شناسایی‌شدهٔ Prompt Injection، مسدود شده"
+  },
+  {
+   "name_fa": "بازخورد کاربران و شکایات",
+   "name_en": "user_feedback_complaints",
+   "description_fa": "خلاصهٔ بازخورد دریافتی",
+   "example_fa": "۳ شکایت مرتبط با پاسخ نامرتبط"
+  },
+  {
+   "name_fa": "اقدامات اصلاحی",
+   "name_en": "corrective_actions",
+   "description_fa": "اقدام انجام‌شده یا برنامه‌ریزی‌شده",
+   "example_fa": "به‌روزرسانی فیلتر ورودی برنامه‌ریزی شد"
+  },
+  {
+   "name_fa": "وضعیت کلی و توصیهٔ ادامه",
+   "name_en": "overall_status_recommendation",
+   "description_fa": "ادامهٔ عادی، نیاز به بازبینی، یا توصیه به توقف موقت",
+   "example_fa": "ادامهٔ عادی با پایش نزدیک‌تر"
+  }
+ ],
+ "origin": "editorial_template_ir",
+ "note_fa": "نمونه پیشنهادی تدوینگر بر پایه مفاهیم مطرح‌شده در منابع این فصل"
+}

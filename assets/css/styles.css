@@ -1074,6 +1074,11 @@ h6,
   gap: 12px;
 }
 
+.tech-scale-note {
+  max-width: 68ch;
+  margin: 14px 0 22px;
+}
+
 .section-tech-stack .tech-list > .br-line {
   display: none;
 }
@@ -5991,11 +5996,9 @@ a.image-brand:focus-visible {
     transform: translate3d(-33.3333%, 0, 0);
   }
 }
-@media (min-width: 992px) {
-  .infiniteSlide-brand {
-    max-width: 480px;
-  }
-}
+/* No desktop cap on either ticker. Both sit in the same column and both are
+   meant to run its full width; 480px left the banks strip short of the text
+   above it, and the web-presence strip was capped narrower still. */
 
 .award-list .award-item {
   padding: 23px 0px 24px;
@@ -8705,7 +8708,12 @@ html.ai-site-loading body { overflow: hidden !important; }
 }
 
 .eco-marquee {
-  max-width: 464px;
+  /* No cap. 464px held this strip to about two cards while the column beside
+     it is 700+ wide, so it read as a row that starts and then stops halfway
+     across the page. The banks ticker above it fills its container; this one
+     now does too. Declared after the 992px rule that caps .infiniteSlide-brand
+     at 480px, so it wins on source order at equal specificity. */
+  max-width: none;
   padding: 4px 0;
 }
 

@@ -1,0 +1,121 @@
+{
+  "checked_on": "2026-10-01",
+  "downloaded_previews": [
+    {
+      "standard": "IEC 62443-3-2:2020",
+      "file": "02-Standards/Official-Previews/IEC-62443-3-2-2020-PREVIEW.pdf",
+      "status": "official_preview_only_full_text_not_acquired",
+      "pages": 15,
+      "download_url": "https://preview.sist.si/sist-preview/19487/bea4b5b38c1f4f7a99733044ccf82500/IEC-62443-3-2-2020.pdf",
+      "catalog_url": "https://webstore.iec.ch/en/publication/30727",
+      "sha256": "9bcf539a8adea796b9b00bdb8f1c5a57a6b16cbd52c1761147deea455f41fb1c"
+    },
+    {
+      "standard": "IEC 62443-2-1:2024",
+      "file": "02-Standards/Official-Previews/IEC-62443-2-1-2024-PREVIEW.pdf",
+      "status": "official_preview_only_full_text_not_acquired",
+      "pages": 21,
+      "download_url": "https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llYzYyNDQzLTItMXtlZDIuMH1iLnBkZg%3D%3D",
+      "catalog_url": "https://webstore.iec.ch/en/publication/62883",
+      "sha256": "cae136f1a60d87cab00bac6e752a4309b9bb33932c34f8fa8808c67915c55a20"
+    },
+    {
+      "standard": "IEC 62443-2-4:2023",
+      "file": "02-Standards/Official-Previews/IEC-62443-2-4-2023-PREVIEW.pdf",
+      "status": "official_preview_only_full_text_not_acquired",
+      "pages": 11,
+      "download_url": "https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llYzYyNDQzLTItNHtlZDIuMH1iLnBkZg%3D%3D",
+      "catalog_url": "https://webstore.iec.ch/en/publication/67631",
+      "sha256": "7b198db1db3ce75a0b0e25cf705c6aa88d9c59801186fabd333ca2a7467b6f03"
+    },
+    {
+      "standard": "IEC 62443-4-1:2018",
+      "file": "02-Standards/Official-Previews/IEC-62443-4-1-2018-PREVIEW.pdf",
+      "status": "official_preview_only_full_text_not_acquired",
+      "pages": 21,
+      "download_url": "https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llYzYyNDQzLTQtMXtlZDEuMH1iLnBkZg%3D%3D",
+      "catalog_url": "https://webstore.iec.ch/en/publication/33615",
+      "sha256": "577078c4746575b1bbf8798248b8c413217d3f43bfc8926f46f6fe430655bf06"
+    },
+    {
+      "standard": "IEC 62443-4-2:2019",
+      "file": "02-Standards/Official-Previews/IEC-62443-4-2-2019-PREVIEW.pdf",
+      "status": "official_preview_only_full_text_not_acquired",
+      "pages": 33,
+      "download_url": "https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llYzYyNDQzLTQtMntlZDEuMH1iLnBkZg%3D%3D",
+      "catalog_url": "https://webstore.iec.ch/en/publication/34421",
+      "sha256": "fd4304defa6290a7173bd32f46431d8f89ecc59f910aeb083505da36d1351e03"
+    },
+    {
+      "standard": "IEC-PAS 62443-1-6:2025",
+      "file": "02-Standards/Official-Previews/IEC-PAS-62443-1-6-2025-PREVIEW.pdf",
+      "status": "official_preview_only_full_text_not_acquired",
+      "pages": 10,
+      "download_url": "https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llY3BhczYyNDQzLTEtNntlZDEuMH1lbi5wZGY%3D",
+      "catalog_url": "https://webstore.iec.ch/en/publication/102885",
+      "sha256": "2a06e4c1982650e1cd80842420da9c8aeb34e75f58dba82579be1d81a8e8d1ba"
+    },
+    {
+      "standard": "IEC-PAS 62443-2-2:2025",
+      "file": "02-Standards/Official-Previews/IEC-PAS-62443-2-2-2025-PREVIEW.pdf",
+      "status": "official_preview_only_full_text_not_acquired",
+      "pages": 8,
+      "download_url": "https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llY3BhczYyNDQzLTItMntlZDEuMH1lbi5wZGY%3D",
+      "catalog_url": "https://webstore.iec.ch/en/publication/63886",
+      "sha256": "166ce03dc34e2ef9d6edf1456af724cc5a9290d7352985fe999d149ca9e97778"
+    },
+    {
+      "standard": "IEC-TS 62443-1-5:2023",
+      "file": "02-Standards/Official-Previews/IEC-TS-62443-1-5-2023-PREVIEW.pdf",
+      "status": "official_preview_only_full_text_not_acquired",
+      "pages": 7,
+      "download_url": "https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llY3RzNjI0NDMtMS01e2VkMS4wfWVuLnBkZg%3D%3D",
+      "catalog_url": "https://webstore.iec.ch/en/publication/67461",
+      "sha256": "9190e909cec47e9b24dd8cec57217e27d7f1a280ebc99df0a391650ad6269a1d"
+    },
+    {
+      "standard": "IEC-TS 62443-6-1:2024",
+      "file": "02-Standards/Official-Previews/IEC-TS-62443-6-1-2024-PREVIEW.pdf",
+      "status": "official_preview_only_full_text_not_acquired",
+      "pages": 6,
+      "download_url": "https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llY3RzNjI0NDMtNi0xe2VkMS4wfWVuLnBkZg%3D%3D",
+      "catalog_url": "https://webstore.iec.ch/en/publication/67462",
+      "sha256": "1a449496ed4df6f415d953e6b040a6d7850bf5d18d17e4fbc0a9ab4e5a7d3383"
+    },
+    {
+      "standard": "IEC-TS 62443-6-2:2025",
+      "file": "02-Standards/Official-Previews/IEC-TS-62443-6-2-2025-PREVIEW.pdf",
+      "status": "official_preview_only_full_text_not_acquired",
+      "pages": 8,
+      "download_url": "https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llY3RzNjI0NDMtNi0ye2VkMS4wfWVuLnBkZg%3D%3D",
+      "catalog_url": "https://webstore.iec.ch/en/publication/67463",
+      "sha256": "35d5dcf04d26fea7b6d70a56991b9b01505931d510633faad87a68893c22c4ca"
+    }
+  ],
+  "missing_full_text": [
+    "IEC 62443-3-2:2020",
+    "IEC 62443-2-1:2024",
+    "IEC 62443-2-4:2023",
+    "IEC 62443-4-1:2018",
+    "IEC 62443-4-2:2019",
+    "IEC-PAS 62443-1-6:2025",
+    "IEC-PAS 62443-2-2:2025",
+    "IEC-TS 62443-1-5:2023",
+    "IEC-TS 62443-6-1:2024",
+    "IEC-TS 62443-6-2:2025"
+  ],
+  "additional_reference": "IEC 62443-4-2:2019/COR1:2022: https://webstore.iec.ch/en/publication/77193",
+  "acquisition_plan": {
+    "essential_missing_full_text": [
+      "IEC 62443-3-2:2020",
+      "IEC 62443-2-1:2024",
+      "IEC 62443-2-4:2023",
+      "IEC 62443-4-1:2018",
+      "IEC 62443-4-2:2019"
+    ],
+    "catalog_total_chf": 1810,
+    "status": "deferred_by_user_no_purchase",
+    "plan_file": "06-Editorial/sources-preparation.md",
+    "cor1_4_2_note": "Official 4-2 preview states COR1:2022 applies only to French version."
+  }
+}

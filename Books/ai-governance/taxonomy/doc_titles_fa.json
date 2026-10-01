@@ -1,0 +1,110 @@
+{
+ "NIST-AI-RMF-PLAYBOOK": {
+  "title_fa": "کتاب راهنمای چارچوب مدیریت ریسک هوش مصنوعی",
+  "subtitle_fa": "",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-AI-STD-FED-PLAN-2019": {
+  "title_fa": "رهبری ایالات متحده در هوش مصنوعی: برنامه‌ای برای مشارکت فدرال در توسعهٔ استانداردهای فنی و ابزارهای مرتبط",
+  "subtitle_fa": "تهیه‌شده در پاسخ به فرمان اجرایی 13859",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-AI-100-1": {
+  "title_fa": "چارچوب مدیریت ریسک هوش مصنوعی (AI RMF 1.0)",
+  "subtitle_fa": "",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-AI-100-2E2025": {
+  "title_fa": "یادگیری ماشین خصمانه",
+  "subtitle_fa": "یک طبقه‌بندی و واژه‌نامهٔ حملات و راهکارهای کاهنده",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-AI-100-3": {
+  "title_fa": "زبان هوش مصنوعی اعتماد‌پذیر: واژه‌نامهٔ جامع اصطلاحات",
+  "subtitle_fa": "",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-AI-100-4-IPD": {
+  "title_fa": "کاهش خطرهای ناشی از محتوای مصنوعی",
+  "subtitle_fa": "مروری بر رویکردهای فنی شفافیت محتوای دیجیتال",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-AI-600-1": {
+  "title_fa": "چارچوب مدیریت ریسک هوش مصنوعی: نمایهٔ هوش مصنوعی مولد",
+  "subtitle_fa": "هوش مصنوعی اعتماد‌پذیر و مسئولانهٔ مؤسسه ملی استاندارد و فناوری آمریکا",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-AI-700-1": {
+  "title_fa": "مطالعهٔ آزمایشی GenAI مؤسسه ملی استاندارد و فناوری آمریکا (2024): مرور و نتایج ارزیابی متن به متن",
+  "subtitle_fa": "هوش مصنوعی اعتماد‌پذیر و مسئولانهٔ مؤسسه ملی استاندارد و فناوری آمریکا",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-AI-700-2": {
+  "title_fa": "ارزیابی خطرها و اثرهای هوش مصنوعی (ARIA)",
+  "subtitle_fa": "ARIA 0.1: گزارش ارزیابی آزمایشی",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-AI-800-1-IPD": {
+  "title_fa": "مدیریت ریسک سوءاستفاده در مدل‌های بنیادین دومَنظوره",
+  "subtitle_fa": "پیش‌نویس اولیهٔ عمومی",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-IR-8312": {
+   "title_fa": "چهار اصل هوش مصنوعی تبیین‌پذیر",
+  "subtitle_fa": "",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-IR-8367": {
+  "title_fa": "پایه‌های روان‌شناختی تبیین‌پذیری و تفسیرپذیری در هوش مصنوعی",
+  "subtitle_fa": "",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-SP-1270": {
+  "title_fa": "به‌سوی استانداردی برای شناسایی و مدیریت سوگیری در هوش مصنوعی",
+  "subtitle_fa": "",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-SP-800-218A": {
+  "title_fa": "شیوه‌های توسعهٔ نرم‌افزار امن برای هوش مصنوعی مولد و مدل‌های بنیادین دومَنظوره",
+  "subtitle_fa": "یک نمایهٔ اجتماعی SSDF",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-PAPER-1-FOUNDATIONAL": {
+  "title_fa": "هوش مصنوعی – مسائل بنیادین و واژه‌نامه",
+  "subtitle_fa": "هوش مصنوعی و دادگاه‌ها: مواد آموزشی برای قضات",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-PAPER-2-TRUSTWORTHINESS": {
+  "title_fa": "هوش مصنوعی، اعتمادپذیری و دادرسی",
+  "subtitle_fa": "هوش مصنوعی و دادگاه‌ها: مواد آموزشی برای قضات",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-PAPER-3-LEGAL": {
+  "title_fa": "هوش مصنوعی، پژوهش حقوقی و تحلیل داده‌های قضایی",
+  "subtitle_fa": "هوش مصنوعی و دادگاه‌ها: مواد آموزشی برای قضات",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ },
+ "NIST-PAPER-4-BIAS": {
+  "title_fa": "هوش مصنوعی و سوگیری – یک ارزیابی",
+  "subtitle_fa": "هوش مصنوعی و دادگاه‌ها: مواد آموزشی برای قضات",
+  "model": "zai-coding-plan/glm-5.3-flash",
+  "status": "proposed_pending_claude_qa"
+ }
+}

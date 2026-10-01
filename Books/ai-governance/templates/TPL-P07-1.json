@@ -1,0 +1,78 @@
+{
+ "template_id": "TPL-P07-1",
+ "title_fa": "دفتر رصد استانداردهای هوش مصنوعی (نمونه فرم تدوینگر)",
+ "derived_from": [
+  "KDJ-AI-2026E1-P07-C50-S09",
+  "KDJ-AI-2026E1-P07-C50-S11"
+ ],
+ "fields": [
+  {
+   "name_fa": "شناسهٔ رکورد",
+   "name_en": "record_id",
+   "description_fa": "شناسهٔ یکتای هر استاندارد در دفتر رصد",
+   "example_fa": "STD-REG-۰۰۱"
+  },
+  {
+   "name_fa": "نام استاندارد یا ابزار مرتبط",
+   "name_en": "standard_or_tool_name",
+   "description_fa": "نام کامل سند، پیش‌نویس یا ابزار مورد رصد",
+   "example_fa": "استاندارد سیستم مدیریت هوش مصنوعی"
+  },
+  {
+   "name_fa": "نهاد توسعه‌دهنده",
+   "name_en": "developing_body",
+   "description_fa": "نهاد یا کنسرسیومی که سند را تدوین می‌کند",
+   "example_fa": "یک نهاد استانداردگذار بین‌المللی"
+  },
+  {
+   "name_fa": "نسخه و تاریخ انتشار",
+   "name_en": "version_and_date",
+   "description_fa": "نسخهٔ رصد‌شده و تاریخ آن برای پیگیری انسوخ‌شدن",
+   "example_fa": "نسخهٔ ۱، ۱۴۰۳/۰۶"
+  },
+  {
+   "name_fa": "دامنهٔ کاربرد در سازمان",
+   "name_en": "internal_scope",
+   "description_fa": "دارایی‌ها یا پروژه‌هایی که این سند برایشان مرجع است",
+   "example_fa": "سامانهٔ دستیار پاسخ‌گویی به مشتری"
+  },
+  {
+   "name_fa": "وضعیت",
+   "name_en": "status",
+   "description_fa": "نتیجهٔ ارزیابی: در حال بررسی، پذیرفته‌شده، ردشده یا منسوخ",
+   "example_fa": "پذیرفته‌شده"
+  },
+  {
+   "name_fa": "شکاف اصلی",
+   "name_en": "key_gap",
+   "description_fa": "فاصلهٔ وضع موجود تا الزامات سند",
+   "example_fa": "نبود فرادادهٔ استاندارد برای مجموعه‌داده‌ها"
+  },
+  {
+   "name_fa": "اقدام لازم، مالک و مهلت",
+   "name_en": "required_action_owner_deadline",
+   "description_fa": "اقدام اصلاحی تعریف‌شده به‌همراه نقش مسئول و مهلت انجام",
+   "example_fa": "تدوین طرحوارهٔ فراداده تا پایان فصل، تیم داده"
+  },
+  {
+   "name_fa": "مالک داخلی",
+   "name_en": "internal_owner",
+   "description_fa": "نقشی که پیگیری پذیرش سند با اوست",
+   "example_fa": "AI Officer"
+  },
+  {
+   "name_fa": "تناوب بازبینی",
+   "name_en": "review_frequency",
+   "description_fa": "بازهٔ بازبینی این رکورد در دفتر رصد",
+   "example_fa": "فصلی"
+  },
+  {
+   "name_fa": "منبع و نسخهٔ بایگانی‌شده",
+   "name_en": "source_reference",
+   "description_fa": "نشانی معتبر سند و نسخهٔ بایگانی‌شده در سازمان",
+   "example_fa": "نسخهٔ ۱ بایگانی‌شده در سامانهٔ اسناد"
+  }
+ ],
+ "origin": "editorial_template_ir",
+ "note_fa": "نمونه پیشنهادی تدوینگر بر پایه مفاهیم مطرح‌شده در منابع این فصل"
+}

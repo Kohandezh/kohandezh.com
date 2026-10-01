@@ -62,7 +62,7 @@
      language. */
   var NAV = {
     en: { brand: "Mohammad Ali Kohandezh", knowledge: "Knowledge Hub", blog: "Blog", portfolio: "Portfolio", certificates: "Certificates", psn: "PSN Trophy Room", privacy: "Privacy Policy", terms: "Terms of Use", rights: "All rights reserved", copy: "© 2026 Mohammad Ali Kohandezh", back: "Back to CV" },
-    fa: { brand: "محمدعلی کهن‌دژ", knowledge: "دانش‌نامه", blog: "وبلاگ", portfolio: "نمونه‌کارها", certificates: "گواهی‌نامه‌ها", psn: "اتاق افتخارات PSN", privacy: "سیاست حریم خصوصی", terms: "شرایط استفاده", rights: "تمامی حقوق محفوظ است", copy: "© ۱۴۰۵ محمدعلی کهن‌دژ", back: "بازگشت به رزومه" },
+    fa: { brand: "محمدعلی کهن‌دژ", aiGovernance: "کتاب حاکمیت هوش مصنوعی", knowledge: "دانش‌نامه", blog: "وبلاگ", portfolio: "نمونه‌کارها", certificates: "گواهی‌نامه‌ها", psn: "اتاق افتخارات PSN", privacy: "سیاست حریم خصوصی", terms: "شرایط استفاده", rights: "تمامی حقوق محفوظ است", copy: "© ۱۴۰۵ محمدعلی کهن‌دژ", back: "بازگشت به رزومه" },
     ar: { brand: "محمد علي كهن‌دژ", knowledge: "مركز المعرفة", blog: "المدونة", portfolio: "الأعمال", certificates: "الشهادات", psn: "قاعة جوائز PSN", privacy: "سياسة الخصوصية", terms: "شروط الاستخدام", rights: "جميع الحقوق محفوظة", copy: "© 2026 محمد علي كهن‌دژ", back: "العودة إلى السيرة الذاتية" },
     de: { brand: "Mohammad Ali Kohandezh", knowledge: "Wissens-Hub", blog: "Blog", portfolio: "Portfolio", certificates: "Zertifikate", psn: "PSN-Trophäenraum", privacy: "Datenschutzerklärung", terms: "Nutzungsbedingungen", rights: "Alle Rechte vorbehalten", copy: "© 2026 Mohammad Ali Kohandezh", back: "Zurück zum Lebenslauf" },
     es: { brand: "Mohammad Ali Kohandezh", knowledge: "Centro de conocimiento", blog: "Blog", portfolio: "Portafolio", certificates: "Certificados", psn: "Sala de trofeos PSN", privacy: "Política de privacidad", terms: "Términos de uso", rights: "Todos los derechos reservados", copy: "© 2026 Mohammad Ali Kohandezh", back: "Volver al currículum" },
@@ -75,6 +75,7 @@
 
   // key -> path, relative to the site root. depth() prefixes sub-directories.
   var MENU = [
+    { key: "aiGovernance", href: "fa/books/ai-governance/index.html", match: "fa/books/ai-governance/", wordpressOnly: true },
     { key: "blog", href: "blog/index.html" },
     { key: "knowledge", href: "knowledge.html" },
     { key: "portfolio", href: "portfolio/index.html" },
@@ -287,12 +288,15 @@
     var here = window.location.pathname.replace(/\/+$/, "/index.html");
     var out = [];
     MENU.forEach(function (m) {
+      if ((m.wordpressOnly && !wp()) || !N[m.key]) return;
       var a = document.createElement("a");
       a.href = withLang(pageUrl(m.key, m.href), m.key, loc);
       a.textContent = N[m.key];
+      a.setAttribute("data-kdcv-nav-key", m.key);
       // Portfolio and the blog live one level down; match on the tail so the
       // current page is marked whichever directory we are in.
-      if (here.toLowerCase().indexOf("/" + m.href.toLowerCase()) !== -1) a.setAttribute("aria-current", "page");
+      var match = m.match || m.href;
+      if (here.toLowerCase().indexOf("/" + match.toLowerCase()) !== -1) a.setAttribute("aria-current", "page");
       out.push(a);
     });
     return out;
@@ -356,7 +360,14 @@
     nav.appendChild(home);
 
     menuLinks(N, loc).forEach(function (a) { nav.appendChild(a); });
-    header.insertAdjacentElement("afterend", nav);
+    // The AI Book already owns a sticky product header. Its site-level menu is
+    // a compact utility bar ABOVE that header; placing it below produced two
+    // competing navigation rows and made the book feel detached from the site.
+    if (document.body.classList.contains("kbk-ai-book-page")) {
+      header.insertAdjacentElement("beforebegin", nav);
+    } else {
+      header.insertAdjacentElement("afterend", nav);
+    }
   }
 
   /* Rewrites the shared footer block in the page language. The markup already
@@ -409,7 +420,7 @@
       if (span) span.remove();
       var img = brand.querySelector("img");
       if (img) {
-        img.src = assetUrl("images/logo/footer-logo.webp");
+        img.src = assetUrl("images/logo/logo.webp");
         img.alt = N.brand;
         img.removeAttribute("width");
         img.removeAttribute("height");

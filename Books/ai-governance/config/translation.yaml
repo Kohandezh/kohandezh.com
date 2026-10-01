@@ -1,0 +1,49 @@
+# First-pass translation configuration (MasterPrompt §11–§12, §23–§26, §57)
+prompt_version: "translate-v1"
+source_language: en
+target_language: fa
+
+# Filled after Phase 6 benchmark (qa/model_benchmark.json). Provisional = probe order.
+# Supervising-editor decision 2026-09-17 (see qa/model_benchmark.md → "Selection override"):
+# quality-weighted ranking (fidelity/completeness/terminology/fluency) with availability penalty, not raw critical-defect counts.
+PRIMARY_TRANSLATOR:       "zai-coding-plan/glm-5.3-flash"
+SECONDARY_TRANSLATOR:       "google/gemini-3.1-flash-lite"
+FAST_FALLBACK_TRANSLATOR:       "zai-coding-plan/glm-5-turbo"
+
+generation:
+  temperature: 0.2
+  top_p: 0.9
+  max_output_tokens: 8000
+  thinking: disabled           # GLM thinking models return empty content otherwise
+  response_format: markdown_with_block_markers
+
+chunking:
+  unit_preference: [section, subsection, paragraph_group, definition_group, table, figure_discussion, appendix_item]
+  target_words: {min: 1200, max: 3000, default: 1800}
+  reduced_words_for_flags: {legal: 900, security_taxonomy: 900, definitions: 700, complex_table: 500, normative: 900, math: 700}
+  never_split: [term_from_definition, claim_from_citation, table_header_from_rows, caption_from_figure, numbered_item_from_parent, equation_from_explanation]
+
+concurrency:
+  initial: 8
+  step_up_when_stable: [12, 16]
+  stability_window_jobs: 40
+  max_error_rate: 0.05
+  backoff: {base_s: 5, max_s: 120, jitter: true}
+
+translation_memory:
+  exact_match_reuse: true
+  near_match_threshold: 0.92        # rapidfuzz token_set_ratio / 100
+  near_match_requires_review: true
+
+preserve:
+  - numbers
+  - dates
+  - section_numbers
+  - citations
+  - references
+  - acronyms
+  - technical_names
+  - list_hierarchy
+  - table_semantics
+  - document_identifiers
+  - modality (must/shall/should/may/can/could/recommended/required/optional/likely/possible)

@@ -77,7 +77,9 @@ class KBK_Routes {
 		return get_query_var( 'kbk_hub' ) === $which;
 	}
 	public static function is_entity_request() {
-		return '' !== get_query_var( 'kbk_entity' );
+		// AI Book graph/concept views reuse the kbk_entity var for their own
+		// allowlisted node IDs; they are never Layer B requests (isolation gate).
+		return '' !== get_query_var( 'kbk_entity' ) && '' === get_query_var( 'kbk_ai_book' );
 	}
 	public static function is_entity_view() {
 		return self::is_entity_request();

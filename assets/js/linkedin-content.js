@@ -706,6 +706,8 @@
             a.style.setProperty("--station", r);
             var o = document.createElement("img");
             o.className = "badge-metro-image", o.src = g + "assets/images/badges/microsoft/" + t.image,
+            o.srcset = o.src.replace(/\.webp$/, "-w160.webp") + " 160w, " + o.src.replace(/\.webp$/, "-w320.webp") + " 320w",
+            o.sizes = "140px",
             o.width = 352, o.height = 352, o.loading = "lazy", o.decoding = "async", o.alt = e ? "" : t.title,
             a.appendChild(o);
             var d = i("div", "badge-metro-meta");
@@ -721,7 +723,7 @@
             t.setAttribute("aria-labelledby", "badge-metro-title");
             var r = i("div", "badge-metro-head"), a = document.createElement("div"), o = i("p", "badge-metro-eyebrow", n.eyebrow);
             o.insertBefore(i("span", "badge-metro-signal"), o.firstChild), a.appendChild(o);
-            var d = i("h5", "badge-metro-title", n.title);
+            var d = i("h3", "badge-metro-title", n.title);
             d.id = "badge-metro-title", a.appendChild(d), r.appendChild(a), r.appendChild(i("p", "badge-metro-status", n.status)),
             t.appendChild(r);
             var s = i("div", "badge-metro-viewport");
@@ -733,6 +735,8 @@
     }
     function te(e) {
         Array.prototype.slice.call(e.querySelectorAll(".timeline-item")).forEach(function(n) {
+            // Generated CV entries already contain the canonical localized date.
+            if (n.hasAttribute("data-cv-id")) return;
             var t = n.querySelector(".timeline-role"), r = n.querySelector(".timeline-date");
             if (!(!t || !r)) {
                 var a = t.textContent;
@@ -741,22 +745,9 @@
             }
         });
     }
-    function ae(e) {
-        if (!e.querySelector(".linkedin-education-item")) {
-            var n = i("div", "timeline-item effectFade fadeUp no-div linkedin-education-item");
-            n.appendChild(i("p", "timeline-date text-black-56", O("2007-01") + " – " + O("2009-12"))),
-            n.appendChild(i("div", "timeline-dot"));
-            var t = i("div", "timeline-content"), r = i("div", "icon"), a = document.createElement("img");
-            a.className = "image-switch", a.dataset.dark = g + "assets/images/item/edu-2_dark.svg?v=2",
-            a.width = 29, a.height = 32, a.src = g + "assets/images/item/edu-2.svg?v=2", a.alt = "",
-            r.appendChild(a), t.appendChild(r), t.appendChild(i("p", "timeline-role fw-medium text-black-72", l.associateTitle)),
-            t.appendChild(i("p", "timeline-desc text-body-3 text-black-56", l.associateOrg)),
-            n.appendChild(t), e.appendChild(n);
-        }
-    }
     function re() {
         var e = document.querySelector("#education"), n = e && e.querySelector(".timeline");
-        if (!(!e || !n) && (te(n), ae(n), !e.querySelector(".linkedin-career-records"))) {
+        if (!(!e || !n) && (te(n), !e.querySelector(".linkedin-career-records"))) {
             var t = z(l.completeCareer, "linkedin-career-records"), r = i("ul", "linkedin-record-list linkedin-career-list");
             K.forEach(function(a) {
                 var o = i("li", "linkedin-record-item"), d = i("div", "linkedin-record-identity"), s = i("strong", "linkedin-record-title", a.title);

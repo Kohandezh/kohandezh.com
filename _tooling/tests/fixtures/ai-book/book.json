@@ -1,0 +1,31 @@
+{
+  "edition_id": "2026E1",
+  "locale": "fa",
+  "title_fa": "راهنمای جامع حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی",
+  "hash_spec": "kdj-hash-1",
+  "units": 1,
+  "parts": [{
+    "part_id": "P01",
+    "slug": "foundations",
+    "title_fa": "مبانی و زبان مشترک هوش مصنوعی",
+    "chapters": [{
+      "chapter_id": "C01",
+      "slug": "foundations-reading-guide",
+      "title_fa": "بخش نخست — مبانی و زبان مشترک هوش مصنوعی",
+      "origin": "editorial_synthesis",
+      "sections": [{
+        "structural_id": "KDJ-AI-2026E1-P01-C01-S01",
+        "content_id": "KDJ-AI-2026E1-P01-C01-S01-04D3A306",
+        "part_id": "P01",
+        "chapter_id": "C01",
+        "section_id": "S01",
+        "locale": "fa",
+        "title_fa": "دامنهٔ بخش و اسناد پشتوانهٔ آن",
+        "fa_text": "بخش نخست شالودهٔ مفهومی و واژگانی کل کتاب را می‌سازد.",
+        "origin": "editorial_synthesis",
+        "canonical_url": "https://kohandezh.com/fa/ai-book/foundations/foundations-reading-guide/#KDJ-AI-2026E1-P01-C01-S01",
+        "source_documents": ["NIST-AI-100-3", "NIST-PAPER-1-FOUNDATIONAL"]
+      }]
+    }]
+  }]
+}

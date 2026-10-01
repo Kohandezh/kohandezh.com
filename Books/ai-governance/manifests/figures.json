@@ -1,0 +1,1676 @@
+{
+ "generated": "2026-09-17T17:55:36-0400",
+ "count": 167,
+ "items": [
+  {
+   "figure_id": "NIST-AI-100-1::F0001",
+   "block_id": "NIST-AI-100-1::P0001::SEC0::B0001",
+   "doc_key": "NIST-AI-100-1",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-AI-100-1::F0002",
+   "block_id": "NIST-AI-100-1::P0001::SEC0::B0002",
+   "doc_key": "NIST-AI-100-1",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-AI-100-1::F0003",
+   "block_id": "NIST-AI-100-1::P0001::SEC0::B0004",
+   "doc_key": "NIST-AI-100-1",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-AI-100-1::F0004",
+   "block_id": "NIST-AI-100-1::P0002::SECARTIFICIALINTELLIGENCERISKMA::B0008",
+   "doc_key": "NIST-AI-100-1",
+   "page": 2,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "ARTIFICIALINTELLIGENCERISKMA"
+  },
+  {
+   "figure_id": "NIST-AI-100-1::F0005",
+   "block_id": "NIST-AI-100-1::P0010::SEC1.1::B0046",
+   "doc_key": "NIST-AI-100-1",
+   "page": 10,
+   "caption": "Fig. 1. Examples of potential harms related to AI systems. Trustworthy AI systems and their responsible use can mitigate negative risks and contribute to benefits for people, organizations, and ecosystems.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "1.1"
+  },
+  {
+   "figure_id": "NIST-AI-100-1::F0006",
+   "block_id": "NIST-AI-100-1::P0015::SEC2::B0080",
+   "doc_key": "NIST-AI-100-1",
+   "page": 15,
+   "caption": "Fig. 2. Lifecycle and Key Dimensions of an AI System. Modified from OECD (2022) OECD Framework for the Classification of AI systems — OECD Digital Economy Papers. The two inner circles show AI systems’ key dimensions and the outer circle shows AI lifecycle stages. Ideally, risk management efforts start with the Plan and Design function in the application context and are performed throughout the AI system lifecycle. See Figure 3 for representative AI actors.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "2"
+  },
+  {
+   "figure_id": "NIST-AI-100-1::F0007",
+   "block_id": "NIST-AI-100-1::P0016::SEC2::B0087",
+   "doc_key": "NIST-AI-100-1",
+   "page": 16,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "2"
+  },
+  {
+   "figure_id": "NIST-AI-100-1::F0008",
+   "block_id": "NIST-AI-100-1::P0017::SEC3::B0090",
+   "doc_key": "NIST-AI-100-1",
+   "page": 17,
+   "caption": "Fig. 4. Characteristics of trustworthy AI systems. Valid & Reliable is a necessary condition of trustworthiness and is shown as the base for other trustworthiness characteristics. Accountable & Transparent is shown as a vertical box because it relates to all other characteristics.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3"
+  },
+  {
+   "figure_id": "NIST-AI-100-1::F0009",
+   "block_id": "NIST-AI-100-1::P0025::SEC5::B0152",
+   "doc_key": "NIST-AI-100-1",
+   "page": 25,
+   "caption": "Fig. 5. Functions organize AI risk management activities at their highest level to govern, map, measure, and manage AI risks. Governance is designed to be a cross-cutting function to inform and be infused throughout the other three functions.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "5"
+  },
+  {
+   "figure_id": "NIST-AI-100-1::F0010",
+   "block_id": "NIST-AI-100-1::P0048::SECAPPD::B0311",
+   "doc_key": "NIST-AI-100-1",
+   "page": 48,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "APPD"
+  },
+  {
+   "figure_id": "NIST-AI-100-2E2025::F0001",
+   "block_id": "NIST-AI-100-2E2025::P0001::SEC0::B0001",
+   "doc_key": "NIST-AI-100-2E2025",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-AI-100-2E2025::F0002",
+   "block_id": "NIST-AI-100-2E2025::P0001::SEC0::B0005",
+   "doc_key": "NIST-AI-100-2E2025",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-AI-100-2E2025::F0003",
+   "block_id": "NIST-AI-100-2E2025::P0002::SEC0::B0014",
+   "doc_key": "NIST-AI-100-2E2025",
+   "page": 2,
+   "caption": "U.S. Department of Commerce Howard Lutnick, Secretary",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-AI-100-2E2025::F0004",
+   "block_id": "NIST-AI-100-2E2025::P0017::SEC2.1::B0110",
+   "doc_key": "NIST-AI-100-2E2025",
+   "page": 17,
+   "caption": "Figure 1. Taxonomy of attacks on PredAI systems",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "2.1"
+  },
+  {
+   "figure_id": "NIST-AI-100-2E2025::F0005",
+   "block_id": "NIST-AI-100-2E2025::P0048::SEC3.1::B0295",
+   "doc_key": "NIST-AI-100-2E2025",
+   "page": 48,
+   "caption": "Figure 2. Taxonomy of attacks on GenAI systems",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.1"
+  },
+  {
+   "figure_id": "NIST-AI-100-2E2025::F0006",
+   "block_id": "NIST-AI-100-2E2025::P0049::SEC3.1.1::B0299",
+   "doc_key": "NIST-AI-100-2E2025",
+   "page": 49,
+   "caption": "Figure 3. Example LLM Training Pipeline used for InstructGPT [281]",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.1.1"
+  },
+  {
+   "figure_id": "NIST-AI-100-2E2025::F0007",
+   "block_id": "NIST-AI-100-2E2025::P0050::SEC3.1.1::B0305",
+   "doc_key": "NIST-AI-100-2E2025",
+   "page": 50,
+   "caption": "Figure 4. LLM enterprise adoption pipeline",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.1.1"
+  },
+  {
+   "figure_id": "NIST-AI-100-2E2025::F0008",
+   "block_id": "NIST-AI-100-2E2025::P0051::SEC3.1.1::B0310",
+   "doc_key": "NIST-AI-100-2E2025",
+   "page": 51,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.1.1"
+  },
+  {
+   "figure_id": "NIST-AI-100-2E2025::F0009",
+   "block_id": "NIST-AI-100-2E2025::P0052::SEC3.1.1::B0316",
+   "doc_key": "NIST-AI-100-2E2025",
+   "page": 52,
+   "caption": "Figure 6. Retrieval-augmented generation",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.1.1"
+  },
+  {
+   "figure_id": "NIST-AI-100-2E2025::F0010",
+   "block_id": "NIST-AI-100-2E2025::P0060::SEC3.3.2::B0375",
+   "doc_key": "NIST-AI-100-2E2025",
+   "page": 60,
+   "caption": "Figure 7. Map of the development and deployment life cycle of an AI model for broad-scale query access",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.3.2"
+  },
+  {
+   "figure_id": "NIST-AI-100-2E2025::F0011",
+   "block_id": "NIST-AI-100-2E2025::P0068::SEC4.1.1::B0434",
+   "doc_key": "NIST-AI-100-2E2025",
+   "page": 68,
+   "caption": "Figure 8. Pareto optimality",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "4.1.1"
+  },
+  {
+   "figure_id": "NIST-AI-100-3::F0001",
+   "block_id": "NIST-AI-100-3::P0001::SEC0::B0001",
+   "doc_key": "NIST-AI-100-3",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-AI-100-3::F0002",
+   "block_id": "NIST-AI-100-3::P0001::SECNISTARTIFCIALINTELLIGENCEAI1::B0006",
+   "doc_key": "NIST-AI-100-3",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "NISTARTIFCIALINTELLIGENCEAI1"
+  },
+  {
+   "figure_id": "NIST-AI-100-3::F0003",
+   "block_id": "NIST-AI-100-3::P0002::SECTHELANGUAGEOFTRUSTWORTHYAIAN::B0014",
+   "doc_key": "NIST-AI-100-3",
+   "page": 2,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "THELANGUAGEOFTRUSTWORTHYAIAN"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0001",
+   "block_id": "NIST-AI-100-4-IPD::P0001::SECREDUCINGRISKSPOSEDBYSYNTHETI::B0022",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "REDUCINGRISKSPOSEDBYSYNTHETI"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0002",
+   "block_id": "NIST-AI-100-4-IPD::P0002::SECREDUCINGRISKSPOSEDBYSYNTHETI::B0030",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 2,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "REDUCINGRISKSPOSEDBYSYNTHETI"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0003",
+   "block_id": "NIST-AI-100-4-IPD::P0010::SEC1::B0123",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 10,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "1"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0004",
+   "block_id": "NIST-AI-100-4-IPD::P0036::SEC3.1.4.5::B0466",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 36,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "3.1.4.5"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0005",
+   "block_id": "NIST-AI-100-4-IPD::P0037::SEC4.1.2::B0481",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 37,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "4.1.2"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0006",
+   "block_id": "NIST-AI-100-4-IPD::P0038::SEC19::B0501",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 38,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "19"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0007",
+   "block_id": "NIST-AI-100-4-IPD::P0040::SEC1::B0536",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 40,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "1"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0008",
+   "block_id": "NIST-AI-100-4-IPD::P0047::SEC5.1.6.1::B0684",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 47,
+   "caption": "Figure 2. AI actors across AI lifecycle stages. From NIST AI 100-1 AI RMF 1.0",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "5.1.6.1"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0009",
+   "block_id": "NIST-AI-100-4-IPD::P0048::SEC5.1.6.1::B0707",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 48,
+   "caption": "Figure 3. Digital content transparency approaches, across the AI lifecycle described in NIST AI RMF",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "5.1.6.1"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0010",
+   "block_id": "NIST-AI-100-4-IPD::P0084::SECD2SYNTHETICVIDEODETECTIONDAT::B1481",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 84,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "D2SYNTHETICVIDEODETECTIONDAT"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0011",
+   "block_id": "NIST-AI-100-4-IPD::P0085::SECD2SYNTHETICVIDEODETECTIONDAT::B1483",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 85,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "D2SYNTHETICVIDEODETECTIONDAT"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0012",
+   "block_id": "NIST-AI-100-4-IPD::P0085::SECD2SYNTHETICVIDEODETECTIONDAT::B1485",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 85,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "D2SYNTHETICVIDEODETECTIONDAT"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0013",
+   "block_id": "NIST-AI-100-4-IPD::P0086::SECD2SYNTHETICVIDEODETECTIONDAT::B1489",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 86,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "D2SYNTHETICVIDEODETECTIONDAT"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0014",
+   "block_id": "NIST-AI-100-4-IPD::P0086::SECD2SYNTHETICVIDEODETECTIONDAT::B1493",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 86,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "D2SYNTHETICVIDEODETECTIONDAT"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0015",
+   "block_id": "NIST-AI-100-4-IPD::P0087::SEC10::B1505",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 87,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "10"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0016",
+   "block_id": "NIST-AI-100-4-IPD::P0088::SEC10::B1509",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 88,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "10"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0017",
+   "block_id": "NIST-AI-100-4-IPD::P0088::SEC10::B1512",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 88,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "10"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0018",
+   "block_id": "NIST-AI-100-4-IPD::P0089::SECD7SYNTHETICAUDIODETECTIONDAT::B1524",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 89,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "D7SYNTHETICAUDIODETECTIONDAT"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0019",
+   "block_id": "NIST-AI-100-4-IPD::P0089::SECD7SYNTHETICAUDIODETECTIONDAT::B1528",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 89,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "D7SYNTHETICAUDIODETECTIONDAT"
+  },
+  {
+   "figure_id": "NIST-AI-100-4-IPD::F0020",
+   "block_id": "NIST-AI-100-4-IPD::P0090::SECD7SYNTHETICAUDIODETECTIONDAT::B1531",
+   "doc_key": "NIST-AI-100-4-IPD",
+   "page": 90,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "D7SYNTHETICAUDIODETECTIONDAT"
+  },
+  {
+   "figure_id": "NIST-AI-600-1::F0001",
+   "block_id": "NIST-AI-600-1::P0001::SEC0::B0001",
+   "doc_key": "NIST-AI-600-1",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-AI-600-1::F0002",
+   "block_id": "NIST-AI-600-1::P0001::SECNISTTRUSTWORTHYANDRESPONSIBL::B0005",
+   "doc_key": "NIST-AI-600-1",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "NISTTRUSTWORTHYANDRESPONSIBL"
+  },
+  {
+   "figure_id": "NIST-AI-600-1::F0003",
+   "block_id": "NIST-AI-600-1::P0002::SECARTIFICIALINTELLIGENCERISKMA::B0010",
+   "doc_key": "NIST-AI-600-1",
+   "page": 2,
+   "caption": "U.S. Department of Commerce Gina M. Raimondo, Secretary",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "ARTIFICIALINTELLIGENCERISKMA"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0001",
+   "block_id": "NIST-AI-700-1::P0001::SEC0::B0001",
+   "doc_key": "NIST-AI-700-1",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0002",
+   "block_id": "NIST-AI-700-1::P0001::SECNISTTRUSTWORTHYANDRESPONSIBL::B0006",
+   "doc_key": "NIST-AI-700-1",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "NISTTRUSTWORTHYANDRESPONSIBL"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0003",
+   "block_id": "NIST-AI-700-1::P0002::SECNISTTRUSTWORTHYANDRESPONSIBL::B0014",
+   "doc_key": "NIST-AI-700-1",
+   "page": 2,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "NISTTRUSTWORTHYANDRESPONSIBL"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0004",
+   "block_id": "NIST-AI-700-1::P0013::SEC3::B0079",
+   "doc_key": "NIST-AI-700-1",
+   "page": 13,
+   "caption": "Figure 1. NIST GenAI, a generative adversarial paradigm.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0005",
+   "block_id": "NIST-AI-700-1::P0014::SEC3::B0082",
+   "doc_key": "NIST-AI-700-1",
+   "page": 14,
+   "caption": "Figure 2. GenAI multiple rounds of evaluation framework.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0006",
+   "block_id": "NIST-AI-700-1::P0016::SEC4.1.2::B0113",
+   "doc_key": "NIST-AI-700-1",
+   "page": 16,
+   "caption": "Figure 3. System architecture showing frontend and backend components. The backend components can be scaled dynamically to match demand using a cloud cluster.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "4.1.2"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0007",
+   "block_id": "NIST-AI-700-1::P0018::SEC4.2.1::B0132",
+   "doc_key": "NIST-AI-700-1",
+   "page": 18,
+   "caption": "Figure 4. The backend scoring system is a set of independently operating agents. The set of agents, as well as the hosting instances, can be scaled dynamically to match demand.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "4.2.1"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0008",
+   "block_id": "NIST-AI-700-1::P0032::SEC7.2.1::B0318",
+   "doc_key": "NIST-AI-700-1",
+   "page": 32,
+   "caption": "Figure 5. GenAI T2T G-submission count per team",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "7.2.1"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0009",
+   "block_id": "NIST-AI-700-1::P0034::SEC7.2.2::B0337",
+   "doc_key": "NIST-AI-700-1",
+   "page": 34,
+   "caption": "Figure 6. GenAI T2T D-submission count per team",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "7.2.2"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0010",
+   "block_id": "NIST-AI-700-1::P0036::SEC8.1::B0350",
+   "doc_key": "NIST-AI-700-1",
+   "page": 36,
+   "caption": "Figure 7. Box plot with superimposed jittered points: D-round-1 comparison of the NIST-gpt3.5 and NIST-gpt4 generators across all discriminators for AUC (targets+nontargets), BrierT (targets), and BrierN (non-targets) scores",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "8.1"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0011",
+   "block_id": "NIST-AI-700-1::P0038::SEC8.1::B0360",
+   "doc_key": "NIST-AI-700-1",
+   "page": 38,
+   "caption": "Figure 9. Box plots of detection scores assigned by D-round-1 D-submission (ID: 15) to NIST-gpt3.5 generated summaries and to human-generated summaries. All scores are either zero or very close to zero.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "8.1"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0012",
+   "block_id": "NIST-AI-700-1::P0039::SEC8.1::B0364",
+   "doc_key": "NIST-AI-700-1",
+   "page": 39,
+   "caption": "Figure 10. BrierN versus BrierT plotted using a square root scale. Red points correspond to discriminators evaluation of gpt3.5 generated summaries. Blue points correspond to discriminators evaluation of gpt4 summaries. Solid filled circles correspond to discriminator AUC value of 0.9 or higher. Open circles correspond to AUC values of less than 0.9. Smaller the circle the lower is the AUC value. Solid filled circles in the yellow shaded region may be regarded as ’better’ discriminators since they have lower BrierT and BrierN scores and a higher than 0.9 AUC.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "8.1"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0013",
+   "block_id": "NIST-AI-700-1::P0041::SEC8.1::B0372",
+   "doc_key": "NIST-AI-700-1",
+   "page": 41,
+   "caption": "Figure 11. Density Histogram of BrierN scores across all D-submissions",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "8.1"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0014",
+   "block_id": "NIST-AI-700-1::P0042::SEC8.2::B0377",
+   "doc_key": "NIST-AI-700-1",
+   "page": 42,
+   "caption": "Figure 13 shows a heatmap of BrierT scores for all Generator-Discriminator combinations. Here a generator does well against a discriminator if the cell color is green, light green, or",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "8.2"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0015",
+   "block_id": "NIST-AI-700-1::P0043::SEC8.2::B0381",
+   "doc_key": "NIST-AI-700-1",
+   "page": 43,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "8.2"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0016",
+   "block_id": "NIST-AI-700-1::P0044::SEC8.2::B0384",
+   "doc_key": "NIST-AI-700-1",
+   "page": 44,
+   "caption": "Figure 14. Bar-plot of BrierN scores for discriminators. Shades of red identify Discriminator submissions that give a high detection score (closer to 1 than closer to zero) to human-generated content. Shades of blue are more desirable for discriminators.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "8.2"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0017",
+   "block_id": "NIST-AI-700-1::P0047::SEC8.3::B0394",
+   "doc_key": "NIST-AI-700-1",
+   "page": 47,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "8.3"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0018",
+   "block_id": "NIST-AI-700-1::P0048::SEC8.3::B0397",
+   "doc_key": "NIST-AI-700-1",
+   "page": 48,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "8.3"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0019",
+   "block_id": "NIST-AI-700-1::P0050::SEC8.4::B0403",
+   "doc_key": "NIST-AI-700-1",
+   "page": 50,
+   "caption": "Figure 18. Empirical CDFs of AUC scores for the pool of D-submissions from D-round-1, D-round-2 and D-round-3.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "8.4"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0020",
+   "block_id": "NIST-AI-700-1::P0058::SEC11::B0477",
+   "doc_key": "NIST-AI-700-1",
+   "page": 58,
+   "caption": "Figure 19. AUC for the pool of D-submissions from D-round-1.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "11"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0021",
+   "block_id": "NIST-AI-700-1::P0059::SEC11::B0479",
+   "doc_key": "NIST-AI-700-1",
+   "page": 59,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "11"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0022",
+   "block_id": "NIST-AI-700-1::P0059::SEC11::B0480",
+   "doc_key": "NIST-AI-700-1",
+   "page": 59,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "11"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0023",
+   "block_id": "NIST-AI-700-1::P0059::SEC11::B0481",
+   "doc_key": "NIST-AI-700-1",
+   "page": 59,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "11"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0024",
+   "block_id": "NIST-AI-700-1::P0060::SEC11::B0482",
+   "doc_key": "NIST-AI-700-1",
+   "page": 60,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "11"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0025",
+   "block_id": "NIST-AI-700-1::P0060::SEC11::B0483",
+   "doc_key": "NIST-AI-700-1",
+   "page": 60,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "11"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0026",
+   "block_id": "NIST-AI-700-1::P0060::SEC11::B0484",
+   "doc_key": "NIST-AI-700-1",
+   "page": 60,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "11"
+  },
+  {
+   "figure_id": "NIST-AI-700-1::F0027",
+   "block_id": "NIST-AI-700-1::P0061::SEC11::B0485",
+   "doc_key": "NIST-AI-700-1",
+   "page": 61,
+   "caption": "Figure 21. (continued). AUC for the pool of D-submissions from D-round-3.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "11"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0001",
+   "block_id": "NIST-AI-700-2::P0001::SEC0::B0001",
+   "doc_key": "NIST-AI-700-2",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0002",
+   "block_id": "NIST-AI-700-2::P0001::SECNISTTRUSTWORTHYANDRESPONSIBL::B0007",
+   "doc_key": "NIST-AI-700-2",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "NISTTRUSTWORTHYANDRESPONSIBL"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0003",
+   "block_id": "NIST-AI-700-2::P0002::SECASSESSINGRISKSANDIMPACTSOFAI::B0019",
+   "doc_key": "NIST-AI-700-2",
+   "page": 2,
+   "caption": "U.S. Department of Commerce Howard Lutnick, Secretary",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "ASSESSINGRISKSANDIMPACTSOFAI"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0004",
+   "block_id": "NIST-AI-700-2::P0009::SEC1::B0050",
+   "doc_key": "NIST-AI-700-2",
+   "page": 9,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "1"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0005",
+   "block_id": "NIST-AI-700-2::P0009::SEC2::B0056",
+   "doc_key": "NIST-AI-700-2",
+   "page": 9,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "2"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0006",
+   "block_id": "NIST-AI-700-2::P0010::SEC2::B0068",
+   "doc_key": "NIST-AI-700-2",
+   "page": 10,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "2"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0007",
+   "block_id": "NIST-AI-700-2::P0011::SEC2::B0072",
+   "doc_key": "NIST-AI-700-2",
+   "page": 11,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "2"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0008",
+   "block_id": "NIST-AI-700-2::P0011::SEC2::B0076",
+   "doc_key": "NIST-AI-700-2",
+   "page": 11,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "2"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0009",
+   "block_id": "NIST-AI-700-2::P0012::SEC3::B0083",
+   "doc_key": "NIST-AI-700-2",
+   "page": 12,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "3"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0010",
+   "block_id": "NIST-AI-700-2::P0013::SEC3::B0101",
+   "doc_key": "NIST-AI-700-2",
+   "page": 13,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "3"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0011",
+   "block_id": "NIST-AI-700-2::P0015::SEC5::B0120",
+   "doc_key": "NIST-AI-700-2",
+   "page": 15,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "5"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0012",
+   "block_id": "NIST-AI-700-2::P0017::SEC5::B0141",
+   "doc_key": "NIST-AI-700-2",
+   "page": 17,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "5"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0013",
+   "block_id": "NIST-AI-700-2::P0019::SEC5::B0154",
+   "doc_key": "NIST-AI-700-2",
+   "page": 19,
+   "caption": "Fig. 2. Example CoRIx trees for a. Application A and the Pathfinder task (large image in Fig. 3), b. Application B and the TV Spoilers task (large image in Fig. 4), and c. Application C and the Meal Planner task (large image in Fig. 5). Comparisons across subfigures a, b, and c are not meaningful as each tree represents a different application and task.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "5"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0014",
+   "block_id": "NIST-AI-700-2::P0020::SEC5::B0157",
+   "doc_key": "NIST-AI-700-2",
+   "page": 20,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "5"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0015",
+   "block_id": "NIST-AI-700-2::P0036::SECAPPE::B0307",
+   "doc_key": "NIST-AI-700-2",
+   "page": 36,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "APPE"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0016",
+   "block_id": "NIST-AI-700-2::P0036::SECAPPE::B0308",
+   "doc_key": "NIST-AI-700-2",
+   "page": 36,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "APPE"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0017",
+   "block_id": "NIST-AI-700-2::P0036::SECAPPE::B0309",
+   "doc_key": "NIST-AI-700-2",
+   "page": 36,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "APPE"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0018",
+   "block_id": "NIST-AI-700-2::P0036::SECAPPE::B0310",
+   "doc_key": "NIST-AI-700-2",
+   "page": 36,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "APPE"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0019",
+   "block_id": "NIST-AI-700-2::P0037::SECAPPE::B0311",
+   "doc_key": "NIST-AI-700-2",
+   "page": 37,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "APPE"
+  },
+  {
+   "figure_id": "NIST-AI-700-2::F0020",
+   "block_id": "NIST-AI-700-2::P0038::SECAPPE::B0312",
+   "doc_key": "NIST-AI-700-2",
+   "page": 38,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "APPE"
+  },
+  {
+   "figure_id": "NIST-AI-800-1-IPD::F0001",
+   "block_id": "NIST-AI-800-1-IPD::P0001::SEC0::B0001",
+   "doc_key": "NIST-AI-800-1-IPD",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-AI-800-1-IPD::F0002",
+   "block_id": "NIST-AI-800-1-IPD::P0002::SECMANAGINGMISUSERISKFORDUALUSE::B0034",
+   "doc_key": "NIST-AI-800-1-IPD",
+   "page": 2,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "MANAGINGMISUSERISKFORDUALUSE"
+  },
+  {
+   "figure_id": "NIST-AI-RMF-PLAYBOOK::F0001",
+   "block_id": "NIST-AI-RMF-PLAYBOOK::P0001::SECFM::B0001",
+   "doc_key": "NIST-AI-RMF-PLAYBOOK",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "FM"
+  },
+  {
+   "figure_id": "NIST-AI-RMF-PLAYBOOK::F0002",
+   "block_id": "NIST-AI-RMF-PLAYBOOK::P0001::SECFM::B0003",
+   "doc_key": "NIST-AI-RMF-PLAYBOOK",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "FM"
+  },
+  {
+   "figure_id": "NIST-AI-RMF-PLAYBOOK::F0003",
+   "block_id": "NIST-AI-RMF-PLAYBOOK::P0001::SECFM::B0004",
+   "doc_key": "NIST-AI-RMF-PLAYBOOK",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "FM"
+  },
+  {
+   "figure_id": "NIST-AI-RMF-PLAYBOOK::F0004",
+   "block_id": "NIST-AI-RMF-PLAYBOOK::P0005::SECFORWARDABOUTTHEPLAYBOOK::B0014",
+   "doc_key": "NIST-AI-RMF-PLAYBOOK",
+   "page": 5,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "FORWARDABOUTTHEPLAYBOOK"
+  },
+  {
+   "figure_id": "NIST-AI-RMF-PLAYBOOK::F0005",
+   "block_id": "NIST-AI-RMF-PLAYBOOK::P0037::SECGOVERN-6.2::B0603",
+   "doc_key": "NIST-AI-RMF-PLAYBOOK",
+   "page": 37,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "GOVERN-6.2"
+  },
+  {
+   "figure_id": "NIST-AI-RMF-PLAYBOOK::F0006",
+   "block_id": "NIST-AI-RMF-PLAYBOOK::P0061::SECMANAGE-4.3::B1022",
+   "doc_key": "NIST-AI-RMF-PLAYBOOK",
+   "page": 61,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "MANAGE-4.3"
+  },
+  {
+   "figure_id": "NIST-AI-RMF-PLAYBOOK::F0007",
+   "block_id": "NIST-AI-RMF-PLAYBOOK::P0097::SECMAP-5.2::B1630",
+   "doc_key": "NIST-AI-RMF-PLAYBOOK",
+   "page": 97,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "MAP-5.2"
+  },
+  {
+   "figure_id": "NIST-AI-STD-FED-PLAN-2019::F0001",
+   "block_id": "NIST-AI-STD-FED-PLAN-2019::P0001::SECFM::B0001",
+   "doc_key": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "FM"
+  },
+  {
+   "figure_id": "NIST-IR-8312::F0001",
+   "block_id": "NIST-IR-8312::P0001::SECNISTIR8312::B0005",
+   "doc_key": "NIST-IR-8312",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "NISTIR8312"
+  },
+  {
+   "figure_id": "NIST-IR-8312::F0002",
+   "block_id": "NIST-IR-8312::P0002::SECFOURPRINCIPLESOFEXPLAINABLEA::B0013",
+   "doc_key": "NIST-IR-8312",
+   "page": 2,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "FOURPRINCIPLESOFEXPLAINABLEA"
+  },
+  {
+   "figure_id": "NIST-IR-8312::F0003",
+   "block_id": "NIST-IR-8312::P0010::SEC2::B0054",
+   "doc_key": "NIST-IR-8312",
+   "page": 10,
+   "caption": "Fig. 1. Illustration of the four principles of explainable artificial intelligence. Arrows indicate that for a system to be explainable, it must provide an explanation. The remaining three principles are the fundamental properties of those explanations.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "2"
+  },
+  {
+   "figure_id": "NIST-IR-8312::F0004",
+   "block_id": "NIST-IR-8312::P0014::SEC3::B0081",
+   "doc_key": "NIST-IR-8312",
+   "page": 14,
+   "caption": "Fig. 2. Illustration of our elements of explanation styles.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3"
+  },
+  {
+   "figure_id": "NIST-IR-8367::F0001",
+   "block_id": "NIST-IR-8367::P0001::SECNISTIR8367::B0005",
+   "doc_key": "NIST-IR-8367",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "NISTIR8367"
+  },
+  {
+   "figure_id": "NIST-IR-8367::F0002",
+   "block_id": "NIST-IR-8367::P0002::SECPSYCHOLOGICALFOUNDATIONSOFEX::B0011",
+   "doc_key": "NIST-IR-8367",
+   "page": 2,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "PSYCHOLOGICALFOUNDATIONSOFEX"
+  },
+  {
+   "figure_id": "NIST-IR-8367::F0003",
+   "block_id": "NIST-IR-8367::P0011::SEC1.2::B0062",
+   "doc_key": "NIST-IR-8367",
+   "page": 11,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "1.2"
+  },
+  {
+   "figure_id": "NIST-IR-8367::F0004",
+   "block_id": "NIST-IR-8367::P0018::SEC2.1::B0092",
+   "doc_key": "NIST-IR-8367",
+   "page": 18,
+   "caption": "Fig. 2. Multiple Levels of Mental Representation Encoded in Parallel.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "2.1"
+  },
+  {
+   "figure_id": "NIST-IR-8367::F0005",
+   "block_id": "NIST-IR-8367::P0022::SEC2.2.1::B0113",
+   "doc_key": "NIST-IR-8367",
+   "page": 22,
+   "caption": "Fig. 3. Representational Hierarchy for a Text. By Original uploader was Aschoeke at en.wikibooks. Later version(s) were uploaded by Asarwary at en.wikibooks. - Transferred from en.wikibooks, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=5063569",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "2.2.1"
+  },
+  {
+   "figure_id": "NIST-IR-8367::F0006",
+   "block_id": "NIST-IR-8367::P0023::SEC2.2.1::B0119",
+   "doc_key": "NIST-IR-8367",
+   "page": 23,
+   "caption": "Fig. 4. Representational Hierarchy for a Support Vector Machine.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "2.2.1"
+  },
+  {
+   "figure_id": "NIST-IR-8367::F0007",
+   "block_id": "NIST-IR-8367::P0030::SEC3.2.1::B0153",
+   "doc_key": "NIST-IR-8367",
+   "page": 30,
+   "caption": "Fig. 5. An example of output from LIME which emphasizes text features that led a specific paragraph to be classified as about atheism, rather than Christianity. The original image may be found at this URL: https://github.com/marcotcr/lime/blob/master/doc/images/twoclass.png",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.2.1"
+  },
+  {
+   "figure_id": "NIST-IR-8367::F0008",
+   "block_id": "NIST-IR-8367::P0031::SEC3.2.1::B0157",
+   "doc_key": "NIST-IR-8367",
+   "page": 31,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.2.1"
+  },
+  {
+   "figure_id": "NIST-IR-8367::F0009",
+   "block_id": "NIST-IR-8367::P0032::SEC3.2.1::B0162",
+   "doc_key": "NIST-IR-8367",
+   "page": 32,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.2.1"
+  },
+  {
+   "figure_id": "NIST-IR-8367::F0010",
+   "block_id": "NIST-IR-8367::P0034::SEC3.2.2::B0172",
+   "doc_key": "NIST-IR-8367",
+   "page": 34,
+   "caption": "Fig. 8. An example of output from Grad-CAM, indicating which pixels in an image are diagnostic of the predicted class (dog or cat). The original image may be found at [129]",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.2.2"
+  },
+  {
+   "figure_id": "NIST-IR-8367::F0011",
+   "block_id": "NIST-IR-8367::P0036::SEC3.2.2::B0180",
+   "doc_key": "NIST-IR-8367",
+   "page": 36,
+   "caption": "Fig. 9. An example of output from a GA<sup>2</sup> M which indicates how several features (horizontal axes) vary with relative risk of readmission for pneumonia at 30 days (vertical axis). Pairwise interactions are shown in the heatmaps at the bottom of the figure. The original image is in [34].",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.2.2"
+  },
+  {
+   "figure_id": "NIST-IR-8367::F0012",
+   "block_id": "NIST-IR-8367::P0039::SEC3.2.5::B0191",
+   "doc_key": "NIST-IR-8367",
+   "page": 39,
+   "caption": "Fig. 10. A visualization of Latent Dirichlet Allocation output from [13]. Probabilistic topic models such as LDA map each word in a text corpus to a topic. The most frequent words in that topic are then presented to humans for interpretation.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.2.5"
+  },
+  {
+   "figure_id": "NIST-IR-8367::F0013",
+   "block_id": "NIST-IR-8367::P0045::SEC4.2.2::B0218",
+   "doc_key": "NIST-IR-8367",
+   "page": 45,
+   "caption": "Fig. 11. An example of an Abstraction Hierarchy for a ML system designed to make loan recommendations. Each higher level implemented by the level immediately below it and each lower level implements a technical solution to carry out a function specified by the higher level.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "4.2.2"
+  },
+  {
+   "figure_id": "NIST-PAPER-1-FOUNDATIONAL::F0001",
+   "block_id": "NIST-PAPER-1-FOUNDATIONAL::P0001::SEC0::B0001",
+   "doc_key": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-1-FOUNDATIONAL::F0002",
+   "block_id": "NIST-PAPER-1-FOUNDATIONAL::P0001::SEC0::B0002",
+   "doc_key": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-1-FOUNDATIONAL::F0003",
+   "block_id": "NIST-PAPER-1-FOUNDATIONAL::P0001::SEC0::B0003",
+   "doc_key": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-1-FOUNDATIONAL::F0004",
+   "block_id": "NIST-PAPER-1-FOUNDATIONAL::P0001::SEC0::B0005",
+   "doc_key": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-1-FOUNDATIONAL::F0005",
+   "block_id": "NIST-PAPER-1-FOUNDATIONAL::P0001::SEC0::B0006",
+   "doc_key": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-2-TRUSTWORTHINESS::F0001",
+   "block_id": "NIST-PAPER-2-TRUSTWORTHINESS::P0001::SEC0::B0001",
+   "doc_key": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-2-TRUSTWORTHINESS::F0002",
+   "block_id": "NIST-PAPER-2-TRUSTWORTHINESS::P0001::SEC0::B0002",
+   "doc_key": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-2-TRUSTWORTHINESS::F0003",
+   "block_id": "NIST-PAPER-2-TRUSTWORTHINESS::P0001::SEC0::B0003",
+   "doc_key": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-2-TRUSTWORTHINESS::F0004",
+   "block_id": "NIST-PAPER-2-TRUSTWORTHINESS::P0001::SEC0::B0005",
+   "doc_key": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-2-TRUSTWORTHINESS::F0005",
+   "block_id": "NIST-PAPER-2-TRUSTWORTHINESS::P0001::SEC0::B0006",
+   "doc_key": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-3-LEGAL::F0001",
+   "block_id": "NIST-PAPER-3-LEGAL::P0001::SEC0::B0001",
+   "doc_key": "NIST-PAPER-3-LEGAL",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-3-LEGAL::F0002",
+   "block_id": "NIST-PAPER-3-LEGAL::P0001::SEC0::B0002",
+   "doc_key": "NIST-PAPER-3-LEGAL",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-3-LEGAL::F0003",
+   "block_id": "NIST-PAPER-3-LEGAL::P0001::SEC0::B0003",
+   "doc_key": "NIST-PAPER-3-LEGAL",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-3-LEGAL::F0004",
+   "block_id": "NIST-PAPER-3-LEGAL::P0001::SEC0::B0005",
+   "doc_key": "NIST-PAPER-3-LEGAL",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-3-LEGAL::F0005",
+   "block_id": "NIST-PAPER-3-LEGAL::P0001::SEC0::B0006",
+   "doc_key": "NIST-PAPER-3-LEGAL",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-4-BIAS::F0001",
+   "block_id": "NIST-PAPER-4-BIAS::P0001::SEC0::B0001",
+   "doc_key": "NIST-PAPER-4-BIAS",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-4-BIAS::F0002",
+   "block_id": "NIST-PAPER-4-BIAS::P0001::SEC0::B0002",
+   "doc_key": "NIST-PAPER-4-BIAS",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-4-BIAS::F0003",
+   "block_id": "NIST-PAPER-4-BIAS::P0001::SEC0::B0003",
+   "doc_key": "NIST-PAPER-4-BIAS",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-4-BIAS::F0004",
+   "block_id": "NIST-PAPER-4-BIAS::P0001::SEC0::B0005",
+   "doc_key": "NIST-PAPER-4-BIAS",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-PAPER-4-BIAS::F0005",
+   "block_id": "NIST-PAPER-4-BIAS::P0001::SEC0::B0006",
+   "doc_key": "NIST-PAPER-4-BIAS",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0001",
+   "block_id": "NIST-SP-1270::P0001::SECNISTSPECIALPUBLICATION1270::B0005",
+   "doc_key": "NIST-SP-1270",
+   "page": 1,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "NISTSPECIALPUBLICATION1270"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0002",
+   "block_id": "NIST-SP-1270::P0002::SECTOWARDSASTANDARDFORIDENTIFYI::B0015",
+   "doc_key": "NIST-SP-1270",
+   "page": 2,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "TOWARDSASTANDARDFORIDENTIFYI"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0003",
+   "block_id": "NIST-SP-1270::P0004::SECTOWARDSASTANDARDFORIDENTIFYI::B0026",
+   "doc_key": "NIST-SP-1270",
+   "page": 4,
+   "caption": "Fig. 1. The challenge of managing AI bias",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "TOWARDSASTANDARDFORIDENTIFYI"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0004",
+   "block_id": "NIST-SP-1270::P0013::SEC2.1.1::B0085",
+   "doc_key": "NIST-SP-1270",
+   "page": 13,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "2.1.1"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0005",
+   "block_id": "NIST-SP-1270::P0017::SEC2.1.2::B0101",
+   "doc_key": "NIST-SP-1270",
+   "page": 17,
+   "caption": "Fig. 2. Categories of AI Bias. The leaf node terms in each subcategory in the picture are hyperlinked to the GLOSSARY. Clicking them will bring up the definition in the Glossary. To return, click on the current page number (8) printed right after the glossary definition.",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "2.1.2"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0006",
+   "block_id": "NIST-SP-1270::P0022::SEC2.4::B0123",
+   "doc_key": "NIST-SP-1270",
+   "page": 22,
+   "caption": "Fig. 3. The AI Development Lifecycle",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "2.4"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0007",
+   "block_id": "NIST-SP-1270::P0023::SEC2.4::B0129",
+   "doc_key": "NIST-SP-1270",
+   "page": 23,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "2.4"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0008",
+   "block_id": "NIST-SP-1270::P0024::SEC3::B0134",
+   "doc_key": "NIST-SP-1270",
+   "page": 24,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "3"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0009",
+   "block_id": "NIST-SP-1270::P0025::SEC3.1.1::B0140",
+   "doc_key": "NIST-SP-1270",
+   "page": 25,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "3.1.1"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0010",
+   "block_id": "NIST-SP-1270::P0028::SEC3.1.2::B0153",
+   "doc_key": "NIST-SP-1270",
+   "page": 28,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "3.1.2"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0011",
+   "block_id": "NIST-SP-1270::P0030::SEC3.2.1::B0167",
+   "doc_key": "NIST-SP-1270",
+   "page": 30,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "3.2.1"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0012",
+   "block_id": "NIST-SP-1270::P0036::SEC3.2.1::B0189",
+   "doc_key": "NIST-SP-1270",
+   "page": 36,
+   "caption": "Fig. 5 provides examples of how the three categories of bias — systemic, statistical and computational, and human - interact and contribute to harms within the data and processes used in AI applications, and the validation procedures for determining performance.",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "3.2.1"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0013",
+   "block_id": "NIST-SP-1270::P0036::SEC3.2.1::B0193",
+   "doc_key": "NIST-SP-1270",
+   "page": 36,
+   "caption": "Fig. 5. How biases contribute to harms",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.2.1"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0014",
+   "block_id": "NIST-SP-1270::P0039::SEC3.2.2::B0210",
+   "doc_key": "NIST-SP-1270",
+   "page": 39,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "3.2.2"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0015",
+   "block_id": "NIST-SP-1270::P0040::SEC3.2.2::B0217",
+   "doc_key": "NIST-SP-1270",
+   "page": 40,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "3.2.2"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0016",
+   "block_id": "NIST-SP-1270::P0041::SEC3.2.2::B0220",
+   "doc_key": "NIST-SP-1270",
+   "page": 41,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "3.2.2"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0017",
+   "block_id": "NIST-SP-1270::P0044::SEC3.3.1::B0238",
+   "doc_key": "NIST-SP-1270",
+   "page": 44,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "3.3.1"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0018",
+   "block_id": "NIST-SP-1270::P0049::SEC3.3.2::B0263",
+   "doc_key": "NIST-SP-1270",
+   "page": 49,
+   "caption": "Fig. 6. Human-centered Design Process [ISO 9241-210:2019]",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.3.2"
+  },
+  {
+   "figure_id": "NIST-SP-1270::F0019",
+   "block_id": "NIST-SP-1270::P0050::SEC3.3.2::B0279",
+   "doc_key": "NIST-SP-1270",
+   "page": 50,
+   "caption": "Fig. 7. Human-centered Design Process for AI Systems",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "3.3.2"
+  },
+  {
+   "figure_id": "NIST-SP-800-218A::F0001",
+   "block_id": "NIST-SP-800-218A::P0001::SEC0::B0001",
+   "doc_key": "NIST-SP-800-218A",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "0"
+  },
+  {
+   "figure_id": "NIST-SP-800-218A::F0002",
+   "block_id": "NIST-SP-800-218A::P0001::SECSECURESOFTWAREDEVELOPMENTPRA::B0007",
+   "doc_key": "NIST-SP-800-218A",
+   "page": 1,
+   "caption": "",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "SECURESOFTWAREDEVELOPMENTPRA"
+  },
+  {
+   "figure_id": "NIST-SP-800-218A::F0003",
+   "block_id": "NIST-SP-800-218A::P0002::SECSECURESOFTWAREDEVELOPMENTPRA::B0017",
+   "doc_key": "NIST-SP-800-218A",
+   "page": 2,
+   "caption": "U.S. Department of Commerce Gina M. Raimondo, Secretary",
+   "ocr_available": true,
+   "asset": "",
+   "section_path": "SECURESOFTWAREDEVELOPMENTPRA"
+  },
+  {
+   "figure_id": "NIST-SP-800-218A::F0004",
+   "block_id": "NIST-SP-800-218A::P0009::SEC1::B0073",
+   "doc_key": "NIST-SP-800-218A",
+   "page": 9,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "1"
+  },
+  {
+   "figure_id": "NIST-SP-800-218A::F0005",
+   "block_id": "NIST-SP-800-218A::P0010::SEC1::B0077",
+   "doc_key": "NIST-SP-800-218A",
+   "page": 10,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "1"
+  },
+  {
+   "figure_id": "NIST-SP-800-218A::F0006",
+   "block_id": "NIST-SP-800-218A::P0010::SEC1::B0082",
+   "doc_key": "NIST-SP-800-218A",
+   "page": 10,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "1"
+  },
+  {
+   "figure_id": "NIST-SP-800-218A::F0007",
+   "block_id": "NIST-SP-800-218A::P0010::SEC1::B0088",
+   "doc_key": "NIST-SP-800-218A",
+   "page": 10,
+   "caption": "",
+   "ocr_available": false,
+   "asset": "",
+   "section_path": "1"
+  }
+ ]
+}

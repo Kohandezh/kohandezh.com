@@ -19,6 +19,8 @@ class Release(unittest.TestCase):
                 (root / name).write_text('/assets/new-current-file')
                 (wp_root / name).write_text('stale')
             (root / 'robots.txt').write_text('User-agent: *\nAllow: /\n')
+            (root / 'feed.xml').write_text('<rss>current-published-posts</rss>')
+            (wp_root / 'feed.xml').write_text('stale')
             (wp_root / 'sitemap.xml').write_text('<urlset/>')
             for prefix in release.PREFIXES:
                 (root / (prefix + 'llms.txt')).write_text('current')
@@ -27,7 +29,8 @@ class Release(unittest.TestCase):
             release.ROOT, release.THEME, release.WP_ROOT = root, theme, wp_root
             try:
                 payload = release.root_payload()
-                self.assertEqual(len(payload), 15)
+                self.assertEqual(len(payload), 16)
+                self.assertEqual(payload['feed.xml'], b'<rss>current-published-posts</rss>')
                 self.assertEqual(payload['fa-llms.txt'], b'current')
                 self.assertIn(b'/wp-content/themes/kohandezhcv/assets/', payload['sw.js'])
                 self.assertIn(b'?kdcv_sitemap=index', payload['robots.txt'])

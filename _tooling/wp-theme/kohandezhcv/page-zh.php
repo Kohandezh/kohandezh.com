@@ -8,36 +8,36 @@
     <title>穆罕默德·阿里·科汉德泽 - 人工智能、网络安全与IT基础设施专家</title>
     <meta name="author" content="Mohammad Ali Kohandezh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=2026091101"></script>
+    <script src="<?php echo KDCV; ?>/assets/js/locale-router.min.js?v=2026091705"></script>
     <meta name="description"
         content="穆罕默德·阿里·科汉德泽 — IT管理博士、Kohan System Farda（KSF）首席执行官，自2007年起从事人工智能、IT基础设施与网络安全工作。">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <!-- font -->
-    <link rel="preload" as="image" href="<?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp?v=3" fetchpriority="high">
+    <link rel="preload" as="image" href="<?php echo KDCV; ?>/assets/images/avatar/avatar-professional-w480.webp" imagesrcset="<?php echo KDCV; ?>/assets/images/avatar/avatar-professional-w480.webp 480w, <?php echo KDCV; ?>/assets/images/avatar/avatar-professional-w800.webp 800w, <?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp 1086w" imagesizes="(max-width: 767px) calc(100vw - 48px), 388px" fetchpriority="high">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/fonts.css">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/fonts/inter/inter.css">
 
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/icomoon/style.css">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/icon/simple-line/simple-line.css">
     <!-- css -->
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=2026091101">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/bootstrap.min.css?v=2026091705">
     <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/swiper-bundle.min.css"></noscript>
 
 
-    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=2026091101">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=2026091101">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=2026091101">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091101"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091101" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091101"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091101"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091101"></noscript>
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=2026091101">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091101">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=2026091101">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kdcv-interaction-fix.css?v=9">
-    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=2026091101"></noscript>
+    <link rel="stylesheet" type="text/css" href="<?php echo KDCV; ?>/assets/css/styles.min.css?v=2026091705">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/shiny-button.min.css?v=2026091705">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/limelight-nav.min.css?v=2026100101">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pixel-canvas.min.css?v=2026091705"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091705" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glowing-effect.min.css?v=2026091705"></noscript>
+    <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091901" media="print" onload="this.media='all'"><?php endif; ?><noscript><?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-avatar.min.css?v=2026091901"><?php endif; ?></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kohan-drive.min.css?v=2026091705"></noscript>
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/glare-card.min.css?v=2026091705">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/hud-button.min.css?v=2026091705">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/pearl-button.min.css?v=2026091705">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/kdcv-interaction-fix.css?v=2026091701">
+    <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/wisdom-quotes.min.css?v=2026091705"></noscript>
 
     <!-- Kohandezh overrides -->
     <style>
@@ -76,6 +76,13 @@
             text-decoration: none;
             transition: border-color .2s ease, background .2s ease;
         }
+        /* Registered, linked, but not built yet: the owner will point them at
+           real sites. Only the tag is marked, so the card still reads and
+           behaves as the live link it is. */
+        .eco-card--soon .eco-tag {
+            font-style: italic;
+            opacity: .8;
+        }
         .eco-card:hover {
             border-color: var(--primary);
             background: var(--black-6);
@@ -105,9 +112,6 @@
         }
         .eco-card:hover .icon {
             color: var(--primary);
-        }
-        .eco-marquee {
-            max-width: 464px;
         }
         .eco-marquee .eco-card {
             flex: none;
@@ -263,15 +267,15 @@
     </style>
 
     <!-- Favicon and Touch Icons (MK brand mark from kohandezh.com) -->
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo KDCV; ?>/assets/images/logo/favicon-32.png?v=2026091701">
   <link rel="manifest" href="/manifest.json">
   <link rel="apple-touch-icon" href="<?php echo KDCV; ?>/assets/images/logo/apple-touch-icon.png">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo KDCV; ?>/assets/images/logo/favicon-16.png?v=2">
-    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo KDCV; ?>/assets/images/logo/favicon-192.png?v=2">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo KDCV; ?>/assets/images/logo/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo KDCV; ?>/assets/images/logo/favicon-16.png?v=2026091701">
+    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo KDCV; ?>/assets/images/logo/favicon-192.png?v=2026091701">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo KDCV; ?>/assets/images/logo/apple-touch-icon.png?v=2026091701">
 
     <!-- ===== SEO BLOCK (kohandezh.com) ===== -->
     <!-- SEO: canonical -->
@@ -325,6 +329,36 @@
     "name": "Mohammad Ali Kohandezh",
     "givenName": "Mohammad Ali",
     "familyName": "Kohandezh",
+    "alternateName": [
+            "محمدعلی کهن‌دژ",
+            "محمدعلی کهن دژ",
+            "محمدعلی کهندژ",
+            "محمد علی کهن‌دژ",
+            "محمد علی کهن دژ",
+            "محمد علی کهندژ",
+            "محمد کهن‌دژ",
+            "محمد کهندژ",
+            "محمدعلی کوهن‌دژ",
+            "محمدعلی کوهن دژ",
+            "محمدعلی کوهندژ",
+            "محمد علی کوهن دژ",
+            "محمد کوهندژ",
+            "کهن‌دژ",
+            "کهندژ",
+            "محمد علي كهندژ",
+            "محمد علي كهندج",
+            "محمدعلي كهن دژ",
+            "Mohammadali Kohandezh",
+            "Mohammad Kohandezh",
+            "Muhammad Ali Kohandezh",
+            "Mohamad Ali Kohandezh",
+            "Mohammed Ali Kohandezh",
+            "Mohammad Ali Kohan Dezh",
+            "Mohammad Ali Kohandej",
+            "Mohammad Ali Kuhandezh",
+            "M. A. Kohandezh",
+            "Kohandezh"
+    ],
     "jobTitle": "AI & Quantum-Readiness Advisor | CEO, Kohan System Farda",
     "description": "PhD in IT Management and CEO of Kohan System Farda (KSF), specializing in enterprise IT infrastructure, virtualization, backup and recovery, AI, and cybersecurity.",
     "url": "https://kohandezh.com/",
@@ -353,11 +387,8 @@
         "addressCountry": "IR"
     },
     "sameAs": [
-        "https://kohandezh.com/blog/",
         "https://www.linkedin.com/in/kohandezh",
-        "https://x.com/Konandehh",
-        "https://ksf.ir",
-        "https://kohansystemfarda.com"
+        "https://x.com/Konandehh"
     ],
     "alumniOf": [
         {
@@ -497,7 +528,7 @@
                 "name": "How many years of experience does Mohammad Ali Kohandezh have?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Over 19 years of professional experience dating back to 2007, and 43 professional certifications including VMware VCP-DCV, EC-Council CEH and CHFI, HPE Accredited Technical Professional, and GIAC/SANS SEC504 and SEC542."
+                    "text": "Over 19 years of professional experience dating back to 2007. The public archive documents 43 credential and professional-development records, including VMware VCP-DCV, HPE ATP, Veritas, Microsoft, and training delivered by SABA Safe Village."
                 }
             },
             {
@@ -541,7 +572,10 @@
         "https://kohansystemfarda.com",
         "https://padyar.com",
         "https://homayar.com",
-        "https://netyar.com"
+        "https://netyar.com",
+        "https://blogyar.com",
+        "https://abryar.com",
+        "https://sanatyar.org"
       ]
     }
     </script>
@@ -678,7 +712,7 @@
     <!-- ===== /SEO BLOCK ===== -->
 
     <!-- ===== /SEO BLOCK ===== -->
-  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091101" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091101"></noscript>
+  <link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091705" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="<?php echo KDCV; ?>/assets/css/chat-ui.min.css?v=2026091705"></noscript>
   <!-- ProfilePage: Google's container type for a person's own page. It
        points at the Person node declared above by @id rather than
        repeating it, adds the freshness dates answer engines look for,
@@ -715,6 +749,50 @@
 
 <body data-default-mode="dark" class="counter-scroll">
 <?php wp_body_open(); ?>
+<!-- WAITING:BEGIN generated from _tooling/waiting/waiting.partial.html by _tooling/waiting/build.py -- do not edit by hand -->
+<style>
+#kdcv-waiting{--kw-bg:#ebebeb;--kw-ink:#0a7233;--kw-trk:rgba(10,114,51,.14);position:fixed;inset:0;z-index:2147483000;display:grid;place-items:center;background:var(--kw-bg);animation:kdcvw-h .4s 6s forwards}
+#kdcv-waiting.kdcv-waiting-dk,html[data-kdcv-theme=dark] #kdcv-waiting{--kw-bg:#0f0f0f;--kw-ink:#a8ff46;--kw-trk:rgba(240,255,222,.12)}
+html[data-kdcv-theme=light] #kdcv-waiting{--kw-bg:#ebebeb;--kw-ink:#0a7233;--kw-trk:rgba(10,114,51,.14)}
+.kdcv-waiting-out{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .36s .26s,visibility 0s .62s}
+.kdcv-waiting-r.kdcv-waiting-out{transition:opacity .2s,visibility 0s .2s}
+#kdcv-waiting svg{width:clamp(96px,24vmin,132px);height:auto;overflow:visible}
+.kdcvw-t{stroke:var(--kw-trk)}
+.kdcvw-c,.kdcvw-f{stroke:var(--kw-ink)}
+.kdcvw-c{stroke-dasharray:487 1542}
+.kdcvw-f{stroke-dasharray:2029;stroke-dashoffset:2029;opacity:0}
+.kdcv-waiting-out .kdcvw-c{opacity:0;transition:opacity .15s}
+.kdcv-waiting-out .kdcvw-f{opacity:1;stroke-dashoffset:0;transition:stroke-dashoffset .36s cubic-bezier(.65,0,.35,1)}
+@media (prefers-reduced-motion:no-preference){
+#kdcv-waiting svg{animation:kdcvw-in .5s cubic-bezier(.2,.8,.2,1) both}
+.kdcvw-c{animation:kdcvw-run 1.4s linear infinite}
+.kdcvw-a{animation:kdcvw-p 2.8s ease-in-out infinite}
+.kdcv-waiting-r svg{animation:none}
+}
+@media (prefers-reduced-motion:reduce){.kdcvw-c,.kdcvw-f{display:none}}
+@keyframes kdcvw-h{from{pointer-events:none}to{opacity:0;visibility:hidden;pointer-events:none}}
+@keyframes kdcvw-in{from{opacity:0;transform:scale(.9)}}
+@keyframes kdcvw-run{to{stroke-dashoffset:-2029}}
+@keyframes kdcvw-p{50%{opacity:.6}}
+</style>
+<noscript><style>#kdcv-waiting{display:none}</style></noscript>
+<div id="kdcv-waiting" role="progressbar" aria-label="Loading"><svg viewBox="-40 -40 592 592" aria-hidden="true"><defs><linearGradient id="kdcvw-tile" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse"><stop stop-color="#171D1B"/><stop offset="1" stop-color="#050807"/></linearGradient><linearGradient id="kdcvw-accent" x1="200" y1="270" x2="255" y2="380" gradientUnits="userSpaceOnUse"><stop stop-color="#D9FF8A"/><stop offset="1" stop-color="#4FD35F"/></linearGradient></defs><g fill="none" stroke-width="12" stroke-linecap="round"><rect class="kdcvw-t" x="-28" y="-28" width="568" height="568" rx="142"/><rect class="kdcvw-c" x="-28" y="-28" width="568" height="568" rx="142"/><rect class="kdcvw-f" x="-28" y="-28" width="568" height="568" rx="142"/></g><rect width="512" height="512" rx="114" fill="url(#kdcvw-tile)"/><path class="kdcvw-a" d="M262 268 205 380 258 380 258 268Z" fill="url(#kdcvw-accent)"/><g fill="none" stroke="#F0FFDE" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"><path d="M126 372V174l79 100 79-100v198"/><path d="M284 268 396 156M284 268l112 112"/></g></svg></div>
+<script>(function(){var d=document,w=window,h=d.documentElement,e=d.getElementById("kdcv-waiting"),T=setTimeout,D=Date.now,t0=D(),ti,n,f,t,m,M,C;if(!e)return;
+function k(){n=1;e.remove()}
+function o(){n||(n=1,e.className+=" kdcv-waiting-out",T(k,f?680:260))}
+function q(s){try{return matchMedia(s).matches}catch(x){}}
+function a(y,z,p){w.addEventListener(y,z,p)}
+if(/bot|crawl|spider|slurp|facebookexternalhit/i.test(navigator.userAgent)||d.readyState=="complete")return k();
+try{t=sessionStorage;f=!t.getItem("kdcvWaitingSeen");t.setItem("kdcvWaitingSeen",1)}catch(x){}
+try{t=h.getAttribute("data-kdcv-theme");if(!t){try{m=localStorage.getItem("darkMode")}catch(x){}t=m!=null?m=="enabled"?"dark":"light":d.body.dataset.defaultMode||(q("(prefers-color-scheme:dark)")?"dark":"light")}
+e.className+=(t=="dark"?" kdcv-waiting-dk":"")+(f?"":" kdcv-waiting-r");
+t={fa:"در حال بارگذاری",ar:"جارٍ التحميل",de:"Wird geladen",es:"Cargando",fr:"Chargement",tr:"Yükleniyor",zh:"加载中",ja:"読み込み中",ru:"Загрузка"}[h.lang.slice(0,2)];t&&e.setAttribute("aria-label",t)}catch(x){}
+M=f&&!q("(prefers-reduced-motion:reduce)")?940:0;C=f?1200:0;
+function g(){var z=D();z-t0<M||!(d.readyState=="complete"||ti&&z-ti>=C||z-t0>=3e3)||o()}
+function i(){ti=ti||D();g();T(g,C)}
+a("keydown",o,!0);a("pointerdown",o,!0);a("pageshow",function(v){v.persisted&&k()});
+d.addEventListener("load",g,!0);d.readyState=="loading"?d.addEventListener("readystatechange",i):i();T(g,M);T(g,3e3)})()</script>
+<!-- WAITING:END -->
 <script>/* Theme boot — runs before paint so a page never flashes the wrong theme on navigation. Mirrors main.js: stored choice wins, then data-default-mode, then light. `light` is the class portfolio.js uses. */(function(){try{var s=localStorage.getItem("darkMode"),d;if(s!==null){d=s==="enabled";}else{d=document.body.getAttribute("data-default-mode")==="dark";}document.body.classList.toggle("dark-mode",d);document.body.classList.toggle("light",!d);document.documentElement.setAttribute("data-kdcv-theme",d?"dark":"light");}catch(e){}})();</script>
   <a class="kd-skip-link" href="#wrapper">跳到主要内容</a>
     <!-- <canvas class="cursor-trail d-none d-xl-block" id="trail"></canvas> -->
@@ -820,6 +898,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="/books/" class="item-link nav-books">
+                        <i class="icon icon-books" aria-hidden="true"></i>
+                        <p class="tool-tip text-caption">书籍</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="#work" class="item-link scroll-link">
                         <i class="icon icon-high-light"></i>
                         <p class="tool-tip text-caption">作品</p>
@@ -856,7 +940,7 @@
                         <p class="tool-tip text-caption">联系</p>
                     </a>
                 </li>
-            </ul>
+</ul>
         </div>
     </div>
     <!-- /Menu Mobile -->
@@ -892,6 +976,12 @@
                 <a href="#education" class="item-link scroll-link">
                     <i class="icon icon-edu"></i>
                     <p class="tool-tip text-caption">教育</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/books/" class="item-link nav-books">
+                    <i class="icon icon-books" aria-hidden="true"></i>
+                    <p class="tool-tip text-caption">书籍</p>
                 </a>
             </li>
             <li class="nav-item">
@@ -964,7 +1054,7 @@
             <div class="wrap">
                 <div class="user-image">
                     <div class="image">
-                        <img class="profile-avatar-image" loading="eager" fetchpriority="high" decoding="async" width="1086" height="1448" src="<?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp?v=3" alt="Mohammad Ali Kohandezh">
+                        <img class="profile-avatar-image" loading="eager" fetchpriority="high" decoding="async" width="1086" height="1448" src="<?php echo KDCV; ?>/assets/images/avatar/avatar-professional-w480.webp" srcset="<?php echo KDCV; ?>/assets/images/avatar/avatar-professional-w480.webp 480w, <?php echo KDCV; ?>/assets/images/avatar/avatar-professional-w800.webp 800w, <?php echo KDCV; ?>/assets/images/avatar/avatar-professional.webp 1086w" sizes="(max-width: 767px) calc(100vw - 48px), 388px" alt="Mohammad Ali Kohandezh">
                     </div>
                     </div>
                 <div class="user-logo d-none d-lg-block">
@@ -1031,7 +1121,7 @@
                             <div id="home" class="section-intro flat-spacing">
                                 <div class="intro-author effectFade fadeUp no-div">
                                     <div class="author-image">
-                                        <img class="profile-avatar-thumb" loading="eager" fetchpriority="high" decoding="async" width="48" height="48" src="<?php echo KDCV; ?>/assets/images/avatar/avatar-thumb-img0031.webp?v=1" alt="穆罕默德·阿里·科汉德兹肖像">
+                                        <img class="profile-avatar-thumb" loading="eager" fetchpriority="high" decoding="async" width="48" height="48" src="<?php echo KDCV; ?>/assets/images/avatar/avatar-thumb-img0031-w80.webp" srcset="<?php echo KDCV; ?>/assets/images/avatar/avatar-thumb-img0031-w80.webp 80w, <?php echo KDCV; ?>/assets/images/avatar/avatar-thumb-img0031-w160.webp 160w" sizes="70px" alt="穆罕默德·阿里·科汉德兹肖像">
                                     </div>
                                     <div class="author-info letter-space--05">
                                         <p class="info_name text-black">穆罕默德·阿里·科汉德泽</p>
@@ -1064,7 +1154,7 @@
                                     </div>
                                     <div class="wg-curve-text">
                                         <div class="icon">
-                                            <picture><img src="<?php echo KDCV; ?>/assets/images/logo/KohanSystemFarda.webp?v=1" width="82" height="96" alt="Kohan System Farda" style="display:block;width:82px;height:96px;object-fit:contain" loading="eager" decoding="async"></picture>
+                                            <picture><img src="<?php echo KDCV; ?>/assets/images/logo/KohanSystemFarda-w96.webp" srcset="<?php echo KDCV; ?>/assets/images/logo/KohanSystemFarda-w96.webp 96w, <?php echo KDCV; ?>/assets/images/logo/KohanSystemFarda-w192.webp 192w" sizes="82px" width="82" height="96" alt="Kohan System Farda" style="display:block;width:82px;height:96px;object-fit:contain" loading="eager" decoding="async"></picture>
                                         </div>
                                         <div class="text-rotate">
                                             <div class="circle">
@@ -1210,6 +1300,27 @@
                                         </span>
                                         <i class="icon icon-arrow-right-top"></i>
                                     </a>
+                                    <a href="https://blogyar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">BlogYar.com</span>
+                                            <span class="eco-tag">面向 WordPress 的 AI 编辑团队</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://abryar.com" target="_blank" rel="noopener" class="eco-card eco-card--soon">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Abryar.com</span>
+                                            <span class="eco-tag">即将上线</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://sanatyar.org" target="_blank" rel="noopener" class="eco-card eco-card--soon">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Sanatyar.org</span>
+                                            <span class="eco-tag">即将上线</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
                                 
                                         <!-- Clone 2 -->
                                     <a href="https://ksf.ir" target="_blank" rel="noopener" class="eco-card">
@@ -1247,6 +1358,27 @@
                                         </span>
                                         <i class="icon icon-arrow-right-top"></i>
                                     </a>
+                                    <a href="https://blogyar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">BlogYar.com</span>
+                                            <span class="eco-tag">面向 WordPress 的 AI 编辑团队</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://abryar.com" target="_blank" rel="noopener" class="eco-card eco-card--soon">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Abryar.com</span>
+                                            <span class="eco-tag">即将上线</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://sanatyar.org" target="_blank" rel="noopener" class="eco-card eco-card--soon">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Sanatyar.org</span>
+                                            <span class="eco-tag">即将上线</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
                                 
                                         <!-- Clone 3 -->
                                     <a href="https://ksf.ir" target="_blank" rel="noopener" class="eco-card">
@@ -1281,6 +1413,27 @@
                                         <span class="eco-text">
                                             <span class="eco-name">KohanSystemFarda.com</span>
                                             <span class="eco-tag">公司官方网站</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://blogyar.com" target="_blank" rel="noopener" class="eco-card">
+                                        <span class="eco-text">
+                                            <span class="eco-name">BlogYar.com</span>
+                                            <span class="eco-tag">面向 WordPress 的 AI 编辑团队</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://abryar.com" target="_blank" rel="noopener" class="eco-card eco-card--soon">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Abryar.com</span>
+                                            <span class="eco-tag">即将上线</span>
+                                        </span>
+                                        <i class="icon icon-arrow-right-top"></i>
+                                    </a>
+                                    <a href="https://sanatyar.org" target="_blank" rel="noopener" class="eco-card eco-card--soon">
+                                        <span class="eco-text">
+                                            <span class="eco-name">Sanatyar.org</span>
+                                            <span class="eco-tag">即将上线</span>
                                         </span>
                                         <i class="icon icon-arrow-right-top"></i>
                                     </a>
@@ -1361,7 +1514,7 @@
                                             虚拟化
                                         </h4>
                                         <div class="award_img hover-image">
-                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-1.webp" alt="VMware VCP-DCV 2021 证书">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-1-w160.webp" srcset="<?php echo KDCV; ?>/assets/images/section/award-1-w160.webp 160w, <?php echo KDCV; ?>/assets/images/section/award-1-w320.webp 320w" sizes="158px" alt="VMware VCP-DCV 2021 证书">
                                         </div>
                                     </li>
                                     <li class="award-item hover-cursor-img">
@@ -1373,7 +1526,7 @@
                                             安全
                                         </h4>
                                         <div class="award_img hover-image">
-                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-2.webp" alt="CEH 证书">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-2-w160.webp" srcset="<?php echo KDCV; ?>/assets/images/section/award-2-w160.webp 160w, <?php echo KDCV; ?>/assets/images/section/award-2-w320.webp 320w" sizes="158px" alt="CEH 证书">
                                         </div>
                                     </li>
                                     <li class="award-item hover-cursor-img">
@@ -1386,7 +1539,7 @@
                                             取证
                                         </h4>
                                         <div class="award_img hover-image">
-                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-3.webp" alt="CHFI 证书">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-3-w160.webp" srcset="<?php echo KDCV; ?>/assets/images/section/award-3-w160.webp 160w, <?php echo KDCV; ?>/assets/images/section/award-3-w320.webp 320w" sizes="158px" alt="CHFI 证书">
                                         </div>
                                     </li>
                                     <li class="award-item hover-cursor-img">
@@ -1398,7 +1551,7 @@
                                             渗透测试
                                         </h4>
                                         <div class="award_img hover-image">
-                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-4.webp" alt="SEC504 证书">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-4-w160.webp" srcset="<?php echo KDCV; ?>/assets/images/section/award-4-w160.webp 160w, <?php echo KDCV; ?>/assets/images/section/award-4-w320.webp 320w" sizes="158px" alt="SEC504 证书">
                                         </div>
                                     </li>
                                     <li class="award-item hover-cursor-img">
@@ -1410,7 +1563,7 @@
                                             渗透测试
                                         </h4>
                                         <div class="award_img hover-image">
-                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-6.webp" alt="SEC542 证书">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-6-w160.webp" srcset="<?php echo KDCV; ?>/assets/images/section/award-6-w160.webp 160w, <?php echo KDCV; ?>/assets/images/section/award-6-w320.webp 320w" sizes="158px" alt="SEC542 证书">
                                         </div>
                                     </li>
                                     <li class="award-item hover-cursor-img">
@@ -1422,7 +1575,7 @@
                                             系统
                                         </h4>
                                         <div class="award_img hover-image">
-                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-5.webp" alt="HPE ATP Server Solutions 证书">
+                                            <img loading="lazy" width="158" height="224" style="object-fit:cover" src="<?php echo KDCV; ?>/assets/images/section/award-5-w160.webp" srcset="<?php echo KDCV; ?>/assets/images/section/award-5-w160.webp 160w, <?php echo KDCV; ?>/assets/images/section/award-5-w320.webp 320w" sizes="158px" alt="HPE ATP Server Solutions 证书">
                                         </div>
                                     </li>
                                 </ul>
@@ -1455,7 +1608,7 @@
                                         </div>
                                     </div>
                                     <div class="timeline-item effectFade fadeUp no-div" data-cv-id="ksf-ceo" data-cv-type="work">
-                                        <p class="timeline-date text-black-56">2024年至今</p>
+                                        <p class="timeline-date text-black-56">2013年12月至今</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
@@ -1481,7 +1634,7 @@
                                         </div>
                                     </div>
                                     <div class="timeline-item effectFade fadeUp no-div" data-cv-id="modaberan" data-cv-type="work">
-                                        <p class="timeline-date text-black-56">2018 - 2023</p>
+                                        <p class="timeline-date text-black-56">2018年7月 - 2024年2月</p>
                                         <div class="timeline-dot"></div>
                                         <div class="timeline-content">
                                             <div class="icon">
@@ -2009,17 +2162,17 @@
                                                 <div class="tf-grid-layout sm-col-2 lg-col-3">
                                                     <div class="service-image">
                                                         <div class="wrap_image">
-                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-infra-vmware.webp?v=1" alt="VMware ESXi virtualization architecture">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-infra-vmware.webp?v=2026091701" alt="VMware ESXi virtualization architecture">
                                                         </div>
                                                     </div>
                                                     <div class="service-image">
                                                         <div class="wrap_image">
-                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-infra-kubernetes.webp?v=1" alt="Kubernetes container orchestration">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-infra-kubernetes.webp?v=2026091701" alt="Kubernetes container orchestration">
                                                         </div>
                                                     </div>
                                                     <div class="service-image">
                                                         <div class="wrap_image">
-                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-infra-docker.webp?v=1" alt="Docker container platform">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-infra-docker.webp?v=2026091701" alt="Docker container platform">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2056,17 +2209,17 @@
                                                 <div class="tf-grid-layout sm-col-2 lg-col-3">
                                                     <div class="service-image">
                                                         <div class="wrap_image">
-                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-backup-arctera.webp?v=1" alt="Arctera Backup Exec data protection">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-backup-arctera.webp?v=2026091701" alt="Arctera Backup Exec data protection">
                                                         </div>
                                                     </div>
                                                     <div class="service-image">
                                                         <div class="wrap_image">
-                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-backup-veeam.webp?v=1" alt="Veeam backup and recovery">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-backup-veeam.webp?v=2026091701" alt="Veeam backup and recovery">
                                                         </div>
                                                     </div>
                                                     <div class="service-image">
                                                         <div class="wrap_image">
-                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-backup-netbackup.webp?v=1" alt="Veritas NetBackup data protection">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-backup-netbackup.webp?v=2026091701" alt="Veritas NetBackup data protection">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2103,12 +2256,12 @@
                                                 <div class="tf-grid-layout sm-col-2">
                                                     <div class="service-image">
                                                         <div class="wrap_image">
-                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-5.webp?v=2" alt="Digital forensics and biometric investigation">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-5.webp?v=2026091701" alt="Digital forensics and biometric investigation">
                                                         </div>
                                                     </div>
                                                     <div class="service-image">
                                                         <div class="wrap_image">
-                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-6.webp?v=2" alt="Kali Linux security research environment">
+                                                            <img loading="lazy" decoding="async" width="340" height="206" src="<?php echo KDCV; ?>/assets/images/section/service-6.webp?v=2026091701" alt="Kali Linux security research environment">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2145,11 +2298,12 @@
                                     了解我在这些平台上的专业能力 <br class="d-none d-sm-block">
                                     如何带来更好的成果
                                 </h2>
+                                <p class="tech-scale-note text-body-3 text-black-56">百分比是用于本作品集的自评相对指标，并非考试成绩或第三方测量结果。</p>
                                 <ul class="tech-list">
                                     <li class="wg-tech">
                                         <div class="tech-infor effectFade fadeUp no-div">
                                             <div class="tech_image">
-                                                <img loading="lazy" width="19" height="28" src="<?php echo KDCV; ?>/assets/images/section/tech-1.svg?v=2" alt="">
+                                                <img loading="lazy" width="19" height="28" src="<?php echo KDCV; ?>/assets/images/section/tech-1.svg?v=2026091701" alt="">
                                             </div>
                                             <div class="tech_info">
                                                 <p class="info__name fw-medium text-black-72">VMware vSphere</p>
@@ -2171,8 +2325,8 @@
                                     <li class="wg-tech">
                                         <div class="tech-infor effectFade fadeUp no-div">
                                             <div class="tech_image">
-                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/section/tech-2_dark.svg?v=2" width="18" height="28"
-                                                    src="<?php echo KDCV; ?>/assets/images/section/tech-2.svg?v=2" alt="" loading="lazy" decoding="async">
+                                                <img class="image-switch" data-dark="<?php echo KDCV; ?>/assets/images/section/tech-2_dark.svg?v=2026091701" width="18" height="28"
+                                                    src="<?php echo KDCV; ?>/assets/images/section/tech-2.svg?v=2026091701" alt="" loading="lazy" decoding="async">
                                             </div>
                                             <div class="tech_info">
                                                 <p class="info__name fw-medium text-black-72">Veeam Backup &amp; Replication</p>
@@ -2195,7 +2349,7 @@
                                     <li class="wg-tech">
                                         <div class="tech-infor effectFade fadeUp no-div">
                                             <div class="tech_image">
-                                                <img loading="lazy" width="29" height="28" src="<?php echo KDCV; ?>/assets/images/section/tech-3.svg?v=2" alt="">
+                                                <img loading="lazy" width="29" height="28" src="<?php echo KDCV; ?>/assets/images/section/tech-3.svg?v=2026091701" alt="">
                                             </div>
                                             <div class="tech_info">
                                                 <p class="info__name fw-medium text-black-72">Windows Server与安全</p>
@@ -2218,7 +2372,7 @@
                                     <li class="wg-tech">
                                         <div class="tech-infor effectFade fadeUp no-div">
                                             <div class="tech_image">
-                                                <img loading="lazy" width="29" height="28" src="<?php echo KDCV; ?>/assets/images/section/tech-4.svg?v=2" alt="量子就绪咨询图标">
+                                                <img loading="lazy" width="29" height="28" src="<?php echo KDCV; ?>/assets/images/section/tech-4.svg?v=2026091701" alt="量子就绪咨询图标">
                                             </div>
                                             <div class="tech_info">
                                                 <p class="info__name fw-medium text-black-72">量子就绪咨询</p>
@@ -2240,7 +2394,7 @@
                                     <li class="br-line"></li>
                                     <li class="wg-tech" data-tech-brand="arctera">
                                         <div class="tech-infor effectFade fadeUp no-div">
-                                            <div class="tech_image tech_image--wordmark"><img loading="lazy" width="160" height="43" src="<?php echo KDCV; ?>/assets/images/section/tech-arctera.svg?v=1" alt="Arctera 标志"></div>
+                                            <div class="tech_image tech_image--wordmark"><img loading="lazy" width="160" height="43" src="<?php echo KDCV; ?>/assets/images/section/tech-arctera.svg?v=2026091701" alt="Arctera 标志"></div>
                                             <div class="tech_info">
                                                 <p class="info__name fw-medium text-black-72">Arctera Backup Exec</p>
                                                 <p class="info__duty text-black-56 text-body-3">备份、恢复与灾难恢复运维</p>
@@ -2251,7 +2405,7 @@
                                     <li class="br-line"></li>
                                     <li class="wg-tech" data-tech-brand="veritas">
                                         <div class="tech-infor effectFade fadeUp no-div">
-                                            <div class="tech_image tech_image--wordmark"><img loading="lazy" width="24" height="24" src="<?php echo KDCV; ?>/assets/images/section/tech-veritas.svg?v=1" alt="Veritas 标志"></div>
+                                            <div class="tech_image tech_image--wordmark"><img loading="lazy" width="24" height="24" src="<?php echo KDCV; ?>/assets/images/section/tech-veritas.svg?v=2026091701" alt="Veritas 标志"></div>
                                             <div class="tech_info">
                                                 <p class="info__name fw-medium text-black-72">Veritas NetBackup</p>
                                                 <p class="info__duty text-black-56 text-body-3">大规模企业级备份与恢复</p>
@@ -2347,12 +2501,12 @@
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         我们的虚拟化平台被彻底重新设计——
                                                         稳定、文档完善，
                                                         并且可由我们
                                                         自己的团队维护。
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">IT经理</p>
                                                         <p class="text-body-3 text-black-56">银行业
@@ -2366,11 +2520,11 @@
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         遭遇勒索软件攻击时，他制定的恢复
                                                         方案完全按预期运作——我们
                                                         在零数据丢失的情况下恢复上线。
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">基础设施负责人</p>
                                                         <p class="text-body-3 text-black-56">企业客户
@@ -2384,11 +2538,11 @@
                                                     <div class="tes-icon">
                                                         <i class="icon icon-quote"></i>
                                                     </div>
-                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                    <blockquote class="tes-text letter-space--2 text-black-72">
                                                         他的安全评估发现了此前两次审计
                                                         都遗漏的问题——而且加固
                                                         路线图切实可行，而非纸上谈兵。
-                                                    </h5>
+                                                    </blockquote>
                                                     <div class="tes-author">
                                                         <p class="author_name fw-medium text-black-72">首席信息安全官
                                                         </p>
@@ -2441,19 +2595,19 @@
                                     <input type="checkbox" name="botcheck" class="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                                     <div class="form-content effectFade fadeUp no-div">
                                         <fieldset class="field-ip">
-                                            <input type="text" name="name" id="demo-name" placeholder="您的姓名 *" required>
+                                            <input type="text" name="name" id="demo-name" placeholder="您的姓名 *" required aria-label="您的姓名 *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="email" name="email" id="demo-email" placeholder="电子邮箱 *" required>
+                                            <input type="email" name="email" id="demo-email" placeholder="电子邮箱 *" required aria-label="电子邮箱 *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="tel" name="phone" id="demo-phone" placeholder="电话 / WhatsApp *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}">
+                                            <input type="tel" name="phone" id="demo-phone" placeholder="电话 / WhatsApp *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}" aria-label="电话 / WhatsApp *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="text" name="company" id="demo-company" placeholder="公司 / 组织">
+                                            <input type="text" name="company" id="demo-company" placeholder="公司 / 组织" aria-label="公司 / 组织">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <select name="field_of_interest" id="demo-field" required>
+                                            <select name="field_of_interest" id="demo-field" required aria-label="您需要什么？*">
                                                 <option value="" disabled selected>您需要什么？*</option>
                                                 <option value="AI Consulting">AI 咨询</option>
                                                 <option value="AI Services &amp; Implementation">AI 服务与实施</option>
@@ -2464,7 +2618,7 @@
                                             </select>
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <textarea name="message" id="demo-message" placeholder="请简要说明您想讨论的内容"></textarea>
+                                            <textarea name="message" id="demo-message" placeholder="请简要说明您想讨论的内容" aria-label="请简要说明您想讨论的内容"></textarea>
                                         </fieldset>
                                     </div>
                                     <div class="form-action effectFade fadeUp no-div">
@@ -2498,16 +2652,16 @@
                                     <input type="checkbox" name="botcheck" class="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                                     <div class="form-content effectFade fadeUp no-div">
                                         <fieldset class="field-ip">
-                                            <input type="text" name="name" id="name" placeholder="您的姓名 *" required>
+                                            <input type="text" name="name" id="name" placeholder="您的姓名 *" required aria-label="您的姓名 *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="email" name="email" id="email" placeholder="电子邮箱 *" required>
+                                            <input type="email" name="email" id="email" placeholder="电子邮箱 *" required aria-label="电子邮箱 *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <input type="tel" name="phone" id="phone" placeholder="联系电话 *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}">
+                                            <input type="tel" name="phone" id="phone" placeholder="联系电话 *" required inputmode="tel" autocomplete="tel" pattern="[0-9+\(\)\s\-]{6,}" aria-label="联系电话 *">
                                         </fieldset>
                                         <fieldset class="field-ip">
-                                            <textarea name="message" id="message" required placeholder="项目描述 *"></textarea>
+                                            <textarea name="message" id="message" required placeholder="项目描述 *" aria-label="项目描述 *"></textarea>
                                         </fieldset>
                                     </div>
                                     <p class="kdcv-form-note">标有 * 的字段均为必填项。</p>
@@ -2526,7 +2680,7 @@
                                 </form>
                                 <div class="contact-schedule">
                                     <h3 class="h5">更希望直接预约时间？</h3>
-                                    <p>在下方选择一个时段，确认后将自动获得 Google Meet 链接。</p>
+                                    <p>在线预约尚未开放。请使用下方电子邮件申请时间并获取 Google Meet 链接。</p>
                                     <!-- GOOGLE_CALENDAR_BOOKING_URL: paste the Google Calendar "Appointment schedule" booking page link (from the kohansystemfarda.com Google account) into data-booking-url below to go live. -->
                                     <div class="schedule-embed" data-booking-url="">
                                         <iframe title="预约与 Mohammad Ali Kohandezh 会面" loading="lazy"></iframe>
@@ -2610,33 +2764,33 @@
     </noscript>
 
     <!-- Javascript -->
-    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=2026091101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=2026091101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=2026091101" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/jquery.shim.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/bs-lite.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/linkedin-content.min.js?v=2026091901" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/resume-timeline.min.js?v=2026091705" defer></script>
     <script>window.KDCV_CONFIG = { assetBase: "<?php echo KDCV; ?>/", certificatesUrl: "<?php echo esc_url( home_url('/certificates/') ); ?>", restPostsUrl: "<?php echo esc_url( rest_url('wp/v2/posts') ); ?>", askUrl: "<?php echo esc_url( rest_url('kdcv/v1/ask') ); ?>" };</script>
     <script src="<?php echo KDCV; ?>/assets/js/home-blog-scroll.js?v=3" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=2026091101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=2026091101" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091101" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=2026091101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/accessibility-enhancements.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/work-image-localization.min.js?v=2026091705" defer></script>    <script src="<?php echo KDCV; ?>/assets/js/page-context.min.js?v=2026091705" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/lazy-bundle.min.js?v=2026091901" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsap-bundle.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/gsapAnimation.min.js?v=2026091705" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/countto.min.js?v=2026091705" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/animation-change-text.min.js" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/demo-and-schedule.min.js" defer></script>
 
-    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=2026091101" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=2026091101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=2026091101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=2026091101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=2026091101" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/clock.min.js?v=2026091705" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/main.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/limelight-nav.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pixel-canvas.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glowing-effect.min.js?v=2026091705" defer></script>
     <script src="<?php echo KDCV; ?>/assets/js/cwv-rum.min.js" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=2026091101" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=2026091101" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2026091101" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/kdcv-interaction-fix.js?v=2026090702" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=2026091101" defer></script>
+    <?php if ( ! class_exists('Kohan_Avatar') || empty(Kohan_Avatar::instance()->get_options()['enabled']) ) : ?><script src="<?php echo KDCV; ?>/assets/js/kohan-avatar.min.js?v=2026091705" defer></script><?php endif; ?>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-avatar-enhance.min.js?v=2026091705" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kohan-drive.min.js?v=2026091705" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/kdcv-interaction-fix.js?v=2026091701" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/wisdom-quotes.min.js?v=2026091705" defer></script>
 <script>
 (function(){
   function msg(lang){
@@ -2649,7 +2803,8 @@
       fr: "Clic droit désactivé",
       tr: "Sağ tık devre dışı",
       zh: "右键已禁用",
-      ja: "右クリックは無効です"
+      ja: "右クリックは無効です",
+      ru: "Правый клик отключён"
     };
     return m[lang] || m.en;
   }
@@ -2676,7 +2831,7 @@
     try {
       window.speechSynthesis.cancel();
       var u = new window.SpeechSynthesisUtterance(text);
-      var langMap = {en:'en-US',fa:'fa-IR',ar:'ar-SA',de:'de-DE',es:'es-ES',fr:'fr-FR',tr:'tr-TR',zh:'zh-CN',ja:'ja-JP'};
+      var langMap = {en:'en-US',fa:'fa-IR',ar:'ar-SA',de:'de-DE',es:'es-ES',fr:'fr-FR',tr:'tr-TR',zh:'zh-CN',ja:'ja-JP',ru:'ru-RU'};
       u.lang = langMap[lang] || 'en-US';
       u.rate = 0.95;
       u.pitch = 0.85;
@@ -2706,6 +2861,11 @@
     } catch(e){}
   }
   document.addEventListener('contextmenu', function(e){
+    // The KDCV Right-Click Guard plugin sets this flag from the WordPress
+    // setting. Read per event, not at registration, so the flag works no
+    // matter whether it is printed before or after this block. Undefined
+    // (the static site, with no plugin) keeps the guard on.
+    if (window.KDCV_RIGHTCLICK_GUARD === false) return;
     e.preventDefault();
     var lang = (document.documentElement.lang || 'en').slice(0,2).toLowerCase();
     var text = msg(lang);
@@ -2716,13 +2876,13 @@
   }, true);
 })();
 </script>
-  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=2026091101" defer></script>
-  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=2026091101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=2026091101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=2026091101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=2026091101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=2026091101" defer></script>
-    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=2026091101" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/pwa-register.min.js?v=2026091705" defer></script>
+  <script src="<?php echo KDCV; ?>/assets/js/chat-ui.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/glare-card.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/hud-button.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/pearl-button.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/timeline-date-fix.min.js?v=2026091705" defer></script>
+    <script src="<?php echo KDCV; ?>/assets/js/contact-forms.min.js?v=2026091705" defer></script>
     <?php wp_footer(); ?>
 </body>
 

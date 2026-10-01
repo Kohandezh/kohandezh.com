@@ -46,7 +46,12 @@ class KDCV_AI_REST {
 			return new WP_REST_Response( array( 'available' => false, 'reason' => 'bad-question' ), 400 );
 		}
 		if ( preg_match( '/(contact|phone|mobile|email|تماس|شماره|موبایل|ایمیل|تواصل|اتصال|هاتف|جوال|بريد|kontakt|telefon|e-?mail|contacto|tel[eé]fono|correo|contact|t[eé]l[eé]phone|courriel|iletişim|telefon|e-?posta|联系|电话|邮箱|連絡|電話|メール)/iu', $question ) ) {
-			$answer = 'Email: Kohandezh@hotmail.com | Iran: +98 912 149 1644 | United States: +1 810 666 2283';
+			// One number per audience: the Persian site is read from Iran, so it
+			// gets the Iranian line; every other language gets the international
+			// one, which is also the WhatsApp number.
+			$loc    = strtolower( substr( (string) $req->get_param( 'locale' ), 0, 2 ) );
+			$phone  = ( 'fa' === $loc ) ? '+98 912 149 1644' : '+1 810 666 2283';
+			$answer = 'Email: Kohandezh@hotmail.com | ' . $phone;
 			return new WP_REST_Response( array( 'available' => true, 'answer' => $answer, 'provider' => '', 'model' => '' ), 200 );
 		}
 
@@ -236,7 +241,11 @@ class KDCV_AI_REST {
 	private static function build_site_index_block( $question, $locale ) {
 		$lines = array(
 			'• Official contact email: Kohandezh@hotmail.com',
-			'• Official mobile numbers: +98 912 149 1644 (Iran) and +1 810 666 2283 (United States)',
+			// Same rule as the direct contact answer above: the model must not
+			// offer a visitor the number meant for the other audience.
+			( 'fa' === strtolower( substr( (string) $locale, 0, 2 ) )
+				? '• Official mobile number: +98 912 149 1644 (Iran)'
+				: '• Official mobile number: +1 810 666 2283 (WhatsApp, international)' ),
 			'• Official website: https://kohandezh.com/',
 			'• Mohammad Ali Kohandezh is the CEO of Kohan System Farda (KSF).',
 		);

@@ -1,0 +1,18 @@
+# secrets / local
+*.key
+*.pem.private
+private/
+.env
+*.sig.tmp
+
+# heavy / regenerable
+work/logs/*.log
+state/locks/
+__pycache__/
+*.pyc
+.DS_Store
+
+# credentials (never commit)
+.env
+state/anthropic.key
+state/dev-signing-key.pem

@@ -252,6 +252,8 @@
     var nodes = document.querySelectorAll(".timeline-date");
     for (var i = 0; i < nodes.length; i++) {
       var node = nodes[i];
+      // Preserve verified month precision from the canonical career dataset.
+      if (node.closest('[data-cv-id="ksf-ceo"], [data-cv-id="modaberan"]')) continue;
       if (node.dataset.kdcvDate === "1") continue;
 
       var m = STAMP.exec((node.textContent || "").trim());

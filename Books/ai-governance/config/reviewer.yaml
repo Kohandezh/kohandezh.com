@@ -1,0 +1,63 @@
+# Review pipeline configuration (MasterPrompt §6, §7, §27–§29)
+prompt_version: "review-v1"
+
+# Claude access routes, tried in order; a route that reports quota exhaustion is skipped until its reset time.
+#   anthropic_api : needs ANTHROPIC_API_KEY (env) or state/anthropic.key (gitignored) — fastest, pay-per-token, thinking enabled
+#   antigravity   : `agy` CLI (subscription quota; observed ≈200 review-size calls/day)
+#   claude_cli    : `claude -p` (needs `claude login`; consumes the Claude Code subscription)
+claude_routes: [anthropic_api, antigravity, claude_cli]
+api_model_ids: {claude-sonnet-4-6: "claude-sonnet-4-6", claude-opus-4-6-thinking: "claude-opus-4-6"}
+api_thinking_budget: {claude-sonnet-4-6: 6000, claude-opus-4-6-thinking: 12000}
+
+primary_reviewer:
+  provider: antigravity
+  model: claude-sonnet-4-6
+  abstract_mode: REVIEW_MAX
+  runtime: "agy print mode; thinking built-in"
+  timeout_s: 600
+  max_parallel: 6            # start conservative; raise after backlog/latency observed
+  retry: 3
+
+escalation_reviewer:
+  provider: antigravity
+  model: claude-opus-4-6-thinking
+  abstract_mode: REVIEW_ULTRA
+  timeout_s: 900
+  max_parallel: 2
+  retry: 3
+  triggers:
+    - verdict == ESCALATE from primary
+    - two consecutive RETRANSLATE verdicts on same chunk
+    - chunk.flags contains any of [legal, security_taxonomy, normative, math, high_impact_definition, critical_table]
+      AND primary fidelity < 98
+    - terminology conflict between two approved chunks
+  forbidden_for: routine chunks with PASS or PASS_WITH_EDIT
+
+verdicts: [PASS, PASS_WITH_EDIT, RETRANSLATE, ESCALATE]
+
+scores:
+  fidelity:     {min: 96}
+  completeness: {min: 99}
+  terminology:  {min: 96}
+  fluency:      {min: 92}
+  structure:    {min: 99}
+critical_defects_override_scores: true
+critical_defect_classes:
+  - missing_content
+  - added_content
+  - changed_number_date_unit
+  - missing_negation
+  - changed_modality
+  - wrong_document_identifier
+  - legal_error
+  - security_error
+
+review_input_contract:
+  - target_chunk_en
+  - target_chunk_fa
+  - parent_heading_path
+  - adjacent_context_en (<= 200 words before/after)
+  - glossary_subset (terms present in chunk only)
+  - style_policy_summary
+  - source_metadata (doc_key, pages, section)
+review_output_schema: tools/schemas/review_output.schema.json
