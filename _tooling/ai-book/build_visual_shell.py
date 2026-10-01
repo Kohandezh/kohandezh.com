@@ -11,7 +11,7 @@ from html import escape
 from shutil import copyfile
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "ai-book"
+OUT = ROOT / "books"
 
 ROUTES = {
     "index": ("", "خانه کتاب", "مرجع فارسی حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی"),
@@ -213,14 +213,21 @@ def content(key: str) -> str:
     raise KeyError(key)
 
 
+# The MK "Waiting" loader, emitted verbatim so _tooling/waiting/build.py --check
+# finds these generated pages already current (regenerating must not strip it).
+WAITING = (ROOT / "_tooling/waiting/waiting.partial.html").read_text(encoding="utf-8").strip()
+
+
 def render(key: str) -> str:
     slug, label, description = ROUTES[key]
     prefix = "../" if key == "index" else "../../"
-    canonical = "https://kohandezh.com/ai-book/" + (f"{slug}/" if slug else "")
+    canonical = "https://kohandezh.com/books/" + (f"{slug}/" if slug else "")
     return f'''<!doctype html>
 <html lang="fa" dir="rtl" data-ab-page="{escape(key)}">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{escape(description)}"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#080b0d"><title>{escape(label)} — کتاب هوش مصنوعی کهن‌دژ</title><link rel="canonical" href="{canonical}"><link rel="stylesheet" href="{prefix}assets/fonts/estedad/estedad.css"><link rel="stylesheet" href="{prefix}assets/fonts/inter/inter.css"><link rel="stylesheet" href="{prefix}assets/css/ai-book.css?v=2026092901"></head>
-<body>{page_header(key)}<main id="main" class="ab-main" tabindex="-1">{content(key)}</main>{footer(key)}<script src="{prefix}assets/js/ai-book.js?v=2026091901" defer></script></body></html>'''
+<body>
+{WAITING}
+{page_header(key)}<main id="main" class="ab-main" tabindex="-1">{content(key)}</main>{footer(key)}<script src="{prefix}assets/js/ai-book.js?v=2026091901" defer></script></body></html>'''
 
 
 def main() -> None:

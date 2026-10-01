@@ -28,6 +28,7 @@ final class KBK_AI_Book {
 		add_filter( 'template_include', array( __CLASS__, 'template_include' ), 30 );
 		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_assets' ) );
 		add_filter( 'wp_robots', array( __CLASS__, 'robots' ) );
+		add_action( 'template_redirect', array( __CLASS__, 'legacy_redirect' ), 1 );
 	}
 
 	/** @param string[] $vars @return string[] */
@@ -40,8 +41,26 @@ final class KBK_AI_Book {
 		if ( ! defined( 'KBK_FEATURE_AI_BOOK' ) || ! KBK_FEATURE_AI_BOOK ) {
 			return;
 		}
-		add_rewrite_rule( '^ai-book/?$', 'index.php?' . self::QUERY_VAR . '=home', 'top' );
-		add_rewrite_rule( '^ai-book/read/?$', 'index.php?' . self::QUERY_VAR . '=read', 'top' );
+		add_rewrite_rule( '^books/?$', 'index.php?' . self::QUERY_VAR . '=home', 'top' );
+		add_rewrite_rule( '^books/read/?$', 'index.php?' . self::QUERY_VAR . '=read', 'top' );
+	}
+
+	/**
+	 * The reader first shipped at /ai-book/ and now lives at /books/, the shelf
+	 * that will hold every title. Old links -- shared, bookmarked, indexed --
+	 * keep working through a permanent redirect that preserves the sub-path and
+	 * the query string.
+	 */
+	public static function legacy_redirect(): void {
+		$uri  = isset( $_SERVER['REQUEST_URI'] ) ? (string) wp_unslash( $_SERVER['REQUEST_URI'] ) : '';
+		$path = (string) wp_parse_url( $uri, PHP_URL_PATH );
+		if ( ! preg_match( '#^/ai-book(/.*)?$#', $path, $match ) ) {
+			return;
+		}
+		$query  = (string) wp_parse_url( $uri, PHP_URL_QUERY );
+		$target = home_url( '/books' . ( $match[1] ?? '/' ) ) . ( '' !== $query ? '?' . $query : '' );
+		wp_safe_redirect( $target, 301 );
+		exit;
 	}
 
 	public static function current_view(): string {
