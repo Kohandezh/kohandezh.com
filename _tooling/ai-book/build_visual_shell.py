@@ -11,7 +11,8 @@ from html import escape
 from shutil import copyfile
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "books"
+# A local design preview, never deployed: WordPress renders the real /books/.
+OUT = ROOT / "_tooling" / "ai-book" / "preview"
 
 ROUTES = {
     "index": ("", "خانه کتاب", "مرجع فارسی حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی"),
@@ -191,7 +192,8 @@ WAITING = (ROOT / "_tooling/waiting/waiting.partial.html").read_text(encoding="u
 
 def render(key: str) -> str:
     slug, label, description = ROUTES[key]
-    prefix = "../" if key == "index" else "../../"
+    # OUT is _tooling/ai-book/preview/, three levels below the site root.
+    prefix = "../../../" if key == "index" else "../../../../"
     canonical = "https://kohandezh.com/ai-book/" + (f"{slug}/" if slug else "")
     return f'''<!doctype html>
 <html lang="fa" dir="rtl" data-ab-page="{escape(key)}">

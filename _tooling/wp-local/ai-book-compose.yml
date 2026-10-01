@@ -37,7 +37,7 @@ services:
       - wordpress_data:/var/www/html
       - ../wp-theme/kohandezhcv:/var/www/html/wp-content/themes/kohandezhcv:ro
       - ../wp-theme/kohandezh-knowledge:/var/www/html/wp-content/plugins/kohandezh-knowledge:ro
-      - /Users/emperor/Documents/AI/AiBook:/opt/kbk-ai-book:ro
+      - ../../Books/ai-governance:/opt/kbk-ai-book:ro
     restart: unless-stopped
 
   cli:
@@ -53,7 +53,7 @@ services:
       - wordpress_data:/var/www/html
       - ../wp-theme/kohandezhcv:/var/www/html/wp-content/themes/kohandezhcv:ro
       - ../wp-theme/kohandezh-knowledge:/var/www/html/wp-content/plugins/kohandezh-knowledge:ro
-      - /Users/emperor/Documents/AI/AiBook:/opt/kbk-ai-book:ro
+      - ../../Books/ai-governance:/opt/kbk-ai-book:ro
     entrypoint: ["wp"]
     profiles: ["cli"]
 

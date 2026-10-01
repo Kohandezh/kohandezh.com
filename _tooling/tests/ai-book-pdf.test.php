@@ -3,7 +3,7 @@
  * Phase 14: PDF viewer facts/stream plan + storage-free configuration-gated
  * request intake, exercised against the canonical AiBook root.
  *
- * Usage: php ai-book-pdf.test.php /Users/emperor/Documents/AI/AiBook
+ * Usage: php ai-book-pdf.test.php Books/ai-governance
  */
 
 if ( 2 > $argc || '' === trim( $argv[1] ?? '' ) ) {
