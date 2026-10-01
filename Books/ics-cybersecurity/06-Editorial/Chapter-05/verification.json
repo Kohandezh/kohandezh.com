@@ -1,0 +1,13 @@
+{
+  "SR_count": 51,
+  "RE_count": 49,
+  "mapping_rows": 100,
+  "corr1_applied": true,
+  "outside_chapter_xml_unchanged": true,
+  "original_sha256": "e72b4d090a7d7902d0c378d2814d1742072f8ce1b574560615d3f7e93fd2b9ab",
+  "output": "/Users/emperor/Documents/AI/kohandezh.com/IOT-Book/01-Manuscript/کتاب-امنیت-سایبری-IACS-فصل۵-اصلاح‌شده.docx",
+  "source_mapping_discrepancies": [],
+  "all_other_package_parts_unchanged": true,
+  "zip_integrity": "passed",
+  "visual_review": "Persian body and representative mapping table reviewed in LibreOffice PDF render"
+}

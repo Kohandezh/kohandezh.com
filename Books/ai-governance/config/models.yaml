@@ -1,0 +1,64 @@
+# Discovered model inventory — 2026-09-17 (Phase 0). Status = actual probe result.
+discovery_date: "2026-09-17"
+host: "macOS Darwin 24.6.0, Python 3.14.6 (project .venv), Node 26.4.0"
+
+runtimes:
+  opencode:
+    version: "1.18.31"
+    path: /Users/emperor/.opencode/bin/opencode
+    configured_providers: [zai-coding-plan, google, opencode-go, openai, rayen]
+    default_model_in_config: rayen/rayen-qwen3.6-27b   # NOT used by pipeline
+    anthropic_provider: none                             # Claude is NOT reachable via OpenCode
+  antigravity:
+    version: "1.2.5"
+    cli: /Users/emperor/.local/bin/agy
+    app: /Applications/Antigravity.app
+    print_mode: "agy --model <id> --output-format json --dangerously-skip-permissions -p='<prompt>'"
+    structured_output: "--json-schema <schema-or-path>"
+    per_call_overhead_input_tokens: ~15000   # agent system prompt; measured
+    models:
+      - {id: claude-sonnet-4-6,        label: "Claude Sonnet 4.6 (Thinking)", status: OK, latency_s: 9}
+      - {id: claude-opus-4-6-thinking, label: "Claude Opus 4.6 (Thinking)",   status: OK, latency_s: 9}
+      - {id: gemini-3.8-flash-high,    status: listed}
+      - {id: gemini-3.7-flash-high,    status: listed}
+      - {id: gemini-3.6-flash-high,    status: listed}
+      - {id: gemini-3.1-pro-high,      status: listed}
+      - {id: gpt-oss-120b-medium,      status: DENIED_BY_POLICY}
+  claude_code_cli:
+    version: "2.1.226"
+    headless_status: "FAILED — OAuth session expired and could not be refreshed"
+    note: "Run `claude login` in a terminal to restore; not required while Antigravity route works."
+  gemini_cli:
+    version: "0.46.0"
+    status: present (not used; direct google-genai SDK used instead)
+
+translation_candidates:
+  - {provider: zai-coding-plan, model: glm-5.3,        status: OK,   probe_latency_s: 4.7,  note: "thinking disabled; primary candidate"}
+  - {provider: zai-coding-plan, model: glm-5.3-flash,  status: OK,   probe_latency_s: 34.8, note: "slower on probe; re-measure in benchmark"}
+  - {provider: zai-coding-plan, model: glm-5.2,        status: OK,   probe_latency_s: 7.6}
+  - {provider: zai-coding-plan, model: glm-5-turbo,    status: OK,   probe_latency_s: 4.5}
+  - {provider: zai-coding-plan, model: glm-5.3-highspeed, status: UNAVAILABLE, note: "not in subscription plan (code 1311)"}
+  - {provider: zai-coding-plan, model: glm-5.2-highspeed, status: UNAVAILABLE, note: "not in subscription plan (code 1311)"}
+  - {provider: google, model: gemini-3.8-flash,     status: RETRY_PENDING, note: "503 high demand on first probe"}
+  - {provider: google, model: gemini-3.7-flash,     status: RETRY_PENDING}
+  - {provider: google, model: gemini-3.6-flash,     status: RETRY_PENDING}
+  - {provider: google, model: gemini-flash-latest,  status: RETRY_PENDING}
+  - {provider: opencode-go, model: "*",             status: UNAVAILABLE, note: "insufficient balance"}
+
+review_models:
+  primary:    {provider: antigravity, model: claude-sonnet-4-6,        mode: REVIEW_MAX}
+  escalation: {provider: antigravity, model: claude-opus-4-6-thinking, mode: REVIEW_ULTRA}
+
+embedding_candidates:
+  - {provider: google, model: gemini-embedding-2,   status: listed}
+  - {provider: google, model: gemini-embedding-001, status: listed}
+
+image_models:
+  - {provider: openai, model: gpt-image-2,           status: listed}
+  - {provider: openai, model: gpt-image-1.5,         status: listed}
+  - {provider: openai, model: gpt-image-1-mini,      status: listed}
+  - {provider: openai, model: chatgpt-image-latest,  status: listed}
+  - {provider: google, model: gemini-3.1-flash-image, status: listed}
+
+credentials:
+  source: "~/.local/share/opencode/auth.json (read at runtime by tools/providers.py; never copied into repo)"

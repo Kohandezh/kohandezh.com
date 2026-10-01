@@ -1,0 +1,162 @@
+# KOHANDEZH AI BOOK — MODEL ROUTING POLICY
+# Authoritative allow/deny list. Every model call in tools/ MUST pass through
+# tools/policy.py::assert_allowed(purpose, provider, model) before execution.
+# Violations are logged to work/logs/policy_violations.jsonl and abort the job.
+#
+# HARD RULE: GPT_TEXT_USAGE must equal 0 at release time.
+
+policy_version: "1.0.0"
+updated: "2026-09-17"
+
+# ---------------------------------------------------------------------------
+# DENY: any text/reasoning use of these models is forbidden for book production.
+# Matching is by provider and by model-name pattern (glob, case-insensitive).
+# ---------------------------------------------------------------------------
+DENY_TEXT_MODELS:
+  providers:
+    - openai            # entire provider denied for text (image models allowed below)
+  patterns:
+    - "gpt-*"           # gpt-6-astra*, gpt-5.6*, gpt-5.5*, gpt-5.4*, gpt-5.3-codex*, gpt-5.2, gpt-5.1, gpt-5, gpt-4.1, gpt-4o...
+    - "o3*"
+    - "o4*"
+    - "o1*"
+    - "chatgpt-*"       # except image models explicitly allowed below
+    - "gpt-oss-*"       # OpenAI open-weight text family (offered by Antigravity) — denied
+    - "text-embedding-*"   # OpenAI embeddings — denied (see ALLOW_EMBEDDING_MODELS)
+    - "opencode-go/gpt-5.6-luna*"
+    - "rayen/*"         # unvetted third-party proxy; not benchmarked; excluded from production
+
+# ---------------------------------------------------------------------------
+# ALLOW: first-pass translation workers (GLM / Gemini). Exact provider/model.
+# Availability verified 2026-09-17 (see config/models.yaml for status).
+# ---------------------------------------------------------------------------
+ALLOW_TRANSLATION_MODELS:
+  - provider: zai-coding-plan
+    model: glm-5.3
+    endpoint: https://api.z.ai/api/coding/paas/v4
+    thinking: disabled
+  - provider: zai-coding-plan
+    model: glm-5.3-flash
+    endpoint: https://api.z.ai/api/coding/paas/v4
+    thinking: disabled
+  - provider: zai-coding-plan
+    model: glm-5.2
+    endpoint: https://api.z.ai/api/coding/paas/v4
+    thinking: disabled
+  - provider: zai-coding-plan
+    model: glm-5-turbo
+    endpoint: https://api.z.ai/api/coding/paas/v4
+    thinking: disabled
+  - provider: google
+    model: gemini-3.8-flash
+  - provider: google
+    model: gemini-3.7-flash
+  - provider: google
+    model: gemini-3.6-flash
+  - provider: google
+    model: gemini-flash-latest
+  - provider: google
+    model: gemini-3.1-flash-lite     # emergency fallback only
+
+# ---------------------------------------------------------------------------
+# ALLOW: review authority. Accessed through Antigravity CLI (`agy`).
+# ---------------------------------------------------------------------------
+ALLOW_REVIEW_MODELS:
+  primary:
+    provider: antigravity
+    model: claude-sonnet-4-6            # "Claude Sonnet 4.6 (Thinking)"
+    abstract_mode: REVIEW_MAX
+    runtime_mode: "thinking (built-in); agy exposes no effort flag for this model"
+  escalation:
+    provider: antigravity
+    model: claude-opus-4-6-thinking     # "Claude Opus 4.6 (Thinking)"
+    abstract_mode: REVIEW_ULTRA
+    runtime_mode: "thinking (built-in, maximum available); escalation only"
+  orchestrator:
+    provider: anthropic-claude-code
+    model: claude-fable-5-1
+    role: "orchestration, tooling, engineering, editorial assembly — never counted as translation or review authority"
+
+# Same Claude 4.6 models may be reached through these alternate routes (config/reviewer.yaml → claude_routes):
+CLAUDE_ALTERNATE_PROVIDERS: [anthropic, claude_cli]
+
+# ---------------------------------------------------------------------------
+# ALLOW: image generation ONLY (OpenAI exception, §9 of MasterPrompt).
+# Prompts for these models must be authored by Claude/Fable/GLM/Gemini.
+# ---------------------------------------------------------------------------
+ALLOW_IMAGE_MODELS:
+  - provider: openai
+    model: gpt-image-2
+  - provider: openai
+    model: gpt-image-1.5
+  - provider: openai
+    model: gpt-image-1-mini
+  - provider: openai
+    model: chatgpt-image-latest
+  - provider: google
+    model: gemini-3.1-flash-image      # non-OpenAI alternative
+  - provider: google
+    model: gemini-3-pro-image
+
+# ---------------------------------------------------------------------------
+# ALLOW: embeddings (never OpenAI).
+# ---------------------------------------------------------------------------
+ALLOW_EMBEDDING_MODELS:
+  - provider: google
+    model: gemini-embedding-2
+  - provider: google
+    model: gemini-embedding-001
+
+# ---------------------------------------------------------------------------
+# DISCLOSED ADVISORY USE (owner-directed, 2026-09-17, OpenCode session)
+# typesafe / jev-1.13.0 was used ONCE, at the owner's live instruction, to filter 989 deterministically
+# mined ENGLISH candidate terms down to 426 (is-domain-term + priority judgments). It produced no Persian
+# text, no translation, no review, no editorial content. Persian equivalents came from GLM-5.3 and every
+# high-impact term was approved by Claude Sonnet 4.6 (REVIEW_MAX). Ledger: qa/phase4_jev_usage.json.
+# Status: disclosed; NOT on any production allowlist; ratification for future advisory use is an owner decision.
+# ---------------------------------------------------------------------------
+DISCLOSED_ADVISORY_USE:
+  - provider: typesafe
+    model: jev-1.13.0
+    purpose: terminology_candidate_filter (English only)
+    content_impact: none
+    authorized_by: owner (live chat instruction, 2026-09-17)
+    allowed_for_production: false
+
+# ---------------------------------------------------------------------------
+# UNAVAILABLE (discovered 2026-09-17) — recorded so nobody retries blindly
+# ---------------------------------------------------------------------------
+UNAVAILABLE:
+  - zai-coding-plan/glm-5.3-highspeed   # HTTP 429 code 1311: not in subscription plan
+  - zai-coding-plan/glm-5.2-highspeed   # HTTP 429 code 1311: not in subscription plan
+  - opencode-go/*                       # 401 CreditsError: insufficient balance
+  - claude-code-cli (`claude -p`)       # OAuth session expired; Antigravity route used instead
+
+# ---------------------------------------------------------------------------
+# Fallback guard: OpenCode's default model is rayen/rayen-qwen3.6-27b and
+# OpenCode exposes openai/* text models. The pipeline therefore NEVER calls
+# `opencode run` with an unspecified model; every call goes through tools/policy.py
+# with an explicit provider/model pair, and openai text models are hard-denied.
+# ---------------------------------------------------------------------------
+enforcement:
+  module: tools/policy.py
+  on_violation: abort_job_and_log
+  usage_ledger: work/logs/model_usage.jsonl
+  release_assertion: "count(provider=='openai' and purpose!='image') == 0"
+
+# ---------------------------------------------------------------------------
+# OWNER OVERRIDE (default OFF): allow a non-Claude reviewer (purpose=review_alt) for REVIEW_MAX.
+# MasterPrompt fixes review authority to Claude Sonnet 4.6; enabling this is an owner decision and is
+# disclosed in provenance (reviewer_model) and in the release report. Benchmark: qa/review_model_benchmark.md
+# ---------------------------------------------------------------------------
+OWNER_OVERRIDE_REVIEW:
+  enabled: true
+  decided_by: "owner (kohandezh) — chat instruction 2026-09-18 ~03:05 EDT: \"HandOver Kon Prozhe Ro Be GLM\" (project handed over to GLM; Claude Sonnet/Opus via Antigravity remain escalation/audit authority when quota is available)"
+  decided_at: "2026-09-18T03:00:41-0400"
+  models:
+    - provider: zai-coding-plan
+      model: glm-5.3
+    - provider: google
+      model: gemini-3.1-pro-preview
+    - provider: google
+      model: gemini-3.8-flash

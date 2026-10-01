@@ -1,0 +1,62 @@
+{
+ "template_id": "TPL-P02-3",
+ "title_fa": "نمونه فرم: راهنمای برچسب‌گذاری داده و ثبت اختلاف‌نظر (نمونهٔ پیشنهادی تدوینگر)",
+ "derived_from": [
+  "KDJ-AI-2026E1-P02-C09-S05",
+  "KDJ-AI-2026E1-P02-C09-S06",
+  "KDJ-AI-2026E1-P02-C09-S08",
+  "KDJ-AI-2026E1-P02-C10-S03"
+ ],
+ "fields": [
+  {
+   "name_fa": "شناسهٔ پروژهٔ برچسب‌گذاری",
+   "name_en": "labeling_project_id",
+   "description_fa": "شناسهٔ یکتای پروژه",
+   "example_fa": "LBL-2026-014"
+  },
+  {
+   "name_fa": "واحد برچسب",
+   "name_en": "label_unit",
+   "description_fa": "واژه، بازه، جمله، سند، تصویر، صدا، ویدیو، قصد، احساس، ایمنی یا رتبه‌بندی ترجیح",
+   "example_fa": "رتبه‌بندی ترجیح میان دو پاسخ"
+  },
+  {
+   "name_fa": "راهنمای حاشیه‌نویسی",
+   "name_en": "annotation_guideline_ref",
+   "description_fa": "نسخهٔ سند راهنما که حاشیه‌نویسان از آن پیروی می‌کنند",
+   "example_fa": "راهنمای نسخهٔ ۲٫۱ — مورخ ۱۴۰۴/۰۵/۰۱"
+  },
+  {
+   "name_fa": "درجهٔ اطمینان حاشیه‌نویس",
+   "name_en": "annotator_confidence",
+   "description_fa": "خوداظهاری حاشیه‌نویس دربارهٔ قطعیت برچسب",
+   "example_fa": "بالا / متوسط / پایین"
+  },
+  {
+   "name_fa": "اختلاف‌نظر میان حاشیه‌نویسان",
+   "name_en": "inter_annotator_disagreement",
+   "description_fa": "آیا حاشیه‌نویسان مستقل به برچسب یکسان رسیدند؟",
+   "example_fa": "دو از سه حاشیه‌نویس توافق داشتند"
+  },
+  {
+   "name_fa": "دلیل داوری",
+   "name_en": "adjudication_reason",
+   "description_fa": "توضیح داور برای برچسب نهایی در صورت اختلاف",
+   "example_fa": "بر پایهٔ بند ۳ راهنما، مورد دوم ارجح تشخیص داده شد"
+  },
+  {
+   "name_fa": "نسخهٔ مجموعه‌داده",
+   "name_en": "dataset_version",
+   "description_fa": "شناسهٔ نسخه‌ای که این رکورد در آن گنجانده شده",
+   "example_fa": "gold-v3.2"
+  },
+  {
+   "name_fa": "ردپای ممیزی",
+   "name_en": "audit_trail_ref",
+   "description_fa": "ارجاع به لاگ تغییرات این رکورد",
+   "example_fa": "AUDIT-LBL-2026-014-007"
+  }
+ ],
+ "origin": "editorial_template_ir",
+ "note_fa": "نمونه پیشنهادی تدوینگر بر پایه مفاهیم مطرح‌شده در منابع این فصل"
+}

@@ -1,0 +1,8070 @@
+{
+ "generated": "2026-09-17T17:55:36-0400",
+ "count": 1008,
+ "items": [
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 1,
+   "blocks": 4,
+   "words": 8,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 2,
+   "blocks": 6,
+   "words": 107,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 3,
+   "blocks": 5,
+   "words": 256,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 4,
+   "blocks": 4,
+   "words": 278,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 5,
+   "blocks": 2,
+   "words": 267,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 6,
+   "blocks": 6,
+   "words": 451,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 7,
+   "blocks": 6,
+   "words": 486,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 8,
+   "blocks": 5,
+   "words": 318,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 9,
+   "blocks": 9,
+   "words": 408,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 10,
+   "blocks": 8,
+   "words": 271,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 11,
+   "blocks": 7,
+   "words": 412,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 12,
+   "blocks": 6,
+   "words": 427,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 13,
+   "blocks": 6,
+   "words": 463,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 14,
+   "blocks": 7,
+   "words": 464,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 15,
+   "blocks": 8,
+   "words": 281,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 16,
+   "blocks": 1,
+   "words": 0,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 17,
+   "blocks": 7,
+   "words": 434,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 18,
+   "blocks": 7,
+   "words": 492,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 19,
+   "blocks": 11,
+   "words": 406,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 20,
+   "blocks": 8,
+   "words": 515,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 21,
+   "blocks": 8,
+   "words": 485,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 22,
+   "blocks": 8,
+   "words": 392,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 23,
+   "blocks": 2,
+   "words": 240,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 24,
+   "blocks": 12,
+   "words": 248,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 25,
+   "blocks": 6,
+   "words": 207,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 26,
+   "blocks": 11,
+   "words": 459,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 27,
+   "blocks": 7,
+   "words": 342,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 28,
+   "blocks": 3,
+   "words": 327,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 29,
+   "blocks": 4,
+   "words": 375,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 30,
+   "blocks": 13,
+   "words": 406,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 31,
+   "blocks": 8,
+   "words": 300,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 32,
+   "blocks": 3,
+   "words": 331,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 33,
+   "blocks": 7,
+   "words": 366,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 34,
+   "blocks": 5,
+   "words": 299,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 35,
+   "blocks": 6,
+   "words": 320,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 36,
+   "blocks": 6,
+   "words": 342,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 37,
+   "blocks": 4,
+   "words": 338,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 38,
+   "blocks": 6,
+   "words": 388,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 39,
+   "blocks": 2,
+   "words": 64,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 40,
+   "blocks": 6,
+   "words": 474,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 41,
+   "blocks": 10,
+   "words": 501,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 42,
+   "blocks": 7,
+   "words": 319,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 43,
+   "blocks": 15,
+   "words": 397,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 44,
+   "blocks": 10,
+   "words": 381,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 45,
+   "blocks": 7,
+   "words": 391,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 46,
+   "blocks": 5,
+   "words": 296,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 47,
+   "blocks": 13,
+   "words": 359,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-1",
+   "page": 48,
+   "blocks": 2,
+   "words": 9,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 1,
+   "blocks": 5,
+   "words": 40,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 2,
+   "blocks": 12,
+   "words": 149,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 3,
+   "blocks": 13,
+   "words": 193,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 4,
+   "blocks": 6,
+   "words": 227,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 5,
+   "blocks": 2,
+   "words": 1034,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 6,
+   "blocks": 1,
+   "words": 1004,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 7,
+   "blocks": 1,
+   "words": 425,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 8,
+   "blocks": 10,
+   "words": 242,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 9,
+   "blocks": 11,
+   "words": 286,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 10,
+   "blocks": 12,
+   "words": 72,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 11,
+   "blocks": 5,
+   "words": 38,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 12,
+   "blocks": 7,
+   "words": 460,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 13,
+   "blocks": 2,
+   "words": 274,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 14,
+   "blocks": 5,
+   "words": 554,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 15,
+   "blocks": 10,
+   "words": 443,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 16,
+   "blocks": 6,
+   "words": 246,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 17,
+   "blocks": 7,
+   "words": 187,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 18,
+   "blocks": 7,
+   "words": 512,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 19,
+   "blocks": 7,
+   "words": 523,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 20,
+   "blocks": 6,
+   "words": 607,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 21,
+   "blocks": 10,
+   "words": 447,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 22,
+   "blocks": 12,
+   "words": 552,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 23,
+   "blocks": 5,
+   "words": 289,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 24,
+   "blocks": 6,
+   "words": 544,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 25,
+   "blocks": 7,
+   "words": 564,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 26,
+   "blocks": 7,
+   "words": 551,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 27,
+   "blocks": 5,
+   "words": 541,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 28,
+   "blocks": 9,
+   "words": 492,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 29,
+   "blocks": 6,
+   "words": 505,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 30,
+   "blocks": 9,
+   "words": 476,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 31,
+   "blocks": 3,
+   "words": 313,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 32,
+   "blocks": 7,
+   "words": 479,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 33,
+   "blocks": 6,
+   "words": 818,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 34,
+   "blocks": 6,
+   "words": 547,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 35,
+   "blocks": 7,
+   "words": 612,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 36,
+   "blocks": 6,
+   "words": 610,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 37,
+   "blocks": 5,
+   "words": 506,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 38,
+   "blocks": 6,
+   "words": 581,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 39,
+   "blocks": 8,
+   "words": 445,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 40,
+   "blocks": 6,
+   "words": 331,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 41,
+   "blocks": 9,
+   "words": 568,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 42,
+   "blocks": 6,
+   "words": 522,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 43,
+   "blocks": 6,
+   "words": 499,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 44,
+   "blocks": 6,
+   "words": 482,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 45,
+   "blocks": 7,
+   "words": 649,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 46,
+   "blocks": 3,
+   "words": 462,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 47,
+   "blocks": 5,
+   "words": 287,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 48,
+   "blocks": 3,
+   "words": 72,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 49,
+   "blocks": 7,
+   "words": 297,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 50,
+   "blocks": 6,
+   "words": 312,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 51,
+   "blocks": 3,
+   "words": 162,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 52,
+   "blocks": 8,
+   "words": 327,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 53,
+   "blocks": 9,
+   "words": 517,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 54,
+   "blocks": 7,
+   "words": 429,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 55,
+   "blocks": 9,
+   "words": 489,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 56,
+   "blocks": 9,
+   "words": 439,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 57,
+   "blocks": 9,
+   "words": 432,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 58,
+   "blocks": 10,
+   "words": 422,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 59,
+   "blocks": 5,
+   "words": 654,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 60,
+   "blocks": 4,
+   "words": 273,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 61,
+   "blocks": 7,
+   "words": 408,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 62,
+   "blocks": 6,
+   "words": 483,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 63,
+   "blocks": 7,
+   "words": 573,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 64,
+   "blocks": 11,
+   "words": 577,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 65,
+   "blocks": 9,
+   "words": 533,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 66,
+   "blocks": 10,
+   "words": 519,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 67,
+   "blocks": 6,
+   "words": 425,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 68,
+   "blocks": 8,
+   "words": 360,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 69,
+   "blocks": 5,
+   "words": 538,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 70,
+   "blocks": 9,
+   "words": 617,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 71,
+   "blocks": 6,
+   "words": 583,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 72,
+   "blocks": 8,
+   "words": 545,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 73,
+   "blocks": 7,
+   "words": 493,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 74,
+   "blocks": 13,
+   "words": 339,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 75,
+   "blocks": 12,
+   "words": 358,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 76,
+   "blocks": 10,
+   "words": 366,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 77,
+   "blocks": 10,
+   "words": 380,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 78,
+   "blocks": 10,
+   "words": 380,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 79,
+   "blocks": 10,
+   "words": 357,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 80,
+   "blocks": 11,
+   "words": 353,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 81,
+   "blocks": 10,
+   "words": 384,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 82,
+   "blocks": 10,
+   "words": 384,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 83,
+   "blocks": 12,
+   "words": 393,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 84,
+   "blocks": 10,
+   "words": 365,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 85,
+   "blocks": 12,
+   "words": 385,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 86,
+   "blocks": 11,
+   "words": 378,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 87,
+   "blocks": 9,
+   "words": 391,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 88,
+   "blocks": 12,
+   "words": 342,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 89,
+   "blocks": 10,
+   "words": 357,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 90,
+   "blocks": 8,
+   "words": 407,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 91,
+   "blocks": 8,
+   "words": 396,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 92,
+   "blocks": 10,
+   "words": 401,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 93,
+   "blocks": 8,
+   "words": 417,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 94,
+   "blocks": 12,
+   "words": 390,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 95,
+   "blocks": 10,
+   "words": 405,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 96,
+   "blocks": 10,
+   "words": 386,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 97,
+   "blocks": 11,
+   "words": 397,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 98,
+   "blocks": 11,
+   "words": 362,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 99,
+   "blocks": 15,
+   "words": 370,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 100,
+   "blocks": 10,
+   "words": 365,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 101,
+   "blocks": 11,
+   "words": 345,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 102,
+   "blocks": 14,
+   "words": 372,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 103,
+   "blocks": 10,
+   "words": 406,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 104,
+   "blocks": 10,
+   "words": 361,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 105,
+   "blocks": 12,
+   "words": 355,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 106,
+   "blocks": 13,
+   "words": 397,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 107,
+   "blocks": 10,
+   "words": 372,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 108,
+   "blocks": 10,
+   "words": 395,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 109,
+   "blocks": 11,
+   "words": 392,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 110,
+   "blocks": 13,
+   "words": 340,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 111,
+   "blocks": 8,
+   "words": 416,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 112,
+   "blocks": 13,
+   "words": 380,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 113,
+   "blocks": 8,
+   "words": 404,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 114,
+   "blocks": 12,
+   "words": 375,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 115,
+   "blocks": 11,
+   "words": 399,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 116,
+   "blocks": 10,
+   "words": 387,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 117,
+   "blocks": 11,
+   "words": 358,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 118,
+   "blocks": 10,
+   "words": 416,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 119,
+   "blocks": 4,
+   "words": 140,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 120,
+   "blocks": 16,
+   "words": 373,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 121,
+   "blocks": 14,
+   "words": 386,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 122,
+   "blocks": 13,
+   "words": 462,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 123,
+   "blocks": 16,
+   "words": 410,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 124,
+   "blocks": 14,
+   "words": 365,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 125,
+   "blocks": 11,
+   "words": 452,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 126,
+   "blocks": 13,
+   "words": 427,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-2E2025",
+   "page": 127,
+   "blocks": 1,
+   "words": 31,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-3",
+   "page": 1,
+   "blocks": 6,
+   "words": 33,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-3",
+   "page": 2,
+   "blocks": 11,
+   "words": 132,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-3",
+   "page": 3,
+   "blocks": 12,
+   "words": 168,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-3",
+   "page": 4,
+   "blocks": 4,
+   "words": 75,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-3",
+   "page": 5,
+   "blocks": 2,
+   "words": 219,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-3",
+   "page": 6,
+   "blocks": 2,
+   "words": 36,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-3",
+   "page": 7,
+   "blocks": 12,
+   "words": 442,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-3",
+   "page": 8,
+   "blocks": 9,
+   "words": 383,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-3",
+   "page": 9,
+   "blocks": 10,
+   "words": 396,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-3",
+   "page": 10,
+   "blocks": 4,
+   "words": 81,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 1,
+   "blocks": 22,
+   "words": 48,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 2,
+   "blocks": 10,
+   "words": 39,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 3,
+   "blocks": 16,
+   "words": 455,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 4,
+   "blocks": 1,
+   "words": 4,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 5,
+   "blocks": 19,
+   "words": 506,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 6,
+   "blocks": 13,
+   "words": 223,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 7,
+   "blocks": 8,
+   "words": 656,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 8,
+   "blocks": 12,
+   "words": 371,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 9,
+   "blocks": 21,
+   "words": 250,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 10,
+   "blocks": 5,
+   "words": 235,
+   "has_table": true,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 11,
+   "blocks": 32,
+   "words": 602,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 12,
+   "blocks": 5,
+   "words": 425,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 13,
+   "blocks": 13,
+   "words": 375,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 14,
+   "blocks": 1,
+   "words": 135,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 15,
+   "blocks": 1,
+   "words": 181,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 16,
+   "blocks": 2,
+   "words": 309,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 17,
+   "blocks": 12,
+   "words": 287,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 18,
+   "blocks": 16,
+   "words": 675,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 19,
+   "blocks": 17,
+   "words": 600,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 20,
+   "blocks": 16,
+   "words": 497,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 21,
+   "blocks": 14,
+   "words": 484,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 22,
+   "blocks": 13,
+   "words": 637,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 23,
+   "blocks": 13,
+   "words": 566,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 24,
+   "blocks": 12,
+   "words": 588,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 25,
+   "blocks": 9,
+   "words": 615,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 26,
+   "blocks": 11,
+   "words": 600,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 27,
+   "blocks": 17,
+   "words": 525,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 28,
+   "blocks": 33,
+   "words": 627,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 29,
+   "blocks": 30,
+   "words": 587,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 30,
+   "blocks": 5,
+   "words": 375,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 31,
+   "blocks": 16,
+   "words": 486,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 32,
+   "blocks": 14,
+   "words": 407,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 33,
+   "blocks": 10,
+   "words": 602,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 34,
+   "blocks": 15,
+   "words": 465,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 35,
+   "blocks": 7,
+   "words": 533,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 36,
+   "blocks": 18,
+   "words": 549,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 37,
+   "blocks": 14,
+   "words": 633,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 38,
+   "blocks": 13,
+   "words": 568,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 39,
+   "blocks": 14,
+   "words": 545,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 40,
+   "blocks": 38,
+   "words": 666,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 41,
+   "blocks": 19,
+   "words": 660,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 42,
+   "blocks": 24,
+   "words": 670,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 43,
+   "blocks": 20,
+   "words": 673,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 44,
+   "blocks": 30,
+   "words": 658,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 45,
+   "blocks": 21,
+   "words": 594,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 46,
+   "blocks": 8,
+   "words": 438,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 47,
+   "blocks": 16,
+   "words": 396,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 48,
+   "blocks": 14,
+   "words": 240,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 49,
+   "blocks": 7,
+   "words": 403,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 50,
+   "blocks": 31,
+   "words": 322,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 51,
+   "blocks": 43,
+   "words": 329,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 52,
+   "blocks": 25,
+   "words": 350,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 53,
+   "blocks": 44,
+   "words": 347,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 54,
+   "blocks": 41,
+   "words": 333,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 55,
+   "blocks": 40,
+   "words": 318,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 56,
+   "blocks": 26,
+   "words": 346,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 57,
+   "blocks": 41,
+   "words": 345,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 58,
+   "blocks": 47,
+   "words": 353,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 59,
+   "blocks": 33,
+   "words": 351,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 60,
+   "blocks": 34,
+   "words": 381,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 61,
+   "blocks": 39,
+   "words": 410,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 62,
+   "blocks": 28,
+   "words": 414,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 63,
+   "blocks": 29,
+   "words": 401,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 64,
+   "blocks": 35,
+   "words": 429,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 65,
+   "blocks": 24,
+   "words": 384,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 66,
+   "blocks": 32,
+   "words": 409,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 67,
+   "blocks": 31,
+   "words": 387,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 68,
+   "blocks": 31,
+   "words": 343,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 69,
+   "blocks": 36,
+   "words": 345,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 70,
+   "blocks": 12,
+   "words": 117,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 71,
+   "blocks": 5,
+   "words": 228,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 72,
+   "blocks": 1,
+   "words": 234,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 73,
+   "blocks": 11,
+   "words": 364,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 74,
+   "blocks": 9,
+   "words": 318,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 75,
+   "blocks": 3,
+   "words": 156,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 76,
+   "blocks": 1,
+   "words": 151,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 77,
+   "blocks": 1,
+   "words": 167,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 78,
+   "blocks": 1,
+   "words": 43,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 79,
+   "blocks": 16,
+   "words": 398,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 80,
+   "blocks": 1,
+   "words": 172,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 81,
+   "blocks": 1,
+   "words": 39,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 82,
+   "blocks": 11,
+   "words": 304,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 83,
+   "blocks": 2,
+   "words": 26,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 84,
+   "blocks": 2,
+   "words": 14,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 85,
+   "blocks": 6,
+   "words": 35,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 86,
+   "blocks": 6,
+   "words": 33,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 87,
+   "blocks": 14,
+   "words": 163,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 88,
+   "blocks": 8,
+   "words": 40,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 89,
+   "blocks": 14,
+   "words": 120,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 90,
+   "blocks": 3,
+   "words": 21,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 91,
+   "blocks": 20,
+   "words": 648,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 92,
+   "blocks": 12,
+   "words": 611,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 93,
+   "blocks": 1,
+   "words": 85,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 94,
+   "blocks": 23,
+   "words": 496,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-100-4-IPD",
+   "page": 95,
+   "blocks": 35,
+   "words": 476,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 1,
+   "blocks": 5,
+   "words": 26,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 2,
+   "blocks": 7,
+   "words": 175,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 3,
+   "blocks": 12,
+   "words": 345,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 4,
+   "blocks": 2,
+   "words": 48,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 5,
+   "blocks": 7,
+   "words": 424,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 6,
+   "blocks": 11,
+   "words": 532,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 7,
+   "blocks": 7,
+   "words": 607,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 8,
+   "blocks": 10,
+   "words": 532,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 9,
+   "blocks": 10,
+   "words": 489,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 10,
+   "blocks": 10,
+   "words": 516,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 11,
+   "blocks": 9,
+   "words": 542,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 12,
+   "blocks": 10,
+   "words": 512,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 13,
+   "blocks": 11,
+   "words": 442,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 14,
+   "blocks": 10,
+   "words": 477,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 15,
+   "blocks": 11,
+   "words": 565,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 16,
+   "blocks": 14,
+   "words": 477,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 17,
+   "blocks": 11,
+   "words": 303,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 18,
+   "blocks": 5,
+   "words": 340,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 19,
+   "blocks": 3,
+   "words": 307,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 20,
+   "blocks": 4,
+   "words": 313,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 21,
+   "blocks": 4,
+   "words": 357,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 22,
+   "blocks": 4,
+   "words": 361,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 23,
+   "blocks": 6,
+   "words": 257,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 24,
+   "blocks": 6,
+   "words": 315,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 25,
+   "blocks": 3,
+   "words": 363,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 26,
+   "blocks": 3,
+   "words": 405,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 27,
+   "blocks": 3,
+   "words": 333,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 28,
+   "blocks": 6,
+   "words": 299,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 29,
+   "blocks": 5,
+   "words": 352,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 30,
+   "blocks": 2,
+   "words": 376,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 31,
+   "blocks": 5,
+   "words": 365,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 32,
+   "blocks": 4,
+   "words": 364,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 33,
+   "blocks": 4,
+   "words": 389,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 34,
+   "blocks": 4,
+   "words": 288,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 35,
+   "blocks": 3,
+   "words": 257,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 36,
+   "blocks": 3,
+   "words": 336,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 37,
+   "blocks": 2,
+   "words": 373,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 38,
+   "blocks": 4,
+   "words": 202,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 39,
+   "blocks": 6,
+   "words": 292,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 40,
+   "blocks": 3,
+   "words": 422,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 41,
+   "blocks": 3,
+   "words": 198,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 42,
+   "blocks": 6,
+   "words": 304,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 43,
+   "blocks": 3,
+   "words": 377,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 44,
+   "blocks": 5,
+   "words": 338,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 45,
+   "blocks": 5,
+   "words": 364,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 46,
+   "blocks": 4,
+   "words": 361,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 47,
+   "blocks": 3,
+   "words": 339,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 48,
+   "blocks": 3,
+   "words": 343,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 49,
+   "blocks": 6,
+   "words": 328,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 50,
+   "blocks": 1,
+   "words": 61,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 51,
+   "blocks": 17,
+   "words": 423,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 52,
+   "blocks": 25,
+   "words": 447,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 53,
+   "blocks": 10,
+   "words": 477,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 54,
+   "blocks": 12,
+   "words": 549,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 55,
+   "blocks": 10,
+   "words": 495,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 56,
+   "blocks": 11,
+   "words": 519,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 57,
+   "blocks": 4,
+   "words": 250,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 58,
+   "blocks": 19,
+   "words": 284,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 59,
+   "blocks": 17,
+   "words": 341,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 60,
+   "blocks": 19,
+   "words": 319,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 61,
+   "blocks": 17,
+   "words": 326,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 62,
+   "blocks": 16,
+   "words": 328,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 63,
+   "blocks": 17,
+   "words": 351,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-600-1",
+   "page": 64,
+   "blocks": 3,
+   "words": 79,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 1,
+   "blocks": 6,
+   "words": 39,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 2,
+   "blocks": 10,
+   "words": 150,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 3,
+   "blocks": 13,
+   "words": 242,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 4,
+   "blocks": 6,
+   "words": 242,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 5,
+   "blocks": 2,
+   "words": 1007,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 6,
+   "blocks": 1,
+   "words": 735,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 7,
+   "blocks": 2,
+   "words": 596,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 8,
+   "blocks": 2,
+   "words": 614,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 9,
+   "blocks": 7,
+   "words": 568,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 10,
+   "blocks": 8,
+   "words": 480,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 11,
+   "blocks": 9,
+   "words": 504,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 12,
+   "blocks": 11,
+   "words": 358,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 13,
+   "blocks": 6,
+   "words": 229,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 14,
+   "blocks": 6,
+   "words": 235,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 15,
+   "blocks": 24,
+   "words": 326,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 16,
+   "blocks": 12,
+   "words": 249,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 17,
+   "blocks": 8,
+   "words": 473,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 18,
+   "blocks": 17,
+   "words": 368,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 19,
+   "blocks": 22,
+   "words": 357,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 20,
+   "blocks": 14,
+   "words": 343,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 21,
+   "blocks": 18,
+   "words": 335,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 22,
+   "blocks": 16,
+   "words": 348,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 23,
+   "blocks": 14,
+   "words": 448,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 24,
+   "blocks": 10,
+   "words": 456,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 25,
+   "blocks": 16,
+   "words": 371,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 26,
+   "blocks": 12,
+   "words": 329,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 27,
+   "blocks": 9,
+   "words": 456,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 28,
+   "blocks": 10,
+   "words": 405,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 29,
+   "blocks": 15,
+   "words": 369,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 30,
+   "blocks": 11,
+   "words": 380,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 31,
+   "blocks": 7,
+   "words": 202,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 32,
+   "blocks": 9,
+   "words": 194,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 33,
+   "blocks": 11,
+   "words": 277,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 34,
+   "blocks": 4,
+   "words": 201,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 35,
+   "blocks": 9,
+   "words": 553,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 36,
+   "blocks": 6,
+   "words": 185,
+   "has_table": true,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 37,
+   "blocks": 3,
+   "words": 302,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 38,
+   "blocks": 5,
+   "words": 174,
+   "has_table": true,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 39,
+   "blocks": 4,
+   "words": 221,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 40,
+   "blocks": 5,
+   "words": 456,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 41,
+   "blocks": 5,
+   "words": 150,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 42,
+   "blocks": 3,
+   "words": 132,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 43,
+   "blocks": 3,
+   "words": 129,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 44,
+   "blocks": 3,
+   "words": 66,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 45,
+   "blocks": 5,
+   "words": 479,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 46,
+   "blocks": 2,
+   "words": 579,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 47,
+   "blocks": 3,
+   "words": 141,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 48,
+   "blocks": 3,
+   "words": 110,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 49,
+   "blocks": 4,
+   "words": 105,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 50,
+   "blocks": 6,
+   "words": 170,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 51,
+   "blocks": 12,
+   "words": 334,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 52,
+   "blocks": 10,
+   "words": 355,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 53,
+   "blocks": 3,
+   "words": 162,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 54,
+   "blocks": 24,
+   "words": 448,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 55,
+   "blocks": 8,
+   "words": 236,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 56,
+   "blocks": 6,
+   "words": 204,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 57,
+   "blocks": 4,
+   "words": 272,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 58,
+   "blocks": 4,
+   "words": 223,
+   "has_table": true,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 59,
+   "blocks": 3,
+   "words": 0,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 60,
+   "blocks": 3,
+   "words": 0,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-1",
+   "page": 61,
+   "blocks": 2,
+   "words": 11,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 1,
+   "blocks": 7,
+   "words": 52,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 2,
+   "blocks": 14,
+   "words": 159,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 3,
+   "blocks": 11,
+   "words": 195,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 4,
+   "blocks": 4,
+   "words": 151,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 5,
+   "blocks": 2,
+   "words": 189,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 6,
+   "blocks": 2,
+   "words": 66,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 7,
+   "blocks": 4,
+   "words": 212,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 8,
+   "blocks": 6,
+   "words": 537,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 9,
+   "blocks": 11,
+   "words": 443,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 10,
+   "blocks": 11,
+   "words": 428,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 11,
+   "blocks": 12,
+   "words": 518,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 12,
+   "blocks": 16,
+   "words": 449,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 13,
+   "blocks": 9,
+   "words": 474,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 14,
+   "blocks": 10,
+   "words": 471,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 15,
+   "blocks": 11,
+   "words": 414,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 16,
+   "blocks": 12,
+   "words": 481,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 17,
+   "blocks": 9,
+   "words": 459,
+   "has_table": true,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 18,
+   "blocks": 6,
+   "words": 680,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 19,
+   "blocks": 6,
+   "words": 469,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 20,
+   "blocks": 8,
+   "words": 510,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 21,
+   "blocks": 4,
+   "words": 299,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 22,
+   "blocks": 8,
+   "words": 205,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 23,
+   "blocks": 28,
+   "words": 356,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 24,
+   "blocks": 30,
+   "words": 370,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 25,
+   "blocks": 4,
+   "words": 65,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 26,
+   "blocks": 13,
+   "words": 295,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 27,
+   "blocks": 2,
+   "words": 314,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 28,
+   "blocks": 1,
+   "words": 343,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 29,
+   "blocks": 8,
+   "words": 127,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 30,
+   "blocks": 9,
+   "words": 278,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 31,
+   "blocks": 16,
+   "words": 225,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 32,
+   "blocks": 13,
+   "words": 186,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 33,
+   "blocks": 4,
+   "words": 401,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 34,
+   "blocks": 1,
+   "words": 86,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 35,
+   "blocks": 3,
+   "words": 46,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 36,
+   "blocks": 4,
+   "words": 0,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 37,
+   "blocks": 1,
+   "words": 0,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-700-2",
+   "page": 38,
+   "blocks": 1,
+   "words": 0,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 1,
+   "blocks": 24,
+   "words": 53,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 2,
+   "blocks": 13,
+   "words": 62,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 3,
+   "blocks": 1,
+   "words": 92,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 4,
+   "blocks": 4,
+   "words": 208,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 5,
+   "blocks": 7,
+   "words": 516,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 6,
+   "blocks": 4,
+   "words": 378,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 7,
+   "blocks": 10,
+   "words": 482,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 8,
+   "blocks": 3,
+   "words": 126,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 9,
+   "blocks": 24,
+   "words": 428,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 10,
+   "blocks": 24,
+   "words": 413,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 11,
+   "blocks": 27,
+   "words": 382,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 12,
+   "blocks": 31,
+   "words": 368,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 13,
+   "blocks": 21,
+   "words": 364,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 14,
+   "blocks": 28,
+   "words": 357,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 15,
+   "blocks": 24,
+   "words": 521,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 16,
+   "blocks": 31,
+   "words": 504,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 17,
+   "blocks": 30,
+   "words": 389,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 18,
+   "blocks": 18,
+   "words": 349,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 19,
+   "blocks": 19,
+   "words": 392,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 20,
+   "blocks": 25,
+   "words": 305,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 21,
+   "blocks": 31,
+   "words": 356,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 22,
+   "blocks": 16,
+   "words": 268,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 23,
+   "blocks": 26,
+   "words": 573,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 24,
+   "blocks": 8,
+   "words": 631,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 25,
+   "blocks": 15,
+   "words": 564,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 26,
+   "blocks": 12,
+   "words": 503,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-800-1-IPD",
+   "page": 27,
+   "blocks": 10,
+   "words": 341,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 1,
+   "blocks": 4,
+   "words": 3,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 2,
+   "blocks": 2,
+   "words": 156,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 3,
+   "blocks": 1,
+   "words": 123,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 4,
+   "blocks": 6,
+   "words": 95,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 5,
+   "blocks": 1,
+   "words": 0,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 6,
+   "blocks": 15,
+   "words": 325,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 7,
+   "blocks": 18,
+   "words": 296,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 8,
+   "blocks": 27,
+   "words": 350,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 9,
+   "blocks": 14,
+   "words": 386,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 10,
+   "blocks": 19,
+   "words": 432,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 11,
+   "blocks": 23,
+   "words": 299,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 12,
+   "blocks": 19,
+   "words": 328,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 13,
+   "blocks": 16,
+   "words": 345,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 14,
+   "blocks": 18,
+   "words": 303,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 15,
+   "blocks": 21,
+   "words": 364,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 16,
+   "blocks": 22,
+   "words": 362,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 17,
+   "blocks": 22,
+   "words": 286,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 18,
+   "blocks": 23,
+   "words": 327,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 19,
+   "blocks": 22,
+   "words": 302,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 20,
+   "blocks": 22,
+   "words": 298,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 21,
+   "blocks": 19,
+   "words": 318,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 22,
+   "blocks": 20,
+   "words": 321,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 23,
+   "blocks": 17,
+   "words": 341,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 24,
+   "blocks": 20,
+   "words": 339,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 25,
+   "blocks": 15,
+   "words": 340,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 26,
+   "blocks": 20,
+   "words": 305,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 27,
+   "blocks": 22,
+   "words": 339,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 28,
+   "blocks": 15,
+   "words": 260,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 29,
+   "blocks": 19,
+   "words": 349,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 30,
+   "blocks": 16,
+   "words": 380,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 31,
+   "blocks": 19,
+   "words": 367,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 32,
+   "blocks": 19,
+   "words": 297,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 33,
+   "blocks": 23,
+   "words": 354,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 34,
+   "blocks": 18,
+   "words": 322,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 35,
+   "blocks": 21,
+   "words": 275,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 36,
+   "blocks": 14,
+   "words": 170,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 37,
+   "blocks": 1,
+   "words": 0,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 38,
+   "blocks": 21,
+   "words": 304,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 39,
+   "blocks": 17,
+   "words": 321,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 40,
+   "blocks": 18,
+   "words": 287,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 41,
+   "blocks": 19,
+   "words": 312,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 42,
+   "blocks": 19,
+   "words": 357,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 43,
+   "blocks": 19,
+   "words": 298,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 44,
+   "blocks": 23,
+   "words": 305,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 45,
+   "blocks": 15,
+   "words": 380,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 46,
+   "blocks": 20,
+   "words": 316,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 47,
+   "blocks": 16,
+   "words": 299,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 48,
+   "blocks": 15,
+   "words": 341,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 49,
+   "blocks": 15,
+   "words": 338,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 50,
+   "blocks": 29,
+   "words": 248,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 51,
+   "blocks": 22,
+   "words": 315,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 52,
+   "blocks": 16,
+   "words": 359,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 53,
+   "blocks": 21,
+   "words": 438,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 54,
+   "blocks": 19,
+   "words": 336,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 55,
+   "blocks": 19,
+   "words": 348,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 56,
+   "blocks": 21,
+   "words": 296,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 57,
+   "blocks": 19,
+   "words": 332,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 58,
+   "blocks": 19,
+   "words": 340,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 59,
+   "blocks": 21,
+   "words": 290,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 60,
+   "blocks": 4,
+   "words": 71,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 61,
+   "blocks": 1,
+   "words": 0,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 62,
+   "blocks": 18,
+   "words": 359,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 63,
+   "blocks": 22,
+   "words": 357,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 64,
+   "blocks": 22,
+   "words": 299,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 65,
+   "blocks": 15,
+   "words": 334,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 66,
+   "blocks": 16,
+   "words": 312,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 67,
+   "blocks": 18,
+   "words": 321,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 68,
+   "blocks": 20,
+   "words": 329,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 69,
+   "blocks": 18,
+   "words": 356,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 70,
+   "blocks": 20,
+   "words": 310,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 71,
+   "blocks": 20,
+   "words": 311,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 72,
+   "blocks": 15,
+   "words": 319,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 73,
+   "blocks": 17,
+   "words": 402,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 74,
+   "blocks": 20,
+   "words": 355,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 75,
+   "blocks": 14,
+   "words": 367,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 76,
+   "blocks": 19,
+   "words": 324,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 77,
+   "blocks": 14,
+   "words": 379,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 78,
+   "blocks": 11,
+   "words": 426,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 79,
+   "blocks": 17,
+   "words": 388,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 80,
+   "blocks": 23,
+   "words": 348,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 81,
+   "blocks": 15,
+   "words": 301,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 82,
+   "blocks": 19,
+   "words": 369,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 83,
+   "blocks": 17,
+   "words": 331,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 84,
+   "blocks": 19,
+   "words": 301,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 85,
+   "blocks": 21,
+   "words": 327,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 86,
+   "blocks": 13,
+   "words": 432,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 87,
+   "blocks": 22,
+   "words": 400,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 88,
+   "blocks": 13,
+   "words": 371,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 89,
+   "blocks": 18,
+   "words": 347,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 90,
+   "blocks": 15,
+   "words": 355,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 91,
+   "blocks": 19,
+   "words": 334,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 92,
+   "blocks": 23,
+   "words": 357,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 93,
+   "blocks": 21,
+   "words": 341,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 94,
+   "blocks": 15,
+   "words": 316,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 95,
+   "blocks": 20,
+   "words": 386,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 96,
+   "blocks": 9,
+   "words": 173,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 97,
+   "blocks": 1,
+   "words": 0,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 98,
+   "blocks": 16,
+   "words": 365,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 99,
+   "blocks": 21,
+   "words": 318,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 100,
+   "blocks": 20,
+   "words": 380,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 101,
+   "blocks": 15,
+   "words": 360,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 102,
+   "blocks": 20,
+   "words": 362,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 103,
+   "blocks": 18,
+   "words": 276,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 104,
+   "blocks": 18,
+   "words": 329,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 105,
+   "blocks": 20,
+   "words": 384,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 106,
+   "blocks": 17,
+   "words": 393,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 107,
+   "blocks": 15,
+   "words": 366,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 108,
+   "blocks": 21,
+   "words": 358,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 109,
+   "blocks": 19,
+   "words": 343,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 110,
+   "blocks": 18,
+   "words": 311,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 111,
+   "blocks": 19,
+   "words": 374,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 112,
+   "blocks": 23,
+   "words": 329,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 113,
+   "blocks": 16,
+   "words": 370,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 114,
+   "blocks": 20,
+   "words": 368,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 115,
+   "blocks": 17,
+   "words": 300,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 116,
+   "blocks": 19,
+   "words": 400,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 117,
+   "blocks": 21,
+   "words": 285,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 118,
+   "blocks": 14,
+   "words": 436,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 119,
+   "blocks": 20,
+   "words": 301,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 120,
+   "blocks": 13,
+   "words": 358,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 121,
+   "blocks": 19,
+   "words": 359,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 122,
+   "blocks": 11,
+   "words": 402,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 123,
+   "blocks": 18,
+   "words": 326,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 124,
+   "blocks": 19,
+   "words": 347,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 125,
+   "blocks": 14,
+   "words": 385,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 126,
+   "blocks": 14,
+   "words": 424,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 127,
+   "blocks": 18,
+   "words": 355,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 128,
+   "blocks": 22,
+   "words": 400,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 129,
+   "blocks": 17,
+   "words": 339,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 130,
+   "blocks": 15,
+   "words": 371,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 131,
+   "blocks": 23,
+   "words": 293,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 132,
+   "blocks": 19,
+   "words": 338,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 133,
+   "blocks": 17,
+   "words": 311,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 134,
+   "blocks": 20,
+   "words": 342,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 135,
+   "blocks": 23,
+   "words": 362,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 136,
+   "blocks": 25,
+   "words": 271,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 137,
+   "blocks": 18,
+   "words": 325,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 138,
+   "blocks": 22,
+   "words": 344,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 139,
+   "blocks": 12,
+   "words": 370,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 140,
+   "blocks": 23,
+   "words": 310,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 141,
+   "blocks": 15,
+   "words": 354,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 142,
+   "blocks": 13,
+   "words": 345,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 143,
+   "blocks": 20,
+   "words": 380,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 144,
+   "blocks": 12,
+   "words": 355,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 145,
+   "blocks": 17,
+   "words": 352,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 146,
+   "blocks": 16,
+   "words": 355,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-RMF-PLAYBOOK",
+   "page": 147,
+   "blocks": 12,
+   "words": 321,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 1,
+   "blocks": 3,
+   "words": 28,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 3,
+   "blocks": 2,
+   "words": 130,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 5,
+   "blocks": 20,
+   "words": 315,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 6,
+   "blocks": 16,
+   "words": 412,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 7,
+   "blocks": 15,
+   "words": 412,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 8,
+   "blocks": 7,
+   "words": 159,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 9,
+   "blocks": 14,
+   "words": 434,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 10,
+   "blocks": 10,
+   "words": 430,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 11,
+   "blocks": 7,
+   "words": 478,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 12,
+   "blocks": 11,
+   "words": 559,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 13,
+   "blocks": 14,
+   "words": 415,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 14,
+   "blocks": 7,
+   "words": 457,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 15,
+   "blocks": 9,
+   "words": 468,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 16,
+   "blocks": 8,
+   "words": 447,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 17,
+   "blocks": 9,
+   "words": 475,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 18,
+   "blocks": 8,
+   "words": 291,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 19,
+   "blocks": 13,
+   "words": 440,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 20,
+   "blocks": 13,
+   "words": 348,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 21,
+   "blocks": 13,
+   "words": 424,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 22,
+   "blocks": 16,
+   "words": 349,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 23,
+   "blocks": 7,
+   "words": 323,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 24,
+   "blocks": 13,
+   "words": 381,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 25,
+   "blocks": 12,
+   "words": 417,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 26,
+   "blocks": 4,
+   "words": 90,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 27,
+   "blocks": 9,
+   "words": 119,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 28,
+   "blocks": 17,
+   "words": 352,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 29,
+   "blocks": 23,
+   "words": 254,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 30,
+   "blocks": 24,
+   "words": 259,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 31,
+   "blocks": 11,
+   "words": 548,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 32,
+   "blocks": 14,
+   "words": 464,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 33,
+   "blocks": 15,
+   "words": 378,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 34,
+   "blocks": 15,
+   "words": 346,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 35,
+   "blocks": 14,
+   "words": 370,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 36,
+   "blocks": 16,
+   "words": 354,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 37,
+   "blocks": 12,
+   "words": 397,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 38,
+   "blocks": 3,
+   "words": 73,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 39,
+   "blocks": 15,
+   "words": 355,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 40,
+   "blocks": 7,
+   "words": 207,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 41,
+   "blocks": 10,
+   "words": 461,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 42,
+   "blocks": 12,
+   "words": 523,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 43,
+   "blocks": 11,
+   "words": 552,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 44,
+   "blocks": 12,
+   "words": 455,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 45,
+   "blocks": 15,
+   "words": 312,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 46,
+   "blocks": 12,
+   "words": 387,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 47,
+   "blocks": 3,
+   "words": 281,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-AI-STD-FED-PLAN-2019",
+   "page": 48,
+   "blocks": 2,
+   "words": 275,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 1,
+   "blocks": 5,
+   "words": 37,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 2,
+   "blocks": 11,
+   "words": 95,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 3,
+   "blocks": 4,
+   "words": 94,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 4,
+   "blocks": 4,
+   "words": 198,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 5,
+   "blocks": 8,
+   "words": 447,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 6,
+   "blocks": 2,
+   "words": 165,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 7,
+   "blocks": 2,
+   "words": 258,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 8,
+   "blocks": 7,
+   "words": 573,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 9,
+   "blocks": 7,
+   "words": 558,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 10,
+   "blocks": 10,
+   "words": 428,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 11,
+   "blocks": 7,
+   "words": 604,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 12,
+   "blocks": 8,
+   "words": 621,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 13,
+   "blocks": 9,
+   "words": 546,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 14,
+   "blocks": 2,
+   "words": 9,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 15,
+   "blocks": 7,
+   "words": 556,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 16,
+   "blocks": 7,
+   "words": 609,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 17,
+   "blocks": 11,
+   "words": 562,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 18,
+   "blocks": 10,
+   "words": 584,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 19,
+   "blocks": 8,
+   "words": 456,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 20,
+   "blocks": 9,
+   "words": 526,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 21,
+   "blocks": 9,
+   "words": 483,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 22,
+   "blocks": 6,
+   "words": 535,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 23,
+   "blocks": 4,
+   "words": 678,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 24,
+   "blocks": 4,
+   "words": 691,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 25,
+   "blocks": 5,
+   "words": 785,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 26,
+   "blocks": 8,
+   "words": 502,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 27,
+   "blocks": 9,
+   "words": 592,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 28,
+   "blocks": 5,
+   "words": 521,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 29,
+   "blocks": 5,
+   "words": 704,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 30,
+   "blocks": 10,
+   "words": 416,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 31,
+   "blocks": 10,
+   "words": 364,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 32,
+   "blocks": 12,
+   "words": 406,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 33,
+   "blocks": 15,
+   "words": 389,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 34,
+   "blocks": 12,
+   "words": 355,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 35,
+   "blocks": 11,
+   "words": 394,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 36,
+   "blocks": 11,
+   "words": 408,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 37,
+   "blocks": 11,
+   "words": 383,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 38,
+   "blocks": 14,
+   "words": 418,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 39,
+   "blocks": 12,
+   "words": 374,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 40,
+   "blocks": 12,
+   "words": 403,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 41,
+   "blocks": 14,
+   "words": 379,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 42,
+   "blocks": 14,
+   "words": 399,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8312",
+   "page": 43,
+   "blocks": 7,
+   "words": 209,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 1,
+   "blocks": 5,
+   "words": 23,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 2,
+   "blocks": 9,
+   "words": 69,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 3,
+   "blocks": 4,
+   "words": 94,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 4,
+   "blocks": 4,
+   "words": 184,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 5,
+   "blocks": 2,
+   "words": 370,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 6,
+   "blocks": 4,
+   "words": 74,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 7,
+   "blocks": 12,
+   "words": 472,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 8,
+   "blocks": 5,
+   "words": 225,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 9,
+   "blocks": 9,
+   "words": 538,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 10,
+   "blocks": 8,
+   "words": 581,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 11,
+   "blocks": 2,
+   "words": 398,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 12,
+   "blocks": 5,
+   "words": 926,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 13,
+   "blocks": 6,
+   "words": 554,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 14,
+   "blocks": 3,
+   "words": 550,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 15,
+   "blocks": 6,
+   "words": 514,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 16,
+   "blocks": 5,
+   "words": 697,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 17,
+   "blocks": 6,
+   "words": 575,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 18,
+   "blocks": 2,
+   "words": 10,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 19,
+   "blocks": 6,
+   "words": 475,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 20,
+   "blocks": 8,
+   "words": 644,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 21,
+   "blocks": 6,
+   "words": 696,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 22,
+   "blocks": 6,
+   "words": 293,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 23,
+   "blocks": 2,
+   "words": 9,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 24,
+   "blocks": 6,
+   "words": 531,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 25,
+   "blocks": 3,
+   "words": 584,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 26,
+   "blocks": 8,
+   "words": 735,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 27,
+   "blocks": 6,
+   "words": 550,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 28,
+   "blocks": 6,
+   "words": 532,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 29,
+   "blocks": 6,
+   "words": 685,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 30,
+   "blocks": 5,
+   "words": 454,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 31,
+   "blocks": 6,
+   "words": 400,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 32,
+   "blocks": 5,
+   "words": 475,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 33,
+   "blocks": 6,
+   "words": 579,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 34,
+   "blocks": 2,
+   "words": 31,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 35,
+   "blocks": 6,
+   "words": 461,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 36,
+   "blocks": 2,
+   "words": 49,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 37,
+   "blocks": 4,
+   "words": 597,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 38,
+   "blocks": 6,
+   "words": 571,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 39,
+   "blocks": 5,
+   "words": 292,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 40,
+   "blocks": 6,
+   "words": 457,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 41,
+   "blocks": 5,
+   "words": 467,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 42,
+   "blocks": 6,
+   "words": 537,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 43,
+   "blocks": 4,
+   "words": 534,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 44,
+   "blocks": 3,
+   "words": 553,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 45,
+   "blocks": 5,
+   "words": 766,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 46,
+   "blocks": 4,
+   "words": 626,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 47,
+   "blocks": 4,
+   "words": 620,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 48,
+   "blocks": 18,
+   "words": 366,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 49,
+   "blocks": 18,
+   "words": 469,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 50,
+   "blocks": 18,
+   "words": 456,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 51,
+   "blocks": 17,
+   "words": 474,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 52,
+   "blocks": 17,
+   "words": 450,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 53,
+   "blocks": 18,
+   "words": 468,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 54,
+   "blocks": 21,
+   "words": 475,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 55,
+   "blocks": 17,
+   "words": 467,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-IR-8367",
+   "page": 56,
+   "blocks": 16,
+   "words": 380,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 1,
+   "blocks": 8,
+   "words": 17,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 2,
+   "blocks": 15,
+   "words": 388,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 3,
+   "blocks": 7,
+   "words": 460,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 4,
+   "blocks": 3,
+   "words": 91,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 5,
+   "blocks": 4,
+   "words": 180,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 6,
+   "blocks": 2,
+   "words": 133,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 7,
+   "blocks": 11,
+   "words": 363,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 8,
+   "blocks": 5,
+   "words": 540,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 9,
+   "blocks": 13,
+   "words": 502,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 10,
+   "blocks": 9,
+   "words": 610,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 11,
+   "blocks": 5,
+   "words": 585,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 12,
+   "blocks": 9,
+   "words": 459,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 13,
+   "blocks": 9,
+   "words": 373,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 14,
+   "blocks": 9,
+   "words": 480,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 15,
+   "blocks": 7,
+   "words": 492,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 16,
+   "blocks": 8,
+   "words": 535,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 17,
+   "blocks": 9,
+   "words": 579,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 18,
+   "blocks": 10,
+   "words": 469,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 19,
+   "blocks": 10,
+   "words": 495,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 20,
+   "blocks": 8,
+   "words": 554,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 21,
+   "blocks": 12,
+   "words": 446,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 22,
+   "blocks": 8,
+   "words": 421,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 23,
+   "blocks": 6,
+   "words": 393,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 24,
+   "blocks": 11,
+   "words": 471,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 25,
+   "blocks": 6,
+   "words": 466,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 26,
+   "blocks": 7,
+   "words": 606,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 27,
+   "blocks": 10,
+   "words": 640,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 28,
+   "blocks": 8,
+   "words": 546,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 29,
+   "blocks": 9,
+   "words": 319,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 30,
+   "blocks": 9,
+   "words": 431,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 31,
+   "blocks": 7,
+   "words": 487,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 32,
+   "blocks": 7,
+   "words": 520,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 33,
+   "blocks": 11,
+   "words": 492,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 34,
+   "blocks": 17,
+   "words": 475,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 35,
+   "blocks": 4,
+   "words": 25,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 36,
+   "blocks": 2,
+   "words": 191,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 37,
+   "blocks": 1,
+   "words": 218,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 38,
+   "blocks": 1,
+   "words": 153,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 39,
+   "blocks": 1,
+   "words": 167,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 40,
+   "blocks": 1,
+   "words": 210,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 41,
+   "blocks": 1,
+   "words": 185,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 42,
+   "blocks": 1,
+   "words": 182,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 43,
+   "blocks": 1,
+   "words": 178,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 44,
+   "blocks": 1,
+   "words": 190,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 45,
+   "blocks": 1,
+   "words": 171,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 46,
+   "blocks": 1,
+   "words": 182,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 47,
+   "blocks": 1,
+   "words": 181,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 48,
+   "blocks": 1,
+   "words": 166,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 49,
+   "blocks": 1,
+   "words": 178,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 50,
+   "blocks": 1,
+   "words": 158,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 51,
+   "blocks": 1,
+   "words": 175,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 52,
+   "blocks": 1,
+   "words": 186,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 53,
+   "blocks": 1,
+   "words": 200,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 54,
+   "blocks": 1,
+   "words": 182,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 55,
+   "blocks": 1,
+   "words": 188,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-1-FOUNDATIONAL",
+   "page": 56,
+   "blocks": 1,
+   "words": 24,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 1,
+   "blocks": 8,
+   "words": 15,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 2,
+   "blocks": 15,
+   "words": 388,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 3,
+   "blocks": 6,
+   "words": 446,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 4,
+   "blocks": 4,
+   "words": 129,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 5,
+   "blocks": 5,
+   "words": 190,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 6,
+   "blocks": 2,
+   "words": 248,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 7,
+   "blocks": 11,
+   "words": 463,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 8,
+   "blocks": 4,
+   "words": 546,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 9,
+   "blocks": 6,
+   "words": 893,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 10,
+   "blocks": 4,
+   "words": 705,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 11,
+   "blocks": 11,
+   "words": 655,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 12,
+   "blocks": 5,
+   "words": 512,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 13,
+   "blocks": 6,
+   "words": 611,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 14,
+   "blocks": 9,
+   "words": 526,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 15,
+   "blocks": 6,
+   "words": 506,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 16,
+   "blocks": 12,
+   "words": 665,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 17,
+   "blocks": 9,
+   "words": 577,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 18,
+   "blocks": 3,
+   "words": 458,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 19,
+   "blocks": 3,
+   "words": 287,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 20,
+   "blocks": 14,
+   "words": 501,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 21,
+   "blocks": 15,
+   "words": 491,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 22,
+   "blocks": 18,
+   "words": 428,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 23,
+   "blocks": 9,
+   "words": 486,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 24,
+   "blocks": 14,
+   "words": 490,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 25,
+   "blocks": 6,
+   "words": 589,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 26,
+   "blocks": 1,
+   "words": 118,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 27,
+   "blocks": 5,
+   "words": 510,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 28,
+   "blocks": 3,
+   "words": 747,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 29,
+   "blocks": 6,
+   "words": 846,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 30,
+   "blocks": 8,
+   "words": 640,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 31,
+   "blocks": 21,
+   "words": 343,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 32,
+   "blocks": 26,
+   "words": 322,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 33,
+   "blocks": 9,
+   "words": 512,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 34,
+   "blocks": 9,
+   "words": 450,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 35,
+   "blocks": 5,
+   "words": 561,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "page": 36,
+   "blocks": 18,
+   "words": 446,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 1,
+   "blocks": 8,
+   "words": 17,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 2,
+   "blocks": 15,
+   "words": 388,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 3,
+   "blocks": 7,
+   "words": 467,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 4,
+   "blocks": 3,
+   "words": 92,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 5,
+   "blocks": 2,
+   "words": 142,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 6,
+   "blocks": 2,
+   "words": 59,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 7,
+   "blocks": 9,
+   "words": 499,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 8,
+   "blocks": 5,
+   "words": 654,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 9,
+   "blocks": 9,
+   "words": 422,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 10,
+   "blocks": 7,
+   "words": 538,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 11,
+   "blocks": 7,
+   "words": 536,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 12,
+   "blocks": 9,
+   "words": 676,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 13,
+   "blocks": 9,
+   "words": 505,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 14,
+   "blocks": 12,
+   "words": 565,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 15,
+   "blocks": 9,
+   "words": 606,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 16,
+   "blocks": 6,
+   "words": 352,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-3-LEGAL",
+   "page": 17,
+   "blocks": 8,
+   "words": 149,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 1,
+   "blocks": 8,
+   "words": 17,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 2,
+   "blocks": 15,
+   "words": 389,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 3,
+   "blocks": 7,
+   "words": 452,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 4,
+   "blocks": 3,
+   "words": 92,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 5,
+   "blocks": 3,
+   "words": 173,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 6,
+   "blocks": 2,
+   "words": 94,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 7,
+   "blocks": 10,
+   "words": 509,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 8,
+   "blocks": 13,
+   "words": 581,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 9,
+   "blocks": 5,
+   "words": 532,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 10,
+   "blocks": 6,
+   "words": 678,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 11,
+   "blocks": 7,
+   "words": 525,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 12,
+   "blocks": 6,
+   "words": 511,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 13,
+   "blocks": 8,
+   "words": 445,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 14,
+   "blocks": 8,
+   "words": 521,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 15,
+   "blocks": 7,
+   "words": 481,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 16,
+   "blocks": 9,
+   "words": 509,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 17,
+   "blocks": 6,
+   "words": 539,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 18,
+   "blocks": 6,
+   "words": 778,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 19,
+   "blocks": 6,
+   "words": 631,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 20,
+   "blocks": 4,
+   "words": 433,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-PAPER-4-BIAS",
+   "page": 21,
+   "blocks": 3,
+   "words": 186,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 1,
+   "blocks": 5,
+   "words": 36,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 2,
+   "blocks": 13,
+   "words": 127,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 3,
+   "blocks": 4,
+   "words": 93,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 4,
+   "blocks": 7,
+   "words": 492,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 5,
+   "blocks": 8,
+   "words": 429,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 6,
+   "blocks": 11,
+   "words": 357,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 7,
+   "blocks": 4,
+   "words": 236,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 8,
+   "blocks": 10,
+   "words": 347,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 9,
+   "blocks": 2,
+   "words": 321,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 10,
+   "blocks": 8,
+   "words": 511,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 11,
+   "blocks": 3,
+   "words": 237,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 12,
+   "blocks": 8,
+   "words": 459,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 13,
+   "blocks": 7,
+   "words": 491,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 14,
+   "blocks": 5,
+   "words": 474,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 15,
+   "blocks": 5,
+   "words": 315,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 16,
+   "blocks": 2,
+   "words": 299,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 17,
+   "blocks": 2,
+   "words": 46,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 18,
+   "blocks": 6,
+   "words": 496,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 19,
+   "blocks": 6,
+   "words": 616,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 20,
+   "blocks": 5,
+   "words": 350,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 21,
+   "blocks": 5,
+   "words": 493,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 22,
+   "blocks": 6,
+   "words": 522,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 23,
+   "blocks": 7,
+   "words": 702,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 24,
+   "blocks": 6,
+   "words": 618,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 25,
+   "blocks": 5,
+   "words": 837,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 26,
+   "blocks": 6,
+   "words": 555,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 27,
+   "blocks": 6,
+   "words": 654,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 28,
+   "blocks": 5,
+   "words": 575,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 29,
+   "blocks": 7,
+   "words": 480,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 30,
+   "blocks": 5,
+   "words": 261,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 31,
+   "blocks": 6,
+   "words": 586,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 32,
+   "blocks": 2,
+   "words": 292,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 33,
+   "blocks": 4,
+   "words": 560,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 34,
+   "blocks": 5,
+   "words": 570,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 35,
+   "blocks": 6,
+   "words": 632,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 36,
+   "blocks": 8,
+   "words": 255,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 37,
+   "blocks": 7,
+   "words": 450,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 38,
+   "blocks": 7,
+   "words": 478,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 39,
+   "blocks": 7,
+   "words": 475,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 40,
+   "blocks": 4,
+   "words": 399,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 41,
+   "blocks": 8,
+   "words": 504,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 42,
+   "blocks": 5,
+   "words": 475,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 43,
+   "blocks": 4,
+   "words": 536,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 44,
+   "blocks": 9,
+   "words": 626,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 45,
+   "blocks": 7,
+   "words": 675,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 46,
+   "blocks": 5,
+   "words": 589,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 47,
+   "blocks": 6,
+   "words": 658,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 48,
+   "blocks": 5,
+   "words": 390,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 49,
+   "blocks": 11,
+   "words": 116,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 50,
+   "blocks": 8,
+   "words": 411,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 51,
+   "blocks": 7,
+   "words": 578,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 52,
+   "blocks": 8,
+   "words": 506,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 53,
+   "blocks": 11,
+   "words": 332,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 54,
+   "blocks": 5,
+   "words": 470,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 55,
+   "blocks": 5,
+   "words": 509,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 56,
+   "blocks": 10,
+   "words": 534,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 57,
+   "blocks": 2,
+   "words": 125,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 58,
+   "blocks": 10,
+   "words": 375,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 59,
+   "blocks": 12,
+   "words": 405,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 60,
+   "blocks": 10,
+   "words": 404,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 61,
+   "blocks": 11,
+   "words": 388,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 62,
+   "blocks": 11,
+   "words": 376,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 63,
+   "blocks": 9,
+   "words": 331,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 64,
+   "blocks": 13,
+   "words": 363,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 65,
+   "blocks": 14,
+   "words": 398,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 66,
+   "blocks": 15,
+   "words": 383,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 67,
+   "blocks": 16,
+   "words": 376,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 68,
+   "blocks": 15,
+   "words": 377,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 69,
+   "blocks": 12,
+   "words": 383,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 70,
+   "blocks": 14,
+   "words": 412,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 71,
+   "blocks": 10,
+   "words": 497,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 72,
+   "blocks": 10,
+   "words": 452,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 73,
+   "blocks": 14,
+   "words": 405,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 74,
+   "blocks": 14,
+   "words": 426,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 75,
+   "blocks": 15,
+   "words": 439,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 76,
+   "blocks": 12,
+   "words": 481,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 77,
+   "blocks": 15,
+   "words": 433,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 78,
+   "blocks": 11,
+   "words": 452,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 79,
+   "blocks": 14,
+   "words": 446,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 80,
+   "blocks": 13,
+   "words": 434,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 81,
+   "blocks": 13,
+   "words": 366,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 82,
+   "blocks": 15,
+   "words": 351,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 83,
+   "blocks": 14,
+   "words": 369,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 84,
+   "blocks": 14,
+   "words": 390,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 85,
+   "blocks": 14,
+   "words": 407,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-1270",
+   "page": 86,
+   "blocks": 1,
+   "words": 33,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 1,
+   "blocks": 7,
+   "words": 43,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 2,
+   "blocks": 12,
+   "words": 93,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 3,
+   "blocks": 14,
+   "words": 441,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 4,
+   "blocks": 6,
+   "words": 57,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 5,
+   "blocks": 6,
+   "words": 297,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 6,
+   "blocks": 15,
+   "words": 351,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 7,
+   "blocks": 4,
+   "words": 130,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 8,
+   "blocks": 4,
+   "words": 55,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 9,
+   "blocks": 8,
+   "words": 467,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 10,
+   "blocks": 14,
+   "words": 372,
+   "has_table": false,
+   "has_figure": true
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 11,
+   "blocks": 4,
+   "words": 59,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 12,
+   "blocks": 7,
+   "words": 542,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 13,
+   "blocks": 9,
+   "words": 212,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 14,
+   "blocks": 17,
+   "words": 411,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 15,
+   "blocks": 5,
+   "words": 225,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 16,
+   "blocks": 4,
+   "words": 420,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 17,
+   "blocks": 1,
+   "words": 458,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 18,
+   "blocks": 1,
+   "words": 375,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 19,
+   "blocks": 1,
+   "words": 366,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 20,
+   "blocks": 1,
+   "words": 304,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 21,
+   "blocks": 1,
+   "words": 395,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 22,
+   "blocks": 1,
+   "words": 343,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 23,
+   "blocks": 1,
+   "words": 424,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 24,
+   "blocks": 1,
+   "words": 503,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 25,
+   "blocks": 1,
+   "words": 472,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 26,
+   "blocks": 1,
+   "words": 375,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 27,
+   "blocks": 1,
+   "words": 273,
+   "has_table": true,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 28,
+   "blocks": 13,
+   "words": 359,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 29,
+   "blocks": 8,
+   "words": 225,
+   "has_table": false,
+   "has_figure": false
+  },
+  {
+   "doc": "NIST-SP-800-218A",
+   "page": 30,
+   "blocks": 23,
+   "words": 363,
+   "has_table": false,
+   "has_figure": false
+  }
+ ]
+}

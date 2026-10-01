@@ -1,0 +1,40 @@
+# Persian style policy (MasterPrompt §19–§22) — injected as a compact summary into every translation/review call
+register: "formal modern Iranian Persian; professionally edited technical book"
+orthography:
+  zwnj: "use نیم‌فاصله (U+200C) in compounds: می‌شود، نمی‌تواند، سیستم‌ها، هوش‌مصنوعی→ write as هوش مصنوعی (space), داده‌ها، مدل‌ها"
+  punctuation: "Persian comma ،  semicolon ؛  question mark ؟  quotes «…»"
+  digits: "Persian digits (۰–۹) in running prose; ASCII digits inside identifiers, DOIs, URLs, code, hashes, section numbers of the source (e.g. Section 3.2), and inside tables of numeric data"
+  hamza_ye: "prefer ٔ-free forms where standard: خانه‌ی → خانهٔ is acceptable; be consistent (use ٔ form)"
+  spelling_consistency: "one spelling per term across the whole book (enforced by terminology lint)"
+lexical:
+  avoid: [literal machine translation, English word order, colloquial forms, unnecessary transliteration, unneeded loanwords, unexplained variation]
+  acronyms_kept_latin: [AI, ML, LLM, RAG, NLP, RMF, SSDF, ARIA, NIST, API, GenAI, IPD, DOI]
+  first_occurrence_pattern: "«اصطلاح فارسی» (English Term, ACR)"
+  modality_map:
+    must: باید
+    shall: باید (الزامی)
+    should: بهتر است / توصیه می‌شود  (never باید)
+    may: می‌تواند / مجاز است
+    can: می‌تواند
+    could: ممکن است بتواند
+    recommended: توصیه‌شده
+    required: الزامی
+    optional: اختیاری
+    likely: به‌احتمال زیاد
+    possible: ممکن
+editorial_labels:
+  synthesis: [یادداشت تدوینگر, راهنمای مطالعه, ارتباط با اسناد دیگر, جمع‌بندی تطبیقی, نقشه مفهومی]
+  localization_ir: [کاربرد در سازمان‌های ایرانی, یادداشت بومی‌سازی, راهنمای اجرای عملی, نمونه اجرایی برای ایران, چک‌لیست پیاده‌سازی, نمونه فرم, سناریوی سازمانی, تفسیر اجرایی تدوینگر, مثال تدوینگر, برای مدیران, برای تیم فنی, اگر سازمان شما از صفر شروع می‌کند, چک‌لیست اجرایی]
+attribution:
+  line1: "ترجمه، تدوین و بازآرایی فارسی: محمدعلی کهن‌دژ"
+  line2: "بر پایه اسناد و انتشارات اصلی NIST و منابع مشخص‌شده در هر فصل."
+  line3: "وب‌سایت: kohandezh.com"
+  never_imply: [official NIST Persian translation, NIST endorsement, NIST authorship of editorial additions]
+typography:
+  persian_body: Vazirmatn Regular
+  persian_subheading: Vazirmatn Medium/SemiBold
+  persian_heading: Vazirmatn Bold
+  classical_fallback: Noto Naskh Arabic
+  mono: Noto Sans Mono
+  latin_web: [Inter, Noto Sans]
+  page: A4, RTL, margins 25mm/20mm, body 11pt, line-height 1.7

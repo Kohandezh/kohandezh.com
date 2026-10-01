@@ -1,0 +1,86 @@
+{
+ "template_id": "TPL-P02-2",
+ "title_fa": "نمونه فرم: ثبت ریسک و ریسک باقیماندهٔ هوش مصنوعی (نمونهٔ پیشنهادی تدوینگر)",
+ "derived_from": [
+  "KDJ-AI-2026E1-P02-C10-S02",
+  "KDJ-AI-2026E1-P02-C10-S03",
+  "KDJ-AI-2026E1-P02-C10-S04",
+  "KDJ-AI-2026E1-P02-C09-S03"
+ ],
+ "fields": [
+  {
+   "name_fa": "شناسهٔ ریسک",
+   "name_en": "risk_id",
+   "description_fa": "شناسهٔ یکتا برای پیگیری در گزارش‌ها",
+   "example_fa": "RSK-007"
+  },
+  {
+   "name_fa": "شرح ریسک و سامانهٔ مرتبط",
+   "name_en": "risk_description_related_asset",
+   "description_fa": "شرح روشن ریسک و شناسهٔ دارایی مربوط از فهرست دارایی‌ها",
+   "example_fa": "نشت دادهٔ محرمانه از پایگاه دانش RAG چت‌بات (AI-INV-014)"
+  },
+  {
+   "name_fa": "دستهٔ ریسک",
+   "name_en": "risk_category",
+   "description_fa": "امنیت، حریم خصوصی، انصاف، عملکرد، زنجیرهٔ تأمین یا حقوقی",
+   "example_fa": "امنیت"
+  },
+  {
+   "name_fa": "احتمال و شدت اثر",
+   "name_en": "likelihood_impact",
+   "description_fa": "مقادیر بر پایهٔ مقیاس ماتریس ریسک سازمانی",
+   "example_fa": "احتمال متوسط؛ شدت زیاد"
+  },
+  {
+   "name_fa": "امتیاز و سطح ریسک",
+   "name_en": "risk_score_level",
+   "description_fa": "ترکیب توافقی احتمال و شدت",
+   "example_fa": "بالا"
+  },
+  {
+   "name_fa": "پاسخ انتخابی",
+   "name_en": "selected_response",
+   "description_fa": "کاهش، انتقال، اجتناب یا پذیرش",
+   "example_fa": "کاهش"
+  },
+  {
+   "name_fa": "کنترل‌های اعمالی",
+   "name_en": "applied_controls",
+   "description_fa": "کنترل‌های اجراشده و تاریخ اجرا",
+   "example_fa": "طبقه‌بندی اسناد پیش از ورود به RAG؛ فیلتر خروجی"
+  },
+  {
+   "name_fa": "ریسک باقیمانده",
+   "name_en": "residual_risk",
+   "description_fa": "ریسک پس از کنترل‌ها به‌همراه توضیح",
+   "example_fa": "متوسط — در صورت خطای طبقه‌بندی سند"
+  },
+  {
+   "name_fa": "تصویب‌کنندهٔ پذیرش",
+   "name_en": "acceptance_approver",
+   "description_fa": "نقش مجاز به پذیرش ریسک باقیمانده بر پایهٔ تحمل ریسک",
+   "example_fa": "معاون فناوری اطلاعات"
+  },
+  {
+   "name_fa": "تناوب پایش",
+   "name_en": "monitoring_frequency",
+   "description_fa": "بسامد بازبینی و پایش این ریسک",
+   "example_fa": "ماهانه"
+  },
+  {
+   "name_fa": "شاخص هشدار زودهنگام (KRI)",
+   "name_en": "kri_indicator",
+   "description_fa": "سنجه‌ای که بدترشدن ریسک را زودتر آشکار می‌کند",
+   "example_fa": "تعداد پاسخ‌های حاوی عبارت طبقهٔ محرمانه در هفته"
+  },
+  {
+   "name_fa": "وضعیت و تاریخ بازبینی بعدی",
+   "name_en": "status_next_review",
+   "description_fa": "باز، در حال اقدام یا بسته؛ با تاریخ بازبینی",
+   "example_fa": "در حال اقدام — ۱۴۰۴/۰۸/۰۱"
+  }
+ ],
+ "origin": "editorial_template_ir",
+ "note_fa": "نمونه پیشنهادی تدوینگر بر پایه مفاهیم مطرح‌شده در منابع این فصل"
+}

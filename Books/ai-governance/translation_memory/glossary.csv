@@ -1,0 +1,430 @@
+concept_id,english,acronym,preferred_fa,alternatives_fa,domain,status,source_documents
+ARTIFICIAL_INTELLIGENCE,Artificial Intelligence,AI,هوش مصنوعی,,general,approved,NIST-AI-100-2E2025; NIST-AI-700-1; NIST-AI-800-1-IPD; NIST-AI-STD-FED-PLAN-2019; NIST-IR-8312; NIST-IR-8367; NIST-SP-1270
+RISK,Risk,,ریسک,خطر,risk,approved,NIST-AI-100-1; NIST-AI-600-1; NIST-AI-700-2; NIST-AI-800-1-IPD; NIST-AI-RMF-PLAYBOOK; NIST-IR-8312
+MACHINE_LEARNING,Machine Learning,ML,یادگیری ماشین,ماشین‌کارآموز; یادگیری ماشینی,ml,approved,NIST-AI-100-2E2025; NIST-AI-100-4-IPD; NIST-AI-RMF-PLAYBOOK; NIST-IR-8312; NIST-PAPER-2-TRUSTWORTHINESS; NIST-SP-1270
+PRIVACY,Privacy,SP,حریم خصوصی,امنیت داده‌های شخصی,legal,approved,NIST-AI-100-1; NIST-AI-100-2E2025; NIST-AI-100-4-IPD
+SECURITY,Security,WIFS,امنیت,,security,approved,NIST-AI-100-2E2025; NIST-AI-100-4-IPD; NIST-AI-RMF-PLAYBOOK
+EXPLAINABILITY,Explainability,,تبیین‌پذیری,قابلیت توضیح,explainability,approved,NIST-AI-100-1; NIST-IR-8367
+TRUSTWORTHY_AI,Trustworthy AI,ALTAI,هوش مصنوعی اعتماد‌پذیر,هوش مصنوعی اعتمادپذیر,governance,approved,NIST-AI-RMF-PLAYBOOK
+RISK_TOLERANCE,Risk tolerance,,تحمل ریسک,سطح ریسک‌پذیری,risk,approved,NIST-AI-100-1
+RELIABILITY,Reliability,,قابلیت اطمینان,اتکاپذیری,governance,approved,NIST-AI-100-1
+ROBUSTNESS,Robustness,,استواری,قابلیت استوار بودن; پایداری در برابر اختلال,ml,approved,NIST-AI-100-1; NIST-AI-100-4-IPD
+SEE_CROSS_REFERENCE,See,,ر.ک.,,general,approved,NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-SP-1270
+BIAS,Bias,,سوگیری,کج‌سلیقگی; پیش‌داوری,bias,approved,NIST-PAPER-1-FOUNDATIONAL
+INTERPRETABILITY,interpretability,,تفسیرپذیری,قابلیت تفسیر,explainability,approved,NIST-AI-100-1; NIST-IR-8367
+RISK_MANAGEMENT,Risk management,,مدیریت ریسک,مدیریت خطر,risk,approved,NIST-AI-100-1
+ADVERSARIAL_MACHINE_LEARNING,ADVERSARIAL MACHINE LEARNING,AML,یادگیری ماشین خصمانه,یادگیری ماشین هماورد,security,approved,NIST-AI-100-2E2025
+LARGE_LANGUAGE_MODEL,Large Language Model,LLM,مدل زبانی بزرگ,مدل زبانی گسترده,genai,approved,NIST-AI-700-1
+GENERATIVE_AI,Generative AI,GAI,هوش مصنوعی مولد,هوش مصنوعی زایا,genai,approved,NIST-AI-600-1
+RED_TEAMING,Red Teaming,RT,تیم قرمز,تیم سرخ,security,approved,NIST-AI-700-2
+MEASURE,Measure,SSIM,سنجش,اندازه‌گیری; سنجه,governance,approved,NIST-AI-100-4-IPD
+LEGAL_RESEARCH,Legal Research,,پژوهش حقوقی,تحقیق حقوقی,legal,approved,NIST-PAPER-1-FOUNDATIONAL
+KNOWLEDGE_LIMITS,Knowledge Limits,,محدودیت‌های دانش,محدودیت‌های معرفتی,explainability,approved,NIST-IR-8312
+FAIRNESS,Fairness,,انصاف,عدالت الگوریتمی; برابری,bias,approved,NIST-AI-100-1
+RESIDUAL_RISK,Residual risk,,ریسک باقیمانده,ریسک پسماند,risk,approved,NIST-AI-100-1
+TRANSPARENCY,Transparency,,شفافیت,,governance,approved,NIST-AI-100-1
+DIFFERENTIAL_PRIVACY,differential privacy,,حریم خصوصی تفاضلی,خصوصیت افتراقی,security,approved,NIST-AI-100-2E2025
+MONITORING,Monitoring,,پایش,رهگیری; نظارت,governance,approved,NIST-AI-STD-FED-PLAN-2019
+MEMBERSHIP_INFERENCE,membership inference,,استنتاج عضویت,استنباط عضویت,security,approved,NIST-AI-100-2E2025
+RISK_APPETITE,risk appetite,,اشتهای ریسک,سطح پذیرش ریسک; رواداری ریسک,risk,approved,NIST-IR-8312
+WATERMARKING,Watermarking,,واترمارک‌گذاری,واترمارک; درج نشان پنهان,genai,approved,NIST-AI-100-2E2025
+SYNTHETIC_CONTENT,Synthetic Content,,محتوای مصنوعی,محتوای ساختگی,genai,approved,NIST-AI-100-4-IPD
+AI_SYSTEM,AI system,,سامانه هوش مصنوعی,سیستم هوش مصنوعی,governance,approved,NIST-AI-100-1
+EXPLANATION_ACCURACY,Explanation Accuracy,,دقت تبیین,صحت توضیح,explainability,approved,NIST-IR-8312
+VALIDITY,Validity,,روایی,اعتبار,general,approved,NIST-AI-700-2
+EXPLAINABLE_AI,Explainable Artificial Intelligence,XAI,هوش مصنوعی توضیح‌پذیر,,explainability,approved,NIST-AI-RMF-PLAYBOOK; NIST-AI-STD-FED-PLAN-2019; NIST-IR-8312; NIST-IR-8367
+CYBERNETICS,Cybernetics,SMC,سایبرنتیک,فرمان‌شناسی,general,approved,NIST-AI-100-2E2025; NIST-AI-100-4-IPD; NIST-AI-RMF-PLAYBOOK; NIST-SP-1270
+FREEDOM_OF_INFORMATION_ACT,Information Act,FOIA,قانون آزادی اطلاعات,,legal,approved,NIST-AI-100-2E2025; NIST-AI-800-1-IPD; NIST-AI-STD-FED-PLAN-2019; NIST-SP-800-218A
+AI_RISK_MANAGEMENT_FRAMEWORK,AI RMF,,چارچوب مدیریت ریسک هوش مصنوعی,چارچوب مدیریت ریسک AI,governance,approved,
+PROMPT_INJECTION,Prompt Injection,,تزریق دستور,تزریق اعلان,security,approved,
+THREAT_MODEL,Threat Model,,مدل تهدید,,security,approved,
+JAILBREAK,Jailbreak,,دور زدن محدودیت‌های مدل,دستبرد به مدل; جیلبرک,security,approved,
+BACKDOOR,Backdoor,,درِ پشتی,درب پشت,security,approved,
+DATA_POISONING,Data Poisoning,,مسموم‌سازی داده,,security,approved,
+HALLUCINATION,Hallucination,,توهم‌زایی,اختلال توهم مدل,genai,approved,
+MISUSE_RISK,Misuse Risk,,ریسک سوءاستفاده,ریسک به‌کارگیری نادرست,risk,approved,
+SECURE_SOFTWARE_DEVELOPMENT_FRAMEWORK,SSDF,,چارچوب توسعه امن نرم‌افزار,,standards,approved,
+IMPACT_ASSESSMENT,Impact Assessment,,ارزیابی تأثیر,,governance,approved,
+SUPPLY_CHAIN,Supply Chain,,زنجیره تأمین,,governance,approved,
+STATISTICAL_BIAS,Statistical Bias,,سوگیری آماری,خطای آماری نظام‌مند,bias,approved,
+SAFETY,Safety,,ایمنی,امنیت رفتاری,general,approved,
+GOVERNANCE,Governance,,حکمرانی,راهبری,governance,approved,
+MODEL_CARD,Model Card,,کارت مدل,برگه مدل,ml,approved,
+COMPLIANCE,Compliance,,انطباق,تطبیق قانونی,legal,approved,
+SECURE_SOFTWARE_DEVELOPMENT,Secure Software Development,,توسعهٔ نرم‌افزار امن,توسعه ایمن نرم‌افزار,security,approved,
+SYSTEMIC_BIAS,Systemic Bias,,سوگیری نظام‌مند,سوگیری ساختاری,bias,approved,
+HUMAN_BIAS,Human Bias,,سوگیری انسانی,سوءگرایش انسانی,bias,approved,
+AI_ACTOR,AI Actor,,کنشگر هوش مصنوعی,,governance,approved,
+INCIDENT,Incident,,رخداد,رویداد امنیتی,security,approved,
+DIGITAL_CONTENT_TRANSPARENCY,Digital Content Transparency,,شفافیت محتوای دیجیتال,شفافیت محتوا در بستر دیجیتال,governance,approved,
+CONFABULATION,Confabulation,,برساختگی,توهم مدل,genai,approved,
+SOCIO_TECHNICAL,Socio-technical,,اجتماعی‌ـ‌فناورانه,اجتماعی‌–فناورانه,general,approved,
+DEEPFAKE,Deepfake,,دیپ‌فیک,,genai,approved,
+INTEROPERABILITY,Interoperability,,همکنش‌پذیری,قابلیت هم‌عملی; کارکرد متقابل,standards,approved,
+DEPLOYMENT,Deployment,,استقرار,به‌کارگیری,general,approved,
+CONFORMITY_ASSESSMENT,Conformity Assessment,,ارزیابی انطباق,سنجش انطباق,standards,approved,
+STAKEHOLDER,Stakeholder,,ذی‌نفع,طرف ذی‌نفع,governance,approved,
+JUDICIAL_ANALYTICS,Judicial Analytics,,تحلیل داده‌های قضایی,,legal,approved,
+THIRD_PARTY,Third-Party,,طرف ثالث,,legal,approved,
+AUDIT,Audit,,حسابرسی,رسیدگی,governance,approved,
+MODEL_EXTRACTION,Model Extraction,,استخراج مدل,کشف‌گری مدل,security,approved,
+HARM,Harm,,آسیب,,risk,approved,
+MODEL_INVERSION,Model Inversion,,وارون‌سازی مدل,بازگشتی مدل,security,approved,
+ACCOUNTABILITY,Accountability,,پاسخگویی,مسئولیت‌پذیری,governance,approved,
+DUAL_USE_FOUNDATION_MODEL,Dual-Use Foundation Model,,مدل پایه دوکاربردی,مدل بنیادین دوجانبه‌کاربرد,genai,approved,
+POISONING,Poisoning,,مسموم‌سازی,,security,approved,
+MEANINGFUL_EXPLANATION,Meaningful Explanation,,تبیین معنادار,توضیح بامعنا,explainability,approved,
+PROVENANCE,Provenance,,منشأ,منشأ و اصالت داده; پیشینه محتوا,governance,approved,
+RESILIENCE,Resilience,,تاب‌آوری,انعطاف‌پذیری سیستمی,governance,approved,
+EVASION,Evasion,,گریز,فرار از تشخیص,security,approved,
+HUMAN_OVERSIGHT,Human Oversight,,نظارت انسانی,ارزیابی و مراقبت انسانی,governance,approved,
+ARIA,ARIA,,ARIA,ایریا,standards,english_only,
+FOUNDATION_MODEL,Foundation Model,,مدل پایه,مدل بنیادین,genai,approved,
+STANDARD,Standard,,استاندارد,معیار,standards,approved,
+GOVERN,Govern,,حاکمیت,کنترل و راهبری,governance,approved,
+MAP,Map,,نگاشت,نگاشت زمینه; تابع نگاشت,governance,approved,
+MANAGE,Manage,,مدیریت,اقدام و مدیریت,governance,approved,
+AI_RISK_SCORES,AI and Risk Scores,,نمره‌های ریسک هوش مصنوعی,امتیازهای ریسک هوش مصنوعی,risk,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
+AI_TRUSTWORTHINESS_LITIGATION,"Artificial Intelligence, Trustworthiness, and Litigation",,هوش مصنوعی، اعتمادپذیری و دادرسی,هوش مصنوعی، قابلیت اعتماد و دادرسی,legal,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
+AI_AND_BIAS_EVALUATION,Artificial Intelligence and Bias – An Evaluation,,هوش مصنوعی و سوگیری – یک ارزیابی,هوش مصنوعی و تورش – ارزیابی,bias,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
+AI_DECISION_MAKING_JUDGES,"AI, Decision-Making, and the Role of Judges",,هوش مصنوعی، تصمیم‌گیری و نقش قضات,,legal,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
+AI_AND_JUSTICE_SYSTEM,Artificial Intelligence and the Justice System,,هوش مصنوعی و نظام عدالت,هوش مصنوعی و سامانه قضایی,legal,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
+STANDARDIZATION,Standardization,ISO,استانداردسازی,یکسان‌سازی استانداردی,standards,approved,NIST-AI-100-4-IPD; NIST-AI-STD-FED-PLAN-2019; NIST-SP-1270
+RECEIVER_OPERATING_CHARACTERISTIC_ALT,RECEIVER OPERATING CHARACTERISTIC,ROC,منحنی مشخصه عملکرد گیرنده,منحنی عملکرد گیرنده,ml,approved,NIST-AI-100-2E2025; NIST-AI-700-1
+EXECUTIVE_ORDER,Executive Order,EO,فرمان اجرایی,,legal,approved,NIST-AI-600-1; NIST-SP-800-218A
+DAUBERT_STANDARD,Daubert,,استاندارد داوبرت,معیار داوبرت,legal,approved,NIST-PAPER-2-TRUSTWORTHINESS
+INFORMATION_TECHNOLOGY,Information Technology,BEIT,فناوری اطلاعات,فناوری اطلاعاتی,general,approved,NIST-AI-100-4-IPD; NIST-AI-STD-FED-PLAN-2019
+GDPR,General Data Protection Regulation,GDPR,مقررات عمومی حفاظت از داده‌ها,مقررات عمومی حمایت از داده,legal,approved,NIST-IR-8312; NIST-IR-8367
+ENTERPRISE_RISK_MANAGEMENT,Enterprise Risk Management,ERM,مدیریت ریسک سازمانی,مدیریت ریسک بنگاهی,risk,approved,NIST-IR-8312; NIST-SP-800-218A
+DETECTION_ERROR_TRADEOFF,Detection Error Tradeoff,DET,موازنه خطای آشکارسازی,بده‌بستان خطای تشخیص,ml,approved,NIST-AI-100-4-IPD; NIST-AI-700-1
+DISENTANGLING_EXPLAINABILITY,Disentangling explainability,,تفکیک توضیح‌پذیری از تفسیرپذیری,جدا کردن توضیح‌پذیری از تفسیرپذیری,explainability,approved,NIST-IR-8367
+NIST_SPECIAL_PUBLICATION,NIST Special Publication,SP,انتشار ویژه NIST,مطبوعات خاص NIST,standards,approved,NIST-SP-800-218A
+FALSE_POSITIVE_RATE,False Positive Rate,FPR,نرخ مثبت کاذب,نرخ مثبت‌های کاذب,ml,approved,NIST-AI-700-1
+DEEP_LEARNING,Deep Learning,DL,یادگیری عمیق,,ml,approved,NIST-AI-100-2E2025; NIST-AI-100-4-IPD
+GENERATIVE_ADVERSARIAL_NETWORKS,Generative Adversarial Networks,GANs,شبکه‌های مولد رقابتی,شبکه‌های خصمانه مولد,genai,approved,NIST-AI-100-4-IPD; NIST-PAPER-1-FOUNDATIONAL
+AMERICANS_WITH_DISABILITIES_ACT,Disabilities Act,ADA,قانون معلولیت آمریکا,قانون توان‌خواهان آمریکا,legal,approved,NIST-PAPER-4-BIAS; NIST-SP-1270
+SYNTHETIC_CONTENT_DETECTION,Synthetic content detection,,آشکارسازی محتوای مصنوعی,تشخیص محتوای ساختگی,genai,proposed,NIST-AI-100-4-IPD
+INTERPRETATION,Interpretation,,تفسیر,بازتفسیر ذهنی,explainability,proposed,NIST-IR-8367
+SUSTAINABILITY,Sustainability,,پایداری,پای‌داری,governance,proposed,NIST-AI-100-1
+DATA_PROVENANCE,Data provenance,,خاستگاه داده,اصالت و منشأ داده; تبار داده,governance,proposed,NIST-AI-600-1
+TRUSTWORTHY_MACHINE_LEARNING,Trustworthy Machine Learning,,یادگیری ماشین قابل‌اعتماد,یادگیری ماشین اعتمادپذیر,ml,proposed,NIST-AI-100-2E2025; NIST-SP-1270
+DATA_BIAS,Data bias,,سوگیری داده,جانب‌داری داده,bias,proposed,NIST-PAPER-1-FOUNDATIONAL
+DEFENSE_IN_DEPTH,Defense-in-depth,,دفاع چندلایه,دفاع در عمق,security,proposed,NIST-AI-100-4-IPD
+SYNTHETIC_IMAGE_DETECTION,Synthetic image detection,,آشکارسازی تصویر مصنوعی,تشخیص تصاویر ساختگی; کشف تصویر تولیدشده با هوش مصنوعی,genai,proposed,NIST-AI-100-4-IPD
+MODEL_ALIGNMENT,Model alignment,,هم‌راستاسازی مدل,هم‌راستایی مدل,ml,proposed,NIST-PAPER-1-FOUNDATIONAL
+NARROW_AI,Narrow AI,,هوش مصنوعی محدود,هوش مصنوعی ضعیف; هوش مصنوعی تخصصی,ml,proposed,NIST-PAPER-1-FOUNDATIONAL
+TRUE_POSITIVE_RATE,True Positive Rate,TPR,نرخ مثبت واقعی,نرخ مثبت‌های درست,ml,proposed,NIST-AI-700-1
+PIXEL_HACKING,Pixel hacking,,هک پیکسلی,دستکاری پیکسلی,security,proposed,NIST-PAPER-1-FOUNDATIONAL
+SYNTHETIC_VIDEO,Synthetic video,,ویدئوی مصنوعی,ویدئوی ساختگی; ویدئوی سینتتیک,genai,proposed,NIST-AI-100-4-IPD
+EXTRAPOLATION,Extrapolation,,برون‌یابی,برآورد بیرونی; فرایابی,ml,proposed,NIST-PAPER-1-FOUNDATIONAL
+DESIGN_OBJECTIVES,Design objectives,,اهداف طراحی,مقاصد طراحی,general,proposed,NIST-PAPER-1-FOUNDATIONAL
+DATASETS,Datasets,,مجموعه‌داده‌ها,داده‌ست‌ها,ml,proposed,NIST-PAPER-1-FOUNDATIONAL
+METADATA_ACCURACY,Metadata accuracy,,دقت فراداده,صحت فراداده,general,proposed,NIST-AI-100-4-IPD
+DEPLOYMENT_CONTEXTS,Different deployment contexts,,بسترهای متفاوت استقرار,زمینه‌های مختلف بهره‌برداری,risk,proposed,NIST-SP-1270
+INTERPOLATION,Interpolation,,درون‌یابی, میان‌یابی,ml,proposed,NIST-PAPER-1-FOUNDATIONAL
+HUMAN_ASSISTED_DETECTION,Human-assisted detection,,آشکارسازی به‌کمک انسان,تشخیص با کمک انسان,genai,proposed,NIST-AI-100-4-IPD
+WATERMARK_CAPACITY,Capacity,,ظرفیت (آبmark),ظرفیت نهان‌نگاری,security,proposed,NIST-AI-100-4-IPD
+TRUSTWORTHINESS,Trustworthiness,,قابلیت اعتماد,اعتمادپذیری,governance,proposed,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS
+ROBUSTNESS_OR_GENERALIZABILITY,Robustness or generalizability,,استحکام یا تعمیم‌پذیری,پایایی یا قابلیت تعمیم,ml,proposed,NIST-AI-100-1
+GAI_GENERAL_REFERENCE,GAI generally,,به‌طور کلی هوش مصنوعی مولد,GAI به‌طور کلی,genai,proposed,NIST-AI-600-1
+DECISION_ACCURACY,Decision accuracy,,دقت تصمیم,صحت تصمیم‌گیری,explainability,proposed,NIST-IR-8312
+COMPUTING_MACHINERY,Computing Machinery,ACM,ماشین‌های محاسباتی,ماشین حساب‌گر,general,proposed,NIST-AI-RMF-PLAYBOOK
+NIST_ARTIFICIAL_INTELLIGENCE,NIST Artificial Intelligence,AI,هوش مصنوعی مؤسسه ملی استاندارد و فناوری (NIST AI),هوش مصنوعی NIST,standards,proposed,NIST-SP-800-218A
+EQUAL_ERROR_RATE,Equal Error Rate,EER,نرخ برابری خطا,نرخ خطای برابر,ml,proposed,NIST-AI-700-1
+HUMAN_RESEARCH_PROTECTIONS,Human Research Protections,OHRP,حفاظت از پژوهش‌های انسانی,حمایت از آزمودنی‌های پژوهش انسانی,legal,proposed,NIST-AI-RMF-PLAYBOOK
+AI_ACT,Artificial Intelligence Act,AIA,قانون هوش مصنوعی,قانون هوش مصنوعی اتحادیه اروپا,legal,proposed,NIST-PAPER-1-FOUNDATIONAL
+FALSE_NEGATIVE_RATE,False Negative Rate,FNR,نرخ کاذب منفی,نرخ منفی کاذب,ml,proposed,NIST-AI-700-1
+RECEIVER_OPERATING_CHARACTERISTIC,Receiver Operator Curve,ROC,منحنی مشخصه عملکرد گیرنده,منحنی ROC,ml,proposed,NIST-AI-100-4-IPD
+HUMAN_CENTERED_AI,Human-centered AI,HCAI,هوش مصنوعی انسان‌محور,هوش مصنوعی مرکزیت‌یافته بر انسان,governance,proposed,NIST-SP-1270
+PARTIAL_DEPENDENCE_PLOTS,Partial Dependence Plots,PDPs,نمودارهای وابستگی جزئی,نمودارهای وابستگی موضعی,explainability,proposed,NIST-IR-8312
+INDIVIDUAL_CONDITIONAL_EXPECTATION,Individual Conditional Expectation,ICE,امید مشروط تک‌موردی,انتظار شرطی فردی,explainability,proposed,NIST-IR-8312
+MEDICAL_DECISION_MAKING,Medical Decision Making,,تصمیم‌گیری پزشکی,تصمیم‌گیری در حوزه پزشکی,general,proposed,NIST-IR-8367
+OPERATIONAL_TECHNOLOGY,Operational Technology,OT,فناوری عملیاتی,تکنولوژی عملیاتی,security,proposed,NIST-AI-STD-FED-PLAN-2019
+ADOBE_CONTENT_AUTHENTICITY_INITIATIVE,Adobe Content Authenticity Initiative,CAI,ابتکار اصالت محتوا ادوبی,ابتکار صداقت محتوایی ادوبی,genai,proposed,NIST-AI-700-1
+WEB_ONTOLOGY_LANGUAGE,Web Ontology Language,OWL,زبان هستی‌شناسی وب,,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+INTERNAL_REPORT,Internal Report,IR,گزارش داخلی,,general,proposed,NIST-SP-800-218A
+FCRA,Fair Credit Reporting Act,FCRA,قانون گزارش‌دهی منصفانه اعتبار,قانون اعتبارسازی منصفانه,legal,proposed,NIST-IR-8312
+RISK_MANAGEMENT_FRAMEWORK,Risk Management Framework,RMF,چارچوب مدیریت ریسک,چارچوب مدیریت خطر,risk,proposed,NIST-SP-1270
+FISMA,Federal Information Security Modernization Act,FISMA,قانون نوسازی امنیت اطلاعات فدرال,,legal,proposed,NIST-SP-800-218A
+LARGE_LANGUAGE_MODELS,Large LANGUAGE MODELs,LLMs,مدل‌های زبانی بزرگ,مدل‌های بزرگ زبانی,genai,proposed,NIST-SP-1270
+DATA_TRANSFER_AGREEMENT,Data Transfer Agreement,DTA,توافق‌نامه انتقال داده,قرارداد انتقال داده,legal,proposed,NIST-AI-700-1
+DOMAIN_GENERATION_ALGORITHM,Domain Generation Algorithm,DGA,الگوریتم تولید دامنه,الگوریتم مولد نام دامنه,security,proposed,NIST-AI-100-2E2025
+DECISION_COST_FUNCTION,Decision Cost Function,DCF,تابع هزینه تصمیم,,ml,proposed,NIST-AI-100-4-IPD
+EXPECTATION_MAXIMIZATION,Expectation-Maximization,EM,الگوریتم بیشینه‌سازی امید ریاضی,انتظار–بیشینه‌سازی,ml,proposed,NIST-AI-100-4-IPD
+ADVANCED_PERSISTENT_THREAT,Advanced Persistent Threat,APT,تهدید پیشرفته مستمر,تهدید مستمر پیشرفته,security,proposed,NIST-AI-RMF-PLAYBOOK
+LANGUAGE_MODEL,Language Model,LM,مدل زبانی,مدل زبان,genai,proposed,NIST-AI-100-4-IPD
+KULLBACK_LEIBLER_DIVERGENCE,Kullback-Leibler,KL,واگرایی کولبک–لایبلر,آشفتگی کولبک–لایبلر; واپاشی نسبی,ml,proposed,NIST-AI-100-4-IPD
+LATENT_DIRICHLET_ALLOCATION,Latent Dirichlet Allocation,LDA,تخصیص دیریشله نهفته,تخصیص پنهان دیریکله,ml,proposed,NIST-IR-8367
+EQUAL_CREDIT_OPPORTUNITY_ACT,Equal Credit Opportunity Act,ECOA,لایحه فرصت اعتباری برابر,قانون فرصت برابر اعتباری,legal,proposed,NIST-IR-8367
+SYSTEM_CAUSABILITY_SCALE,System Causability Scale,SCS,مقیاس علت‌مندسازی سامانه,طیف علیت‌پذیری سیستم,explainability,proposed,NIST-IR-8312
+CONTEXTUAL_ROBUSTNESS_INDEX,Contextual Robustness Index,CORIX,شاخص استحکام بافتی,نمایه تاب‌آوری زمینه‌ای,genai,proposed,NIST-AI-700-2
+FAST_GRADIENT_SIGN_METHOD,Fast Gradient Sign Method,FGSM,روش علامت گرادیان سریع,روش نشان گرادیان سریع,security,proposed,NIST-AI-100-2E2025
+AREA_UNDER_CURVE,AREA UNDER THE CURVE,AUC,سطح زیر منحنی,مساحت زیر منحنی,ml,proposed,NIST-AI-100-2E2025
+UNSUPERVISED_DATA_AUGMENTATION,Unsupervised Data Augmentation,UDA,افزایش دادهٔ بدون نظارت,تقویت دادهٔ بدون نظارت,ml,proposed,NIST-AI-100-2E2025
+OCIL,Open Checklist Interactive Language,OCIL,زبان تعاملی فهرست بازبینی باز,زبان تعاملی چک‌لیست باز,standards,proposed,NIST-SP-800-218A
+GPT,GENERATIVE PRE-TRAINED TRANSFORMER,GPT,ترنسفورمر ازپیش‌آموزش‌دیدهٔ مولد,تبدیل‌گر مولد پیش‌آموزش‌دیده,genai,proposed,NIST-AI-100-2E2025
+NATURAL_LANGUAGE_PROCESSING,Natural Language Processing,NLP,پردازش زبان طبیعی,پردازش زبان گفتاری,ml,proposed,NIST-PAPER-1-FOUNDATIONAL
+MODEL_TESTING,Model Testing,MT,آزمون مدل,تست مدل,ml,proposed,NIST-AI-700-2
+ANALYTICS,Analytics,,تحلیل‌گری داده,تحلیل‌ها,general,proposed,NIST-PAPER-1-FOUNDATIONAL
+BAYESIAN_CASE_MODEL,Bayesian Case Model,BCM,مدل موردی بیزی,مدل مبتنی بر مورد بیزین,explainability,proposed,NIST-IR-8312
+CONCEPT_ACTIVATION_VECTORS,Concept Activation Vectors,CAVs,بردارهای فعال‌سازی مفهوم,,explainability,proposed,NIST-IR-8312
+VULNERABILITIES,Vulnerabilities,RV,آسیب‌پذیری‌ها,حفره‌های امنیتی,security,proposed,NIST-SP-800-218A
+LIME,Local Interpretable Model-agnostic Explanations,LIME,توضیحات مدل‌ناوابسته محلی تفسیرپذیر,توضیح‌های محلی مستقل از مدل,explainability,proposed,NIST-IR-8367
+ADVERSARIAL_THREAT_MATRIX,Adversarial Threat Matrix,MITRE,ماتریس تهدیدهای خصمانه,ماتریس تهدیدهای adversarial,security,proposed,NIST-AI-RMF-PLAYBOOK
+OUT_OF_DISTRIBUTION,OUT-OF-DISTRIBUTION,OOD,خارج از توزیع,خارج از توزیع داده,ml,proposed,NIST-AI-100-2E2025
+CISA,Infrastructure Security Agency,CISA,آژانس امنیت زیرساخت,سازمان امنیت زیرساخت آمریکا,security,proposed,NIST-SP-800-218A
+LOW_RISK_INTERNET_SERVICE,Low-Risk Internet Service,LRIS,خدمات اینترنتی کم‌ریسک,سرویس اینترنتی با ریسک پایین,legal,proposed,NIST-AI-700-1
+CLASS_ACTIVATION_MAPS,Class Activation Maps,CAM,نقشه‌های فعال‌سازی کلاس,,explainability,proposed,NIST-IR-8312
+SERVICE_LEVEL_AGREEMENTS,Service Level Agreements,SLAs,توافق‌نامه‌های سطح خدمات,توافق‌نامه‌های سطح سرویس,legal,proposed,NIST-AI-600-1
+ADVERSARIAL_ROBUSTNESS_TOOLBOX,Adversarial Robustness Toolbox,ART,جعبه‌ابزار استحکام در برابر حملات خصمانه,جعبه‌ابزار پایداری خصمانه,security,proposed,NIST-AI-STD-FED-PLAN-2019
+ROC_AUC,ROC,AUC,سطح زیر منحنی مشخصهٔ عملکرد (ROC-AUC),مساحت زیر منحنی ROC,ml,proposed,NIST-AI-100-4-IPD
+JENSEN_SHANNON_DIVERGENCE,Jensen-Shannon,JS,واگرایی یِنسن–شنون,واکاواژه یِنسن–شنون; فاصله یِنسن–شنون,ml,proposed,NIST-AI-100-4-IPD
+RED_AMBER_GREEN,Red-amber-green,RAG,طبقه‌بندی قرمز–نارنجی–سبز,دسته‌بندی سه‌رنگی ریسک,risk,proposed,NIST-AI-RMF-PLAYBOOK
+FIELD_TESTING,Field Testing,FT,آزمون میدانی,آزمایش صحرایی; ارزیابی میدانی,genai,proposed,NIST-AI-700-2
+ROBOTIC_PROCESS_AUTOMATION,Robotic Process Automation,RPA,اتوماسیون فرایند رباتیک,خودکارسازی فرایند با ربات,general,proposed,NIST-PAPER-1-FOUNDATIONAL
+NEURAL_NETWORK_EXCHANGE_FORMAT,Neural Network Exchange Format,NNEF,قالب تبادل شبکه عصبی,قالب مبادله شبکه عصبی,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+SECURITY_CONSENSUS_OPERATIONAL_READINESS_EVALUATION,Security Consensus Operational Readiness Evaluation,SCORE,ارزیابی آمادگی عملیاتی مبتنی بر اجماع امنیتی,,security,proposed,NIST-AI-RMF-PLAYBOOK
+AI_SAFETY_INSTITUTE,AI Safety Institute,AISI,مؤسسه ایمنی هوش مصنوعی,نهاد ایمنی هوش مصنوعی,governance,proposed,NIST-AI-800-1-IPD
+DIGITAL_SIGNATURE_STANDARD,Digital Signature Standard,DSS,استاندارد امضای دیجیتال,استاندارد امضای رقومی,standards,proposed,NIST-AI-100-4-IPD
+COMMON_LOGIC,Common Logic,CL,منطق مشترک,,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+STRUCTURAL_SIMILARITY_INDEX,Similarity Index,SSIM,شاخص تشابه ساختاری,شاخص شباهت ساختاری,ml,proposed,NIST-AI-100-4-IPD
+SECURE_HASH_STANDARD,Information Processing Standards Publication Secure Hash Standard,SHS,استاندارد درهم‌سازی امن,استاندارد تابع درهم‌ساز امن,security,proposed,NIST-AI-100-4-IPD
+TOTAL_VARIATION,Total Variational,TV,تغییرات کلّی,واریانس کلی; واپایی کلی,ml,proposed,NIST-AI-100-4-IPD
+META_NEURAL_TROJAN_DETECTION,Meta Neural Trojan Detection,MNTD,آشکارسازی فراعصبی اسب‌تروری,تشخیص فراشبکه‌ای تروجان,security,proposed,NIST-AI-100-2E2025
+EXPLAINABLE_NEURAL_NETWORKS,Explainable Neural Networks,XNNs,شبکه‌های عصبی توضیح‌پذیر,شبکه‌های عصبی قابل‌توضیح,explainability,proposed,NIST-IR-8367
+NIST_INTERAGENCY_REPORT,Interagency Report,NISTIR,گزارش بین‌سازمانی,گزارش میان‌سازمانی,general,proposed,NIST-IR-8312
+SYSTEMS_USING_MACHINE_LEARNING,Systems Using Machine Learning,ML,سامانه‌های مبتنی بر یادگیری ماشین,سیستم‌های استفاده‌کننده از یادگیری ماشین,ml,proposed,NIST-AI-STD-FED-PLAN-2019
+NATIONAL_ONLINE_INFORMATIVE_REFERENCES_PROGRAM,National Online Informative References Program,OLIR,برنامه ملی مراجع اطلاعاتی برخط,برنامه ملی ارجاعات اطلاع‌رسانی آنلاین (OLIR),standards,proposed,NIST-SP-800-218A
+ARTIFICIAL_INTELLIGENCE_SYSTEMS,Artificial-Intelligence Systems,ATLAS,سامانه‌های هوش مصنوعی,سیستم‌های هوشمندی مصنوعی,governance,proposed,NIST-AI-100-2E2025
+FAST_GEOMETRIC_PROJECTIONS,Fast Geometric Projections,FGP,تصاویر هندسی سریع,تابع تصاویر هندسی سریع,ml,proposed,NIST-AI-100-2E2025
+FUTURE,Future,CEF,آینده,,general,proposed,NIST-AI-STD-FED-PLAN-2019
+MEL_FREQUENCY_CEPSTRAL_COEFFICIENTS,Mel Frequency Cepstral Coefficients,MFCCs,ضرایب سپسترال فرکانس مل,ضرایب سکپسترال فرکانس مل,ml,proposed,NIST-AI-100-4-IPD
+BASED_FORMAL_ONTOLOGY,Basic Formal Ontology,BFO,هستی‌شناسی صوری پایه,آنتولوژی صوری بنیادی,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+ARTIFICIAL_BRAIN_SIMULATION,Artificial Brain Simulation,ABS,شبیه‌سازی مصنوعی مغز,شبیه‌سازی مغز مصنوعی,ml,proposed,NIST-AI-100-2E2025
+GRAPHICAL_USER_INTERFACES,Graphical User Interfaces,GUIs,رابط‌های کاربری گرافیکی,نمایشگرهای تعاملی گرافیکی,general,proposed,NIST-IR-8367
+GENERAL_PURPOSE_AI_SYSTEMS,General-Purpose AI Systems,GPAIS,سامانه‌های هوش مصنوعی همه‌منظوره,سیستم‌های هوش مصنوعی عمومی‌منظوره,governance,proposed,NIST-AI-100-2E2025
+NON_CONSENSUAL_INTIMATE_IMAGES,Non-Consensual Intimate Images,NCII,تصاویر خصوصی بدون رضایت,تصاویر مستهجن بدون رضایت,security,proposed,NIST-AI-100-4-IPD
+PERSONAL_DATA_ARTIFICIAL_INTELLIGENCE,Personal Data Artificial Intelligence,AI,هوش مصنوعی و داده‌های شخصی,هوش مصنوعی مبتنی بر داده‌های شخصی,legal,proposed,NIST-AI-STD-FED-PLAN-2019
+SYSTEMS_ENGINEERING,Systems Engineering,,مهندسی سامانه‌ها,مهندسی سیستم,general,proposed,NIST-IR-8367
+REGION_OF_NON_INTEREST,Non-Interest,RONI,ناحیه بدون علاقه‌مندی,ناحیه غیرمرتبط (RONI),ml,proposed,NIST-AI-100-2E2025
+DISCRETE_FOURIER_TRANSFORM,Discrete Fourier Transform,DFT,تبدیل فوریه گسسته,تبدیل فوریه گسسته (DFT),ml,proposed,NIST-AI-100-4-IPD
+OFFICE_OF_SCIENCE_AND_TECHNOLOGY_POLICY,Technology Policy,OSTP,دفتر سیاست علم و فناوری,اداره سیاست‌گذاری علم و فناوری,governance,proposed,NIST-PAPER-1-FOUNDATIONAL
+POINTS_OF_CONTACT,Points-of-Contact,POC,افراد رابط,نقاط تماس; مسئولان ارتباط,governance,proposed,NIST-AI-600-1
+STANDARDS_DEVELOPMENT_ORGANIZATIONS,Standards Development Organizations,SDOs,سازمان‌های توسعه استاندارد,نهادهای تدوین استاندارد,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+NIST_CYBERSECURITY_WHITE_PAPER,NIST Cybersecurity White Paper,CSWP,سفیدمقاله امنیت سایبری NIST,مقاله سفید امنیت سایبری NIST,security,proposed,NIST-SP-800-218A
+INHERENT_SAFETY_SCORE,Score,IS,امتیاز ایمنی ذاتی,نمره ایمنی ذاتی,risk,proposed,NIST-AI-100-4-IPD
+GOVERNMENT_ACCOUNTABILITY_OFFICE,Government Accountability Office,GAO,دفتر پاسخگویی دولت آمریکا,سازمان حسابرسی دولت,governance,proposed,NIST-PAPER-1-FOUNDATIONAL
+TERRORISM,Terrorism,GIFCT,تروریسم,ترور,security,proposed,NIST-AI-100-4-IPD
+AI_MANAGEMENT_SYSTEM,Artificial Intelligence Management System,AIMS,سامانه مدیریت هوش مصنوعی,نظام مدیریت هوش مصنوعی,governance,proposed,NIST-AI-100-4-IPD
+CHIEF_COUNSEL,Chief Counsel,OCC,مشاور ارشد حقوقی,رئیس مشاوران حقوقی,legal,proposed,NIST-AI-700-1
+STATISTICAL_BALANCE,Statistical balance,,توازن آماری,تعادل آماری,bias,proposed,NIST-AI-RMF-PLAYBOOK
+DESIGN_AI_FAIR,Design AI so that it’s fair,,طراحی هوش مصنوعی به‌گونه‌ای که منصفانه باشد,طراحی عادلانهٔ هوش مصنوعی,bias,proposed,NIST-PAPER-4-BIAS
+HUMAN_SOCIAL_SYSTEMS,human and social systems,,سامانه‌های انسانی و اجتماعی,نظام‌های انسانی و اجتماعی,general,proposed,NIST-PAPER-1-FOUNDATIONAL
+FOUR_PRINCIPLES_XAI,Four Principles of Explainable Artificial Intelligence,,چهار اصل هوش مصنوعی تفسیرپذیر,چهار اصل XAI,explainability,proposed,NIST-PAPER-2-TRUSTWORTHINESS
+ASSESSING_RISK_AUTOMATING_RACISM,"Assessing risk, automating racism",,ارزیابی ریسک، خودکارسازی نژادپرستی,سنجش خطر و خودکارسازی تبعیض نژادی,bias,proposed,NIST-PAPER-4-BIAS
+AI_AS_EVIDENCE,AI as Evidence,,هوش مصنوعی به‌عنوان دلیل,هوش مصنوعی به‌مثابه مدرک,legal,proposed,NIST-PAPER-2-TRUSTWORTHINESS
+COMPLEXITY,Complexity,,پیچیدگی,,general,proposed,NIST-IR-8367
+RELEVANCE_RULES_OF_EVIDENCE,B.2.(a). Relevance Rules of Evidence,,بند ب.۲.(الف). قواعد ارتباط ادله,قواعد مربوط بودن دلایل,legal,proposed,NIST-PAPER-2-TRUSTWORTHINESS
+AUTHENTICITY_RULES_OF_EVIDENCE,B.2.(b). Authenticity Rules of Evidence,,بند ب.۲.(ب). قواعد اصالت ادله,قواعد اعتبار دلایل,legal,proposed,NIST-PAPER-2-TRUSTWORTHINESS
+WITNESSES,B.2.(c). Witnesses,,شهود,گواهان,legal,proposed,NIST-PAPER-2-TRUSTWORTHINESS
+POST_DECOMMISSION,Post-Decommission,,پس از بازنشستگی,دوره پس از تعطیلی سیستم; پس از خارج‌کردن از خدمت,governance,proposed,NIST-AI-RMF-PLAYBOOK
+IDENTIFICATION_OF_HARMS,Identification of harms,,شناسایی آسیب‌ها,تشخیص خسارات,risk,proposed,NIST-AI-RMF-PLAYBOOK
+CONTEXT_OF_USE,Context of use,,بستر استفاده,زمینه به‌کارگیری,governance,proposed,NIST-AI-RMF-PLAYBOOK
+MODEL_RISK,model risk,,ریسک مدل,,risk,proposed,NIST-IR-8312
+USAGE_RESTRICTIONS,Usage restrictions,,محدودیت‌های استفاده,محدودیت‌های کاربرد,governance,proposed,NIST-AI-100-2E2025
+UNDERSTANDING_DOCUMENTING_ML_LIMITATIONS,Understanding and documenting limitations in ML,,فهم و مستندسازی محدودیت‌ها در یادگیری ماشین,,ml,proposed,NIST-AI-RMF-PLAYBOOK
+TRAINING_DATA_SANITIZATION,Training data sanitization,,پاک‌سازی داده آموزشی,گندزدایی داده آموزشی,security,proposed,NIST-AI-100-2E2025
+AI_RISK_MANAGEMENT_FRAMEWORK_V1_0,AI Risk Management Framework 1.0,,چارچوب مدیریت ریسک هوش مصنوعی نسخه ۱٫۰,,governance,proposed,NIST-SP-800-218A
+UNLEARNING,Unlearning,,فرایادگیری,حذف یادگیری,genai,proposed,NIST-AI-100-2E2025
+MEASUREMENT_AND_EVALUATION,Measurement and evaluation,,اندازه‌گیری و ارزیابی,,governance,proposed,NIST-AI-RMF-PLAYBOOK
+MONITORING_AND_RESPONSE,Monitoring and response,,پایش و پاسخ,پایش و واکنش,security,proposed,NIST-AI-100-2E2025
+GUARDRAIL,guardrail,,محدودکننده ایمنی,حفاظ مدل; گاردریل,genai,proposed,NIST-AI-700-2
+HUMAN_CENTERED,Human-centered,,انسان‌محور,متمرکز بر انسان,governance,proposed,NIST-AI-STD-FED-PLAN-2019
+ADVERSARIAL_EXAMPLES,adversarial examples,,نمونه‌های خصمانه,نمونه‌های adversary; ورودی‌های فریبنده,security,proposed,NIST-AI-100-2E2025
+INTERPRETABILITY_EXPLAINABILITY_DISTINCTION,interpretability and explainability are distinct concepts,,تمایز میان تفسیرپذیری و توضیح‌پذیری,تفکیک مفهومی تفسیرپذیری و توضیح‌پذیری,explainability,proposed,NIST-IR-8367
+SENSITIVE_TO_ETHICAL_CONSIDERATIONS,Sensitive to ethical considerations,,حساس به ملاحظات اخلاقی,مدرک به ملاحظات اخلاقی,governance,proposed,NIST-AI-STD-FED-PLAN-2019
+ACCURACY_INTERPRETABILITY_TRADEOFF,accuracy-interpretability tradeoff,,موازنه دقت و تفسیرپذیری,بده‌بستان دقت–تفسیرپذیری,explainability,proposed,NIST-IR-8312
+HUMAN_AI_INTERACTION,Human-AI interaction,,تعامل انسان و هوش مصنوعی,برهم‌کنش انسان–هوش مصنوعی,general,proposed,NIST-AI-RMF-PLAYBOOK
+PRIVACY_AUDITING,privacy auditing,,ممیزی حریم خصوصی,حسابرسی حریم خصوصی,security,proposed,NIST-AI-100-2E2025
+SELF_INTERPRETABLE_MODELS,Self-interpretable models,,مدل‌های ذاتاً تفسیرپذیر,مدل‌های خودتفسیرپذیر; مدل‌های تفسیرپذیر ذاتی,explainability,proposed,NIST-IR-8312
+SECURE,secure,,امن,ایمن‌سازی‌شده,security,proposed,NIST-AI-100-1
+WHEN_NOT_TO_DEPLOY,When not to deploy,,زمان عدم استقرار,موارد عدم استقرار سامانه,governance,proposed,NIST-AI-RMF-PLAYBOOK
+LANGUAGE_MODELS,Language models,,مدل‌های زبانی,مدل‌های زبان,ml,proposed,NIST-AI-RMF-PLAYBOOK
+POST_HOC_EXPLANATIONS,Post-hoc explanations,,توضیح‌های پسینی,توضیح‌های پس از وقوع; توضیح‌های بعدی,explainability,proposed,NIST-IR-8312
+TRANSFERABILITY,transferability,,انتقال‌پذیری,قابلیت انتقال,security,proposed,NIST-AI-100-2E2025
+INPUT_MODIFICATION,Input modification,,تغییر ورودی,دگرگونی داده ورودی,security,proposed,NIST-AI-100-2E2025
+RESILIENT,resilient,,تاب‌آور,مقاوم; انعطاف‌پذیر در برابر آسیب,security,proposed,NIST-AI-100-1
+NEGATIVE_RISKS_TO_VALIDITY,negative risks to validity,,ریسک‌های منفی برای روایی,خطرهای منفی اعتبار,risk,proposed,NIST-AI-700-2
+SIGNIFICANT_MISUSE,significant misuse,,سوءاستفاده چشمگیر,کاربرد نادرست مهم,risk,proposed,NIST-AI-800-1-IPD
+GLOBAL_EXPLANATION,global explanation,,تبیین سراسری,توضیح کلی; تبیین کلان,explainability,proposed,NIST-IR-8312
+ACCOUNTABILITY_AUDITING_TOOLS,Tools for accountability and auditing,,ابزارهای پاسخگویی و حسابرسی,ابزارهای مسئولیت‌پذیری و رسیدگی,governance,proposed,NIST-AI-STD-FED-PLAN-2019
+LOCAL_EXPLANATION,local explanation,,توضیح موضعی,توضیح محلی; تبیین موضعی,explainability,proposed,NIST-IR-8312
+SOCIAL_RESPONSIBILITY,Social responsibility,,مسئولیت اجتماعی,,governance,proposed,NIST-AI-100-1
+BLACK_BOX_MODEL,Black Box Model,,مدل جعبه سیاه,مدل جعبه‌سیاه,explainability,proposed,NIST-PAPER-2-TRUSTWORTHINESS
+PROFESSIONAL_RESPONSIBILITY,professional responsibility,,مسئولیت حرفه‌ای,مسئولیت صنفی,legal,proposed,NIST-AI-100-1
+TRACING_ATTACKS,tracing attacks,,حملات ردیابی,حمله‌های ردیابی استفاده,security,proposed,NIST-AI-100-2E2025
+SHADOW_MODELS,shadow models,,مدل‌های سایه,مدل‌های بازسازی‌گر,security,proposed,NIST-AI-100-2E2025
+SYNTHETIC_IMAGE_DETECTION_TECHNIQUES,Synthetic Image Detection Techniques,,فنون آشکارسازی تصویر مصنوعی,تکنیک‌های تشخیص تصاویر ساختگی,genai,proposed,NIST-AI-100-4-IPD
+BENCHMARKS,Benchmarks,,معیارهای مرجع,بنچمارک‌ها; سنجش‌های مرجع,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+PRIVACY_RESOURCES,Privacy Resources,,منابع حریم خصوصی,منابع حیطه خصوصی,general,proposed,NIST-AI-RMF-PLAYBOOK
+PROMPT_STEALING_DETECTION,Prompt stealing detection,,آشکارسازی سرقت اعلان,تشخیص دزدیدن پرامپت,genai,proposed,NIST-AI-100-2E2025
+CLOSED_BOX,closed-box,,جعبه بسته,مدل جعبه‌بسته,explainability,proposed,NIST-IR-8312
+DETECTING_TERMINATING_HARMFUL_INTERACTIONS,Detecting and terminating harmful interactions,,آشکارسازی و خاتمه‌دادن به تعامل‌های زیان‌بار,تشخیص و پایان‌دادن به تعاملات مضر,security,proposed,NIST-AI-100-2E2025
+TESTING_METHODOLOGIES,Testing methodologies,,روش‌شناسی‌های آزمون,متدولوژی‌های تست,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+MANAGING_BIAS_IN_AI,Managing Bias in AI,,مدیریت سوگیری در هوش مصنوعی,مدیریت تبعیض الگوریتمی,bias,proposed,NIST-PAPER-4-BIAS
+AI_TESTBEDS,AI testbeds,,سکوهای آزمون هوش مصنوعی,بسترهای آزمون هوش مصنوعی,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+SYNTHETIC_VIDEO_DETECTION_TECHNIQUES,Synthetic Video Detection Techniques,,فنون آشکارسازی ویدئوی مصنوعی,تکنیک‌های تشخیص ویدئوی ساختگی,genai,proposed,NIST-AI-100-4-IPD
+AI_ACTORS,AI actors,,کنشگران هوش مصنوعی,عاملان هوش مصنوعی,governance,proposed,NIST-AI-100-1
+METRICS,Metrics,,سنجه‌ها,معیارها; متریک‌ها,general,proposed,NIST-AI-STD-FED-PLAN-2019
+MANAGING_RISK_BIAS,Managing Risk Bias,,مدیریت سوگیری ریسک,مدیریت سوگیریِ ریسک,risk,proposed,NIST-AI-RMF-PLAYBOOK
+AI_SYSTEM_ACQUIRERS,AI system acquirers,,تحصیل‌کنندگان سامانه هوش مصنوعی,خریداران سامانه هوش مصنوعی,governance,proposed,NIST-SP-800-218A
+DATASET_SELECTION_CHALLENGES,Challenges with dataset selection,,چالش‌های گزینش مجموعه‌داده,دشواری‌های انتخاب مجموعه‌داده,ml,proposed,NIST-AI-RMF-PLAYBOOK
+SYNTHETIC_TEXT_DETECTION_TECHNIQUES,Synthetic Text Detection Techniques,,فنون آشکارسازی متن مصنوعی,تکنیک‌های تشخیص متن ساختگی,genai,proposed,NIST-AI-100-4-IPD
+GENERALIZABILITY,generalizability,,تعمیم‌پذیری,قابلیت تعمیم,ml,proposed,NIST-AI-100-1
+SOCIO_TECHNICAL_SYSTEMS,Socio-technical systems,,سامانه‌های اجتماعی–فنی,سیستم‌های اجتماعی–تکنیکی,general,proposed,NIST-AI-RMF-PLAYBOOK
+AI_SYSTEM_PRODUCERS,AI system producers,,تولیدکنندگان سامانه هوش مصنوعی,سازندگان سامانه هوش مصنوعی,governance,proposed,NIST-SP-800-218A
+PROMPT_INSTRUCTION_FORMATTING_TECHNIQUES,Prompt instruction and formatting techniques,,فنون دستورالعمل و قالب‌بندی اعلان,تکنیک‌های دستور و قالب‌بندی پرامپت,genai,proposed,NIST-AI-100-2E2025
+REFUSAL_SUPPRESSION,Refusal suppression,,سرکوب امتناع,فرونشانی خودداری مدل,genai,proposed,NIST-AI-100-2E2025
+CLEARLY_STATED_SCOPE_AND_INTENDED_USE,Clearly stated scope and intended use,,دامنه و کاربرد موردنظر به‌روزشده,تعیین روشن قلمرو و استفاده مقصود,governance,proposed,NIST-AI-STD-FED-PLAN-2019
+CANARIES,canaries,,قناری‌ها,نشانه‌های هشدار قناری,security,proposed,NIST-AI-100-2E2025
+STANDARDIZED_DATASETS_WITH_METADATA,"Data sets in standardized formats, including metadata",,مجموعه‌داده‌ها در قالب‌های استاندارد شامل فراداده,,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+SAFEGUARD,Safeguard,,سپر ایمنی,حفاظ; تمهید حفاظتی,security,proposed,NIST-AI-800-1-IPD
+SYNTHETIC_VIDEO_DETECTION_PERFORMANCE,Synthetic Video Detection Performance,,کارایی آشکارسازی ویدئوی مصنوعی,عملکرد تشخیص ویدئوی ساختگی,genai,proposed,NIST-AI-100-4-IPD
+DATA_GOVERNANCE,Data Governance,,حکمرانی داده,راهبری داده,governance,approved,NIST-AI-RMF-PLAYBOOK
+PERCEPTUAL_HASH_ALGORITHMS,Perceptual hash algorithms,,الگوریتم‌های درهم‌سازی ادراکی,الگوریتم‌های هش ادراکی,ml,proposed,NIST-AI-100-4-IPD
+ASSESSMENT_OF_SCIENCE_IN_AI,Assessment of science in AI,,ارزیابی علم در هوش مصنوعی,,governance,proposed,NIST-AI-RMF-PLAYBOOK
+SYNTHETIC_IMAGE_DETECTION_PERFORMANCE,Synthetic Image Detection Performance,,کارایی آشکارسازی تصویر مصنوعی,عملکرد تشخیص تصویر ساختگی,genai,proposed,NIST-AI-100-4-IPD
+SALIENCY,saliency,,برجستگی,سالینسی; نموداری,explainability,proposed,NIST-IR-8312
+DATASHEETS_FOR_DATASETS,Datasheets for Datasets,,برگه‌های داده برای مجموعه‌داده‌ها,برگه‌های توصیف داده,governance,proposed,NIST-PAPER-4-BIAS
+HUMAN_SIMULATABILITY,human simulatability,,شبیه‌سازی‌پذیری انسانی,قابلیت شبیه‌سازی توسط انسان,explainability,proposed,NIST-IR-8312
+PREFIX_INJECTION,Prefix injection,,تزریق پیشوند,درج پیشوند,genai,proposed,NIST-AI-100-2E2025
+MACHINE_BIAS,Machine Bias,,سوگیری ماشینی,سوگیری الگوریتمی,bias,proposed,NIST-PAPER-4-BIAS
+FULLY_DOCUMENTED_USE_CASES,Fully documented use cases,,موردهای کاربرد کاملاً مستند,موارد استفادهٔ تماماً مستندسازی‌شده,governance,proposed,NIST-AI-STD-FED-PLAN-2019
+ROC_CURVE,ROC (Receiver Operating Characteristic) Curve,,منحنی مشخصه عملکرد گیرنده,منحنی ROC,ml,proposed,NIST-AI-700-1
+DET_CURVE,DET (Detection Error Tradeoff) Curve,,منحنی موازنه خطای آشکارسازی,منحنی DET,ml,proposed,NIST-AI-700-1
+SYNTHETIC_TEXT_DETECTION_PERFORMANCE,Synthetic Text Detection Performance,,عملکرد آشکارسازی متن مصنوعی,کارایی کشف متن ساختگی,genai,proposed,NIST-AI-100-4-IPD
+PROBLEM_FORMULATION,Problem formulation,, صورت‌بندی مسئله,تعریف مسئله,governance,proposed,NIST-AI-RMF-PLAYBOOK
+INCLUSIVE_AND_ACCESSIBLE,Inclusive and accessible,,فراگیر و در دسترس,شامل و قابل‌دسترس,governance,proposed,NIST-AI-STD-FED-PLAN-2019
+DIGITAL_WATERMARKING,digital watermarking,,واترمارک دیجیتال,نهان‌نگاری نشان دیجیتال; علامت‌گذاری دیجیتال,genai,proposed,NIST-AI-100-4-IPD
+FAIR_HOUSING_PROFILE,fair housing profile,,نمایهٔ مسکن منصفانه,پروفایل مسکن عادلانه,legal,proposed,NIST-AI-100-1
+AI_MODEL_PRODUCERS,AI model producers,,تولیدکنندگان مدل هوش مصنوعی,سازندگان مدل هوش مصنوعی,governance,proposed,NIST-SP-800-218A
+COVERT,covert,,پنهان,نهفته,security,proposed,NIST-AI-100-4-IPD
+METADATA,metadata,,فراداده,متادیتا,general,proposed,NIST-AI-100-4-IPD
+BIAS_TESTING_REMEDIATION,Bias Testing and Remediation Approaches,,رویکردهای آزمون و اصلاح سوگیری,روش‌های سنجش و درمان سوگیری,bias,proposed,NIST-AI-RMF-PLAYBOOK
+USE_CASE_PROFILES,use-case profiles,,نمایه‌های مورد کاربرد,پروفایل‌های مورد استفاده,governance,proposed,NIST-AI-100-1
+CRYPTOGRAPHIC_HASHES,Cryptographic hashes,,درهم‌سازهای رمزنگارانه,هش‌های رمزنگارانه; توابع چکیده رمزنگارانه,security,proposed,NIST-AI-100-4-IPD
+STYLE_INJECTION,Style injection,,تزریق سبک,درج سبک,genai,proposed,NIST-AI-100-2E2025
+MULTI_PROMPT_OUTPUT_AGGREGATION,Aggregating output from multiple prompts,,تجمیع خروجی چند فرمان (پرامپت),ترکیب خروجی چند اعلان,genai,proposed,NIST-AI-100-2E2025
+SYNTHETIC_AUDIO_DETECTION_TECHNIQUES,Synthetic Audio Detection Techniques,,فنون آشکارسازی صوت مصنوعی,تکنیک‌های کشف صدای ساختگی,genai,proposed,NIST-AI-100-4-IPD
+CONSENSUS_BASED,Consensus-based,,مبتنی بر اجماع,اجماع‌محور,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+INPUT_AGNOSTIC,input-agnostic,,مستقل از ورودی,بی‌توجه به ورودی,security,proposed,NIST-AI-100-2E2025
+AI_MODEL_DEVELOPMENT,AI model development,,توسعهٔ مدل هوش مصنوعی,توسعهٔ مدل مصنوعی,ml,proposed,NIST-SP-800-218A
+CONTEXT_MAPPING,Context mapping,,نگاشت زمینه,ترسیم زمینه,governance,proposed,NIST-AI-RMF-PLAYBOOK
+INDIRECT_DISCLOSURE,indirect disclosure,,افشای غیرمستقیم,افشاگری غیرمستقیم,security,proposed,NIST-AI-100-4-IPD
+EXPOSURE,exposure,,مواجهه,در معرض بودن,risk,proposed,NIST-AI-100-2E2025
+SECTOR_SPECIFIC_FOCUS,Focused on particular sectors and applications,,تمرکز بر بخش‌ها و کاربردهای خاص,متمرکز بر بخش‌ها و کاربردهای ویژه,governance,proposed,NIST-AI-STD-FED-PLAN-2019
+ROLE_PLAY,Role-play,,بازی نقشی,ایفای نقش,genai,proposed,NIST-AI-100-2E2025
+TIME_DOMAIN,time domain,,حوزهٔ زمان,قلمرو زمانی; دامنهٔ زمان,ml,proposed,NIST-AI-100-4-IPD
+FORWARD_SIMULATION,forward simulation,,شبیه‌سازی رو به جلو,شبیه‌سازی پیش‌رو,ml,proposed,NIST-IR-8312
+BIAS_IN_BIAS_OUT,"Bias In, Bias Out",,سوگیری در ورودی، سوگیری در خروجی,سوگیری ورودی، سوگیری خروجی,bias,proposed,NIST-PAPER-4-BIAS
+CONSTRAINED_MODEL_FORM,constrained in model form,,محدودشده در فرم مدل,مقید در شکل مدل,ml,proposed,NIST-IR-8367
+CROSS_SECTOR_APPLICABILITY,Applicable across sectors,,قابل‌اجرا در همهٔ بخش‌ها,کاربرد پوشش‌دهندهٔ بخش‌های گوناگون,governance,proposed,NIST-AI-STD-FED-PLAN-2019
+PROMPT_LEVEL_TRANSFORMATION,Prompt-level transformation,,تبدیل در سطح دستور,تبدیل در سطح پرامپت,genai,proposed,NIST-AI-100-2E2025
+MULTI_PATH,Multi-path,,چندمسیره,چند مسیری,governance,proposed,NIST-AI-STD-FED-PLAN-2019
+INTERPRETABILITY_EXPLAINABILITY_APPROACHES,Interpretability and Explainability Approaches,,رویکردهای تفسیرپذیری و توضیح‌پذیری,روش‌های تفسیرپذیری و تشریح‌پذیری,explainability,proposed,NIST-AI-RMF-PLAYBOOK
+CROSS_SECTORAL_PROFILES,cross-sectoral profiles,,پروفایل‌های بین‌بخشی,نیمرخ‌های فرابخشی,governance,proposed,NIST-AI-100-1
+CHARACTER_TRANSFORMATION,Character transformation,,تبدیل نویسه,تبدیل کاراکتر,genai,proposed,NIST-AI-100-2E2025
+COUNTERFACTUAL_SIMULATION,counterfactual simulation,,شبیه‌سازی پادواقعی,شبیه‌سازی ضدواقعی; شبیه‌سازی counterfactual,explainability,proposed,NIST-IR-8312
+FREQUENCY,frequency,,بسامد,فراوانی,general,proposed,NIST-AI-100-4-IPD
+PER_DECISION,per-decision,,به‌ازای هر تصمیم,در هر تصمیم,explainability,proposed,NIST-IR-8312
+SINGLE_DECISION,single-decision,,تک‌تصمیمی,تک‌موردی,explainability,proposed,NIST-IR-8312
+PROVENANCE_DATA,Provenance data,,داده‌های اصالت و منشأ,داده‌های تبار; داده‌های پرووننس,governance,proposed,NIST-AI-100-4-IPD
+AUTHENTICATED,authenticated,,احراز هویت‌شده,تصدیق‌شده,security,proposed,NIST-PAPER-2-TRUSTWORTHINESS
+EXISTING_FRAMEWORKS,Existing frameworks,,چارچوب‌های موجود,چارچوب‌های موجود فعلی,governance,proposed,NIST-AI-RMF-PLAYBOOK
+SSDF_V1_1,Secure Software Development Framework (SSDF) Version 1.1,,چارچوب توسعهٔ امن نرم‌افزار نسخهٔ ۱٫۱,,standards,proposed,NIST-SP-800-218A
+HIRING_PROFILE,hiring profile,,پروفایل استخدام,نیمرخ استخدامی,governance,proposed,NIST-AI-100-1
+METACOGNITION,metacognition,,فراشناخت,فراشناختی,general,proposed,NIST-IR-8312
+SPECIAL_ENCODING,Special encoding,,رمزگذاری ویژه,کدگذاری خاص,ml,proposed,NIST-AI-100-2E2025
+AUTHENTICITY,authenticity,,اصالت,حقیقی‌بودن,genai,proposed,NIST-PAPER-2-TRUSTWORTHINESS
+OPEN_AND_TRANSPARENT,Open and transparent,,باز و شفاف,,governance,proposed,NIST-AI-STD-FED-PLAN-2019
+AI_RMF_CONCEPT_PAPER,AI Risk Management Framework Concept Paper,,سند مفهومی چارچوب مدیریت ریسک هوش مصنوعی,مقاله مفهومی چارچوب مدیریت ریسک هوش مصنوعی,governance,proposed,NIST-PAPER-2-TRUSTWORTHINESS
+RESPONSE_VARIABLES,response variables,,متغیرهای پاسخ,متغیرهای وابسته,ml,proposed,NIST-AI-100-2E2025
+WORD_TRANSFORMATION,Word transformation,,تبدیل واژه,دگردیسی واژه,ml,proposed,NIST-AI-100-2E2025
+SECURITY_RESILIENCE_RESOURCES,Security and Resilience Resources,,منابع امنیتی و تاب‌آوری,منابع امنیت و تاب‌آوری,security,proposed,NIST-AI-RMF-PLAYBOOK
+GLOBALLY_RELEVANT_NON_DISCRIMINATORY_STANDARDS,Result in globally relevant and non-discriminatory standards,,منجر به استانداردهای مرتبط جهانی و غیرتبعیض‌آمیز,,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+MENTAL_REPRESENTATION,mental representation,,بازنمایی ذهنی,نمایش ذهنی,explainability,proposed,NIST-IR-8367
+SYNTHETIC_AUDIO_DETECTION_PERFORMANCE,Synthetic Audio Detection Performance,,کارایی آشکارسازی صدای مصنوعی,عملکرد تشخیص صدای ترکیبی,genai,proposed,NIST-AI-100-4-IPD
+DOMAIN,domain,,دامنه,حوزه,general,proposed,NIST-AI-100-4-IPD
+INTERPRETABLE_ML,Interpretable Machine Learning,,یادگیری ماشین تفسیرپذیر,یادگیری ماشین قابل‌تفسیر,explainability,proposed,NIST-IR-8312
+SSDF_COMMUNITY_PROFILE,SSDF Community Profile,,نمایهٔ اجتماعی SSDF,پروفایل اجتماعی چارچوب توسعه ایمن نرم‌افزار,security,proposed,NIST-SP-800-218A
+HARMONIZED_CLEAR_LANGUAGE,Harmonized and using clear language,,هماهنگ و با استفاده از زبان روشن,,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+ACTORS,Actors,,کنشگران,عاملان; ذی‌نفعان فعال,governance,proposed,NIST-AI-800-1-IPD
+INNOVATION_ORIENTED,Innovation-oriented,,نوآورانه,موجه به نوآوری; همسو با نوآوری,governance,proposed,NIST-AI-STD-FED-PLAN-2019
+PRIMARY,primary,,اصلی,نخستین,general,proposed,NIST-AI-100-1
+FAITHFUL,faithful,,وفادار,ایمن به واقعیت,explainability,proposed,NIST-IR-8312
+BONA_FIDES,bona fides,,حسن نیت,صداقت و حسن نیت,legal,proposed,NIST-PAPER-3-LEGAL
+LOW_DISTORTION,low distortion,,اعوجاج کم,کاهش‌یافتگی پایین,ml,proposed,NIST-AI-100-4-IPD
+VOLUNTARY,voluntary,,داوطلبانه,اختیاری,governance,proposed,NIST-AI-100-1
+CAPACITY_AND_QUALITY,Capacity and quality,,ظرفیت و کیفیت,,general,proposed,NIST-AI-100-4-IPD
+GOVERNANCE_WITH_TEETH,Governance with Teeth,,حکمرانی ضمانت‌دار,حکمرانی با ضمانت اجرا,governance,proposed,NIST-PAPER-4-BIAS
+MODEL,model’s,,مدل,مدل یادگیری ماشین,ml,proposed,NIST-AI-800-1-IPD
+MENTAL_REPRESENTATIONS,mental representations,,بازنمایی‌های ذهنی,نمایش‌های ذهنی,general,proposed,NIST-IR-8367
+DIRECTLY_DISCLOSE,directly disclose,,افشای مستقیم,مستقیماً افشا کردن,legal,proposed,NIST-AI-100-4-IPD
+KNOWLEDGE_LEADERSHIP_COORDINATION,"knowledge, leadership, and coordination",,دانش، رهبری و هماهنگی,دانش، راهبری و هماهنگی,governance,proposed,NIST-AI-STD-FED-PLAN-2019
+AI_RMF_PLAYBOOK,AI RMF Playbook,,کتاب راهنمای چارچوب مدیریت ریسک هوش مصنوعی,کتابچه راهنمای AI RMF,governance,proposed,NIST-AI-600-1
+CYBERSECURITY_INFRASTRUCTURE_SECURITY_AGENCY,Cybersecurity and Infrastructure Security Agency (CISA),,آژانس امنیت سایبری و زیرساخت (CISA),سازمان امنیت سایبری و امنیت زیرساخت,security,proposed,NIST-SP-800-218A
+INFORMS,informs,,آگاهی‌بخشی می‌کند,اطلاع می‌دهد,general,proposed,NIST-AI-100-1
+INSTRUCTION,instruction,,دستورالعمل,دستور; رهنمود,general,proposed,NIST-AI-100-2E2025
+TEMPORAL_PROFILES,temporal profiles,,نمایه‌های زمانی,پروفایل‌های زمانی,ml,proposed,NIST-AI-100-1
+ONE_WAY_INTERACTION,one-way interaction,,تعامل یک‌طرفه,برهم‌کنش یک‌سویه,general,proposed,NIST-IR-8312
+GAME_THEORY,Game Theory,,نظریه بازی‌ها,,general,proposed,NIST-IR-8312
+NIST_AI_RMF_PLAYBOOK,NIST AI RMF Playbook,,کتاب راهنمای چارچوب مدیریت ریسک هوش مصنوعی NIST,کتابچه بازی چارچوب AI RMF نیشت,governance,proposed,NIST-SP-800-218A
+FAIRNESS_AND_MACHINE_LEARNING,Fairness and Machine Learning,,انصاف و یادگیری ماشین,برابری و یادگیری ماشین,bias,proposed,NIST-SP-1270
+PARTICIPATING,Participating,,مشارکت‌کننده,شرکت‌کننده,governance,proposed,NIST-AI-STD-FED-PLAN-2019
+FRAMING_RISK,Framing Risk,,چارچوب‌بندی ریسک,قاب‌بندی خطر,risk,proposed,NIST-AI-600-1
+CAUSAL,causal,,علّی,سببی,general,proposed,NIST-IR-8367
+NATURALISTIC_DECISION_MAKING,Naturalistic decision making,,تصمیم‌گیری طبیعت‌گرایانه,تصمیم‌گیری در محیط‌های واقعی,general,proposed,NIST-IR-8367
+TWO_WAY_INTERACTION,two-way interaction,,تعامل دوسویه,برهم‌کنش دوطرفه,general,proposed,NIST-IR-8312
+PRINCIPLES_ON_ARTIFICIAL_INTELLIGENCE,Principles on Artificial Intelligence,,اصول هوش مصنوعی,اصول مربوط به هوش مصنوعی,governance,proposed,NIST-PAPER-1-FOUNDATIONAL
+UNCONSCIOUS_RACIAL_BIAS_TRIAL_JUDGES_STUDY,Does unconscious racial bias affect trial judges?,,آیا سوگیری نژادی ناهشیار بر قضات محاکم اثر می‌گذارد؟,,bias,proposed,NIST-PAPER-4-BIAS
+POLICY_REVIEW,Policy Review,,بازبینی خط‌مشی,مرور سیاستی,governance,proposed,NIST-AI-600-1
+RISKS,Risks,,خطرها,ریسک‌ها,risk,proposed,NIST-AI-800-1-IPD
+DEPLOYING_OR_OPERATING,deploying or operating,,استقرار یا بهره‌برداری,پیاده‌سازی یا اجرا,general,proposed,NIST-AI-100-1
+MECHANISMS,mechanisms,,سازوکارها,مکانیزم‌ها,general,proposed,NIST-IR-8367
+BIG_DATA_DISPARATE_IMPACT,Big Data’s Disparate Impact,,اثر نابرابر کلان‌داده,اثر متفاوت داده‌های عظیم,bias,proposed,NIST-PAPER-4-BIAS
+IMPROVING_NATION_CYBERSECURITY_EO,Improving the Nation’s Cybersecurity,,بهبود امنیت سایبری کشور,ارتقای امنیت سایبری ملت,security,proposed,NIST-SP-800-218A
+POSSIBLE_IMPLEMENTATION_METHODS,Possible Implementation Methods,,روش‌های ممکن پیاده‌سازی,روش‌های اجرایی محتمل,governance,proposed,NIST-AI-800-1-IPD
+NIST,NIST,,مؤسسه ملی استاندارد و فناوری آمریکا,انستیتو ملی استاندارد و فناوری,standards,proposed,NIST-PAPER-4-BIAS
+AI_BILL_OF_RIGHTS_BLUEPRINT,Blueprint for an AI Bill of Rights,,طرح مقدماتی منشور حقوقی هوش مصنوعی,نقشه راه منشور حقوق هوش مصنوعی,governance,proposed,NIST-AI-800-1-IPD
+RECORDING,recording,,ضبط,ثبت,general,proposed,NIST-AI-100-4-IPD
+PIXELS,pixels,,پیکسل‌ها,نقطه‌های تصویر,ml,proposed,NIST-IR-8312
+HUMAN_MACHINE_INTERACTION_DEGREE,degree of human-machine interaction,,درجه تعامل انسان و ماشین,میزان برهم‌کنش انسان-ماشین,general,proposed,NIST-IR-8312
+JUDGMENT_UNDER_UNCERTAINTY,Judgment under uncertainty: Heuristics and biases,,قضاوت در شرایط عدم‌قطعیت: راهبردهای ساده‌سازی و سوگیری‌ها,داوری زیر عدم قطعیت: شهودها و سوگیری‌ها,bias,proposed,NIST-SP-1270
+SCARFONE_CYBERSECURITY,Scarfone Cybersecurity,,امنیت سایبری اسکارفون,,security,proposed,NIST-SP-800-218A
+DETECTION,Detection,,تشخیص,آشکارسازی,security,proposed,NIST-AI-100-4-IPD
+RELEVANCE,relevance,,ارتباط,مربوط بودن,legal,proposed,NIST-PAPER-2-TRUSTWORTHINESS
+REQUIREMENTS_ENGINEERING,Requirements engineering,,مهندسی نیازمندی‌ها,مهندسی الزامات,standards,proposed,NIST-IR-8367
+ISO_IEC_JTC1_SC42_AI,ISO/IEC JTC 1/SC 42 Artificial Intelligence,,هوش مصنوعی در کمیته فرعی ۴۲ کمیته فنی مشترک ۱ ISO/IEC,ISO/IEC JTC 1/SC 42 هوش مصنوعی,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+ACCURATE,accurate,,دقیق,صحیح; درست,general,proposed,NIST-IR-8312
+ABSTRACTION,abstraction,,انتزاع,تجرید,general,proposed,NIST-IR-8367
+GUIDING_QUESTIONS,guiding questions,,پرسش‌های راهنما,سؤالات هدایت‌گر,governance,proposed,NIST-AI-700-2
+PROPERTIES,properties,,ویژگی‌ها,خصوصیات; خصایص,general,proposed,NIST-AI-100-4-IPD
+MODEL_RULES_OF_PROFESSIONAL_CONDUCT,Model Rules of Professional Conduct,,مقررات نمونه رفتار حرفه‌ای,قواعد الگوی اخلاق حرفه‌ای وکالت,legal,proposed,NIST-PAPER-4-BIAS
+PREDICT,predict,,پیش‌بینی کردن,پیش‌گویی کردن,ml,proposed,NIST-IR-8312
+MACHINE_TESTIMONY,Machine Testimony,,شهادت ماشینی,گواهی ماشین,legal,proposed,NIST-PAPER-2-TRUSTWORTHINESS
+LEVEL_OF_DETAIL,level of detail,,سطح جزئیات,درجه تفصیل,general,proposed,NIST-IR-8312
+MENS_REA,mens rea,,قصد مجرمانه,عنصر معنوی جرم,legal,proposed,NIST-PAPER-1-FOUNDATIONAL
+SYNTHETIC_CONTENT_DETECTION_APPROACHES,Current Approaches: Synthetic Content Detection,,رویکردهای کنونی: آشکارسازی محتوای ساختگی,رویکردهای موجود: تشخیص محتوای مصنوعی,genai,proposed,NIST-AI-100-4-IPD
+TRACKING,tracking,,رهگیری,ردیابی,security,proposed,NIST-AI-100-4-IPD
+TEVV,"Testing, Evaluation, Verification, and Validation",TEVV,آزمون، ارزیابی، اعتبارسنجی و تأیید,,risk,approved,NIST-AI-100-1; NIST-AI-RMF-PLAYBOOK; NIST-AI-600-1
+RETRIEVAL_AUGMENTED_GENERATION,Retrieval-Augmented Generation,RAG,تولید تقویت‌شده با بازیابی,بازیابی-تقویت‌شده; RAG,genai,approved,NIST-AI-100-2E2025
+DATA_LABELING,Data Labeling,,برچسب‌گذاری داده,حاشیه‌نویسی داده,ml,approved,NIST-AI-100-1; NIST-AI-RMF-PLAYBOOK
+ANNOTATION,Annotation,,حاشیه‌نویسی,برچسب‌گذاری,ml,approved,
+CROWDWORKER,Crowdworker,,کارگر جمعی‌سپاری,حاشیه‌نویس جمعی‌سپاری‌شده,ml,approved,
+RLHF,Reinforcement Learning from Human Feedback,RLHF,یادگیری تقویتی از بازخورد انسانی,RLHF,genai,approved,NIST-AI-600-1; NIST-AI-100-4-IPD
+SFT,Supervised Fine-Tuning,SFT,تنظیم دقیق نظارت‌شده,SFT,genai,approved,
+REWARD_MODEL,Reward Model,,مدل پاداش,,genai,approved,NIST-SP-800-218A
+HUMAN_FEEDBACK,Human Feedback,,بازخورد انسانی,,genai,approved,
+HUMAN_JUDGMENT,Human Judgment,,قضاوت انسانی,,governance,approved,NIST-AI-100-1
+ADJUDICATION,Adjudication,,داوری اختلاف,حکمیت,ml,approved,
+GOLD_DATASET,Gold Dataset,,مجموعه‌دادهٔ طلایی,,ml,approved,

@@ -1,0 +1,63 @@
+# Cryptographic provenance & hash normalization (MasterPrompt §35–§48)
+# NEVER change this specification silently. Bump spec_version and record in qa/version_notes.md.
+spec_version: "kdj-hash-1"
+edition_id: "2026E1"
+namespace: "KDJ"
+content_id_format: "KDJ-AI-<EDITION>-P<pp>-C<cc>-S<ss>-<SHORT_HASH8>"
+short_hash: "first 8 uppercase hex chars of sha256(canonical_text)"
+citation_id_format: "KDJ-AI-<EDITION>-P<pp>-C<cc>-S<ss>"
+
+canonical_text_normalization:
+  unicode: NFC
+  line_endings: LF
+  trailing_whitespace: strip
+  intra_line_whitespace: "collapse runs of spaces/tabs to one space"
+  paragraph_separator: "\n\n"
+  leading_trailing_blank_lines: strip
+  zero_width_policy: "ZWNJ (U+200C) is PRESERVED (it is orthographic in Persian); U+200B, U+200D, U+FEFF, U+2060 are REMOVED; directional marks U+200E/U+200F/U+202A-U+202E/U+2066-U+2069 are REMOVED"
+  heading_serialization: "'#' * level + ' ' + heading_text"
+  list_serialization: "'- ' item for unordered; '<n>. ' for ordered; nested indented by two spaces"
+  table_serialization: "GitHub-flavored pipe table; header row, then '|---|' separator, then rows; cells trimmed"
+  figure_serialization: "![<caption>](<asset_sha256>)"
+  editorial_block_serialization: ":::<origin>\n<text>\n:::"
+
+hashed_fields:                       # serialized in this exact order, joined by "\n"
+  - structural_id                    # KDJ-AI-2026E1-Pxx-Cxx-Sxx
+  - locale
+  - origin                           # source_translation | editorial_synthesis | editorial_localization_ir | editorial_template_ir
+  - title_fa
+  - title_en
+  - canonical_text
+excluded_fields:
+  - canonical_url
+  - content_hash
+  - timestamps
+  - build metadata
+  - source_pages (recorded in source map, not hashed into content)
+
+hash_algorithm: sha256
+merkle:
+  leaf: "sha256(0x00 || content_hash_bytes)"
+  node: "sha256(0x01 || left || right)"
+  odd_node_policy: "promote unpaired node unchanged"
+  levels: [block, section, chapter, part, book]
+  ordering: "document order (part, chapter, section, block index)"
+  outputs: [provenance/merkle-tree.json, provenance/merkle-root.txt]
+
+signing:
+  algorithm: Ed25519
+  publisher_key_path_env: KDJ_PUBLISHER_PRIVATE_KEY     # path to PEM; if unset → RC is dev-signed and PUBLISHER_SIGNING_KEY_REQUIRED is reported
+  dev_key_path: "state/dev-signing-key.pem"              # gitignored; clearly labeled DEVELOPMENT
+  public_key_output: provenance/public-key.pem
+  manifest: provenance/release-manifest.json
+  signature: provenance/release-manifest.sig
+  never_commit_private_keys: true
+
+pdf_signature:
+  trusted_certificate_env: KDJ_PDF_SIGNING_CERT
+  policy: "sign only with a trusted certificate; never present self-signed as trusted"
+
+hidden_markup:
+  html_attributes: [data-kdj-id, data-kdj-edition, data-kdj-content-hash, data-kdj-source-map]
+  html_comment: "<!-- KDJ-PROVENANCE:<CONTENT_ID> -->"
+  zero_width_watermarks: FORBIDDEN

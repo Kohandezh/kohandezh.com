@@ -1,0 +1,85 @@
+{
+ "template_id": "TPL-P02-1",
+ "title_fa": "نمونه فرم: فهرست دارایی‌های هوش مصنوعی (نمونهٔ پیشنهادی تدوینگر)",
+ "derived_from": [
+  "KDJ-AI-2026E1-P02-C09-S06",
+  "KDJ-AI-2026E1-P02-C08-S05",
+  "KDJ-AI-2026E1-P02-C09-S08"
+ ],
+ "fields": [
+  {
+   "name_fa": "شناسهٔ دارایی",
+   "name_en": "asset_id",
+   "description_fa": "شناسهٔ یکتا برای ارجاع در ثبت ریسک و گزارش‌ها",
+   "example_fa": "AI-INV-014"
+  },
+  {
+   "name_fa": "نام و شرح سامانه",
+   "name_en": "system_name_description",
+   "description_fa": "نام رسمی و کاربرد اصلی سامانه",
+   "example_fa": "چت‌بات پاسخگویی مشتریان با پایگاه دانش داخلی (RAG)"
+  },
+  {
+   "name_fa": "نوع تأمین",
+   "name_en": "provisioning_type",
+   "description_fa": "ساخت داخلی، خریداری‌شده، مدل ازپیش‌آموزش‌دیده یا سرویس طرف ثالث",
+   "example_fa": "مدل ازپیش‌آموزش‌دیده نزد تأمین‌کننده"
+  },
+  {
+   "name_fa": "مالک سیستم و مالک کسب‌وکار",
+   "name_en": "system_and_business_owner",
+   "description_fa": "نقش‌های مسئول، نه صرفاً اسم افراد",
+   "example_fa": "مالک سیستم: تیم AI/ML؛ مالک کسب‌وکار: معاونت خدمات مشتریان"
+  },
+  {
+   "name_fa": "واحد به‌ره‌بردار",
+   "name_en": "operating_unit",
+   "description_fa": "واحدی که سامانه را در محیط عملیاتی به‌کار می‌گیرد",
+   "example_fa": "دفتر ارتباط با مشتریان"
+  },
+  {
+   "name_fa": "داده‌های ورودی و طبقهٔ حساسیت",
+   "name_en": "input_data_classification",
+   "description_fa": "گونهٔ داده‌ها و طبقهٔ حساسیت سازمانی آن‌ها",
+   "example_fa": "متن پرسش مشتریان — محرمانه"
+  },
+  {
+   "name_fa": "مدل پایه و نسخه",
+   "name_en": "base_model_and_version",
+   "description_fa": "مدل پایه، نسخه و منبع دریافت",
+   "example_fa": "مدل متن‌باز نسخهٔ ۲٫۱ از مخزن داخلی"
+  },
+  {
+   "name_fa": "طرف ثالث مرتبط",
+   "name_en": "related_third_parties",
+   "description_fa": "تأمین‌کنندگان مدل، داده یا سرویس",
+   "example_fa": "پردازش ابری تأمین‌کنندهٔ بیرونی"
+  },
+  {
+   "name_fa": "وضعیت چرخهٔ عمر",
+   "name_en": "lifecycle_status",
+   "description_fa": "طراحی، توسعه، عملیات یا بازنشستگی",
+   "example_fa": "عملیات"
+  },
+  {
+   "name_fa": "سطح ریسک",
+   "name_en": "risk_level",
+   "description_fa": "کم/متوسط/بالا بر پایهٔ ماتریس ریسک سازمانی",
+   "example_fa": "بالا"
+  },
+  {
+   "name_fa": "تاریخ ثبت و بازبینی بعدی",
+   "name_en": "registered_and_next_review_dates",
+   "description_fa": "برای اثبات به‌روزبودن فهرست در ممیزی",
+   "example_fa": "ثبت ۱۴۰۴/۰۶/۱۵؛ بازبینی ۱۴۰۴/۰۹/۱۵"
+  },
+  {
+   "name_fa": "پیوند به ثبت ریسک و مدارک",
+   "name_en": "links_to_risk_register_and_docs",
+   "description_fa": "ارجاع به ریسک‌ها و مستندات طراحی و آزمون",
+   "example_fa": "RSK-007 و RSK-011"
+  }
+ ],
+ "origin": "editorial_template_ir",
+ "note_fa": "نمونه پیشنهادی تدوینگر بر پایه مفاهیم مطرح‌شده در منابع این فصل"
+}

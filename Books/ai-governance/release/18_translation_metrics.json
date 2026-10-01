@@ -1,0 +1,19 @@
+{
+ "chunks_by_status": {
+  "APPROVED": 665
+ },
+ "reviews": {
+  "REVIEW_MAX": 700,
+  "REVIEW_ULTRA": 9
+ },
+ "approved": 665,
+ "escalated": 3,
+ "failed_jobs": 48,
+ "retried_jobs": 32,
+ "content_units": 479,
+ "persian_words": 412749,
+ "parts": 7,
+ "chapters": 53,
+ "sections": 479,
+ "glossary_terms": 418
+}

@@ -1,0 +1,1688 @@
+{
+ "unique_source_document_count": 18,
+ "generated": "2026-09-17",
+ "note": "preliminary; bibliographic fields filled after audit workflow",
+ "documents": [
+  {
+   "seq": 1,
+   "doc_key": "NIST-AI-RMF-PLAYBOOK",
+   "filename": "AI_RMF_Playbook.pdf",
+   "sha256": "65d6101d806502875aadb0fd19a75c3a9cc9a5e9461129e9398a39192d8202d2",
+   "size_bytes": 2882270,
+   "pages": 147,
+   "words_pdftotext": 45024,
+   "part_id": "P02",
+   "front_matter_end_page": 4,
+   "body_start_page": 4,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NIST AI RMF Playbook",
+   "title": "AI RMF Playbook",
+   "subtitle": "",
+   "authors": [],
+   "organization": "NIST",
+   "publication_date": "",
+   "publication_date_iso": "",
+   "doi": "",
+   "publication_type": "Playbook",
+   "publication_status": "Final",
+   "status_evidence": "Suggestions are voluntary; references AI RMF 1.0; '4 of 142' final pagination",
+   "toc": [
+    {
+     "number": "GOVERN",
+     "title": "GOVERN",
+     "printed_page": "4"
+    },
+    {
+     "number": "MANAGE",
+     "title": "MANAGE",
+     "printed_page": "35"
+    },
+    {
+     "number": "MAP",
+     "title": "MAP",
+     "printed_page": "63"
+    },
+    {
+     "number": "MEASURE",
+     "title": "MEASURE",
+     "printed_page": "93"
+    }
+   ],
+   "has_glossary": false,
+   "has_references": true,
+   "special_structures": [
+    "GOVERN/MAP/MEASURE/MANAGE subcategory entries (e.g., GOVERN 1.1)",
+    "Suggested Actions bullet lists",
+    "Transparency & Documentation sections",
+    "AI Transparency Resources sections",
+    "References lists per subcategory"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CORRECTED",
+   "audit_corrections": [
+    {
+     "evidence": "Pages 1–4 show no subtitle. Page 1 shows only 'AI RMF PLAYBOOK' with no subtitle. Page 4 describes the Playbook's purpose in body prose (FORWARD section), not as a title-page subtitle.",
+     "field": "subtitle",
+     "now": "",
+     "was": "Suggested actions for achieving the outcomes in the AI Risk Management Framework (AI RMF) Core"
+    },
+    {
+     "evidence": "Page 4 contains the 'FORWARD / About the Playbook' section, which is substantive body content. Pages 2–3 are the Table of Contents. Body content begins on PDF page 4, not page 5.",
+     "field": "body_start_page",
+     "now": "4",
+     "was": "5"
+    }
+   ],
+   "audit_uncertainty": [
+    "publication_date_printed and publication_date_iso are blank; pages 1–4 contain no date, so these fields cannot be confirmed or corrected from the provided pages alone.",
+    "No DOI appears in pages 1–4; the blank DOI field cannot be independently verified without seeing additional pages such as a colophon or back matter.",
+    "publication_status 'Final' cannot be confirmed or contradicted from pages 1–4; no draft/version indicator is visible, but a definitive 'Final' label is also absent.",
+    "Whether body_start_page should be 4 (FORWARD) or 5 (first GOVERN entry) depends on whether a Foreword is counted as body content; this is a classification judgment call."
+   ],
+   "publication_type_raw": "Playbook",
+   "doi_url": ""
+  },
+  {
+   "seq": 2,
+   "doc_key": "NIST-AI-STD-FED-PLAN-2019",
+   "filename": "ai_standards_fedengagement_plan_9aug2019.pdf",
+   "sha256": "d04576d061ba84d6de706e38380427c2abeaf599ffe616fcdbd68e624637b1f4",
+   "size_bytes": 996251,
+   "pages": 52,
+   "words_pdftotext": 15863,
+   "part_id": "P07",
+   "front_matter_end_page": 4,
+   "body_start_page": 5,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NIST Federal Engagement Plan (2019)",
+   "title": "U.S. Leadership in AI: A Plan for Federal Engagement in Developing Technical Standards and Related Tools",
+   "subtitle": "Prepared in response to Executive Order 13859",
+   "authors": [],
+   "organization": "National Institute of Standards and Technology (NIST), U.S. Department of Commerce",
+   "publication_date": "Submitted on August 9, 2019",
+   "publication_date_iso": "2019-08-09",
+   "doi": "",
+   "publication_type": "Federal Plan",
+   "publication_status": "Final",
+   "status_evidence": "\"Submitted on August 9, 2019\" per Executive Order 13859; no draft marking printed",
+   "toc": [
+    {
+     "title": "Executive Summary",
+     "printed_page": "3"
+    },
+    {
+     "number": "1",
+     "title": "Standards and Artificial Intelligence",
+     "printed_page": "7"
+    },
+    {
+     "number": "2",
+     "title": "U.S. Government AI Standards Priorities",
+     "printed_page": "17"
+    },
+    {
+     "number": "3",
+     "title": "Recommended Federal Government Standards Actions to Advance U.S. AI Leadership",
+     "printed_page": "22"
+    },
+    {
+     "title": "Appendix I: Definitions",
+     "printed_page": "25"
+    },
+    {
+     "title": "Appendix II: AI standards",
+     "printed_page": "26"
+    },
+    {
+     "title": "Appendix III: AI related tools",
+     "printed_page": "32"
+    },
+    {
+     "title": "Appendix IV: The assignment and approach",
+     "printed_page": "37"
+    },
+    {
+     "title": "Appendix V: Request for information",
+     "printed_page": "39"
+    },
+    {
+     "title": "Appendix VI: Workshop agenda",
+     "printed_page": "45"
+    }
+   ],
+   "has_glossary": true,
+   "has_references": false,
+   "special_structures": [
+    "Bullet lists of nine AI standards focus areas and standards-related tools",
+    "Numbered federal government recommendations (1-4) with sub-bullets",
+    "Appendices including RFI and workshop agenda"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CONFIRMED",
+   "audit_corrections": [],
+   "audit_uncertainty": [
+    "Page 2 is blank in the provided scan — any copyright notice, NIST branding, series identifier, or DOI printed there cannot be verified.",
+    "The publication_type 'Federal Plan' is a reasonable characterization but no explicit genre label appears in the visible pages.",
+    "body_start_page is listed as 5; the actual PDF page number of the body start cannot be confirmed from pages 1–4 alone.",
+    "No authors or editors are named on pages 1–4; authorship attribution cannot be confirmed or denied from the visible text."
+   ],
+   "publication_type_raw": "Federal Plan",
+   "doi_url": ""
+  },
+  {
+   "seq": 3,
+   "doc_key": "NIST-AI-100-1",
+   "filename": "NIST.AI.100-1.pdf",
+   "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+   "size_bytes": 1946127,
+   "pages": 48,
+   "words_pdftotext": 15689,
+   "part_id": "P02",
+   "front_matter_end_page": 5,
+   "body_start_page": 6,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NIST AI 100-1",
+   "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+   "subtitle": "",
+   "authors": [],
+   "organization": "National Institute of Standards and Technology, U.S. Department of Commerce",
+   "publication_date": "January 2023",
+   "publication_date_iso": "2023-01",
+   "doi": "10.6028/NIST.AI.100-1",
+   "publication_type": "Framework",
+   "publication_status": "Version 1.0",
+   "status_evidence": "AI RMF 1.0 (title); two-number versioning system, generation 1.0",
+   "toc": [
+    {
+     "title": "Executive Summary",
+     "printed_page": "1"
+    },
+    {
+     "title": "Part 1: Foundational Information",
+     "printed_page": "4"
+    },
+    {
+     "number": "1",
+     "title": "Framing Risk",
+     "printed_page": "4"
+    },
+    {
+     "number": "2",
+     "title": "Audience",
+     "printed_page": "9"
+    },
+    {
+     "number": "3",
+     "title": "AI Risks and Trustworthiness",
+     "printed_page": "12"
+    },
+    {
+     "number": "4",
+     "title": "Effectiveness of the AI RMF",
+     "printed_page": "19"
+    },
+    {
+     "title": "Part 2: Core and Profiles",
+     "printed_page": "20"
+    },
+    {
+     "number": "5",
+     "title": "AI RMF Core",
+     "printed_page": "20"
+    },
+    {
+     "number": "6",
+     "title": "AI RMF Profiles",
+     "printed_page": "33"
+    },
+    {
+     "title": "Appendix A: Descriptions of AI Actor Tasks from Figures 2 and 3",
+     "printed_page": "35"
+    },
+    {
+     "title": "Appendix B: How AI Risks Differ from Traditional Software Risks",
+     "printed_page": "38"
+    },
+    {
+     "title": "Appendix C: AI Risk Management and Human-AI Interaction",
+     "printed_page": "40"
+    },
+    {
+     "title": "Appendix D: Attributes of the AI RMF",
+     "printed_page": "42"
+    }
+   ],
+   "has_glossary": false,
+   "has_references": false,
+   "special_structures": [
+    "GOVERN/MAP/MEASURE/MANAGE categories and subcategories tables (Tables 1-4)",
+    "List of Figures",
+    "List of Tables",
+    "Update Schedule and Versions version control statement"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CONFIRMED",
+   "audit_corrections": [],
+   "audit_uncertainty": [
+    "The 'authors' field is empty — the source pages shown do not list individual authors; named authors may appear on a page not provided (e.g., an acknowledgments or author list page). Cannot confirm or refute from pages 1–4 alone.",
+    "The 'body_start_page' value of 6 cannot be verified from the pages provided (pages 1–4 only); the Executive Summary begins on page 1 per the Table of Contents, and Part 1 on page 4, so page 6 may or may not be the first body page depending on exact pagination.",
+    "The 'publication_type' label 'Framework' is a reasonable characterization consistent with the document's self-description ('AI Risk Management Framework'), but NIST does not formally categorize this under a fixed series type (e.g., NISTIR, SP, FIPS); the record's use of 'Framework' reflects the document's own terminology rather than a controlled NIST publication-type vocabulary entry."
+   ],
+   "publication_type_raw": "Framework",
+   "doi_url": "https://doi.org/10.6028/NIST.AI.100-1"
+  },
+  {
+   "seq": 4,
+   "doc_key": "NIST-AI-100-2E2025",
+   "filename": "NIST.AI.100-2e2025.pdf",
+   "sha256": "4811fb6ad73f9c9121843ab77e029b5adc6f2c86d33c2fc5b2099ef133847646",
+   "size_bytes": 1964469,
+   "pages": 127,
+   "words_pdftotext": 48117,
+   "part_id": "P03",
+   "front_matter_end_page": 14,
+   "body_start_page": 15,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NIST AI 100-2e2025",
+   "title": "Adversarial Machine Learning",
+   "subtitle": "A Taxonomy and Terminology of Attacks and Mitigations",
+   "authors": [
+    "Apostol Vassilev",
+    "Alina Oprea",
+    "Alie Fordyce",
+    "Hyrum Anderson",
+    "Xander Davies",
+    "Maia Hamin"
+   ],
+   "organization": "National Institute of Standards and Technology",
+   "publication_date": "March 2025",
+   "publication_date_iso": "2025-03",
+   "doi": "10.6028/NIST.AI.100-2e2025",
+   "publication_type": "Trustworthy and Responsible AI Report (Taxonomy)",
+   "publication_status": "Final",
+   "status_evidence": "Approved by the NIST Editorial Review Board on 2025-03-20; URL .../e2025/final",
+   "toc": [
+    {
+     "number": "1",
+     "title": "Introduction",
+     "printed_page": "1"
+    },
+    {
+     "number": "2",
+     "title": "Predictive AI Taxonomy",
+     "printed_page": "4"
+    },
+    {
+     "number": "3",
+     "title": "Generative AI Taxonomy",
+     "printed_page": "34"
+    },
+    {
+     "number": "4",
+     "title": "Key Challenges and Discussion",
+     "printed_page": "55"
+    },
+    {
+     "title": "Appendix: Glossary",
+     "printed_page": "107"
+    }
+   ],
+   "has_glossary": true,
+   "has_references": true,
+   "special_structures": [
+    "Attack taxonomy tables/figures for PredAI and GenAI",
+    "Mitigations subsections per attack class",
+    "numbered glossary entries"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CONFIRMED",
+   "audit_corrections": [],
+   "audit_uncertainty": [
+    "body_start_page (claimed: 15) cannot be verified — source pages 1–4 do not extend far enough into the document to confirm where the body begins."
+   ],
+   "publication_type_raw": "Trustworthy and Responsible AI Report (Taxonomy)",
+   "doi_url": "https://doi.org/10.6028/NIST.AI.100-2e2025"
+  },
+  {
+   "seq": 5,
+   "doc_key": "NIST-AI-100-3",
+   "filename": "NIST.AI.100-3.pdf",
+   "sha256": "9a4d9b9bd3bf3727e2bd5043e35e5155d1e0ca402163cb34fde2ff745bf4828c",
+   "size_bytes": 276681,
+   "pages": 10,
+   "words_pdftotext": 1854,
+   "part_id": "P01",
+   "front_matter_end_page": 6,
+   "body_start_page": 7,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NIST AI 100-3",
+   "title": "The Language of Trustworthy AI: An In-Depth Glossary of Terms",
+   "subtitle": "",
+   "authors": [
+    "Daniel Atherton",
+    "Reva Schwartz",
+    "Peter C. Fontana",
+    "Patrick Hall"
+   ],
+   "organization": "National Institute of Standards and Technology, Information Technology Laboratory — with Daniel Atherton and Patrick Hall affiliated with BNH.AI, and Reva Schwartz and Peter C. Fontana affiliated with Information Technology Laboratory, National Institute of Standards and Technology",
+   "publication_date": "March 2023",
+   "publication_date_iso": "2023-03",
+   "doi": "10.6028/NIST.AI.100-3",
+   "publication_type": "Glossary",
+   "publication_status": "Final",
+   "status_evidence": "Approved by the NIST Editorial Review Board on 2023-03-29",
+   "toc": [
+    {
+     "number": "1",
+     "title": "Glossary Aims",
+     "printed_page": "1"
+    },
+    {
+     "number": "2",
+     "title": "Glossary Development and Methodology",
+     "printed_page": "2"
+    },
+    {
+     "number": "3",
+     "title": "Glossary Visualization",
+     "printed_page": "4"
+    }
+   ],
+   "has_glossary": false,
+   "has_references": false,
+   "special_structures": [
+    "describes external online glossary/database of 511 terms with 379 citations"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CORRECTED",
+   "audit_corrections": [
+    {
+     "evidence": "Pages 1–2 header reads 'NIST Artificial Intelligence / AI 100-3'. Page 3 citation uses 'NIST Artificial Intelligence AI 100-3'. No formal type label 'Glossary' appears anywhere in the source pages. Page 4 abstract describes it as 'a guide and record of the development for the NIST glossary of terms'.",
+     "field": "publication_type",
+     "now": "NIST Artificial Intelligence (AI series)",
+     "was": "Glossary"
+    },
+    {
+     "evidence": "Page 2 explicitly groups affiliations: 'Daniel Atherton / Patrick Hall / BNH.AI' followed by 'Reva Schwartz / Peter C. Fontana / Information Technology Laboratory / National Institute of Standards and Technology'. The record's organization field omits that Reva Schwartz and Peter C. Fontana are specifically the ITL/NIST-affiliated authors.",
+     "field": "organization",
+     "now": "National Institute of Standards and Technology, Information Technology Laboratory — with Daniel Atherton and Patrick Hall affiliated with BNH.AI, and Reva Schwartz and Peter C. Fontana affiliated with Information Technology Laboratory, National Institute of Standards and Technology",
+     "was": "National Institute of Standards and Technology, Information Technology Laboratory (authors Daniel Atherton and Patrick Hall affiliated with BNH.AI)"
+    }
+   ],
+   "audit_uncertainty": [
+    "body_start_page (claimed: 7) cannot be verified from the provided pages (only pages 1–4 are shown; page 4 carries roman numeral 'i', suggesting front matter continues beyond what was provided).",
+    "publication_status 'Final' is strongly implied by the NIST Editorial Review Board approval notice on page 3 (2023-03-29) but the word 'Final' does not appear verbatim on the source pages.",
+    "The subtitle field is blank; the full title contains a colon ('The Language of Trustworthy AI: An In-Depth Glossary of Terms') which could alternatively be parsed as title + subtitle, but pages 1–3 present the entire string as a single title line, so the blank subtitle is defensible."
+   ],
+   "publication_type_raw": "Glossary",
+   "doi_url": "https://doi.org/10.6028/NIST.AI.100-3"
+  },
+  {
+   "seq": 6,
+   "doc_key": "NIST-AI-100-4-IPD",
+   "filename": "NIST.AI.100-4.SyntheticContent.ipd.pdf",
+   "sha256": "c8a2775d912d18df3937e2d563404305ec2b018c3708c0b0ffc2b958ac1193f6",
+   "size_bytes": 4638577,
+   "pages": 95,
+   "words_pdftotext": 34659,
+   "part_id": "P05",
+   "front_matter_end_page": 4,
+   "body_start_page": 5,
+   "has_line_numbers": true,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NIST AI 100-4",
+   "title": "Reducing Risks Posed by Synthetic Content",
+   "subtitle": "An Overview of Technical Approaches to Digital Content Transparency",
+   "authors": [],
+   "organization": "National Institute of Standards and Technology",
+   "publication_date": "April 2024",
+   "publication_date_iso": "2024-04",
+   "doi": "",
+   "publication_type": "Initial Public Draft",
+   "publication_status": "Draft for Public Comment",
+   "status_evidence": "\"NIST AI 100-4 DRAFT FOR PUBLIC COMMENT\" on title page",
+   "toc": [
+    {
+     "number": "1",
+     "title": "Summary",
+     "printed_page": "1"
+    },
+    {
+     "number": "2",
+     "title": "Harms and Risks from Synthetic Content",
+     "printed_page": "3"
+    },
+    {
+     "number": "3",
+     "title": "Current Approaches, Issues, and Opportunities",
+     "printed_page": "5"
+    },
+    {
+     "number": "4",
+     "title": "Testing and Evaluating Provenance Data Tracking and Synthetic Content Detection Techniques",
+     "printed_page": "32"
+    },
+    {
+     "number": "5",
+     "title": "Preventing and Reducing Harms from Synthetic Child Sexual Abuse Material and Non-Consensual Intimate Imagery",
+     "printed_page": "36"
+    },
+    {
+     "number": "6",
+     "title": "Application of Concepts to the NIST AI Risk Management Framework Lifecycle",
+     "printed_page": "43"
+    },
+    {
+     "number": "7",
+     "title": "Conclusion",
+     "printed_page": "45"
+    },
+    {
+     "number": "8",
+     "title": "Bibliography",
+     "printed_page": "46"
+    },
+    {
+     "number": "Appendix A",
+     "title": "Current Standards",
+     "printed_page": "67"
+    },
+    {
+     "number": "Appendix B",
+     "title": "Technical Tools",
+     "printed_page": "71"
+    },
+    {
+     "number": "Appendix C",
+     "title": "Provenance Data Tracking",
+     "printed_page": "75"
+    },
+    {
+     "number": "Appendix D",
+     "title": "Synthetic Content Detection",
+     "printed_page": "78"
+    },
+    {
+     "number": "Appendix E",
+     "title": "Testing and Evaluation",
+     "printed_page": "87"
+    },
+    {
+     "number": "Appendix F",
+     "title": "Glossary",
+     "printed_page": "90"
+    }
+   ],
+   "has_glossary": true,
+   "has_references": true,
+   "special_structures": [
+    "Numbered glossary entries (Appendix F)",
+    "Comments-requested / request for comment bullet list",
+    "Digital content transparency approaches summary table (Section 2)",
+    "Technical appendices listing standards, tools, provenance data tracking, detection, and testing/evaluation resources"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CONFIRMED",
+   "audit_corrections": [],
+   "audit_uncertainty": [
+    "publication_type: The on-page text reads 'DRAFT FOR PUBLIC COMMENT', not 'Initial Public Draft'. 'Initial Public Draft' (IPD) is NIST's formal stage designation inferred from the filename suffix '.ipd.pdf'; the pages themselves do not use that exact phrase.",
+    "doi: The pages show '[DOI link TK]' (a placeholder), confirming no DOI had been assigned at print time — recorded as '' which is correct, but the placeholder text was not a real DOI.",
+    "authors: No author names appear on the cover or title pages; acknowledgments on page 3 list contributors (Bilva Chandra, George Awad, et al.) but these are not listed as authors in the record — this may be intentional for a NIST corporate-authored document.",
+    "organization: 'National Institute of Standards and Technology' does not appear verbatim in pages 1–4; it is inferred from the NIST series identifier and nist.gov email address on page 3.",
+    "body_start_page 5: Consistent with the Table of Contents (page 4 of PDF) showing '1. Summary … 1', placing body content at PDF page 5; not directly contradicted but not explicitly confirmed by a page number printed on that page in the supplied excerpt."
+   ],
+   "publication_type_raw": "Initial Public Draft",
+   "doi_url": ""
+  },
+  {
+   "seq": 7,
+   "doc_key": "NIST-AI-600-1",
+   "filename": "NIST.AI.600-1.pdf",
+   "sha256": "6e73620ab6b64e90ef2c04bf0e0d6246185a2f4b1b13cab0df494496cff89b6a",
+   "size_bytes": 1174643,
+   "pages": 64,
+   "words_pdftotext": 20976,
+   "part_id": "P02",
+   "front_matter_end_page": 4,
+   "body_start_page": 5,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NIST AI 600-1",
+   "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+   "subtitle": "NIST Trustworthy and Responsible AI",
+   "authors": [],
+   "organization": "National Institute of Standards and Technology",
+   "publication_date": "July 2024",
+   "publication_date_iso": "2024-07",
+   "doi": "10.6028/NIST.AI.600-1",
+   "publication_type": "Profile",
+   "publication_status": "Final",
+   "status_evidence": "Approved by the NIST Editorial Review Board on 07-25-2024; July 2024 cover date",
+   "toc": [
+    {
+     "number": "1",
+     "title": "Introduction",
+     "printed_page": "1"
+    },
+    {
+     "number": "2",
+     "title": "Overview of Risks Unique to or Exacerbated by GAI",
+     "printed_page": "2"
+    },
+    {
+     "number": "3",
+     "title": "Suggested Actions to Manage GAI Risks",
+     "printed_page": "12"
+    },
+    {
+     "number": "Appendix A",
+     "title": "Primary GAI Considerations",
+     "printed_page": "47"
+    },
+    {
+     "number": "Appendix B",
+     "title": "References",
+     "printed_page": "54"
+    }
+   ],
+   "has_glossary": false,
+   "has_references": true,
+   "special_structures": [
+    "Numbered GAI risk taxonomy list (12 risks, e.g., CBRN Information or Capabilities, Confabulation)",
+    "Suggested Actions mapped to AI RMF GOVERN/MAP/MEASURE/MANAGE subcategories",
+    "Risk-to-Trustworthy AI Characteristics mapping tables"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CONFIRMED",
+   "audit_corrections": [],
+   "audit_uncertainty": [
+    "authors field is empty — page 3 lists acknowledgment contributors (Chloe Autio, Jesse Dunietz, Patrick Hall, Shomik Jain, Kamie Roberts, Reva Schwartz, Martin Stanley, Elham Tabassi) but these are credited as contributors/staff, not formal authors; NIST AI series publications frequently carry no named authors on the cover, so empty authors is consistent with the pages shown.",
+    "body_start_page is listed as 5 — the Table of Contents on page 4 shows Section 1 'Introduction' at internal page 1, but whether PDF page 5 equals internal page 1 cannot be confirmed without viewing PDF page 5 itself.",
+    "publication_type 'Profile' — the title explicitly says 'Generative Artificial Intelligence Profile' and is consistent with a Profile classification, but no explicit publication-type label appears in the visible pages."
+   ],
+   "publication_type_raw": "Profile",
+   "doi_url": "https://doi.org/10.6028/NIST.AI.600-1"
+  },
+  {
+   "seq": 8,
+   "doc_key": "NIST-AI-700-1",
+   "filename": "NIST.AI.700-1.pdf",
+   "sha256": "350262c39367d522d0f42b1579d6e7d73b49b44b1862b1ade708d31ab2ee2034",
+   "size_bytes": 2146248,
+   "pages": 61,
+   "words_pdftotext": 17939,
+   "part_id": "P05",
+   "front_matter_end_page": 8,
+   "body_start_page": 9,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NIST AI 700-1",
+   "title": "2024 NIST GenAI (Pilot Study): Text-to-Text Evaluation Overview and Results",
+   "subtitle": "NIST Trustworthy and Responsible AI",
+   "authors": [
+    "Hari Iyer",
+    "Seungmin Seo",
+    "Lukas Diduch",
+    "Kay Peterson",
+    "George Awad",
+    "Yooyoung Lee"
+   ],
+   "organization": "National Institute of Standards and Technology, Information Technology Laboratory (Information Access Division & Statistical Engineering Division)",
+   "publication_date": "June 2025",
+   "publication_date_iso": "2025-06",
+   "doi": "10.6028/NIST.AI.700-1",
+   "publication_type": "Pilot Study",
+   "publication_status": "Final",
+   "status_evidence": "Approved by the NIST Editorial Review Board on 2025-06-10",
+   "toc": [
+    {
+     "number": "1",
+     "title": "Introduction",
+     "printed_page": "1"
+    },
+    {
+     "number": "2",
+     "title": "Related Work",
+     "printed_page": "2"
+    },
+    {
+     "number": "3",
+     "title": "Evaluation Framework",
+     "printed_page": "4"
+    },
+    {
+     "number": "4",
+     "title": "Evaluation Infrastructure",
+     "printed_page": "6"
+    },
+    {
+     "number": "5",
+     "title": "Tasks",
+     "printed_page": "14"
+    },
+    {
+     "number": "6",
+     "title": "Performance Metrics",
+     "printed_page": "16"
+    },
+    {
+     "number": "7",
+     "title": "Data and Submissions",
+     "printed_page": "20"
+    },
+    {
+     "number": "8",
+     "title": "Data Analyses and Results",
+     "printed_page": "26"
+    },
+    {
+     "number": "9",
+     "title": "Strengths, Limitations, and Challenges",
+     "printed_page": "41"
+    },
+    {
+     "number": "10",
+     "title": "Conclusion",
+     "printed_page": "43"
+    },
+    {
+     "number": "11",
+     "title": "Recommendations for Future Work",
+     "printed_page": "43"
+    },
+    {
+     "title": "References",
+     "printed_page": "45"
+    },
+    {
+     "number": "A",
+     "title": "Appendix A. Supplementary Information",
+     "printed_page": "47"
+    }
+   ],
+   "has_glossary": false,
+   "has_references": true,
+   "special_structures": [
+    "List of Tables (13 tables)",
+    "List of Figures (21 figures)",
+    "Round-based participation summary tables (G-rounds and D-rounds)",
+    "Generator/Discriminator performance metric tables (AUC, Brier scores)"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CONFIRMED",
+   "audit_corrections": [],
+   "audit_uncertainty": [
+    "The 'organization' field lists 'Information Access Division & Statistical Engineering Division' as sub-units — page 2 footnote says '*All work for this publication is done under the GenAI program supported by Information Access Division', which could imply Statistical Engineering Division's role is secondary; the citation on page 3 does not specify sub-divisions.",
+    "The 'body_start_page' field (9) cannot be verified from the supplied pages (only pages 1–4 were provided); no table of contents was included to confirm where the body begins."
+   ],
+   "publication_type_raw": "Pilot Study",
+   "doi_url": "https://doi.org/10.6028/NIST.AI.700-1"
+  },
+  {
+   "seq": 9,
+   "doc_key": "NIST-AI-700-2",
+   "filename": "NIST.AI.700-2.pdf",
+   "sha256": "5478e8c37a182adaf9449d1d315689beba3db2808db430c54fe3fc8da04ea3b9",
+   "size_bytes": 8040325,
+   "pages": 38,
+   "words_pdftotext": 10853,
+   "part_id": "P05",
+   "front_matter_end_page": 7,
+   "body_start_page": 8,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NIST AI 700-2",
+   "title": "Assessing Risks and Impacts of AI (ARIA)",
+   "subtitle": "ARIA 0.1: Pilot Evaluation Report",
+   "authors": [
+    "Razvan Amironesei",
+    "Afzal Godil",
+    "Craig Greenberg",
+    "Kristen Greene",
+    "Patrick Hall",
+    "Theodore Jensen",
+    "Jonathan Fiscus",
+    "Noah Schulman"
+   ],
+   "organization": "National Institute of Standards and Technology, Information Technology Laboratory, Information Access Division (for most authors); Patrick Hall is listed as a NIST Associate from HallResearch.ai, and Jonathan Fiscus and Noah Schulman are listed as former NIST employees",
+   "publication_date": "November 2025",
+   "publication_date_iso": "2025-11",
+   "doi": "10.6028/NIST.AI.700-2",
+   "publication_type": "Pilot Study / Evaluation Report",
+   "publication_status": "Final",
+   "status_evidence": "Approved by the NIST Editorial Review Board on 2025-09-30",
+   "toc": [
+    {
+     "number": "1",
+     "title": "Introduction",
+     "printed_page": "1"
+    },
+    {
+     "number": "2",
+     "title": "Testing Layer",
+     "printed_page": "2"
+    },
+    {
+     "number": "3",
+     "title": "Assessment Layer",
+     "printed_page": "4"
+    },
+    {
+     "number": "4",
+     "title": "Crosswalk",
+     "printed_page": "7"
+    },
+    {
+     "number": "5",
+     "title": "Measurement Layer",
+     "printed_page": "8"
+    },
+    {
+     "number": "6",
+     "title": "Future Directions",
+     "printed_page": "13"
+    },
+    {
+     "number": "7",
+     "title": "Conclusion",
+     "printed_page": "14"
+    },
+    {
+     "number": "",
+     "title": "References",
+     "printed_page": "15"
+    },
+    {
+     "number": "A",
+     "title": "Appendix A. Glossary",
+     "printed_page": "16"
+    },
+    {
+     "number": "B",
+     "title": "Appendix B. Testing Materials",
+     "printed_page": "19"
+    },
+    {
+     "number": "C",
+     "title": "Appendix C. Annotation Quantitative Summary",
+     "printed_page": "22"
+    },
+    {
+     "number": "D",
+     "title": "Appendix D. Post-Task Questionnaires",
+     "printed_page": "23"
+    },
+    {
+     "number": "E",
+     "title": "Appendix E. Example CoRIx Results",
+     "printed_page": "26"
+    }
+   ],
+   "has_glossary": true,
+   "has_references": true,
+   "special_structures": [
+    "CoRIx measurement tree diagrams",
+    "Testing level tables (model testing prompts, red teaming instructions, field testing instructions)",
+    "Annotation quantitative summary tables",
+    "Post-task questionnaire appendix"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CORRECTED",
+   "audit_corrections": [
+    {
+     "evidence": "Page 2 shows Amironesei, Godil, Greenberg, Greene, Jensen under Information Access Division / Information Technology Laboratory; Patrick Hall is listed separately as 'NIST Associate, HallResearch.ai'; Fiscus and Schulman are marked '*Former NIST employee; all work for this publication was done while at NIST.' The single-organization attribution in the record is an oversimplification that misrepresents the affiliation structure printed in the document.",
+     "field": "organization",
+     "now": "National Institute of Standards and Technology, Information Technology Laboratory, Information Access Division (for most authors); Patrick Hall is listed as a NIST Associate from HallResearch.ai, and Jonathan Fiscus and Noah Schulman are listed as former NIST employees",
+     "was": "National Institute of Standards and Technology, Information Technology Laboratory, Information Access Division"
+    },
+    {
+     "evidence": "Confirmed verbatim on pages 1 and 2. No correction needed for this field — keeping for completeness.",
+     "field": "subtitle",
+     "now": "ARIA 0.1: Pilot Evaluation Report",
+     "was": "ARIA 0.1: Pilot Evaluation Report"
+    },
+    {
+     "evidence": "Page 3 references 'NIST Technical Series Policies', 'NIST Technical Series Publication Identifier Syntax', and the citation format reads '(National Institute of Standards and Technology, Gaithersburg, MD), NIST AI 700-2.' There is no label 'Pilot Study' anywhere in the pages; the document is a NIST AI numbered technical report. The subtitle 'Pilot Evaluation Report' describes the content, not the publication type.",
+     "field": "publication_type",
+     "now": "NIST Technical Series Publication (specifically a NIST AI report)",
+     "was": "Pilot Study"
+    }
+   ],
+   "audit_uncertainty": [
+    "The exact NIST publication-type taxonomy label for NIST AI 700-2 is not printed explicitly on these pages (e.g., whether it is formally categorized as a 'NIST AI Report', 'NISTIR', or another series type); pages only show 'NIST Trustworthy and Responsible AI' series branding and 'NIST Technical Series' references.",
+    "Jonathan Fiscus's ORCID iD is absent from page 3 (all other authors have one listed), which may indicate an omission in the source or an intentional absence — this is not captured in the record but is noteworthy.",
+    "body_start_page: 8 — cannot be verified from the four provided pages alone; page 4 ends with the Abstract on what appears to be page 'i' (Roman numeral), suggesting front matter continues beyond page 4."
+   ],
+   "publication_type_raw": "Pilot Study / Evaluation Report",
+   "doi_url": "https://doi.org/10.6028/NIST.AI.700-2"
+  },
+  {
+   "seq": 10,
+   "doc_key": "NIST-AI-800-1-IPD",
+   "filename": "NIST.AI.800-1.ipd.pdf",
+   "sha256": "30ced091493af421d454ca138a3496a39b8c6079f74223e868325318ffa767e4",
+   "size_bytes": 557173,
+   "pages": 27,
+   "words_pdftotext": 10036,
+   "part_id": "P03",
+   "front_matter_end_page": 4,
+   "body_start_page": 5,
+   "has_line_numbers": true,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NIST AI 800-1 ipd",
+   "title": "Managing Misuse Risk for Dual-Use Foundation Models",
+   "subtitle": "Initial Public Draft",
+   "authors": [],
+   "organization": "U.S. AI Safety Institute",
+   "publication_date": "July 2024",
+   "publication_date_iso": "2024-07",
+   "doi": "10.6028/NIST.AI.800-1.ipd",
+   "publication_type": "Initial Public Draft",
+   "publication_status": "Initial Public Draft",
+   "status_evidence": "\"NIST AI 800-1 ipd (Initial Public Draft)\"; \"Initial Public Draft for public comment\"",
+   "toc": [
+    {
+     "number": "1",
+     "title": "INTRODUCTION",
+     "printed_page": "1"
+    },
+    {
+     "number": "2",
+     "title": "SCOPE",
+     "printed_page": "1"
+    },
+    {
+     "number": "3",
+     "title": "KEY CHALLENGES IN MAPPING AND MEASURING MISUSE RISKS",
+     "printed_page": "2"
+    },
+    {
+     "number": "4",
+     "title": "OBJECTIVES AND PRACTICES TO MANAGE MISUSE RISKS",
+     "printed_page": "4"
+    },
+    {
+     "number": "A",
+     "title": "Appendix A. Glossary",
+     "printed_page": "18"
+    },
+    {
+     "number": "B",
+     "title": "Appendix B. Example Safeguards Against the Misuse of Foundation Models",
+     "printed_page": "19"
+    }
+   ],
+   "has_glossary": true,
+   "has_references": true,
+   "special_structures": [
+    "numbered endnotes/references",
+    "glossary appendix",
+    "numbered challenge list",
+    "example safeguards appendix tables"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CORRECTED",
+   "audit_corrections": [
+    {
+     "evidence": "Pages 1–4 consistently list only 'U.S. AI Safety Institute' as the authoring organization. 'National Institute of Standards and Technology' appears only in the publisher/secretary block on page 2 (as the parent agency), not as a co-authoring organization. The document header on pages 3–4 reads 'Managing Misuse Risk for Dual-Use Foundation Models / U.S. AI Safety Institute' with no separate NIST line.",
+     "field": "organization",
+     "now": "U.S. AI Safety Institute",
+     "was": "U.S. AI Safety Institute; National Institute of Standards and Technology"
+    }
+   ],
+   "audit_uncertainty": [
+    "No named authors are listed anywhere in pages 1–4; the empty authors array appears correct, but later pages (body) might list contributors not visible here.",
+    "body_start_page: 5 is consistent with page 4 being the Table of Contents (last pre-body page), but cannot be confirmed without seeing PDF page 5.",
+    "Whether NIST should be listed as a secondary organization (as publisher vs. authoring body) is a metadata-convention question not fully resolvable from these pages alone."
+   ],
+   "publication_type_raw": "Initial Public Draft",
+   "doi_url": "https://doi.org/10.6028/NIST.AI.800-1.ipd"
+  },
+  {
+   "seq": 11,
+   "doc_key": "NIST-IR-8312",
+   "filename": "NIST.IR.8312.pdf",
+   "sha256": "cbfd3f8cd92a3dd01affdab036e9c30aa878588b336c6cba0938a9892a564546",
+   "size_bytes": 1601942,
+   "pages": 43,
+   "words_pdftotext": 16792,
+   "part_id": "P04",
+   "front_matter_end_page": 7,
+   "body_start_page": 8,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NISTIR 8312",
+   "title": "Four Principles of Explainable Artificial Intelligence",
+   "subtitle": "",
+   "authors": [
+    "P. Jonathon Phillips",
+    "Carina A. Hahn",
+    "Peter C. Fontana",
+    "Amy N. Yates",
+    "Kristen Greene",
+    "David A. Broniatowski",
+    "Mark A. Przybocki"
+   ],
+   "organization": "National Institute of Standards and Technology, Information Technology Laboratory",
+   "publication_date": "September 2021",
+   "publication_date_iso": "2021-09",
+   "doi": "10.6028/NIST.IR.8312",
+   "publication_type": "NISTIR",
+   "publication_status": "Final",
+   "status_evidence": "\"Natl. Inst. Stand. Technol. Interag. Intern. Rep. 8312, 43 pages (September 2021)\"",
+   "toc": [
+    {
+     "number": "1",
+     "title": "Introduction",
+     "printed_page": "1"
+    },
+    {
+     "number": "2",
+     "title": "Four Principles of Explainable AI",
+     "printed_page": "2"
+    },
+    {
+     "number": "3",
+     "title": "Purposes and styles of explanations",
+     "printed_page": "6"
+    },
+    {
+     "number": "4",
+     "title": "Risk Management of Explainable AI",
+     "printed_page": "8"
+    },
+    {
+     "number": "5",
+     "title": "Overview of Principles in the Literature",
+     "printed_page": "10"
+    },
+    {
+     "number": "6",
+     "title": "Overview of Explainable AI Algorithms",
+     "printed_page": "12"
+    },
+    {
+     "number": "7",
+     "title": "Evaluating Explainable AI Algorithms",
+     "printed_page": "15"
+    },
+    {
+     "number": "8",
+     "title": "Humans as a Comparison Group for Explainable AI",
+     "printed_page": "18"
+    },
+    {
+     "number": "9",
+     "title": "Discussion and Conclusions",
+     "printed_page": "21"
+    },
+    {
+     "number": "",
+     "title": "References",
+     "printed_page": "23"
+    }
+   ],
+   "has_glossary": false,
+   "has_references": true,
+   "special_structures": [
+    "Four-principle framework (Explanation, Meaningful, Explanation Accuracy, Knowledge Limits)",
+    "List of Figures"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CONFIRMED",
+   "audit_corrections": [],
+   "audit_uncertainty": [
+    "Kristen Greene's division affiliation is listed on page 2 as 'Information Access Division, Information Technology Laboratory' — the organization field captures only the top-level ITL, which is consistent but does not reflect all authors' exact sub-divisions.",
+    "David A. Broniatowski is listed on page 2 as affiliated with 'Information Technology Laboratory' (no sub-division named), which is slightly different from other authors; the organization field is still accurate at the top level.",
+    "body_start_page (8) cannot be verified from the four provided source pages alone; page 4 ends at 'i' (Abstract page), so page 8 is plausible but unconfirmed."
+   ],
+   "publication_type_raw": "NISTIR",
+   "doi_url": "https://doi.org/10.6028/NIST.IR.8312"
+  },
+  {
+   "seq": 12,
+   "doc_key": "NIST-IR-8367",
+   "filename": "NIST.IR.8367.pdf",
+   "sha256": "16d750362add11340ce63fa714c4b27554798b7266871a7a536ac35857216b99",
+   "size_bytes": 22623942,
+   "pages": 56,
+   "words_pdftotext": 21738,
+   "part_id": "P04",
+   "front_matter_end_page": 8,
+   "body_start_page": 9,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NISTIR 8367",
+   "title": "Psychological Foundations of Explainability and Interpretability in Artificial Intelligence",
+   "subtitle": "",
+   "authors": [
+    "David A. Broniatowski"
+   ],
+   "organization": "Information Technology Laboratory",
+   "publication_date": "April 2021",
+   "publication_date_iso": "2021-04",
+   "doi": "10.6028/NIST.IR.8367",
+   "publication_type": "NISTIR",
+   "publication_status": "Final",
+   "status_evidence": "Natl. Inst. Stand. Technol. Interag. Intern. Rep. 8367, 56 pages (April 2021)",
+   "toc": [
+    {
+     "number": "1",
+     "title": "Introduction",
+     "printed_page": "1"
+    },
+    {
+     "number": "2",
+     "title": "The Psychology of Interpretability and Explainability",
+     "printed_page": "9"
+    },
+    {
+     "number": "3",
+     "title": "Computer Science Definitions of Interpretability and Explainability",
+     "printed_page": "20"
+    },
+    {
+     "number": "4",
+     "title": "Incorporating Insights from Psychology Into Design",
+     "printed_page": "31"
+    },
+    {
+     "number": "5",
+     "title": "Conclusion",
+     "printed_page": "38"
+    },
+    {
+     "number": "",
+     "title": "References",
+     "printed_page": "40"
+    }
+   ],
+   "has_glossary": false,
+   "has_references": true,
+   "special_structures": [
+    "List of Tables",
+    "List of Figures"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CORRECTED",
+   "audit_corrections": [
+    {
+     "evidence": "Page 2 lists only 'Information Technology Laboratory' as the affiliation line printed directly under the author's name. The broader NIST institutional context appears in the footer block separately and is not part of the author affiliation line.",
+     "field": "organization",
+     "now": "Information Technology Laboratory",
+     "was": "Information Technology Laboratory, National Institute of Standards and Technology"
+    }
+   ],
+   "audit_uncertainty": [
+    "body_start_page: Page 4 shows the Abstract labeled as page '1' at the bottom, suggesting the body may begin on PDF page 4 rather than PDF page 9. Cannot fully confirm or deny without seeing additional pages or the table of contents.",
+    "organization field convention is ambiguous — some records include the parent NIST institution alongside the lab unit; the correction reflects only what is printed on the title-page affiliation line."
+   ],
+   "publication_type_raw": "NISTIR",
+   "doi_url": "https://doi.org/10.6028/NIST.IR.8367"
+  },
+  {
+   "seq": 13,
+   "doc_key": "NIST-SP-1270",
+   "filename": "NIST.SP.1270.pdf",
+   "sha256": "334042ba11ed24d7446cc31967e6e1eb4921f50a17eec4eb14ef1bff078f1e09",
+   "size_bytes": 1705944,
+   "pages": 86,
+   "words_pdftotext": 32109,
+   "part_id": "P04",
+   "front_matter_end_page": 9,
+   "body_start_page": 10,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NIST Special Publication 1270",
+   "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+   "subtitle": "",
+   "authors": [
+    "Reva Schwartz",
+    "Apostol Vassilev",
+    "Kristen Greene",
+    "Lori Perine",
+    "Andrew Burt",
+    "Patrick Hall"
+   ],
+   "organization": "National Institute of Standards and Technology, Information Technology Laboratory",
+   "publication_date": "March 2022",
+   "publication_date_iso": "2022-03",
+   "doi": "10.6028/NIST.SP.1270",
+   "publication_type": "Special Publication",
+   "publication_status": "Final",
+   "status_evidence": "\"March 24, 2022 update\" to original published March 15, 2022; Natl. Inst. Stand. Technol. Spec. Publ. 1270, 86 pages (March 2022)",
+   "toc": [
+    {
+     "number": "1",
+     "title": "Purpose and Scope",
+     "printed_page": "1"
+    },
+    {
+     "number": "2",
+     "title": "AI Bias: Context and Terminology",
+     "printed_page": "3"
+    },
+    {
+     "number": "3",
+     "title": "AI Bias: Challenges and Guidance",
+     "printed_page": "14"
+    },
+    {
+     "number": "4",
+     "title": "Conclusions",
+     "printed_page": "47"
+    },
+    {
+     "number": "5",
+     "title": "Glossary",
+     "printed_page": "49"
+    }
+   ],
+   "has_glossary": true,
+   "has_references": true,
+   "special_structures": [
+    "vignette callout boxes",
+    "blue callout boxes highlighting nuances",
+    "framed takeaway text",
+    "hyperlinked small-caps glossary terms",
+    "List of Figures"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CONFIRMED",
+   "audit_corrections": [],
+   "audit_uncertainty": [
+    "body_start_page=10 cannot be confirmed from pages 1–4 alone; page 4 is labeled 'i/77' (Executive Summary), suggesting front matter continues beyond page 4 and the body may not begin at page 10.",
+    "Andrew Burt and Patrick Hall are affiliated with BNH.AI per page 2, not with NIST/ITL; the organization field lists only NIST ITL, which is accurate for the institutional author but omits BNH.AI for those two authors — whether this is a defect depends on schema intent.",
+    "publication_status='Final' is not explicitly stated on pages 1–4 but is consistent with the March 2022 dated, DOI-assigned release; no 'Draft' or 'Initial Public Draft' language appears."
+   ],
+   "publication_type_raw": "Special Publication",
+   "doi_url": "https://doi.org/10.6028/NIST.SP.1270"
+  },
+  {
+   "seq": 14,
+   "doc_key": "NIST-SP-800-218A",
+   "filename": "NIST.SP.800-218A.pdf",
+   "sha256": "e088c8bc75716824dae7c36a987f408364638561d381ed001b5c12254a7b10d8",
+   "size_bytes": 650661,
+   "pages": 30,
+   "words_pdftotext": 9774,
+   "part_id": "P03",
+   "front_matter_end_page": 8,
+   "body_start_page": 9,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "NIST SP 800-218A",
+   "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+   "subtitle": "An SSDF Community Profile",
+   "authors": [
+    "Harold Booth",
+    "Murugiah Souppaya",
+    "Apostol Vassilev",
+    "Michael Ogata",
+    "Martin Stanley",
+    "Karen Scarfone"
+   ],
+   "organization": "National Institute of Standards and Technology, Computer Security Division and Applied Cybersecurity Division, Information Technology Laboratory; Martin Stanley: Cybersecurity and Infrastructure Security Agency (CISA); Karen Scarfone: also affiliated with Scarfone Cybersecurity",
+   "publication_date": "July 2024",
+   "publication_date_iso": "2024-07",
+   "doi": "10.6028/NIST.SP.800-218A",
+   "publication_type": "Special Publication (SSDF Community Profile)",
+   "publication_status": "Final",
+   "status_evidence": "Available at https://csrc.nist.gov/pubs/sp/800/218/a/final; Approved by NIST Editorial Review Board 2024-07-25",
+   "toc": [
+    {
+     "number": "1",
+     "title": "Introduction",
+     "printed_page": "1"
+    },
+    {
+     "number": "2",
+     "title": "Using the SSDF Community Profile",
+     "printed_page": "4"
+    },
+    {
+     "number": "3",
+     "title": "SSDF Community Profile for AI Model Development",
+     "printed_page": "6"
+    },
+    {
+     "number": "",
+     "title": "References",
+     "printed_page": "20"
+    },
+    {
+     "number": "A",
+     "title": "Appendix A. Glossary",
+     "printed_page": "22"
+    }
+   ],
+   "has_glossary": true,
+   "has_references": true,
+   "special_structures": [
+    "SSDF practice/task tables (PW.x, GV.x, PS.x practices augmented for AI model development)",
+    "Table 1. SSDF Community Profile for AI Model Development",
+    "alphabetical glossary with bracketed informative references"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CORRECTED",
+   "audit_corrections": [
+    {
+     "evidence": "Page 2 title block lists Karen Scarfone under both 'Applied Cybersecurity Division, Information Technology Laboratory' AND 'Scarfone Cybersecurity' (an external affiliation omitted from the record). Martin Stanley's affiliation is spelled out in full as 'Cybersecurity and Infrastructure Security Agency (CISA)'. Additionally, Booth, Souppaya, and Vassilev carry no explicit division label on the cover page, so attributing them to specific NIST divisions is an inference not directly supported by the printed source.",
+     "field": "organization",
+     "now": "National Institute of Standards and Technology, Computer Security Division and Applied Cybersecurity Division, Information Technology Laboratory; Martin Stanley: Cybersecurity and Infrastructure Security Agency (CISA); Karen Scarfone: also affiliated with Scarfone Cybersecurity",
+     "was": "National Institute of Standards and Technology, Computer Security Division and Applied Cybersecurity Division, Information Technology Laboratory (with CISA affiliation for Martin Stanley)"
+    }
+   ],
+   "audit_uncertainty": [
+    "body_start_page (claimed: 9) cannot be verified from pages 1–4 alone; pages 5–8 (front matter) are not provided.",
+    "The specific NIST division assignments for Harold Booth, Murugiah Souppaya, and Apostol Vassilev are not explicitly labeled on the cover pages provided; their division affiliations are implied but not printed."
+   ],
+   "publication_type_raw": "Special Publication (SSDF Community Profile)",
+   "doi_url": "https://doi.org/10.6028/NIST.SP.800-218A"
+  },
+  {
+   "seq": 15,
+   "doc_key": "NIST-PAPER-1-FOUNDATIONAL",
+   "filename": "Paper 1_AI Foundational Issues_NIST_FINAL.pdf",
+   "sha256": "46583bdc1c155994e758b519a3eef143e429670d6602a9c8d9104fcd7be8d417",
+   "size_bytes": 1752944,
+   "pages": 56,
+   "words_pdftotext": 17719,
+   "part_id": "P01",
+   "front_matter_end_page": 6,
+   "body_start_page": 7,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "AAAS-NIST Paper 1",
+   "title": "Artificial Intelligence – Foundational Issues and Glossary",
+   "subtitle": "Artificial Intelligence and the Courts: Materials for Judges",
+   "authors": [
+    "Kay Firth-Butterfield",
+    "Karen Silverman"
+   ],
+   "organization": "American Association for the Advancement of Science (AAAS), funded by NIST",
+   "publication_date": "September 2022",
+   "publication_date_iso": "2022-09",
+   "doi": "10.1126/aaas.adf0782",
+   "publication_type": "Educational Material (AAAS/NIST Materials for Judges)",
+   "publication_status": "Final",
+   "status_evidence": "\"SEPTEMBER 2022\" cover; filename marked FINAL; citation '(2022)'",
+   "toc": [
+    {
+     "number": "1",
+     "title": "How Artificial Intelligence (AI) Works",
+     "printed_page": "6"
+    },
+    {
+     "number": "2",
+     "title": "What is AI?",
+     "printed_page": "6"
+    },
+    {
+     "number": "3",
+     "title": "Elements and Types of AI Systems",
+     "printed_page": "11"
+    },
+    {
+     "number": "4",
+     "title": "Performance of AI Systems",
+     "printed_page": "21"
+    },
+    {
+     "number": "5",
+     "title": "Inherent Limitations and Risks of AI Systems",
+     "printed_page": "22"
+    },
+    {
+     "number": "6",
+     "title": "Who is Regulating AI Systems?",
+     "printed_page": "28"
+    },
+    {
+     "number": "7",
+     "title": "Conclusion",
+     "printed_page": "28"
+    },
+    {
+     "number": "Annex A",
+     "title": "Global Regulation Review",
+     "printed_page": "29"
+    },
+    {
+     "number": "",
+     "title": "Glossary",
+     "printed_page": "35"
+    }
+   ],
+   "has_glossary": true,
+   "has_references": false,
+   "special_structures": [
+    "Alphabetical glossary table with Term/Definition/Synonyms & Related Terms columns",
+    "Bolded red glossary cross-references in body text",
+    "Annex regulatory snapshot sections (A.1–A.4)"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CONFIRMED",
+   "audit_corrections": [],
+   "audit_uncertainty": [
+    "body_start_page: 7 cannot be verified from the four source pages provided (pages shown are 1–4); the actual body start page remains unconfirmed from this excerpt alone.",
+    "The record lists only two authors (Firth-Butterfield and Silverman); page 3 also credits Brin Elliott as a contributor ('we are thankful for the contributions from Brin Elliott'), but the formal authorship attribution in the 'Cite as' line singles out only Firth-Butterfield and Silverman — so the two-author record is defensible but the boundary between 'author' and 'contributor' is editorially ambiguous."
+   ],
+   "publication_type_raw": "Educational Material (AAAS/NIST Materials for Judges)",
+   "doi_url": "https://doi.org/10.1126/aaas.adf0782"
+  },
+  {
+   "seq": 16,
+   "doc_key": "NIST-PAPER-2-TRUSTWORTHINESS",
+   "filename": "Paper 2_AI and Trustworthiness_NIST_FINAL.pdf",
+   "sha256": "a40bab13d2f6f608aa1fe64c0f3055cfea1761bf88455e38f0b2d1262e42eb13",
+   "size_bytes": 1651170,
+   "pages": 36,
+   "words_pdftotext": 15324,
+   "part_id": "P06",
+   "front_matter_end_page": 6,
+   "body_start_page": 7,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "AAAS-NIST Paper 2",
+   "title": "Artificial Intelligence, Trustworthiness, and Litigation",
+   "subtitle": "Artificial Intelligence and the Courts: Materials for Judges",
+   "authors": [
+    "Cynthia Cwik",
+    "Paul W. Grimm",
+    "Maura Grossman",
+    "Toby Walsh"
+   ],
+   "organization": "American Association for the Advancement of Science (AAAS), funded by NIST",
+   "publication_date": "September 2022",
+   "publication_date_iso": "2022-09",
+   "doi": "10.1126/aaas.adf0786",
+   "publication_type": "Educational Material (AAAS/NIST Materials for Judges)",
+   "publication_status": "Final",
+   "status_evidence": "\"Cite as: ... (2022). Available at https://doi.org/10.1126/aaas.adf0786\"",
+   "toc": [
+    {
+     "number": "1",
+     "title": "Introduction",
+     "printed_page": "6"
+    },
+    {
+     "number": "2",
+     "title": "Admissibility Issues",
+     "printed_page": "8"
+    },
+    {
+     "number": "3",
+     "title": "Conclusion",
+     "printed_page": "18"
+    },
+    {
+     "number": "Annex A",
+     "title": "Practice Pointers for Lawyers and Judges",
+     "printed_page": "19"
+    },
+    {
+     "number": "Annex B",
+     "title": "Hypothetical on the Admissibility of Facial Recognition Testimony in a Criminal Matter",
+     "printed_page": "26"
+    },
+    {
+     "number": "Annex C",
+     "title": "Hypothetical on Measuring a Machine Learning System's Accuracy and Reliability—Problem Gambling",
+     "printed_page": "33"
+    }
+   ],
+   "has_glossary": false,
+   "has_references": false,
+   "special_structures": [
+    "Footnoted legal-style citations",
+    "Numbered annexes (A, B, C) with hypothetical fact patterns and sample questions for courts",
+    "Practice Pointer question lists (A.1–A.6)"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CONFIRMED",
+   "audit_corrections": [],
+   "audit_uncertainty": [
+    "body_start_page: 7 cannot be verified from pages 1–4 alone; the body content does not appear in the supplied source pages.",
+    "publication_type 'Educational Material' is a reasonable characterisation (AAAS calls these 'educational materials for judges') but the document also self-describes as a 'paper' in the citation block (page 4); neither label is wrong, but neither is an official NIST publication-type designator.",
+    "The filename ('Paper 2_…') conflicts with the in-text numbering on page 2, which lists this document as item 3 in the series; the series_identifier 'Paper 3' is consistent with the page-2 list, but the discrepancy in the filename is unexplained."
+   ],
+   "publication_type_raw": "Educational Material (AAAS/NIST Materials for Judges)",
+   "doi_url": "https://doi.org/10.1126/aaas.adf0786"
+  },
+  {
+   "seq": 17,
+   "doc_key": "NIST-PAPER-3-LEGAL",
+   "filename": "Paper 3_AI Legal Research and Judicial Analytics_NIST_FINAL_1.pdf",
+   "sha256": "6a818e27e20f2ec68b5e02c12adb836014497b71487264a150455806d93adc4c",
+   "size_bytes": 1516697,
+   "pages": 17,
+   "words_pdftotext": 6335,
+   "part_id": "P06",
+   "front_matter_end_page": 6,
+   "body_start_page": 7,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "AAAS-NIST Paper 3",
+   "title": "Artificial Intelligence, Legal Research, and Judicial Analytics",
+   "subtitle": "Artificial Intelligence and the Courts: Materials for Judges",
+   "authors": [
+    "John Facciola",
+    "Nicholas Mignanelli"
+   ],
+   "organization": "American Association for the Advancement of Science (AAAS), funded by NIST (Award 60NANB21D031)",
+   "publication_date": "September 2022",
+   "publication_date_iso": "2022-09",
+   "doi": "10.1126/aaas.adf0787",
+   "publication_type": "Educational Material (AAAS/NIST Materials for Judges)",
+   "publication_status": "Final",
+   "status_evidence": "Cover: 'SEPTEMBER 2022'; citation '(2022)'",
+   "toc": [
+    {
+     "number": "1",
+     "title": "Introduction",
+     "printed_page": "6"
+    },
+    {
+     "number": "2",
+     "title": "The Pragmatic Use of Predictive Software",
+     "printed_page": "8"
+    },
+    {
+     "number": "3",
+     "title": "Conclusions (Part A: Putting Analytics to Good Use – Assessing Reforms, Not Judges? / Part B: Maintaining Perspective or Healthy Skepticism?)",
+     "printed_page": "13"
+    },
+    {
+     "number": "Annex A",
+     "title": "Further Readings",
+     "printed_page": "16"
+    }
+   ],
+   "has_glossary": false,
+   "has_references": true,
+   "special_structures": [
+    "Bolded red glossary terms referenced via footnote to separate Glossary paper",
+    "Footnotes including French legal citation",
+    "Annex A: Further Readings list"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CONFIRMED",
+   "audit_corrections": [],
+   "audit_uncertainty": [
+    "body_start_page of 7 cannot be verified from the provided pages 1–4 alone.",
+    "The filename contains 'Paper 3' while the series list on page 2 places this paper at position 4; the record's 'Paper 4' matches the source content, but the filename discrepancy is unexplained.",
+    "publication_type 'Research/Educational Paper' is a reasonable characterisation but no explicit genre label appears in the source pages; the document calls itself an 'educational material' and a 'paper'.",
+    "publication_status 'Final' is inferred from context (no draft/IPD notice visible) but not explicitly stated on the provided pages."
+   ],
+   "publication_type_raw": "Educational Material (AAAS/NIST Materials for Judges)",
+   "doi_url": "https://doi.org/10.1126/aaas.adf0787"
+  },
+  {
+   "seq": 18,
+   "doc_key": "NIST-PAPER-4-BIAS",
+   "filename": "Paper 4_AI and Bias_NIST_FINAL.pdf",
+   "sha256": "5070d17d2953c2f91bf42ac842b50f0335d231f3cb594933b1eaaf6940b4840e",
+   "size_bytes": 1505149,
+   "pages": 21,
+   "words_pdftotext": 8192,
+   "part_id": "P06",
+   "front_matter_end_page": 6,
+   "body_start_page": 7,
+   "has_line_numbers": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED",
+   "series_identifier": "AAAS-NIST Paper 4",
+   "title": "Artificial Intelligence and Bias – An Evaluation",
+   "subtitle": "Artificial Intelligence and the Courts: Materials for Judges",
+   "authors": [
+    "Michael Karanicolas",
+    "Mallory Knodel"
+   ],
+   "organization": "American Association for the Advancement of Science (AAAS), funded by NIST (Award 60NANB21D031)",
+   "publication_date": "September 2022",
+   "publication_date_iso": "2022-09",
+   "doi": "10.1126/aaas.adf0788",
+   "publication_type": "Educational Material (AAAS/NIST Materials for Judges)",
+   "publication_status": "Final",
+   "status_evidence": "\"SEPTEMBER 2022\" cover date; filename \"NIST_FINAL\"; completed educational paper",
+   "toc": [
+    {
+     "number": "1",
+     "title": "Introduction",
+     "printed_page": "6"
+    },
+    {
+     "number": "2",
+     "title": "Bias and the Legal System",
+     "printed_page": "6"
+    },
+    {
+     "number": "3",
+     "title": "The Origins of Bias in AI Systems",
+     "printed_page": "10"
+    },
+    {
+     "number": "4",
+     "title": "Impacts of AI Bias on Law and Society",
+     "printed_page": "16"
+    },
+    {
+     "number": "5",
+     "title": "Concluding Recommendations",
+     "printed_page": "20"
+    }
+   ],
+   "has_glossary": false,
+   "has_references": false,
+   "special_structures": [
+    "Footnote citations in law-review style",
+    "Bolded red glossary terms referenced in companion glossary (Paper 1)"
+   ],
+   "text_native": true,
+   "audit_models": {
+    "extract": "zai-coding-plan/glm-5.3",
+    "verify": "antigravity/claude-sonnet-4-6"
+   },
+   "audit_verdict": "CONFIRMED",
+   "audit_corrections": [],
+   "audit_uncertainty": [
+    "body_start_page: value of 7 cannot be confirmed from pages 1–4 alone; pages 5–6 (likely table of contents / introduction) were not provided.",
+    "publication_type: the document uses no self-declared type label; 'Research/Educational Paper' is a reasonable characterisation of what AAAS calls 'educational materials … papers' but is an editorial inference, not a term from the pages.",
+    "series numbering vs. filename: the file is named 'Paper 4_AI and Bias_NIST_FINAL.pdf' yet the series list on page 2 places this title at position 5; the record's 'Paper 5' matches the series list and is correct, but the discrepancy with the filename is unexplained."
+   ],
+   "publication_type_raw": "Educational Material (AAAS/NIST Materials for Judges)",
+   "doi_url": "https://doi.org/10.1126/aaas.adf0788"
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "template_id": "TPL-P07-3",
+ "title_fa": "نمونه فرم: ارزیابی تأمین‌کنندهٔ هوش مصنوعی (Vendor / Third-Party AI Assessment)",
+ "derived_from": [
+  "KDJ-AI-2026E1-P07-C49-S01"
+ ],
+ "fields": [
+  {
+   "name_fa": "نام تأمین‌کننده و محصول/خدمت",
+   "name_en": "vendor_product",
+   "description_fa": "شناسهٔ تأمین‌کننده و آنچه عرضه می‌کند",
+   "example_fa": "ارائه‌دهندهٔ سرویس API مدل زبانی X"
+  },
+  {
+   "name_fa": "نوع دسترسی به مدل",
+   "name_en": "model_access_type",
+   "description_fa": "API، وزن‌های قابل دانلود، یا سرویس کاملاً مدیریت‌شده",
+   "example_fa": "دسترسی از طریق API ابری"
+  },
+  {
+   "name_fa": "پایبندی به استاندارد",
+   "name_en": "standards_alignment",
+   "description_fa": "آیا تأمین‌کننده از استانداردهای شناخته‌شده پیروی می‌کند (ارجاع به TPL-P07-2)",
+   "example_fa": "گواهی ISO/IEC 27001 دارد؛ ISO/IEC 42001 در دست اخذ"
+  },
+  {
+   "name_fa": "محل و حاکمیت داده",
+   "name_en": "data_residency_governance",
+   "description_fa": "داده‌های ارسالی کجا پردازش/نگهداری می‌شوند و آیا برای آموزش مجدد مدل تأمین‌کننده استفاده می‌شوند",
+   "example_fa": "پردازش برون‌مرزی؛ عدم استفاده در آموزش طبق قرارداد"
+  },
+  {
+   "name_fa": "شفافیت و مستندسازی",
+   "name_en": "transparency_documentation",
+   "description_fa": "آیا کارت مدل، مستندات ارزیابی یا گزارش سوگیری در دسترس است",
+   "example_fa": "کارت مدل عمومی موجود؛ گزارش تیم قرمز منتشرنشده"
+  },
+  {
+   "name_fa": "تداوم کسب‌وکار و برنامهٔ خروج",
+   "name_en": "continuity_exit_plan",
+   "description_fa": "در صورت قطع سرویس یا پایان قرارداد چه گزینه‌ای وجود دارد",
+   "example_fa": "امکان صادرات پیکربندی و مهاجرت به مدل جایگزین در ۳۰ روز"
+  },
+  {
+   "name_fa": "نتیجهٔ ارزیابی و سطح ریسک",
+   "name_en": "assessment_result_risk_level",
+   "description_fa": "جمع‌بندی ارزیابی و سطح ریسک پیشنهادی برای ثبت ریسک",
+   "example_fa": "قابل استفاده با پایش دوره‌ای — ریسک متوسط"
+  }
+ ],
+ "origin": "editorial_template_ir",
+ "note_fa": "نمونه پیشنهادی تدوینگر بر پایه مفاهیم مطرح‌شده در منابع این فصل"
+}

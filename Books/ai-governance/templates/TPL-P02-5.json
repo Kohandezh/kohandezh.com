@@ -1,0 +1,54 @@
+{
+ "template_id": "TPL-P02-5",
+ "title_fa": "نمونه فرم: پذیرش ریسک باقیماندهٔ هوش مصنوعی (Risk Acceptance Form)",
+ "derived_from": [
+  "KDJ-AI-2026E1-P02-C10-S02",
+  "KDJ-AI-2026E1-P02-C10-S04"
+ ],
+ "fields": [
+  {
+   "name_fa": "شناسهٔ ریسک",
+   "name_en": "risk_id",
+   "description_fa": "ارجاع به ثبت ریسک (TPL-P02-2)",
+   "example_fa": "RSK-007"
+  },
+  {
+   "name_fa": "شرح ریسک باقیمانده",
+   "name_en": "residual_risk_description",
+   "description_fa": "آنچه پس از اعمال کنترل‌ها باقی می‌ماند",
+   "example_fa": "احتمال کم نشت داده در صورت خطای طبقه‌بندی سند"
+  },
+  {
+   "name_fa": "سطح ریسک باقیمانده",
+   "name_en": "residual_risk_level",
+   "description_fa": "کم/متوسط/بالا",
+   "example_fa": "متوسط"
+  },
+  {
+   "name_fa": "توجیه پذیرش",
+   "name_en": "acceptance_justification",
+   "description_fa": "چرا کاهش بیشتر ریسک در حال حاضر انتخاب نشده",
+   "example_fa": "هزینهٔ کنترل اضافه از منفعت مورد انتظار بیشتر است"
+  },
+  {
+   "name_fa": "تصویب‌کننده",
+   "name_en": "approver",
+   "description_fa": "نقش دارای اختیار پذیرش بر پایهٔ تحمل ریسک سازمان",
+   "example_fa": "معاون فناوری اطلاعات"
+  },
+  {
+   "name_fa": "تاریخ و مدت اعتبار پذیرش",
+   "name_en": "acceptance_date_validity",
+   "description_fa": "پذیرش تا چه زمانی معتبر است",
+   "example_fa": "پذیرفته‌شده در ۱۴۰۴/۰۶/۱۵ تا ۱۴۰۵/۰۶/۱۵"
+  },
+  {
+   "name_fa": "شرط بازبینی زودتر",
+   "name_en": "early_review_trigger",
+   "description_fa": "چه رخدادی پذیرش را پیش از موعد به بازبینی می‌کشاند",
+   "example_fa": "افزایش حجم داده‌های حساس پردازش‌شده بیش از دو برابر"
+  }
+ ],
+ "origin": "editorial_template_ir",
+ "note_fa": "نمونه پیشنهادی تدوینگر بر پایه مفاهیم مطرح‌شده در منابع این فصل"
+}

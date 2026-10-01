@@ -1,0 +1,2413 @@
+{
+ "artificial intelligence": {
+  "concept_id": "ARTIFICIAL_INTELLIGENCE",
+  "english": "Artificial Intelligence",
+  "acronym": "AI",
+  "preferred_fa": "هوش مصنوعی",
+  "alternatives_fa": [],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "general",
+  "source_documents": [
+   "NIST-AI-100-2E2025",
+   "NIST-AI-700-1",
+   "NIST-AI-800-1-IPD",
+   "NIST-AI-STD-FED-PLAN-2019",
+   "NIST-IR-8312",
+   "NIST-IR-8367",
+   "NIST-SP-1270"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "معادل استاندارد و تثبیت‌شده در تمام منابع فنی و حقوقی فارسی؛ هیچ جایگزین بهتری وجود ندارد.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "risk": {
+  "concept_id": "RISK",
+  "english": "Risk",
+  "acronym": "",
+  "preferred_fa": "ریسک",
+  "alternatives_fa": [
+   "خطر"
+  ],
+  "rejected_fa": [
+   "خطر"
+  ],
+  "definition_en": "Risk refers to the composite measure of an event’s probability of occurring and the magnitude (or degree) of the consequences of the corresponding events",
+  "definition_fa": "ریسک معیاری مرکب از احتمال وقوع یک رویداد و اندازه (یا درجه) پیامدهای آن رویداد است.",
+  "domain": "risk",
+  "source_documents": [
+   "NIST-AI-100-1",
+   "NIST-AI-600-1",
+   "NIST-AI-700-2",
+   "NIST-AI-800-1-IPD",
+   "NIST-AI-RMF-PLAYBOOK",
+   "NIST-IR-8312"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "در ادبیات فنی مدیریت ریسک فارسی «ریسک» از «خطر» (hazard/danger) به‌دقت متمایز است؛ جایگزینی با «خطر» دقت اصطلاحی NIST را از بین می‌برد.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "machine learning": {
+  "concept_id": "MACHINE_LEARNING",
+  "english": "Machine Learning",
+  "acronym": "ML",
+  "preferred_fa": "یادگیری ماشین",
+  "alternatives_fa": [
+   "ماشین‌کارآموز",
+   "یادگیری ماشینی"
+  ],
+  "rejected_fa": [
+   "ماشینکارآموز",
+   "یادگیری ماشینی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "ml",
+  "source_documents": [
+   "NIST-AI-100-2E2025",
+   "NIST-AI-100-4-IPD",
+   "NIST-AI-RMF-PLAYBOOK",
+   "NIST-IR-8312",
+   "NIST-PAPER-2-TRUSTWORTHINESS",
+   "NIST-SP-1270"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "شکل اسمی مرکب استاندارد در منابع فنی فارسی است؛ «یادگیری ماشینی» صفتی است و برای اسم مرکب مناسب نیست؛ «ماشین‌کارآموز» ساخته‌وپرداخته و نامأنوس است.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "privacy": {
+  "concept_id": "PRIVACY",
+  "english": "Privacy",
+  "acronym": "SP",
+  "preferred_fa": "حریم خصوصی",
+  "alternatives_fa": [
+   "امنیت داده‌های شخصی"
+  ],
+  "rejected_fa": [
+   "امنیت دادههای شخصی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "legal",
+  "source_documents": [
+   "NIST-AI-100-1",
+   "NIST-AI-100-2E2025",
+   "NIST-AI-100-4-IPD"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "معادل رسمی تثبیت‌شده در حقوق و فناوری اطلاعات ایران؛ «امنیت داده‌های شخصی» با Security هم‌پوشانی دارد و گمراه‌کننده است.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "security": {
+  "concept_id": "SECURITY",
+  "english": "Security",
+  "acronym": "WIFS",
+  "preferred_fa": "امنیت",
+  "alternatives_fa": [],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [
+   "NIST-AI-100-2E2025",
+   "NIST-AI-100-4-IPD",
+   "NIST-AI-RMF-PLAYBOOK"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "معادل رسمی استاندارد؛ تمایز با Safety (ایمنی) باید در سرتاسر کتاب یکپارچه رعایت شود.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "explainability": {
+  "concept_id": "EXPLAINABILITY",
+  "english": "Explainability",
+  "acronym": "",
+  "preferred_fa": "تبیین‌پذیری",
+  "alternatives_fa": [
+   "قابلیت توضیح"
+  ],
+  "rejected_fa": [
+   "توضیحپذیری",
+   "قابلیت توضیح",
+   "توضیح‌پذیری"
+  ],
+  "definition_en": "Explainability refers to a representation of the mechanisms underlying AI systems’ operation, whereas interpretability refers to the meaning of AI systems’ output in the context of their designed functional purposes",
+  "definition_fa": "تبیین‌پذیری به بازنمایی سازوکارهای زیربنایی عملکرد سامانه‌های هوش مصنوعی اشاره دارد، در تمایز با تفسیرپذیری که به معنای برون‌داد این سامانه‌ها در بستر اهداف کارکردی طراحی‌شده است.",
+  "domain": "explainability",
+  "source_documents": [
+   "NIST-AI-100-1",
+   "NIST-IR-8367"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«تبیین» (causal/mechanistic explanation) با تعریف NIST از Explainability (سازوکارهای زیربنایی) دقیقاً هم‌راستاست و با «تفسیرپذیری» (interpretability = معنای برون‌داد) تمایز معنایی روشن ایجاد می‌کند؛ «توضیح» بار محاوره‌ای دارد و برای متن مرجع رسمی مناسب نیست.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "trustworthy ai": {
+  "concept_id": "TRUSTWORTHY_AI",
+  "english": "Trustworthy AI",
+  "acronym": "ALTAI",
+  "preferred_fa": "هوش مصنوعی اعتماد‌پذیر",
+  "alternatives_fa": [
+   "هوش مصنوعی اعتمادپذیر"
+  ],
+  "rejected_fa": [
+   "هوش مصنوعی قابل اعتماد",
+   "هوش مصنوعی قابل اعتماد"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [
+   "NIST-AI-RMF-PLAYBOOK"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "پسوند «-پذیر» با الگوی واژه‌سازی یکپارچه اصطلاح‌نامه (تبیین‌پذیر، تفسیرپذیر، اطمینان‌پذیر) سازگار و از «قابل اعتماد» فشرده‌تر و رسمی‌تر است.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "risk tolerance": {
+  "concept_id": "RISK_TOLERANCE",
+  "english": "Risk tolerance",
+  "acronym": "",
+  "preferred_fa": "تحمل ریسک",
+  "alternatives_fa": [
+   "سطح ریسک‌پذیری"
+  ],
+  "rejected_fa": [
+   "آستانه پذیرش ریسک",
+   "سطح ریسکپذیری",
+   "تحمل ریسک",
+   "آستانه پذیرش ریسک"
+  ],
+  "definition_en": "Risk tolerance refers to the organization’s or AI actor’s (see Appendix A) readiness to bear the risk in order to achieve its objectives",
+  "definition_fa": "تحمل ریسک به آمادگی سازمان یا کنشگر هوش مصنوعی برای تقبل ریسک به‌منظور دستیابی به اهداف خود اشاره دارد.",
+  "domain": "risk",
+  "source_documents": [
+   "NIST-AI-100-1"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«آستانه پذیرش ریسک» با Risk Appetite (اشتهای ریسک / میل به ریسک) هم‌پوشانی دارد و تمایز اصطلاحی حیاتی را از بین می‌برد؛ «تحمل ریسک» آستانه‌ای و انفعالی بودن مفهوم را—مطابق تعریف NIST—حفظ می‌کند.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "reliability": {
+  "concept_id": "RELIABILITY",
+  "english": "Reliability",
+  "acronym": "",
+  "preferred_fa": "قابلیت اطمینان",
+  "alternatives_fa": [
+   "اتکاپذیری"
+  ],
+  "rejected_fa": [
+   "اتکاپذیری"
+  ],
+  "definition_en": "Reliability is defined in the same standard as the “ability of an item to perform as required, without failure, for a given time interval, under given conditions” (Source: ISO/IEC TS 5723:2022)",
+  "definition_fa": "قابلیت اطمینان به توانایی یک قلم برای اجرای عملکرد موردنظر، بدون خرابی، در یک بازه زمانی معین و تحت شرایط مشخص تعریف می‌شود (ISO/IEC TS 5723:2022).",
+  "domain": "governance",
+  "source_documents": [
+   "NIST-AI-100-1"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "معادل رسمی استاندارد ISO/IEC در ترجمه‌های فارسی است؛ با Validity (اعتبار) و Accuracy (صحت) تمایز مفهومی روشنی دارد؛ «اتکاپذیری» غیررسمی است.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "robustness": {
+  "concept_id": "ROBUSTNESS",
+  "english": "Robustness",
+  "acronym": "",
+  "preferred_fa": "استواری",
+  "alternatives_fa": [
+   "قابلیت استوار بودن",
+   "پایداری در برابر اختلال"
+  ],
+  "rejected_fa": [
+   "قابلیت استوار بودن",
+   "پایداری در برابر اختلال"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "ml",
+  "source_documents": [
+   "NIST-AI-100-1",
+   "NIST-AI-100-4-IPD"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«استواری» در متون فنی رسمی فارسی پذیرفته شده و بار معنایی مقاومت در برابر اختلال و ورودی‌های نامطلوب را به‌درستی منتقل می‌کند.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "see": {
+  "concept_id": "SEE_CROSS_REFERENCE",
+  "english": "See",
+  "acronym": "",
+  "preferred_fa": "ر.ک.",
+  "alternatives_fa": [],
+  "rejected_fa": [
+   "بنگرید به",
+   "بنگرید به"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "general",
+  "source_documents": [
+   "NIST-PAPER-2-TRUSTWORTHINESS",
+   "NIST-PAPER-3-LEGAL",
+   "NIST-SP-1270"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«ر.ک.» (رجوع کنید) مخفف استاندارد رایج در کتب مرجع و فرهنگ‌نامه‌های فارسی است؛ «بنگرید به» کهن‌گرایانه و نامتعارف در نگارش مرجع معاصر است.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "bias": {
+  "concept_id": "BIAS",
+  "english": "Bias",
+  "acronym": "",
+  "preferred_fa": "سوگیری",
+  "alternatives_fa": [
+   "کج‌سلیقگی",
+   "پیش‌داوری"
+  ],
+  "rejected_fa": [
+   "کجسلیقگی",
+   "پیشداوری"
+  ],
+  "definition_en": "Bias refers to a preference or tendency for one thing over another, whether for reasons of rational choice or intentional or unintentional discrimination",
+  "definition_fa": "سوگیری به گرایش یا تمایل به چیزی نسبت به چیز دیگر اشاره دارد، خواه به دلایل انتخاب منطقی باشد یا تبعیض عمدی یا غیرعمدی.",
+  "domain": "bias",
+  "source_documents": [
+   "NIST-PAPER-1-FOUNDATIONAL"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«سوگیری» اصطلاح فنی رسمی تثبیت‌شده در ادبیات هوش مصنوعی و روان‌شناسی فارسی است؛ با Fairness (انصاف) جفت مفهومی منسجمی می‌سازد؛ «کج‌سلیقگی» و «پیشداوری» بار محاوره‌ای دارند.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "interpretability": {
+  "concept_id": "INTERPRETABILITY",
+  "english": "interpretability",
+  "acronym": "",
+  "preferred_fa": "تفسیرپذیری",
+  "alternatives_fa": [
+   "قابلیت تفسیر"
+  ],
+  "rejected_fa": [
+   "قابلیت تفسیر"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "explainability",
+  "source_documents": [
+   "NIST-AI-100-1",
+   "NIST-IR-8367"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "با «تبیین‌پذیری» (explainability) جفت دقیق و متمایزی را تشکیل می‌دهد: تبیین برای سازوکار زیربنایی و تفسیر برای معنای برون‌داد، مطابق تعریف NIST؛ «قابلیت تفسیر» طولانی‌تر و ناهمخوان با الگوی واژه‌سازی است.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "risk management": {
+  "concept_id": "RISK_MANAGEMENT",
+  "english": "Risk management",
+  "acronym": "",
+  "preferred_fa": "مدیریت ریسک",
+  "alternatives_fa": [
+   "مدیریت خطر"
+  ],
+  "rejected_fa": [
+   "مدیریت خطر"
+  ],
+  "definition_en": "Risk management refers to coordinated activities to direct and control an organization with regard to risk” (Source: ISO 31000:2018).",
+  "definition_fa": "مدیریت ریسک به فعالیت‌های هماهنگ برای هدایت و کنترل یک سازمان در ارتباط با ریسک اشاره دارد (ISO 31000:2018).",
+  "domain": "risk",
+  "source_documents": [
+   "NIST-AI-100-1"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "معادل رسمی تثبیت‌شده در استانداردهای ISO و ترجمه‌های فارسی آن؛ «مدیریت خطر» دقت اصطلاح‌شناختی را از دست می‌دهد.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "adversarial machine learning": {
+  "concept_id": "ADVERSARIAL_MACHINE_LEARNING",
+  "english": "ADVERSARIAL MACHINE LEARNING",
+  "acronym": "AML",
+  "preferred_fa": "یادگیری ماشین خصمانه",
+  "alternatives_fa": [
+   "یادگیری ماشین هماورد"
+  ],
+  "rejected_fa": [
+   "یادگیری ماشین هماورد"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [
+   "NIST-AI-100-2E2025"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«خصمانه» معادل دقیق و رسمی adversarial در متون امنیتی فارسی است؛ «هماورد» کهن‌گرایانه و در متون فنی معاصر نامأنوس است.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "large language model": {
+  "concept_id": "LARGE_LANGUAGE_MODEL",
+  "english": "Large Language Model",
+  "acronym": "LLM",
+  "preferred_fa": "مدل زبانی بزرگ",
+  "alternatives_fa": [
+   "مدل زبانی گسترده"
+  ],
+  "rejected_fa": [
+   "مدل زبانی گسترده"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "genai",
+  "source_documents": [
+   "NIST-AI-700-1"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "معادل استاندارد پذیرفته‌شده در ادبیات فنی فارسی است؛ «گسترده» بار معنایی متفاوتی دارد و دقت Large را از دست می‌دهد.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "generative ai": {
+  "concept_id": "GENERATIVE_AI",
+  "english": "Generative AI",
+  "acronym": "GAI",
+  "preferred_fa": "هوش مصنوعی مولد",
+  "alternatives_fa": [
+   "هوش مصنوعی زایا"
+  ],
+  "rejected_fa": [
+   "هوش مصنوعی زایا"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "genai",
+  "source_documents": [
+   "NIST-AI-600-1"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«مولد» معادل رسمی و فشرده‌ای است که جنبه تولیدی را به‌درستی منتقل می‌کند؛ «زایا» بار ادبی دارد و در متن مرجع فنی رسمی نامناسب است.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "red teaming": {
+  "concept_id": "RED_TEAMING",
+  "english": "Red Teaming",
+  "acronym": "RT",
+  "preferred_fa": "تیم قرمز",
+  "alternatives_fa": [
+   "تیم سرخ"
+  ],
+  "rejected_fa": [
+   "تیم سرخ"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [
+   "NIST-AI-700-2"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«تیم قرمز» معادل رایج و پذیرفته‌شده در ادبیات امنیت سایبری فارسی‌زبان است؛ «تیم سرخ» ادبی است و در این حوزه متداول نیست.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "measure": {
+  "concept_id": "MEASURE",
+  "english": "Measure",
+  "acronym": "SSIM",
+  "preferred_fa": "سنجش",
+  "alternatives_fa": [
+   "اندازه‌گیری",
+   "سنجه"
+  ],
+  "rejected_fa": [
+   "اندازهگیری",
+   "سنجه"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [
+   "NIST-AI-100-4-IPD"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "در بستر کارکردهای NIST RMF (GOVERN-MAP-MEASURE-MANAGE)، «سنجش» فعالیت اندازه‌گیری را به‌درستی می‌رساند و از «سنجه» (metric) و «اندازه‌گیری» (measurement به‌عنوان نتیجه) متمایز است.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "legal research": {
+  "concept_id": "LEGAL_RESEARCH",
+  "english": "Legal Research",
+  "acronym": "",
+  "preferred_fa": "پژوهش حقوقی",
+  "alternatives_fa": [
+   "تحقیق حقوقی"
+  ],
+  "rejected_fa": [
+   "تحقیق حقوقی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "legal",
+  "source_documents": [
+   "NIST-PAPER-1-FOUNDATIONAL"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«پژوهش» در سطح آکادمیک و حقوقی رسمی‌تر از «تحقیق» است و در ادبیات حقوقی ایران متداول است.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "knowledge limits": {
+  "concept_id": "KNOWLEDGE_LIMITS",
+  "english": "Knowledge Limits",
+  "acronym": "",
+  "preferred_fa": "محدودیت‌های دانش",
+  "alternatives_fa": [
+   "محدودیت‌های معرفتی"
+  ],
+  "rejected_fa": [
+   "حدود دانش",
+   "محدودیتهای معرفتی",
+   "حدود دانش"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "explainability",
+  "source_documents": [
+   "NIST-IR-8312"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«محدودیت‌های دانش» در فارسی رسمی طبیعی‌تر و روان‌تر از «حدود دانش» است؛ «محدودیت‌های معرفتی» بار فلسفی افراطی دارد که با کاربرد فنی NIST همخوانی ندارد.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "fairness": {
+  "concept_id": "FAIRNESS",
+  "english": "Fairness",
+  "acronym": "",
+  "preferred_fa": "انصاف",
+  "alternatives_fa": [
+   "عدالت الگوریتمی",
+   "برابری"
+  ],
+  "rejected_fa": [
+   "عدالت الگوریتمی",
+   "برابری"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "bias",
+  "source_documents": [
+   "NIST-AI-100-1"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "در حوزه هوش مصنوعی، «انصاف» از «عدالت» (justice) و «برابری» (equality) متمایز است؛ جفت مفهومی سوگیری/انصاف در ادبیات فارسی هوش مصنوعی تثبیت شده است.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "residual risk": {
+  "concept_id": "RESIDUAL_RISK",
+  "english": "Residual risk",
+  "acronym": "",
+  "preferred_fa": "ریسک باقیمانده",
+  "alternatives_fa": [
+   "ریسک پسماند"
+  ],
+  "rejected_fa": [
+   "ریسک پسماند"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "risk",
+  "source_documents": [
+   "NIST-AI-100-1"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "معادل استاندارد در ادبیات مدیریت ریسک فارسی است؛ «پسماند» در فارسی محاوره‌ای رایج‌تر است اما کمتر رسمی.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "transparency": {
+  "concept_id": "TRANSPARENCY",
+  "english": "Transparency",
+  "acronym": "",
+  "preferred_fa": "شفافیت",
+  "alternatives_fa": [],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [
+   "NIST-AI-100-1"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "معادل رسمی یکپارچه و تثبیت‌شده در حکمرانی، سیاست‌گذاری و ادبیات هوش مصنوعی فارسی.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "differential privacy": {
+  "concept_id": "DIFFERENTIAL_PRIVACY",
+  "english": "differential privacy",
+  "acronym": "",
+  "preferred_fa": "حریم خصوصی تفاضلی",
+  "alternatives_fa": [
+   "خصوصیت افتراقی"
+  ],
+  "rejected_fa": [
+   "خصوصیت افتراقی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [
+   "NIST-AI-100-2E2025"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«تفاضلی» معادل دقیق mathematical differential است و در ادبیات امنیت و رمزنگاری فارسی پذیرفته شده؛ «خصوصیت افتراقی» هم از نظر ساخت واژگانی و هم از نظر دقت معنایی ضعیف‌تر است.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:07:31-0400"
+ },
+ "monitoring": {
+  "concept_id": "MONITORING",
+  "english": "Monitoring",
+  "acronym": "",
+  "preferred_fa": "پایش",
+  "alternatives_fa": [
+   "رهگیری",
+   "نظارت"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [
+   "NIST-AI-STD-FED-PLAN-2019"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "پایش is the established formal Persian term for continuous monitoring in technical and governance contexts (preferred by Iranian standards bodies over رهگیری, which implies tracking/tracing, or نظارت, which implies supervisory oversight rather than continuous measurement).",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "membership inference": {
+  "concept_id": "MEMBERSHIP_INFERENCE",
+  "english": "membership inference",
+  "acronym": "",
+  "preferred_fa": "استنتاج عضویت",
+  "alternatives_fa": [
+   "استنباط عضویت"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [
+   "NIST-AI-100-2E2025"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "استنتاج (logical deduction) is more precise than استنباط (interpretive inference) for the ML security attack sense; استنتاج عضویت is gaining traction in Persian AI security literature.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "risk appetite": {
+  "concept_id": "RISK_APPETITE",
+  "english": "risk appetite",
+  "acronym": "",
+  "preferred_fa": "اشتهای ریسک",
+  "alternatives_fa": [
+   "سطح پذیرش ریسک",
+   "رواداری ریسک"
+  ],
+  "rejected_fa": [
+   "رواداری ریسک",
+   "سطح پذیرش ریسک"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "risk",
+  "source_documents": [
+   "NIST-IR-8312"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "اشتهای ریسک is the ISO 31000 and Bank Markazi standard rendering and is semantically distinct from risk tolerance (تحمل‌پذیری ریسک). The alternative سطح پذیرش ریسک blurs this distinction; رواداری ریسک is reserved for risk tolerance, which is a different concept per NIST RMF.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "watermarking": {
+  "concept_id": "WATERMARKING",
+  "english": "Watermarking",
+  "acronym": "",
+  "preferred_fa": "علامت‌گذاری آبی",
+  "alternatives_fa": [
+   "واترمارکینگ",
+   "درج نشان پنهان"
+  ],
+  "rejected_fa": [
+   "علامتگذاری آبی",
+   "واترمارکینگ",
+   "درج نشان پنهان",
+   "علامت‌گذاری آبی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "genai",
+  "source_documents": [
+   "NIST-AI-100-2E2025"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "The proposed form علامتگذاری آبی is missing the required نیم‌فاصله between علامت and گذاری. The corrected علامت‌گذاری آبی is the formal preferred rendering over the loanword واترمارکینگ and is clearer in scope than درج نشان پنهان (which implies only steganographic/invisible marks).",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "synthetic content": {
+  "concept_id": "SYNTHETIC_CONTENT",
+  "english": "Synthetic Content",
+  "acronym": "",
+  "preferred_fa": "محتوای مصنوعی",
+  "alternatives_fa": [
+   "محتوای ساختگی"
+  ],
+  "rejected_fa": [
+   "محتوای ساختگی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "genai",
+  "source_documents": [
+   "NIST-AI-100-4-IPD"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "مصنوعی (artificial/synthetic) is technically neutral and consistent with هوش مصنوعی in the same book. محتوای ساختگی carries a pejorative fabrication connotation inappropriate for neutral NIST definitions.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "ai system": {
+  "concept_id": "AI_SYSTEM",
+  "english": "AI system",
+  "acronym": "",
+  "preferred_fa": "سامانه هوش مصنوعی",
+  "alternatives_fa": [
+   "سیستم هوش مصنوعی"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [
+   "NIST-AI-100-1"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "سامانه is the formal Persian equivalent mandated in official Iranian government and standards documents; سیستم is an acceptable loanword but سامانه is preferable in a professionally edited reference work.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "explanation accuracy": {
+  "concept_id": "EXPLANATION_ACCURACY",
+  "english": "Explanation Accuracy",
+  "acronym": "",
+  "preferred_fa": "دقت تبیین",
+  "alternatives_fa": [
+   "صحت توضیح"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "explainability",
+  "source_documents": [
+   "NIST-IR-8312"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "دقت (quantitative accuracy) paired with تبیین (formal explanatory account) correctly reflects the NIST-IR-8312 sense of how faithfully an explanation represents model behavior. صحت توضیح conflates correctness with explanation and is less precise.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "validity": {
+  "concept_id": "VALIDITY",
+  "english": "Validity",
+  "acronym": "",
+  "preferred_fa": "روایی",
+  "alternatives_fa": [
+   "اعتبار"
+  ],
+  "rejected_fa": [
+   "اعتبار"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "general",
+  "source_documents": [
+   "NIST-AI-700-2"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "روایی is the standard psychometric and measurement-science term for validity (contrasting with پایایی for reliability), which preserves the critical Validity vs Reliability distinction. اعتبار is too general and is better reserved for credibility.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "explainable artificial intelligence": {
+  "concept_id": "EXPLAINABLE_AI",
+  "english": "Explainable Artificial Intelligence",
+  "acronym": "XAI",
+  "preferred_fa": "هوش مصنوعی توضیح‌پذیر",
+  "alternatives_fa": [],
+  "rejected_fa": [
+   "هوش مصنوعی قابلتوضیح",
+   "هوش مصنوعی قابل‌توضیح",
+   "هوش مصنوعی قابل‌توضیح"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "explainability",
+  "source_documents": [
+   "NIST-AI-RMF-PLAYBOOK",
+   "NIST-AI-STD-FED-PLAN-2019",
+   "NIST-IR-8312",
+   "NIST-IR-8367"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "توضیح‌پذیر (with correct نیم‌فاصله) is more idiomatic than قابل‌توضیح and better marks the Explainability/Interpretability distinction: توضیح‌پذیر for XAI (output-level post-hoc explanations) vs تفسیرپذیر for interpretability (inherent model transparency). The proposed قابلتوضیح also lacks نیم‌فاصله.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "cybernetics": {
+  "concept_id": "CYBERNETICS",
+  "english": "Cybernetics",
+  "acronym": "SMC",
+  "preferred_fa": "سایبرنتیک",
+  "alternatives_fa": [
+   "فرمان‌شناسی"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "general",
+  "source_documents": [
+   "NIST-AI-100-2E2025",
+   "NIST-AI-100-4-IPD",
+   "NIST-AI-RMF-PLAYBOOK",
+   "NIST-SP-1270"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "سایبرنتیک is the universally accepted academic transliteration in Persian (Norbert Wiener's term is borrowed unchanged across most languages). فرمانشناسی is an archaic neologism that has not gained scholarly acceptance.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "information act": {
+  "concept_id": "FREEDOM_OF_INFORMATION_ACT",
+  "english": "Information Act",
+  "acronym": "FOIA",
+  "preferred_fa": "قانون آزادی اطلاعات",
+  "alternatives_fa": [],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "legal",
+  "source_documents": [
+   "NIST-AI-100-2E2025",
+   "NIST-AI-800-1-IPD",
+   "NIST-AI-STD-FED-PLAN-2019",
+   "NIST-SP-800-218A"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "قانون آزادی اطلاعات is the standard Persian rendering of the Freedom of Information Act. The Latin acronym FOIA is retained per book style; the Persian expansion is accurate and complete.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "ai rmf": {
+  "concept_id": "AI_RISK_MANAGEMENT_FRAMEWORK",
+  "english": "AI RMF",
+  "acronym": "",
+  "preferred_fa": "چارچوب مدیریت ریسک هوش مصنوعی",
+  "alternatives_fa": [
+   "چارچوب مدیریت ریسک AI"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "The full Persian expansion is preferred in a formal reference book with the Latin acronym AI RMF retained parenthetically at first use. Using هوش مصنوعی rather than AI in the expansion maintains Persian-language consistency.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "prompt injection": {
+  "concept_id": "PROMPT_INJECTION",
+  "english": "Prompt Injection",
+  "acronym": "",
+  "preferred_fa": "تزریق دستور",
+  "alternatives_fa": [
+   "تزریق اعلان"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "تزریق دستور is concise, formally correct, and parallels تزریق SQL (SQL injection) in Persian cybersecurity literature. تزریق اعلان is less natural as اعلان implies a system notification rather than an LLM instruction.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "threat model": {
+  "concept_id": "THREAT_MODEL",
+  "english": "Threat Model",
+  "acronym": "",
+  "preferred_fa": "مدل تهدید",
+  "alternatives_fa": [],
+  "rejected_fa": [
+   "الگوی تهدید",
+   "الگوی تهدید"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "مدل تهدید is the established Persian term in cybersecurity standards and literature (parallel to مدل داده, مدل شبکه). الگوی تهدید translates as threat pattern rather than the structured analytical framework intended by threat model.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "jailbreak": {
+  "concept_id": "JAILBREAK",
+  "english": "Jailbreak",
+  "acronym": "",
+  "preferred_fa": "دور زدن محدودیت‌های مدل",
+  "alternatives_fa": [
+   "دستبرد به مدل",
+   "جیلبرک"
+  ],
+  "rejected_fa": [
+   "عبور از محدودیتهای مدل",
+   "جیلبرک",
+   "دستبرد به مدل",
+   "عبور از محدودیت‌های مدل"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "دور زدن محدودیت‌های مدل is idiomatic formal Persian for circumventing built-in model guardrails. The proposed عبور از محدودیت‌های مدل is intelligible but عبور کردن (crossing/passing) is less precise than دور زدن (circumventing/bypassing); both are preferable to the loanword جیلبرک.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "backdoor": {
+  "concept_id": "BACKDOOR",
+  "english": "Backdoor",
+  "acronym": "",
+  "preferred_fa": "درِ پشتی",
+  "alternatives_fa": [
+   "درب پشت"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "درِ پشتی is the standard Persian cybersecurity term (with ezafe diacritic in edited prose). درب پشت is colloquial; درِ پشتی is the correct formal compound.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "data poisoning": {
+  "concept_id": "DATA_POISONING",
+  "english": "Data Poisoning",
+  "acronym": "",
+  "preferred_fa": "مسموم‌سازی داده",
+  "alternatives_fa": [],
+  "rejected_fa": [
+   "آلودهسازی داده",
+   "آلوده‌سازی داده",
+   "آلوده‌سازی داده"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "مسموم‌سازی داده (with correct نیم‌فاصله) maps precisely to intentional poisoning attacks and is well established in Persian adversarial-ML literature. آلوده‌سازی داده is broader (general contamination/infection) and does not convey the deliberate adversarial intent inherent in the NIST sense.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "hallucination": {
+  "concept_id": "HALLUCINATION",
+  "english": "Hallucination",
+  "acronym": "",
+  "preferred_fa": "توهم‌زایی",
+  "alternatives_fa": [
+   "اختلال توهم مدل"
+  ],
+  "rejected_fa": [
+   "توهمزایی",
+   "اختلال توهم مدل",
+   "توهم‌زایی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "genai",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "The proposed توهمزایی is correct in substance but lacks the required نیم‌فاصله; the corrected form توهم‌زایی is approved. The suffix ‌زایی (generation/production) accurately captures the process sense. اختلال توهم مدل is verbose and clinical without added precision.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "misuse risk": {
+  "concept_id": "MISUSE_RISK",
+  "english": "Misuse Risk",
+  "acronym": "",
+  "preferred_fa": "ریسک سوءاستفاده",
+  "alternatives_fa": [
+   "ریسک به‌کارگیری نادرست"
+  ],
+  "rejected_fa": [
+   "ریسک بهکارگیری نادرست"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "risk",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "ریسک سوءاستفاده is concise and formally correct; سوءاستفاده (written as one orthographic word in standard Persian) precisely conveys deliberate misuse. ریسک به‌کارگیری نادرست is verbose and conflates misuse (intentional) with incorrect use (unintentional).",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "ssdf": {
+  "concept_id": "SECURE_SOFTWARE_DEVELOPMENT_FRAMEWORK",
+  "english": "SSDF",
+  "acronym": "",
+  "preferred_fa": "چارچوب توسعه امن نرم‌افزار",
+  "alternatives_fa": [],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "standards",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "The Persian expansion is accurate and complete. نرم‌افزار requires نیم‌فاصله (the input form نرمافزار is non-standard). The Latin acronym SSDF is retained at first use per book style.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "impact assessment": {
+  "concept_id": "IMPACT_ASSESSMENT",
+  "english": "Impact Assessment",
+  "acronym": "",
+  "preferred_fa": "ارزیابی تأثیر",
+  "alternatives_fa": [],
+  "rejected_fa": [
+   "ارزیابی اثر",
+   "ارزیابی اثر"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "تأثیر is the more precise and widely accepted rendering of impact in governance and policy Persian (it implies consequential effect), whereas اثر is more general (effect/trace). ارزیابی تأثیر is standard in environmental and AI impact assessment contexts.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "supply chain": {
+  "concept_id": "SUPPLY_CHAIN",
+  "english": "Supply Chain",
+  "acronym": "",
+  "preferred_fa": "زنجیره تأمین",
+  "alternatives_fa": [],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "زنجیره تأمین is the universally adopted Persian term in business, logistics, and cybersecurity standards with no meaningful alternative.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "statistical bias": {
+  "concept_id": "STATISTICAL_BIAS",
+  "english": "Statistical Bias",
+  "acronym": "",
+  "preferred_fa": "سوگیری آماری",
+  "alternatives_fa": [
+   "خطای آماری نظام‌مند"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "bias",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "سوگیری آماری is the standard Persian statistics and social-science term for systematic directional error (bias). It correctly differentiates from fairness bias (سوگیری اجتماعی/تبعیض) and from general error. خطای آماری نظام‌مند is a valid circumlocution but is not the canonical term.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "safety": {
+  "concept_id": "SAFETY",
+  "english": "Safety",
+  "acronym": "",
+  "preferred_fa": "ایمنی",
+  "alternatives_fa": [
+   "امنیت رفتاری"
+  ],
+  "rejected_fa": [
+   "امنیت رفتاری"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "general",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "ایمنی correctly maps to Safety (freedom from unintended harm) and is categorically distinct from امنیت (Security, protection from adversarial threats). This Safety/Security distinction is mandatory for consistency across a NIST AI reference book. امنیت رفتاری is a non-standard coinage.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "governance": {
+  "concept_id": "GOVERNANCE",
+  "english": "Governance",
+  "acronym": "",
+  "preferred_fa": "حکمرانی",
+  "alternatives_fa": [
+   "راهبری"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "حکمرانی is the dominant term in AI governance, policy, and public administration Persian discourse. راهبری is acceptable in corporate governance contexts but حکمرانی better captures the regulatory and societal dimension of AI governance in NIST documents.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:09:54-0400"
+ },
+ "model card": {
+  "concept_id": "MODEL_CARD",
+  "english": "Model Card",
+  "acronym": "",
+  "preferred_fa": "کارت مدل",
+  "alternatives_fa": [
+   "برگه مدل"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "ml",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "کارت مدل is the established calque used in Persian ML literature and mirrors the English compound directly. برگه is less idiomatic in technical contexts.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "compliance": {
+  "concept_id": "COMPLIANCE",
+  "english": "Compliance",
+  "acronym": "",
+  "preferred_fa": "انطباق",
+  "alternatives_fa": [
+   "تطبیق قانونی"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "legal",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "انطباق is the standard formal term in Iranian legal and regulatory Persian (e.g., ISO translations use انطباق). تطبیق قانونی is redundant since انطباق already carries the conformity sense.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "secure software development": {
+  "concept_id": "SECURE_SOFTWARE_DEVELOPMENT",
+  "english": "Secure Software Development",
+  "acronym": "",
+  "preferred_fa": "توسعهٔ نرم‌افزار امن",
+  "alternatives_fa": [
+   "توسعه ایمن نرم‌افزار"
+  ],
+  "rejected_fa": [
+   "توسعه نرم‌افزار امن"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "The proposed توسعه نرمافزار امن is correct in meaning but needs نیم‌فاصله between نرم and افزار (نرم‌افزار) and the ezafe kasra on توسعه (توسعهٔ) for formal prose. The alternative ایمن vs امن: امن (امنیت context) is preferred over ایمن (safety/physical context) for cybersecurity.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "systemic bias": {
+  "concept_id": "SYSTEMIC_BIAS",
+  "english": "Systemic Bias",
+  "acronym": "",
+  "preferred_fa": "سوگیری نظام‌مند",
+  "alternatives_fa": [
+   "سوگیری ساختاری"
+  ],
+  "rejected_fa": [
+   "سوگیری سیستمی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "bias",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "سیستمی is a loan adjective; نظام‌مند is the formal Persian equivalent meaning 'systemic/systematic'. سوگیری ساختاری means 'structural bias' which is a narrower concept. نظام‌مند best captures the NIST sense of bias embedded throughout a system.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "human bias": {
+  "concept_id": "HUMAN_BIAS",
+  "english": "Human Bias",
+  "acronym": "",
+  "preferred_fa": "سوگیری انسانی",
+  "alternatives_fa": [
+   "سوءگرایش انسانی"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "bias",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "سوگیری انسانی is transparent, formal, and consistent with the سوگیری family used across the book. سوءگرایش is archaic and non-standard.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "ai actor": {
+  "concept_id": "AI_ACTOR",
+  "english": "AI Actor",
+  "acronym": "",
+  "preferred_fa": "کنشگر هوش مصنوعی",
+  "alternatives_fa": [],
+  "rejected_fa": [
+   "عامل هوش مصنوعی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "In NIST AI RMF, 'AI Actor' means any person or organization that plays an active role in the AI lifecycle—not an autonomous agent. عامل هوش مصنوعی risks confusion with 'AI agent' (a software entity). کنشگر هوش مصنوعی correctly denotes a human or organizational actor.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "incident": {
+  "concept_id": "INCIDENT",
+  "english": "Incident",
+  "acronym": "",
+  "preferred_fa": "رخداد",
+  "alternatives_fa": [
+   "رویداد امنیتی"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "رخداد is the preferred formal term in Iranian standards (ISIRI, NIST translations) for 'incident'. رویداد امنیتی over-specifies to 'security event', losing generality.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "digital content transparency": {
+  "concept_id": "DIGITAL_CONTENT_TRANSPARENCY",
+  "english": "Digital Content Transparency",
+  "acronym": "",
+  "preferred_fa": "شفافیت محتوای دیجیتال",
+  "alternatives_fa": [
+   "شفافیت محتوا در بستر دیجیتال"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "Direct, grammatically correct (ezafe chain), and consistent with شفافیت used elsewhere. The alternative is wordy without added precision.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "confabulation": {
+  "concept_id": "CONFABULATION",
+  "english": "Confabulation",
+  "acronym": "",
+  "preferred_fa": "برساختگی",
+  "alternatives_fa": [
+   "توهم مدل"
+  ],
+  "rejected_fa": [
+   "توهم مدل",
+   "اب unions"
+  ],
+  "definition_en": "",
+  "definition_fa": "پدیده‌ای که در آن مدل هوش مصنوعی اطلاعاتی را به‌ظاهر منسجم اما کاذب تولید می‌کند، بدون آنکه از نادرستی آن آگاه باشد.",
+  "domain": "genai",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "The proposed_fa contains garbled text ('اب unions'). Of the alternatives, برساختگی (from برساختن, to fabricate/confabulate) is the most precise and formally accepted clinical/AI term for confabulation—the generation of plausible but false content. توهم مدل conflates confabulation with hallucination.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "socio-technical": {
+  "concept_id": "SOCIO_TECHNICAL",
+  "english": "Socio-technical",
+  "acronym": "",
+  "preferred_fa": "اجتماعی‌ـ‌فناورانه",
+  "alternatives_fa": [
+   "اجتماعی‌–فناورانه"
+  ],
+  "rejected_fa": [
+   "اجتماعی‌ـ‌فنی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "general",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "اجتماعیـفنی uses فنی (technical/artisanal) rather than فناورانه (technological); the latter is more precise for 'technical' in the AI/systems context. The hyphen connector should be an em-dash or kashida-linked for formal use: اجتماعی‌ـ‌فناورانه.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "deepfake": {
+  "concept_id": "DEEPFAKE",
+  "english": "Deepfake",
+  "acronym": "",
+  "preferred_fa": "دیپ‌فیک",
+  "alternatives_fa": [],
+  "rejected_fa": [
+   "جعل هوشمندانه"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "genai",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "جعل هوشمندانه is a descriptive paraphrase, not a term—it could equally describe many AI-enabled forgeries. دیپ‌فیک (with نیم‌فاصله) is the term used in Iranian media, official AI policy documents, and technical literature; keeping it as a loanword with نیم‌فاصله is standard practice for untranslatable proper technical nouns.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "interoperability": {
+  "concept_id": "INTEROPERABILITY",
+  "english": "Interoperability",
+  "acronym": "",
+  "preferred_fa": "همکنش‌پذیری",
+  "alternatives_fa": [
+   "قابلیت هم‌عملی",
+   "کارکرد متقابل"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "standards",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "همکنش‌پذیری (with نیم‌فاصله) is the accepted formal term used by Iranian standards bodies and ISO translations. قابلیت همعملی is awkward; کارکرد متقابل loses the '-ability' nuance.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "deployment": {
+  "concept_id": "DEPLOYMENT",
+  "english": "Deployment",
+  "acronym": "",
+  "preferred_fa": "استقرار",
+  "alternatives_fa": [
+   "به‌کارگیری"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "general",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "استقرار is the standard term in software engineering Persian for deployment. بهکارگیری (به‌کارگیری) means 'utilization/employment' and is less specific to the act of releasing/deploying a system.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "conformity assessment": {
+  "concept_id": "CONFORMITY_ASSESSMENT",
+  "english": "Conformity Assessment",
+  "acronym": "",
+  "preferred_fa": "ارزیابی انطباق",
+  "alternatives_fa": [
+   "سنجش انطباق"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "standards",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "ارزیابی انطباق is the exact term used in ISO/IEC 17000 Persian translations and Iranian National Standards. سنجش انطباق is a synonym but ارزیابی is more entrenched in formal standards language.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "stakeholder": {
+  "concept_id": "STAKEHOLDER",
+  "english": "Stakeholder",
+  "acronym": "",
+  "preferred_fa": "ذی‌نفع",
+  "alternatives_fa": [
+   "طرف ذی‌نفع"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "ذی‌نفع (with نیم‌فاصله: ذی‌نفع) is the established formal term in Iranian legal, governance, and standards documents. طرف ذینفع is redundant.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "judicial analytics": {
+  "concept_id": "JUDICIAL_ANALYTICS",
+  "english": "Judicial Analytics",
+  "acronym": "",
+  "preferred_fa": "تحلیل داده‌های قضایی",
+  "alternatives_fa": [],
+  "rejected_fa": [
+   "تحلیل‌های قضایی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "legal",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "تحلیل‌های قضایی (plural) is grammatically awkward as a compound term label; the singular تحلیل قضایی or the adjectival form is more appropriate for a glossary entry. Recommend: تحلیل داده‌های قضایی for clarity since 'judicial analytics' specifically refers to data-driven analysis of judicial records.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "third-party": {
+  "concept_id": "THIRD_PARTY",
+  "english": "Third-Party",
+  "acronym": "",
+  "preferred_fa": "طرف ثالث",
+  "alternatives_fa": [],
+  "rejected_fa": [
+   "شخص ثالث"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "legal",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "شخص ثالث (third person) has a specific legal meaning distinct from 'third party' (طرف ثالث). In NIST governance contexts, 'third-party' means an independent party to an agreement or process, which maps to طرف ثالث.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "audit": {
+  "concept_id": "AUDIT",
+  "english": "Audit",
+  "acronym": "",
+  "preferred_fa": "حسابرسی",
+  "alternatives_fa": [
+   "رسیدگی"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "حسابرسی is the standard formal term in Iranian financial, governance, and IT audit contexts. رسیدگی is too generic (it means 'examination/processing' broadly).",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "model extraction": {
+  "concept_id": "MODEL_EXTRACTION",
+  "english": "Model Extraction",
+  "acronym": "",
+  "preferred_fa": "استخراج مدل",
+  "alternatives_fa": [
+   "کشف‌گری مدل"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "استخراج مدل is precise and consistent with the استخراج family (data extraction, feature extraction) in ML Persian. کشفگری مدل is non-standard.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "harm": {
+  "concept_id": "HARM",
+  "english": "Harm",
+  "acronym": "",
+  "preferred_fa": "آسیب",
+  "alternatives_fa": [],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "risk",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "آسیب is the correct formal term for 'harm' in risk and safety contexts. It is well-established in Iranian public health, legal, and AI risk literature.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "model inversion": {
+  "concept_id": "MODEL_INVERSION",
+  "english": "Model Inversion",
+  "acronym": "",
+  "preferred_fa": "وارون‌سازی مدل",
+  "alternatives_fa": [
+   "بازگشتی مدل"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "وارون‌سازی (with نیم‌فاصله) correctly captures the technical meaning of inversion attack. بازگشتی مدل means 'recursive/feedback model' which is semantically wrong.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "accountability": {
+  "concept_id": "ACCOUNTABILITY",
+  "english": "Accountability",
+  "acronym": "",
+  "preferred_fa": "پاسخگویی",
+  "alternatives_fa": [
+   "مسئولیت‌پذیری"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "پاسخگویی is the standard formal term for accountability in governance contexts (used in UN, ISO, and Iranian government documents). مسئولیت‌پذیری (responsibility/responsibility-taking) is a near-synonym but better reserved for 'responsibility' to avoid confusion with Responsibility as a separate concept.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "dual-use foundation model": {
+  "concept_id": "DUAL_USE_FOUNDATION_MODEL",
+  "english": "Dual-Use Foundation Model",
+  "acronym": "",
+  "preferred_fa": "مدل پایه دوکاربردی",
+  "alternatives_fa": [
+   "مدل بنیادین دوجانبه‌کاربرد"
+  ],
+  "rejected_fa": [
+   "مدل پایه دوکاربردی"
+  ],
+  "definition_en": "",
+  "definition_fa": "مدل هوش مصنوعی با قابلیت‌های گسترده که می‌تواند هم برای کاربردهای سودمند و هم برای اهداف مضر یا مخرب مورد استفاده قرار گیرد.",
+  "domain": "genai",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "مدل بنیادین دوجانبه‌کاربرد is unwieldy. مدل پایه دوکاربردی is compact and clear: مدل پایه for 'foundation model' (consistent with standard usage) and دوکاربردی for 'dual-use'. Note that 'foundation model' itself should be rendered consistently as مدل پایه throughout the book.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "poisoning": {
+  "concept_id": "POISONING",
+  "english": "Poisoning",
+  "acronym": "",
+  "preferred_fa": "مسموم‌سازی",
+  "alternatives_fa": [],
+  "rejected_fa": [
+   "آلودگی داده"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "آلودگی داده (data contamination/pollution) is too broad and overlaps with 'data contamination'. مسموم‌سازی (with نیم‌فاصله) is the precise adversarial ML term, directly equivalent to 'poisoning attack' in security literature, and is used in Iranian cybersecurity publications.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "meaningful explanation": {
+  "concept_id": "MEANINGFUL_EXPLANATION",
+  "english": "Meaningful Explanation",
+  "acronym": "",
+  "preferred_fa": "تبیین معنادار",
+  "alternatives_fa": [
+   "توضیح بامعنا"
+  ],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "explainability",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "تبیین (systematic explanation/elucidation) correctly distinguishes from توضیح (simple description) and تفسیر (interpretation), maintaining the Explainability vs Interpretability distinction. معنادار is the correct formal adjective for 'meaningful'.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:11:01-0400"
+ },
+ "provenance": {
+  "concept_id": "PROVENANCE",
+  "english": "Provenance",
+  "acronym": "",
+  "preferred_fa": "منشأ",
+  "alternatives_fa": [
+   "منشأ و اصالت داده",
+   "پیشینه محتوا"
+  ],
+  "rejected_fa": [
+   "خاستگاه",
+   "منشأ و اصالت داده",
+   "پیشینه محتوا",
+   "خاستگاه"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'خاستگاه' carries a literary/philosophical flavour (birthplace, genesis) unsuitable for a technical governance term. 'منشأ' is the neutral, precise Persian word for origin/source used consistently in ISO/IEC and NIST-aligned Persian standards literature for provenance. 'منشأ و اصالت داده' is verbose for an index entry.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "resilience": {
+  "concept_id": "RESILIENCE",
+  "english": "Resilience",
+  "acronym": "",
+  "preferred_fa": "تاب‌آوری",
+  "alternatives_fa": [
+   "انعطاف‌پذیری سیستمی"
+  ],
+  "rejected_fa": [
+   "انعطاف‌پذیری سیستمی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'تاب‌آوری' is the established ISO/NIST-aligned Persian equivalent and is distinguished from 'انعطاف‌پذیری' (flexibility). The proposed form lacks the نیمفاصله; the approved form corrects it to 'تاب‌آوری'.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "evasion": {
+  "concept_id": "EVASION",
+  "english": "Evasion",
+  "acronym": "",
+  "preferred_fa": "گریز",
+  "alternatives_fa": [
+   "فرار از تشخیص"
+  ],
+  "rejected_fa": [
+   "فرار از تشخیص"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "security",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'گریز' is concise, formal, and matches adversarial-ML usage (e.g., 'حمله گریز' = evasion attack). 'فرار از تشخیص' is colloquially descriptive but too verbose for a standalone index term.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "human oversight": {
+  "concept_id": "HUMAN_OVERSIGHT",
+  "english": "Human Oversight",
+  "acronym": "",
+  "preferred_fa": "نظارت انسانی",
+  "alternatives_fa": [
+   "ارزیابی و مراقبت انسانی"
+  ],
+  "rejected_fa": [
+   "ارزیابی و مراقبت انسانی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'نظارت انسانی' is standard in Persian AI governance texts and directly maps to the NIST AI RMF concept. The alternative conflates oversight with evaluation.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "foundation model": {
+  "concept_id": "FOUNDATION_MODEL",
+  "english": "Foundation Model",
+  "acronym": "",
+  "preferred_fa": "مدل پایه",
+  "alternatives_fa": [
+   "مدل بنیادین"
+  ],
+  "rejected_fa": [
+   "مدل بنیادین"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "genai",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'مدل پایه' is the dominant form in AI Persian literature and is parallel to 'مدل زبانی بزرگ'. 'مدل بنیادین' is acceptable but less standard.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "standard": {
+  "concept_id": "STANDARD",
+  "english": "Standard",
+  "acronym": "",
+  "preferred_fa": "استاندارد",
+  "alternatives_fa": [
+   "معیار"
+  ],
+  "rejected_fa": [
+   "معیار"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "standards",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'استاندارد' is a fully integrated Persian loanword. 'معیار' means criterion/benchmark and should be reserved for those concepts to preserve near-synonym distinction.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "govern": {
+  "concept_id": "GOVERN",
+  "english": "Govern",
+  "acronym": "",
+  "preferred_fa": "حاکمیت",
+  "alternatives_fa": [
+   "کنترل و راهبری"
+  ],
+  "rejected_fa": [
+   "کنترل و راهبری"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "As the first NIST AI RMF core function, 'حاکمیت' is the standard Persian rendering. Single-word function names (حاکمیت / نگاشت / سنجش / مدیریت) are parallel and consistent across the framework.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "map": {
+  "concept_id": "MAP",
+  "english": "Map",
+  "acronym": "",
+  "preferred_fa": "نگاشت",
+  "alternatives_fa": [
+   "نگاشت زمینه",
+   "تابع نگاشت"
+  ],
+  "rejected_fa": [
+   "تفهیم و ساختاردهی زمینه",
+   "تابع نگاشت",
+   "تفهیم و ساختاردهی زمینه"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "As an NIST AI RMF core function name, brevity and parallelism with the other three functions (حاکمیت، سنجش، مدیریت) is essential. 'نگاشت' is a single formal word and is already established in Persian AI risk literature. 'تفهیم و ساختاردهی زمینه' is a descriptive phrase, not a function label.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "manage": {
+  "concept_id": "MANAGE",
+  "english": "Manage",
+  "acronym": "",
+  "preferred_fa": "مدیریت",
+  "alternatives_fa": [
+   "اقدام و مدیریت"
+  ],
+  "rejected_fa": [
+   "مدیریت ریسک",
+   "اقدام و مدیریت",
+   "مدیریت ریسک"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "governance",
+  "source_documents": [],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "The NIST RMF function is 'MANAGE', not 'Manage Risk'; appending 'ریسک' adds a qualifier absent from the source term and breaks parallelism with the other three single-word function names. 'مدیریت' alone is correct.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "ai and risk scores": {
+  "concept_id": "AI_RISK_SCORES",
+  "english": "AI and Risk Scores",
+  "acronym": "",
+  "preferred_fa": "نمره‌های ریسک هوش مصنوعی",
+  "alternatives_fa": [
+   "امتیازهای ریسک هوش مصنوعی"
+  ],
+  "rejected_fa": [
+   "امتیازهای ریسک هوش مصنوعی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "risk",
+  "source_documents": [
+   "NIST-PAPER-1-FOUNDATIONAL",
+   "NIST-PAPER-2-TRUSTWORTHINESS",
+   "NIST-PAPER-3-LEGAL",
+   "NIST-PAPER-4-BIAS"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'نمره' (score) is more precise in the psychometric/risk-scoring sense than 'امتیاز' (point/credit). The نیمفاصله in 'نمره‌های' is correct.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "artificial intelligence, trustworthiness, and litigation": {
+  "concept_id": "AI_TRUSTWORTHINESS_LITIGATION",
+  "english": "Artificial Intelligence, Trustworthiness, and Litigation",
+  "acronym": "",
+  "preferred_fa": "هوش مصنوعی، اعتمادپذیری و دادرسی",
+  "alternatives_fa": [
+   "هوش مصنوعی، قابلیت اعتماد و دادرسی"
+  ],
+  "rejected_fa": [
+   "هوش مصنوعی، اعتمادپذیری و داوری حقوقی",
+   "هوش مصنوعی، قابلیت اعتماد و دادرسی",
+   "هوش مصنوعی، اعتمادپذیری و داوری حقوقی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "legal",
+  "source_documents": [
+   "NIST-PAPER-1-FOUNDATIONAL",
+   "NIST-PAPER-2-TRUSTWORTHINESS",
+   "NIST-PAPER-3-LEGAL",
+   "NIST-PAPER-4-BIAS"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'داوری' means arbitration (ADR), which is distinct from litigation. 'دادرسی' correctly denotes judicial proceedings/litigation. 'اعتمادپذیری' is preferred over 'قابلیت اعتماد' for consistency with the book's trustworthiness terminology.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "artificial intelligence and bias – an evaluation": {
+  "concept_id": "AI_AND_BIAS_EVALUATION",
+  "english": "Artificial Intelligence and Bias – An Evaluation",
+  "acronym": "",
+  "preferred_fa": "هوش مصنوعی و سوگیری – یک ارزیابی",
+  "alternatives_fa": [
+   "هوش مصنوعی و تورش – ارزیابی"
+  ],
+  "rejected_fa": [
+   "هوش مصنوعی و تورش – ارزیابی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "bias",
+  "source_documents": [
+   "NIST-PAPER-1-FOUNDATIONAL",
+   "NIST-PAPER-2-TRUSTWORTHINESS",
+   "NIST-PAPER-3-LEGAL",
+   "NIST-PAPER-4-BIAS"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'سوگیری' is the book-wide standard for bias (distinct from 'انحراف'). 'تورش' is less common in AI contexts. Retaining 'یک ارزیابی' faithfully mirrors the English article 'An Evaluation' as part of the document title.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "ai, decision-making, and the role of judges": {
+  "concept_id": "AI_DECISION_MAKING_JUDGES",
+  "english": "AI, Decision-Making, and the Role of Judges",
+  "acronym": "",
+  "preferred_fa": "هوش مصنوعی، تصمیم‌گیری و نقش قضات",
+  "alternatives_fa": [],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "legal",
+  "source_documents": [
+   "NIST-PAPER-1-FOUNDATIONAL",
+   "NIST-PAPER-2-TRUSTWORTHINESS",
+   "NIST-PAPER-3-LEGAL",
+   "NIST-PAPER-4-BIAS"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "Accurate, formal, and natural. The نیمفاصله in 'تصمیم‌گیری' must be present (the proposed form 'تصمیمگیری' is a typographical error).",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "artificial intelligence and the justice system": {
+  "concept_id": "AI_AND_JUSTICE_SYSTEM",
+  "english": "Artificial Intelligence and the Justice System",
+  "acronym": "",
+  "preferred_fa": "هوش مصنوعی و نظام عدالت",
+  "alternatives_fa": [
+   "هوش مصنوعی و سامانه قضایی"
+  ],
+  "rejected_fa": [
+   "هوش مصنوعی و سامانه قضایی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "legal",
+  "source_documents": [
+   "NIST-PAPER-1-FOUNDATIONAL",
+   "NIST-PAPER-2-TRUSTWORTHINESS",
+   "NIST-PAPER-3-LEGAL",
+   "NIST-PAPER-4-BIAS"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'نظام عدالت' is the standard formal phrase for the justice system in Persian legal discourse. 'سامانه قضایی' is technically valid but 'سامانه' skews toward IT/software systems.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "standardization": {
+  "concept_id": "STANDARDIZATION",
+  "english": "Standardization",
+  "acronym": "ISO",
+  "preferred_fa": "استانداردسازی",
+  "alternatives_fa": [
+   "یکسان‌سازی استانداردی"
+  ],
+  "rejected_fa": [
+   "یکسانسازی استانداردی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "standards",
+  "source_documents": [
+   "NIST-AI-100-4-IPD",
+   "NIST-AI-STD-FED-PLAN-2019",
+   "NIST-SP-1270"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'استانداردسازی' is the accepted single-word form in ISIRI and ISO Persian translations. 'یکسان‌سازی استانداردی' is redundant and non-standard.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "receiver operating characteristic": {
+  "concept_id": "RECEIVER_OPERATING_CHARACTERISTIC_ALT",
+  "english": "RECEIVER OPERATING CHARACTERISTIC",
+  "acronym": "ROC",
+  "preferred_fa": "منحنی مشخصه عملکرد گیرنده",
+  "alternatives_fa": [
+   "منحنی عملکرد گیرنده"
+  ],
+  "rejected_fa": [
+   "منحنی عملکرد گیرنده"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "ml",
+  "source_documents": [
+   "NIST-AI-100-2E2025",
+   "NIST-AI-700-1"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "The full translation correctly includes 'مشخصه' (characteristic), preserving all three components of the acronym ROC. The abbreviated alternative drops the essential 'characteristic' element.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "executive order": {
+  "concept_id": "EXECUTIVE_ORDER",
+  "english": "Executive Order",
+  "acronym": "EO",
+  "preferred_fa": "فرمان اجرایی",
+  "alternatives_fa": [],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "legal",
+  "source_documents": [
+   "NIST-AI-600-1",
+   "NIST-SP-800-218A"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'فرمان اجرایی' is the established Persian rendering of U.S. Executive Orders used in official translations and legal journalism.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "daubert": {
+  "concept_id": "DAUBERT_STANDARD",
+  "english": "Daubert",
+  "acronym": "",
+  "preferred_fa": "استاندارد داوبرت",
+  "alternatives_fa": [
+   "معیار داوبرت"
+  ],
+  "rejected_fa": [
+   "معیار داوبرت"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "legal",
+  "source_documents": [
+   "NIST-PAPER-2-TRUSTWORTHINESS"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "Daubert is a proper-noun legal standard; transliterating as 'داوبرت' and pairing with 'استاندارد' (not 'معیار') aligns with the book's reserved use of 'معیار' for criterion/benchmark.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "information technology": {
+  "concept_id": "INFORMATION_TECHNOLOGY",
+  "english": "Information Technology",
+  "acronym": "BEIT",
+  "preferred_fa": "فناوری اطلاعات",
+  "alternatives_fa": [
+   "فناوری اطلاعاتی"
+  ],
+  "rejected_fa": [
+   "فناوری اطلاعاتی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "general",
+  "source_documents": [
+   "NIST-AI-100-4-IPD",
+   "NIST-AI-STD-FED-PLAN-2019"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'فناوری اطلاعات' is the ISIRI-standardised form. 'فناوری اطلاعاتی' uses an adjectival suffix incorrectly on what is a compound noun.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "general data protection regulation": {
+  "concept_id": "GDPR",
+  "english": "General Data Protection Regulation",
+  "acronym": "GDPR",
+  "preferred_fa": "مقررات عمومی حفاظت از داده‌ها",
+  "alternatives_fa": [
+   "مقررات عمومی حمایت از داده"
+  ],
+  "rejected_fa": [
+   "مقررات عمومی حمایت از داده"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "legal",
+  "source_documents": [
+   "NIST-IR-8312",
+   "NIST-IR-8367"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'حفاظت' (protection/safeguarding) is more precise than 'حمایت' (support/advocacy) for a data regulation context. The plural 'داده‌ها' is preferable in a regulatory title.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "enterprise risk management": {
+  "concept_id": "ENTERPRISE_RISK_MANAGEMENT",
+  "english": "Enterprise Risk Management",
+  "acronym": "ERM",
+  "preferred_fa": "مدیریت ریسک سازمانی",
+  "alternatives_fa": [
+   "مدیریت ریسک بنگاهی"
+  ],
+  "rejected_fa": [
+   "مدیریت ریسک بنگاهی"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "risk",
+  "source_documents": [
+   "NIST-IR-8312",
+   "NIST-SP-800-218A"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'سازمانی' is the dominant formal adjective for enterprise-level governance in Persian public-sector standards. 'بنگاهی' has a private-sector/commercial connotation less suited to NIST's neutral framing.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "detection error tradeoff": {
+  "concept_id": "DETECTION_ERROR_TRADEOFF",
+  "english": "Detection Error Tradeoff",
+  "acronym": "DET",
+  "preferred_fa": "موازنه خطای آشکارسازی",
+  "alternatives_fa": [
+   "بده‌بستان خطای تشخیص"
+  ],
+  "rejected_fa": [
+   "بده‌بستان خطای تشخیص"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "ml",
+  "source_documents": [
+   "NIST-AI-100-4-IPD",
+   "NIST-AI-700-1"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'موازنه' is the formal technical term for tradeoff in Persian signal-processing and ML literature. 'بده‌بستان' is colloquial. 'آشکارسازی' is the standard term in Persian signal/ML texts for detection.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "disentangling explainability": {
+  "concept_id": "DISENTANGLING_EXPLAINABILITY",
+  "english": "Disentangling explainability",
+  "acronym": "",
+  "preferred_fa": "تفکیک توضیح‌پذیری از تفسیرپذیری",
+  "alternatives_fa": [
+   "جدا کردن توضیح‌پذیری از تفسیرپذیری"
+  ],
+  "rejected_fa": [
+   "تفکیک‌پذیری توضیح‌پذیری",
+   "جدا کردن توضیح‌پذیری از تفسیرپذیری",
+   "تفکیک‌پذیری توضیح‌پذیری"
+  ],
+  "definition_en": "whether one can describe the mechanistic description of how a system made a specific prediction – from interpretability – whether a human can derive meaning from a system’s output for a specific use case – may form the basis for robust and reliable standards for explainable and interpretable ML system design, and should allow the development of standards that isolate technical design features from specific system functional requirements. This, in turn, should allow developers to segment the design process, such that system requirements may be defined at the appropriate level of abstraction. Ad",
+  "definition_fa": "تفکیک توضیح‌پذیری — توانایی توصیف مکانیسم درونی تصمیم‌گیری یک سیستم برای یک پیش‌بینی مشخص — از تفسیرپذیری — توانایی انسان در استخراج معنا از خروجی سیستم برای یک کاربرد مشخص — می‌تواند مبنایی استوار برای استانداردهای طراحی سیستم‌های ML توضیح‌پذیر و تفسیرپذیر فراهم آورد.",
+  "domain": "explainability",
+  "source_documents": [
+   "NIST-IR-8367"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'تفکیک‌پذیری توضیح‌پذیری' is a semantically opaque nominalization (it reads as 'the separability of explainability' rather than 'separating X from Y'). 'تفکیک توضیح‌پذیری از تفسیرپذیری' matches the NIST definition's explicit contrast between the two concepts and correctly uses 'توضیح‌پذیری' vs 'تفسیرپذیری' to mirror the explainability/interpretability distinction.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "nist special publication": {
+  "concept_id": "NIST_SPECIAL_PUBLICATION",
+  "english": "NIST Special Publication",
+  "acronym": "SP",
+  "preferred_fa": "انتشار ویژه NIST",
+  "alternatives_fa": [
+   "مطبوعات خاص NIST"
+  ],
+  "rejected_fa": [
+   "مطبوعات خاص NIST"
+  ],
+  "definition_en": "",
+  "definition_fa": "",
+  "domain": "standards",
+  "source_documents": [
+   "NIST-SP-800-218A"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "'انتشار ویژه' correctly renders 'Special Publication' as a document-series designation. 'مطبوعات خاص' incorrectly suggests a press/media outlet.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:13:19-0400"
+ },
+ "false positive rate": {
+  "concept_id": "FALSE_POSITIVE_RATE",
+  "english": "False Positive Rate",
+  "acronym": "FPR",
+  "preferred_fa": "نرخ مثبت کاذب",
+  "alternatives_fa": [
+   "نرخ مثبت‌های کاذب"
+  ],
+  "rejected_fa": [
+   "نرخ مثبت‌های کاذب"
+  ],
+  "definition_en": "",
+  "definition_fa": "نسبت نمونه‌های منفی واقعی که به‌اشتباه به‌عنوان مثبت طبقه‌بندی شده‌اند به کل نمونه‌های منفی واقعی.",
+  "domain": "ml",
+  "source_documents": [
+   "NIST-AI-700-1"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«نرخ مثبت کاذب» ترکیب صحیح وصفی در فارسی رسمی است و با «نرخ منفی کاذب» (False Negative Rate) تقارن ساختاری دارد. گزینه رقیب «مثبت‌های کاذب» با نیم‌فاصله نادرست نوشته شده و جمع‌بستن صفت وصفی در اینجا غیرضروری است.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:14:43-0400"
+ },
+ "deep learning": {
+  "concept_id": "DEEP_LEARNING",
+  "english": "Deep Learning",
+  "acronym": "DL",
+  "preferred_fa": "یادگیری عمیق",
+  "alternatives_fa": [],
+  "rejected_fa": [],
+  "definition_en": "",
+  "definition_fa": "زیرشاخه‌ای از یادگیری ماشین که از شبکه‌های عصبی چندلایه برای استخراج بازنمایی‌های سلسله‌مراتبی از داده‌ها بهره می‌گیرد.",
+  "domain": "ml",
+  "source_documents": [
+   "NIST-AI-100-2E2025",
+   "NIST-AI-100-4-IPD"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«یادگیری عمیق» معادل استاندارد، یکپارچه و پذیرفته‌شده در ادبیات فنی فارسی است؛ هیچ جایگزین رقیب معتبری وجود ندارد.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:14:43-0400"
+ },
+ "generative adversarial networks": {
+  "concept_id": "GENERATIVE_ADVERSARIAL_NETWORKS",
+  "english": "Generative Adversarial Networks",
+  "acronym": "GANs",
+  "preferred_fa": "شبکه‌های مولد رقابتی",
+  "alternatives_fa": [
+   "شبکه‌های خصمانه مولد"
+  ],
+  "rejected_fa": [
+   "شبکه‌های مولد تخاصمی",
+   "شبکه‌های خصمانه مولد",
+   "شبکه‌های مولد تخاصمی"
+  ],
+  "definition_en": "",
+  "definition_fa": "معماری یادگیری عمیق متشکل از دو شبکه عصبی (مولد و تمییزدهنده) که در یک فرایند رقابتی برای تولید داده‌های مصنوعی واقع‌نما با یکدیگر آموزش می‌بینند.",
+  "domain": "genai",
+  "source_documents": [
+   "NIST-AI-100-4-IPD",
+   "NIST-PAPER-1-FOUNDATIONAL"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«تخاصمی» و «خصمانه» هر دو بار معنایی منفی و حقوقی/نظامی دارند که در زمینه ML گمراه‌کننده است. واژه adversarial در این بافت به معنای رقابت بازی‌نظری (minimax) است؛ «رقابتی» این مفهوم را دقیق‌تر و رسمی‌تر منتقل می‌کند و با کاربرد مستقر در متون دانشگاهی فارسی همخوانی دارد. ترتیب وصف «شبکه‌های مولد رقابتی» نیز از نظر دستوری صحیح‌تر از «خصمانه مولد» است.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:14:43-0400"
+ },
+ "ai risk management framework": {
+  "concept_id": "AI_RISK_MANAGEMENT_FRAMEWORK",
+  "english": "AI Risk Management Framework",
+  "acronym": "RMF",
+  "preferred_fa": "چارچوب مدیریت ریسک هوش مصنوعی",
+  "alternatives_fa": [
+   "چارچوب مدیریت خطر هوش مصنوعی (AI RMF)"
+  ],
+  "rejected_fa": [
+   "چارچوب مدیریت خطر هوش مصنوعی (AI RMF)",
+   "چارچوب مدیریت ریسک هوش مصنوعی"
+  ],
+  "definition_en": "",
+  "definition_fa": "چارچوب داوطلبانه‌ای که NIST برای کمک به سازمان‌ها در شناسایی، ارزیابی و کاهش ریسک‌های مرتبط با سیستم‌های هوش مصنوعی در طول چرخه حیات آن‌ها منتشر کرده است.",
+  "domain": "risk",
+  "source_documents": [
+   "NIST-AI-600-1",
+   "NIST-PAPER-1-FOUNDATIONAL"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«ریسک» در حوزه مدیریت ریسک سازمانی (ISO 31000، NIST RMF) اصطلاح فنی مستقر است و با «خطر» (hazard/danger) که بار فیزیکی و ایمنی دارد تمایز معنایی مهمی دارد؛ ثبات این تمایز در سرتاسر کتاب ضروری است. مخفف «AI RMF» باید به‌صورت لاتین حفظ شود و درون پرانتز در متن اصلی معرفی شود، نه در عنوان اصطلاح‌نامه.",
+  "high_impact": true,
+  "reviewed_at": "2026-09-17T18:14:43-0400"
+ },
+ "disabilities act": {
+  "concept_id": "AMERICANS_WITH_DISABILITIES_ACT",
+  "english": "Disabilities Act",
+  "acronym": "ADA",
+  "preferred_fa": "قانون معلولیت آمریکا",
+  "alternatives_fa": [
+   "قانون توان‌خواهان آمریکا"
+  ],
+  "rejected_fa": [
+   "قانون آمریکایی‌های دارای معلولیت",
+   "قانون توانخواهان آمریکا",
+   "قانون آمریکایی‌های دارای معلولیت"
+  ],
+  "definition_en": "",
+  "definition_fa": "قانون فدرال ایالات متحده (۱۹۹۰) که تبعیض بر اساس معلولیت را در زمینه‌های استخدام، خدمات عمومی و مکان‌های عمومی ممنوع می‌کند.",
+  "domain": "legal",
+  "source_documents": [
+   "NIST-PAPER-4-BIAS",
+   "NIST-SP-1270"
+  ],
+  "status": "approved",
+  "reviewer": "antigravity/claude-sonnet-4-6",
+  "review_mode": "REVIEW_MAX",
+  "rationale": "«قانون معلولیت آمریکا» دقیق، رسمی و اقتصادی است. «آمریکایی‌های دارای معلولیت» ترجمه تحت‌اللفظی گنگ است؛ «توانخواهان» گرچه مؤدبانه است اما در زبان حقوقی رسمی ایران کمتر رایج است. مخفف ADA به‌صورت لاتین حفظ می‌شود.",
+  "high_impact": false,
+  "reviewed_at": "2026-09-17T18:14:43-0400"
+ }
+}

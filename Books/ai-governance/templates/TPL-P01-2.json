@@ -1,0 +1,66 @@
+{
+ "template_id": "TPL-P01-2",
+ "title_fa": "غربال محدودیت‌های ذاتی و ریسک‌های بنیادین سامانهٔ هوش مصنوعی",
+ "derived_from": [
+  "NIST-AI-100-3",
+  "AAAS-NIST-PAPER-1"
+ ],
+ "fields": [
+  {
+   "name_fa": "شناسهٔ مورد کاربرد",
+   "name_en": "Use Case ID",
+   "description_fa": "ارجاع به ردیف مربوط در فهرست دارایی‌ها",
+   "example_fa": "AIC-001"
+  },
+  {
+   "name_fa": "عدم قطعیت و خطا",
+   "name_en": "Uncertainty and Error",
+   "description_fa": "تخمین نرخ خطای شناخته‌شده و پیامد آن",
+   "example_fa": "خطای تقریبی ۸٪؛ نیازمند بازبینی انسانی"
+  },
+  {
+   "name_fa": "سوگیری بالقوه",
+   "name_en": "Potential Bias",
+   "description_fa": "سوگیری محتمل در داده، برچسب یا طراحی مدل",
+   "example_fa": "دادهٔ تاریخی ناکافی از گروهی از کاربران"
+  },
+  {
+   "name_fa": "تاریک‌ساختگری و تبیین‌پذیری",
+   "name_en": "Opacity and Explainability",
+   "description_fa": "نیاز به توضیح خروجی و ابزار موردنیاز برای آن",
+   "example_fa": "نیاز به ذکر دلایل پیشنهاد مدل به کارمند"
+  },
+  {
+   "name_fa": "ملاحظات امنیتی",
+   "name_en": "Security Considerations",
+   "description_fa": "تهدیدهای شناخته‌شدهٔ مرتبط با دارایی",
+   "example_fa": "احتمال نشت داده از طریق خروجی مدل"
+  },
+  {
+   "name_fa": "درگیری دادهٔ شخصی",
+   "name_en": "Personal Data Involvement",
+   "description_fa": "وجود دادهٔ شخصی در ورودی/خروجی و ملاحظات آن",
+   "example_fa": "بله؛ شمارهٔ تماس مشتریان"
+  },
+  {
+   "name_fa": "اقدام کاهشی",
+   "name_en": "Mitigation Action",
+   "description_fa": "کنترل کاهشی تعیین‌شده برای هر مورد",
+   "example_fa": "ناشناس‌سازی داده و بازبینی انسانی"
+  },
+  {
+   "name_fa": "مالک ریسک",
+   "name_en": "Risk Owner",
+   "description_fa": "مسئول پیگیری و به‌روزرسانی ثبت ریسک",
+   "example_fa": "مدیر ریسک"
+  },
+  {
+   "name_fa": "تاریخ و نتیجهٔ بازبینی",
+   "name_en": "Review Date and Outcome",
+   "description_fa": "آخرین بازبینی انجام‌شده و تغییرات آن",
+   "example_fa": "بازبینی فصلی؛ بدون تغییر اساسی"
+  }
+ ],
+ "origin": "editorial_template_ir",
+ "note_fa": "نمونه پیشنهادی تدوینگر بر پایه مفاهیم مطرح‌شده در منابع این فصل"
+}

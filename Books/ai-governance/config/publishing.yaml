@@ -1,0 +1,43 @@
+# Publishing configuration (MasterPrompt §31, §49–§52, §75–§78)
+brand: "کهن‌دژ"
+website: "https://kohandezh.com"
+edition_id: "2026E1"
+book_title_fa: "راهنمای جامع حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی"
+book_title_en: "Comprehensive Guide to AI Governance, Security and Risk Management (Persian Edition based on NIST publications)"
+compiler: "محمدعلی کهن‌دژ"
+compiler_en: "Mohammadali Kohandezh"
+
+parts:                        # macro structure from MasterPrompt §31 (chapters refined after corpus analysis)
+  - {id: P01, slug: foundations,          title_fa: "مبانی و زبان مشترک هوش مصنوعی",              sources: [NIST-AI-100-3, NIST-PAPER-1-FOUNDATIONAL]}
+  - {id: P02, slug: ai-risk-management,   title_fa: "حاکمیت و مدیریت ریسک هوش مصنوعی",             sources: [NIST-AI-100-1, NIST-AI-RMF-PLAYBOOK, NIST-AI-600-1]}
+  - {id: P03, slug: ai-security,          title_fa: "امنیت هوش مصنوعی و مدل‌های بنیادین",           sources: [NIST-AI-100-2E2025, NIST-AI-800-1-IPD, NIST-SP-800-218A]}
+  - {id: P04, slug: trust-bias-explainability, title_fa: "اعتماد، سوگیری، توضیح‌پذیری و تفسیرپذیری", sources: [NIST-IR-8312, NIST-IR-8367, NIST-SP-1270]}
+  - {id: P05, slug: genai-evaluation,     title_fa: "ارزیابی هوش مصنوعی مولد و محتوای مصنوعی",      sources: [NIST-AI-700-1, NIST-AI-700-2, NIST-AI-100-4-IPD]}
+  - {id: P06, slug: ai-law,               title_fa: "هوش مصنوعی، حقوق و نظام قضایی",               sources: [NIST-PAPER-2-TRUSTWORTHINESS, NIST-PAPER-3-LEGAL, NIST-PAPER-4-BIAS]}
+  - {id: P07, slug: standards,            title_fa: "اکوسیستم استانداردسازی هوش مصنوعی",           sources: [NIST-AI-STD-FED-PLAN-2019]}
+
+html:
+  base_path: "/fa/ai-book/"
+  one_page_per: chapter
+  no_js_required: true
+  lang: fa
+  dir: rtl
+  json_ld_types: [Book, Chapter, TechArticle]
+  verify_path: "/ai-book/verify/"
+  source_box_fields: [منبع اصلی, شناسه سند, عنوان اصلی, نویسندگان, نوع انتشار, وضعیت انتشار, تاریخ, بخش‌های استفاده‌شده, صفحات, DOI, شناسه محتوای کهن‌دژ]
+
+docx:
+  output: docx/fa/book-fa.docx
+  engine: python-docx (native RTL styles) ; validation via LibreOffice headless if available
+  page: A4
+  styles: [Title, Subtitle, Heading 1-4, Body, Quote, Caption, Table Grid RTL, Localization Note, Implementation Box, Executive Box, Technical Box, Checklist, Template, Iranian Scenario, Editorial Note, Code/ID Mono]
+
+pdf:
+  output: pdf/fa/book-fa.pdf
+  engine: "WeasyPrint (HTML+CSS Paged Media, RTL, Vazirmatn) ; fallback: LibreOffice DOCX→PDF"
+  bookmarks: true
+  xmp_metadata: true
+
+images:
+  manifest: images/manifests/planned-images.json
+  generate_only_approved: true
