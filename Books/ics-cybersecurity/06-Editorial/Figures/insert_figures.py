@@ -2,7 +2,7 @@ from pathlib import Path
 from lxml import etree as E
 from PIL import Image
 import json,zipfile,copy,re,hashlib
-R=Path(__file__).resolve().parents[2];OUT=R/'01-Manuscript/کتاب-امنیت-سایبری-IACS-با-تصاویر-فارسی.docx';SRC=R/'01-Manuscript/کتاب-امنیت-سایبری-IACS-فصل۵-اصلاح‌شده.docx'
+R=Path(__file__).resolve().parents[2];OUT=R/'01-Manuscript/کتاب-امنیت-سایبری-IACS-با-تصاویر-فارسی.docx';SRC=R/'01-Manuscript/کتاب-امنیت-سایبری-IACS-chapter-05-revised.docx'
 W='http://schemas.openxmlformats.org/wordprocessingml/2006/main';REL='http://schemas.openxmlformats.org/package/2006/relationships';RN='http://schemas.openxmlformats.org/officeDocument/2006/relationships';WP='http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing';A='http://schemas.openxmlformats.org/drawingml/2006/main';PIC='http://schemas.openxmlformats.org/drawingml/2006/picture';N={'w':W,'wp':WP,'a':A,'r':RN}
 def el(t,**attrs):return E.Element('{'+W+'}'+t,**{'{'+W+'}'+k:str(v) for k,v in attrs.items()})
 def text(p):return ''.join(p.xpath('.//w:t/text()',namespaces=N))

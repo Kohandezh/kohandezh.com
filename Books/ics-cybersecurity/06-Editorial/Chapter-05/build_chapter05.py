@@ -99,7 +99,7 @@ add('مسیر کاربردی پیشنهادی نویسنده: ابتدا محد�
 add('برای هر الزام در پروندهٔ پروژه، شناسهٔ SR/RE، بند منبع، سطح هدف FR، جزء یا فرایند مسئول، تنظیم یا تدبیر، روش آزمون، نتیجه و ریسک باقی‌مانده ثبت شود. نباید داشتن گواهی یک جزء را بدون بررسی معماری و پیکربندی به انطباق کل سیستم تعمیم داد.')
 add('منابع فصل: IEC 62443-3-3:2013، ویرایش 1.0، بندهای 3 تا 11 و پیوست‌های A و B؛ IEC 62443-3-3:2013/COR1:2014، اصلاحیهٔ آوریل 2014، بند 7.6.4 و جدول B.1. ارجاع‌های این فصل به 3-2 و 4-2 برای تفکیک دامنه است؛ متن کامل نسخه‌های جدید آن‌ها در این مرحله ترجمه نشده است.')
 
-src=ROOT/'01-Manuscript/کتاب-امنیت-سایبری-IACS-پیش‌نویس.docx';out=src.with_name('کتاب-امنیت-سایبری-IACS-فصل۵-اصلاح‌شده.docx');z=zipfile.ZipFile(src);root=E.fromstring(z.read('word/document.xml'));body=root.find('w:body',NS)
+src=ROOT/'01-Manuscript/کتاب-امنیت-سایبری-IACS-پیش‌نویس.docx';out=src.with_name('کتاب-امنیت-سایبری-IACS-chapter-05-revised.docx');z=zipfile.ZipFile(src);root=E.fromstring(z.read('word/document.xml'));body=root.find('w:body',NS)
 def text(p):return ''.join(p.xpath('.//w:t/text()',namespaces=NS))
 starts=[i for i,p in enumerate(body) if text(p).startswith('فصل 5:')];start=starts[-1];end=next(i for i in range(start+1,len(body)) if text(body[i]).startswith('فصل 6:'))
 before=[E.tostring(p) for p in list(body)[:start]];after=[E.tostring(p) for p in list(body)[end:]]
@@ -118,7 +118,7 @@ for p in list(pb):pb.remove(p)
 for p in content:pb.append(copy.deepcopy(p))
 if sect is not None:pb.append(sect)
 package(Path('/tmp/iot-step1/chapter05-preview.docx'),E.tostring(previewroot,xml_declaration=True,encoding='UTF-8',standalone=True))
-(EDIT/'فصل۵-اصلاح‌شده.md').write_text('\n'.join(md))
+(EDIT/'chapter-05-revised.md').write_text('\n'.join(md))
 with (EDIT/'SL-mapping-corrected.csv').open('w',newline='') as f:
  w=csv.writer(f);w.writerow(['id','source_SR_clause','SL1','SL2','SL3','SL4']);w.writerows(rows_csv)
 assert len(rows_csv)==100

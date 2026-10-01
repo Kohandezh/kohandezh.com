@@ -1,4 +1,33 @@
-# وضعیت پوشهٔ کتاب — ۱ اکتبر ۲۰۲۶
+# کتاب امنیت سایبری در سیستم‌های اتوماسیون صنعتی (IEC 62443)
+
+## ساختار پوشه
+
+```
+Books/ics-cybersecurity/
+├── 01-Manuscript/            متن کتاب (Word) — بیرون از git
+├── 02-Standards/             متن استانداردهای IEC 62443 — بیرون از git
+├── 03-Persian-References/    مراجع فارسی — بیرون از git
+├── 04-Brand-Assets/          لوگو و تصاویر — بیرون از git
+├── 05-Archive/               نسخه‌های قدیمی و منابع تاریخی — بیرون از git
+├── 06-Editorial/             کار ویرایشی (در git)
+│   ├── Chapter-05/           بازنویسی فصل ۵: chapter-05-revised.md، chapter-05-revision-report.md، داده‌ها و build_chapter05.py
+│   ├── Figures/              نقشهٔ تصاویر (figure-map-revised.md) و اسکریپت‌های تولید/درج شکل
+│   ├── Translation-Preparation/
+│   ├── chapter-source-map.csv
+│   ├── sources-preparation.md
+│   └── table-of-contents-final.md
+├── 07-Figures/               شکل‌های SVG و manifest.json (در git)
+├── SOURCES.json              وضعیت و نشانی منابع
+└── README.md                 همین فایل
+```
+
+**قاعدهٔ نام‌گذاری:** نام فایل‌ها و پوشه‌های تازه انگلیسی، با حروف کوچک و خط تیره (`chapter-06-revised.md`)؛ پوشه‌های ترتیبی با پیشوند عددی (`01-…`). متن فارسی داخل فایل‌ها می‌آید، نه در نام آن‌ها. فایل‌های Word داخل `01-Manuscript` نام فارسی خود را نگه داشته‌اند چون اسکریپت‌های فصل ۵ و درج تصاویر با همین نام‌ها آن‌ها را می‌خوانند.
+
+**نام‌های پیشین (۱ اکتبر ۲۰۲۶):** `فصل۵-اصلاح‌شده.md` → `chapter-05-revised.md` · `گزارش-اصلاح-فصل۵.md` → `chapter-05-revision-report.md` · `نقشه-تصاویر-اصلاح‌شده.md` → `figure-map-revised.md` · `تهیه-منابع-کامل.md` → `sources-preparation.md` · `فهرست-تثبیت‌شده-کتاب.md` → `table-of-contents-final.md`. همهٔ ارجاع‌ها (اسکریپت‌ها، JSON و همین README) به‌روز شده‌اند.
+
+**یادداشت‌های کاری و گزارش وضعیت** داخل مخزن نگه داشته نمی‌شوند؛ در `/Users/emperor/Documents/AI/kohandezh-archive/` بایگانی می‌شوند.
+
+## وضعیت پوشهٔ کتاب — ۱ اکتبر ۲۰۲۶
 
 - 01-Manuscript: متن کتاب و نقشهٔ درج تصاویر؛ محتوای Word تغییر نکرده است.
 - 02-Standards: منابع اصلی موجود؛ Official-Previews شامل پیش‌نمایش رسمی منابع جاافتاده است، نه نسخهٔ کامل.
@@ -8,7 +37,7 @@
 
 دو نسخهٔ دقیقاً تکراری حذف شدند: PDF ترجمهٔ فارسی در Raw Book و NGOIOT5.jpg که با NGOIOT4.jpg یکسان بود. فایل .DS_Store نیز حذف شد. سایر محتواهای متمایز حفظ شدند.
 
-نام قدیم و جدید فایل‌ها در FILE-OPERATIONS.json و نشانی دانلود، تعداد صفحات و وضعیت منابع در SOURCES.json ثبت شده است.
+نشانی دانلود، تعداد صفحات و وضعیت منابع در SOURCES.json ثبت شده است. فهرست عملیات فایل (FILE-OPERATIONS.json) به بایگانی بیرون از مخزن منتقل شد: `/Users/emperor/Documents/AI/kohandezh-archive/2026-10-01/book-agent-notes/ics-cybersecurity/`.
 
 ## منابعی که متن کامل آن‌ها هنوز لازم است
 
@@ -30,7 +59,7 @@
 
 ## به‌روزرسانی مرحلهٔ ۱
 
-فهرست ۱۴ فصل در `06-Editorial/فهرست-تثبیت‌شده-کتاب.md` تثبیت شد؛ جدول نگاشت در `chapter-source-map.csv` است. تهیهٔ منابع کامل هنوز انجام نشده و منتظر مسیر دسترسی/خرید است. ترجمهٔ کاری Luna و قرارداد ترجمه در `Translation-Preparation` قرار دارند و در متن کتاب ادغام نشده‌اند. گزارش وضعیت در `06-Editorial/گزارش-مرحله-۱.md` و `TASK-STATUS.json` ثبت شد.
+فهرست ۱۴ فصل در `06-Editorial/table-of-contents-final.md` تثبیت شد؛ جدول نگاشت در `chapter-source-map.csv` است. تهیهٔ منابع کامل هنوز انجام نشده و منتظر مسیر دسترسی/خرید است. ترجمهٔ کاری Luna و قرارداد ترجمه در `Translation-Preparation` قرار دارند و در متن کتاب ادغام نشده‌اند. گزارش مرحلهٔ ۱ و `TASK-STATUS.json` به بایگانی بیرون از مخزن منتقل شدند: `/Users/emperor/Documents/AI/kohandezh-archive/2026-10-01/book-agent-notes/ics-cybersecurity/`.
 
 
 تصمیم کاربر: فعلاً خرید انجام نشود؛ فهرست و آماده‌سازی کامل شوند. فهرست و آماده‌سازی ترجمه تکمیل شده‌اند؛ تهیهٔ متن کامل منابع به تعویق افتاده است. منابع مفقود همچنان مفقودند و پیش‌نمایش‌ها جایگزین آن‌ها نیستند.
