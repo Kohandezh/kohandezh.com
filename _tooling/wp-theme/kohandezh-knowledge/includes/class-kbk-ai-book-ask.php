@@ -231,7 +231,7 @@ final class KBK_AI_Book_Ask {
 	 * @param array<int,array<string,mixed>> $retrieval Retrieval models.
 	 * @return array<string,mixed>|string
 	 */
-	private function call_provider( string $question, array $retrieval ): array|string {
+	private function call_provider( string $question, array $retrieval ) {
 		$contexts = array();
 		foreach ( $retrieval as $item ) {
 			$plain = '';
