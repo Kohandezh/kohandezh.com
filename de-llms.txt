@@ -34,6 +34,7 @@ Das öffentliche Archiv dokumentiert 43 Nachweise zu Qualifikationen und berufli
 - [Zertifikatsarchiv](https://kohandezh.com/certificates/): vollständiger Nachweis der Fachzertifizierungen
 - [Blog](https://kohandezh.com/blog/): Beiträge zu KI, Beruf und Technologie; übersetzte Oberflächen sind für unterstützte Beiträge verfügbar
 - [Portfolio](https://kohandezh.com/portfolio/): ausgewählte Projektarbeiten
+- [Bücher](https://kohandezh.com/books/): Fachbücher von Mohammad Ali Kohandezh; die persische Ausgabe von „AI Governance“ unter https://kohandezh.com/fa/books/ai-governance/ (Maschinenfassung: https://kohandezh.com/fa/books/ai-governance/llms.txt)
 - Weitere Sprachen: [Englisch](https://kohandezh.com/) · [Persisch](https://kohandezh.com/fa/) · [Arabisch](https://kohandezh.com/ar/) · [Spanisch](https://kohandezh.com/es/) · [Französisch](https://kohandezh.com/fr/) · [Türkisch](https://kohandezh.com/tr/) · [Chinesisch](https://kohandezh.com/zh/) · [Japanisch](https://kohandezh.com/ja/) · [Russisch](https://kohandezh.com/ru/)
 
 ## Hinweise für KI-Assistenten und Crawler

@@ -1,5 +1,7 @@
 # Kohandezh AI Reference Book — production pipeline
 
+> Bundle format (frozen contract for every book): [`../BOOK-FORMAT.md`](../BOOK-FORMAT.md).
+
 Persian (fa-IR) integrated reference book built from 18 NIST AI publications. Governing specification: `MasterPrompt.MD`. Owner: محمدعلی کهن‌دژ · kohandezh.com.
 
 ## Layout

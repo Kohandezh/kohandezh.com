@@ -26,6 +26,8 @@ function get_template_directory_uri() { return 'https://example.test/theme'; }
 function trailingslashit( $value ) { return rtrim( $value, '/\\' ) . '/'; }
 function wp_enqueue_style( $handle, $src, $deps, $version ) { $GLOBALS['kbk_test_assets'][] = array( 'style', $handle, $src, $version ); }
 function wp_enqueue_script( $handle, $src, $deps, $version, $footer ) { $GLOBALS['kbk_test_assets'][] = array( 'script', $handle, $src, $version, $footer ); }
+function get_option( $name, $default = false ) { return array_key_exists( $name, $GLOBALS['kbk_test_options'] ?? array() ) ? $GLOBALS['kbk_test_options'][ $name ] : $default; }
+function home_url( $path = '' ) { return 'https://example.test' . $path; }
 
 require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-artifacts.php';
 require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-repository.php';
@@ -42,12 +44,71 @@ function is_single() { return false; }
 require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-routes.php';
 
 KBK_AI_Book::hooks();
-if ( 8 !== count( $GLOBALS['kbk_test_hooks'] ) ) {
-	fwrite( STDERR, "FAIL hook registration\n" ); exit( 1 );
+$hook_names = array_map( static function ( array $hook ): string { return $hook[1] . '@' . $hook[2]; }, $GLOBALS['kbk_test_hooks'] );
+if ( 10 !== count( $GLOBALS['kbk_test_hooks'] ) || ! in_array( 'robots_txt@20', $hook_names, true ) || 2 !== count( array_keys( $hook_names, 'template_redirect@1', true ) ) ) {
+	fwrite( STDERR, "FAIL hook registration (10 hooks incl. the book feeds at template_redirect@1 and robots_txt@20)\n" ); exit( 1 );
 }
 KBK_AI_Book::rewrite_rules();
-if ( 40 !== count( $GLOBALS['kbk_test_rewrites'] ) || '^books/?$' !== $GLOBALS['kbk_test_rewrites'][0]['regex'] || 'index.php?kbk_ai_book=library' !== $GLOBALS['kbk_test_rewrites'][0]['query'] || '^fa/books/?$' !== $GLOBALS['kbk_test_rewrites'][1]['regex'] || '^ai-book/?$' !== $GLOBALS['kbk_test_rewrites'][2]['regex'] || '^ai-book/read/?$' !== $GLOBALS['kbk_test_rewrites'][3]['regex'] || '^ai-book/search/?$' !== $GLOBALS['kbk_test_rewrites'][4]['regex'] || '^ai-book/glossary/?$' !== $GLOBALS['kbk_test_rewrites'][5]['regex'] || '^ai-book/sources/?$' !== $GLOBALS['kbk_test_rewrites'][6]['regex'] || '^ai-book/templates/?$' !== $GLOBALS['kbk_test_rewrites'][7]['regex'] || '^ai-book/concepts/?$' !== $GLOBALS['kbk_test_rewrites'][8]['regex'] || '^ai-book/graph/?$' !== $GLOBALS['kbk_test_rewrites'][9]['regex'] || '^ai-book/ask/?$' !== $GLOBALS['kbk_test_rewrites'][10]['regex'] || '^ai-book/pdf/?$' !== $GLOBALS['kbk_test_rewrites'][11]['regex'] || '^ai-book/request-pdf/?$' !== $GLOBALS['kbk_test_rewrites'][12]['regex'] || '^ai-book/pdf/file/?$' !== $GLOBALS['kbk_test_rewrites'][13]['regex'] || '^books/ai-governance/?$' !== $GLOBALS['kbk_test_rewrites'][14]['regex'] || '^books/ai-governance/news/?$' !== $GLOBALS['kbk_test_rewrites'][15]['regex'] || '^books/ai-governance/read/?$' !== $GLOBALS['kbk_test_rewrites'][16]['regex'] || '^books/ai-governance/pdf/file/?$' !== $GLOBALS['kbk_test_rewrites'][26]['regex'] || '^fa/books/ai-governance/?$' !== $GLOBALS['kbk_test_rewrites'][27]['regex'] || '^fa/books/ai-governance/news/?$' !== $GLOBALS['kbk_test_rewrites'][28]['regex'] || '^fa/books/ai-governance/read/?$' !== $GLOBALS['kbk_test_rewrites'][29]['regex'] || '^fa/books/ai-governance/pdf/file/?$' !== $GLOBALS['kbk_test_rewrites'][39]['regex'] ) {
-	fwrite( STDERR, "FAIL rewrite rules\n" ); exit( 1 );
+$rules = $GLOBALS['kbk_test_rewrites'];
+$book  = '([a-z0-9]+(?:-[a-z0-9]+)*)';
+$views = '(read|search|glossary|sources|templates|concepts|graph|ask|pdf|request-pdf)';
+$want_rules = array(
+	0  => array( '^books/?$', 'index.php?kbk_ai_book=library' ),
+	1  => array( '^fa/books/?$', 'index.php?kbk_ai_book=library' ),
+	2  => array( '^ai-book/?$', 'index.php?kbk_ai_book=home' ),
+	3  => array( '^ai-book/read/?$', 'index.php?kbk_ai_book=read' ),
+	12 => array( '^ai-book/request-pdf/?$', 'index.php?kbk_ai_book=request-pdf' ),
+	13 => array( '^ai-book/pdf/file/?$', 'index.php?kbk_ai_book=pdf&kbk_pdf_file=1' ),
+	14 => array( '^books/' . $book . '/?$', 'index.php?kbk_ai_book=governance&kbk_book=$matches[1]' ),
+	15 => array( '^books/' . $book . '/news/?$', 'index.php?kbk_ai_book=governance-news&kbk_book=$matches[1]' ),
+	16 => array( '^books/' . $book . '/' . $views . '/?$', 'index.php?kbk_ai_book=$matches[2]&kbk_book=$matches[1]' ),
+	17 => array( '^books/' . $book . '/pdf/file/?$', 'index.php?kbk_ai_book=pdf&kbk_pdf_file=1&kbk_book=$matches[1]' ),
+	18 => array( '^fa/books/' . $book . '/?$', 'index.php?kbk_ai_book=governance&kbk_book=$matches[1]' ),
+	20 => array( '^fa/books/' . $book . '/' . $views . '/?$', 'index.php?kbk_ai_book=$matches[2]&kbk_book=$matches[1]' ),
+	22 => array( '^fa/books/' . $book . '/sitemap\.xml$', 'index.php?kbk_ai_book=sitemap&kbk_book=$matches[1]' ),
+	23 => array( '^fa/books/' . $book . '/llms\.txt$', 'index.php?kbk_ai_book=llms&kbk_book=$matches[1]' ),
+	24 => array( '^ai-book/verify/?$', 'index.php?kbk_ai_book=verify' ),
+);
+if ( 25 !== count( $rules ) ) {
+	fwrite( STDERR, "FAIL rewrite rule count\n" ); exit( 1 );
+}
+foreach ( $want_rules as $index => list( $regex, $query ) ) {
+	if ( $regex !== $rules[ $index ]['regex'] || $query !== $rules[ $index ]['query'] || 'top' !== $rules[ $index ]['position'] ) {
+		fwrite( STDERR, "FAIL rewrite rule {$index}\n" ); exit( 1 );
+	}
+}
+// WordPress matches a request path against the rules in order (WP::parse_request)
+// and substitutes $matches[n]; emulate that for the generic book routes.
+$route = static function ( string $path ) use ( $rules ): ?string {
+	foreach ( $rules as $rule ) {
+		if ( 1 === preg_match( '#^' . $rule['regex'] . '#', $path, $matches ) ) {
+			return preg_replace_callback( '/\$matches\[(\d+)\]/', static function ( array $m ) use ( $matches ): string { return $matches[ (int) $m[1] ] ?? ''; }, $rule['query'] );
+		}
+	}
+	return null;
+};
+foreach ( array(
+	'books'                                  => 'index.php?kbk_ai_book=library',
+	'fa/books/'                              => 'index.php?kbk_ai_book=library',
+	'fa/books/ai-governance/'                => 'index.php?kbk_ai_book=governance&kbk_book=ai-governance',
+	'fa/books/ai-governance/read/'           => 'index.php?kbk_ai_book=read&kbk_book=ai-governance',
+	'fa/books/other-slug/read/'              => 'index.php?kbk_ai_book=read&kbk_book=other-slug',
+	'fa/books/other-slug/request-pdf'        => 'index.php?kbk_ai_book=request-pdf&kbk_book=other-slug',
+	'fa/books/other-slug/news/'              => 'index.php?kbk_ai_book=governance-news&kbk_book=other-slug',
+	'fa/books/other-slug/pdf/'               => 'index.php?kbk_ai_book=pdf&kbk_book=other-slug',
+	'fa/books/other-slug/pdf/file/'          => 'index.php?kbk_ai_book=pdf&kbk_pdf_file=1&kbk_book=other-slug',
+	'fa/books/other-slug/sitemap.xml'        => 'index.php?kbk_ai_book=sitemap&kbk_book=other-slug',
+	'fa/books/other-slug/llms.txt'           => 'index.php?kbk_ai_book=llms&kbk_book=other-slug',
+	'books/other-slug/glossary/'             => 'index.php?kbk_ai_book=glossary&kbk_book=other-slug',
+	'ai-book/verify/'                        => 'index.php?kbk_ai_book=verify',
+	'fa/books/Other_Slug/read/'              => null,
+	'fa/books/other-slug/unknown-view/'      => null,
+	'fa/books/other-slug/sitemapXxml'        => null,
+	'fa/books/other-slug/part-a/chapter-b/'  => null,
+) as $path => $want ) {
+	if ( $want !== $route( $path ) ) {
+		fwrite( STDERR, "FAIL route for {$path}\n" ); exit( 1 );
+	}
 }
 
 $GLOBALS['kbk_test_query']['kbk_ai_book'] = 'home';
@@ -222,7 +283,7 @@ if ( 1 !== KBK_AI_Book::requested_page() ) {
 $GLOBALS['kbk_test_query'] = array();
 
 $reader_html = KBK_AI_Book::render_reader_markdown( "## پیشگفتار\n\n- مورد نخست\n- مورد دوم\n\n| عنوان | مقدار |\n| --- | --- |\n| ایمن | <script>alert(1)</script> |" );
-if ( false === strpos( $reader_html, '<h3>پیشگفتار</h3>' ) || false === strpos( $reader_html, '<ul><li dir="auto">مورد نخست</li><li dir="auto">مورد دوم</li></ul>' ) || false === strpos( $reader_html, '<thead>' ) || false !== strpos( $reader_html, '<script>' ) || false === strpos( $reader_html, '&lt;script&gt;' ) ) {
+if ( false === strpos( $reader_html, '<h3>پیشگفتار</h3>' ) || false === strpos( $reader_html, '<ul><li dir="auto">مورد نخست</li><li dir="auto">مورد دوم</li></ul>' ) || false === strpos( $reader_html, '<thead>' ) || false !== strpos( $reader_html, '<script>' ) || false === strpos( $reader_html, '&lt;<span dir="ltr">script</span>&gt;' ) ) {
 	fwrite( STDERR, "FAIL reader Markdown must become safe semantic HTML\n" ); exit( 1 );
 }
 $governance_fixture = array(
@@ -243,6 +304,13 @@ $template_source = file_get_contents( __DIR__ . '/../wp-theme/kohandezh-knowledg
 $reader_script   = file_get_contents( __DIR__ . '/../wp-theme/kohandezh-knowledge/assets/ai-book.js' );
 if ( false === $template_source || false === $reader_script || false === strpos( $template_source, 'ab-theme-toggle' ) || false === strpos( $template_source, 'ab-view-<?php echo esc_attr( $view ); ?>' ) || false === strpos( $reader_script, 'darkMode' ) || false === strpos( $reader_script, 'prefers-color-scheme: light' ) ) {
 	fwrite( STDERR, "FAIL Reader must expose the shared persistent light/dark mode contract\n" ); exit( 1 );
+}
+
+// The PDF viewer is an iframe of the same-origin stream: CSP object-src 'none'
+// blocks <object>/<embed>; frame-src 'self' allows the frame. A visible
+// open/download link stays for browsers that cannot show a PDF inline.
+if ( false !== strpos( $template_source, '<object' ) || false !== strpos( $template_source, '<embed' ) || 1 !== preg_match( '#<iframe class="ab-pdf-embed" src="<\?php echo esc_url\( \$pdf_stream \); \?>" title="[^"]+"#u', $template_source ) || false === strpos( $template_source, 'class="ab-pdf-fallback"' ) || false === strpos( $template_source, ' download>' ) ) {
+	fwrite( STDERR, "FAIL PDF viewer must be a titled iframe with a visible link fallback, never <object>/<embed>\n" ); exit( 1 );
 }
 
 // /ai-book/ retired: its landing is the /books/ library, every other view lives
@@ -266,5 +334,97 @@ foreach ( array(
 if ( 'library' !== ( function () { $GLOBALS['kbk_test_query']['kbk_ai_book'] = 'library'; return KBK_AI_Book::current_view(); } )() ) {
 	fwrite( STDERR, "FAIL library view allowlist\n" ); exit( 1 );
 }
+if ( 'verify' !== ( function () { $GLOBALS['kbk_test_query']['kbk_ai_book'] = 'verify'; return KBK_AI_Book::current_view(); } )() ) {
+	fwrite( STDERR, "FAIL verify view allowlist\n" ); exit( 1 );
+}
+// The verify field takes identifiers only: ASCII letters, digits, hyphens.
+foreach ( array( 'KDJ-AI-2026E1-P01-C01-S01' => 'KDJ-AI-2026E1-P01-C01-S01', '  abc-123  ' => 'abc-123', '' => null, '<script>' => null, 'شناسه' => null, 'a b' => null ) as $input => $want ) {
+	$GLOBALS['kbk_test_query']['kbk_verify'] = $input;
+	if ( $want !== KBK_AI_Book::requested_verify_id() ) {
+		fwrite( STDERR, "FAIL requested_verify_id for '$input'\n" ); exit( 1 );
+	}
+}
+$GLOBALS['kbk_test_query']['kbk_verify'] = array( 'x' );
+if ( null !== KBK_AI_Book::requested_verify_id() ) {
+	fwrite( STDERR, "FAIL requested_verify_id must reject arrays\n" ); exit( 1 );
+}
+unset( $GLOBALS['kbk_test_query']['kbk_verify'] );
 
-echo "PASS ai-book-wordpress-route: hooks, rewrites (40, incl. /books/ library), retired /ai-book/ redirects, locale-first Persian AI Governance namespace, full-bleed Reader theme contract, meaningful Governance titles, safe reader markup, allowlist, noindex, config state, assets, template and search/glossary/catalog/graph/ask/pdf/request request hygiene\n";
+// --- More than one book: the same views under /fa/books/{slug}/ ---------------------
+require_once __DIR__ . '/fixtures/ai-book/bundle.php';
+$other_root = kbk_test_bundle( 'OT', array( 'title_fa' => 'کتاب دیگر', 'built_at' => '2026-10-02T09:00:00+0000' ) );
+$fixture    = json_decode( (string) file_get_contents( $other_root . '/master/book.json' ), true );
+$part_slug    = $fixture['parts'][0]['slug'];
+$chapter_slug = $fixture['parts'][0]['chapters'][0]['slug'];
+$GLOBALS['kbk_test_options']['kbk_books'] = array( array( 'slug' => 'other-slug', 'root' => $other_root, 'status' => 'published' ) );
+KBK_AI_Book_Registry::reset();
+$GLOBALS['kbk_test_query'] = array( 'kbk_ai_book' => 'read', 'kbk_book' => 'other-slug' );
+if ( 'read' !== KBK_AI_Book::current_view() || ! KBK_AI_Book::is_request() || null === KBK_AI_Book::repository() || 'READY' !== KBK_AI_Book::repository_status() ) {
+	fwrite( STDERR, "FAIL /fa/books/other-slug/read/ must be a Reader page of that book\n" ); exit( 1 );
+}
+if ( 'https://example.test/fa/books/other-slug/read/?kbk_part=P01&kbk_chapter=C01&kbk_page=2' !== KBK_AI_Book::reader_url( 'P01', 'C01', 2 ) || 'https://example.test/fa/books/other-slug/glossary/' !== KBK_AI_Book::preferred_internal_url( 'https://example.test/ai-book/glossary/' ) ) {
+	fwrite( STDERR, "FAIL links inside another book must stay in its namespace\n" ); exit( 1 );
+}
+$selection = KBK_AI_Book::current_reader_selection();
+if ( 'P01' !== ( $selection['part']['part_id'] ?? null ) || 'C01' !== ( $selection['chapter']['chapter_id'] ?? null ) ) {
+	fwrite( STDERR, "FAIL another book reads from its own bundle\n" ); exit( 1 );
+}
+foreach ( array( 'nope', 'Other-Slug', '../x' ) as $unknown ) {
+	$GLOBALS['kbk_test_query'] = array( 'kbk_ai_book' => 'read', 'kbk_book' => $unknown );
+	if ( '' !== KBK_AI_Book::current_view() || KBK_AI_Book::is_request() || null !== KBK_AI_Book::repository() ) {
+		fwrite( STDERR, "FAIL unknown book '{$unknown}' must not be a Reader page (404)\n" ); exit( 1 );
+	}
+}
+foreach ( array(
+	'/books/other-slug/'                      => '/fa/books/other-slug/',
+	'/books/other-slug/read/?kbk_part=P01'    => '/fa/books/other-slug/read/?kbk_part=P01',
+	'/books/other-slug/pdf/file/'             => '/fa/books/other-slug/pdf/file/',
+	'/books/nope/read/'                       => null,
+	'/books/'                                 => null,
+	'/fa/books/other-slug/read/'              => null,
+) as $from => $want ) {
+	if ( $want !== KBK_AI_Book::localized_book_path( $from ) ) {
+		fwrite( STDERR, "FAIL 301 of {$from}\n" ); exit( 1 );
+	}
+}
+// The frozen citation address /fa/books/{slug}/{part}/{chapter}/ → the Reader.
+foreach ( array(
+	'/fa/books/other-slug/' . $part_slug . '/' . $chapter_slug . '/'  => '/fa/books/other-slug/read/?kbk_part=P01&kbk_chapter=C01',
+	'/fa/books/other-slug/' . $part_slug . '/' . $chapter_slug       => '/fa/books/other-slug/read/?kbk_part=P01&kbk_chapter=C01',
+	'/fa/books/other-slug/' . $part_slug . '/no-such-chapter/'         => '',
+	'/fa/books/other-slug/no-such-part/' . $chapter_slug . '/'         => '',
+	'/fa/books/other-slug/pdf/file/'                                   => null,
+	'/fa/books/other-slug/read/anything/'                              => null,
+	'/fa/books/nope/' . $part_slug . '/' . $chapter_slug . '/'         => null,
+	'/fa/books/other-slug/read/'                                       => null,
+) as $from => $want ) {
+	if ( $want !== KBK_AI_Book::book_chapter_path( $from ) ) {
+		fwrite( STDERR, "FAIL chapter address {$from}\n" ); exit( 1 );
+	}
+}
+foreach ( array( 'sitemap', 'llms' ) as $feed ) {
+	$GLOBALS['kbk_test_query'] = array( 'kbk_ai_book' => $feed, 'kbk_book' => 'other-slug' );
+	if ( $feed !== KBK_AI_Book::current_view() ) {
+		fwrite( STDERR, "FAIL {$feed} endpoint detection\n" ); exit( 1 );
+	}
+	$GLOBALS['kbk_test_query']['kbk_book'] = 'nope';
+	if ( '' !== KBK_AI_Book::current_view() ) {
+		fwrite( STDERR, "FAIL {$feed} of an unknown book must 404\n" ); exit( 1 );
+	}
+}
+$sitemap = simplexml_load_string( KBK_AI_Book::sitemap_xml( KBK_AI_Book::sitemap_entries( 'other-slug' ) ) );
+if ( false === $sitemap || 9 !== count( $sitemap->url ) || 'https://example.test/fa/books/other-slug/' !== (string) $sitemap->url[0]->loc || '2026-10-02' !== (string) $sitemap->url[0]->lastmod ) {
+	fwrite( STDERR, "FAIL sitemap.xml of another book\n" ); exit( 1 );
+}
+$llms = KBK_AI_Book::llms_txt( 'other-slug' );
+if ( 0 !== strpos( $llms, "# کتاب دیگر\n" ) || false === strpos( $llms, '`KDJ-OT-2026E1-Pnn-Cnn-Snn`' ) || false === strpos( $llms, 'https://example.test/fa/books/other-slug/read/?kbk_part=P01&kbk_chapter=C01' ) ) {
+	fwrite( STDERR, "FAIL llms.txt of another book\n" ); exit( 1 );
+}
+if ( false === strpos( $template_source, "'book' => \$book_slug" ) || false !== strpos( $template_source, "'book' => 'ai-governance'" ) || false === strpos( $reader_script, 'chapterMap.book' ) || false !== strpos( $reader_script, 'Resume("ai-governance"' ) ) {
+	fwrite( STDERR, "FAIL the chapter map and the resume key must carry the current book\n" ); exit( 1 );
+}
+$GLOBALS['kbk_test_query'] = array();
+unset( $GLOBALS['kbk_test_options']['kbk_books'] );
+KBK_AI_Book_Registry::reset();
+
+echo "PASS ai-book-wordpress-route: hooks, rewrites (25 generic, incl. /books/ library, /fa/books/{slug}/ views, sitemap.xml, llms.txt and /ai-book/verify/), other books (routing, 404, /books/{slug}/ 301, frozen chapter address, sitemap, llms.txt, chapter map), retired /ai-book/ redirects, locale-first Persian AI Governance namespace, full-bleed Reader theme contract, CSP-safe PDF iframe, meaningful Governance titles, safe reader markup, allowlist, noindex, config state, assets, template and search/glossary/catalog/graph/ask/pdf/request request hygiene\n";

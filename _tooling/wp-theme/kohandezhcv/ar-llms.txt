@@ -34,6 +34,7 @@
 - [أرشيف الشهادات](https://kohandezh.com/certificates/): السجل الكامل للشهادات المهنية
 - [المدونة](https://kohandezh.com/blog/): مقالات عن الذكاء الاصطناعي والمسار المهني والتقنية؛ تتوفر واجهات مترجمة للمقالات المدعومة
 - [معرض الأعمال](https://kohandezh.com/portfolio/): مشاريع مختارة
+- [الكتب](https://kohandezh.com/books/): كتب مرجعية من تأليف محمد علي كهن‌دژ؛ النسخة الفارسية من «AI Governance» على https://kohandezh.com/fa/books/ai-governance/ (ملخص آلي: https://kohandezh.com/fa/books/ai-governance/llms.txt)
 - لغات أخرى: [الإنجليزية](https://kohandezh.com/) · [الفارسية](https://kohandezh.com/fa/) · [الألمانية](https://kohandezh.com/de/) · [الإسبانية](https://kohandezh.com/es/) · [الفرنسية](https://kohandezh.com/fr/) · [التركية](https://kohandezh.com/tr/) · [الصينية](https://kohandezh.com/zh/) · [اليابانية](https://kohandezh.com/ja/) · [الروسية](https://kohandezh.com/ru/)
 
 ## ملاحظات لمساعدي الذكاء الاصطناعي وبرامج الزحف

@@ -88,4 +88,35 @@ if ( null !== $repository->adjacent_chapters( $lastP['part_id'], $lastC['chapter
 	exit( 1 );
 }
 
-echo "PASS ai-book-repository: validated bundle, summary, structural/content lookup, citation lookup, P06 slug-collision fail-closed and adjacent_chapters\n";
+// /ai-book/verify/ answers from the release manifest and the content registry,
+// exact matches only.
+$release = $repository->release();
+if ( null === $release || '2026E1' !== $release['edition_id'] || 1 !== preg_match( '/^[0-9a-f]{64}$/', $release['merkle_root'] ) || ! isset( $release['artifacts']['06_book_fa.pdf'] ) ) {
+	fwrite( STDERR, "FAIL release() must expose the validated manifest facts\n" );
+	exit( 1 );
+}
+$hit = $repository->verify( strtolower( $content_id ) );
+if ( null === $hit || 'content' !== $hit['kind'] || $content_id !== $hit['content_id'] || $structural_id !== $hit['structural_id'] || null === $hit['section'] ) {
+	fwrite( STDERR, "FAIL verify() must find a content ID regardless of case\n" );
+	exit( 1 );
+}
+$by_struct = $repository->verify( $structural_id );
+$by_hash   = $repository->verify( strtoupper( $hit['sha256'] ) );
+if ( null === $by_struct || $content_id !== $by_struct['content_id'] || null === $by_hash || $content_id !== $by_hash['content_id'] ) {
+	fwrite( STDERR, "FAIL verify() must find the same entry by structural ID and by its SHA-256\n" );
+	exit( 1 );
+}
+$pdf_hash = $release['artifacts']['06_book_fa.pdf']['sha256'];
+$file_hit = $repository->verify( $pdf_hash );
+if ( null === $file_hit || 'artifact' !== $file_hit['kind'] || '06_book_fa.pdf' !== $file_hit['name'] ) {
+	fwrite( STDERR, "FAIL verify() must match a release file by SHA-256\n" );
+	exit( 1 );
+}
+foreach ( array( '', 'KDJ-AI-2026E1-P01-C01-S01-00000000', 'KDJ-AI-2026E1-P01-C01', str_repeat( '0', 64 ), substr( $pdf_hash, 0, 63 ), str_repeat( 'A', 81 ) ) as $miss ) {
+	if ( null !== $repository->verify( $miss ) ) {
+		fwrite( STDERR, "FAIL verify() must not report a near miss as found: $miss\n" );
+		exit( 1 );
+	}
+}
+
+echo "PASS ai-book-repository: validated bundle, summary, structural/content lookup, citation lookup, P06 slug-collision fail-closed, adjacent_chapters and release/verify lookup\n";

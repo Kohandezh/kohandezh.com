@@ -169,6 +169,7 @@ final class KBK_AI_Book_Catalog {
 			'mentions_total'   => count( $entity['mentions'] ),
 			'sections'         => $sections,
 			'definition_en'    => (string) ( $entity['definition_en'] ?? '' ),
+			'definition_fa'    => (string) ( $entity['definition_fa'] ?? '' ),
 		);
 	}
 
@@ -240,12 +241,15 @@ final class KBK_AI_Book_Catalog {
 				throw new UnexpectedValueException( 'Source map references an unknown section: ' . $entry['structural_id'] );
 			}
 		}
+		$titles_fa = $this->repository->doc_titles_fa();
 		foreach ( $manifest['documents'] as $document ) {
 			$doc_key   = $document['doc_key'];
 			$citation  = $citations[ $doc_key ] ?? array();
 			$this->sources[] = array(
 				'doc_key'            => $doc_key,
 				'title'              => (string) $document['title'],
+				'title_fa'           => (string) ( $titles_fa[ $doc_key ]['title_fa'] ?? '' ),
+				'subtitle_fa'        => (string) ( $titles_fa[ $doc_key ]['subtitle_fa'] ?? '' ),
 				'subtitle'           => (string) ( $document['subtitle'] ?? '' ),
 				'series_identifier'  => (string) ( $document['series_identifier'] ?? '' ),
 				'organization'       => (string) ( $citation['organization'] ?? '' ),
@@ -293,7 +297,26 @@ final class KBK_AI_Book_Catalog {
 		ksort( $this->templates );
 	}
 
+	/**
+	 * A Publication entity that names a source document takes that
+	 * document's Persian title as its Persian label (the extracted label is
+	 * often only the series code, e.g. «NIST AI 100-1»).
+	 *
+	 * @param array<string,mixed>                         $entity
+	 * @param array<string,array{title_fa:string,subtitle_fa:string}> $titles_fa
+	 * @return array<string,mixed>
+	 */
+	public static function with_publication_title( array $entity, array $titles_fa ): array {
+		$doc_key = is_string( $entity['doc_key'] ?? null ) ? $entity['doc_key'] : '';
+		if ( 'Publication' === ( $entity['type'] ?? '' ) && '' !== $doc_key && isset( $titles_fa[ $doc_key ] ) ) {
+			$entity['labels']       = is_array( $entity['labels'] ?? null ) ? $entity['labels'] : array();
+			$entity['labels']['fa'] = $titles_fa[ $doc_key ]['title_fa'];
+		}
+		return $entity;
+	}
+
 	private function load_entities( string $entities_path, string $edition ): void {
+		$titles_fa = $this->repository->doc_titles_fa();
 		if ( ! is_file( $entities_path ) || ! is_readable( $entities_path ) ) {
 			throw new UnexpectedValueException( 'Entities artifact is not a readable file' );
 		}
@@ -312,6 +335,7 @@ final class KBK_AI_Book_Catalog {
 					throw new UnexpectedValueException( 'Entities artifact contains an invalid JSON line' );
 				}
 				KBK_AI_Book_Artifacts::validate_entity( $entity, $edition );
+				$entity = self::with_publication_title( $entity, $titles_fa );
 				$model = array(
 					'entity_id' => (string) $entity['entity_id'],
 					'type'      => (string) $entity['type'],
@@ -323,6 +347,7 @@ final class KBK_AI_Book_Catalog {
 					'documents'      => (array) $entity['documents'],
 					'mentions'       => array_values( (array) ( $entity['mentions'] ?? array() ) ),
 					'definition_en'  => (string) ( $entity['definition_en'] ?? '' ),
+					'definition_fa'  => is_string( $entity['definition_fa'] ?? null ) ? $entity['definition_fa'] : '',
 				);
 				$this->entities[ $model['entity_id'] ] = $model;
 				$this->entity_type_counts[ $model['type'] ] = ( $this->entity_type_counts[ $model['type'] ] ?? 0 ) + 1;

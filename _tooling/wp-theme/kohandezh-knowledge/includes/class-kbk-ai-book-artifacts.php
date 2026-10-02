@@ -16,9 +16,16 @@ if ( ! defined( 'ABSPATH' ) && ! defined( 'KBK_TESTING' ) ) {
 final class KBK_AI_Book_Artifacts {
 
 	const EDITION_PATTERN    = '/^\d{4}E\d+$/';
-	const STRUCTURAL_PATTERN = '/^KDJ-AI-(\d{4}E\d+)-P\d{2}-C\d{2}-S\d{2}$/';
-	const CONTENT_PATTERN    = '/^KDJ-AI-(\d{4}E\d+)-P\d{2}-C\d{2}-S\d{2}-[A-F0-9]{8}$/';
+	/**
+	 * Book ID grammar: KDJ-{CODE}-{EDITION}-Pnn-Cnn-Snn[-HASH8]. CODE names
+	 * the book ("AI" for AI Governance) so every title keeps its own IDs.
+	 */
+	const STRUCTURAL_PATTERN = '/^KDJ-([A-Z0-9]{1,8})-(\d{4}E\d+)-P\d{2}-C\d{2}-S\d{2}$/';
+	const CONTENT_PATTERN    = '/^KDJ-([A-Z0-9]{1,8})-(\d{4}E\d+)-P\d{2}-C\d{2}-S\d{2}-[A-F0-9]{8}$/';
 	const ALLOWED_ORIGINS    = array( 'source_translation', 'editorial_synthesis', 'editorial_localization_ir' );
+
+	/** Canonical book URLs: the first book's /fa/ai-book/ or any /fa/books/{slug}/. */
+	const BOOK_URL_PREFIX    = '#^https://kohandezh\.com/fa/(?:ai-book|books/[a-z0-9]+(?:-[a-z0-9]+)*)/#';
 
 	/**
 	 * Load one JSON object from an explicit file path.
@@ -397,8 +404,8 @@ final class KBK_AI_Book_Artifacts {
 				}
 			}
 		}
-		if ( ! is_string( $chunk['canonical_url'] ) || 0 !== strpos( $chunk['canonical_url'], 'https://kohandezh.com/fa/ai-book/' ) || false === strpos( $chunk['canonical_url'], '#' . $chunk['structural_id'] ) ) {
-			throw new UnexpectedValueException( 'rag_chunk.canonical_url must stay in the canonical /fa/ai-book/ namespace with its section fragment' );
+		if ( ! is_string( $chunk['canonical_url'] ) || 1 !== preg_match( self::BOOK_URL_PREFIX, $chunk['canonical_url'] ) || false === strpos( $chunk['canonical_url'], '#' . $chunk['structural_id'] ) ) {
+			throw new UnexpectedValueException( 'rag_chunk.canonical_url must stay in the canonical /fa/ai-book/ or /fa/books/{slug}/ namespace with its section fragment' );
 		}
 		return $chunk;
 	}
@@ -609,7 +616,7 @@ final class KBK_AI_Book_Artifacts {
 	/** @param mixed $value */
 	private static function structural_id( $value, string $path, string $edition ): void {
 		self::matches( self::STRUCTURAL_PATTERN, $value, $path );
-		if ( false === strpos( $value, 'KDJ-AI-' . $edition . '-' ) ) {
+		if ( 1 !== preg_match( self::STRUCTURAL_PATTERN, $value, $matches ) || $matches[2] !== $edition ) {
 			throw new UnexpectedValueException( $path . ' belongs to another edition' );
 		}
 	}
@@ -617,7 +624,7 @@ final class KBK_AI_Book_Artifacts {
 	/** @param mixed $value */
 	private static function content_id( $value, string $path, string $edition ): void {
 		self::matches( self::CONTENT_PATTERN, $value, $path );
-		if ( false === strpos( $value, 'KDJ-AI-' . $edition . '-' ) ) {
+		if ( 1 !== preg_match( self::CONTENT_PATTERN, $value, $matches ) || $matches[2] !== $edition ) {
 			throw new UnexpectedValueException( $path . ' belongs to another edition' );
 		}
 	}
@@ -633,7 +640,7 @@ final class KBK_AI_Book_Artifacts {
 	private static function canonical_url( $value, string $structural_id ): void {
 		self::non_empty_string( $value, 'canonical_url' );
 		$parts = parse_url( $value );
-		if ( ! is_array( $parts ) || 'https' !== ( $parts['scheme'] ?? '' ) || 'kohandezh.com' !== ( $parts['host'] ?? '' ) || false === strpos( $parts['path'] ?? '', '/fa/ai-book/' ) || ( $parts['fragment'] ?? '' ) !== $structural_id ) {
+		if ( ! is_array( $parts ) || 'https' !== ( $parts['scheme'] ?? '' ) || 'kohandezh.com' !== ( $parts['host'] ?? '' ) || 1 !== preg_match( '#/fa/(?:ai-book|books/[a-z0-9]+(?:-[a-z0-9]+)*)/#', $parts['path'] ?? '' ) || ( $parts['fragment'] ?? '' ) !== $structural_id ) {
 			throw new UnexpectedValueException( 'canonical_url must be a Kohandezh Persian book URL ending in the structural ID' );
 		}
 	}

@@ -8,6 +8,7 @@ and known pitfalls — those rules apply to every agent, not only Claude.
 - `Books/ics-cybersecurity/` — **Codex**. Start from `Books/ics-cybersecurity/README.md`.
 - Everything else (site, theme, plugins, `Books/ai-governance/`, tooling) — Claude.
   Do not change it unless the owner asks.
+- Every book folder follows `Books/BOOK-FORMAT.md` (check: `python3 _tooling/ai-book/validate_book.py --root Books/<slug>`).
 
 ## Rules that matter most
 

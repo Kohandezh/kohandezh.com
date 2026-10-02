@@ -138,6 +138,9 @@ def render(code, doc):
     out.append('- [%s](%s): %s' % (s['p_blog'], url(c['resources']['blog']),
                                    s['p_blog_d'].format(langcount=s['count'])))
     out.append('- [%s](%s): %s' % (s['p_portfolio'], url(c['resources']['portfolio']), s['p_portfolio_d']))
+    out.append('- [%s](%s): %s' % (s['p_books'], url(c['resources']['books']),
+                                   s['p_books_d'].format(book=url(c['resources']['book_ai_governance']),
+                                                         llms=url(c['resources']['book_ai_governance_llms']))))
 
     # Every locale lists every OTHER locale. Russian was missing from all ten
     # lists; generating the list from the canonical set makes that impossible.

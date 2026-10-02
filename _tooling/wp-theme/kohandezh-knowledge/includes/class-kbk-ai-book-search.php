@@ -33,7 +33,7 @@ final class KBK_AI_Book_Search {
 	const STATUS_READY            = 'READY';
 	const STATUS_ARTIFACT_INVALID = 'ARTIFACT_INVALID';
 
-	const STRUCTURAL_ID_PATTERN = '/^KDJ-AI-\d{4}E\d+-(P\d{2})-(C\d{2})-S\d{2}$/';
+	const STRUCTURAL_ID_PATTERN = '/^KDJ-[A-Z0-9]{1,8}-\d{4}E\d+-(P\d{2})-(C\d{2})-S\d{2}$/';
 
 	/** @var KBK_AI_Book_Repository */
 	private $repository;
@@ -234,9 +234,9 @@ final class KBK_AI_Book_Search {
 	 */
 	private function search_by_identifier( string $display, int &$total ): ?array {
 		$id = strtoupper( str_replace( ' ', '', $display ) );
-		$is_content    = 1 === preg_match( '/^KDJ-AI-\d{4}E\d+-P\d{2}-C\d{2}-S\d{2}-[A-F0-9]{8}$/', $id );
+		$is_content    = 1 === preg_match( '/^KDJ-[A-Z0-9]{1,8}-\d{4}E\d+-P\d{2}-C\d{2}-S\d{2}-[A-F0-9]{8}$/', $id );
 		$is_structural = 1 === preg_match( self::STRUCTURAL_ID_PATTERN, $id );
-		$is_prefix     = 1 === preg_match( '/^KDJ-AI-\d{4}E\d+(-P\d{2}(-C\d{2})?)?$/', $id );
+		$is_prefix     = 1 === preg_match( '/^KDJ-[A-Z0-9]{1,8}-\d{4}E\d+(-P\d{2}(-C\d{2})?)?$/', $id );
 		if ( ! $is_content && ! $is_structural && ! $is_prefix ) {
 			return null;
 		}
@@ -457,14 +457,16 @@ final class KBK_AI_Book_Search {
 			'type'             => 'section',
 			'order'            => 3,
 			'score'            => $score,
-			'title'            => $record['title_fa'],
+			'title'            => trim( (string) preg_replace( '/\s*\[\^[^\]]*\]/u', '', (string) ( $entry['display_title'] ?? $record['title_fa'] ) ) ),
 			'title_en'         => (string) ( $record['title_en'] ?? '' ),
 			'part'             => array( 'id' => $entry['part_id'], 'title_fa' => $entry['part_title'] ),
 			'chapter'          => array( 'id' => $entry['chapter_id'], 'title_fa' => $entry['chapter_title'] ),
 			'section'          => array( 'structural_id' => $record['structural_id'], 'content_id' => $record['id'] ),
 			'origin'           => $record['origin'],
 			'docs'             => array_slice( $record['docs'], 0, self::MAX_LISTED_DOCS ),
-			'snippet_segments' => self::highlight( (string) $record['snippet'], $tokens ),
+			// The index snippet is canonical text; figure markers and footnote
+			// marks (`[^12]`, `[^]: …`) never reach the page.
+			'snippet_segments' => self::highlight( trim( (string) preg_replace( array( '/\[FIGURE[^\]]*\]\s*/u', '/\s*\[\^[^\]]*\]:?/u' ), array( '', '' ), (string) $record['snippet'] ) ), $tokens ),
 			'canonical_url'    => $record['url'],
 		);
 	}
@@ -578,17 +580,24 @@ final class KBK_AI_Book_Search {
 			if ( ! preg_match( self::STRUCTURAL_ID_PATTERN, $structural, $m ) ) {
 				throw new UnexpectedValueException( 'Search index entry has an unusable structural ID: ' . $structural );
 			}
-			if ( null === $this->repository->find_section( $structural ) ) {
+			$section = $this->repository->find_section( $structural );
+			if ( null === $section ) {
 				throw new UnexpectedValueException( 'Search index references an unknown section: ' . $structural );
 			}
+			if ( ! empty( $section['reader_omit'] ) ) {
+				// Source-PDF debris the reader does not show is not a result either.
+				continue;
+			}
+			$display_title = (string) ( $section['title_fa'] ?? $entry['title_fa'] );
 			$this->entries[] = array(
 				'entry'         => $entry,
+				'display_title' => $display_title,
 				'part_id'       => $m[1],
 				'chapter_id'    => $m[2],
 				'part_title'    => (string) $entry['part'],
-				'chapter_title' => (string) $entry['chapter'],
+				'chapter_title' => (string) ( $this->repository->find_chapter( $m[1], $m[2] )['title_fa'] ?? $entry['chapter'] ),
 				'haystacks'     => array(
-					'title'    => self::normalize( (string) $entry['title_fa'] ),
+					'title'    => self::normalize( $display_title === (string) $entry['title_fa'] ? $display_title : $display_title . ' ' . (string) $entry['title_fa'] ),
 					'title_en' => self::normalize( (string) ( $entry['title_en'] ?? '' ) ),
 					'keywords' => self::normalize( implode( ' ', array_merge( $entry['keywords_fa'], $entry['keywords_en'] ) ) ),
 					'acronyms' => ' ' . self::normalize( implode( ' ', $entry['acronyms'] ) ) . ' ',

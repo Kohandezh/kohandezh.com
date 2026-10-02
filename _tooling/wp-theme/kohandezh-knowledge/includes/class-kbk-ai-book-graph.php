@@ -99,6 +99,7 @@ final class KBK_AI_Book_Graph {
 			'origin'        => $node['origin'],
 			'documents'     => array_slice( $node['documents'], 0, KBK_AI_Book_Catalog::MAX_LISTED_DOCS ),
 			'definition_en' => (string) ( $node['definition_en'] ?? '' ),
+			'definition_fa' => (string) ( $node['definition_fa'] ?? '' ),
 		);
 	}
 
@@ -230,7 +231,9 @@ final class KBK_AI_Book_Graph {
 			$graph   = KBK_AI_Book_Artifacts::load_json_file( $path );
 			$edition = $this->repository->bundle()['book']['edition_id'];
 			KBK_AI_Book_Artifacts::validate_graph( $graph, $edition );
+			$titles_fa = $this->repository->doc_titles_fa();
 			foreach ( $graph['nodes'] as $node ) {
+				$node = KBK_AI_Book_Catalog::with_publication_title( $node, $titles_fa );
 				$this->nodes[ (string) $node['entity_id'] ] = array(
 					'entity_id'     => (string) $node['entity_id'],
 					'type'          => (string) $node['type'],
@@ -241,6 +244,7 @@ final class KBK_AI_Book_Graph {
 					'origin'        => (string) $node['origin'],
 					'documents'     => array_values( (array) $node['documents'] ),
 					'definition_en' => (string) ( $node['definition_en'] ?? '' ),
+					'definition_fa' => is_string( $node['definition_fa'] ?? null ) ? $node['definition_fa'] : '',
 				);
 			}
 			foreach ( $graph['edges'] as $index => $edge ) {

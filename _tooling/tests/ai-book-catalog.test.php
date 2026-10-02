@@ -78,7 +78,7 @@ if ( 18 !== count( $sources ) ) {
 	fail( 'sources must expose exactly the 18 audited documents' );
 }
 $total_sections = 0;
-$known_keys     = array( 'doc_key', 'title', 'subtitle', 'series_identifier', 'organization', 'publication_type', 'publication_status', 'publication_date', 'doi_url', 'pages', 'sha256', 'sections_count' );
+$known_keys     = array( 'doc_key', 'title', 'title_fa', 'subtitle_fa', 'subtitle', 'series_identifier', 'organization', 'publication_type', 'publication_status', 'publication_date', 'doi_url', 'pages', 'sha256', 'sections_count' );
 $has_ai_100_1   = false;
 foreach ( $sources as $source ) {
 	if ( array_keys( $source ) !== $known_keys ) {
@@ -97,6 +97,48 @@ foreach ( $sources as $source ) {
 }
 if ( ! $has_ai_100_1 || 660 !== $total_sections ) {
 	fail( 'source section counts must sum to the 660 mapped sections' );
+}
+
+// 2b. Persian publication titles: optional taxonomy/doc_titles_fa.json.
+$titles_path = rtrim( $root, '/' ) . '/taxonomy/doc_titles_fa.json';
+$titles_fa   = $repository->doc_titles_fa();
+if ( is_file( $titles_path ) ) {
+	$titles_raw = json_decode( (string) file_get_contents( $titles_path ), true );
+	foreach ( $sources as $source ) {
+		$want = trim( (string) ( $titles_raw[ $source['doc_key'] ]['title_fa'] ?? '' ) );
+		if ( $want !== $source['title_fa'] ) {
+			fail( 'source ' . $source['doc_key'] . ' must carry its Persian title from doc_titles_fa.json' );
+		}
+	}
+	$publication = $catalog->entity( 'E:Publication:nist_ai_100_1' );
+	if ( null === $publication || $publication['label_fa'] !== $titles_fa['NIST-AI-100-1']['title_fa'] || 'Artificial Intelligence Risk Management Framework (AI RMF 1.0)' !== $publication['label_en'] ) {
+		fail( 'a Publication entity naming a source document must take its Persian title as label_fa, keeping the English label' );
+	}
+} elseif ( array() !== $titles_fa || '' !== $sources[0]['title_fa'] ) {
+	fail( 'without doc_titles_fa.json every source keeps its English title only' );
+}
+$tmp_titles = sys_get_temp_dir() . '/kbk-doc-titles-' . getmypid();
+@mkdir( $tmp_titles . '/taxonomy', 0777, true );
+foreach ( array( 'master', 'provenance' ) as $dir ) {
+	@mkdir( $tmp_titles . '/' . $dir, 0777, true );
+}
+foreach ( array( 'master/book.json', 'provenance/content_ids.json', 'provenance/citation-registry.json' ) as $file ) {
+	copy( rtrim( $root, '/' ) . '/' . $file, $tmp_titles . '/' . $file );
+}
+file_put_contents( $tmp_titles . '/taxonomy/doc_titles_fa.json', '{"NIST-AI-100-1":{"title_fa":"عنوان"},"bad key":{"title_fa":"x"},"NIST-X":{"title_fa":""},"NIST-Y":"str"}' );
+$probe = ( new KBK_AI_Book_Repository( $tmp_titles ) )->doc_titles_fa();
+if ( array( 'NIST-AI-100-1' => array( 'title_fa' => 'عنوان', 'subtitle_fa' => '' ) ) !== $probe ) {
+	fail( 'doc_titles_fa keeps only well-formed doc_key → non-empty title_fa entries' );
+}
+file_put_contents( $tmp_titles . '/taxonomy/doc_titles_fa.json', '{broken' );
+if ( array() !== ( new KBK_AI_Book_Repository( $tmp_titles ) )->doc_titles_fa() ) {
+	fail( 'a malformed doc_titles_fa.json is ignored, never fatal' );
+}
+foreach ( array( 'taxonomy/doc_titles_fa.json', 'master/book.json', 'provenance/content_ids.json', 'provenance/citation-registry.json' ) as $file ) {
+	@unlink( $tmp_titles . '/' . $file );
+}
+foreach ( array( 'taxonomy', 'master', 'provenance', '' ) as $dir ) {
+	@rmdir( rtrim( $tmp_titles . '/' . $dir, '/' ) );
 }
 
 // 3. Templates: 20 cards sorted by ID; detail lookup works, unknown fails closed.
@@ -400,4 +442,4 @@ foreach ( $cleanup as $file ) {
 }
 @rmdir( $tmp_root );
 
-echo "PASS ai-book-catalog: sorted safe glossary list, 18 merged sources with 660 section counts, 20 templates with fail-closed detail, entity types/pagination/clamping, bounded entity detail with repository-resolved mentions, validator fixtures, six corrupted-artifact fail-closed paths and route-layer query var hygiene\n";
+echo "PASS ai-book-catalog: sorted safe glossary list, 18 merged sources with 660 section counts and optional Persian titles (Publication labels too), 20 templates with fail-closed detail, entity types/pagination/clamping, bounded entity detail with repository-resolved mentions, validator fixtures, six corrupted-artifact fail-closed paths and route-layer query var hygiene\n";

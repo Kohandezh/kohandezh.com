@@ -34,6 +34,7 @@
 - [آرشیو گواهینامه‌ها](https://kohandezh.com/certificates/): سوابق کامل گواهینامه‌های حرفه‌ای
 - [وبلاگ](https://kohandezh.com/blog/): مقالات هوش مصنوعی، مسیر شغلی و فناوری؛ رابط ترجمه‌شده برای نوشته‌های پشتیبانی‌شده در دسترس است
 - [نمونه‌کارها](https://kohandezh.com/portfolio/): منتخب پروژه‌ها
+- [کتاب‌ها](https://kohandezh.com/books/): کتاب‌های مرجع محمدعلی کهن‌دژ؛ نسخهٔ فارسی «AI Governance — حاکمیت هوش مصنوعی» (بر پایهٔ منابع NIST) در https://kohandezh.com/fa/books/ai-governance/ — خلاصهٔ ماشینی: https://kohandezh.com/fa/books/ai-governance/llms.txt
 - زبان‌های دیگر: [انگلیسی](https://kohandezh.com/) · [عربی](https://kohandezh.com/ar/) · [آلمانی](https://kohandezh.com/de/) · [اسپانیایی](https://kohandezh.com/es/) · [فرانسوی](https://kohandezh.com/fr/) · [ترکی](https://kohandezh.com/tr/) · [چینی](https://kohandezh.com/zh/) · [ژاپنی](https://kohandezh.com/ja/) · [روسی](https://kohandezh.com/ru/)
 
 ## یادداشت برای دستیارهای هوش مصنوعی و خزنده‌ها
