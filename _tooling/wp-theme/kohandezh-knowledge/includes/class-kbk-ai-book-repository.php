@@ -26,6 +26,15 @@ final class KBK_AI_Book_Repository {
 	/** @var array<string,array<string,mixed>>|null */
 	private $sections_by_structural_id;
 
+	/** @var array<string,mixed>|false|null False once the manifest failed to load. */
+	private $release;
+
+	/** @var array{applied:bool,chapters:int,sections:int,omitted:int} */
+	private $overlay_state = array( 'applied' => false, 'chapters' => 0, 'sections' => 0, 'omitted' => 0 );
+
+	/** Schema tag of the optional display overlay (master/reader-overlay.json). */
+	const OVERLAY_SCHEMA = 'kbk-reader-overlay/1';
+
 	/**
 	 * @throws InvalidArgumentException When root is missing or unreadable.
 	 */
@@ -48,6 +57,8 @@ final class KBK_AI_Book_Repository {
 			$this->content_ids = KBK_AI_Book_Artifacts::load_json_file( $this->artifact_path( 'provenance/content_ids.json' ) );
 			$this->citations   = KBK_AI_Book_Artifacts::load_json_file( $this->artifact_path( 'provenance/citation-registry.json' ) );
 			KBK_AI_Book_Artifacts::validate_bundle( $this->book, $this->content_ids, $this->citations );
+			$this->apply_reader_overlay();
+			$this->clean_display_titles();
 		}
 		return array(
 			'book'        => $this->book,
@@ -183,6 +194,94 @@ final class KBK_AI_Book_Repository {
 	}
 
 	/**
+	 * The published release's provenance facts, or null when the manifest is
+	 * absent or fails validation. Artifacts are name => {sha256, bytes}.
+	 *
+	 * @return array{edition_id:string,release_id:string,hash_spec:string,build_date:string,publisher:string,merkle_root:string,artifacts:array<string,array{sha256:string,bytes:int}>}|null
+	 */
+	public function release(): ?array {
+		if ( null === $this->release ) {
+			try {
+				$manifest  = KBK_AI_Book_Artifacts::load_json_file( $this->artifact_path( 'provenance/release-manifest.json' ) );
+				$facts     = KBK_AI_Book_Artifacts::validate_release_manifest( $manifest, $this->book()['edition_id'] );
+				$artifacts = array();
+				foreach ( $manifest['artifacts'] as $name => $entry ) {
+					$artifacts[ $name ] = array( 'sha256' => $entry['sha256'], 'bytes' => (int) $entry['bytes'] );
+				}
+				$label = static function ( $value ): string {
+					return is_string( $value ) && 1 === preg_match( '/^[A-Za-z0-9._-]{1,40}$/', $value ) ? $value : '';
+				};
+				$this->release = array(
+					'edition_id'  => $facts['edition_id'],
+					'release_id'  => $label( $manifest['release_id'] ?? null ),
+					'hash_spec'   => $label( $manifest['hash_spec'] ?? null ),
+					'build_date'  => $facts['build_date'],
+					'publisher'   => $facts['publisher'],
+					'merkle_root' => $facts['merkle_root'],
+					'artifacts'   => $artifacts,
+				);
+			} catch ( InvalidArgumentException | UnexpectedValueException $error ) {
+				$this->release = false;
+			}
+		}
+		return false === $this->release ? null : $this->release;
+	}
+
+	/**
+	 * Look a content ID, structural ID or SHA-256 up in the published edition.
+	 * Only exact matches count; anything else is null, never a near miss.
+	 *
+	 * @return array<string,mixed>|null kind "content" (registry entry and its
+	 *         section) or kind "artifact" (a release file).
+	 */
+	public function verify( string $needle ): ?array {
+		$needle = trim( $needle );
+		if ( '' === $needle || strlen( $needle ) > 80 ) {
+			return null;
+		}
+		$ids = $this->bundle()['content_ids']['ids'];
+		if ( 1 === preg_match( '/^[0-9a-fA-F]{64}$/', $needle ) ) {
+			$hash = strtolower( $needle );
+			foreach ( $ids as $content_id => $entry ) {
+				if ( $hash === $entry['hash'] ) {
+					return $this->content_match( (string) $content_id, $entry );
+				}
+			}
+			foreach ( ( $this->release()['artifacts'] ?? array() ) as $name => $artifact ) {
+				if ( $hash === $artifact['sha256'] ) {
+					return array( 'kind' => 'artifact', 'name' => (string) $name, 'sha256' => $artifact['sha256'], 'bytes' => $artifact['bytes'] );
+				}
+			}
+			return null;
+		}
+		$id = strtoupper( $needle );
+		if ( isset( $ids[ $id ] ) ) {
+			return $this->content_match( $id, $ids[ $id ] );
+		}
+		foreach ( $ids as $content_id => $entry ) {
+			if ( $id === $entry['structural_id'] ) {
+				return $this->content_match( (string) $content_id, $entry );
+			}
+		}
+		return null;
+	}
+
+	/**
+	 * @param array<string,mixed> $entry Validated content_ids entry.
+	 * @return array<string,mixed>
+	 */
+	private function content_match( string $content_id, array $entry ): array {
+		return array(
+			'kind'          => 'content',
+			'content_id'    => $content_id,
+			'structural_id' => $entry['structural_id'],
+			'origin'        => $entry['origin'],
+			'sha256'        => $entry['hash'],
+			'section'       => $this->find_section( $entry['structural_id'] ),
+		);
+	}
+
+	/**
 	 * Small safe view model for landing-page metadata.
 	 *
 	 * @return array{edition_id:string,locale:string,title_fa:string,parts:int,chapters:int,sections:int}
@@ -201,6 +300,149 @@ final class KBK_AI_Book_Repository {
 			'chapters'   => $chapters,
 			'sections'   => $book['units'],
 		);
+	}
+
+	/**
+	 * What the reader overlay changed in this request, for diagnostics/tests.
+	 *
+	 * @return array{applied:bool,chapters:int,sections:int,omitted:int}
+	 */
+	public function overlay_state(): array {
+		$this->bundle();
+		return $this->overlay_state;
+	}
+
+	/**
+	 * Merge the optional display overlay into the in-memory book.
+	 *
+	 * The overlay only replaces display text (chapter/section title_fa and
+	 * section fa_text) and can flag a section as source-PDF debris (omit). It
+	 * is applied only when its schema and edition match and its book_sha256 is
+	 * the hash of the exact book.json bytes on disk; anything else is ignored
+	 * and the canonical text is served (fail closed, never fatal). Content IDs,
+	 * structural IDs, content hashes, citations and content_ids.json are never
+	 * touched, so verification keeps proving the canonical text.
+	 */
+	private function apply_reader_overlay(): void {
+		$path = $this->artifact_path( 'master/reader-overlay.json' );
+		if ( ! is_file( $path ) || ! is_readable( $path ) ) {
+			return;
+		}
+		try {
+			$overlay = KBK_AI_Book_Artifacts::load_json_file( $path );
+		} catch ( UnexpectedValueException $error ) {
+			return;
+		}
+		if ( self::OVERLAY_SCHEMA !== ( $overlay['schema'] ?? null ) || ! is_string( $overlay['edition_id'] ?? null ) || $overlay['edition_id'] !== ( $this->book['edition_id'] ?? null ) ) {
+			return;
+		}
+		$expected = $overlay['book_sha256'] ?? null;
+		if ( ! is_string( $expected ) || 1 !== preg_match( '/^[0-9a-f]{64}$/', $expected ) ) {
+			return;
+		}
+		$actual = hash_file( 'sha256', $this->artifact_path( 'master/book.json' ) );
+		if ( ! is_string( $actual ) || ! hash_equals( $actual, $expected ) ) {
+			return;
+		}
+		$chapters = is_array( $overlay['chapters'] ?? null ) ? $overlay['chapters'] : array();
+		$sections = is_array( $overlay['sections'] ?? null ) ? $overlay['sections'] : array();
+		$text = static function ( $value ): ?string {
+			return is_string( $value ) && '' !== trim( $value ) ? $value : null;
+		};
+		foreach ( $this->book['parts'] as $part_index => $part ) {
+			foreach ( $part['chapters'] as $chapter_index => $chapter ) {
+				$chapter_patch = $chapters[ $chapter['chapter_id'] ] ?? null;
+				if ( is_array( $chapter_patch ) && null !== $text( $chapter_patch['title_fa'] ?? null ) ) {
+					$this->book['parts'][ $part_index ]['chapters'][ $chapter_index ]['title_fa'] = $text( $chapter_patch['title_fa'] );
+					$this->overlay_state['chapters']++;
+				}
+				foreach ( $chapter['sections'] as $section_index => $section ) {
+					$patch = $sections[ $section['structural_id'] ] ?? null;
+					if ( ! is_array( $patch ) ) {
+						continue;
+					}
+					$target  = &$this->book['parts'][ $part_index ]['chapters'][ $chapter_index ]['sections'][ $section_index ];
+					$changed = false;
+					if ( null !== $text( $patch['title_fa'] ?? null ) ) {
+						$target['title_fa']             = $text( $patch['title_fa'] );
+						$target['reader_overlay_title'] = true;
+						$changed = true;
+					}
+					if ( null !== $text( $patch['fa_text'] ?? null ) ) {
+						$target['fa_text'] = $text( $patch['fa_text'] );
+						$changed = true;
+					}
+					if ( true === ( $patch['omit'] ?? null ) ) {
+						$target['reader_omit'] = true;
+						$this->overlay_state['omitted']++;
+						$changed = true;
+					}
+					unset( $target );
+					if ( $changed ) {
+						$this->overlay_state['sections']++;
+					}
+				}
+			}
+		}
+		$this->overlay_state['applied'] = true;
+	}
+
+	/** @var array<string,array{title_fa:string,subtitle_fa:string}>|null */
+	private $doc_titles_fa;
+
+	/**
+	 * Persian publication titles from the optional taxonomy/doc_titles_fa.json
+	 * (doc_key → {title_fa, subtitle_fa, …}). Missing, unreadable or malformed
+	 * → an empty map, and every caller keeps showing the source title.
+	 *
+	 * @return array<string,array{title_fa:string,subtitle_fa:string}>
+	 */
+	public function doc_titles_fa(): array {
+		if ( null !== $this->doc_titles_fa ) {
+			return $this->doc_titles_fa;
+		}
+		$this->doc_titles_fa = array();
+		$path = $this->artifact_path( 'taxonomy/doc_titles_fa.json' );
+		if ( ! is_file( $path ) || ! is_readable( $path ) ) {
+			return $this->doc_titles_fa;
+		}
+		try {
+			$titles = KBK_AI_Book_Artifacts::load_json_file( $path );
+		} catch ( UnexpectedValueException $error ) {
+			return $this->doc_titles_fa;
+		}
+		foreach ( $titles as $doc_key => $entry ) {
+			$title = is_array( $entry ) && is_string( $entry['title_fa'] ?? null ) ? trim( $entry['title_fa'] ) : '';
+			if ( ! is_string( $doc_key ) || 1 !== preg_match( '/^[A-Z0-9][A-Z0-9-]{0,79}$/', $doc_key ) || '' === $title || mb_strlen( $title, 'UTF-8' ) > 300 ) {
+				continue;
+			}
+			$subtitle = is_string( $entry['subtitle_fa'] ?? null ) ? trim( $entry['subtitle_fa'] ) : '';
+			$this->doc_titles_fa[ $doc_key ] = array(
+				'title_fa'    => $title,
+				'subtitle_fa' => mb_strlen( $subtitle, 'UTF-8' ) <= 300 ? $subtitle : '',
+			);
+		}
+		return $this->doc_titles_fa;
+	}
+
+	/**
+	 * Footnote reference marks (`[^38]`) belong to body text; in a part,
+	 * chapter or section title they would print raw in headings, the TOC and
+	 * search. Display titles drop them; hashes and IDs are untouched.
+	 */
+	private function clean_display_titles(): void {
+		$clean = static function ( $title ) {
+			return is_string( $title ) && false !== strpos( $title, '[^' ) ? trim( (string) preg_replace( '/\s*\[\^[^\]]*\]/u', '', $title ) ) : $title;
+		};
+		foreach ( $this->book['parts'] as $p => $part ) {
+			$this->book['parts'][ $p ]['title_fa'] = $clean( $part['title_fa'] ?? '' );
+			foreach ( $part['chapters'] as $c => $chapter ) {
+				$this->book['parts'][ $p ]['chapters'][ $c ]['title_fa'] = $clean( $chapter['title_fa'] ?? '' );
+				foreach ( $chapter['sections'] as $s => $section ) {
+					$this->book['parts'][ $p ]['chapters'][ $c ]['sections'][ $s ]['title_fa'] = $clean( $section['title_fa'] ?? '' );
+				}
+			}
+		}
 	}
 
 	private function artifact_path( string $relative_path ): string {

@@ -43,7 +43,7 @@ $ALLOWED_LOCALES = ['en','fa','ar','de','es','fr','tr','zh','ja'];
  * KDCV_DEV_CSP=0 to switch it off while debugging something unrelated.
  */
 if (getenv('KDCV_DEV_CSP') !== '0') {
-	header("Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://fontiran.com; font-src 'self' data:; media-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; frame-src https://calendar.google.com https://www.aparat.com https://aparat.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'");
+	header("Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://fontiran.com; font-src 'self' data:; media-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; frame-src 'self' https://calendar.google.com https://www.aparat.com https://aparat.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'");
 }
 
 // ─── Helpers ───────────────────────────────────────────────────────────────

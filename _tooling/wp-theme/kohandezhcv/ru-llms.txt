@@ -34,6 +34,7 @@
 - [Архив сертификатов](https://kohandezh.com/certificates/): полный перечень профессиональных сертификаций
 - [Блог](https://kohandezh.com/blog/): статьи об ИИ, карьере и технологиях; для поддерживаемых публикаций доступны переведённые интерфейсы
 - [Портфолио](https://kohandezh.com/portfolio/): избранные проекты
+- [Книги](https://kohandezh.com/books/): справочные книги Мохаммада Али Кохандежа; персидское издание «AI Governance» — https://kohandezh.com/fa/books/ai-governance/ (машинное резюме: https://kohandezh.com/fa/books/ai-governance/llms.txt)
 - Другие языки: [английский](https://kohandezh.com/) · [персидский](https://kohandezh.com/fa/) · [арабский](https://kohandezh.com/ar/) · [немецкий](https://kohandezh.com/de/) · [испанский](https://kohandezh.com/es/) · [французский](https://kohandezh.com/fr/) · [турецкий](https://kohandezh.com/tr/) · [китайский](https://kohandezh.com/zh/) · [японский](https://kohandezh.com/ja/)
 
 ## Примечания для ИИ-ассистентов и краулеров

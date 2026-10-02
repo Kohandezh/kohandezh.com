@@ -34,6 +34,7 @@ Les archives publiques documentent 43 éléments de qualification et de dévelop
 - [Archive des certificats](https://kohandezh.com/certificates/): relevé complet des certifications professionnelles
 - [Blog](https://kohandezh.com/blog/): articles sur l’IA, la carrière et la technologie ; des interfaces traduites sont proposées pour les articles pris en charge
 - [Portfolio](https://kohandezh.com/portfolio/): projets sélectionnés
+- [Livres](https://kohandezh.com/books/): ouvrages de référence de Mohammad Ali Kohandezh ; l’édition persane d’« AI Governance » sur https://kohandezh.com/fa/books/ai-governance/ (résumé machine : https://kohandezh.com/fa/books/ai-governance/llms.txt)
 - Autres langues: [anglais](https://kohandezh.com/) · [persan](https://kohandezh.com/fa/) · [arabe](https://kohandezh.com/ar/) · [allemand](https://kohandezh.com/de/) · [espagnol](https://kohandezh.com/es/) · [turc](https://kohandezh.com/tr/) · [chinois](https://kohandezh.com/zh/) · [japonais](https://kohandezh.com/ja/) · [russe](https://kohandezh.com/ru/)
 
 ## Notes pour les assistants IA et les robots d’indexation

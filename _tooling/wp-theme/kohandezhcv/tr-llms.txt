@@ -34,6 +34,7 @@ Kamuya açık arşiv; VMware VCP-DCV, HPE ATP, Veritas, Microsoft ve SABA Safe V
 - [Sertifika arşivi](https://kohandezh.com/certificates/): mesleki sertifikaların tam kaydı
 - [Blog](https://kohandezh.com/blog/): yapay zekâ, kariyer ve teknoloji üzerine yazılar; desteklenen yazılar için çevrilmiş arayüzler mevcuttur
 - [Portföy](https://kohandezh.com/portfolio/): seçilmiş proje çalışmaları
+- [Kitaplar](https://kohandezh.com/books/): Mohammad Ali Kohandezh’in başvuru kitapları; “AI Governance” Farsça baskısı https://kohandezh.com/fa/books/ai-governance/ (makine özeti: https://kohandezh.com/fa/books/ai-governance/llms.txt)
 - Diğer diller: [İngilizce](https://kohandezh.com/) · [Farsça](https://kohandezh.com/fa/) · [Arapça](https://kohandezh.com/ar/) · [Almanca](https://kohandezh.com/de/) · [İspanyolca](https://kohandezh.com/es/) · [Fransızca](https://kohandezh.com/fr/) · [Çince](https://kohandezh.com/zh/) · [Japonca](https://kohandezh.com/ja/) · [Rusça](https://kohandezh.com/ru/)
 
 ## Yapay zekâ asistanları ve tarayıcılar için notlar

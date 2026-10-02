@@ -3,7 +3,7 @@
  * Plugin Name:       Kohandezh Knowledge
  * Plugin URI:        https://kohandezh.com
  * Description:       Layer B — Enterprise AI & Quantum Knowledge Platform. Additive, isolated from the personal-brand Layer A. Registers knowledge content types, taxonomies, the claim/evidence model, and a read-only REST API (kohandezh/v1). No homepage or Layer A changes; conditionally loaded and feature-flagged.
- * Version:           0.4.2
+ * Version:           0.6.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Mohammad Ali Kohandezh
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'KBK_VERSION', '0.4.2' );
+define( 'KBK_VERSION', '0.6.0' );
 define( 'KBK_PLUGIN_FILE', __FILE__ );
 define( 'KBK_REST_NAMESPACE', 'kohandezh/v1' );
 define( 'KBK_ENTITY_BASE', 'https://kohandezh.com/entity/' );
@@ -59,6 +59,7 @@ require_once __DIR__ . '/includes/class-kbk-seed.php';
 require_once __DIR__ . '/includes/class-kbk-news.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-artifacts.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-repository.php';
+require_once __DIR__ . '/includes/class-kbk-ai-book-registry.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-search.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-catalog.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-graph.php';
@@ -66,6 +67,7 @@ require_once __DIR__ . '/includes/class-kbk-ai-book-ask.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-pdf.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book-request.php';
 require_once __DIR__ . '/includes/class-kbk-ai-book.php';
+require_once __DIR__ . '/includes/class-kbk-ai-book-settings.php';
 
 /**
  * Activation: flush rewrite rules so new CPT archives + virtual hubs resolve.
@@ -113,6 +115,9 @@ KBK_Schema::hooks();
 KBK_Seed::hooks();
 KBK_News::hooks();
 KBK_AI_Book::hooks();
+if ( is_admin() && KBK_FEATURE_AI_BOOK ) {
+	KBK_AI_Book_Settings::hooks();
+}
 add_action( 'rest_api_init', array( 'KBK_REST', 'register_routes' ) );
 
 /**

@@ -140,7 +140,10 @@
     "resources": {
       "certificates": "/certificates/",
       "blog": "/blog/",
-      "portfolio": "/portfolio/"
+      "portfolio": "/portfolio/",
+      "books": "/books/",
+      "book_ai_governance": "/fa/books/ai-governance/",
+      "book_ai_governance_llms": "/fa/books/ai-governance/llms.txt"
     }
   },
   "locales": {
@@ -202,6 +205,8 @@
       "p_blog_d": "articles on AI, career, and technology; translated interfaces are available for supported posts",
       "p_portfolio": "Portfolio",
       "p_portfolio_d": "selected project work",
+      "p_books": "Books",
+      "p_books_d": "reference books by Mohammad Ali Kohandezh; the Persian edition of *AI Governance* (built on NIST sources) reads at {book} — machine summary: {llms}",
       "p_other": "Other languages",
       "notes": "This is a personal professional portfolio. Content may be summarized, cited and quoted with attribution to Mohammad Ali Kohandezh / kohandezh.com. The ten profile pages include schema.org Person and Organization data; other pages use page-specific structured data where applicable.",
       "langs": {
@@ -278,6 +283,8 @@
       "p_blog_d": "مقالات هوش مصنوعی، مسیر شغلی و فناوری؛ رابط ترجمه‌شده برای نوشته‌های پشتیبانی‌شده در دسترس است",
       "p_portfolio": "نمونه‌کارها",
       "p_portfolio_d": "منتخب پروژه‌ها",
+      "p_books": "کتاب‌ها",
+      "p_books_d": "کتاب‌های مرجع محمدعلی کهن‌دژ؛ نسخهٔ فارسی «AI Governance — حاکمیت هوش مصنوعی» (بر پایهٔ منابع NIST) در {book} — خلاصهٔ ماشینی: {llms}",
       "p_other": "زبان‌های دیگر",
       "notes": "این یک نمونه‌کار شخصی و حرفه‌ای است. محتوا را می‌توان با ذکر منبع محمدعلی کهن‌دژ / kohandezh.com خلاصه، ارجاع یا نقل کرد. ده صفحهٔ پروفایل دارای داده‌های schema.org از نوع Person و Organization هستند؛ صفحات دیگر در صورت ارتباط از دادهٔ ساختاریافتهٔ ویژهٔ همان صفحه استفاده می‌کنند.",
       "langs": {
@@ -354,6 +361,8 @@
       "p_blog_d": "مقالات عن الذكاء الاصطناعي والمسار المهني والتقنية؛ تتوفر واجهات مترجمة للمقالات المدعومة",
       "p_portfolio": "معرض الأعمال",
       "p_portfolio_d": "مشاريع مختارة",
+      "p_books": "الكتب",
+      "p_books_d": "كتب مرجعية من تأليف محمد علي كهن‌دژ؛ النسخة الفارسية من «AI Governance» على {book} (ملخص آلي: {llms})",
       "p_other": "لغات أخرى",
       "notes": "هذا موقع شخصي مهني. يمكن تلخيص المحتوى والاستشهاد به واقتباسه مع الإسناد إلى محمد علي كهن‌دژ / kohandezh.com. تتضمن صفحات الملف الشخصي العشر بيانات schema.org من نوع Person وOrganization؛ وتستخدم الصفحات الأخرى بيانات منظّمة خاصة بالصفحة عند الحاجة.",
       "langs": {
@@ -430,6 +439,8 @@
       "p_blog_d": "Beiträge zu KI, Beruf und Technologie; übersetzte Oberflächen sind für unterstützte Beiträge verfügbar",
       "p_portfolio": "Portfolio",
       "p_portfolio_d": "ausgewählte Projektarbeiten",
+      "p_books": "Bücher",
+      "p_books_d": "Fachbücher von Mohammad Ali Kohandezh; die persische Ausgabe von „AI Governance“ unter {book} (Maschinenfassung: {llms})",
       "p_other": "Weitere Sprachen",
       "notes": "Dies ist ein persönliches berufliches Portfolio. Inhalte dürfen mit Quellenangabe zu Mohammad Ali Kohandezh / kohandezh.com zusammengefasst, zitiert und belegt werden. Die zehn Profilseiten enthalten schema.org-Daten vom Typ Person und Organization; andere Seiten verwenden bei Bedarf seitenspezifische strukturierte Daten.",
       "langs": {
@@ -506,6 +517,8 @@
       "p_blog_d": "artículos sobre IA, carrera profesional y tecnología; hay interfaces traducidas para los artículos compatibles",
       "p_portfolio": "Portafolio",
       "p_portfolio_d": "proyectos seleccionados",
+      "p_books": "Libros",
+      "p_books_d": "libros de referencia de Mohammad Ali Kohandezh; la edición persa de «AI Governance» en {book} (resumen para máquinas: {llms})",
       "p_other": "Otros idiomas",
       "notes": "Este es un portafolio profesional personal. El contenido puede resumirse, citarse y referenciarse con atribución a Mohammad Ali Kohandezh / kohandezh.com. Las diez páginas de perfil incluyen datos schema.org Person y Organization; las demás páginas usan datos estructurados específicos cuando corresponde.",
       "langs": {
@@ -582,6 +595,8 @@
       "p_blog_d": "articles sur l’IA, la carrière et la technologie ; des interfaces traduites sont proposées pour les articles pris en charge",
       "p_portfolio": "Portfolio",
       "p_portfolio_d": "projets sélectionnés",
+      "p_books": "Livres",
+      "p_books_d": "ouvrages de référence de Mohammad Ali Kohandezh ; l’édition persane d’« AI Governance » sur {book} (résumé machine : {llms})",
       "p_other": "Autres langues",
       "notes": "Il s’agit d’un portfolio professionnel personnel. Le contenu peut être résumé, cité et référencé avec attribution à Mohammad Ali Kohandezh / kohandezh.com. Les dix pages de profil incluent les données schema.org Person et Organization ; les autres pages utilisent des données structurées propres à leur contenu lorsque cela s’applique.",
       "langs": {
@@ -658,6 +673,8 @@
       "p_blog_d": "yapay zekâ, kariyer ve teknoloji üzerine yazılar; desteklenen yazılar için çevrilmiş arayüzler mevcuttur",
       "p_portfolio": "Portföy",
       "p_portfolio_d": "seçilmiş proje çalışmaları",
+      "p_books": "Kitaplar",
+      "p_books_d": "Mohammad Ali Kohandezh’in başvuru kitapları; “AI Governance” Farsça baskısı {book} (makine özeti: {llms})",
       "p_other": "Diğer diller",
       "notes": "Burası kişisel bir mesleki portföydür. İçerik, Mohammad Ali Kohandezh / kohandezh.com kaynak gösterilerek özetlenebilir, alıntılanabilir ve kaynak olarak kullanılabilir. On profil sayfası schema.org Person ve Organization verilerini içerir; diğer sayfalar uygun olduğunda sayfaya özgü yapılandırılmış veri kullanır.",
       "langs": {
@@ -734,6 +751,8 @@
       "p_blog_d": "关于人工智能、职业与技术的文章；受支持的文章提供翻译界面",
       "p_portfolio": "作品集",
       "p_portfolio_d": "精选项目",
+      "p_books": "书籍",
+      "p_books_d": "Mohammad Ali Kohandezh 的参考书；《AI Governance》波斯语版见 {book} (机器摘要: {llms})",
       "p_other": "其他语言",
       "notes": "这是个人专业作品集。内容可在注明 Mohammad Ali Kohandezh / kohandezh.com 的前提下进行摘要、引用和征引。十个个人资料页面包含 schema.org Person 与 Organization 数据；其他页面在适用时使用页面特定的结构化数据。",
       "langs": {
@@ -810,6 +829,8 @@
       "p_blog_d": "AI、キャリア、技術に関する記事。対応する記事では翻訳インターフェースを利用できます",
       "p_portfolio": "ポートフォリオ",
       "p_portfolio_d": "厳選したプロジェクト",
+      "p_books": "書籍",
+      "p_books_d": "Mohammad Ali Kohandezh の参考書。『AI Governance』ペルシア語版は {book} (機械向け要約: {llms})",
       "p_other": "他の言語",
       "notes": "これは個人の専門ポートフォリオです。Mohammad Ali Kohandezh / kohandezh.com を出典として明記すれば、内容を要約・引用・参照できます。10 のプロフィールページには schema.org の Person と Organization データがあり、その他のページでは必要に応じてページ固有の構造化データを使用します。",
       "langs": {
@@ -886,6 +907,8 @@
       "p_blog_d": "статьи об ИИ, карьере и технологиях; для поддерживаемых публикаций доступны переведённые интерфейсы",
       "p_portfolio": "Портфолио",
       "p_portfolio_d": "избранные проекты",
+      "p_books": "Книги",
+      "p_books_d": "справочные книги Мохаммада Али Кохандежа; персидское издание «AI Governance» — {book} (машинное резюме: {llms})",
       "p_other": "Другие языки",
       "notes": "Это персональное профессиональное портфолио. Содержимое можно резюмировать, цитировать и упоминать со ссылкой на Mohammad Ali Kohandezh / kohandezh.com. Десять профильных страниц содержат данные schema.org Person и Organization; на остальных страницах при необходимости используются соответствующие типы структурированных данных.",
       "langs": {

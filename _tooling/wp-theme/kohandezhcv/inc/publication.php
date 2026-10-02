@@ -135,7 +135,14 @@ add_action( 'template_redirect', function () {
 		for ( $i = 1; $i <= (int) $query->max_num_pages; $i++ ) {
 			$entries[] = array( 'loc' => add_query_arg( array( 'kdcv_sitemap' => 'posts', 'kdcv_sitemap_page' => $i ), home_url( '/' ) ) );
 		}
-		if ( kdcv_ai_governance_sitemap_entries() ) {
+		// Every registered book publishes its own /fa/books/{slug}/sitemap.xml
+		// (kohandezh-knowledge plugin, chapter pages included). The legacy
+		// nine-URL AI Governance list only covers an install without that plugin.
+		if ( class_exists( 'KBK_AI_Book_Registry' ) && method_exists( 'KBK_AI_Book_Registry', 'routable_slugs' ) ) {
+			foreach ( KBK_AI_Book_Registry::routable_slugs() as $slug ) {
+				$entries[] = array( 'loc' => home_url( '/fa/books/' . $slug . '/sitemap.xml' ) );
+			}
+		} elseif ( kdcv_ai_governance_sitemap_entries() ) {
 			$entries[] = array( 'loc' => add_query_arg( array( 'kdcv_sitemap' => 'ai-governance' ), home_url( '/' ) ) );
 		}
 	} else {

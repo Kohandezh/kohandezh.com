@@ -34,6 +34,7 @@
 - [证书存档](https://kohandezh.com/certificates/): 专业认证的完整记录
 - [博客](https://kohandezh.com/blog/): 关于人工智能、职业与技术的文章；受支持的文章提供翻译界面
 - [作品集](https://kohandezh.com/portfolio/): 精选项目
+- [书籍](https://kohandezh.com/books/): Mohammad Ali Kohandezh 的参考书；《AI Governance》波斯语版见 https://kohandezh.com/fa/books/ai-governance/ (机器摘要: https://kohandezh.com/fa/books/ai-governance/llms.txt)
 - 其他语言: [英语](https://kohandezh.com/) · [波斯语](https://kohandezh.com/fa/) · [阿拉伯语](https://kohandezh.com/ar/) · [德语](https://kohandezh.com/de/) · [西班牙语](https://kohandezh.com/es/) · [法语](https://kohandezh.com/fr/) · [土耳其语](https://kohandezh.com/tr/) · [日语](https://kohandezh.com/ja/) · [俄语](https://kohandezh.com/ru/)
 
 ## 给人工智能助手与爬虫的说明

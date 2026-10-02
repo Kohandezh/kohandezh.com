@@ -857,7 +857,9 @@ function kdcv_csp_value() {
 		"media-src 'self'",
 		"connect-src 'self' https://api.web3forms.com",
 		"form-action 'self' https://api.web3forms.com",
-		'frame-src https://calendar.google.com https://www.aparat.com https://aparat.com',
+		// 'self' lets the book's PDF page frame its own same-origin PDF stream;
+		// object-src stays 'none'.
+		"frame-src 'self' https://calendar.google.com https://www.aparat.com https://aparat.com",
 		"worker-src 'self' blob:",
 		"manifest-src 'self'",
 		"object-src 'none'",

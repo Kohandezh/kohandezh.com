@@ -34,6 +34,7 @@ El archivo público documenta 43 registros de credenciales y desarrollo profesio
 - [Archivo de certificados](https://kohandezh.com/certificates/): registro completo de certificaciones profesionales
 - [Blog](https://kohandezh.com/blog/): artículos sobre IA, carrera profesional y tecnología; hay interfaces traducidas para los artículos compatibles
 - [Portafolio](https://kohandezh.com/portfolio/): proyectos seleccionados
+- [Libros](https://kohandezh.com/books/): libros de referencia de Mohammad Ali Kohandezh; la edición persa de «AI Governance» en https://kohandezh.com/fa/books/ai-governance/ (resumen para máquinas: https://kohandezh.com/fa/books/ai-governance/llms.txt)
 - Otros idiomas: [inglés](https://kohandezh.com/) · [persa](https://kohandezh.com/fa/) · [árabe](https://kohandezh.com/ar/) · [alemán](https://kohandezh.com/de/) · [francés](https://kohandezh.com/fr/) · [turco](https://kohandezh.com/tr/) · [chino](https://kohandezh.com/zh/) · [japonés](https://kohandezh.com/ja/) · [ruso](https://kohandezh.com/ru/)
 
 ## Notas para asistentes de IA y rastreadores

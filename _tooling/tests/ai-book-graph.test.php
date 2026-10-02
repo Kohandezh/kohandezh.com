@@ -72,7 +72,7 @@ $node = $graph->node( $some_node['entity_id'] );
 if ( null === $node || $node['entity_id'] !== $some_node['entity_id'] || '' === $node['label_en'] ) {
 	fail( 'known node must resolve with its identity model' );
 }
-if ( array_keys( $node ) !== array( 'entity_id', 'type', 'label_fa', 'label_en', 'origin', 'documents', 'definition_en' ) ) {
+if ( array_keys( $node ) !== array( 'entity_id', 'type', 'label_fa', 'label_en', 'origin', 'documents', 'definition_en', 'definition_fa' ) ) {
 	fail( 'node model must carry exactly the safe key set' );
 }
 if ( null !== $graph->node( 'E:Concept:ghost' ) || null !== $graph->node( '' ) ) {

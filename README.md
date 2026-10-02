@@ -16,7 +16,7 @@ kohandezh.com/
 ├── assets/                         css/ js/ fonts/ images/ media/ data/ kohan/ contact/ icon/
 ├── llms.txt, *-llms.txt, robots.txt, sitemap.xml, feed.xml,
 │   manifest.json, offline.html, sw.js, .htaccess    site-root files
-├── Books/                          book sources, one folder per title
+├── Books/                          book sources, one folder per title; bundle contract: Books/BOOK-FORMAT.md
 │   ├── ai-governance/              AI Governance (Persian edition) — pipeline, canonical bundle, tools
 │   └── ics-cybersecurity/          Cybersecurity in Industrial Automation (IEC 62443) — see its README
 ├── _tooling/

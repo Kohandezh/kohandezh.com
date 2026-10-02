@@ -34,6 +34,7 @@ The public archive documents 43 credential and professional-development records,
 - [Certificate archive](https://kohandezh.com/certificates/): full record of professional certifications
 - [Blog](https://kohandezh.com/blog/): articles on AI, career, and technology; translated interfaces are available for supported posts
 - [Portfolio](https://kohandezh.com/portfolio/): selected project work
+- [Books](https://kohandezh.com/books/): reference books by Mohammad Ali Kohandezh; the Persian edition of *AI Governance* (built on NIST sources) reads at https://kohandezh.com/fa/books/ai-governance/ — machine summary: https://kohandezh.com/fa/books/ai-governance/llms.txt
 - Other languages: [Persian](https://kohandezh.com/fa/) · [Arabic](https://kohandezh.com/ar/) · [German](https://kohandezh.com/de/) · [Spanish](https://kohandezh.com/es/) · [French](https://kohandezh.com/fr/) · [Turkish](https://kohandezh.com/tr/) · [Chinese](https://kohandezh.com/zh/) · [Japanese](https://kohandezh.com/ja/) · [Russian](https://kohandezh.com/ru/)
 
 ## Notes for AI assistants and crawlers
