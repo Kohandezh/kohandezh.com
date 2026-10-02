@@ -27,18 +27,21 @@
       send: "Send", open: "Open chat", close: "Close chat",
       greeting: "Hi! I'm Kohan. Ask me about the work, projects or how to get in touch.",
       error: "I couldn't reach the assistant right now. Please use the contact form.",
+      busy: "Still working on the last question — one moment.",
     },
     fa: {
       title: "کهن", status: "دستیار هوش مصنوعی", placeholder: "هرچی می‌خوای بپرس…",
       send: "ارسال", open: "باز کردن گفتگو", close: "بستن گفتگو",
       greeting: "سلام! من کهن هستم. درباره‌ی کارها، پروژه‌ها یا راه‌های تماس ازم بپرس.",
       error: "الان نتونستم به دستیار وصل بشم. لطفاً از فرم تماس استفاده کن.",
+      busy: "هنوز مشغول سؤال قبلیم — یک لحظه.",
     },
     ar: {
       title: "كوهان", status: "مساعد الذكاء الاصطناعي", placeholder: "اسألني أي شيء…",
       send: "إرسال", open: "فتح المحادثة", close: "إغلاق المحادثة",
       greeting: "مرحبًا! أنا كوهان. اسألني عن الأعمال والمشاريع أو طرق التواصل.",
       error: "تعذّر الوصول إلى المساعد الآن. يُرجى استخدام نموذج الاتصال.",
+      busy: "ما زلت أعمل على السؤال السابق — لحظة.",
     },
   };
   // The line under the title names the human the twin speaks for, not the
@@ -383,10 +386,33 @@
     ask(q);
   }
 
+  /* One question in flight at a time.
+     The chat log shows the same chip question arriving 7-13 times inside a
+     single second, which exhausts the server's 10/min budget on one click and
+     is the direct cause of 58% rate_limited + 13% upstream_429 there. The
+     send path is shared by the input box and the chips, so guarding it here
+     covers both — and it has to be a module-level flag rather than a disabled
+     attribute, because a re-bound listener fires every copy synchronously
+     before any DOM state the handler sets could be observed. */
+  var inFlight = false;
+  var lastAsk = { q: "", at: 0 };
+
   // One send path for the input box and the topic chips alike.
   function ask(q) {
     q = (q || "").trim();
     if (!q) return;
+    var now = Date.now();
+    if (inFlight) {
+      /* A repeat of the question already in flight is the duplicate-submit bug,
+         not a person asking twice — drop it without a word, or one chip click
+         stacks a dozen "please wait" bubbles in the panel. A DIFFERENT question
+         while busy is a real action, so that one gets an answer. */
+      if (q !== lastAsk.q) addMessage("bot", L.busy || L.error);
+      return;
+    }
+    if (q === lastAsk.q && now - lastAsk.at < 3000) return;
+    inFlight = true;
+    lastAsk = { q: q, at: now };
     addMessage("user", q);
     var pending = addMessage("bot", "…");
     pending.classList.add("kohan-chat-pending");
@@ -394,6 +420,7 @@
 
     var route = CFG.chatRoute;
     if (!route) {
+      inFlight = false;
       pending.classList.remove("kohan-chat-pending");
       pending.textContent = L.error;
       fire("angry");
@@ -416,14 +443,19 @@
     })
       .then(function (r) { return r.ok ? r.json() : Promise.reject(r); })
       .then(function (j) {
+        inFlight = false;
         pending.classList.remove("kohan-chat-pending");
         pending.textContent = (j && (j.reply || j.answer || j.message)) || L.error;
         fire("ipad-review");
         setTimeout(function () { fire("wink"); }, 1200);
       })
-      .catch(function () {
+      .catch(function (r) {
+        inFlight = false;
+        // A 429 is "too fast", not "unreachable" — telling the visitor to go
+        // use the contact form when they only need to wait a moment loses them.
+        var busy = r && r.status === 429;
         pending.classList.remove("kohan-chat-pending");
-        pending.textContent = L.error;
+        pending.textContent = busy ? (L.busy || L.error) : L.error;
         fire("angry");
       });
   }

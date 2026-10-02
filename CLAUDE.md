@@ -271,6 +271,28 @@ wp-admin visit. **Bump it whenever you add new admin_init work.**
     read `opacity: 0` at every step of a correct state machine purely because of
     this. Suppress the animation (`el.style.animation = "none"`) and read the
     DECLARED value before concluding an element is invisible. Sibling of gotcha 19.
+41. **A `rate_limited` spike is a frontend symptom, not a server problem.** The
+    chat chips fired the same question up to 13 times in ONE second (a listener
+    re-bound per panel render), so one click ate the whole `RATE_PER_MIN = 10`
+    budget and the overflow hit the provider as 429 — 71% of all logged
+    requests. `ask()` in `kohan-avatar-chat.js` now holds an in-flight lock and
+    `class-kdcv-rest.php` caches the answer for 5s per `ip|locale|question`.
+    Before raising a rate limit, group the log by (visitor, second, question).
+42. **The abuse reply is deterministic PHP and must stay that way.**
+    `is_abusive()` / `abuse_reply()` in `class-kdcv-rest.php` never call a model:
+    the system prompt's "only verified facts" rule is the single thing stopping
+    the assistant inventing claims about the owner, and loosening it so a cheap
+    model can improvise a comeback trades that away. Match **whole tokens** —
+    `کس` is a substring of `کسب`, and "کسب و کار" is a core topic of this site,
+    so a substring filter rejects the most legitimate questions it will ever
+    get. Extend the list from real `abuse_deflected` rows, not from guesses.
+43. **The subject's name needs the forbidden spellings enumerated, not just the
+    right one.** glm-4.5-flash wrote `محمد علی کوهنده` (a different name) and
+    bare `کهندژ` 14 times against 5 correct `کهن‌دژ`. The system prompt now
+    gives the exact Latin and Persian forms AND lists what never to write.
+44. **The AI-chat export prepends a whole wp-admin HTML page to the JSON.** The
+    real payload starts ~byte 35446 of the downloaded `.json`, so every standard
+    parser rejects the file. Seek to the first parsable `{` before reading it.
 
 ## Environment
 

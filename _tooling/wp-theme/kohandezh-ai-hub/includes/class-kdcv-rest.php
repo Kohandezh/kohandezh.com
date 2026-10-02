@@ -123,11 +123,59 @@ class KDCV_AI_REST {
 			}
 		}
 		$ip_hash = md5( (string) $ip . wp_salt() );
+
+		/* 3a. Abuse gate — deterministic and local. The reply is NEVER generated
+		   by the model: the system prompt's "only use verified facts" rule is the
+		   single thing standing between this assistant and invented claims about
+		   the site owner, and loosening it so a cheap model can improvise a
+		   comeback trades that away for a troll. Three tiers, then silence —
+		   an endlessly sparring bot is something trolls farm for screenshots. */
+		$ab_key  = 'kdcv_ab_' . md5( (string) $ip );
+		$offense = (int) get_transient( $ab_key );
+		if ( self::is_abusive( $question ) ) {
+			set_transient( $ab_key, $offense + 1, HOUR_IN_SECONDS );
+			$reply = self::abuse_reply( $offense, $locale );
+			self::log( $provider, $ip_hash, $locale, $source, $question, $reply, 'abuse_deflected' );
+			return new WP_REST_Response( array(
+				'available' => true, 'answer' => $reply, 'provider' => '', 'model' => '',
+			), 200 );
+		}
+		if ( $offense >= 3 ) {
+			// Already cut off: stay closed for the rest of the hour even on a
+			// civil question, otherwise the tier-3 close means nothing.
+			$reply = self::abuse_reply( $offense, $locale );
+			self::log( $provider, $ip_hash, $locale, $source, $question, $reply, 'abuse_deflected' );
+			return new WP_REST_Response( array(
+				'available' => true, 'answer' => $reply, 'provider' => '', 'model' => '',
+			), 200 );
+		}
+
+		/* 3b. Duplicate-submit guard. The suggestion chips fire the same question
+		   7-13 times within one second (a listener re-bound on every panel
+		   render), which instantly exhausts RATE_PER_MIN = 10 — that is the whole
+		   of the 58% rate_limited / 13% upstream_429 in the chat log. Serving the
+		   first answer back to the duplicates costs no provider call and no quota,
+		   and works regardless of which frontend copy is live in production. */
+		$dup_key = 'kdcv_dup_' . md5( (string) $ip . '|' . $locale . '|' . $question );
+		$cached  = get_transient( $dup_key );
+		if ( '__pending__' === $cached ) {
+			// First copy is still waiting on the provider. Tell the duplicates to
+			// hold rather than handing them the sentinel as an answer.
+			return $unavailable( 'duplicate-in-flight', 429 );
+		}
+		if ( is_string( $cached ) && '' !== $cached ) {
+			return new WP_REST_Response( array(
+				'available' => true, 'answer' => $cached, 'provider' => '', 'model' => '',
+			), 200 );
+		}
+		set_transient( $dup_key, '__pending__', 15 );
+
 		$bucket  = 'kdcv_ai_' . md5( (string) $ip );
 		$count   = (int) get_transient( $bucket );
 		if ( $count <= 0 ) {
 			set_transient( $bucket, 1, MINUTE_IN_SECONDS );
 		} elseif ( $count >= self::RATE_PER_MIN ) {
+			delete_transient( $dup_key );
 			self::log( $provider, $ip_hash, $locale, $source, $question, '', 'rate_limited' );
 			return $unavailable( 'rate-limited', 429 );
 		} else {
@@ -163,8 +211,13 @@ class KDCV_AI_REST {
 		}
 
 		if ( empty( $result['ok'] ) ) {
+			// Release the sentinel so a genuine retry is not stonewalled for 15s.
+			delete_transient( $dup_key );
 			return $unavailable( $result['status'], 502 );
 		}
+
+		// Hold the answer briefly so same-second duplicates are served from here.
+		set_transient( $dup_key, (string) $result['answer'], 5 );
 
 		self::log( $provider, $ip_hash, $locale, $source, $question, $result['answer'], 'ok', $model_used );
 
@@ -278,6 +331,113 @@ class KDCV_AI_REST {
 		return implode( "\n", $lines );
 	}
 
+	/**
+	 * Fold a question down to bare tokens before matching.
+	 *
+	 * Persian needs this more than English: the same word arrives with Arabic
+	 * ي/ك instead of Persian ی/ک, with a ZWNJ inside it, with Arabic-Indic
+	 * digits, or with a letter held down (کییییر). Matching the raw string
+	 * catches only whichever form the author happened to type.
+	 */
+	private static function normalize_for_match( $text ) {
+		$text = mb_strtolower( $text, 'UTF-8' );
+		$text = str_replace(
+			array( "\xE2\x80\x8C", "\xE2\x80\x8D", 'ي', 'ك', 'ۀ', 'ﻻ', 'أ', 'إ', 'آ' ),
+			array( ' ',            '',             'ی', 'ک', 'ه', 'لا', 'ا', 'ا', 'ا' ),
+			$text
+		);
+		// Collapse runs of the same letter: "kiiiir" and "کییییر" fold to one.
+		$text = preg_replace( '/(.)\1{2,}/u', '$1', $text );
+		// Punctuation and separators become spaces so tokens stand alone.
+		$text = preg_replace( '/[^\p{L}\p{N}]+/u', ' ', $text );
+		return trim( preg_replace( '/\s+/u', ' ', $text ) );
+	}
+
+	/**
+	 * Whole-token profanity check.
+	 *
+	 * Deliberately NOT a substring scan. "کس" is a substring of "کسب" — and
+	 * "کسب و کار" (business) is a core topic of a CEO's site, so a substring
+	 * filter would reject the site's most legitimate questions. A filter that
+	 * turns real visitors away is worse than no filter. Same trap in Latin:
+	 * "kos" sits inside "kosher", "kir" inside "kirkuk".
+	 *
+	 * Kept short on purpose. Every added root widens the false-positive
+	 * surface; extend it from the real `abuse_deflected` log rows, not by
+	 * guessing.
+	 */
+	private static function is_abusive( $question ) {
+		$norm   = self::normalize_for_match( $question );
+		$tokens = $norm === '' ? array() : explode( ' ', $norm );
+
+		// Tokens that are a swear outright, in Persian script and in Pinglish.
+		$exact = array(
+			'کیر', 'کیرم', 'کیری', 'کس', 'کصو', 'جنده', 'کونی', 'گوه', 'عوضی', 'حروم زاده',
+			'kir', 'kiram', 'kiri', 'kos', 'koso', 'koskesh', 'jende', 'kooni', 'kuni',
+			'goh', 'avazi', 'madarjende', 'pedarsag',
+			'fuck', 'fucking', 'fucker', 'shit', 'bitch', 'asshole', 'cunt', 'dick', 'bastard',
+		);
+		foreach ( $tokens as $t ) {
+			if ( in_array( $t, $exact, true ) ) {
+				return true;
+			}
+		}
+
+		/* Compounds that only read as abuse together. "دهن" and "مادر" are both
+		   perfectly ordinary words; "کیرم دهنت" is not. Matching the pair keeps
+		   the innocent halves usable. */
+		$phrases = array(
+			'کیرم دهنت', 'کیر دهنت', 'مادرت', 'مادر جنده', 'کس نگو', 'کس شعر',
+			'kiram dahanet', 'kiram dahanat', 'kir dahanet', 'madarjende', 'madar jende',
+			'kos nago', 'kos sher', 'koss sher',
+		);
+		foreach ( $phrases as $p ) {
+			if ( false !== mb_strpos( $norm, self::normalize_for_match( $p ) ) ) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	/**
+	 * Tiered, pre-written reply. $offense is the count BEFORE this message.
+	 *
+	 * Tier 1 lands the rebuke and then points back at the job — the aim is to
+	 * recover the conversation, not to win it. Tier 2 states the consequence.
+	 * Tier 3 stops: a bot that trades insults indefinitely is a toy trolls farm.
+	 *
+	 * Only fa and en carry the idiom (together they are 99% of logged traffic,
+	 * and "do you kiss your mother with that mouth" happens to exist in both).
+	 * The other eight locales get a neutral line — a translated joke nobody can
+	 * QA across Arabic, Chinese and Japanese is risk with no upside.
+	 */
+	private static function abuse_reply( $offense, $locale ) {
+		$tier = $offense < 1 ? 1 : ( $offense < 2 ? 2 : 3 );
+
+		if ( 'fa' === $locale ) {
+			$by_tier = array(
+				1 => 'مادرت رو با همین دهن بوس می‌کنی؟ حالا اگر سؤال واقعی داری، در خدمتم.',
+				2 => 'بیا سالم ادامه بدیم. بار بعد جواب نمی‌دم.',
+				3 => 'این گفتگو بسته شد.',
+			);
+			return $by_tier[ $tier ];
+		}
+
+		if ( 'en' === $locale ) {
+			$by_tier = array(
+				1 => "Do you kiss your mother with that mouth? If you have a real question, I'm here.",
+				2 => "Let's keep this civil. One more and I stop replying.",
+				3 => 'This conversation is closed.',
+			);
+			return $by_tier[ $tier ];
+		}
+
+		return 3 === $tier
+			? 'This conversation is closed.'
+			: "Let's keep this civil — I'm here for questions about the CV.";
+	}
+
 	private static function build_system_prompt( $locale ) {
 		$lang_names = array(
 			'en' => 'English', 'fa' => 'Persian (Farsi)', 'ar' => 'Arabic',
@@ -290,6 +450,14 @@ class KDCV_AI_REST {
 			'You are Kohan, the official website assistant embedded on kohandezh.com. ' .
 			'Answer the visitor question using ONLY the verified site-wide facts and current-page facts supplied below. ' .
 			'Do not invent information. If the facts do not contain the answer, say briefly that you could not find it on kohandezh.com. ' .
+			/* The log shows the model inventing spellings of the owner's own name
+			   — "محمد علی کوهنده" is a different person's name, and bare "کهندژ"
+			   drops the ZWNJ. On a site whose entire asset is this one name, an
+			   instruction to "spell it correctly" is not enough: the allowed form
+			   and the forbidden forms both have to be spelled out. */
+			'The subject\'s name is written exactly "Mohammad Ali Kohandezh" in Latin script, and exactly "محمدعلی کهن‌دژ" in Persian ' .
+			'— with a zero-width non-joiner (U+200C) between کهن and دژ, never a space and never nothing. ' .
+			'Never write "کوهنده", "کهندژ", "کهن دژ", "Kouhandeh", or any other spelling of the name. ' .
 			'When asked how to contact Mohammad, always provide the official email and both official mobile numbers exactly as supplied. ' .
 			'Keep the answer concise (1 to 4 short sentences). ' .
 			'Reply in %s. Do not use markdown, bullet lists, or code blocks.',

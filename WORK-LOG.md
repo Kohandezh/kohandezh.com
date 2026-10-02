@@ -953,3 +953,61 @@ or pushed; all changes live in the checkout.
   kohan-avatar.zip, kdcv-rightclick-guard.zip. Junk/secret scans clean.
 - **Final battery: npm test exit 0 (695 PASS), shell suite 32/0, sync parity
   0/0/0, git diff --check clean.**
+
+## 2026-10-01 — chat log analysis + the three fixes it pointed at
+
+Analysed the exported chat log (284 rows, 2026-07-19 → 2026-10-01). Headline:
+**78% of all requests failed** — 58% `rate_limited`, 13% `upstream_429`, 4%
+`empty_answer`, 4% `transport_error`. Only 62 were `ok`, and 20 of those said
+"could not find it", so **42/284 = 15%** got a real answer. Traffic is 73% fa,
+26% en, and 19 unique visitors of whom 4 produced 85% of it (mostly our own
+testing; Sept had 5 requests, Oct 1).
+
+**Root cause — the suggestion chips submit N times per click.** 35 groups of
+identical `(visitor, same second, same question)` rows, up to **13 in one
+second**; 98 redundant requests = 35% of all traffic. `RATE_PER_MIN = 10`, so a
+single chip click exhausts a whole minute's budget on itself and the overflow
+hits z.ai as 429. `سوابق کاری` was clicked 77 times and answered **once**;
+`Achievements` 7 times, **never**. The limiter was working correctly — the
+frontend was the bug.
+
+Fixes:
+
+- **`kohan-avatar-chat.js`: in-flight lock in `ask()`** (the one send path for
+  both the input box and the chips). A repeat of the in-flight question is
+  dropped silently — it is the duplicate-submit bug, not a person asking twice,
+  and announcing it stacks a dozen bubbles per click. A *different* question
+  while busy gets the new `busy` string. A 429 now reads "one moment" instead of
+  "use the contact form". Simulated: 13 synchronous calls → **1 fetch, 1
+  bubble**; a genuine retry after 3s still goes through. Plugin → v2.5.2.
+- **`class-kdcv-rest.php`: server-side duplicate guard** (step 3b), 5s answer
+  cache keyed on `ip|locale|question` with a `__pending__` sentinel for the
+  in-flight window. Belt-and-braces: it holds regardless of which frontend copy
+  is live in production (gotcha 38). Sentinel released on provider failure so a
+  real retry is not stonewalled.
+- **`class-kdcv-rest.php`: abuse gate** (step 3a) — deterministic, local, three
+  tiers (witty deflect → warning → closed for the hour), logged as
+  `abuse_deflected`. The reply is never model-generated: the system prompt's
+  "only verified facts" rule is what stops the assistant inventing claims about
+  the owner, and loosening it so a cheap model can improvise a comeback trades
+  that away for a troll (1 abusive message in 284). Whole-token matching with a
+  normalizer (ZWNJ, ي/ك folding, repeated-letter collapse) — **not** substring:
+  `کس` is inside `کسب`, and "کسب و کار" is a core topic of this site. Tested
+  20/20 legitimate questions pass (incl. `کسب و کار`, `kosher`, `Kirkuk`) and
+  11/11 abusive forms caught (incl. `کیییییرم دهنت`, `KIRAM DAHANET`).
+- **`class-kdcv-rest.php`: name locked in the system prompt.** The log had the
+  model writing `محمد علی کوهنده` (a different name) and bare `کهندژ` 14 times
+  against only 5 correct `کهن‌دژ`. The prompt now states the exact Latin and
+  Persian forms *and* enumerates the forbidden spellings; "spell it correctly"
+  alone does not hold on glm-4.5-flash. Plugin → v1.2.0.
+
+Zips rebuilt: `kohandezh-ai-hub.zip` (27 KB), `kohan-avatar.zip` (1.4 MB);
+edited files verified present inside both. `php -l` and `node --check` clean.
+No `.min` or `?v=N` work needed — the plugin enqueues unminified and versions by
+`file_ver()`/filemtime. **Nothing deployed** — the owner uploads the zips.
+
+Still open from the analysis, not addressed here:
+- The export writes a full wp-admin HTML page ahead of the JSON (real payload
+  starts at byte 35446), so the `.json` file no standard parser will read.
+- Content gaps the chips promise but the context lacks: "دستاوردها",
+  "Which industries do you serve?", "Padyar".
