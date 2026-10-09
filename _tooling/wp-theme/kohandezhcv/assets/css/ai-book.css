@@ -625,3 +625,4 @@ span.ab-title-en{display:inline;margin:0}
 }
 .kbk-ai-book-page .ab-card-meta a{display:inline-block;min-height:24px;line-height:24px}
 @media (max-width:760px),(pointer:coarse){.kbk-ai-book-page .ab-card-meta a{min-height:44px;line-height:44px}}
+.ab-views{display:inline-flex;align-items:center;gap:4px;min-width:5.5em;color:var(--ab-muted);font-size:12px;font-weight:500;letter-spacing:0;line-height:1.6;white-space:nowrap;vertical-align:middle}.ab-views[hidden]{display:none}.ab-views-n{font-variant-numeric:tabular-nums}.ab-view-read .ab-prose>section>h2+.ab-views{display:inline-flex;margin:-6px 0 6px}.ab-view-read .ab-prose>section>h2+.ab-views[hidden]{display:none}.ab-kicker .ab-views-chapter{margin-inline-start:10px;padding:1px 9px;border:1px solid var(--ab-line);border-radius:999px;font-weight:600}

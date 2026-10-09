@@ -41,6 +41,8 @@ final class KBK_AI_Book_Settings {
 					'page_chars'    => KBK_AI_Book::DEFAULT_PAGE_CHARS,
 					'default_wide'  => 0,
 					'default_focus' => 0,
+					'views_show'      => 1,
+					'views_hide_zero' => 1,
 				),
 			)
 		);
@@ -48,6 +50,10 @@ final class KBK_AI_Book_Settings {
 		add_settings_field( 'kbk_reader_page_chars', 'بودجهٔ هر صفحهٔ فصل (نویسه)', array( __CLASS__, 'field_page_chars' ), self::PAGE, 'kbk_reader_defaults', array( 'label_for' => 'kbk_reader_page_chars' ) );
 		add_settings_field( 'kbk_reader_default_wide', 'عرض پیش‌فرض متن', array( __CLASS__, 'field_wide' ), self::PAGE, 'kbk_reader_defaults', array( 'label_for' => 'kbk_reader_default_wide' ) );
 		add_settings_field( 'kbk_reader_default_focus', 'حالت مطالعه در ورود نخست', array( __CLASS__, 'field_focus' ), self::PAGE, 'kbk_reader_defaults', array( 'label_for' => 'kbk_reader_default_focus' ) );
+
+		add_settings_section( 'kbk_reader_views', 'شمارندهٔ بازدید', array( __CLASS__, 'views_intro' ), self::PAGE );
+		add_settings_field( 'kbk_reader_views_show', 'نمایش شمارنده', array( __CLASS__, 'field_views_show' ), self::PAGE, 'kbk_reader_views', array( 'label_for' => 'kbk_reader_views_show' ) );
+		add_settings_field( 'kbk_reader_views_hide_zero', 'بخش‌های بدون بازدید', array( __CLASS__, 'field_views_hide_zero' ), self::PAGE, 'kbk_reader_views', array( 'label_for' => 'kbk_reader_views_hide_zero' ) );
 
 		register_setting(
 			self::PAGE,
@@ -144,7 +150,7 @@ final class KBK_AI_Book_Settings {
 
 	/**
 	 * @param mixed $input
-	 * @return array{page_chars:int,default_wide:int,default_focus:int}
+	 * @return array{page_chars:int,default_wide:int,default_focus:int,views_show:int,views_hide_zero:int}
 	 */
 	public static function sanitize( $input ): array {
 		$input = is_array( $input ) ? $input : array();
@@ -153,6 +159,8 @@ final class KBK_AI_Book_Settings {
 			'page_chars'    => max( KBK_AI_Book::MIN_PAGE_CHARS, min( KBK_AI_Book::MAX_PAGE_CHARS, $chars ) ),
 			'default_wide'  => ! empty( $input['default_wide'] ) ? 1 : 0,
 			'default_focus' => ! empty( $input['default_focus'] ) ? 1 : 0,
+			'views_show'      => ! empty( $input['views_show'] ) ? 1 : 0,
+			'views_hide_zero' => ! empty( $input['views_hide_zero'] ) ? 1 : 0,
 		);
 	}
 
@@ -191,6 +199,57 @@ final class KBK_AI_Book_Settings {
 		);
 	}
 
+	public static function views_intro(): void {
+		echo '<p>برای هر بخش و هر فصل کتاب یک عدد بازدید نگه داشته می‌شود؛ بدون کوکی، بدون ذخیرهٔ IP و بدون شناسهٔ بازدیدکننده. بازدید تکراری در همان نشست مرورگر فقط یک بار شمرده می‌شود.</p>';
+	}
+
+	public static function field_views_show(): void {
+		$settings = KBK_AI_Book::reader_settings();
+		printf(
+			'<label><input type="checkbox" id="kbk_reader_views_show" name="%1$s[views_show]" value="1"%2$s> نمایش و شمارش بازدید هر بخش و فصل</label>',
+			esc_attr( self::OPTION ),
+			$settings['views_show'] ? ' checked' : ''
+		);
+	}
+
+	public static function field_views_hide_zero(): void {
+		$settings = KBK_AI_Book::reader_settings();
+		printf(
+			'<label><input type="checkbox" id="kbk_reader_views_hide_zero" name="%1$s[views_hide_zero]" value="1"%2$s> شمارندهٔ صفر نمایش داده نشود</label>',
+			esc_attr( self::OPTION ),
+			$settings['views_hide_zero'] ? ' checked' : ''
+		);
+	}
+
+	/** Read-only «most viewed» table plus the reset form (outside the options form). */
+	private static function render_views_report(): void {
+		echo '<h2>پربازدیدترین بخش‌ها</h2>';
+		if ( isset( $_GET['kbk_views_reset'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification -- display flag only.
+			echo '<div class="notice notice-success"><p>شمارنده‌ها صفر شدند.</p></div>';
+		}
+		$rows = KBK_AI_Book_Views::top_rows( 30 );
+		if ( array() === $rows ) {
+			echo '<p>هنوز بازدیدی ثبت نشده است.</p>';
+		} else {
+			echo '<table class="widefat striped" style="max-width:1200px"><thead><tr><th>#</th><th>کتاب</th><th>فصل</th><th>بخش</th><th>بازدید</th></tr></thead><tbody>';
+			foreach ( $rows as $index => $row ) {
+				printf(
+					'<tr><td>%1$s</td><td>%2$s</td><td>%3$s</td><td>%4$s</td><td>%5$s</td></tr>',
+					esc_html( KBK_AI_Book::fa_digits( $index + 1 ) ),
+					esc_html( $row['book'] ),
+					esc_html( $row['chapter'] ),
+					esc_html( $row['section'] ),
+					esc_html( KBK_AI_Book::fa_digits( $row['views'] ) )
+				);
+			}
+			echo '</tbody></table>';
+		}
+		echo '<form method="post" action="' . esc_url( admin_url( 'admin-post.php' ) ) . '" onsubmit="return confirm(\'همهٔ شمارنده‌ها صفر شوند؟\');"><input type="hidden" name="action" value="kbk_views_reset">';
+		wp_nonce_field( 'kbk_views_reset' );
+		submit_button( 'صفر کردن شمارنده‌ها', 'delete', 'kbk_views_reset_submit', false );
+		echo '</form>';
+	}
+
 	public static function render(): void {
 		if ( ! current_user_can( 'manage_options' ) ) {
 			return;
@@ -199,6 +258,8 @@ final class KBK_AI_Book_Settings {
 		settings_fields( self::PAGE );
 		do_settings_sections( self::PAGE );
 		submit_button();
-		echo '</form></div>';
+		echo '</form>';
+		self::render_views_report();
+		echo '</div>';
 	}
 }
