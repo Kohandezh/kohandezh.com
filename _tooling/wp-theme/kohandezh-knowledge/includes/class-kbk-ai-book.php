@@ -961,6 +961,8 @@ final class KBK_AI_Book {
 			'page_chars'    => self::DEFAULT_PAGE_CHARS,
 			'default_wide'  => false,
 			'default_focus' => false,
+			'views_show'      => true,
+			'views_hide_zero' => true,
 		);
 		$stored = function_exists( 'get_option' ) ? get_option( 'kbk_reader_settings', array() ) : array();
 		if ( is_array( $stored ) ) {
@@ -969,6 +971,12 @@ final class KBK_AI_Book {
 			}
 			$settings['default_wide']  = ! empty( $stored['default_wide'] );
 			$settings['default_focus'] = ! empty( $stored['default_focus'] );
+			if ( array_key_exists( 'views_show', $stored ) ) {
+				$settings['views_show'] = ! empty( $stored['views_show'] );
+			}
+			if ( array_key_exists( 'views_hide_zero', $stored ) ) {
+				$settings['views_hide_zero'] = ! empty( $stored['views_hide_zero'] );
+			}
 		}
 		return $settings;
 	}

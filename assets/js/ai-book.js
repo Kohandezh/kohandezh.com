@@ -497,4 +497,66 @@
     if (menuTriggers.some(function (control) { return control.contains(event.target); })) return;
     setBookMenu(false);
   });
+  // View counters: fresh counts over the (edge-cached) server render, then one
+  // POST per section per browser session. Cookie-free; dedupe is sessionStorage.
+  (function () {
+    if (!chapterMap || !chapterMap.views || !chapterMap.book || navigator.webdriver) return;
+    var api = "/wp-json/kohandezh/v1/book-views";
+    var base = { book: chapterMap.book, part: chapterMap.part, chapter: chapterMap.chapter };
+    var chapterBadge = document.querySelector(".ab-views-chapter");
+    function paint(badge, n) {
+      if (!badge || typeof n !== "number") return;
+      var out = badge.querySelector(".ab-views-n");
+      if (out) out.textContent = faDigits(n);
+      badge.hidden = n === 0 && !!chapterMap.hideZero;
+    }
+    function badgeFor(id) {
+      return document.querySelector('.ab-views[data-section="' + id + '"]');
+    }
+    function seenKey(id) { return "kbk-viewed:" + chapterMap.book + ":" + id; }
+    function seen(id) { try { return window.sessionStorage.getItem(seenKey(id)) === "1"; } catch (error) { return false; } }
+    function markSeen(id) { try { window.sessionStorage.setItem(seenKey(id), "1"); } catch (error) { /* optional */ } }
+    if (!window.fetch) return;
+    var qs = "?book=" + encodeURIComponent(base.book) + "&part=" + encodeURIComponent(base.part) + "&chapter=" + encodeURIComponent(base.chapter);
+    fetch(api + qs, { credentials: "omit", cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (data) {
+      if (!data || !data.sections) return;
+      Object.keys(data.sections).forEach(function (id) { paint(badgeFor(id), data.sections[id]); });
+      paint(chapterBadge, data.chapter);
+    }).catch(function () {});
+    function send(id) {
+      if (seen(id)) return;
+      markSeen(id);
+      var body = JSON.stringify({ book: base.book, part: base.part, chapter: base.chapter, section: id });
+      fetch(api, { method: "POST", credentials: "omit", cache: "no-store", keepalive: true, headers: { "Content-Type": "application/json" }, body: body })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (data) {
+          if (!data) return;
+          paint(badgeFor(id), data.views);
+          paint(chapterBadge, data.chapter_views);
+        })
+        .catch(function () {
+          if (navigator.sendBeacon) {
+            try { navigator.sendBeacon(api, new Blob([body], { type: "application/json" })); } catch (error) { /* silent */ }
+          }
+        });
+    }
+    var targets = Array.prototype.slice.call(document.querySelectorAll(".ab-views[data-section]")).map(function (badge) {
+      return { id: badge.getAttribute("data-section"), el: badge.closest("section") };
+    }).filter(function (t) { return t.id && t.el && !seen(t.id); });
+    if (!targets.length) return;
+    if (!("IntersectionObserver" in window)) { send(targets[0].id); return; }
+    var byEl = new Map();
+    targets.forEach(function (t) { byEl.set(t.el, t.id); });
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var h = window.innerHeight || 1;
+        var visible = entry.intersectionRatio >= 0.5 || entry.intersectionRect.height >= h * 0.5;
+        if (!entry.isIntersecting || !visible) return;
+        var id = byEl.get(entry.target);
+        observer.unobserve(entry.target);
+        if (id) send(id);
+      });
+    }, { threshold: (function () { var t = []; for (var i = 0; i <= 100; i += 2) t.push(i / 100); return t; })() });
+    targets.forEach(function (t) { observer.observe(t.el); });
+  })();
 })();

@@ -233,6 +233,7 @@ Every bundle that passes gets exactly this presentation; none of it is configure
 | Views | read, search, glossary, sources, templates, concepts, graph, ask, pdf, request-pdf, news |
 | Print | print stylesheet for the reading view |
 | Verification | `/ai-book/verify/` resolves any content/structural ID against `content_ids.json` and the release manifest |
+| View counters | per section + chapter, cookie-free, REST-backed (`kohandezh/v1/book-views`; once per section per browser session) |
 
 ## 9. Registry and URLs (implemented by the plugin)
 
