@@ -1,0 +1,239 @@
+{
+ "source_id": "INSO-23685-1403",
+ "terms": [
+  {
+   "clause": "3-1-1",
+   "term_fa": "مخاطره امنیتی کسب‌وکار کلان‌داده",
+   "term_en": "big data business security risk",
+   "definition_fa": "زمانی که سازمان‌ها از اینترنت برای ارائه خدمات به کاربران، مانند تجارت الکترونیک، تأمین مالی اینترنتی و شبکه‌های اجتماعی استفاده می‌کنند، منطق سنتی کسب‌وکار، مورد سوءاستفاده یا دست‌کاری قرار می‌گیرد. نتایج این سوءاستفاده یا دست‌کاری، معمولاً منجر به عدم قطعیت بین هدف کسب‌وکار و پیامدِ آن اهداف می‌شود.",
+   "notes_fa": [],
+   "pdf_page": 12,
+   "printed_page": 2,
+   "pdf_pages": [
+    12
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 0.886,
+   "ocr_similarity_term": 1.0,
+   "ocr_similarity_definition": 0.886
+  },
+  {
+   "clause": "3-1-2",
+   "term_fa": "واپایش مخاطره امنیتی کسب‌وکار کلان‌داده",
+   "term_en": "big data business security risk control",
+   "definition_fa": "به استفاده از فناوری کلان‌داده برای ساخت مدل‌هایی به‌منظور کاهش، هشداردهی و تجزیه‌وتحلیل مخاطره کسب‌وکار اطلاق می‌شود.",
+   "notes_fa": [],
+   "pdf_page": 12,
+   "printed_page": 2,
+   "pdf_pages": [
+    12,
+    13
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 0.957,
+   "ocr_similarity_term": 1.0,
+   "ocr_similarity_definition": 0.957
+  },
+  {
+   "clause": "3-1-3",
+   "term_fa": "محتوا",
+   "term_en": "content",
+   "definition_fa": "واژه «محتوا» در این استاندارد به صدا، ویدئو، تصویر، متن و نشانی وب اشاره دارد.",
+   "notes_fa": [],
+   "pdf_page": 13,
+   "printed_page": 3,
+   "pdf_pages": [
+    13
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 0.879,
+   "ocr_similarity_term": 1.0,
+   "ocr_similarity_definition": 0.879
+  },
+  {
+   "clause": "3-1-4",
+   "term_fa": "هستار",
+   "term_en": "entity",
+   "definition_fa": "واژه «هستار» در این استاندارد، به شخص حقیقی، حساب کاربری، شماره‌تلفن و افزاره اشاره دارد.",
+   "notes_fa": [],
+   "pdf_page": 13,
+   "printed_page": 3,
+   "pdf_pages": [
+    13
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 0.956,
+   "ocr_similarity_term": 1.0,
+   "ocr_similarity_definition": 0.956
+  },
+  {
+   "clause": "3-1-5",
+   "term_fa": "داده‌های رویداد",
+   "term_en": "event data",
+   "definition_fa": "داده‌های مرتبطی که برای توصیف فعالیت کسب‌وکار اینترنتیِ کاربر تولید می‌شود. نمونه‌هایی از داده‌ها شامل داده‌های حساب کاربری، شرح کالا، داده‌های تراکنش، داده‌های کلیک، داده‌های بازبینی، داده‌های جست‌وجو، اظهارنظر، داده‌های خدمات، داده‌های جریمه، داده‌های افزاره (UA، کلوچک، MAC، IMEI، IMSI)، داده‌های مکان (lbs / IP، ساموج)، اطلاعات رفتاری و اطلاعات زیست‌شناختی است.",
+   "notes_fa": [],
+   "pdf_page": 13,
+   "printed_page": 3,
+   "pdf_pages": [
+    13
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 0.945,
+   "ocr_similarity_term": 1.0,
+   "ocr_similarity_definition": 0.945
+  },
+  {
+   "clause": "3-1-6",
+   "term_fa": "شاخص مخاطره",
+   "term_en": "risk index",
+   "definition_fa": "امتیاز عددی برای ارزیابی سطح مخاطره، در مقیاس ۰ تا ۱۰۰ است. امتیاز بالاتر، نشان‌دهنده سطح بالاتری از مخاطره است.",
+   "notes_fa": [],
+   "pdf_page": 13,
+   "printed_page": 3,
+   "pdf_pages": [
+    13
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 0.7,
+   "ocr_similarity_term": 0.7,
+   "ocr_similarity_definition": 0.989
+  },
+  {
+   "clause": "3-2",
+   "term_fa": "ارزیابی مخاطره امنیتی کسب‌وکار کلان‌داده",
+   "term_en": "Big Data Business Security Risk Assessment",
+   "abbreviation": "BDBSRA",
+   "definition_fa": null,
+   "notes_fa": [
+    "سطر جدول سرنام‌ها و کوته‌نوشت‌ها؛ تعریف چاپ نشده و فقط معادل فارسی آمده است."
+   ],
+   "pdf_page": 13,
+   "printed_page": 3,
+   "pdf_pages": [
+    13
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 1.0
+  },
+  {
+   "clause": "3-2",
+   "term_fa": "درخت تصمیم تقویت گرادیان",
+   "term_en": "Gradient Boosting Decision Tree",
+   "abbreviation": "GBDT",
+   "definition_fa": null,
+   "notes_fa": [
+    "سطر جدول سرنام‌ها و کوته‌نوشت‌ها؛ تعریف چاپ نشده و فقط معادل فارسی آمده است."
+   ],
+   "pdf_page": 13,
+   "printed_page": 3,
+   "pdf_pages": [
+    13
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 1.0
+  },
+  {
+   "clause": "3-2",
+   "term_fa": "شناسه بین‌المللی تجهیزات سیار",
+   "term_en": "International Mobile Equipment Identity",
+   "abbreviation": "IMEI",
+   "definition_fa": null,
+   "notes_fa": [
+    "سطر جدول سرنام‌ها و کوته‌نوشت‌ها؛ تعریف چاپ نشده و فقط معادل فارسی آمده است."
+   ],
+   "pdf_page": 13,
+   "printed_page": 3,
+   "pdf_pages": [
+    13
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 1.0
+  },
+  {
+   "clause": "3-2",
+   "term_fa": "وایازش آمادی (رگرسیون لجستیک)",
+   "term_en": "Logistic Regression",
+   "abbreviation": "LR",
+   "definition_fa": null,
+   "notes_fa": [
+    "سطر جدول سرنام‌ها و کوته‌نوشت‌ها؛ تعریف چاپ نشده و فقط معادل فارسی آمده است."
+   ],
+   "pdf_page": 13,
+   "printed_page": 3,
+   "pdf_pages": [
+    13
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 1.0
+  },
+  {
+   "clause": "3-2",
+   "term_fa": "شناسه بین‌المللی مشترکین تلفن همراه",
+   "term_en": "International Mobile Subscriber Identity",
+   "abbreviation": "IMSI",
+   "definition_fa": null,
+   "notes_fa": [
+    "سطر جدول سرنام‌ها و کوته‌نوشت‌ها؛ تعریف چاپ نشده و فقط معادل فارسی آمده است."
+   ],
+   "pdf_page": 13,
+   "printed_page": 3,
+   "pdf_pages": [
+    13
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 1.0
+  },
+  {
+   "clause": "3-2",
+   "term_fa": "ماشین بردار پشتیبان",
+   "term_en": "Support Vector Machine",
+   "abbreviation": "SVM",
+   "definition_fa": null,
+   "notes_fa": [
+    "سطر جدول سرنام‌ها و کوته‌نوشت‌ها؛ تعریف چاپ نشده و فقط معادل فارسی آمده است."
+   ],
+   "pdf_page": 14,
+   "printed_page": 4,
+   "pdf_pages": [
+    14
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 1.0
+  },
+  {
+   "clause": "3-2",
+   "term_fa": "عامل کاربر",
+   "term_en": "User Agent",
+   "abbreviation": "UA",
+   "definition_fa": null,
+   "notes_fa": [
+    "سطر جدول سرنام‌ها و کوته‌نوشت‌ها؛ تعریف چاپ نشده و فقط معادل فارسی آمده است."
+   ],
+   "pdf_page": 14,
+   "printed_page": 4,
+   "pdf_pages": [
+    14
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 1.0
+  },
+  {
+   "clause": "3-2",
+   "term_fa": "کتابخانه تقویت گرادیان توزیع‌شده بهینه",
+   "term_en": "Optimized Distributed Gradient Boosting Library",
+   "abbreviation": "XGBoost",
+   "definition_fa": null,
+   "notes_fa": [
+    "سطر جدول سرنام‌ها و کوته‌نوشت‌ها؛ تعریف چاپ نشده و فقط معادل فارسی آمده است."
+   ],
+   "pdf_page": 14,
+   "printed_page": 4,
+   "pdf_pages": [
+    14
+   ],
+   "verified_visually": true,
+   "ocr_similarity": 0.909
+  }
+ ],
+ "notes": "بند ۳-۱ شش مدخل دارد و هیچ‌کدام یادآوری (NOTE) زیرمجموعه ندارند. مدخل ۳-۱-۳ و ۳-۱-۴ در واقع محدوده‌ی کاربرد واژه را بیان می‌کنند. عنوان ۳-۱-۲ در پایین PDF 12 و تعریفش در بالای PDF 13 است. هشت سطر جدول ۳-۲ (سرنام‌ها) با clause=3-2 افزوده شد. ocr_similarity برای مدخل‌های اصلی کمینه‌ی دو مقدار term و definition است (جزئیات در دو کلید دیگر)."
+}

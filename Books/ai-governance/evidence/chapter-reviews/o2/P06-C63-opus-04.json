@@ -1,0 +1,68 @@
+{
+ "chapter": "P06/C63",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "01cc07daaea8b843f95906d3b5b0b1eedcb908135325883472a135802b102048",
+  "5": "53d5d19b345d82f00b53ac4f5b256416a65bdb076edebb8dd0351075f60afdc3"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 562.5361938476562,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "modality_drift",
+      "quote": "«مورد نیاز است»؛ می‌تواند؛ «مطلوب است؛ اما الزامی نیست»؛ توصیه می‌شود",
+      "explanation": "In the table row for 6.3 (second), the modality «مورد نیاز است» comes from S23728-062 which is tagged [info] (informational text). However, unlike the 5.2 row where «ضروری است» from similarly informational clause S23728-040 is explicitly flagged as «(اطلاعاتی)», this row lacks the «(اطلاعاتی)» label. Without the label, readers may interpret «مورد نیاز است» as carrying normative force, which would be an effective modality upgrade inconsistent with the section's own header claim «هیچ قیدی ارتقا یا تضعیف نشده است».",
+      "suggested_fix": "Change the modality cell from «مورد نیاز است» to «مورد نیاز است» (اطلاعاتی) to match the treatment of «ضروری است» (اطلاعاتی) in the 5.2 row."
+     },
+     {
+      "type": "other",
+      "quote": "کفایت خط‌مشی‌ها، روال‌ها، نقش‌ها و آموزش (۶.۲ تا ۶.۴) یا فراهم‌کردن ترتیب اصلاح آن‌ها",
+      "explanation": "Conformity proof item (2) says «فراهم‌کردن ترتیب اصلاح آن‌ها» (arranging correction) but the evidence S23728-073 says «فراهم‌کردن ترتیبات لازم برای ایجاد/اصلاح آن‌ها» (arranging creation/correction). The word «ایجاد/» (creation) is dropped, narrowing the meaning from 'create or correct' to just 'correct'. The standard allows for the case where policies/procedures/roles/training do not yet exist and must be created, not merely corrected.",
+      "suggested_fix": "Change «فراهم‌کردن ترتیب اصلاح آن‌ها» to «فراهم‌کردن ترتیبات لازم برای ایجاد/اصلاح آن‌ها»."
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "مأموریت و نیاز «باید» حداکثر تا پیش‌نویس طراحی سطح بالا مستند شوند (ص ۲۶)",
+      "explanation": "The section claims documentation (مستند شوند) must happen by high-level design draft time. However, evidence S23728-080 says IDENTIFICATION (شناسایی...انجام شود) must happen by that time, while S23728-082 separately requires documentation (مستند شود) without that timing constraint. The combined claim 'documentation by design draft time' is not supported by either evidence item; the timing applies to identification, not documentation.",
+      "suggested_fix": "Split into two statements: (1) شناسایی مأموریت و نیاز «باید» حداکثر تا پیش‌نویس طراحی سطح بالا انجام شود (ص ۲۶، بر پایهٔ S23728-080)؛ (2) مأموریت و نیاز کسب‌وکاری «باید» مستند شوند (ص ۲۶، بر پایهٔ S23728-082)."
+     },
+     {
+      "type": "terminology",
+      "quote": "مدل واپایش و جریان داده",
+      "explanation": "The section uses «جریان داده» but the INSO 23728 defined term (T 3.1.8) is «داده‌شارها (جریان داده)». Per the terminology rules, the default is the verified INSO term. Evidence S23728-085 also uses «مدل داده‌شارها» — the section should follow that form.",
+      "suggested_fix": "Change «مدل واپایش و جریان داده» to «مدل واپایش، مدل داده‌شارها و چرخه عمر داده» to match evidence S23728-085 and use the INSO defined term. This also restores the dropped «چرخه عمر داده» (see next issue)."
+     },
+     {
+      "type": "other",
+      "quote": "تحلیل، حریم خصوصی، امنیت و کیفیت را از راه الزام‌های کارکردی و غیرکارکردی، نگاشت ذی‌نفعان و توافق‌نامه‌ها (مانند SLA)، مدل واپایش و جریان داده، و متغیرهایی مانند «پارامترهای مدل» پوشش دهد",
+      "explanation": "The summary of S23728-085's four-item list drops «چرخه عمر داده» from the third item (evidence: «مدل واپایش، مدل داده‌شارها و چرخه عمر داده»). Data lifecycle documentation is part of a «باید» requirement and its omission gives an incomplete picture of what the standard requires.",
+      "suggested_fix": "Add «چرخه عمر داده» after «داده‌شارها» as indicated in the terminology fix above: «مدل واپایش، مدل داده‌شارها و چرخه عمر داده»."
+     },
+     {
+      "type": "other",
+      "quote": "در ۸.۲.۲ «باید» تفاوت واپایش‌های برنامه‌ریزی‌شده و اجراشده شناسایی شود (ص ۳۶)",
+      "explanation": "Evidence S23728-136 contains two «باید» requirements: (a) identify differences between planned and implemented controls, AND (b) update plans to reflect actual implementation. The section reports only (a), dropping the second normative requirement about updating plans. For a clause summary this omission is significant because the update obligation is a distinct «باید».",
+      "suggested_fix": "Expand to: «در ۸.۲.۲ «باید» تفاوت واپایش‌های برنامه‌ریزی‌شده و اجراشده شناسایی شود و «باید» برنامه‌ها به‌روزرسانی شوند تا پیاده‌سازی واقعی را منعکس کنند (ص ۳۶).»"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T06:52:54-0400"
+}

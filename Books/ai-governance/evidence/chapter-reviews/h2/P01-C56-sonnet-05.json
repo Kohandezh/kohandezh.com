@@ -1,0 +1,30 @@
+{
+ "chapter": "P01/C56",
+ "sections": [
+  5
+ ],
+ "section_shas": {
+  "5": "038318fbdd3fe8c651df8433cd958c127847d034155952b48b8735f688e3e33d"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 152.3491132259369,
+ "result": {
+  "sections": [
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "فراداده‌اش — که بند ۳.۱.۲۴ آن را «احتمالاً» شامل توصیف داده‌ها، مالکیت، مسیر و حق دسترسی و فراریت می‌داند",
+      "explanation": "The section claims to report what clause 3.1.24 says, but the paraphrase is inaccurate. Evidence T23683-3.1.24 lists five distinct items: (1) توصیف داده‌های آنها, (2) مالکیت داده, (3) مسیرهای دسترسی, (4) حقوق دسترسی, (5) فراریت داده. The section conflates items 3 and 4 into a single phrase «مسیر و حق دسترسی» and strips «دسترسی» from «مسیرهای دسترسی», changing «access paths» to the unqualified «مسیر» (path/route). This reduces the five printed items to four and misrepresents the content of a specific cited clause.",
+      "suggested_fix": "Replace «مسیر و حق دسترسی» with «مسیرهای دسترسی، حقوق دسترسی» to faithfully reproduce the two distinct items as printed in T23683-3.1.24."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:30:30-0400"
+}

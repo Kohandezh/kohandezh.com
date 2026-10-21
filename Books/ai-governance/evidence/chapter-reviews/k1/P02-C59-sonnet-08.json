@@ -1,0 +1,42 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  8
+ ],
+ "section_shas": {
+  "8": "b20cee01eb679c502df31217e72ea7fd03fd1f0961bbdf7b1d9220b877d8e752"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 276.4849901199341,
+ "result": {
+  "sections": [
+   {
+    "index": 8,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "شمول یا عدم شمول راهنما را در بیانیه مستند کند",
+      "explanation": "The official INSO-42001-1404 term defined at §3.26 is «بیانیهٔ قابلیت کاربست‌پذیری» (statement of applicability). The section shortens it to the bare noun «بیانیه», which is not a defined term and is ambiguous. The cited evidence (S42001-107) prints «در بیانیهٔ قابلیت کاربست‌پذیری» in full.",
+      "suggested_fix": "Replace «در بیانیه مستند کند» with «در بیانیهٔ قابلیت کاربست‌پذیری مستند کند»."
+     },
+     {
+      "type": "modality_drift",
+      "quote": "| B.4 منابع | ثبت منشأ، دسته، کیفیت و سوگیری داده، ابزارها، زیرساخت و تخصص‌ها؛ «امری ضروری» برای درک مخاطره | توصیه می‌شود |",
+      "explanation": "The «قوت چاپی» column for the B.4 row records only «توصیه می‌شود». However, S42001-119 (B.4.2) prints the phrase «امری ضروری است» for the documentation activity. Per the project's modality rule, «لازم است / ضروری است / موظف است» must be recorded as printed and treated separately from both «باید» and «توصیه می‌شود». Although the content cell quotes the phrase, the modality column silently omits it, misleading a reader who scans the column to assess normative strength.",
+      "suggested_fix": "Add «؛ «امری ضروری است»» to the B.4 modality cell, yielding «توصیه می‌شود؛ «امری ضروری است»»."
+     },
+     {
+      "type": "terminology",
+      "quote": "طبق D.1، AIMS برای هر سازمانی که محصولات یا خدمات مبتنی بر هوش مصنوعی را توسعه می‌دهد یا مصرف می‌کند اطلاق‌پذیر است",
+      "explanation": "The terminology rules require the full form «نظام مدیریت هوش مصنوعی (AIMS)» at first use in each chapter or section. This is the only occurrence of the acronym in section 8 and it appears without the required Persian expansion. The cited evidence (S42001-183) itself uses «نظام مدیریت هومص».",
+      "suggested_fix": "Expand to «نظام مدیریت هوش مصنوعی (AIMS)» at this occurrence, or substitute «نظام مدیریت هومص» to match the evidence wording."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T06:16:07-0400"
+}

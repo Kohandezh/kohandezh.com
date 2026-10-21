@@ -1,0 +1,44 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  3,
+  4
+ ],
+ "section_shas": {
+  "3": "d3ad201f9af95473f7c060803fb711c4dfd840a11847e49788c05b868bcfae46",
+  "4": "413894cb894d5d6190d502de41f50f6cdf24bff742bfef7c89b73f719a311a1e"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 932.9334218502045,
+ "result": {
+  "sections": [
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "attribution",
+      "quote": "توصیه می‌شود سازمان بیانیهٔ تعهد خود را منتشر کند و مدیریت منابع تخصصی لازم را بشناسد و تخصیص دهد",
+      "explanation": "S23733-037 (subject: سازمان) and S23733-038 (subject: مدیریت ارشد) are two distinct recommendations with different actors. The section merges them into a single sentence whose grammatical subject is «سازمان» throughout, subsuming the action of recognising and allocating specialised resources under «سازمان» even though S23733-038 explicitly assigns that duty to «مدیریت ارشد» (printed: «مدیریت ارشد»). This misattributes the actor for the second recommendation.",
+      "suggested_fix": "Split into two sentences with the correct subjects: «توصیه می‌شود سازمان بیانیه‌هایی دربارهٔ تعهد خود منتشر کند. همچنین توصیه می‌شود مدیریت رده‌بالا (به صورت چاپی: «مدیریت ارشد») از منابع تخصصی موردنیاز آگاه باشد و آن‌ها را تخصیص دهد.»"
+     }
+    ]
+   },
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "modality_drift",
+      "quote": "دارایی‌ها؛ منابع، رویدادها و واپایش‌ها («سازمان موظف است»)",
+      "explanation": "The table cell lists «دارایی‌ها» immediately before «منابع، رویدادها و واپایش‌ها («سازمان موظف است»)» with no separator indicating a change of modality. A reader naturally reads «سازمان موظف است» as qualifying all four items. However, S23733-092 (asset identification, 6.4.2.2) is tagged [should] — it is a recommendation, not a shall-level obligation. Only منابع (S23733-094), رویدادها (S23733-096), and واپایش‌ها (S23733-098) carry the [shall] / «سازمان موظف است» label. The detailed paragraph below the table corrects this, but the table itself is misleading.",
+      "suggested_fix": "Separate the modalities in the table cell, e.g.: «دارایی‌ها (توصیه می‌شود)؛ منابع، رویدادها و واپایش‌ها («سازمان موظف است»)» so the shall-modality parenthetical is unambiguously attached only to the three shall items."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:50:30-0400"
+}

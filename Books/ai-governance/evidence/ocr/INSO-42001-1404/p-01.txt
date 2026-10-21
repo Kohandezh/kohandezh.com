@@ -1,0 +1,17 @@
+سازمان ملی استاندارد ایران
+
+Iran National Standards Organization
+
+استاندارد ملی ایران/بی اس/ ایزو/آی‌ای‌سی ۴۲۰۰۱: سال ۱۴۰۴
+
+INSO/BS/ISO/TEC 5
+(BS/ISO/TEC 42001:2023, IDT)
+
+فناوری اطلاعات - هوش مصنوعی
+- نظام ‎Cg pe‏
+
+Information technology — Artificial intelligence
+— Management system
+
+ICS: 03.100.70; 35.020
+

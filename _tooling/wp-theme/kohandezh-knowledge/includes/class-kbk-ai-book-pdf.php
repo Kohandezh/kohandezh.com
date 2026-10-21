@@ -27,7 +27,7 @@ class KBK_AI_Book_Pdf {
 	const FILENAME         = 'kohandezh-ai-book-fa.pdf';
 	const STREAM_PATH      = '/ai-book/pdf/file/';
 
-	/** Editorial constant documented in CONTENT_SOURCE_MAP (the manifest carries no page count). */
+	/** Page count of the first-edition PDF, whose manifest carries none; later editions record theirs in the manifest. */
 	const CANONICAL_PAGES = 1292;
 
 	/** @var KBK_AI_Book_Repository */
@@ -152,9 +152,23 @@ class KBK_AI_Book_Pdf {
 			'merkle_root' => $facts['merkle_root'],
 			'sha256'      => $facts['sha256'],
 			'bytes'       => $bytes,
-			'pages'       => self::CANONICAL_PAGES,
+			'pages'       => $this->page_count( $manifest, $facts['edition_id'] ),
 			'path'        => $pdf_path,
 			'stream_url'  => self::STREAM_PATH,
 		);
+	}
+
+	/**
+	 * Page count of the PDF: recorded in the release manifest from the second edition on. The first
+	 * edition's manifest predates the field, so its known count is used for that edition only.
+	 *
+	 * @param array<string,mixed> $manifest Validated release manifest.
+	 */
+	private function page_count( array $manifest, string $edition_id ): ?int {
+		$recorded = $manifest['artifacts']['06_book_fa.pdf']['pages'] ?? null;
+		if ( is_int( $recorded ) && $recorded > 0 ) {
+			return $recorded;
+		}
+		return '2026E1' === $edition_id ? self::CANONICAL_PAGES : null;
 	}
 }

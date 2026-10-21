@@ -1,0 +1,37 @@
+{
+ "chapter": "P04/C62",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "b1d718efa7edaa9dd152a705cc7c2d73e268d37f87a9883a67adfe948475d2f2",
+  "1": "08c997b968891dd816bbc1458a11612a1182b7a6b8271c31a5c91b89dbb06a16"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 230.9237720966339,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 1,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "**مخاطره‌کاهی جامعگی و اخلاقی؛ societal and ethical risk mitigation**",
+      "explanation": "The section header writes «مخاطره‌کاهی» (with ezafe connector ـِ between the two components) instead of the form printed in the standard. Evidence T23684-3.3.1 prints «مخاطره کاهی جامعگی و اخلاقی» as a two-word compound without ezafe; the terminology table also specifies «(AS PRINTED)» and instructs «print as is; do not fix.» Adding an ezafe changes the printed form in violation of the binding rule.",
+      "suggested_fix": "Replace «مخاطره‌کاهی جامعگی و اخلاقی» with «مخاطره کاهی جامعگی و اخلاقی» (space, no ezafe) to match the printed form in T23684-3.3.1 and the terminology table."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:05:38-0400"
+}

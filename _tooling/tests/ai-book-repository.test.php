@@ -11,15 +11,47 @@ if ( '' === $root ) {
 
 $repository = new KBK_AI_Book_Repository( $root );
 $summary    = $repository->summary();
-$expected   = array( 'edition_id' => '2026E1', 'locale' => 'fa', 'parts' => 7, 'chapters' => 53, 'sections' => 479 );
+// Expected shape per edition. A new edition adds its own row; an edition that is not listed fails closed.
+$editions = array(
+	'2026E1' => array( 'parts' => 7, 'chapters' => 53, 'sections' => 479 ),
+	'2026E2' => array( 'parts' => 7, 'chapters' => 65, 'sections' => null ),
+);
+$edition_id = $summary['edition_id'];
+if ( ! isset( $editions[ $edition_id ] ) ) {
+	fwrite( STDERR, "FAIL summary.edition_id is not a known edition\n" );
+	exit( 1 );
+}
+$expected = array( 'edition_id' => $edition_id, 'locale' => 'fa', 'parts' => $editions[ $edition_id ]['parts'], 'chapters' => $editions[ $edition_id ]['chapters'] );
+if ( null !== $editions[ $edition_id ]['sections'] ) {
+	$expected['sections'] = $editions[ $edition_id ]['sections'];
+}
 foreach ( $expected as $key => $value ) {
 	if ( $summary[ $key ] !== $value ) {
 		fwrite( STDERR, 'FAIL summary.' . $key . "\n" );
 		exit( 1 );
 	}
 }
+// The section total must equal the sections actually present, whatever the edition pins.
+$counted = 0;
+foreach ( $repository->parts() as $counted_part ) {
+	foreach ( $counted_part['chapters'] as $counted_chapter ) {
+		$counted += count( $counted_chapter['sections'] );
+	}
+}
+if ( $counted !== $summary['sections'] ) {
+	fwrite( STDERR, "FAIL summary.sections must equal the number of sections in the bundle\n" );
+	exit( 1 );
+}
+if ( isset( $summary['edition_label_fa'] ) && ( ! is_string( $summary['edition_label_fa'] ) || '' === $summary['edition_label_fa'] ) ) {
+	fwrite( STDERR, "FAIL summary.edition_label_fa must be a non-empty string when present\n" );
+	exit( 1 );
+}
+if ( '2026E1' !== $edition_id && ( ! isset( $summary['edition_label_fa'] ) || ! isset( $summary['source_count'] ) ) ) {
+	fwrite( STDERR, "FAIL a later edition must carry its Persian edition label and source count\n" );
+	exit( 1 );
+}
 
-$structural_id = 'KDJ-AI-2026E1-P01-C01-S01';
+$structural_id = 'KDJ-AI-' . $edition_id . '-P01-C01-S01';
 $by_structure  = $repository->find_section( $structural_id );
 $content_id    = $by_structure['content_id'] ?? '';
 $by_content    = $repository->find_section( $content_id );
@@ -69,14 +101,20 @@ if ( null !== $repository->adjacent_chapters( 'missing', 'C01' )['next'] ) {
 	exit( 1 );
 }
 
-// Chapter navigation crosses part boundaries in whole-book order.
-$boundary = $repository->adjacent_chapters( 'P01', 'C06' );
-if ( null === $boundary['next'] || 'C07' !== $boundary['next']['chapter_id'] || 'P02' !== $boundary['next']['part_id'] || 'C05' !== $boundary['prev']['chapter_id'] || 'P01' !== $boundary['prev']['part_id'] ) {
+// Chapter navigation crosses part boundaries in whole-book order. The last chapter of P01 and the first of P02
+// are read from the bundle, because a later edition appends chapters to the end of a part.
+$p01_chapters = $repository->find_part( 'P01' )['chapters'];
+$p02_chapters = $repository->find_part( 'P02' )['chapters'];
+$p01_last     = end( $p01_chapters );
+$p01_before   = $p01_chapters[ count( $p01_chapters ) - 2 ];
+$p02_first    = $p02_chapters[0];
+$boundary     = $repository->adjacent_chapters( 'P01', $p01_last['chapter_id'] );
+if ( null === $boundary['next'] || $p02_first['chapter_id'] !== $boundary['next']['chapter_id'] || 'P02' !== $boundary['next']['part_id'] || $p01_before['chapter_id'] !== $boundary['prev']['chapter_id'] || 'P01' !== $boundary['prev']['part_id'] ) {
 	fwrite( STDERR, "FAIL adjacent_chapters must cross from the end of P01 into P02\n" );
 	exit( 1 );
 }
-$back = $repository->adjacent_chapters( 'P02', 'C07' );
-if ( null === $back['prev'] || 'C06' !== $back['prev']['chapter_id'] || 'P01' !== $back['prev']['part_id'] ) {
+$back = $repository->adjacent_chapters( 'P02', $p02_first['chapter_id'] );
+if ( null === $back['prev'] || $p01_last['chapter_id'] !== $back['prev']['chapter_id'] || 'P01' !== $back['prev']['part_id'] ) {
 	fwrite( STDERR, "FAIL adjacent_chapters must step back from P02 into the end of P01\n" );
 	exit( 1 );
 }
@@ -91,7 +129,7 @@ if ( null !== $repository->adjacent_chapters( $lastP['part_id'], $lastC['chapter
 // /ai-book/verify/ answers from the release manifest and the content registry,
 // exact matches only.
 $release = $repository->release();
-if ( null === $release || '2026E1' !== $release['edition_id'] || 1 !== preg_match( '/^[0-9a-f]{64}$/', $release['merkle_root'] ) || ! isset( $release['artifacts']['06_book_fa.pdf'] ) ) {
+if ( null === $release || $edition_id !== $release['edition_id'] || 1 !== preg_match( '/^[0-9a-f]{64}$/', $release['merkle_root'] ) || ! isset( $release['artifacts']['06_book_fa.pdf'] ) ) {
 	fwrite( STDERR, "FAIL release() must expose the validated manifest facts\n" );
 	exit( 1 );
 }
@@ -112,7 +150,7 @@ if ( null === $file_hit || 'artifact' !== $file_hit['kind'] || '06_book_fa.pdf' 
 	fwrite( STDERR, "FAIL verify() must match a release file by SHA-256\n" );
 	exit( 1 );
 }
-foreach ( array( '', 'KDJ-AI-2026E1-P01-C01-S01-00000000', 'KDJ-AI-2026E1-P01-C01', str_repeat( '0', 64 ), substr( $pdf_hash, 0, 63 ), str_repeat( 'A', 81 ) ) as $miss ) {
+foreach ( array( '', 'KDJ-AI-' . $edition_id . '-P01-C01-S01-00000000', 'KDJ-AI-' . $edition_id . '-P01-C01', str_repeat( '0', 64 ), substr( $pdf_hash, 0, 63 ), str_repeat( 'A', 81 ) ) as $miss ) {
 	if ( null !== $repository->verify( $miss ) ) {
 		fwrite( STDERR, "FAIL verify() must not report a near miss as found: $miss\n" );
 		exit( 1 );

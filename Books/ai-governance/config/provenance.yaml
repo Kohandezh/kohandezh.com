@@ -1,7 +1,8 @@
 # Cryptographic provenance & hash normalization (MasterPrompt §35–§48)
 # NEVER change this specification silently. Bump spec_version and record in qa/version_notes.md.
 spec_version: "kdj-hash-1"
-edition_id: "2026E1"
+edition_id: "2026E2"
+base_edition_id: "2026E1"   # E2 staging: E1 ids are mapped via provenance/e1-e2-map.json; hash spec unchanged (kdj-hash-1)
 namespace: "KDJ"
 content_id_format: "KDJ-AI-<EDITION>-P<pp>-C<cc>-S<ss>-<SHORT_HASH8>"
 short_hash: "first 8 uppercase hex chars of sha256(canonical_text)"
@@ -22,7 +23,7 @@ canonical_text_normalization:
   editorial_block_serialization: ":::<origin>\n<text>\n:::"
 
 hashed_fields:                       # serialized in this exact order, joined by "\n"
-  - structural_id                    # KDJ-AI-2026E1-Pxx-Cxx-Sxx
+  - structural_id                    # KDJ-AI-<EDITION>-Pxx-Cxx-Sxx
   - locale
   - origin                           # source_translation | editorial_synthesis | editorial_localization_ir | editorial_template_ir
   - title_fa

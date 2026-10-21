@@ -1,0 +1,49 @@
+{
+ "chapter": "P02/C57",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "a22238fb763fa733d5d9e9a2dc606dc435929061338d09963b3aaea2498a5f84",
+  "3": "c484e25bb795da46181300f65375186453356778a48bf44185a32ecb99813bd7"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 360.14330983161926,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "FAIL",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "The table row «پاورقی همان بند، واژه‌های INSO 12047 | ارزشیابی، هدایت، پایش» claims that a footnote in clause 4.3 of INSO 23682 prints the INSO 12047 terms as «ارزشیابی، هدایت، پایش». No cited evidence supports the existence of such a footnote or those specific terms. The only cited evidence about INSO 12047 terms referenced in clause 4.3 is S23682-034, which gives «ارزیابی، جهت‌دهی، نظارت» in the running body text. The three terms «ارزشیابی، هدایت، پایش» appear nowhere in the evidence for clause 4.3.",
+      "quote": "پاورقی همان بند، واژه‌های INSO 12047 | ارزشیابی، هدایت، پایش",
+      "suggested_fix": "Remove or bracket this row entirely until the printed footnote content is verified against the primary source. Do not assert terms are printed in a footnote when no cited evidence records that footnote."
+     },
+     {
+      "type": "unsupported_claim",
+      "explanation": "The section asserts that the description of the assess–direct–monitor model in Annex A.1.1 consists of «یک جمله» (one sentence). Evidence item S23682-127 provides only a paraphrase summary of A.1.1 content; it does not confirm that the actual printed text is a single sentence. No cited evidence quantifies the length of A.1.1's coverage of this model.",
+      "quote": "تنها توصیف مدل ارزیابی–جهت‌دهی–پایش یک جمله در پیوست الف.۱.۱، شکل الف-۱ و شکل ۳ است",
+      "suggested_fix": "Remove the quantifier «یک جمله». Write instead: «توصیف این مدل در متن پیوست الف.۱.۱، شکل الف-۱ و شکل ۳ آمده است» without asserting sentence count."
+     },
+     {
+      "type": "other",
+      "explanation": "The section writes «سازمان در صورت لزوم آمادگی اصلاح یا لغو پروژه‌ها را نشان دهد» (show readiness to modify or cancel). Evidence S23682-020 reads «سازمان در صورت لزوم تمایل به اصلاح یا لغو پروژه‌ها نشان دهد» (show willingness/inclination). Substituting «آمادگی» (preparedness/capacity) for «تمایل» (willingness/inclination) shifts the meaning: preparedness implies operational capacity, whereas willingness implies disposition. The standard's weaker formulation is material in a governance context.",
+      "quote": "سازمان در صورت لزوم آمادگی اصلاح یا لغو پروژه‌ها را نشان دهد",
+      "suggested_fix": "Replace «آمادگی اصلاح یا لغو» with «تمایل به اصلاح یا لغو» to match the printed text of S23682-020."
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:24:45-0400"
+}

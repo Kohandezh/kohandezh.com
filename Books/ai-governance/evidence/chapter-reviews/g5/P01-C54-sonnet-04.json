@@ -1,0 +1,37 @@
+{
+ "chapter": "P01/C54",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "6f26745932ab4a01ce35c59ff19909e24b4818fa5547753e93b335b894b7a0ca",
+  "5": "81bb3f5591534b97a33846cf7e335a2680f7d3deb960cbe95c86475c5f8e28d5"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 197.80716228485107,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "the printed text lists fairness only as an example objective in Annexes B/C, not as an Annex A control",
+      "explanation": "The positive half is supported: S42001-155 (B.9.3) and S42001-168 (C.2.5) confirm that fairness appears as an example objective in Annexes B and C of INSO 42001. However, the negative half — 'not as an Annex A control' — is an absence claim about Table A.1 content, which is not among the supplied evidence items. Per the review rules, an absence claim must be phrased as limited to the clauses actually cited. Bullet 2 of the same section correctly adds the qualifier '(searched the verified evidence)'; bullet 5 omits any such restriction, making it a stronger and unsupported assertion. Bullet 6 inherits the same defect by reference ('Same over-claim … (bias assessment as controls)').",
+      "suggested_fix": "Apply the same limiting qualifier used in bullet 2. Rephrase as: 'the supplied evidence places fairness only as an example objective in Annexes B and C (B.9.3, C.2.5); it was not identified as an Annex A control in the supplied evidence (searched the verified evidence).' Apply the same parenthetical to bullet 6."
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:42:04-0400"
+}

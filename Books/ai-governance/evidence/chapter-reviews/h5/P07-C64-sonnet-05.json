@@ -1,0 +1,30 @@
+{
+ "chapter": "P07/C64",
+ "sections": [
+  5
+ ],
+ "section_shas": {
+  "5": "7c018c9dc3821799f161e41275344c5f396ba2429c0fdc6469b594d6288bf12d"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 262.20336294174194,
+ "result": {
+  "sections": [
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "ممیزی داخلی: بررسی طبقه‌بندی واقعی",
+      "explanation": "The section header states the role list is «گسترش‌یافته از بند ۵.۳.۴.۱» and explicitly enumerates compiler-added roles (مرجع حکمران، مدیر مخاطره، تیم داده، مسئول حریم خصوصی، مهندسی نرم‌افزار). «ممیزی داخلی» is not in that compiler list, so readers will infer it maps directly to one of the standard's clause-5.3.4.1 roles. The standard's printed term for that role, however, is «حسابرس داخلی» (evidence S15816-3-037: «انواع نقش‌های فهرست‌شده: … حسابرس داخلی»; S15816-3-038 gives its full description). Using «ممیزی داخلی» in the book's new text is correct per the project terminology rules (which restrict «حسابرسی» to financial/accounting audit), but the silent substitution of the standard's printed role name is not flagged anywhere in the section, preventing readers from verifying the mapping.",
+      "suggested_fix": "Either (a) annotate the role at first use as «ممیزی داخلی (حسابرس داخلی در متن بند ۵.۳.۴.۱ استاندارد)»; or (b) add «ممیزی داخلی» to the explicit list of terminologically adapted names in the section heading note, explaining that «حسابرس داخلی» is the standard's printed term, replaced per project terminology rules because «حسابرسی» is reserved for financial/accounting audit."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:14:10-0400"
+}

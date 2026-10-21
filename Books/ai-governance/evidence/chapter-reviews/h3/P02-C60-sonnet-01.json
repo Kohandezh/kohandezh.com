@@ -1,0 +1,37 @@
+{
+ "chapter": "P02/C60",
+ "sections": [
+  1,
+  2
+ ],
+ "section_shas": {
+  "1": "63044b64b8e64b1cb0100a7dc7aeb074cb02da3d330b7c033d3790efe27add4e",
+  "2": "11b6f6f435d37bc5a5f19bcbbd2b98e08200b6390fd37119109b5fba182650a6"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 605.1927909851074,
+ "result": {
+  "sections": [
+   {
+    "index": 1,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "modality_drift",
+      "quote": "قوت عبارت‌هایش عمدتاً «توصیه می‌شود» است",
+      "explanation": "This characterisation of INSO 23733 omits the shall-level obligations present in the same evidence set. §6.3.3 (S23733-077) uses «لازم است» for the stakeholder list; §6.4.2.3 (S23733-094), §6.4.2.4 (S23733-096), and §6.4.2.5 (S23733-098) each open with «سازمان موظف است». Per the hard content rule, «موظف است / لازم است» are not «باید» but they ARE obligation-level, not recommendation-level. Describing the standard's modality as «عمدتاً توصیه» without acknowledging these mandatory clauses understates its normative weight.",
+      "suggested_fix": "After «عمدتاً «توصیه می‌شود» است» insert: «؛ بندهای ۶.۳.۳، ۶.۴.۲.۳، ۶.۴.۲.۴ و ۶.۴.۲.۵ از عبارات الزامی «لازم است» و «موظف است» بهره می‌گیرند (چاپی در متن استاندارد؛ معادل «باید» نیستند اما الزام‌آورند).»"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:20:49-0400"
+}

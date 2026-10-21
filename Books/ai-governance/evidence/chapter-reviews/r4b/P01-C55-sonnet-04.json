@@ -1,0 +1,38 @@
+{
+ "chapter": "P01/C55",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "205de7b8d564787d1014a4b4d6d5ed638330098315782cd503311bc66eb015a9",
+  "5": "d8b332976245e3ca4a8394eb617c4f07aad76130f3aa1993e3577ccdaacfe5c9"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 388.496289730072,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "«شبکهٔ عصبی کپسولی» در شکل ۳ و جدول کوته‌نوشت‌ها",
+      "explanation": "Evidence F23681-شکل ۳ records the box label as «شبکه کپسولی», not «شبکه عصبی کپسولی». The full form «شبکه عصبی کپسولی» appears only in the abbreviation table (F23681-table14: CapsNet). By attributing «شبکه عصبی کپسولی» to Figure 3 as well, the section conflates two different printed forms and obscures that Figure 3 uses a third, shorter variant. The actual three-way inconsistency is: «شبکه محفظه‌ای (کپسولی)» in clause 6.5.3.2.7 (ص ۲۱) / «شبکه کپسولی» in Figure 3 / «شبکه عصبی کپسولی» in the abbreviation table.",
+      "suggested_fix": "Replace «شبکهٔ عصبی کپسولی» در شکل ۳ و جدول کوته‌نوشت‌ها with: «شبکه کپسولی» در شکل ۳ و «شبکه عصبی کپسولی» در جدول کوته‌نوشت‌ها — این سه صورت متفاوت در سند چاپ شده‌اند.",
+      "verdict": "CONFIRMED"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:17:01-0400"
+}

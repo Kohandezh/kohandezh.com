@@ -1,0 +1,43 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  8,
+  9
+ ],
+ "section_shas": {
+  "8": "b0631756e9bb5304b107f940f999059f06878d7292f95f44a08d52b90540a91b",
+  "9": "24bc2324d93071c778f75eceea2d80923e7b47a80b6a22af39e653cbf44afa28"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 466.8070640563965,
+ "result": {
+  "sections": [
+   {
+    "index": 8,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 9,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "«رواداری ریسک» معادل رسمی ملی ندارد",
+      "explanation": "Per the terminology rules, INSO 23728 prints «(سطح) رواداری مخاطره» in running text (not «رواداری ریسک»). The rules require: (a) in NIST comparisons write «ریسک (در تعریف NIST)», so the bare «ریسک» here lacks the qualifier; (b) the existence of the printed INSO running-text form «رواداری مخاطره» should be acknowledged per the note: «در متن INSO 23728 عبارت «سطح رواداری مخاطره» به‌کار رفته است». The claim 'معادل رسمی ملی ندارد' is correct only if 'رسمی' means 'formally defined' — the printed running-text form exists but is not defined.",
+      "suggested_fix": "Rewrite to: «مفهوم risk tolerance (رواداری ریسک در تعریف NIST) اصطلاح تعریف‌شده‌ای در متن ملی ندارد؛ هرچند عبارت «سطح رواداری مخاطره» در متن جاری INSO 23728 به‌کار رفته است»; or at minimum qualify ریسک with (در تعریف NIST)."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "استاندارد محتوای حداقلی، مستندسازی و ابلاغ خط‌مشی را الزام می‌کند",
+      "explanation": "The cited evidence for clause 5.2 (S42001-031) covers establishment and minimum content of the policy; control A.2.2 (C42001-A.2.2) covers documentation ('مستند نماید'). However, 'ابلاغ' (communication/dissemination) of the policy is not mentioned in any cited evidence item for this section. While ISO management-system standards typically include communication requirements in clause 5.2, the evidence bundle does not contain a statement supporting this specific claim.",
+      "suggested_fix": "Either remove «و ابلاغ» from the cell, or add an evidence item covering the communication sub-requirements of clause 5.2 if they exist in the transcription set. Alternatively, soften to «استاندارد محتوای حداقلی و مستندسازی خط‌مشی را الزام می‌کند»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T07:21:24-0400"
+}

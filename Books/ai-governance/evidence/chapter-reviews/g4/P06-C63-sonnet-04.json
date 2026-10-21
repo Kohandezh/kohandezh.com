@@ -1,0 +1,50 @@
+{
+ "chapter": "P06/C63",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "dbbbc9482f9d2f5b6b5fcff76d7bd1f75a7055a2a2927f3eb8fa0286da9117d8",
+  "5": "d268e32134c7825219dceab6c4aa4b15482791df666eb4cc116828e4afce77ef"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 808.2637519836426,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "number_or_page_error",
+      "quote": "خط‌مشی‌ها و روال‌ها «باید» دست‌کم این موضوع‌ها را پوشش دهند (ص ۲۰)",
+      "explanation": "Evidence item S23728-050 spans printed pages 20–21 (\"pdf 29–30 / printed 20–21\"). Citing only ص ۲۰ is incorrect; a reader checking page 20 alone will not find the complete list.",
+      "suggested_fix": "Change (ص ۲۰) to (ص ۲۰–۲۱)."
+     },
+     {
+      "type": "number_or_page_error",
+      "quote": "پنج مورد نام برده شده است (ص ۲۴)",
+      "explanation": "Evidence item S23728-073 spans printed pages 24–25 (\"pdf 33–34 / printed 24–25\"). The five-item conformity list continues onto page 25; citing only ص ۲۴ is inaccurate.",
+      "suggested_fix": "Change (ص ۲۴) to (ص ۲۴–۲۵)."
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "تصمیم فرد مجاز (۳.۱.۲) داشته باشند",
+      "explanation": "Evidence item S23728-120 closes the فرد مجاز reference with the cross-reference (6.3), not (3.1.2). The section replaces the standard's printed cross-reference with a different clause number. Pointing readers to the definition entry (3.1.2) instead of the roles clause (6.3) as printed is an unsupported substitution.",
+      "suggested_fix": "Change (۳.۱.۲) to (۶.۳) to match the cross-reference printed in S23728-120, or add «(تعریف: بند ۳.۱.۲؛ تخصیص نقش: بند ۶.۳)» if the editorial intent is to cite both."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:36:17-0400"
+}

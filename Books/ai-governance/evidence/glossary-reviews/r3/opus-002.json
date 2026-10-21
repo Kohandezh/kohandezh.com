@@ -1,0 +1,75 @@
+{
+ "keys": [
+  "audit",
+  "accountability",
+  "receiver operating characteristic",
+  "false negative rate",
+  "area under the curve",
+  "artificial intelligence management system"
+ ],
+ "shas": {
+  "audit": "bb0f9be6bb076a0e66ab9dffaece665875ba8171226534beb927cbb83a67367b",
+  "accountability": "ee9baa3483c899ea1e991ad8e728fc0db0c7b98cbd89bd1f917ff0c7e174d4b5",
+  "receiver operating characteristic": "d675a2da5249ed61f40623a41f2933e84fcd0b89056b9d5bf714a6b130013346",
+  "false negative rate": "d2ea2260adcc1037aca5945fec2c8599bf400fd866291bc37c38e533321a8515",
+  "area under the curve": "ba501b3008b2c412d84142e2dcf8ec15f4399d5de8813a32b36b331c63f797b5",
+  "artificial intelligence management system": "fc10d0312e830a5b404adff17a4ceaa923f2ec70b24922e65e09022e86926c93"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 121.81559205055237,
+ "result": {
+  "verdicts": [
+   {
+    "key": "audit",
+    "verdict": "AGREE",
+    "confidence": 0.95,
+    "issues": []
+   },
+   {
+    "key": "accountability",
+    "verdict": "AGREE",
+    "confidence": 0.95,
+    "issues": []
+   },
+   {
+    "key": "receiver operating characteristic",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.85,
+    "issues": [
+     {
+      "type": "orthography",
+      "explanation": "The english field reads \"RECEIVER OPERATING CHARACTERISTIC\" (singular) but INSO 23681 clause 4 prints \"Receiver Operating Characteristics\" (plural), matching the plural Persian مشخصه‌های. The English heading should be corrected to the plural form to stay faithful to the printed evidence.",
+      "suggested_fix": "Change the english field to \"Receiver Operating Characteristics\" (plural with 's') to match what INSO 23681 clause 4 prints."
+     }
+    ]
+   },
+   {
+    "key": "false negative rate",
+    "verdict": "AGREE",
+    "confidence": 0.95,
+    "issues": []
+   },
+   {
+    "key": "area under the curve",
+    "verdict": "AGREE",
+    "confidence": 0.95,
+    "issues": []
+   },
+   {
+    "key": "artificial intelligence management system",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.82,
+    "issues": [
+     {
+      "type": "scope",
+      "explanation": "The printed_evidence array only contains clause 3.4 which defines «نظام مدیریت» (management system), not the compound «نظام مدیریت هوش مصنوعی». The editor note references the document title («هوش مصنوعی – نظام مدیریت») and a clause-1 footnote distinguishing نظام from سامانه — both are printed text and valid evidence per project rules — but neither appears in the printed_evidence array. The entry text itself is transparent and honest about the compound having no independent definition, which is correct.",
+      "suggested_fix": "Add printed_evidence entries for (1) the INSO 42001 title page showing «هوش مصنوعی – نظام مدیریت» and (2) the clause 1 footnote on the نظام/سامانه distinction, since these are the actual loci of the compound term and are already cited in the editor note."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:27:35-0400"
+}

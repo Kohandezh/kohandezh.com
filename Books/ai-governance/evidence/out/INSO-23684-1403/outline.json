@@ -1,0 +1,406 @@
+{
+ "source_id": "INSO-23684-1403",
+ "numbering_note": "Clause numbers are logical order (parent first). Printed form is mirrored by RTL layout, e.g. 3.2.1 displays as «۱-۲-۳»; annex clauses are printed «الف-۱», «ب-۱», «ب-۲», «ب-۳» and normalized here to A.1, B.1, B.2, B.3. Annex letters are الف, ب, پ. Figures are on pdf 15 (printed 6, شکل ۱), 20 (printed 11, شکل ۲), 22 (printed 13, شکل الف-۱). Clauses 3.2 and 3.3 are headings without a definition. Clause 5 spans pdf 14-19; clause 6 spans pdf 19-21.",
+ "clauses": [
+  {
+   "number": null,
+   "heading_fa": "جلد و عنوان استاندارد (جمهوری اسلامی ایران / سازمان ملی استاندارد ایران)",
+   "heading_en_if_printed": "Software Engineering – Systems and Software Quality Requirements and Evaluation (SQuaRE) – Quality Model for AI Systems",
+   "type": "front",
+   "pdf_page": 1,
+   "printed_page": null
+  },
+  {
+   "number": null,
+   "heading_fa": "نشانی و تماس سازمان ملی استاندارد ایران",
+   "heading_en_if_printed": "Iran National Standards Organization (INSO)",
+   "type": "front",
+   "pdf_page": 2,
+   "printed_page": "ب"
+  },
+  {
+   "number": null,
+   "heading_fa": "آشنایی با سازمان ملی استاندارد ایران",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 3,
+   "printed_page": "ج"
+  },
+  {
+   "number": null,
+   "heading_fa": "کمیسیون فنی تدوین استاندارد",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 4,
+   "printed_page": "د"
+  },
+  {
+   "number": null,
+   "heading_fa": "کمیسیون فنی تدوین استاندارد (ادامه) و ویراستار",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 5,
+   "printed_page": "ه"
+  },
+  {
+   "number": null,
+   "heading_fa": "فهرست مندرجات",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 6,
+   "printed_page": "و"
+  },
+  {
+   "number": null,
+   "heading_fa": "پیش‌گفتار",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 7,
+   "printed_page": "ز"
+  },
+  {
+   "number": null,
+   "heading_fa": "مقدمه",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 8,
+   "printed_page": "ح"
+  },
+  {
+   "number": null,
+   "heading_fa": "مقدمه (ادامه)",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 9,
+   "printed_page": "ط"
+  },
+  {
+   "number": "1",
+   "heading_fa": "هدف و دامنهٔ کاربرد",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 10,
+   "printed_page": 1
+  },
+  {
+   "number": "2",
+   "heading_fa": "مراجع الزامی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 10,
+   "printed_page": 1
+  },
+  {
+   "number": "2.1",
+   "heading_fa": "ISO/IEC 25010:2011 (مرجع الزامی)",
+   "heading_en_if_printed": "ISO/IEC 25010:2011, Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and software quality models",
+   "type": "normative",
+   "pdf_page": 10,
+   "printed_page": 1
+  },
+  {
+   "number": "2.2",
+   "heading_fa": "استاندارد ملی ایران شمارهٔ ۲۳۶۷۹: سال ۱۴۰۳ (مفاهیم و اصطلاحات هوش مصنوعی)",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 10,
+   "printed_page": 1
+  },
+  {
+   "number": "2.3",
+   "heading_fa": "استاندارد ملی ایران شمارهٔ ۲۳۶۸۱: سال ۱۴۰۳ (چارچوب سیستم‌های هوش مصنوعی مبتنی بر یادگیری ماشین)",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 10,
+   "printed_page": 1
+  },
+  {
+   "number": "3",
+   "heading_fa": "اصطلاحات و تعاریف",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 11,
+   "printed_page": 2
+  },
+  {
+   "number": "3.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 11,
+   "printed_page": 2
+  },
+  {
+   "number": "3.1.1",
+   "heading_fa": "سنجه (اسم)",
+   "heading_en_if_printed": "measure (noun)",
+   "type": "normative",
+   "pdf_page": 11,
+   "printed_page": 2
+  },
+  {
+   "number": "3.1.2",
+   "heading_fa": "سنجیدن (فعل)",
+   "heading_en_if_printed": "measure (verb)",
+   "type": "normative",
+   "pdf_page": 11,
+   "printed_page": 2
+  },
+  {
+   "number": "3.1.3",
+   "heading_fa": "سنجه کیفیت نرم‌افزار",
+   "heading_en_if_printed": "software quality measure",
+   "type": "normative",
+   "pdf_page": 11,
+   "printed_page": 2
+  },
+  {
+   "number": "3.1.4",
+   "heading_fa": "اقدام مقابله با مخاطره (ریسک) / اقدام حفاظتی",
+   "heading_en_if_printed": "risk treatment measure / protective measure",
+   "type": "normative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.1.5",
+   "heading_fa": "شفافیت",
+   "heading_en_if_printed": "transparency",
+   "type": "normative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.2",
+   "heading_fa": "کیفیت محصول",
+   "heading_en_if_printed": "product quality",
+   "type": "normative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.2.1",
+   "heading_fa": "واپایش‌پذیری کاربر",
+   "heading_en_if_printed": "user controllability",
+   "type": "normative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.2.2",
+   "heading_fa": "وفق‌پذیری کارکردی",
+   "heading_en_if_printed": "functional adaptability",
+   "type": "normative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.2.3",
+   "heading_fa": "صحت کارکردی",
+   "heading_en_if_printed": "functional correctness",
+   "type": "normative",
+   "pdf_page": 13,
+   "printed_page": 4
+  },
+  {
+   "number": "3.2.4",
+   "heading_fa": "مداخله‌پذیری",
+   "heading_en_if_printed": "intervenability",
+   "type": "normative",
+   "pdf_page": 13,
+   "printed_page": 4
+  },
+  {
+   "number": "3.2.5",
+   "heading_fa": "استواری",
+   "heading_en_if_printed": "robustness",
+   "type": "normative",
+   "pdf_page": 13,
+   "printed_page": 4
+  },
+  {
+   "number": "3.3",
+   "heading_fa": "کیفیت در کاربرد",
+   "heading_en_if_printed": "quality in use",
+   "type": "normative",
+   "pdf_page": 13,
+   "printed_page": 4
+  },
+  {
+   "number": "3.3.1",
+   "heading_fa": "مخاطره کاهی جامعگی و اخلاقی",
+   "heading_en_if_printed": "societal and ethical risk mitigation",
+   "type": "normative",
+   "pdf_page": 13,
+   "printed_page": 4
+  },
+  {
+   "number": "4",
+   "heading_fa": "اصطلاحات اختصاری",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 14,
+   "printed_page": 5
+  },
+  {
+   "number": "5",
+   "heading_fa": "مدل کیفیت محصول",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 14,
+   "printed_page": 5
+  },
+  {
+   "number": "5.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 14,
+   "printed_page": 5
+  },
+  {
+   "number": "5.2",
+   "heading_fa": "واپایش‌پذیری کاربر",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 16,
+   "printed_page": 7
+  },
+  {
+   "number": "5.3",
+   "heading_fa": "وفق‌پذیری کارکردی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 16,
+   "printed_page": 7
+  },
+  {
+   "number": "5.4",
+   "heading_fa": "صحت کارکردی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 17,
+   "printed_page": 8
+  },
+  {
+   "number": "5.5",
+   "heading_fa": "استواری",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 17,
+   "printed_page": 8
+  },
+  {
+   "number": "5.6",
+   "heading_fa": "شفافیت",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 18,
+   "printed_page": 9
+  },
+  {
+   "number": "5.7",
+   "heading_fa": "مداخله‌پذیری",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 19,
+   "printed_page": 10
+  },
+  {
+   "number": "6",
+   "heading_fa": "مدل کیفیت کاربرد",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 19,
+   "printed_page": 10
+  },
+  {
+   "number": "6.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 19,
+   "printed_page": 10
+  },
+  {
+   "number": "6.2",
+   "heading_fa": "مخاطره کاهی جامعگی و اخلاقی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 20,
+   "printed_page": 11
+  },
+  {
+   "number": "6.3",
+   "heading_fa": "شفافیت",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 21,
+   "printed_page": 12
+  },
+  {
+   "number": "A",
+   "heading_fa": "پیوست الف (آگاهی‌دهنده) SQuaRE",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 22,
+   "printed_page": 13
+  },
+  {
+   "number": "A.1",
+   "heading_fa": "بخش‌های SQuaRE",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 22,
+   "printed_page": 13
+  },
+  {
+   "number": "B",
+   "heading_fa": "پیوست ب (آگاهی‌دهنده) نحوه ارتباط رویکرد مبتنی بر مخاطره با رویکرد مبتنی بر کیفیت و مدل‌های کیفیت",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 24,
+   "printed_page": 15
+  },
+  {
+   "number": "B.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 24,
+   "printed_page": 15
+  },
+  {
+   "number": "B.2",
+   "heading_fa": "ارتباط با سایر استانداردهای بین‌المللی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 24,
+   "printed_page": 15
+  },
+  {
+   "number": "B.3",
+   "heading_fa": "مقایسهٔ رویکردها",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 25,
+   "printed_page": 16
+  },
+  {
+   "number": "C",
+   "heading_fa": "پیوست پ (آگاهی‌دهنده) عملکرد",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 28,
+   "printed_page": 19
+  },
+  {
+   "number": null,
+   "heading_fa": "کتابنامه",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 29,
+   "printed_page": 20
+  }
+ ]
+}

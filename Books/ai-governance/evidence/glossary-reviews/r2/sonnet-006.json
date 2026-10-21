@@ -1,0 +1,109 @@
+{
+ "keys": [
+  "relational algebra",
+  "relational database",
+  "relational model",
+  "scatter",
+  "scatter gather",
+  "streaming data",
+  "sql",
+  "unstructured data",
+  "vertical scaling",
+  "measure (noun)",
+  "measure (verb)",
+  "software quality measure"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 89.38600492477417,
+ "result": {
+  "verdicts": [
+   {
+    "key": "relational algebra",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "relational database",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "relational model",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "scatter",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "scatter gather",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "streaming data",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "sql",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.95
+   },
+   {
+    "key": "unstructured data",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "vertical scaling",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "measure (noun)",
+    "verdict": "AGREE",
+    "issues": [
+     {
+      "type": "other",
+      "explanation": "The printed term is «سنجه (اسم)» with a POS disambiguator, whereas preferred_fa records only «سنجه». Dropping «(اسم)» is standard terminological practice (ISO 10241; the parenthetical is a metalinguistic label, not substantive term content), and the entry for «measure (verb)» strips «(فعل)» by the same logic, so treatment is internally consistent. No correctness issue.",
+      "suggested_fix": "No change required; if house style demands the printed label, set preferred_fa to «سنجه (اسم)» and likewise «سنجیدن (فعل)» for the verb entry."
+     }
+    ],
+    "confidence": 0.92
+   },
+   {
+    "key": "measure (verb)",
+    "verdict": "AGREE",
+    "issues": [
+     {
+      "type": "other",
+      "explanation": "Printed term is «سنجیدن (فعل)»; preferred_fa strips the POS tag consistently with the noun entry. Same reasoning applies: metalinguistic label, not term content. No correctness issue.",
+      "suggested_fix": "No change required; if house style demands the printed label, set preferred_fa to «سنجیدن (فعل)»."
+     }
+    ],
+    "confidence": 0.92
+   },
+   {
+    "key": "software quality measure",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:01:25-0400"
+}

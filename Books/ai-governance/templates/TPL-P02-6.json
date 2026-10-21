@@ -2,8 +2,8 @@
  "template_id": "TPL-P02-6",
  "title_fa": "نمونه فرم: گزارش دورهٔ پایش سامانهٔ هوش مصنوعی (Model Monitoring Report)",
  "derived_from": [
-  "KDJ-AI-2026E1-P02-C09-S05",
-  "KDJ-AI-2026E1-P02-C10-S06"
+  "KDJ-AI-2026E2-P02-C09-S05",
+  "KDJ-AI-2026E2-P02-C10-S06"
  ],
  "fields": [
   {

@@ -1,0 +1,49 @@
+{
+ "chapter": "P01/C56",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "6dd910cc3b4b025cf2caff12d5c010daac7e0e36b3838461579c16e0eaecc09c",
+  "3": "ab6597a96fd2f657c87b5e0862e4613f6b67481f88fba202da889eb48e4c8e92"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 392.7919318675995,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "number_or_page_error",
+      "quote": "بند الف-۷ (ص ۱۸ و ۱۹)",
+      "explanation": "Evidence S23683-043 places all content for الف-7 (الزامات حفاظت از حریم خصوصی) at printed page 18 (pdf 27). Evidence for الف-8 (S23683-044) begins at printed page 19 (pdf 28). No evidence item shows الف-7 continuing to page 19. The claim «و ۱۹» is unsupported and, given that الف-8 starts at printed 19, misleading.",
+      "suggested_fix": "Change «ص ۱۸ و ۱۹» to «ص ۱۸»."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "گاه «زپ سا» با فاصله",
+      "explanation": "No evidence item confirms a full-space variant «زپ سا» in the document. T23683-3.1.36 transcribes the entry title as «زپ‌سا» (with ZWNJ) throughout. The printed-inconsistency catalogue I23683-unc3 lists confirmed variants (scatter/gather forms, کلان‌داده/بزرگ‌داده, محاسبات ابری/رایانش ابری, «بدیل») but does not include a ZWNJ-vs-space variant for زپ‌سا.",
+      "suggested_fix": "Remove «و گاه «زپ سا» با فاصله» from the sentence, or qualify it explicitly as an observation not confirmed in the evidence package."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "«کلان داده» (فهرست مندرجات پیوست الف)",
+      "explanation": "Outline evidence O23683-069 transcribes the Annex A heading as «کلان‌داده» (with ZWNJ). I23683-unc3 records the کلان‌داده/بزرگ‌داده inconsistency but does not mention a ZWNJ-vs-full-space variant of «کلان‌داده» in the table of contents specifically. No cited evidence item supports «کلان داده» (space) at that location.",
+      "suggested_fix": "Remove the parenthetical location «(فهرست مندرجات پیوست الف)» for the «کلان داده» variant, or qualify it as unconfirmed by the evidence package."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:39:31-0400"
+}

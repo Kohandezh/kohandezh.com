@@ -1,0 +1,377 @@
+[
+ {
+  "item_id": "S42001-076",
+  "verdict": "faithful",
+  "printed_expression": "باید از موارد زیر آگاهی داشته باشند",
+  "note": "Page 28 prints «باید ... آگاهی داشته باشند»; statement keeps the same force."
+ },
+ {
+  "item_id": "S42001-077",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید ارتباطات مناسب ... را ... تعیین نماید",
+  "note": "Printed «باید» matches the statement."
+ },
+ {
+  "item_id": "S42001-078",
+  "verdict": "faithful",
+  "printed_expression": "نظام مدیریت هومص سازمان باید شامل موارد زیر باشد",
+  "note": "Printed «باید ... شامل ... باشد» matches; «موردنیاز است» is only an attributive phrase, paraphrased as «الزام می‌کند»."
+ },
+ {
+  "item_id": "S42001-079",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید از مناسب‌بودن موارد زیر اطمینان یابد",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S42001-080",
+  "verdict": "faithful",
+  "printed_expression": "باید واپایش شود تا از موارد زیر اطمینان حاصل شود",
+  "note": "Printed «باید» matches; the two printed conditions (availability, protection) are preserved."
+ },
+ {
+  "item_id": "S42001-081",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید ... به فعالیت‌های زیر بپردازد",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S42001-082",
+  "verdict": "faithful",
+  "printed_expression": "باید آن‌گونه که مناسب است شناسایی و واپایش شود",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S42001-084",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید ... طرح‌ریزی، اجرا و واپایش کند",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S42001-085",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید واپایش‌های تعیین‌شده ... اجرا کند",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S42001-086",
+  "verdict": "faithful",
+  "printed_expression": "باید پایش شود ... اقدامات اصلاحی باید در نظر گرفته شود",
+  "note": "Both printed «باید» uses match the statement."
+ },
+ {
+  "item_id": "S42001-087",
+  "verdict": "faithful",
+  "printed_expression": "اطلاعات مدون باید تا حد موردنیاز در دسترس باشند",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S42001-088",
+  "verdict": "wrong",
+  "printed_expression": "آن‌گونه که ضروری است، اقدام نماید",
+  "corrected_statement_fa": "سازمان باید تغییرات طرح‌ریزی‌شده را واپایش کند، تبعات تغییرات ناخواسته را بازنگری نماید و به‌منظور کاهش هرگونه تأثیرات نامطلوب، آن‌گونه که «ضروری است»، اقدام کند و اطمینان یابد که فرایندها، محصولات یا خدمات مرتبط با نظام مدیریت هومص که از منشأ برون‌سازمانی تأمین شده‌اند، واپایش می‌شوند.",
+  "note": "Minor: «باید» is correct, but the printed hedge «آن‌گونه که ضروری است» on the mitigation action was dropped, making that action unconditional."
+ },
+ {
+  "item_id": "S42001-089",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید ارزیابی‌های مخاطره هومص را ... انجام دهد",
+  "note": "Printed «باید» (and «باید ... حفظ کند») matches."
+ },
+ {
+  "item_id": "S42001-090",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید طرح مواجهه با مخاطره هومص را ... اجرا کند",
+  "note": "Each clause is printed with «باید»; the statement's bare subjunctives keep shall-force under «سازمان باید», nothing inflated."
+ },
+ {
+  "item_id": "S42001-091",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید ارزیابی‌های تأثیر سامانه هومص را ... انجام دهد",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S42001-092",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید تعیین کند ... نیاز به پایش و اندازه‌گیری دارد",
+  "note": "Printed «باید تعیین کند» and the «باید انجام شود / باید تحلیل و ارزشیابی شود» items (continued on p-31) match."
+ },
+ {
+  "item_id": "S42001-093",
+  "verdict": "faithful",
+  "printed_expression": "اطلاعات مدون ... باید در دسترس باشد",
+  "note": "Printed «باید» matches; «سازمان باید ... ارزشیابی کند» also printed."
+ },
+ {
+  "item_id": "S42001-094",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید ممیزی‌های داخلی را ... به اجرا درآورد",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S42001-095",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید برنامه(های) ممیزی را ... طرح‌ریزی ... و نگه دارد",
+  "note": "Both printed «باید» (programme; consider importance of processes) match."
+ },
+ {
+  "item_id": "S42001-096",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید: ... تعیین نماید؛ ... انتخاب کند",
+  "note": "Printed «باید» list (a, b, c) matches; the «میزان» note is a printed-word remark and fine."
+ },
+ {
+  "item_id": "S42001-097",
+  "verdict": "faithful",
+  "printed_expression": "مدارک مدون باید ... در دسترس باشد",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S42001-098",
+  "verdict": "faithful",
+  "printed_expression": "مدیریت ردهبالا باید ... بازنگری کند",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S42001-099",
+  "verdict": "faithful",
+  "printed_expression": "بازنگری مدیریت باید شامل موارد زیر باشد",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S42001-100",
+  "verdict": "faithful",
+  "printed_expression": "نتایج بازنگری مدیریت باید شامل تصمیماتی ... باشد",
+  "note": "Printed «باید» (both sentences) matches."
+ },
+ {
+  "item_id": "S42001-101",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید به طور مداوم ... بهبود ببخشد",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S42001-102",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید اقدامات زیر را انجام دهد",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S42001-103",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید اقدامات زیر را انجام دهد: ... ارزشیابی نماید",
+  "note": "Items (b)-(e) sit under the printed «باید ... انجام دهد» lead-in (previous page); wording matches."
+ },
+ {
+  "item_id": "S42001-104",
+  "verdict": "faithful",
+  "printed_expression": "اقدامات اصلاحی باید متناسب با تأثیرات ... باشد",
+  "note": "Both printed «باید» uses match."
+ },
+ {
+  "item_id": "S42001-105",
+  "verdict": "faithful",
+  "printed_expression": "الزامی نیست و سازمان می‌تواند",
+  "note": "Printed «الزامی نیست» and «می‌تواند ... طراحی و اجرا نماید» are both reported as printed."
+ },
+ {
+  "item_id": "S42001-109",
+  "verdict": "faithful",
+  "printed_expression": "این پیوست باید به‌عنوان راهنمایی ... استفاده شود",
+  "note": "The statement quotes the printed «باید» sentence and keeps the printed «می‌توان» for the additional controls and starting point."
+ },
+ {
+  "item_id": "S42001-111",
+  "verdict": "faithful",
+  "printed_expression": "لازم است براساس موارد زیر شکل گیرد",
+  "note": "Printed «لازم است»; the last two list items (risk environment, impact on stakeholders) are on p-40 and match."
+ },
+ {
+  "item_id": "S42001-115",
+  "verdict": "faithful",
+  "printed_expression": "لازم است ... بازنگری شود; توصیه می‌شود ... در نظر بگیرد",
+  "note": "Printed «لازم است» (control and role) and «توصیه می‌شود» (guidance) match; the two printed توصیه sentences are merged but keep their force."
+ },
+ {
+  "item_id": "S42001-116",
+  "verdict": "faithful",
+  "printed_expression": "لازم است نقش‌ها و مسئولیت‌های مرتبط ... تعیین و تخصیص داده شوند",
+  "note": "Printed «لازم است» in the control and «توصیه می‌شود ... در نظر بگیرد» in the guidance match."
+ },
+ {
+  "item_id": "S42001-117",
+  "verdict": "faithful",
+  "printed_expression": "لازم است مسئولیت‌های ... تا حدی تعیین شود",
+  "note": "Printed «ممکن است نیاز به تعیین نقش ... داشته باشند» and «لازم است» match."
+ },
+ {
+  "item_id": "S42001-119",
+  "verdict": "faithful",
+  "printed_expression": "امری ضروری است ... می‌تواند ... توصیه می‌شود",
+  "note": "Control «توصیه می‌شود», guidance «امری ضروری است», «می‌تواند ... تحت‌تأثیر قرار دهد» and the «توصیه می‌شود ... بازنویسی کند» (other information) all match."
+ },
+ {
+  "item_id": "S42001-124",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود سازمان نیاز به تخصص‌های متنوع را در نظر گیرد",
+  "note": "Control and guidance both printed with «توصیه می‌شود»; the can-type human-resource list is rendered as «نمونه‌ها»."
+ },
+ {
+  "item_id": "S42001-126",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود روش‌های اجرایی سازمان بدون قید حصر شامل موارد زیر باشد",
+  "note": "Printed «توصیه می‌شود» (twice) matches; the printed «می‌تواند شامل» sub-lists appear only as parenthetical examples, not as a recommendation."
+ },
+ {
+  "item_id": "S42001-128",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود ... مستند کند؛ لازم است ... نگهداری و روزآمد شوند",
+  "note": "Printed «توصیه می‌شود», «لازم است» and «می‌توانند ... تعیین شود» match."
+ },
+ {
+  "item_id": "S42001-130",
+  "verdict": "wrong",
+  "printed_expression": "زمینه‌های تأثیرپذیری که باید به‌عنوان بخشی از ارزیابی در نظر گرفته شود",
+  "corrected_statement_fa": "توصیه می‌شود سازمان تأثیرات بالقوه را بر افراد یا گروه‌ها در طول چرخه عمر ارزیابی و مستند کند؛ «بهتر است» اصول حاکمیتی، خط‌مشی‌ها و اهداف هومص خود را در نظر بگیرد؛ «لازم است» نیازهای حفاظتی خاص گروه‌هایی چون کودکان، کم‌توانان، سالمندان و کارگران در نظر گرفته شود؛ زمینه‌های تأثیرپذیری که «باید» به‌عنوان بخشی از ارزیابی در نظر گرفته شود، بدون قید حصر: انصاف، پاسخگویی، شفافیت و توضیح‌پذیری، امنیت و حریم خصوصی، ایمنی و سلامت، پیامدهای مالی، دسترس‌پذیری، حقوق بشر؛ «توصیه می‌شود» در صورت لزوم با کارشناسان مشورت شود.",
+  "note": "Control «توصیه می‌شود» and «لازم است» are right, but the printed «باید ... در نظر گرفته شود» on the impact-area list was dropped to a bare list (and «بهتر است» / the closing «توصیه می‌شود» consult-experts were unmarked)."
+ },
+ {
+  "item_id": "S42001-133",
+  "verdict": "faithful",
+  "printed_expression": "لازم است این اهداف در فرایندهای طراحی و توسعه لحاظ شوند",
+  "note": "Printed «توصیه می‌شود» (control and requirements/guidelines sentence) and «لازم است» (twice) match."
+ },
+ {
+  "item_id": "S42001-136",
+  "verdict": "wrong",
+  "printed_expression": "لازم است الزامات ... مشخص شوند و بهتر است که کل چرخه عمر ... را دربرگیرند",
+  "corrected_statement_fa": "توصیه می‌شود سازمان الزاماتی را برای سامانه‌های هومص جدید یا بهبودهای اساسی مشخص و مستند کند؛ توصیه می‌شود منطق و اهداف توسعه را مستند کند و عواملی مانند دلیل توسعه و نحوهٔ برآورده‌شدن الزامات داده/آموزش مدل را که «لازم است» لحاظ، مستند و درک شوند؛ «لازم است» الزامات سامانه هومص مشخص شوند و «بهتر است» کل چرخه عمر سامانه را دربرگیرند؛ در مواردی که سامانهٔ توسعه‌یافته نمی‌تواند مطابق نیاز عمل کند یا اطلاعات جدیدی حاصل می‌شود «لازم است» این الزامات بازنگری شوند؛ ISO/IEC 5338 و ISO 9241-210 ارجاع شده‌اند.",
+  "note": "Statement attaches «لازم است» to the whole-lifecycle coverage and «بهتر است» to the same thing; the page prints «لازم است» for specifying the requirements and «بهتر است» only for covering the whole lifecycle."
+ },
+ {
+  "item_id": "S42001-137",
+  "verdict": "wrong",
+  "printed_expression": "انتخاب‌های متعددی درزمینهٔ طراحی سامانه هومص لازم است",
+  "corrected_statement_fa": "توصیه می‌شود طراحی و توسعه براساس اهداف سازمانی، الزامات مستندشده و معیارهای مشخصات مستند شود؛ انتخاب‌های متعددی درزمینهٔ طراحی «لازم است» که بدون قید حصر شامل رویکرد یادگیری ماشین، الگوریتم و نوع مدل، نحوهٔ آموزش، ارزشیابی و بهبود مدل‌ها، اجزای سخت‌افزاری و نرم‌افزاری، تهدیدات امنیتی ویژهٔ هومص، واسط‌ها و نمایش برون‌دادها، نحوهٔ تعامل انسان‌ها، همکنش‌پذیری و انتقال‌پذیری می‌شود؛ «بهتر است» مستندات هر مرحله نگهداری شود و «لازم است» مستندات معماری نهایی در دسترس باشد.",
+  "note": "Minor: «توصیه می‌شود», «بهتر است» and «لازم است» (final architecture docs) are right, but the printed «لازم است» on the design-choices sentence was dropped (rendered as plain «را شامل می‌شود»)."
+ },
+ {
+  "item_id": "S42001-138",
+  "verdict": "wrong",
+  "printed_expression": "توصیه می‌شود سازمان معیارهای ارزشیابی را تعریف و مستند نماید؛ لازم است سامانه براساس معیارهای مدون ارزشیابی شود",
+  "corrected_statement_fa": "توصیه می‌شود سازمان اقدامات درستی‌سنجی و اعتبارسنجی را تعیین و مستند کند و معیارهایی برای استفاده از آن‌ها تعیین کند؛ اقدامات «می‌تواند» شامل روش‌ها و ابزارهای آزمایش، انتخاب و بازنمایی دادهٔ آزمایش و الزامات معیارهای انتشار باشد؛ «توصیه می‌شود» معیارهای ارزشیابی تعریف و مستند شوند و طرح ارزشیابی «می‌تواند» براساس مواردی مانند اطمینان‌پذیری و ایمنی، اهداف توسعه و استفادهٔ مسئولانه، عوامل عملیاتی مانند کیفیت داده، توانایی تفسیر برون‌داد توسط تصمیم‌گیرندگان و عوامل قابل‌قبول باشد؛ «لازم است» سامانه براساس معیارهای مدون ارزشیابی شود؛ در صورت برآورده‌نشدن معیارها «توصیه می‌شود» بازاندیشی یا مدیریت نواقص انجام شود (ISO/IEC TR 24029-1 برای استواری شبکه‌های عصبی).",
+  "note": "Statement gives «لازم است» to defining/documenting the criteria; p-54 prints «توصیه می‌شود» for that, and «لازم است» (p-55) only for evaluating the system against the documented criteria; «می‌تواند» for the verification measures and evaluation plan was also dropped."
+ },
+ {
+  "item_id": "S42001-140",
+  "verdict": "faithful",
+  "printed_expression": "لازم است فرایندهایی برای روزآمدسازی ... وجود داشته باشد",
+  "note": "Control «توصیه می‌شود» is on p-56; the three quoted «لازم است» clauses (updates, unexpected uses, security threats) are on the adjacent p-57 and match; the printed «می‌تواند»/«توصیه می‌شود» sub-bullets are given only as bare list items, not inflated."
+ },
+ {
+  "item_id": "S42001-141",
+  "verdict": "faithful",
+  "printed_expression": "لازم است معیارهای عملکردی ... تعیین شود",
+  "note": "p-57 prints «لازم است» and «توصیه می‌شود» (twice); the final «می‌توان از مدل کیفیت ISO/IEC 25059 ... استفاده کرد» and the F1 can-sentence are on p-58 and match."
+ },
+ {
+  "item_id": "S42001-142",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود سازمان مستندات فنّی ... تعیین کند",
+  "note": "Printed control «توصیه می‌شود» and guidance «می‌تواند بدون قید حصر شامل موارد زیر باشد» match (last list items are on p-59, non-modal)."
+ },
+ {
+  "item_id": "S42001-143",
+  "verdict": "faithful",
+  "printed_expression": "لازم است مستندات روزآمد و درست باشند",
+  "note": "Printed «لازم است» (three times) and «توصیه می‌شود» (operational changes) match."
+ },
+ {
+  "item_id": "S42001-144",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود سازمان تعیین نماید ... ثبت سوابق ... لازم است صورت گیرد",
+  "note": "Printed «توصیه می‌شود», the control's «ثبت سوابق به اندازهٔ حداقل باشد», «لازم است ... نگهداری شوند» and «سازمان‌ها لازم است ... آگاه باشند» all match."
+ },
+ {
+  "item_id": "S42001-147",
+  "verdict": "faithful",
+  "printed_expression": "بسیار مهم است ... توصیه می‌شود",
+  "note": "Printed «توصیه می‌شود» (control and bias sentence) and «بسیار مهم است» match."
+ },
+ {
+  "item_id": "S42001-149",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید معیارهای خود برای اقدام به آماده‌سازی داده ... تعیین و مستند نماید",
+  "note": "The control is printed with «باید» exactly as quoted; the closing «توصیه می‌شود معیارها ... مستند نماید» is on p-64 top and matches."
+ },
+ {
+  "item_id": "S42001-150",
+  "verdict": "wrong",
+  "printed_expression": "اطلاعاتی که می‌توان به کاربران ارائه داد بدون قید حصر شامل موارد زیر می‌شود",
+  "corrected_statement_fa": "توصیه می‌شود سازمان اطلاعات لازم برای کاربران سامانه هومص را تعیین و ارائه کند؛ اطلاعاتی که «می‌توان» به کاربران ارائه داد بدون قید حصر شامل مقصود، اینکه کاربر با هومص تعامل دارد، نحوهٔ تعامل و لغو عملکرد، الزامات فنّی، نیاز به نظارت انسانی، درستی و عملکرد، اطلاعات ارزیابی تأثیر (مزایا و مضرات)، تجدیدنظر در ادعاهای مزایا، روزآمدسازی‌ها و نگهداری، اطلاعات تماس و مطالب آموزشی می‌شود؛ «توصیه می‌شود» معیارهای تصمیم‌گیری برای ارائه/عدم ارائه مستند شود و تأیید شود که اطلاعات در دسترس و کامل، روزآمد و درست است.",
+  "note": "The printed list is introduced by «می‌توان ... ارائه داد» (can), but the statement presents it as the content «توصیه می‌شود» be provided; the two real «توصیه می‌شود» clauses (pp. 52-53) are correct."
+ },
+ {
+  "item_id": "S42001-152",
+  "verdict": "wrong",
+  "printed_expression": "ممکن است الزامات قانونی ... برقرار باشد که بتوانند الزاماتی ... تعیین کنند",
+  "corrected_statement_fa": "توصیه می‌شود سازمان طرحی برای ابلاغ حوادث به کاربران تعیین و مستند کند؛ حوادث «می‌توانند» به سامانه، امنیت اطلاعات یا حریم خصوصی (مانند نشت داده) مربوط باشند؛ «ممکن است» الزامات قانونی (مانند قراردادها) و فعالیت‌های نظارتی برقرار باشد که «بتوانند» انواع حوادث، جدول زمانی، مراجع و جزئیات را تعیین کنند؛ سازمان «می‌تواند» پاسخ‌دهی و گزارش‌دهی مربوط به هومص را با مدیریت حوادث خود یکپارچه کند، اما «لازم است» از الزامات خاص هومص آگاه باشد؛ ISO/IEC 27001 و 27701 به مدیریت حوادث می‌پردازند.",
+  "note": "Minor: «توصیه می‌شود» and «لازم است» are right, but the printed «ممکن است ... بتوانند ... تعیین کنند» was flattened into a definite «تعیین می‌کنند», and the «می‌تواند ... یکپارچه‌سازی کند» (before «اما لازم است») was dropped."
+ },
+ {
+  "item_id": "S42001-154",
+  "verdict": "faithful",
+  "printed_expression": "سازمان لازم است از ملاحظات کاربست‌پذیر آگاه باشد",
+  "note": "Printed «توصیه می‌شود» (control), «لازم است ... آگاه باشد و ... تدوین کند» and «می‌تواند ... به کار گیرد» (p-68 top) match."
+ },
+ {
+  "item_id": "S42001-155",
+  "verdict": "faithful",
+  "printed_expression": "لازم است گنجانده شود",
+  "note": "Printed «توصیه می‌شود» (three times) and «لازم است» (human-oversight objectives) match."
+ },
+ {
+  "item_id": "S42001-157",
+  "verdict": "faithful",
+  "printed_expression": "لازم است ... توجیه شده، آموزش‌دیده ... باشند",
+  "note": "Printed «لازم است» for personnel and «می‌تواند پایش خودکار را تقویت کند» match."
+ },
+ {
+  "item_id": "S42001-158",
+  "verdict": "faithful",
+  "printed_expression": "لازم است سامانه هومص مطابق با دستورالعمل‌ها ... به کار اندازی شود",
+  "note": "Printed «توصیه می‌شود» (control, concerns notice) and «لازم است» (deployment, monitoring) are on p-69; «توصیه می‌شود سازمان سوابق رویداد ... را نگهداری کند» is on the adjacent p-70 top and matches."
+ },
+ {
+  "item_id": "S42001-159",
+  "verdict": "wrong",
+  "printed_expression": "سازمان لازم است قادر باشد مستندات لازم را ... ارائه دهد",
+  "corrected_statement_fa": "توصیه می‌شود سازمان اطمینان یابد مسئولیت‌ها در چرخه عمر بین سازمان، شرکا، تأمین‌کنندگان، مشتریان و طرف‌های سوم تقسیم شده‌اند و نقش‌ها و مسئولیت‌های همهٔ طرف‌های مشارکت‌کننده را مستند و تعیین کند؛ هرگاه سازمان سامانهٔ هومص را برای شخص سوم تأمین کند، «توصیه می‌شود» اطمینان یابد که رویکرد مسئولانه‌ای در قبال توسعهٔ آن اتخاذ کرده است و «لازم است» قادر باشد مستندات لازم (ب-۶-۲-۷ و ب-۸-۲) را به طرف‌های ذی‌نفع مرتبط و شخص سوم ارائه دهد؛ برای اطلاعات شخصی قابل‌شناسایی، مسئولیت‌ها معمولاً بین پردازش‌کننده و واپایشگر تقسیم می‌شود (ISO/IEC 29100 و 27701).",
+  "note": "Printed «لازم است قادر باشد ... ارائه دهد» was lost under the «توصیه می‌شود» chain, and the direction is reversed: the page says the organization SUPPLIES a system TO a third party, not «در خرید سامانه از شخص سوم»."
+ },
+ {
+  "item_id": "S42001-161",
+  "verdict": "wrong",
+  "printed_expression": "سازمان می‌تواند ... تصمیم بگیرد با مخاطرات ... مقابله کند",
+  "corrected_statement_fa": "توصیه می‌شود سازمان اطمینان یابد در رویکرد مسئولانه نیازها و انتظارات مشتریان را در نظر می‌گیرد؛ «بهتر است» انتظارات و نیازهای مشتریان (الزامات طراحی یا قراردادی) درک شود؛ توصیه می‌شود سازمان از پیچیدگی ارتباط تأمین‌کننده-مشتری و تقسیم مسئولیت آگاه باشد؛ سازمان «می‌تواند» مثلاً مخاطرات مرتبط با استفادهٔ مشتری را شناسایی کند و تصمیم بگیرد با ارائهٔ اطلاعات مناسب به مشتری با آن‌ها مقابله کند؛ «لازم است» محدودیت‌های حوزهٔ مناسب سامانه به مشتری ابلاغ شود (ب-۶-۲-۷ و ب-۸-۲).",
+  "note": "Minor: the printed «سازمان می‌تواند ... تصمیم بگیرد ... مقابله کند» (p-72) was folded into the preceding «توصیه می‌شود» sentence; «بهتر است» and «لازم است» are faithful (guidance is on the adjacent p-72)."
+ },
+ {
+  "item_id": "S42001-165",
+  "verdict": "faithful",
+  "printed_expression": "انتخاب متخصصانی ... لازم است",
+  "note": "Printed «لازم است» matches."
+ },
+ {
+  "item_id": "S42001-173",
+  "verdict": "faithful",
+  "printed_expression": "لازم است به موضوعات امنیتی جدید توجه بیشتری ... شود",
+  "note": "Printed «لازم است» matches."
+ },
+ {
+  "item_id": "S42001-184",
+  "verdict": "faithful",
+  "printed_expression": "امری ضروری است",
+  "note": "Printed «امری ضروری است» (p-77) and «لازم است به‌صورت جامع مدیریت شوند» (p-76, adjacent page) match."
+ }
+]

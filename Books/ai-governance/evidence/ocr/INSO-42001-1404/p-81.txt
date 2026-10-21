@@ -1,0 +1,13 @@
+استاندارد ملی ایران/ بی اس ایزوآآی‌ای‌سی ۴۲۰۰۱: سال ۱۴۰۴ 42001:2025 ‎INSO/BS/ISO/IEC‏
+
+نکته: استاندارد ملی ایران ۲۳۶۸۲ فتاوری اطلاعات - حکمرانی فناوری اطلاعات - پیامدهای حکمرانی استفاده از هوش مصنوعی
+در سازمان‌ها. براساس استاندارد 38507 ‎ISO‏ تدوین شده است.
+
+[28] Lifecycle D.D.I. 3.3, 2020-04-15. Data Documentation Initiative (DDI) Alliance. [viewed
+on 2022- 02-19]. Available at: https://ddialliance.org/Specification/DDI-Lifecycle/3.3/
+
+[29] Risk Framework N.LS.T.-A.I. 1.0, 2023-01-26. National Institute of Technology (NIST)
+[viewed on 2023-04-17] https://www.nist.gov/itl/ai-risk-management-framework
+
+۶۹
+

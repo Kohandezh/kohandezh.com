@@ -1,0 +1,45 @@
+{
+ "keys": [
+  "risk tolerance",
+  "risk management",
+  "artificial intelligence management system"
+ ],
+ "shas": {
+  "risk tolerance": "e46e8764dc9b413023054f42fc69558f824ceb3065aa73590732fc6e167a4807",
+  "risk management": "85875f72843beb08897882c1f22dc0756c307419a872eb4d1ad22fc395c352a9",
+  "artificial intelligence management system": "ea8a6e988ff609a027c8f1f29aa30d1b590ea67540da5399f7f6f8b1ec7e2fa4"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 230.79203701019287,
+ "result": {
+  "verdicts": [
+   {
+    "key": "risk tolerance",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.83,
+    "issues": [
+     {
+      "type": "attribution",
+      "explanation": "The evidence snippet for INSO 23728 clause 7.3.2 does not contain «رواداری مخاطره» in the visible text — it discusses privacy engineering goals and is cut off mid-sentence («برای پش»). The only confirmed printed form across all provided evidence is «سطح رواداری مخاطره» (clause 8.1). The proposed preferred headword «رواداری مخاطره» (standalone, without «سطح») is therefore unattested by any provided evidence item; the claim in the editor note that it appears in 7.3.2 cannot be verified from the supplied snippet.",
+      "suggested_fix": "Either (a) replace or extend the 7.3.2 evidence item with the actual text fragment showing «رواداری مخاطره» standalone, confirming the editor-note claim; or (b) if no standalone occurrence exists, promote «سطح رواداری مخاطره» to preferred headword — it is the only INSO-attested form — and demote «رواداری مخاطره» to alternatives_fa. Option (a) leaves the entry unchanged if the term does appear in 7.3.2; option (b) is the fallback."
+     }
+    ]
+   },
+   {
+    "key": "risk management",
+    "verdict": "AGREE",
+    "confidence": 0.97,
+    "issues": []
+   },
+   {
+    "key": "artificial intelligence management system",
+    "verdict": "AGREE",
+    "confidence": 0.95,
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:02:12-0400"
+}

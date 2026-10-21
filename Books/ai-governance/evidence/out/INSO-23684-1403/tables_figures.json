@@ -1,0 +1,437 @@
+{
+ "source_id": "INSO-23684-1403",
+ "note": "The document has no numbered tables. Three figures: Figure 1, Figure 2 (clauses 5 and 6) and Figure A.1 (Annex A). Digits in captions are printed in Persian numerals.",
+ "items": [
+  {
+   "kind": "figure",
+   "id": "شکل ۱",
+   "title_fa": "مدل کیفیت محصول سامانهٔ هوش مصنوعی",
+   "pdf_page": 15,
+   "printed_page": 6,
+   "summary_fa": "نمودار درختی: ریشهٔ «کیفیت محصول سامانه هوش مصنوعی» با ۸ مشخصهٔ اصلی و ۳۷ ردیف مشخصهٔ فرعی. پنج مشخصهٔ فرعی با a (جدید) و یک مورد (صحت کارکردی) با m (تغییریافته) علامت خورده‌اند؛ هیچ مشخصهٔ اصلی علامت ندارد. نام انگلیسی مشخصه‌های اصلی در پاورقی حرفی زیر شکل آمده است.",
+   "legend_printed": [
+    "a - مشخصه‌های فرعی جدید",
+    "m - مشخصه‌های فرعی تغییریافته"
+   ],
+   "footnotes_en_printed": [
+    "b- Portability",
+    "c- Maintainability",
+    "d- Security",
+    "e- Reliability",
+    "f- Usability",
+    "g- Compatibility",
+    "h- Performance efficiency",
+    "l- Functional suitability",
+    "n-Time Behaviour"
+   ],
+   "rows": [
+    {
+     "id": "PQ.1",
+     "title_fa": "انتقال‌پذیری",
+     "title_en_footnote": "Portability",
+     "sub": [
+      {
+       "id": "PQ.1.1",
+       "title_fa_as_printed": "قابلیت نصب",
+       "marker": null
+      },
+      {
+       "id": "PQ.1.2",
+       "title_fa_as_printed": "قابلیت تعویض",
+       "marker": null
+      },
+      {
+       "id": "PQ.1.3",
+       "title_fa_as_printed": "وفق‌پذیری",
+       "marker": null
+      }
+     ]
+    },
+    {
+     "id": "PQ.2",
+     "title_fa": "قابلیت نگهداری",
+     "title_en_footnote": "Maintainability",
+     "sub": [
+      {
+       "id": "PQ.2.1",
+       "title_fa_as_printed": "پودمانگی",
+       "marker": null
+      },
+      {
+       "id": "PQ.2.2",
+       "title_fa_as_printed": "قابلیت استفادهٔ مجدد",
+       "marker": null
+      },
+      {
+       "id": "PQ.2.3",
+       "title_fa_as_printed": "قابلیت تجزیه و تحلیل",
+       "marker": null
+      },
+      {
+       "id": "PQ.2.4",
+       "title_fa_as_printed": "قابلیت تجدید نظر",
+       "marker": null
+      },
+      {
+       "id": "PQ.2.5",
+       "title_fa_as_printed": "آزمون‌پذیری",
+       "marker": null
+      }
+     ]
+    },
+    {
+     "id": "PQ.3",
+     "title_fa": "امنیت",
+     "title_en_footnote": "Security",
+     "sub": [
+      {
+       "id": "PQ.3.1",
+       "title_fa_as_printed": "محرمانگی",
+       "marker": null
+      },
+      {
+       "id": "PQ.3.2",
+       "title_fa_as_printed": "یکپارچگی",
+       "marker": null
+      },
+      {
+       "id": "PQ.3.3",
+       "title_fa_as_printed": "عدم انکار",
+       "marker": null
+      },
+      {
+       "id": "PQ.3.4",
+       "title_fa_as_printed": "پاسخگویی",
+       "marker": null
+      },
+      {
+       "id": "PQ.3.5",
+       "title_fa_as_printed": "اصالت",
+       "marker": null
+      },
+      {
+       "id": "PQ.3.6",
+       "title_fa_as_printed": "مداخله‌پذیری",
+       "marker": "a"
+      }
+     ]
+    },
+    {
+     "id": "PQ.4",
+     "title_fa": "قابلیت اطمینان",
+     "title_en_footnote": "Reliability",
+     "sub": [
+      {
+       "id": "PQ.4.1",
+       "title_fa_as_printed": "بلوغ",
+       "marker": null
+      },
+      {
+       "id": "PQ.4.2",
+       "title_fa_as_printed": "فراهم بودن",
+       "marker": null
+      },
+      {
+       "id": "PQ.4.3",
+       "title_fa_as_printed": "تحمل خطا",
+       "marker": null
+      },
+      {
+       "id": "PQ.4.4",
+       "title_fa_as_printed": "قابلیت بازیابی",
+       "marker": null
+      },
+      {
+       "id": "PQ.4.5",
+       "title_fa_as_printed": "استواری",
+       "marker": "a"
+      }
+     ]
+    },
+    {
+     "id": "PQ.5",
+     "title_fa": "قابلیت استفاده",
+     "title_en_footnote": "Usability",
+     "sub": [
+      {
+       "id": "PQ.5.1",
+       "title_fa_as_printed": "مناسب بودن",
+       "marker": null
+      },
+      {
+       "id": "PQ.5.2",
+       "title_fa_as_printed": "بازشناسی‌پذیری",
+       "marker": null
+      },
+      {
+       "id": "PQ.5.3",
+       "title_fa_as_printed": "قابلیت یادگیری",
+       "marker": null
+      },
+      {
+       "id": "PQ.5.4",
+       "title_fa_as_printed": "قابلیت عملیاتی",
+       "marker": null
+      },
+      {
+       "id": "PQ.5.5",
+       "title_fa_as_printed": "حفاظت از خطای کاربر",
+       "marker": null
+      },
+      {
+       "id": "PQ.5.6",
+       "title_fa_as_printed": "زیبایی‌شناسی واسط کاربری",
+       "marker": null
+      },
+      {
+       "id": "PQ.5.7",
+       "title_fa_as_printed": "دسترس‌پذیری",
+       "marker": null
+      },
+      {
+       "id": "PQ.5.8",
+       "title_fa_as_printed": "واپایش پذیری کاربر",
+       "marker": "a"
+      },
+      {
+       "id": "PQ.5.9",
+       "title_fa_as_printed": "شفافیت",
+       "marker": "a"
+      }
+     ]
+    },
+    {
+     "id": "PQ.6",
+     "title_fa": "سازگاری",
+     "title_en_footnote": "Compatibility",
+     "sub": [
+      {
+       "id": "PQ.6.1",
+       "title_fa_as_printed": "هم‌زیستی",
+       "marker": null
+      },
+      {
+       "id": "PQ.6.2",
+       "title_fa_as_printed": "هم‌کنش‌پذیری",
+       "marker": null
+      }
+     ]
+    },
+    {
+     "id": "PQ.7",
+     "title_fa": "کارایی عملکرد",
+     "title_en_footnote": "Performance efficiency",
+     "sub": [
+      {
+       "id": "PQ.7.1",
+       "title_fa_as_printed": "رفتار زمانی",
+       "marker": null
+      },
+      {
+       "id": "PQ.7.2",
+       "title_fa_as_printed": "بهره‌گیری از منابع",
+       "marker": null
+      },
+      {
+       "id": "PQ.7.3",
+       "title_fa_as_printed": "ظرفیت",
+       "marker": null
+      }
+     ]
+    },
+    {
+     "id": "PQ.8",
+     "title_fa": "شایستگی کارکردی",
+     "title_en_footnote": "Functional suitability",
+     "sub": [
+      {
+       "id": "PQ.8.1",
+       "title_fa_as_printed": "کمال یافتگی کارکردی",
+       "marker": null
+      },
+      {
+       "id": "PQ.8.2",
+       "title_fa_as_printed": "صحت عملکردی",
+       "marker": "m"
+      },
+      {
+       "id": "PQ.8.3",
+       "title_fa_as_printed": "تناسب کارکردی",
+       "marker": null
+      },
+      {
+       "id": "PQ.8.4",
+       "title_fa_as_printed": "وفق‌پذیری کارکردی",
+       "marker": "a"
+      }
+     ]
+    }
+   ],
+   "remarks": [
+    "Figure prints «صحت عملکردی» for the modified sub-characteristic while the text uses «صحت کارکردی»",
+    "usability column prints «مناسب بودن» and «بازشناسی‌پذیری» as two rows"
+   ]
+  },
+  {
+   "kind": "figure",
+   "id": "شکل ۲",
+   "title_fa": "مدل کیفیت کاربرد سامانه هوش مصنوعی",
+   "pdf_page": 20,
+   "printed_page": 11,
+   "summary_fa": "نمودار درختی: ریشهٔ «کیفیت کاربرد سامانه هوش مصنوعی» با ۵ مشخصهٔ اصلی (پوشش بافت، نبود مخاطره، رضایت‌مندی، کارایی، اثربخشی) و ۱۳ ردیف مشخصهٔ فرعی؛ دو مورد با a (جدید) علامت خورده‌اند: شفافیت و مخاطره کاهی جامعگی و اخلاقی. علامت m ندارد.",
+   "legend_printed": [
+    "a-مشخصه‌های فرعی جدید"
+   ],
+   "footnotes_en_printed": [
+    "b-Efficiency",
+    "c-Effectiveness"
+   ],
+   "rows": [
+    {
+     "id": "QU.1",
+     "title_fa": "پوشش بافت",
+     "title_en_footnote": null,
+     "sub": [
+      {
+       "id": "QU.1.1",
+       "title_fa_as_printed": "جامعیت بافت",
+       "marker": null
+      },
+      {
+       "id": "QU.1.2",
+       "title_fa_as_printed": "انعطاف‌پذیری",
+       "marker": null
+      }
+     ]
+    },
+    {
+     "id": "QU.2",
+     "title_fa": "نبود مخاطره",
+     "title_en_footnote": null,
+     "sub": [
+      {
+       "id": "QU.2.1",
+       "title_fa_as_printed": "مخاطره کاهی اقتصادی",
+       "marker": null
+      },
+      {
+       "id": "QU.2.2",
+       "title_fa_as_printed": "مخاطره کاهی سلامت و ایمنی",
+       "marker": null
+      },
+      {
+       "id": "QU.2.3",
+       "title_fa_as_printed": "مخاطره کاهی زیست محیطی",
+       "marker": null
+      },
+      {
+       "id": "QU.2.4",
+       "title_fa_as_printed": "مخاطره کاهی جامعگی و اخلاقی",
+       "marker": "a"
+      }
+     ]
+    },
+    {
+     "id": "QU.3",
+     "title_fa": "رضایت‌مندی",
+     "title_en_footnote": null,
+     "sub": [
+      {
+       "id": "QU.3.1",
+       "title_fa_as_printed": "سودمندی",
+       "marker": null
+      },
+      {
+       "id": "QU.3.2",
+       "title_fa_as_printed": "اعتماد",
+       "marker": null
+      },
+      {
+       "id": "QU.3.3",
+       "title_fa_as_printed": "لذت",
+       "marker": null
+      },
+      {
+       "id": "QU.3.4",
+       "title_fa_as_printed": "آسایش",
+       "marker": null
+      },
+      {
+       "id": "QU.3.5",
+       "title_fa_as_printed": "شفافیت",
+       "marker": "a"
+      }
+     ]
+    },
+    {
+     "id": "QU.4",
+     "title_fa": "کارایی",
+     "title_en_footnote": "Efficiency",
+     "sub": [
+      {
+       "id": "QU.4.1",
+       "title_fa_as_printed": "کارایی",
+       "marker": null
+      }
+     ]
+    },
+    {
+     "id": "QU.5",
+     "title_fa": "اثربخشی",
+     "title_en_footnote": "Effectiveness",
+     "sub": [
+      {
+       "id": "QU.5.1",
+       "title_fa_as_printed": "اثربخشی",
+       "marker": null
+      }
+     ]
+    }
+   ],
+   "remarks": []
+  },
+  {
+   "kind": "figure",
+   "id": "شکل الف-۱",
+   "title_fa": "سازمان‌دهی استانداردهای بین المللی SQuaRE",
+   "pdf_page": 22,
+   "printed_page": 13,
+   "summary_fa": "نمودار جعبه‌ای (اقتباس از ISO/IEC 25000:2014) با شش «بخش» SQuaRE: مدیریت کیفیت (2500n)، مدل کیفیت (2501n)، سنجش کیفیت (2502n)، الزامات کیفیت و ارزشیابی کیفیت در دو ستون کناری، و بخش‌های تعمیم 25050 تا 25099. در شکل برچسب بخش الزامات «ISO/IEC 2303n» و بخش ارزشیابی «ISO/IEC 2304n» چاپ شده، در حالی که متن زیر شکل 2503n و 2504n می‌گوید.",
+   "rows": [
+    {
+     "id": "A.1-a",
+     "title_fa": "بخش مدیریت کیفیت",
+     "label_printed": "ISO/IEC 2500n"
+    },
+    {
+     "id": "A.1-b",
+     "title_fa": "بخش مدل کیفیت",
+     "label_printed": "ISO/IEC 2501n"
+    },
+    {
+     "id": "A.1-c",
+     "title_fa": "بخش سنجش کیفیت (متن: اندازه‌گیری کیفیت)",
+     "label_printed": "ISO/IEC 2502n"
+    },
+    {
+     "id": "A.1-d",
+     "title_fa": "بخش الزامات کیفیت",
+     "label_printed": "ISO/IEC 2303n (figure) / 2503n (text)"
+    },
+    {
+     "id": "A.1-e",
+     "title_fa": "بخش ارزشیابی کیفیت",
+     "label_printed": "ISO/IEC 2304n (figure) / 2504n (text)"
+    },
+    {
+     "id": "A.1-f",
+     "title_fa": "بخش‌های تعمیم",
+     "label_printed": "ISO/IEC 25050 تا ISO/IEC 25099"
+    }
+   ],
+   "remarks": [
+    "label typos in figure vs text — see uncertainties"
+   ]
+  }
+ ]
+}

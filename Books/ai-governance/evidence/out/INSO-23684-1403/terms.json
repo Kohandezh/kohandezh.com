@@ -1,0 +1,304 @@
+{
+ "source_id": "INSO-23684-1403",
+ "note": "Clause 3 (13 numbered entries: 11 terms with definitions + headings 3.2 and 3.3 without definition) plus the two clause-4 abbreviations. Verbatim fields were transcribed from 300-dpi re-renders of the page images; kashida (tatweel) stretching in justified lines is NOT reproduced; ZWNJ follows the printed orthography. ocr_similarity = minimum difflib ratio over the verbatim fields against Tesseract OCR of the same page (normalised: digits, ZWNJ, diacritics, punctuation, spaces removed). Footnote markers (superscript numbers) are not part of the verbatim strings; English footnote texts are listed separately in footnotes_en. Clause numbers are in logical order (parent first).",
+ "terms": [
+  {
+   "clause": "3.1.1",
+   "term_fa": "سنجه (اسم)",
+   "term_en": "measure (noun)",
+   "definition_fa": "متغیری که در نتیجهٔ سنجش، به آن مقدار اختصاص داده می‌شود.",
+   "notes_fa": [
+    "یادآوری ۱ مدخل: اصطلاح «سنجه» مجموعاً به سنجه‌های پایه، سنجه‌های مشتق‌شده و نشانگرها اطلاق می‌شود."
+   ],
+   "source_printed": "[منبع: مدخل اصطلاحی 3.15 استاندارد ISO/IEC/IEEE 15939:2017]",
+   "footnotes_en": [
+    "2-Collectively",
+    "3- Derived"
+   ],
+   "pdf_page": 11,
+   "printed_page": 2,
+   "verified_visually": true,
+   "ocr_similarity": 0.82,
+   "ocr_similarity_fields": {
+    "term_fa": 1.0,
+    "definition_fa": 0.894,
+    "note_1": 0.919,
+    "source_printed": 0.82
+   }
+  },
+  {
+   "clause": "3.1.2",
+   "term_fa": "سنجیدن (فعل)",
+   "term_en": "measure (verb)",
+   "definition_fa": "به انجام عمل سنجش اطلاق می‌شود.",
+   "notes_fa": [],
+   "source_printed": "[منبع: مدخل اصطلاحی 4.4.6 استاندارد ISO/IEC 25010:2011]",
+   "footnotes_en": [],
+   "pdf_page": 11,
+   "printed_page": 2,
+   "verified_visually": true,
+   "ocr_similarity": 0.791,
+   "ocr_similarity_fields": {
+    "term_fa": 1.0,
+    "definition_fa": 1.0,
+    "source_printed": 0.791
+   }
+  },
+  {
+   "clause": "3.1.3",
+   "term_fa": "سنجه کیفیت نرم‌افزار",
+   "term_en": "software quality measure",
+   "definition_fa": "سنجه کیفیت درونی نرم‌افزار، کیفیت بیرونی نرم‌افزار یا کیفیتِ کاربرد نرم‌افزار می‌باشد.",
+   "notes_fa": [
+    "یادآوری ۱ مدخل: سنجه کیفیت داخلی نرم‌افزار، سنجه کیفیت خارجی نرم‌افزار یا سنجه کیفیت کاربرد نرم‌افزار در مدل کیفیت استاندارد ISO/IEC 25010 شرح داده می‌شود."
+   ],
+   "source_printed": "[منبع: مدخل اصطلاحی 4.61 استاندارد ISO/IEC 25040:2011]",
+   "footnotes_en": [
+    "4-Internal Software Quality",
+    "5-External Software Quality"
+   ],
+   "pdf_page": 11,
+   "remarks": "Definition says «درونی/بیرونی» but the note says «داخلی/خارجی» for the same two measure kinds; source clause printed as '4.61' (as printed).",
+   "printed_page": 2,
+   "verified_visually": true,
+   "ocr_similarity": 0.767,
+   "ocr_similarity_fields": {
+    "term_fa": 1.0,
+    "definition_fa": 1.0,
+    "note_1": 0.944,
+    "source_printed": 0.767
+   }
+  },
+  {
+   "clause": "3.1.4",
+   "term_fa": "اقدام مقابله با مخاطره (ریسک)",
+   "term_en": "risk treatment measure",
+   "synonyms_fa": [
+    "اقدام حفاظتی"
+   ],
+   "synonyms_en": [
+    "protective measure"
+   ],
+   "definition_fa": "اقدام یا ابزاری برای حذف مخاطره یا مخاطره کاهی است.",
+   "notes_fa": [],
+   "source_printed": "[منبع: مدخل اصطلاحی 3.13 راهنمای ISO/IEC 51:2014، تغییریافته - «reduction» به «treatment» تغییر داده شده است.]",
+   "footnotes_en": [],
+   "pdf_page": 12,
+   "printed_page": 3,
+   "verified_visually": true,
+   "ocr_similarity": 0.928,
+   "ocr_similarity_fields": {
+    "term_fa": 1.0,
+    "definition_fa": 1.0,
+    "source_printed": 0.928
+   }
+  },
+  {
+   "clause": "3.1.5",
+   "term_fa": "شفافیت",
+   "term_en": "transparency",
+   "definition_fa": "به میزان انتقال اطلاعات مناسب در مورد سامانه هوش مصنوعی به ذی‌نفعان مرتبط اطلاق می‌شود.",
+   "notes_fa": [
+    "یادآوری ۱ مدخل: اطلاعات مناسب در مورد شفافیت سامانهٔ هوش مصنوعی می‌تواند شامل جنبه‌هایی مانند ویژگی‌ها، اجزاء، روش‌ها، اقدامات، اهداف طراحی، انتخاب‌های طراحی و مفروضات باشد."
+   ],
+   "source_printed": null,
+   "footnotes_en": [],
+   "pdf_page": 12,
+   "printed_page": 3,
+   "verified_visually": true,
+   "ocr_similarity": 0.978,
+   "ocr_similarity_fields": {
+    "term_fa": 1.0,
+    "definition_fa": 0.978,
+    "note_1": 0.996
+   }
+  },
+  {
+   "clause": "3.2",
+   "term_fa": "کیفیت محصول",
+   "term_en": "product quality",
+   "definition_fa": null,
+   "notes_fa": [],
+   "source_printed": null,
+   "footnotes_en": [
+    "1-Product Quality"
+   ],
+   "pdf_page": 12,
+   "remarks": "heading only: no definition is printed under 3.2 (it groups 3.2.1-3.2.5).",
+   "printed_page": 3,
+   "verified_visually": true,
+   "ocr_similarity": 1.0,
+   "ocr_similarity_fields": {
+    "term_fa": 1.0
+   }
+  },
+  {
+   "clause": "3.2.1",
+   "term_fa": "واپایش‌پذیری کاربر",
+   "term_en": "user controllability",
+   "definition_fa": "به میزان توانایی کاربر در مداخلهٔ به شیوه مناسب و به‌موقع در کارکرد سامانهٔ هوش مصنوعی اطلاق می‌شود.",
+   "notes_fa": [],
+   "source_printed": null,
+   "footnotes_en": [],
+   "pdf_page": 12,
+   "printed_page": 3,
+   "verified_visually": true,
+   "ocr_similarity": 1.0,
+   "ocr_similarity_fields": {
+    "term_fa": 1.0,
+    "definition_fa": 1.0
+   }
+  },
+  {
+   "clause": "3.2.2",
+   "term_fa": "وفق‌پذیری کارکردی",
+   "term_en": "functional adaptability",
+   "definition_fa": "میزانی که سامانهٔ هوش مصنوعی می‌تواند به‌درستی اطلاعات را از داده یا نتایج اقدامات قبلی به دست آورد و از آن اطلاعات در پیش‌بینی‌های آتی استفاده کند.",
+   "notes_fa": [],
+   "source_printed": null,
+   "footnotes_en": [],
+   "pdf_page": 12,
+   "printed_page": 3,
+   "verified_visually": true,
+   "ocr_similarity": 0.933,
+   "ocr_similarity_fields": {
+    "term_fa": 0.933,
+    "definition_fa": 0.987
+   }
+  },
+  {
+   "clause": "3.2.3",
+   "term_fa": "صحت کارکردی",
+   "term_en": "functional correctness",
+   "definition_fa": "میزانی که محصول یا سامانه، نتایج صحیح را با میزان دقت مورد نیاز ارائه می‌دهد.",
+   "notes_fa": [
+    "یادآوری ۱ مدخل: سامانه‌های هوش مصنوعی و به‌ویژه، سامانه‌هایی که از مدل‌های یادگیری ماشین استفاده می‌کنند، معمولاً در تمام شرایط مشاهده‌شده، دارای صحت کارکردی نیستند."
+   ],
+   "source_printed": "[منبع: مدخل اصطلاحی ۴,۲,۱,۲ استاندارد ISO/IEC 25010:2011، تغییریافته - یادآوری مدخل اضافه شده است.]",
+   "footnotes_en": [],
+   "pdf_page": 13,
+   "remarks": "Source clause is printed with Persian digits and commas (۴,۲,۱,۲) unlike the dotted Latin form used elsewhere.",
+   "printed_page": 4,
+   "verified_visually": true,
+   "ocr_similarity": 0.908,
+   "ocr_similarity_fields": {
+    "term_fa": 1.0,
+    "definition_fa": 1.0,
+    "note_1": 1.0,
+    "source_printed": 0.908
+   }
+  },
+  {
+   "clause": "3.2.4",
+   "term_fa": "مداخله‌پذیری",
+   "term_en": "intervenability",
+   "definition_fa": "میزانی که متصدی می‌تواند به‌موقع در کارکرد سامانهٔ هوش مصنوعی مداخله کند تا از آسیب یا مخاطره جلوگیری کند.",
+   "notes_fa": [],
+   "source_printed": null,
+   "footnotes_en": [
+    "1- Operator (footnote on «متصدی»)"
+   ],
+   "pdf_page": 13,
+   "printed_page": 4,
+   "verified_visually": true,
+   "ocr_similarity": 0.909,
+   "ocr_similarity_fields": {
+    "term_fa": 0.909,
+    "definition_fa": 0.924
+   }
+  },
+  {
+   "clause": "3.2.5",
+   "term_fa": "استواری",
+   "term_en": "robustness",
+   "definition_fa": "میزانی که سامانهٔ هوش مصنوعی می‌تواند سطح صحت کارکردی خود را تحت هر شرایطی حفظ نماید.",
+   "notes_fa": [],
+   "source_printed": null,
+   "footnotes_en": [],
+   "pdf_page": 13,
+   "printed_page": 4,
+   "verified_visually": true,
+   "ocr_similarity": 0.809,
+   "ocr_similarity_fields": {
+    "term_fa": 1.0,
+    "definition_fa": 0.809
+   }
+  },
+  {
+   "clause": "3.3",
+   "term_fa": "کیفیت در کاربرد",
+   "term_en": "quality in use",
+   "definition_fa": null,
+   "notes_fa": [],
+   "source_printed": null,
+   "footnotes_en": [],
+   "pdf_page": 13,
+   "remarks": "heading only: no definition is printed under 3.3 (it groups 3.3.1).",
+   "printed_page": 4,
+   "verified_visually": true,
+   "ocr_similarity": 1.0,
+   "ocr_similarity_fields": {
+    "term_fa": 1.0
+   }
+  },
+  {
+   "clause": "3.3.1",
+   "term_fa": "مخاطره کاهی جامعگی و اخلاقی",
+   "term_en": "societal and ethical risk mitigation",
+   "definition_fa": "میزانی که سامانهٔ هوش مصنوعی مخاطره بالقوه را برای جامعه کاهش می‌دهد.",
+   "notes_fa": [
+    "یادآوری ۱ مدخل: مخاطره کاهی جامعگی و اخلاقی شامل پاسخگویی، انصاف، شفافیت و توضیح‌پذیری (توصیف‌پذیری)، مسئولیت حرفه‌ای، ارتقای ارزش انسانی، حریم خصوصی، نظارت انسانی بر فناوری، توسعه و مشارکت جامعه، احترام به حاکمیت قانون، احترام به هنجارهای بین‌المللی در خصوص شیوه‌های کار و رفتار است."
+   ],
+   "source_printed": null,
+   "footnotes_en": [
+    "2-Community Involvement (on «جامعه»)",
+    "3-Rule Of Law (on «قانون»)"
+   ],
+   "pdf_page": 13,
+   "printed_page": 4,
+   "verified_visually": true,
+   "ocr_similarity": 1.0,
+   "ocr_similarity_fields": {
+    "term_fa": 1.0,
+    "definition_fa": 1.0,
+    "note_1": 1.0
+   }
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "term_fa": "هومص (هوش مصنوعی)",
+   "term_en": "Artificial Intelligence",
+   "abbreviation": "AI",
+   "definition_fa": null,
+   "notes_fa": [],
+   "source_printed": null,
+   "footnotes_en": [],
+   "pdf_page": 14,
+   "printed_page": 5,
+   "verified_visually": true,
+   "ocr_similarity": 1.0,
+   "ocr_similarity_fields": {
+    "term_fa": 1.0
+   }
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "term_fa": "یادگیری ماشین",
+   "term_en": "Machine Learning",
+   "abbreviation": "ML",
+   "definition_fa": null,
+   "notes_fa": [],
+   "source_printed": null,
+   "footnotes_en": [],
+   "pdf_page": 14,
+   "printed_page": 5,
+   "verified_visually": true,
+   "ocr_similarity": 1.0,
+   "ocr_similarity_fields": {
+    "term_fa": 1.0
+   }
+  }
+ ]
+}

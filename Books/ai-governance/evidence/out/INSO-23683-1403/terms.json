@@ -1,0 +1,707 @@
+{
+ "source_id": "INSO-23683-1403",
+ "clause_numbering_note": "Clause numbers are recorded in logical order (3.1.2). On the printed page the entry headings are displayed visually reversed because the layout is right-to-left (e.g. the heading of 3.1.2 reads «۲-۱-۳» left to right). Cross-reference numbers inside definitions are likewise printed mirrored; they are recorded here in logical order, in Persian digits as printed.",
+ "counts": {
+  "term_entries_3_1": 38,
+  "abbreviation_entries_3_2": 3,
+  "total": 41
+ },
+ "terms": [
+  {
+   "clause": "3.1.1",
+   "term_fa": "منفعت",
+   "term_en": "benefit",
+   "definition_fa": "مزیت به‌دست‌آمده برای سازمان از طریق دانش عملی که از یک سامانه تحلیلی استخراج می‌شود.",
+   "notes_fa": [
+    "یادآوری - منفعت، با درک اینکه داده، ارزش بالقوه‌ای دارد که معمولاً پیش از این، در نظر گرفته نمی‌شد، به کلان‌داده نسبت داده می‌شود."
+   ],
+   "pdf_page": 10,
+   "printed_page": 1,
+   "verified_visually": true,
+   "ocr_similarity": 0.975,
+   "translator_footnotes_en": [
+    "1- Advantage",
+    "2- Actionable Knowledge"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.2",
+   "term_fa": "کلان‌داده",
+   "term_en": "big data",
+   "definition_fa": "مجموعه‌های داده‌ای (۳-۱-۱۱) گسترده [عمدتاً از منظر مشخصه‌های حجم، گونه، سرعت و/یا تغییرپذیری داده (۳-۱-۵)] هستند که به فناوری مقیاس‌پذیر برای تحلیل، مدیریت، دستکاری و ذخیره‌سازی کارا نیاز دارند.",
+   "notes_fa": [
+    "یادآوری -کلان‌داده معمولاً به شکل‌های مختلف متعدد به کار می‌رود، برای مثال، به‌عنوان نام فناوری مقیاس‌پذیری که برای مدیریت مجموعه‌های گسترده کلان‌داده استفاده می‌شود."
+   ],
+   "pdf_page": 11,
+   "printed_page": 2,
+   "verified_visually": true,
+   "ocr_similarity": 0.831,
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.3",
+   "term_fa": "محاسبات ابری",
+   "term_en": "cloud computing",
+   "definition_fa": "محاسبات ابری، ابرنگاره‌ای برای دسترسی به مجموعه‌ای قابل‌انعطاف و مقیاس‌پذیر از منابع فیزیکی یا مجازی قابل هم‌رسانی از طریق شبکه است که در آن، ارائه خدمات به‌صورت خویشیار و مدیریت مبتنی بر تقاضا صورت می‌گیرد.",
+   "notes_fa": [
+    "یادآوری – نمونه‌هایی از منابع شامل کارسازها، سامانه‌های عامل، شبکه‌ها، نرم افزارها، برنامه‌های کاربردی و تجهیزات ذخیره‌سازی است."
+   ],
+   "pdf_page": 11,
+   "printed_page": 2,
+   "verified_visually": true,
+   "ocr_similarity": 0.849,
+   "source_fa": "[منبع: مدخل اصطلاحی ۳-۲-۵ استاندارد ملی ایران شماره ۲۱۰۶۹: سال ۱۳۹۵، تغییرات : تعریف «الگویی برای فعال کردن دسترسی شبکه به مخزنی مقیاس پذیر و کشسان از منابع فیزیکی یا مجازی اشتراک پذیر با تامین کنندگان خودیاور و مدیریت سامانه مبتنی بر تقاضا است» در استاندارد ملی ایران شماره ۲۱۰۶۹ : سال ۱۳۹۵ به تعریف فوق تغییر یافته است. ]",
+   "translator_footnotes_en": [
+    "1- Self-Service"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.4",
+   "term_fa": "خوشه",
+   "term_en": "cluster",
+   "definition_fa": "<داده‌پردازی توزیع‌شده> به مجموعه‌ای از واحدهای کارکردی، تحت واپایش (کنترل) مشترک اطلاق می‌شود.",
+   "notes_fa": [],
+   "pdf_page": 11,
+   "printed_page": 2,
+   "verified_visually": true,
+   "ocr_similarity": 0.957,
+   "source_fa": "[منبع: مدخل اصطلاحی 21220586 استاندارد ISO/IEC 2382:2015]",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.5",
+   "term_fa": "داده",
+   "term_en": "data",
+   "definition_fa": "بازنمایی قابل‌تفسیر مجدد اطلاعات به شیوه‌ای صوری‌سازی شده است به‌طوری‌که برای ارتباط، تفسیر یا پردازش، مناسب باشد.",
+   "notes_fa": [
+    "یادآوری – داده‌پردازی می‌تواند به وسیله انسان یا از طریق ابزارهای خودکار انجام گیرد."
+   ],
+   "pdf_page": 12,
+   "printed_page": 3,
+   "verified_visually": true,
+   "ocr_similarity": 0.921,
+   "source_fa": "[منبع: مدخل اصطلاحی 2121272 استاندارد ISO/IEC 2382:2015]",
+   "translator_footnotes_en": [
+    "1- Formalized"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.6",
+   "term_fa": "واکاوش داده",
+   "term_en": "data analytics",
+   "definition_fa": "مفهومی ترکیبی شامل داده‌برداری، گردآوری داده، صحه‌گذاری داده، داده‌پردازی (۳-۱-۹)، از جمله کمی‌سازی داده، دیداری‌سازی داده‌ها و تفسیر داده‌ها است.",
+   "notes_fa": [
+    "یادآوری – واکاوش داده برای درک اشیای بازنمایی شده به وسیله داده (۳-۱-۵)، به منظور ارائه پیش‌بینی در مورد موقعیتی معین و ارائه توصیه در مورد مراحل دستیابی به اهداف، استفاده می‌شود. بینش‌هایی به دست آمده از تحلیل، برای اهداف مختلفی مانند تصمیم ، تحقیق، توسعه پایدار، طراحی و برنامه‌ریزی استفاده می‌شود."
+   ],
+   "pdf_page": 12,
+   "printed_page": 3,
+   "verified_visually": true,
+   "ocr_similarity": 0.936,
+   "translator_footnotes_en": [
+    "2- Data acquisition",
+    "3- Data collection",
+    "4- Data visualization"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.7",
+   "term_fa": "پایگاه‌داده",
+   "term_en": "database",
+   "definition_fa": "مجموعه‌ای از داده‌های (۳-۱-۵) سازماندهی شده، بر اساس ساختاری مفهومی، که مشخصه‌های این داده‌ها و روابط بین هستارهای متناظر آنها را توصیف می‌کند و از یک یا چند حوزه کاربردی، پشتیبانی می‌کند.",
+   "notes_fa": [],
+   "pdf_page": 12,
+   "printed_page": 3,
+   "verified_visually": true,
+   "ocr_similarity": 0.952,
+   "source_fa": "[منبع: مدخل اصطلاحی 2121413 استاندارد ISO/IEC 2382:2015]",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.8",
+   "term_fa": "مدل داده",
+   "term_en": "data model",
+   "definition_fa": "الگوی ساختاردهی به داده (۳-۱-۵) در پایگاه‌داده (۳-۱-۷) براساس صوری‌سازی در سامانه اطلاعاتی آن و براساس الزامات سامانه مدیریت پایگاه داده‌ای است که در مورد آن، اعمال می‌شود.",
+   "notes_fa": [],
+   "pdf_page": 12,
+   "printed_page": 3,
+   "verified_visually": true,
+   "ocr_similarity": 0.945,
+   "source_fa": "[منبع: مدخل اصطلاحی 2125519 استاندارد ISO/IEC 2382:2015]",
+   "pdf_pages": [
+    12,
+    13
+   ],
+   "printed_pages": [
+    3,
+    4
+   ],
+   "layout_note": "heading and English term at the foot of pdf 12 (printed 3); definition text starts at the top of pdf 13 (printed 4)",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.9",
+   "term_fa": "داده‌پردازی",
+   "term_en": "data processing",
+   "definition_fa": "به عملکرد سامانمند عملیات بر روی داده (۳-۱-۵) اطلاق می‌شود.",
+   "notes_fa": [
+    "یادآوری ۱ – مثال: داده‌پردازی شامل عملیات حسابی یا منطقی بر روی داده، ادغام یا مرتب‌سازی داده، یا عملیات روی متن، مانند ویرایش، مرتب‌سازی، ادغام، ذخیره، بازیابی، نمایش یا چاپ است.",
+    "یادآوری ۲ – توصیه می‌شود اصطلاح داده‌پردازی، مترادف با پردازش اطلاعات استفاده نشود."
+   ],
+   "pdf_page": 13,
+   "printed_page": 4,
+   "verified_visually": true,
+   "ocr_similarity": 0.981,
+   "source_fa": "[منبع: مدخل اصطلاحی 01.01.06 استاندارد ISO/IEC 2382:2015]",
+   "translator_footnotes_en": [
+    "1- Systematic performance of operations"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.10",
+   "term_fa": "داده‌شناسی",
+   "term_en": "data science",
+   "definition_fa": "به استخراج دانش قابل عملی از داده (۳-۱-۵) از طریق فرآیند کشف، یا فرضیه و آزمون فرض اطلاق می‌شود.",
+   "notes_fa": [],
+   "pdf_page": 13,
+   "printed_page": 4,
+   "verified_visually": true,
+   "ocr_similarity": 0.95,
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.11",
+   "term_fa": "مجموعه‌داده",
+   "term_en": "data set",
+   "definition_fa": "مجموعه‌ای قابل‌شناسایی از داده‌های (۳-۱-۵) آماده برای دسترسی یا بارگیری، در یک یا چندین قالب است.",
+   "notes_fa": [],
+   "pdf_page": 13,
+   "printed_page": 4,
+   "verified_visually": true,
+   "ocr_similarity": 0.957,
+   "term_en_alternatives": [
+    "dataset"
+   ],
+   "source_fa": "[منبع: برگرفته از زیربند 4.7 استاندارد ISO 19115-2:2009]",
+   "translator_footnotes_en": [
+    "2- Available",
+    "3- Formats"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.12",
+   "term_fa": "نوع داده",
+   "term_en": "data type",
+   "definition_fa": "مجموعه‌ای تعریف شده از داده شیء‌ها (۳-۱-۵) با یک ساختار داده مشخص و مجموعه‌ای از عملیات مجاز است، به طوری که این داده‌شیء‌ها در اجرای هر یک از این عملیات، به‌عنوان عملوند عمل کنند.",
+   "notes_fa": [
+    "یادآوری ۱ -مثال: نوع دادهٔ عدد صحیح، ساختار بسیار ساده‌ای دارد که هر رخداد آن، که معمولاً مقدار نامیده می‌شود، بازنمایی عضوی از محدوده مشخصی از اعداد حسابی است و عملیات مجاز شامل عملیات معمول حسابی روی این اعداد صحیح است.",
+    "یادآوری ۲ – هنگامی که ابهامی وجود ندارد، واژه «نوع» می‌تواند به جای عبارت «نوع داده» به کار رود.",
+    "یادآوری ۳ – نوع داده، اصطلاحات و تعریف با استفاده از [ISO/IEC 2382-15:1999]ISO/IEC، استاندارد شده است.",
+    "یادآوری ۴ – مدخل اصطلاحی 15.04.01 (17.05.05) استاندارد ISO/IEC 2382."
+   ],
+   "pdf_page": 14,
+   "printed_page": 5,
+   "verified_visually": true,
+   "ocr_similarity": 0.957,
+   "term_en_alternatives": [
+    "datatype"
+   ],
+   "source_fa": "[منبع: مدخل اصطلاحی 2122374 استاندارد ISO/IEC 2382:2015]",
+   "translator_footnotes_en": [
+    "1- Operands",
+    "2- Occurrence",
+    "3- Whole Numbers"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.13",
+   "term_fa": "تغییرپذیری داده",
+   "term_en": "data variability",
+   "definition_fa": "به تغییرات در نرخ انتقال، قالب یا ساختار، معنا یا کیفیت مجموعه‌های داده (۳-۱-۱۱) اطلاق می‌شود.",
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": 5,
+   "verified_visually": true,
+   "ocr_similarity": 0.978,
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.14",
+   "term_fa": "گونه داده",
+   "term_en": "data variety",
+   "definition_fa": "به گستره‌ای از قالب‌ها، مدل‌های منطقی، مقیاس‌های زمانی و معناشناسی مجموعه‌داده (۳-۱-۱۱) اطلاق می‌شود.",
+   "notes_fa": [
+    "یادآوری – گونه داده به ساختارهای داده نامنظم یا ناهمگن، ناوش داده‌ها، پرسمان و مشخص‌کردن نوع داده آنها اشاره دارد."
+   ],
+   "pdf_page": 14,
+   "printed_page": 5,
+   "verified_visually": true,
+   "ocr_similarity": 0.914,
+   "translator_footnotes_en": [
+    "4- Navigation",
+    "5- Query",
+    "6- Data Typing"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.15",
+   "term_fa": "سرعت داده",
+   "term_en": "data velocity",
+   "definition_fa": "نرخی جریانی که داده (۳-۱-۵) با آن ایجاد، منتقل، ذخیره، تحلیل یا به تصویر کشیده می‌شود.",
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": 6,
+   "verified_visually": true,
+   "ocr_similarity": 0.534,
+   "ocr_note": "OCR garbled the italic cross-reference run and dropped one word; re-read on the page image (crop 1.5x): text confirmed as transcribed",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.16",
+   "term_fa": "صحت داده",
+   "term_en": "data veracity",
+   "definition_fa": "به کامل‌بودن و/یا درستی داده (۳-۱-۵) اطلاق می‌شود.",
+   "notes_fa": [
+    "یادآوری – صحت داده، اشاره دارد به داده‌های توصیفی و خود پرسمان‌گری در مورد اشیا که برای پشتیبانی از تصمیم بی‌درنگ به کار می‌رود."
+   ],
+   "pdf_page": 15,
+   "printed_page": 6,
+   "verified_visually": true,
+   "ocr_similarity": 0.728,
+   "translator_footnotes_en": [
+    "1- Self-Inquiry",
+    "2- Real-time"
+   ],
+   "ocr_note": "OCR garbled italic words (کامل‌بودن و/یا) and footnote glyphs; re-read on the page image: text confirmed as transcribed",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.17",
+   "term_fa": "فراریت داده",
+   "term_en": "data volatility",
+   "definition_fa": "مشخصه‌ای از داده (۳-۱-۵) که نرخ تغییر این داده را طی زمان نشان می‌دهد.",
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": 6,
+   "verified_visually": true,
+   "ocr_similarity": 0.907,
+   "source_fa": "[منبع: مدخل اصطلاحی 17.06.06 استاندارد ISO/IEC 2382:2015]",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.18",
+   "term_fa": "حجم داده",
+   "term_en": "data volume",
+   "definition_fa": "میزان حجم داده (۳-۱-۵) که به تاثیرگذاری بر محاسبات و منابع ذخیره‌سازی و مدیریت آن، طی داده‌پردازی مرتبط است.",
+   "notes_fa": [
+    "یادآوری – حجم داده در هنگام سر و کار داشتن با مجموعه‌های بزرگ داده (۳-۱-۱۱) اهمیت پیدا می‌کند."
+   ],
+   "pdf_page": 15,
+   "printed_page": 6,
+   "verified_visually": true,
+   "ocr_similarity": 0.94,
+   "translator_footnotes_en": [
+    "3- amount of data"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.19",
+   "term_fa": "پردازش داده های توزیعی",
+   "term_en": "distributed data processing",
+   "definition_fa": "داده‌پردازی (۳-۱-۱۹) که در آن عملکرد عملیات بین گره‌های یک شبکه رایانه‌ای توزیع می‌شود.",
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": 6,
+   "verified_visually": true,
+   "ocr_similarity": 0.564,
+   "source_fa": "[منبع: مدخل اصطلاحی 18.01.08 استاندارد ISO/IEC 2382:2015]",
+   "translator_footnotes_en": [
+    "4- Performance of operations"
+   ],
+   "pdf_pages": [
+    15,
+    16
+   ],
+   "printed_pages": [
+    6,
+    7
+   ],
+   "layout_note": "definition on pdf 15 (printed 6); the [source] line is at the top of pdf 16 (printed 7)",
+   "cross_reference_issues": [
+    "cross-reference «داده‌پردازی (۳-۱-۱۹)» points to this very entry; data processing is 3.1.9 (printed visually as «۱۹-۱-۳»; OCR agrees)"
+   ],
+   "ocr_note": "OCR garbled italic first word and footnote glyph; re-read on the page image: text confirmed as transcribed",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.20",
+   "term_fa": "سامانه پرونده توزیعی",
+   "term_en": "distributed file system",
+   "definition_fa": "سامانه‌ای که پرونده‌ها و پوشه‌ها را روی سامانه‌های شبکه‌بندی شدهٔ متعدد، مدیریت می‌کند.",
+   "notes_fa": [],
+   "pdf_page": 16,
+   "printed_page": 7,
+   "verified_visually": true,
+   "ocr_similarity": 0.955,
+   "translator_footnotes_en": [
+    "1- Folders",
+    "2- Networked"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.21",
+   "term_fa": "پرونده",
+   "term_en": "file",
+   "definition_fa": "مجموعه‌ای نام‌دار از پرونده‌ها که به‌عنوان یک واحد در نظر گرفته می‌شود.",
+   "notes_fa": [],
+   "pdf_page": 16,
+   "printed_page": 7,
+   "verified_visually": true,
+   "ocr_similarity": 0.963,
+   "source_fa": "[منبع: مدخل اصطلاحی 04.07.10 استاندارد ISO/IEC 2382:2015]",
+   "translator_footnotes_en": [
+    "3- Named"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.22",
+   "term_fa": "گردآورد(جمع‌آوری)",
+   "term_en": "gather",
+   "definition_fa": "به ادغام نتایج حاصل از چندین گره در یک خوشه اطلاق می‌شود.",
+   "notes_fa": [
+    "یادآوری – به پراکنش-جمع‌آوری (۳-۲-۲۳) مراجعه شود."
+   ],
+   "pdf_page": 16,
+   "printed_page": 7,
+   "verified_visually": true,
+   "ocr_similarity": 0.968,
+   "term_fa_alternatives": [
+    "جمع‌آوری"
+   ],
+   "translator_footnotes_en": [
+    "4- Consolidation",
+    "5- Scatter-Gather"
+   ],
+   "cross_reference_issues": [
+    "note cites «پراکنش-جمع‌آوری (۳-۲-۲۳)»: no 3.2.23 exists (3.2 has three abbreviations); scatter-gather is 3.1.33"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.23",
+   "term_fa": "مقیاس‌بندی افقی",
+   "term_en": "horizontal scaling",
+   "definition_fa": "به ارائه یک واحد منطقی منفرد از طریق اتصال چندین سخت‌افزار و نرم‌افزار اطلاق می‌شود.",
+   "notes_fa": [
+    "یادآوری ۱ – مثالی از مقیاس‌بندی افقی، بهبود عملکرد داده‌پردازی توزیعی از طریق افزودن گره‌ها در خوشه برای منابع اضافی است.",
+    "یادآوری ۲ – مقیاس‌بندی افقی برای بهبود عملکرد، مقیاس‌افزایی نیز نامیده می‌شود."
+   ],
+   "pdf_page": 16,
+   "printed_page": 7,
+   "verified_visually": true,
+   "ocr_similarity": 0.977,
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.24",
+   "term_fa": "فراداده",
+   "term_en": "metadata",
+   "definition_fa": "داده‌هایی (۳-۱-۵) در مورد داده یا عناصر داده، که احتمالاً شامل توصیف داده‌های آنها و داده‌های مربوط به مالکیت داده، مسیرهای دسترسی، حقوق دسترسی و فراریت داده (۳-۱-۱۷) است.",
+   "notes_fa": [],
+   "pdf_page": 17,
+   "printed_page": 8,
+   "verified_visually": true,
+   "ocr_similarity": 0.913,
+   "source_fa": "[منبع: مدخل اصطلاحی 17.06.05 استاندارد ISO/IEC 2382:2015]",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.25",
+   "term_fa": "پایگاه‌دادهٔ غیررابطه‌ای",
+   "term_en": "non-relational database",
+   "definition_fa": "پایگاه داده‌ای (۳-۱-۷) که از مدل رابطه‌ای (۳-۱-۳۱) پیروی نمی‌کند.",
+   "notes_fa": [
+    "یادآوری - NoSQL که معمولاً به‌صورت «غیرزپ سا» یا «نه فقط زپ سا» ترجمه می‌شود، اصطلاحی رایج برای اشاره به پایگاه‌های داده‌ای است که با مدل رابطه‌ای، مطابقت ندارند."
+   ],
+   "pdf_page": 17,
+   "printed_page": 8,
+   "verified_visually": true,
+   "ocr_similarity": 0.866,
+   "translator_footnotes_en": [
+    "1- Non SQL"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.26",
+   "term_fa": "مدل غیررابطه‌ای",
+   "term_en": "non-relational model",
+   "definition_fa": "مدل داده منطقی (۳-۱-۱۰) که از مدل رابطه‌ای (۳-۱-۳۱) برای ذخیره سازی و دستکاری داده (۳-۱-۵) پیروی نمی‌کند.",
+   "notes_fa": [],
+   "pdf_page": 17,
+   "printed_page": 8,
+   "verified_visually": true,
+   "ocr_similarity": 0.66,
+   "cross_reference_issues": [
+    "definition cites «مدل داده منطقی (۳-۱-۱۰)»: data model is printed as 3.1.8; 3.1.10 is data science"
+   ],
+   "ocr_note": "OCR dropped the second line («(۳-۱-۵) پیروی نمی‌کند») of the definition; re-read on the page image (zoom): confirmed",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.27",
+   "term_fa": "موازی",
+   "term_en": "parallel",
+   "definition_fa": "فرایندی است که در آن همه رویدادها در بازه زمانی یکسانی اتفاق می‌افتند و هر یک توسط واحد کارکردی جداگانه اما مشابهی مدیریت می‌شوند.",
+   "notes_fa": [
+    "یادآوری – انتقال موازی بیت‌های یک کلمه رایانه‌ای در امتداد خطوط یک گذرگاه داخلی مثالی از فرایند موازی است."
+   ],
+   "pdf_page": 17,
+   "printed_page": 8,
+   "verified_visually": true,
+   "ocr_similarity": 0.89,
+   "source_fa": "[منبع: مدخل اصطلاحی 03.02.01 استاندارد ISO/IEC 2382:2015]",
+   "translator_footnotes_en": [
+    "2- Internal Bus"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.28",
+   "term_fa": "داده نیمه‌ساختاریافته",
+   "term_en": "partially structured data",
+   "definition_fa": "داده‌ای (۳-۱-۵) که دارای نوعی سازماندهی است.",
+   "notes_fa": [
+    "یادآوری ۱ – داده‌های نیمه ساختاریافته، اغلب به‌عنوان داده‌های شبه ساختاریافته از سوی صنعت شناخته می شوند.",
+    "یادآوری ۲ – نمونه‌هایی از داده‌های نیمه ساختاریافته، رکوردهایی هستند که علاوه بر فیلدهای ساختاریافته‌تر، دارای فیلدهای متنی آزاد نیز هستند. چنین داده‌هایی، غالباً در قالب‌های قابل تفسیر/ قابل پردازش رایانه‌ای مانند XML یا JSON بازنمایی می‌شوند."
+   ],
+   "pdf_page": 18,
+   "printed_page": 9,
+   "verified_visually": true,
+   "ocr_similarity": 0.891,
+   "term_en_alternatives": [
+    "semi-structured data"
+   ],
+   "term_fa_alternatives": [
+    "داده‌های شبه ساختاریافته"
+   ],
+   "translator_footnotes_en": [
+    "1- Semi-structured data",
+    "2- Parsable",
+    "[translator footnote, unnumbered, printed under the page footnotes: the source text uses the word 'Parsible' but 'Parsable' (تجزیه‌پذیر) seems to be the correct word; data in a 'parsable' format means a structure that a computer can easily understand and process]"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.29",
+   "term_fa": "جبر رابطه‌ای",
+   "term_en": "relational algebra",
+   "definition_fa": "به جبر بیان و دست‌کاریِ (عملیات روی) روابط اشاره دارد.",
+   "notes_fa": [],
+   "pdf_page": 18,
+   "printed_page": 9,
+   "verified_visually": true,
+   "ocr_similarity": 0.957,
+   "source_fa": "[منبع: مدخل اصطلاحی 17.04.08 استاندارد ISO/IEC 2382:2015]",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.30",
+   "term_fa": "پایگاه‌دادهٔ رابطه‌ای",
+   "term_en": "relational database",
+   "definition_fa": "پایگاه داده‌ای (۳-۱-۷) که در آن داده بر اساس مدل رابطه‌ای (۳-۱-۳۱) سازماندهی شده‌است.",
+   "notes_fa": [],
+   "pdf_page": 18,
+   "printed_page": 9,
+   "verified_visually": true,
+   "ocr_similarity": 0.936,
+   "source_fa": "[منبع: مدخل اصطلاحی 17.04.05 استاندارد ISO/IEC 2382:2015]",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.31",
+   "term_fa": "مدل رابطه‌ای",
+   "term_en": "relational model",
+   "definition_fa": "مدل داده‌ای (۳-۱-۱۰) که ساختار آن بر اساس مجموعه‌ای از روابط است.",
+   "notes_fa": [],
+   "pdf_page": 18,
+   "printed_page": 9,
+   "verified_visually": true,
+   "ocr_similarity": 0.938,
+   "source_fa": "[منبع: مدخل اصطلاحی 17.04.04 استاندارد ISO/IEC 2382:2015]",
+   "cross_reference_issues": [
+    "definition cites «مدل داده‌ای (۳-۱-۱۰)»: data model is printed as 3.1.8; 3.1.10 is data science"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.32",
+   "term_fa": "پراکنش",
+   "term_en": "scatter",
+   "definition_fa": "به توزیع پردازش بین چندین گره در یک خوشه (۳-۱-۴) اطلاق می‌شود.",
+   "notes_fa": [
+    "یادآوری – به پراکندن- گردآوری (۳-۲-۲۳) مراجعه شود."
+   ],
+   "pdf_page": 19,
+   "printed_page": 10,
+   "verified_visually": true,
+   "ocr_similarity": 0.727,
+   "cross_reference_issues": [
+    "note cites «پراکندن- گردآوری (۳-۲-۲۳)»: no 3.2.23 exists; scatter-gather is 3.1.33"
+   ],
+   "ocr_note": "OCR garbled one word and the cross-reference; re-read on the page image: text confirmed as transcribed",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.33",
+   "term_fa": "پراکنش - گردآورد",
+   "term_en": "scatter-gather",
+   "definition_fa": "شکلی از پردازش مجموعه‌های بزرگ‌داده (۳-۱-۱۱) که در آن محاسبات مورد نیاز، تقسیم می‌شود و بین گره‌های متعدد در یک خوشه توزیع می‌شود و نتیجه کلی، از ترکیب نتایج گره‌ها به دست می‌آید.",
+   "notes_fa": [
+    "یادآوری – پردازش به شیوه پراکنش- گردآوری ، معمولاً نیاز به تغییر الگوریتمی در نرم افزار پردازش دارد. نمونه‌ای از پردازش به شیوه پراکنش- گردآوری ، mapreduce است."
+   ],
+   "pdf_page": 19,
+   "printed_page": 10,
+   "verified_visually": true,
+   "ocr_similarity": 0.922,
+   "translator_footnotes_en": [
+    "1- Is combined"
+   ],
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.34",
+   "term_fa": "داده‌شارها",
+   "term_en": "streaming data",
+   "definition_fa": "داده‌ای (۳-۱-۵) از یک منبع که از یک واسط عبور می‌کند و به طور مداوم در حال عملیات است.",
+   "notes_fa": [],
+   "pdf_page": 19,
+   "printed_page": 10,
+   "verified_visually": true,
+   "ocr_similarity": 0.926,
+   "source_fa": "[منبع: زیربند 4.4 استاندارد ISO/IEC 19784-4:2011]",
+   "translator_footnotes_en": [
+    "2- Interface"
+   ],
+   "footnote_gap": "the definition carries a third superscript footnote marker, but no footnote 3 is printed at the foot of this page (only footnotes 1 and 2 appear)",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.35",
+   "term_fa": "داده ساختاریافته",
+   "term_en": "structured data",
+   "definition_fa": "داده‌ای (۳-۱-۵) که بر اساس مجموعه‌ای از قواعد (کاربردی) از پیش تعریف شده، سازماندهی شده‌است.",
+   "notes_fa": [
+    "یادآوری ۱ – مجموعه قواعد از پیش تعریف شده حاکم بر داده که داده‌ها بر اساس آن ساختاردهی می‌شوند به وضوح، بیان و مشخص شده‌باشد.",
+    "یادآوری ۲ – معمولاً مدل داده‌ای از پیش تعریف شده، بر ساختار داده‌ها، حاکم است."
+   ],
+   "pdf_page": 19,
+   "printed_page": 10,
+   "verified_visually": true,
+   "ocr_similarity": 0.888,
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.36",
+   "term_fa": "زپ‌سا",
+   "term_en": "SQL",
+   "definition_fa": "به زبان پایگاه‌داده مشخص شده در استاندارد ISO/IEC 9075 اشاره دارد.",
+   "notes_fa": [
+    "یادآوری – زپ‌سا گاهی اوقات به‌عنوان مخفف زبان پرسمان ساختاریافته تفسیر می‌شود، اما این نام در سری استانداردهای ISO/IEC 9075 استفاده نمی‌شود."
+   ],
+   "pdf_page": 20,
+   "printed_page": 11,
+   "verified_visually": true,
+   "ocr_similarity": 0.917,
+   "term_en_alternatives": [
+    "Structured Query Language"
+   ],
+   "term_fa_alternatives": [
+    "زبان پرسمان ساخت‌یافته"
+   ],
+   "heading_note": "two Persian heading lines printed: «زپ‌سا» then «زبان پرسمان ساخت‌یافته»; two English lines: «SQL» then «Structured Query Language»",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.37",
+   "term_fa": "داده ناساختمند",
+   "term_en": "unstructured data",
+   "definition_fa": "داده‌ای (۳-۱-۵) که بدون داشتن هیچ گونه ساختاری، به غیر از ساختار مشخص شده در سطح رکورد یا پرونده ، مشخص می‌شود.",
+   "notes_fa": [
+    "یادآوری – با در نظر گرفتن داده‌ها به‌عنوان یک کل، داده‌های ناساختمند، از عناصر داده تشکیل نمی‌شوند."
+   ],
+   "pdf_page": 20,
+   "printed_page": 11,
+   "verified_visually": true,
+   "ocr_similarity": 0.889,
+   "example_fa": "مثال: متن آزاد، نمونه‌ای از داده‌های ناساختمند است.",
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.1.38",
+   "term_fa": "مقیاس‌بندی عمودی",
+   "term_en": "vertical scaling",
+   "definition_fa": "به کنش بهبود عملکرد داده‌پردازی از طریق بهبود پردازنده‌ها، حافظه، ذخیره‌سازی یا اتصالات، اطلاق می‌شود.",
+   "notes_fa": [
+    "یادآوری – مقیاس‌بندی عمودی برای بهبود عملکرد، مقیاس‌افزایی نیز نامیده می‌شود."
+   ],
+   "pdf_page": 20,
+   "printed_page": 11,
+   "verified_visually": true,
+   "ocr_similarity": 0.915,
+   "entry_type": "term"
+  },
+  {
+   "clause": "3.2",
+   "term_fa": "JSON",
+   "term_en": "JSON",
+   "definition_fa": "نشانه‌گذاری شیء جاوا اسکریپت",
+   "notes_fa": [],
+   "pdf_page": 20,
+   "printed_page": 11,
+   "verified_visually": true,
+   "ocr_similarity": 1.0,
+   "expansion_en": "Javascript Object Notation",
+   "entry_type": "abbreviation",
+   "note": "clause 3.2 «اصطلاحات کوته‌نوشت»: a three-row list (abbreviation | Persian expansion | English expansion); no definitions are given"
+  },
+  {
+   "clause": "3.2",
+   "term_fa": "PII",
+   "term_en": "PII",
+   "definition_fa": "اطلاعات قابل‌شناسایی شخصی",
+   "notes_fa": [],
+   "pdf_page": 20,
+   "printed_page": 11,
+   "verified_visually": true,
+   "ocr_similarity": 1.0,
+   "expansion_en": "Personally Identifiable Information",
+   "entry_type": "abbreviation",
+   "note": "clause 3.2 «اصطلاحات کوته‌نوشت»: a three-row list (abbreviation | Persian expansion | English expansion); no definitions are given"
+  },
+  {
+   "clause": "3.2",
+   "term_fa": "XML",
+   "term_en": "XML",
+   "definition_fa": "زبان نشانه‌گذاری توسعه‌پذیر",
+   "notes_fa": [],
+   "pdf_page": 20,
+   "printed_page": 11,
+   "verified_visually": true,
+   "ocr_similarity": 1.0,
+   "expansion_en": "Extensible Markup Language",
+   "entry_type": "abbreviation",
+   "note": "clause 3.2 «اصطلاحات کوته‌نوشت»: a three-row list (abbreviation | Persian expansion | English expansion); no definitions are given"
+  }
+ ]
+}

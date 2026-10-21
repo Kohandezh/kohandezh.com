@@ -46,6 +46,11 @@ def zip_dir(src: Path, dst: Path):
         for p in sorted(src.rglob("*")):
             if p.is_file(): z.write(p, p.relative_to(src.parent))
 
+def _used(usage: list, purposes: tuple) -> list:
+    """Providers/models that actually completed calls for these purposes (from the model ledger), not a fixed claim."""
+    return sorted({f"{u['provider']}/{u['model']}" for u in usage if u["purpose"] in purposes and u["calls"] > u["errors"]})
+
+
 def main(release_id: str):
     REL.mkdir(exist_ok=True)
     con = db.connect()
@@ -68,6 +73,11 @@ def main(release_id: str):
     for name, src in deliver.items():
         if src.exists(): shutil.copy2(src, REL / name)
         else: missing.append(name)
+    # edition-2 additions: present only when the edition produced them (edition-1 builds are unaffected)
+    optional = {"29_e1_e2_map.json": ROOT / "provenance" / "e1-e2-map.json", "30_national_standards.json": ROOT / "manifests" / "national_standards.json",
+                "31_authoring_and_review_log.json": ROOT / "provenance" / "e2-authoring-log.json"}
+    for name, src in optional.items():
+        if src.exists(): shutil.copy2(src, REL / name)
     # metrics & model usage
     usage = [dict(r) for r in con.execute("SELECT provider, model, purpose, COUNT(*) calls, SUM(input_tokens) input_tokens, SUM(output_tokens) output_tokens, SUM(CASE WHEN status='ok' THEN 0 ELSE 1 END) errors FROM model_usage GROUP BY provider, model, purpose")]
     gpt_text = sum(u["calls"] for u in usage if u["provider"] == "openai" and u["purpose"] != "image")
@@ -84,12 +94,18 @@ def main(release_id: str):
     (REL / "18_translation_metrics.json").write_text(json.dumps(metrics, ensure_ascii=False, indent=1), encoding="utf-8")
     # manifest
     artifacts = {p.name: {"sha256": sha_file(p), "bytes": p.stat().st_size} for p in sorted(REL.iterdir()) if p.is_file() and not p.name.startswith(("23_", "24_", "25_", "26_", "28_"))}
+    # from the second edition on the PDF entry also records its page count (the reader shows it); the first edition's manifest is unchanged
+    if PUB.get("edition_label_fa") and "06_book_fa.pdf" in artifacts:
+        import pymupdf
+        with pymupdf.open(REL / "06_book_fa.pdf") as _pdf:
+            artifacts["06_book_fa.pdf"]["pages"] = _pdf.page_count
     tool_versions = {"python": sys.version.split()[0], "pymupdf": __import__("pymupdf").__version__, "pandoc": subprocess.run(["pandoc", "--version"], capture_output=True, text=True).stdout.split("\n")[0] if shutil.which("pandoc") else "n/a"}
     manifest = {"edition_id": PROV["edition_id"], "release_id": release_id, "build_date": db.now(), "publisher": PUB["brand"], "website": PUB["website"], "compiler": PUB["compiler"],
                 "hash_spec": PROV["spec_version"], "source_hashes": {d["filename"]: d["sha256"] for d in json.load(open(ROOT / "manifests" / "sources.json", encoding="utf-8"))["documents"]},
                 "master_json_sha256": sha_file(ROOT / "master" / "book.json"), "master_md_sha256": sha_file(ROOT / "master" / "book.md"), "merkle_root": book["merkle_root"],
-                "artifacts": artifacts, "model_routing_summary": {"orchestrator": "claude-fable-5-1 (single instance)", "translation": sorted({u["model"] for u in usage if u["purpose"] == "translation"}),
-                "review": "antigravity/claude-sonnet-4-6 (REVIEW_MAX)", "escalation": "antigravity/claude-opus-4-6-thinking (REVIEW_ULTRA)", "GPT_TEXT_USAGE": gpt_text},
+                "artifacts": artifacts, "model_routing_summary": {"orchestrator": PUB.get("orchestrator", "claude-fable-5-1 (single instance)"), "translation": sorted({u["model"] for u in usage if u["purpose"] == "translation"}),
+                "review": _used(usage, ("review", "terminology", "qa", "editorial")) or "antigravity/claude-sonnet-4-6 (REVIEW_MAX)",
+                "escalation": _used(usage, ("escalation",)) or "antigravity/claude-opus-4-6-thinking (REVIEW_ULTRA)", "GPT_TEXT_USAGE": gpt_text},
                 "prompt_versions": {"translate": "translate-v1", "review": "review-v1"}, "tool_versions": tool_versions, "missing_deliverables": missing}
     mpath = REL / "23_release_manifest.json"
     mpath.write_text(json.dumps(manifest, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")

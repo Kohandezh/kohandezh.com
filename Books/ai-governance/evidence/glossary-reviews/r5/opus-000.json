@@ -1,0 +1,67 @@
+{
+ "keys": [
+  "privacy",
+  "risk tolerance",
+  "risk management",
+  "receiver operating characteristic",
+  "artificial intelligence management system"
+ ],
+ "shas": {
+  "privacy": "a1794a8d0ec35278ccdd27963ed8a67e393507b58533f2d6eaaa1cc2a046309a",
+  "risk tolerance": "4eeee13d5b87befc56df0c61e4671675d5178a862e246997366fc5edaca03edc",
+  "risk management": "8e3d578777b1c08a089481aa9bd74a89baa069e1bea18baf2e36956df24b4f27",
+  "receiver operating characteristic": "94d621be4c2b9365f6951f4d68e83b51514db66ff7619cd7078811a7a6717b1c",
+  "artificial intelligence management system": "b231b287ccf47d40258a4d639e0ae24ed95e4c09736a78941ebd7470f0a9cdaa"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 220.4531750679016,
+ "result": {
+  "verdicts": [
+   {
+    "key": "privacy",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.92
+   },
+   {
+    "key": "risk tolerance",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The editor note itself states no INSO standard prints «تحمل ریسک», yet it is the preferred_fa. INSO 23728 prints «رواداری مخاطره» (clause 7.3.2) and «سطح رواداری مخاطره» (clause 8.1). Rule 1 requires the preferred Persian term to equal what the cited standard prints. A form that appears in no national standard should not outrank a form that does, even when the standard only uses it in running text without a formal definition.",
+      "suggested_fix": "Make «رواداری مخاطره» the preferred_fa (the simpler INSO-printed form from 7.3.2). Move «تحمل ریسک» into alternatives_fa, noting it is the form used in the book's NIST translations. Keep «سطح رواداری مخاطره» as an alternative (the fuller form from 8.1). Update the editor note to remove the 'choice is open' language and instead state the INSO-printed form takes precedence per project rules, with the NIST-translation form retained as a searchable alias."
+     }
+    ],
+    "confidence": 0.87
+   },
+   {
+    "key": "risk management",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "orthography",
+      "explanation": "definition_en contains a duplicated prefix: «NIST context: NIST context: Risk management refers to…». The label appears twice.",
+      "suggested_fix": "Remove the duplicate. Correct to: «NIST context: Risk management refers to coordinated activities to direct and control an organization with regard to risk (Source: ISO 31000:2018).»"
+     }
+    ],
+    "confidence": 0.95
+   },
+   {
+    "key": "receiver operating characteristic",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.93
+   },
+   {
+    "key": "artificial intelligence management system",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.91
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:52:42-0400"
+}

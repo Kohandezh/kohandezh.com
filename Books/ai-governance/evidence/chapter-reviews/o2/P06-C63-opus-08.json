@@ -1,0 +1,37 @@
+{
+ "chapter": "P06/C63",
+ "sections": [
+  8,
+  9
+ ],
+ "section_shas": {
+  "8": "1e098083a569dcd70cc4c87f42da87d02ea13c5a995af51cef8d22b8ba74d5e4",
+  "9": "12014b1e6441912fcbfc188efd26782f94e01d4407966830b770e5f9ac9229b5"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 462.23000979423523,
+ "result": {
+  "sections": [
+   {
+    "index": 8,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 9,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "layer_blend",
+      "quote": "بندهای حریم خصوصی و SLA در قرارداد تأمین‌کنندگان",
+      "explanation": "This item appears in the «پیشنهادی» checklist alongside four items directly traceable to the standard (S23728-106 ارزیابی اولیه; S23728-140 ارزیابان مستقل; S23728-145 ممیزی دوره‌ای; S23728-069 هماهنگی تیم‌ها). The SLA-in-supplier-contracts advice is the compiler's own practical recommendation: S23728-050 requires policies covering «طرف‌های سوم» and the abbreviation SLA is listed in §3.2, but no evidence item recommends SLA clauses in supplier contracts. In the «پیشرفته» tier the compiler correctly tags its own additions with «(افزودهٔ تدوینگر)» (e.g. «تمرین سالانهٔ واکنش به پیشامد»); the same tag is missing here, so a reader may assume this item too comes from the standard.",
+      "suggested_fix": "Append «(افزودهٔ تدوینگر)» to the item, yielding: «بندهای حریم خصوصی و SLA در قرارداد تأمین‌کنندگان (افزودهٔ تدوینگر)»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T06:56:28-0400"
+}

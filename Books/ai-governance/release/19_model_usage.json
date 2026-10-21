@@ -3,6 +3,15 @@
  "usage": [
   {
    "provider": "antigravity",
+   "model": "claude-opus-4-6",
+   "purpose": "escalation",
+   "calls": 4,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "errors": 4
+  },
+  {
+   "provider": "antigravity",
    "model": "claude-sonnet-4-6",
    "purpose": "editorial",
    "calls": 4,
@@ -14,18 +23,54 @@
    "provider": "antigravity",
    "model": "claude-sonnet-4-6",
    "purpose": "review",
-   "calls": 104,
+   "calls": 117,
    "input_tokens": 1684460,
    "output_tokens": 162924,
-   "errors": 27
+   "errors": 40
   },
   {
    "provider": "antigravity",
    "model": "claude-sonnet-4-6",
    "purpose": "terminology",
-   "calls": 5,
+   "calls": 73,
    "input_tokens": 93623,
    "output_tokens": 37362,
+   "errors": 68
+  },
+  {
+   "provider": "claude_cli",
+   "model": "claude-opus-4-6",
+   "purpose": "escalation",
+   "calls": 46,
+   "input_tokens": 92,
+   "output_tokens": 828724,
+   "errors": 0
+  },
+  {
+   "provider": "claude_cli",
+   "model": "claude-sonnet-4-6",
+   "purpose": "editorial",
+   "calls": 136,
+   "input_tokens": 423,
+   "output_tokens": 1692213,
+   "errors": 0
+  },
+  {
+   "provider": "claude_cli",
+   "model": "claude-sonnet-4-6",
+   "purpose": "review",
+   "calls": 173,
+   "input_tokens": 383,
+   "output_tokens": 3681287,
+   "errors": 0
+  },
+  {
+   "provider": "claude_cli",
+   "model": "claude-sonnet-4-6",
+   "purpose": "terminology",
+   "calls": 24,
+   "input_tokens": 49,
+   "output_tokens": 174308,
    "errors": 0
   },
   {
@@ -54,6 +99,15 @@
    "input_tokens": null,
    "output_tokens": null,
    "errors": 40
+  },
+  {
+   "provider": "google",
+   "model": "gemini-3.8-flash",
+   "purpose": "review_alt",
+   "calls": 1,
+   "input_tokens": null,
+   "output_tokens": null,
+   "errors": 1
   },
   {
    "provider": "google",
@@ -113,10 +167,10 @@
    "provider": "zai-coding-plan",
    "model": "glm-5.3",
    "purpose": "review_alt",
-   "calls": 507,
+   "calls": 509,
    "input_tokens": 2325434,
    "output_tokens": 1130190,
-   "errors": 0
+   "errors": 2
   },
   {
    "provider": "zai-coding-plan",

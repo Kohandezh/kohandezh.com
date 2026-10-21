@@ -1,0 +1,49 @@
+{
+ "chapter": "P02/C57",
+ "sections": [
+  7,
+  8
+ ],
+ "section_shas": {
+  "7": "3316eaa991ea4540b76dd80c2d0fd8e9d181d5d15c2d866ea6f92603436349fe",
+  "8": "73173c4a31cae9648770a65b3c87384df418ff9f8c052494ba4afd971057ca17"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 307.0127501487732,
+ "result": {
+  "sections": [
+   {
+    "index": 7,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "«بند ۱: «هنمودهایی» غلط تایپی است؛ در خلاصه «رهنمودهایی» آمده است»",
+      "explanation": "Evidence S23682-007 (clause 1, pdf 11 / printed 1) is transcribed — by the verified process — as «ارائهٔ رهنمودهایی دربارهٔ استفاده از هوش مصنوعی است». No form «هنمودهایی» appears in any evidence item from clause 1. The verified transcription is authoritative on letter-level accuracy; the typo claim is therefore unsupported.",
+      "suggested_fix": "Remove the notation about «هنمودهایی» unless an evidence item showing that exact spelling in the clause 1 page image is added to the evidence set."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "«هیئت حکمران» (یک‌بار در ۶.۳)",
+      "explanation": "All four evidence items covering clause 6.3 (S23682-078, S23682-079, S23682-080, S23682-081) use «نهاد حکمران» exclusively. No evidence item shows «هیئت حکمران» in clause 6.3 or elsewhere in the document.",
+      "suggested_fix": "Remove this notation unless an evidence item from the clause 6.3 page image showing «هیئت حکمران» is supplied."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "«عدم توضیح‌پذیری» با «(توصیف‌پذیری)» آمده و هیچ‌کدام تعریف نشده‌اند",
+      "explanation": "F23682-شکل ۴ records «عدم توضیح‌پذیری ML» without any parenthetical, and S23682-118 (clause 6.7.4) likewise shows «عدم توضیح‌پذیری» alone. No evidence item contains the pairing with «(توصیف‌پذیری)». The claim that this parenthetical appears in the printed text is unsupported.",
+      "suggested_fix": "Remove «با «(توصیف‌پذیری)» آمده» or supply an evidence item showing the parenthetical in the relevant page image."
+     }
+    ]
+   },
+   {
+    "index": 8,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:10:44-0400"
+}

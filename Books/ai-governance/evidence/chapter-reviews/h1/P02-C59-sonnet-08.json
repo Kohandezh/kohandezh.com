@@ -1,0 +1,37 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  8,
+  11
+ ],
+ "section_shas": {
+  "8": "34a85945a966307a18028f4234a1e38321826da280a77e8214601062777de34c",
+  "11": "4e94f41b5db3db60932e90c55ad2f1f4627625e3b9424fb57e264848b4dd8316"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 540.9390740394592,
+ "result": {
+  "sections": [
+   {
+    "index": 8,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "number_or_page_error",
+      "explanation": "The table row for B.5 (ارزیابی تأثیر) gives the page range «۳۴–۳۹». Evidence S42001-131 (B.5.5) explicitly states that the control sits at pdf 49 / printed 37 and its examples appear at pdf 50 / printed 38. Evidence S42001-133 (B.6.1.2) is at pdf 51 / printed 39, which establishes that B.6 begins at printed page 39. B.5 therefore ends at printed 38 at the latest; the upper bound «۳۹» is one printed page too high and overlaps with the B.6 block, whose own range is correctly given as «۳۹–۴۸».",
+      "quote": "| B.5 ارزیابی تأثیر | اثر بر فرصت‌های زندگی، سلامت و حقوق جهانی بشر؛ حفاظت از کودکان، کم‌توانان، سالمندان و کارگران؛ تأثیرات اجتماعی و زیست‌محیطی | توصیه می‌شود؛ «بهتر است»؛ «لازم است»؛ «باید» در یک جملهٔ فرعی (ب-۵-۴) | ۳۴–۳۹ |",
+      "suggested_fix": "Change the page column for the B.5 row from «۳۴–۳۹» to «۳۴–۳۸»."
+     }
+    ]
+   },
+   {
+    "index": 11,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:15:48-0400"
+}

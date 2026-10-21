@@ -1,0 +1,30 @@
+{
+ "chapter": "P01/C55",
+ "sections": [
+  2
+ ],
+ "section_shas": {
+  "2": "ed128fce3376705bbe0fb6630ba97b8f4579d714c16fa17bae91d114ec09a33f"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 403.5516359806061,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "other",
+      "explanation": "Evidence S23681-078 reads «یادگیری ماشین نیمه‌نظارتی، خودنظارتی، یادگیری انتقالی و یادگیری گروهی از چند رویکرد الهام می‌گیرند» (draw inspiration from several approaches). The section replaces «الهام می‌گیرند» with «برگرفته از» (derived/taken from), which asserts a stronger, direct derivation rather than mere inspiration — a meaningful semantic difference in an ML-architecture context.",
+      "quote": "نیمه‌نظارتی، خودنظارتی، انتقالی و گروهی را برگرفته از چند رویکرد می‌داند",
+      "suggested_fix": "Change to «نیمه‌نظارتی، خودنظارتی، انتقالی و گروهی را برگرفته از الهام‌گرفته از چند رویکرد می‌داند» → «نیمه‌نظارتی، خودنظارتی، انتقالی و گروهی را از چند رویکرد الهام‌گرفته می‌داند» to match the evidence's «از چند رویکرد الهام می‌گیرند»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T06:18:14-0400"
+}

@@ -1,0 +1,80 @@
+{
+ "chapter": "P06/C63",
+ "sections": [
+  8,
+  9
+ ],
+ "section_shas": {
+  "8": "1e63a9d407205cd87f1718816c3f25ff4deb40f4375b1cbd3c70517a25150bde",
+  "9": "29a4770e644330493b34d39dea7a0b94197a7061a51d2a00171ced798612664d"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 859.2678000926971,
+ "result": {
+  "sections": [
+   {
+    "index": 8,
+    "verdict": "FAIL",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "«ضروری است» (۵.۲ و ۷.۲)",
+      "explanation": "No cited evidence item contains the phrase «ضروری است» in clause 5.2 or 7.2. The only 5.2 evidence (S23728-038) renders the operative language as «باید». No evidence item covers clause 7.2 at all.",
+      "suggested_fix": "Remove or bracket this attribution. If the compiler verified the phrase in a non-cited passage, add a supporting evidence item that shows «ضروری است» printed in 5.2 or 7.2, or narrow the claim to what the cited evidence confirms."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "«مورد نیاز است» (۶.۳ و ۸.۱)",
+      "explanation": "Neither the 6.3 evidence items (S23728-063, S23728-069) nor the 8.1 evidence items (S23728-112, S23728-120, S23728-122) contain the phrase «مورد نیاز است».",
+      "suggested_fix": "Remove or supply a supporting evidence item that shows «مورد نیاز است» printed at 6.3 or 8.1."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "«مطلوب است؛ اما الزامی نیست» (۶.۳)",
+      "explanation": "No cited evidence item for clause 6.3 (S23728-063, S23728-069) contains this phrase.",
+      "suggested_fix": "Remove or supply a supporting evidence item."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "«همچنان نیاز است» و «مناسب است» (۸.۲)",
+      "explanation": "The cited 8.2 evidence items (S23728-134 for 8.2.1; S23728-140, S23728-141 for 8.2.3) do not contain either phrase.",
+      "suggested_fix": "Remove or supply supporting evidence items."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "«باید در نظر گرفت» (۷.۴)",
+      "explanation": "The two cited 7.4 evidence items (S23728-106, S23728-110) do not contain this phrase. S23728-106 uses «ممکن است» and S23728-110 uses «باید شامل این موارد باشد». The phrase «باید ... در نظر بگیرند» appears only in S23728-025 which belongs to clause 4.2, not 7.4.",
+      "suggested_fix": "Remove or supply a supporting evidence item that shows «باید در نظر گرفت» printed in clause 7.4."
+     },
+     {
+      "type": "number_or_page_error",
+      "quote": "صفحه‌ها: ۱۸، ۲۲–۲۳، ۲۶، ۳۰–۳۱، ۳۲، ۳۴، ۳۶",
+      "explanation": "Printed page ۲۶ has no evidence backing: the evidence jumps from 5.2/5.3 at page 18 to 6.2 at pages 20–21 to 6.3 at pages 22–23, with nothing cited at page 26. Printed page ۳۴ is similarly uncovered: 8.1 evidence ends at page 33 (S23728-122) and 8.2.1 evidence is at page 36 (S23728-134).",
+      "suggested_fix": "Remove pages ۲۶ and ۳۴ from the list, or add evidence items that place content at those printed pages (e.g. for clause 7.2 if that is where page 26 falls)."
+     },
+     {
+      "type": "number_or_page_error",
+      "quote": "مرجع [۱۲] فقط شمارهٔ ملی دارد در حالی که ۹.۲ آن را ISO/IEC/IEEE 15288:2015 می‌نامد و ارتباطشان تأیید نشده است (ص ۴۵–۴۶)",
+      "explanation": "Evidence S23728-151 places clause 9.2 at printed page 39, not pages 45–46. Pages 45–46 would fall in the bibliography, not clause 9.2. Additionally, no cited evidence item confirms the specific claim that clause 9.2 names reference [12] as ISO/IEC/IEEE 15288:2015 while the bibliography lists only a national number.",
+      "suggested_fix": "Correct the page reference: «ص ۳۹» for 9.2 (with the bibliography at a later page if needed). Add a supporting evidence item for the ref [12] discrepancy claim, or remove it."
+     }
+    ]
+   },
+   {
+    "index": 9,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "انتخاب و ارزیابی مستند واپایش‌ها با نمودار معماری (۸.۲)",
+      "explanation": "The requirement for an «نمودار معماری» (architecture diagram) as part of control selection and evaluation under clause 8.2 is not found in any cited evidence item. S23728-134 (8.2.1) prescribes considering effectiveness and other factors; S23728-140 and S23728-141 (8.2.3) address evaluation reports and remediation plans. None mention an architecture diagram. The same unsupported output reappears in the form row for 8.2: «واپایش‌های انتخاب‌شده، نمودار معماری، نتیجهٔ ارزیابی، تفاوت برنامه با اجرا».",
+      "suggested_fix": "Remove «نمودار معماری» from the checklist item and the form output column, or label it explicitly as a compiler addition («افزودهٔ تدوینگر») rather than citing (۸.۲) as the source."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:43:55-0400"
+}

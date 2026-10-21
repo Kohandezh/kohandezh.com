@@ -1,0 +1,75 @@
+{
+ "source_id": "INSO-23685-1403",
+ "national_reference_printed": "INSO 23685 (روی جلد؛ در سرصفحه: «استاندارد ملی ایران شمارهٔ ۲۳۶۸۵ (چاپ اول): ۱۴۰۳»)",
+ "iranian_year_printed": "۱۴۰۳",
+ "edition_printed": "چاپ اول (روی جلد انگلیسی: 1st Edition)",
+ "title_fa_printed": "ارزیابی مخاطره (ریسک) امنیتی کسب‌وکار کلان‌داده",
+ "title_en_printed": "Big data business security risk assessment",
+ "international_reference_printed": "IEEE Std 2813:2020, Big Data Business Security Risk Assessment",
+ "international_year": 2020,
+ "ieee_edition_and_status_printed": null,
+ "equivalence_statement_printed": "این استاندارد ملی بر مبنای پذیرش استاندارد بین‌المللی زیر به روش «معادل یکسان» تهیه و تدوین شده و شامل ترجمه تخصصی کامل متن آن به زبان فارسی می‌باشد و معادل یکسان استاندارد بین‌المللی مزبور است",
+ "equivalence_cover_english_printed": "Identical with IEEE Std 2813:2020",
+ "adoption_reference_printed": "روش اشاره شده در مورد الف، بند ۷ استاندارد ملی ایران شمارهٔ ۵ (استانداردهای ملی ایران- ساختار و شیوهٔ نگارش)",
+ "publisher_printed": "سازمان ملی استاندارد ایران (Iran National Standards Organization, INSO)",
+ "approval_or_publication_date_printed": "در هفتصد و چهل و هفتمین اجلاسیه کمیتهٔ ملی استاندارد فناوری اطلاعات مورخ ۱۴۰۳/۰۶/۱۸ تصویب شد",
+ "approval_date_jalali_printed": "۱۴۰۳/۰۶/۱۸",
+ "approval_date_gregorian_derived_not_printed": "2024-09-08",
+ "approving_body_printed": "کمیتهٔ ملی استاندارد فناوری اطلاعات (هفتصد و چهل و هفتمین اجلاسیه؛ در پیش‌گفتار)",
+ "cover_year_english_printed": "2024",
+ "ics_printed": "35.020",
+ "pdf_pages_total": 32,
+ "pdf_to_printed_offset": 10,
+ "page_numbering": {
+  "rule": "برای صفحات شماره‌دار: صفحه چاپی = صفحه PDF − 10 (PDF 11 = چاپی ۱ … PDF 32 = چاپی ۲۲)",
+  "pdf_1": "جلد، بدون شماره چاپی (printed_page = null)",
+  "pdf_2_to_10": {
+   "2": "ب",
+   "3": "ج",
+   "4": "د",
+   "5": "ه",
+   "6": "و",
+   "7": "ز",
+   "8": "ح",
+   "9": "ط",
+   "10": "ی"
+  },
+  "note": "شماره‌های چاپی پیش‌گفتار/مقدمه و صفحات آغازین با حروف فارسی (ب … ی) چاپ شده‌اند و در خروجی‌ها به‌صورت رشته آمده‌اند؛ صفحات بدنه با عدد صحیح."
+ },
+ "technical_commission_printed": {
+  "title": "کمیسیون فنی تدوین استاندارد «ارزیابی مخاطره(ریسک) امنیتی کسب‌وکار کلان‌داده»",
+  "chair": "علی یزدیان ورجانی",
+  "secretary": "مهدی عزیزی مهماندوست",
+  "editor": "حامد رثائی",
+  "members_listed_count": 9,
+  "pdf_pages": [
+   4,
+   5
+  ],
+  "printed_pages": [
+   "د",
+   "ه"
+  ]
+ },
+ "normative_references": [
+  {
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۲۳۶۸۳: سال ۱۴۰۳، فناوری اطلاعات – کلان‌داده – مرور کلی و واژگان",
+   "national_number_if_printed": "23683 (سال ۱۴۰۳)",
+   "pdf_page": 12,
+   "international_equivalent_printed": null
+  },
+  {
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۱۳۲۴۵: سال ۱۳۹۸، مدیریت ریسک - رهنمودها",
+   "national_number_if_printed": "13245 (سال ۱۳۹۸)",
+   "pdf_page": 12,
+   "international_equivalent_printed": null
+  }
+ ],
+ "notes": "تطبیق با انتظار مالک: شماره ۲۳۶۸۵، چاپ اول، سال ایرانی ۱۴۰۳ و مبنای بین‌المللی IEEE Std 2813:2020 روی تصویر صفحات تأیید شد. روی جلد «Identical with IEEE Std 2813:2020» و در پیش‌گفتار روش «معادل یکسان» (با ترجمه کامل تخصصی) چاپ شده است. هیچ وضعیت (فعال/لغوشده/پیش‌نویس)، تاریخ انتشار یا تأیید IEEE، یا عبارت «IEEE Standard for …» در متن چاپی نیامده است؛ مقدار ieee_edition_and_status_printed برابر null است. عنوان انگلیسی چاپی روی جلد به‌صورت جمله‌ای («Big data business security risk assessment») و در پیش‌گفتار به‌صورت عنوانی («Big Data Business Security Risk Assessment») است. بند ۲ فقط دو استاندارد ملی ایران را فهرست می‌کند و معادل بین‌المللی آن‌ها چاپ نشده است (حدسی ثبت نشده). سند ۳۲ صفحه PDF (۲۲ صفحه چاپی بدنه) است و پیوست، کتابنامه یا جدول شماره‌دار ندارد؛ فقط چهار شکل دارد. تاریخ میلادی تصویب (2024-09-08) محاسبه‌شده است و در متن چاپ نشده.",
+ "uncertainties": [
+  "ieee_edition_and_status_printed: وضعیت/تاریخ IEEE چاپ نشده؛ تطبیق با اصل IEEE ممکن نبود (متن IEEE در پرونده‌ها نیست).",
+  "تاریخ میلادی تصویب از تاریخ جلالی محاسبه شده است، نه چاپی.",
+  "شماره جلسه «هفتصد و چهل و هفتمین» به‌صورت حروفی چاپ شده؛ عدد ۷۴۷ برداشت من است.",
+  "معادل بین‌المللی دو مرجع بند ۲ در متن نیامده؛ حدس ثبت نشده است."
+ ]
+}

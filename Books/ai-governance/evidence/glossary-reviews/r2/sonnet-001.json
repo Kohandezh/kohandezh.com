@@ -1,0 +1,114 @@
+{
+ "keys": [
+  "audit",
+  "accountability",
+  "receiver operating characteristic",
+  "false negative rate",
+  "area under the curve",
+  "artificial intelligence management system",
+  "big data",
+  "customer data",
+  "data controller",
+  "data processor",
+  "data quality owner",
+  "data sensitivity"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 267.09558486938477,
+ "result": {
+  "verdicts": [
+   {
+    "key": "audit",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "accountability",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "receiver operating characteristic",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.81,
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The abbreviations table at clause 4 explicitly maps the acronym ROC → «مشخصه‌های عملیاتی گیرنده», while the proposed preferred term «مشخصه عملکرد گیرنده» comes only from the section heading at clause 6.5.5.5. When a standard's abbreviations table directly assigns an acronym to a Persian form, that explicit normative mapping takes editorial precedence over incidental heading usage in body text. The current setup effectively demotes the abbreviations-table form to 'alternative'.",
+      "suggested_fix": "Swap preferred and primary alternative: set preferred_fa to «مشخصه‌های عملیاتی گیرنده» (clause 4 mapping) and move «مشخصه عملکرد گیرنده» to alternatives_fa. If the editors judge the section-heading form more appropriate, add an explicit sentence in editor_note_fa justifying that choice over the table mapping."
+     },
+     {
+      "type": "alias_conflates_concepts",
+      "explanation": "«منحنی مشخصه عملکرد گیرنده» is listed in alternatives_fa with the editor note acknowledging it was the edition-1 entry for «ROC curve» — a separate entry. Including the curve-specific form as an alias for the ROC concept proper conflates the statistical concept (ROC) with its graphical display (ROC curve), which the edition already treats as distinct.",
+      "suggested_fix": "Remove «منحنی مشخصه عملکرد گیرنده» from alternatives_fa and instead add a cross-reference note: «برای منحنی ROC، نگاه کنید به مدخل ROC curve»."
+     }
+    ]
+   },
+   {
+    "key": "false negative rate",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "area under the curve",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "artificial intelligence management system",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.9,
+    "issues": [
+     {
+      "type": "other",
+      "explanation": "«AIMS» appears in both the acronym field and in alternatives_fa. An English acronym is not a Persian alternative form. Its presence in alternatives_fa could mislead users into treating it as a Persian-language spelling variant rather than the Latin abbreviation already captured in the dedicated acronym field.",
+      "suggested_fix": "Remove «AIMS» from alternatives_fa; retain it only in the acronym field."
+     }
+    ]
+   },
+   {
+    "key": "big data",
+    "verdict": "AGREE",
+    "confidence": 0.95,
+    "issues": []
+   },
+   {
+    "key": "customer data",
+    "verdict": "AGREE",
+    "confidence": 0.97,
+    "issues": []
+   },
+   {
+    "key": "data controller",
+    "verdict": "AGREE",
+    "confidence": 0.97,
+    "issues": []
+   },
+   {
+    "key": "data processor",
+    "verdict": "AGREE",
+    "confidence": 0.97,
+    "issues": []
+   },
+   {
+    "key": "data quality owner",
+    "verdict": "AGREE",
+    "confidence": 0.97,
+    "issues": []
+   },
+   {
+    "key": "data sensitivity",
+    "verdict": "AGREE",
+    "confidence": 0.97,
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-17T23:53:57-0400"
+}

@@ -1,0 +1,44 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  3,
+  5
+ ],
+ "section_shas": {
+  "3": "af636b3c2fa8a76f30283a329c590ac0197b7479ecea35456556bdb52679c014",
+  "5": "2800b213dd675db1d3dee8e5cf17522f802c284bdcf7b465b7b9fd5ef5ea3446"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 516.379646062851,
+ "result": {
+  "sections": [
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "modality_drift",
+      "quote": "در نظر گرفتن مسائل ایمنی، زیست‌محیطی، اجتماعی، فنی و مالی با عبارت چاپی «لازم است» (ص ۹–۱۰)",
+      "explanation": "The modality rule requires that «لازم است» be recorded as printed AND explicitly noted as not equivalent to «باید» ('record them as printed and say so'). The section correctly reports the printed wording in quotes but omits the explicit disclaimer. Compare with the exemplary handling of «ضروری» in the §5.2 paragraph, where the section adds «عبارتی در بافت توصیه که این کتاب الزام نمی‌شمارد». The same treatment is required here for consistency and rule compliance.",
+      "suggested_fix": "After «لازم است» add a parenthetical: «با عبارت چاپی «لازم است» — عبارتی که این کتاب معادل «باید» نمی‌شمارد» or a similar disclaimer matching the pattern used for «ضروری» in §5.2."
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "modality_drift",
+      "quote": "هماهنگی داده با رفتار موردنظر («ضروری است»)؛ ... استانداردهای بخشی («ضروری است»)",
+      "explanation": "«ضروری است» appears twice in the Annex A table (الف.۴ and الف.۱۰) as a parenthetical note, faithfully recording the printed term. However, per the modality rule, «ضروری است» must be recorded as printed AND explicitly noted as not «باید» ('say so'). In the summary table format, a per-cell disclaimer is impractical, but a general footnote or introductory note is needed to satisfy the rule.",
+      "suggested_fix": "Add a general note after the table introduction or as a footnote: «در این جدول هرجا «ضروری است» در پرانتز آمده، عبارت چاپی سند است و این کتاب آن را معادل «باید» نمی‌شمارد.» This covers both الف.۴ and الف.۱۰ without cluttering the table."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T08:55:18-0400"
+}

@@ -1,0 +1,79 @@
+استاندارد ملی ایران شمارة ۲۳۶۸۱ (چاپ اول): ۱۴۰۳
+
+۴-۳-۳
+
+فاصله
+
+distance
+
+‎<ML>‏ میزان مجاورت" اندازه‌گیری شده میان دونقطه در فضا است.
+
+‏یادآوری - معمولاً فاصله اقلیدسی يا خط مستقیم در ‎ML‏ استفاده می‌شود.
+
+‎۵-۳-۳
+
+‏فاقد برچسب
+
+‏خصوصیت نمونه‌ای که ‎fold‏ متغیر هدف نیست.
+
+‏۴ کوته نوشت‌ها
+هومص (هوش مصنوعی)
+میانای برنامه کاربردی (میبک)
+ماشین بولتزمن
+
+‏گرادیان مزدوج
+شبکه‌های باور عمیق
+شبکه عصبی پیش‌خور
+نرخ منفی کاذب
+
+‏نرخ مثبت کاذب
+
+‏واحد بازگشتی دروازه‌دار
+حافظه کوتاه‌مدت بلند
+
+‎Al
+‎API
+‎AUC
+‎BM
+‎CapsNet
+‎CG
+‎CNN
+‎DBN
+‎DCNN
+‎FFNN
+‎FNR
+‎FPR
+‎GRU
+‎LSTM
+
+‎MAE
+
+‎unlabelled
+
+‎Artificial Intelligence
+
+‎Application Programming Interface
+Area Under The Curve
+
+‎Boltzmann Machines
+
+‎Capsule Neural Network
+Conjugate Gradient
+
+‎Convolutional Neural Network
+Deep Belief Networks
+
+‎Deep Convolutional Neural Network
+Feed Forward Neural Network
+False Negative Rate
+
+‎False Positive Rate
+
+‎Gated Recurrent Unit
+
+‎Long Short-Term Memory
+
+‎Mean Absolute Error
+
+‎1-Proximity
+

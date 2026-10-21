@@ -1,0 +1,44 @@
+{
+ "chapter": "P01/C56",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "9b4d84d53eac9e32f070470ea4bd5037ba1a16b3a21b4e28c05e98066552b57a",
+  "5": "30a140f8724004f7a7ac3b048c2390f284f75ba87f71334f9235f822933c1f72"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 282.9315688610077,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "quote_not_verbatim",
+      "explanation": "The section quotes the E1 section title for cross-reference KDJ-AI-2026E2-P06-C44-S06 inside «» marks as «تحلیل داده‌های قضایی», but the cross_references metadata provided with the section gives the full title as «2.2. هوش مصنوعی و تحلیل داده‌های قضایی». The prefix «هوش مصنوعی و» is absent from the verbatim-marked quotation, misrepresenting the E1 section title.",
+      "quote": "(عنوان E1: «تحلیل داده‌های قضایی»)",
+      "suggested_fix": "Replace with: (عنوان E1: «هوش مصنوعی و تحلیل داده‌های قضایی»)."
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "number_or_page_error",
+      "explanation": "The section cites «بند ۴.۲» as the location in INSO 23683 from which the four data characteristics (حجم، سرعت، گونه، تغییرپذیری) should be drawn for dataset labelling. Evidence item S23683-023 (clause 4.1) is the only evidence covering the four-characteristic big-data selection guide, and separately names clause «4-3» for processing characteristics. No evidence item places the four data characteristics in clause 4.2. Citing clause 4.2 is therefore unsupported and conflicts with the clause 4.1 attribution in the evidence.",
+      "quote": "بر پایهٔ حجم، سرعت، گونه و تغییرپذیری (بند ۴.۲) برچسب بخورد",
+      "suggested_fix": "Change «بند ۴.۲» to «بند ۴.۱» to match S23683-023, which places the four-characteristic data guide under clause 4.1. If clause 4.2 cannot be confirmed from available evidence, remove the clause citation entirely."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:45:53-0400"
+}

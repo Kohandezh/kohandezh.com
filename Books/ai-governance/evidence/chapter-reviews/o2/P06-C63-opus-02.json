@@ -1,0 +1,37 @@
+{
+ "chapter": "P06/C63",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "200a21687666f31a9d95cf643f5417ab1367c90b45b144560f0d6bc9ad6a4b8f",
+  "3": "32286232b3dd264c0f673405983ab25b907700ec01ba3964fb4eab2312cf0c08"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 313.75299310684204,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "۶ | خط‌مشی‌ها و روال‌ها، نقش‌ها، آموزش، حکمرانی و پاسخگویی | چارچوب حریم خصوصی سازمانی",
+      "explanation": "The compiler's summary table for بند ۶ lists only «خط‌مشی‌ها و روال‌ها» in the inputs column, but evidence S23728-171 explicitly lists three items: «خط‌مشی‌ها/روال‌ها/راهنمون‌ها». The term «راهنمون‌ها» (guidelines) is dropped. The source index heading 6.2 confirms the full title is «خط‌مشی‌ها، روال‌ها و راهنمون‌های سازمانی». Even though the table is labelled as the compiler's summary, omitting one of three explicitly named framework components from the standard's own clause structure is a factual gap.",
+      "suggested_fix": "Change the بند ۶ input cell from «خط‌مشی‌ها و روال‌ها» to «خط‌مشی‌ها، روال‌ها و راهنمون‌ها» to match S23728-171 and heading 6.2."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T06:48:45-0400"
+}

@@ -1,0 +1,79 @@
+{
+ "keys": [
+  "residual risk",
+  "monitoring",
+  "risk appetite",
+  "governance",
+  "compliance",
+  "stakeholder"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 166.11582899093628,
+ "result": {
+  "verdicts": [
+   {
+    "key": "residual risk",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.88,
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The proposed preferred_fa «مخاطرهٔ باقی‌مانده» is a singular form with ezafe, but what INSO 23733 clause 6.5.2 actually prints is the plural «مخاطره‌های باقی‌مانده». Rule 1 requires the preferred to equal the printed form; the printed form is currently demoted to alternatives_fa, which inverts the hierarchy.",
+      "suggested_fix": "Either (a) swap: make preferred_fa «مخاطره‌های باقی‌مانده» (the printed form) and list the singular as an alternative; or (b) if editorial convention requires a singular headword, add an explicit note to the editor_note_fa: «مفرد تدوینی است؛ استاندارد صرفاً شکل جمع را در بند ۶.۵.۲ چاپ کرده و تعریف مستقلی ندارد.»"
+     }
+    ]
+   },
+   {
+    "key": "monitoring",
+    "verdict": "AGREE",
+    "confidence": 0.82,
+    "issues": [
+     {
+      "type": "attribution",
+      "explanation": "The editor note asserts that «نظارت» is the official INSO 23682 clause 3.2.1 term for 'oversight' — the stated grounds for its removal from alternatives — but no printed evidence for that clause appears in this entry's printed_evidence array. The preferred term and definition are correct; the removal justification is plausible but unverifiable from the supplied evidence.",
+      "suggested_fix": "Add INSO 23682 clause 3.2.1 to printed_evidence, or mark the cross-reference as «در انتظار تأیید»."
+     }
+    ]
+   },
+   {
+    "key": "risk appetite",
+    "verdict": "AGREE",
+    "confidence": 0.93,
+    "issues": []
+   },
+   {
+    "key": "governance",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.79,
+    "issues": [
+     {
+      "type": "alias_conflates_concepts",
+      "explanation": "The alias «راهبری» is listed without any editorial justification. The editor note explains why «حاکمیت» is retained but is silent on «راهبری». In INSO and ISO/IEC Persian adoptions, «راهبری» appears in contexts associated with leadership or strategic direction — concepts distinct from governance. If any INSO standard prints «راهبری» for a different defined concept, its inclusion here violates Rule 1.",
+      "suggested_fix": "Either add a note explaining why «راهبری» does not conflict with any INSO-defined concept in the series, or remove it from alternatives_fa pending that verification."
+     }
+    ]
+   },
+   {
+    "key": "compliance",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.85,
+    "issues": [
+     {
+      "type": "scope",
+      "explanation": "The editor note correctly flags that INSO 42001 uses «انطباق» also for 'conformity' (a distinct concept), but this homonym warning is confined to the editor note and absent from definition_fa. Per Rule 2, scope and attribution distinctions must be surfaced in the entry itself; readers who do not read editor notes will see only a single «انطباق» definition with no indication of the dual use.",
+      "suggested_fix": "Add a disambiguation note directly in definition_fa, for example: «یادداشت: در INSO 42001، «انطباق» همچنین برای conformity (تطابق با الزامات) به‌کار می‌رود که مفهومی جداست.»"
+     }
+    ]
+   },
+   {
+    "key": "stakeholder",
+    "verdict": "AGREE",
+    "confidence": 0.92,
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-17T23:43:41-0400"
+}

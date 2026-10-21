@@ -1,0 +1,30 @@
+{
+ "chapter": "P04/C62",
+ "sections": [
+  5
+ ],
+ "section_shas": {
+  "5": "8e48e6e1088de410aac20f1924fecd6f9870a5aa9eab270a47cbb3761b165bdf"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 357.49062037467957,
+ "result": {
+  "sections": [
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "number_or_page_error",
+      "quote": "مثال انصاف در پیوست ب.۳ (ص ۱۶ و ۱۷)",
+      "explanation": "The only evidence item for B.3 fairness content is S23684-081 (pdf 25 / printed 16). No evidence item exists for printed page 17 in the B.3 context. Moreover, the section's own limitations bullet for the same material cites only «سنجهٔ واحدی برای انصاف نیست (ص ۱۶)» — page 17 is absent there. The «و ۱۷» in the table is internally inconsistent with the limitations note and is unsupported by cited evidence.",
+      "suggested_fix": "Change «ص ۱۶ و ۱۷» to «ص ۱۶» to match the evidence and the section's own limitations note, unless an additional evidence item for printed page 17 of B.3 is obtained and cited."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T07:00:17-0400"
+}

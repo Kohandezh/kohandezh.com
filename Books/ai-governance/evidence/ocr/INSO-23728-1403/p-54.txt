@@ -1,0 +1,51 @@
+استاندارد ملی ایران شمارة ۲۳۷۲۸ (چاپ اول): ۱۴۰۳
+
+]1[ GDPR—General Data Protection Regulation—REGULATION (EU) 2016/6719 OF THE
+EUROPEAN PARLIAMENT AND OF THE COUNCIL of 27 April 2016 on the
+protection of natural persons with regard to the processing of personal data and on the free
+movement of such data, and repealing Directive 95/46/EC.
+
+[2] IEEE Std 802.1Q-2014, IEEE Standard for Local and metropolitan area networks—
+Bridges and Bridged Networks.
+‏استاندارد ملی ایران ایزو آی‌ای‌سی ۱۵۴۰۸-۱: سال ۰۱۳۹۱ فن‌اوری اطلاعات- فنون امنیتی-‎ ]۳[
+‏معیارهای ارزیابی امنیت فناوری اطلاعات- قسمت ۱: معرفی و مدل عمومی‎
+
+[4] 180/1۴6 TS 19608:2018, Guidance for developing security and privacy functional
+requirements based on ISO/IEC 15408.
+
+[5] ISO/IEC 27001, Information Security Management.
+
+یادآوری- استاندارد ملی ایران ایزو آی‌ای‌سی شماره ۲۷۰۰۱ سال ۱۴۰۳ امنیت اطلاعات, امنیت سایبری و حفاظت از حریم خصوصی
+- سامانه مدیریت امنیت اطلاعات - الزامات با استفاده از 27001:2022 ‎ISO/IEC‏ تدوین شده است.
+
+[6] 180/1۴0 ۰ 27005:2018, Information technology—Security technique —Information
+security risk management.
+
+یادآوری- استاندارد ملی ایران ایزو آی‌ای‌سی شماره ۲۷۰۰۵ سال ‎KAY‏ فناوری اطلاعات - فنون امنیتی - مدیریت مخاطرات امنیست
+اطلاعات با استفاده از 27005:2011 ‎ISO/IEC‏ تدوین شده است.
+
+[7] ISOMEC TR 27550:2019, Information technology—Security _techniques—Privacy
+engineering for system life cycle processes.
+
+‎[A]‏ استاندارد ملی ایران شماره ۱۷۶۴۳: سال ۰۱۳۹۰ فناوری اطلاعات - فنون امنیتی - چارچوب کاری
+حریم خصوصی
+
+‏یادآوری- استاندارد ملی ایران شماره ۱۷۶۴۳: سال ۰۱۳۹۰ فناوری اطلاعات - فنون امنیتی - چارچوب کاری حریم خصوصی با استفاده
+از استاندارد 29100:2011 ‎ISO/IEC‏ تدوین شده است.
+
+‎[9] 150/1۴ 29134:2017-06 Information technology—Security techniques—Guidelines for
+privacy impact assessment.
+
+‏]+1[ استاندارد ملی ایران شماره ۱۵۸۱۶-۱: سال ۰۱۳۹۸ فناوری اطلاعات- حکمرانی فناوری اطلاعات-
+حکمرانی داده‌ها- قسمت !:کاربرد استاندارد 38500 150/1860 درحکمرانی داده‌ها
+
+‏[۱۱] استاندارد ملی ایران شماره ‎:٩۳۲۷‏ سال ۰۱۳۹۹ مهندسی سامانه ها و نرم افزار- فرآیندهای چرخه عمر
+نرم افزار
+
+‏[۱۲] مهندسی سامانه‌ها و نرم‌افزار - فرآیندهای چرخه ‎Sle‏ سامانه استاندارد ملی ایران شماره ۱۶۳۰۴:
+سال ۱۳۹۸
+
+‎[13] ISO/IEC/IEEE 16085, Systems, and software engineering—Life cycle processes—Risk
+management.
+
+‎۳۵

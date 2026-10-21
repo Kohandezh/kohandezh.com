@@ -2,11 +2,11 @@
  "template_id": "TPL-P03-1",
  "title_fa": "رجیستر ریسک یادگیری ماشین خصمانه (AML) — نمونهٔ پیشنهادی تدوینگر",
  "derived_from": [
-  "KDJ-AI-2026E1-P03-C20-S03",
-  "KDJ-AI-2026E1-P03-C20-S04",
-  "KDJ-AI-2026E1-P03-C20-S13",
-  "KDJ-AI-2026E1-P03-C20-S19",
-  "KDJ-AI-2026E1-P03-C21-S03"
+  "KDJ-AI-2026E2-P03-C20-S03",
+  "KDJ-AI-2026E2-P03-C20-S04",
+  "KDJ-AI-2026E2-P03-C20-S13",
+  "KDJ-AI-2026E2-P03-C20-S19",
+  "KDJ-AI-2026E2-P03-C21-S03"
  ],
  "fields": [
   {

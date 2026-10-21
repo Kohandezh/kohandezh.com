@@ -1,0 +1,97 @@
+{
+ "keys": [
+  "cloud computing",
+  "data",
+  "data analytic",
+  "database",
+  "data model",
+  "data processing",
+  "data science",
+  "data set",
+  "data type",
+  "data variability",
+  "data variety",
+  "data velocity"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 41.22383403778076,
+ "result": {
+  "verdicts": [
+   {
+    "key": "cloud computing",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "data",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "data analytic",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "database",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "data model",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "data processing",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "data science",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "data set",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "data type",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "data variability",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "data variety",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "data velocity",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-17T23:58:07-0400"
+}

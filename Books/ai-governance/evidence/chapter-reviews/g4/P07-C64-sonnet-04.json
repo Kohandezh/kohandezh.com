@@ -1,0 +1,43 @@
+{
+ "chapter": "P07/C64",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "6b74158667c00f3fde3f38aa127e14a9fda5c64c2640f0b08996845b77119ff0",
+  "5": "733cf06772fca5d9db8ae3b480b41ffc2cdc8f8eb7687f746aa78268bd0fe9a0"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 341.21380710601807,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "layer_blend",
+      "explanation": "The sub-heading «نقش‌ها (تطبیق با بند ۵.۳.۴.۱)» attributes the full role list to clause 5.3.4.1. Evidence S15816-3-037/038 for that clause lists exactly five roles: کاربر، سرپرست داده، متصدی داده، مالک کیفیت داده، حسابرس داخلی. Of the seven roles in the section, at least five (مرجع حکمران، مدیر مخاطره، تیم داده، مسئول حریم خصوصی، مهندسی نرم‌افزار) do not appear in that clause's evidence, and three standard-listed roles (کاربر، سرپرست داده، مالک کیفیت داده) are silently dropped. A reader will reasonably read the heading as claiming all listed roles come from 5.3.4.1. Hard content rule 1 requires the three layers never be blended: compiler-added roles must be distinguished from standard-sourced ones within the list, even though the section-level disclaimer covers the section as a whole.",
+      "quote": "**نقش‌ها (تطبیق با بند ۵.۳.۴.۱).** مرجع حکمران: تصویب خط‌مشی و نظارت؛ مدیر مخاطره: روش سطح‌بندی؛ متصدی داده: تعیین سطح؛ تیم داده: اجرای فنی و برچسب‌گذاری؛ مسئول حریم خصوصی: بازبینی PII؛ مهندسی نرم‌افزار: برچسب در خطوط لوله؛ ممیزی داخلی: بررسی طبقه‌بندی واقعی.",
+      "suggested_fix": "Change the heading to «نقش‌ها (گسترش‌یافته از بند ۵.۳.۴.۱؛ نقش‌های بومی‌شده با † از تدوینگر)» and mark with † the five roles absent from 5.3.4.1 evidence (مرجع حکمران†، مدیر مخاطره†، تیم داده†، مسئول حریم خصوصی†، مهندسی نرم‌افزار†). Optionally note in a parenthetical that کاربر، سرپرست داده و مالک کیفیت داده از بند ۵.۳.۴.۱ برای اختصار حذف شده‌اند."
+     },
+     {
+      "type": "number_or_page_error",
+      "explanation": "The checklist cites «آموزش کارکنان (۵.۳.۵)». The source index shows clause 5.3.5 is titled «بسیج‌کردن سازمان در حمایت از خط‌مشی» (mobilising the organisation), while the training content sits in its sub-clause 5.3.5.1 «آموزش», supported by evidence S15816-3-041. Citing the parent clause 5.3.5 for staff training is a clause-number imprecision.",
+      "quote": "آموزش کارکنان (۵.۳.۵)",
+      "suggested_fix": "Replace «(۵.۳.۵)» with «(۵.۳.۵.۱)»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:54:14-0400"
+}

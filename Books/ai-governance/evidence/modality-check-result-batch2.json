@@ -1,0 +1,395 @@
+[
+ {
+  "item_id": "S23684-034",
+  "verdict": "faithful",
+  "printed_expression": "بنابراین لازم است صحت و نادرستی با دقت سنجیده شوند",
+  "note": "Printed «لازم است»; statement keeps it."
+ },
+ {
+  "item_id": "S23684-056",
+  "verdict": "faithful",
+  "printed_expression": "باید همان‌طور که در ISO/IEC 25010 تعریف می‌شود، تفسیر شوند",
+  "note": "Printed «باید ... تفسیر شوند»; matches."
+ },
+ {
+  "item_id": "S23684-059",
+  "verdict": "faithful",
+  "printed_expression": "باید همراه با اطلاعات مندرج در گزارش فنی ... در نظر گرفته شوند",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23684-071",
+  "verdict": "faithful",
+  "printed_expression": "رویکردی ترکیبی ... ضروری است",
+  "note": "Printed «ضروری است»; matches."
+ },
+ {
+  "item_id": "S23685-012",
+  "verdict": "faithful",
+  "printed_expression": "به‌صورت الزامی ارجاع داده شده ... الزام‌آور است",
+  "note": "Matches printed «الزامی» / «الزام‌آور» wording of clause 2."
+ },
+ {
+  "item_id": "S23685-013",
+  "verdict": "faithful",
+  "printed_expression": "استفاده از مراجع زیر، برای کاربرد این استاندارد الزامی است",
+  "note": "Printed «الزامی است»; both standards and years match."
+ },
+ {
+  "item_id": "S23685-028",
+  "verdict": "faithful",
+  "printed_expression": "پودمان عملیات، حداقل باید شامل توانایی‌ها و کارکردهای زیر باشد",
+  "note": "Printed «حداقل باید»; the four items continue on the next page."
+ },
+ {
+  "item_id": "S23685-042",
+  "verdict": "faithful",
+  "printed_expression": "حساب‌هایی که متعلق به یک نفر هستند باید به هم مرتبط باشند",
+  "note": "Printed in the Note (یادآوری) as «باید»; matches."
+ },
+ {
+  "item_id": "S23685-053",
+  "verdict": "faithful",
+  "printed_expression": "شناسایی تصویر باید دارای قابلیت‌های زیر باشد",
+  "note": "Printed «باید»; item list matches."
+ },
+ {
+  "item_id": "S23685-054",
+  "verdict": "faithful",
+  "printed_expression": "فن تطبیق تصویر باید در برابر بروز تداخل ... مقاومت و از آن جلوگیری کند",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23685-056",
+  "verdict": "faithful",
+  "printed_expression": "شناسایی صوتی باید دارای قابلیت‌های زیر باشد",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23685-057",
+  "verdict": "faithful",
+  "printed_expression": "شناسایی ویدئو باید دارای قابلیت‌های زیر باشد",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-009",
+  "verdict": "faithful",
+  "printed_expression": "کاربران را قادر می‌سازد تا ارزیابی انطباق را ... انجام دهند",
+  "note": "Enabling wording (قادر می‌سازد) rendered as «می‌توانند»; no obligation added; PIA described, not required."
+ },
+ {
+  "item_id": "S23728-014",
+  "verdict": "faithful",
+  "printed_expression": "این استاندارد، مرجع الزامی ندارد",
+  "note": "Matches printed clause 2."
+ },
+ {
+  "item_id": "S23728-024",
+  "verdict": "faithful",
+  "printed_expression": "می‌توانند از ارزیابی شکاف بهره ببرند",
+  "note": "Printed «می‌توانند»; kept as «می‌توانند»."
+ },
+ {
+  "item_id": "S23728-025",
+  "verdict": "faithful",
+  "printed_expression": "نه‌تنها باید عوامل بافت را ... بلکه ... در نظر بگیرند",
+  "note": "Printed «باید ... در نظر بگیرند»; matches."
+ },
+ {
+  "item_id": "S23728-026",
+  "verdict": "faithful",
+  "printed_expression": "ممکن است ... لازم باشد بیش از یک‌بار انجام شوند",
+  "note": "Possibility («ممکن است») and «لازم باشد» kept; no obligation added."
+ },
+ {
+  "item_id": "S23728-029",
+  "verdict": "faithful",
+  "printed_expression": "که باید هنگام شناسایی الزامات حریم خصوصی سازمان در نظر گرفته‌شوند",
+  "note": "Printed «باید» in 4.3 text on Figure 1; matches."
+ },
+ {
+  "item_id": "S23728-035",
+  "verdict": "faithful",
+  "printed_expression": "سازمان، باید الزامات حریم خصوصی سازمانی خود را ... شناسایی کند",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-038",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید ارزیابی رسمی بافت نظارتی را ... انجام دهد",
+  "note": "Printed «باید»; inner «توصیه می‌شود» and «ملزم به ارائه» also kept."
+ },
+ {
+  "item_id": "S23728-040",
+  "verdict": "faithful",
+  "printed_expression": "ضروری است بافت نظارتی هر یک از حوزه‌های قضایی ... بررسی شود",
+  "note": "Printed «ضروری است»; matches."
+ },
+ {
+  "item_id": "S23728-042",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید سایر عوامل بافتی را شناسایی کند ... و باید ملاحظات و پیامد را مستند کنند",
+  "note": "Both printed «باید» kept."
+ },
+ {
+  "item_id": "S23728-044",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید چارچوب ... را پیاده‌سازی کند و باید موارد زیر را در آن بگنجاند",
+  "note": "Both printed «باید» kept."
+ },
+ {
+  "item_id": "S23728-047",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید چارچوب ... را برای برآوردن الزامات آن اجرا کند",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-048",
+  "verdict": "faithful",
+  "printed_expression": "باید مستند کنند که سازمان به چه نحوی الزامات ... برآورده می‌کند",
+  "note": "Printed «باید مستند کنند»; matches."
+ },
+ {
+  "item_id": "S23728-049",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید از خط‌مشی‌های سازمانی موجود ... استفاده کند",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-050",
+  "verdict": "faithful",
+  "printed_expression": "اما سازمان‌ها، باید حداقل خط‌مشی‌ها و روش‌هایی را برقرار کنند",
+  "note": "Printed «باید حداقل»; 12 listed topics match."
+ },
+ {
+  "item_id": "S23728-051",
+  "verdict": "faithful",
+  "printed_expression": "این مبانی باید شامل منطقِ مربوط به مبنای(های) قانونی ... باشد",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-056",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید به آنها رسیدگی کند ... بهتر است ... دنبال کند",
+  "note": "Printed «باید» for rights and «بهتر است» for methods; both kept separately."
+ },
+ {
+  "item_id": "S23728-060",
+  "verdict": "faithful",
+  "printed_expression": "باید انواع مختلف موضوع‌های داده را شناسایی کنند؛ توصیه می‌شود ... تعیین کند؛ باید مستند شود",
+  "note": "Printed «باید» / «توصیه می‌شود» / «باید»; all three kept in order."
+ },
+ {
+  "item_id": "S23728-063",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید دارای هستارهایی باشد که ممکن است فرد، گروه یا کارکرد ... باشند",
+  "note": "Printed «باید»; 8 roles match."
+ },
+ {
+  "item_id": "S23728-064",
+  "verdict": "faithful",
+  "printed_expression": "تفکیک وظایف مطلوب است؛ اما الزامی نیست",
+  "note": "Printed «مطلوب است؛ اما الزامی نیست»; matches."
+ },
+ {
+  "item_id": "S23728-065",
+  "verdict": "faithful",
+  "printed_expression": "الزامات مستندسازی باید در مسئولیت‌های تعریف‌شده گنجانده شود",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-067",
+  "verdict": "faithful",
+  "printed_expression": "سازمان‌ها باید دارای هستارهای مسئول چارچوب ... باشند",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-068",
+  "verdict": "faithful",
+  "printed_expression": "چارچوب حریم خصوصی سازمانی باید از برقراری موارد زیر ... اطمینان حاصل کند",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-070",
+  "verdict": "faithful",
+  "printed_expression": "باید آموزش‌های رسمی یا غیررسمی ... دریافت کنند ... باید مدیریت و ثبت شوند",
+  "note": "Both printed «باید» kept."
+ },
+ {
+  "item_id": "S23728-072",
+  "verdict": "faithful",
+  "printed_expression": "باید به آماده‌سازی کافی سازمان ... کمک کند ... فراهم کند",
+  "note": "Printed «باید»; four listed means match."
+ },
+ {
+  "item_id": "S23728-073",
+  "verdict": "wrong",
+  "printed_expression": "فرایندی ... وجود دارد که باید به طور مستمر، رسمی و با کیفیتِ کافی انجام شود",
+  "corrected_statement_fa": "هستار باید مسئول اثبات انطباق با الزامات خاص این استاندارد باشد، شامل اثبات: (۱) اعتبارسنجی الزامات حریم خصوصی سازمانی توسط رهبری و مدیریت حریم خصوصی؛ (۲) کفایت خط‌مشی‌ها، روال‌ها، نقش‌ها و آموزش (6.2 تا 6.4) یا فراهم‌کردن ترتیبات لازم برای ایجاد/اصلاح آن‌ها؛ (۳) وجود فرایند ارزیابی‌های مخاطره (7.4) که «باید» به‌طور مستمر، رسمی و با کیفیت کافی انجام شود تا فرایند شرح‌داده‌شده در 8.1 و تصمیم‌گیری فرد مجاز دربارهٔ پذیرش یا عدم‌پذیرش مخاطره باقی‌مانده ممکن شود؛ (۴) وجود سازوکارهای حسابرسی دوره‌ای مناسب برای اعتبارسنجی مؤثر بودن خط‌مشی‌ها و روال‌ها و در غیر این صورت مدیریت فرایند بهبود آن‌ها و اعتبارسنجی؛ (۵) پیروی از فرایند SDLC (9.2) با عبور از هر دروازهٔ فاز.",
+  "note": "Minor: lead «باید مسئول اثبات ... باشد» is kept, but the nested printed «باید ... انجام شود» in item (3) was dropped, turning a process requirement into a descriptive attribute (items 3-5 are on p-34)."
+ },
+ {
+  "item_id": "S23728-074",
+  "verdict": "faithful",
+  "printed_expression": "باید پاسخگو باشد و مسئولیت کارکردهای حکمرانی ... بر عهده دارد",
+  "note": "Printed «باید پاسخگو باشد»; matches."
+ },
+ {
+  "item_id": "S23728-077",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید الزامات حریم خصوصی سامانهٔ خود را ... شناسایی کند",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-080",
+  "verdict": "faithful",
+  "printed_expression": "باید در سریع‌ترین زمان ممکن و حداکثر تا هنگام تهیه پیش‌نویس ... انجام شود",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-081",
+  "verdict": "faithful",
+  "printed_expression": "ضروری است لحاظ شود ... ضروری است. این امر می‌تواند ... کمک کند",
+  "note": "Printed «ضروری است» twice and «می‌تواند»; matches."
+ },
+ {
+  "item_id": "S23728-082",
+  "verdict": "faithful",
+  "printed_expression": "باید مستند شود ... باید هنگام تعیین سایر الزامات کسب‌وکاری، شناسایی و مستند شود",
+  "note": "Both printed «باید» kept."
+ },
+ {
+  "item_id": "S23728-083",
+  "verdict": "faithful",
+  "printed_expression": "تهیه فهرست الزامات حریم خصوصی ... مهم است؛ ... می‌تواند منابع ... را شناسایی کند",
+  "note": "Printed «مهم است» and «می‌تواند»; no obligation added."
+ },
+ {
+  "item_id": "S23728-084",
+  "verdict": "faithful",
+  "printed_expression": "سازمان‌ها باید جنبه‌هایی از طراحی ... شناسایی و مستند کنند",
+  "note": "Printed «باید»; «مطلوب یا ضروری» also matches."
+ },
+ {
+  "item_id": "S23728-085",
+  "verdict": "faithful",
+  "printed_expression": "طراحی و قابلیت کارکردی سامانه باید شامل تحلیل و مستندسازی ... باشد",
+  "note": "Printed «باید»; the four items match."
+ },
+ {
+  "item_id": "S23728-086",
+  "verdict": "faithful",
+  "printed_expression": "باید هم‌زمان با سایر الزامات کارکردی و غیرکارکردی سامانه انجام شود",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-090",
+  "verdict": "faithful",
+  "printed_expression": "هستار، مسئول، باید یافته‌های ... را بررسی و ثبت کند ... ارزیابی نماید",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-091",
+  "verdict": "faithful",
+  "printed_expression": "سازمان‌ها باید داده‌پردازی‌های سامانه را ... ترسیم کنند",
+  "note": "Printed «باید»; «ممکن است ... تکاملی باشد» also kept."
+ },
+ {
+  "item_id": "S23728-092",
+  "verdict": "faithful",
+  "printed_expression": "نقشه داده باید شامل موارد زیر باشد",
+  "note": "Printed «باید»; seven items match (the final «ممکن است» item omitted, harmless)."
+ },
+ {
+  "item_id": "S23728-105",
+  "verdict": "faithful",
+  "printed_expression": "ارزیابی کامل مخاطره باید شامل توصیه‌هایی باشد که ممکن است شامل واپایش‌ها ... شود",
+  "note": "Printed «باید» then «ممکن است»; both kept."
+ },
+ {
+  "item_id": "S23728-106",
+  "verdict": "faithful",
+  "printed_expression": "سازمان‌ها ممکن است ابتدا یک ارزیابی اولیه را انجام دهند",
+  "note": "Printed «ممکن است»; kept as «ممکن است»."
+ },
+ {
+  "item_id": "S23728-109",
+  "verdict": "faithful",
+  "printed_expression": "ارزیابی مخاطره باید با استفاده از یک روش ارزیابی مخاطره مستند ... انجام شود",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-110",
+  "verdict": "faithful",
+  "printed_expression": "روش ارزیابی مخاطره باید شامل موارد زیر باشد",
+  "note": "Printed «باید»; four components match."
+ },
+ {
+  "item_id": "S23728-116",
+  "verdict": "wrong",
+  "printed_expression": "تأیید ذی‌نفعان و نظارت مستمر مورد نیاز است",
+  "corrected_statement_fa": "تصدیق وجود یک مخاطره خاص و پذیرش آن بدون تلاش بیشتر برای واپایش؛ در این مورد تأیید ذی‌نفعان و نظارت مستمر «مورد نیاز است».",
+  "note": "Low severity: printed «مورد نیاز است» was changed to «لازم است» (near-synonym, but a different listed expression)."
+ },
+ {
+  "item_id": "S23728-120",
+  "verdict": "faithful",
+  "printed_expression": "سازمان‌ها باید یک فرایند مجوزدهی داشته باشند",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-122",
+  "verdict": "faithful",
+  "printed_expression": "باید تصمیم واکنش به مخاطره را مستند کنند. این مستندات ممکن است شامل ... باشد",
+  "note": "Printed «باید» and «ممکن است»; both kept."
+ },
+ {
+  "item_id": "S23728-123",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید مجموعه بنیان واپایش‌های خارجی را شناسایی کند یا ... توسعه دهد",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-124",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید یک نمودار معماری را مستندسازی کند",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-125",
+  "verdict": "wrong",
+  "printed_expression": "لزوماً همیشه برای هر سامانه‌ای مورد نیاز نخواهد بود",
+  "corrected_statement_fa": "مجموعه‌های پایهٔ واپایش حریم خصوصی، مجموعه‌های از پیش تعریف‌شده‌ای از واپایش‌ها برای نیازهای حفاظتی گروه‌ها، سازمان‌ها یا جوامع مورد نظرند؛ در صورتی که الزامات با آن‌ها برآورده نشوند ممکن است از طریق فرایند هماهنگ‌سازی (tailoring) تغییر کنند؛ تمام واپایش‌های مجموعه پایه لزوماً همیشه برای هر سامانه‌ای «مورد نیاز نخواهد بود».",
+  "note": "Low severity: printed negated «مورد نیاز نخواهد بود» (on p-43, continuing from p-42) was changed to «لازم نیست»; «ممکن است» is kept."
+ },
+ {
+  "item_id": "S23728-131",
+  "verdict": "faithful",
+  "printed_expression": "سازمان‌ها باید واپایش‌های حریم خصوصی مناسب را انتخاب کنند ... انتخاب خود را مستند کنند",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-136",
+  "verdict": "faithful",
+  "printed_expression": "سازمان باید ... شناسایی کند و باید برنامه‌ها را به‌روزرسانی کند",
+  "note": "Both printed «باید» kept."
+ },
+ {
+  "item_id": "S23728-137",
+  "verdict": "faithful",
+  "printed_expression": "ممکن است بازگشت به مرحله انتخاب واپایش لازم باشد",
+  "note": "Printed «ممکن است ... لازم باشد»; the first clause drops one hedge but keeps «در برخی موارد»; no obligation added."
+ },
+ {
+  "item_id": "S23728-139",
+  "verdict": "faithful",
+  "printed_expression": "تمام واپایش‌های حریم خصوصی باید ... ارزیابی شوند",
+  "note": "Printed «باید»; matches."
+ },
+ {
+  "item_id": "S23728-140",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود ... ممکن است مناسب باشد ... توصیه می‌شود",
+  "note": "Printed «توصیه می‌شود» twice and «ممکن است مناسب باشد»; all kept."
+ }
+]

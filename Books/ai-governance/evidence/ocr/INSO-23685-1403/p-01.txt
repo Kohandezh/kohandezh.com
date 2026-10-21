@@ -1,0 +1,30 @@
+استاندارد ملی ایران
+۳۳۶۸۵
+چاپ اول
+
+۱۴۰۳
+
+جمهوری اسلامی ایران
+‎Islamic Republic of Iran‏
+سازمان ملی استاندارد ایران
+
+Iran National Standards Organization
+
+ارزیابی مخاطره (ریسک) امنیتی کسب‌وکار
+کلان‌داده
+
+Big data business security risk
+assessment
+
+ICS: 35.020
+
+INSO
+23685
+
+Ist Edition
+
+2024
+
+Identical with
+IEEE Std
+2813:2020

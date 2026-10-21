@@ -1,0 +1,56 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  7,
+  8
+ ],
+ "section_shas": {
+  "7": "8990707ec2896579b4a84fdd1f81ae8cc24778d05e681602ff676265c0174852",
+  "8": "d6266f3ad617ae118cecb56dfaff2476ee7de4a8bb9102419d88dda8ff1165cc"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 447.51893615722656,
+ "result": {
+  "sections": [
+   {
+    "index": 7,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "number_or_page_error",
+      "quote": "A.9 استفاده از سامانه‌های هومص و A.10 ارتباط با طرف‌های سوم و مشتریان (ص ۲۶)",
+      "explanation": "Evidence C42001-A.9 places the A.9 block header at 'pdf 37 / printed 25', the same page as A.7 and A.8. Only C42001-A.10 is at 'pdf 38 / printed 26'. The section correctly assigns A.7 and A.8 to ص ۲۵ but then incorrectly advances A.9 to ص ۲۶ alongside A.10.",
+      "suggested_fix": "Change to: «A.9 استفاده از سامانه‌های هومص (ص ۲۵) و A.10 ارتباط با طرف‌های سوم و مشتریان (ص ۲۶)»"
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "شمول دست‌کم پایش، تعمیرات، روزآمدسازی‌ها و پشتیبانی با «توصیه می‌شود»",
+      "explanation": "Evidence C42001-A.6.2.6 prints the recommended list as «پایش سامانه و عملکرد، تعمیرات، روزآمدسازی‌ها و پشتیبانی». Dropping «سامانه و عملکرد» after «پایش» narrows the printed phrase from 'monitoring of system and performance' to bare 'monitoring'. This is a factual misrepresentation of the printed text even within a paraphrase context.",
+      "suggested_fix": "Change to: «شمول دست‌کم پایش سامانه و عملکرد، تعمیرات، روزآمدسازی‌ها و پشتیبانی با «توصیه می‌شود»»"
+     }
+    ]
+   },
+   {
+    "index": 8,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "AIMS برای هر سازمانی که محصولات یا خدمات مبتنی بر هوش مصنوعی را توسعه می‌دهد یا مصرف می‌کند اطلاق‌پذیر است",
+      "explanation": "Evidence S42001-183 (D.1) says «محصولات یا خدماتی باشد که از هومص استفاده می‌کنند» — products or services that USE AI. The section substitutes «مبتنی بر هوش مصنوعی» (based on AI), which is narrower and not found in the cited evidence, changing the stated applicability scope.",
+      "suggested_fix": "Replace «محصولات یا خدمات مبتنی بر هوش مصنوعی را توسعه می‌دهد یا مصرف می‌کند» with «توسعه‌دهنده یا مصرف‌کنندهٔ محصولات یا خدماتی است که از هوش مصنوعی استفاده می‌کنند» to match the printed scope of D.1."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "منابع مرتبط با یادگیری ماشین؛ مسائل سخت‌افزاری؛ مسائل چرخهٔ عمر",
+      "explanation": "Evidence S42001-175 (C.3) prints three of the seven risk-source titles differently from the section's list: (4) «منابع مخاطره مرتبط با یادگیری ماشین» (section drops «مخاطره»); (5) «مسائل سخت‌افزاری سامانه» (section drops «سامانه»); (6) «مسائل مربوط به چرخه عمر سامانه» (section drops «مربوط به» and «سامانه»). These are presented as the printed C.3 titles and must match the evidence.",
+      "suggested_fix": "Replace those three items with the printed forms: «منابع مخاطره مرتبط با یادگیری ماشین؛ مسائل سخت‌افزاری سامانه؛ مسائل مربوط به چرخه عمر سامانه»"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:51:31-0400"
+}

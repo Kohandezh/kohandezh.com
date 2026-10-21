@@ -1,0 +1,37 @@
+{
+ "chapter": "P04/C62",
+ "sections": [
+  1,
+  5
+ ],
+ "section_shas": {
+  "1": "63744cfb52fd03913e2369f61c881640c931dd05a9ae484183e91605653fd3b6",
+  "5": "64dfcf53d05f78af7d9b7a9c14d9c5bf32f16b990e6fa58012e20686dbfe0964"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 502.86554503440857,
+ "result": {
+  "sections": [
+   {
+    "index": 1,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "بندهای ۵.۲ و ۵.۷ برای «واپایش‌پذیری» به دو بند متفاوت INSO 23679 ارجاع می‌دهند که در این کتاب سنجیده نشد",
+      "explanation": "Evidence S23684-053 (clause 5.7, printed 10) confirms that clause 5.7 cross-references «واپایش‌پذیری» to sub-clause 5-15-5 of INSO 23679. No cited evidence item covers what clause 5.2 says about cross-references; the section supplies no statement from clause 5.2's body text referencing INSO 23679. The claim that 5.2 also refers to INSO 23679 (and to a different sub-clause) is therefore unsupported by the declared evidence.",
+      "suggested_fix": "Remove «۵.۲ و» so the sentence reads only «بند ۵.۷ برای «واپایش‌پذیری» به زیربند ۵-۱۵-۵ استاندارد ملی ۲۳۶۷۹ ارجاع می‌دهد که در این کتاب سنجیده نشد.» If the 5.2 cross-reference is genuine, add the specific evidence item (clause number and printed page) that shows it."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:41:04-0400"
+}

@@ -1,0 +1,44 @@
+{
+ "chapter": "P06/C63",
+ "sections": [
+  6,
+  7
+ ],
+ "section_shas": {
+  "6": "267014f74096ca53ca5a6027bf1d8625a0f190a1dc89ee4d2597bd15cbc8c821",
+  "7": "fb793d92e65a61cab4f456e473de76260302d40b0276132cf1fb8a34294cdc3d"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 321.3651349544525,
+ "result": {
+  "sections": [
+   {
+    "index": 6,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "این زیربند فرایندی برای پیاده‌سازی الزام‌های کیفی حریم خصوصی در آن شرح می‌دهد",
+      "explanation": "S23728-146 states that sub-clause 9.1 describes a process for «شناسایی، تعریف، پشتیبانی و پیاده‌سازی» of quality privacy requirements in the traditional SDLC. The section reduces this to «پیاده‌سازی» alone, dropping three of the four verbs and misrepresenting the scope of the sub-clause.",
+      "suggested_fix": "Replace with: «این زیربند فرایندی برای شناسایی، تعریف، پشتیبانی و پیاده‌سازی الزامات کیفی حریم خصوصی در فرایند سنتی SDLC شرح می‌دهد (ص ۳۸).»"
+     }
+    ]
+   },
+   {
+    "index": 7,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "number_or_page_error",
+      "quote": "۵.۲، ۶.۳ تا ۶.۵، ۸.۳ و ۹.۲ (ص ۱۸، ۲۲، ۲۴، ۳۷، ۴۰)",
+      "explanation": "S23728-151 places clause 9.2 at pdf 48 / printed page 39, not page 40. Page 40 belongs to continuation content within table 2 (e.g. S23728-157 at printed 40), not to the start of clause 9.2 itself.",
+      "suggested_fix": "Change «ص ۴۰» to «ص ۳۹»: «۵.۲، ۶.۳ تا ۶.۵، ۸.۳ و ۹.۲ (ص ۱۸، ۲۲، ۲۴، ۳۷، ۳۹)»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:29:36-0400"
+}

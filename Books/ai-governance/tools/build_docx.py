@@ -205,16 +205,16 @@ def build():
     para(doc, book["title_en"], size=12, align=WD_ALIGN_PARAGRAPH.CENTER)
     for _ in range(4): doc.add_paragraph()
     para(doc, "ترجمه، تدوین و بازآرایی فارسی: " + PUB["compiler"], size=13, align=WD_ALIGN_PARAGRAPH.CENTER)
-    para(doc, "بر پایه اسناد و انتشارات اصلی NIST و منابع مشخص‌شده در هر فصل", size=11, align=WD_ALIGN_PARAGRAPH.CENTER)
+    para(doc, PUB.get("basis_fa", "بر پایه اسناد و انتشارات اصلی NIST و منابع مشخص‌شده در هر فصل"), size=11, align=WD_ALIGN_PARAGRAPH.CENTER)
     para(doc, "وب‌سایت: kohandezh.com", size=11, align=WD_ALIGN_PARAGRAPH.CENTER)
-    para(doc, f"ویرایش {PUB['edition_id']}", size=11, align=WD_ALIGN_PARAGRAPH.CENTER)
+    para(doc, f"{PUB.get('edition_label_fa') or 'ویرایش'} {PUB['edition_id']}", size=11, align=WD_ALIGN_PARAGRAPH.CENTER)
     doc.add_page_break()
     # publication page
     heading(doc, "شناسنامهٔ انتشار", 1)
-    rows = [("عنوان", book["title_fa"]), ("مترجم / تدوینگر", PUB["compiler"]), ("ناشر", "کهن‌دژ — kohandezh.com"), ("ویرایش", PUB["edition_id"]), ("شناسهٔ انتشار", ver.get("release_id", "Release Candidate")),
+    rows = [("عنوان", book["title_fa"]), ("مترجم / تدوینگر", PUB["compiler"]), ("ناشر", "کهن‌دژ — kohandezh.com"), ("ویرایش", (PUB["edition_label_fa"] + " — " if PUB.get("edition_label_fa") else "") + PUB["edition_id"]), ("شناسهٔ انتشار", ver.get("release_id", "Release Candidate")),
             ("تاریخ ساخت", book["built_at"]), ("ریشهٔ مرکل", book["merkle_root"]), ("مشخصات هش", PROV["spec_version"]), ("وضعیت امضا", ver.get("signing_status", "PUBLISHER_SIGNING_KEY_REQUIRED"))]
     add_table(doc, ["فیلد", "مقدار"], [[k, v] for k, v in rows])
-    para(doc, "این اثر ترجمهٔ رسمی NIST نیست و NIST آن را تأیید یا منتشر نکرده است. متن اصلی هر سند به نویسندگان و ناشر اصلی تعلق دارد. بخش‌های تدوینگر و لایهٔ اجرایی ایرانی با برچسب مشخص از متن ترجمه‌شده متمایز شده‌اند.", size=10)
+    para(doc, "این اثر ترجمهٔ رسمی NIST نیست و NIST آن را تأیید یا منتشر نکرده است. متن اصلی هر سند به نویسندگان و ناشر اصلی تعلق دارد. بخش‌های تدوینگر و لایهٔ اجرایی ایرانی با برچسب مشخص از متن ترجمه‌شده متمایز شده‌اند. " + PUB.get("disclaimer_extra_fa", ""), size=10)
     doc.add_page_break()
     heading(doc, "فهرست مطالب", 1); add_toc(doc); doc.add_page_break()
     # preface / how to use (book-level editorial, if generated)
@@ -272,7 +272,7 @@ def build():
     para(doc, "برای بررسی اصالت، به kohandezh.com/ai-book/verify/ مراجعه کنید.", size=10)
     add_custom_properties(doc, {"KDJ Edition ID": PUB["edition_id"], "Release ID": ver.get("release_id", "RC"), "Master Hash": book.get("merkle_root", ""), "Publisher": "کهن‌دژ", "Translator/Compiler": PUB["compiler"],
                                 "Website": PUB["website"], "Build Date": book["built_at"], "Manifest ID": ver.get("manifest_sha256", "pending"), "Hash Spec": PROV["spec_version"]})
-    cp = doc.core_properties; cp.title = book["title_fa"]; cp.author = PUB["compiler"]; cp.subject = "AI governance, security and risk management — Persian edition based on NIST publications"; cp.keywords = "NIST; AI RMF; هوش مصنوعی; کهن‌دژ"; cp.language = "fa-IR"; cp.category = PUB["edition_id"]
+    cp = doc.core_properties; cp.title = book["title_fa"]; cp.author = PUB["compiler"]; cp.subject = "AI governance, security and risk management — Persian edition based on NIST publications" + (" and Iranian national standards (INSO)" if PUB.get("edition_label_fa") else ""); cp.keywords = "NIST; AI RMF; هوش مصنوعی; کهن‌دژ"; cp.language = "fa-IR"; cp.category = PUB["edition_id"]
     out = ROOT / "docx" / "fa" / "book-fa.docx"; out.parent.mkdir(parents=True, exist_ok=True); doc.save(out)
     Document(out)  # re-open check
     db.event("docx_built", {"path": str(out.relative_to(ROOT)), "bytes": out.stat().st_size})

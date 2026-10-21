@@ -1,0 +1,56 @@
+{
+ "chapter": "P01/C56",
+ "sections": [
+  0,
+  2
+ ],
+ "section_shas": {
+  "0": "6c1135ef69f1411c821682862702bf8e02b8dab1fc92882c5ed292316f7f06d9",
+  "2": "04bd401aaa417145feedb6bafdf4053fb77f3eb760e1a5d2c5423f2a65aab44d"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 276.06682419776917,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "۳.۱ (۳۸ اصطلاح)",
+      "explanation": "The claim that clause 3.1 contains exactly 38 terms is a specific count not found in any supplied evidence item. The only relevant evidence (O23683-011) gives the clause heading 'اصطلاحات و تعاریف' without a term count. No other evidence item supplies this number.",
+      "suggested_fix": "Remove the count or replace with a neutral description such as «۳.۱ (اصطلاحات و تعاریف)» without specifying the number of entries."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "۳.۲ (سه کوته‌نوشت)",
+      "explanation": "The claim that clause 3.2 contains exactly three abbreviations is not supported by any evidence item. O23683-050 only gives the section heading 'اصطلاحات کوته‌نوشت'; no evidence item states the count.",
+      "suggested_fix": "Remove the count or write «۳.۲ (اصطلاحات کوته‌نوشت)» without specifying the number of abbreviations."
+     }
+    ]
+   },
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "other",
+      "quote": "در واکاوش روند روی مجموعه‌های بزرگ ممکن است عناصر نامناسب منفرد در کل گم شوند",
+      "explanation": "Evidence S23683-031 reads «در واکاوش همبستگی یا روند روی مجموعه‌های بزرگ، عناصر نامناسب منفرد ممکن است در کل گم شوند». The section silently drops «همبستگی یا», narrowing the standard's claim from two analysis types (correlation and trend) to one (trend only). This is a meaning-changing omission.",
+      "suggested_fix": "Write «در واکاوش همبستگی یا روند روی مجموعه‌های بزرگ ممکن است عناصر نامناسب منفرد در کل گم شوند» to match the evidence."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "(ستونی، کلید-مقدار، کلید-سند، گرافی)",
+      "explanation": "Evidence S23683-038 explicitly labels its list as «نمونه‌ها:» and lists five types: ستونی، جدول خلوت، کلید-مقدار، کلید-سند، گرافی. The section's parenthetical list omits «جدول خلوت» without any indication that the list is partial, implying completeness that the evidence does not support.",
+      "suggested_fix": "Add «جدول خلوت» to the list or insert a qualifier such as «از جمله» to signal that the list is not exhaustive: «(از جمله: ستونی، جدول خلوت، کلید-مقدار، کلید-سند، گرافی)»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:02:03-0400"
+}

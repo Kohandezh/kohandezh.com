@@ -1,0 +1,44 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  0,
+  2
+ ],
+ "section_shas": {
+  "0": "5d792bc10d49e7fa31caed09cd8872abc7bf46ef6241e341a1815ccc617d5b5e",
+  "2": "349f7c946fe57ffff5d6a4f0efc99cd47b6b002334553aa532864a413a927db4"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 319.7207729816437,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "number_or_page_error",
+      "explanation": "The section states that AI system (سامانهٔ هوش مصنوعی) does not appear among «26 entries» (مدخل) of clause 3. No cited evidence item gives a count of clause-3 entries. The outline item O42001-011 merely records that clause 3 («اصطلاحات و تعاریف») exists at printed page 1; it does not enumerate or count definitions. The specific figure 26 is unverifiable from the supplied evidence and must be removed or replaced with a non-numerical qualifier.",
+      "quote": "اصطلاح «سامانهٔ هوش مصنوعی» در میان ۲۶ مدخل بند ۳ نیست",
+      "suggested_fix": "حذف عدد «۲۶» و نوشتن: «اصطلاح «سامانهٔ هوش مصنوعی» در مدخل‌های بند ۳ نیست» (تعداد دقیق در این مجموعهٔ مدارک تأیید نشده است)."
+     }
+    ]
+   },
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "explanation": "The project's terminology rules require that «ارزیابی تأثیر سامانه هوش مصنوعی» (AI system impact assessment, verified at INSO 42001 §3.24 and used as such in evidence item S42001-066) be used in full at first mention. The section's cross-reference list uses the truncated form «ارزیابی تأثیر (۶.۱.۴)», dropping «سامانه هوش مصنوعی». Because this appears to be the term's first occurrence in the section, the full form is required.",
+      "quote": "خط‌مشی (۵.۲) به A.2 و B.2، ارزیابی تأثیر (۶.۱.۴) به A.5",
+      "suggested_fix": "جایگزینی با: «خط‌مشی (۵.۲) به الف-۲ و ب-۲، ارزیابی تأثیر سامانه هوش مصنوعی (۶.۱.۴) به الف-۵»؛ در ادامه اختصار «ارزیابی تأثیر» مجاز است."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:44:11-0400"
+}

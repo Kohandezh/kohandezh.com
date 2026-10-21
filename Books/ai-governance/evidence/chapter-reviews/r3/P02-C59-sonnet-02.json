@@ -1,0 +1,50 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "5efab529aed659c78b3e0e9cc595ffd423e0e7679df0edc0ca812cd7d935a93b",
+  "3": "c9547acc80863300a0bbb21337fbddc8f031c3e2cdfd5ce5a3123a31c2f951bc"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 342.0665831565857,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "S42001-002 lists five components of the harmonised structure: «شمارهٔ بندها، عناوین بندها، متن و اصطلاحات مشترک و تعاریف اصلی یکسان». The section drops the fifth component «تعاریف اصلی یکسان» (identical core definitions), making the description of the harmonised structure factually incomplete.",
+      "quote": "استاندارد از شمارهٔ بندها، عنوان‌ها، متن و اصطلاحات مشترک ساختار هماهنگ بهره می‌گیرد",
+      "suggested_fix": "Replace with the full list as in S42001-002: «استاندارد از ساختار هماهنگ (شمارهٔ بندها، عناوین بندها، متن و اصطلاحات مشترک و تعاریف اصلی یکسان) بهره می‌گیرد»."
+     },
+     {
+      "type": "layer_blend",
+      "explanation": "The sentence immediately follows a cited standard note (with page reference) and is phrased as a factual deduction from it, but «پس AIMS نظامی در سطح سازمان است، نه پروندهٔ یک سامانهٔ منفرد» is a compiler inference not stated anywhere in the cited evidence (S42001-043 only says multiple AI systems may be included in scope; it never characterises AIMS as organisation-level). The conclusion is blended into standard-description text without a compiler-opinion marker, violating layer-separation rule 1.",
+      "quote": "نکتهٔ ۲ بند ۶.۱.۱ یادآوری می‌کند که دامنه می‌تواند بیش از یک سامانه را دربر گیرد (ص ۱۱)؛ پس AIMS نظامی در سطح سازمان است، نه پروندهٔ یک سامانهٔ منفرد.",
+      "suggested_fix": "Prefix the inference with an explicit compiler label, e.g.: «(تفسیر تدوینگر:) بنابراین AIMS نظامی در سطح سازمان است، نه پروندهٔ یک سامانهٔ منفرد.»"
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "S42001-011 enumerates six role categories in Note 1 of clause 4.1: ارائه‌دهندگان، تولیدکنندگان، مشتریان، شرکا، موضوعات مرتبط با هومص (subjects/affected parties of AI systems)، and نهادهای مرتبط (سیاست‌گذاران و تنظیم‌کنندگان). The section's list omits «موضوعات مرتبط با هومص» entirely. This category is qualitatively distinct from the others (it covers parties affected by the AI system, not parties who deploy or govern it) and its absence misrepresents the scope of roles the standard names.",
+      "quote": "نمونهٔ نقش‌ها (ارائه‌دهنده، تولیدکننده، مشتری، شریک، سیاست‌گذار و تنظیم‌کننده)",
+      "suggested_fix": "Insert the missing category: «نمونهٔ نقش‌ها (ارائه‌دهنده، تولیدکننده، مشتری، شریک، موضوعات مرتبط با هومص، و نهادهای مرتبط از جمله سیاست‌گذار و تنظیم‌کننده)»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:16:09-0400"
+}

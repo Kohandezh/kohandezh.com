@@ -1,0 +1,80 @@
+{
+ "keys": [
+  "privacy",
+  "risk tolerance",
+  "risk management",
+  "measure",
+  "residual risk",
+  "monitoring"
+ ],
+ "shas": {
+  "privacy": "f32b63bf666b3c65a6891a6d76850eb9c9c695d95a3abfff67d75ec1161a4b0f",
+  "risk tolerance": "9b3fc7d9e813a10d0cfd58a0c747f7cf03a2f42eaad4af68d83c3932a8cc06cb",
+  "risk management": "88d0d36a690ddc5a04cf62a0a8d2866a0314abd15f6467433c0478b8bb913c1f",
+  "measure": "3a31fe80ab5f70f52ed632b843c311dcd2bd0af1315056a94a768aa6716099ab",
+  "residual risk": "ae6d99414fdbaeb8dc0d042799ecb1e955dc1ee12a73c13dcf48c03cd495368d",
+  "monitoring": "3b9aed58e42d8ffacda260ea1c19bc677ddfc1791684c04e4441d03d0c9b1354"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 210.31050491333008,
+ "result": {
+  "verdicts": [
+   {
+    "key": "privacy",
+    "verdict": "AGREE",
+    "confidence": 0.91,
+    "issues": []
+   },
+   {
+    "key": "risk tolerance",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.88,
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "preferred_fa «تحمل ریسک» is not printed in any INSO standard. The printed forms are «رواداری مخاطره» (INSO 23728 clause 7.3.2) and «سطح رواداری مخاطره» (INSO 23728 clause 8.1). Rule 1 requires the preferred Persian term to equal what the cited standard prints. Even in a 'printed-in-text-not-defined' situation, the INSO-printed form should take precedence over the book's NIST translation form.",
+      "suggested_fix": "Promote «رواداری مخاطره» to preferred_fa (as the shorter of the two printed forms). Move «تحمل ریسک» into alternatives_fa with a note that it is the form used in the book's NIST-translated passages. «سطح رواداری مخاطره» stays as an alternative (it is the clause 8.1 printed form)."
+     }
+    ]
+   },
+   {
+    "key": "risk management",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.87,
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The INSO 23733 cover prints «مدیریت مخاطره (ریسک)» with the parenthetical gloss. The project normalisation policy (ii) states: 'a printed parenthetical gloss stays part of the headword and the form without the gloss is an alias.' The entry reverses this: it puts the glosless form «مدیریت مخاطره» as preferred and the printed-with-gloss form «مدیریت مخاطره (ریسک)» as an alternative.",
+      "suggested_fix": "Swap: preferred_fa → «مدیریت مخاطره (ریسک)» (the cover's printed form); move «مدیریت مخاطره» into alternatives_fa (the alias per normalisation policy, also attested in clause 4 heading)."
+     }
+    ]
+   },
+   {
+    "key": "measure",
+    "verdict": "AGREE",
+    "confidence": 0.86,
+    "issues": []
+   },
+   {
+    "key": "residual risk",
+    "verdict": "AGREE",
+    "confidence": 0.83,
+    "issues": [
+     {
+      "type": "scope",
+      "explanation": "Minor: the evidence record omits the clause field (editor note cites clause 6.5.2 of INSO 23733). Adding the clause to the evidence would strengthen attribution. Not a blocking issue — the editor note compensates."
+     }
+    ]
+   },
+   {
+    "key": "monitoring",
+    "verdict": "AGREE",
+    "confidence": 0.93,
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:39:58-0400"
+}

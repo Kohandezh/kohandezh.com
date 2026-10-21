@@ -204,6 +204,7 @@ check( false === strpos( $quoted, 'onmouseover=alert(1)"' ) && false === strpos(
 
 // --- Pagination -------------------------------------------------------------
 $repository = KBK_AI_Book::repository();
+$ED = $repository->summary()['edition_id'];
 check( null !== $repository, 'repository loads' );
 $giant = $repository->find_chapter( 'P05', 'C38' );
 $pages = KBK_AI_Book::chapter_pages( $giant, 30000 );
@@ -227,7 +228,7 @@ foreach ( $slices as $page ) {
 $c22 = $repository->find_chapter( 'P03', 'C22' );
 $c22_slices = KBK_AI_Book::chapter_page_slices( $c22, 30000 );
 $c22_map = KBK_AI_Book::chapter_section_pages( $c22, 30000 );
-$s11 = 'KDJ-AI-2026E1-P03-C22-S11';
+$s11 = ( 'KDJ-AI-' . $ED . '-P03-C22-S11' );
 $s11_parts = array();
 foreach ( $c22_slices as $p => $page ) {
 	foreach ( $page as $slice ) {
@@ -298,10 +299,10 @@ if ( is_file( $real_overlay ) ) {
 		$found = $real->find_section( $entry['structural_id'] );
 		check( null !== $found && $found['content_id'] === $content_id, 'overlay keeps every content_id ↔ structural_id pair' );
 	}
-	foreach ( array( 'KDJ-AI-2026E1-P02-C08-S02', 'KDJ-AI-2026E1-P02-C13-S01' ) as $debris ) {
+	foreach ( array( ( 'KDJ-AI-' . $ED . '-P02-C08-S02' ), ( 'KDJ-AI-' . $ED . '-P02-C13-S01' ) ) as $debris ) {
 		check( KBK_AI_Book::is_omitted_section( $real->find_section( $debris ) ), "{$debris} is omitted as source debris" );
 	}
-	check( 'GOVERN 1.1 — الزامات حقوقی و مقرراتی هوش مصنوعی' === KBK_AI_Book::reader_section_title( $real->find_section( 'KDJ-AI-2026E1-P02-C09-S02' ) ), 'C09 headings keep their subject after the overlay merge' );
+	check( 'GOVERN 1.1 — الزامات حقوقی و مقرراتی هوش مصنوعی' === KBK_AI_Book::reader_section_title( $real->find_section( ( 'KDJ-AI-' . $ED . '-P02-C09-S02' ) ) ), 'C09 headings keep their subject after the overlay merge' );
 	// Every footnote link on every reading page resolves on that same page,
 	// including the parts of split sections.
 	$fn_refs = 0;
@@ -327,7 +328,7 @@ if ( is_file( $real_overlay ) ) {
 	check( $fn_refs > 0 || ! $real_state['applied'], 'the book renders footnote links' );
 	$c08 = $real->find_chapter( 'P02', 'C08' );
 	$c08_pages = KBK_AI_Book::chapter_section_pages( $c08 );
-	check( isset( $c08_pages['KDJ-AI-2026E1-P02-C08-S02'] ), 'an omitted section keeps a page (its anchor still lands)' );
+	check( isset( $c08_pages[( 'KDJ-AI-' . $ED . '-P02-C08-S02' )] ), 'an omitted section keeps a page (its anchor still lands)' );
 	foreach ( $real->parts() as $real_part ) {
 		foreach ( $real_part['chapters'] as $real_chapter ) {
 			foreach ( $real_chapter['sections'] as $real_section ) {
@@ -348,22 +349,22 @@ foreach ( array( 'master/book.json', 'provenance/content_ids.json', 'provenance/
 	copy( rtrim( $root, '/' ) . '/' . $file, $tmp . '/' . $file );
 }
 $book_hash = hash_file( 'sha256', $tmp . '/master/book.json' );
-$target    = 'KDJ-AI-2026E1-P01-C01-S01';
-$omitted   = 'KDJ-AI-2026E1-P01-C01-S02';
+$target    = ( 'KDJ-AI-' . $ED . '-P01-C01-S01' );
+$omitted   = ( 'KDJ-AI-' . $ED . '-P01-C01-S02' );
 $write = static function ( array $overlay ) use ( $tmp ): void {
 	file_put_contents( $tmp . '/master/reader-overlay.json', json_encode( $overlay, JSON_UNESCAPED_UNICODE ) );
 };
 $base = array(
 	'schema'      => 'kbk-reader-overlay/1',
-	'edition_id'  => '2026E1',
+	'edition_id'  => $ED,
 	'book_sha256' => $book_hash,
 	'generator'   => 'tools/reader_overlay.py',
 	'chapters'    => array( 'C01' => array( 'title_fa' => 'عنوان نمایشی فصل' ), 'C99' => array( 'title_fa' => 'ناشناخته' ) ),
 	'sections'    => array(
 		$target            => array( 'title_fa' => 'عنوان نمایشی', 'fa_text' => 'متن نمایشی.' ),
 		$omitted           => array( 'omit' => true ),
-		'KDJ-AI-2026E1-P01-C01-S03' => array( 'title_fa' => '', 'fa_text' => 42 ),
-		'KDJ-AI-2026E1-P99-C99-S99' => array( 'title_fa' => 'ناشناخته' ),
+		( 'KDJ-AI-' . $ED . '-P01-C01-S03' ) => array( 'title_fa' => '', 'fa_text' => 42 ),
+		( 'KDJ-AI-' . $ED . '-P99-C99-S99' ) => array( 'title_fa' => 'ناشناخته' ),
 	),
 );
 $canonical = new KBK_AI_Book_Repository( $root );
@@ -378,7 +379,7 @@ check( 'عنوان نمایشی' === $section['title_fa'] && 'متن نمایش�
 check( $section['content_id'] === $canonical_section['content_id'] && $section['structural_id'] === $canonical_section['structural_id'] && $section['content_hash'] === $canonical_section['content_hash'], 'content_id, structural_id and content_hash are never changed' );
 check( $applied->find_citation( $target ) === $canonical->find_citation( $target ) && $applied->verify( $target )['sha256'] === $canonical->verify( $target )['sha256'], 'citations and verification hashes are untouched' );
 check( KBK_AI_Book::is_omitted_section( $applied->find_section( $omitted ) ) && 'عنوان نمایشی فصل' === $applied->find_chapter( 'P01', 'C01' )['title_fa'], 'omit flag and chapter title applied' );
-check( $applied->find_section( 'KDJ-AI-2026E1-P01-C01-S03' )['title_fa'] === $canonical->find_section( 'KDJ-AI-2026E1-P01-C01-S03' )['title_fa'], 'empty overlay values keep canonical text' );
+check( $applied->find_section( ( 'KDJ-AI-' . $ED . '-P01-C01-S03' ) )['title_fa'] === $canonical->find_section( ( 'KDJ-AI-' . $ED . '-P01-C01-S03' ) )['title_fa'], 'empty overlay values keep canonical text' );
 
 foreach ( array(
 	'wrong hash'    => array( 'book_sha256' => str_repeat( '0', 64 ) ),

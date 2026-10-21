@@ -1,0 +1,56 @@
+{
+ "chapter": "P01/C56",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "62ee7cef03ed0f96fb2128171310b3c6871e311da6437b041b7362e2d35366de",
+  "3": "2fd2520b4f24edc2bd077235fdae0f684ea51e7816cf0a3d1fd3e2e4fba6429a"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 450.3570122718811,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "فراریت بازهٔ اعتبار مقدارهای داده برای یک واکاوش است",
+      "explanation": "Evidence S23683-030 defines فراریت as «بازه زمانی محدودی است که در آن مقادیر داده برای یک تحلیل خاص معتبر می‌مانند». The section silently drops the qualifier «زمانی» (temporal), converting a time-bounded validity window into a generic validity range — a substantive change to the concept.",
+      "suggested_fix": "«فراریت بازهٔ زمانی محدودی است که در آن مقادیر داده برای یک واکاوش خاص معتبر می‌مانند.»"
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "FAIL",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "سند «باید» و «بهتر است» ندارد",
+      "explanation": "Evidence S23683-040 (clause الف-3, printed p. 17 — one of the section's own cited items) transcribes the following sentence from the standard: «توسعه الگوریتم برای تحلیل کلان‌داده باید الزامات داده‌پردازی توزیع‌شده را در نظر بگیرد». The word «باید» is present in the body of الف-3, directly contradicting the blanket claim that the entire document contains no «باید».",
+      "suggested_fix": "Revise to: «سند «بهتر است» ندارد؛ «باید» یک‌بار در الف-۳ (ص ۱۷) آمده است («توسعه الگوریتم برای تحلیل کلان‌داده باید الزامات داده‌پردازی توزیع‌شده را در نظر بگیرد») و در کنار «ضروری است» در همان بند قرار دارد؛ تنها توصیه به مفهوم اصطلاحی، یادآوری ۲ بند ۳.۱.۹ (ص ۴) است.»"
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "«بزرگ‌داده» (۳.۱.۳۳ و ۴.۳.۹)",
+      "explanation": "Evidence T23683-3.1.33 uses the compound «مجموعه‌های بزرگ‌داده» (with a cross-reference to clause ۳-۱-۱۱), not the standalone term «بزرگ‌داده» presented as a synonym for «کلان‌داده». Evidence S23683-037 for clause 4.3.9 contains no variant of «کلان‌داده» whatsoever. Citing both clauses as sources for «بزرگ‌داده» as a printed variant is unsupported.",
+      "suggested_fix": "Replace ««بزرگ‌داده» (۳.۱.۳۳ و ۴.۳.۹)» with ««مجموعه‌های بزرگ‌داده» (۳.۱.۳۳)» and remove the 4.3.9 attribution."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "«محاسبات ابری» (۳.۱.۳) با «رایانش ابری» در کتابنامه (ص ۲۱) فرق دارد",
+      "explanation": "Evidence O23683-081 confirms only that a bibliography exists at printed page 21; it transcribes no bibliographic entries. No evidence item shows the string «رایانش ابری» appearing in the bibliography. The claim cannot be verified from the cited evidence alone.",
+      "suggested_fix": "Either supply an evidence item that transcribes the relevant bibliography entry, or hedge: «در کتابنامه (ص ۲۱) احتمالاً «رایانش ابری» به‌کار رفته؛ محتوای کتابنامه در بستهٔ شواهد ثبت نشده است.»"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:43:49-0400"
+}

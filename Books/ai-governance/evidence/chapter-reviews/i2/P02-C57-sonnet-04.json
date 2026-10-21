@@ -1,0 +1,37 @@
+{
+ "chapter": "P02/C57",
+ "sections": [
+  4,
+  7
+ ],
+ "section_shas": {
+  "4": "f4413ded5adba26666889cf0989488d5d2918846ebe69ee78be6ed655c9cd0a4",
+  "7": "01775c05ca3f75df77607f019e1d6fce02b9af36ee17a87e2443d46a4bbb85d3"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 499.21208810806274,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 7,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "در کل سند «باید» فقط یک‌بار و در عبارت قالبی پیش‌گفتار (ص ح) آمده است؛ هیچ بندی از متن اصلی گزارهٔ «باید» ندارد",
+      "explanation": "This is an absence/count claim across the whole document. Per the evidence rules, such claims are supported only when explicitly limited to the clauses actually cited. The provided evidence items (tagged [info], [should], [may]) cover a large but incomplete sample of the standard — e.g., no statement items from clause 6.7.2, no fine-grained sub-clause items from all of §5, and only selected annex content are supplied — so the claim that «باید» appears nowhere in the body and only once in the preface cannot be confirmed from cited evidence alone. The same unsupported absolute assertion is repeated in the «دامنهٔ فصل» paragraph: «چون متن جز عبارت قالبی پیش‌گفتار «باید» ندارد».",
+      "suggested_fix": "Scope both claims to the material actually sampled. First instance → «در بندهای مورد بررسی در این فصل، «باید» تنها در عبارت قالبی پیش‌گفتار (ص ح) دیده شد؛ هیچ‌یک از گزاره‌های نمونه‌برداری‌شده قوت «باید» ندارند.» Second instance (دامنهٔ فصل) → «چون در بندهای مورد بررسی هیچ گزارهٔ «باید»ی (جز پیش‌گفتار) یافت نشد، …»"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:41:01-0400"
+}

@@ -1,0 +1,509 @@
+{
+ "annex": "A",
+ "source_id": "INSO-42001-1404",
+ "annex_title_fa_printed": "پیوست «الف» (الزامی) اهداف واپایشی مرجع و واپایش‌ها",
+ "table_id": "جدول الف-۱",
+ "table_title_fa_printed": "اهداف واپایشی و واپایش‌ها",
+ "count_objective_blocks": 10,
+ "count_controls": 38,
+ "note": "در جدول الف-۱ هر واپایش با «سازمان باید ...» بیان شده است؛ جملهٔ دوم A.6.2.6 «توصیه می‌شود ... » است. گروه الف-۶ دو بلوک دارد (الف-۶-۱ و الف-۶-۲). شناسه‌ها به صورت لاتین نقطه‌دار نرمال شدند؛ شکل چاپی در id_printed_fa است.",
+ "objectives": [
+  {
+   "id": "A.2",
+   "title_fa": "خط‌مشی‌های مرتبط با هومص",
+   "objective_fa_short": "ارائهٔ جهت‌گیری مدیریتی و پشتیبانی برای سامانه‌های هومص مطابق با الزامات کسب‌وکار.",
+   "pdf_page": 34,
+   "printed_page": 22,
+   "id_printed_fa": "الف-۲",
+   "ocr_similarity_title": 0.947,
+   "controls": [
+    {
+     "id": "A.2.2",
+     "id_printed_fa": "الف-۲-۲",
+     "title_fa": "خط‌مشی هومص",
+     "control_statement_fa_short": "سازمان باید یک خط‌مشی برای توسعه یا استفاده از سامانه‌های هومص مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 34,
+     "printed_page": 22,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.2.3",
+     "id_printed_fa": "الف-۲-۳",
+     "title_fa": "همسویی با خط‌مشی‌های سازمانی دیگر",
+     "control_statement_fa_short": "سازمان باید مشخص کند خط‌مشی‌های دیگر در چه مواقعی می‌توانند تحت‌تأثیر اهداف سازمان در مورد سامانه‌های هومص قرار گیرند یا بر آن‌ها اعمال شوند.",
+     "modality": "shall",
+     "pdf_page": 34,
+     "printed_page": 22,
+     "ocr_similarity_title": 0.6
+    },
+    {
+     "id": "A.2.4",
+     "id_printed_fa": "الف-۲-۴",
+     "title_fa": "بازنگری خط‌مشی هومص",
+     "control_statement_fa_short": "خط‌مشی هومص باید در فواصل طرح‌ریزی‌شده (یا در صورت لزوم به‌صورت افزوده) بازنگری شود تا از تداوم مناسب‌بودن، کفایت و اثربخشی آن اطمینان حاصل شود.",
+     "modality": "shall",
+     "pdf_page": 34,
+     "printed_page": 22,
+     "ocr_similarity_title": 1.0
+    }
+   ]
+  },
+  {
+   "id": "A.3",
+   "title_fa": "سازمان‌دهی داخلی",
+   "objective_fa_short": "حفظ پاسخگویی در درون سازمان برای پایبندی به رویکرد مسئولانه در اجرا، عملیات و مدیریت سامانه‌های هومص.",
+   "pdf_page": 34,
+   "printed_page": 22,
+   "id_printed_fa": "الف-۳",
+   "ocr_similarity_title": 1.0,
+   "controls": [
+    {
+     "id": "A.3.2",
+     "id_printed_fa": "الف-۳-۲",
+     "title_fa": "نقش‌ها و مسئولیت‌های هومص",
+     "control_statement_fa_short": "نقش‌ها و مسئولیت‌های مرتبط با هومص باید مطابق نیازهای سازمان تعیین و تخصیص داده شوند.",
+     "modality": "shall",
+     "pdf_page": 34,
+     "printed_page": 22,
+     "ocr_similarity_title": 0.865
+    },
+    {
+     "id": "A.3.3",
+     "id_printed_fa": "الف-۳-۳",
+     "title_fa": "گزارش نگرانی‌ها",
+     "control_statement_fa_short": "سازمان باید فرایندی برای گزارش نگرانی‌های موجود دربارهٔ نقش خود در قبال سامانهٔ هومص در طول چرخه عمر آن تعیین و اجرا نماید.",
+     "modality": "shall",
+     "pdf_page": 34,
+     "printed_page": 22,
+     "ocr_similarity_title": 1.0
+    }
+   ]
+  },
+  {
+   "id": "A.4",
+   "title_fa": "منابع سامانه‌های هومص",
+   "objective_fa_short": "اطمینان از اینکه سازمان منابع سامانهٔ هومص (اجزا و دارایی‌ها) را برای درک کامل و رسیدگی به مخاطرات و تأثیرات در نظر می‌گیرد.",
+   "pdf_page": 35,
+   "printed_page": 23,
+   "id_printed_fa": "الف-۴",
+   "ocr_similarity_title": 1.0,
+   "controls": [
+    {
+     "id": "A.4.2",
+     "id_printed_fa": "الف-۴-۲",
+     "title_fa": "مستندسازی منابع",
+     "control_statement_fa_short": "سازمان باید منابع مرتبط و لازم برای فعالیت‌های مراحل مشخص چرخه عمر سامانهٔ هومص و سایر فعالیت‌های مرتبط با هومص را که برای سازمان اهمیت دارند شناسایی و مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.4.3",
+     "id_printed_fa": "الف-۴-۳",
+     "title_fa": "منابع داده‌ای",
+     "control_statement_fa_short": "به‌عنوان بخشی از شناسایی منابع، سازمان باید اطلاعاتی دربارهٔ منابع دادهٔ استفاده‌شده در سامانهٔ هومص را مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.4.4",
+     "id_printed_fa": "الف-۴-۴",
+     "title_fa": "منابع ابزاری",
+     "control_statement_fa_short": "به‌عنوان بخشی از شناسایی منابع، سازمان باید اطلاعاتی دربارهٔ منابع ابزاری استفاده‌شده در سامانهٔ هومص را مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.4.5",
+     "id_printed_fa": "الف-۴-۵",
+     "title_fa": "منابع سامانه‌ای و رایانشی",
+     "control_statement_fa_short": "به‌عنوان بخشی از شناسایی منابع، سازمان باید اطلاعاتی دربارهٔ منابع سامانه‌ای و رایانشی استفاده‌شده در سامانهٔ هومص را مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.4.6",
+     "id_printed_fa": "الف-۴-۶",
+     "title_fa": "منابع انسانی",
+     "control_statement_fa_short": "به‌عنوان بخشی از شناسایی منابع، سازمان باید اطلاعاتی دربارهٔ منابع انسانی و شایستگی‌های آن‌ها (توسعه، به‌کارانداز‌ی، عملیات، مدیریت تغییر، نگهداری، انتقال و جمع‌آوری، درستی‌سنجی و یکپارچه‌سازی) مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "ocr_similarity_title": 1.0
+    }
+   ]
+  },
+  {
+   "id": "A.5",
+   "title_fa": "ارزیابی تأثیرات سامانه‌های هومص",
+   "objective_fa_short": "ارزیابی تأثیرات سامانه‌های هومص بر افراد، گروه‌هایی از افراد یا هر دو و همچنین جوامعی که در طول چرخه عمر تحت‌تأثیر آن قرار می‌گیرند.",
+   "pdf_page": 35,
+   "printed_page": 23,
+   "id_printed_fa": "الف-۵",
+   "ocr_similarity_title": 1.0,
+   "controls": [
+    {
+     "id": "A.5.2",
+     "id_printed_fa": "الف-۵-۲",
+     "title_fa": "فرایند ارزیابی تأثیر سامانه هومص",
+     "control_statement_fa_short": "سازمان باید فرایندی برای ارزیابی پیامدهای بالقوه ایجاد نماید که ممکن است به‌خاطر سامانهٔ هومص در طول چرخه عمر متوجه افراد، گروه‌ها یا جوامع شود.",
+     "modality": "shall",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.5.3",
+     "id_printed_fa": "الف-۵-۳",
+     "title_fa": "مستندسازی ارزیابی‌های تأثیر سامانه هومص",
+     "control_statement_fa_short": "سازمان باید نتایج ارزیابی‌های تأثیر سامانهٔ هومص را مستند کند و نتایج را برای دوره‌ای مشخص نگهداری نماید.",
+     "modality": "shall",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "ocr_similarity_title": 0.941
+    },
+    {
+     "id": "A.5.4",
+     "id_printed_fa": "الف-۵-۴",
+     "title_fa": "ارزیابی تأثیر سامانه هومص بر افراد یا گروه‌هایی از افراد",
+     "control_statement_fa_short": "سازمان باید تأثیرات بالقوهٔ سامانه‌های هومص بر افراد یا گروه‌هایی از افراد را در طول چرخه عمر سامانه ارزیابی و مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.5.5",
+     "id_printed_fa": "الف-۵-۵",
+     "title_fa": "ارزیابی تأثیرات اجتماعی سامانه‌های هومص",
+     "control_statement_fa_short": "سازمان باید تأثیرات اجتماعی بالقوهٔ سامانه‌های هومص خود را در طول چرخه عمر آن‌ها ارزیابی و مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "ocr_similarity_title": 0.857
+    }
+   ]
+  },
+  {
+   "id": "A.6.1",
+   "title_fa": "راهنمای مدیریت توسعه سامانه هومص",
+   "objective_fa_short": "اطمینان از اینکه سازمان اهداف مربوط به طراحی و توسعهٔ مسئولانهٔ سامانه‌های هومص را شناسایی و مستند می‌کند و فرایندهایی برای آن اجرا می‌کند.",
+   "pdf_page": 36,
+   "printed_page": 24,
+   "parent": "A.6",
+   "parent_title_fa": "چرخه عمر سامانه هومص",
+   "id_printed_fa": "الف-۶-۱",
+   "ocr_similarity_title": 0.786,
+   "controls": [
+    {
+     "id": "A.6.1.2",
+     "id_printed_fa": "الف-۶-۱-۲",
+     "title_fa": "اهداف توسعه مسئولانه سامانه هومص",
+     "control_statement_fa_short": "سازمان باید اهدافی را برای هدایت توسعهٔ مسئولانه سامانه‌های هومص شناسایی و مستند نماید و با لحاظ‌کردن آن‌ها اقداماتی اتخاذ کند تا این اهداف در چرخه توسعه برآورده شود.",
+     "modality": "shall",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.6.1.3",
+     "id_printed_fa": "الف-۶-۱-۳",
+     "title_fa": "فرایندهای طراحی و توسعه مسئولانه سامانه هومص",
+     "control_statement_fa_short": "سازمان باید فرایندهای مشخصی را برای طراحی و توسعهٔ مسئولانهٔ سامانهٔ هومص تعیین و مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "ocr_similarity_title": 1.0
+    }
+   ]
+  },
+  {
+   "id": "A.6.2",
+   "title_fa": "چرخه عمر سامانه هومص",
+   "objective_fa_short": "تعیین معیارها و الزامات هر مرحله از چرخه عمر سامانهٔ هومص.",
+   "pdf_page": 36,
+   "printed_page": 24,
+   "parent": "A.6",
+   "parent_title_fa": "چرخه عمر سامانه هومص",
+   "id_printed_fa": "الف ۶-۲",
+   "ocr_similarity_title": 1.0,
+   "controls": [
+    {
+     "id": "A.6.2.2",
+     "id_printed_fa": "الف-۶-۲-۲",
+     "title_fa": "الزامات و مشخصات سامانه هومص",
+     "control_statement_fa_short": "سازمان باید الزاماتی را برای سامانه‌های هومص جدید یا بهبودهای اساسی سامانه‌های موجود مشخص و مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.6.2.3",
+     "id_printed_fa": "الف-۶-۲-۳",
+     "title_fa": "مستندسازی طراحی و توسعه سامانه هومص",
+     "control_statement_fa_short": "سازمان باید طراحی و توسعهٔ سامانهٔ هومص را براساس اهداف سازمانی، الزامات مستندشده و معیارهای مربوط به مشخصات مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.6.2.4",
+     "id_printed_fa": "الف-۶-۲-۴",
+     "title_fa": "درستی‌سنجی و اعتبارسنجی سامانه هومص",
+     "control_statement_fa_short": "سازمان باید اقدامات درستی‌سنجی و اعتبارسنجی سامانهٔ هومص را تعیین و مستند کند و معیارهایی را برای استفاده از آن‌ها تعیین نماید.",
+     "modality": "shall",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.6.2.5",
+     "id_printed_fa": "الف-۶-۲-۵",
+     "title_fa": "به کار اندازی سامانه هومص",
+     "control_statement_fa_short": "سازمان باید طرحی برای به‌کارانداز‌ی مستند کند و اطمینان یابد که الزامات مناسب پیش از به‌کارانداز‌ی برآورده شده است.",
+     "modality": "shall",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.6.2.6",
+     "id_printed_fa": "الف-۶-۲-۶",
+     "title_fa": "عملیات و پایش سامانه هومص",
+     "control_statement_fa_short": "سازمان باید اجزای لازم برای عملیات جاری سامانهٔ هومص را تعیین و مستند نماید؛ توصیه می‌شود این اجزا حداقل شامل پایش سامانه و عملکرد، تعمیرات، روزآمدسازی‌ها و پشتیبانی باشد.",
+     "modality": "shall",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "ocr_similarity_title": 0.857,
+     "modality_note_fa": "جمله اول «باید» و جمله دوم «توصیه می‌شود»؛ هر دو در متن کنترل چاپ شده‌اند."
+    },
+    {
+     "id": "A.6.2.7",
+     "id_printed_fa": "الف ۶-۲-۷",
+     "title_fa": "مستندسازی فنّی سامانه هومص",
+     "control_statement_fa_short": "سازمان باید مستندات فنّی سامانهٔ هومص لازم را برای هر دستهٔ مرتبط از طرف‌های ذی‌نفع (مانند کاربران، شرکا و مقامات نظارتی) تعیین کند و مستندات فنّی را در قالب مناسب به آن‌ها ارائه دهد.",
+     "modality": "shall",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "ocr_similarity_title": 0.829,
+     "modality_note_fa": "شناسهٔ چاپ‌شده در جدول «الف ۶-۲-۷» (بدون خط‌تیرهٔ بعد از «الف»)."
+    },
+    {
+     "id": "A.6.2.8",
+     "id_printed_fa": "الف-۶-۲-۸",
+     "title_fa": "ثبت سوابق رویدادهای سامانه هومص",
+     "control_statement_fa_short": "سازمان باید تعیین نماید که ثبت سوابق رویدادها در کدام مراحل از چرخه عمر سامانهٔ هومص لازم است؛ هنگام استفاده از سامانه، «ثبت باید به اندازهٔ حداقل باشد» (عبارت چاپی).",
+     "modality": "shall",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "ocr_similarity_title": 1.0,
+     "modality_note_fa": "عبارت «ثبت باید به اندازهٔ حداقل باشد» چاپ شده و از نظر معنایی مبهم است؛ تفسیر اضافه نشد."
+    }
+   ]
+  },
+  {
+   "id": "A.7",
+   "title_fa": "داده‌های سامانه‌های هومص",
+   "objective_fa_short": "اطمینان از اینکه سازمان نقش و تأثیرات داده را در سامانه‌های هومص از نظر کاربرد و توسعه، تأمین یا استفاده در طول چرخه عمر درک می‌نماید.",
+   "pdf_page": 37,
+   "printed_page": 25,
+   "id_printed_fa": "الف-۷",
+   "ocr_similarity_title": 0.95,
+   "controls": [
+    {
+     "id": "A.7.2",
+     "id_printed_fa": "الف-۷-۲",
+     "title_fa": "داده‌های توسعه و ارتقای سامانه‌های هومص",
+     "control_statement_fa_short": "سازمان باید فرایندهای مدیریت داده مربوط به توسعهٔ سامانه‌های هومص را تعیین، مستند و اجرا نماید.",
+     "modality": "shall",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.7.3",
+     "id_printed_fa": "الف-۷-۳",
+     "title_fa": "اکتساب داده",
+     "control_statement_fa_short": "سازمان باید جزئیات مرتبط با اکتساب و انتخاب داده‌هایی که در سامانه‌های هومص استفاده می‌شود را مشخص و مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.7.4",
+     "id_printed_fa": "الف-۷-۴",
+     "title_fa": "کیفیت داده‌های سامانه‌های هومص",
+     "control_statement_fa_short": "سازمان باید الزامات کیفیت داده‌ها را تعیین و مستند نماید و اطمینان یابد که داده‌های استفاده‌شده برای توسعه و عملیات سامانهٔ هومص با این الزامات تطابق دارند.",
+     "modality": "shall",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "ocr_similarity_title": 0.926
+    },
+    {
+     "id": "A.7.5",
+     "id_printed_fa": "الف-۷-۵",
+     "title_fa": "منشأ داده‌ها",
+     "control_statement_fa_short": "سازمان باید فرایندی برای ثبت منشأ داده‌های استفاده‌شده در سامانه‌های خود در طول چرخه عمر داده‌ها و سامانه تعیین و مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.7.6",
+     "id_printed_fa": "الف-۷-۶",
+     "title_fa": "آماده‌سازی داده‌ها",
+     "control_statement_fa_short": "سازمان باید معیارهای خود برای آماده‌سازی داده‌ها و روش‌هایی را که برای آماده‌سازی داده‌ها استفاده می‌شود تعیین و مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "ocr_similarity_title": 1.0
+    }
+   ]
+  },
+  {
+   "id": "A.8",
+   "title_fa": "اطلاعات برای طرف‌های ذی‌نفع",
+   "objective_fa_short": "اطمینان از اینکه طرف‌های ذی‌نفع مرتبط اطلاعات لازم را برای درک و ارزیابی مخاطرات و تأثیرات (مثبت و منفی) دارند.",
+   "pdf_page": 37,
+   "printed_page": 25,
+   "id_printed_fa": "الف-۸",
+   "ocr_similarity_title": 0.955,
+   "controls": [
+    {
+     "id": "A.8.2",
+     "id_printed_fa": "الف-۸-۲",
+     "title_fa": "مستندات و اطلاعات سامانه برای کاربران",
+     "control_statement_fa_short": "سازمان باید اطلاعات لازم را برای کاربران سامانهٔ هومص تعیین و ارائه نماید.",
+     "modality": "shall",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "ocr_similarity_title": 0.719
+    },
+    {
+     "id": "A.8.3",
+     "id_printed_fa": "الف-۸-۳",
+     "title_fa": "گزارش‌دهی برون‌سازمانی",
+     "control_statement_fa_short": "سازمان باید امکاناتی برای طرف‌های ذی‌نفع فراهم نماید تا تأثیرات منفی سامانهٔ هومص را گزارش دهند.",
+     "modality": "shall",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.8.4",
+     "id_printed_fa": "الف-۸-۴",
+     "title_fa": "ابلاغ حوادث",
+     "control_statement_fa_short": "سازمان باید طرحی برای ابلاغ حوادث به کاربران سامانهٔ هومص تعیین و مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.8.5",
+     "id_printed_fa": "الف-۸-۵",
+     "title_fa": "اطلاعات برای طرف‌های ذی‌نفع",
+     "control_statement_fa_short": "سازمان باید تعهدات خود را در قبال گزارش اطلاعات مرتبط با سامانهٔ هومص به طرف‌های ذی‌نفع تعیین و مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "ocr_similarity_title": 0.955
+    }
+   ]
+  },
+  {
+   "id": "A.9",
+   "title_fa": "استفاده از سامانه‌های هومص",
+   "objective_fa_short": "اطمینان از اینکه سازمان سامانه‌های هومص را به‌طور مسئولانه و مطابق با خط‌مشی‌های سازمانی به کار می‌برد.",
+   "pdf_page": 37,
+   "printed_page": 25,
+   "id_printed_fa": "الف-۹",
+   "ocr_similarity_title": 0.955,
+   "controls": [
+    {
+     "id": "A.9.2",
+     "id_printed_fa": "الف-۹-۲",
+     "title_fa": "فرایندهای استفاده مسئولانه از سامانه‌های هومص",
+     "control_statement_fa_short": "سازمان باید فرایندهای استفادهٔ مسئولانه از سامانه‌های هومص را تعیین و مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 38,
+     "printed_page": 26,
+     "ocr_similarity_title": 0.949
+    },
+    {
+     "id": "A.9.3",
+     "id_printed_fa": "الف-۹-۳",
+     "title_fa": "اهداف استفاده مسئولانه از سامانه هومص",
+     "control_statement_fa_short": "سازمان باید اهدافی برای هدایت استفادهٔ مسئولانه از سامانه‌های هومص شناسایی و مستند نماید.",
+     "modality": "shall",
+     "pdf_page": 38,
+     "printed_page": 26,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.9.4",
+     "id_printed_fa": "الف-۹-۴",
+     "title_fa": "استفاده موردنظر سامانه هومص",
+     "control_statement_fa_short": "سازمان باید اطمینان یابد که سامانهٔ هومص مطابق با استفاده‌های موردنظر آن و مستندات همراه به کار گرفته می‌شود.",
+     "modality": "shall",
+     "pdf_page": 38,
+     "printed_page": 26,
+     "ocr_similarity_title": 0.958
+    }
+   ]
+  },
+  {
+   "id": "A.10",
+   "title_fa": "ارتباط با طرف‌های سوم و مشتریان",
+   "objective_fa_short": "اطمینان از اینکه سازمان مسئولیت‌های خود را درک می‌کند، پاسخگو می‌ماند و در مشارکت طرف‌های سوم در هر مرحلهٔ چرخه عمر، مخاطرات به‌صورت متناسب تقسیم شده‌اند.",
+   "pdf_page": 38,
+   "printed_page": 26,
+   "id_printed_fa": "الف-۱۰",
+   "ocr_similarity_title": 0.739,
+   "controls": [
+    {
+     "id": "A.10.2",
+     "id_printed_fa": "الف-۱۰-۲",
+     "title_fa": "تخصیص مسئولیت‌ها",
+     "control_statement_fa_short": "سازمان باید اطمینان یابد که مسئولیت‌ها در چرخه عمر سامانهٔ هومص بین سازمان، شرکا، تأمین‌کنندگان، مشتریان و طرف‌های سوم تقسیم شده‌اند.",
+     "modality": "shall",
+     "pdf_page": 38,
+     "printed_page": 26,
+     "ocr_similarity_title": 0.692
+    },
+    {
+     "id": "A.10.3",
+     "id_printed_fa": "الف-۱۰-۳",
+     "title_fa": "تأمین‌کنندگان",
+     "control_statement_fa_short": "سازمان باید فرایندی ایجاد نماید تا اطمینان حاصل شود استفادهٔ سازمان از خدمات، محصولات یا مواد تأمین‌شده توسط تأمین‌کنندگان با رویکرد سازمان به توسعه و استفادهٔ مسئولانه از سامانه‌های هومص همسو است.",
+     "modality": "shall",
+     "pdf_page": 38,
+     "printed_page": 26,
+     "ocr_similarity_title": 1.0
+    },
+    {
+     "id": "A.10.4",
+     "id_printed_fa": "الف-۱۰-۴",
+     "title_fa": "مشتریان",
+     "control_statement_fa_short": "سازمان باید اطمینان یابد که در رویکرد مسئولانهٔ خود به توسعه و استفاده از سامانه‌های هومص، نیازها و انتظارات مشتریان را در نظر می‌گیرد.",
+     "modality": "shall",
+     "pdf_page": 38,
+     "printed_page": 26,
+     "ocr_similarity_title": 1.0
+    }
+   ]
+  }
+ ]
+}

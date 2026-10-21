@@ -1,0 +1,1305 @@
+{
+ "source_id": "INSO-42001-1404",
+ "note": "type: front|normative|annex|informative. فصل‌های ۴–۱۰ و پیوست‌ها طبق فهرست مندرجات (PDF 8-9) و عنوان‌های متن؛ زیربندهای سطح سوم (مثلاً ۶-۱-۱) از عنوان‌های متن. شمارهٔ بندها به شکل لاتین نقطه‌دار نرمال شده. English heading فقط روی جلد و صفحهٔ ناشر چاپ شده نه برای بندها.",
+ "clauses": [
+  {
+   "number": "front-cover",
+   "heading_fa": "سازمان ملی استاندارد ایران / استاندارد ملی ایران/بی اس/ ایزو/ آی‌ای‌سی ۴۲۰۰۱: سال ۱۴۰۴ - فنّاوری اطلاعات - هوش مصنوعی - نظام مدیریت",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 1,
+   "printed_page": null
+  },
+  {
+   "number": "publisher-page",
+   "heading_fa": "ناشر: سازمان ملی استاندارد ایران (صفحهٔ مشخصات ناشر)",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 2,
+   "printed_page": null
+  },
+  {
+   "number": "intro-inso",
+   "heading_fa": "آشنایی با سازمان ملی استاندارد ایران",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 3,
+   "printed_page": "ب"
+  },
+  {
+   "number": "intro-bodies",
+   "heading_fa": "آشنایی با استانداردهای تخصصی دستگاه‌های اجرایی",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 4,
+   "printed_page": "ج"
+  },
+  {
+   "number": "commission",
+   "heading_fa": "کمیسیون تدوین استاندارد",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 5,
+   "printed_page": "د"
+  },
+  {
+   "number": "toc",
+   "heading_fa": "فهرست مندرجات",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 8,
+   "printed_page": "ز",
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "foreword",
+   "heading_fa": "پیشگفتار",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 10,
+   "printed_page": "ط",
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "introduction",
+   "heading_fa": "مقدمه",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 11,
+   "printed_page": "ی",
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "1",
+   "heading_fa": "هدف و دامنهٔ کاربرد",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 13,
+   "printed_page": 1,
+   "ocr_similarity_heading": 0.857
+  },
+  {
+   "number": "2",
+   "heading_fa": "مراجع الزامی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 13,
+   "printed_page": 1,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "3",
+   "heading_fa": "اصطلاحات و تعاریف",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 13,
+   "printed_page": 1,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "4",
+   "heading_fa": "بافتار سازمان",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 19,
+   "printed_page": 7,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "4.1",
+   "heading_fa": "شناخت سازمان و بافتار آن",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 19,
+   "printed_page": 7,
+   "ocr_similarity_heading": 0.95
+  },
+  {
+   "number": "4.2",
+   "heading_fa": "شناخت نیازها و انتظارات طرف‌های ذی‌نفع",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 20,
+   "printed_page": 8,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "4.3",
+   "heading_fa": "تعیین دامنه نظام مدیریت هومص",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 20,
+   "printed_page": 8,
+   "ocr_similarity_heading": 0.773
+  },
+  {
+   "number": "4.4",
+   "heading_fa": "نظام مدیریت هومص",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 21,
+   "printed_page": 9,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "5",
+   "heading_fa": "رهبری",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 21,
+   "printed_page": 9,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "5.1",
+   "heading_fa": "رهبری و تعهد",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 21,
+   "printed_page": 9,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "5.2",
+   "heading_fa": "خط‌مشی هومص",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 22,
+   "printed_page": 10,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "5.3",
+   "heading_fa": "نقش‌ها، مسئولیت‌ها و اختیارات",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 22,
+   "printed_page": 10,
+   "ocr_similarity_heading": 0.957
+  },
+  {
+   "number": "6",
+   "heading_fa": "طرح‌ریزی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 22,
+   "printed_page": 10,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "6.1",
+   "heading_fa": "اقدامات برای پرداختن به مخاطرات و فرصت‌ها",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 22,
+   "printed_page": 10,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "6.1.1",
+   "heading_fa": "کلیات",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 22,
+   "printed_page": 10,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "6.1.2",
+   "heading_fa": "ارزیابی مخاطره هومص",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 24,
+   "printed_page": 12,
+   "ocr_similarity_heading": 0.941
+  },
+  {
+   "number": "6.1.3",
+   "heading_fa": "مواجهه با مخاطره هومص",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 24,
+   "printed_page": 12,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "6.1.4",
+   "heading_fa": "ارزیابی تأثیر سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 25,
+   "printed_page": 13,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "6.2",
+   "heading_fa": "اهداف هومص و طرح‌ریزی برای دستیابی به آن‌ها",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 26,
+   "printed_page": 14,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "6.3",
+   "heading_fa": "طرح‌ریزی تغییرات",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 27,
+   "printed_page": 15,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "7",
+   "heading_fa": "پشتیبانی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 27,
+   "printed_page": 15,
+   "ocr_similarity_heading": 0.625
+  },
+  {
+   "number": "7.1",
+   "heading_fa": "منابع",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 27,
+   "printed_page": 15,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "7.2",
+   "heading_fa": "شایستگی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 27,
+   "printed_page": 15,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "7.3",
+   "heading_fa": "آگاهی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 28,
+   "printed_page": 16,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "7.4",
+   "heading_fa": "ارتباطات",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 28,
+   "printed_page": 16,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "7.5",
+   "heading_fa": "اطلاعات مدون",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 28,
+   "printed_page": 16,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "7.5.1",
+   "heading_fa": "کلیات",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 28,
+   "printed_page": 16,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "7.5.2",
+   "heading_fa": "ایجاد و روزآمدسازی اطلاعات مدون",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 28,
+   "printed_page": 16,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "7.5.3",
+   "heading_fa": "واپایش اطلاعات مدون",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 29,
+   "printed_page": 17,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "8",
+   "heading_fa": "عملیات",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 29,
+   "printed_page": 17,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "8.1",
+   "heading_fa": "طرح‌ریزی و واپایش فرایندهای عملیاتی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 29,
+   "printed_page": 17,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "8.2",
+   "heading_fa": "ارزیابی مخاطره هومص",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 30,
+   "printed_page": 18,
+   "ocr_similarity_heading": 0.941
+  },
+  {
+   "number": "8.3",
+   "heading_fa": "مواجهه با مخاطره هومص",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 30,
+   "printed_page": 18,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "8.4",
+   "heading_fa": "ارزیابی تأثیر سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 30,
+   "printed_page": 18,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "9",
+   "heading_fa": "ارزشیابی عملکرد",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 30,
+   "printed_page": 18,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "9.1",
+   "heading_fa": "پایش، اندازه‌گیری، تحلیل و ارزشیابی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 30,
+   "printed_page": 18,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "9.2",
+   "heading_fa": "ممیزی داخلی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 31,
+   "printed_page": 19,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "9.2.1",
+   "heading_fa": "کلیات",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 31,
+   "printed_page": 19,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "9.2.2",
+   "heading_fa": "برنامه ممیزی داخلی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 31,
+   "printed_page": 19,
+   "ocr_similarity_heading": 0.938
+  },
+  {
+   "number": "9.3",
+   "heading_fa": "بازنگری مدیریت",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 32,
+   "printed_page": 20,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "9.3.1",
+   "heading_fa": "کلیات",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 32,
+   "printed_page": 20,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "9.3.2",
+   "heading_fa": "درون‌دادهای بازنگری مدیریت",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 32,
+   "printed_page": 20,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "9.3.3",
+   "heading_fa": "نتایج بازنگری مدیریت",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 32,
+   "printed_page": 20,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "10",
+   "heading_fa": "بهبود",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 32,
+   "printed_page": 20,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "10.1",
+   "heading_fa": "بهبود مداوم",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 32,
+   "printed_page": 20,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "10.2",
+   "heading_fa": "عدم انطباق و اقدام اصلاحی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 32,
+   "printed_page": 20,
+   "ocr_similarity_heading": 0.952
+  },
+  {
+   "number": "A",
+   "heading_fa": "پیوست «الف» (الزامی) اهداف واپایشی مرجع و واپایش‌ها",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 34,
+   "printed_page": 22,
+   "annex_label_fa": "الف",
+   "annex_status_printed": "الزامی",
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "A.1",
+   "heading_fa": "کلیات",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 34,
+   "printed_page": 22,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "Table A.1",
+   "heading_fa": "جدول الف-۱ اهداف واپایشی و واپایش‌ها",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 34,
+   "printed_page": 22,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B",
+   "heading_fa": "پیوست «ب» (الزامی) راهنمای اجرای واپایش‌های هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 39,
+   "printed_page": 27,
+   "annex_label_fa": "ب",
+   "annex_status_printed": "الزامی",
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.1",
+   "heading_fa": "کلیات",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 39,
+   "printed_page": 27,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.2",
+   "heading_fa": "خط‌مشی‌های مرتبط با هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 39,
+   "printed_page": 27,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.2.1",
+   "heading_fa": "هدف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 39,
+   "printed_page": 27,
+   "ocr_similarity_heading": null
+  },
+  {
+   "number": "B.2.2",
+   "heading_fa": "خط‌مشی هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 39,
+   "printed_page": 27,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.2.3",
+   "heading_fa": "همسویی با خط‌مشی‌های سازمانی دیگر",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 40,
+   "printed_page": 28,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.2.4",
+   "heading_fa": "بازنگری خط‌مشی هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 40,
+   "printed_page": 28,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.3",
+   "heading_fa": "سازمان‌دهی داخلی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 41,
+   "printed_page": 29,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.3.1",
+   "heading_fa": "هدف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 41,
+   "printed_page": 29,
+   "ocr_similarity_heading": null
+  },
+  {
+   "number": "B.3.2",
+   "heading_fa": "نقش‌ها و مسئولیت‌های هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 41,
+   "printed_page": 29,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.3.3",
+   "heading_fa": "گزارش نگرانی‌ها",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 42,
+   "printed_page": 30,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.4",
+   "heading_fa": "منابع سامانه‌های هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 43,
+   "printed_page": 31,
+   "ocr_similarity_heading": 0.909
+  },
+  {
+   "number": "B.4.1",
+   "heading_fa": "هدف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 43,
+   "printed_page": 31,
+   "ocr_similarity_heading": null
+  },
+  {
+   "number": "B.4.2",
+   "heading_fa": "مستندسازی منابع",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 43,
+   "printed_page": 31,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.4.3",
+   "heading_fa": "منابع داده‌ای",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 43,
+   "printed_page": 31,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.4.4",
+   "heading_fa": "منابع ابزاری",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 44,
+   "printed_page": 32,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.4.5",
+   "heading_fa": "منابع سامانه‌ای و رایانشی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 45,
+   "printed_page": 33,
+   "ocr_similarity_heading": 0.952
+  },
+  {
+   "number": "B.4.6",
+   "heading_fa": "منابع انسانی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 45,
+   "printed_page": 33,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.5",
+   "heading_fa": "ارزیابی تأثیرات سامانه‌های هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 46,
+   "printed_page": 34,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.5.1",
+   "heading_fa": "هدف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 46,
+   "printed_page": 34,
+   "ocr_similarity_heading": null
+  },
+  {
+   "number": "B.5.2",
+   "heading_fa": "فرایند ارزیابی تأثیر سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 46,
+   "printed_page": 34,
+   "ocr_similarity_heading": 0.964
+  },
+  {
+   "number": "B.5.3",
+   "heading_fa": "مستندسازی ارزیابی‌های تأثیر سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 48,
+   "printed_page": 36,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.5.4",
+   "heading_fa": "ارزیابی تأثیر سامانه هومص بر افراد یا گروه‌هایی از افراد",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 49,
+   "printed_page": 37,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.5.5",
+   "heading_fa": "ارزیابی تأثیرات اجتماعی سامانه‌های هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 49,
+   "printed_page": 37,
+   "ocr_similarity_heading": 0.941
+  },
+  {
+   "number": "B.6",
+   "heading_fa": "چرخه عمر سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 51,
+   "printed_page": 39,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.6.1",
+   "heading_fa": "راهنمای مدیریت توسعه سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 51,
+   "printed_page": 39,
+   "ocr_similarity_heading": 0.786
+  },
+  {
+   "number": "B.6.1.1",
+   "heading_fa": "هدف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 51,
+   "printed_page": 39,
+   "ocr_similarity_heading": null
+  },
+  {
+   "number": "B.6.1.2",
+   "heading_fa": "اهداف توسعه مسئولانه سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 51,
+   "printed_page": 39,
+   "ocr_similarity_heading": 0.964
+  },
+  {
+   "number": "B.6.1.3",
+   "heading_fa": "فرایندهای طراحی و توسعه مسئولانه سامانه‌های هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 52,
+   "printed_page": 40,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.6.2",
+   "heading_fa": "چرخه عمر سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 52,
+   "printed_page": 40,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.6.2.1",
+   "heading_fa": "هدف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 52,
+   "printed_page": 40,
+   "ocr_similarity_heading": null
+  },
+  {
+   "number": "B.6.2.2",
+   "heading_fa": "الزامات و مشخصات سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 53,
+   "printed_page": 41,
+   "ocr_similarity_heading": 0.958
+  },
+  {
+   "number": "B.6.2.3",
+   "heading_fa": "مستندسازی طراحی و توسعه سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 53,
+   "printed_page": 41,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.6.2.4",
+   "heading_fa": "درستی‌سنجی و اعتبارسنجی سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 54,
+   "printed_page": 42,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.6.2.5",
+   "heading_fa": "به کار اندازی سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 55,
+   "printed_page": 43,
+   "ocr_similarity_heading": 0.952
+  },
+  {
+   "number": "B.6.2.6",
+   "heading_fa": "عملیات و پایش سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 56,
+   "printed_page": 44,
+   "ocr_similarity_heading": 0.857
+  },
+  {
+   "number": "B.6.2.7",
+   "heading_fa": "مستندسازی فنّی سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 58,
+   "printed_page": 46,
+   "ocr_similarity_heading": 0.909
+  },
+  {
+   "number": "B.6.2.8",
+   "heading_fa": "ثبت سوابق رویدادهای سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 60,
+   "printed_page": 48,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.7",
+   "heading_fa": "داده‌های سامانه‌های هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 60,
+   "printed_page": 48,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.7.1",
+   "heading_fa": "هدف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 61,
+   "printed_page": 49,
+   "ocr_similarity_heading": null
+  },
+  {
+   "number": "B.7.2",
+   "heading_fa": "داده‌های توسعه و ارتقای سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 61,
+   "printed_page": 49,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.7.3",
+   "heading_fa": "اکتساب داده",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 61,
+   "printed_page": 49,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.7.4",
+   "heading_fa": "کیفیت داده‌های سامانه‌های هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 62,
+   "printed_page": 50,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.7.5",
+   "heading_fa": "منشأ داده‌ها",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 63,
+   "printed_page": 51,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.7.6",
+   "heading_fa": "آماده‌سازی داده‌ها",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 63,
+   "printed_page": 51,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.8",
+   "heading_fa": "اطلاعات برای طرف‌های ذی‌نفع",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 64,
+   "printed_page": 52,
+   "ocr_similarity_heading": 0.818
+  },
+  {
+   "number": "B.8.1",
+   "heading_fa": "هدف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 64,
+   "printed_page": 52,
+   "ocr_similarity_heading": null
+  },
+  {
+   "number": "B.8.2",
+   "heading_fa": "مستندات و اطلاعات سامانه برای کاربران",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 64,
+   "printed_page": 52,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.8.3",
+   "heading_fa": "گزارش‌دهی برون‌سازمانی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 65,
+   "printed_page": 53,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.8.4",
+   "heading_fa": "ابلاغ حوادث",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 66,
+   "printed_page": 54,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.8.5",
+   "heading_fa": "اطلاعات برای طرف‌های ذی‌نفع",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 66,
+   "printed_page": 54,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.9",
+   "heading_fa": "استفاده از سامانه‌های هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 67,
+   "printed_page": 55,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.9.1",
+   "heading_fa": "هدف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 67,
+   "printed_page": 55,
+   "ocr_similarity_heading": null
+  },
+  {
+   "number": "B.9.2",
+   "heading_fa": "فرایندهای استفاده مسئولانه از سامانه‌های هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 67,
+   "printed_page": 55,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.9.3",
+   "heading_fa": "اهداف استفاده مسئولانه از سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 68,
+   "printed_page": 56,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.9.4",
+   "heading_fa": "استفاده موردنظر سامانه هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 69,
+   "printed_page": 57,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.10",
+   "heading_fa": "ارتباط با طرف‌های سوم و مشتریان",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 70,
+   "printed_page": 58,
+   "ocr_similarity_heading": 0.96
+  },
+  {
+   "number": "B.10.1",
+   "heading_fa": "هدف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 70,
+   "printed_page": 58,
+   "ocr_similarity_heading": null
+  },
+  {
+   "number": "B.10.2",
+   "heading_fa": "تخصیص مسئولیت‌ها",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 70,
+   "printed_page": 58,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.10.3",
+   "heading_fa": "تأمین‌کنندگان",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 71,
+   "printed_page": 59,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "B.10.4",
+   "heading_fa": "مشتریان",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 71,
+   "printed_page": 59,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C",
+   "heading_fa": "پیوست «پ» (آگاهی‌دهنده) اهداف سازمانی و منابع مخاطره احتمالی مرتبط با هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 73,
+   "printed_page": 61,
+   "annex_label_fa": "پ",
+   "annex_status_printed": "آگاهی‌دهنده",
+   "ocr_similarity_heading": 0.976
+  },
+  {
+   "number": "C.1",
+   "heading_fa": "کلیات",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 73,
+   "printed_page": 61,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.2",
+   "heading_fa": "اهداف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 73,
+   "printed_page": 61,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.2.1",
+   "heading_fa": "پاسخگویی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 73,
+   "printed_page": 61,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.2.2",
+   "heading_fa": "تخصص در هومص",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 73,
+   "printed_page": 61,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.2.3",
+   "heading_fa": "در دسترس بودن و کیفیت دادهٔ آموزشی و آزمایشی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 73,
+   "printed_page": 61,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.2.4",
+   "heading_fa": "تأثیر زیست‌محیطی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 73,
+   "printed_page": 61,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.2.5",
+   "heading_fa": "انصاف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 73,
+   "printed_page": 61,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.2.6",
+   "heading_fa": "قابلیت نگهداری",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 73,
+   "printed_page": 61,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.2.7",
+   "heading_fa": "حریم خصوصی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 74,
+   "printed_page": 62,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.2.8",
+   "heading_fa": "استواری",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 74,
+   "printed_page": 62,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.2.9",
+   "heading_fa": "ایمنی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 74,
+   "printed_page": 62,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.2.10",
+   "heading_fa": "امنیت",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 74,
+   "printed_page": 62,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.2.11",
+   "heading_fa": "شفافیت و توضیح‌پذیری",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 74,
+   "printed_page": 62,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.3",
+   "heading_fa": "منابع مخاطره",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 74,
+   "printed_page": 62,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.3.1",
+   "heading_fa": "پیچیدگی محیط",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 74,
+   "printed_page": 62,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.3.2",
+   "heading_fa": "عدم شفافیت و توضیح‌پذیری",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 74,
+   "printed_page": 62,
+   "ocr_similarity_heading": 0.919
+  },
+  {
+   "number": "C.3.3",
+   "heading_fa": "سطح خودکارسازی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 74,
+   "printed_page": 62,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.3.4",
+   "heading_fa": "منابع مخاطره مرتبط با یادگیری ماشین",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 74,
+   "printed_page": 62,
+   "ocr_similarity_heading": 0.967
+  },
+  {
+   "number": "C.3.5",
+   "heading_fa": "مسائل سخت‌افزاری سامانه",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 75,
+   "printed_page": 63,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.3.6",
+   "heading_fa": "مسائل مربوط به چرخه عمر سامانه",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 75,
+   "printed_page": 63,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "C.3.7",
+   "heading_fa": "آمادگی درزمینهٔ فنّاوری",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 75,
+   "printed_page": 63,
+   "ocr_similarity_heading": 0.947
+  },
+  {
+   "number": "D",
+   "heading_fa": "پیوست «ت» (آگاهی‌دهنده) استفاده از نظام مدیریت هومص در حوزه‌ها یا بخش‌های مختلف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 76,
+   "printed_page": 64,
+   "annex_label_fa": "ت",
+   "annex_status_printed": "آگاهی‌دهنده",
+   "ocr_similarity_heading": 0.864
+  },
+  {
+   "number": "D.1",
+   "heading_fa": "کلیات",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 76,
+   "printed_page": 64,
+   "ocr_similarity_heading": 1.0
+  },
+  {
+   "number": "D.2",
+   "heading_fa": "یکپارچه‌سازی نظام مدیریت هومص با سایر استانداردهای نظام‌های مدیریت",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 77,
+   "printed_page": 65,
+   "ocr_similarity_heading": 0.929
+  },
+  {
+   "number": "bibliography",
+   "heading_fa": "کتابنامه",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 79,
+   "printed_page": 67,
+   "ocr_similarity_heading": 1.0
+  }
+ ]
+}

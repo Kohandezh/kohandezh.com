@@ -1,0 +1,53 @@
+استاندارد ملی ایران شمارة ۲۳۶۸۲ (چاپ اول): ۱۴۰۳
+
+[۱] استاندارد ملی ایران شمارة ۱۳۲۴۶: سال ۱۳۸۹ مدیریت ریسک- واژگان
+
+[2] ISO/IEC 23894, Information technology — Artificial intelligence — Risk management
+‏یادآوری - استاندارد ملی ایران شمارة ۲۳۷۳۳ سال ۰.۱۴۰۳ فناوری اطلاعات - هوش مصنوعی - راهنمای مدیریت مخاطره‎
+‏تدوین شده است.‎ ISO/IEC 23894:2023 ‏(ریسک) با استفاده از‎
+
+[3] ISO/IEC TR 24027, Information technology — Artificial intelligence (AI) — Bias in AI
+systems and AI aided decision making
+
+[4] ISO/IEC TR 24028, Information technology — Artificial intelligence — Overview of
+trustworthiness in artificial intelligence
+
+[5] ISO/IEC TR 24029-1, Artificial Intelligence (AI) — Assessment of the robustness of
+neural networks — Part 1: Overview
+
+[6] ISO/IEC TR 24030, Information technology — Artificial intelligence (AI) — Use cases
+
+[7] ISO/IEC TR 24368, Information technology — Artificial intelligence — Overview of
+ethical and societal concerns
+
+[8] ISO 26000:2010, Guidance on social responsibility
+‏رهنمودها‎ Sing y ‏شمارة ۱۳۲۴۵: سال ۰۱۳۹۸ مدیریت‎ Gel ‏استاندارد ملی‎ [4]
+
+[10] ISO 31050, Guidance for managing emerging risks to enhance resilience
+‏سال ۰۱۴۰۲ حکمرانی سازمانی - راهنما‎ :۳۷۰۰۰ gpl ‏استاندارد ملی ایران‎ [11]
+‏استاندارد ملی ایران ایزو ۳۷۳۰۱: سال ۰۱۴۰۱ سیستم های مدیریت تطابق- الزامات همراه با راهنمای‎ ]۱۲[
+‏استفاده‎
+
+[13] ISO/IEC TR 38502:2017, Information technology — Governance of IT — Framework
+and model
+
+یادآوری - استاندارد ملی ایران شماره ۲۰۱۲۵: سال ۰.۱۳۹۴ فناوری اطلاعات - حاکمیت فناوری اطلاعات - چارچوب و مدل, با استفاده از
+
+استاندارد ‎ISO/IEC TR38502:2014‏ تدوین شده است.
+
+[۱۴] استاندارد ملی ایران شمارة ۱۵۸۱۶-۱: سال ۰۱۳۹۶ فناوری اطلاعات- حکمرانی فناوری اطلاعات -
+حکمرانی داده ها - قسمت !: کاربرد استاندارد 38500 ‎ISO/IEC‏ در حکمرانی داده ها
+
+[15] ISO/IEC TR 38505-2, Information technology — Governance of IT — Governance of
+data — Part 2: Implications of ISO/IEC 38505-1 for data management
+
+[16] ISO/IEC TS 38505-3, Information technology — Governance of IT — Governance of
+data — Part 3: Data Classification
+
+یادآوری - استاندارد ملی ایران ۱۵۸۱۶-۳: سال ۰۱۴۰۳ فناوری اطلاعات — حکمرانی داده - راهنمای طبقه‌بندی داده ها با
+استفاده از 38505-3:2021 ‎ISO/IEC TS‏ تدوین شده است.
+
+[17] ISO/IEC 38506, Information technology — Governance of IT — Application of
+ISO/IEC 38500 to the governance of IT enabled investments
+
+۴۲

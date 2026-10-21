@@ -1,0 +1,42 @@
+{
+ "chapter": "P01/C56",
+ "sections": [
+  5
+ ],
+ "section_shas": {
+  "5": "5ab16a0641fc3a575ee08cd358f6a198ad422e704660f34319d815a8260a0997"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 167.32334089279175,
+ "result": {
+  "sections": [
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "اصطلاح‌های هم‌نام میان استانداردها («خوشه»، «داده‌شارها») با دو معنی جدا ثبت شود",
+      "explanation": "The cited evidence does not establish that 'خوشه' or 'داده‌شارها' are cross-standard homonyms with conflicting definitions. S23683-018 mentions «خوشه» only as a parenthetical example within the horizontal-scaling note — it is not a defined term in the supplied evidence, and no other standard's definition of that term is cited. T23683-3.1.34 defines داده‌شار once in INSO 23683 with no cross-standard comparison. The section's assertion that these two terms carry «دو معنی جدا» across different standards is unsupported.",
+      "suggested_fix": "Remove the two specific examples or confine the claim to what the evidence actually shows: S23683-018 notes that «مقیاس‌افزایی» appears as an alias for both horizontal and vertical scaling within INSO 23683 itself, creating intra-standard ambiguity. Do not claim cross-standard homonymity for «خوشه» or «داده‌شارها» without cited evidence."
+     },
+     {
+      "type": "modality_drift",
+      "quote": "فراداده‌اش توصیف، مالکیت، مسیر و حق دسترسی و فراریت (۳.۱.۲۴) را شامل شود",
+      "explanation": "T23683-3.1.24 prints «احتمالاً شامل توصیف داده‌های آنها و داده‌های مربوط به مالکیت داده، مسیرهای دسترسی، حقوق دسترسی و فراریت داده» — the «احتمالاً» marks these as optional/possible components. By citing clause 3.1.24 and writing «را شامل شود» (shall/should include) without the «احتمالاً» qualifier, the section misrepresents an optional list as a definitive requirement attributed to the standard. Even though the item is in the compiler's checklist, the clause citation implies the standard mandates this list.",
+      "suggested_fix": "Reflect the standard's permissive framing: «فراداده‌اش می‌تواند شامل توصیف، مالکیت، مسیر و حق دسترسی و فراریت باشد (بند ۳.۱.۲۴ می‌گوید «احتمالاً شامل»)» — or add a parenthetical note that the standard uses «احتمالاً» for this list."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "این استاندارد واژگان، دربارهٔ هوش مصنوعی چیزی نمی‌گوید",
+      "explanation": "This is a sweeping negative claim about the full contents of INSO 23683. None of the cited evidence items confirm that the standard contains no mention of AI; the evidence covers only selected clauses from the vocabulary and outline sections. A negative claim of this kind about unstated scope requires explicit evidence (e.g., a scope clause excluding AI), which is not present.",
+      "suggested_fix": "Replace with a scope-positive statement: «این استاندارد واژگان کلان‌داده را پوشش می‌دهد و هم‌ترازی با آن، الزامات حکمرانی هوش مصنوعی را برآورده نمی‌کند» — avoiding an assertion about what the standard does not say."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:04:50-0400"
+}

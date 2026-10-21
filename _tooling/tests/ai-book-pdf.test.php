@@ -62,7 +62,9 @@ if ( 'READY' !== $pdf->status() ) {
 	fail( 'pdf status must be READY for the canonical release' );
 }
 $meta = $pdf->meta();
-if ( null === $meta || '2026E1' !== $meta['edition'] || 1292 !== $meta['pages'] || 64 !== strlen( $meta['sha256'] ) || 64 !== strlen( $meta['merkle_root'] ) ) {
+$edition_id     = $repository->summary()['edition_id'];
+$expected_pages = '2026E1' === $edition_id ? 1292 : ( json_decode( (string) file_get_contents( $root . '/provenance/release-manifest.json' ), true )['artifacts']['06_book_fa.pdf']['pages'] ?? 0 );
+if ( null === $meta || $edition_id !== $meta['edition'] || $expected_pages <= 0 || $expected_pages !== $meta['pages'] || 64 !== strlen( $meta['sha256'] ) || 64 !== strlen( $meta['merkle_root'] ) ) {
 	fail( 'pdf meta must carry the bounded edition facts' );
 }
 $manifest = json_decode( (string) file_get_contents( $root . '/provenance/release-manifest.json' ), true );
@@ -78,7 +80,7 @@ if ( 'READY' !== $plan['status'] || $meta['path'] !== $plan['path'] || $meta['by
 	fail( 'stream plan must reference the validated file' );
 }
 $headers = implode( "\n", $plan['headers'] );
-if ( false === strpos( $headers, 'Content-Type: application/pdf' ) || false === strpos( $headers, 'noindex' ) || false === strpos( $headers, 'Content-Disposition: inline; filename="kohandezh-ai-book-2026E1-fa.pdf"' ) || false !== strpos( $headers, $root ) ) {
+if ( false === strpos( $headers, 'Content-Type: application/pdf' ) || false === strpos( $headers, 'noindex' ) || false === strpos( $headers, 'Content-Disposition: inline; filename="kohandezh-ai-book-' . $edition_id . '-fa.pdf"' ) || false !== strpos( $headers, $root ) ) {
 	fail( 'stream headers must be typed, noindexed, named and free of local paths' );
 }
 if ( false === strpos( $headers, 'ETag: "' . $meta['sha256'] . '"' ) || false === strpos( $headers, 'Cache-Control: private, max-age=0, must-revalidate' ) ) {
@@ -107,7 +109,7 @@ $tmp_dir = sys_get_temp_dir() . '/kbk-pdf-test-' . getmypid();
 $manifest['artifacts']['06_book_fa.pdf']['sha256'] = str_repeat( 'a', 63 );
 file_put_contents( $tmp_dir . '/provenance/release-manifest.json', (string) wp_json_encode( $manifest ) );
 try {
-	KBK_AI_Book_Artifacts::validate_release_manifest( json_decode( (string) file_get_contents( $tmp_dir . '/provenance/release-manifest.json' ), true ), '2026E1' );
+	KBK_AI_Book_Artifacts::validate_release_manifest( json_decode( (string) file_get_contents( $tmp_dir . '/provenance/release-manifest.json' ), true ), $edition_id );
 	fail( 'short sha256 must be rejected' );
 } catch ( UnexpectedValueException $e ) {
 }
@@ -115,13 +117,13 @@ $manifest['artifacts']['06_book_fa.pdf']['sha256'] = str_repeat( 'a', 64 );
 $manifest['artifacts']['06_book_fa.pdf']['bytes']  = -1;
 file_put_contents( $tmp_dir . '/provenance/release-manifest.json', (string) wp_json_encode( $manifest ) );
 try {
-	KBK_AI_Book_Artifacts::validate_release_manifest( json_decode( (string) file_get_contents( $tmp_dir . '/provenance/release-manifest.json' ), true ), '2026E1' );
+	KBK_AI_Book_Artifacts::validate_release_manifest( json_decode( (string) file_get_contents( $tmp_dir . '/provenance/release-manifest.json' ), true ), $edition_id );
 	fail( 'negative bytes must be rejected' );
 } catch ( UnexpectedValueException $e ) {
 }
 unset( $manifest['artifacts']['06_book_fa.pdf'] );
 try {
-	KBK_AI_Book_Artifacts::validate_release_manifest( $manifest, '2026E1' );
+	KBK_AI_Book_Artifacts::validate_release_manifest( $manifest, $edition_id );
 	fail( 'manifest without the pdf artifact must be rejected' );
 } catch ( UnexpectedValueException $e ) {
 }

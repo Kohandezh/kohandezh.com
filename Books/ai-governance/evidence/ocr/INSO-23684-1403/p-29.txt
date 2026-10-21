@@ -1,0 +1,55 @@
+استاندارد ملی ایران شمارة ۲۳۶۸۴ (چاپ اول): سال ۱۴۰۳
+
+]1[ ISO/IEC 25000:2014, Systems and software engineering - Systems and software
+Quality Requirements and Evaluation (SQuaRE) - Guide to SQuaRE
+
+یادآوری - استاندارد ملی ‎gpl Gly! lad Gly!‏ آی‌ای‌سی شماره ۲۵۰۰۰: سال ۱۳۸۹ مهندسی نرمافزار- نیازمندی‌های
+
+کیفی محصول نرم افزاری و ارزشیاب یآن - راهنمایی بر ‎SQuaRE‏ با استفاده از استاندارد 25000:2005 ‎ISO/IEC‏ تدوین
+
+]2[ ۰ ISO/IEC/TR 24028:2020, Information technology - Artificial intelligence - Overview of
+trustworthiness in artificial intelligence
+
+[3] ISO/IEC/TR 29119-11:2020, Software and systems engineering - Software testing - Part
+11:Guidelines on the testing ofAI-based systems
+
+[4] ISO/IEC/TR 24029-1, Artificial Intelligence (AI) - Assessment of the robustness of
+neural networks - Part 1: Over view
+
+[5] ISO/IEC 24029-2, Artificial intelligence (AI) - Assessment of the robustness of neural
+networks - Part 2: Methodology for the use of formal methods
+
+[6] ISO/IEC 25012:2008, Software engineering - Software product Quality Requirements
+and Evaluation (SQuaRE) - Data quality model
+
+[7] ISO/IEC 5259 (series), Information technology - Artificial intelligence - Data quality
+for analytics and machine learning (ML)
+
+[8] ISO/IEC/IEEE 15939, Systems and software engineering — Measurement process
+
+یادآوری - استاندارد ملی ایران شمارة ۱۲۷۵۵: سال ۰۱۳۸۷ مهندسی سامانه‌ها و نرم افزار - فرایند سنجش, با استفاده از
+استاندارد 15939:2007 ‎ISO/IEC‏ تدوین شده است.
+
+[9] ISO/IEC 25040:2011, Systems and software engineering—Systems and software Quality
+Requirements and Evaluation (SQuaRE) —Evaluation Process
+
+یادآوری - استاندارد ملی ایران شمارة ایران ایزو آی‌ای‌سی ۲۵۰۴۰: سال ۰۱۳۹۱ مهندسی سامانه‌ها و نرم افزار- الزامات و
+ارزیابی کیفیت سامانه‌ها و نرم‌افزار ‎GQUARE)‏ - فرایند ارزیابی « با استفاده از استاندارد 25040:2011 150/186 تدوین
+
+شده است.
+
+[10] ISO/IEC Guide 51, Safety aspects - Guidelines for their inclusion in standards
+
+[11] ISOMEC/TS 4213, Information technology - Artificial intelligence - Assessment of
+machine learning classification performance
+
+[12] Preuveneers. D., Tsingenopoulos, I., Joosen, W., 2020, Resource Usage and
+Performance Trade-offs for Machine Learning Models in Smart Environments.Sensors
+(Basel), vol. 20, no. 4, p. 1176, doi: 10.3390/s20041176
+
+[13] Zhang. H., Yu, Y., J Iao, J..Xing, E.P., Ghaoui, L.E.Jorda N, M.I., Theoretically
+Principled Tradeoff between Robustness and Accuracy, 2019. Available from:
+https://arxiv.org/abs/1901.08573v3
+
+[14] ISO/IEC TR 5469, Information Technology - Artificial intelligence - Functional safety
+and AI systems

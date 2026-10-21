@@ -1,0 +1,48 @@
+{
+ "chapter": "P04/C62",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "65138b125ba168cd840a82f03ef668a15fa6e1d7778da506c9f7fcfb4b6fae3f",
+  "5": "28b4ef31021c7dc0a3bc9c36f1a01cc2bc8b941f5b077b974e54137a6b9f8d76"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 372.74304008483887,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "modality_drift",
+      "short_summary": "Items 2–3 of S23684-045 are indicative; section makes them conditional",
+      "summary": "Evidence S23684-045 has three predicate clauses: the first is conditional under «می‌تواند» but the second («دانش ذی‌نفعان … را بهبود می‌بخشد») and third («به توضیح‌پذیری … کمک می‌کند») are indicative. The section subordinates all three to «می‌تواند», converting items 2 and 3 to subjunctive/conditional («بهبود دهد», «کمک کند»), downgrading a stated fact to a possibility.",
+      "explanation": "S23684-045 tags the item [may] but within the sentence items 2 and 3 are grammatically indicative, meaning the standard presents them as regular consequences, not merely possible ones. The section's paraphrase makes all three items equally conditional under «می‌تواند», which changes the meaning: the standard says transparency factually improves stakeholder knowledge and factually helps explainability, while the section implies these are only possible effects.",
+      "quote": "می‌تواند به کاربران بالقوه در انتخاب سامانهٔ متناسب با الزاماتشان کمک کند، دانش ذی‌نفعان دربارهٔ کاربردپذیری و محدودیت‌ها را بهبود دهد و به توضیح‌پذیری (توصیف‌پذیری) کمک کند.",
+      "suggested_fix": "Preserve the indicative forms for items 2 and 3 as printed in S23684-045: «می‌تواند به کاربران بالقوه در انتخاب سامانهٔ متناسب با الزاماتشان کمک کند؛ دانش ذی‌نفعان دربارهٔ کاربردپذیری و محدودیت‌ها را بهبود می‌بخشد و به توضیح‌پذیری (توصیف‌پذیری) کمک می‌کند.»"
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "short_summary": "مقدمه prints «نیاز است» not «لازم است»",
+      "summary": "The قوت الزام bullet states «لازم است» is printed in the مقدمه, but the sole مقدمه evidence item (S23684-002, tagged [info]) reads «نیاز است» — a different phrase. No supplied evidence shows «لازم است» appearing in the مقدمه.",
+      "explanation": "S23684-002 is the only مقدمه evidence item. It reads: «در خصوص سامانه‌های هوش مصنوعی «نیاز است» که خواص و مشخصه‌های بیشتری از سامانه‌ها مدنظر قرار گیرد». The section conflates «نیاز است» (مقدمه) with «لازم است» (§5.4) by listing both under the same phrase «لازم است».",
+      "quote": "«لازم است» در مقدمه و بند ۵.۴ (ص ۸) در بافت توصیفی چاپ شده",
+      "suggested_fix": "Separate the two occurrences to match the evidence: ««نیاز است» در مقدمه (بافت توصیفی) و «لازم است» در بند ۵.۴ (ص ۸) در بافت توصیفی چاپ شده‌اند و «باید» نیستند.»"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:45:07-0400"
+}

@@ -1,0 +1,37 @@
+{
+ "chapter": "P01/C54",
+ "sections": [
+  3,
+  4
+ ],
+ "section_shas": {
+  "3": "fce2fe9b61035b78bd877c9bccc655e36dec0bffa01e38eea7229b2c25fea5ae",
+  "4": "6c09eb5ed84641152c7f1ffa350bb9c30d169f6f7d99ad837a8ca20fd15448cc"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 289.4007029533386,
+ "result": {
+  "sections": [
+   {
+    "index": 3,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "the supplied evidence lists fairness only as an example objective in Annexes B/C (B.9.3, C.2.5)",
+      "explanation": "The word «only» and the limited citation «(B.9.3, C.2.5)» are contradicted by evidence item S42001-130 (§B.5.4), which is in the same section's evidence list. S42001-130 prints fairness among «زمینه‌های تأثیرپذیری که «باید» به‌عنوان بخشی از ارزیابی در نظر گرفته شود» — a shall-level, non-exhaustive list of areas to address in impact assessments. Characterising all evidence as «example objective» misrepresents the SHALL modality used in §B.5.4, and omitting B.5.4 from the citation creates a misleading picture of what the supplied evidence actually shows.",
+      "suggested_fix": "Replace the phrase with something like: «the supplied evidence shows fairness as a shall-level area to consider in impact assessments (§B.5.4) and as an example objective in Annexes B/C (B.9.3, C.2.5); it was not identified as a standalone Annex A control objective in the supplied evidence.» This preserves the accurate core correction (fairness ≠ Annex A control) while accurately reflecting the modality difference between §B.5.4 and §§B.9.3/C.2.5."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T03:10:32-0400"
+}

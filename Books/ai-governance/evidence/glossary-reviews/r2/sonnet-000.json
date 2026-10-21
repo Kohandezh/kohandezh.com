@@ -1,0 +1,127 @@
+{
+ "keys": [
+  "artificial intelligence",
+  "risk",
+  "privacy",
+  "risk tolerance",
+  "risk management",
+  "measure",
+  "residual risk",
+  "monitoring",
+  "risk appetite",
+  "governance",
+  "compliance",
+  "stakeholder"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 290.4489631652832,
+ "result": {
+  "verdicts": [
+   {
+    "key": "artificial intelligence",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.95
+   },
+   {
+    "key": "risk",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "alias_conflates_concepts",
+      "explanation": "«خطرها» appears in alternatives_fa while «خطر» (its singular root) is in rejected_fa on the stated ground that «خطر» conflates risk with hazard/danger. The plural carries the same conceptual conflation; listing the plural as a searchable alias while rejecting the singular is logically inconsistent and undermines the rejection.",
+      "suggested_fix": "Remove «خطرها» from alternatives_fa or move it to rejected_fa alongside «خطر», adding a note that both forms were encountered in translated texts but are rejected for conflating مخاطره with خطر (hazard/danger)."
+     }
+    ],
+    "confidence": 0.88
+   },
+   {
+    "key": "privacy",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The proposed preferred_fa is «حریم خصوصی» but no supplied evidence clause formally prints this as the INSO term for privacy. The single printed-evidence entry (INSO 23728 clause 4.1) is an informative note, not a term-definition clause, and its text consistently uses «حریم اطلاعاتی» — not «حریم خصوصی» — for the privacy concept. Rule 1 requires the preferred term to equal what the cited standard prints; the evidence as supplied supports «حریم اطلاعاتی».",
+      "suggested_fix": "Either (a) add a formal term-definition clause (term_fa_printed / term_en_printed structure) from an INSO standard that formally prints «حریم خصوصی» for privacy, or (b) change preferred_fa to «حریم اطلاعاتی» to match the supplied evidence and move «حریم خصوصی» to alternatives_fa as the common/colloquial form."
+     }
+    ],
+    "confidence": 0.91
+   },
+   {
+    "key": "risk tolerance",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.93
+   },
+   {
+    "key": "risk management",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.94
+   },
+   {
+    "key": "measure",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "orthography",
+      "explanation": "In rejected_fa the form «اندازهگیری» is missing the ZWNJ required between «اندازه» and «گیری». The correct orthography — used in the editor_note of this same entry — is «اندازه‌گیری».",
+      "suggested_fix": "Replace «اندازهگیری» with «اندازه‌گیری» in rejected_fa."
+     }
+    ],
+    "confidence": 0.93
+   },
+   {
+    "key": "residual risk",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "orthography",
+      "explanation": "In alternatives_fa the form «ریسک باقیمانده» is missing the ZWNJ between «باقی» and «مانده». The printed evidence reads «مخاطره‌های باقی‌مانده» (with ZWNJ) and the preferred_fa «مخاطرهٔ باقی‌مانده» also uses it correctly.",
+      "suggested_fix": "Replace «ریسک باقیمانده» with «ریسک باقی‌مانده» in alternatives_fa."
+     }
+    ],
+    "confidence": 0.94
+   },
+   {
+    "key": "monitoring",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "alias_conflates_concepts",
+      "explanation": "«رهگیری» (tracking / tracing a moving entity) is semantically distinct from «پایش» (monitoring = determining the status of a system or process over time, per the printed INSO 42001 clause 3.20 definition). No supplied INSO evidence shows «رهگیری» used as a synonym for monitoring. Its inclusion as an alias risks conflating monitoring with tracking, and the editor_note does not explain or justify its addition.",
+      "suggested_fix": "Remove «رهگیری» from alternatives_fa unless a printed INSO source is supplied showing it used interchangeably with «پایش» / monitoring."
+     }
+    ],
+    "confidence": 0.83
+   },
+   {
+    "key": "risk appetite",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.95
+   },
+   {
+    "key": "governance",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.94
+   },
+   {
+    "key": "compliance",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.95
+   },
+   {
+    "key": "stakeholder",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.94
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-17T23:54:25-0400"
+}

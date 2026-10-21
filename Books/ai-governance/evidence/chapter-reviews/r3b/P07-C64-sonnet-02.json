@@ -1,0 +1,68 @@
+{
+ "chapter": "P07/C64",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "ff07658176301fdac4d5476e4e29d90ff5ee38446b32c656d4ea357c5f6ec274",
+  "3": "fd4719a9da0360321000059811d1d3cd166f877f98c72a6411492cf43d2face4"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 878.6541938781738,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "بند ۴، ص ۶ تا ۱۰؛ بند اطلاعاتی",
+      "explanation": "No evidence item labels clause 4 as 'informative.' The evidence shows [should]-level statements within clause 4 (S15816-3-006, S15816-3-009, S15816-3-011, S15816-3-021). Calling the entire clause 'بند اطلاعاتی' is unsupported and misleads readers about the normative weight of those recommendations.",
+      "suggested_fix": "Remove '؛ بند اطلاعاتی' unless a supplied evidence item explicitly labels clause 4 as informative. If the clause does carry a mixed status, describe it accurately: e.g. 'بند ۴ دربردارندهٔ گزاره‌های اطلاعاتی و توصیه‌ای است.'"
+     },
+     {
+      "type": "terminology",
+      "quote": "از راه ممیزی و ارزیابی مستقل نظارت کنند",
+      "explanation": "Evidence S15816-3-032 (clause 5.2.7) prints 'از طریق الزام به فرایندهایی مانند حسابرسی و ارزیابی مستقل'. The summary replaces 'حسابرسی' with 'ممیزی' without noting the standard's printed term. When describing what the standard says (layer a), the substitution must be flagged so readers know the standard's own vocabulary.",
+      "suggested_fix": "Write 'از راه حسابرسی (در این استاندارد) / ممیزی (اصطلاح این کتاب) و ارزیابی مستقل نظارت کنند' or add a footnote noting 'در متن INSO 15816-3 واژهٔ «حسابرسی» به‌کار رفته است.'"
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "سرپرست داده | کارمند دارای مسئولیت اداری یا عملیاتی دربارهٔ داده‌های سازمان؛ در چاپ «Data Custodian»",
+      "explanation": "Evidence items S15816-3-037 and S15816-3-038 list and describe roles entirely in Persian with no English term printed alongside 'سرپرست داده'. No supplied evidence item confirms 'Data Custodian' as the printed English equivalent for this role.",
+      "suggested_fix": "Remove 'در چاپ «Data Custodian»' unless a page-image evidence item confirms this English term is printed in the standard for سرپرست داده. The table header already says 'نقش (چاپی)' so only confirmed printed names should appear."
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "ممیزی، واپایش‌ها و انطباق",
+      "explanation": "Outline evidence O15816-3-084 gives the printed title of clause 7.6 as 'حسابرسی، واپایش‌ها و انطباق'. The section renames the principle 'ممیزی، واپایش‌ها و انطباق' without noting the actual printed heading. When the principle's own title is quoted or referenced in layer (a), the printed title must be reproduced or at minimum the substitution flagged parenthetically.",
+      "suggested_fix": "Use the printed title: 'حسابرسی، واپایش‌ها و انطباق (۷.۶)' and add a note such as 'در متن این کتاب «حسابرسی» در این استاندارد معادل «ممیزی» در سایر استانداردهای هوش مصنوعی است.' Do not silently rename the clause."
+     },
+     {
+      "type": "terminology",
+      "quote": "بررسی طبقه‌بندی می‌تواند در ممیزی جاری بیاید",
+      "explanation": "Evidence S15816-3-066 (clause 7.6) prints 'می‌تواند در فرایند جاری بررسی و حسابرسی فناوری اطلاعات یا داده گنجانده شود'. The summary replaces 'حسابرسی' with 'ممیزی' without parenthetical notation. Even though 'ممیزی' is the book's preferred term for non-financial audit, a layer (a) paraphrase of this standard's text should flag the actual printed word.",
+      "suggested_fix": "Write 'بررسی طبقه‌بندی می‌تواند در فرایند حسابرسی (اصطلاح چاپی: ممیزی در اصطلاح این کتاب) جاری فناوری اطلاعات یا داده گنجانده شود.'"
+     },
+     {
+      "type": "other",
+      "quote": "طرح بیش‌ازحد پیچیده احتمالاً اجرا نمی‌شود",
+      "explanation": "Evidence S15816-3-060 says 'اجرای رویکرد بیش از حد پیچیده احتمالاً دشوار است' — the standard says such a plan is likely difficult to implement, not that it 'won't be implemented'. The section's phrasing overstates the claim.",
+      "suggested_fix": "Replace 'احتمالاً اجرا نمی‌شود' with 'احتمالاً اجرای آن دشوار است' to match evidence S15816-3-060."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:14:58-0400"
+}

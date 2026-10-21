@@ -73,9 +73,14 @@ foreach ( array( 'reviewer', 'review_mode', 'rationale', 'rejected_fa' ) as $sec
 }
 
 // 2. Sources: 18 validated documents, bibliography merged, real section counts.
+$first_edition  = '2026E1' === $repository->summary()['edition_id'];
+$raw_sources    = json_decode( (string) file_get_contents( $root . '/manifests/sources.json' ), true );
+$raw_source_map = json_decode( (string) file_get_contents( $root . '/master/source_map.json' ), true );
+$want_sources   = $first_edition ? 18 : count( $raw_sources['documents'] );
+$want_mapped    = $first_edition ? 660 : count( $raw_source_map );
 $sources = $catalog->sources();
-if ( 18 !== count( $sources ) ) {
-	fail( 'sources must expose exactly the 18 audited documents' );
+if ( $want_sources !== count( $sources ) ) {
+	fail( 'sources must expose exactly the audited documents of the manifest' );
 }
 $total_sections = 0;
 $known_keys     = array( 'doc_key', 'title', 'title_fa', 'subtitle_fa', 'subtitle', 'series_identifier', 'organization', 'publication_type', 'publication_status', 'publication_date', 'doi_url', 'pages', 'sha256', 'sections_count' );
@@ -95,8 +100,8 @@ foreach ( $sources as $source ) {
 		$has_ai_100_1 = true;
 	}
 }
-if ( ! $has_ai_100_1 || 660 !== $total_sections ) {
-	fail( 'source section counts must sum to the 660 mapped sections' );
+if ( ! $has_ai_100_1 || $want_mapped !== $total_sections ) {
+	fail( 'source section counts must sum to the mapped sections' );
 }
 
 // 2b. Persian publication titles: optional taxonomy/doc_titles_fa.json.
@@ -143,8 +148,8 @@ foreach ( array( 'taxonomy', 'master', 'provenance', '' ) as $dir ) {
 
 // 3. Templates: 20 cards sorted by ID; detail lookup works, unknown fails closed.
 $templates = $catalog->templates();
-if ( 20 !== count( $templates ) ) {
-	fail( 'catalog must expose all 20 editorial templates' );
+if ( ( $first_edition ? 20 : count( glob( $root . '/templates/TPL-*.json' ) ) ) !== count( $templates ) ) {
+	fail( 'catalog must expose all editorial templates' );
 }
 $previous_id = null;
 foreach ( $templates as $template_card ) {
@@ -171,11 +176,16 @@ if ( null !== $catalog->template( 'TPL-NOPE-99' ) ) {
 
 // 4. Entity types + pagination: totals match the corpus; pages clamp.
 $types = $catalog->entity_types();
-if ( ( $types['Concept'] ?? 0 ) !== 696 ) {
-	fail( 'entity type counts must match the corpus (Concept=696)' );
+$raw_entities = array();
+foreach ( file( $root . '/knowledge/entities.jsonl', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES ) as $raw_line ) {
+	$raw_entity   = json_decode( $raw_line, true );
+	$raw_entities[ $raw_entity['type'] ?? '' ] = ( $raw_entities[ $raw_entity['type'] ?? '' ] ?? 0 ) + 1;
+}
+if ( ( $types['Concept'] ?? 0 ) !== ( $first_edition ? 696 : ( $raw_entities['Concept'] ?? -1 ) ) ) {
+	fail( 'entity type counts must match the corpus' );
 }
 $entities = $catalog->entities();
-if ( 3671 !== $entities['total'] || 60 !== count( $entities['items'] ) || $entities['page'] !== 1 ) {
+if ( ( $first_edition ? 3671 : array_sum( $raw_entities ) ) !== $entities['total'] || 60 !== count( $entities['items'] ) || $entities['page'] !== 1 ) {
 	fail( 'unfiltered entity list must paginate the full corpus' );
 }
 if ( 60 !== KBK_AI_Book_Catalog::ENTITIES_PER_PAGE ) {
@@ -186,7 +196,7 @@ if ( $clamped['page'] !== $clamped['pages'] || array() === $clamped['items'] ) {
 	fail( 'out-of-range page must clamp to the last honest page' );
 }
 $by_type = $catalog->entities( 'Concept' );
-if ( 696 !== $by_type['total'] ) {
+if ( ( $first_edition ? 696 : (int) ( $raw_entities['Concept'] ?? -1 ) ) !== $by_type['total'] ) {
 	fail( 'entity type filter must return the Concept subset' );
 }
 $empty_type = $catalog->entities( 'NoSuchType' );

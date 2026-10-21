@@ -1,0 +1,62 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "473a0c92613a66eeb9153c0f8fb96adf87e63d9f4ba0eafbf5a97f4988ef2dfb",
+  "5": "034678c8eba382768a8b02ba8b431d4a6b8d6e8f39ec3aecd1c439adace9b60e"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 825.7814168930054,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "modality_drift",
+      "explanation": "Evidence S42001-067 is an [info] note carrying «می‌تواند» — the organisation may require domain-specific impact assessments as part of overall risk management. The section renders this as a bare subjunctive «بگنجاند» with no modal marker, upgrading a [may] permission to something that reads as a recommendation or obligation.",
+      "quote": "طبق نکته، ارزیابی‌های ویژهٔ ایمنی، حریم خصوصی یا امنیت را در مدیریت مخاطره بگنجاند.",
+      "suggested_fix": "Restore the modal: «طبق نکته، سازمان می‌تواند الزام ایجاد کند که ارزیابی‌های تأثیر ویژهٔ رشته‌های خاص (ایمنی، حریم خصوصی یا امنیت) به‌عنوان بخشی از فعالیت‌های کلی مدیریت مخاطره انجام شود.»"
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "S42001-088 is a [shall] item requiring the organisation both to review the consequences of unintended changes AND to take action to reduce adverse effects. The section retains the review but drops the resulting-action requirement, leaving a truncated picture of a normative obligation.",
+      "quote": "تغییرات طرح‌ریزی‌شده را واپایش و پیامد تغییرات ناخواسته را بازنگری کند",
+      "suggested_fix": "Complete the requirement: «تغییرات طرح‌ریزی‌شده را واپایش کند، تبعات تغییرات ناخواسته را بازنگری و برای کاهش تأثیرات نامطلوب اقدام کند»"
+     },
+     {
+      "type": "unsupported_claim",
+      "explanation": "S42001-090 is a [shall] item that additionally requires (a) re-validating ineffective options and updating the treatment plan, and (b) retaining documented information on results. The section names only 'reviewing ineffective options', silently dropping two shall-level requirements.",
+      "quote": "بازنگری گزینه‌های ناکارآمد",
+      "suggested_fix": "Expand to capture all three shall components: «بازنگری گزینه‌های ناکارآمد، مجدداً اعتبارسنجی و روزآمدسازی طرح مواجهه، و حفظ اطلاعات مدون نتایج»"
+     },
+     {
+      "type": "unsupported_claim",
+      "explanation": "Evidence S42001-074 limits the competence requirement to «اشخاصی که تحت واپایش سازمان کارهایی انجام می‌دهند». The table row drops this critical scope qualifier, widening the apparent obligation to all persons whose work affects AI performance regardless of whether they are under the organisation's control.",
+      "quote": "تعیین شایستگی کسانی که کارشان بر عملکرد هوش مصنوعی اثر دارد",
+      "suggested_fix": "Add the qualifier: «تعیین شایستگی اشخاصی که تحت واپایش سازمان کارهایی انجام می‌دهند که بر عملکرد هومص تأثیر می‌گذارد»"
+     },
+     {
+      "type": "number_or_page_error",
+      "explanation": "Evidence T42001-3.10 places the definition of «اطلاعات مدون» at printed pages 3–4 (pdf 15–16). The section cites only page 3.",
+      "quote": "(بند ۳.۱۰، ص ۳)",
+      "suggested_fix": "Change to «(بند ۳.۱۰، ص ۳–۴)»"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:24:13-0400"
+}

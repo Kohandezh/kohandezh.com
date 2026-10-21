@@ -1,0 +1,27 @@
+استاندارد ملی ایران شمارة ۲۳۷۲۸ (چاپ اول): ۱۴۰۳
+
+یادآوری - استاندارد ملی ایران شماره ۱۱۳۱۲: سال ۱۴۰۰ سامانه ها و مهندسی نرم افزار-فرآیندهای چرخه حیات -مدیریت مخاطرات
+با استفاده از استاندارد 16085:2021 ‎ISO/IEC/IEEE‏ تدوین شده است.
+
+[14] ISO/IEC/IEEE 24765, Systems and software engineering—Vocabulary.
+
+[15] ISO/IEC/IEEE 24748-3:2020(E) Systems and software engineering—Life cycle
+management —Part 3: Guidelines for the application of ISO/IEC/IEEE 12207 (software
+life cycle processes).
+
+1۱۶1 استاندارد ملی ایران شماره ۲۳۳۲۹: سال ۰۱۴۰۱ مهندسی سامانه‌ها و نرم‌افزار- مدیریت چرخه
+
+حیات- مشخصه توصیف فرآیند
+
+[17] NIST Special Publication 800-37, Revision 2, Risk Management Framework for
+
+Information Systems and Organizations: A System Life Cycle Approach for Security and
+Privacy (2018).
+
+[18] NIST Special Publication 800-53, Revision 5, Security and Privacy Controls for
+Information Systems and Organizations.
+
+[19] NIST Special Publication 800-122, Guide to Protecting the Confidentiality of
+Personally Identifiable Information (PII).
+
+۴۶

@@ -1,0 +1,31 @@
+استاندارد ملی ایران شمارة ۲۳۷۳۳ (چاپ اول): سال ۱۴۰۳
+
+کتابنامه
+۱ استاندارد ‎be‏ ایران شماره ۲۳۶۸۲: سال ۱۴۰۳ فناوری اطلاعات — حکمرانی فناوری اطلاعات -
+پیامدهای حکمرانی استفاده از هوش مصنوعی در سازمان‌ها
+‎[y]‏ استاندارد ملی ایران شماره ۲۲۹۱۰: سال ۱۴۳۰۰ مسئولیت اجتماعی و ‎po‏ همگانی - راهنما
+‎TR 24028:2020, Information technology — Artificial intelligence — Overview of‏ 150/1۴8 ]3[
+
+trustworthiness in artificial intelligence
+
+[4] 150/1۴80 TR 24027:2021, Information technology — Artificial intelligence (AI) — Bias in AI
+systems and AI aided decision making
+
+[5] ISO/IEC 29134:2017, Information technology — Security techniques — Guidelines for privacy
+impact assessment
+
+[6] ISO/IEC TR 24029-1:2021, Artificial Intelligence (AI) — Assessment of the robustness of neural
+networks — Part 1: Overview
+
+[7] ISO/IEC TR 5469, Artificial intelligence — Functional safety and AI systems
+
+[8] ISO/IEC 27005:2022, Information security, cybersecurity and privacy protection — Guidance on
+managing information security risks
+
+یادآوری - استاندارد ملی ایران ایزو آی‌ای‌سی ۲۷۰۰۵: سال ۰۱۳۹۲ فناوری اطلاعات - فنون امنیتی-مدیریت مخاطرات امنیت
+اطلاعات. با استفاده از استاندارد 27005:2011 ‎ISO/IEC‏ تدوین شده است.
+
+[9] Russell S. J., Norvig P., Artificial intelligence: a modern approach. 3rd ed. Upper Saddle River,
+NJ: Prentice Hall, 2010
+
+۴۲

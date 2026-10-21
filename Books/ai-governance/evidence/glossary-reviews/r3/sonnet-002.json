@@ -1,0 +1,47 @@
+{
+ "keys": [
+  "privacy risk",
+  "regulatory context",
+  "training",
+  "governing body"
+ ],
+ "shas": {
+  "privacy risk": "36e3c85ff26b17d81e82f5d65d0e4f250a7ed87e454eda2a8c63242b076161f7",
+  "regulatory context": "cd65117ff9435fd108a3d45a8029432a0f85ec78c2d4d2b924ed61e875b2c7a2",
+  "training": "ee36e9139792cc918765e92087b7479f7de30a735accfbc2ea10421a539629d0",
+  "governing body": "2c5cdb8b976c5e4858a1a3202ae791a82140bd63f5725860a81967072112c152"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 138.32931995391846,
+ "result": {
+  "verdicts": [
+   {
+    "key": "privacy risk",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "regulatory context",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "training",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.95
+   },
+   {
+    "key": "governing body",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.93
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:17:46-0400"
+}

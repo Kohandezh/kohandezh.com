@@ -1,0 +1,37 @@
+{
+ "chapter": "P03/C61",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "4cad657849aa0b55822655d30b7dfe9ff65799217caec0963e72e2ba4bc6ced0",
+  "3": "fd56e3758755a6f0384eed062083079e5dc187c357988a885076489b307fa196"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 363.93027925491333,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "بند ۵-۲-۵ توصیه می‌کند «آگاهی از مخاطرهٔ جدید» رویداد، محتوا و هویتِ دارای مخاطرهٔ بالقوهٔ بالا را برای بررسی به آن تحویل دهد (ص ۱۹)",
+      "explanation": "Evidence S23685-069 lists four items to be handed over to security audit: «سامانه، رویداد، محتوا و هویت شخصی». The section's paraphrase drops «سامانه» entirely, presenting a three-item list without any marker of incompleteness. The phrase «به آن» is also anaphoric where the evidence names the recipient explicitly as «ممیزی امنیتی».",
+      "suggested_fix": "Add the missing item and name the recipient explicitly: «بند ۵-۲-۵ توصیه می‌کند «آگاهی از مخاطرهٔ جدید» سامانه، رویداد، محتوا و هویت شخصی دارای مخاطرهٔ بالقوهٔ بالا را برای بررسی به ممیزی امنیتی تحویل دهد (ص ۱۹).»"
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:32:02-0400"
+}

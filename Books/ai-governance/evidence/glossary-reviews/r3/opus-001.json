@@ -1,0 +1,75 @@
+{
+ "keys": [
+  "residual risk",
+  "monitoring",
+  "risk appetite",
+  "governance",
+  "compliance",
+  "stakeholder"
+ ],
+ "shas": {
+  "residual risk": "99211306bd0be01d7e69ecaad297c7b5b3f5f369b373b4ae8651b1782e8e3c4e",
+  "monitoring": "6a1849d5d97a87c7890549c6170999006c5bee0139056679ccd6dacab250c97d",
+  "risk appetite": "ca84ae5eb1cbb7524ce2042cdf3d126d8425f3b80039caa07c64857d7d9d6b70",
+  "governance": "58c8f4ad05a9e2a4b93fa1e609c698b822e3f51b8239c041402e844f0aad4432",
+  "compliance": "f62a3ad49d95eafe376508866e6b3127c1fe3cf6d0c9097189af5ca26e0794a1",
+  "stakeholder": "92a5208abea94be8710694476c168cd285f807da98c9dd28ca51f1a566117044"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 126.02233505249023,
+ "result": {
+  "verdicts": [
+   {
+    "key": "residual risk",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.88
+   },
+   {
+    "key": "monitoring",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "definition_not_faithful",
+      "explanation": "definition_fa is empty, yet INSO 42001 clause 3.20 prints a definition: «تعیین وضعیت یک نظام، فرایند (۳-۸) یا فعالیت.» Every other entry that has a printed definition (risk appetite, governance, stakeholder, compliance) reproduces it in definition_fa with attribution. Omitting it here is an inconsistency, not a policy choice.",
+      "suggested_fix": "Set definition_fa to: «تعریف در استاندارد ملی (INSO 42001، بند ۳.۲۰): تعیین وضعیت یک نظام، فرایند (۳-۸) یا فعالیت.»"
+     }
+    ],
+    "confidence": 0.95
+   },
+   {
+    "key": "risk appetite",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.95
+   },
+   {
+    "key": "governance",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.92
+   },
+   {
+    "key": "compliance",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "scope",
+      "explanation": "definition_fa ends with an editorial disambiguation note («یادداشت: «انطباق» در INSO 42001 بند ۳.۱۵ برای conformity … آن مفهوم جداست.»). This sentence is not part of any printed definition; it is an editorial remark. The same information already appears in editor_note_fa. Keeping it inside definition_fa blurs the boundary between what the standard prints and what the editors add, contrary to Rule 2 (source-specific definitions stay attributed; no silent merging).",
+      "suggested_fix": "Remove the «یادداشت: …» sentence from definition_fa (leave the two printed definitions from 3.2.5 and 3.2.4 intact). The conformity disambiguation is already covered in editor_note_fa."
+     }
+    ],
+    "confidence": 0.93
+   },
+   {
+    "key": "stakeholder",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.96
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:25:33-0400"
+}

@@ -1,0 +1,51 @@
+{
+ "chapter": "P01/C54",
+ "sections": [
+  2,
+  3
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 257.05481815338135,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "quote_not_verbatim",
+      "explanation": "The blockquote for «واپایش» omits the domain qualifier «<مخاطره>» that precedes the definition in evidence T42001-3.21. The evidence reads «<مخاطره> اقدامی که مخاطره (۳-۷) را حفظ و/یا اصلاح می‌کند.» The domain field is part of the transcribed verbatim text and must appear in the blockquote.",
+      "quote": "«اقدامی که مخاطره (۳-۷) را حفظ و/یا اصلاح می‌کند.»",
+      "suggested_fix": "Change to: «<مخاطره> اقدامی که مخاطره (۳-۷) را حفظ و/یا اصلاح می‌کند.» — or, if the domain field is intentionally excluded because it is metadata rather than definition text, add a bracketed note: «اقدامی که مخاطره (۳-۷) را حفظ و/یا اصلاح می‌کند.» [حوزه: <مخاطره>؛ ابتدای مدخل در سند.]"
+     },
+     {
+      "type": "unsupported_claim",
+      "explanation": "The table footnote references «پاورقی بند ۱ سند 42001» as the source for the rule that «نظام» is used in management contexts and «سامانه» in technology contexts. No evidence item in this section's evidence list captures the text of footnote 1 of §1 of INSO 42001. Evidence item I42001-id identifies the document but does not reproduce any footnote text.",
+      "quote": "«نظام» در بافت مدیریتی و «سامانه» در بافت فنّاوری (پاورقی بند ۱ سند 42001)",
+      "suggested_fix": "Add a dedicated evidence item quoting the printed text of footnote 1 of §1 in INSO 42001, or remove the parenthetical citation and rephrase as a compiler explanation labelled «در لایهٔ اجرایی این کتاب ...» to avoid presenting an undocumented footnote as cited evidence."
+     },
+     {
+      "type": "unsupported_claim",
+      "explanation": "The section asserts that the NIST definition of risk in the translated texts is «معیاری مرکب از احتمال و پیامد». No NIST or E1 evidence item is included in this section's evidence list, and no NIST source is among the declared sources. Making a specific factual characterisation of NIST's definition without a cited evidence item violates the evidence-only constraint.",
+      "quote": "تعریف NIST در متن‌های ترجمه‌شده معیاری مرکب از احتمال و پیامد",
+      "suggested_fix": "Either add a NIST/E1 evidence item that supports this characterisation, or rephrase as a compiler observation with explicit attribution: «در لایهٔ اجرایی این کتاب، تعریف NIST که در فصل‌های ویرایش اول ترجمه شده، تعریفی مرکب از احتمال و پیامد تلقی شده است (نه ادعایی از سوی استانداردهای ملی).»"
+     },
+     {
+      "type": "unsupported_claim",
+      "explanation": "The governance row cites «عنوان INSO 23682 و 15816-3» as evidence that «حکمرانی» appears in those documents' titles. INSO 15816-3 is not among the declared sources of this section, and no evidence item in the section confirms the title of either INSO 23682 or INSO 15816-3.",
+      "quote": "حکمرانی (INSO 23728 بند ۳.۱.۲۰؛ عنوان INSO 23682 و 15816-3)",
+      "suggested_fix": "Add identity evidence items for INSO 23682 and INSO 15816-3 (analogous to I42001-id) that confirm the printed title text, and add INSO-15816-3 to declared_sources; or remove the title references from the citation and retain only «INSO 23728 بند ۳.۱.۲۰» which is supported by evidence T23728-3.1.20."
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:05:28-0400"
+}

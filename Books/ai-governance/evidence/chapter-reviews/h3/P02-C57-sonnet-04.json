@@ -1,0 +1,49 @@
+{
+ "chapter": "P02/C57",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "f0dcfcb83c5366228ff1a23119e1918cb0cd8b40bb0b16b4067b50eb5ab8493b",
+  "5": "5f7402c92ccb9bb9c31379726aa8e463044ea5e24df8595c559bc4f8da64fe7b"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 325.9939179420471,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "مانند هر منبع انسانی، فرایند یا فناوری",
+      "explanation": "Evidence S23682-067 prints «مانند سایر منابع انسانی، فرایند یا فناوری». Replacing «سایر» (other) with «هر» (every/any) loses the comparative framing — the original treats AI systems as comparable to *other* resources of the same class; «هر» de-anchors that comparison.",
+      "suggested_fix": "بازنویسی: «مانند سایر منابع انسانی، فرایند یا فناوری»"
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "مشخصات مبهم و زنجیرهٔ ارزش",
+      "explanation": "Figure 4 evidence (F23682-شکل ۴, R row) lists these as two distinct risk sources: «ضوابط مبهم» and «زنجیره ارزش». The section (a) merges them into a single item and (b) substitutes «مشخصات» for «ضوابط» — a different word not used in any of the cited evidence for this risk source.",
+      "suggested_fix": "جدا کردن دو قلم و استفاده از واژهٔ چاپ‌شده: «ضوابط مبهم، زنجیرهٔ ارزش»"
+     },
+     {
+      "type": "other",
+      "quote": "گاه به‌اشتباه «سوگیری هوش مصنوعی» نامیده می‌شود",
+      "explanation": "Evidence S23682-087 prints «گاه (و اغلب) به‌اشتباه». Omitting «(و اغلب)» materially weakens the frequency of the mislabelling claim: the standard says this error occurs 'sometimes, and often', not merely 'sometimes'.",
+      "suggested_fix": "تغییر «گاه» به «گاه (و اغلب)» طبق متن چاپ‌شده"
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:07:13-0400"
+}

@@ -1,0 +1,68 @@
+{
+ "source_id": "INSO-23683-1403",
+ "national_reference_printed": "استاندارد ملی ایران ۲۳۶۸۳ (چاپ اول) — cover: «INSO 23683, 1st Edition»; running header: «استاندارد ملی ایران شمارهٔ ۲۳۶۸۳ (چاپ اول): سال ۱۴۰۳»",
+ "iranian_year_printed": "۱۴۰۳ (cover English side prints «2024»)",
+ "title_fa_printed": "فناوری اطلاعات – کلان‌داده – مرور کلی و واژگان",
+ "title_en_printed": "Information technology — Big data — Overview and vocabulary",
+ "international_reference_printed": "ISO/IEC 20546:2019",
+ "international_year": 2019,
+ "equivalence_statement_printed": "Cover: «Identical with ISO/IEC 20546:2019». Foreword (pdf 7, printed ز): standard prepared by the «معادل یکسان» method, including a full specialised Persian translation of the text, and is the identical equivalent of «ISO/IEC 20546:2019, Information technology — Big data — Overview and vocabulary».",
+ "adoption_reference_printed": "Foreword (pdf 7): drafted on the basis of adopting international/regional standards as Iranian national standards, by the method in item الف, clause 7 of INSO standard No. 5 («استانداردهای ملی ایران – ساختار و شیوه نگارش»); published under clause 1 of article 7 of the «قانون تقویت و توسعه نظام استاندارد» (notified in دی‌ماه ۱۳۹۶).",
+ "publisher_printed": "سازمان ملی استاندارد ایران (Iran National Standards Organization, INSO) — address page pdf 2 (printed ب)",
+ "approval_or_publication_date_printed": "تصویب: ۱۴۰۳/۰۳/۰۸ در «هفتصد و سی و نهمین اجلاسیه کمیتهٔ ملی استاندارد فناوری اطلاعات» (pdf 7, printed ز). No separate publication date is printed; only the year ۱۴۰۳.",
+ "pdf_pages_total": 30,
+ "pdf_to_printed_offset": "Body: printed = pdf - 9 (pdf 10 = printed 1 ... pdf 30 = printed 21). Front matter is paginated with Persian letters: pdf 2=ب, 3=ج, 4=د, 5=ه, 6=و, 7=ز, 8=ح, 9=ط; the cover (pdf 1) carries no number.",
+ "normative_references": [],
+ "normative_references_note": "Clause 2 (pdf 10, printed 1): «این استاندارد، مرجع الزامی ندارد.» — the standard has no normative references.",
+ "bibliography_informative_printed": [
+  {
+   "id": "[1]",
+   "printed_reference": "ISO/IEC 2382:2015, Information technology — Vocabulary",
+   "national_number_if_printed": null,
+   "pdf_page": 30
+  },
+  {
+   "id": "[2]",
+   "printed_reference": "ISO 9075 (all parts), Information technology — Database languages — SQL",
+   "national_number_if_printed": "«مجموعه استاندارد ملی ایران ایزو-آی‌ای‌سی ۹۰۷۵» (printed as a series; no separate national number or year)",
+   "pdf_page": 30
+  },
+  {
+   "id": "[3]",
+   "printed_reference": "ISO/IEC 11404, Information technology — General-Purpose Datatypes (GPD)",
+   "national_number_if_printed": "«استاندارد ملی ایران ایزو آی‌ای‌سی شماره ۱۱۴۰۴: سال ۱۳۹۰» (note says it was prepared using ISO/IEC 11404:2007)",
+   "pdf_page": 30
+  },
+  {
+   "id": "[4]",
+   "printed_reference": "استاندارد ملی ایران شماره ۲۱۰۶۹: سال ۱۳۹۵، فناوری اطلاعات – رایانش ابری – مرور کلی و واژگان",
+   "national_number_if_printed": "INSO 21069:1395 (also cited as the source of definition 3.1.3, with modification)",
+   "pdf_page": 30
+  },
+  {
+   "id": "[5]",
+   "printed_reference": "ISO/IEC 19784-4:2011, Information technology — Biometric application programming interface — Part 4: Biometric sensor function provider interface",
+   "national_number_if_printed": null,
+   "pdf_page": 30
+  }
+ ],
+ "ics_printed": "35.020; 01.040.35 (cover)",
+ "technical_committee_printed": {
+  "name": "کمیسیون فنی تدوین استاندارد «فناوری اطلاعات - کلان‌داده - مرور کلی و واژگان»",
+  "chair": "یزدیان ورجانی، علی (دکتری مهندسی برق گرایش قدرت)",
+  "secretary": "عزیزی مهماندوست، مهدی (دکتری مدیریت راهبردی فضای سایبری)",
+  "editor": "رثائی، حامد (کارشناسی‌ارشد مهندسی برق - قدرت)",
+  "members_listed": 9,
+  "pdf_pages": [
+   4,
+   5
+  ]
+ },
+ "notes": "Edition 1 national standard, identical (translation) adoption of ISO/IEC 20546:2019 — matches the owner's expectation (INSO 23683, year 1403, ISO/IEC 20546:2019); no difference found. Standard is a vocabulary/overview standard: clause 1 scope, clause 2 (no normative references), clause 3 (38 terms in 3.1 + 3 abbreviations in 3.2), clause 4 key characteristics of big data, informative Annex A (cross-cutting concepts), bibliography. It contains no «باید» (shall) statements, no tables or figures, and does not discuss AI, machine learning, big data roles/activities or an analytics lifecycle beyond the definitions of data analytics (3.1.6), data science (3.1.10, 4.3.1) and benefit (3.1.1, 4.3.4). Only a committee member's affiliation (pdf 4) contains the words «هوش مصنوعی».",
+ "uncertainties": [
+  "Clause numbers are printed visually mirrored (RTL); recorded in logical order (see terms.json clause_numbering_note).",
+  "Several internal cross-references do not match the printed numbering (3.1.19, 3.1.22, 3.1.26, 3.1.31, 3.1.32, 4.3.1) — see uncertainties.md; may be inherited from the source text, not verified.",
+  "Persian terminology is inconsistent between entries (scatter/gather, structured/semi-structured, کلان‌داده/بزرگ‌داده, محاسبات ابری/رایانش ابری, «بدیل» in the introduction) — see uncertainties.md.",
+  "Standard contains no «باید»; «ضروری است»/«الزامی است» occur in descriptive text and are recorded as info."
+ ]
+}

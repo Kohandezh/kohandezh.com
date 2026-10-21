@@ -1,0 +1,62 @@
+{
+ "chapter": "P02/C60",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "a1292e7203fb2c5b4c44fb4fb10fb233d05ac87d0a3ce3964b230d05629ba370",
+  "3": "30d19b16d575759d71e815255190d286d4e496f193ef078cb746abbcb4208ee3"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 352.52365708351135,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "AI RMF و Playbook. چارچوبی داوطلبانه با چهار کارکرد و برآمدهای پیشنهادی که سازمان به اختیار برمی‌گزیند.",
+      "explanation": "The claims that AI RMF has 'four functions' (چهار کارکرد), 'suggested subcategories' (برآمدهای پیشنهادی), and is voluntary (داوطلبانه) are specific factual statements about AI RMF structure and content. No AI RMF evidence item is cited for this section; all declared sources are the three INSO standards, none of which contain these statements.",
+      "suggested_fix": "Either add the relevant AI RMF evidence items (citing the applicable cross-referenced chapter, e.g. KDJ-AI-2026E2-P02-C08-S04) or reframe as an explicit editorial comparison: «در فصل‌های AI RMF این کتاب (ن.ک. خلاصه اجرایی)، این چارچوب داوطلبانه با چهار کارکرد معرفی شده است»."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "INSO 42001 با «باید» و AI RMF با پیشنهاد سخن می‌گوید.",
+      "explanation": "The INSO 42001 half is well supported by multiple [shall] evidence items. The AI RMF half ('AI RMF با پیشنهاد سخن می‌گوید') is a factual claim about AI RMF modality for which no AI RMF evidence item is cited in this section.",
+      "suggested_fix": "Either cite the relevant AI RMF evidence item, or restrict the sentence to the evidenced half: «INSO 42001 با «باید» سخن می‌گوید؛ مقایسه با AI RMF به ردیف‌های ماتریس احاله می‌شود.»"
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "FAIL",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "تعریف مخاطره در سه استاندارد ملی «اثر (یا تأثیر) عدم قطعیت» است",
+      "explanation": "This claim is supported for only two of the three national standards: INSO 23682 (T23682-3.2.2: «تأثیر عدم قطعیت بر اهداف») and INSO 42001 (T42001-3.7: «اثر عدم قطعیت»). INSO 23733 has no independent definition (S23733-010: «بند ۳ تعریف مستقلی ندارد و فقط اصطلاحات و تعاریف استانداردهای ملی ۱۳۲۴۵: ۱۳۹۸ ... را به کار می‌برد») and adopts from INSO 13245. Evidence S23733-014 explicitly states that INSO 13245:1398 defines risk as «هر انحراف منفی یا مثبت از اهداف» — a formulation different from «اثر عدم قطعیت». Asserting a uniform «اثر/تأثیر عدم قطعیت» definition across all three national standards is therefore not supported by the cited evidence and is contradicted for the third standard. This invalidates Pattern 2's core claim that all three national standards share a single definition contrasting with NIST.",
+      "suggested_fix": "Correct Pattern 2 to distinguish: INSO 23682 and 42001 use «تأثیر/اثر عدم قطعیت» (ISO 31000 style); INSO 23733 adopts from INSO 13245 which, as that standard itself notes (S23733-014), uses «هر انحراف منفی یا مثبت از اهداف». The word «سه» must be removed or replaced with «INSO 23682 و 42001»."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "در متن‌های NIST این کتاب معیاری مرکب از احتمال و بزرگی پیامد",
+      "explanation": "This is a factual statement about how NIST texts define risk (probability × magnitude of consequences). All declared sources for this section are the three INSO standards; no NIST or AI RMF evidence item is cited. None of the cited evidence items describes the NIST risk definition.",
+      "suggested_fix": "Add the relevant NIST/AI RMF evidence item from one of the cross-referenced chapters, or explicitly label this as an editorial cross-reference: «در فصل‌های مربوط به NIST AI RMF این کتاب (ن.ک. KDJ-AI-2026E2-P02-C08-S09)، ریسک به صورت مرکب از احتمال و بزرگی پیامد توصیف شده است»."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "AI RMF برای آن‌ها برآمد جداگانه‌ای ندارد و ردیف‌هایشان NO_DIRECT_EQUIVALENT یا RELATED است",
+      "explanation": "This is a factual structural claim about AI RMF content — that it lacks dedicated subcategories for statement of applicability, documented information, and internal audit/management review. No AI RMF evidence item is cited in this section to support this claim.",
+      "suggested_fix": "Add the relevant AI RMF evidence items from the cross-referenced chapters (e.g. KDJ-AI-2026E2-P02-C08-S04/S05), or label the claim explicitly as an editorial observation: «در لایهٔ اجرایی این کتاب، بررسی فصل‌های AI RMF نشان می‌دهد که …»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:17:09-0400"
+}

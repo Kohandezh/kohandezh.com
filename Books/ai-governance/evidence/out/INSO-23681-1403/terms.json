@@ -1,0 +1,672 @@
+{
+ "source_id": "INSO-23681-1403",
+ "notes": "بند ۳ شامل ۱۲ اصطلاح (۳-۱: ۵، ۳-۲: ۲، ۳-۳: ۵) است؛ بند ۴ «کوته‌نوشت‌ها» ۳۲ مدخل دارد (ردیف‌های kind=abbreviation) و تعریف ندارد. اصطلاحات ۳-۱ تا ۳-۳ «علاوه بر اصطلاحات استاندارد ملی ۲۳۶۷۹» آمده‌اند؛ اصطلاحات ۲۳۶۷۹ در این سند تکرار نشده‌اند.",
+ "terms": [
+  {
+   "clause": "3.1.1",
+   "term_fa": "مدل طبقه‌بندی",
+   "term_en": "classification model",
+   "domain_tag": "<ML>",
+   "definition_fa": "یادگیری ماشینی که خروجی مورد انتظار آن به‌ازای یک ورودی مفروض یک یا چندطبقه است.",
+   "notes_fa": [],
+   "pdf_page": 11,
+   "printed_page": "2",
+   "verified_visually": true,
+   "ocr_similarity": 1.0,
+   "ocr_similarity_detail": {
+    "definition": 1.0,
+    "term": 1.0,
+    "notes": []
+   },
+   "notes": "تعریف چاپی با «یادگیری ماشینی» (نه «مدل ML») شروع می‌شود؛ تفاوت ظاهری با ۳-۱-۲ که «مدل ML‌ای» دارد. پاورقی ۱: «تعریف واژه در حوزه ML مدنظر است.» پاورقی ۲: Given."
+  },
+  {
+   "clause": "3.1.2",
+   "term_fa": "مدل وایازش (رگرسیون)",
+   "term_en": "regression model",
+   "domain_tag": "<ML>",
+   "definition_fa": "مدل ML‌ای که خروجی مورد انتظار آن به‌ازای ورودی مفروض متغیری پیوسته است.",
+   "notes_fa": [],
+   "pdf_page": 11,
+   "printed_page": "2",
+   "verified_visually": true,
+   "ocr_similarity": 0.947,
+   "ocr_similarity_detail": {
+    "definition": 0.947,
+    "term": 1.0,
+    "notes": []
+   }
+  },
+  {
+   "clause": "3.1.3",
+   "term_fa": "تعمیم",
+   "term_en": "generalization",
+   "domain_tag": "<ML>",
+   "definition_fa": "توانایی مدل آموزش‌دیده برای انجام پیش‌بینی‌های صحیح در مورد داده ورودی‌ای است که پیش از آن به مدل نشان داده نشده است.",
+   "notes_fa": [
+    "یادآوری ۱ – مدل ML‌ای که به طور مناسب تعمیم می‌دهد، مدلی است که درستی پیش‌بینی قابل‌قبولی در مورد داده‌ای دارد که پیش از آن به مدل نشان داده نشده است.",
+    "یادآوری ۲ – تعمیم، ارتباط تنگاتنگی با بیش‌برازش دارد. مدل ML بیش‌برازش یافته به درستی تعمیم نخواهد یافت، چرا که این مدل برازش بیش از حد دقیقی به دادهٔ آموزشی دارد."
+   ],
+   "pdf_page": 11,
+   "printed_page": "2",
+   "verified_visually": true,
+   "ocr_similarity": 0.923,
+   "ocr_similarity_detail": {
+    "definition": 0.923,
+    "term": 1.0,
+    "notes": [
+     0.955,
+     0.936
+    ]
+   }
+  },
+  {
+   "clause": "3.1.4",
+   "term_fa": "بیش‌برازش",
+   "term_en": "overfitting",
+   "domain_tag": "<ML>",
+   "definition_fa": "ایجاد مدلی که به‌صورت بیش از حد دقیق به دادهٔ آموزشی برازش یافته است و نمی‌تواند به داده جدید تعمیم یابد.",
+   "notes_fa": [
+    "یادآوری ۱ – بیش‌برازش می‌تواند به این دلیل رخ دهد که مدل آموزش‌دیده از ویژگی‌های غیر اساسی در داده‌های آموزشی (یعنی ویژگی‌هایی که به خروجی مفید، تعمیم نمی‌یابند) یا نوفه (نویز) زیاد در داده‌های آموزشی (به‌عنوان‌مثال تعداد زیاد داده‌های پَرت) یاد بگیرد یا اینکه مدل برای دادهٔ آموزشی بیش از حد پیچیده باشد.",
+    "یادآوری ۲ – بیش‌برازش می‌تواند زمانی شناسایی شود که تفاوت معناداری میان خطای اندازه‌گیری‌شده روی داده‌های آموزشی و روی داده‌های مجزای اعتبارسنجی و آزمایشی وجود داشته باشد. عملکرد مدل‌های بیش‌برازش یافته به ویژه زمانی تحت تاثیر قرار می‌گیرد که عدم تطبیق معناداری بین دادهٔ آموزشی و دادهٔ محیط عملیاتی وجود داشته باشد."
+   ],
+   "pdf_page": 11,
+   "printed_page": "2",
+   "verified_visually": true,
+   "ocr_similarity": 0.797,
+   "ocr_similarity_detail": {
+    "definition": 0.797,
+    "term": 1.0,
+    "notes": [
+     0.939,
+     0.964
+    ]
+   },
+   "notes": "یادآوری ۲ در صفحهٔ 12 (بالای صفحه) ادامه می‌یابد."
+  },
+  {
+   "clause": "3.1.5",
+   "term_fa": "برازش کمتر از حد",
+   "term_en": "underfitting",
+   "domain_tag": "<ML>",
+   "definition_fa": "ایجاد مدلی که به‌اندازه کافی به دادهٔ آموزشی برازش نیافته است و با داده جدید، پیش‌بینی‌های نادرستی ایجاد می‌کند.",
+   "notes_fa": [
+    "یادآوری – برازش کمتر از حد می‌تواند در شرایطی رخ دهد که ویژگی‌ها به درستی انتخاب نشده باشند، مدت زمان آموزش کافی نباشد یا مدل برای یادگیری از دادهٔ آموزشی زیاد به دلیل ظرفیت محدود مدل (توان بیان) بیش از حد ساده باشد."
+   ],
+   "pdf_page": 12,
+   "printed_page": "3",
+   "verified_visually": true,
+   "ocr_similarity": 0.897,
+   "ocr_similarity_detail": {
+    "definition": 0.897,
+    "term": 0.963,
+    "notes": [
+     0.976
+    ]
+   }
+  },
+  {
+   "clause": "3.2.1",
+   "term_fa": "پس انتشار",
+   "term_en": "backpropagation",
+   "domain_tag": null,
+   "definition_fa": "روشی برای آموزش شبکه عصبی که از خطا در لایه خروجی برای تنظیم و بهینه‌سازی وزن‌های اتصالات از لایه‌های قبلی متوالی استفاده می‌کند.",
+   "notes_fa": [],
+   "pdf_page": 12,
+   "printed_page": "3",
+   "verified_visually": true,
+   "ocr_similarity": 0.657,
+   "ocr_similarity_detail": {
+    "definition": 0.657,
+    "term": 0.933,
+    "notes": []
+   },
+   "notes": "بدون برچسب حوزهٔ <ML> چاپ شده است."
+  },
+  {
+   "clause": "3.2.2",
+   "term_fa": "نرخ یادگیری",
+   "term_en": "learning rate",
+   "domain_tag": null,
+   "definition_fa": "اندازه گام در روش‌های گرادیانی است.",
+   "notes_fa": [
+    "یادآوری – نرخ یادگیری تعیین می‌کند که آیا یک مدل به یک راه حل بهینه همگرا می‌شود و همگرایی با چه سرعتی رخ می‌دهد که این امر نرخ یادگیری را تبدیل به فراپارامتری مهم برای تنظیم در شبکه‌های عصبی تبدیل می‌کند."
+   ],
+   "pdf_page": 12,
+   "printed_page": "3",
+   "verified_visually": true,
+   "ocr_similarity": 0.966,
+   "ocr_similarity_detail": {
+    "definition": 0.966,
+    "term": 1.0,
+    "notes": [
+     0.987
+    ]
+   },
+   "notes": "عبارت «تبدیل به ... تبدیل می‌کند» در یادآوری طبق چاپ است."
+  },
+  {
+   "clause": "3.3.1",
+   "term_fa": "طبقه",
+   "term_en": "class",
+   "domain_tag": null,
+   "definition_fa": "دسته‌ای از عناصر تعریف شده توسط انسان که بخشی از مجموعه‌داده هستند و دارای خصوصیات مشترک هستند.",
+   "notes_fa": [
+    "مثال: تلفن، میز، صندلی، بلبرینگ و توپ تنیس طبقه هستند. طبقه میز شامل موارد زیر است: میز کار، میز ناهارخوری، میزتحریر، میز عسلی، میز کارگاه.",
+    "یادآوری – طبقه‌ها معمولاً متغیرهای هدف هستند و با یک نام مشخص می‌شوند."
+   ],
+   "pdf_page": 13,
+   "printed_page": "4",
+   "verified_visually": true,
+   "ocr_similarity": 0.843,
+   "ocr_similarity_detail": {
+    "definition": 0.944,
+    "term": 1.0,
+    "notes": [
+     0.843,
+     0.981
+    ]
+   },
+   "notes": "پاورقی: Category؛ Ball Bearing."
+  },
+  {
+   "clause": "3.3.2",
+   "term_fa": "خوشه",
+   "term_en": "cluster",
+   "domain_tag": null,
+   "definition_fa": "دسته‌بندی از عناصری که به‌صورت خودکار به دست می‌آید و بخشی از مجموعه‌داده هستند که خصوصیات مشترکی میان آن‌ها وجود دارد.",
+   "notes_fa": [
+    "یادآوری – خوشه‌ها لزوماً دارای نام نیستند."
+   ],
+   "pdf_page": 13,
+   "printed_page": "4",
+   "verified_visually": true,
+   "ocr_similarity": 0.844,
+   "ocr_similarity_detail": {
+    "definition": 0.968,
+    "term": 0.75,
+    "notes": [
+     0.844
+    ]
+   }
+  },
+  {
+   "clause": "3.3.3",
+   "term_fa": "ویژگی",
+   "term_en": "feature",
+   "domain_tag": "<ML>",
+   "definition_fa": "کمیتی در مورد یک شیء یا رویداد که بر حسب مجموعه‌ای از خصوصیات قابل‌اندازه‌گیری باشد.",
+   "notes_fa": [
+    "یادآوری ۱ – ویژگی‌ها در آموزش و پیش‌بینی نقش دارند.",
+    "یادآوری ۲ – ویژگی‌ها و روشی برای بررسی اشیای مرتبط فراهم می‌آورند که برای ماشین قابل خواندن است. از آنجایی که الگوریتم به خود اشیا و رویدادها رجوع نمی‌کند، بازنمایی ویژگی‌ها به نحوی طراحی می‌شود که همه اطلاعات مفید را در بر بگیرد."
+   ],
+   "pdf_page": 13,
+   "printed_page": "4",
+   "verified_visually": true,
+   "ocr_similarity": 0.921,
+   "ocr_similarity_detail": {
+    "definition": 0.985,
+    "term": 1.0,
+    "notes": [
+     0.921,
+     0.978
+    ]
+   },
+   "notes": "یادآوری ۲ چاپی به‌نظر ناقص است («ویژگی‌ها و روشی ... فراهم می‌آورند») — ترجمهٔ متن اصلی."
+  },
+  {
+   "clause": "3.3.4",
+   "term_fa": "فاصله",
+   "term_en": "distance",
+   "domain_tag": "<ML>",
+   "definition_fa": "میزان مجاورت اندازه‌گیری شده میان دونقطه در فضا است.",
+   "notes_fa": [
+    "یادآوری – معمولاً فاصله اقلیدسی یا خط مستقیم در ML استفاده می‌شود."
+   ],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.976,
+   "ocr_similarity_detail": {
+    "definition": 0.976,
+    "term": 0.889,
+    "notes": [
+     0.98
+    ]
+   }
+  },
+  {
+   "clause": "3.3.5",
+   "term_fa": "فاقد برچسب",
+   "term_en": "unlabelled",
+   "domain_tag": null,
+   "definition_fa": "خصوصیت نمونه‌ای که شامل متغیر هدف نیست.",
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.839,
+   "ocr_similarity_detail": {
+    "definition": 0.839,
+    "term": 0.889,
+    "notes": []
+   }
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "AI",
+   "term_fa": "هومص (هوش مصنوعی)",
+   "term_en": "Artificial Intelligence",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.963
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "API",
+   "term_fa": "میانای برنامه کاربردی (میبک)",
+   "term_en": "Application Programming Interface",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.958
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "AUC",
+   "term_fa": "مساحت زیر منحنی",
+   "term_en": "Area Under The Curve",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.462
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "BM",
+   "term_fa": "ماشین بولتزمن",
+   "term_en": "Boltzmann Machines",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.96
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "CapsNet",
+   "term_fa": "شبکه عصبی کپسولی",
+   "term_en": "Capsule Neural Network",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.769
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "CG",
+   "term_fa": "گرادیان مزدوج",
+   "term_en": "Conjugate Gradient",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.96
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "CNN",
+   "term_fa": "شبکه عصبی همامیخته (پیچشی)",
+   "term_en": "Convolutional Neural Network",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.564
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "DBN",
+   "term_fa": "شبکه‌های باور عمیق",
+   "term_en": "Deep Belief Networks",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.968
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "DCNN",
+   "term_fa": "شبکه عصبی همامیخته عمیق",
+   "term_en": "Deep Convolutional Neural Network",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.526
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "FFNN",
+   "term_fa": "شبکه عصبی پیش‌خور",
+   "term_en": "Feed Forward Neural Network",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.966
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "FNR",
+   "term_fa": "نرخ منفی کاذب",
+   "term_en": "False Negative Rate",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 1.0
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "FPR",
+   "term_fa": "نرخ مثبت کاذب",
+   "term_en": "False Positive Rate",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.909
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "GRU",
+   "term_fa": "واحد بازگشتی دروازه‌دار",
+   "term_en": "Gated Recurrent Unit",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.952
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "LSTM",
+   "term_fa": "حافظه کوتاه‌مدت بلند",
+   "term_en": "Long Short-Term Memory",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 1.0
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "MAE",
+   "term_fa": "میانگین خطای مطلق",
+   "term_en": "Mean Absolute Error",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 14,
+   "printed_page": "5",
+   "verified_visually": true,
+   "ocr_similarity": 0.5
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "MDP",
+   "term_fa": "فرایند تصمیم‌گیری مارکوف",
+   "term_en": "Markov Decision Process",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.955
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "ML",
+   "term_fa": "یادگیری ماشین",
+   "term_en": "Machine Learning",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.96
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "NN",
+   "term_fa": "شبکه عصبی",
+   "term_en": "Neural Network",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.875
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "NNEF",
+   "term_fa": "قالب تبادل شبکه عصبی",
+   "term_en": "Neural Network Exchange Format",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.971
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "NPV",
+   "term_fa": "ارزش اخباری منفی",
+   "term_en": "Negative Predictive Value",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 1.0
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "ONNX",
+   "term_fa": "تبادل باز شبکه عصبی",
+   "term_en": "Open Neural Network Exchange",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.938
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "PCA",
+   "term_fa": "واکاوش (تحلیل) مؤلفه اصلی",
+   "term_en": "Principal Component Analysis",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.95
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "PHI",
+   "term_fa": "اطلاعات سلامتی شخصی یا حفاظت‌شده",
+   "term_en": "Personal Or Protected Health Information",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.964
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "PII",
+   "term_fa": "اطلاعات قابل‌شناسایی شخصی",
+   "term_en": "Personally Identifiable Information",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.957
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "PPV",
+   "term_fa": "ارزش اخباری مثبت",
+   "term_en": "Positive Predictive Value",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.929
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "REST",
+   "term_fa": "انتقال حالت بازنمودی",
+   "term_en": "Representational State Transfer",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.973
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "RNN",
+   "term_fa": "شبکه عصبی بازگشتی",
+   "term_en": "Recurrent Neural Network",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.786
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "ROC",
+   "term_fa": "مشخصه‌های عملیاتی گیرنده",
+   "term_en": "Receiver Operating Characteristics",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.955
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "SGD",
+   "term_fa": "کاهش گرادیان تصادفی",
+   "term_en": "Stochastic Gradient Descent",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.971
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "SVM",
+   "term_fa": "ماشین بردار پشتیبان",
+   "term_en": "Support Vector Machine",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 1.0
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "TNR",
+   "term_fa": "نرخ منفی واقعی",
+   "term_en": "True Negative Rate",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.917
+  },
+  {
+   "clause": "4",
+   "kind": "abbreviation",
+   "abbreviation": "TPR",
+   "term_fa": "نرخ مثبت واقعی",
+   "term_en": "True Positive Rate",
+   "definition_fa": null,
+   "notes_fa": [],
+   "pdf_page": 15,
+   "printed_page": "6",
+   "verified_visually": true,
+   "ocr_similarity": 0.917
+  }
+ ]
+}

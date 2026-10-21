@@ -29,6 +29,10 @@ require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-b
 require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book-search.php';
 require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-ai-book.php';
 
+// The identifiers below are built from the edition of the bundle under test, so the same routing
+// checks run against every edition.
+$edition_prefix = 'KDJ-AI-' . ( new KBK_AI_Book_Repository( $root ) )->summary()['edition_id'] . '-';
+
 $legacy_repository = KBK_AI_Book::repository();
 $legacy_path = KBK_AI_Book::legacy_reader_path( '/fa/ai-book/ai-risk-management/nist-ai-risk-management-framework-playbook-govern/', $legacy_repository );
 if ( '/fa/books/ai-governance/read/?kbk_part=P02&kbk_chapter=C09' !== $legacy_path ) {
@@ -102,9 +106,9 @@ if ( ! $selection['chapter_not_found'] || null !== $selection['chapter'] ) {
 reset_query();
 $GLOBALS['kbk_test_query'][ KBK_AI_Book::PART_QUERY_VAR ]    = 'P01';
 $GLOBALS['kbk_test_query'][ KBK_AI_Book::CHAPTER_QUERY_VAR ] = 'C01';
-$GLOBALS['kbk_test_query'][ KBK_AI_Book::SECTION_QUERY_VAR ] = 'KDJ-AI-2026E1-P01-C01-S01';
+$GLOBALS['kbk_test_query'][ KBK_AI_Book::SECTION_QUERY_VAR ] = $edition_prefix . 'P01-C01-S01';
 $selection = KBK_AI_Book::current_reader_selection();
-if ( 'KDJ-AI-2026E1-P01-C01-S01' !== ( $selection['section']['structural_id'] ?? null ) ) {
+if ( $edition_prefix . 'P01-C01-S01' !== ( $selection['section']['structural_id'] ?? null ) ) {
 	fwrite( STDERR, "FAIL matching section query var must resolve\n" );
 	exit( 1 );
 }
@@ -113,7 +117,7 @@ if ( 'KDJ-AI-2026E1-P01-C01-S01' !== ( $selection['section']['structural_id'] ??
 reset_query();
 $GLOBALS['kbk_test_query'][ KBK_AI_Book::PART_QUERY_VAR ]    = 'P01';
 $GLOBALS['kbk_test_query'][ KBK_AI_Book::CHAPTER_QUERY_VAR ] = 'C01';
-$GLOBALS['kbk_test_query'][ KBK_AI_Book::SECTION_QUERY_VAR ] = 'KDJ-AI-2026E1-P03-C02-S01';
+$GLOBALS['kbk_test_query'][ KBK_AI_Book::SECTION_QUERY_VAR ] = $edition_prefix . 'P03-C02-S01';
 $selection = KBK_AI_Book::current_reader_selection();
 if ( null !== $selection['section'] || 'C01' !== ( $selection['chapter']['chapter_id'] ?? null ) ) {
 	fwrite( STDERR, "FAIL cross-chapter section query var must be ignored, not error\n" );
@@ -148,7 +152,17 @@ $GLOBALS['kbk_test_query'][ KBK_AI_Book::PART_QUERY_VAR ]    = 'P01';
 $GLOBALS['kbk_test_query'][ KBK_AI_Book::CHAPTER_QUERY_VAR ] = 'C02';
 $selection = KBK_AI_Book::current_reader_selection();
 $adjacent  = $repository->adjacent_chapters( $selection['part']['part_id'], $selection['chapter']['chapter_id'] );
-if ( 'C01' !== ( $adjacent['prev']['chapter_id'] ?? null ) ) {
+// The expected neighbour comes from the edition's own chapter order (E2 inserts chapters between C01 and C02).
+$expected_prev = null;
+foreach ( $repository->parts() as $book_part ) {
+	foreach ( $book_part['chapters'] as $book_chapter ) {
+		if ( 'P01' === $book_part['part_id'] && 'C02' === $book_chapter['chapter_id'] ) {
+			break 2;
+		}
+		$expected_prev = $book_chapter['chapter_id'];
+	}
+}
+if ( null === $expected_prev || $expected_prev !== ( $adjacent['prev']['chapter_id'] ?? null ) ) {
 	fwrite( STDERR, "FAIL adjacent_chapters from a resolved selection failed\n" );
 	exit( 1 );
 }

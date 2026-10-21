@@ -1,0 +1,43 @@
+{
+ "chapter": "P03/C61",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "30eb68a3333bcf66e169346d23363d26d3b1067e62c0601ecba61f9abf83b227",
+  "1": "a97165082c3bd5259d16305d824a2b4d097b1ebdeee70a5c3a509f971fc2e99a"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 343.8916516304016,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "جدول شماره‌دار یا بند نقش‌ها ندارد",
+      "explanation": "Absence of 'جدول شماره‌دار' (numbered tables) is a content-level claim, not a heading-level claim. The heading outline supports the absence of annexes, a bibliography, and a roles-clause heading, but says nothing about whether tables elsewhere in sections 4–6 carry numbers. The only table described in the evidence (F23685-table5 in clause 3-2) is explicitly 'بدون شماره'; no evidence covers the other ~20 printed pages. The phrase is not qualified as 'در میان بندهای ارجاع‌شده'. Fix: remove 'جدول شماره‌دار یا' from the list, or re-phrase as 'در جدول شناخته‌شدهٔ بند ۳-۲، شماره‌گذاری چاپ نشده است'.",
+      "suggested_fix": "Remove 'جدول شماره‌دار یا' from the list. The remaining items (پیوست، کتاب‌نامه، بند نقش‌ها) are all verifiable from the heading outline."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "فرایندی برای شناسایی دارایی‌ها، تهدیدها و آسیب‌پذیری‌ها نیز در آن ثبت نشده است",
+      "explanation": "This is a negative content claim about what the standard's body text does not contain. The supplied evidence gives section headings and selected statements only; no heading for such a process appears, but the heading index does not exhaust the body text of sections 4–5 (which cover risk quantification and risk types). Under the stated rule, an absence claim is supported only when phrased as limited to the cited clauses. This sentence is presented as a general characterisation of the whole document and is therefore unsupported. Fix: qualify with 'در بندهای فنیِ اطلاع‌رسانی‌شده در این فصل، فرایند مستقلی برای شناسایی دارایی‌ها، تهدیدها و آسیب‌پذیری‌ها دیده نمی‌شود' or remove entirely.",
+      "suggested_fix": "Qualify the sentence: 'در میان بندهایی که در این فصل به آن‌ها ارجاع داده شده، فرایند جداگانه‌ای برای شناسایی دارایی‌ها، تهدیدها و آسیب‌پذیری‌ها مشاهده نمی‌شود.'"
+     }
+    ]
+   },
+   {
+    "index": 1,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:23:29-0400"
+}

@@ -1,0 +1,37 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  3,
+  4
+ ],
+ "section_shas": {
+  "3": "a01867b54361b17bee850e03c6c39a6aa9cdf683686e4d7d3cbaaffcfe294b3e",
+  "4": "1c75f3a9289c32efeb4e497a4df36500895338c51522f0e600a398409b266952"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 394.033753156662,
+ "result": {
+  "sections": [
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "other",
+      "quote": "فرهنگ مسئولانه در استفاده، توسعه و حکمرانی سامانه‌ها می‌تواند نشانهٔ مهمی از تعهد و رهبری باشد",
+      "explanation": "S42001-029 prints «اثبات مهمی از تعهد و رهبری مدیریت رده‌بالا باشد». The section replaces «اثبات» (demonstration / proof — a strong epistemic claim) with «نشانه» (sign / indicator — a weaker claim). The two are not synonymous: the standard asserts that a responsible culture *demonstrates* leadership commitment, not merely *signals* it. This is a meaning-changing paraphrase error.",
+      "suggested_fix": "Replace «نشانهٔ مهمی» with «اثبات مهمی», and reinstate the dropped subject: «می‌تواند اثبات مهمی از تعهد و رهبری مدیریت رده‌بالا باشد» (per S42001-029)."
+     }
+    ]
+   },
+   {
+    "index": 4,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T08:04:38-0400"
+}

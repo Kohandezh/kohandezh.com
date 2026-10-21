@@ -1,0 +1,56 @@
+{
+ "chapter": "P07/C64",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "0f4e099b5fffa6d21345bac5092a79254eb9304f11c4d88c7d98d1d796f281fd",
+  "1": "98d66bae997f229e6bd66e5771d74928451c85c782aae9e2755cc01c55b58037"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 311.06385111808777,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "پیش‌گفتار تصویب آن را در هفتصد و چهل‌ودومین اجلاسیهٔ کمیتهٔ ملی استاندارد فناوری اطلاعات، ۱۴۰۳/۰۴/۲۳، ثبت کرده است (ص ح)",
+      "explanation": "The identity evidence (I15816-3-id) is truncated at «تصویب در «هفت». The specific meeting ordinal «هفتصد و چهل‌ودومین» (742nd) and the date «۱۴۰۳/۰۴/۲۳» cannot be read from the supplied evidence. Both figures are factual claims about the printed preface that the cited items do not support.",
+      "suggested_fix": "Replace with the generic formulation supported by the evidence: «پیش‌گفتار تصویب آن را در یکی از اجلاسیه‌های کمیتهٔ ملی استاندارد فناوری اطلاعات در سال ۱۴۰۳ ثبت کرده است (ص ح).» If the full text is confirmed from the original page image, add the specific number and date then."
+     },
+     {
+      "type": "modality_drift",
+      "quote": "توصیه‌ها با «توصیه می‌شود»، «بهتر است» یا «می‌تواند» بیان شده‌اند",
+      "explanation": "This characterisation is incomplete and partially inaccurate in two respects. First, «می‌تواند» expresses permission (can/may), not recommendation — conflating the two modalities. Second, the supplied evidence also shows other modal expressions that are neither «باید» nor simple recommendations: S15816-3-034 uses an imperative «تعریف نمایید» for a [should]-level instruction; S15816-3-049 uses «لازم است» (labeled [info]); S15816-3-059 uses «مقرر می‌شود» (which the evidence itself describes as neither «باید» nor «توصیه می‌شود»); S15816-3-069 uses «ضروری است» (labeled [info]). None of these four forms appears in the section's characterisation.",
+      "suggested_fix": "Revise to: «سند حاوی جملهٔ «باید» نیست؛ توصیه‌ها با «توصیه می‌شود» یا فعل امر ارائه می‌شوند، مجوزها با «می‌تواند»، و در برخی بندها عبارت‌هایی مانند «لازم است»، «ضروری است» یا «مقرر می‌شود» به‌جای «باید» به کار رفته‌اند.»"
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "به‌کارگیری سازوکارهای متناسب برای حفاظت از داده و استفادهٔ صرف برای هدف‌های مقرر (ص ط)",
+      "explanation": "Evidence S15816-3-001 states the third purpose as «سازوکارهای متناسب برای تضمین حفاظت از داده و استفادهٔ صرف برای اهداف مقررشدهٔ سازگار با تعهدات سازمان». The section drops the qualifiers «تضمین» and «سازگار با تعهدات سازمان». The omission of «سازگار با تعهدات سازمان» changes the meaning: the standard ties permitted use explicitly to organisational commitments, not merely to stated purposes in general.",
+      "suggested_fix": "Complete the paraphrase: «به‌کارگیری سازوکارهای متناسب برای تضمین حفاظت از داده و استفادهٔ صرف برای اهداف مقرری که با تعهدات سازمان سازگارند (ص ط)»."
+     }
+    ]
+   },
+   {
+    "index": 1,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "داده‌های سازمانی | دادهٔ تحت نظارت و مدیریت سازمان به دلایل قانونی، قراردادی یا دیگر؛ ممکن است PII هم داشته باشد",
+      "explanation": "Evidence T15816-3-3.11 (note 4) states: «داده‌های سازمانی می‌توانند حاوی OPD و اطلاعات قابل شناسایی شخصی (PII) باشند.» The paraphrase retains PII but silently drops OPD (داده‌های حفاظت‌شدهٔ سازمانی), which the standard defines in note 2 of the same clause as a distinct sub-category. Omitting OPD misrepresents the scope of the note.",
+      "suggested_fix": "Update the cell to: «دادهٔ تحت نظارت و مدیریت سازمان به دلایل قانونی، قراردادی یا دیگر؛ ممکن است حاوی OPD (داده‌های حفاظت‌شدهٔ سازمانی) و PII باشد.»"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:05:30-0400"
+}

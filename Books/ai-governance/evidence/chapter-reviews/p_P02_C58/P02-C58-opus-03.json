@@ -1,0 +1,44 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  3,
+  5
+ ],
+ "section_shas": {
+  "3": "5b4e53599843c9801d731eeede30b4d0869f551e4180a4404fc6d90e1c4d3020",
+  "5": "8264a952302d03ab235ef2852bdf132bedd6f261ebe9596a7689c456dafe759a"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 448.5759789943695,
+ "result": {
+  "sections": [
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "number_or_page_error",
+      "quote": "ستون هوش مصنوعی می‌افزاید (ص ۸–۹):",
+      "explanation": "The bulleted list that follows this colon includes S23733-048 (جایگزینی سامانهٔ قبلی — مسائل مدنظر) whose printed pages are 9–10. The introductory page reference «ص ۸–۹» excludes printed page 10. Although the last bullet separately notes «ص ۹–۱۰», the scope marker before the colon implies all items fall within pp. 8–9, which is incomplete.",
+      "suggested_fix": "Change «(ص ۸–۹):» to «(ص ۸–۱۰):», or to «(ص ۸–۱۰؛ جزئیات صفحه در هر بند):» to signal per-item references follow."
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "other",
+      "quote": "شفافیتِ بیش از حد هم مخاطرهٔ حریم خصوصی، امنیت و مالکیت معنوی دارد (ب.۳)",
+      "explanation": "Evidence S23733-144 lists four risk domains: «حریم خصوصی، امنیت، الزامات محرمانگی و مالکیت معنوی». The section drops «الزامات محرمانگی» (confidentiality requirements), reducing the standard's four-item list to three. In context, confidentiality requirements are distinct from both privacy and security, so the omission narrows the scope of the standard's warning.",
+      "suggested_fix": "Restore the missing item: «…مخاطرهٔ حریم خصوصی، امنیت، الزامات محرمانگی و مالکیت معنوی دارد»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T08:05:33-0400"
+}

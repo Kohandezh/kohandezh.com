@@ -1,0 +1,30 @@
+{
+ "chapter": "P01/C55",
+ "sections": [
+  6
+ ],
+ "section_shas": {
+  "6": "6eae0b474e558726356de5287776146290a2e0c912d3f62536c395b70d9c1bce"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 169.65311002731323,
+ "result": {
+  "sections": [
+   {
+    "index": 6,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "attribution",
+      "explanation": "The INSO standard is cited throughout the section exclusively as 'INSO 23681:1403' without its international counterpart ISO/IEC 23053:2022 (confirmed identical adoption per I23681-id: «Identical with ISO/IEC 23053:2022»). Hard content rule 6 requires both identifiers whenever an INSO document is referenced, so that readers cannot conflate the national adoption with the international text. The requirement applies to the first substantive mention; later clause references may use the short form.",
+      "quote": "برداشت اجرایی تدوینگر از مفاهیم INSO 23681:1403",
+      "suggested_fix": "Change the first mention to «برداشت اجرایی تدوینگر از مفاهیم INSO 23681:1403 (≡ ISO/IEC 23053:2022)». In the body, references such as «بندهای ۶.۴، ۸.۳ و ۸.۵ استاندارد» and «در بندهای ۶.۵.۵.۱ و ۸.۵ آمده است» may keep the short form after the first full citation is established."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:16:16-0400"
+}

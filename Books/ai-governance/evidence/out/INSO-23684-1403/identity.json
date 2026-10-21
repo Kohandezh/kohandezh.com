@@ -1,0 +1,122 @@
+{
+ "source_id": "INSO-23684-1403",
+ "national_reference_printed": "استاندارد ملی ایران شمارهٔ ۲۳۶۸۴ (چاپ اول): سال ۱۴۰۳",
+ "national_number_printed": "23684",
+ "edition_printed": "چاپ اول (cover EN: 1st Edition)",
+ "iranian_year_printed": "۱۴۰۳",
+ "title_fa_printed": "مهندسی نرم‌افزار – الزامات و ارزشیابی کیفیت سامانه‌ها و نرم‌افزار (SQuaRE) – مدل کیفیت برای سامانه‌های هوش مصنوعی (AI)",
+ "title_en_printed": "Software Engineering – Systems and Software Quality Requirements and Evaluation (SQuaRE) – Quality Model for AI Systems",
+ "international_reference_printed": "ISO/IEC 25059:2023, Software Engineering - Systems and Software Quality Requirements and Evaluation (SQuaRE) - Quality Model for AI Systems",
+ "international_year": "2023",
+ "cover_designation_printed_en": "INSO 23684 / 1st Edition / 2024 / Identical with ISO/IEC 25059: 2023 / ICS: 35.080",
+ "equivalence_statement_printed": "این استاندارد ملی بر مبنای پذیرش استاندارد بین‌المللی زیر به روش «معادل یکسان» تهیه و تدوین شده و شامل ترجمه تخصصی کامل متن آن به زبان فارسی می‌باشد و معادل یکسان استاندارد بین‌المللی مزبور است",
+ "adoption_reference_printed": "پذیرش استانداردهای بین‌المللی/منطقه‌ای به‌عنوان استاندارد ملی ایران به روش اشاره شده در مورد الف، بند 7 استاندارد ملی ایران شمارهٔ 5",
+ "publisher_printed": "سازمان ملی استاندارد ایران (Iran National Standards Organization / INSO)",
+ "approval_or_publication_date_printed": "1403/06/07 — تاریخ تصویب در «هفتصد و چهل و ششمین اجلاسیه کمیتهٔ ملی استاندارد فناوری اطلاعات»؛ جز سال ۱۴۰۳ (و «2024» در جلد انگلیسی) تاریخ انتشار دیگری چاپ نشده است",
+ "approval_body_printed": "کمیتهٔ ملی استاندارد فناوری اطلاعات (اجلاسیهٔ هفتصد و چهل و ششم، مورخ 1403/06/07)",
+ "legal_basis_printed": "بند یک مادهٔ 7 قانون تقویت و توسعه نظام استاندارد، ابلاغ‌شده در دی‌ماه 1396",
+ "technical_commission_printed": {
+  "title": "کمیسیون فنی تدوین استاندارد «مهندسی نرم‌افزار – الزامات و ارزشیابی کیفیت سامانه‌ها و نرم‌افزار (SQuaRE) – مدل کیفیت برای سامانه‌های هوش مصنوعی (AI)»",
+  "chair": "یزدیان ورجانی، علی (دکتری مهندسی کامپیوتر)",
+  "secretary": "عزیزی مهماندوست، مهدی (دکتری مدیریت راهبردی فضای سایبری)",
+  "editor": "رثائی، حامد (کارشناسی‌ارشد مهندسی برق - قدرت)",
+  "members_listed_count": 10,
+  "pdf_pages": [
+   4,
+   5
+  ],
+  "note": "names/affiliations as printed on pages د and ه; members listed alphabetically per the page"
+ },
+ "pdf_pages_total": 30,
+ "pdf_to_printed_offset": 9,
+ "pagination_note": "pdf page 1 = cover (unnumbered); pdf pages 2-9 carry Persian abjad letters ب ج د ه و ز ح ط; pdf page 10 = printed page 1 (scope). printed = pdf - 9 for pdf >= 10. Last page pdf 30 = printed 21.",
+ "normative_references": [
+  {
+   "clause": "2.1",
+   "printed_reference": "ISO/IEC 25010:2011, Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and software quality models",
+   "national_number_if_printed": null,
+   "pdf_page": 10,
+   "national_adoption_note_printed": "یادآوری - استاندارد ملی ایران شماره ایزو آی‌ای‌سی ۲۵۰۱۰: سال ۱۳۹۱، مهندسی سامانه‌ها و نرم‌افزار- الزامات و ارزشیابی کیفیت سامانه‌ها و نرم‌افزار (SQuaRE) – مدل‌های کیفیت سامانه و نرم‌افزار، با استفاده از استاندارد ISO/IEC 25010:2011 به صورت تنفیذ تدوین شده است.",
+   "note": "No numeric INSO number is printed for this national standard; the text names it only as «ایزو آی‌ای‌سی ۲۵۰۱۰» with year ۱۳۹۱ and says it was prepared «به صورت تنفیذ» from ISO/IEC 25010:2011."
+  },
+  {
+   "clause": "2.2",
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۲۳۶۷۹: سال ۱۴۰۳، فناوری اطلاعات - هوش مصنوعی - مفاهیم و اصطلاحات هوش مصنوعی",
+   "national_number_if_printed": "23679",
+   "pdf_page": 10,
+   "note": "international equivalent not printed in this document"
+  },
+  {
+   "clause": "2.3",
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۲۳۶۸۱: سال ۱۴۰۳، چارچوبی برای سیستم‌های هوش مصنوعی مبتنی بر یادگیری ماشین",
+   "national_number_if_printed": "23681",
+   "pdf_page": 10,
+   "note": "international equivalent not printed in this document"
+  }
+ ],
+ "relationship_to_ISO_IEC_25010": {
+  "printed_designation": "ISO/IEC 25010 (clause 2.1: ISO/IEC 25010:2011); national counterpart named as «استاندارد ملی ایران شماره ایزو آی‌ای‌سی ۲۵۰۱۰: سال ۱۳۹۱» (pdf p10) — no numeric INSO number printed",
+  "statement_fa": "هر دو مدل (کیفیت محصول و کیفیت کاربرد) بر نسخهٔ تغییریافتهٔ مدل کلی ارائه‌شده در ISO/IEC 25010 بنا می‌شوند؛ مشخصه‌های اصلی تغییرنیافته باید مطابق ISO/IEC 25010 تفسیر شوند.",
+  "modality": "shall (for interpretation of unchanged characteristics)",
+  "pdf_pages": [
+   14,
+   19
+  ],
+  "printed_pages": [
+   5,
+   10
+  ],
+  "clauses": [
+   "5.1",
+   "6.1"
+  ]
+ },
+ "related_national_standards_printed_in_bibliography": [
+  {
+   "bibliography_item": "[1]",
+   "international": "ISO/IEC 25000:2014 (bibliography entry)",
+   "national_note_printed": "استاندارد ملی ایران ایزو آی‌ای‌سی شماره ۲۵۰۰۰: سال ۱۳۸۹ ... با استفاده از استاندارد ISO/IEC 25000:2005 تدوین شده است",
+   "pdf_page": 29,
+   "note": "bibliography lists edition 2014 while the national note says it was prepared from the 2005 edition"
+  },
+  {
+   "bibliography_item": "[8]",
+   "international": "ISO/IEC/IEEE 15939 (no year in the entry)",
+   "national_note_printed": "استاندارد ملی ایران شمارهٔ ۱۲۷۵۵: سال ۱۳۸۷، مهندسی سامانه‌ها و نرم افزار – فرایند سنجش، با استفاده از ISO/IEC 15939:2007 تدوین شده است",
+   "national_number": "12755",
+   "pdf_page": 29
+  },
+  {
+   "bibliography_item": "[9]",
+   "international": "ISO/IEC 25040:2011",
+   "national_note_printed": "استاندارد ملی ایران ایزو آی‌ای‌سی ۲۵۰۴۰: سال ۱۳۹۱ ... با استفاده از ISO/IEC 25040:2011 تدوین شده است",
+   "pdf_page": 29
+  },
+  {
+   "bibliography_item": "[17]",
+   "international": "ISO 31000, Risk management – Guidelines",
+   "national_note_printed": "استاندارد ملی ایران شمارهٔ ۱۳۲۴۵: سال ۱۳۹۸، مدیریت ریسک- رهنمودها، با استفاده از ISO 31000: 2018 تدوین شده است",
+   "national_number": "13245",
+   "pdf_page": 30
+  },
+  {
+   "bibliography_item": "[18]",
+   "international": "ISO/IEC 23894 (entry has no year)",
+   "national_note_printed": "استاندارد ملی ایران شمارهٔ ۲۳۷۳۳: سال ۱۴۰۳، فناوری اطلاعات- هوش مصنوعی- راهنمای مدیریت مخاطره (ریسک) با استفاده از ISO/IEC 23894:2023 تدوین شده است",
+   "national_number": "23733",
+   "pdf_page": 30
+  }
+ ],
+ "notes": [
+  "Expected by the owner: INSO 23684 (1403) = ISO/IEC 25059:2023 — CONFIRMED on the pages; no difference found. Cover and preface both say identical (cover: 'Identical with ISO/IEC 25059: 2023'; preface: «معادل یکسان»).",
+  "The document contains NO numbered tables; only Figure 1 (شکل ۱), Figure 2 (شکل ۲) and Figure A.1 (شکل الف-۱).",
+  "Clause numbers are printed right-to-left with the hyphen as a neutral character, so the rendered number looks mirrored (heading of clause 5.1 reads visually «۱-۵»; 3.2.1 reads «۱-۲-۳»). All clause numbers in these JSON files are given in logical order (parent first: 3.2.1) — this is verified against the TOC hierarchy.",
+  "Preface says the draft was prepared by the relevant commissions under item (الف), clause 7 of INSO standard no. 5 and approved 1403/06/07; only a session ordinal and a date are printed — no approval number.",
+  "No URL, certification claim or ISBN-like number is printed other than the INSO contact details on page ب (standard@inso.gov.ir, http://www.inso.gov.ir) — not needed by the book."
+ ],
+ "uncertainties": [
+  "No numeric INSO number is printed for the national version of ISO/IEC 25010 (clause 2.1 note); do not invent one.",
+  "International equivalents of INSO 23679 and INSO 23681 are not printed in this document.",
+  "Bibliography [1] cites ISO/IEC 25000:2014 while its national note says the national standard was prepared from ISO/IEC 25000:2005."
+ ]
+}

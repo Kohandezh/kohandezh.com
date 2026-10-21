@@ -1,0 +1,37 @@
+{
+ "chapter": "P07/C65",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "a6783e11837762b574dea30f0aaff14e72e03404e1548a33270106bb18c0d269",
+  "1": "1d48c392ff0ba44c7c60219a99caba4dbc03f31e6b3cac2171dc26b37809db38"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 231.92870998382568,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "BS ISO/IEC 42001:2023، «همسان»؛ مبنای بین‌المللی ISO/IEC 42001:2023",
+      "explanation": "The column header is «مبنای بین‌المللی، چنان‌که چاپ شده» (international basis, as printed), and the body note explicitly states «مبنای بین‌المللی هر سند همان‌گونه در جدول آمده که روی خودِ سند چاپ شده است.» Evidence I42001-id shows only «BS/ISO/IEC 42001:2023» (cover) and «BS ISO/IEC 42001:2023» (foreword) are printed on the INSO document. The identifier «ISO/IEC 42001:2023» without the BS prefix never appears in any cited evidence item; it is an editorial inference, not a printed value. Adding it in an «as-printed» column contradicts the section's own stated methodology.",
+      "suggested_fix": "Remove «مبنای بین‌المللی ISO/IEC 42001:2023» from the table cell and keep only the printed identifier, or move it to a clearly labelled footnote reading, for example, «[تدوینگر: BS ISO/IEC 42001:2023 چاپ پیشگفتار؛ استاندارد ISO/IEC 42001:2023 پایهٔ بین‌المللی آن است، اما این عبارت روی سند چاپ نشده است]»."
+     }
+    ]
+   },
+   {
+    "index": 1,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:45:56-0400"
+}

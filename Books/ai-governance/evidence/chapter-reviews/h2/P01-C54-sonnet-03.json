@@ -1,0 +1,50 @@
+{
+ "chapter": "P01/C54",
+ "sections": [
+  3,
+  4
+ ],
+ "section_shas": {
+  "3": "b053ff1fe048af830fa8c86db14ea03f77aca28337da2507330edd5968d81aaf",
+  "4": "a45ba8fab429863eaa854cef620c07f967d9556b00b2db6293247b997fdfac25"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 454.7303969860077,
+ "result": {
+  "sections": [
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "در خودِ استانداردها نمونه‌هایی از ناسازگاری چاپی دیده شد (مثلاً ارجاع به بندی که شماره‌اش با فهرست نمی‌خواند، یا دو شکل برای یک اصطلاح در یک سند)",
+      "explanation": "The section makes a positive factual claim (past-tense «دیده شد»: were found) that specific types of printing inconsistency exist in the standards and gives two concrete examples. None of the seven cited evidence items (S23728-018/019/022, I42001-id, I23728-id, I23728-ment, I42001-nr1) records any such inconsistency. Under the review rules any statement about what is or is not printed in a standard must be supported by a cited item; absence of supporting evidence is not cured by the word «مثلاً».",
+      "suggested_fix": "Delete the parenthetical examples and retain only the editorial policy statement, e.g.: «هرگاه ناسازگاری‌ای در متن استانداردها یافت شود، فصل‌ها آن را گزارش می‌کنند و به‌دلخواه اصلاح نمی‌کنند.» If the specific example types are kept, each must be backed by a new cited evidence item identifying the exact document and clause where the inconsistency was observed."
+     },
+     {
+      "type": "attribution",
+      "quote": "سند INSO 23728 (بندهای ۴.۱ و ۴.۲، ص ۱۲ چاپی)",
+      "explanation": "Hard content rule 6 requires both the national INSO identifier and the international equivalent whenever an INSO document is cited. Evidence record I23728-id confirms INSO 23728 is identical with IEEE Std 7002:2022 (IDT), but the section gives only the national number, omitting the IEEE equivalent entirely.",
+      "suggested_fix": "Write: «INSO 23728 (= IEEE Std 7002:2022، بندهای ۴.۱ و ۴.۲، ص ۱۲ چاپی)»"
+     }
+    ]
+   },
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "the printed INSO 23733 text does not contain the concept (searched the verified evidence)",
+      "explanation": "This is a blanket absence claim about the entire printed text of INSO 23733. The review rules require absence claims to be phrased as limited to the clauses actually cited, not the full document. The parenthetical '(searched the verified evidence)' does not fully repair the main clause, which still asserts absence from 'the printed text' at large. The source index for INSO-23733-1403 lists all 86 outline headings, none of which reference the concept, but body text under those headings is not in scope of the heading index; an unqualified whole-document assertion remains unsupported.",
+      "suggested_fix": "Rephrase to: 'the concept was not identified in any of the cited evidence items for INSO 23733, nor does it appear in any of the 86 outline headings listed in the verified source index.' This bounds the claim to the available evidence rather than claiming to cover the full printed body text."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:42:35-0400"
+}

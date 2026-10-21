@@ -1,0 +1,43 @@
+{
+ "chapter": "P04/C62",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "9eb6bee780cfd698302580fb339b5cd12ee24f3c2c3a1d063f0dfaf0fb5ca1f4",
+  "5": "63bf309f12de6b91fc73712e868fd612db3dbe845d1b67daec8e9df0b5ffdc69"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 480.640429019928,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "«توضیح‌پذیری (توصیف‌پذیری)» فقط در یادآوری ۳.۳.۱ (ص ۴) و بند ۵.۶ (ص ۹) آمده",
+      "explanation": "The adverb «فقط» (only) is contradicted by S23684-058 (clause 6.2, printed p. 11), which explicitly lists «شفافیت و توضیح‌پذیری» as one of the 14 TR 24368 topics. The term therefore also appears in clause 6.2, making the two-location claim factually incorrect.",
+      "suggested_fix": "Remove «فقط» and add the third location: «در یادآوری ۳.۳.۱ (ص ۴)، بند ۵.۶ (ص ۹) و بند ۶.۲ (در فهرست ۱۴ موضوع TR 24368، ص ۱۱) آمده»."
+     },
+     {
+      "type": "terminology",
+      "quote": "هر دو شفافیت را اطلاعاتِ رسیده به طرف‌های مرتبط می‌دانند",
+      "explanation": "The binding terminology table requires «ذی‌نفعان» (stakeholder, 7002 §3.1.39; 25059) for this concept. Both T23684-3.1.5 and S23684-044 use «ذی‌نفعان مرتبط / مربوط». «طرف‌های مرتبط» is not a recognised alias in the project terminology file and could be confused with «طرف‌های ذی‌نفع» (interested party, 42001 §3.2).",
+      "suggested_fix": "Replace «طرف‌های مرتبط» with «ذی‌نفعان مرتبط»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:09:47-0400"
+}

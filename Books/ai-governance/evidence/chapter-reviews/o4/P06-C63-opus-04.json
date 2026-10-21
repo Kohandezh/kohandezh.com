@@ -1,0 +1,44 @@
+{
+ "chapter": "P06/C63",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "07a40652fc9eb51201b96cc9410d8e43e4e1460819d5e01bfb4c927bbe3ca048",
+  "5": "b316b12398ee7b2eaab2c4798eadcdd753950c34c8735560d525fc0dbee28094"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 460.0412058830261,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "other",
+      "quote": "سازوکارهای ممیزی (در متن چاپی: «حسابرسی») دوره‌ای برای اعتبارسنجی اثربخشی خط‌مشی‌ها و روال‌ها و در غیر این صورت مدیریت فرایند بهبود",
+      "explanation": "Item (4) in the conformity-proof list truncates the evidence. S23728-073 item (4) reads «مدیریت فرایند بهبود آن‌ها و اعتبارسنجی» — the section drops «آن‌ها و اعتبارسنجی», omitting 'validation' as a distinct sub-component of what the entity must demonstrate for conformity.",
+      "suggested_fix": "Append «آن‌ها و اعتبارسنجی» so item (4) reads: «…مدیریت فرایند بهبود آن‌ها و اعتبارسنجی»."
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "other",
+      "quote": "ممیزی (در متن چاپی: «حسابرسی») دوره‌ای «توصیه می‌شود» (ص ۳۷)",
+      "explanation": "The ۸.۳ bullet reports only 'audit' but evidence S23728-145 recommends «حسابرسی‌ها و بررسی‌های دوره‌ای» — 'reviews' (بررسی‌ها) are a distinct recommended activity omitted from the summary.",
+      "suggested_fix": "Change to: «ممیزی‌ها (در متن چاپی: «حسابرسی‌ها») و بررسی‌های دوره‌ای «توصیه می‌شود» (ص ۳۷)»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T07:25:20-0400"
+}

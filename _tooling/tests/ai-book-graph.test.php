@@ -5,6 +5,8 @@
  * mention-based Reader wiring, inline fixtures for the validator boundary,
  * and corrupted-artifact fail-closed paths on a temporary artifact root.
  */
+// The second edition's graph (about 4.8K entities, 17K relations) needs more than the CLI default of 128M to load in a test.
+ini_set( 'memory_limit', '512M' );
 define( 'ABSPATH', __DIR__ );
 define( 'KBK_FEATURE_AI_BOOK', true );
 define( 'KBK_PLUGIN_FILE', __FILE__ );
@@ -45,13 +47,24 @@ if ( KBK_AI_Book_Graph::STATUS_READY !== $graph->status() ) {
 	fail( 'graph must load the real canonical artifact cleanly' );
 }
 
-// 1. Overview stats: honest totals matching the canonical artifact.
+// 1. Overview stats: honest totals matching the canonical artifact. The first edition's totals are pinned;
+//    any later edition is checked against the totals counted independently from its own graph.json.
+$raw_graph = json_decode( (string) file_get_contents( $root . '/knowledge/graph.json' ), true );
+$raw_rel   = array();
+foreach ( $raw_graph['edges'] as $raw_edge ) {
+	$raw_rel[ $raw_edge['relation'] ?? $raw_edge['type'] ?? '' ] = ( $raw_rel[ $raw_edge['relation'] ?? $raw_edge['type'] ?? '' ] ?? 0 ) + 1;
+}
+$first_edition = '2026E1' === $repository->summary()['edition_id'];
+$want_nodes     = $first_edition ? 3671 : count( $raw_graph['nodes'] );
+$want_edges     = $first_edition ? 10474 : count( $raw_graph['edges'] );
+unset( $raw_graph, $raw_edge ); // the test builds several graphs below; do not hold a second copy in memory
+$want_relations = $first_edition ? 17 : count( $raw_rel );
 $stats = $graph->stats();
-if ( null === $stats || 3671 !== $stats['nodes'] || 10474 !== $stats['edges'] || 17 !== $stats['relations'] ) {
+if ( null === $stats || $want_nodes !== $stats['nodes'] || $want_edges !== $stats['edges'] || $want_relations !== $stats['relations'] ) {
 	fail( 'graph stats must match the canonical artifact totals' );
 }
 $relations = $graph->relation_counts();
-if ( 17 !== count( $relations ) || ( $relations['REFERENCES'] ?? 0 ) !== 5291 || ( $relations['PART_OF'] ?? 0 ) !== 743 ) {
+if ( $want_relations !== count( $relations ) || ( $relations['REFERENCES'] ?? 0 ) !== ( $first_edition ? 5291 : ( $raw_rel['REFERENCES'] ?? 0 ) ) || ( $relations['PART_OF'] ?? 0 ) !== ( $first_edition ? 743 : ( $raw_rel['PART_OF'] ?? 0 ) ) ) {
 	fail( 'relation counts must be complete and correct' );
 }
 

@@ -1,0 +1,50 @@
+{
+ "chapter": "P01/C55",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "be247b1a330c67885227f5247e3e97c9d6159eb4a6a8ebf2b241fbb2cc7b87ac",
+  "3": "b525547b35632f863ac0032847c22c03e07836de5cb47dc1f2f5420f56fe1826"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 483.5116789340973,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "درخت تصمیم، شبکهٔ بیزی، ماشین بردار پشتیبان، شبکهٔ عصبی با هفت نوع",
+      "explanation": "The section claims to describe شکل ۳ (printed page 16) as printed. It lists the four algorithm branches with ماشین بردار پشتیبان third and شبکهٔ عصبی fourth. Evidence F23681-شکل ۳ records the printed order explicitly as: درخت تصمیم، شبکه بیزی، شبکه عصبی، ماشین بردار پشتیبان — شبکه عصبی is third and ماشین بردار پشتیبان is fourth. The last two entries are transposed.",
+      "suggested_fix": "Correct the list to match the printed order: «درخت تصمیم، شبکهٔ بیزی، شبکهٔ عصبی با هفت نوع، ماشین بردار پشتیبان»."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "(یادگیری گروهی بند جداگانه ندارد)",
+      "explanation": "No cited evidence item states that ensemble learning (یادگیری گروهی) lacks its own sub-section. Evidence S23681-078 only says these four derivative approaches 'از چند رویکرد الهام می‌گیرند و بحث جداگانه می‌خواهند' — it neither asserts the presence nor the absence of a dedicated section. The claim is an inference about an absence in the standard that is not supported by any cited item.",
+      "suggested_fix": "Replace with a statement tied to the evidence, e.g.: «در مفاد بند ۷.۱ به بحث جداگانه‌ای برای یادگیری گروهی اشاره می‌شود ولی بند مستقلی برای آن در استاندارد ارجاع داده نشده است» — or simply remove the parenthetical."
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "پاورقی همان صفحه معادل Machine Learning Pipeline را چاپ کرده است (از تصویر صفحه)",
+      "explanation": "No cited evidence item for clause 8.1 (printed page 39) records a footnote giving 'Machine Learning Pipeline' as the English equivalent of 'زنجیرهٔ ML'. Evidence S23681-092 is the only item covering page 39 content and contains no such footnote. The parenthetical '(از تصویر صفحه)' signals the compiler drew on the page image directly, but since that observation does not appear in any supplied evidence item the claim is unverifiable against the cited evidence and must not stand as a factual assertion about printed content.",
+      "suggested_fix": "Either add a dedicated evidence item that records the exact footnote text as it appears on the printed page, or remove the sentence and replace the terminology note with a plain editorial remark, e.g.: «در این کتاب «خط لولهٔ ML» و «زنجیرهٔ ML» به‌عنوان معادل یک‌دیگر به کار می‌روند» without attributing the equivalence to a printed footnote."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:13:26-0400"
+}

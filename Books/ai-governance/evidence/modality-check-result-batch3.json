@@ -1,0 +1,399 @@
+[
+  {
+    "item_id": "S23728-142",
+    "verdict": "faithful",
+    "printed_expression": "ارزیابی دیگری باید انجام شود",
+    "note": "Page prints a single «باید» for the new assessment; the repeat clause is coordinated under it, so the force is the same."
+  },
+  {
+    "item_id": "S23728-144",
+    "verdict": "faithful",
+    "printed_expression": "سازمان‌ها باید تغییرات ... را ... پایش کنند",
+    "note": "Matches the printed «باید» sentence on p.37."
+  },
+  {
+    "item_id": "S23728-148",
+    "verdict": "faithful",
+    "printed_expression": "دروازه‌های فاز باید نقاط حکمرانی ... در نظر گرفته شوند",
+    "note": "Printed «باید» is on this page and matches."
+  },
+  {
+    "item_id": "S23728-151",
+    "verdict": "faithful",
+    "printed_expression": "فرایند SDLC باید به شکلی به هر یک از دروازه‌های فاز بپردازد",
+    "note": "The 9.2 sentence is on the next page image (p-48, printed p.39) and prints «باید»."
+  },
+  {
+    "item_id": "S23728-158",
+    "verdict": "faithful",
+    "printed_expression": "بهتر است ... / ممکن است ... الزامی باشد / توصیه می‌شود ... در نظر گرفته شود",
+    "note": "On p-49 (printed p.40) all three expressions are printed as stated; the printed «در صورت نیاز» on the gate instruction is dropped but no modality changes."
+  },
+  {
+    "item_id": "S23733-009",
+    "verdict": "faithful",
+    "printed_expression": "استفاده از مراجع زیر، برای کاربرد این استاندارد الزامی است",
+    "note": "Printed «الزامی است» matches."
+  },
+  {
+    "item_id": "S23733-015",
+    "verdict": "faithful",
+    "printed_expression": null,
+    "note": "No modality word printed or added; clause 4 text and Table 1 reference match."
+  },
+  {
+    "item_id": "S23733-036",
+    "verdict": "faithful",
+    "printed_expression": "توصیه می‌شود مدیریت ارشد ... / ضروری است",
+    "note": "Both «توصیه می‌شود» and «ضروری است» are printed as stated."
+  },
+  {
+    "item_id": "S23733-048",
+    "verdict": "faithful",
+    "printed_expression": "در این ارزیابی، لازم است ...",
+    "note": "Printed «لازم است» at the foot of the page; the verb «قرار گیرد» runs onto the next page."
+  },
+  {
+    "item_id": "S23733-051",
+    "verdict": "faithful",
+    "printed_expression": "لازم‌الاجرا می‌شود",
+    "note": "Row text matches; no modality force added (column header's «توصیه می‌شود» is not reproduced but nothing is strengthened)."
+  },
+  {
+    "item_id": "S23733-052",
+    "verdict": "wrong",
+    "printed_expression": "دانش خاص فناوری‌های هوش مصنوعی و داده‌شناسی مورد نیاز",
+    "corrected_statement_fa": "مخاطره‌های اضافی تهدیدکنندهٔ دانش سازمانی دربارهٔ شفافیت و توضیح‌پذیری؛ استفاده از هوش مصنوعی «ممکن است» به تغییراتی در الزامات منابع انسانی (مثلاً مهارت‌زدایی) منجر شود؛ دانش خاص فناوری هوش مصنوعی و داده‌شناسی «مورد نیاز» برای توسعه و استفاده از سامانه‌های هوش مصنوعی؛ دسترس‌پذیری ابزارها و کتابخانه‌ها «می‌تواند» توسعه را بدون درک کامل محدودیت‌ها امکان‌پذیر کند.",
+    "note": "Printed item is a bare noun phrase with «مورد نیاز»; the statement turned it into the predicate «لازم است» (and «ممکن است» became «می‌تواند»)."
+  },
+  {
+    "item_id": "S23733-053",
+    "verdict": "faithful",
+    "printed_expression": "به سازمان‌ها توصیه می‌شود ... مدنظر قرار دهند",
+    "note": "Printed «توصیه می‌شود» and «لازم است یا خیر» match; only the purpose link «تا» became «و»."
+  },
+  {
+    "item_id": "S23733-077",
+    "verdict": "faithful",
+    "printed_expression": "لازم است فهرستی از ذی‌نفعان در نظر گرفته شود",
+    "note": "Printed «لازم است» matches."
+  },
+  {
+    "item_id": "S23733-078",
+    "verdict": "faithful",
+    "printed_expression": "می‌توانند به انسان‌ها آسیب برسانند",
+    "note": "Printed «می‌توانند» matches."
+  },
+  {
+    "item_id": "S23733-094",
+    "verdict": "faithful",
+    "printed_expression": "سازمان موظف است فهرستی ... تهیه کند",
+    "note": "Printed «موظف است» matches."
+  },
+  {
+    "item_id": "S23733-096",
+    "verdict": "faithful",
+    "printed_expression": "سازمان موظف است رویدادهای بالقوه‌ای را شناسایی کند",
+    "note": "Printed «موظف است» matches."
+  },
+  {
+    "item_id": "S23733-098",
+    "verdict": "faithful",
+    "printed_expression": "سازمان موظف است ... / توصیه می‌شود این واپایش‌ها ... شناسایی شوند",
+    "note": "Printed «موظف است» and «توصیه می‌شود» both match."
+  },
+  {
+    "item_id": "S23733-128",
+    "verdict": "faithful",
+    "printed_expression": "ضروری است داده‌های آموزشی، آزمایشی و عملیاتی ... هماهنگ باشند",
+    "note": "Printed «ضروری است» matches."
+  },
+  {
+    "item_id": "S23733-137",
+    "verdict": "faithful",
+    "printed_expression": "ضروری است",
+    "note": "Printed «می‌تواند ... ایجاد کند» and «ضروری است» match; the «مراجعه شود» sentence is at the top of p-39."
+  },
+  {
+    "item_id": "S23733-155",
+    "verdict": "faithful",
+    "printed_expression": null,
+    "note": "Table C.1 deployment row matches; «ممکن است ... به‌روز شود» is printed as such."
+  },
+  {
+    "item_id": "S42001-007",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید ... / باید در بیانیهٔ قابلیت کاربست‌پذیری منعکس شوند",
+    "note": "Note 2 to the definition prints both «باید» sentences as stated."
+  },
+  {
+    "item_id": "S42001-008",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید موضوعات ... تعیین کند",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-009",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید تعیین کند که آیا تغییرات اقلیمی مسئلهٔ مرتبطی است یا خیر",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-010",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید ... در نظر گیرد / باید نقش‌های خود را ... تعیین کند",
+    "note": "Both printed «باید» sentences match."
+  },
+  {
+    "item_id": "S42001-014",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید موارد زیر را تعیین کند",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-016",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید محدوده و قابلیت کاربست‌پذیری ... مشخص نماید",
+    "note": "Printed «باید» matches; the two items to consider sit at the top of the next page."
+  },
+  {
+    "item_id": "S42001-017",
+    "verdict": "faithful",
+    "printed_expression": "دامنه باید به‌عنوان اطلاعات مدون در دسترس باشد",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-018",
+    "verdict": "faithful",
+    "printed_expression": "دامنه نظام مدیریت هومص باید فعالیت‌های سازمان را ... تعیین کند",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-019",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید یک نظام مدیریت هومص ... ایجاد و اجرا نماید",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-020",
+    "verdict": "faithful",
+    "printed_expression": "مدیریت رده‌بالا باید ... اثبات نماید",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-031",
+    "verdict": "faithful",
+    "printed_expression": "مدیریت رده‌بالا باید خط‌مشی هومص را به نحوی تعیین کند که",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-032",
+    "verdict": "faithful",
+    "printed_expression": "خط‌مشی هومص باید: ...",
+    "note": "Printed «باید» list matches."
+  },
+  {
+    "item_id": "S42001-033",
+    "verdict": "faithful",
+    "printed_expression": null,
+    "note": "Informational cross-reference paragraph; no modality printed or added («لازم» only modifies «واپایش‌های»)."
+  },
+  {
+    "item_id": "S42001-034",
+    "verdict": "faithful",
+    "printed_expression": "مدیریت رده‌بالا باید اطمینان یابد",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-035",
+    "verdict": "faithful",
+    "printed_expression": "مدیریت رده‌بالا باید مسئولیت‌ها و اختیارات را ... تعیین نماید",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-036",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید ... در نظر بگیرد و ... تعیین نماید",
+    "note": "Printed «باید» starts at the foot of p-22 and continues on p-23; matches."
+  },
+  {
+    "item_id": "S42001-037",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید معیارهایی ... ایجاد و نگه دارد",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-039",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید مخاطرات و فرصت‌ها را ... تعیین کند",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-040",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید برای این موارد طرح‌ریزی کند",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-041",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید اطلاعات مدون ... حفظ کند",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-044",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید یک فرایند ارزیابی مخاطره هومص تعریف و ایجاد کند که",
+    "note": "Printed «باید» (on defining the process) matches."
+  },
+  {
+    "item_id": "S42001-045",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید یک فرایند ... تعریف و ایجاد کند که ... مخاطرات هومص را تحلیل کند",
+    "note": "Obligation is printed via the process the organization defines; «باید» force is retained."
+  },
+  {
+    "item_id": "S42001-046",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید یک فرایند ... تعریف و ایجاد کند که ... ارزشیابی کند",
+    "note": "Obligation is printed via the process the organization defines; «باید» force is retained."
+  },
+  {
+    "item_id": "S42001-047",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید اطلاعات مدون ... حفظ کند",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-049",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید ... فرایندی برای مواجهه با مخاطره هومص تعریف کند",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-050",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید ... فرایندی ... تعریف کند تا ... تمام واپایش‌های لازم را ... تعیین کند",
+    "note": "Item (ب) hangs under the printed «باید»; force retained."
+  },
+  {
+    "item_id": "S42001-052",
+    "verdict": "faithful",
+    "printed_expression": "واپایش‌هایی از پیوست الف ... در نظر بگیرد / ضروری است یا خیر",
+    "note": "Items (پ) and (ت) hang under the printed «باید»; «ضروری است» appears only inside the «آیا ... یا خیر» question as stated."
+  },
+  {
+    "item_id": "S42001-053",
+    "verdict": "faithful",
+    "printed_expression": "راهنمای ارائه‌شده در پیوست ب را ... در نظر بگیرد",
+    "note": "Item (ث) hangs under the printed «باید»; force retained."
+  },
+  {
+    "item_id": "S42001-055",
+    "verdict": "faithful",
+    "printed_expression": "بیانیهٔ قابلیت کاربست‌پذیری آماده کند",
+    "note": "Item (ج) hangs under the printed «باید»; force retained."
+  },
+  {
+    "item_id": "S42001-057",
+    "verdict": "faithful",
+    "printed_expression": "یک برنامه مواجهه با مخاطره هومص تنظیم کند",
+    "note": "Item (چ) hangs under the printed «باید»; force retained."
+  },
+  {
+    "item_id": "S42001-058",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید تأییدیهٔ مدیریت تعیین‌شده را ... کسب کند",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-059",
+    "verdict": "faithful",
+    "printed_expression": "واپایش‌های ضروری باید: ...",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-060",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید اطلاعات مدون ... حفظ کند",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-061",
+    "verdict": "faithful",
+    "printed_expression": "توجیه حذف می‌تواند شامل این باشد",
+    "note": "Printed «می‌تواند» matches; it is not folded into a stronger word."
+  },
+  {
+    "item_id": "S42001-062",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید فرایندی را برای ارزیابی پیامدهای بالقوه ... تعریف کند",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-063",
+    "verdict": "faithful",
+    "printed_expression": "ارزیابی تأثیر سامانه هومص باید ... تعیین کند",
+    "note": "Printed «باید» matches (two printed sentences merged)."
+  },
+  {
+    "item_id": "S42001-064",
+    "verdict": "faithful",
+    "printed_expression": "نتیجه ارزیابی تأثیر سامانه هومص باید مستند شود",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-066",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید نتایج ارزیابی تأثیر ... در نظر بگیرد",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-067",
+    "verdict": "faithful",
+    "printed_expression": "سازمان می‌تواند الزام ایجاد کند",
+    "note": "Printed «می‌تواند» matches; the note stays permissive."
+  },
+  {
+    "item_id": "S42001-068",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید اهداف هومص را ... تعیین نماید",
+    "note": "Printed «باید» matches."
+  },
+  {
+    "item_id": "S42001-069",
+    "verdict": "faithful",
+    "printed_expression": "اهداف هومص باید: ...",
+    "note": "Printed «باید» list matches, including «(در صورتی که عملی است)»."
+  },
+  {
+    "item_id": "S42001-070",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید موارد زیر را تعیین نماید",
+    "note": "Printed «باید» matches; the last three bullets are at the top of p-27."
+  },
+  {
+    "item_id": "S42001-072",
+    "verdict": "faithful",
+    "printed_expression": "تغییرات باید به‌صورت طرح‌ریزی‌شده انجام شود",
+    "note": "Printed «باید» is on p-27 and matches."
+  },
+  {
+    "item_id": "S42001-073",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید منابعی را ... تعیین و تأمین نماید",
+    "note": "Printed «باید» is on p-27 and matches."
+  },
+  {
+    "item_id": "S42001-074",
+    "verdict": "faithful",
+    "printed_expression": "سازمان باید: شایستگی لازم را ... تعیین کند",
+    "note": "Printed «باید» list is on p-27 and matches («برحسب امکان» present)."
+  },
+  {
+    "item_id": "S42001-075",
+    "verdict": "faithful",
+    "printed_expression": "اطلاعات مدون مناسبی باید ... در دسترس باشد",
+    "note": "Printed «باید» is on p-27 and matches."
+  }
+]

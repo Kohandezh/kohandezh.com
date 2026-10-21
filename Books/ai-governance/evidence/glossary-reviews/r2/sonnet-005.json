@@ -1,0 +1,113 @@
+{
+ "keys": [
+  "data veracity",
+  "data volatility",
+  "data volume",
+  "distributed data processing",
+  "distributed file system",
+  "file",
+  "gather",
+  "horizontal scaling",
+  "non relational database",
+  "non relational model",
+  "parallel",
+  "partially structured data"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 147.26345705986023,
+ "result": {
+  "verdicts": [
+   {
+    "key": "data veracity",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "data volatility",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "data volume",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "distributed data processing",
+    "verdict": "AGREE",
+    "confidence": 0.87,
+    "issues": [
+     {
+      "type": "other",
+      "explanation": "The definition cross-references «داده‌پردازی (۳-۱-۱۹)» but 3.1.19 is the very entry being defined (distributed data processing), not plain «data processing». This self-referential cross-reference is reproduced exactly from the printed evidence, so the proposed is faithful and cannot be edited here; editors should verify against the INSO/ISO source page and consider an editorial note flagging the anomaly."
+     }
+    ]
+   },
+   {
+    "key": "distributed file system",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "file",
+    "verdict": "AGREE",
+    "confidence": 0.87,
+    "issues": [
+     {
+      "type": "other",
+      "explanation": "The printed definition reads «مجموعه‌ای نام‌دار از پرونده‌ها که به‌عنوان یک واحد در نظر گرفته می‌شود» — a named collection of *files* (پرونده‌ها), making the definition self-referential. ISO/IEC 20546:2019 defines «file» as a named set of *records*, where «records» should render as «رکوردها» or «سوابق», not «پرونده‌ها». Per rule 5 the printed evidence letter-accuracy cannot be questioned; the proposed is faithful to it. Editors should flag this as a potential translation error in the INSO source and consider an editorial caveat."
+     }
+    ]
+   },
+   {
+    "key": "gather",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.93,
+    "issues": [
+     {
+      "type": "other",
+      "explanation": "The printed term «گردآورد(جمع‌آوری)» is a standard INSO printing convention: the primary term followed by its alias in parentheses. The proposed correctly extracts «گردآورد» as the preferred term and «جمع‌آوری» as an alias. However, the combined printing-convention form «گردآورد(جمع‌آوری)» appears in alternatives_fa as if it were a standalone usable term — it is not; it is merely the typographic form from the page. Remove «گردآورد(جمع‌آوری)» from alternatives_fa and retain only «جمع‌آوری».",
+      "suggested_fix": "Set alternatives_fa to [\"جمع‌آوری\"] only; drop «گردآورد(جمع‌آوری)» from the list."
+     }
+    ]
+   },
+   {
+    "key": "horizontal scaling",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "non relational database",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "non relational model",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "parallel",
+    "verdict": "AGREE",
+    "confidence": 0.97,
+    "issues": []
+   },
+   {
+    "key": "partially structured data",
+    "verdict": "AGREE",
+    "confidence": 0.97,
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:00:20-0400"
+}

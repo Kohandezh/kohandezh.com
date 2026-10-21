@@ -1,0 +1,30 @@
+{
+ "chapter": "P01/C56",
+ "sections": [
+  3,
+  5
+ ],
+ "section_shas": {
+  "3": "add84cbcb54793fedae13319bfe7ff6b3473675360ec6722c79af98c990b4ca0",
+  "5": "f724910dd94cf474436eced04eca43ae354dabcff8f0cb2e7950c4b728beb39e"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 447.7177629470825,
+ "result": {
+  "sections": [
+   {
+    "index": 3,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 5,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T03:17:56-0400"
+}

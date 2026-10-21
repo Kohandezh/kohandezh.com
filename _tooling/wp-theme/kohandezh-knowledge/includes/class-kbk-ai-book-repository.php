@@ -292,7 +292,7 @@ final class KBK_AI_Book_Repository {
 		foreach ( $book['parts'] as $part ) {
 			$chapters += count( $part['chapters'] );
 		}
-		return array(
+		$summary = array(
 			'edition_id' => $book['edition_id'],
 			'locale'     => $book['locale'],
 			'title_fa'   => $book['title_fa'],
@@ -300,6 +300,15 @@ final class KBK_AI_Book_Repository {
 			'chapters'   => $chapters,
 			'sections'   => $book['units'],
 		);
+		// Optional fields: written by the builder from the second edition on. A first-edition
+		// bundle does not carry them, and its summary stays exactly as it was.
+		if ( isset( $book['edition_label_fa'] ) && is_string( $book['edition_label_fa'] ) && '' !== $book['edition_label_fa'] ) {
+			$summary['edition_label_fa'] = $book['edition_label_fa'];
+		}
+		if ( isset( $book['source_count'] ) && is_int( $book['source_count'] ) && $book['source_count'] > 0 ) {
+			$summary['source_count'] = $book['source_count'];
+		}
+		return $summary;
 	}
 
 	/**

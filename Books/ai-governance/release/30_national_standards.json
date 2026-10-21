@@ -1,0 +1,594 @@
+{
+ "edition_id": "2026E2",
+ "base_edition_id": "2026E1",
+ "publisher": {
+  "fa": "سازمان ملی استاندارد ایران",
+  "en": "Iran National Standards Organization (INSO)"
+ },
+ "reference_index": {
+  "url": "https://services.iranailab.ir/standards",
+  "role": "reference index of national AI standards (titles + stage); NOT the standards publisher and NOT the author of the translations; no per-document links, standard numbers or international designations are shown on it",
+  "self_description_on_page": "دبیرخانهٔ کمیتهٔ فنی متناظر «هوش مصنوعی» در سازمان ملی استاندارد ایران (ISO/IEC JTC 1/SC 42)",
+  "accessed": "2026-10-17",
+  "lists_ten_standards_stage": "انتشار رسمی (مرحلهٔ ۵ از ۵)"
+ },
+ "file_origin_note": "Files were read from the owner's local folder; their individual download origin was not independently verified.",
+ "standards": [
+  {
+   "seq": 19,
+   "doc_key": "INSO-42001-1404",
+   "filename": "inso-bs-iso-iec-42001-1404-ai-management-system.pdf",
+   "sha256": "c4debc8354a424ce0de61f26476c95232a597a13fc89efd67d45b04a8a661f16",
+   "size_bytes": 1160486,
+   "pages": 81,
+   "part_id": "P02",
+   "chapter_id": "C59",
+   "part_id_provisional": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED_AGAINST_PAGE_IMAGES",
+   "source_kind": "national_standard",
+   "series_identifier": "INSO/BS/ISO/IEC 42001:2025",
+   "title": "فنّاوری اطلاعات — هوش مصنوعی — نظام مدیریت",
+   "title_en_printed": "Information technology — Artificial intelligence — Management system",
+   "subtitle": "",
+   "authors": [],
+   "organization": "سازمان ملی استاندارد ایران (Iran National Standards Organization (INSO))",
+   "publication_type": "استاندارد ملی ایران (پذیرش به روش معادل یکسان)",
+   "publication_status": "1404؛ تصویب ۱۴۰۴/۰۸/۲۵ (جلسهٔ 757)",
+   "publication_date": "",
+   "publication_date_iso": "",
+   "doi": "",
+   "doi_url": "",
+   "national": {
+    "number": "42001",
+    "iranian_year": 1404,
+    "edition_fa": null,
+    "cover_edition_year_gregorian": null,
+    "reference_as_configured": "INSO/BS/ISO/IEC 42001:2025"
+   },
+   "international": {
+    "designation": "BS/ISO/IEC 42001:2023",
+    "body": "ISO/IEC (as adopted by BSI)",
+    "year": 2023,
+    "kind": "International Standard as printed in the BSI adoption",
+    "underlying_designation": "ISO/IEC 42001:2023",
+    "title_en_printed": "Information technology — Artificial intelligence — Management system",
+    "adoption_reference_as_configured": "BS/ISO/IEC 42001:2023",
+    "equivalence": "IDT",
+    "equivalence_fa_printed": "همسان"
+   },
+   "approval": {
+    "date_jalali": "۱۴۰۴/۰۸/۲۵",
+    "session": 757,
+    "body_fa": "کارگروه ملی تصویب استانداردهای فنّاوری اطلاعات",
+    "note": "printed as «مصوب جلسهٔ شمارهٔ ۷۵۷ مورخ ۱۴۰۴/۰۸/۲۵»; no edition («چاپ اول») is printed"
+   },
+   "ics": "03.100.70; 35.020",
+   "pdf_to_printed_offset": 12,
+   "access": {
+    "reference_index_url": "https://services.iranailab.ir/standards",
+    "reference_index_role": "reference index of national AI standards (titles + stage); NOT the standards publisher and NOT the author of the translations; no per-document links, standard numbers or international designations are shown on it",
+    "listed_in_reference_index": false,
+    "direct_download_url": null,
+    "file_origin": "Files were read from the owner's local folder; their individual download origin was not independently verified."
+   },
+   "status_evidence": "Identity, approval and numbering read from the page images (evidence/out/INSO-42001-1404/identity.json); no separate publication date is printed."
+  },
+  {
+   "seq": 20,
+   "doc_key": "INSO-23682-1403",
+   "filename": "inso-23682-1403-iso-iec-38507-2022-ai-governance.pdf",
+   "sha256": "69d90dda09de68dfe1a5c43da3348edc1e82e6e9c4ae4e2a5f4b88111faae0be",
+   "size_bytes": 1444162,
+   "pages": 53,
+   "part_id": "P02",
+   "chapter_id": "C57",
+   "part_id_provisional": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED_AGAINST_PAGE_IMAGES",
+   "source_kind": "national_standard",
+   "series_identifier": "INSO 23682:1403",
+   "title": "فناوری اطلاعات — حکمرانی فناوری اطلاعات — پیامدهای حکمرانیِ استفاده از هوش مصنوعی در سازمان‌ها",
+   "title_en_printed": "Information technology — Governance of IT — Governance implications of the use of artificial intelligence by organizations",
+   "subtitle": "",
+   "authors": [],
+   "organization": "سازمان ملی استاندارد ایران (Iran National Standards Organization (INSO))",
+   "publication_type": "استاندارد ملی ایران (پذیرش به روش معادل یکسان)",
+   "publication_status": "چاپ اول 1403؛ تصویب ۱۴۰۳/۰۵/۲۳ (جلسهٔ 744)",
+   "publication_date": "",
+   "publication_date_iso": "",
+   "doi": "",
+   "doi_url": "",
+   "national": {
+    "number": "23682",
+    "iranian_year": 1403,
+    "edition_fa": "چاپ اول",
+    "cover_edition_year_gregorian": 2024,
+    "reference_as_configured": "INSO 23682:1403"
+   },
+   "international": {
+    "designation": "ISO/IEC 38507:2022",
+    "body": "ISO/IEC",
+    "year": 2022,
+    "kind": "International Standard",
+    "title_en_printed": "Information technology — Governance of IT — Governance implications of the use of artificial intelligence by organizations",
+    "adoption_reference_as_configured": null,
+    "equivalence": "IDT",
+    "equivalence_fa_printed": "معادل یکسان"
+   },
+   "approval": {
+    "date_jalali": "۱۴۰۳/۰۵/۲۳",
+    "session": 744,
+    "body_fa": "کمیتهٔ ملی استاندارد فناوری اطلاعات"
+   },
+   "ics": "35.020",
+   "pdf_to_printed_offset": 10,
+   "access": {
+    "reference_index_url": "https://services.iranailab.ir/standards",
+    "reference_index_role": "reference index of national AI standards (titles + stage); NOT the standards publisher and NOT the author of the translations; no per-document links, standard numbers or international designations are shown on it",
+    "listed_in_reference_index": true,
+    "direct_download_url": null,
+    "file_origin": "Files were read from the owner's local folder; their individual download origin was not independently verified."
+   },
+   "status_evidence": "Identity, approval and numbering read from the page images (evidence/out/INSO-23682-1403/identity.json); no separate publication date is printed."
+  },
+  {
+   "seq": 21,
+   "doc_key": "INSO-23733-1403",
+   "filename": "inso-23733-1403-iso-iec-23894-2023-ai-risk-management.pdf",
+   "sha256": "7236a3d54d647ef74213cd250f6ef73106a97a4ad406d3c31ab21b12139dac25",
+   "size_bytes": 1998155,
+   "pages": 51,
+   "part_id": "P02",
+   "chapter_id": "C58",
+   "part_id_provisional": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED_AGAINST_PAGE_IMAGES",
+   "source_kind": "national_standard",
+   "series_identifier": "INSO 23733:1403",
+   "title": "فناوری اطلاعات — هوش مصنوعی — راهنمای مدیریت مخاطره (ریسک)",
+   "title_en_printed": "Information technology — Artificial intelligence — Guidance on risk management",
+   "subtitle": "",
+   "authors": [],
+   "organization": "سازمان ملی استاندارد ایران (Iran National Standards Organization (INSO))",
+   "publication_type": "استاندارد ملی ایران (پذیرش به روش معادل یکسان)",
+   "publication_status": "چاپ اول 1403؛ تصویب ۱۴۰۳/۰۸/۰۶ (جلسهٔ 745)",
+   "publication_date": "",
+   "publication_date_iso": "",
+   "doi": "",
+   "doi_url": "",
+   "national": {
+    "number": "23733",
+    "iranian_year": 1403,
+    "edition_fa": "چاپ اول",
+    "cover_edition_year_gregorian": 2024,
+    "reference_as_configured": "INSO 23733:1403"
+   },
+   "international": {
+    "designation": "ISO/IEC 23894:2023",
+    "body": "ISO/IEC",
+    "year": 2023,
+    "kind": "International Standard",
+    "title_en_printed": "Information technology — Artificial intelligence — Guidance on risk management",
+    "adoption_reference_as_configured": null,
+    "equivalence": "IDT",
+    "equivalence_fa_printed": "معادل یکسان"
+   },
+   "approval": {
+    "date_jalali": "۱۴۰۳/۰۸/۰۶",
+    "session": 745,
+    "body_fa": "کمیتهٔ ملی استاندارد فناوری اطلاعات",
+    "note": "date recorded exactly as printed on PDF page 7 (printed ز); not reconciled with the printed dates of neighbouring session numbers in other INSO documents"
+   },
+   "ics": "35.020",
+   "pdf_to_printed_offset": 9,
+   "access": {
+    "reference_index_url": "https://services.iranailab.ir/standards",
+    "reference_index_role": "reference index of national AI standards (titles + stage); NOT the standards publisher and NOT the author of the translations; no per-document links, standard numbers or international designations are shown on it",
+    "listed_in_reference_index": true,
+    "direct_download_url": null,
+    "file_origin": "Files were read from the owner's local folder; their individual download origin was not independently verified."
+   },
+   "status_evidence": "Identity, approval and numbering read from the page images (evidence/out/INSO-23733-1403/identity.json); no separate publication date is printed."
+  },
+  {
+   "seq": 22,
+   "doc_key": "INSO-23681-1403",
+   "filename": "inso-23681-1403-iso-iec-23053-2022-ai-machine-learning-framework.pdf",
+   "sha256": "3b8767d6a2d13eb4e2267d7023f466a3d4816090356a652d3a61ad4752cad40b",
+   "size_bytes": 1295061,
+   "pages": 64,
+   "part_id": "P01",
+   "chapter_id": "C55",
+   "part_id_provisional": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED_AGAINST_PAGE_IMAGES",
+   "source_kind": "national_standard",
+   "series_identifier": "INSO 23681:1403",
+   "title": "چارچوب سامانه‌های هوش مصنوعی با استفاده از یادگیری ماشین",
+   "title_en_printed": "Framework for Artificial Intelligence (AI) systems using Machine Learning (ML)",
+   "subtitle": "",
+   "authors": [],
+   "organization": "سازمان ملی استاندارد ایران (Iran National Standards Organization (INSO))",
+   "publication_type": "استاندارد ملی ایران (پذیرش به روش معادل یکسان)",
+   "publication_status": "چاپ اول 1403؛ تصویب ۱۴۰۳/۰۵/۰۹ (جلسهٔ 740)",
+   "publication_date": "",
+   "publication_date_iso": "",
+   "doi": "",
+   "doi_url": "",
+   "national": {
+    "number": "23681",
+    "iranian_year": 1403,
+    "edition_fa": "چاپ اول",
+    "cover_edition_year_gregorian": 2024,
+    "reference_as_configured": "INSO 23681:1403"
+   },
+   "international": {
+    "designation": "ISO/IEC 23053:2022",
+    "body": "ISO/IEC",
+    "year": 2022,
+    "kind": "International Standard",
+    "title_en_printed": "Framework for Artificial Intelligence (AI) systems using Machine Learning (ML)",
+    "adoption_reference_as_configured": null,
+    "equivalence": "IDT",
+    "equivalence_fa_printed": "معادل یکسان"
+   },
+   "approval": {
+    "date_jalali": "۱۴۰۳/۰۵/۰۹",
+    "session": 740,
+    "body_fa": "کمیتهٔ ملی استاندارد فناوری اطلاعات"
+   },
+   "ics": "35.020",
+   "pdf_to_printed_offset": 9,
+   "access": {
+    "reference_index_url": "https://services.iranailab.ir/standards",
+    "reference_index_role": "reference index of national AI standards (titles + stage); NOT the standards publisher and NOT the author of the translations; no per-document links, standard numbers or international designations are shown on it",
+    "listed_in_reference_index": true,
+    "direct_download_url": null,
+    "file_origin": "Files were read from the owner's local folder; their individual download origin was not independently verified."
+   },
+   "status_evidence": "Identity, approval and numbering read from the page images (evidence/out/INSO-23681-1403/identity.json); no separate publication date is printed."
+  },
+  {
+   "seq": 23,
+   "doc_key": "INSO-23684-1403",
+   "filename": "inso-23684-1403-iso-iec-25059-2023-ai-quality-model.pdf",
+   "sha256": "0fb0430a3cfb9a957c6f14055c3972853d1985b5216339a31c8f439c96ada243",
+   "size_bytes": 1184742,
+   "pages": 30,
+   "part_id": "P04",
+   "chapter_id": "C62",
+   "part_id_provisional": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED_AGAINST_PAGE_IMAGES",
+   "source_kind": "national_standard",
+   "series_identifier": "INSO 23684:1403",
+   "title": "مهندسی نرم‌افزار — الزامات و ارزشیابی کیفیت سامانه‌ها و نرم‌افزار (SQuaRE) — مدل کیفیت برای سامانه‌های هوش مصنوعی (AI)",
+   "title_en_printed": "Software Engineering — Systems and Software Quality Requirements and Evaluation (SQuaRE) — Quality Model for AI Systems",
+   "subtitle": "",
+   "authors": [],
+   "organization": "سازمان ملی استاندارد ایران (Iran National Standards Organization (INSO))",
+   "publication_type": "استاندارد ملی ایران (پذیرش به روش معادل یکسان)",
+   "publication_status": "چاپ اول 1403؛ تصویب ۱۴۰۳/۰۶/۰۷ (جلسهٔ 746)",
+   "publication_date": "",
+   "publication_date_iso": "",
+   "doi": "",
+   "doi_url": "",
+   "national": {
+    "number": "23684",
+    "iranian_year": 1403,
+    "edition_fa": "چاپ اول",
+    "cover_edition_year_gregorian": 2024,
+    "reference_as_configured": "INSO 23684:1403"
+   },
+   "international": {
+    "designation": "ISO/IEC 25059:2023",
+    "body": "ISO/IEC",
+    "year": 2023,
+    "kind": "International Standard",
+    "title_en_printed": "Software Engineering — Systems and Software Quality Requirements and Evaluation (SQuaRE) — Quality Model for AI Systems",
+    "adoption_reference_as_configured": null,
+    "equivalence": "IDT",
+    "equivalence_fa_printed": "معادل یکسان"
+   },
+   "approval": {
+    "date_jalali": "۱۴۰۳/۰۶/۰۷",
+    "session": 746,
+    "body_fa": "کمیتهٔ ملی استاندارد فناوری اطلاعات"
+   },
+   "ics": null,
+   "pdf_to_printed_offset": 9,
+   "access": {
+    "reference_index_url": "https://services.iranailab.ir/standards",
+    "reference_index_role": "reference index of national AI standards (titles + stage); NOT the standards publisher and NOT the author of the translations; no per-document links, standard numbers or international designations are shown on it",
+    "listed_in_reference_index": true,
+    "direct_download_url": null,
+    "file_origin": "Files were read from the owner's local folder; their individual download origin was not independently verified."
+   },
+   "status_evidence": "Identity, approval and numbering read from the page images (evidence/out/INSO-23684-1403/identity.json); no separate publication date is printed."
+  },
+  {
+   "seq": 24,
+   "doc_key": "INSO-23728-1403",
+   "filename": "inso-23728-1403-ieee-7002-2022-data-privacy-process.pdf",
+   "sha256": "2888968fc0792fcd00421f7bebfcf4950e1c163cde3840c0b066c4b0ed54418c",
+   "size_bytes": 1386140,
+   "pages": 55,
+   "part_id": "P06",
+   "chapter_id": "C63",
+   "part_id_provisional": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED_AGAINST_PAGE_IMAGES",
+   "source_kind": "national_standard",
+   "series_identifier": "INSO 23728:1403",
+   "title": "فرایند حریم خصوصی داده",
+   "title_en_printed": "Data Privacy Process",
+   "subtitle": "",
+   "authors": [],
+   "organization": "سازمان ملی استاندارد ایران (Iran National Standards Organization (INSO))",
+   "publication_type": "استاندارد ملی ایران (پذیرش به روش معادل یکسان)",
+   "publication_status": "چاپ اول 1403؛ تصویب ۱۴۰۳/۱۰/۰۹ (جلسهٔ 750)",
+   "publication_date": "",
+   "publication_date_iso": "",
+   "doi": "",
+   "doi_url": "",
+   "national": {
+    "number": "23728",
+    "iranian_year": 1403,
+    "edition_fa": "چاپ اول",
+    "cover_edition_year_gregorian": 2024,
+    "reference_as_configured": "INSO 23728:1403"
+   },
+   "international": {
+    "designation": "IEEE Std 7002:2022",
+    "body": "IEEE",
+    "year": 2022,
+    "kind": "IEEE Standard (edition status not printed)",
+    "title_en_printed": "Data Privacy Process",
+    "adoption_reference_as_configured": null,
+    "equivalence": "IDT",
+    "equivalence_fa_printed": "معادل یکسان"
+   },
+   "approval": {
+    "date_jalali": "۱۴۰۳/۱۰/۰۹",
+    "session": 750,
+    "body_fa": "کمیتهٔ ملی استاندارد فناوری اطلاعات"
+   },
+   "ics": "35.030",
+   "pdf_to_printed_offset": 9,
+   "access": {
+    "reference_index_url": "https://services.iranailab.ir/standards",
+    "reference_index_role": "reference index of national AI standards (titles + stage); NOT the standards publisher and NOT the author of the translations; no per-document links, standard numbers or international designations are shown on it",
+    "listed_in_reference_index": true,
+    "direct_download_url": null,
+    "file_origin": "Files were read from the owner's local folder; their individual download origin was not independently verified."
+   },
+   "status_evidence": "Identity, approval and numbering read from the page images (evidence/out/INSO-23728-1403/identity.json); no separate publication date is printed."
+  },
+  {
+   "seq": 25,
+   "doc_key": "INSO-15816-3-1403",
+   "filename": "inso-15816-3-1403-iso-iec-ts-38505-3-2021-data-classification.pdf",
+   "sha256": "4edc7e812ada89761c454818a22cfddbae3d86eb3d98658cc7fb391045f4e01f",
+   "size_bytes": 1141613,
+   "pages": 36,
+   "part_id": "P07",
+   "chapter_id": "C64",
+   "part_id_provisional": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED_AGAINST_PAGE_IMAGES",
+   "source_kind": "national_standard",
+   "series_identifier": "INSO 15816-3:1403",
+   "title": "فناوری اطلاعات — حکمرانی داده — قسمت ۳: راهنمای طبقه‌بندی داده‌ها",
+   "title_en_printed": "Information technology — Governance of data — Part 3: Guidelines for data classification",
+   "subtitle": "",
+   "authors": [],
+   "organization": "سازمان ملی استاندارد ایران (Iran National Standards Organization (INSO))",
+   "publication_type": "استاندارد ملی ایران (پذیرش به روش معادل یکسان)",
+   "publication_status": "چاپ اول 1403؛ تصویب ۱۴۰۳/۰۴/۲۳ (جلسهٔ 742)",
+   "publication_date": "",
+   "publication_date_iso": "",
+   "doi": "",
+   "doi_url": "",
+   "national": {
+    "number": "15816-3",
+    "iranian_year": 1403,
+    "edition_fa": "چاپ اول",
+    "cover_edition_year_gregorian": 2024,
+    "reference_as_configured": "INSO 15816-3:1403"
+   },
+   "international": {
+    "designation": "ISO/IEC TS 38505-3:2021",
+    "body": "ISO/IEC",
+    "year": 2021,
+    "kind": "Technical Specification (TS)",
+    "title_en_printed": "Information technology — Governance of data — Part 3: Guidelines for data classification",
+    "adoption_reference_as_configured": null,
+    "equivalence": "IDT",
+    "equivalence_fa_printed": "معادل یکسان"
+   },
+   "approval": {
+    "date_jalali": "۱۴۰۳/۰۴/۲۳",
+    "session": 742,
+    "body_fa": "کمیتهٔ ملی استاندارد فناوری اطلاعات"
+   },
+   "ics": null,
+   "pdf_to_printed_offset": 9,
+   "access": {
+    "reference_index_url": "https://services.iranailab.ir/standards",
+    "reference_index_role": "reference index of national AI standards (titles + stage); NOT the standards publisher and NOT the author of the translations; no per-document links, standard numbers or international designations are shown on it",
+    "listed_in_reference_index": true,
+    "direct_download_url": null,
+    "file_origin": "Files were read from the owner's local folder; their individual download origin was not independently verified."
+   },
+   "status_evidence": "Identity, approval and numbering read from the page images (evidence/out/INSO-15816-3-1403/identity.json); no separate publication date is printed."
+  },
+  {
+   "seq": 26,
+   "doc_key": "INSO-23683-1403",
+   "filename": "inso-23683-1403-iso-iec-20546-2019-big-data-vocabulary.pdf",
+   "sha256": "140657ac61ee48e20c85b7d61f208cae6fb558fc46f974dc8f64ee1c186a271d",
+   "size_bytes": 864573,
+   "pages": 30,
+   "part_id": "P01",
+   "chapter_id": "C56",
+   "part_id_provisional": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED_AGAINST_PAGE_IMAGES",
+   "source_kind": "national_standard",
+   "series_identifier": "INSO 23683:1403",
+   "title": "فناوری اطلاعات — کلان‌داده — مرور کلی و واژگان",
+   "title_en_printed": "Information technology — Big data — Overview and vocabulary",
+   "subtitle": "",
+   "authors": [],
+   "organization": "سازمان ملی استاندارد ایران (Iran National Standards Organization (INSO))",
+   "publication_type": "استاندارد ملی ایران (پذیرش به روش معادل یکسان)",
+   "publication_status": "چاپ اول 1403؛ تصویب ۱۴۰۳/۰۳/۰۸ (جلسهٔ 739)",
+   "publication_date": "",
+   "publication_date_iso": "",
+   "doi": "",
+   "doi_url": "",
+   "national": {
+    "number": "23683",
+    "iranian_year": 1403,
+    "edition_fa": "چاپ اول",
+    "cover_edition_year_gregorian": 2024,
+    "reference_as_configured": "INSO 23683:1403"
+   },
+   "international": {
+    "designation": "ISO/IEC 20546:2019",
+    "body": "ISO/IEC",
+    "year": 2019,
+    "kind": "International Standard",
+    "title_en_printed": "Information technology — Big data — Overview and vocabulary",
+    "adoption_reference_as_configured": null,
+    "equivalence": "IDT",
+    "equivalence_fa_printed": "معادل یکسان"
+   },
+   "approval": {
+    "date_jalali": "۱۴۰۳/۰۳/۰۸",
+    "session": 739,
+    "body_fa": "کمیتهٔ ملی استاندارد فناوری اطلاعات"
+   },
+   "ics": "35.020; 01.040.35",
+   "pdf_to_printed_offset": 9,
+   "access": {
+    "reference_index_url": "https://services.iranailab.ir/standards",
+    "reference_index_role": "reference index of national AI standards (titles + stage); NOT the standards publisher and NOT the author of the translations; no per-document links, standard numbers or international designations are shown on it",
+    "listed_in_reference_index": true,
+    "direct_download_url": null,
+    "file_origin": "Files were read from the owner's local folder; their individual download origin was not independently verified."
+   },
+   "status_evidence": "Identity, approval and numbering read from the page images (evidence/out/INSO-23683-1403/identity.json); no separate publication date is printed."
+  },
+  {
+   "seq": 27,
+   "doc_key": "INSO-23685-1403",
+   "filename": "inso-23685-1403-ieee-2813-2020-big-data-security-risk-assessment.pdf",
+   "sha256": "d2f176e3b5fbb65f7035a6d37c93678c5a5d00edbfc672a1ecbd6f4b834d97e8",
+   "size_bytes": 809325,
+   "pages": 32,
+   "part_id": "P03",
+   "chapter_id": "C61",
+   "part_id_provisional": false,
+   "status": "INVENTORIED",
+   "audit": "VERIFIED_AGAINST_PAGE_IMAGES",
+   "source_kind": "national_standard",
+   "series_identifier": "INSO 23685:1403",
+   "title": "ارزیابی مخاطره (ریسک) امنیتی کسب‌وکار کلان‌داده",
+   "title_en_printed": "Big Data Business Security Risk Assessment",
+   "subtitle": "",
+   "authors": [],
+   "organization": "سازمان ملی استاندارد ایران (Iran National Standards Organization (INSO))",
+   "publication_type": "استاندارد ملی ایران (پذیرش به روش معادل یکسان)",
+   "publication_status": "چاپ اول 1403؛ تصویب ۱۴۰۳/۰۶/۱۸ (جلسهٔ 747)",
+   "publication_date": "",
+   "publication_date_iso": "",
+   "doi": "",
+   "doi_url": "",
+   "national": {
+    "number": "23685",
+    "iranian_year": 1403,
+    "edition_fa": "چاپ اول",
+    "cover_edition_year_gregorian": 2024,
+    "reference_as_configured": "INSO 23685:1403"
+   },
+   "international": {
+    "designation": "IEEE Std 2813:2020",
+    "body": "IEEE",
+    "year": 2020,
+    "kind": "IEEE Standard (edition status not printed)",
+    "title_en_printed": "Big Data Business Security Risk Assessment",
+    "adoption_reference_as_configured": null,
+    "equivalence": "IDT",
+    "equivalence_fa_printed": "معادل یکسان"
+   },
+   "approval": {
+    "date_jalali": "۱۴۰۳/۰۶/۱۸",
+    "session": 747,
+    "body_fa": "کمیتهٔ ملی استاندارد فناوری اطلاعات"
+   },
+   "ics": "35.020",
+   "pdf_to_printed_offset": 10,
+   "access": {
+    "reference_index_url": "https://services.iranailab.ir/standards",
+    "reference_index_role": "reference index of national AI standards (titles + stage); NOT the standards publisher and NOT the author of the translations; no per-document links, standard numbers or international designations are shown on it",
+    "listed_in_reference_index": true,
+    "direct_download_url": null,
+    "file_origin": "Files were read from the owner's local folder; their individual download origin was not independently verified."
+   },
+   "status_evidence": "Identity, approval and numbering read from the page images (evidence/out/INSO-23685-1403/identity.json); no separate publication date is printed."
+  }
+ ],
+ "requested_but_absent": [
+  {
+   "designation": "ISO/IEC 42005:2025",
+   "in_local_set": false
+  },
+  {
+   "designation": "ISO/IEC 42006:2025",
+   "in_local_set": false
+  },
+  {
+   "designation": "ISO/IEC 22989:2022",
+   "in_local_set": false,
+   "national_candidate": {
+    "reference": "INSO 23679:1403",
+    "printed_title_fa": "فناوری اطلاعات - هوش مصنوعی - مفاهیم و اصطلاحات هوش مصنوعی",
+    "printed_in": [
+     "INSO-42001-1404 clause 2 (PDF 13, printed 1) and note 1 to 3.2.2 (PDF 14, printed 2)",
+     "INSO-23682-1403",
+     "INSO-23733-1403",
+     "INSO-23684-1403"
+    ],
+    "international_equivalent_printed": "ISO/IEC 22989:2022 — «همسان»  (INSO 42001 clause 2, verified on the page image)",
+    "correspondence_to_22989": "PRINTED in INSO 42001 clause 2; the 23679 file itself was NOT supplied, so no clause-level use is possible; listed by title in the reference index",
+    "in_local_set": false
+   }
+  },
+  {
+   "designation": "ISO/IEC TR 24027:2021",
+   "in_local_set": false
+  },
+  {
+   "designation": "ISO/IEC TR 24028:2020",
+   "in_local_set": false
+  },
+  {
+   "designation": "ISO/IEC 5338:2023",
+   "in_local_set": false
+  }
+ ],
+ "requested_standards_from_owner": [
+  "ISO/IEC 42001:2023",
+  "ISO/IEC 38507:2022",
+  "ISO/IEC 23894:2023",
+  "ISO/IEC 42005:2025",
+  "ISO/IEC 42006:2025",
+  "ISO/IEC 22989:2022",
+  "ISO/IEC 23053:2022",
+  "ISO/IEC TR 24027:2021",
+  "ISO/IEC TR 24028:2020",
+  "ISO/IEC 5338:2023"
+ ]
+}

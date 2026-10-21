@@ -1,0 +1,875 @@
+{
+ "source_id": "INSO-23683-1403",
+ "toc_printed_pages": {
+  "پیش‌گفتار": "ز",
+  "مقدمه": "ح",
+  "1": 1,
+  "2": 1,
+  "3": 1,
+  "3.1": 1,
+  "3.2": 11,
+  "4": 12,
+  "4.1": 12,
+  "4.2": 12,
+  "4.3": 13,
+  "پیوست الف": 17,
+  "کتابنامه": 21
+ },
+ "toc_check": "every ToC page number on pdf 6 (printed «و») matches the page where the heading actually appears",
+ "clauses": [
+  {
+   "number": null,
+   "number_printed": null,
+   "heading_fa": "جلد (استاندارد ملی ایران ۲۳۶۸۳، چاپ اول، ۱۴۰۳)",
+   "heading_en_if_printed": "Information technology — Big data — Overview and vocabulary",
+   "type": "front",
+   "pdf_page": 1,
+   "printed_page": null,
+   "heading_is_descriptive": true
+  },
+  {
+   "number": null,
+   "number_printed": null,
+   "heading_fa": "اطلاعات تماس سازمان ملی استاندارد ایران",
+   "heading_en_if_printed": "Iran National Standards Organization (INSO)",
+   "type": "front",
+   "pdf_page": 2,
+   "printed_page": "ب",
+   "heading_is_descriptive": true
+  },
+  {
+   "number": null,
+   "number_printed": null,
+   "heading_fa": "آشنایی با سازمان ملی استاندارد ایران",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 3,
+   "printed_page": "ج"
+  },
+  {
+   "number": null,
+   "number_printed": null,
+   "heading_fa": "کمیسیون فنی تدوین استاندارد",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 4,
+   "printed_page": "د",
+   "pdf_pages": [
+    4,
+    5
+   ],
+   "printed_pages": [
+    "د",
+    "ه"
+   ]
+  },
+  {
+   "number": null,
+   "number_printed": null,
+   "heading_fa": "مندرجات فهرست",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 6,
+   "printed_page": "و"
+  },
+  {
+   "number": null,
+   "number_printed": null,
+   "heading_fa": "پیش‌گفتار",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 7,
+   "printed_page": "ز"
+  },
+  {
+   "number": null,
+   "number_printed": null,
+   "heading_fa": "مقدمه",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 8,
+   "printed_page": "ح",
+   "pdf_pages": [
+    8,
+    9
+   ],
+   "printed_pages": [
+    "ح",
+    "ط"
+   ],
+   "type_note": "informative introduction; unnumbered"
+  },
+  {
+   "number": "1",
+   "number_printed": "۱",
+   "heading_fa": "هدف و دامنهٔ کاربرد",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 10,
+   "printed_page": 1,
+   "type_note": "main-body clause"
+  },
+  {
+   "number": "2",
+   "number_printed": "۲",
+   "heading_fa": "مراجع الزامی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 10,
+   "printed_page": 1,
+   "type_note": "states that the standard has no normative references"
+  },
+  {
+   "number": "3",
+   "number_printed": "۳",
+   "heading_fa": "اصطلاحات و تعاریف",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 10,
+   "printed_page": 1,
+   "type_note": "main-body clause; no «باید» requirements anywhere in the standard"
+  },
+  {
+   "number": "3.1",
+   "number_printed": "۱-۳",
+   "heading_fa": "اصطلاحات و تعاریف",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 10,
+   "printed_page": 1,
+   "pdf_pages": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "printed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "number": "3.1.1",
+   "number_printed": "3.1.1",
+   "heading_fa": "منفعت",
+   "heading_en_if_printed": "benefit",
+   "type": "normative",
+   "pdf_page": 10,
+   "printed_page": 1
+  },
+  {
+   "number": "3.1.2",
+   "number_printed": "3.1.2",
+   "heading_fa": "کلان‌داده",
+   "heading_en_if_printed": "big data",
+   "type": "normative",
+   "pdf_page": 11,
+   "printed_page": 2
+  },
+  {
+   "number": "3.1.3",
+   "number_printed": "3.1.3",
+   "heading_fa": "محاسبات ابری",
+   "heading_en_if_printed": "cloud computing",
+   "type": "normative",
+   "pdf_page": 11,
+   "printed_page": 2
+  },
+  {
+   "number": "3.1.4",
+   "number_printed": "3.1.4",
+   "heading_fa": "خوشه",
+   "heading_en_if_printed": "cluster",
+   "type": "normative",
+   "pdf_page": 11,
+   "printed_page": 2
+  },
+  {
+   "number": "3.1.5",
+   "number_printed": "3.1.5",
+   "heading_fa": "داده",
+   "heading_en_if_printed": "data",
+   "type": "normative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.1.6",
+   "number_printed": "3.1.6",
+   "heading_fa": "واکاوش داده",
+   "heading_en_if_printed": "data analytics",
+   "type": "normative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.1.7",
+   "number_printed": "3.1.7",
+   "heading_fa": "پایگاه‌داده",
+   "heading_en_if_printed": "database",
+   "type": "normative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.1.8",
+   "number_printed": "3.1.8",
+   "heading_fa": "مدل داده",
+   "heading_en_if_printed": "data model",
+   "type": "normative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.1.9",
+   "number_printed": "3.1.9",
+   "heading_fa": "داده‌پردازی",
+   "heading_en_if_printed": "data processing",
+   "type": "normative",
+   "pdf_page": 13,
+   "printed_page": 4
+  },
+  {
+   "number": "3.1.10",
+   "number_printed": "3.1.10",
+   "heading_fa": "داده‌شناسی",
+   "heading_en_if_printed": "data science",
+   "type": "normative",
+   "pdf_page": 13,
+   "printed_page": 4
+  },
+  {
+   "number": "3.1.11",
+   "number_printed": "3.1.11",
+   "heading_fa": "مجموعه‌داده",
+   "heading_en_if_printed": "data set; dataset",
+   "type": "normative",
+   "pdf_page": 13,
+   "printed_page": 4
+  },
+  {
+   "number": "3.1.12",
+   "number_printed": "3.1.12",
+   "heading_fa": "نوع داده",
+   "heading_en_if_printed": "data type; datatype",
+   "type": "normative",
+   "pdf_page": 14,
+   "printed_page": 5
+  },
+  {
+   "number": "3.1.13",
+   "number_printed": "3.1.13",
+   "heading_fa": "تغییرپذیری داده",
+   "heading_en_if_printed": "data variability",
+   "type": "normative",
+   "pdf_page": 14,
+   "printed_page": 5
+  },
+  {
+   "number": "3.1.14",
+   "number_printed": "3.1.14",
+   "heading_fa": "گونه داده",
+   "heading_en_if_printed": "data variety",
+   "type": "normative",
+   "pdf_page": 14,
+   "printed_page": 5
+  },
+  {
+   "number": "3.1.15",
+   "number_printed": "3.1.15",
+   "heading_fa": "سرعت داده",
+   "heading_en_if_printed": "data velocity",
+   "type": "normative",
+   "pdf_page": 15,
+   "printed_page": 6
+  },
+  {
+   "number": "3.1.16",
+   "number_printed": "3.1.16",
+   "heading_fa": "صحت داده",
+   "heading_en_if_printed": "data veracity",
+   "type": "normative",
+   "pdf_page": 15,
+   "printed_page": 6
+  },
+  {
+   "number": "3.1.17",
+   "number_printed": "3.1.17",
+   "heading_fa": "فراریت داده",
+   "heading_en_if_printed": "data volatility",
+   "type": "normative",
+   "pdf_page": 15,
+   "printed_page": 6
+  },
+  {
+   "number": "3.1.18",
+   "number_printed": "3.1.18",
+   "heading_fa": "حجم داده",
+   "heading_en_if_printed": "data volume",
+   "type": "normative",
+   "pdf_page": 15,
+   "printed_page": 6
+  },
+  {
+   "number": "3.1.19",
+   "number_printed": "3.1.19",
+   "heading_fa": "پردازش داده های توزیعی",
+   "heading_en_if_printed": "distributed data processing",
+   "type": "normative",
+   "pdf_page": 15,
+   "printed_page": 6
+  },
+  {
+   "number": "3.1.20",
+   "number_printed": "3.1.20",
+   "heading_fa": "سامانه پرونده توزیعی",
+   "heading_en_if_printed": "distributed file system",
+   "type": "normative",
+   "pdf_page": 16,
+   "printed_page": 7
+  },
+  {
+   "number": "3.1.21",
+   "number_printed": "3.1.21",
+   "heading_fa": "پرونده",
+   "heading_en_if_printed": "file",
+   "type": "normative",
+   "pdf_page": 16,
+   "printed_page": 7
+  },
+  {
+   "number": "3.1.22",
+   "number_printed": "3.1.22",
+   "heading_fa": "گردآورد(جمع‌آوری)",
+   "heading_en_if_printed": "gather",
+   "type": "normative",
+   "pdf_page": 16,
+   "printed_page": 7
+  },
+  {
+   "number": "3.1.23",
+   "number_printed": "3.1.23",
+   "heading_fa": "مقیاس‌بندی افقی",
+   "heading_en_if_printed": "horizontal scaling",
+   "type": "normative",
+   "pdf_page": 16,
+   "printed_page": 7
+  },
+  {
+   "number": "3.1.24",
+   "number_printed": "3.1.24",
+   "heading_fa": "فراداده",
+   "heading_en_if_printed": "metadata",
+   "type": "normative",
+   "pdf_page": 17,
+   "printed_page": 8
+  },
+  {
+   "number": "3.1.25",
+   "number_printed": "3.1.25",
+   "heading_fa": "پایگاه‌دادهٔ غیررابطه‌ای",
+   "heading_en_if_printed": "non-relational database",
+   "type": "normative",
+   "pdf_page": 17,
+   "printed_page": 8
+  },
+  {
+   "number": "3.1.26",
+   "number_printed": "3.1.26",
+   "heading_fa": "مدل غیررابطه‌ای",
+   "heading_en_if_printed": "non-relational model",
+   "type": "normative",
+   "pdf_page": 17,
+   "printed_page": 8
+  },
+  {
+   "number": "3.1.27",
+   "number_printed": "3.1.27",
+   "heading_fa": "موازی",
+   "heading_en_if_printed": "parallel",
+   "type": "normative",
+   "pdf_page": 17,
+   "printed_page": 8
+  },
+  {
+   "number": "3.1.28",
+   "number_printed": "3.1.28",
+   "heading_fa": "داده نیمه‌ساختاریافته",
+   "heading_en_if_printed": "partially structured data; semi-structured data",
+   "type": "normative",
+   "pdf_page": 18,
+   "printed_page": 9
+  },
+  {
+   "number": "3.1.29",
+   "number_printed": "3.1.29",
+   "heading_fa": "جبر رابطه‌ای",
+   "heading_en_if_printed": "relational algebra",
+   "type": "normative",
+   "pdf_page": 18,
+   "printed_page": 9
+  },
+  {
+   "number": "3.1.30",
+   "number_printed": "3.1.30",
+   "heading_fa": "پایگاه‌دادهٔ رابطه‌ای",
+   "heading_en_if_printed": "relational database",
+   "type": "normative",
+   "pdf_page": 18,
+   "printed_page": 9
+  },
+  {
+   "number": "3.1.31",
+   "number_printed": "3.1.31",
+   "heading_fa": "مدل رابطه‌ای",
+   "heading_en_if_printed": "relational model",
+   "type": "normative",
+   "pdf_page": 18,
+   "printed_page": 9
+  },
+  {
+   "number": "3.1.32",
+   "number_printed": "3.1.32",
+   "heading_fa": "پراکنش",
+   "heading_en_if_printed": "scatter",
+   "type": "normative",
+   "pdf_page": 19,
+   "printed_page": 10
+  },
+  {
+   "number": "3.1.33",
+   "number_printed": "3.1.33",
+   "heading_fa": "پراکنش - گردآورد",
+   "heading_en_if_printed": "scatter-gather",
+   "type": "normative",
+   "pdf_page": 19,
+   "printed_page": 10
+  },
+  {
+   "number": "3.1.34",
+   "number_printed": "3.1.34",
+   "heading_fa": "داده‌شارها",
+   "heading_en_if_printed": "streaming data",
+   "type": "normative",
+   "pdf_page": 19,
+   "printed_page": 10
+  },
+  {
+   "number": "3.1.35",
+   "number_printed": "3.1.35",
+   "heading_fa": "داده ساختاریافته",
+   "heading_en_if_printed": "structured data",
+   "type": "normative",
+   "pdf_page": 19,
+   "printed_page": 10
+  },
+  {
+   "number": "3.1.36",
+   "number_printed": "3.1.36",
+   "heading_fa": "زپ‌سا",
+   "heading_en_if_printed": "SQL; Structured Query Language",
+   "type": "normative",
+   "pdf_page": 20,
+   "printed_page": 11
+  },
+  {
+   "number": "3.1.37",
+   "number_printed": "3.1.37",
+   "heading_fa": "داده ناساختمند",
+   "heading_en_if_printed": "unstructured data",
+   "type": "normative",
+   "pdf_page": 20,
+   "printed_page": 11
+  },
+  {
+   "number": "3.1.38",
+   "number_printed": "3.1.38",
+   "heading_fa": "مقیاس‌بندی عمودی",
+   "heading_en_if_printed": "vertical scaling",
+   "type": "normative",
+   "pdf_page": 20,
+   "printed_page": 11
+  },
+  {
+   "number": "3.2",
+   "number_printed": "۲-۳",
+   "heading_fa": "اصطلاحات کوته‌نوشت",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 20,
+   "printed_page": 11
+  },
+  {
+   "number": "4",
+   "number_printed": "۴",
+   "heading_fa": "مشخصه‌های کلیدی کلان‌داده",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 21,
+   "printed_page": 12,
+   "pdf_pages": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "printed_pages": [
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "type_note": "main-body clause; descriptive overview text, no «باید» requirements"
+  },
+  {
+   "number": "4.1",
+   "number_printed": "۱-۴",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 21,
+   "printed_page": 12
+  },
+  {
+   "number": "4.2",
+   "number_printed": "۲-۴",
+   "heading_fa": "مشخصه‌های کلیدی داده",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 21,
+   "printed_page": 12
+  },
+  {
+   "number": "4.2.1",
+   "number_printed": "۱-۲-۴",
+   "heading_fa": "حجم داده",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 21,
+   "printed_page": 12
+  },
+  {
+   "number": "4.2.2",
+   "number_printed": "۲-۲-۴",
+   "heading_fa": "سرعت داده",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 21,
+   "printed_page": 12
+  },
+  {
+   "number": "4.2.3",
+   "number_printed": "۳-۲-۴",
+   "heading_fa": "گونه داده",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 21,
+   "printed_page": 12
+  },
+  {
+   "number": "4.2.4",
+   "number_printed": "۴-۲-۴",
+   "heading_fa": "تغییرپذیری داده",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 21,
+   "printed_page": 12,
+   "pdf_pages": [
+    21,
+    22
+   ],
+   "printed_pages": [
+    12,
+    13
+   ]
+  },
+  {
+   "number": "4.3",
+   "number_printed": "۳-۴",
+   "heading_fa": "مشخصه‌های کلیدی داده‌پردازی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 22,
+   "printed_page": 13
+  },
+  {
+   "number": "4.3.1",
+   "number_printed": "۱-۳-۴",
+   "heading_fa": "داده‌شناسی (علم داده)",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 22,
+   "printed_page": 13
+  },
+  {
+   "number": "4.3.2",
+   "number_printed": "۲-۳-۴",
+   "heading_fa": "فراریت داده",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 22,
+   "printed_page": 13
+  },
+  {
+   "number": "4.3.3",
+   "number_printed": "۳-۳-۴",
+   "heading_fa": "صحت داده",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 22,
+   "printed_page": 13
+  },
+  {
+   "number": "4.3.4",
+   "number_printed": "۴-۳-۴",
+   "heading_fa": "منفعت",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 22,
+   "printed_page": 13
+  },
+  {
+   "number": "4.3.5",
+   "number_printed": "۵-۳-۴",
+   "heading_fa": "دیداری سازه داده (مصورسازی داده)",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 23,
+   "printed_page": 14
+  },
+  {
+   "number": "4.3.6",
+   "number_printed": "۶-۳-۴",
+   "heading_fa": "داده‌های ساختاریافته و ناساختمند",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 23,
+   "printed_page": 14
+  },
+  {
+   "number": "4.3.7",
+   "number_printed": "۷-۳-۴",
+   "heading_fa": "مقیاس‌بندی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 23,
+   "printed_page": 14,
+   "pdf_pages": [
+    23,
+    24
+   ],
+   "printed_pages": [
+    14,
+    15
+   ]
+  },
+  {
+   "number": "4.3.8",
+   "number_printed": "۸-۳-۴",
+   "heading_fa": "سامانه پرونده توزیع شده",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 24,
+   "printed_page": 15
+  },
+  {
+   "number": "4.3.9",
+   "number_printed": "۹-۳-۴",
+   "heading_fa": "پردازش داده توزیع شده",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 24,
+   "printed_page": 15,
+   "pdf_pages": [
+    24,
+    25
+   ],
+   "printed_pages": [
+    15,
+    16
+   ]
+  },
+  {
+   "number": "4.3.10",
+   "number_printed": "۱۰-۳-۴",
+   "heading_fa": "پایگاه‌های داده غیررابطه‌ای",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 25,
+   "printed_page": 16
+  },
+  {
+   "number": "A",
+   "number_printed": "پیوست الف",
+   "heading_fa": "پیوست الف (آگاهی‌دهنده) مفاهیم میان حوزه‌ای مرتبط با کلان‌داده",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 26,
+   "printed_page": 17,
+   "pdf_pages": [
+    26,
+    27,
+    28,
+    29
+   ],
+   "printed_pages": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "type_note": "printed as informative (آگاهی‌دهنده); ToC spells it «آگاهی دهنده» and «کلان داده»; footnote gloss: Cross-cutting"
+  },
+  {
+   "number": "A.1",
+   "number_printed": "الف-۱",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 26,
+   "printed_page": 17
+  },
+  {
+   "number": "A.2",
+   "number_printed": "الف-۲",
+   "heading_fa": "فراداده",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 26,
+   "printed_page": 17
+  },
+  {
+   "number": "A.3",
+   "number_printed": "الف-۳",
+   "heading_fa": "الگوریتم(ها)",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 26,
+   "printed_page": 17
+  },
+  {
+   "number": "A.4",
+   "number_printed": "الف-۴",
+   "heading_fa": "محاسبات خوشه‌ای",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 26,
+   "printed_page": 17,
+   "pdf_pages": [
+    26,
+    27
+   ],
+   "printed_pages": [
+    17,
+    18
+   ]
+  },
+  {
+   "number": "A.5",
+   "number_printed": "الف-۵",
+   "heading_fa": "محاسبات ابری",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 27,
+   "printed_page": 18
+  },
+  {
+   "number": "A.6",
+   "number_printed": "الف-۶",
+   "heading_fa": "امنیت داده",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 27,
+   "printed_page": 18
+  },
+  {
+   "number": "A.7",
+   "number_printed": "الف-۷",
+   "heading_fa": "الزامات حفاظت از حریم خصوصی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 27,
+   "printed_page": 18,
+   "pdf_pages": [
+    27,
+    28
+   ],
+   "printed_pages": [
+    18,
+    19
+   ]
+  },
+  {
+   "number": "A.8",
+   "number_printed": "الف-۸",
+   "heading_fa": "زپ‌سا (SQL)",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 28,
+   "printed_page": 19
+  },
+  {
+   "number": "A.9",
+   "number_printed": "الف-۹",
+   "heading_fa": "محاسبات موازی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 28,
+   "printed_page": 19,
+   "pdf_pages": [
+    28,
+    29
+   ],
+   "printed_pages": [
+    19,
+    20
+   ]
+  },
+  {
+   "number": "A.10",
+   "number_printed": "الف-۱۰",
+   "heading_fa": "اینترنت چیزها (چیز نت)",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 29,
+   "printed_page": 20
+  },
+  {
+   "number": "A.11",
+   "number_printed": "الف-۱۱",
+   "heading_fa": "زبان‌های برنامه نویسی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 29,
+   "printed_page": 20
+  },
+  {
+   "number": null,
+   "number_printed": null,
+   "heading_fa": "کتابنامه",
+   "heading_en_if_printed": "Bibliography",
+   "type": "front",
+   "pdf_page": 30,
+   "printed_page": 21,
+   "type_note": "[1]-[5]: ISO/IEC 2382:2015; ISO 9075 (all parts); ISO/IEC 11404; INSO 21069:1395; ISO/IEC 19784-4:2011"
+  }
+ ]
+}

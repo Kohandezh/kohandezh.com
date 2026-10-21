@@ -1,0 +1,37 @@
+{
+ "chapter": "P06/C63",
+ "sections": [
+  3,
+  4
+ ],
+ "section_shas": {
+  "3": "32286232b3dd264c0f673405983ab25b907700ec01ba3964fb4eab2312cf0c08",
+  "4": "298ebb568dfedd2d6c69f2bec914d89cf466d8eb58e8ebec6fc1ead40a4be197"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 464.1092269420624,
+ "result": {
+  "sections": [
+   {
+    "index": 3,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "مشاورهٔ حقوقی برای پرسمان‌های انطباق",
+      "explanation": "The word «انطباق» here summarises S23728-041's phrase «انطباق با قواعد و مقررات قابل‌اعمال», i.e. regulatory compliance, not conformity to a standard. The terminology rule requires the distinguishing qualifier «(compliance)» or «(conformity)» whenever the two senses of انطباق both appear in the surrounding text — and section 4 itself correctly writes «اثبات انطباق (conformity)» two paragraphs later. Omitting the qualifier on this first occurrence leaves a false-parallel with that later usage.",
+      "suggested_fix": "Change to «مشاورهٔ حقوقی برای پرسمان‌های انطباق (compliance) با مقررات» (or equivalent wording that makes the regulatory-compliance sense unambiguous)."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:09:31-0400"
+}

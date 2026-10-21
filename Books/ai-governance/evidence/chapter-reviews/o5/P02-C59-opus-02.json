@@ -1,0 +1,43 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "3076e2202e1fbcf28bf4f00c760911085e6a8f492c5ece58f7ad8758c826a64e",
+  "3": "7288c0ce72597c06bb1accb357efb8acd794d2388c54cb6e96ff6f6517ffb1c6"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 299.38443326950073,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "modality_drift",
+      "quote": "نقش‌ها بر کاربست‌پذیری الزامات و واپایش‌ها اثر دارند",
+      "explanation": "Evidence S42001-011 (Note 1, clause 4.1) reads «نقش‌های سازمان می‌توانند قابلیت کاربست‌پذیری و میزان کاربست‌پذیری الزامات و واپایش‌های این استاندارد را تعیین کنند». The original uses «می‌توانند» (can/may — possibility), whereas the section drops the modal and states it as fact with «اثر دارند» (have effect). A possibility is presented as a certainty.",
+      "suggested_fix": "Rewrite as: «نقش‌ها می‌توانند بر کاربست‌پذیری الزامات و واپایش‌ها اثر داشته باشند» to preserve the «می‌توانند» modal from the source."
+     },
+     {
+      "type": "modality_drift",
+      "quote": "فرهنگ مسئولانه در استفاده، توسعه و حکمرانی سامانه‌ها نشانهٔ مهمی از تعهد است",
+      "explanation": "Evidence S42001-029 (Note 2, clause 5.1) reads «ایجاد، ترویج و مدل‌سازی فرهنگ مبتنی بر رویکرد مسئولانه در استفاده، توسعه و حاکمیت سامانه‌های هومص می‌تواند اثبات مهمی از تعهد و رهبری مدیریت رده‌بالا باشد». The section drops «می‌تواند» (can be → is), converting a possibility into a definite assertion, and also omits «رهبری» (leadership) from the pair «تعهد و رهبری».",
+      "suggested_fix": "Rewrite as: «فرهنگ مسئولانه در استفاده، توسعه و حکمرانی سامانه‌ها می‌تواند نشانهٔ مهمی از تعهد و رهبری باشد» to retain both the «می‌تواند» modal and the «رهبری» element."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T07:10:12-0400"
+}

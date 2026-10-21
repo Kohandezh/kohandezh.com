@@ -1,0 +1,43 @@
+{
+ "chapter": "P02/C57",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "d98267c42f4953ee450aa7e87bd1ffc1764992232aa3e24fd7b7036c41698845",
+  "1": "f269dfc807830c7001249cd4bf0944ae91d63040dfab1fff3224996522949e73"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 224.92518281936646,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "The section states that approval was attributed to the 744th session of the National IT Standards Committee dated 1403/05/23. None of the supplied evidence items — including I23682-id, O23682-006 (پیش‌گفتار), or any other item — contains a committee session number or a date for that session. The preface evidence item (O23682-006) provides only the heading 'پیش‌گفتار'; no content from it is transcribed that would support this specific claim.",
+      "quote": "تصویب به هفتصد و چهل و چهارمین اجلاسیهٔ کمیتهٔ ملی استاندارد فناوری اطلاعات مورخ ۱۴۰۳/۰۵/۲۳ نسبت داده شده",
+      "suggested_fix": "حذف کامل این جمله تا زمانی که متن پیش‌گفتار چاپ‌شده (O23682-006) در مجموعهٔ شواهد گنجانده شود و شمارهٔ اجلاسیه و تاریخ را تأیید کند."
+     },
+     {
+      "type": "unsupported_claim",
+      "explanation": "The section describes INSO 23733:1403 as 'معادل یکسان ISO/IEC 23894:2023'. Evidence item I23682-rel1 says only 'bibliography note says it was developed using ISO/IEC 23894:2023'. The phrase 'developed using' is the standard INSO bibliographic formula that covers IDT, MOD, and NEQ adoptions alike; no evidence item confirms the equivalence type is specifically 'معادل یکسان' (IDT).",
+      "quote": "INSO 23733:1403، معادل یکسان ISO/IEC 23894:2023",
+      "suggested_fix": "Replace with a phrasing faithful to the evidence: «INSO 23733:1403 (تهیه‌شده بر اساس ISO/IEC 23894:2023)». If the equivalence type is confirmed from the cover of that standard, cite it explicitly."
+     }
+    ]
+   },
+   {
+    "index": 1,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:22:29-0400"
+}

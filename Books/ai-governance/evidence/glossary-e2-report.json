@@ -1,0 +1,1833 @@
+{
+ "counts": {
+  "base_terms": 435,
+  "e2_terms": 563,
+  "deduplicated_groups": 5,
+  "removed": 1,
+  "changed": 18,
+  "metadata_only": 8,
+  "new": 135,
+  "unresolved_pairings": 0,
+  "acronym_only": 11,
+  "hygiene": 65,
+  "skipped_abbreviation_rows": 34
+ },
+ "deduplicated": [
+  {
+   "canonical_key": "ai risk management framework",
+   "dropped": [
+    "ai rmf",
+    "ai risk management framework (ai rmf)"
+   ],
+   "reason": "three entries shared concept_id AI_RISK_MANAGEMENT_FRAMEWORK (spelling/acronym variants of one concept)"
+  },
+  {
+   "canonical_key": "ssdf",
+   "dropped": [
+    "secure software development framework"
+   ],
+   "reason": "two entries shared concept_id SECURE_SOFTWARE_DEVELOPMENT_FRAMEWORK"
+  },
+  {
+   "canonical_key": "audit",
+   "dropped": [
+    "audit may"
+   ],
+   "reason": "'audit may' is a term-mining artifact sharing concept_id AUDIT"
+  },
+  {
+   "canonical_key": "general data protection regulation",
+   "dropped": [
+    "european union general data protection regulation"
+   ],
+   "reason": "two entries shared concept_id GDPR"
+  },
+  {
+   "canonical_key": "area under the curve",
+   "dropped": [
+    "curve"
+   ],
+   "reason": "'curve' is a term-mining artifact sharing concept_id AREA_UNDER_CURVE"
+  }
+ ],
+ "removed": [
+  {
+   "key": "risks",
+   "merged_into": "risk",
+   "reason": "plural form kept as a search alias of RISK; a separate concept page 'خطرها' contradicted the RISK entry (ریسک)"
+  }
+ ],
+ "changed": [
+  {
+   "key": "risk",
+   "class": "semantic-scope-difference+wording-difference",
+   "preferred": [
+    "ریسک",
+    "مخاطره"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "risk management",
+   "class": "wording-difference",
+   "preferred": [
+    "مدیریت ریسک",
+    "مدیریت مخاطره (ریسک)"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "residual risk",
+   "class": "wording-difference",
+   "preferred": [
+    "ریسک باقیمانده",
+    "مخاطره‌های باقی‌مانده"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "risk appetite",
+   "class": "wording-difference+concept-separation",
+   "preferred": [
+    "اشتهای ریسک",
+    "سطح مخاطره‌پذیری"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "risk tolerance",
+   "class": "printed-in-text-not-defined",
+   "preferred": [
+    "تحمل ریسک",
+    "رواداری مخاطره"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "audit",
+   "class": "context-split",
+   "preferred": [
+    "حسابرسی",
+    "ممیزی"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "stakeholder",
+   "class": "match+alias-conflict-removed",
+   "preferred": [
+    "ذی‌نفع",
+    "ذی‌نفع"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "monitoring",
+   "class": "match+alias-conflict-removed",
+   "preferred": [
+    "پایش",
+    "پایش"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "measure",
+   "class": "context-split",
+   "preferred": [
+    "سنجش",
+    "سنجش"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "artificial intelligence management system",
+   "class": "wording-difference",
+   "preferred": [
+    "سامانه مدیریت هوش مصنوعی",
+    "نظام مدیریت هوش مصنوعی"
+   ],
+   "previous_status": "proposed"
+  },
+  {
+   "key": "artificial intelligence",
+   "class": "abbreviation-alias",
+   "preferred": [
+    "هوش مصنوعی",
+    "هوش مصنوعی"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "governance",
+   "class": "wording-difference(branding)",
+   "preferred": [
+    "حکمرانی",
+    "حکمرانی"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "compliance",
+   "class": "wording-difference+homonym",
+   "preferred": [
+    "انطباق",
+    "انطباق"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "accountability",
+   "class": "match",
+   "preferred": [
+    "پاسخگویی",
+    "پاسخگویی"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "privacy",
+   "class": "alias-conflict-removed",
+   "preferred": [
+    "حریم خصوصی",
+    "حریم خصوصی"
+   ],
+   "previous_status": "approved"
+  },
+  {
+   "key": "area under the curve",
+   "class": "wording-difference",
+   "preferred": [
+    "سطح زیر منحنی",
+    "مساحت زیر منحنی"
+   ],
+   "previous_status": "proposed"
+  },
+  {
+   "key": "false negative rate",
+   "class": "wording-difference",
+   "preferred": [
+    "نرخ کاذب منفی",
+    "نرخ منفی کاذب"
+   ],
+   "previous_status": "proposed"
+  },
+  {
+   "key": "receiver operating characteristic",
+   "class": "wording-difference",
+   "preferred": [
+    "منحنی مشخصه عملکرد گیرنده",
+    "مشخصه‌های عملیاتی گیرنده"
+   ],
+   "previous_status": "approved"
+  }
+ ],
+ "metadata_only": [
+  {
+   "key": "data governance",
+   "class": "match"
+  },
+  {
+   "key": "false positive rate",
+   "class": "match"
+  },
+  {
+   "key": "machine learning",
+   "class": "match"
+  },
+  {
+   "key": "neural network exchange format",
+   "class": "match"
+  },
+  {
+   "key": "true positive rate",
+   "class": "match"
+  },
+  {
+   "key": "metadata",
+   "class": "match"
+  },
+  {
+   "key": "transparency",
+   "class": "match"
+  },
+  {
+   "key": "robustness",
+   "class": "match"
+  }
+ ],
+ "new": [
+  {
+   "key": "big data",
+   "preferred_fa": "کلان‌داده",
+   "sources": [
+    "INSO-15816-3-1403",
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "customer data",
+   "preferred_fa": "دادهٔ مشتری",
+   "sources": [
+    "INSO-15816-3-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data controller",
+   "preferred_fa": "واپایشگر داده",
+   "sources": [
+    "INSO-15816-3-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data processor",
+   "preferred_fa": "پردازشگر داده",
+   "sources": [
+    "INSO-15816-3-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data quality owner",
+   "preferred_fa": "مالک کیفیت داده",
+   "sources": [
+    "INSO-15816-3-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data sensitivity",
+   "preferred_fa": "حساسیت داده",
+   "sources": [
+    "INSO-15816-3-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data sharing",
+   "preferred_fa": "هم‌رسانی داده‌ها (اشتراک داده)",
+   "sources": [
+    "INSO-15816-3-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data stakeholder",
+   "preferred_fa": "ذی‌نفع داده",
+   "sources": [
+    "INSO-15816-3-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data steward",
+   "preferred_fa": "متصدی داده",
+   "sources": [
+    "INSO-15816-3-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data taxonomy",
+   "preferred_fa": "رده‌بندی داده",
+   "sources": [
+    "INSO-15816-3-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "organizational data",
+   "preferred_fa": "داده‌های سازمانی",
+   "sources": [
+    "INSO-15816-3-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "personally identifiable information",
+   "preferred_fa": "اطلاعات قابل‌شناسایی شخصی؛ داده‌های شخصی",
+   "sources": [
+    "INSO-15816-3-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "pii principal",
+   "preferred_fa": "مالک PII",
+   "sources": [
+    "INSO-15816-3-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "semi structured data",
+   "preferred_fa": "داده‌های نیمه‌ساختاریافته",
+   "sources": [
+    "INSO-15816-3-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "structured data",
+   "preferred_fa": "داده‌های ساختاریافته",
+   "sources": [
+    "INSO-15816-3-1403",
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry+inter-standard-variation"
+  },
+  {
+   "key": "classification model",
+   "preferred_fa": "مدل طبقه‌بندی",
+   "sources": [
+    "INSO-23681-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "regression model",
+   "preferred_fa": "مدل وایازش (رگرسیون)",
+   "sources": [
+    "INSO-23681-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "generalization",
+   "preferred_fa": "تعمیم",
+   "sources": [
+    "INSO-23681-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "overfitting",
+   "preferred_fa": "بیش‌برازش",
+   "sources": [
+    "INSO-23681-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "underfitting",
+   "preferred_fa": "برازش کمتر از حد",
+   "sources": [
+    "INSO-23681-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "backpropagation",
+   "preferred_fa": "پس انتشار",
+   "sources": [
+    "INSO-23681-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "learning rate",
+   "preferred_fa": "نرخ یادگیری",
+   "sources": [
+    "INSO-23681-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "class",
+   "preferred_fa": "طبقه",
+   "sources": [
+    "INSO-23681-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "cluster",
+   "preferred_fa": "خوشه",
+   "sources": [
+    "INSO-23681-1403",
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "feature",
+   "preferred_fa": "ویژگی",
+   "sources": [
+    "INSO-23681-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "distance",
+   "preferred_fa": "فاصله",
+   "sources": [
+    "INSO-23681-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "unlabelled",
+   "preferred_fa": "فاقد برچسب",
+   "sources": [
+    "INSO-23681-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "use of ai",
+   "preferred_fa": "استفاده از هوش مصنوعی",
+   "sources": [
+    "INSO-23682-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "oversight",
+   "preferred_fa": "نظارت",
+   "sources": [
+    "INSO-23682-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "benefit",
+   "preferred_fa": "منفعت",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "cloud computing",
+   "preferred_fa": "محاسبات ابری",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data",
+   "preferred_fa": "داده",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data analytic",
+   "preferred_fa": "واکاوش داده",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "database",
+   "preferred_fa": "پایگاه‌داده",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data model",
+   "preferred_fa": "مدل داده",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data processing",
+   "preferred_fa": "داده‌پردازی",
+   "sources": [
+    "INSO-23728-1403",
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data science",
+   "preferred_fa": "داده‌شناسی",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data set",
+   "preferred_fa": "مجموعه‌داده",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data type",
+   "preferred_fa": "نوع داده",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data variability",
+   "preferred_fa": "تغییرپذیری داده",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data variety",
+   "preferred_fa": "گونه داده",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data velocity",
+   "preferred_fa": "سرعت داده",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data veracity",
+   "preferred_fa": "صحت داده",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data volatility",
+   "preferred_fa": "فراریت داده",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data volume",
+   "preferred_fa": "حجم داده",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "distributed data processing",
+   "preferred_fa": "پردازش داده های توزیعی",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "distributed file system",
+   "preferred_fa": "سامانه پرونده توزیعی",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "file",
+   "preferred_fa": "پرونده",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "gather",
+   "preferred_fa": "گردآورد (جمع‌آوری)",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "horizontal scaling",
+   "preferred_fa": "مقیاس‌بندی افقی",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "non relational database",
+   "preferred_fa": "پایگاه‌دادهٔ غیررابطه‌ای",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "non relational model",
+   "preferred_fa": "مدل غیررابطه‌ای",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "parallel",
+   "preferred_fa": "موازی",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "partially structured data",
+   "preferred_fa": "داده نیمه‌ساختاریافته",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "relational algebra",
+   "preferred_fa": "جبر رابطه‌ای",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "relational database",
+   "preferred_fa": "پایگاه‌دادهٔ رابطه‌ای",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "relational model",
+   "preferred_fa": "مدل رابطه‌ای",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "scatter",
+   "preferred_fa": "پراکنش",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "scatter gather",
+   "preferred_fa": "پراکنش - گردآورد",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "streaming data",
+   "preferred_fa": "داده‌شارها",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "sql",
+   "preferred_fa": "زپ‌سا",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "unstructured data",
+   "preferred_fa": "داده ناساختمند",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "vertical scaling",
+   "preferred_fa": "مقیاس‌بندی عمودی",
+   "sources": [
+    "INSO-23683-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "measure (noun)",
+   "preferred_fa": "سنجه",
+   "sources": [
+    "INSO-23684-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "measure (verb)",
+   "preferred_fa": "سنجیدن",
+   "sources": [
+    "INSO-23684-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "software quality measure",
+   "preferred_fa": "سنجه کیفیت نرم‌افزار",
+   "sources": [
+    "INSO-23684-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "risk treatment measure",
+   "preferred_fa": "اقدام مقابله با مخاطره (ریسک)",
+   "sources": [
+    "INSO-23684-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "user controllability",
+   "preferred_fa": "واپایش‌پذیری کاربر",
+   "sources": [
+    "INSO-23684-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "functional adaptability",
+   "preferred_fa": "وفق‌پذیری کارکردی",
+   "sources": [
+    "INSO-23684-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "functional correctness",
+   "preferred_fa": "صحت کارکردی",
+   "sources": [
+    "INSO-23684-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "intervenability",
+   "preferred_fa": "مداخله‌پذیری",
+   "sources": [
+    "INSO-23684-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "societal and ethical risk mitigation",
+   "preferred_fa": "مخاطره کاهی جامعگی و اخلاقی",
+   "sources": [
+    "INSO-23684-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "big data business security risk",
+   "preferred_fa": "مخاطره امنیتی کسب‌وکار کلان‌داده",
+   "sources": [
+    "INSO-23685-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "big data business security risk control",
+   "preferred_fa": "واپایش مخاطره امنیتی کسب‌وکار کلان‌داده",
+   "sources": [
+    "INSO-23685-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "content",
+   "preferred_fa": "محتوا",
+   "sources": [
+    "INSO-23685-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "entity",
+   "preferred_fa": "هستار",
+   "sources": [
+    "INSO-23728-1403",
+    "INSO-23685-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "event data",
+   "preferred_fa": "داده‌های رویداد",
+   "sources": [
+    "INSO-23685-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "risk index",
+   "preferred_fa": "شاخص مخاطره",
+   "sources": [
+    "INSO-23685-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "authorized individual",
+   "preferred_fa": "فرد مجاز",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "business requirement",
+   "preferred_fa": "الزامات کسب‌وکار",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "contextual factor",
+   "preferred_fa": "عوامل بافت",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "control",
+   "preferred_fa": "واپایش",
+   "sources": [
+    "INSO-42001-1404",
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data action",
+   "preferred_fa": "کنش‌های داده",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data element",
+   "preferred_fa": "عنصرداده",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data flow",
+   "preferred_fa": "داده‌شارها (جریان داده)",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data map",
+   "preferred_fa": "نقشه داده",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data privacy",
+   "preferred_fa": "حریم اطلاعاتی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data protection",
+   "preferred_fa": "حفاظت از داده",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data subject",
+   "preferred_fa": "موضوع داده",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data system",
+   "preferred_fa": "سامانه داده",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "de identification",
+   "preferred_fa": "هویت‌زدایی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "environment",
+   "preferred_fa": "محیط",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "functional requirement",
+   "preferred_fa": "الزام کارکردی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "functionality",
+   "preferred_fa": "قابلیت کارکرد",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "guideline",
+   "preferred_fa": "راهنمون",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "information security",
+   "preferred_fa": "امنیت اطلاعات",
+   "sources": [
+    "INSO-42001-1404",
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "iterative process",
+   "preferred_fa": "فرایند تکرارشونده",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "nonfunctional requirement",
+   "preferred_fa": "الزام غیرکارکردی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "organization",
+   "preferred_fa": "سازمان",
+   "sources": [
+    "INSO-42001-1404",
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "organizational privacy requirement",
+   "preferred_fa": "الزامات حریم خصوصی سازمانی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "organizational privacy framework",
+   "preferred_fa": "چارچوب حریم خصوصی سازمانی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "personal data",
+   "preferred_fa": "داده شخصی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "policy",
+   "preferred_fa": "خط‌مشی",
+   "sources": [
+    "INSO-42001-1404",
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "privacy capability",
+   "preferred_fa": "قابلیت‌های حریم خصوصی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "privacy control",
+   "preferred_fa": "واپایش حریم خصوصی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "privacy framework",
+   "preferred_fa": "چارچوب حریم خصوصی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "privacy principle",
+   "preferred_fa": "اصول حفظ حریم خصوصی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "privacy requirement",
+   "preferred_fa": "الزامات حفظ حریم خصوصی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "privacy risk",
+   "preferred_fa": "مخاطره (ریسک) حریم خصوصی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "procedure",
+   "preferred_fa": "روال",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "regulatory context",
+   "preferred_fa": "بافت تنظیم‌گری (رگولاتوری)",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "risk mitigation",
+   "preferred_fa": "مخاطره کاهی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "security control",
+   "preferred_fa": "واپایش امنیتی",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "system",
+   "preferred_fa": "سامانه",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "system of interest",
+   "preferred_fa": "سامانهٔ توجه",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "systems development life cycle",
+   "preferred_fa": "چرخه عمر توسعه سامانه‌ها",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "training",
+   "preferred_fa": "آموزش",
+   "sources": [
+    "INSO-23728-1403"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "interested party",
+   "preferred_fa": "طرف‌های ذی‌نفع",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "top management",
+   "preferred_fa": "مدیریت رده‌بالا",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "objective",
+   "preferred_fa": "هدف",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "process",
+   "preferred_fa": "فرایند",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "competence",
+   "preferred_fa": "شایستگی",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "documented information",
+   "preferred_fa": "اطلاعات مدون",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "performance",
+   "preferred_fa": "عملکرد",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "continual improvement",
+   "preferred_fa": "بهبود مداوم",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "effectiveness",
+   "preferred_fa": "اثربخشی",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "requirement",
+   "preferred_fa": "الزام",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "conformity",
+   "preferred_fa": "انطباق",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "nonconformity",
+   "preferred_fa": "عدم انطباق",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "corrective action",
+   "preferred_fa": "اقدام اصلاحی",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "measurement",
+   "preferred_fa": "اندازه‌گیری",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "governing body",
+   "preferred_fa": "مرجع حکمران",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "ai system impact assessment",
+   "preferred_fa": "ارزیابی تأثیر سامانه هوش مصنوعی",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "data quality",
+   "preferred_fa": "کیفیت داده",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  },
+  {
+   "key": "statement of applicability",
+   "preferred_fa": "بیانیهٔ قابلیت کاربست‌پذیری",
+   "sources": [
+    "INSO-42001-1404"
+   ],
+   "class": "new-entry"
+  }
+ ],
+ "unresolved_pairings": [],
+ "acronym_only": [
+  {
+   "item": "T23683-3.2",
+   "printed": "JSON",
+   "term_en": "JSON",
+   "base_key": null,
+   "note": "the standard prints only the Latin acronym; no Persian term, no entry created"
+  },
+  {
+   "item": "T23683-3.2b",
+   "printed": "PII",
+   "term_en": "PII",
+   "base_key": null,
+   "note": "the standard prints only the Latin acronym; no Persian term, no entry created"
+  },
+  {
+   "item": "T23683-3.2c",
+   "printed": "XML",
+   "term_en": "XML",
+   "base_key": null,
+   "note": "the standard prints only the Latin acronym; no Persian term, no entry created"
+  },
+  {
+   "item": "T23728-3.2",
+   "printed": "CIA",
+   "term_en": "Confidentiality, Integrity, Availability",
+   "base_key": null,
+   "note": "the standard prints only the Latin acronym; no Persian term, no entry created"
+  },
+  {
+   "item": "T23728-3.2b",
+   "printed": "DPIA",
+   "term_en": "Data Protection Impact Assessment",
+   "base_key": null,
+   "note": "the standard prints only the Latin acronym; no Persian term, no entry created"
+  },
+  {
+   "item": "T23728-3.2c",
+   "printed": "GDPR",
+   "term_en": "General Data Protection Regulation",
+   "base_key": "general data protection regulation",
+   "note": "the standard prints only the Latin acronym; no official Persian term"
+  },
+  {
+   "item": "T23728-3.2d",
+   "printed": "PIA",
+   "term_en": "Privacy Impact Assessment",
+   "base_key": null,
+   "note": "the standard prints only the Latin acronym; no Persian term, no entry created"
+  },
+  {
+   "item": "T23728-3.2e",
+   "printed": "PII",
+   "term_en": "Personally Identifiable Information",
+   "base_key": null,
+   "note": "the standard prints only the Latin acronym; no Persian term, no entry created"
+  },
+  {
+   "item": "T23728-3.2f",
+   "printed": "SDLC",
+   "term_en": "Systems Development Life Cycle",
+   "base_key": null,
+   "note": "the standard prints only the Latin acronym; no Persian term, no entry created"
+  },
+  {
+   "item": "T23728-3.2g",
+   "printed": "SLA",
+   "term_en": "Service Level Agreement",
+   "base_key": "service level agreements",
+   "note": "the standard prints only the Latin acronym; no official Persian term"
+  },
+  {
+   "item": "T23728-3.2h",
+   "printed": "SOI",
+   "term_en": "System-Of-Interest",
+   "base_key": null,
+   "note": "the standard prints only the Latin acronym; no Persian term, no entry created"
+  }
+ ],
+ "skipped_abbreviations": 34,
+ "hygiene": [
+  {
+   "key": "risk",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: خطر"
+   ]
+  },
+  {
+   "key": "machine learning",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: یادگیری ماشینی"
+   ]
+  },
+  {
+   "key": "privacy",
+   "notes": [
+    "rejected_fa: missing ZWNJ restored ",
+    "unrelated acronym «SP» cleared (term-mining artifact)"
+   ]
+  },
+  {
+   "key": "security",
+   "notes": [
+    "unrelated acronym «WIFS» cleared (term-mining artifact)"
+   ]
+  },
+  {
+   "key": "explainability",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: قابلیت توضیح"
+   ]
+  },
+  {
+   "key": "trustworthy ai",
+   "notes": [
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "risk tolerance",
+   "notes": [
+    "preferred form removed from rejected_fa (contradiction)",
+    "rejected_fa: missing ZWNJ restored duplicates removed"
+   ]
+  },
+  {
+   "key": "reliability",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: اتکاپذیری"
+   ]
+  },
+  {
+   "key": "robustness",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: قابلیت استوار بودن، پایداری در برابر اختلال"
+   ]
+  },
+  {
+   "key": "see",
+   "notes": [
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "interpretability",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: قابلیت تفسیر"
+   ]
+  },
+  {
+   "key": "risk management",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: مدیریت خطر"
+   ]
+  },
+  {
+   "key": "adversarial machine learning",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: یادگیری ماشین هماورد"
+   ]
+  },
+  {
+   "key": "large language model",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: مدل زبانی گسترده"
+   ]
+  },
+  {
+   "key": "generative ai",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: هوش مصنوعی زایا"
+   ]
+  },
+  {
+   "key": "red teaming",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: تیم سرخ"
+   ]
+  },
+  {
+   "key": "measure",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: سنجه",
+    "unrelated acronym «SSIM» cleared (term-mining artifact)"
+   ]
+  },
+  {
+   "key": "legal research",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: تحقیق حقوقی"
+   ]
+  },
+  {
+   "key": "knowledge limits",
+   "notes": [
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "fairness",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: عدالت الگوریتمی، برابری"
+   ]
+  },
+  {
+   "key": "residual risk",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: ریسک پسماند"
+   ]
+  },
+  {
+   "key": "differential privacy",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: خصوصیت افتراقی"
+   ]
+  },
+  {
+   "key": "risk appetite",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: سطح پذیرش ریسک، رواداری ریسک"
+   ]
+  },
+  {
+   "key": "synthetic content",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: محتوای ساختگی"
+   ]
+  },
+  {
+   "key": "validity",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: اعتبار"
+   ]
+  },
+  {
+   "key": "explainable artificial intelligence",
+   "notes": [
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "cybernetics",
+   "notes": [
+    "unrelated acronym «SMC» cleared (term-mining artifact)"
+   ]
+  },
+  {
+   "key": "threat model",
+   "notes": [
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "jailbreak",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: دستبرد به مدل، جیلبرک"
+   ]
+  },
+  {
+   "key": "data poisoning",
+   "notes": [
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "hallucination",
+   "notes": [
+    "preferred form removed from rejected_fa (contradiction)",
+    "rejected form(s) removed from alternatives_fa: اختلال توهم مدل"
+   ]
+  },
+  {
+   "key": "impact assessment",
+   "notes": [
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "safety",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: امنیت رفتاری"
+   ]
+  },
+  {
+   "key": "confabulation",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: توهم مدل"
+   ]
+  },
+  {
+   "key": "dual-use foundation model",
+   "notes": [
+    "preferred form removed from rejected_fa (contradiction)"
+   ]
+  },
+  {
+   "key": "provenance",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: منشأ و اصالت داده، پیشینه محتوا",
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "resilience",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: انعطاف‌پذیری سیستمی"
+   ]
+  },
+  {
+   "key": "evasion",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: فرار از تشخیص"
+   ]
+  },
+  {
+   "key": "human oversight",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: ارزیابی و مراقبت انسانی"
+   ]
+  },
+  {
+   "key": "aria",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: ایریا"
+   ]
+  },
+  {
+   "key": "foundation model",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: مدل بنیادین"
+   ]
+  },
+  {
+   "key": "standard",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: معیار"
+   ]
+  },
+  {
+   "key": "govern",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: کنترل و راهبری"
+   ]
+  },
+  {
+   "key": "map",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: تابع نگاشت",
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "manage",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: اقدام و مدیریت",
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "ai and risk scores",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: امتیازهای ریسک هوش مصنوعی"
+   ]
+  },
+  {
+   "key": "artificial intelligence, trustworthiness, and litigation",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: هوش مصنوعی، قابلیت اعتماد و دادرسی",
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "artificial intelligence and bias – an evaluation",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: هوش مصنوعی و تورش – ارزیابی"
+   ]
+  },
+  {
+   "key": "artificial intelligence and the justice system",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: هوش مصنوعی و سامانه قضایی"
+   ]
+  },
+  {
+   "key": "receiver operating characteristic",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: منحنی عملکرد گیرنده"
+   ]
+  },
+  {
+   "key": "daubert",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: معیار داوبرت"
+   ]
+  },
+  {
+   "key": "information technology",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: فناوری اطلاعاتی"
+   ]
+  },
+  {
+   "key": "general data protection regulation",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: مقررات عمومی حمایت از داده"
+   ]
+  },
+  {
+   "key": "enterprise risk management",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: مدیریت ریسک بنگاهی"
+   ]
+  },
+  {
+   "key": "detection error tradeoff",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: بده‌بستان خطای تشخیص"
+   ]
+  },
+  {
+   "key": "disentangling explainability",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: جدا کردن توضیح‌پذیری از تفسیرپذیری",
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "nist special publication",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: مطبوعات خاص NIST"
+   ]
+  },
+  {
+   "key": "false positive rate",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: نرخ مثبت‌های کاذب"
+   ]
+  },
+  {
+   "key": "generative adversarial networks",
+   "notes": [
+    "rejected form(s) removed from alternatives_fa: شبکه‌های خصمانه مولد",
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "ai risk management framework",
+   "notes": [
+    "preferred form removed from rejected_fa (contradiction)",
+    "rejected form(s) removed from alternatives_fa: چارچوب مدیریت خطر هوش مصنوعی (AI RMF)"
+   ]
+  },
+  {
+   "key": "disabilities act",
+   "notes": [
+    "rejected_fa: duplicates removed"
+   ]
+  },
+  {
+   "key": "vulnerabilities",
+   "notes": [
+    "unrelated acronym «RV» cleared (term-mining artifact)"
+   ]
+  },
+  {
+   "key": "future",
+   "notes": [
+    "unrelated acronym «CEF» cleared (term-mining artifact)"
+   ]
+  },
+  {
+   "key": "score",
+   "notes": [
+    "unrelated acronym «IS» cleared (term-mining artifact)"
+   ]
+  },
+  {
+   "key": "terrorism",
+   "notes": [
+    "unrelated acronym «GIFCT» cleared (term-mining artifact)"
+   ]
+  }
+ ]
+}

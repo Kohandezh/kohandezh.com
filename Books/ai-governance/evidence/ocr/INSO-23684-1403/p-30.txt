@@ -1,0 +1,27 @@
+استاندارد ملی ایران شمارة ۲۳۶۸۴ (چاپ اول): سال ۱۴۰۳
+
+[15] ISO/IEC TR 24368, Information Technology - Artificial intelligence - Over view of
+ethical and societal concerns
+
+[16] ISO/IEC/TR 24027, Information technology - Artificial intelligence (AI) - Bias in AI
+systems and AI aided decision making
+
+[17] ISO 31000, Risk management — Guidelines
+‏بادآوری - استاندارد ملی ایران شمارة ۱۳۲۴۵: سال ۰۱۳۹۸ مدیریت ریسک- رهنمودهاء با استفاده از استاندارد‎
+‏شده است.‎ gages ISO 31000: 2018
+[18] ISO/IEC 23894, Information technology-Artificial intelligence-Guidance on risk
+
+management
+
+یادآوری - استاندارد ملی ایران شمارة ۲۳۷۳۳: سال ‎VFO T‏ فناوری اطلاعات- هوش مصنوعی- راهنمای مدیریت مخاطره
+(ریسک) با استفاده از 23894:2023 ‎ISO/IEC‏ تدوین شده است.
+‎WAGNER S. Software Product Quality Control. Heidelberg: Springer Berlin, 2013,‏ ]19[
+
+DOL 10.1007/978-3-642-3857 1-1 2. Available from: https://link.from:
+https://arxiv .org/abs/1901.08573v3
+
+[20] Lenarduzzi V., Lomio F., Moreschini S.,Taibi D.,Tam Burri D.A.Software Quality for
+Al: Where We Are Now?. Software Quality: Future Perspectives on Software
+Engineering Quality, 2021, vol. 404
+
+۳۱

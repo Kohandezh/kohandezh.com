@@ -1,0 +1,43 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  8,
+  11
+ ],
+ "section_shas": {
+  "8": "d6266f3ad617ae118cecb56dfaff2476ee7de4a8bb9102419d88dda8ff1165cc",
+  "11": "2de5a5d0774844ee950fb818fb29ab97b133a1c1aa4908b9c55a4c345abb1ae9"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 888.451339006424,
+ "result": {
+  "sections": [
+   {
+    "index": 8,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 11,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "modality_drift",
+      "explanation": "A.10.3 is a shall-level control (C42001-A.10.3: «سازمان باید فرایندی ایجاد نماید تا اطمینان حاصل شود استفادهٔ سازمان از … تأمین‌کنندگان … همسو است» [shall]), yet is placed under «پیشنهادی» in the compiler's checklist. Despite the accompanying disclaimer that all «باید» items constitute conformity, the visual categorisation creates a contradiction: a reader scanning the grouped list may conclude the supplier process is discretionary, skip it, and produce a nonconformant AIMS. The qualifier «دوره‌ای» does not change the classification of the base control.",
+      "quote": "ارزیابی دوره‌ای تأمین‌کنندگان (A.10.3)",
+      "suggested_fix": "Move «A.10.3» citation to the «ضروری برای اجرای پایه» list. If the compiler wishes to highlight periodic supplier evaluation as an enhanced practice beyond the base requirement, add «ارزیابی عمیق دوره‌ای تأمین‌کنندگان (پیشنهاد تدوینگر، فراتر از الزام پایهٔ A.10.3)» to «پیشرفته» without the bare A.10.3 identifier."
+     },
+     {
+      "type": "modality_drift",
+      "explanation": "A.7.5 is a shall-level control (C42001-A.7.5: «سازمان باید فرایندی برای ثبت منشأ داده‌های استفاده‌شده … تعیین و مستند نماید» [shall]), yet appears under «پیشرفته» in the checklist. The qualifier «خودکار» (automatic) signals an enhanced implementation mode but does not remove the ambiguity created by the parenthetical reference (A.7.5): a reader may interpret the entire control as optional, creating a nonconformity risk for an organisation that omits data-provenance tracking altogether.",
+      "quote": "ثبت خودکار منشأ داده (A.7.5)",
+      "suggested_fix": "Separate base requirement from enhancement: add «داشتن فرایند ثبت منشأ داده (A.7.5)» to «ضروری برای اجرای پایه»; change the «پیشرفته» entry to «خودکارسازی فرایند ثبت منشأ داده (پیشنهاد تدوینگر، فراتر از الزام پایهٔ A.7.5)» without the bare A.7.5 identifier."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:10:04-0400"
+}

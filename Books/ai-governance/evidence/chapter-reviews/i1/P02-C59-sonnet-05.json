@@ -1,0 +1,44 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  5,
+  8
+ ],
+ "section_shas": {
+  "5": "cac3a77f067d34be0bf0bcb2d62f8638c449e77e17348221fbd13d3bb441ecd7",
+  "8": "74a7abf5a603549e8ef5d04a742e88f8bb9acc825f8e45faf5f19c9444f4cc4f"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 402.4331839084625,
+ "result": {
+  "sections": [
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "other",
+      "quote": "در بندهای ۸.۲ و ۸.۴ تعریفی برای «تغییر چشمگیر» ارائه نشده است",
+      "explanation": "Clause 8.2 (S42001-089) prints «تغییرات قابل‌ملاحظه» while clause 8.4 (S42001-091) prints «تغییرات چشمگیر». The editorial note collapses both under the single label «تغییر چشمگیر», misrepresenting 8.2's printed term. The two clauses use distinct Persian wording; conflating them is a factual error.",
+      "suggested_fix": "Replace with: «در بند ۸.۲ تعریفی برای «تغییرات قابل‌ملاحظه» و در بند ۸.۴ تعریفی برای «تغییرات چشمگیر» ارائه نشده است.»"
+     }
+    ]
+   },
+   {
+    "index": 8,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "modality_drift",
+      "quote": "فناوری کم‌بلوغ به سبب عوامل ناشناخته و فناوری بالغ به سبب اعتماد بیش از حد مخاطره‌آفرین است",
+      "explanation": "S42001-182 prints «می‌توانند به دلیل عوامل ناشناخته به منابع مخاطره مبدل شوند» — a conditional possibility using «می‌توانند». The section drops this modal verb entirely and makes an unconditional definitive statement («مخاطره‌آفرین است»), upgrading a 'can become' to an 'is', which overstates the evidence.",
+      "suggested_fix": "Replace with the evidence's own conditional form: «فنّاوری‌های با بلوغ کمتر می‌توانند به سبب عوامل ناشناخته، و فنّاوری‌های بالغ‌تر به سبب اعتماد بیش از حد، به منابع مخاطره مبدل شوند.»"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:39:25-0400"
+}

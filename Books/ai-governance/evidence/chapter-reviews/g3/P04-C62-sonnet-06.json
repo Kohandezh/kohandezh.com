@@ -1,0 +1,42 @@
+{
+ "chapter": "P04/C62",
+ "sections": [
+  6
+ ],
+ "section_shas": {
+  "6": "077961551f6f14f967a8401e233151b439543d902d80ebf44b8cf8bb381be2b6"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 259.7199287414551,
+ "result": {
+  "sections": [
+   {
+    "index": 6,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "برای فناوری یا کاربرد نو می‌توان مدل کیفیت جزئی به کار برد و مقدار سنجه‌ها را فقط برای مشخصه‌های فرعی با مخاطرهٔ منفی بالا تعیین کرد (پیوست ب.۱، ص ۱۵)",
+      "explanation": "Evidence S23684-074 conditions the effectiveness of a partial quality model on the situation being high-risk ('می‌تواند در موقعیت‌های با مخاطرهٔ منفی بالا اثربخش باشد'). The section's paraphrase drops that situational condition — 'در موقعیت‌های با مخاطرهٔ منفی بالا' — making the partial model appear broadly applicable for any new technology, which exceeds what the evidence supports. A second omission: the evidence prescribes that metric values be both 'مشخص و ارزشیابی می‌شود' (specified AND evaluated), but the section writes only 'تعیین کرد' (specified), dropping the evaluation step.",
+      "suggested_fix": "Restore the limiting condition and the evaluation step: «برای فناوری‌ها یا کاربردهای جدید، در موقعیت‌های با مخاطرهٔ منفی بالا می‌توان از مدل کیفیت جزئی استفاده کرد و در آن صورت مقادیر سنجه‌ها فقط برای مشخصه‌های فرعی با مخاطرهٔ منفی بالا مشخص و ارزشیابی می‌شود (پیوست ب.۱، ص ۱۵).»"
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "چون فناوری برای سازمان تازه است، تیم مدل جزئی را برمی‌گزیند",
+      "explanation": "The same dropped condition propagates into the scenario. Evidence S23684-074 justifies a partial model for new technology only in high negative-risk situations. The scenario presents novelty of technology alone ('چون فناوری برای سازمان تازه است') as the full justification for the partial-model choice, without establishing that the use case qualifies as a high negative-risk situation. This is an unsupported application of the standard's permission.",
+      "suggested_fix": "Add the missing condition: e.g. «چون فناوری برای سازمان تازه است و تیم موقعیت را دارای مخاطرهٔ منفی بالا ارزیابی می‌کند، مدل جزئی برمی‌گزیند.»"
+     },
+     {
+      "type": "terminology",
+      "quote": "منابع مخاطره، اقدام مقابله‌ای، سنجهٔ جایگزین و مخاطرهٔ باقی‌ماندهٔ پذیرفته‌شده",
+      "explanation": "INSO 23684 §3.1.4 defines the official term as «اقدام مقابله با مخاطره (ریسک)» (risk treatment measure). The section uses the shortened form «اقدام مقابله‌ای», which drops «با مخاطره (ریسک)» and does not match the defined term. A similar shortening appears in the checklist item where the term is further reduced to just «اقدام».",
+      "suggested_fix": "Replace «اقدام مقابله‌ای» with «اقدام مقابله با مخاطره (ریسک)» in the form-table row header; in the checklist item replace «اقدام» with «اقدام مقابله با مخاطره» (abbreviated at first use as «اقدام مقابله با مخاطره (ریسک)»)."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:46:19-0400"
+}

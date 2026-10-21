@@ -1,0 +1,31 @@
+استاندارد ملی ایران
+۸۱۶-۳ ۱۵
+چاپ اول
+
+۱۴۰۳
+
+جمهوری اسلامی ایران
+‎Islamic Republic of Iran‏
+سازمان ملی استاندارد ایران
+
+Iran National Standards Organization
+
+فناوری اطلاعات -
+
+حکمرانی داده -
+قسمت ۳: راهنمای طبقه‌بندی داده‌ها
+
+Information technology -
+Governance of data —
+Part 3: Guidelines for data classification
+
+ICS: 35.020
+
+INSO
+15816-3
+lst Edition
+2024
+
+Identical with
+ISO/IEC TS 38505-3:
+2021

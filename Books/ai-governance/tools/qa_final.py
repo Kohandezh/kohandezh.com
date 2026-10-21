@@ -108,7 +108,9 @@ def main():
     gate("GPT_TEXT_USAGE = 0", gpt == 0, f"openai text calls={gpt}")
     all_pass = all(g["pass"] for g in gates.values())
     # metrics §89
-    m = {"TOTAL_SOURCES": 18, "TOTAL_SOURCE_PAGES": sum(json.load(open(ROOT / 'manifests' / 'sources.json', encoding='utf-8'))["documents"][i]["pages"] for i in range(18)),
+    _docs = json.load(open(ROOT / 'manifests' / 'sources.json', encoding='utf-8'))["documents"]
+    _nist = [d for d in _docs if d.get("source_kind") != "national_standard"]; _nat = [d for d in _docs if d.get("source_kind") == "national_standard"]
+    m = {"TOTAL_SOURCES": len(_nist), "TOTAL_SOURCE_PAGES": sum(d["pages"] for d in _nist), "TOTAL_NATIONAL_STANDARDS": len(_nat), "TOTAL_NATIONAL_STANDARD_PAGES": sum(d["pages"] for d in _nat),
          "TOTAL_SOURCE_BLOCKS": con.execute("SELECT COUNT(*) FROM blocks").fetchone()[0], "TOTAL_TRANSLATION_CHUNKS": total, "TOTAL_APPROVED_CHUNKS": approved,
          "TOTAL_ESCALATED_CHUNKS": con.execute("SELECT COUNT(*) FROM approved WHERE escalated=1").fetchone()[0], "TOTAL_PERSIAN_WORDS": sum(len(u["fa_text"].split()) for u in units),
          "TOTAL_PARTS": len(book["parts"]), "TOTAL_CHAPTERS": sum(1 for P in book["parts"] for C in P["chapters"] if C["sections"]), "TOTAL_SECTIONS": len(units),

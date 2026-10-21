@@ -1,0 +1,50 @@
+استاندارد ملی ایران شمارة ۱۵۸۱۶-۳ (چاپ اول): ۱۴۰۳
+
+[۱] استاندارد ملی ایران شمارة ۱۶۴۵۰-۱: سال ۰۱۴۰۰ عرضه خدمت ارزیابی - روش‌های اجرایی و
+شیوه‌هایی برای ارزیابی افراد در محیط‌های کاری و سازمانی - قسمت : الزامات کارفرما
+‎Health informatics — Identification of medicinal products — Core‏ :14872:2019 150/۲1 ]2[
+‎principles for maintenance of identifiers and terms‏
+
+[3] ISO/IEC 19944-1:2020, Cloud computing and distributed platforms — Data flow, data
+categories and data use — Part 1: Fundamentals
+
+[4] ISOMEC 19944-2:2020, Cloud computing and distributed platforms —Data flow, data
+categories and data use —Part 2: Guidance on application and extensibility
+
+]0[ استاندارد ملی ایران شمارة ۲۳۶۸۳: سال ۰۱۴۰۳ فناوری اطلاعات -کلان داده - مرور کلی و واژگان
+
+[6] ISO/IEC 20889, Privacy enhancing data de-identification terminology and classification
+
+of techniques
+[7] ISOMEC 20944-1:2013, Information technology — Metadata Registries Interoperability
+and Bindings (MDR-IB) — Part 1: Framework, common vocabulary, and common
+
+provisions for conformance
+
+[8] ISOMEC 22123-1, Information technology — Cloud computing — Part 1: Vocabulary
+‏استاندارد ملی ایران شمارة ۲۳۰۸۳: سال ۰.۱۴۰۰ فناوری اطلاعات - رایانش ابری - ساماندهی داده‌ها‎ [4]
+‏مبتنی بر گونه‌شناسی برای خدمات ابری‎
+‏استاندارد ملی ایران شمارةٌ ۲۳۶۸۰: سال ۰۱۴۰۳ فناوری اطلاعات - رایانش ابری و بن سازه توزیع‎ ]۱۰[
+(DSA) ‏شده چارچوب توافق نامه هم‌رسانی داده‌ها‎
+
+[۱۱] استاندارد ملی ایران شمارة ۱۷۶۴۳: سال ۰۱۳۹۲ فناوری اطلاعات - فنون امنیتی - چارچوب کاری
+حریم خصوصی
+
+[12] ISO/IEC 29100:2011/Amd 1:2018, Information technology — Security techniques —
+Privacy framework — Amendment 1: Clarifications
+
+[۱۳] استاندارد ملی ایران شمار ۱۲۰۴۷: سال ‎TAO‏ فناوری اطلاعات - حاکمیت فناوری اطلاعات ‎CIT)‏
+‏برای سازمان
+
+[14] ISO/IEC TS 38501, Information technology — Governance of IT — Implementation
+guide
+
+یادآوری - استاندارد ملی ایران شمارة ۱۰۷۹ ۲: سال ۱۳۹۵ فناوری اطلاعات - حاکمیت فناوری اطلاعات ‎UT)‏ راهنمای پیاده‌سازی با
+استفاده از 38501:2015 ‎ISO/IEC TS‏ تدوین شده است.
+[۱۵] استاندارد ملی ایران شمارة ۱۵۸۱۶-۱: سال ۰.۱۳۹۸ فناوری اطلاعات - حکمرانی فناوری اطلاعات -
+حکمرانی داده‌ها - قسمت !: ‎op IF‏ استاندارد 38500 ‎ISO/IEC‏ در حکمرانی داده‌ها
+
+[16] ISO/IEC TR 38505-2, Information technology — Governance of IT — Governance of
+data — Part 2: Implications of ISO/IEC 38505-1 for data management
+
+۳۶

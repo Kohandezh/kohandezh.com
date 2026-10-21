@@ -1,0 +1,120 @@
+{
+ "keys": [
+  "policy",
+  "privacy capability",
+  "privacy control",
+  "privacy framework",
+  "privacy principle",
+  "privacy requirement",
+  "privacy risk",
+  "procedure",
+  "regulatory context",
+  "risk mitigation",
+  "security control",
+  "system"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 104.55993390083313,
+ "result": {
+  "verdicts": [
+   {
+    "key": "policy",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.88,
+    "issues": [
+     {
+      "type": "attribution",
+      "explanation": "editor_note_fa names only INSO 42001 cl.3.5, but the entry carries definitions from two distinct standards (also INSO 23728 cl.3.1.29). A reader consulting only the note would believe a single source was consulted and miss that the two definitions differ in substance.",
+      "suggested_fix": "Replace editor_note_fa with: «اصطلاح تعریف‌شده در INSO 42001 بند 3.5 و INSO 23728 بند 3.1.29؛ بازبینی‌نشده.»"
+     }
+    ]
+   },
+   {
+    "key": "privacy capability",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "privacy control",
+    "verdict": "AGREE",
+    "confidence": 0.97,
+    "issues": []
+   },
+   {
+    "key": "privacy framework",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "privacy principle",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "privacy requirement",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "privacy risk",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.95,
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The standard prints «مخاطره (ریسک) حریم خصوصی» — with the loanword gloss in parentheses — as the term_fa. Rule 1 requires preferred_fa to equal the printed form. The proposed preferred_fa «مخاطرهٔ حریم خصوصی» strips the parenthetical and demotes the full printed form to an alias, which inverts the required hierarchy.",
+      "suggested_fix": "Set preferred_fa to «مخاطره (ریسک) حریم خصوصی» (the printed form). «مخاطره حریم خصوصی» and «ریسک حریم خصوصی» may remain as aliases."
+     },
+     {
+      "type": "orthography",
+      "explanation": "The current preferred_fa carries an ezafeh marker: «مخاطرهٔ». A standalone headword entry should use the base citation form «مخاطره» without the construct-state mark.",
+      "suggested_fix": "Change «مخاطرهٔ» to «مخاطره» in the preferred_fa field."
+     }
+    ]
+   },
+   {
+    "key": "procedure",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "regulatory context",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.95,
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The standard prints «بافت تنظیم‌گری (رگولاتوری)» as the term_fa. The proposed preferred_fa «بافت تنظیم‌گری» silently drops the loanword parenthetical and moves the full printed form to alternatives_fa. Per Rule 1 the preferred must match what the standard prints; per Rule 4 official forms are kept as printed even if unusual.",
+      "suggested_fix": "Set preferred_fa to «بافت تنظیم‌گری (رگولاتوری)». «بافت تنظیم‌گری» (without parenthetical) may remain as an alias."
+     }
+    ]
+   },
+   {
+    "key": "risk mitigation",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "security control",
+    "verdict": "AGREE",
+    "confidence": 0.97,
+    "issues": []
+   },
+   {
+    "key": "system",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:07:35-0400"
+}

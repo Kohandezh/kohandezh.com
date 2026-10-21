@@ -37,6 +37,7 @@ function fail( string $message ) {
 
 $repository = new KBK_AI_Book_Repository( $root );
 $search     = new KBK_AI_Book_Search( $repository );
+$edition_id = $repository->summary()['edition_id'];
 if ( KBK_AI_Book_Search::STATUS_READY !== $search->status() ) {
 	fail( 'engine must load real canonical artifacts cleanly' );
 }
@@ -150,12 +151,12 @@ $by_content = $search->search( strtolower( $sample['content_id'] ) );
 if ( 1 !== $by_content['total'] || $by_content['results'][0]['section']['content_id'] !== $sample['content_id'] ) {
 	fail( 'full content ID query must resolve exactly one section, case-insensitively' );
 }
-$by_prefix = $search->search( 'kdj-ai-2026e1-p06' );
+$by_prefix = $search->search( strtolower( 'KDJ-AI-' . $edition_id . '-P06' ) );
 if ( 0 === $by_prefix['total'] ) {
 	fail( 'ID prefix query must return the P06 sections' );
 }
 foreach ( $by_prefix['results'] as $item ) {
-	if ( 0 !== strpos( $item['section']['structural_id'], 'KDJ-AI-2026E1-P06' ) ) {
+	if ( 0 !== strpos( $item['section']['structural_id'], 'KDJ-AI-' . $edition_id . '-P06' ) ) {
 		fail( 'ID prefix results must all belong to the requested part' );
 	}
 }
@@ -214,7 +215,7 @@ if ( false !== strpos( $parsed['display'], "\0" ) || false !== strpos( $parsed['
 //     full-corpus leakage through section results).
 $bounded = $search->search( 'هوش مصنوعی', 5 );
 // All pages must preserve every ranked match, including the promoted glossary.
-foreach ( array( 'هوش مصنوعی', 'KDJ-AI-2026E1-P02' ) as $paged_query ) {
+foreach ( array( 'هوش مصنوعی', 'KDJ-AI-' . $edition_id . '-P02' ) as $paged_query ) {
 	$first_page = $search->search( $paged_query, 5 );
 	$seen = array();
 	for ( $page = 1; $page <= $first_page['pages']; $page++ ) {
@@ -274,7 +275,15 @@ foreach ( $bounded['results'] as $item ) {
 
 // 13. Glossary deep-link target resolves via find_term with the same safe shape.
 $term = $search->find_term( 'risk' );
-if ( null === $term || 'ریسک' !== $term['title'] || array_key_exists( 'reviewer', $term ) ) {
+// The headword is whatever the edition's own glossary prefers (E1 «ریسک», E2 «مخاطره» after the INSO alignment).
+$glossary_file = json_decode( (string) file_get_contents( $root . '/release/09_glossary.json' ), true );
+$expected_risk = 'ریسک';
+foreach ( $glossary_file['terms'] as $glossary_term ) {
+	if ( 'RISK' === strtoupper( (string) $glossary_term['concept_id'] ) ) {
+		$expected_risk = (string) $glossary_term['preferred_fa'];
+	}
+}
+if ( null === $term || $expected_risk !== $term['title'] || array_key_exists( 'reviewer', $term ) ) {
 	fail( 'find_term must resolve case-insensitively with the safe view model' );
 }
 if ( null !== $search->find_term( 'NOT_A_REAL_CONCEPT' ) ) {

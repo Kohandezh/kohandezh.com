@@ -1,0 +1,50 @@
+{
+ "chapter": "P01/C55",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "eda1639c8e5404ae4a7c0e9bebc21c911df08dc950c2095e8212ea5d9d67c8ed",
+  "5": "1e72fa5528114f15e4752115fa246dd424a8a8d236ffbd390786eb302573c51b"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 481.7013189792633,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "بندهای ۳ و ۴: ۱۲ اصطلاح و ۳۲ کوته‌نوشت",
+      "explanation": "The count «۱۲ اصطلاح» for clause 3 of INSO 23681:1403 is not supported by any cited evidence item. The evidence pack provides only five term entries (T23681-3.1.1 through T23681-3.1.5) and one indirect mention of term 3.2.2 (in S23681-042), totalling at most six identifiable terms. No evidence item states the total term count in clause 3. The figure count of 32 abbreviations is correctly supported by F23681-table14.",
+      "suggested_fix": "Replace «۱۲ اصطلاح» with the defensible formulation «اصطلاح‌هایی از جمله ۳.۱.۱ تا ۳.۱.۵» or «چند اصطلاح (تعداد کامل در بستهٔ شواهد این فصل تأیید نشده)» until a T23681 term-count evidence item is added."
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "«فراپارامتر» (بند ۶.۵.۳.۱ و اصطلاح ۳.۲.۲)",
+      "explanation": "The cross-reference «اصطلاح ۳.۲.۲» asserts that فراپارامتر has a term definition in clause 3.2.2 of INSO 23681:1403. No T23681-3.2.2 evidence item is present in the cited evidence pack; only S23681-042 (clause 6.5.3.1) confirms the use of «فراپارامتر» in body text. A project-level terminology table may record this clause, but that table is not a cited evidence item for this section.",
+      "suggested_fix": "Either add a T23681-3.2.2 evidence item to the pack, or annotate the reference: «اصطلاح ۳.۲.۲ (بر اساس مرور کامل استاندارد، نه بستهٔ شواهد این فصل)» to avoid presenting an unverified clause number as evidence-backed."
+     },
+     {
+      "type": "modality_drift",
+      "quote": "«باید» (توصیفی)",
+      "explanation": "The qualifier «(توصیفی)» is applied to three table rows corresponding to clauses 6.5.3.1, 6.5.3.6, and 6.5.4.6. All three evidence items — S23681-042, S23681-058, and S23681-065 — are tagged [shall] with no descriptive or reduced-force qualification. Adding «(توصیفی)» implicitly assigns these «باید» expressions a lower obligation level than the evidence supports, which contradicts the section's own framing: the opening paragraph reserves the non-«باید» treatment only for «ضروری است / لازم است / الزامی است», explicitly stating that their printed wording is reproduced as-is. Applying a similar softening qualifier to plain «باید» rows is inconsistent.",
+      "suggested_fix": "Delete «(توصیفی)» from these three rows and record them as «باید» without qualification, matching the [shall] tagging of the evidence. Any editorial comment about their contextual nature belongs in a separate footnote clearly labelled as compiler interpretation."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:00:19-0400"
+}

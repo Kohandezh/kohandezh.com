@@ -1,0 +1,196 @@
+[
+ {
+  "item_id": "S15816-3-059",
+  "verdict": "faithful",
+  "printed_expression": "مقرر می‌شود که برخی راهنمایی‌ها ... ارائه شود",
+  "note": "Page prints «مقرر می‌شود» with no باید or توصیه می‌شود, exactly as the statement says; the 'ظاهراً آتی' guess is interpretive, not a modality claim."
+ },
+ {
+  "item_id": "S23681-036",
+  "verdict": "wrong",
+  "printed_expression": "در شرایطی که مدل نیاز داشته باشد به‌صورت پویا ... تطبیق یابد",
+  "corrected_statement_fa": "با گذشت زمان توزیع دادهٔ محیط عملیاتی می‌تواند دچار رانش شود که «می‌تواند مستلزم» بازآموزی مدل با داده جدید شود؛ در شرایطی که مدل «نیاز داشته باشد» به‌صورت پویا با الگوهای جدید سازگار شود، «می‌تواند» با اطلاعات محیط عملیاتی پیوسته بازآموزی شود (ارجاع به ۶-۳).",
+  "note": "Statement inserts «باید» for the printed «نیاز داشته باشد» (and flattens the second printed «می‌تواند مستلزم»)."
+ },
+ {
+  "item_id": "S23681-121",
+  "verdict": "wrong",
+  "printed_expression": "نیاز به توجهی ویژه به مجزا باقی‌ماندن ... وجود دارد",
+  "corrected_statement_fa": "توصیه می‌شود انتخاب مدل با مجموعه‌دادهٔ آزمایشی انجام نشود؛ «نیاز به» توجه ویژه‌ای به مجزا باقی‌ماندن ارزشیابی از انتخاب مدل «وجود دارد».",
+  "note": "First clause «توصیه می‌شود» is faithful, but the second clause printed «نیاز به ... وجود دارد» was turned into «باید»."
+ },
+ {
+  "item_id": "S23683-040",
+  "verdict": "wrong",
+  "printed_expression": "نیاز به در نظر گرفتن الزامات داده‌پردازی توزیع‌شده دارد",
+  "corrected_statement_fa": "توسعه الگوریتم برای تحلیل کلان‌داده «نیاز به در نظر گرفتن الزامات داده‌پردازی توزیع‌شده دارد» (داده معمولاً محلی نگهداری می‌شود)؛ متن می‌گوید «ضروری است» الگوریتم‌ها با مقیاس‌بندی افقی در سراسر گره‌ها تطبیق داده شوند تا مستقیماً با توزیع خاص داده سازگار شوند.",
+  "note": "First sentence printed «نیاز به ... دارد» but statement says «باید»; the second sentence's «ضروری است» is printed and correct."
+ },
+ {
+  "item_id": "S23685-008",
+  "verdict": "faithful",
+  "printed_expression": "واژهٔ باید الزامات اجباری را نشان می‌دهد ... باید معادل با الزام است",
+  "note": "Statement describes the word «باید» and matches the printed convention text in 1-3 (footnote 3 gives 'Required To')."
+ },
+ {
+  "item_id": "S23685-029",
+  "verdict": "faithful",
+  "printed_expression": null,
+  "note": "Page 6 prints this list item as a bare noun phrase with no modal word, like the statement; the 'shall' label cannot be confirmed from this page (any lead-in is on the previous page)."
+ },
+ {
+  "item_id": "S23685-030",
+  "verdict": "faithful",
+  "printed_expression": null,
+  "note": "Printed item ۲ has no modal word and the statement adds none; the 'shall' label is not supported by this page itself."
+ },
+ {
+  "item_id": "S23685-031",
+  "verdict": "faithful",
+  "printed_expression": null,
+  "note": "Printed item ۳ has no modal word and the statement adds none; the 'shall' label is not supported by this page itself."
+ },
+ {
+  "item_id": "S23685-032",
+  "verdict": "faithful",
+  "printed_expression": null,
+  "note": "Printed item ۴ has no modal word; the statement adds only the verb «تدوین» (not a modal), and the 'shall' label is not supported by this page itself."
+ },
+ {
+  "item_id": "S23685-077",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود ... همواره باید محافظت شود",
+  "note": "Item ب prints both «توصیه می‌شود» and «همواره باید محافظت شود»; item پ is a bare 'مورد استفاده قرار گیرد' under the same توصیه می‌شود lead-in, as stated."
+ },
+ {
+  "item_id": "S23728-011",
+  "verdict": "faithful",
+  "printed_expression": "اکیداً باید از آن‌ها پیروی شود ... باید معادل با الزام است",
+  "note": "Statement describes the word «باید» and matches the printed convention text in 1-3."
+ },
+ {
+  "item_id": "S23728-052",
+  "verdict": "faithful",
+  "printed_expression": "سازمان‌ها، باید حداقل خط‌مشی‌ها و روش‌هایی را برقرار کنند",
+  "note": "Printed «باید حداقل» governs the list (definitions bullet here; governance bullet on next page reads «پشتیبانی خواهند کرد»), so «باید» is supported; the 'info' label looks wrong since a shall is printed."
+ },
+ {
+  "item_id": "S23728-094",
+  "verdict": "faithful",
+  "printed_expression": "سامانه باید از قابلیت‌هایی برای شناسایی ... پشتیبانی کند",
+  "note": "Printed «می‌توانند» for the capability sentence and «باید» inside the right-to-deletion example both match the statement."
+ },
+ {
+  "item_id": "S23728-107",
+  "verdict": "wrong",
+  "printed_expression": "نیاز به ارزیابی‌های تأثیر در برخی موقعیت‌ها دارند؛ باید در نظر گرفت",
+  "corrected_statement_fa": "ارزیابی تأثیر حریم خصوصی (PIA) یا ارزیابی تأثیر حفاظت از داده (DPIA) نوعی ساختاریافته از ارزیابی مخاطره است که معمولاً توسط نهاد استانداردسازی یا قانون‌گذاری رسمیت می‌یابد؛ برخی مقررات (مانند GDPR) در برخی موقعیت‌ها «نیاز به ارزیابی‌های تأثیر دارند»؛ در انتخاب میان PIA/DPIA رسمی و روش دیگر باید به بافت و چارچوب حریم خصوصی سازمان توجه کرد (عبارت چاپی: «باید در نظر گرفت»).",
+  "note": "Given page_image is cut off at «برخی از مقررات،»; verdict uses the continuation page INSO-23728-1403/p-40.png, where «باید در نظر گرفت» is confirmed but the regulations are said to «نیاز به ... دارند», not 'لازم می‌دانند' (minor strengthening)."
+ },
+ {
+  "item_id": "S23728-134",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود ... بلکه باید عواملی مانند هزینه ... در نظر بگیرند",
+  "note": "Same printed sentence carries both «توصیه می‌شود» and «باید», and «ممکن است توصیه شود ... مشورت کنید» is printed as the statement says."
+ },
+ {
+  "item_id": "S23728-141",
+  "verdict": "faithful",
+  "printed_expression": "لازم است بازنگری شوند ... توصیه می‌شود ... باید انتساب مالکیت",
+  "note": "«لازم است» is on this page; the page is cut off, and the continuation (INSO-23728-1403/p-46.png) prints «نیاز است سامانه ... دگرگونی شود», «توصیه می‌شود برنامه کنش تهیه شود» and «این برنامه باید انتساب مالکیت ... را در بر بگیرد», all matching."
+ },
+ {
+  "item_id": "S23728-170",
+  "verdict": "unclear",
+  "printed_expression": null,
+  "note": "Page 2 shows only §2 (no normative references) and §3.1 definitions; the contents list, 1.3, 4.1/4.2 and 6.5 cited by the statement are on other pages, so the absence-of-conformance-clause claim cannot be checked here."
+ },
+ {
+  "item_id": "S23733-055",
+  "verdict": "wrong",
+  "printed_expression": "ضرورت آموزش ذی‌نفعان درباره قابلیت‌ها، حالت‌های خرابی و مدیریت خرابی",
+  "corrected_statement_fa": "برداشت‌ها و انتظارات ذی‌نفعان داخلی می‌تواند تحت‌تأثیر عدم‌شفافیت یا سوگیری سامانه‌ها باشد، نیازها ممکن است تا حد زیادی با سامانه‌های خاص‌منظوره برآورده‌شده انگاشته شود و «ضرورت آموزش» ذی‌نفعان دربارهٔ قابلیت‌ها، حالت‌های خرابی و مدیریت خرابی ذکر شده است (عبارت اسمی چاپی؛ فعل «باید» ندارد).",
+  "note": "Printed item is a bare noun phrase «ضرورت آموزش ...» under a «توصیه می‌شود ... در نظر بگیرند» lead-in; the statement's «باید ... آموزش ببینند» is inserted."
+ },
+ {
+  "item_id": "S23733-141",
+  "verdict": "wrong",
+  "printed_expression": "گسترهٔ موقعیت‌هایی که قرار است سامانه از آن‌ها پشتیبانی کند",
+  "corrected_statement_fa": "پیچیدگی محیط گسترهٔ موقعیت‌های بالقوه‌ای را تعیین می‌کند که «قرار است» سامانه از آن‌ها پشتیبانی کند؛ چالش بزرگ این است که در طراحی و توسعه همهٔ موقعیت‌های مرتبط شناسایی و داده‌های آموزشی و آزمایشی آن‌ها را پوشش دهند؛ محیط‌های پیچیده «ممکن است» مخاطره‌های بیشتری داشته باشند و توصیه می‌شود توجه ویژه‌ای به این ارزیابی شود که سامانه چه حد محیط را درک کرده است.",
+  "note": "Statement inserts «باید» for printed «قرار است ... پشتیبانی کند» and also turns printed «ممکن است مخاطره‌های بیشتری» into «معمولاً»; «توصیه می‌شود» is correct."
+ },
+ {
+  "item_id": "S23733-150",
+  "verdict": "faithful",
+  "printed_expression": "نمونه‌ای از نگاشت ... را نشان می‌دهد",
+  "note": "Annex is marked (آگاهی‌دهنده) and the page prints only indicative verbs such as «می‌شوند» and «می‌کند», with no «باید»."
+ },
+ {
+  "item_id": "S42001-021",
+  "verdict": "faithful",
+  "printed_expression": "مدیریت رده‌بالا باید ازطریق انجام موارد زیر ... اثبات نماید",
+  "note": "The shall is in the printed lead-in; the bullet itself is a bare «اطمینان‌یافتن ...» phrase and the statement adds no modal."
+ },
+ {
+  "item_id": "S42001-022",
+  "verdict": "faithful",
+  "printed_expression": "مدیریت رده‌بالا باید ازطریق انجام موارد زیر ... اثبات نماید",
+  "note": "Bullet text matches; shall comes from the printed lead-in, and the statement adds no modal."
+ },
+ {
+  "item_id": "S42001-023",
+  "verdict": "faithful",
+  "printed_expression": "مدیریت رده‌بالا باید ازطریق انجام موارد زیر ... اثبات نماید",
+  "note": "Bullet text matches; shall comes from the printed lead-in, and the statement adds no modal."
+ },
+ {
+  "item_id": "S42001-024",
+  "verdict": "faithful",
+  "printed_expression": "مدیریت رده‌بالا باید ازطریق انجام موارد زیر ... اثبات نماید",
+  "note": "Bullet text matches; shall comes from the printed lead-in, and the statement adds no modal."
+ },
+ {
+  "item_id": "S42001-025",
+  "verdict": "faithful",
+  "printed_expression": "مدیریت رده‌بالا باید ازطریق انجام موارد زیر ... اثبات نماید",
+  "note": "Bullet text matches; shall comes from the printed lead-in, and the statement adds no modal."
+ },
+ {
+  "item_id": "S42001-026",
+  "verdict": "faithful",
+  "printed_expression": "مدیریت رده‌بالا باید ازطریق انجام موارد زیر ... اثبات نماید",
+  "note": "Bullet text matches; shall comes from the printed lead-in, and the statement adds no modal."
+ },
+ {
+  "item_id": "S42001-027",
+  "verdict": "faithful",
+  "printed_expression": "مدیریت رده‌بالا باید ازطریق انجام موارد زیر ... اثبات نماید",
+  "note": "Bullet text «ترویج بهبود مداوم» matches; shall comes from the printed lead-in, and the statement adds no modal."
+ },
+ {
+  "item_id": "S42001-028",
+  "verdict": "faithful",
+  "printed_expression": "مدیریت رده‌بالا باید ازطریق انجام موارد زیر ... اثبات نماید",
+  "note": "Bullet text matches; shall comes from the printed lead-in, and the statement adds no modal."
+ },
+ {
+  "item_id": "S42001-042",
+  "verdict": "wrong",
+  "printed_expression": "سازمان موظف است که ... دیدگاهی را در مورد مخاطره اتخاذ کند",
+  "corrected_statement_fa": "نکته: شیوهٔ تعریف مخاطره و رویکرد مدیریت مخاطره می‌تواند در بخش‌ها و صنایع متفاوت باشد؛ تعریف ۳-۷ دیدگاه گسترده‌ای دارد و سازمان «موظف است» دیدگاه متناسب با بافتار خود را برای ارزیابی مخاطره اتخاذ کند (ارجاع به پیوست ت و ISO/IEC Guide 51).",
+  "note": "Note 5 prints «موظف است», not «باید»; the page does not use «باید» for this obligation."
+ },
+ {
+  "item_id": "S42001-107",
+  "verdict": "faithful",
+  "printed_expression": "سازمان‌ها الزامی به مستندکردن شمول یا توجیه ... ندارند",
+  "note": "Printed negated obligation «الزامی ... ندارند» is rendered as «ملزم ... نیستند», which has the same force."
+ },
+ {
+  "item_id": "S42001-160",
+  "verdict": "wrong",
+  "printed_expression": "بهتر است تأمین‌کننده را ملزم به انجام اقدامات اصلاحی نماید",
+  "corrected_statement_fa": "توصیه می‌شود سازمان فرایندی ایجاد کند تا استفاده از خدمات/محصولات/مواد تأمین‌کنندگان با رویکرد مسئولانهٔ سازمان همسو باشد؛ انواع تأمین‌کنندگان بررسی و الزامات اطلاق‌پذیر و سطح پایش/ارزشیابی تعیین، یکپارچه‌سازی مستند شود؛ «بهتر است» در صورت ناکارآمدی، تأمین‌کننده ملزم به اقدام اصلاحی شود و سازمان «می‌تواند» تصمیم بگیرد با تأمین‌کننده همکاری کند؛ و توصیه می‌شود مستندات مناسب و کافی از تأمین‌کننده گرفته شود.",
+  "note": "Minor: all «توصیه می‌شود» and «بهتر است» uses are faithful, but the printed «سازمان می‌تواند تصمیم بگیرد ... همکاری نماید» (may) was folded under «بهتر است» as «(یا همکاری گردد)»."
+ }
+]

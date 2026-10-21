@@ -1,0 +1,75 @@
+{
+ "keys": [
+  "privacy",
+  "risk tolerance",
+  "risk management",
+  "receiver operating characteristic",
+  "artificial intelligence management system",
+  "control"
+ ],
+ "shas": {
+  "privacy": "a1794a8d0ec35278ccdd27963ed8a67e393507b58533f2d6eaaa1cc2a046309a",
+  "risk tolerance": "4eeee13d5b87befc56df0c61e4671675d5178a862e246997366fc5edaca03edc",
+  "risk management": "8e3d578777b1c08a089481aa9bd74a89baa069e1bea18baf2e36956df24b4f27",
+  "receiver operating characteristic": "94d621be4c2b9365f6951f4d68e83b51514db66ff7619cd7078811a7a6717b1c",
+  "artificial intelligence management system": "b231b287ccf47d40258a4d639e0ae24ed95e4c09736a78941ebd7470f0a9cdaa",
+  "control": "79dba9d5c7fd87590d23fe34f4fd762f702b81efbec4127288c00548aaf5d04d"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 229.41741919517517,
+ "result": {
+  "verdicts": [
+   {
+    "key": "privacy",
+    "verdict": "AGREE",
+    "confidence": 0.91,
+    "issues": []
+   },
+   {
+    "key": "risk tolerance",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.88,
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "«تحمل ریسک» does not appear in any cited INSO printed evidence. The only INSO-printed forms are «سطح رواداری مخاطره» (INSO 23728 clause 8.1, confirmed in evidence text) and, per the editor note, «رواداری مخاطره» (clause 7.3.2). Rule 1 requires the preferred Persian term to equal what the cited standard prints. Selecting «تحمل ریسک» — which exists solely in the NIST-translation context of this book — as preferred_fa over the INSO-printed forms is not justified; the editor note itself admits the choice is still open.",
+      "suggested_fix": "Set preferred_fa to «رواداری مخاطره» (the shorter INSO-printed base form, noting its appearance in INSO 23728 clause 7.3.2) or «سطح رواداری مخاطره» (clause 8.1); move «تحمل ریسک» to alternatives_fa labelled as the NIST-translation form used in the translated sections of this book. Resolve the open choice before approving the entry."
+     }
+    ]
+   },
+   {
+    "key": "risk management",
+    "verdict": "AGREE",
+    "confidence": 0.93,
+    "issues": []
+   },
+   {
+    "key": "receiver operating characteristic",
+    "verdict": "AGREE",
+    "confidence": 0.91,
+    "issues": []
+   },
+   {
+    "key": "artificial intelligence management system",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.84,
+    "issues": [
+     {
+      "type": "alias_conflates_concepts",
+      "explanation": "«سامانه مدیریت هوش مصنوعی» is listed in alternatives_fa, but INSO 42001 clause 1 footnote 1 (printed evidence) explicitly reserves «سامانه» for the AI-technology context (a deployed AI system) and «نظام» for the management context. An AI Management System is a management framework, so the standard's own normalization rules require «نظام». Listing «سامانه مدیریت» as an acceptable alternative contradicts that printed ruling and could be read as endorsing a form the standard itself rejects within this domain.",
+      "suggested_fix": "Move «سامانه مدیریت هوش مصنوعی» (and, for the same reason, «سیستم مدیریت هوش مصنوعی») to rejected_fa with the explanation that INSO 42001 clause 1 note 1 explicitly assigns «نظام» to the management context and «سامانه» to the AI-technology context."
+     }
+    ]
+   },
+   {
+    "key": "control",
+    "verdict": "AGREE",
+    "confidence": 0.95,
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:49:02-0400"
+}

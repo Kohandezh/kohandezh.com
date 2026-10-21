@@ -2,10 +2,10 @@
  "template_id": "TPL-P06-1",
  "title_fa": "فرم ثبت سامانهٔ هوش مصنوعی مولد ادله و پروندهٔ آمادگی ادله‌ای",
  "derived_from": [
-  "KDJ-AI-2026E1-P06-C43-S06",
-  "KDJ-AI-2026E1-P06-C43-S10",
-  "KDJ-AI-2026E1-P06-C43-S11",
-  "KDJ-AI-2026E1-P06-C43-S12"
+  "KDJ-AI-2026E2-P06-C43-S06",
+  "KDJ-AI-2026E2-P06-C43-S10",
+  "KDJ-AI-2026E2-P06-C43-S11",
+  "KDJ-AI-2026E2-P06-C43-S12"
  ],
  "fields": [
   {

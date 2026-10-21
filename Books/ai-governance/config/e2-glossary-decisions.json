@@ -1,0 +1,433 @@
+{
+ "schema_version": 1,
+ "glossary_version": "fa-v2",
+ "note": "Curated edition-2 terminology decisions. Every changed/new entry is written with status 'proposed' and no reviewer; approval happens only through a recorded review. Source of verified INSO terms: evidence/out/<ID>/terms.json (page-image verified).",
+ "dedupe": [
+  {
+   "canonical_key": "ai risk management framework",
+   "drop": [
+    "ai rmf",
+    "ai risk management framework (ai rmf)"
+   ],
+   "reason": "three entries shared concept_id AI_RISK_MANAGEMENT_FRAMEWORK (spelling/acronym variants of one concept)"
+  },
+  {
+   "canonical_key": "ssdf",
+   "drop": [
+    "secure software development framework"
+   ],
+   "reason": "two entries shared concept_id SECURE_SOFTWARE_DEVELOPMENT_FRAMEWORK"
+  },
+  {
+   "canonical_key": "audit",
+   "drop": [
+    "audit may"
+   ],
+   "reason": "'audit may' is a term-mining artifact sharing concept_id AUDIT"
+  },
+  {
+   "canonical_key": "general data protection regulation",
+   "drop": [
+    "european union general data protection regulation"
+   ],
+   "reason": "two entries shared concept_id GDPR"
+  },
+  {
+   "canonical_key": "area under the curve",
+   "drop": [
+    "curve"
+   ],
+   "reason": "'curve' is a term-mining artifact sharing concept_id AREA_UNDER_CURVE"
+  }
+ ],
+ "remove": {
+  "risks": {
+   "merge_into": "risk",
+   "reason": "plural form kept as a search alias of RISK; a separate concept page 'خطرها' contradicted the RISK entry (ریسک)"
+  }
+ },
+ "changes": {
+  "risk": {
+   "preferred_fa": "مخاطره",
+   "alternatives_add": [
+    "ریسک",
+    "مخاطره (ریسک)",
+    "ریسک‌ها",
+    "مخاطره‌ها"
+   ],
+   "alternatives_remove": [
+    "خطر",
+    "خطرها"
+   ],
+   "rejected_add": [
+    "خطر",
+    "خطرها"
+   ],
+   "inso_refs": [
+    "T42001-3.7",
+    "T23682-3.2.2",
+    "T23728-3.1.38"
+   ],
+   "definition_mode": "dual",
+   "class": "semantic-scope-difference+wording-difference",
+   "note_fa": "واژهٔ رسمی در استانداردهای ملی «مخاطره» است (INSO 42001 بند ۳.۷؛ INSO 23682 بند ۳.۲.۲ و INSO 23728 بند ۳.۱.۳۸ هم «مخاطره (ریسک)» را آورده‌اند). تعریف استانداردها «اثر عدم قطعیت [بر اهداف]» است و می‌تواند مثبت یا منفی باشد؛ تعریف متن‌های NIST در این کتاب معیاری مرکب از احتمال و اندازهٔ پیامد است. این تفاوت دامنهٔ تعریف است و با جابه‌جایی واژه حل نمی‌شود؛ هر دو تعریف با انتساب جداگانه حفظ شده‌اند. «ریسک» برای جست‌وجو و برای متن ترجمه‌شدهٔ NIST باقی می‌ماند و جایگزین سراسری نمی‌شود. «خطر» (hazard/danger) به‌عنوان معادل رد می‌شود."
+  },
+  "risk management": {
+   "preferred_fa": "مدیریت مخاطره (ریسک)",
+   "alternatives_add": [
+    "مدیریت مخاطره",
+    "مدیریت ریسک"
+   ],
+   "alternatives_remove": [
+    "مدیریت خطر"
+   ],
+   "rejected_add": [
+    "مدیریت خطر"
+   ],
+   "inso_refs": [
+    "O23733-001",
+    "O23733-014"
+   ],
+   "definition_mode": "keep",
+   "class": "wording-difference",
+   "note_fa": "روی جلد INSO 23733 عنوان «راهنمای مدیریت مخاطره (ریسک)» چاپ شده و متن آن «مدیریت مخاطره» را به‌کار می‌برد؛ سرواژه صورت چاپی با توضیح داخل پرانتز است و صورت بی‌پرانتز جایگزین است. «مدیریت ریسک» برای جست‌وجو و متن NIST باقی می‌ماند.",
+   "set": {
+    "definition_en": "Risk management refers to coordinated activities to direct and control an organization with regard to risk (Source: ISO 31000:2018)."
+   }
+  },
+  "residual risk": {
+   "preferred_fa": "مخاطره‌های باقی‌مانده",
+   "alternatives_add": [
+    "مخاطرهٔ باقی‌مانده",
+    "ریسک باقی‌مانده"
+   ],
+   "inso_refs": [
+    "V23733-054"
+   ],
+   "definition_mode": "keep",
+   "class": "wording-difference",
+   "note_fa": "INSO 23733 بند ۶.۵.۲ «مخاطره‌های باقی‌مانده» (Residual risks) را به‌صورت جمع چاپ کرده است و تعریف مستقلی در آن نیامده است. سرواژهٔ مدخل همان صورت چاپی است؛ شکل مفرد «مخاطرهٔ باقی‌مانده» صورت تدوینیِ بدون تأیید مستقل در استاندارد است و فقط به‌عنوان جایگزین ثبت شد.",
+   "alternatives_remove": [
+    "ریسک باقیمانده"
+   ]
+  },
+  "risk appetite": {
+   "preferred_fa": "سطح مخاطره‌پذیری",
+   "alternatives_add": [
+    "اشتهای ریسک",
+    "سطح پذیرش ریسک"
+   ],
+   "alternatives_remove": [
+    "رواداری ریسک"
+   ],
+   "inso_refs": [
+    "T23682-3.2.3"
+   ],
+   "definition_mode": "inso_only",
+   "class": "wording-difference+concept-separation",
+   "note_fa": "تعریف‌شده در INSO 23682 بند ۳.۲.۳: «میزان و ماهیت مخاطره‌ای که سازمان مایل به پذیرش یا حفظ آن است». «رواداری ریسک» از این مدخل برداشته شد چون در E1 با risk tolerance تداخل داشت. INSO 23733 در پاورقی جدول پ‑۱ عبارت «ظرفیت‌پذیرش مدیریت مخاطره» را برای High-Level Risk Management Appetite چاپ کرده است؛ این شکل با اصطلاح تعریف‌شده یکی گرفته نشد."
+  },
+  "risk tolerance": {
+   "alternatives_add": [
+    "سطح رواداری مخاطره"
+   ],
+   "alternatives_remove": [
+    "سطح ریسک‌پذیری"
+   ],
+   "inso_refs": [
+    "S23728-095",
+    "S23728-115"
+   ],
+   "definition_mode": "keep",
+   "class": "printed-in-text-not-defined",
+   "note_fa": "در ۹ استاندارد ملی موجود تعریفی برای risk tolerance نیست و معادل انگلیسی هم کنار آن چاپ نشده است. سرواژهٔ این مدخل «رواداری مخاطره» است که در جملهٔ بند ۷.۳.۲ استاندارد INSO 23728 («…نیازهای کسب‌وکار، رواداری مخاطره و الزامات حریم خصوصی سازمانی…») و به‌صورت «سطح رواداری مخاطره» در بند ۸.۱ همان سند آمده؛ این انتخاب به معنای «تعریف رسمی» نیست و تعریفی در استانداردها وجود ندارد. «تحمل ریسک» صورت به‌کاررفته در متن‌های ترجمه‌شدهٔ NIST این کتاب است و به‌عنوان جایگزین ثبت می‌شود. «سطح ریسک‌پذیری» از جایگزین‌ها حذف شد چون به اصطلاح رسمی risk appetite («سطح مخاطره‌پذیری»، INSO 23682 بند ۳.۲.۳) نزدیک است و ابهام می‌آفرید.",
+   "rejected_remove": [
+    "تحمل ریسک"
+   ],
+   "preferred_fa": "رواداری مخاطره"
+  },
+  "audit": {
+   "preferred_fa": "ممیزی",
+   "alternatives_add": [
+    "حسابرسی",
+    "رسیدگی"
+   ],
+   "alternatives_remove": [
+    "بازرسی"
+   ],
+   "inso_refs": [
+    "T42001-3.18"
+   ],
+   "definition_mode": "inso_only",
+   "class": "context-split",
+   "note_fa": "INSO 42001 بند ۳.۱۸: audit = ممیزی (فرایندی نظام‌مند و مستقل برای به‌دست‌آوردن شواهد و ارزشیابی آن‌ها در برابر معیارهای ممیزی). «حسابرسی» برای ممیزی مالی/حسابداری و در متن‌های ترجمه‌شدهٔ ویرایش اول باقی می‌ماند و جایگزین سراسری نمی‌شود."
+  },
+  "stakeholder": {
+   "alternatives_remove": [
+    "طرف ذی‌نفع"
+   ],
+   "inso_refs": [
+    "T23728-3.1.39"
+   ],
+   "definition_mode": "inso_only",
+   "class": "match+alias-conflict-removed",
+   "note_fa": "INSO 23728 بند ۳.۱.۳۹: «ذی‌نفع». «طرف ذی‌نفع» از جایگزین‌ها حذف شد چون INSO 42001 بند ۳.۲ آن را برای مفهوم جدایی (interested party، «طرف‌های ذی‌نفع») تعریف کرده و ادغام خودکار این دو درست نیست."
+  },
+  "monitoring": {
+   "alternatives_remove": [
+    "نظارت",
+    "رهگیری"
+   ],
+   "inso_refs": [
+    "T42001-3.20"
+   ],
+   "definition_mode": "inso_only",
+   "class": "match+alias-conflict-removed",
+   "note_fa": "INSO 42001 بند ۳.۲۰: «پایش». «نظارت» از جایگزین‌ها حذف شد چون واژهٔ رسمی oversight در INSO 23682 بند ۳.۲.۱ است."
+  },
+  "measure": {
+   "alternatives_remove": [
+    "اندازه‌گیری",
+    "سنجه"
+   ],
+   "inso_refs": [],
+   "definition_mode": "keep",
+   "class": "context-split",
+   "note_fa": "«سنجش» برای کارکرد MEASURE در NIST AI RMF و مفهوم کلی سنجش در متن‌های ترجمه‌شده باقی می‌ماند. استانداردهای ملی دو مفهوم جدا دارند: «سنجه» (measure، اسم؛ INSO 23684 بند ۳.۱.۱) و «اندازه‌گیری» (measurement؛ INSO 42001 بند ۳.۱۹)؛ «سنجه» برای معنای اسمیِ measure درست و رسمی است و در این مدخل مردود نیست؛ فقط جایگزین کارکرد MEASURE نیست و مدخل جدا دارد.",
+   "rejected_remove": [
+    "اندازهگیری",
+    "سنجه"
+   ],
+   "set": {
+    "definition_fa": "تعریف در بافت NIST (متن‌های ترجمه‌شدهٔ این کتاب): MEASURE (سنجش) یکی از چهار کارکرد هستهٔ چارچوب مدیریت ریسک هوش مصنوعی NIST است؛ سه کارکرد دیگر GOVERN، MAP و MANAGE هستند (متن ترجمه‌شده در فصل «هسته و پروفایل‌ها»)."
+   }
+  },
+  "artificial intelligence management system": {
+   "preferred_fa": "نظام مدیریت هوش مصنوعی",
+   "alternatives_add": [
+    "سامانه مدیریت هوش مصنوعی",
+    "سیستم مدیریت هوش مصنوعی"
+   ],
+   "acronym": "AIMS",
+   "inso_refs": [
+    "T42001-3.4",
+    "I42001-id",
+    "S42001-187"
+   ],
+   "definition_mode": "inso_only",
+   "class": "wording-difference",
+   "note_fa": "عنوان رسمی INSO 42001: «هوش مصنوعی – نظام مدیریت»؛ پاورقی بند ۱ همان سند می‌گوید system در بافت مدیریتی «نظام» و در بافت فنّاوری هوش مصنوعی «سامانه» ترجمه شده است. «نظام مدیریت» تعریف‌شده است (بند ۳.۴)؛ ترکیب «نظام مدیریت هوش مصنوعی» از عنوان و متن سند می‌آید و تعریف مستقلی ندارد. «سامانه مدیریت هوش مصنوعی» به‌دلیل همین پانویس (نظام در بافت مدیریتی) جایگزین ثبت نشد.",
+   "definition_note_fa": "ترکیب «نظام مدیریت هوش مصنوعی» در این بند تعریف مستقلی ندارد و از عنوان و قلمرو همین سند گرفته شده است؛ تعریف بالا مربوط به «نظام مدیریت» است.",
+   "alternatives_remove": [
+    "سامانه مدیریت هوش مصنوعی"
+   ],
+   "rejected_add": [
+    "سامانه مدیریت هوش مصنوعی"
+   ]
+  },
+  "artificial intelligence": {
+   "alternatives_add": [
+    "هومص"
+   ],
+   "inso_refs": [
+    "T23684-4",
+    "T23681-4"
+   ],
+   "definition_mode": "keep",
+   "class": "abbreviation-alias",
+   "note_fa": "«هومص» نام اختصاری رسمی «هوش مصنوعی» در متن استانداردهای ملی (INSO 23684 بند ۴ و سایر اسناد) است؛ فقط جایگزین جست‌وجو و معرفی کاربرد INSO است."
+  },
+  "governance": {
+   "alternatives_add": [
+    "حاکمیت"
+   ],
+   "inso_refs": [
+    "T23728-3.1.20"
+   ],
+   "definition_mode": "inso_only",
+   "class": "wording-difference(branding)",
+   "note_fa": "واژهٔ رسمی «حکمرانی» است (INSO 23728 بند ۳.۱.۲۰؛ عنوان‌های INSO 23682 و 15816-3). «حاکمیت» در عنوان کتاب، نشانی‌ها و متن‌های ویرایش اول به‌کار رفته و به‌عنوان جایگزین جست‌وجو حفظ شد؛ متن‌های جدید «حکمرانی» می‌نویسند. «راهبری» (جایگزین ویرایش اول، برای بافت شرکتی) در نُه استاندارد فقط یک‌بار و در توصیف حکمرانی (INSO 23682 پیوست الف، بند الف.۱.۱) دیده شد و هیچ استانداردی آن را برای مفهوم تعریف‌شدهٔ دیگری چاپ نکرده است."
+  },
+  "compliance": {
+   "alternatives_remove": [
+    "تطبیق قانونی"
+   ],
+   "inso_refs": [
+    "T23682-3.2.5",
+    "T23682-3.2.4"
+   ],
+   "definition_mode": "inso_only",
+   "class": "wording-difference+homonym",
+   "note_fa": "INSO 23682 بند ۳.۲.۵: انطباق = برآورده‌سازی کلیهٔ «تعهدات انطباق» (بند ۳.۲.۴؛ شامل الزام‌هایی که سازمان ملزم به رعایت آن‌هاست و مواردی که داوطلبانه برمی‌گزیند). «تطبیق قانونی» از جایگزین‌ها حذف شد چون معنای محدودتر (فقط قانونی) دارد. INSO 42001 «انطباق» را برای conformity نیز به‌کار می‌برد؛ دو مفهوم جداست."
+  },
+  "accountability": {
+   "alternatives_add": [
+    "پاسخ‌گویی"
+   ],
+   "inso_refs": [
+    "T23728-3.1.1"
+   ],
+   "definition_mode": "inso_only",
+   "class": "match",
+   "note_fa": "INSO 23728 بند ۳.۱.۱: «پاسخگویی»؛ تعریف: میزانی که مسئولیت کنش‌های یک هستار را می‌توان منحصراً به آن هستار نسبت داد. «مسئولیت‌پذیری» (responsibility) از جایگزین‌ها حذف شد چون مفهومی جداست؛ «پاسخ‌گویی» تنها صورت املایی دیگر است.",
+   "alternatives_remove": [
+    "مسئولیت‌پذیری"
+   ]
+  },
+  "privacy": {
+   "alternatives_remove": [
+    "امنیت داده‌های شخصی"
+   ],
+   "inso_refs": [
+    "S23728-017",
+    "I23728-id"
+   ],
+   "definition_mode": "keep",
+   "class": "alias-conflict-removed",
+   "note_fa": "INSO 23728 بند ۴.۱ تصریح می‌کند اهداف حریم اطلاعاتی و امنیت اطلاعات گاه همپوشانی دارند و گاه متمایزند؛ «امنیت داده‌های شخصی» از جایگزین‌ها حذف شد چون حریم خصوصی را با امنیت یکی می‌کرد. عنوان رسمی «فرایند حریم خصوصی داده» (INSO 23728) «حریم خصوصی» را به‌کار می‌برد؛ بند ۴.۱ عبارت «حریم اطلاعاتی» (information privacy) را چاپ کرده است و این مدخل رابطهٔ مفهومی میان دو عبارت را به استاندارد نسبت نمی‌دهد."
+  },
+  "area under the curve": {
+   "preferred_fa": "مساحت زیر منحنی",
+   "alternatives_add": [
+    "سطح زیر منحنی"
+   ],
+   "alternatives_remove": [],
+   "inso_refs": [
+    "T23681-4c"
+   ],
+   "definition_mode": "keep",
+   "class": "wording-difference",
+   "note_fa": "جدول اختصارات INSO 23681 بند ۴: AUC = «مساحت زیر منحنی»؛ «سطح زیر منحنی» (معادل ویرایش اول) جایگزین جست‌وجو باقی می‌ماند."
+  },
+  "false negative rate": {
+   "preferred_fa": "نرخ منفی کاذب",
+   "alternatives_add": [
+    "نرخ کاذب منفی"
+   ],
+   "inso_refs": [
+    "T23681-4k"
+   ],
+   "definition_mode": "keep",
+   "class": "wording-difference",
+   "note_fa": "جدول اختصارات INSO 23681 بند ۴: FNR = «نرخ منفی کاذب»."
+  },
+  "receiver operating characteristic": {
+   "alternatives_add": [
+    "مشخصه عملکرد گیرنده"
+   ],
+   "inso_refs": [
+    "T23681-4-3",
+    "O23681-061",
+    "S23681-073"
+   ],
+   "definition_mode": "keep",
+   "class": "wording-difference",
+   "note_fa": "جدول اختصارات INSO 23681 بند ۴ ROC را «مشخصه‌های عملیاتی گیرنده» می‌نویسد (سرواژه) و عنوان بند ۶.۵.۵.۵ همان سند «مشخصه عملکرد گیرنده» است (جایگزین). نمودار آن مفهوم جدایی است و در مدخل «ROC curve» (منحنی مشخصه عملکرد گیرنده) آمده است؛ برای منحنی به آن مدخل رجوع شود.",
+   "preferred_fa": "مشخصه‌های عملیاتی گیرنده",
+   "alternatives_remove": [
+    "منحنی مشخصه عملکرد گیرنده",
+    "منحنی عملکرد گیرنده"
+   ],
+   "set": {
+    "english": "Receiver Operating Characteristics"
+   }
+  },
+  "data governance": {
+   "inso_refs": [],
+   "definition_mode": "keep",
+   "class": "match",
+   "note_fa": "عنوان INSO 15816-3 «حکمرانی داده» است و با معادل موجود یکی است."
+  }
+ },
+ "skip_new": {
+  "note": "terms not turned into entries: abbreviation rows without a Persian-term pairing with a base entry, and the two measure entries handled explicitly below"
+ },
+ "force_new": {
+  "T23684-3.1.2": {
+   "key": "measure (verb)",
+   "english": "measure (verb)",
+   "preferred_fa": "سنجیدن"
+  },
+  "T23684-3.1.1": {
+   "key": "measure (noun)",
+   "english": "measure (noun)",
+   "preferred_fa": "سنجه"
+  },
+  "T15816-3-3.12": {
+   "key": "personally identifiable information",
+   "english": "Personally Identifiable Information",
+   "preferred_fa": "اطلاعات قابل‌شناسایی شخصی؛ داده‌های شخصی",
+   "acronym": "PII",
+   "extra_alternatives": [
+    "PII"
+   ]
+  }
+ },
+ "hygiene": {
+  "note": "Mechanical clean-up of base-glossary data defects that contradict the glossary's own policy. Approval status is NOT changed by hygiene (the original reviewer had already rejected these forms / the values are plainly unrelated term-mining artifacts); every change is listed in the report.",
+  "acronym_clear": [
+   "privacy",
+   "security",
+   "measure",
+   "cybernetics",
+   "vulnerabilities",
+   "future",
+   "score",
+   "terrorism"
+  ],
+  "remove_rejected_from_alternatives": true,
+  "remove_preferred_from_rejected": true,
+  "zwnj_fixes": {
+   "ریسکپذیری": "ریسک‌پذیری",
+   "دادههای": "داده‌های"
+  }
+ },
+ "new_overrides": {
+  "governing body": {
+   "alternatives_add": [
+    "نهاد حکمران"
+   ],
+   "extra_refs": [
+    "S23682-007"
+   ],
+   "note_fa": "INSO 42001 بند ۳.۲۲ «مرجع حکمران» را تعریف کرده است؛ INSO 23682 در متن خود برای همان نقش «نهاد حکمران» را به‌کار می‌برد (مثلاً بند ۱ و ۲). دو صورت چاپی در دو سند جدا هستند و ادغام‌شان تدوینی است."
+  },
+  "training": {
+   "extra_refs": [],
+   "alternatives_add": [],
+   "note_fa": "توجه: «آموزش» در این بند (INSO 23728 بند ۳.۱.۴۵) فراهم‌سازی فعالیت‌های یادگیری رسمی/غیررسمی برای انسان‌هاست؛ آموزش مدل یادگیری ماشین (ML training) اصطلاح جدایی است و با این بند یکی گرفته نشود."
+  },
+  "privacy risk": {
+   "extra_refs": [],
+   "alternatives_add": [
+    "ریسک حریم خصوصی"
+   ],
+   "note_fa": ""
+  },
+  "personally identifiable information": {
+   "extra_refs": [],
+   "alternatives_add": [],
+   "alternatives_remove": [
+    "PII"
+   ],
+   "note_fa": "«PII» فقط در فیلد سرواژه ثبت شده است."
+  },
+  "gather": {
+   "extra_refs": [],
+   "alternatives_add": [],
+   "note_fa": "صورت چاپی بند ۳.۱.۲۲ «گردآورد(جمع‌آوری)» است (بدون فاصلهٔ پیش از پرانتز)؛ فاصله پیش از پرانتز طبق سیاست حروف‌چینی واژه‌نامه اضافه شده و واژه‌ها تغییر نکرده‌اند."
+  },
+  "ai system impact assessment": {
+   "extra_refs": [],
+   "alternatives_add": [],
+   "note_fa": "صورت چاپی بند ۳.۲۴ استاندارد INSO 42001 «ارزیابی تأثیر سامانه هومص» است؛ «هومص» نشانهٔ اختصاری INSO برای «هوش مصنوعی» است و طبق سیاست یکنواخت‌سازی واژه‌نامه در سرواژه باز شده و صورت چاپی به‌عنوان جایگزین ثبت شده است."
+  },
+  "control": {
+   "extra_refs": [],
+   "alternatives_add": [
+    "کنترل"
+   ],
+   "note_fa": "INSO 42001 بند ۳.۲۱ این اصطلاح را «واپایش» چاپ کرده است؛ «کنترل» صورت رایج در متن‌های ترجمه‌شدهٔ NIST و در جست‌وجوی خوانندگان است و فقط به‌عنوان جایگزین ثبت شد."
+  }
+ }
+}

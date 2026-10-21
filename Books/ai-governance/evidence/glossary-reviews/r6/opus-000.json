@@ -1,0 +1,51 @@
+{
+ "keys": [
+  "risk tolerance",
+  "risk management",
+  "artificial intelligence management system"
+ ],
+ "shas": {
+  "risk tolerance": "e46e8764dc9b413023054f42fc69558f824ceb3065aa73590732fc6e167a4807",
+  "risk management": "85875f72843beb08897882c1f22dc0756c307419a872eb4d1ad22fc395c352a9",
+  "artificial intelligence management system": "ea8a6e988ff609a027c8f1f29aa30d1b590ea67540da5399f7f6f8b1ec7e2fa4"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 187.07830500602722,
+ "result": {
+  "verdicts": [
+   {
+    "key": "risk tolerance",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.82,
+    "issues": [
+     {
+      "type": "scope",
+      "explanation": "The editor note claims bare «رواداری مخاطره» appears in INSO 23728 clause 7.3.2, but the printed_evidence snippet for that clause is about privacy-engineering objectives and does not contain the term (the text is truncated at «پش»). Only clause 8.1 visibly attests «سطح رواداری مخاطره». If the bare form does occur in 7.3.2, the evidence snippet must be replaced with the portion that actually prints it; if it does not, the editor note should say the headword is extracted from the longer «سطح رواداری مخاطره» in 8.1 and the clause 7.3.2 citation should be removed or corrected.",
+      "suggested_fix": "Replace the printed_evidence snippet for clause 7.3.2 with one that contains «رواداری مخاطره», or remove the 7.3.2 evidence row and update the editor note to derive the headword from clause 8.1 only."
+     }
+    ]
+   },
+   {
+    "key": "risk management",
+    "verdict": "AGREE",
+    "confidence": 0.95,
+    "issues": []
+   },
+   {
+    "key": "artificial intelligence management system",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.9,
+    "issues": [
+     {
+      "type": "scope",
+      "explanation": "The edition-1 preferred form «سامانه مدیریت هوش مصنوعی» is neither in alternatives_fa nor in rejected_fa. The INSO 42001 footnote (clause 1) explicitly rules out «سامانه» for management-context uses of 'system', making this form actively wrong — not just dispreferred. Leaving rejected_fa empty while the editor note explains the reasoning in prose means the structured data under-represents a deliberate rejection that edition-1 readers will need to find.",
+      "suggested_fix": "Add «سامانه مدیریت هوش مصنوعی» to rejected_fa. The existing editor-note reasoning (footnote says نظام not سامانه in management context) already justifies it."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:05:19-0400"
+}

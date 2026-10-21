@@ -1,0 +1,42 @@
+{
+ "chapter": "P07/C64",
+ "sections": [
+  6
+ ],
+ "section_shas": {
+  "6": "bf420ab226892a04b4ca565e0b3b275117e8e53be51b51434713b7826dfba529"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 121.77565813064575,
+ "result": {
+  "sections": [
+   {
+    "index": 6,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "INSO 23728:1403 («فرایند حریم خصوصی داده»)",
+      "explanation": "The title «فرایند حریم خصوصی داده» attributed to INSO 23728:1403 is not supported by any cited evidence item. No evidence item in this section supplies the printed title of INSO 23728. The terminology rules reference INSO 23728 §7.3.2 and §8.1 for risk-tolerance text but never state its title.",
+      "suggested_fix": "Either remove the parenthetical title entirely (keeping only the identifier «INSO 23728:1403»), or add a note that the title given is the book-chapter label and not the verified printed INSO title until an identity item for INSO 23728 is supplied."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "در بند ۶ خود برای مراحل گردآوری تا حذف توصیه دارد",
+      "explanation": "The only evidence for clause 6 of INSO 23685 is the outline item O23685-054, which gives only the clause title «6 حفاظت از داده» and a page range (pdf 30–32 / printed 20–22). No evidence item enumerates «مراحل گردآوری تا حذف» as the specific stages covered, nor confirms that the clause's requirements carry a «توصیه / should» modality rather than «باید / shall».",
+      "suggested_fix": "Replace the specific content claim with a reference only to the confirmed clause title: e.g. «INSO 23685:1403 در بند ۶ خود («حفاظت از داده») به این موضوع می‌پردازد». Any detail about specific stages or modality requires a supporting statement-level evidence item."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "«ارزیابی مخاطرهٔ امنیتی کسب‌وکار کلان‌داده»",
+      "explanation": "The printed title of INSO 23685:1403 per identity item I23685-id is «ارزیابی مخاطره (ریسک) امنیتی کسب‌وکار کلان‌داده». The section omits the parenthetical «(ریسک)» that is part of the printed title. This is a factual misstatement about what the standard's cover prints, and also conflicts with the terminology rule requiring «مخاطره (ریسک)» at first use of the term in a standard title citation.",
+      "suggested_fix": "Restore the printed form: «ارزیابی مخاطره (ریسک) امنیتی کسب‌وکار کلان‌داده»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:14:22-0400"
+}

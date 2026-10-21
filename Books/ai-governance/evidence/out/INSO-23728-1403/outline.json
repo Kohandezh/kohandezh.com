@@ -1,0 +1,845 @@
+{
+ "source_id": "INSO-23728-1403",
+ "type_note": "سند بندها را به‌صراحت «هنجاری/آگاهی‌دهنده» برچسب نمی‌زند جز پیوست الف (آگاهی‌دهنده). بر پایهٔ مقدمه (PDF 9): بندهای ۱ تا ۴ «اطلاعات تکمیلی»‌اند (informative در اینجا) و بندهای ۵ تا ۹ «رویکرد روش‌شناسانه و الزامات هنجاری» را دربر می‌گیرند (normative در اینجا).",
+ "toc_note": "فهرست مندرجات (PDF 6–7) فقط تا سطح دوم است؛ زیربندهای 5.3.1، 7.3.1، 7.3.2، 8.2.1، 8.2.2، 8.2.3 در فهرست نیستند اما در متن آمده‌اند.",
+ "clauses": [
+  {
+   "number": "front-cover",
+   "heading_fa": "جلد",
+   "heading_en_if_printed": "Data Privacy Process",
+   "type": "front",
+   "pdf_page": 1,
+   "printed_page": null
+  },
+  {
+   "number": "front-contact",
+   "heading_fa": "نشانی‌های سازمان ملی استاندارد ایران",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 2,
+   "printed_page": "ب"
+  },
+  {
+   "number": "front-intro-inso",
+   "heading_fa": "آشنایی با سازمان ملی استاندارد ایران",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 3,
+   "printed_page": "ج"
+  },
+  {
+   "number": "front-committee",
+   "heading_fa": "کمیسیون فنی تدوین استاندارد «فرایند حریم اطلاعاتی»",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 4,
+   "printed_page": "د"
+  },
+  {
+   "number": "front-toc",
+   "heading_fa": "فهرست مندرجات",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 6,
+   "printed_page": "و"
+  },
+  {
+   "number": "front-foreword",
+   "heading_fa": "پیشگفتار",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 8,
+   "printed_page": "ح"
+  },
+  {
+   "number": "front-introduction",
+   "heading_fa": "مقدمه",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 9,
+   "printed_page": "ط"
+  },
+  {
+   "number": "1",
+   "heading_fa": "هدف و دامنه کاربرد",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 10,
+   "printed_page": 1,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "1.1",
+   "heading_fa": "دامنهٔ کاربرد",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 10,
+   "printed_page": 1,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "1.2",
+   "heading_fa": "هدف",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 10,
+   "printed_page": 1,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "1.3",
+   "heading_fa": "کاربرد واژگان",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 10,
+   "printed_page": 1,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "2",
+   "heading_fa": "مراجع الزامی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 11,
+   "printed_page": 2,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "3",
+   "heading_fa": "تعاریف، سرنام‌ها و کوته‌نوشت‌ها",
+   "heading_en_if_printed": "Acronyms / Abbreviations (footnotes)",
+   "type": "informative",
+   "pdf_page": 11,
+   "printed_page": 2,
+   "ocr_similarity": 0.958
+  },
+  {
+   "number": "3.1",
+   "heading_fa": "تعاریف",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 11,
+   "printed_page": 2,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "3.1.1",
+   "heading_fa": "پاسخگویی",
+   "heading_en_if_printed": "accountability",
+   "type": "informative",
+   "pdf_page": 11,
+   "printed_page": 2
+  },
+  {
+   "number": "3.1.2",
+   "heading_fa": "فرد مجاز",
+   "heading_en_if_printed": "authorized individual",
+   "type": "informative",
+   "pdf_page": 11,
+   "printed_page": 2
+  },
+  {
+   "number": "3.1.3",
+   "heading_fa": "الزامات کسب‌وکار",
+   "heading_en_if_printed": "business requirements",
+   "type": "informative",
+   "pdf_page": 11,
+   "printed_page": 2
+  },
+  {
+   "number": "3.1.4",
+   "heading_fa": "عوامل بافت",
+   "heading_en_if_printed": "contextual factors",
+   "type": "informative",
+   "pdf_page": 11,
+   "printed_page": 2
+  },
+  {
+   "number": "3.1.5",
+   "heading_fa": "واپایش",
+   "heading_en_if_printed": "control",
+   "type": "informative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.1.6",
+   "heading_fa": "کنش‌های داده",
+   "heading_en_if_printed": "data actions",
+   "type": "informative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.1.7",
+   "heading_fa": "عنصرداده",
+   "heading_en_if_printed": "data element",
+   "type": "informative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.1.8",
+   "heading_fa": "داده‌شارها (جریان داده)",
+   "heading_en_if_printed": "data flow",
+   "type": "informative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.1.9",
+   "heading_fa": "نقشه داده",
+   "heading_en_if_printed": "data map",
+   "type": "informative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.1.10",
+   "heading_fa": "حریم اطلاعاتی",
+   "heading_en_if_printed": "data privacy",
+   "type": "informative",
+   "pdf_page": 12,
+   "printed_page": 3
+  },
+  {
+   "number": "3.1.11",
+   "heading_fa": "داده‌پردازی",
+   "heading_en_if_printed": "data processing",
+   "type": "informative",
+   "pdf_page": 13,
+   "printed_page": 4
+  },
+  {
+   "number": "3.1.12",
+   "heading_fa": "حفاظت از داده",
+   "heading_en_if_printed": "data protection",
+   "type": "informative",
+   "pdf_page": 13,
+   "printed_page": 4
+  },
+  {
+   "number": "3.1.13",
+   "heading_fa": "موضوع داده",
+   "heading_en_if_printed": "data subject",
+   "type": "informative",
+   "pdf_page": 13,
+   "printed_page": 4
+  },
+  {
+   "number": "3.1.14",
+   "heading_fa": "سامانه داده",
+   "heading_en_if_printed": "data system",
+   "type": "informative",
+   "pdf_page": 13,
+   "printed_page": 4
+  },
+  {
+   "number": "3.1.15",
+   "heading_fa": "هویت‌زدایی",
+   "heading_en_if_printed": "de-identification",
+   "type": "informative",
+   "pdf_page": 13,
+   "printed_page": 4
+  },
+  {
+   "number": "3.1.16",
+   "heading_fa": "هستار",
+   "heading_en_if_printed": "entity",
+   "type": "informative",
+   "pdf_page": 14,
+   "printed_page": 5
+  },
+  {
+   "number": "3.1.17",
+   "heading_fa": "محیط",
+   "heading_en_if_printed": "environment",
+   "type": "informative",
+   "pdf_page": 14,
+   "printed_page": 5
+  },
+  {
+   "number": "3.1.18",
+   "heading_fa": "الزام کارکردی",
+   "heading_en_if_printed": "functional requirement",
+   "type": "informative",
+   "pdf_page": 14,
+   "printed_page": 5
+  },
+  {
+   "number": "3.1.19",
+   "heading_fa": "قابلیت کارکرد",
+   "heading_en_if_printed": "functionality",
+   "type": "informative",
+   "pdf_page": 14,
+   "printed_page": 5
+  },
+  {
+   "number": "3.1.20",
+   "heading_fa": "حکمرانی",
+   "heading_en_if_printed": "governance",
+   "type": "informative",
+   "pdf_page": 14,
+   "printed_page": 5
+  },
+  {
+   "number": "3.1.21",
+   "heading_fa": "راهنمون",
+   "heading_en_if_printed": "guidelines",
+   "type": "informative",
+   "pdf_page": 15,
+   "printed_page": 6
+  },
+  {
+   "number": "3.1.22",
+   "heading_fa": "امنیت اطلاعات",
+   "heading_en_if_printed": "information security",
+   "type": "informative",
+   "pdf_page": 15,
+   "printed_page": 6
+  },
+  {
+   "number": "3.1.23",
+   "heading_fa": "فرایند تکرارشونده",
+   "heading_en_if_printed": "iterative process",
+   "type": "informative",
+   "pdf_page": 15,
+   "printed_page": 6
+  },
+  {
+   "number": "3.1.24",
+   "heading_fa": "الزام غیرکارکردی",
+   "heading_en_if_printed": "nonfunctional requirement",
+   "type": "informative",
+   "pdf_page": 15,
+   "printed_page": 6
+  },
+  {
+   "number": "3.1.25",
+   "heading_fa": "سازمان",
+   "heading_en_if_printed": "organization",
+   "type": "informative",
+   "pdf_page": 15,
+   "printed_page": 6
+  },
+  {
+   "number": "3.1.26",
+   "heading_fa": "الزامات حریم خصوصی سازمانی",
+   "heading_en_if_printed": "organizational privacy requirements",
+   "type": "informative",
+   "pdf_page": 16,
+   "printed_page": 7
+  },
+  {
+   "number": "3.1.27",
+   "heading_fa": "چارچوب حریم خصوصی سازمانی",
+   "heading_en_if_printed": "organizational privacy framework",
+   "type": "informative",
+   "pdf_page": 16,
+   "printed_page": 7
+  },
+  {
+   "number": "3.1.28",
+   "heading_fa": "داده شخصی",
+   "heading_en_if_printed": "personal data",
+   "type": "informative",
+   "pdf_page": 16,
+   "printed_page": 7
+  },
+  {
+   "number": "3.1.29",
+   "heading_fa": "خط‌مشی",
+   "heading_en_if_printed": "policy",
+   "type": "informative",
+   "pdf_page": 16,
+   "printed_page": 7
+  },
+  {
+   "number": "3.1.30",
+   "heading_fa": "قابلیت‌های حریم خصوصی",
+   "heading_en_if_printed": "privacy capabilities",
+   "type": "informative",
+   "pdf_page": 17,
+   "printed_page": 8
+  },
+  {
+   "number": "3.1.31",
+   "heading_fa": "واپایش حریم خصوصی",
+   "heading_en_if_printed": "privacy control",
+   "type": "informative",
+   "pdf_page": 17,
+   "printed_page": 8
+  },
+  {
+   "number": "3.1.32",
+   "heading_fa": "چارچوب حریم خصوصی",
+   "heading_en_if_printed": "privacy framework",
+   "type": "informative",
+   "pdf_page": 17,
+   "printed_page": 8
+  },
+  {
+   "number": "3.1.33",
+   "heading_fa": "اصول حفظ حریم خصوصی",
+   "heading_en_if_printed": "privacy principles",
+   "type": "informative",
+   "pdf_page": 17,
+   "printed_page": 8
+  },
+  {
+   "number": "3.1.34",
+   "heading_fa": "الزامات حفظ حریم خصوصی",
+   "heading_en_if_printed": "privacy requirements",
+   "type": "informative",
+   "pdf_page": 17,
+   "printed_page": 8
+  },
+  {
+   "number": "3.1.35",
+   "heading_fa": "مخاطره (ریسک) حریم خصوصی",
+   "heading_en_if_printed": "privacy risk",
+   "type": "informative",
+   "pdf_page": 18,
+   "printed_page": 9
+  },
+  {
+   "number": "3.1.36",
+   "heading_fa": "روال",
+   "heading_en_if_printed": "procedure",
+   "type": "informative",
+   "pdf_page": 18,
+   "printed_page": 9
+  },
+  {
+   "number": "3.1.37",
+   "heading_fa": "بافت تنظیم‌گری (رگولاتوری)",
+   "heading_en_if_printed": "regulatory context",
+   "type": "informative",
+   "pdf_page": 18,
+   "printed_page": 9
+  },
+  {
+   "number": "3.1.38",
+   "heading_fa": "مخاطره (ریسک)",
+   "heading_en_if_printed": "risk",
+   "type": "informative",
+   "pdf_page": 18,
+   "printed_page": 9
+  },
+  {
+   "number": "3.1.39",
+   "heading_fa": "ذی‌نفع",
+   "heading_en_if_printed": "stakeholder",
+   "type": "informative",
+   "pdf_page": 18,
+   "printed_page": 9
+  },
+  {
+   "number": "3.1.40",
+   "heading_fa": "مخاطره کاهی",
+   "heading_en_if_printed": "risk mitigation",
+   "type": "informative",
+   "pdf_page": 18,
+   "printed_page": 9
+  },
+  {
+   "number": "3.1.41",
+   "heading_fa": "واپایش امنیتی",
+   "heading_en_if_printed": "security control",
+   "type": "informative",
+   "pdf_page": 19,
+   "printed_page": 10
+  },
+  {
+   "number": "3.1.42",
+   "heading_fa": "سامانه",
+   "heading_en_if_printed": "system",
+   "type": "informative",
+   "pdf_page": 19,
+   "printed_page": 10
+  },
+  {
+   "number": "3.1.43",
+   "heading_fa": "سامانهٔ توجه",
+   "heading_en_if_printed": "system-of-interest",
+   "type": "informative",
+   "pdf_page": 19,
+   "printed_page": 10
+  },
+  {
+   "number": "3.1.44",
+   "heading_fa": "چرخه عمر توسعه سامانه‌ها",
+   "heading_en_if_printed": "systems development life cycle",
+   "type": "informative",
+   "pdf_page": 19,
+   "printed_page": 10
+  },
+  {
+   "number": "3.1.45",
+   "heading_fa": "آموزش",
+   "heading_en_if_printed": "training",
+   "type": "informative",
+   "pdf_page": 19,
+   "printed_page": 10
+  },
+  {
+   "number": "3.2",
+   "heading_fa": "سرنام‌ها و کوته‌نوشت‌ها",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 19,
+   "printed_page": 10,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "4",
+   "heading_fa": "نمای کلی فرایند و تنظیم صحنه",
+   "heading_en_if_printed": "Scene Setting (footnote)",
+   "type": "informative",
+   "pdf_page": 20,
+   "printed_page": 11,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "4.1",
+   "heading_fa": "واژگان فنی کلیدی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 20,
+   "printed_page": 11,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "4.2",
+   "heading_fa": "راهنمایی استفاده از استاندارد",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 21,
+   "printed_page": 12,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "4.3",
+   "heading_fa": "فرایند سطح بالا",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 23,
+   "printed_page": 14,
+   "ocr_similarity": 0.583
+  },
+  {
+   "number": "5",
+   "heading_fa": "تعریف الزامات حریم خصوصی سازمانی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 26,
+   "printed_page": 17,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "5.1",
+   "heading_fa": "بررسی کلی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 26,
+   "printed_page": 17,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "5.2",
+   "heading_fa": "بافت نظارتی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 27,
+   "printed_page": 18,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "5.3",
+   "heading_fa": "سایر عوامل بافتی",
+   "heading_en_if_printed": "Additional Contextual Factors (footnote)",
+   "type": "normative",
+   "pdf_page": 28,
+   "printed_page": 19,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "5.3.1",
+   "heading_fa": "اصول حریم خصوصی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 28,
+   "printed_page": 19,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "6",
+   "heading_fa": "تنظیم چارچوب حریم خصوصی سازمانی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 28,
+   "printed_page": 19,
+   "ocr_similarity": 0.963
+  },
+  {
+   "number": "6.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 28,
+   "printed_page": 19,
+   "ocr_similarity": 0.889
+  },
+  {
+   "number": "6.2",
+   "heading_fa": "خط‌مشی‌ها، روال‌ها و راهنمون‌های سازمانی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 29,
+   "printed_page": 20,
+   "ocr_similarity": 0.968
+  },
+  {
+   "number": "6.3",
+   "heading_fa": "نقش‌ها و مسئولیت‌ها",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 31,
+   "printed_page": 22,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "6.4",
+   "heading_fa": "آموزش",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 33,
+   "printed_page": 24,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "6.5",
+   "heading_fa": "کارکردهای حکمرانی و پاسخگویی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 33,
+   "printed_page": 24,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "7",
+   "heading_fa": "توصیف مشخصات محیط سامانه",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 34,
+   "printed_page": 25,
+   "ocr_similarity": 0.718
+  },
+  {
+   "number": "7.1",
+   "heading_fa": "بررسی کلی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 34,
+   "printed_page": 25,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "7.2",
+   "heading_fa": "نیاز کسب‌وکار",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 35,
+   "printed_page": 26,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "7.3",
+   "heading_fa": "طراحی و قابلیت کارکردی سامانه",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 35,
+   "printed_page": 26,
+   "ocr_similarity": 0.96
+  },
+  {
+   "number": "7.3.1",
+   "heading_fa": "نقشه داده",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 36,
+   "printed_page": 27,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "7.3.2",
+   "heading_fa": "قابلیت‌ها و اهداف حریم خصوصی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 37,
+   "printed_page": 28,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "7.4",
+   "heading_fa": "ارزیابی مخاطره",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 39,
+   "printed_page": 30,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "8",
+   "heading_fa": "دفع خطر حریم خصوصی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 41,
+   "printed_page": 32,
+   "ocr_similarity": 0.8
+  },
+  {
+   "number": "8.1",
+   "heading_fa": "پاسخ به مخاطره‌ها در محیط سامانهٔ پیشنهادی",
+   "heading_en_if_printed": "Proposed System Environment (footnote)",
+   "type": "normative",
+   "pdf_page": 41,
+   "printed_page": 32,
+   "ocr_similarity": 0.971
+  },
+  {
+   "number": "8.2",
+   "heading_fa": "واپایش‌های حریم خصوصی برای کاهش مخاطره",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 42,
+   "printed_page": 33,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "8.2.1",
+   "heading_fa": "انتخاب واپایش حریم خصوصی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 44,
+   "printed_page": 35,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "8.2.2",
+   "heading_fa": "پیاده‌سازی واپایش حریم خصوصی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 45,
+   "printed_page": 36,
+   "ocr_similarity": 0.958
+  },
+  {
+   "number": "8.2.3",
+   "heading_fa": "ارزیابی واپایش حریم خصوصی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 45,
+   "printed_page": 36,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "8.3",
+   "heading_fa": "مدیریت مستمر مخاطره حریم خصوصی سامانه",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 46,
+   "printed_page": 37,
+   "ocr_similarity": 0.938
+  },
+  {
+   "number": "9",
+   "heading_fa": "حریم خصوصی در چرخه عمر توسعه سامانه‌ها",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 47,
+   "printed_page": 38,
+   "ocr_similarity": 0.935
+  },
+  {
+   "number": "9.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 47,
+   "printed_page": 38,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "9.2",
+   "heading_fa": "مدیریت چرخه عمر حریم خصوصی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 48,
+   "printed_page": 39,
+   "ocr_similarity": 0.955
+  },
+  {
+   "number": "annex-A",
+   "heading_fa": "پیوست الف (آگاهی‌دهنده) مثال‌ها",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 51,
+   "printed_page": 42,
+   "ocr_similarity": 0.756
+  },
+  {
+   "number": "A.1",
+   "heading_fa": "مثال‌هایی از بند ۵",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 51,
+   "printed_page": 42,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "A.2",
+   "heading_fa": "مثال‌هایی از بند ۶",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 52,
+   "printed_page": 43,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "A.3",
+   "heading_fa": "مثال‌هایی از بند ۷",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 52,
+   "printed_page": 43,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "A.4",
+   "heading_fa": "مثال‌هایی از بند ۸",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 53,
+   "printed_page": 44,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "A.5",
+   "heading_fa": "منابع عمومی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 53,
+   "printed_page": 44,
+   "ocr_similarity": 1.0
+  },
+  {
+   "number": "bibliography",
+   "heading_fa": "کتابنامه",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 54,
+   "printed_page": 45
+  }
+ ]
+}

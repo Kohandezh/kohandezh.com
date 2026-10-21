@@ -1,0 +1,44 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  5,
+  7
+ ],
+ "section_shas": {
+  "5": "39b4251e1aaf3dcf6373bc9fec021d175089256780fd3b4015e04820e592f20c",
+  "7": "8990707ec2896579b4a84fdd1f81ae8cc24778d05e681602ff676265c0174852"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 302.5595541000366,
+ "result": {
+  "sections": [
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "The compiler note reads «در بندهای ۸.۲ و ۸.۴ تعریفی برای «تغییر چشمگیر» ارائه نشده است». However evidence S42001-089 shows that clause 8.2 uses the term «تغییرات قابل‌ملاحظه» (significant changes), not «تغییرات چشمگیر». Only clause 8.4 (S42001-091) uses «تغییرات چشمگیر». Attributing the term «تغییر چشمگیر» to 8.2 is factually unsupported; the two clauses use distinct trigger phrases.",
+      "quote": "در بندهای ۸.۲ و ۸.۴ تعریفی برای «تغییر چشمگیر» ارائه نشده است",
+      "suggested_fix": "Amend to: «بند ۸.۲ از «تغییرات قابل‌ملاحظه» و بند ۸.۴ از «تغییرات چشمگیر» استفاده می‌کنند؛ برای هیچ‌کدام از این دو عبارت، تعریفی در استاندارد ارائه نشده است.»"
+     }
+    ]
+   },
+   {
+    "index": 7,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "number_or_page_error",
+      "explanation": "The section groups «A.9 استفاده از سامانه‌های هومص» together with A.10 under the single page reference «(ص ۲۶)», implying both block headers appear on printed page 26. Evidence C42001-A.9 explicitly places the A.9 block header at pdf 37 / printed 25, not printed 26. Only A.10 and its controls (C42001-A.10 and A.10.2–A.10.4) are on printed page 26. The pattern used for all preceding rows in that list assigns each group a single page where both block headers appear; that pattern breaks here because A.9 starts on page 25 while A.10 starts on page 26.",
+      "quote": "A.9 استفاده از سامانه‌های هومص و A.10 ارتباط با طرف‌های سوم و مشتریان (ص ۲۶)",
+      "suggested_fix": "Either split the line into two separate rows — «A.9 استفاده از سامانه‌های هومص (ص ۲۵)» and «A.10 ارتباط با طرف‌های سوم و مشتریان (ص ۲۶)» — or combine them with a range: «A.9 … و A.10 … (ص ۲۵–۲۶)»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:55:15-0400"
+}

@@ -1,0 +1,82 @@
+{
+ "keys": [
+  "requirement",
+  "conformity",
+  "nonconformity",
+  "corrective action",
+  "measurement",
+  "governing body",
+  "ai system impact assessment",
+  "data quality",
+  "statement of applicability"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 40.532301902770996,
+ "result": {
+  "verdicts": [
+   {
+    "key": "requirement",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "conformity",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "nonconformity",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "corrective action",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "measurement",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "governing body",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "ai system impact assessment",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The printed standard (INSO 42001, clause 3.24) uses the abbreviated form «ارزیابی تأثیر سامانه هومص» as the official term. The proposed entry promotes the expanded form «ارزیابی تأثیر سامانه هوش مصنوعی» to preferred_fa and demotes the printed abbreviated form to alternatives_fa. Per Rule 1, preferred_fa must equal the term as printed in the cited clause.",
+      "suggested_fix": "Set preferred_fa to «ارزیابی تأثیر سامانه هومص» (exactly as printed at clause 3.24). Move «ارزیابی تأثیر سامانه هوش مصنوعی» to alternatives_fa. No other changes required."
+     }
+    ],
+    "confidence": 0.98
+   },
+   {
+    "key": "data quality",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "statement of applicability",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:09:41-0400"
+}

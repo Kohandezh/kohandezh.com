@@ -1,0 +1,44 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "5bb8fdd9ee88a70acdd5169520a9d9d0e90f16460a8e7c1b44da81df33fb071e",
+  "1": "1f96bba48d4f6a3527d200476c45aedb31373acb2efe61dfe6044cf50bdaba62"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 367.34459495544434,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "مدیریت مخاطره را در فعالیت‌های مرتبط یکپارچه سازند",
+      "explanation": "The paraphrase of بند ۱ drops «و عملیات» and the qualifier «با هوش مصنوعی». Evidence S23733-006 reads: «مدیریت مخاطره را در فعالیت‌ها و عملیات مرتبط با هوش مصنوعی یکپارچه سازند». Since the sentence explicitly attributes content to بند ۱ («بند ۱ می‌گوید»), the omission misrepresents what the clause says.",
+      "suggested_fix": "Replace «فعالیت‌های مرتبط یکپارچه سازند» with «فعالیت‌ها و عملیات مرتبط با هوش مصنوعی یکپارچه سازند»."
+     }
+    ]
+   },
+   {
+    "index": 1,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "می‌افزاید که اثر ممکن است مثبت، منفی یا هر دو باشد",
+      "explanation": "When paraphrasing یادآوری ۱ of INSO 23682 §3.2.2, the section uses «اثر» (42001's word) instead of «تأثیر» (23682's word). Evidence T23682-3.2.2 note 1 reads: «تأثیر، ممکن است مثبت، منفی یا هر دو (هم مثبت، هم منفی) باشد». Since the sentence is explicitly attributed to INSO 23682, it should use that document's term.",
+      "suggested_fix": "Replace «اثر ممکن است» with «تأثیر ممکن است» in the clause attributed to INSO 23682 یادآوری ۱."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T06:49:39-0400"
+}

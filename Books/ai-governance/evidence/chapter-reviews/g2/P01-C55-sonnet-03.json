@@ -1,0 +1,50 @@
+{
+ "chapter": "P01/C55",
+ "sections": [
+  3,
+  5
+ ],
+ "section_shas": {
+  "3": "80337110072e89f351246ac5a6781a1116a432ec794ede29d8c5ad883c131887",
+  "5": "f60a61781cc457cb9171253d00b4d68e9aebafe08bf4e23c973cce500d52f54b"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 377.0735969543457,
+ "result": {
+  "sections": [
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "پاورقی همان صفحه معادل Machine Learning Pipeline را چاپ کرده است (از تصویر صفحه)",
+      "explanation": "No cited evidence item from printed page 39 (S23681-092 or S23681-093) mentions any footnote containing 'Machine Learning Pipeline'. The parenthetical '(از تصویر صفحه)' cannot substitute for a cited evidence item. The evidence shows 'زنجیرهٔ ML' as the term used; the equivalence via a footnote is unverified.",
+      "suggested_fix": "Remove the footnote claim entirely, or supply a new evidence item that transcribes it. If the footnote exists on the page image, it must be added to the evidence bundle before being cited."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "استاندارد فهرست نقش‌ها یا ذی‌نفعان، ماتریس مسئولیت یا RACI ندارد",
+      "explanation": "This is a sweeping absence claim about the entire standard, not limited to the cited clauses. Per the review rules, such claims are supported only when phrased as limited to the clauses actually cited. No evidence item confirms or denies the presence of role lists or a RACI matrix anywhere in the full standard.",
+      "suggested_fix": "Rewrite as: «در بندها و پیوست‌های بررسی‌شده در این فصل (بند ۸ و پیوست الف) فهرست نقش‌ها، ماتریس مسئولیت یا RACI مشاهده نشد.»"
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "modality_drift",
+      "quote": "۸.۵ | ۴۷ | «توصیه می‌شود» و «باید» | انتخاب مدل با دادهٔ آزمایشی انجام نشود؛ توجه به مجزابودن ارزشیابی",
+      "explanation": "Evidence S23681-121 (the only evidence for this row) has two clauses: (1) «توصیه می‌شود انتخاب مدل با مجموعه‌دادهٔ آزمایشی انجام نشود» — correctly labelled as توصیه می‌شود; and (2) «نیاز به توجه ویژه‌ای به مجزا باقی‌ماندن ارزشیابی از انتخاب مدل وجود دارد» — a need statement, NOT «باید». The section's own opening rule states that non-باید expressions are reported with the exact printed wording, but the table instead labels the second clause as «باید». The next row already correctly covers the genuine [shall]/«باید» from S23681-122 (ارزشیابی مقایسه‌ای). Adding «باید» here upgrades a need-statement to shall level and double-counts the separate shall row.",
+      "suggested_fix": "Change the modality cell for this row to: «توصیه می‌شود» / «نیاز به … وجود دارد» — reporting both clauses with their exact printed wording, without adding «باید»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:56:47-0400"
+}

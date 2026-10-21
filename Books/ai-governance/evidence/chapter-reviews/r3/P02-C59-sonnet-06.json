@@ -1,0 +1,56 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  6,
+  7
+ ],
+ "section_shas": {
+  "6": "5bfef31deae44239b8e1a614f97c92ce6d7dd3f2182b9cd1fd687fdb2b43a748",
+  "7": "849a76304861dfbc6441081c9f0d1d00fe394fcfa3acd5b40235d114a5b84b60"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 420.2454421520233,
+ "result": {
+  "sections": [
+   {
+    "index": 6,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "اطلاعات عملکرد (روند عدم انطباق‌ها و اقدام‌های اصلاحی، نتایج پایش و اندازه‌گیری و نتایج ممیزی) و فرصت‌های بهبود است",
+      "explanation": "S42001-099 prints «فرصت‌های بهبود مداوم» as one of the mandatory management-review inputs. The section drops «مداوم», losing the defined INSO term «بهبود مداوم» (§3.12 / terminology table). Every instance of «continual improvement» in new text must carry «مداوم».",
+      "suggested_fix": "Change to «…و فرصت‌های بهبود مداوم است»."
+     },
+     {
+      "type": "terminology",
+      "quote": "برون‌داد باید تصمیم دربارهٔ فرصت‌های بهبود و نیاز به تغییر را دربر گیرد",
+      "explanation": "S42001-100 prints «فرصت‌های بهبود مداوم» and «هرگونه نیاز به تغییرات در نظام مدیریت هومص». The section drops «مداوم» a second time and also generalises «هرگونه نیاز به تغییرات در نظام مدیریت هومص» to the vague «نیاز به تغییر», removing the explicit scope restriction to the AIMS.",
+      "suggested_fix": "Write «تصمیم دربارهٔ فرصت‌های بهبود مداوم و هرگونه نیاز به تغییرات در نظام مدیریت هوش مصنوعی»."
+     }
+    ]
+   },
+   {
+    "index": 7,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "فقط B.7.6 «سازمان باید …» را نگه داشته است (ص ۲۹ و ۵۱)",
+      "explanation": "The cited evidence covers only five Annex B subclauses: B.2.2 [should], B.2.4 [should/لازم است], B.3.2 [should/لازم است], B.6.2.6 [should/لازم است], and B.7.6 [shall]. The word «فقط» asserts that B.7.6 is the ONLY Annex B control using «سازمان باید» across all 38 B.x.x subclauses. No evidence is cited for the remaining ~33 subclauses, so the universal claim cannot be verified from the cited evidence alone.",
+      "suggested_fix": "Drop «فقط» and qualify: «در میان واپایش‌های پیوست ب که شاهد متن آن‌ها در این فصل هستیم، B.7.6 «سازمان باید …» را نگه داشته است» — or supply evidence for the full Annex B to justify the absolute claim."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "A.6.2 چرخه عمر سامانه هومص (ص ۲۴)؛ A.7 داده‌های سامانه‌های هومص و A.8 اطلاعات برای طرف‌های ذی‌نفع (ص ۲۵)؛ A.9 استفاده از سامانه‌های هومص و A.10 ارتباط با طرف‌های سوم و مشتریان (ص ۲۶)",
+      "explanation": "The figure evidence F42001-جدول الف-۱ is truncated at «A.6.1.3 فرایندهای ط…» and does not supply the printed block-level headings for A.6.2, A.7, A.8, A.9, or A.10. The section claims these five titles as «عنوان‌های چاپی بلوک‌ها» (printed titles), but none can be directly confirmed from the cited evidence; they appear to be reconstructed from individual control headings.",
+      "suggested_fix": "Either supply additional evidence (e.g., a non-truncated rendering of F42001-جدول الف-۱) confirming these five block headings, or label them as «عناوین بازسازی‌شده بر اساس موضوع واپایش‌ها» rather than presenting them as directly quoted printed titles."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:23:10-0400"
+}

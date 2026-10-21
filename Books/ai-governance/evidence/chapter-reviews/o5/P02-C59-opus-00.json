@@ -1,0 +1,56 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "8977729fc1e8bff9bb97fad028eaa9fc737a9894cd0c7cc0bff876d93d30c16d",
+  "1": "86d7c63eed4e97cadd1cebd8602c56bc1757c9d60e611977a149fd4ac9655397"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 504.5223729610443,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "واپایش‌های جدول الف-۱ «الزامی نیست»",
+      "explanation": "First occurrence of «واپایش» in the chapter lacks the required «(کنترل)» alias at first use. The alias appears only at the second mention («واپایش‌ها (کنترل‌ها)»). Per the terminology rules, the first use must read «واپایش (کنترل)».",
+      "suggested_fix": "Change the first occurrence to «واپایش‌های (کنترل‌های) جدول الف-۱» or insert «واپایش (کنترل)» in a preceding clause before first use."
+     },
+     {
+      "type": "terminology",
+      "quote": "میزان مخاطرهٔ قابل‌پذیرش",
+      "explanation": "First occurrence of «مخاطره» in the chapter lacks the required «(ریسک)» alias. The terminology rules mandate «مخاطره (ریسک)» at first use in each chapter.",
+      "suggested_fix": "Change to «مخاطره (ریسک) قابل‌پذیرش» at this first occurrence, or introduce the alias earlier in the text."
+     },
+     {
+      "type": "other",
+      "quote": "اما پیوست ب، که راهنمای اجرای همان واپایش‌ها (کنترل‌ها) است، اطلاعات پشتیبان برای اجرا می‌دهد",
+      "explanation": "Annex B's printed label «(الزامی)» (normative) is omitted, while Annex A's «(الزامی)» label is explicitly reported in the same sentence. Per hard content rule 2, annex normative/informative labels must be reported as printed. The contrast could mislead readers into inferring Annex B is informative. Source index confirms: «پیوست «ب» (الزامی) راهنمای اجرای واپایش‌های هومص».",
+      "suggested_fix": "Add the label: «اما پیوست ب — نیز با برچسب «الزامی» چاپ شده — که راهنمای اجرای همان واپایش‌ها (کنترل‌ها) است، ...»."
+     }
+    ]
+   },
+   {
+    "index": 1,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "other",
+      "quote": "عنوان بند ۶.۱.۳ «مواجهه با مخاطره» است",
+      "explanation": "The printed heading of clause 6.1.3 per the source index is «مواجهه با مخاطره هومص» (with «هومص»), not «مواجهه با مخاطره». The section drops «هومص» entirely — it should either quote verbatim or apply the declared «هومص→هوش مصنوعی» replacement consistently.",
+      "suggested_fix": "Change to «عنوان بند ۶.۱.۳ «مواجهه با مخاطره هوش مصنوعی» است» (applying the declared replacement) or «مواجهه با مخاطره هومص» (verbatim)."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T07:13:37-0400"
+}

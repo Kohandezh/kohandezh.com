@@ -1,0 +1,193 @@
+{
+ "source_id": "INSO-42001-1404",
+ "national_reference_printed": "INSO/BS/ISO/IEC 42001:2025",
+ "national_reference_printed_fa": "استاندارد ملی ایران/بی اس/ ایزو/ آی‌ای‌سی ۴۲۰۰۱: سال ۱۴۰۴",
+ "iranian_year_printed": "۱۴۰۴",
+ "title_fa_printed": "فنّاوری اطلاعات - هوش مصنوعی - نظام مدیریت",
+ "title_en_printed": "Information technology — Artificial intelligence — Management system",
+ "ics_printed": "03.100.70; 35.020",
+ "international_reference_printed": "BS/ISO/IEC 42001:2023 (cover); BS ISO/IEC 42001:2023, Information technology — Artificial intelligence — Management system (foreword)",
+ "international_year": "2023",
+ "equivalence_statement_printed": "جلد: (BS/ISO/IEC 42001:2023, IDT)؛ پیشگفتار (PDF 10، چاپی ط): «این استاندارد بر مبنای پذیرش منبع زیر به روش «همسان» تهیه و تدوین شده است: – BS ISO/IEC 42001:2023, Information technology — Artificial intelligence — Management system»",
+ "adoption_reference_printed": "BS/ISO/IEC 42001:2023, IDT",
+ "publisher_printed": "سازمان ملی استاندارد ایران (Iran National Standards Organization, INSO)؛ تهران: میدان ونک، خیابان ولیعصر، پلاک ۲۵۹۲، کد پستی ۱۴۳۵۶۹۴۵۶۱؛ کرج: میدان استاندارد؛ standard@inso.gov.ir؛ www.inso.gov.ir",
+ "approval_or_publication_date_printed": "مصوب جلسهٔ شمارهٔ ۷۵۷ مورخ ۱۴۰۴/۰۸/۲۵ کارگروه ملی تصویب استانداردهای فنّاوری اطلاعات",
+ "approval_body_printed": "کارگروه ملی تصویب استانداردهای فنّاوری اطلاعات",
+ "legal_basis_printed": "قانون تقویت و توسعه نظام استاندارد، مادهٔ ۷، بند ۱، مصوب ۱۳۹۶/۱۰/۰۲",
+ "pdf_pages_total": 81,
+ "pdf_to_printed_offset": 12,
+ "printed_page_scheme": "PDF 1-2 بی‌شماره؛ PDF 3-12 حروف ابجد ب..ک؛ PDF 13-81 = چاپی 1..69 (چاپی = PDF − 12)",
+ "normative_references": [
+  {
+   "printed_reference": "استاندارد ملی ایران ۲۳۶۷۹: سال ۱۴۰۳، فنّاوری اطلاعات - هوش مصنوعی - مفاهیم و اصطلاحات هوش مصنوعی (استاندارد ISO/IEC 22989:2022، همسان)",
+   "national_number_if_printed": "۲۳۶۷۹ (سال ۱۴۰۳)",
+   "international_correspondence_printed": "ISO/IEC 22989:2022 — «همسان»",
+   "pdf_page": 13,
+   "printed_page": 1,
+   "also_cited_in": "مدخل ۳-۲ نکتهٔ ۱ (PDF 14، چاپی ۲؛ «زیربند ۵-۱۹»)، بند ۳ مقدمه (PDF 13)، بند ۴-۱ (PDF 19–20)، ب-۴-۵ (PDF 45)، ب-۶-۱-۳ (PDF 52)، ب-۶-۲-۷ (PDF 59)، ب-۷-۲ (PDF 61)"
+  }
+ ],
+ "bibliography_national_equivalents": [
+  {
+   "bibliography_item": "[2]",
+   "international_printed": "ISO 9001, Quality management systems — Requirements",
+   "national_number_printed": "ملی ایران/ایزو ۹۰۰۱",
+   "national_title_fa_printed": "سیستم‌های مدیریت کیفیت - الزامات",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 79,
+   "printed_page": 67
+  },
+  {
+   "bibliography_item": "[3]",
+   "international_printed": "ISO 9241-210, Ergonomics of human-system interaction — Part 210: Human-centred design for interactive systems",
+   "national_number_printed": "ملی ایران ۵۲۴۱-۲۱۰",
+   "national_title_fa_printed": "ارگونومی تعامل انسان - سامانه - قسمت ۲۱۰: طراحی انسان‌محور برای سامانه‌های تعاملی",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 79,
+   "printed_page": 67
+  },
+  {
+   "bibliography_item": "[4]",
+   "international_printed": "ISO 13485, Medical devices — Quality management systems — Requirements for regulatory purposes",
+   "national_number_printed": "ملی ایران/ایزو ۱۳۴۸۵",
+   "national_title_fa_printed": "وسایل پزشکی - سیستم‌های مدیریت کیفیت - الزامات برای مقاصد مقرراتی",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 79,
+   "printed_page": 67
+  },
+  {
+   "bibliography_item": "[5]",
+   "international_printed": "ISO 22000, Food safety management systems — Requirements for any organization in the food chain",
+   "national_number_printed": "ملی ایران/ایزو ۲۲۰۰۰",
+   "national_title_fa_printed": "سیستم‌های مدیریت ایمنی مواد غذایی - الزامات هر سازمان در زنجیره مواد غذایی",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 79,
+   "printed_page": 67
+  },
+  {
+   "bibliography_item": "[6]",
+   "international_printed": "IEC 62304, Medical device software — Software life cycle processes",
+   "national_number_printed": "ملی ایران ۱۲۱۳۸",
+   "national_title_fa_printed": "نرم‌افزار وسیله پزشکی - فرایندهای چرخه عمر نرم‌افزار (در متن: «براساس استاندارد ISO 62304»)",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 79,
+   "printed_page": 67
+  },
+  {
+   "bibliography_item": "[11]",
+   "international_printed": "ISO/IEC 17065, Conformity assessment — Requirements for bodies certifying products, processes and services",
+   "national_number_printed": "ملی ایران/ایزو/آی‌ای‌سی ۱۷۰۶۵",
+   "national_title_fa_printed": "ارزیابی انطباق - الزامات مربوط به نهادهای گواهی‌کننده محصولات، فرایندها و خدمات",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 79,
+   "printed_page": 67
+  },
+  {
+   "bibliography_item": "[13]",
+   "international_printed": "ISO/IEC 23053, Framework for Artificial Intelligence (AI) Systems Using Machine Learning (ML)",
+   "national_number_printed": "ملی ایران ۲۳۶۸۱",
+   "national_title_fa_printed": "چارچوب سامانه‌های هوش مصنوعی با استفاده از یادگیری ماشین",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 79,
+   "printed_page": 67
+  },
+  {
+   "bibliography_item": "[14]",
+   "international_printed": "ISO/IEC 23894, Information technology — Artificial intelligence — Guidance on risk management",
+   "national_number_printed": "ملی ایران ۲۳۷۳۳",
+   "national_title_fa_printed": "فنّاوری اطلاعات - هوش مصنوعی - راهنمای مدیریت مخاطره (ریسک)",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 80,
+   "printed_page": 68
+  },
+  {
+   "bibliography_item": "[18]",
+   "international_printed": "ISO/IEC 25024, Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of data quality",
+   "national_number_printed": "ملی ایران ۲۲۳۵۵",
+   "national_title_fa_printed": "مهندسی سامانه‌ها و نرم‌افزار نیازمندی‌های کیفی سامانه‌ها و نرم‌افزار و ارزشیابی آن (SquaRE) - سنجش کیفیت داده",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 80,
+   "printed_page": 68
+  },
+  {
+   "bibliography_item": "[19]",
+   "international_printed": "ISO/IEC 25059, Software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Quality model for AI systems",
+   "national_number_printed": "ملی ایران ۲۳۶۸۴",
+   "national_title_fa_printed": "مهندسی نرم‌افزار - الزامات و ارزشیابی کیفیت سامانه‌ها و نرم‌افزار (SQuaRE) - مدل کیفیت برای سامانه‌های هوش مصنوعی (AI)",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 80,
+   "printed_page": 68
+  },
+  {
+   "bibliography_item": "[20]",
+   "international_printed": "ISO/IEC 27000:2018, Information technology — Security techniques — Information security management systems — Overview and vocabulary",
+   "national_number_printed": "ملی ایران/ایزو/آی‌ای‌سی ۲۷۰۰۰",
+   "national_title_fa_printed": "فنّاوری اطلاعات - فنون امنیتی - سیستم‌های (سامانه‌های) مدیریت امنیت اطلاعات - مرور کلی و واژگان",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 80,
+   "printed_page": 68
+  },
+  {
+   "bibliography_item": "[22]",
+   "international_printed": "ISO/IEC 27001, Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
+   "national_number_printed": "ملی ایران/ایزو/آی‌ای‌سی ۲۷۰۰۱",
+   "national_title_fa_printed": "امنیت اطلاعات، امنیت سایبری و حفاظت از حریم خصوصی - سامانه مدیریت امنیت اطلاعات - الزامات",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 80,
+   "printed_page": 68
+  },
+  {
+   "bibliography_item": "[23]",
+   "international_printed": "ISO/IEC 29100, Information technology — Security techniques — Privacy framework",
+   "national_number_printed": "ملی ایران ۱۷۶۴۳",
+   "national_title_fa_printed": "فنّ آوری اطلاعات - فنون امنیتی - چارچوب کاری حریم خصوصی",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 80,
+   "printed_page": 68
+  },
+  {
+   "bibliography_item": "[24]",
+   "international_printed": "ISO 31000:2018, Risk management — Guidelines",
+   "national_number_printed": "ملی ایران ۱۳۲۴۵",
+   "national_title_fa_printed": "مدیریت ریسک - رهنمودها",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 80,
+   "printed_page": 68
+  },
+  {
+   "bibliography_item": "[25]",
+   "international_printed": "ISO 37002, Whistleblowing management systems — Guidelines",
+   "national_number_printed": "ملی ایران ۳۷۰۰۲",
+   "national_title_fa_printed": "سیستم‌های مدیریت سوت‌زنی - راهنما",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 80,
+   "printed_page": 68
+  },
+  {
+   "bibliography_item": "[26]",
+   "international_printed": "ISO/IEC 38500:2015, Information technology — Governance of IT for the organization",
+   "national_number_printed": "ملی ایران ۱۲۰۴۷",
+   "national_title_fa_printed": "فنّاوری اطلاعات - حاکمیت فنّاوری اطلاعات (IT) برای سازمان",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 80,
+   "printed_page": 68
+  },
+  {
+   "bibliography_item": "[27]",
+   "international_printed": "ISO/IEC 38507, Information technology — Governance of IT — Governance implications of the use of artificial intelligence by organizations",
+   "national_number_printed": "ملی ایران ۲۳۶۸۲",
+   "national_title_fa_printed": "فنّاوری اطلاعات - حکمرانی فنّاوری اطلاعات - پیامدهای حکمرانیِ استفاده از هوش مصنوعی در سازمان‌ها",
+   "relation_printed_fa": "براساس استاندارد بین‌المللی مربوط تدوین شده است (عبارت چاپی: «براساس استاندارد ... تدوین شده است»؛ نه «همسان»)",
+   "pdf_page": 81,
+   "printed_page": 69
+  }
+ ],
+ "notes": "شناسهٔ ملی چاپ‌شده با ارقام فارسی «استاندارد ملی ایران/بی اس/ایزو/آی‌ای‌سی ۴۲۰۰۱: سال ۱۴۰۴» و با لاتین «INSO/BS/ISO/IEC 42001:2025»؛ عدد 2025 فقط در شکل لاتین آمده و معادل سال ۱۴۰۴ است؛ هیچ ناهمخوانی با انتظار تکلیف نیست. جلد: «(BS/ISO/IEC 42001:2023, IDT)»؛ پیشگفتار: منبع پذیرش «BS ISO/IEC 42001:2023, Information technology — Artificial intelligence — Management system» به روش «همسان». یعنی منبع مستقیم، نسخهٔ BSI (BS ISO/IEC) از ISO/IEC 42001:2023 است، نه عنوان مستقیم ISO/IEC 42001:2023 (هر دو شکل را ثبت کنید). چاپ/ویرایش (مثلاً «چاپ اول») روی جلد/سرصفحه چاپ نشده است. ICS: 03.100.70; 35.020. تصویب: «جلسهٔ شمارهٔ ۷۵۷ مورخ ۱۴۰۴/۰۸/۲۵ کارگروه ملی تصویب استانداردهای فنّاوری اطلاعات» (تاریخ به شمسی چاپ شده؛ معادل میلادی چاپ نشده؛ محاسبهٔ استخراج‌کننده: ۲۵ آبان ۱۴۰۴ = 2025-11-16، فقط برای راهنمایی). تاریخ «۱۳۹۶/۱۰/۰۲» در پیشگفتار تاریخ تصویب قانون تقویت و توسعه نظام استاندارد است، نه تاریخ این استاندارد. کمیسیون تدوین (PDF 5-7): رئیس سامان روح‌بخشان (دفتر تدوین استانداردهای ملی سازمان ملی استاندارد ایران؛ دبیر کارگروه متناظر INSO/ISO/TC279)؛ دبیر مهدی عزیزی مهماندوست (رئیس مرکز آموزش مهارت‌های تحول دیجیتال پژوهشگاه ارتباطات و فنّاوری اطلاعات؛ نایب رئیس کارگروه فنی متناظر هوش مصنوعی INSO/ISO/JTC1/SC42)؛ ۲۳ عضو دیگر (شمارش از تصویر). صفحهٔ PDF 4 به فعالیت‌های «مرکز نوآوری و توسعه هوش مصنوعی پژوهشگاه ارتباطات و فنّاوری اطلاعات» اشاره و وبگاه www.itrc.ac.ir را نام می‌برد. مرجع الزامی تنها یک مورد است (بند ۲): «استاندارد ملی ایران ۲۳۶۷۹: سال ۱۴۰۳، فنّاوری اطلاعات - هوش مصنوعی - مفاهیم و اصطلاحات هوش مصنوعی (استاندارد ISO/IEC 22989:2022، همسان)». شمارهٔ ۲۳۶۷۹ و سال ۱۴۰۳ روی تصویر در ۸ جای متن (بند ۲ و مقدمهٔ بند ۳ در PDF 13؛ مدخل ۳-۲ در PDF 14؛ بند ۴-۱ در PDF 19؛ ب-۴-۵ در PDF 45؛ ب-۶-۱-۳ در PDF 52؛ ب-۶-۲-۷ در PDF 59؛ ب-۷-۲ در PDF 61) خوانده شد و در ۷ صفحه با OCR همخوان بود (PDF 59 را OCR به‌خاطر شکستن سطر نشان نداد). ISO/IEC 22989:2022 در کتابنامه جداگانه نیامده. کتابنامه (PDF 79-81) ۲۹ مورد دارد و برای برخی معادل ملی را با شماره آورده است (کلید bibliography_national_equivalents)؛ برای آن‌ها عبارت «براساس استاندارد ... تدوین شده است» آمده و کلمهٔ «همسان» چاپ نشده؛ فقط ۲۳۶۷۹ (بند ۲) صریحاً «همسان» ذکر شده است. [29] = NIST AI RMF 1.0 (2023-01-26). شمارهٔ بندها: در عنوان‌ها معکوس دیداری (مثلاً «۱-۳» = بند ۳.۱) و در ارجاع‌های درون‌متنی راست‌به‌چپ منطقی (مثلاً «(۳-۱)» = ۳.۱)؛ همه به شکل لاتین نقطه‌دار نرمال شد. پیوست‌های الف و ب با برچسب «(الزامی)» و پ و ت «(آگاهی‌دهنده)» (ISO: A,B normative; C,D informative). ساختار: بندهای ۱–۱۰ + پیوست‌ها؛ نظام مدیریت بر ساختار هماهنگ (HLS) تکیه دارد (مقدمه). جابه‌جایی PDF↔چاپی: چاپی = PDF − ۱۲ برای PDF ۱۳ تا ۸۱ (صفحهٔ ۱ چاپی = PDF 13)؛ PDF 3–12 با حروف ابجد (ب، ج، د، ه، و، ز، ح، ط، ی، ک) شماره‌گذاری شده؛ PDF 1–2 بی‌شماره. واژه‌گان ملی چاپ‌شده (برای یکدست‌سازی کتاب): AI = «هوش مصنوعی (هومص)»؛ AI system = «سامانه هومص» (system در بافت مدیریتی «نظام» و در بافت فنّاوری هوش مصنوعی «سامانه» ترجمه شده؛ پانویس صفحهٔ PDF 13)؛ management system = «نظام مدیریت»؛ control = «واپایش» (نه «کنترل»)؛ risk = «مخاطره» (در پیشگفتار/مقدمه «مخاطرات (ریسک‌ها)» نیز آمده)؛ risk treatment = «مواجهه با مخاطره»؛ interested party = «طرف‌های ذی‌نفع»؛ top management = «مدیریت رده‌بالا»؛ governing body = «مرجع حکمران»؛ policy = «خط‌مشی»؛ objective = «هدف»؛ documented information = «اطلاعات مدون»؛ statement of applicability = «بیانیهٔ قابلیت کاربست‌پذیری»؛ AI system impact assessment = «ارزیابی تأثیر سامانه هومص»؛ AI risk assessment = «ارزیابی مخاطره هومص»؛ audit = «ممیزی»؛ conformity/nonconformity = «انطباق/عدم انطباق»؛ corrective action = «اقدام اصلاحی»؛ evaluation = «ارزشیابی»؛ verification/validation = «درستی‌سنجی/اعتبارسنجی»؛ deployment = «به کار اندازی» (با فاصله)؛ human oversight = «نظارت انسانی»؛ provenance = «منشأ»؛ event log = «سوابق رویداد»؛ fairness = «انصاف»؛ accountability = «پاسخگویی»؛ transparency = «شفافیت»؛ explainability = «توضیح‌پذیری»؛ robustness = «استواری»؛ reliability = «اطمینان‌پذیری»؛ trustworthiness = «قابلیت اعتماد»؛ maintainability = «قابلیت نگهداری»؛ accessibility = «دسترس‌پذیری».",
+ "uncertainties": [
+  "ناهمخوانی احتمالی: جلد «(BS/ISO/IEC 42001:2023, IDT)» و پیشگفتار «BS ISO/IEC 42001:2023»؛ هیچ‌کدام «ISO/IEC 42001:2023» بدون BS ننوشته‌اند.",
+  "تاریخ تصویب فقط شمسی است؛ تبدیل میلادی چاپ نشده.",
+  "چاپ/ویرایش چاپ نشده (null).",
+  "تعداد اعضای کمیسیون از شمارش تصویر است (۲۳ عضو + رئیس + دبیر).",
+  "وضعیت هنجاری پیوست‌های الف/ب («الزامی») با متن (الف-۱ «الزامی نیست»؛ ب «توصیه می‌شود») ناهمگون است؛ به uncertainties.md مراجعه شود."
+ ]
+}

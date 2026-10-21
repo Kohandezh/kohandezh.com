@@ -1,0 +1,50 @@
+{
+ "chapter": "P06/C63",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "7772ea780904303a128fd17a86d0a2b2f03df8fb1d93012c20e4da11afbc46ef",
+  "1": "6e0d9449544c055cad7aa5f82a934e17f787263560bb7710f0dfcb86c79e38a1"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 252.45107412338257,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "پیشگفتار و بالای متن (ص ح و ص ۱) «فرایند حفظ حریم اطلاعاتی» را چاپ کرده‌اند",
+      "explanation": "The specific title form «فرایند حفظ حریم اطلاعاتی» for printed pages ح and ۱ is not attested in any cited evidence item. Evidence O23728-006 (foreword, pdf 8/ح) is transcribed only as «front-foreword پیشگفتار»; evidence O23728-008 (clause 1, pdf 10/ص ۱) is transcribed only as «1 هدف و دامنه کاربرد». Neither reproduces this title variant. Evidence I23728-id gives one cover title (فرایند حریم خصوصی داده) and O23728-004 gives one committee-page title (فرایند حریم اطلاعاتی); no third Persian form is evidenced.",
+      "suggested_fix": "Remove the claim about «فرایند حفظ حریم اطلاعاتی» and the assertion of four title forms. Replace with: «صفحهٔ کمیسیون فنی (ص د) «فرایند حریم اطلاعاتی» را چاپ کرده است؛ عنوان انگلیسی Data Privacy Process است؛ بنابراین دست‌کم سه صورت عنوان در چاپ مشاهده می‌شود. صورت‌های دیگر احتمالی در متن بررسی نشده‌اند.»"
+     }
+    ]
+   },
+   {
+    "index": 1,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "number_or_page_error",
+      "quote": "بند ۳ چهل‌وپنج تعریف و فهرست کوته‌نوشت‌ها (۳.۲) دارد",
+      "explanation": "No cited evidence item states the total count of definitions in clause 3. The highest-numbered term in the evidence is T23728-3.1.41 (واپایش امنیتی, pdf 19/printed 10). Many intermediate entries are absent from the evidence (e.g. 3.1.3, 3.1.6–3.1.9, etc.), so the highest term number shown is 41, not 45. The claim of exactly 45 definitions is not supported by any cited item.",
+      "suggested_fix": "Replace «چهل‌وپنج تعریف» with a non-quantified phrasing, e.g. «چندین ده تعریف»، تا زمانی که شمارش دقیق از متن اصلی تأیید شود."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "PII در فهرست کوته‌نوشت‌ها «اطلاعات قابل‌شناسایی به‌صورت شخصی» است (بند ۳.۲، ص ۱۱)",
+      "explanation": "The only evidence item for clause 3.2 is T23728-3.2b, which shows only one abbreviation (DPIA). No evidence item confirms that PII appears in the abbreviations table (3.2) at printed page 11. The full Persian label «اطلاعات قابل شناسایی به‌صورت شخصی (PII)» is supported only in the notes to T23728-3.1.28 (a definition body note), not in the abbreviations section. The specific location claim «(بند ۳.۲، ص ۱۱)» is unattested.",
+      "suggested_fix": "Rephrase to cite the attested location: «یادآوری ۲ ذیل تعریف ۳.۱.۲۸ می‌افزاید که «اطلاعات قابل شناسایی به‌صورت شخصی (PII)» نیز در برخی حوزه‌های قضایی به‌کار می‌رود»؛ ادعای حضور PII در فهرست کوته‌نوشت‌ها (۳.۲، ص ۱۱) را حذف یا با پرانتز تأییدنشده علامت‌گذاری کنید."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:47:27-0400"
+}

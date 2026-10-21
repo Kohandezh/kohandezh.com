@@ -1,0 +1,44 @@
+{
+ "chapter": "P02/C60",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "26c44e1f0b2103b96c8d08c5e92c355c0ccd1146a76c2df975b8a1ba2622637e",
+  "3": "0661a5fe27d580922bc270e3431809d6b15f85dd7dcbd9fce08bdb4ed1e847f6"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 279.1531488895416,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "AI RMF و Playbook. چارچوبی داوطلبانه با چهار کارکرد و برآمدهای پیشنهادی که سازمان به اختیار برمی‌گزیند.",
+      "explanation": "The specific factual claim 'چهار کارکرد' (four functions) about AI RMF is not supported by any cited evidence item in this section. All cited evidence items belong to the three INSO standards; no AI RMF source document is listed under the section's evidence. Even in an editorial-synthesis section, a specific structural claim about an external framework (its number of functions) must be traceable to a cited item.",
+      "suggested_fix": "Either add a cited AI RMF evidence item that prints 'four functions', or remove the count: 'AI RMF و Playbook. چارچوبی داوطلبانه با کارکردهای پیشنهادی که سازمان به اختیار برمی‌گزیند.' If the four functions (MAP/MEASURE/MANAGE/GOVERN) are established elsewhere in the book's evidence set, the cross-reference should be made explicit."
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "تعریف مخاطره در سه استاندارد ملی «اثر (یا تأثیر) عدم قطعیت» است",
+      "explanation": "This formulation is supported for two of the three national standards — INSO 23682 §3.2.2 (evidence T23682-3.2.2: «تأثیر عدم قطعیت بر اهداف») and INSO 42001 §3.7 (evidence T42001-3.7: «اثر عدم قطعیت») — but is not supported for INSO 23733. Evidence S23733-010 confirms that clause 3 of INSO 23733 contains no independent definition; the standard borrows from INSO 13245:1398. Evidence S23733-014 (clause 4 note) explicitly records the operative definition from 13245:1398 as «هر انحراف منفی یا مثبت از اهداف» — a 'deviation from objectives' formulation, materially different from 'effect of uncertainty'. Attributing the 'اثر عدم قطعیت' phrasing to all three national standards conflates two distinct definitional traditions that the evidence itself distinguishes.",
+      "suggested_fix": "Revise to distinguish: 'تعریف مخاطره در INSO 23682 (بند ۳.۲.۲) و INSO 42001 (بند ۳.۷) «تأثیر/اثر عدم قطعیت» است؛ INSO 23733 تعریف مستقلی ندارد (بند ۳) و از INSO 13245:۱۳۹۸ استفاده می‌کند که در یادآوری جدول ۱ آن مخاطره را «هر انحراف منفی یا مثبت از اهداف» تعریف می‌کند.'"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:23:24-0400"
+}

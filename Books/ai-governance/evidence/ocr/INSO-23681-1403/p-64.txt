@@ -1,0 +1,66 @@
+استاندارد ملی ایران شمارة ۲۳۶۸۱ (چاپ اول): ۱۴۰۳
+
+STUHLSATZ A., Lippel J., ZIELKET., Feature Extraction With Deep Neural
+Networks By A Generalized Discriminant Analysis. IEEE Transactions On Neural
+Networks And Learning Systems. 2 0 1 2, 23 (4), 596-608. Doi: 10.1109/Tnnls .20 12
+.2 45
+
+MAC LEN NAN B.J., Connectionist Approaches. International Encyclopaedia Of The
+Social & Behavorial Sciences. 2 0 0 1, 2568-2573. Doi: 1 0 ۰ 10 1 6/ B 0 - 0 8-043076-
+71005 3 7-4
+
+ROSENBLATT F., The Perceptron: A Probabilistic Model For Information Storage
+And Organization In The Brain. Psychological Review. 1958, Nov, 65(6) : 3 86-408.
+Doi: 10.1037/H0042 519
+
+RUM EL HART D., HIN TON G., WILLIAMS R., Learning Representations By
+Back-Propagating Errors. Nature 1986, 323,53 3-536. Doi: 10.1038/32 3 5 3 3a0
+
+ELMAN Jeffrey L., Finding Structure In Time. Cognitive Science. 1990, 14.2, 179-2 1
+1 . Doi: 0 . 1 0 16/0364- 0 2 1 3 (9 0)90 0 02-E
+
+Hochreiter Sepp, S C H M IDHUBER Jurgen, Long Short-Term Memory. Neural
+Computation. 1997, 9.8, 1735 -1780. Doi: 1 0 . 1 162/Neco.1997.9. 5
+
+LECUNY, Bottou L, ‏ظ‎ E Ngio Y, HA F FN ER P, Gradient-Based Learning Applied
+To Document Recognition. Proceedings Of The IEEE. 1998, 86(11), 2 2 78-2324. Doi:
+10.1 109/5 .726791
+
+HECKERMAN D., A Tutorial On Learning With Bayesian Networks. Innovations In
+
+Bayesian Networks. Studies In Computational Intelligence, 156. Berlin, Heidelberg:
+Springer. 2 0 0 8 . Doi: 10.1007/978-3-540-85066-3_3
+
+FAWCETT T., RO C Graphs: Notes And Practical Considerations For Researchers.
+Machine Learning. 2 0 0 4, 31, 1-38.
+
+DELGADO R, Trnau X. A., Why Cohen's Kappa Should Be Avoided As Performance
+Measure In Classification. Plos One. 2 0 19, 149) . Doi: 10.137 1
+Ournal.Pone.0222 916.
+
+GILES M., Foody. Explaining The Unsuitability Of The Kappa Coefficient In The
+Assessment And Comparison Of The Accuracy Of Thematic Maps Obtained By Image
+Classification. Remote Sensing Of Environment. 2020, 239. Doi: 10.10 16/J .Rse. 2 0
+19. 1 0
+
+ISO/IEC 19944-1 : 2020, Cloud Computing And Distributed Platforms - Data Flow,
+Data Categories And Data Use - Part 1: Fundamentals
+
+YANG Q., ZHANG Y., DAI W., PAN S ., Transfer Learning. Cambridge : Cambridge
+University Press. 2020. Doi:L0.1017/ 9781139061773
+
+ISO/IEC 20889, Privacy Enhancing Data De-Identification Terminology And
+Classification Of Techniques
+
+Open neural network exchange. https ://onnx.aif
+Neural network exchange format. https ://www.khronos.org/nnef
+
+ISO/IEC 17789, Information technology - Cloud computing - Reference architecture
+
+۵۵
+
+11
+
+[2]
+
+(3]

@@ -1,0 +1,37 @@
+{
+ "chapter": "P01/C56",
+ "sections": [
+  0,
+  3
+ ],
+ "section_shas": {
+  "0": "d3e7e87bfae732e1ee0a2ff3a6b83a0f7a60a5fbedea3c4395fada21551c13fb",
+  "3": "eedb613f665c4ddd7f9ec7b14407d318e43e4334cfdc7779cf0316095f8b4159"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 421.33859419822693,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "۳.۱.۲۶ (ص ۸) و ۳.۱.۳۱ (ص ۹) مدل دادهٔ منطقی را «۳-۱-۱۰» می‌نامند",
+      "explanation": "The section applies the phrase «مدل دادهٔ منطقی» uniformly to both 3.1.26 and 3.1.31. Evidence T23683-3.1.26 does use «مدل داده منطقی (۳-۱-۱۰)», but evidence T23683-3.1.31 uses «مدل داده‌ای (۳-۱-۱۰)» — not «مدل دادهٔ منطقی». Attributing the same phrasing to 3.1.31 is not supported by its cited evidence.",
+      "suggested_fix": "Differentiate the two: «۳.۱.۲۶ (ص ۸) عبارت «مدل داده منطقی» را با «۳-۱-۱۰» ارجاع می‌دهد و ۳.۱.۳۱ (ص ۹) عبارت «مدل داده‌ای» را با «۳-۱-۱۰» ارجاع می‌دهد؛ هر دو باید ۳.۱.۸ را نشانه می‌رفتند.»"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:34:59-0400"
+}

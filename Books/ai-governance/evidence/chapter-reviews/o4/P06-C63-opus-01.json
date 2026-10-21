@@ -1,0 +1,44 @@
+{
+ "chapter": "P06/C63",
+ "sections": [
+  1,
+  3
+ ],
+ "section_shas": {
+  "1": "255ceece87749a2f87ca460941fe4440cbd0b4017332138527e51720cb7c17d3",
+  "3": "0f9f719dca2ae999c5a64c3858bd8ed33d66ef1b86500172bf143a6410d34765"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 373.37359523773193,
+ "result": {
+  "sections": [
+   {
+    "index": 1,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "attribution",
+      "quote": "اصطلاحات رسمی: واژگان حریم خصوصی در INSO 23728",
+      "explanation": "The section references 'INSO 23728:1403' throughout (title and all six blockquote attributions) but never mentions the equivalent international standard IEEE Std 7002:2022. Evidence I23728-id prints 'Identical with IEEE Std 7002:2022' on the cover. Hard content rule 6 requires both identifiers to be given. If this is the first section of the chapter, the dual identity must be established here; if an earlier introductory section establishes it, this is moot — but the reviewer should verify.",
+      "suggested_fix": "At first mention in this section (e.g. the opening paragraph), add the dual identifier: «INSO 23728:1403 (معادل یکسان IEEE Std 7002:2022)». Blockquote attributions may remain INSO-only once the equivalence is established."
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "other",
+      "quote": "متن دایره‌های شکل ۱ را عواملی می‌داند که «باید» هنگام شناسایی الزامات سازمانی در نظر گرفته شوند",
+      "explanation": "The section writes 'الزامات سازمانی' (organizational requirements), dropping 'حریم خصوصی' (privacy). Evidence S23728-029 reads 'الزامات حریم خصوصی سازمانی' (organizational privacy requirements). Although the chapter context is privacy, the omission broadens the scope of the 'shall' statement beyond what the standard says.",
+      "suggested_fix": "Change 'الزامات سازمانی' to 'الزامات حریم خصوصی سازمانی' to match the printed text."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T07:19:01-0400"
+}

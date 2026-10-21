@@ -1,0 +1,36 @@
+{
+ "chapter": "P03/C61",
+ "sections": [
+  4
+ ],
+ "section_shas": {
+  "4": "e1d375e5b6214d7358c71ec60e4a37feaec270608237bb07b7662f4a646e733c"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 324.1454737186432,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "ماژول هویت‌یابی شخصی (بند ۵-۲-۳-۱) با داده‌های زیست‌شناختی رویداد حساس‌اند",
+      "explanation": "The section uses the English loanword «ماژول» for the personal identification component. Evidence S23685-064 (clause 5-2-4-2) explicitly uses the INSO standard term «پودمان» in the phrase «پودمان‌های شناسایی محتوا و هویت‌یابی شخصی». Per the terminology rules, new text must use INSO-printed terms; «ماژول» is not the printed form in the cited document.",
+      "suggested_fix": "Replace «ماژول هویت‌یابی شخصی» with «پودمان هویت‌یابی شخصی» (پودمان as printed in S23685-064)."
+     },
+     {
+      "type": "other",
+      "quote": "ماژول هویت‌یابی شخصی (بند ۵-۲-۳-۱) با داده‌های زیست‌شناختی رویداد حساس‌اند",
+      "explanation": "«داده‌های زیست‌شناختی» (biological/life-science data) is the wrong characterisation for clause 5-2-3-1. Per S23685-059, that clause covers درستی‌سنجی اسم رمز (password verification) and اثر انگشت افزاره (device fingerprint) in addition to face identity, voice, and fingerprint. Password and device fingerprint are not biological data. The correct Persian term for the biometric subset is «زیست‌سنجی» (biometric), not «زیست‌شناختی» (belonging to biology as a science), and even «زیست‌سنجی» would still exclude password and device fingerprint. The overall characterisation is meaning-changing.",
+      "suggested_fix": "Replace «با داده‌های زیست‌شناختی» with a phrase faithful to S23685-059, e.g. «با داده‌های هویتی (از جمله اسم رمز، اثر انگشت افزاره، هویت چهره، صدا و اثر انگشت)»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T06:19:47-0400"
+}

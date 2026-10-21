@@ -1,0 +1,38 @@
+{
+ "chapter": "P02/C60",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "20f1c5c355eb79fe2702be2f7099f84340dc24e0996fed928d4fa153ad8210a3",
+  "1": "f2d3731a6fb36439dadca96163f6b64da3e49048c25647513fa16270c8ad9066"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 371.94637989997864,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 1,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "PARTIAL (۶.۵.۲؛ هفت گزینه در برابر چهار گزینهٔ NIST)",
+      "explanation": "The claim «چهار گزینهٔ NIST» (four NIST risk-treatment options) is a factual statement about the NIST AI RMF / Playbook. None of the cited evidence items — all drawn from INSO 23682, INSO 23733, and INSO 42001 — contain or verify the number of NIST treatment options. The INSO 23733 count of seven options IS supported by S23733-115, but the comparative NIST figure is unverifiable from the supplied evidence.",
+      "suggested_fix": "Remove «در برابر چهار گزینهٔ NIST» from the cell, retaining only «PARTIAL (۶.۵.۲؛ هفت گزینه)» for the INSO side. If the NIST count is important, add a bracketed cross-reference to the MANAGE 1.3 chapter (KDJ-AI-2026E2-P02-C10-S03) where the comparison was established, e.g.: «PARTIAL (۶.۵.۲؛ هفت گزینه؛ مقایسه با NIST: ← MANAGE 1.3)».",
+      "verdict": "CONFIRMED"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:24:56-0400"
+}

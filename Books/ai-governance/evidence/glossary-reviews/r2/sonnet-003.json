@@ -1,0 +1,115 @@
+{
+ "keys": [
+  "overfitting",
+  "underfitting",
+  "backpropagation",
+  "learning rate",
+  "class",
+  "cluster",
+  "feature",
+  "distance",
+  "unlabelled",
+  "use of ai",
+  "oversight",
+  "benefit"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 93.1510603427887,
+ "result": {
+  "verdicts": [
+   {
+    "key": "overfitting",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "underfitting",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "backpropagation",
+    "verdict": "AGREE",
+    "issues": [
+     {
+      "type": "orthography",
+      "explanation": "Printed form «پس انتشار» uses a space rather than ZWNJ; Rule 4 instructs to keep official forms as printed even if unusual, so the space form is retained correctly. No change needed — noted for awareness only.",
+      "suggested_fix": "No change; the proposed entry faithfully reproduces the printed spacing."
+     }
+    ],
+    "confidence": 0.95
+   },
+   {
+    "key": "learning rate",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "class",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "cluster",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "attribution",
+      "explanation": "The definition_fa correctly carries two separate, attributed definitions (INSO 23681 §3.3.2 and INSO 23683 §3.1.4), but editor_note_fa only names «INSO 23681 بند 3.3.2». The note is therefore incomplete and could mislead a downstream editor into thinking the INSO 23683 sense is missing.",
+      "suggested_fix": "Expand editor_note_fa to: «اصطلاح تعریف‌شده در INSO 23681 بند 3.3.2 و INSO 23683 بند 3.1.4؛ بازبینی‌نشده.»"
+     }
+    ],
+    "confidence": 0.97
+   },
+   {
+    "key": "feature",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "distance",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "unlabelled",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "use of ai",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The printed term-header is «استفاده از هومص (هوش مصنوعی)», meaning the standard leads with the abbreviated form «هومص» and gives the full form as a parenthetical gloss. The proposed entry silently inverts this: it makes the full form the preferred_fa and relegates «هومص» to alternatives_fa, while leaving the acronym field empty. Under Rule 1, the preferred_fa should match what the standard prints as its primary head-term, which is the abbreviated form. At minimum, the acronym field must be populated.",
+      "suggested_fix": "Set acronym to «هومص». Either (a) keep preferred_fa as «استفاده از هوش مصنوعی» (full form, acceptable if the book consistently expands acronyms as preferred terms) and move «استفاده از هومص» from alternatives_fa into the alternatives field while setting acronym = «هومص»; or (b) to be strictly faithful to the printed head-term, set preferred_fa = «استفاده از هومص» and alternatives_fa = [«استفاده از هوش مصنوعی»]. Either way the acronym field must not be empty."
+     }
+    ],
+    "confidence": 0.95
+   },
+   {
+    "key": "oversight",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "benefit",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-17T23:57:05-0400"
+}

@@ -1,0 +1,37 @@
+{
+ "chapter": "P06/C63",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "7ab7b46a076091c46f9df6d612911a683062379ace86f0fdbb3f28c193126905",
+  "1": "dfc061dac174353ef41be2375cb35b785a70b9f744ea8c368ba9fa3ebe057884"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 243.8148078918457,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "پیشگفتار و بالای متن (ص ح و ص ۱) «فرایند حفظ حریم اطلاعاتی» را چاپ کرده‌اند",
+      "explanation": "Evidence item U23728-01 confirms only that four different Persian title forms appear across four pages (PDF 1, PDF 4, PDF 8, PDF 10). It does not identify which specific title form is printed on ص ح (pdf 8) or ص ۱ (pdf 10). The cover form is identified as «فرایند حریم خصوصی داده» (I23728-id) and the committee-page form as «فرایند حریم اطلاعاتی» (O23728-004), but no cited evidence names the forms on the other two pages. The specific claim that «فرایند حفظ حریم اطلاعاتی» is the form on both those pages is unsupported.",
+      "suggested_fix": "Replace with: «ص ح (پیشگفتار) و ص ۱ (بالای متن) صورت سومی و چهارمی از عنوان دارند که در مدارک تأیید‌شده مستقیماً خوانده نشده است (رک. U23728-01).» Do not name the form until a page-image reading confirms it."
+     }
+    ]
+   },
+   {
+    "index": 1,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:22:48-0400"
+}

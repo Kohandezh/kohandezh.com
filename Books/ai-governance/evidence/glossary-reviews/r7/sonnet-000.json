@@ -1,0 +1,31 @@
+{
+ "keys": [
+  "risk tolerance",
+  "artificial intelligence management system"
+ ],
+ "shas": {
+  "risk tolerance": "a12bf597cda5881e6ae38201faab6264a88cc1e7608cedd7797ab5ccddb4a684",
+  "artificial intelligence management system": "034f46cb11f3eb5d751c32bfa9d333270b4230e7d13effc7bd74eace1a46a0db"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 71.31733417510986,
+ "result": {
+  "verdicts": [
+   {
+    "key": "risk tolerance",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.93
+   },
+   {
+    "key": "artificial intelligence management system",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.95
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:15:18-0400"
+}

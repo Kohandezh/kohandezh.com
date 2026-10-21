@@ -1,0 +1,103 @@
+{
+ "keys": [
+  "privacy",
+  "risk tolerance",
+  "risk management",
+  "measure",
+  "residual risk",
+  "monitoring",
+  "compliance",
+  "personally identifiable information",
+  "gather",
+  "ai system impact assessment"
+ ],
+ "shas": {
+  "privacy": "f32b63bf666b3c65a6891a6d76850eb9c9c695d95a3abfff67d75ec1161a4b0f",
+  "risk tolerance": "9b3fc7d9e813a10d0cfd58a0c747f7cf03a2f42eaad4af68d83c3932a8cc06cb",
+  "risk management": "88d0d36a690ddc5a04cf62a0a8d2866a0314abd15f6467433c0478b8bb913c1f",
+  "measure": "3a31fe80ab5f70f52ed632b843c311dcd2bd0af1315056a94a768aa6716099ab",
+  "residual risk": "ae6d99414fdbaeb8dc0d042799ecb1e955dc1ee12a73c13dcf48c03cd495368d",
+  "monitoring": "3b9aed58e42d8ffacda260ea1c19bc677ddfc1791684c04e4441d03d0c9b1354",
+  "compliance": "1d12643ce5ffaea2487d809ffda3c214373b65ad409c1197ec7d12613205653d",
+  "personally identifiable information": "c83a0185978798bb3a8798b3056712da4f61badce485516fbe2ea3a6f7fffdc3",
+  "gather": "9cd37d61728f30ae08ec1b418c7ba1aa098d176d101ac151e3e4867f56a5468f",
+  "ai system impact assessment": "edf224dbb33231deab5b2c0eac20bb2aed03b808df8e1ba1f34de996e33aea2d"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 301.1191108226776,
+ "result": {
+  "verdicts": [
+   {
+    "key": "privacy",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "attribution",
+      "explanation": "The editor note states «عنوان رسمی … و متن بند ۴.۱ «حریم خصوصی» را به‌کار می‌برند», attributing use of «حریم خصوصی» to clause 4.1. The printed evidence for clause 4.1 shows only «حریم اطلاعاتی» in both the info-box heading and the visible body text; «حریم خصوصی» does not appear in the evidence record for that clause. The standard's title alone («فرایند حریم خصوصی داده») is sufficient to support the preferred term.",
+      "suggested_fix": "Remove the claim that clause 4.1 uses «حریم خصوصی» from the editor note, or qualify it as unconfirmed by the evidence record. The title of INSO 23728 is the sole confirmed printed source for «حریم خصوصی» in this entry."
+     }
+    ]
+   },
+   {
+    "key": "risk tolerance",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "invented_claim",
+      "explanation": "«رواداری ریسک» is listed in alternatives_fa, but the editor note explicitly states it is not printed in any of the 9 INSO standards consulted — it is a constructed retrieval/search form derived from NIST-text usage of the word «ریسک». Listing it alongside INSO-printed forms «رواداری مخاطره» and «سطح رواداری مخاطره» in the alternatives field implies the same documentary status, which is false.",
+      "suggested_fix": "Remove «رواداری ریسک» from alternatives_fa. If its existence as a search form must be documented, confine it to the editor note with an explicit disclaimer that it is not printed in any INSO standard."
+     }
+    ]
+   },
+   {
+    "key": "risk management",
+    "verdict": "DISAGREE",
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The project normalization policy is explicit: 'a printed parenthetical gloss stays part of the headword and the form without the gloss is an alias.' The cover of INSO 23733 prints «مدیریت مخاطره (ریسک)» — the parenthetical form must therefore be the headword (preferred_fa). «مدیریت مخاطره» (the clause-4 body-text form, without the parenthetical) must be the alias. The proposed entry inverts this: it places «مدیریت مخاطره» as preferred_fa and demotes «مدیریت مخاطره (ریسک)» to an alternative.",
+      "suggested_fix": "Set preferred_fa to «مدیریت مخاطره (ریسک)» (the printed cover form with the parenthetical gloss) and move «مدیریت مخاطره» to alternatives_fa, consistently with the normalization policy applied to all other parenthetical-bearing entries."
+     }
+    ]
+   },
+   {
+    "key": "measure",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "residual risk",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "monitoring",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "compliance",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "personally identifiable information",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "gather",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "ai system impact assessment",
+    "verdict": "AGREE",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:36:28-0400"
+}

@@ -1,0 +1,50 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "45366fc22e90b976f79cd4c137f513672cfd9f8340f65ba89fae382342d079e3",
+  "5": "a9cb3c661b857ec4e39e642508fadb10276930bec3c6aa1ce8c02199ea37f55a"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 513.5909440517426,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "طبق نکتهٔ ۶.۱.۴ (ص ۱۴) می‌تواند الزام کند که ارزیابی‌های تأثیر ویژهٔ رشته‌های خاص (ایمنی، حریم خصوصی یا امنیت) بخشی از فعالیت‌های کلی مدیریت مخاطره انجام شود.",
+      "explanation": "The paraphrase drops the qualifying condition «در برخی موارد (مانند سامانه‌های هومص ضروری برای ایمنی یا حریم خصوصی)» present in S42001-067. Without this qualifier, the statement reads as a general permission, whereas the evidence limits it to specific cases such as safety-critical or privacy-critical AI systems. This broadens the scope beyond what the note states.",
+      "suggested_fix": "Restore the qualifier: «طبق نکتهٔ ۶.۱.۴ (ص ۱۴) در برخی موارد (مانند سامانه‌های هومص ضروری برای ایمنی یا حریم خصوصی) سازمان می‌تواند الزام کند که ارزیابی‌های تأثیر ویژهٔ رشته‌های خاص … بخشی از فعالیت‌های کلی مدیریت مخاطره انجام شود.»"
+     },
+     {
+      "type": "other",
+      "quote": "(واپایش‌های مرتبط در A.5)",
+      "explanation": "Evidence S42001-066 reads «واپایش‌های مربوط در الف-۵ جدول الف-۱». The section writes only 'A.5' without specifying 'جدول الف-۱'. Since the heading index shows no standalone clause A.5 (only A, A.1, and Table A.1), the bare reference 'A.5' could mislead the reader into looking for a non-existent clause rather than a group within Table A.1.",
+      "suggested_fix": "Change to «(واپایش‌های مرتبط در الف-۵ جدول الف-۱)» to match the evidence reference."
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "other",
+      "quote": "اثربخشی آن‌ها را پایش و در صورت نرسیدن به نتیجه، اقدام اصلاحی را در نظر بگیرد",
+      "explanation": "Evidence S42001-086 says «در صورت عدم تحقق نتایج موردانتظار» (if expected results are not achieved), which covers partial achievement that falls short of expectations. The section's «در صورت نرسیدن به نتیجه» (if results are not reached) implies a total failure to produce results, which is a narrower and different meaning. This imprecision could mislead implementers about the threshold for triggering corrective action.",
+      "suggested_fix": "Replace with «در صورت عدم تحقق نتایج موردانتظار، اقدام اصلاحی را در نظر بگیرد» to match the standard's phrasing."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T07:13:46-0400"
+}

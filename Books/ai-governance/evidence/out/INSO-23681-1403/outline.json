@@ -1,0 +1,766 @@
+{
+ "source_id": "INSO-23681-1403",
+ "notes": "سطر هر بند از «فهرست مندرجات» (صفحه‌های PDF 6-7) و زیربندهای عمیق‌تر از سرتیترهای صفحات استخراج شد؛ نوع normative/informative طبقه‌بندی ما است (متن چاپی کل سند را «چارچوب» و پیوست الف را «آگاهی‌دهنده» می‌نامد؛ بندهای ۴ تا ۸ برچسب صریح نوع ندارند). شمارهٔ بندها در چاپ فارسی به‌صورت وارونه (مثلاً ۱-۲-۶ برای 6.2.1) دیده می‌شود؛ در اینجا به شکل 6.2.1 نوشته شده‌اند. سرتیترهای انگلیسی در بند ۳ آمده‌اند نه در سایر بندها. پیوست‌ها: فقط الف. TOC ردیف «۴ کوته‌نوشت‌ها» را صفحهٔ چاپی ۵ می‌گوید.",
+ "clauses": [
+  {
+   "number": null,
+   "heading_fa": "جلد (استاندارد ملی ایران ۲۳۶۸۱، چاپ اول، ۱۴۰۳)",
+   "heading_en_if_printed": "Framework for Artificial Intelligence (AI) systems using Machine Learning (ML)",
+   "type": "front",
+   "pdf_page": 1,
+   "printed_page": null
+  },
+  {
+   "number": null,
+   "heading_fa": "آشنایی با سازمان ملی استاندارد ایران",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 3,
+   "printed_page": "ج"
+  },
+  {
+   "number": null,
+   "heading_fa": "کمیسیون فنی تدوین استاندارد «چارچوب سامانه‌های هوش مصنوعی با استفاده از یادگیری ماشین»",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 4,
+   "printed_page": "د"
+  },
+  {
+   "number": null,
+   "heading_fa": "فهرست مندرجات",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 6,
+   "printed_page": "و"
+  },
+  {
+   "number": null,
+   "heading_fa": "پیش‌گفتار",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 8,
+   "printed_page": "ح"
+  },
+  {
+   "number": null,
+   "heading_fa": "مقدمه",
+   "heading_en_if_printed": null,
+   "type": "front",
+   "pdf_page": 9,
+   "printed_page": "ط"
+  },
+  {
+   "number": "1",
+   "heading_fa": "هدف و دامنهٔ کاربرد",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 10,
+   "printed_page": "1"
+  },
+  {
+   "number": "2",
+   "heading_fa": "مراجع الزامی",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 10,
+   "printed_page": "1"
+  },
+  {
+   "number": "3",
+   "heading_fa": "اصطلاحات و تعاریف",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 10,
+   "printed_page": "1"
+  },
+  {
+   "number": "3.1",
+   "heading_fa": "توسعه و به‌کارگیری مدل",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 11,
+   "printed_page": "2"
+  },
+  {
+   "number": "3.2",
+   "heading_fa": "ابزارها",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 12,
+   "printed_page": "3"
+  },
+  {
+   "number": "3.3",
+   "heading_fa": "داده",
+   "heading_en_if_printed": null,
+   "type": "normative",
+   "pdf_page": 13,
+   "printed_page": "4"
+  },
+  {
+   "number": "4",
+   "heading_fa": "کوته‌نوشت‌ها",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 14,
+   "printed_page": "5"
+  },
+  {
+   "number": "5",
+   "heading_fa": "نمای کلی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 15,
+   "printed_page": "6"
+  },
+  {
+   "number": "6",
+   "heading_fa": "سامانه یادگیری ماشین",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 16,
+   "printed_page": "7"
+  },
+  {
+   "number": "6.1",
+   "heading_fa": "نمای کلی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 16,
+   "printed_page": "7"
+  },
+  {
+   "number": "6.2",
+   "heading_fa": "وظیفه",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 17,
+   "printed_page": "8"
+  },
+  {
+   "number": "6.2.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 17,
+   "printed_page": "8"
+  },
+  {
+   "number": "6.2.2",
+   "heading_fa": "وایازش",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 18,
+   "printed_page": "9"
+  },
+  {
+   "number": "6.2.3",
+   "heading_fa": "طبقه‌بندی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 18,
+   "printed_page": "9"
+  },
+  {
+   "number": "6.2.4",
+   "heading_fa": "خوشه‌بندی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 19,
+   "printed_page": "10"
+  },
+  {
+   "number": "6.2.5",
+   "heading_fa": "بازشناسی ناهنجاری",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 19,
+   "printed_page": "10"
+  },
+  {
+   "number": "6.2.6",
+   "heading_fa": "کاهش ابعاد",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 19,
+   "printed_page": "10"
+  },
+  {
+   "number": "6.2.7",
+   "heading_fa": "سایر وظایف",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 20,
+   "printed_page": "11"
+  },
+  {
+   "number": "6.3",
+   "heading_fa": "مدل",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 20,
+   "printed_page": "11"
+  },
+  {
+   "number": "6.4",
+   "heading_fa": "داده",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 22,
+   "printed_page": "13"
+  },
+  {
+   "number": "6.5",
+   "heading_fa": "ابزارها",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 24,
+   "printed_page": "15"
+  },
+  {
+   "number": "6.5.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 24,
+   "printed_page": "15"
+  },
+  {
+   "number": "6.5.2",
+   "heading_fa": "آماده‌سازی داده",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 24,
+   "printed_page": "15"
+  },
+  {
+   "number": "6.5.3",
+   "heading_fa": "دسته‌های الگوریتم‌های ML",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 24,
+   "printed_page": "15"
+  },
+  {
+   "number": "6.5.3.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 24,
+   "printed_page": "15"
+  },
+  {
+   "number": "6.5.3.2",
+   "heading_fa": "شبکه‌های عصبی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 26,
+   "printed_page": "17"
+  },
+  {
+   "number": "6.5.3.2.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 26,
+   "printed_page": "17"
+  },
+  {
+   "number": "6.5.3.2.2",
+   "heading_fa": "شبکه‌های عصبی پیش‌خور",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 27,
+   "printed_page": "18"
+  },
+  {
+   "number": "6.5.3.2.3",
+   "heading_fa": "شبکه‌های عصبی بازگشتی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 27,
+   "printed_page": "18"
+  },
+  {
+   "number": "6.5.3.2.3.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 27,
+   "printed_page": "18"
+  },
+  {
+   "number": "6.5.3.2.3.2",
+   "heading_fa": "شبکه‌های حافظه کوتاه‌مدت بلند",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 28,
+   "printed_page": "19"
+  },
+  {
+   "number": "6.5.3.2.4",
+   "heading_fa": "شبکه عصبی همامیخته (پیچشی)",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 29,
+   "printed_page": "20"
+  },
+  {
+   "number": "6.5.3.2.5",
+   "heading_fa": "پرسپترون ساختاریافته",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 30,
+   "printed_page": "21"
+  },
+  {
+   "number": "6.5.3.2.6",
+   "heading_fa": "ماشین بولتزمن عمیق",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 30,
+   "printed_page": "21"
+  },
+  {
+   "number": "6.5.3.2.7",
+   "heading_fa": "شبکه محفظه‌ای",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 30,
+   "printed_page": "21"
+  },
+  {
+   "number": "6.5.3.2.8",
+   "heading_fa": "شبکه‌های مولد تخاصمی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 30,
+   "printed_page": "21"
+  },
+  {
+   "number": "6.5.3.3",
+   "heading_fa": "شبکه بیزی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 31,
+   "printed_page": "22"
+  },
+  {
+   "number": "6.5.3.4",
+   "heading_fa": "الگوریتم بیزی ساده",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 31,
+   "printed_page": "22"
+  },
+  {
+   "number": "6.5.3.5",
+   "heading_fa": "ماشین بردار پشتیبان",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 31,
+   "printed_page": "22"
+  },
+  {
+   "number": "6.5.3.6",
+   "heading_fa": "درخت تصمیم",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 32,
+   "printed_page": "23"
+  },
+  {
+   "number": "6.5.4",
+   "heading_fa": "روش‌های بهینه‌سازی یادگیری ماشین",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 32,
+   "printed_page": "23"
+  },
+  {
+   "number": "6.5.4.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 32,
+   "printed_page": "23"
+  },
+  {
+   "number": "6.5.4.2",
+   "heading_fa": "روش‌های کاهش گرادیان",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 33,
+   "printed_page": "24"
+  },
+  {
+   "number": "6.5.4.3",
+   "heading_fa": "روش نیوتون",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 33,
+   "printed_page": "24"
+  },
+  {
+   "number": "6.5.4.4",
+   "heading_fa": "گرادیان مزدوج",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 34,
+   "printed_page": "25"
+  },
+  {
+   "number": "6.5.4.5",
+   "heading_fa": "فرایندهای گاوسی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 34,
+   "printed_page": "25"
+  },
+  {
+   "number": "6.5.4.6",
+   "heading_fa": "برازش منحنی کمینه مربعات",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 34,
+   "printed_page": "25"
+  },
+  {
+   "number": "6.5.4.7",
+   "heading_fa": "تخمین بیشینه درست‌نمایی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 34,
+   "printed_page": "25"
+  },
+  {
+   "number": "6.5.4.8",
+   "heading_fa": "بیشینه‌سازی امید ریاضی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 34,
+   "printed_page": "25"
+  },
+  {
+   "number": "6.5.5",
+   "heading_fa": "سنجه‌های ارزشیابی یادگیری ماشین",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 35,
+   "printed_page": "26"
+  },
+  {
+   "number": "6.5.5.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 35,
+   "printed_page": "26"
+  },
+  {
+   "number": "6.5.5.2",
+   "heading_fa": "دقت، بازیابی، حساسیت و ویژگی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 35,
+   "printed_page": "26"
+  },
+  {
+   "number": "6.5.5.3",
+   "heading_fa": "امتیاز F1",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 36,
+   "printed_page": "27"
+  },
+  {
+   "number": "6.5.5.4",
+   "heading_fa": "درستی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 36,
+   "printed_page": "27"
+  },
+  {
+   "number": "6.5.5.5",
+   "heading_fa": "مشخصه عملکرد گیرنده و سطح زیر نمودار",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 37,
+   "printed_page": "28"
+  },
+  {
+   "number": "6.5.5.6",
+   "heading_fa": "ماتریس درهم‌ریختگی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 39,
+   "printed_page": "30"
+  },
+  {
+   "number": "6.5.5.7",
+   "heading_fa": "ضریب کاپا",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 39,
+   "printed_page": "30"
+  },
+  {
+   "number": "6.5.5.8",
+   "heading_fa": "ضریب همبستگی متیو",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 40,
+   "printed_page": "31"
+  },
+  {
+   "number": "7",
+   "heading_fa": "رویکردهای یادگیری ماشین",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 40,
+   "printed_page": "31"
+  },
+  {
+   "number": "7.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 40,
+   "printed_page": "31"
+  },
+  {
+   "number": "7.2",
+   "heading_fa": "یادگیری ماشین نظارتی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 42,
+   "printed_page": "33"
+  },
+  {
+   "number": "7.3",
+   "heading_fa": "یادگیری ماشین غیر نظارتی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 43,
+   "printed_page": "34"
+  },
+  {
+   "number": "7.4",
+   "heading_fa": "یادگیری ماشین نیمه نظارتی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 44,
+   "printed_page": "35"
+  },
+  {
+   "number": "7.5",
+   "heading_fa": "یادگیری ماشین خود نظارتی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 45,
+   "printed_page": "36"
+  },
+  {
+   "number": "7.6",
+   "heading_fa": "یادگیری ماشین تقویتی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 45,
+   "printed_page": "36"
+  },
+  {
+   "number": "7.7",
+   "heading_fa": "یادگیری انتقالی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 47,
+   "printed_page": "38"
+  },
+  {
+   "number": "8",
+   "heading_fa": "زنجیره یادگیری ماشین",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 48,
+   "printed_page": "39"
+  },
+  {
+   "number": "8.1",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 48,
+   "printed_page": "39"
+  },
+  {
+   "number": "8.2",
+   "heading_fa": "دادهبرداری",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 50,
+   "printed_page": "41"
+  },
+  {
+   "number": "8.3",
+   "heading_fa": "آماده‌سازی داده",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 50,
+   "printed_page": "41"
+  },
+  {
+   "number": "8.4",
+   "heading_fa": "مدل‌سازی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 53,
+   "printed_page": "44"
+  },
+  {
+   "number": "8.5",
+   "heading_fa": "اعتبارسنجی و درستی‌سنجی",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 56,
+   "printed_page": "47"
+  },
+  {
+   "number": "8.6",
+   "heading_fa": "استقرار مدل",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 56,
+   "printed_page": "47"
+  },
+  {
+   "number": "8.7",
+   "heading_fa": "عملیات",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 57,
+   "printed_page": "48"
+  },
+  {
+   "number": "8.8",
+   "heading_fa": "نمونه فرایند یادگیری ماشین مبتنی بر زنجیره یادگیری ماشین",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 58,
+   "printed_page": "49"
+  },
+  {
+   "number": "الف",
+   "heading_fa": "پیوست الف (آگاهی‌دهنده) نمونه بیانیه‌های استفاده از داده و داده‌شارها برای فرایند یادگیری نظارتی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 61,
+   "printed_page": "52"
+  },
+  {
+   "number": "الف-۱",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 61,
+   "printed_page": "52"
+  },
+  {
+   "number": "الف-۲",
+   "heading_fa": "داده‌شارها در فرایند یادگیری ماشین نظارتی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 61,
+   "printed_page": "52"
+  },
+  {
+   "number": "الف-۲-۱",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 61,
+   "printed_page": "52"
+  },
+  {
+   "number": "الف-۲-۲",
+   "heading_fa": "توصیف‌های داده‌شارها",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 61,
+   "printed_page": "52"
+  },
+  {
+   "number": "الف-۲-۲-۱",
+   "heading_fa": "داده‌شارها ۱",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 61,
+   "printed_page": "52"
+  },
+  {
+   "number": "الف-۲-۲-۲",
+   "heading_fa": "داده‌شارها ۲",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 61,
+   "printed_page": "52"
+  },
+  {
+   "number": "الف-۲-۲-۳",
+   "heading_fa": "داده‌شارها ۳",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 62,
+   "printed_page": "53"
+  },
+  {
+   "number": "الف-۳",
+   "heading_fa": "استفاده از داده برای یادگیری ماشین",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 62,
+   "printed_page": "53"
+  },
+  {
+   "number": "الف-۳-۱",
+   "heading_fa": "مفاهیم کلی",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 62,
+   "printed_page": "53"
+  },
+  {
+   "number": "الف-۳-۲",
+   "heading_fa": "نمونه بیانیه استفاده از داده الف",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 62,
+   "printed_page": "53"
+  },
+  {
+   "number": "الف-۳-۳",
+   "heading_fa": "نمونه بیانیه استفاده از داده ب",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 62,
+   "printed_page": "53"
+  },
+  {
+   "number": "الف-۳-۴",
+   "heading_fa": "نمونه بیانیه استفاده از داده پ",
+   "heading_en_if_printed": null,
+   "type": "annex",
+   "pdf_page": 63,
+   "printed_page": "54"
+  },
+  {
+   "number": null,
+   "heading_fa": "کتابنامه",
+   "heading_en_if_printed": null,
+   "type": "informative",
+   "pdf_page": 64,
+   "printed_page": "55"
+  }
+ ]
+}

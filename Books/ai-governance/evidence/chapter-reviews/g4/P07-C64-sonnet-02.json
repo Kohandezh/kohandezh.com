@@ -1,0 +1,37 @@
+{
+ "chapter": "P07/C64",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "c716bb71751219e57045b171d1db8743f03fe0959fda376aec686f15de3a54c6",
+  "3": "69671add123122cf4460d7eedb6b941075ce7c1ce90e7ce46ed07be97351106a"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 352.5326988697052,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "سرپرست داده | کارمند دارای مسئولیت اداری یا عملیاتی دربارهٔ داده‌های سازمان؛ در چاپ «Data Custodian»",
+      "explanation": "No cited evidence item supplies the English term 'Data Custodian' for the role «سرپرست داده». Evidence S15816-3-037 and S15816-3-038 describe the role in Persian only, without an English equivalent. The §3 terminology index (T 3.9) maps «متصدی داده» → data steward; «سرپرست داده» is not a §3 defined term and its English label is absent from every supplied evidence item. The phrase «در چاپ «Data Custodian»» is therefore unsupported.",
+      "suggested_fix": "Remove «؛ در چاپ «Data Custodian»» from the cell. If the compiler can verify the printed English label from the page image, add it with explicit sourcing (e.g., «در متن بند ۵.۳.۴.۱ چاپی:…»); otherwise omit it."
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:49:47-0400"
+}

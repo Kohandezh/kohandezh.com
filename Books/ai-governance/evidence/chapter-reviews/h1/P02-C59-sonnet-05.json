@@ -1,0 +1,37 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  5,
+  7
+ ],
+ "section_shas": {
+  "5": "5803239edcea14f0ff372275f3a8f811ea7670ec7c9f72eb0d5da0cb37235156",
+  "7": "b77e9a2c15294e4b35bf2cbfb9de747bb60aa586bff67297ac20d2c4482c9477"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 300.261990070343,
+ "result": {
+  "sections": [
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "تعیین شایستگی اشخاصی که تحت واپایش سازمان کارهایی انجام می‌دهند که بر عملکرد هوش مصنوعی تأثیر می‌گذارد",
+      "explanation": "Evidence S42001-074 says «بر عملکرد هومص تأثیر می‌گذارد» — «هومص» is the abbreviation for the AI management system (نظام مدیریت هوش مصنوعی), not for «هوش مصنوعی» alone. Replacing «هومص» with «هوش مصنوعی» shifts the scope from AIMS performance to AI-technology performance, which misrepresents the clause's requirement.",
+      "suggested_fix": "Replace «عملکرد هوش مصنوعی» with «عملکرد هومص» (or «عملکرد نظام مدیریت هوش مصنوعی» if the abbreviation has not yet been introduced in this column) to match S42001-074 exactly."
+     }
+    ]
+   },
+   {
+    "index": 7,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:06:47-0400"
+}

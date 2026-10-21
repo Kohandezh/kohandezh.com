@@ -1,0 +1,22 @@
+استاندارد ملی ایران شمارةُ ۲۳۶۸۳ (چاپ اول): سال ۱۴۰۳
+
+[1] ISO/IEC 2382:2015 Information technology — Vocabulary
+
+[2] ISO 9075 (all parts), Information technology — Database languages — SQL
+
+یادآوری - مجموعه استاندارد ملی ایران -ایزو- آی‌ای‌سی ‎٩۰۷۵‏ فناوری اطلاعات -فناوری اطلاعات -ز
+
+ان ‎cle‏ دادگان
+(پایگاه داده ها) - زبان پرس و جوی ساخت یافته(,801) . با استفاده از برخی قسمت‌های مجموعه استاندارد 9075 ‎TSO‏
+
+تدوین شده است.
+‎ISO/IEC 11404, Information technology — General-Purpose Datatypes (GPD)‏ ]3[
+یادآوری - استاندارد ملی ایران ایزو آی‌ای‌سی شماره ۱۱۴۰۴: سال ۰۱۳۹۰ فناوری اطلاعات- انواع داده همه‌منظوره ‎(GPD)‏
+‏با استفاده از استاندارد 2007 :11404 ‎ISO/IEC‏ تدوین شده است.
+[۴] استاندارد ملی ‎Gly!‏ شماره ۲۱۰۶۹: سال ۱۳۹۵ فناوری اطلاعات - رایانش ابری - مرور کلی و
+واژگان
+
+[5] ISO/IEC 19784-4:2011, Information technology — Biometric application programming
+interface — Part 4: Biometric sensor function provider interface
+
+۳۱

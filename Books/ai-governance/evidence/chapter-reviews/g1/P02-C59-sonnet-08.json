@@ -1,0 +1,37 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  8,
+  9
+ ],
+ "section_shas": {
+  "8": "599ab9c160b69eaae4f0ae541305590b08a6c74d4063bcf2de4ecdb05eca0377",
+  "9": "24bc2324d93071c778f75eceea2d80923e7b47a80b6a22af39e653cbf44afa28"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 853.6003887653351,
+ "result": {
+  "sections": [
+   {
+    "index": 8,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "modality_drift",
+      "quote": "B.5 ارزیابی تأثیر | ... | توصیه می‌شود؛ «لازم است» | ۳۴–۳۹",
+      "explanation": "Evidence S42001-130 (B.5.4) contains an explicit «باید» modality: «زمینه‌های تأثیرپذیری که «باید» به‌عنوان بخشی از ارزیابی در نظر گرفته شود، بدون قید حصر: انصاف، پاسخگویی، شفافیت...». The «قوت چاپی» column for B.5 shows only «توصیه می‌شود؛ «لازم است»», omitting this «باید»-level obligation entirely, which misrepresents the modality range of the block.",
+      "suggested_fix": "Add «باید» to the strength cell for B.5: «توصیه می‌شود؛ «لازم است»؛ «باید» (ب-۵-۴ زمینه‌های ارزیابی)»."
+     }
+    ]
+   },
+   {
+    "index": 9,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:32:58-0400"
+}

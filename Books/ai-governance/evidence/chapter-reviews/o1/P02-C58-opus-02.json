@@ -1,0 +1,43 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "524f124ee5229ad73bb2f4201abbba52c5de58e99ab98255b54ab80de2e90f3c",
+  "3": "eba70ffa1356b304f3da43e11553781dfce2d5d805ad292e0cc681d653e36b8f"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 541.2699611186981,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "نهاد حکمران سطح مخاطره‌پذیری، اهداف سازمان و فرایند تصمیم‌گیری را تعریف می‌کند",
+      "explanation": "The concept 'governing body' has the verified INSO term «مرجع حکمران» (42001 §3.22). INSO 23733 prints «نهاد حکمران» in its running text (S23733-033), but per the terminology rules the default in new E2 text is the verified official term. The section already applies this pattern correctly for 'top management' — replacing 23733's «مدیریت ارشد» with «مدیریت رده‌بالا (به صورت چاپی: «مدیریت ارشد»)» — but does not do so for «نهاد حکمران».",
+      "suggested_fix": "Replace «نهاد حکمران» with «مرجع حکمران (در چاپ ۲۳۷۳۳: «نهاد حکمران»)» at first use, and «مرجع حکمران» thereafter."
+     },
+     {
+      "type": "other",
+      "quote": "موضوع فصل «نظام مدیریت هوش مصنوعی (INSO/BS/ISO/IEC 42001 — ISO/IEC 42001)»",
+      "explanation": "The identifier includes 'BS' (British Standard), which is not part of either the INSO or international designation for this standard. The standard is ISO/IEC 42001, adopted nationally as INSO 42001. No evidence supports a 'BS' prefix. Per hard content rule 6, both identifiers should be given correctly.",
+      "suggested_fix": "Remove 'BS/' from the identifier. Write e.g. «نظام مدیریت هوش مصنوعی (INSO 42001 ≡ ISO/IEC 42001)» or match whatever the referenced chapter's actual title is, without the spurious 'BS'."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T06:52:33-0400"
+}

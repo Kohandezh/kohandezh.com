@@ -23,13 +23,13 @@ lexical:
     likely: به‌احتمال زیاد
     possible: ممکن
 editorial_labels:
-  synthesis: [یادداشت تدوینگر, راهنمای مطالعه, ارتباط با اسناد دیگر, جمع‌بندی تطبیقی, نقشه مفهومی]
+  synthesis: [یادداشت تدوینگر, راهنمای مطالعه, ارتباط با اسناد دیگر, جمع‌بندی تطبیقی, نقشه مفهومی, معرفی استاندارد ملی, اصطلاحات رسمی استاندارد, خلاصهٔ تدوینگر از استاندارد, نگاشت تطبیقی با NIST, محدودیت‌ها و احتیاط‌ها]
   localization_ir: [کاربرد در سازمان‌های ایرانی, یادداشت بومی‌سازی, راهنمای اجرای عملی, نمونه اجرایی برای ایران, چک‌لیست پیاده‌سازی, نمونه فرم, سناریوی سازمانی, تفسیر اجرایی تدوینگر, مثال تدوینگر, برای مدیران, برای تیم فنی, اگر سازمان شما از صفر شروع می‌کند, چک‌لیست اجرایی]
 attribution:
   line1: "ترجمه، تدوین و بازآرایی فارسی: محمدعلی کهن‌دژ"
   line2: "بر پایه اسناد و انتشارات اصلی NIST و منابع مشخص‌شده در هر فصل."
   line3: "وب‌سایت: kohandezh.com"
-  never_imply: [official NIST Persian translation, NIST endorsement, NIST authorship of editorial additions]
+  never_imply: [official NIST Persian translation, NIST endorsement, NIST authorship of editorial additions, INSO/ISO/IEC/IEEE endorsement or review of this book, certification, legal or regulatory compliance, official INSO terminology approval of the whole glossary]
 typography:
   persian_body: Vazirmatn Regular
   persian_subheading: Vazirmatn Medium/SemiBold

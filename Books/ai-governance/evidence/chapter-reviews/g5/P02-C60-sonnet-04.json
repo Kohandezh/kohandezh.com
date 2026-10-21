@@ -1,0 +1,43 @@
+{
+ "chapter": "P02/C60",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "762ffc3e15ac56efef3f52d81a7fdb46b55626ce0ab91f3a360bde5b0c6c36a2",
+  "5": "c75d0c9e7a0da6c9fa1fca899294697e989724b6647ae6dd3fb13142fd4501aa"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 153.95658206939697,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "FAIL",
+    "issues": [
+     {
+      "type": "number_or_page_error",
+      "quote": "طبق INSO 23728 (بندهای ۴.۱ و ۴.۲، ص ۱۲ چاپی) انطباق با یک استاندارد به معنای انطباق با الزامات حقوقی یا نظارتی نیست.",
+      "explanation": "INSO 23728 is not among the three declared sources (23682, 23733, 42001) and does not appear in any of the evidence items. The project terminology rules cite '7002 §4.1–4.2, printed p.12' for the 'conformity ≠ legal/regulatory compliance' principle, not 23728. The standard number 23728 is therefore wrong, and the specific clause-and-page attribution (بندهای ۴.۱ و ۴.۲، ص ۱۲) is entirely unsupported by any cited evidence.",
+      "suggested_fix": "Replace 'INSO 23728 (بندهای ۴.۱ و ۴.۲، ص ۱۲ چاپی)' with 'INSO 7002 (بندهای ۴.۱ و ۴.۲، ص ۱۲ چاپی)'. Because INSO 7002 is also outside the evidence set of this chapter, add a parenthetical noting that the source lies outside the three standards reviewed here; alternatively, recast as a bare editorial principle without a standard citation."
+     },
+     {
+      "type": "other",
+      "quote": "ISO/IEC 22989 (و هم‌ارز ملی احتمالاً ۲۳۶۷۹)",
+      "explanation": "Evidence item I42001-nr1 explicitly records 'استاندارد ISO/IEC 22989:2022، همسان' against INSO 23679:1403, and evidence items I23682-nr1 and I23733-nr3 confirm INSO 23679:1403 is the mandatory normative reference. The national equivalent is therefore confirmed, not merely probable. Writing 'احتمالاً' introduces false uncertainty that contradicts the evidence.",
+      "suggested_fix": "Change 'هم‌ارز ملی احتمالاً ۲۳۶۷۹' to 'هم‌ارز ملی ۲۳۶۷۹ (همسان با ISO/IEC 22989:2022)'."
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:25:58-0400"
+}

@@ -76,8 +76,8 @@ def build():
     def img_tag(iid, cls):
         return f'<img class="{cls}" src="file://{IMG[iid]}" alt="">' if iid in IMG else ""
     parts = []
-    parts.append(f'<section class="cover">{img_tag("IMG-COVER", "cover-art")}<h1>{E(book["title_fa"])}</h1><p class="sub latin" dir="ltr" style="text-align:center">{E(book["title_en"])}</p><p style="margin-top:40mm">ترجمه، تدوین و بازآرایی فارسی:<br><strong>{E(PUB["compiler"])}</strong></p><p class="sub">بر پایه اسناد و انتشارات اصلی NIST و منابع مشخص‌شده در هر فصل</p><p class="sub">kohandezh.com · ویرایش {E(PUB["edition_id"])}</p></section>')
-    parts.append(f'<section class="appendix"><h1>شناسنامهٔ انتشار</h1><p>{E(book["attribution"])}</p><p>ویرایش: <span class="mono">{E(PUB["edition_id"])}</span> · شناسهٔ انتشار: <span class="mono">{E(ver.get("release_id","Release Candidate"))}</span> · تاریخ ساخت: <span class="mono">{E(book["built_at"])}</span></p><p>ریشهٔ مرکل: <span class="hash">{E(book["merkle_root"])}</span></p><p>وضعیت امضا: {E(ver.get("signing_status","PUBLISHER_SIGNING_KEY_REQUIRED"))}</p><p class="attrib">این اثر ترجمهٔ رسمی NIST نیست و NIST آن را تأیید یا منتشر نکرده است. بخش‌های تدوینگر و لایهٔ اجرایی ایرانی با برچسب مشخص از متن ترجمه‌شده متمایز شده‌اند.</p></section>')
+    parts.append(f'<section class="cover">{img_tag("IMG-COVER", "cover-art")}<h1>{E(book["title_fa"])}</h1><p class="sub latin" dir="ltr" style="text-align:center">{E(book["title_en"])}</p><p style="margin-top:40mm">ترجمه، تدوین و بازآرایی فارسی:<br><strong>{E(PUB["compiler"])}</strong></p><p class="sub">{E(PUB.get("basis_fa", "بر پایه اسناد و انتشارات اصلی NIST و منابع مشخص‌شده در هر فصل"))}</p><p class="sub">kohandezh.com · {E(PUB.get("edition_label_fa") or "ویرایش")} {E(PUB["edition_id"])}</p></section>')
+    parts.append(f'<section class="appendix"><h1>شناسنامهٔ انتشار</h1><p>{E(book["attribution"])}</p><p>ویرایش: {E(PUB.get("edition_label_fa", ""))} <span class="mono">{E(PUB["edition_id"])}</span> · شناسهٔ انتشار: <span class="mono">{E(ver.get("release_id","Release Candidate"))}</span> · تاریخ ساخت: <span class="mono">{E(book["built_at"])}</span></p><p>ریشهٔ مرکل: <span class="hash">{E(book["merkle_root"])}</span></p><p>وضعیت امضا: {E(ver.get("signing_status","PUBLISHER_SIGNING_KEY_REQUIRED"))}</p><p class="attrib">این اثر ترجمهٔ رسمی NIST نیست و NIST آن را تأیید یا منتشر نکرده است. بخش‌های تدوینگر و لایهٔ اجرایی ایرانی با برچسب مشخص از متن ترجمه‌شده متمایز شده‌اند. {E(PUB.get("disclaimer_extra_fa", ""))}</p></section>')
     toc = ['<nav class="toc"><h1>فهرست مطالب</h1><ol>']
     for P in book["parts"]:
         toc.append(f'<li class="part"><a href="#{E(P["part_id"])}">{E(P["part_id"])} — {E(P["title_fa"])}</a></li>')
@@ -116,7 +116,7 @@ def build():
     html = f"""<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><title>{E(book["title_fa"])}</title>
 <meta name="author" content="{E(PUB["compiler"])}"><meta name="description" content="{E(book["title_en"])}"><meta name="keywords" content="NIST, AI RMF, هوش مصنوعی, کهن‌دژ">
 <meta name="generator" content="kohandezh-pipeline"><meta name="kdj:edition" content="{E(PUB["edition_id"])}"><meta name="kdj:release" content="{E(ver.get("release_id","RC"))}"><meta name="kdj:master-hash" content="{E(book["merkle_root"])}"><meta name="kdj:publisher" content="کهن‌دژ"><meta name="kdj:website" content="{E(PUB["website"])}"><meta name="kdj:manifest" content="{E(ver.get("manifest_sha256","pending"))}">
-<style>{font_faces()}{CSS.replace("EDITION", PUB["edition_id"])}</style></head><body>{"".join(parts)}</body></html>"""
+<style>{font_faces()}{CSS.replace("ویرایش EDITION", (PUB.get("edition_label_fa") or "ویرایش") + " " + PUB["edition_id"])}</style></head><body>{"".join(parts)}</body></html>"""
     out_html = ROOT / "pdf" / "fa" / "book-fa.print.html"; out_html.write_text(html, encoding="utf-8")
     from weasyprint import HTML
     out = ROOT / "pdf" / "fa" / "book-fa.pdf"

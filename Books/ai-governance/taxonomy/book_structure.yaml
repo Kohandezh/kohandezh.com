@@ -1,4 +1,4 @@
-edition_id: 2026E1
+edition_id: 2026E2
 book_title_fa: راهنمای جامع حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی
 book_title_en: Comprehensive Guide to AI Governance, Security and Risk Management (Persian Edition based on NIST publications)
 generated: 2026-09-17T17:38:01-0400
@@ -10,6 +10,8 @@ parts:
   sources:
   - NIST-AI-100-3
   - NIST-PAPER-1-FOUNDATIONAL
+  - INSO-23681-1403
+  - INSO-23683-1403
   chapters:
   - id: C01
     slug: foundations-reading-guide
@@ -18,6 +20,14 @@ parts:
     label_fa: راهنمای مطالعه
     title_fa: ''
     title_en: Reading guide — foundations
+    sections: []
+  - id: C54
+    slug: edition-2-scope-and-terminology
+    origin: editorial_synthesis
+    kind: standards_integration
+    label_fa: یادداشت تدوینگر
+    title_fa: 'ویرایش دوم: دامنه، استانداردهای ملی افزوده‌شده و راهنمای اصطلاحات رسمی'
+    title_en: 'ویرایش دوم: دامنه، استانداردهای ملی افزوده‌شده و راهنمای اصطلاحات رسمی'
     sections: []
   - id: C02
     slug: nist-ai-100-3-the-language-of-trustworthy-ai-an-in-depth-glo
@@ -147,6 +157,22 @@ parts:
       section_path: GLOSSARY
       page: 36
       block_id: NIST-PAPER-1-FOUNDATIONAL::P0036::SECGLOSSARY::B0283
+  - id: C55
+    slug: inso-23681-iso-iec-23053-ml-framework
+    origin: editorial_synthesis
+    kind: standards_integration
+    label_fa: معرفی استاندارد ملی
+    title_fa: چارچوب سامانه‌های هوش مصنوعی مبتنی بر یادگیری ماشین (INSO 23681 — ISO/IEC 23053)
+    title_en: چارچوب سامانه‌های هوش مصنوعی مبتنی بر یادگیری ماشین (INSO 23681 — ISO/IEC 23053)
+    sections: []
+  - id: C56
+    slug: inso-23683-iso-iec-20546-big-data-vocabulary
+    origin: editorial_synthesis
+    kind: standards_integration
+    label_fa: معرفی استاندارد ملی
+    title_fa: 'کلان‌داده: مرور کلی و واژگان (INSO 23683 — ISO/IEC 20546)'
+    title_en: 'کلان‌داده: مرور کلی و واژگان (INSO 23683 — ISO/IEC 20546)'
+    sections: []
   - id: C04
     slug: foundations-synthesis
     origin: editorial_synthesis
@@ -179,6 +205,9 @@ parts:
   - NIST-AI-100-1
   - NIST-AI-RMF-PLAYBOOK
   - NIST-AI-600-1
+  - INSO-23682-1403
+  - INSO-23733-1403
+  - INSO-42001-1404
   chapters:
   - id: C07
     slug: ai-risk-management-reading-guide
@@ -659,6 +688,38 @@ parts:
       section_path: APPB
       page: 58
       block_id: NIST-AI-600-1::P0058::SECAPPB::B0366
+  - id: C57
+    slug: inso-23682-iso-iec-38507-ai-governance
+    origin: editorial_synthesis
+    kind: standards_integration
+    label_fa: معرفی استاندارد ملی
+    title_fa: پیامدهای حکمرانی استفاده از هوش مصنوعی در سازمان‌ها (INSO 23682 — ISO/IEC 38507)
+    title_en: پیامدهای حکمرانی استفاده از هوش مصنوعی در سازمان‌ها (INSO 23682 — ISO/IEC 38507)
+    sections: []
+  - id: C58
+    slug: inso-23733-iso-iec-23894-ai-risk-management
+    origin: editorial_synthesis
+    kind: standards_integration
+    label_fa: معرفی استاندارد ملی
+    title_fa: راهنمای مدیریت مخاطره (ریسک) هوش مصنوعی (INSO 23733 — ISO/IEC 23894)
+    title_en: راهنمای مدیریت مخاطره (ریسک) هوش مصنوعی (INSO 23733 — ISO/IEC 23894)
+    sections: []
+  - id: C59
+    slug: inso-42001-iso-iec-42001-ai-management-system
+    origin: editorial_synthesis
+    kind: standards_integration
+    label_fa: معرفی استاندارد ملی
+    title_fa: نظام مدیریت هوش مصنوعی (INSO/BS/ISO/IEC 42001 — ISO/IEC 42001)
+    title_en: نظام مدیریت هوش مصنوعی (INSO/BS/ISO/IEC 42001 — ISO/IEC 42001)
+    sections: []
+  - id: C60
+    slug: nist-ai-rmf-and-national-standards-mapping
+    origin: editorial_synthesis
+    kind: standards_integration
+    label_fa: نگاشت تطبیقی با NIST
+    title_fa: 'نگاشت تطبیقی: NIST AI RMF و استانداردهای ملی ۲۳۶۸۲، ۲۳۷۳۳ و ۴۲۰۰۱'
+    title_en: 'نگاشت تطبیقی: NIST AI RMF و استانداردهای ملی ۲۳۶۸۲، ۲۳۷۳۳ و ۴۲۰۰۱'
+    sections: []
   - id: C14
     slug: ai-risk-management-synthesis
     origin: editorial_synthesis
@@ -691,6 +752,7 @@ parts:
   - NIST-AI-100-2E2025
   - NIST-AI-800-1-IPD
   - NIST-SP-800-218A
+  - INSO-23685-1403
   chapters:
   - id: C17
     slug: ai-security-reading-guide
@@ -1225,6 +1287,14 @@ parts:
       section_path: APPA
       page: 30
       block_id: NIST-SP-800-218A::P0030::SECAPPA::B0168
+  - id: C61
+    slug: inso-23685-ieee-2813-big-data-security-risk
+    origin: editorial_synthesis
+    kind: standards_integration
+    label_fa: معرفی استاندارد ملی
+    title_fa: ارزیابی مخاطرهٔ امنیتی کسب‌وکار کلان‌داده (INSO 23685 — IEEE Std 2813)
+    title_en: ارزیابی مخاطرهٔ امنیتی کسب‌وکار کلان‌داده (INSO 23685 — IEEE Std 2813)
+    sections: []
   - id: C25
     slug: ai-security-synthesis
     origin: editorial_synthesis
@@ -1257,6 +1327,7 @@ parts:
   - NIST-IR-8312
   - NIST-IR-8367
   - NIST-SP-1270
+  - INSO-23684-1403
   chapters:
   - id: C28
     slug: trust-bias-explainability-reading-guide
@@ -1367,6 +1438,14 @@ parts:
       section_path: '5'
       page: '58'
       block_id: NIST-SP-1270::P0058::SEC5::B0328
+  - id: C62
+    slug: inso-23684-iso-iec-25059-ai-quality-model
+    origin: editorial_synthesis
+    kind: standards_integration
+    label_fa: معرفی استاندارد ملی
+    title_fa: مدل کیفیت سامانه‌های هوش مصنوعی (INSO 23684 — ISO/IEC 25059)
+    title_en: مدل کیفیت سامانه‌های هوش مصنوعی (INSO 23684 — ISO/IEC 25059)
+    sections: []
   - id: C32
     slug: trust-bias-explainability-synthesis
     origin: editorial_synthesis
@@ -1757,6 +1836,7 @@ parts:
   - NIST-PAPER-2-TRUSTWORTHINESS
   - NIST-PAPER-3-LEGAL
   - NIST-PAPER-4-BIAS
+  - INSO-23728-1403
   chapters:
   - id: C42
     slug: ai-law-reading-guide
@@ -1970,6 +2050,14 @@ parts:
       section_path: '5'
       page: 21
       block_id: NIST-PAPER-4-BIAS::P0021::SEC5::B0132
+  - id: C63
+    slug: inso-23728-ieee-7002-data-privacy-process
+    origin: editorial_synthesis
+    kind: standards_integration
+    label_fa: معرفی استاندارد ملی
+    title_fa: فرایند حریم خصوصی داده (INSO 23728 — IEEE Std 7002)
+    title_en: فرایند حریم خصوصی داده (INSO 23728 — IEEE Std 7002)
+    sections: []
   - id: C46
     slug: ai-law-synthesis
     origin: editorial_synthesis
@@ -2000,6 +2088,7 @@ parts:
   title_en: ''
   sources:
   - NIST-AI-STD-FED-PLAN-2019
+  - INSO-15816-3-1403
   chapters:
   - id: C49
     slug: standards-reading-guide
@@ -2085,6 +2174,22 @@ parts:
       section_path: THEPROCESSNISTUSEDTODEVELOPT
       page: 39
       block_id: NIST-AI-STD-FED-PLAN-2019::P0039::SECTHEPROCESSNISTUSEDTODEVELOPT::B0432
+  - id: C64
+    slug: inso-15816-3-iso-iec-ts-38505-3-data-classification
+    origin: editorial_synthesis
+    kind: standards_integration
+    label_fa: معرفی استاندارد ملی
+    title_fa: راهنمای طبقه‌بندی داده‌ها (INSO 15816-3 — ISO/IEC TS 38505-3)
+    title_en: راهنمای طبقه‌بندی داده‌ها (INSO 15816-3 — ISO/IEC TS 38505-3)
+    sections: []
+  - id: C65
+    slug: national-standards-map-and-limits
+    origin: editorial_synthesis
+    kind: standards_integration
+    label_fa: یادداشت تدوینگر
+    title_fa: 'نقشهٔ استانداردهای ملی هوش مصنوعی: پوشش ویرایش دوم، محدودیت‌ها و تحولات پس از سند ۲۰۱۹ NIST'
+    title_en: 'نقشهٔ استانداردهای ملی هوش مصنوعی: پوشش ویرایش دوم، محدودیت‌ها و تحولات پس از سند ۲۰۱۹ NIST'
+    sections: []
   - id: C51
     slug: standards-synthesis
     origin: editorial_synthesis

@@ -375,6 +375,11 @@ final class KBK_AI_Book_Search {
 				if ( false !== strpos( $term['haystacks']['alternatives'], $token ) ) {
 					$token_score = max( $token_score, 7 );
 				}
+				// An approved alias typed exactly is the term the reader asked for
+				// («ریسک» still lands on RISK now that the preferred form is «مخاطره»).
+				if ( in_array( $token, $term['haystacks']['alternatives_exact'], true ) ) {
+					$token_score = max( $token_score, 14 );
+				}
 				if ( 0 === $token_score && false !== strpos( $term['haystacks']['definition'], $token ) ) {
 					$token_score = 2;
 				}
@@ -633,6 +638,7 @@ final class KBK_AI_Book_Search {
 					'english'      => self::normalize( (string) $term['english'] ),
 					'acronyms'     => ' ' . self::normalize( (string) $term['acronym'] ) . ' ',
 					'alternatives' => self::normalize( implode( ' ', $term['alternatives_fa'] ) ),
+					'alternatives_exact' => array_map( array( __CLASS__, 'normalize' ), array_map( 'strval', $term['alternatives_fa'] ) ),
 					'definition'   => self::normalize( (string) $term['definition_fa'] . ' ' . (string) $term['definition_en'] ),
 				),
 			);

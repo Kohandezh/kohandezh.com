@@ -1,0 +1,34 @@
+{
+ "chapter": "P01/C54",
+ "sections": [
+  0,
+  1
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 181.02414178848267,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 1,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "summary": "Subject description for C61 uses «امتیازدهی» (scoring) instead of the printed «ارزیابی» (assessment) for INSO 23685",
+      "quote": "امتیازدهی مخاطرهٔ امنیتی کسب‌وکار کلان‌داده (INSO 23685)",
+      "explanation": "Evidence I23685-id gives the printed title as «ارزیابی مخاطره (ریسک) امنیتی کسب‌وکار کلان‌داده». No evidence item contains the word «امتیازدهی»; replacing «ارزیابی» with «امتیازدهی» misrepresents the standard's scope (assessment ≠ scoring).",
+      "suggested_fix": "Replace «امتیازدهی مخاطرهٔ امنیتی کسب‌وکار کلان‌داده» with «ارزیابی مخاطره (ریسک) امنیتی کسب‌وکار کلان‌داده»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:03:47-0400"
+}

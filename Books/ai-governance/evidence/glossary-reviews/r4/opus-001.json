@@ -1,0 +1,23 @@
+{
+ "keys": [
+  "compliance"
+ ],
+ "shas": {
+  "compliance": "1d12643ce5ffaea2487d809ffda3c214373b65ad409c1197ec7d12613205653d"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 67.50325870513916,
+ "result": {
+  "verdicts": [
+   {
+    "key": "compliance",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.93
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:41:06-0400"
+}

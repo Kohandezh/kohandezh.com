@@ -1,20 +1,30 @@
 # Publishing configuration (MasterPrompt §31, §49–§52, §75–§78)
 brand: "کهن‌دژ"
 website: "https://kohandezh.com"
-edition_id: "2026E1"
+edition_id: "2026E2"
+base_edition_id: "2026E1"
+edition_label_fa: "ویرایش دوم"
+attribution_fa: "ترجمه، تدوین و بازآرایی فارسی: محمدعلی کهن‌دژ — بر پایه اسناد و انتشارات اصلی NIST، استانداردهای ملی ایران (ناشر: سازمان ملی استاندارد ایران) و منابع مشخص‌شده در هر فصل — وب‌سایت: kohandezh.com"
+basis_fa: "بر پایه اسناد و انتشارات اصلی NIST، استانداردهای ملی ایران و منابع مشخص‌شده در هر فصل"
+intro_sources_fa: "ترجمهٔ وفادار و بازآرایی‌شدهٔ ۱۸ سند NIST و خلاصهٔ تدوینگر از ۹ استاندارد ملی ایران"
+description_fa: "ترجمه و تدوین فارسی ۱۸ سند NIST و ۹ استاندارد ملی ایران دربارهٔ حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی — ویرایش دوم"
+sources_description_fa: "کتاب‌شناسی ۱۸ سند NIST و ۹ استاندارد ملی ایران و نگاشت هر بخش کتاب به سند، بخش و صفحات منبع"
+sources_note_fa: "منابع ملی: نُه استاندارد ملی ایران که ناشرشان سازمان ملی استاندارد ایران است؛ مبنای بین‌المللی هر سند همان‌گونه آمده که روی خودِ سند چاپ شده است. صفحهٔ https://services.iranailab.ir/standards فهرستی از استانداردهای ملی هوش مصنوعی است و نه ناشر آن‌هاست."
+disclaimer_extra_fa: "فصل‌های استانداردهای ملی خلاصهٔ تدوینگرند؛ سازمان ملی استاندارد ایران، ISO، IEC و IEEE این کتاب را بازبینی یا تأیید نکرده‌اند و استفاده از آن گواهی‌نامه یا انطباق قانونی ایجاد نمی‌کند."
+orchestrator: "claude-sonnet-5-5 (Claude Code orchestrator) with delegated Claude workers; policy review by claude-sonnet-4-6 and claude-opus-4-6 via claude_cli"
 book_title_fa: "راهنمای جامع حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی"
 book_title_en: "Comprehensive Guide to AI Governance, Security and Risk Management (Persian Edition based on NIST publications)"
 compiler: "محمدعلی کهن‌دژ"
 compiler_en: "Mohammadali Kohandezh"
 
 parts:                        # macro structure from MasterPrompt §31 (chapters refined after corpus analysis)
-  - {id: P01, slug: foundations,          title_fa: "مبانی و زبان مشترک هوش مصنوعی",              sources: [NIST-AI-100-3, NIST-PAPER-1-FOUNDATIONAL]}
-  - {id: P02, slug: ai-risk-management,   title_fa: "حاکمیت و مدیریت ریسک هوش مصنوعی",             sources: [NIST-AI-100-1, NIST-AI-RMF-PLAYBOOK, NIST-AI-600-1]}
-  - {id: P03, slug: ai-security,          title_fa: "امنیت هوش مصنوعی و مدل‌های بنیادین",           sources: [NIST-AI-100-2E2025, NIST-AI-800-1-IPD, NIST-SP-800-218A]}
-  - {id: P04, slug: trust-bias-explainability, title_fa: "اعتماد، سوگیری، توضیح‌پذیری و تفسیرپذیری", sources: [NIST-IR-8312, NIST-IR-8367, NIST-SP-1270]}
+  - {id: P01, slug: foundations,          title_fa: "مبانی و زبان مشترک هوش مصنوعی",              sources: [NIST-AI-100-3, NIST-PAPER-1-FOUNDATIONAL, INSO-23681-1403, INSO-23683-1403]}
+  - {id: P02, slug: ai-risk-management,   title_fa: "حاکمیت و مدیریت ریسک هوش مصنوعی",             sources: [NIST-AI-100-1, NIST-AI-RMF-PLAYBOOK, NIST-AI-600-1, INSO-23682-1403, INSO-23733-1403, INSO-42001-1404]}
+  - {id: P03, slug: ai-security,          title_fa: "امنیت هوش مصنوعی و مدل‌های بنیادین",           sources: [NIST-AI-100-2E2025, NIST-AI-800-1-IPD, NIST-SP-800-218A, INSO-23685-1403]}
+  - {id: P04, slug: trust-bias-explainability, title_fa: "اعتماد، سوگیری، توضیح‌پذیری و تفسیرپذیری", sources: [NIST-IR-8312, NIST-IR-8367, NIST-SP-1270, INSO-23684-1403]}
   - {id: P05, slug: genai-evaluation,     title_fa: "ارزیابی هوش مصنوعی مولد و محتوای مصنوعی",      sources: [NIST-AI-700-1, NIST-AI-700-2, NIST-AI-100-4-IPD]}
-  - {id: P06, slug: ai-law,               title_fa: "هوش مصنوعی، حقوق و نظام قضایی",               sources: [NIST-PAPER-2-TRUSTWORTHINESS, NIST-PAPER-3-LEGAL, NIST-PAPER-4-BIAS]}
-  - {id: P07, slug: standards,            title_fa: "اکوسیستم استانداردسازی هوش مصنوعی",           sources: [NIST-AI-STD-FED-PLAN-2019]}
+  - {id: P06, slug: ai-law,               title_fa: "هوش مصنوعی، حقوق و نظام قضایی",               sources: [NIST-PAPER-2-TRUSTWORTHINESS, NIST-PAPER-3-LEGAL, NIST-PAPER-4-BIAS, INSO-23728-1403]}
+  - {id: P07, slug: standards,            title_fa: "اکوسیستم استانداردسازی هوش مصنوعی",           sources: [NIST-AI-STD-FED-PLAN-2019, INSO-15816-3-1403]}
 
 html:
   base_path: "/fa/ai-book/"
@@ -41,3 +51,5 @@ pdf:
 images:
   manifest: images/manifests/planned-images.json
   generate_only_approved: true
+kg_extractor: claude        # edition 2: Claude (claude_cli route) extracts the new/corrected units; unchanged units carry their edition-1 extraction
+kg_workers: 3

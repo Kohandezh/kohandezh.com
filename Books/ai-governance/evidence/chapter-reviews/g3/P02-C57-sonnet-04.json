@@ -1,0 +1,62 @@
+{
+ "chapter": "P02/C57",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "a8ed306460833ae668abd31419f263633a407652f2656d7b763ecb23423f3ce5",
+  "5": "45cf36d008bf02b8dbc991311f26f463f7f290589e547cae6ebfd8f71751fcaa"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 430.63656401634216,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "واپایش‌های مناسب سازمانِ بدون هوش مصنوعی برای سازمانی که بالقوه از آن استفاده می‌کند مناسب نیستند",
+      "explanation": "Evidence S23682-068 reads «ضوابط و واپایش‌های مناسب سازمانی که از هوش مصنوعی استفاده نمی‌کند … مناسب نیست». By dropping «ضوابط و» the section claims only controls (واپایش‌ها) are inadequate, whereas the standard states both criteria/policies (ضوابط) AND controls (واپایش‌ها) are inadequate. This narrows the printed claim.",
+      "suggested_fix": "بنویسید: «ضوابط و واپایش‌های مناسب سازمانِ بدون هوش مصنوعی برای سازمانی که بالقوه از آن استفاده می‌کند مناسب نیستند»"
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "افزون بر دارایی‌ها (داده، سامانه‌ها، کد، الگوریتم‌ها)",
+      "explanation": "Evidence S23682-108 enumerates five asset types: «داده، سامانه‌های اطلاعاتی، کد برنامه، الگوریتم‌ها، تجهیزات». The section presents what reads as a complete parenthetical list but silently omits «تجهیزات» (equipment), making an unsupported factual claim about the scope of the asset list. It also shortens «سامانه‌های اطلاعاتی» to «سامانه‌ها» and «کد برنامه» to «کد».",
+      "suggested_fix": "بنویسید: «افزون بر دارایی‌ها (داده، سامانه‌های اطلاعاتی، کد برنامه، الگوریتم‌ها، تجهیزات)»"
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "INSO 37000:1402 حکمرانی را نظامی می‌داند که سازمان از طریق آن جهت‌دهی می‌شود، مورد نظارت قرار می‌گیرد و پاسخگوست",
+      "explanation": "Evidence S23682-126 prints the INSO 37000 definition as «سامانه‌ای … که سازمان از طریق آن، درخصوص دستیابی به هدف تعریف‌شده، جهت‌دهی می‌شود، مورد نظارت قرار می‌گیرد و پاسخگوست». The section drops the substantive qualifier «درخصوص دستیابی به هدف تعریف‌شده» (with respect to achieving its defined purpose), making the presented definition broader than the printed one.",
+      "suggested_fix": "بنویسید: «INSO 37000:1402 حکمرانی سازمان‌ها را سامانه‌ای توصیف می‌کند که سازمان از طریق آن، درخصوص دستیابی به هدف تعریف‌شده، جهت‌دهی می‌شود، مورد نظارت قرار می‌گیرد و پاسخگوست»"
+     },
+     {
+      "type": "terminology",
+      "quote": "INSO 37000:1402 حکمرانی را نظامی می‌داند … INSO 12047:1395 آن را نظامی برای جهت‌دهی و واپایش",
+      "explanation": "The terminology rule states «default = the verified INSO Persian term for that concept, in that standard, at that clause». Evidence S23682-126 (clause A.1.1, for INSO 37000) and S23682-127 (same clause, for INSO 12047) both print «سامانه‌ای / سامانهٔ» for the governance-system concept in these standards. The section substitutes «نظام / نظامی» in both places. Regardless of the general «management context → نظام» heuristic, the clause-level printed term is «سامانه» and that takes priority.",
+      "suggested_fix": "در هر دو موضع جایگزین کنید: «سامانه‌ای» (INSO 37000) و «سامانهٔ جهت‌دهی و واپایش» (INSO 12047)، دقیقاً چنان‌که در شواهد S23682-126 و S23682-127 چاپ شده است."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "نهاد حکمران مقصود و مؤلفه‌های دیگر (تصمیمات راهبردی دربارهٔ بازارها و محصولات، مشارکت ذی‌نفعان، فرهنگ و ارزش‌ها، مخاطره‌پذیری) را تعیین می‌کند",
+      "explanation": "Evidence S23682-134 lists five components (excluding «مقصود»): تصمیمات راهبردی دربارهٔ بازارها و محصولات ❯ «مشارکت ذی‌نفعان در تصمیم‌های سرمایه‌گذاری» ❯ «رفتارها» ❯ فرهنگ و ارزش‌ها ❯ مخاطره‌پذیری. The section (a) strips «در تصمیم‌های سرمایه‌گذاری» from the stakeholder-engagement item, widening its scope beyond what the standard prints, and (b) omits «رفتارها» (behaviours) from the list entirely.",
+      "suggested_fix": "بنویسید: «(تصمیمات راهبردی دربارهٔ بازارها و محصولات، مشارکت ذی‌نفعان در تصمیم‌های سرمایه‌گذاری، رفتارها، فرهنگ و ارزش‌ها، مخاطره‌پذیری)»"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:29:40-0400"
+}

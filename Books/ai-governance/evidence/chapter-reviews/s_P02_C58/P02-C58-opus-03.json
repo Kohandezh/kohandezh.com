@@ -1,0 +1,44 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  3,
+  5
+ ],
+ "section_shas": {
+  "3": "e814324c76a6dd761baf4e6a894167faf16ecd1b9e1a76e9383732465bd8c246",
+  "5": "0545404399185b5e7c1d8b0e5e1f0235457d3915153c2348f5e00fdc4e9b289c"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 439.912682056427,
+ "result": {
+  "sections": [
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "فرصت‌های تازه، تغییر در مخاطره‌پذیری و خط‌مشی‌های تازه",
+      "explanation": "Evidence S23733-034 reads «فرصت‌های جدید، تغییرات بالقوه در مخاطره‌پذیری، خط‌مشی‌های حکمرانی جدید». The text drops «حکمرانی» from «خط‌مشی‌های حکمرانی جدید», narrowing 'new governance policies' to just 'new policies'. In a parenthetical gloss that purports to list what 23682 describes, omitting the qualifier changes the scope.",
+      "suggested_fix": "Replace «خط‌مشی‌های تازه» with «خط‌مشی‌های حکمرانی تازه» to match the evidence."
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "با این هشدار که شفافیتِ بیش از حد هم مخاطرهٔ حریم خصوصی، امنیت، الزامات محرمانگی و مالکیت معنوی دارد",
+      "explanation": "Evidence S23733-144 says «شفافیت و توضیح‌پذیریِ بیش از حد می‌تواند مخاطره‌هایی … ایجاد کند». The warning applies to excessive transparency AND explainability jointly, but the text mentions only «شفافیتِ بیش از حد», dropping «و توضیح‌پذیری». This narrows the standard's caution.",
+      "suggested_fix": "Replace «شفافیتِ بیش از حد» with «شفافیت و توضیح‌پذیریِ بیش از حد» to match the evidence."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T08:22:09-0400"
+}

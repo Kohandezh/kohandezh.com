@@ -1,0 +1,397 @@
+[
+ {
+  "item_id": "S15816-3-004",
+  "verdict": "faithful",
+  "printed_expression": "این استاندارد، مرجع الزامی ندارد",
+  "note": "Page prints exactly that no normative reference exists."
+ },
+ {
+  "item_id": "S15816-3-005",
+  "verdict": "faithful",
+  "printed_expression": "حکمرانی داده را به الزامی سازمانی تبدیل کرده است",
+  "note": "Printed text says data governance has become an organisational imperative; no باید inserted."
+ },
+ {
+  "item_id": "S15816-3-011",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود هر سازمانی ... در نظر بگیرد",
+  "note": "Printed «توصیه می‌شود» matches the statement."
+ },
+ {
+  "item_id": "S15816-3-017",
+  "verdict": "faithful",
+  "printed_expression": "الزامی اساسی برای بسیاری از فعالیت‌های مؤثر نظارت داده",
+  "note": "Statement correctly quotes the printed noun phrase «الزامی اساسی»."
+ },
+ {
+  "item_id": "S15816-3-020",
+  "verdict": "faithful",
+  "printed_expression": "(ت) می‌تواند ... کمک کند؛ (ث) مهم است که سازمان ... در نظر بگیرد",
+  "note": "Both «می‌تواند» and «مهم است» are kept as printed."
+ },
+ {
+  "item_id": "S15816-3-029",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود نهادهای حکمران ... اطمینان حاصل کنند",
+  "note": "Printed twice as «توصیه می‌شود»; statement matches."
+ },
+ {
+  "item_id": "S15816-3-049",
+  "verdict": "faithful",
+  "printed_expression": "گهگاهی لازم است به‌روزرسانی طرح طبقه‌بندی کنونی ... مدنظر قرار گیرد",
+  "note": "«لازم است»/«می‌تواند» match; the traceability clause is a list item with «باشد», no باید added."
+ },
+ {
+  "item_id": "S15816-3-055",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود در این مرحله، سازمان توجه ویژه‌ای ... داشته باشد",
+  "note": "Printed «توصیه می‌شود» matches the statement."
+ },
+ {
+  "item_id": "S15816-3-056",
+  "verdict": "faithful",
+  "printed_expression": "شناسایی واپایش‌گرهای داده ... ضروری است؛ ... مهم است",
+  "note": "«ضروری است», «می‌تواند» and «مهم است» all match the page."
+ },
+ {
+  "item_id": "S15816-3-057",
+  "verdict": "wrong",
+  "printed_expression": "در این مرحله، سازمان قرار است ... ارزیابی خطر انجام دهد",
+  "corrected_statement_fa": "در این مرحله سازمان «قرار است» بر پایهٔ داده‌ها و طبقه‌بندی خطر شناسایی‌شده در مراحل قبل ارزیابی خطر انجام دهد؛ در این فعالیت خط‌مشی طبقه‌بندی داده‌ها «لازم‌الاجرا خواهد شد» و روش‌های مدیریت و حذف داده بر اساس الزامات مشخص‌شده در فعالیت‌های قبلی اجرایی می‌شود؛ و سازمان در این مرحله توافق‌نامهٔ رسمی هم‌رسانی داده با طرف‌های ثالث را بر پایهٔ الزامات داده ایجاد می‌کند.",
+  "note": "Page prints «قرار است» (twice in the risk-assessment paragraph) which the statement flattened to a plain present tense, and «لازم‌الاجرا خواهد شد» was reworded as «تعیین می‌شود» (no باید inserted)."
+ },
+ {
+  "item_id": "S15816-3-062",
+  "verdict": "faithful",
+  "printed_expression": "بهتر است در هر سطح از سلسله‌مراتب رعایت شود",
+  "note": "Printed «بهتر است» and «ممکن است لازم باشد» match."
+ },
+ {
+  "item_id": "S15816-3-069",
+  "verdict": "faithful",
+  "printed_expression": "ضروری است رویکرد پیشگیرانه و پاسخگو ... مدنظر قرار گیرد",
+  "note": "Printed «ضروری است» matches."
+ },
+ {
+  "item_id": "S23681-006",
+  "verdict": "faithful",
+  "printed_expression": "استفاده از مرجع زیر برای کاربرد این استاندارد، الزامی است",
+  "note": "Printed «الزامی است» matches «تنها مرجع الزامی»."
+ },
+ {
+  "item_id": "S23681-015",
+  "verdict": "faithful",
+  "printed_expression": "کنش‌هایی که برای دستیابی به هدفی خاص مورد نیاز است؛ این تعریف مستلزم بازشناسی مسئله‌ای ...",
+  "note": "Definitional text; «لازم است» only paraphrases the printed «مورد نیاز است» inside a defining relative clause, no directive force."
+ },
+ {
+  "item_id": "S23681-023",
+  "verdict": "faithful",
+  "printed_expression": null,
+  "note": "Descriptive passage with no modal expression; none added."
+ },
+ {
+  "item_id": "S23681-024",
+  "verdict": "faithful",
+  "printed_expression": "پس باید در انتخاب مجموعه‌های داده ... دقت شود",
+  "note": "Printed «باید» is on the page (p-21)."
+ },
+ {
+  "item_id": "S23681-026",
+  "verdict": "faithful",
+  "printed_expression": "ممکن است ... مورد نیاز باشد؛ می‌تواند ... نیز رخ دهد",
+  "note": "«ممکن است»/«می‌تواند» preserved; minor: printed «ممکن است ... در دسترس باشند» became a flat «در دسترس‌اند», not an obligation change."
+ },
+ {
+  "item_id": "S23681-027",
+  "verdict": "wrong",
+  "printed_expression": "مدل نیاز به بازآموزی ... دارد؛ در رانش مفهوم نیاز است که ...",
+  "corrected_statement_fa": "در رانش داده، درستی پیش‌بینی با تغییر مشخصات دادهٔ محیط عملیاتی کاهش می‌یابد و مدل «نیاز به» بازآموزی با دادهٔ آموزشی جدیدی «دارد» که نماینده بهتری از دادهٔ محیط عملیاتی باشد؛ در رانش مفهوم، مرز تصمیم‌گیری جابه‌جا می‌شود، بی‌آنکه داده تغییر کند، و «نیاز است» که متغیرهای هدف مجدداً برچسب‌زنی شوند و مدل مجدداً آموزش داده شود.",
+  "note": "Page prints «نیاز به ... دارد» and «نیاز است که»; statement turned both into «لازم است» (no باید inserted, lower severity)."
+ },
+ {
+  "item_id": "S23681-034",
+  "verdict": "faithful",
+  "printed_expression": "باید داده‌های آموزشی، اعتبارسنجی و آزمایشی از هم جدا باشند",
+  "note": "Printed «باید» and «می‌توانند» both match."
+ },
+ {
+  "item_id": "S23681-035",
+  "verdict": "faithful",
+  "printed_expression": "ضروری است که دادهٔ آزمایشی ... داشته باشند؛ به‌طورکلی ضروری است ...",
+  "note": "Both printed «ضروری است» match; the trailing technique clause is on p-24 and is also consistent."
+ },
+ {
+  "item_id": "S23681-042",
+  "verdict": "faithful",
+  "printed_expression": "فراپارامترها نیز باید انتخاب شوند",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S23681-058",
+  "verdict": "faithful",
+  "printed_expression": "داده ورودی باید به عوامل مختلف تقسیم شود",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S23681-065",
+  "verdict": "faithful",
+  "printed_expression": "باید درجه چندجمله‌ای با داده اندازه‌گیری مطابقت داشته باشد",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S23681-068",
+  "verdict": "faithful",
+  "printed_expression": "ممکن است سنجه‌های متعددی ... مورد نیاز باشند؛ درک مورد کاربری ... حیاتی است",
+  "note": "Statement keeps «ممکن است» and «حیاتی است»; no obligation added."
+ },
+ {
+  "item_id": "S23681-080",
+  "verdict": "faithful",
+  "printed_expression": "معمولاً لازم است که برچسب به‌صورت دستی یا ... تولید شود",
+  "note": "Printed «می‌تواند» and «معمولاً لازم است» match."
+ },
+ {
+  "item_id": "S23681-081",
+  "verdict": "faithful",
+  "printed_expression": null,
+  "note": "Descriptive process text, no modal expression on the page or in the statement."
+ },
+ {
+  "item_id": "S23681-082",
+  "verdict": "faithful",
+  "printed_expression": "باید در تمام چرخه ... توجه ویژه‌ای شود",
+  "note": "Printed «باید» is on p-43."
+ },
+ {
+  "item_id": "S23681-089",
+  "verdict": "faithful",
+  "printed_expression": "معمولاً به‌صورت فرایند تصمیم‌گیری مارکوف مدل‌سازی می‌شود؛ ... مورد نیاز نیست",
+  "note": "Descriptive text with «معمولاً» only; no obligation added."
+ },
+ {
+  "item_id": "S23681-092",
+  "verdict": "faithful",
+  "printed_expression": "پیش از آغاز زنجیره لازم است وظیفه یا مسئله‌ای ... تعریف گردد",
+  "note": "Printed «لازم است» matches."
+ },
+ {
+  "item_id": "S23681-100",
+  "verdict": "faithful",
+  "printed_expression": "ابتدا مشخص می‌شود ... داده می‌تواند از منابع متعدد ... ناشی شود",
+  "note": "Descriptive text with «می‌تواند»; no obligation added."
+ },
+ {
+  "item_id": "S23681-108",
+  "verdict": "wrong",
+  "printed_expression": "مدل‌های ML به داده آموزشی ... نیاز دارند؛ ... باید از هم مجزا باشند",
+  "corrected_statement_fa": "ترکیب مجموعه‌داده یعنی انتخاب یا گردآوری داده از منابع مختلف به‌صورت مجموعه‌داده واحد؛ مدل‌های ML به دادهٔ آموزشی، دادهٔ اعتبارسنجی برای انتخاب مدل و دادهٔ آزمایشی برای ارزشیابی «نیاز دارند» و دادهٔ آموزشی، اعتبارسنجی و آزمایشی «باید» از هم مجزا باشند.",
+  "note": "«باید» is faithful, but printed «نیاز دارند» was rewritten as «لازم است» (lower severity, no باید inserted)."
+ },
+ {
+  "item_id": "S23681-109",
+  "verdict": "faithful",
+  "printed_expression": "در این صورت لازم است که داده‌های در دسترس به مجموعه‌های مجزا ... تقسیم شوند",
+  "note": "Printed «لازم است» matches; the sentence continues onto p-53 (checked), where «معمولاً» is printed."
+ },
+ {
+  "item_id": "S23681-110",
+  "verdict": "faithful",
+  "printed_expression": "ممکن است برچسب‌زنی ... الزامی باشد؛ ... ممکن است ... لازم باشد",
+  "note": "Both printed under «ممکن است» (once «الزامی», once «لازم»); statement merges them as «الزامی» without changing the may-force."
+ },
+ {
+  "item_id": "S23681-111",
+  "verdict": "faithful",
+  "printed_expression": "ممکن است نیاز به حذف PII باشد؛ ممکن است بررسی داده ... الزامی باشد",
+  "note": "All requirements printed under «ممکن است»; statement keeps that, only paraphrasing «نیاز به ... باشد» as «لازم باشد»."
+ },
+ {
+  "item_id": "S23681-114",
+  "verdict": "faithful",
+  "printed_expression": "ممکن است کاهش تعداد ویژگی‌های هر نمونه الزامی باشد",
+  "note": "Printed «ممکن است ... الزامی باشد» matches."
+ },
+ {
+  "item_id": "S23681-116",
+  "verdict": "faithful",
+  "printed_expression": "انتخاب الگوریتم MLای الزامی است که ... مناسب باشد",
+  "note": "Printed «الزامی است»; «در برخی موارد ممکن است لازم یا مطلوب باشد» spans p-54/p-55 and is rendered as «گاهی»."
+ },
+ {
+  "item_id": "S23681-122",
+  "verdict": "faithful",
+  "printed_expression": "صرفاً باید میان مدل‌هایی اندکی انجام شود",
+  "note": "Printed «باید» matches."
+ },
+ {
+  "item_id": "S23681-126",
+  "verdict": "faithful",
+  "printed_expression": "ضروری است توجه ویژه‌ای به محیط هنگام اجرا ... صورت گیرد",
+  "note": "Printed «ضروری است» and «می‌تواند» match."
+ },
+ {
+  "item_id": "S23681-127",
+  "verdict": "faithful",
+  "printed_expression": "می‌تواند ... بهینه‌سازی شود؛ ممکن است ارزشیابی مجدد ... مورد نیاز باشد",
+  "note": "Printed «می‌تواند»/«ممکن است» preserved."
+ },
+ {
+  "item_id": "S23681-130",
+  "verdict": "faithful",
+  "printed_expression": "ممکن است تنها نیاز به مقداری بازآموزی یا نیاز به آموزش یک مدل جدید ... داشته باشد",
+  "note": "Under «ممکن است»; «می‌تواند» also matches."
+ },
+ {
+  "item_id": "S23681-131",
+  "verdict": "faithful",
+  "printed_expression": "ممکن است توجه بیشتری نیاز باشد؛ پایش می‌تواند ... در بر بگیرد",
+  "note": "Under «ممکن است» and «می‌تواند»; matches."
+ },
+ {
+  "item_id": "S23681-133",
+  "verdict": "faithful",
+  "printed_expression": null,
+  "note": "Descriptive three-layer text; no modal expression on the page or in the statement."
+ },
+ {
+  "item_id": "S23681-136",
+  "verdict": "faithful",
+  "printed_expression": "در صورت لزوم می‌تواند تکمیل شود",
+  "note": "Printed «می‌تواند» matches; informative annex."
+ },
+ {
+  "item_id": "S23681-139",
+  "verdict": "faithful",
+  "printed_expression": "حقیقت پایه متغیر هدف ML نظارتی، باید مشخص شود",
+  "note": "Printed «باید» is on p-62; «می‌تواند» for the proxy also matches."
+ },
+ {
+  "item_id": "S23682-010",
+  "verdict": "wrong",
+  "printed_expression": "به‌صورت الزامی ارجاع داده شده است؛ ... الزام‌آور نیست / الزام‌آور است",
+  "corrected_statement_fa": "دو مرجع ملی (INSO 23679:1403 و INSO 12047:1395) «به‌صورت الزامی» ارجاع شده‌اند و جزئی از استاندارد محسوب می‌شوند؛ برای مرجع تاریخ‌دار تجدیدنظرها و اصلاحیه‌های بعدی «الزام‌آور نیست» و برای مرجع بدون تاریخ همواره آخرین تجدیدنظر و اصلاحیه‌ها «الزام‌آور است»؛ استفاده از این مراجع برای کاربرد استاندارد «الزامی است».",
+  "note": "Checked p-11 and adjacent p-12: «به‌صورت الزامی» is kept, but printed «الزام‌آور نیست/الزام‌آور است» was weakened to «به‌کار می‌رود» (low severity)."
+ },
+ {
+  "item_id": "S23682-012",
+  "verdict": "faithful",
+  "printed_expression": null,
+  "note": "Descriptive definition-like text; no modal expression on the page or in the statement."
+ },
+ {
+  "item_id": "S23682-019",
+  "verdict": "faithful",
+  "printed_expression": "بهتر است نهاد حکمران ... آگاهی لازم ... کسب کند",
+  "note": "Printed «بهتر است» and «می‌تواند» match."
+ },
+ {
+  "item_id": "S23682-022",
+  "verdict": "faithful",
+  "printed_expression": "ممکن است مناسب نباشند یا حتی ... در معرض مخاطره قرار گیرد",
+  "note": "Printed «ممکن است» matches; Example 1 is descriptive."
+ },
+ {
+  "item_id": "S23682-061",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود نهاد حکمران ... نظارت کند؛ توصیه می‌شود ... اطمینان حاصل کند",
+  "note": "Printed «توصیه می‌شود» (twice) matches."
+ },
+ {
+  "item_id": "S23682-065",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود سازمان اطمینان حاصل کند",
+  "note": "Printed «توصیه می‌شود» matches."
+ },
+ {
+  "item_id": "S23682-077",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود نهاد حکمران ... کسب اطمینان کند",
+  "note": "Printed «توصیه می‌شود» matches (statement shortens the subject)."
+ },
+ {
+  "item_id": "S23682-086",
+  "verdict": "faithful",
+  "printed_expression": "توصیه می‌شود نهاد حکمران این تضمین را از مدیریت مطالبه کند",
+  "note": "Printed «توصیه می‌شود» matches."
+ },
+ {
+  "item_id": "S23682-088",
+  "verdict": "faithful",
+  "printed_expression": "لازم است حکمرانی ... بازنگری شود؛ ممکن است ... نیاز داشته باشند",
+  "note": "Printed «لازم است» and «ممکن است ... نیاز داشته باشند» match."
+ },
+ {
+  "item_id": "S23682-093",
+  "verdict": "faithful",
+  "printed_expression": "می‌تواند به شناسایی نقص‌ها کمک کند؛ ممکن است نیاز به نظارت صریح ... داشته باشد؛ بازنگری الزامی",
+  "note": "Printed «می‌تواند»/«ممکن است»/«بازنگری الزامی» preserved."
+ },
+ {
+  "item_id": "S23682-123",
+  "verdict": "faithful",
+  "printed_expression": "بهتر است شرح سامانه ... شفاف باشد؛ بهتر است همه افرادی ... آموزش کافی ببینند",
+  "note": "First «بهتر است» is on p-45, the training «بهتر است» is on p-46 (checked); both match."
+ },
+ {
+  "item_id": "S23682-133",
+  "verdict": "faithful",
+  "printed_expression": "برای حصول اطمینان از اینکه تجاوز ... نمی‌گیرد، ضروری است",
+  "note": "Printed «ضروری است» matches."
+ },
+ {
+  "item_id": "S23683-005",
+  "verdict": "faithful",
+  "printed_expression": "ضروری است تأثیر متقابل جنبه‌های زیر در نظر گرفته شود",
+  "note": "The «ضروری است» sentence is on p-09 (next page, checked) and matches."
+ },
+ {
+  "item_id": "S23683-009",
+  "verdict": "faithful",
+  "printed_expression": "این استاندارد، مرجع الزامی ندارد",
+  "note": "Printed exactly as stated."
+ },
+ {
+  "item_id": "S23683-027",
+  "verdict": "faithful",
+  "printed_expression": "ضروری است که معنی داده توسط ماشین‌ها قابل خواندن باشد",
+  "note": "Printed «ضروری است» matches."
+ },
+ {
+  "item_id": "S23683-042",
+  "verdict": "faithful",
+  "printed_expression": "امنیت بالا، الزامی است",
+  "note": "Printed «الزامی است» is quoted inside the example sentence; matches."
+ },
+ {
+  "item_id": "S23684-002",
+  "verdict": "wrong",
+  "printed_expression": "نیاز است که خواص و مشخصه‌های بیشتری از سامانه‌ها مدنظر قرار گیرد",
+  "corrected_statement_fa": "در خصوص سامانه‌های هوش مصنوعی «نیاز است» که خواص و مشخصه‌های بیشتری از سامانه‌ها مدنظر قرار گیرد؛ ذی‌نفعان نیازهای متنوعی دارند و سامانه‌های هوش مصنوعی خواص و مشخصه‌های متفاوتی دارند.",
+  "note": "Page prints «نیاز است که»; statement turned it into «لازم است» (lower severity, no باید inserted)."
+ },
+ {
+  "item_id": "S23684-004",
+  "verdict": "faithful",
+  "printed_expression": "هم به‌عنوان یک فرایند سازمانی مستمر و هم به‌عنوان یک الزام غیرکارکردی",
+  "note": "«الزام غیرکارکردی» is a printed noun phrase; no obligation word added."
+ },
+ {
+  "item_id": "S23684-014",
+  "verdict": "faithful",
+  "printed_expression": "الزام‌آور نیست / الزام‌آور است / استفاده از مراجع زیر ... الزامی است",
+  "note": "Dated/undated rule and «الزامی است» all match the page."
+ },
+ {
+  "item_id": "S23684-015",
+  "verdict": "faithful",
+  "printed_expression": "استفاده از مراجع زیر برای کاربرد این استاندارد، الزامی است",
+  "note": "Three listed references match the page; printed «الزامی است» matches."
+ },
+ {
+  "item_id": "S23684-021",
+  "verdict": "faithful",
+  "printed_expression": "باید مطابق با استاندارد ISO/IEC 25010 تفسیر شوند",
+  "note": "Printed «باید» matches."
+ }
+]

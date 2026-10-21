@@ -2205,6 +2205,7 @@ final class KBK_AI_Book {
 			'attribution' => $text( $book['attribution'] ?? '' ),
 			'locale'      => $text( $book['locale'] ?? '' ),
 			'edition_id'  => $text( $book['edition_id'] ?? '' ),
+			'edition_label_fa' => $text( $book['edition_label_fa'] ?? '' ),
 			'built_date'  => 1 === preg_match( '/^\d{4}-\d{2}-\d{2}/', $built, $date ) ? $date[0] : '',
 			'cover'       => self::cover_urls( $slug, null !== $row ? (string) $row['cover'] : '' ),
 			'url'         => home_url( self::book_path( '', $slug ) ),

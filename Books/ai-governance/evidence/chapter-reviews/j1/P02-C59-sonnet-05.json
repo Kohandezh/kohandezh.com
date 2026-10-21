@@ -1,0 +1,41 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  5,
+  8
+ ],
+ "section_shas": {
+  "5": "a9cb3c661b857ec4e39e642508fadb10276930bec3c6aa1ce8c02199ea37f55a",
+  "8": "cee3cba2bee3a83c024fcc2e05f335685f857a08f546ebc4371d69a53fb48f6d"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 425.6007299423218,
+ "result": {
+  "sections": [
+   {
+    "index": 5,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 8,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "short_summary": "«سه جمله» count for B.1 not supported by evidence",
+      "summary": "The section states B.1 contains exactly three sentences («سه جمله با سه قوت دارد»), but evidence item S42001-109 alone contains both the [shall] sentence and additional [may] clauses («می‌توان واپایش‌های سازمانی و فنّی اضافه نیز تعیین کرد…»), meaning B.1 has more than three sentences. The evidence supports three distinct obligation *levels* (info/may/shall) but does not support a literal count of three sentences.",
+      "explanation": "S42001-109 is tagged [shall] yet contains a second, separate [may]-type clause within the same B.1 paragraph. This means B.1 has at minimum four content units, not three. The sentence-count «سه جمله» is a specific factual claim about structure that the cited evidence does not support.",
+      "quote": "بند B.1 سه جمله با سه قوت دارد (ص ۲۷)",
+      "failure_scenario": "A reader cites «سه جمله» as a structural fact about B.1, checks the printed standard, finds more than three sentences, and loses confidence in the summary's accuracy.",
+      "suggested_fix": "Replace «سه جمله با سه قوت دارد» with «سه سطح قوت دارد» (or «جملاتی با سه سطح قوت متفاوت دارد») to convey that three modality levels are present without making an unsupported literal sentence-count claim.",
+      "verdict": "CONFIRMED"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T03:05:42-0400"
+}

@@ -1,0 +1,109 @@
+{
+ "keys": [
+  "authorized individual",
+  "business requirement",
+  "contextual factor",
+  "control",
+  "data action",
+  "data element",
+  "data flow",
+  "data map",
+  "data privacy",
+  "data protection",
+  "data subject",
+  "data system"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 77.29682207107544,
+ "result": {
+  "verdicts": [
+   {
+    "key": "authorized individual",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "business requirement",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "contextual factor",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "control",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "attribution",
+      "explanation": "The editor_note_fa cites only 'INSO 42001 بند 3.21' but the entry carries two source-specific definitions (INSO 42001 §3.21 and INSO 23728 §3.1.5). A reader reading only the editor note would not know the term is also defined in INSO 23728 with a different, system-monitoring sense.",
+      "suggested_fix": "Change editor_note_fa to: «اصطلاح تعریف‌شده در INSO 42001 بند 3.21 (مدیریت مخاطره) و INSO 23728 بند 3.1.5 (پایش سامانه)؛ بازبینی‌نشده.»"
+     }
+    ],
+    "confidence": 0.93
+   },
+   {
+    "key": "data action",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "data element",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.95
+   },
+   {
+    "key": "data flow",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "Rule 1 requires the preferred_fa to equal exactly what the standard prints. The printed evidence shows term_fa_printed as «داده‌شارها (جریان داده)» — the parenthetical is part of the printed term entry. The proposed entry demotes this full printed form to alternatives_fa and elevates the truncated «داده‌شارها» to preferred_fa, violating the rule.",
+      "suggested_fix": "Set preferred_fa to «داده‌شارها (جریان داده)» to match the printed form exactly. The standalone «داده‌شارها» may be retained as a separate alias in alternatives_fa if desired."
+     }
+    ],
+    "confidence": 0.95
+   },
+   {
+    "key": "data map",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "data privacy",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "data protection",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "data subject",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "data system",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:05:09-0400"
+}

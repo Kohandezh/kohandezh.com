@@ -1,0 +1,166 @@
+{
+ "source_id": "INSO-23728-1403",
+ "national_reference_printed": "استاندارد ملی ایران شمارهٔ ۲۳۷۲۸ (چاپ اول): ۱۴۰۳ — جلد: «استاندارد ملی ایران ۲۳۷۲۸ چاپ اول ۱۴۰۳»؛ سمت چپ جلد: «INSO 23728 1st Edition 2024»",
+ "iranian_year_printed": "۱۴۰۳ (1403)",
+ "title_fa_printed": "فرایند حریم خصوصی داده",
+ "title_en_printed": "Data Privacy Process",
+ "title_fa_variants_printed": [
+  {
+   "text": "فرایند حریم خصوصی داده",
+   "where": "جلد",
+   "pdf_page": 1,
+   "printed_page": null
+  },
+  {
+   "text": "فرایند حریم اطلاعاتی",
+   "where": "عنوان کمیسیون فنی تدوین استاندارد",
+   "pdf_page": 4,
+   "printed_page": "د"
+  },
+  {
+   "text": "فرایند حفظ حریم اطلاعاتی",
+   "where": "پیشگفتار و عنوان بالای بند ۱",
+   "pdf_page": 8,
+   "printed_page": "ح"
+  },
+  {
+   "text": "فرایند حفظ حریم اطلاعاتی",
+   "where": "عنوان بالای متن اصلی (بند ۱)",
+   "pdf_page": 10,
+   "printed_page": 1
+  }
+ ],
+ "international_reference_printed": "IEEE Std 7002:2022, Data Privacy Process (پیشگفتار، صفحهٔ ح)؛ روی جلد: «Identical with IEEE Std 7002:2022»",
+ "international_body": "IEEE (فقط به‌صورت اختصار «IEEE» چاپ شده؛ عبارت کامل نام نهاد در سند چاپ نشده است). IEEE Std یک نهاد ISO/IEC نیست: مرجع بین‌المللی، استاندارد IEEE است، نه ISO/IEC.",
+ "international_year": 2022,
+ "international_edition_status_printed": null,
+ "equivalence_statement_printed": "«این استاندارد ملی بر مبنای پذیرش استاندارد بین‌المللی زیر به روش «معادل یکسان» تهیه و تدوین شده و شامل ترجمه تخصصی کامل متن آن به زبان فارسی می‌باشد و معادل یکسان استاندارد بین‌المللی مزبور است: IEEE Std 7002:2022, Data Privacy Process»",
+ "adoption_reference_printed": "«به روش اشاره شده در مورد الف، بند ۷، استاندارد ملی ایران شمارهٔ ۵» (روش پذیرش بین‌المللی/منطقه‌ای به‌عنوان استاندارد ملی)؛ پیشگفتار، پیش‌نویس در «کمیسیون‌های مربوط بر مبنای پذیرش استانداردهای بین‌المللی/منطقه‌ای» تهیه شده است.",
+ "publisher_printed": "سازمان ملی استاندارد ایران (Iran National Standards Organization, INSO)",
+ "approval_or_publication_date_printed": "تصویب: هفتصد و پنجاهمین اجلاسیهٔ کمیتهٔ ملی استاندارد فناوری اطلاعات مورخ ۱۴۰۳/۱۰/۰۹ (پیشگفتار، PDF ۸)؛ چاپ اول ۱۴۰۳ (روی جلد: 2024)",
+ "pdf_pages_total": 55,
+ "pdf_to_printed_offset": 9,
+ "pdf_page_numbering": "برای PDF 10 تا 55: شمارهٔ چاپی = شمارهٔ PDF منهای ۹ (PDF 10 = صفحهٔ ۱؛ PDF 55 = صفحهٔ ۴۶). PDF 1 = جلد (بدون شماره). PDF 2 تا 9 صفحات پیشگفتارِ حروف‌شمار ابجدی: PDF2=ب، 3=ج، 4=د، 5=ه، 6=و، 7=ز، 8=ح، 9=ط. نمونهٔ راستی‌آزمایی: بند 3.1.1 «پاسخگویی» در PDF 11 = صفحهٔ چاپی ۲.",
+ "ics_printed": "35.030",
+ "national_committee_printed": {
+  "committee_title": "کمیسیون فنی تدوین استاندارد «فرایند حریم اطلاعاتی»",
+  "chair": "یزدیان ورجانی، علی",
+  "secretary": "عزیزی مهماندوست، مهدی",
+  "members_count": 12,
+  "editor": "رثائی، حامد",
+  "pdf_pages": "4-5"
+ },
+ "normative_references": [],
+ "normative_references_statement": "بند ۲ (PDF 11، صفحهٔ ۲): «این استاندارد، مرجع الزامی ندارد.»",
+ "bibliography_printed": [
+  {
+   "n": 1,
+   "printed_reference": "GDPR — Regulation (EU) 2016/679 of 27 April 2016",
+   "national_number_if_printed": null
+  },
+  {
+   "n": 2,
+   "printed_reference": "IEEE Std 802.1Q-2014, Bridges and Bridged Networks",
+   "national_number_if_printed": null
+  },
+  {
+   "n": 3,
+   "printed_reference": "استاندارد ملی ایران ایزو آی‌ای‌سی ۱-۱۵۴۰۸: سال ۱۳۹۱ (معیارهای ارزیابی امنیت فناوری اطلاعات، قسمت ۱)",
+   "national_number_if_printed": "INSO 15408-1 (1391)"
+  },
+  {
+   "n": 4,
+   "printed_reference": "ISO/IEC TS 19608:2018",
+   "national_number_if_printed": null
+  },
+  {
+   "n": 5,
+   "printed_reference": "ISO/IEC 27001 (یادآوری: استاندارد ملی ۲۷۰۰۱ سال ۱۴۰۳ بر مبنای ISO/IEC 27001:2022)",
+   "national_number_if_printed": "INSO 27001 (1403)"
+  },
+  {
+   "n": 6,
+   "printed_reference": "ISO/IEC 27005:2018 (یادآوری: استاندارد ملی ۲۷۰۰۵ سال ۱۳۹۲ بر مبنای ISO/IEC 27005:2011)",
+   "national_number_if_printed": "INSO 27005 (1392)"
+  },
+  {
+   "n": 7,
+   "printed_reference": "ISO/IEC TR 27550:2019",
+   "national_number_if_printed": null
+  },
+  {
+   "n": 8,
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۱۷۶۴۳: سال ۱۳۹۰ — چارچوب کاری حریم خصوصی (یادآوری: بر مبنای ISO/IEC 29100:2011)",
+   "national_number_if_printed": "INSO 17643 (1390)"
+  },
+  {
+   "n": 9,
+   "printed_reference": "ISO/IEC 29134:2017-06",
+   "national_number_if_printed": null
+  },
+  {
+   "n": 10,
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۱-۱۵۸۱۶: سال ۱۳۹۸ — حکمرانی داده‌ها، قسمت ۱: کاربرد ISO/IEC 38500 در حکمرانی داده‌ها",
+   "national_number_if_printed": "INSO 15816-1 (1398)"
+  },
+  {
+   "n": 11,
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۹۳۲۷: سال ۱۳۹۹ — فرآیندهای چرخه عمر نرم‌افزار",
+   "national_number_if_printed": "INSO 9327 (1399)"
+  },
+  {
+   "n": 12,
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۱۶۳۰۴: سال ۱۳۹۸ — فرآیندهای چرخه حیات سامانه (در متن بند 9.2 همین مرجع [۱۲] به‌عنوان ISO/IEC/IEEE 15288:2015 ذکر شده است)",
+   "national_number_if_printed": "INSO 16304 (1398)"
+  },
+  {
+   "n": 13,
+   "printed_reference": "ISO/IEC/IEEE 16085 (یادآوری: استاندارد ملی ۱۱۳۱۲ سال ۱۴۰۰ بر مبنای ISO/IEC/IEEE 16085:2021)",
+   "national_number_if_printed": "INSO 11312 (1400)"
+  },
+  {
+   "n": 14,
+   "printed_reference": "ISO/IEC/IEEE 24765 (در بند 3.1.22 به‌صورت «ISO/IEC/IEEE 24765c:2014» ارجاع شده)",
+   "national_number_if_printed": null
+  },
+  {
+   "n": 15,
+   "printed_reference": "ISO/IEC/IEEE 24748-3:2020(E)",
+   "national_number_if_printed": null
+  },
+  {
+   "n": 16,
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۲۳۳۲۹: سال ۱۴۰۱ — مهندسی سامانه‌ها و نرم‌افزار، مدیریت چرخه حیات، مشخصه توصیف فرایند",
+   "national_number_if_printed": "INSO 23329 (1401)"
+  },
+  {
+   "n": 17,
+   "printed_reference": "NIST SP 800-37 Rev. 2 (2018)",
+   "national_number_if_printed": null
+  },
+  {
+   "n": 18,
+   "printed_reference": "NIST SP 800-53 Rev. 5",
+   "national_number_if_printed": null
+  },
+  {
+   "n": 19,
+   "printed_reference": "NIST SP 800-122",
+   "national_number_if_printed": null
+  }
+ ],
+ "bibliography_pdf_pages": "54-55 (صفحات چاپی ۴۵-۴۶)",
+ "conformance_clause": "ندارد. هیچ بندی با عنوان «انطباق/Conformance» و هیچ فهرست معیارهای انطباق در فهرست مندرجات یا متن چاپ نشده است. نزدیک‌ترین مفاد: بند 1.3 (معنای «باید»/«توصیه می‌شود»/«مجاز است»/«می‌تواند»)، بند 4.1/4.2 (انطباق با استاندارد به معنای انطباق با الزامات حقوقی/نظارتی نیست) و بند 6.5 (هستار مسئول باید «اثبات انطباق» با الزامات خاص استاندارد را بر عهده بگیرد).",
+ "notes": [
+  "تأیید انتظار مالک: INSO 23728، چاپ اول، سال ۱۴۰۳، معادل یکسان IEEE Std 7002:2022 (Data Privacy Process). تفاوتی بین انتظار و متن چاپی یافت نشد جز تعدد عنوان فارسی (ر.ک. title_fa_variants_printed).",
+  "مرجع بین‌المللی یک استاندارد IEEE است (نه ISO/IEC)؛ وضعیت (فعال/تأییدشده/لغوشده) در سند چاپ نشده؛ تنها «IEEE Std 7002:2022» و عنوان انگلیسی آمده است.",
+  "تاریخ تصویب چاپی «۱۴۰۳/۱۰/۰۹» است (نه ۱۴۰۳/۰۹/۱۰)؛ روی تصویر صفحه با بزرگ‌نمایی راستی‌آزمایی شد.",
+  "سند در پیشگفتار و مقدمه بندهای ۱ تا ۴ را «اطلاعات تکمیلی» و بندهای ۵ تا ۹ را حاوی «رویکرد روش‌شناسانه و الزامات هنجاری» معرفی می‌کند.",
+  "سند شامل پاورقی‌های مترجم و یادآوری‌های افزودهٔ INSO (معادل ملی منابع در کتابنامه) است."
+ ],
+ "uncertainties": [
+  "چهار عنوان فارسی متفاوت برای یک استاندارد در جلد، صفحهٔ کمیسیون، پیشگفتار و بالای متن؛ عنوان جلد به‌عنوان عنوان رسمی ثبت شد.",
+  "وضعیت/ویرایش IEEE (فعال، تأییدشده مجدد، لغوشده) چاپ نشده است؛ فقط سال 2022.",
+  "پیشگفتار می‌گوید پیش‌نویس در کمیسیون‌های مربوط تهیه شده؛ تاریخ تصویب در صفحهٔ پیشگفتار چاپ شده ولی تاریخ ابلاغ/انتشار جداگانه چاپ نشده است."
+ ]
+}

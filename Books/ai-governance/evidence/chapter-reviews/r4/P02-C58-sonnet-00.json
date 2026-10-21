@@ -1,0 +1,37 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "a83690f5dfc23b1a6c7887a7935213b8ea15bc22b4d8895c704c944d5c7829ec",
+  "1": "cb54a19ccfc5a08a186cafe5d548342163c54cdc1912b8eacae9ff02d0869af4"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 365.07540678977966,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 1,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "The section describes Note 1 of INSO 23682 §3.2.2 using the label «نکتهٔ ۱ مدخل», but evidence T23682-3.2.2 prints «یادآوری ۱ مدخل». INSO 42001 §3.7 (T42001-3.7) does use «نکتهٔ», so the two standards use different terms for NOTE; conflating them misreports what is printed in 23682.",
+      "quote": "نکتهٔ ۱ مدخل INSO 23682 (بند ۳.۲.۲) همین را می‌گوید و می‌افزاید که اثر ممکن است مثبت، منفی یا هر دو باشد",
+      "suggested_fix": "Replace «نکتهٔ ۱ مدخل INSO 23682 (بند ۳.۲.۲)» with «یادآوری ۱ مدخل INSO 23682 (بند ۳.۲.۲)» to match the printed label in T23682-3.2.2."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:55:11-0400"
+}

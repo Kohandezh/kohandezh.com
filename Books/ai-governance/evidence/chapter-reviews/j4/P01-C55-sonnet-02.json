@@ -1,0 +1,36 @@
+{
+ "chapter": "P01/C55",
+ "sections": [
+  2
+ ],
+ "section_shas": {
+  "2": "5188ee6e7a426e10765b4f2abc96f6d30248f1038fcba523591e6ff01a781bb4"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 398.0867831707001,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "چهار دسته: آماده‌سازی داده (بند ۸.۳)",
+      "explanation": "The parenthetical cross-reference '(بند ۸.۳)' is not supported by any cited evidence item. None of the cited items (S23681-037, F23681-شکل ۱, F23681-شکل ۳, or the section structure) link the tool category 'آماده‌سازی داده' within بند ۶.۵ to بند ۸.۳. The INSO-23681 index shows that the tool sub-section for data preparation is بند ۶.۵.۲ (آماده‌سازی داده), not ۸.۳; بند ۸.۳ is the process step in the ML chain (chapter 8), a distinct context.",
+      "suggested_fix": "Replace '(بند ۸.۳)' with '(بند ۶.۵.۲)' to match the standard's own tool-category sub-section, or remove the parenthetical entirely if the forward reference to chapter 8 is intended as an editorial note — in which case label it explicitly as «[نگاه کنید به بند ۸.۳ برای شرح فرایندی]» so it is not read as the standard's own cross-reference."
+     },
+     {
+      "type": "terminology",
+      "quote": "سنجه‌های ارزشیابی (دقت، بازیابی، F1، ROC و AUC، ماتریس درهم‌ریختگی)",
+      "explanation": "The bare abbreviations 'ROC' and 'AUC' are used in new editorial text without the INSO full Persian terms at first mention. The TERMINOLOGY RULES (binding for new chapters) specify that the official INSO terms from INSO 23681 clause 4 are «مشخصه‌های عملیاتی گیرنده» (for ROC) and «مساحت زیر منحنی» (for AUC), with the abbreviations permitted only as parenthetical aliases. Using the abbreviations alone violates the first-use rule.",
+      "suggested_fix": "Rewrite as: «سنجه‌های ارزشیابی (دقت، بازیابی، امتیاز F1، مشخصه‌های عملیاتی گیرنده (ROC) و مساحت زیر منحنی (AUC)، ماتریس درهم‌ریختگی)». In subsequent occurrences within the chapter the abbreviations may be used alone."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T03:10:27-0400"
+}

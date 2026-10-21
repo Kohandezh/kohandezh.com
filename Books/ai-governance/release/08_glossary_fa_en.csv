@@ -1,107 +1,107 @@
 concept_id,english,acronym,preferred_fa,alternatives_fa,domain,status,source_documents
-ARTIFICIAL_INTELLIGENCE,Artificial Intelligence,AI,هوش مصنوعی,,general,approved,NIST-AI-100-2E2025; NIST-AI-700-1; NIST-AI-800-1-IPD; NIST-AI-STD-FED-PLAN-2019; NIST-IR-8312; NIST-IR-8367; NIST-SP-1270
-RISK,Risk,,ریسک,خطر,risk,approved,NIST-AI-100-1; NIST-AI-600-1; NIST-AI-700-2; NIST-AI-800-1-IPD; NIST-AI-RMF-PLAYBOOK; NIST-IR-8312
-MACHINE_LEARNING,Machine Learning,ML,یادگیری ماشین,ماشین‌کارآموز; یادگیری ماشینی,ml,approved,NIST-AI-100-2E2025; NIST-AI-100-4-IPD; NIST-AI-RMF-PLAYBOOK; NIST-IR-8312; NIST-PAPER-2-TRUSTWORTHINESS; NIST-SP-1270
-PRIVACY,Privacy,SP,حریم خصوصی,امنیت داده‌های شخصی,legal,approved,NIST-AI-100-1; NIST-AI-100-2E2025; NIST-AI-100-4-IPD
-SECURITY,Security,WIFS,امنیت,,security,approved,NIST-AI-100-2E2025; NIST-AI-100-4-IPD; NIST-AI-RMF-PLAYBOOK
-EXPLAINABILITY,Explainability,,تبیین‌پذیری,قابلیت توضیح,explainability,approved,NIST-AI-100-1; NIST-IR-8367
+ARTIFICIAL_INTELLIGENCE,Artificial Intelligence,AI,هوش مصنوعی,هومص,general,approved,INSO-23681-1403; INSO-23684-1403; NIST-AI-100-2E2025; NIST-AI-700-1; NIST-AI-800-1-IPD; NIST-AI-STD-FED-PLAN-2019; NIST-IR-8312; NIST-IR-8367; NIST-SP-1270
+RISK,Risk,,مخاطره,ریسک‌ها; ریسک; مخاطره (ریسک); مخاطره‌ها,risk,approved,INSO-23682-1403; INSO-23728-1403; INSO-42001-1404; NIST-AI-100-1; NIST-AI-600-1; NIST-AI-700-2; NIST-AI-800-1-IPD; NIST-AI-RMF-PLAYBOOK; NIST-IR-8312
+MACHINE_LEARNING,Machine Learning,ML,یادگیری ماشین,ماشین‌کارآموز,ml,approved,INSO-23681-1403; INSO-23684-1403; NIST-AI-100-2E2025; NIST-AI-100-4-IPD; NIST-AI-RMF-PLAYBOOK; NIST-IR-8312; NIST-PAPER-2-TRUSTWORTHINESS; NIST-SP-1270
+PRIVACY,Privacy,,حریم خصوصی,,legal,approved,INSO-23728-1403; NIST-AI-100-1; NIST-AI-100-2E2025; NIST-AI-100-4-IPD
+SECURITY,Security,,امنیت,,security,approved,NIST-AI-100-2E2025; NIST-AI-100-4-IPD; NIST-AI-RMF-PLAYBOOK
+EXPLAINABILITY,Explainability,,تبیین‌پذیری,,explainability,approved,NIST-AI-100-1; NIST-IR-8367
 TRUSTWORTHY_AI,Trustworthy AI,ALTAI,هوش مصنوعی اعتماد‌پذیر,هوش مصنوعی اعتمادپذیر,governance,approved,NIST-AI-RMF-PLAYBOOK
-RISK_TOLERANCE,Risk tolerance,,تحمل ریسک,سطح ریسک‌پذیری,risk,approved,NIST-AI-100-1
-RELIABILITY,Reliability,,قابلیت اطمینان,اتکاپذیری,governance,approved,NIST-AI-100-1
-ROBUSTNESS,Robustness,,استواری,قابلیت استوار بودن; پایداری در برابر اختلال,ml,approved,NIST-AI-100-1; NIST-AI-100-4-IPD
+RISK_TOLERANCE,Risk tolerance,,رواداری مخاطره,تحمل ریسک; سطح رواداری مخاطره,risk,approved,INSO-23728-1403; NIST-AI-100-1
+RELIABILITY,Reliability,,قابلیت اطمینان,,governance,approved,NIST-AI-100-1
+ROBUSTNESS,Robustness,,استواری,,ml,approved,INSO-23684-1403; NIST-AI-100-1; NIST-AI-100-4-IPD
 SEE_CROSS_REFERENCE,See,,ر.ک.,,general,approved,NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-SP-1270
 BIAS,Bias,,سوگیری,کج‌سلیقگی; پیش‌داوری,bias,approved,NIST-PAPER-1-FOUNDATIONAL
-INTERPRETABILITY,interpretability,,تفسیرپذیری,قابلیت تفسیر,explainability,approved,NIST-AI-100-1; NIST-IR-8367
-RISK_MANAGEMENT,Risk management,,مدیریت ریسک,مدیریت خطر,risk,approved,NIST-AI-100-1
-ADVERSARIAL_MACHINE_LEARNING,ADVERSARIAL MACHINE LEARNING,AML,یادگیری ماشین خصمانه,یادگیری ماشین هماورد,security,approved,NIST-AI-100-2E2025
-LARGE_LANGUAGE_MODEL,Large Language Model,LLM,مدل زبانی بزرگ,مدل زبانی گسترده,genai,approved,NIST-AI-700-1
-GENERATIVE_AI,Generative AI,GAI,هوش مصنوعی مولد,هوش مصنوعی زایا,genai,approved,NIST-AI-600-1
-RED_TEAMING,Red Teaming,RT,تیم قرمز,تیم سرخ,security,approved,NIST-AI-700-2
-MEASURE,Measure,SSIM,سنجش,اندازه‌گیری; سنجه,governance,approved,NIST-AI-100-4-IPD
-LEGAL_RESEARCH,Legal Research,,پژوهش حقوقی,تحقیق حقوقی,legal,approved,NIST-PAPER-1-FOUNDATIONAL
+INTERPRETABILITY,interpretability,,تفسیرپذیری,,explainability,approved,NIST-AI-100-1; NIST-IR-8367
+RISK_MANAGEMENT,Risk management,,مدیریت مخاطره (ریسک),مدیریت ریسک; مدیریت مخاطره,risk,approved,INSO-23733-1403; NIST-AI-100-1
+ADVERSARIAL_MACHINE_LEARNING,ADVERSARIAL MACHINE LEARNING,AML,یادگیری ماشین خصمانه,,security,approved,NIST-AI-100-2E2025
+LARGE_LANGUAGE_MODEL,Large Language Model,LLM,مدل زبانی بزرگ,,genai,approved,NIST-AI-700-1
+GENERATIVE_AI,Generative AI,GAI,هوش مصنوعی مولد,,genai,approved,NIST-AI-600-1
+RED_TEAMING,Red Teaming,RT,تیم قرمز,,security,approved,NIST-AI-700-2
+MEASURE,Measure,,سنجش,,governance,approved,NIST-AI-100-4-IPD
+LEGAL_RESEARCH,Legal Research,,پژوهش حقوقی,,legal,approved,NIST-PAPER-1-FOUNDATIONAL
 KNOWLEDGE_LIMITS,Knowledge Limits,,محدودیت‌های دانش,محدودیت‌های معرفتی,explainability,approved,NIST-IR-8312
-FAIRNESS,Fairness,,انصاف,عدالت الگوریتمی; برابری,bias,approved,NIST-AI-100-1
-RESIDUAL_RISK,Residual risk,,ریسک باقیمانده,ریسک پسماند,risk,approved,NIST-AI-100-1
-TRANSPARENCY,Transparency,,شفافیت,,governance,approved,NIST-AI-100-1
-DIFFERENTIAL_PRIVACY,differential privacy,,حریم خصوصی تفاضلی,خصوصیت افتراقی,security,approved,NIST-AI-100-2E2025
-MONITORING,Monitoring,,پایش,رهگیری; نظارت,governance,approved,NIST-AI-STD-FED-PLAN-2019
+FAIRNESS,Fairness,,انصاف,,bias,approved,NIST-AI-100-1
+RESIDUAL_RISK,Residual risk,,مخاطره‌های باقی‌مانده,مخاطرهٔ باقی‌مانده; ریسک باقی‌مانده,risk,approved,INSO-23733-1403; NIST-AI-100-1
+TRANSPARENCY,Transparency,,شفافیت,,governance,approved,INSO-23684-1403; NIST-AI-100-1
+DIFFERENTIAL_PRIVACY,differential privacy,,حریم خصوصی تفاضلی,,security,approved,NIST-AI-100-2E2025
+MONITORING,Monitoring,,پایش,,governance,approved,INSO-42001-1404; NIST-AI-STD-FED-PLAN-2019
 MEMBERSHIP_INFERENCE,membership inference,,استنتاج عضویت,استنباط عضویت,security,approved,NIST-AI-100-2E2025
-RISK_APPETITE,risk appetite,,اشتهای ریسک,سطح پذیرش ریسک; رواداری ریسک,risk,approved,NIST-IR-8312
+RISK_APPETITE,risk appetite,,سطح مخاطره‌پذیری,اشتهای ریسک,risk,approved,INSO-23682-1403; NIST-IR-8312
 WATERMARKING,Watermarking,,واترمارک‌گذاری,واترمارک; درج نشان پنهان,genai,approved,NIST-AI-100-2E2025
-SYNTHETIC_CONTENT,Synthetic Content,,محتوای مصنوعی,محتوای ساختگی,genai,approved,NIST-AI-100-4-IPD
+SYNTHETIC_CONTENT,Synthetic Content,,محتوای مصنوعی,,genai,approved,NIST-AI-100-4-IPD
 AI_SYSTEM,AI system,,سامانه هوش مصنوعی,سیستم هوش مصنوعی,governance,approved,NIST-AI-100-1
 EXPLANATION_ACCURACY,Explanation Accuracy,,دقت تبیین,صحت توضیح,explainability,approved,NIST-IR-8312
-VALIDITY,Validity,,روایی,اعتبار,general,approved,NIST-AI-700-2
+VALIDITY,Validity,,روایی,,general,approved,NIST-AI-700-2
 EXPLAINABLE_AI,Explainable Artificial Intelligence,XAI,هوش مصنوعی توضیح‌پذیر,,explainability,approved,NIST-AI-RMF-PLAYBOOK; NIST-AI-STD-FED-PLAN-2019; NIST-IR-8312; NIST-IR-8367
-CYBERNETICS,Cybernetics,SMC,سایبرنتیک,فرمان‌شناسی,general,approved,NIST-AI-100-2E2025; NIST-AI-100-4-IPD; NIST-AI-RMF-PLAYBOOK; NIST-SP-1270
+CYBERNETICS,Cybernetics,,سایبرنتیک,فرمان‌شناسی,general,approved,NIST-AI-100-2E2025; NIST-AI-100-4-IPD; NIST-AI-RMF-PLAYBOOK; NIST-SP-1270
 FREEDOM_OF_INFORMATION_ACT,Information Act,FOIA,قانون آزادی اطلاعات,,legal,approved,NIST-AI-100-2E2025; NIST-AI-800-1-IPD; NIST-AI-STD-FED-PLAN-2019; NIST-SP-800-218A
-AI_RISK_MANAGEMENT_FRAMEWORK,AI RMF,,چارچوب مدیریت ریسک هوش مصنوعی,چارچوب مدیریت ریسک AI,governance,approved,
 PROMPT_INJECTION,Prompt Injection,,تزریق دستور,تزریق اعلان,security,approved,
 THREAT_MODEL,Threat Model,,مدل تهدید,,security,approved,
-JAILBREAK,Jailbreak,,دور زدن محدودیت‌های مدل,دستبرد به مدل; جیلبرک,security,approved,
+JAILBREAK,Jailbreak,,دور زدن محدودیت‌های مدل,,security,approved,
 BACKDOOR,Backdoor,,درِ پشتی,درب پشت,security,approved,
 DATA_POISONING,Data Poisoning,,مسموم‌سازی داده,,security,approved,
-HALLUCINATION,Hallucination,,توهم‌زایی,اختلال توهم مدل,genai,approved,
+HALLUCINATION,Hallucination,,توهم‌زایی,,genai,approved,
 MISUSE_RISK,Misuse Risk,,ریسک سوءاستفاده,ریسک به‌کارگیری نادرست,risk,approved,
-SECURE_SOFTWARE_DEVELOPMENT_FRAMEWORK,SSDF,,چارچوب توسعه امن نرم‌افزار,,standards,approved,
+SECURE_SOFTWARE_DEVELOPMENT_FRAMEWORK,SSDF,,چارچوب توسعه امن نرم‌افزار,چارچوب توسعه نرم‌افزار امن; چارچوب توسعه ایمن نرم‌افزار,standards,approved,NIST-SP-800-218A
 IMPACT_ASSESSMENT,Impact Assessment,,ارزیابی تأثیر,,governance,approved,
 SUPPLY_CHAIN,Supply Chain,,زنجیره تأمین,,governance,approved,
 STATISTICAL_BIAS,Statistical Bias,,سوگیری آماری,خطای آماری نظام‌مند,bias,approved,
-SAFETY,Safety,,ایمنی,امنیت رفتاری,general,approved,
-GOVERNANCE,Governance,,حکمرانی,راهبری,governance,approved,
+SAFETY,Safety,,ایمنی,,general,approved,
+GOVERNANCE,Governance,,حکمرانی,راهبری; حاکمیت,governance,approved,INSO-23728-1403
 MODEL_CARD,Model Card,,کارت مدل,برگه مدل,ml,approved,
-COMPLIANCE,Compliance,,انطباق,تطبیق قانونی,legal,approved,
+COMPLIANCE,Compliance,,انطباق,,legal,approved,INSO-23682-1403
 SECURE_SOFTWARE_DEVELOPMENT,Secure Software Development,,توسعهٔ نرم‌افزار امن,توسعه ایمن نرم‌افزار,security,approved,
 SYSTEMIC_BIAS,Systemic Bias,,سوگیری نظام‌مند,سوگیری ساختاری,bias,approved,
 HUMAN_BIAS,Human Bias,,سوگیری انسانی,سوءگرایش انسانی,bias,approved,
 AI_ACTOR,AI Actor,,کنشگر هوش مصنوعی,,governance,approved,
 INCIDENT,Incident,,رخداد,رویداد امنیتی,security,approved,
 DIGITAL_CONTENT_TRANSPARENCY,Digital Content Transparency,,شفافیت محتوای دیجیتال,شفافیت محتوا در بستر دیجیتال,governance,approved,
-CONFABULATION,Confabulation,,برساختگی,توهم مدل,genai,approved,
+CONFABULATION,Confabulation,,برساختگی,,genai,approved,
 SOCIO_TECHNICAL,Socio-technical,,اجتماعی‌ـ‌فناورانه,اجتماعی‌–فناورانه,general,approved,
 DEEPFAKE,Deepfake,,دیپ‌فیک,,genai,approved,
 INTEROPERABILITY,Interoperability,,همکنش‌پذیری,قابلیت هم‌عملی; کارکرد متقابل,standards,approved,
 DEPLOYMENT,Deployment,,استقرار,به‌کارگیری,general,approved,
 CONFORMITY_ASSESSMENT,Conformity Assessment,,ارزیابی انطباق,سنجش انطباق,standards,approved,
-STAKEHOLDER,Stakeholder,,ذی‌نفع,طرف ذی‌نفع,governance,approved,
+STAKEHOLDER,Stakeholder,,ذی‌نفع,,governance,approved,INSO-23728-1403
 JUDICIAL_ANALYTICS,Judicial Analytics,,تحلیل داده‌های قضایی,,legal,approved,
 THIRD_PARTY,Third-Party,,طرف ثالث,,legal,approved,
-AUDIT,Audit,,حسابرسی,رسیدگی,governance,approved,
+AUDIT,Audit,,ممیزی,رسیدگی; حسابرسی,governance,approved,INSO-42001-1404; NIST-SP-1270
 MODEL_EXTRACTION,Model Extraction,,استخراج مدل,کشف‌گری مدل,security,approved,
 HARM,Harm,,آسیب,,risk,approved,
 MODEL_INVERSION,Model Inversion,,وارون‌سازی مدل,بازگشتی مدل,security,approved,
-ACCOUNTABILITY,Accountability,,پاسخگویی,مسئولیت‌پذیری,governance,approved,
+ACCOUNTABILITY,Accountability,,پاسخگویی,پاسخ‌گویی,governance,approved,INSO-23728-1403
 DUAL_USE_FOUNDATION_MODEL,Dual-Use Foundation Model,,مدل پایه دوکاربردی,مدل بنیادین دوجانبه‌کاربرد,genai,approved,
 POISONING,Poisoning,,مسموم‌سازی,,security,approved,
 MEANINGFUL_EXPLANATION,Meaningful Explanation,,تبیین معنادار,توضیح بامعنا,explainability,approved,
-PROVENANCE,Provenance,,منشأ,منشأ و اصالت داده; پیشینه محتوا,governance,approved,
-RESILIENCE,Resilience,,تاب‌آوری,انعطاف‌پذیری سیستمی,governance,approved,
-EVASION,Evasion,,گریز,فرار از تشخیص,security,approved,
-HUMAN_OVERSIGHT,Human Oversight,,نظارت انسانی,ارزیابی و مراقبت انسانی,governance,approved,
-ARIA,ARIA,,ARIA,ایریا,standards,english_only,
-FOUNDATION_MODEL,Foundation Model,,مدل پایه,مدل بنیادین,genai,approved,
-STANDARD,Standard,,استاندارد,معیار,standards,approved,
-GOVERN,Govern,,حاکمیت,کنترل و راهبری,governance,approved,
-MAP,Map,,نگاشت,نگاشت زمینه; تابع نگاشت,governance,approved,
-MANAGE,Manage,,مدیریت,اقدام و مدیریت,governance,approved,
-AI_RISK_SCORES,AI and Risk Scores,,نمره‌های ریسک هوش مصنوعی,امتیازهای ریسک هوش مصنوعی,risk,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
-AI_TRUSTWORTHINESS_LITIGATION,"Artificial Intelligence, Trustworthiness, and Litigation",,هوش مصنوعی، اعتمادپذیری و دادرسی,هوش مصنوعی، قابلیت اعتماد و دادرسی,legal,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
-AI_AND_BIAS_EVALUATION,Artificial Intelligence and Bias – An Evaluation,,هوش مصنوعی و سوگیری – یک ارزیابی,هوش مصنوعی و تورش – ارزیابی,bias,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
+PROVENANCE,Provenance,,منشأ,,governance,approved,
+RESILIENCE,Resilience,,تاب‌آوری,,governance,approved,
+EVASION,Evasion,,گریز,,security,approved,
+HUMAN_OVERSIGHT,Human Oversight,,نظارت انسانی,,governance,approved,
+ARIA,ARIA,,ARIA,,standards,english_only,
+FOUNDATION_MODEL,Foundation Model,,مدل پایه,,genai,approved,
+STANDARD,Standard,,استاندارد,,standards,approved,
+GOVERN,Govern,,حاکمیت,,governance,approved,
+MAP,Map,,نگاشت,نگاشت زمینه,governance,approved,
+MANAGE,Manage,,مدیریت,,governance,approved,
+AI_RISK_SCORES,AI and Risk Scores,,نمره‌های ریسک هوش مصنوعی,,risk,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
+AI_TRUSTWORTHINESS_LITIGATION,"Artificial Intelligence, Trustworthiness, and Litigation",,هوش مصنوعی، اعتمادپذیری و دادرسی,,legal,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
+AI_AND_BIAS_EVALUATION,Artificial Intelligence and Bias – An Evaluation,,هوش مصنوعی و سوگیری – یک ارزیابی,,bias,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
 AI_DECISION_MAKING_JUDGES,"AI, Decision-Making, and the Role of Judges",,هوش مصنوعی، تصمیم‌گیری و نقش قضات,,legal,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
-AI_AND_JUSTICE_SYSTEM,Artificial Intelligence and the Justice System,,هوش مصنوعی و نظام عدالت,هوش مصنوعی و سامانه قضایی,legal,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
+AI_AND_JUSTICE_SYSTEM,Artificial Intelligence and the Justice System,,هوش مصنوعی و نظام عدالت,,legal,approved,NIST-PAPER-1-FOUNDATIONAL; NIST-PAPER-2-TRUSTWORTHINESS; NIST-PAPER-3-LEGAL; NIST-PAPER-4-BIAS
 STANDARDIZATION,Standardization,ISO,استانداردسازی,یکسان‌سازی استانداردی,standards,approved,NIST-AI-100-4-IPD; NIST-AI-STD-FED-PLAN-2019; NIST-SP-1270
-RECEIVER_OPERATING_CHARACTERISTIC_ALT,RECEIVER OPERATING CHARACTERISTIC,ROC,منحنی مشخصه عملکرد گیرنده,منحنی عملکرد گیرنده,ml,approved,NIST-AI-100-2E2025; NIST-AI-700-1
+RECEIVER_OPERATING_CHARACTERISTIC_ALT,Receiver Operating Characteristics,ROC,مشخصه‌های عملیاتی گیرنده,مشخصه عملکرد گیرنده,ml,approved,INSO-23681-1403; NIST-AI-100-2E2025; NIST-AI-700-1
 EXECUTIVE_ORDER,Executive Order,EO,فرمان اجرایی,,legal,approved,NIST-AI-600-1; NIST-SP-800-218A
-DAUBERT_STANDARD,Daubert,,استاندارد داوبرت,معیار داوبرت,legal,approved,NIST-PAPER-2-TRUSTWORTHINESS
-INFORMATION_TECHNOLOGY,Information Technology,BEIT,فناوری اطلاعات,فناوری اطلاعاتی,general,approved,NIST-AI-100-4-IPD; NIST-AI-STD-FED-PLAN-2019
-GDPR,General Data Protection Regulation,GDPR,مقررات عمومی حفاظت از داده‌ها,مقررات عمومی حمایت از داده,legal,approved,NIST-IR-8312; NIST-IR-8367
-ENTERPRISE_RISK_MANAGEMENT,Enterprise Risk Management,ERM,مدیریت ریسک سازمانی,مدیریت ریسک بنگاهی,risk,approved,NIST-IR-8312; NIST-SP-800-218A
-DETECTION_ERROR_TRADEOFF,Detection Error Tradeoff,DET,موازنه خطای آشکارسازی,بده‌بستان خطای تشخیص,ml,approved,NIST-AI-100-4-IPD; NIST-AI-700-1
-DISENTANGLING_EXPLAINABILITY,Disentangling explainability,,تفکیک توضیح‌پذیری از تفسیرپذیری,جدا کردن توضیح‌پذیری از تفسیرپذیری,explainability,approved,NIST-IR-8367
-NIST_SPECIAL_PUBLICATION,NIST Special Publication,SP,انتشار ویژه NIST,مطبوعات خاص NIST,standards,approved,NIST-SP-800-218A
-FALSE_POSITIVE_RATE,False Positive Rate,FPR,نرخ مثبت کاذب,نرخ مثبت‌های کاذب,ml,approved,NIST-AI-700-1
+DAUBERT_STANDARD,Daubert,,استاندارد داوبرت,,legal,approved,NIST-PAPER-2-TRUSTWORTHINESS
+INFORMATION_TECHNOLOGY,Information Technology,BEIT,فناوری اطلاعات,,general,approved,NIST-AI-100-4-IPD; NIST-AI-STD-FED-PLAN-2019
+GDPR,General Data Protection Regulation,GDPR,مقررات عمومی حفاظت از داده‌ها,مقررات عمومی حفاظت از داده‌های اتحادیه اروپا; آیین‌نامه عمومی حفاظت از داده اتحادیه اروپا,legal,approved,NIST-IR-8312; NIST-IR-8367
+ENTERPRISE_RISK_MANAGEMENT,Enterprise Risk Management,ERM,مدیریت ریسک سازمانی,,risk,approved,NIST-IR-8312; NIST-SP-800-218A
+DETECTION_ERROR_TRADEOFF,Detection Error Tradeoff,DET,موازنه خطای آشکارسازی,,ml,approved,NIST-AI-100-4-IPD; NIST-AI-700-1
+DISENTANGLING_EXPLAINABILITY,Disentangling explainability,,تفکیک توضیح‌پذیری از تفسیرپذیری,,explainability,approved,NIST-IR-8367
+NIST_SPECIAL_PUBLICATION,NIST Special Publication,SP,انتشار ویژه NIST,,standards,approved,NIST-SP-800-218A
+FALSE_POSITIVE_RATE,False Positive Rate,FPR,نرخ مثبت کاذب,,ml,approved,INSO-23681-1403; NIST-AI-700-1
 DEEP_LEARNING,Deep Learning,DL,یادگیری عمیق,,ml,approved,NIST-AI-100-2E2025; NIST-AI-100-4-IPD
-GENERATIVE_ADVERSARIAL_NETWORKS,Generative Adversarial Networks,GANs,شبکه‌های مولد رقابتی,شبکه‌های خصمانه مولد,genai,approved,NIST-AI-100-4-IPD; NIST-PAPER-1-FOUNDATIONAL
+GENERATIVE_ADVERSARIAL_NETWORKS,Generative Adversarial Networks,GANs,شبکه‌های مولد رقابتی,,genai,approved,NIST-AI-100-4-IPD; NIST-PAPER-1-FOUNDATIONAL
+AI_RISK_MANAGEMENT_FRAMEWORK,AI Risk Management Framework,RMF,چارچوب مدیریت ریسک هوش مصنوعی,چارچوب مدیریت ریسک AI,risk,approved,NIST-AI-600-1; NIST-PAPER-1-FOUNDATIONAL; NIST-SP-800-218A
 AMERICANS_WITH_DISABILITIES_ACT,Disabilities Act,ADA,قانون معلولیت آمریکا,قانون توان‌خواهان آمریکا,legal,approved,NIST-PAPER-4-BIAS; NIST-SP-1270
 SYNTHETIC_CONTENT_DETECTION,Synthetic content detection,,آشکارسازی محتوای مصنوعی,تشخیص محتوای ساختگی,genai,proposed,NIST-AI-100-4-IPD
 INTERPRETATION,Interpretation,,تفسیر,بازتفسیر ذهنی,explainability,proposed,NIST-IR-8367
@@ -113,7 +113,7 @@ DEFENSE_IN_DEPTH,Defense-in-depth,,دفاع چندلایه,دفاع در عمق,
 SYNTHETIC_IMAGE_DETECTION,Synthetic image detection,,آشکارسازی تصویر مصنوعی,تشخیص تصاویر ساختگی; کشف تصویر تولیدشده با هوش مصنوعی,genai,proposed,NIST-AI-100-4-IPD
 MODEL_ALIGNMENT,Model alignment,,هم‌راستاسازی مدل,هم‌راستایی مدل,ml,proposed,NIST-PAPER-1-FOUNDATIONAL
 NARROW_AI,Narrow AI,,هوش مصنوعی محدود,هوش مصنوعی ضعیف; هوش مصنوعی تخصصی,ml,proposed,NIST-PAPER-1-FOUNDATIONAL
-TRUE_POSITIVE_RATE,True Positive Rate,TPR,نرخ مثبت واقعی,نرخ مثبت‌های درست,ml,proposed,NIST-AI-700-1
+TRUE_POSITIVE_RATE,True Positive Rate,TPR,نرخ مثبت واقعی,نرخ مثبت‌های درست,ml,proposed,INSO-23681-1403; NIST-AI-700-1
 PIXEL_HACKING,Pixel hacking,,هک پیکسلی,دستکاری پیکسلی,security,proposed,NIST-PAPER-1-FOUNDATIONAL
 SYNTHETIC_VIDEO,Synthetic video,,ویدئوی مصنوعی,ویدئوی ساختگی; ویدئوی سینتتیک,genai,proposed,NIST-AI-100-4-IPD
 EXTRAPOLATION,Extrapolation,,برون‌یابی,برآورد بیرونی; فرایابی,ml,proposed,NIST-PAPER-1-FOUNDATIONAL
@@ -133,7 +133,7 @@ NIST_ARTIFICIAL_INTELLIGENCE,NIST Artificial Intelligence,AI,هوش مصنوعی
 EQUAL_ERROR_RATE,Equal Error Rate,EER,نرخ برابری خطا,نرخ خطای برابر,ml,proposed,NIST-AI-700-1
 HUMAN_RESEARCH_PROTECTIONS,Human Research Protections,OHRP,حفاظت از پژوهش‌های انسانی,حمایت از آزمودنی‌های پژوهش انسانی,legal,proposed,NIST-AI-RMF-PLAYBOOK
 AI_ACT,Artificial Intelligence Act,AIA,قانون هوش مصنوعی,قانون هوش مصنوعی اتحادیه اروپا,legal,proposed,NIST-PAPER-1-FOUNDATIONAL
-FALSE_NEGATIVE_RATE,False Negative Rate,FNR,نرخ کاذب منفی,نرخ منفی کاذب,ml,proposed,NIST-AI-700-1
+FALSE_NEGATIVE_RATE,False Negative Rate,FNR,نرخ منفی کاذب,نرخ کاذب منفی,ml,approved,INSO-23681-1403; NIST-AI-700-1
 RECEIVER_OPERATING_CHARACTERISTIC,Receiver Operator Curve,ROC,منحنی مشخصه عملکرد گیرنده,منحنی ROC,ml,proposed,NIST-AI-100-4-IPD
 HUMAN_CENTERED_AI,Human-centered AI,HCAI,هوش مصنوعی انسان‌محور,هوش مصنوعی مرکزیت‌یافته بر انسان,governance,proposed,NIST-SP-1270
 PARTIAL_DEPENDENCE_PLOTS,Partial Dependence Plots,PDPs,نمودارهای وابستگی جزئی,نمودارهای وابستگی موضعی,explainability,proposed,NIST-IR-8312
@@ -159,7 +159,7 @@ EQUAL_CREDIT_OPPORTUNITY_ACT,Equal Credit Opportunity Act,ECOA,لایحه فرص
 SYSTEM_CAUSABILITY_SCALE,System Causability Scale,SCS,مقیاس علت‌مندسازی سامانه,طیف علیت‌پذیری سیستم,explainability,proposed,NIST-IR-8312
 CONTEXTUAL_ROBUSTNESS_INDEX,Contextual Robustness Index,CORIX,شاخص استحکام بافتی,نمایه تاب‌آوری زمینه‌ای,genai,proposed,NIST-AI-700-2
 FAST_GRADIENT_SIGN_METHOD,Fast Gradient Sign Method,FGSM,روش علامت گرادیان سریع,روش نشان گرادیان سریع,security,proposed,NIST-AI-100-2E2025
-AREA_UNDER_CURVE,AREA UNDER THE CURVE,AUC,سطح زیر منحنی,مساحت زیر منحنی,ml,proposed,NIST-AI-100-2E2025
+AREA_UNDER_CURVE,AREA UNDER THE CURVE,AUC,مساحت زیر منحنی,سطح زیر منحنی,ml,approved,INSO-23681-1403; NIST-AI-100-2E2025; NIST-AI-700-1
 UNSUPERVISED_DATA_AUGMENTATION,Unsupervised Data Augmentation,UDA,افزایش دادهٔ بدون نظارت,تقویت دادهٔ بدون نظارت,ml,proposed,NIST-AI-100-2E2025
 OCIL,Open Checklist Interactive Language,OCIL,زبان تعاملی فهرست بازبینی باز,زبان تعاملی چک‌لیست باز,standards,proposed,NIST-SP-800-218A
 GPT,GENERATIVE PRE-TRAINED TRANSFORMER,GPT,ترنسفورمر ازپیش‌آموزش‌دیدهٔ مولد,تبدیل‌گر مولد پیش‌آموزش‌دیده,genai,proposed,NIST-AI-100-2E2025
@@ -168,7 +168,7 @@ MODEL_TESTING,Model Testing,MT,آزمون مدل,تست مدل,ml,proposed,NIST-
 ANALYTICS,Analytics,,تحلیل‌گری داده,تحلیل‌ها,general,proposed,NIST-PAPER-1-FOUNDATIONAL
 BAYESIAN_CASE_MODEL,Bayesian Case Model,BCM,مدل موردی بیزی,مدل مبتنی بر مورد بیزین,explainability,proposed,NIST-IR-8312
 CONCEPT_ACTIVATION_VECTORS,Concept Activation Vectors,CAVs,بردارهای فعال‌سازی مفهوم,,explainability,proposed,NIST-IR-8312
-VULNERABILITIES,Vulnerabilities,RV,آسیب‌پذیری‌ها,حفره‌های امنیتی,security,proposed,NIST-SP-800-218A
+VULNERABILITIES,Vulnerabilities,,آسیب‌پذیری‌ها,حفره‌های امنیتی,security,proposed,NIST-SP-800-218A
 LIME,Local Interpretable Model-agnostic Explanations,LIME,توضیحات مدل‌ناوابسته محلی تفسیرپذیر,توضیح‌های محلی مستقل از مدل,explainability,proposed,NIST-IR-8367
 ADVERSARIAL_THREAT_MATRIX,Adversarial Threat Matrix,MITRE,ماتریس تهدیدهای خصمانه,ماتریس تهدیدهای adversarial,security,proposed,NIST-AI-RMF-PLAYBOOK
 OUT_OF_DISTRIBUTION,OUT-OF-DISTRIBUTION,OOD,خارج از توزیع,خارج از توزیع داده,ml,proposed,NIST-AI-100-2E2025
@@ -182,7 +182,7 @@ JENSEN_SHANNON_DIVERGENCE,Jensen-Shannon,JS,واگرایی یِنسن–شنون
 RED_AMBER_GREEN,Red-amber-green,RAG,طبقه‌بندی قرمز–نارنجی–سبز,دسته‌بندی سه‌رنگی ریسک,risk,proposed,NIST-AI-RMF-PLAYBOOK
 FIELD_TESTING,Field Testing,FT,آزمون میدانی,آزمایش صحرایی; ارزیابی میدانی,genai,proposed,NIST-AI-700-2
 ROBOTIC_PROCESS_AUTOMATION,Robotic Process Automation,RPA,اتوماسیون فرایند رباتیک,خودکارسازی فرایند با ربات,general,proposed,NIST-PAPER-1-FOUNDATIONAL
-NEURAL_NETWORK_EXCHANGE_FORMAT,Neural Network Exchange Format,NNEF,قالب تبادل شبکه عصبی,قالب مبادله شبکه عصبی,standards,proposed,NIST-AI-STD-FED-PLAN-2019
+NEURAL_NETWORK_EXCHANGE_FORMAT,Neural Network Exchange Format,NNEF,قالب تبادل شبکه عصبی,قالب مبادله شبکه عصبی,standards,proposed,INSO-23681-1403; NIST-AI-STD-FED-PLAN-2019
 SECURITY_CONSENSUS_OPERATIONAL_READINESS_EVALUATION,Security Consensus Operational Readiness Evaluation,SCORE,ارزیابی آمادگی عملیاتی مبتنی بر اجماع امنیتی,,security,proposed,NIST-AI-RMF-PLAYBOOK
 AI_SAFETY_INSTITUTE,AI Safety Institute,AISI,مؤسسه ایمنی هوش مصنوعی,نهاد ایمنی هوش مصنوعی,governance,proposed,NIST-AI-800-1-IPD
 DIGITAL_SIGNATURE_STANDARD,Digital Signature Standard,DSS,استاندارد امضای دیجیتال,استاندارد امضای رقومی,standards,proposed,NIST-AI-100-4-IPD
@@ -197,7 +197,7 @@ SYSTEMS_USING_MACHINE_LEARNING,Systems Using Machine Learning,ML,سامانه‌
 NATIONAL_ONLINE_INFORMATIVE_REFERENCES_PROGRAM,National Online Informative References Program,OLIR,برنامه ملی مراجع اطلاعاتی برخط,برنامه ملی ارجاعات اطلاع‌رسانی آنلاین (OLIR),standards,proposed,NIST-SP-800-218A
 ARTIFICIAL_INTELLIGENCE_SYSTEMS,Artificial-Intelligence Systems,ATLAS,سامانه‌های هوش مصنوعی,سیستم‌های هوشمندی مصنوعی,governance,proposed,NIST-AI-100-2E2025
 FAST_GEOMETRIC_PROJECTIONS,Fast Geometric Projections,FGP,تصاویر هندسی سریع,تابع تصاویر هندسی سریع,ml,proposed,NIST-AI-100-2E2025
-FUTURE,Future,CEF,آینده,,general,proposed,NIST-AI-STD-FED-PLAN-2019
+FUTURE,Future,,آینده,,general,proposed,NIST-AI-STD-FED-PLAN-2019
 MEL_FREQUENCY_CEPSTRAL_COEFFICIENTS,Mel Frequency Cepstral Coefficients,MFCCs,ضرایب سپسترال فرکانس مل,ضرایب سکپسترال فرکانس مل,ml,proposed,NIST-AI-100-4-IPD
 BASED_FORMAL_ONTOLOGY,Basic Formal Ontology,BFO,هستی‌شناسی صوری پایه,آنتولوژی صوری بنیادی,standards,proposed,NIST-AI-STD-FED-PLAN-2019
 ARTIFICIAL_BRAIN_SIMULATION,Artificial Brain Simulation,ABS,شبیه‌سازی مصنوعی مغز,شبیه‌سازی مغز مصنوعی,ml,proposed,NIST-AI-100-2E2025
@@ -212,10 +212,10 @@ OFFICE_OF_SCIENCE_AND_TECHNOLOGY_POLICY,Technology Policy,OSTP,دفتر سیاس
 POINTS_OF_CONTACT,Points-of-Contact,POC,افراد رابط,نقاط تماس; مسئولان ارتباط,governance,proposed,NIST-AI-600-1
 STANDARDS_DEVELOPMENT_ORGANIZATIONS,Standards Development Organizations,SDOs,سازمان‌های توسعه استاندارد,نهادهای تدوین استاندارد,standards,proposed,NIST-AI-STD-FED-PLAN-2019
 NIST_CYBERSECURITY_WHITE_PAPER,NIST Cybersecurity White Paper,CSWP,سفیدمقاله امنیت سایبری NIST,مقاله سفید امنیت سایبری NIST,security,proposed,NIST-SP-800-218A
-INHERENT_SAFETY_SCORE,Score,IS,امتیاز ایمنی ذاتی,نمره ایمنی ذاتی,risk,proposed,NIST-AI-100-4-IPD
+INHERENT_SAFETY_SCORE,Score,,امتیاز ایمنی ذاتی,نمره ایمنی ذاتی,risk,proposed,NIST-AI-100-4-IPD
 GOVERNMENT_ACCOUNTABILITY_OFFICE,Government Accountability Office,GAO,دفتر پاسخگویی دولت آمریکا,سازمان حسابرسی دولت,governance,proposed,NIST-PAPER-1-FOUNDATIONAL
-TERRORISM,Terrorism,GIFCT,تروریسم,ترور,security,proposed,NIST-AI-100-4-IPD
-AI_MANAGEMENT_SYSTEM,Artificial Intelligence Management System,AIMS,سامانه مدیریت هوش مصنوعی,نظام مدیریت هوش مصنوعی,governance,proposed,NIST-AI-100-4-IPD
+TERRORISM,Terrorism,,تروریسم,ترور,security,proposed,NIST-AI-100-4-IPD
+AI_MANAGEMENT_SYSTEM,Artificial Intelligence Management System,AIMS,نظام مدیریت هوش مصنوعی,سیستم مدیریت هوش مصنوعی,governance,approved,INSO-42001-1404; NIST-AI-100-4-IPD
 CHIEF_COUNSEL,Chief Counsel,OCC,مشاور ارشد حقوقی,رئیس مشاوران حقوقی,legal,proposed,NIST-AI-700-1
 STATISTICAL_BALANCE,Statistical balance,,توازن آماری,تعادل آماری,bias,proposed,NIST-AI-RMF-PLAYBOOK
 DESIGN_AI_FAIR,Design AI so that it’s fair,,طراحی هوش مصنوعی به‌گونه‌ای که منصفانه باشد,طراحی عادلانهٔ هوش مصنوعی,bias,proposed,NIST-PAPER-4-BIAS
@@ -309,7 +309,7 @@ DIGITAL_WATERMARKING,digital watermarking,,واترمارک دیجیتال,نه�
 FAIR_HOUSING_PROFILE,fair housing profile,,نمایهٔ مسکن منصفانه,پروفایل مسکن عادلانه,legal,proposed,NIST-AI-100-1
 AI_MODEL_PRODUCERS,AI model producers,,تولیدکنندگان مدل هوش مصنوعی,سازندگان مدل هوش مصنوعی,governance,proposed,NIST-SP-800-218A
 COVERT,covert,,پنهان,نهفته,security,proposed,NIST-AI-100-4-IPD
-METADATA,metadata,,فراداده,متادیتا,general,proposed,NIST-AI-100-4-IPD
+METADATA,metadata,,فراداده,متادیتا,general,proposed,INSO-23683-1403; NIST-AI-100-4-IPD
 BIAS_TESTING_REMEDIATION,Bias Testing and Remediation Approaches,,رویکردهای آزمون و اصلاح سوگیری,روش‌های سنجش و درمان سوگیری,bias,proposed,NIST-AI-RMF-PLAYBOOK
 USE_CASE_PROFILES,use-case profiles,,نمایه‌های مورد کاربرد,پروفایل‌های مورد استفاده,governance,proposed,NIST-AI-100-1
 CRYPTOGRAPHIC_HASHES,Cryptographic hashes,,درهم‌سازهای رمزنگارانه,هش‌های رمزنگارانه; توابع چکیده رمزنگارانه,security,proposed,NIST-AI-100-4-IPD
@@ -388,7 +388,6 @@ TWO_WAY_INTERACTION,two-way interaction,,تعامل دوسویه,برهم‌کن
 PRINCIPLES_ON_ARTIFICIAL_INTELLIGENCE,Principles on Artificial Intelligence,,اصول هوش مصنوعی,اصول مربوط به هوش مصنوعی,governance,proposed,NIST-PAPER-1-FOUNDATIONAL
 UNCONSCIOUS_RACIAL_BIAS_TRIAL_JUDGES_STUDY,Does unconscious racial bias affect trial judges?,,آیا سوگیری نژادی ناهشیار بر قضات محاکم اثر می‌گذارد؟,,bias,proposed,NIST-PAPER-4-BIAS
 POLICY_REVIEW,Policy Review,,بازبینی خط‌مشی,مرور سیاستی,governance,proposed,NIST-AI-600-1
-RISKS,Risks,,خطرها,ریسک‌ها,risk,proposed,NIST-AI-800-1-IPD
 DEPLOYING_OR_OPERATING,deploying or operating,,استقرار یا بهره‌برداری,پیاده‌سازی یا اجرا,general,proposed,NIST-AI-100-1
 MECHANISMS,mechanisms,,سازوکارها,مکانیزم‌ها,general,proposed,NIST-IR-8367
 BIG_DATA_DISPARATE_IMPACT,Big Data’s Disparate Impact,,اثر نابرابر کلان‌داده,اثر متفاوت داده‌های عظیم,bias,proposed,NIST-PAPER-4-BIAS
@@ -428,3 +427,138 @@ HUMAN_FEEDBACK,Human Feedback,,بازخورد انسانی,,genai,approved,
 HUMAN_JUDGMENT,Human Judgment,,قضاوت انسانی,,governance,approved,NIST-AI-100-1
 ADJUDICATION,Adjudication,,داوری اختلاف,حکمیت,ml,approved,
 GOLD_DATASET,Gold Dataset,,مجموعه‌دادهٔ طلایی,,ml,approved,
+BIG_DATA,big data,,کلان‌داده,,data_governance,approved,INSO-15816-3-1403; INSO-23683-1403
+CUSTOMER_DATA,customer data,,دادهٔ مشتری,,data_governance,approved,INSO-15816-3-1403
+DATA_CONTROLLER,data controller,,واپایشگر داده,,data_governance,approved,INSO-15816-3-1403
+DATA_PROCESSOR,data processor,,پردازشگر داده,,data_governance,approved,INSO-15816-3-1403
+DATA_QUALITY_OWNER,data quality owner,,مالک کیفیت داده,,data_governance,approved,INSO-15816-3-1403
+DATA_SENSITIVITY,data sensitivity,,حساسیت داده,,data_governance,approved,INSO-15816-3-1403
+DATA_SHARING,data sharing,,هم‌رسانی داده‌ها (اشتراک داده),هم‌رسانی داده‌ها,data_governance,approved,INSO-15816-3-1403
+DATA_STAKEHOLDER,data stakeholder,,ذی‌نفع داده,,data_governance,approved,INSO-15816-3-1403
+DATA_STEWARD,data steward,,متصدی داده,,data_governance,approved,INSO-15816-3-1403
+DATA_TAXONOMY,data taxonomy,,رده‌بندی داده,,data_governance,approved,INSO-15816-3-1403
+ORGANIZATIONAL_DATA,organizational data,,داده‌های سازمانی,,data_governance,approved,INSO-15816-3-1403
+PERSONALLY_IDENTIFIABLE_INFORMATION,Personally Identifiable Information,PII,اطلاعات قابل‌شناسایی شخصی؛ داده‌های شخصی,,data_governance,approved,INSO-15816-3-1403
+PII_PRINCIPAL,PII principal,,مالک PII,,data_governance,approved,INSO-15816-3-1403
+SEMI_STRUCTURED_DATA,semi-structured data,,داده‌های نیمه‌ساختاریافته,,data_governance,approved,INSO-15816-3-1403
+STRUCTURED_DATA,structured data,,داده‌های ساختاریافته,داده ساختاریافته,data_governance,approved,INSO-15816-3-1403; INSO-23683-1403
+CLASSIFICATION_MODEL,classification model,,مدل طبقه‌بندی,,machine_learning,approved,INSO-23681-1403
+REGRESSION_MODEL,regression model,,مدل وایازش (رگرسیون),مدل وایازش,machine_learning,approved,INSO-23681-1403
+GENERALIZATION,generalization,,تعمیم,,machine_learning,approved,INSO-23681-1403
+OVERFITTING,overfitting,,بیش‌برازش,,machine_learning,approved,INSO-23681-1403
+UNDERFITTING,underfitting,,برازش کمتر از حد,,machine_learning,approved,INSO-23681-1403
+BACKPROPAGATION,backpropagation,,پس انتشار,,machine_learning,approved,INSO-23681-1403
+LEARNING_RATE,learning rate,,نرخ یادگیری,,machine_learning,approved,INSO-23681-1403
+CLASS,class,,طبقه,,machine_learning,approved,INSO-23681-1403
+CLUSTER,cluster,,خوشه,,machine_learning,approved,INSO-23681-1403; INSO-23683-1403
+FEATURE,feature,,ویژگی,,machine_learning,approved,INSO-23681-1403
+DISTANCE,distance,,فاصله,,machine_learning,approved,INSO-23681-1403
+UNLABELLED,unlabelled,,فاقد برچسب,,machine_learning,approved,INSO-23681-1403
+USE_OF_AI,use of AI,,استفاده از هوش مصنوعی,استفاده از هومص (هوش مصنوعی),governance,approved,INSO-23682-1403
+OVERSIGHT,oversight,,نظارت,,governance,approved,INSO-23682-1403
+BENEFIT,benefit,,منفعت,,big_data,approved,INSO-23683-1403
+CLOUD_COMPUTING,cloud computing,,محاسبات ابری,,big_data,approved,INSO-23683-1403
+DATA,data,,داده,,big_data,approved,INSO-23683-1403
+DATA_ANALYTICS,data analytics,,واکاوش داده,,big_data,approved,INSO-23683-1403
+DATABASE,database,,پایگاه‌داده,,big_data,approved,INSO-23683-1403
+DATA_MODEL,data model,,مدل داده,,big_data,approved,INSO-23683-1403
+DATA_PROCESSING,data processing,,داده‌پردازی,,privacy,approved,INSO-23683-1403; INSO-23728-1403
+DATA_SCIENCE,data science,,داده‌شناسی,,big_data,approved,INSO-23683-1403
+DATA_SET,data set,,مجموعه‌داده,,big_data,approved,INSO-23683-1403
+DATA_TYPE,data type,,نوع داده,,big_data,approved,INSO-23683-1403
+DATA_VARIABILITY,data variability,,تغییرپذیری داده,,big_data,approved,INSO-23683-1403
+DATA_VARIETY,data variety,,گونه داده,,big_data,approved,INSO-23683-1403
+DATA_VELOCITY,data velocity,,سرعت داده,,big_data,approved,INSO-23683-1403
+DATA_VERACITY,data veracity,,صحت داده,,big_data,approved,INSO-23683-1403
+DATA_VOLATILITY,data volatility,,فراریت داده,,big_data,approved,INSO-23683-1403
+DATA_VOLUME,data volume,,حجم داده,,big_data,approved,INSO-23683-1403
+DISTRIBUTED_DATA_PROCESSING,distributed data processing,,پردازش داده های توزیعی,,big_data,approved,INSO-23683-1403
+DISTRIBUTED_FILE_SYSTEM,distributed file system,,سامانه پرونده توزیعی,,big_data,approved,INSO-23683-1403
+FILE,file,,پرونده,,big_data,approved,INSO-23683-1403
+GATHER,gather,,گردآورد (جمع‌آوری),گردآورد; جمع‌آوری,big_data,approved,INSO-23683-1403
+HORIZONTAL_SCALING,horizontal scaling,,مقیاس‌بندی افقی,,big_data,approved,INSO-23683-1403
+NON_RELATIONAL_DATABASE,non-relational database,,پایگاه‌دادهٔ غیررابطه‌ای,,big_data,approved,INSO-23683-1403
+NON_RELATIONAL_MODEL,non-relational model,,مدل غیررابطه‌ای,,big_data,approved,INSO-23683-1403
+PARALLEL,parallel,,موازی,,big_data,approved,INSO-23683-1403
+PARTIALLY_STRUCTURED_DATA,partially structured data,,داده نیمه‌ساختاریافته,,big_data,approved,INSO-23683-1403
+RELATIONAL_ALGEBRA,relational algebra,,جبر رابطه‌ای,,big_data,approved,INSO-23683-1403
+RELATIONAL_DATABASE,relational database,,پایگاه‌دادهٔ رابطه‌ای,,big_data,approved,INSO-23683-1403
+RELATIONAL_MODEL,relational model,,مدل رابطه‌ای,,big_data,approved,INSO-23683-1403
+SCATTER,scatter,,پراکنش,,big_data,approved,INSO-23683-1403
+SCATTER_GATHER,scatter-gather,,پراکنش - گردآورد,,big_data,approved,INSO-23683-1403
+STREAMING_DATA,streaming data,,داده‌شارها,,big_data,approved,INSO-23683-1403
+SQL,SQL,,زپ‌سا,,big_data,approved,INSO-23683-1403
+UNSTRUCTURED_DATA,unstructured data,,داده ناساختمند,,big_data,approved,INSO-23683-1403
+VERTICAL_SCALING,vertical scaling,,مقیاس‌بندی عمودی,,big_data,approved,INSO-23683-1403
+MEASURE_NOUN,measure (noun),,سنجه,,quality,approved,INSO-23684-1403
+MEASURE_VERB,measure (verb),,سنجیدن,,quality,approved,INSO-23684-1403
+SOFTWARE_QUALITY_MEASURE,software quality measure,,سنجه کیفیت نرم‌افزار,,quality,approved,INSO-23684-1403
+RISK_TREATMENT_MEASURE,risk treatment measure,,اقدام مقابله با مخاطره (ریسک),اقدام مقابله با مخاطره,quality,approved,INSO-23684-1403
+USER_CONTROLLABILITY,user controllability,,واپایش‌پذیری کاربر,,quality,approved,INSO-23684-1403
+FUNCTIONAL_ADAPTABILITY,functional adaptability,,وفق‌پذیری کارکردی,,quality,approved,INSO-23684-1403
+FUNCTIONAL_CORRECTNESS,functional correctness,,صحت کارکردی,,quality,approved,INSO-23684-1403
+INTERVENABILITY,intervenability,,مداخله‌پذیری,,quality,approved,INSO-23684-1403
+SOCIETAL_AND_ETHICAL_RISK_MITIGATION,societal and ethical risk mitigation,,مخاطره کاهی جامعگی و اخلاقی,,quality,approved,INSO-23684-1403
+BIG_DATA_BUSINESS_SECURITY_RISK,big data business security risk,,مخاطره امنیتی کسب‌وکار کلان‌داده,,security,approved,INSO-23685-1403
+BIG_DATA_BUSINESS_SECURITY_RISK_CONTROL,big data business security risk control,,واپایش مخاطره امنیتی کسب‌وکار کلان‌داده,,security,approved,INSO-23685-1403
+CONTENT,content,,محتوا,,security,approved,INSO-23685-1403
+ENTITY,entity,,هستار,,privacy,approved,INSO-23685-1403; INSO-23728-1403
+EVENT_DATA,event data,,داده‌های رویداد,,security,approved,INSO-23685-1403
+RISK_INDEX,risk index,,شاخص مخاطره,,security,approved,INSO-23685-1403
+AUTHORIZED_INDIVIDUAL,authorized individual,,فرد مجاز,,privacy,approved,INSO-23728-1403
+BUSINESS_REQUIREMENTS,business requirements,,الزامات کسب‌وکار,,privacy,approved,INSO-23728-1403
+CONTEXTUAL_FACTORS,contextual factors,,عوامل بافت,,privacy,approved,INSO-23728-1403
+CONTROL,control,,واپایش,کنترل,management_system,approved,INSO-23728-1403; INSO-42001-1404
+DATA_ACTIONS,data actions,,کنش‌های داده,,privacy,approved,INSO-23728-1403
+DATA_ELEMENT,data element,,عنصرداده,,privacy,approved,INSO-23728-1403
+DATA_FLOW,data flow,,داده‌شارها (جریان داده),داده‌شارها,privacy,approved,INSO-23728-1403
+DATA_MAP,data map,,نقشه داده,,privacy,approved,INSO-23728-1403
+DATA_PRIVACY,data privacy,,حریم اطلاعاتی,,privacy,approved,INSO-23728-1403
+DATA_PROTECTION,data protection,,حفاظت از داده,,privacy,approved,INSO-23728-1403
+DATA_SUBJECT,data subject,,موضوع داده,,privacy,approved,INSO-23728-1403
+DATA_SYSTEM,data system,,سامانه داده,,privacy,approved,INSO-23728-1403
+DE_IDENTIFICATION,de-identification,,هویت‌زدایی,,privacy,approved,INSO-23728-1403
+ENVIRONMENT,environment,,محیط,,privacy,approved,INSO-23728-1403
+FUNCTIONAL_REQUIREMENT,functional requirement,,الزام کارکردی,,privacy,approved,INSO-23728-1403
+FUNCTIONALITY,functionality,,قابلیت کارکرد,,privacy,approved,INSO-23728-1403
+GUIDELINES,guidelines,,راهنمون,,privacy,approved,INSO-23728-1403
+INFORMATION_SECURITY,information security,,امنیت اطلاعات,,management_system,approved,INSO-23728-1403; INSO-42001-1404
+ITERATIVE_PROCESS,iterative process,,فرایند تکرارشونده,,privacy,approved,INSO-23728-1403
+NONFUNCTIONAL_REQUIREMENT,nonfunctional requirement,,الزام غیرکارکردی,,privacy,approved,INSO-23728-1403
+ORGANIZATION,organization,,سازمان,,management_system,approved,INSO-23728-1403; INSO-42001-1404
+ORGANIZATIONAL_PRIVACY_REQUIREMENTS,organizational privacy requirements,,الزامات حریم خصوصی سازمانی,,privacy,approved,INSO-23728-1403
+ORGANIZATIONAL_PRIVACY_FRAMEWORK,organizational privacy framework,,چارچوب حریم خصوصی سازمانی,,privacy,approved,INSO-23728-1403
+PERSONAL_DATA,personal data,,داده شخصی,,privacy,approved,INSO-23728-1403
+POLICY,policy,,خط‌مشی,,management_system,approved,INSO-23728-1403; INSO-42001-1404
+PRIVACY_CAPABILITIES,privacy capabilities,,قابلیت‌های حریم خصوصی,,privacy,approved,INSO-23728-1403
+PRIVACY_CONTROL,privacy control,,واپایش حریم خصوصی,,privacy,approved,INSO-23728-1403
+PRIVACY_FRAMEWORK,privacy framework,,چارچوب حریم خصوصی,,privacy,approved,INSO-23728-1403
+PRIVACY_PRINCIPLES,privacy principles,,اصول حفظ حریم خصوصی,,privacy,approved,INSO-23728-1403
+PRIVACY_REQUIREMENTS,privacy requirements,,الزامات حفظ حریم خصوصی,,privacy,approved,INSO-23728-1403
+PRIVACY_RISK,privacy risk,,مخاطره (ریسک) حریم خصوصی,مخاطره حریم خصوصی; ریسک حریم خصوصی,privacy,approved,INSO-23728-1403
+PROCEDURE,procedure,,روال,,privacy,approved,INSO-23728-1403
+REGULATORY_CONTEXT,regulatory context,,بافت تنظیم‌گری (رگولاتوری),بافت تنظیم‌گری,privacy,approved,INSO-23728-1403
+RISK_MITIGATION,risk mitigation,,مخاطره کاهی,,privacy,approved,INSO-23728-1403
+SECURITY_CONTROL,security control,,واپایش امنیتی,,privacy,approved,INSO-23728-1403
+SYSTEM,system,,سامانه,,privacy,approved,INSO-23728-1403
+SYSTEM_OF_INTEREST,system-of-interest,,سامانهٔ توجه,,privacy,approved,INSO-23728-1403
+SYSTEMS_DEVELOPMENT_LIFE_CYCLE,systems development life cycle,,چرخه عمر توسعه سامانه‌ها,,privacy,approved,INSO-23728-1403
+TRAINING,training,,آموزش,,privacy,approved,INSO-23728-1403
+INTERESTED_PARTY,interested party,,طرف‌های ذی‌نفع,,management_system,approved,INSO-42001-1404
+TOP_MANAGEMENT,top management,,مدیریت رده‌بالا,,management_system,approved,INSO-42001-1404
+OBJECTIVE,objective,,هدف,,management_system,approved,INSO-42001-1404
+PROCESS,process,,فرایند,,management_system,approved,INSO-42001-1404
+COMPETENCE,competence,,شایستگی,,management_system,approved,INSO-42001-1404
+DOCUMENTED_INFORMATION,documented information,,اطلاعات مدون,,management_system,approved,INSO-42001-1404
+PERFORMANCE,performance,,عملکرد,,management_system,approved,INSO-42001-1404
+CONTINUAL_IMPROVEMENT,continual improvement,,بهبود مداوم,,management_system,approved,INSO-42001-1404
+EFFECTIVENESS,effectiveness,,اثربخشی,,management_system,approved,INSO-42001-1404
+REQUIREMENT,requirement,,الزام,,management_system,approved,INSO-42001-1404
+CONFORMITY,conformity,,انطباق,,management_system,approved,INSO-42001-1404
+NONCONFORMITY,nonconformity,,عدم انطباق,,management_system,approved,INSO-42001-1404
+CORRECTIVE_ACTION,corrective action,,اقدام اصلاحی,,management_system,approved,INSO-42001-1404
+MEASUREMENT,measurement,,اندازه‌گیری,,management_system,approved,INSO-42001-1404
+GOVERNING_BODY,governing body,,مرجع حکمران,نهاد حکمران,management_system,approved,INSO-23682-1403; INSO-42001-1404
+AI_SYSTEM_IMPACT_ASSESSMENT,AI system impact assessment,,ارزیابی تأثیر سامانه هوش مصنوعی,ارزیابی تأثیر سامانه هومص,management_system,approved,INSO-42001-1404
+DATA_QUALITY,Data Quality,,کیفیت داده,,management_system,approved,INSO-42001-1404
+STATEMENT_OF_APPLICABILITY,statement of applicability,,بیانیهٔ قابلیت کاربست‌پذیری,,management_system,approved,INSO-42001-1404

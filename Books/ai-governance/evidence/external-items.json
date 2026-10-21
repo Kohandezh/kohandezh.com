@@ -1,0 +1,82 @@
+{
+ "X-ISO-22989": {
+  "source_id": "EXTERNAL-VERIFIED",
+  "kind": "external",
+  "clause": null,
+  "pdf_page": null,
+  "printed_page": null,
+  "url": "https://www.iso.org/standard/74296.html",
+  "accessed": "2026-10-17",
+  "text": "ISO/IEC 22989:2022 — Information technology — Artificial intelligence — Artificial intelligence concepts and terminology. Status: Published (stage 60.60); publication date 2022-07; edition 1; 60 pages; ISO/IEC JTC 1/SC 42."
+ },
+ "X-ISO-42005": {
+  "source_id": "EXTERNAL-VERIFIED",
+  "kind": "external",
+  "clause": null,
+  "pdf_page": null,
+  "printed_page": null,
+  "url": "https://www.iso.org/standard/42005",
+  "accessed": "2026-10-17",
+  "text": "ISO/IEC 42005:2025 — Information technology — Artificial intelligence (AI) — AI system impact assessment. Status: Published (stage 60.60); publication date 2025-05; edition 1; 39 pages."
+ },
+ "X-ISO-42006": {
+  "source_id": "EXTERNAL-VERIFIED",
+  "kind": "external",
+  "clause": null,
+  "pdf_page": null,
+  "printed_page": null,
+  "url": "https://www.iso.org/standard/42006",
+  "accessed": "2026-10-17",
+  "text": "ISO/IEC 42006:2025 — title as shown on the ISO page: «Artificial intelligence — Requirements for AIMS audit and certification bodies». Status: Published (stage 60.60); publication date 2025-07; edition 1; 31 pages."
+ },
+ "X-ISO-24027": {
+  "source_id": "EXTERNAL-VERIFIED",
+  "kind": "external",
+  "clause": null,
+  "pdf_page": null,
+  "printed_page": null,
+  "url": "https://www.iso.org/standard/77607.html",
+  "accessed": "2026-10-17",
+  "text": "ISO/IEC TR 24027:2021 — Information technology — Artificial intelligence (AI) — Bias in AI systems and AI aided decision making. Status: Published (stage 60.60); publication date 2021-11; edition 1; 39 pages."
+ },
+ "X-ISO-24028": {
+  "source_id": "EXTERNAL-VERIFIED",
+  "kind": "external",
+  "clause": null,
+  "pdf_page": null,
+  "printed_page": null,
+  "url": "https://www.iso.org/standard/77608.html",
+  "accessed": "2026-10-17",
+  "text": "ISO/IEC TR 24028:2020 — Information technology — Artificial intelligence — Overview of trustworthiness in artificial intelligence. Status: Published (stage 60.60); publication date 2020-05; edition 1; 43 pages."
+ },
+ "X-ISO-5338": {
+  "source_id": "EXTERNAL-VERIFIED",
+  "kind": "external",
+  "clause": null,
+  "pdf_page": null,
+  "printed_page": null,
+  "url": "https://www.iso.org/standard/81118.html",
+  "accessed": "2026-10-17",
+  "text": "ISO/IEC 5338:2023 — Information technology — Artificial intelligence — AI system life cycle processes. Status: Published (stage 60.60); publication date 2023-12; edition 1; 39 pages."
+ },
+ "X-REFINDEX": {
+  "source_id": "EXTERNAL-VERIFIED",
+  "kind": "external",
+  "clause": null,
+  "pdf_page": null,
+  "printed_page": null,
+  "url": "https://services.iranailab.ir/standards",
+  "accessed": "2026-10-17",
+  "text": "Reference index page of the AI reference laboratory: describes itself as the secretariat of the national mirror technical committee «هوش مصنوعی» at the Iran National Standards Organization (ISO/IEC JTC 1/SC 42 mirror); lists 10 national standards, all at stage «انتشار رسمی (مرحلهٔ ۵ از ۵)», giving only a Persian title and a one-line description for each; NO standard numbers, NO international designations, NO per-document links. Titles listed: ML framework; data privacy process; big-data business security risk assessment; SQuaRE quality model for AI systems; AI risk-management guidance; governance implications of the use of AI in organizations; cloud computing and distributed platforms — data sharing agreement framework; AI concepts and terminology; governance of data part 3 data classification; big data overview and vocabulary. INSO 42001 is not among the listed titles."
+ },
+ "X-15816-BIB17": {
+  "source_id": "INSO-15816-3-1403",
+  "kind": "identity",
+  "clause": "bibliography",
+  "pdf_page": 36,
+  "printed_page": 27,
+  "url": null,
+  "accessed": "2026-10-17",
+  "text": "INSO 15816-3 bibliography item [17], read on the page image: «استاندارد ملی ایران شمارهٔ ۲۳۶۸۲: سال ۱۴۰۳، فناوری اطلاعات – حکمرانی فناوری اطلاعات – پیامدهای حکمرانی استفاده از هوش مصنوعی توسط سازمان‌ها». The worker report adds that the item is not cited in the body text."
+ }
+}

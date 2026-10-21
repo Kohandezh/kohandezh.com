@@ -1,0 +1,50 @@
+{
+ "chapter": "P06/C63",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "93a329deff16086956ecbf2fa92dbd3a475a9844d50edee8b96abcdc7271c9e9",
+  "3": "bc963fa9942038c802f6c9a0edd67f95414a92823aca0c0055c144c711de012f"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 329.7850661277771,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "When paraphrasing S23728-018, the section gives a three-item list but the evidence prints four: «اصول، حقوق، مسئولیت‌ها و تعهدات مربوط به داده‌پردازی‌های شخصی». The section silently drops «مسئولیت‌ها», misrepresenting what the standard enumerates.",
+      "quote": "بر اصول، حقوق و تعهدات داده‌پردازی‌های شخصی تمرکز می‌کنند",
+      "suggested_fix": "افزودن «مسئولیت‌ها» به فهرست: «بر اصول، حقوق، مسئولیت‌ها و تعهدات مربوط به داده‌پردازی‌های شخصی تمرکز می‌کنند» (مطابق S23728-018)"
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "The section drops «قضایی» from the printed technical term «حوزه‌های قضایی» in S23728-025. The result, «حوزه‌ها»، is vaguer than «jurisdictions» and is not the wording printed in the standard.",
+      "quote": "سازمان‌هایی که سامانه را برای استفادهٔ دیگران (حوزه‌ها یا صنایع دیگر) می‌سازند",
+      "suggested_fix": "اصلاح به «حوزه‌های قضایی یا صنایع دیگر» مطابق S23728-025"
+     },
+     {
+      "type": "unsupported_claim",
+      "explanation": "The compiler's summary table labels the input to clause 8 as «مخاطره‌های اولویت‌بندی‌شده» (prioritized risks). Neither S23728-032 nor S23728-171 uses this qualifier. S23728-032 characterises the input as «مجموعه‌ای از الزامات حریم خصوصی مبتنی بر مخاطره» — risk-based privacy requirements, with no prioritisation claim.",
+      "quote": "مخاطره‌های اولویت‌بندی‌شده",
+      "suggested_fix": "جایگزینی با «الزامات حریم خصوصی مبتنی بر مخاطره» (مطابق S23728-032) یا حذف قید «اولویت‌بندی‌شده» و نوشتن صرفاً «مخاطره‌ها»"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:24:14-0400"
+}

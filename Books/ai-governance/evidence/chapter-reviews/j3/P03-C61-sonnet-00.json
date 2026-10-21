@@ -1,0 +1,37 @@
+{
+ "chapter": "P03/C61",
+ "sections": [
+  0,
+  4
+ ],
+ "section_shas": {
+  "0": "eb16c5e615946f1bfe015c3513d6fccc9a90945093c24fc62fcf04221c589a65",
+  "4": "3f9756d3356283a244a8350868c08a56477fa25c7dfa65c38dc614c324598b75"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 366.89785504341125,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "۵-۲-۴-۱ و ۵-۲-۴-۴: شاخص‌های پایش، هشدار، ممیزی نمونه‌ای، گزارش کاربر",
+      "explanation": "The phrase «ممیزی نمونه‌ای» appears in the «در استاندارد ملی» column for the «پایش پس از استقرار» row, but this exact compound term does not appear in any cited evidence item. Clause 5-2-4-4 (S23685-067, S23685-068) uses «ممیزی امنیتی» (security audit), while sample-related terminology in S23685-062 appears only in the formula denominators («بازرسی نمونه‌های رویداد»). The section has merged two distinct concepts from different clauses into a single unsupported phrase. Although the table header labels the entire table as editorial («نظر تدوینگر است»), the «در استاندارد ملی» column heading signals to readers that the cell content describes what the standard contains, making the unsupported coinage misleading.",
+      "suggested_fix": "Replace «ممیزی نمونه‌ای» with «ممیزی امنیتی» to match S23685-067/068. If the compiler also wishes to flag the sampling denominator, add a parenthetical: «ممیزی امنیتی (شامل بازرسی نمونه‌های رویداد)» with a footnote pointing to S23685-062."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T03:09:36-0400"
+}

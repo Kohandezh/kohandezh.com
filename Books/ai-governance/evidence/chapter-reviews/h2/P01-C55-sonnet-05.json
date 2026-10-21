@@ -1,0 +1,30 @@
+{
+ "chapter": "P01/C55",
+ "sections": [
+  5
+ ],
+ "section_shas": {
+  "5": "d04e723bad39f76482b6d958d3e70cc804f2e13a155520b0b36ab8c05c9075db"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 185.050372838974,
+ "result": {
+  "sections": [
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "The section states that figure 3 uses the form «شبکهٔ عصبی کپسولی», but evidence F23681-شکل ۳ explicitly lists the box label as «شبکه کپسولی» (not «شبکه عصبی کپسولی»). The full form «شبکه عصبی کپسولی» is found only in the abbreviation table (F23681-table14, CapsNet entry), not in figure 3.",
+      "quote": "«شبکهٔ عصبی کپسولی» در شکل ۳ و جدول کوته‌نوشت‌ها",
+      "suggested_fix": "Separate the two loci: «شبکه کپسولی» در شکل ۳ و «شبکه عصبی کپسولی» در جدول کوته‌نوشت‌ها — reflecting F23681-شکل ۳ («شبکه کپسولی») and F23681-table14 («شبکه عصبی کپسولی») respectively."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:04:52-0400"
+}

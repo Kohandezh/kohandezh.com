@@ -1,0 +1,43 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "569436e1446aa94120de5e4f735de20c98f11e132da053b50b98a2e233df4b62",
+  "1": "57c398bc92c3e040db1e3efe144a3a1f483cfd23eb806e562a8e109012130c2b"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 358.13437008857727,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "برای ملاحظات تدوین خط‌مشی (سیاست سازمانی) به ISO/IEC 38507",
+      "explanation": "The parenthetical «سیاست سازمانی» uses «سیاست» as a gloss for the organizational-policy term «خط‌مشی». The terminology rules assign «سیاست/سیاست‌گذاری» exclusively to public/legal policy contexts and «خط‌مشی» to the organizational sense (INSO 42001 §3.5). The supporting evidence (S42001-033) only uses «خط‌مشی‌های هومص»; the «سیاست سازمانی» gloss is not in any cited item and crosses the context-split boundary.",
+      "suggested_fix": "Delete «(سیاست سازمانی)»: write «برای ملاحظات تدوین خط‌مشی به ISO/IEC 38507»."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "الزام‌های بندهای ۴ تا ۱۰ با «باید» نوشته شده‌اند",
+      "explanation": "This is a factual claim about what is printed across all seven main clauses (4–10). The cited evidence contains only one shall-level extract (S42001-049, clause 6.1.3) using «باید»; no cited item states this property for the full range 4–10. The claim must either be narrowed to the evidenced instance, or qualified as an editorial observation of the compiler.",
+      "suggested_fix": "Add a qualifying phrase, e.g.: «الزام‌های این استاندارد — نظیر آنچه در نمونه‌هایی چون بند ۶.۱.۳ می‌آید — با «باید» نوشته شده‌اند» or mark the sentence explicitly as تدوینگر rather than citing it as a printed property of all clauses 4–10."
+     }
+    ]
+   },
+   {
+    "index": 1,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T08:04:02-0400"
+}

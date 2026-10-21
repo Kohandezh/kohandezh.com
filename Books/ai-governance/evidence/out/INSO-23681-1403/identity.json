@@ -1,0 +1,56 @@
+{
+ "source_id": "INSO-23681-1403",
+ "national_reference_printed": "استاندارد ملی ایران شمارهٔ ۲۳۶۸۱ (چاپ اول)",
+ "national_reference_printed_en": "INSO 23681, 1st Edition, 2024",
+ "iranian_year_printed": "۱۴۰۳",
+ "title_fa_printed": "چارچوب سامانه‌های هوش مصنوعی با استفاده از یادگیری ماشین",
+ "title_en_printed": "Framework for Artificial Intelligence (AI) systems using Machine Learning (ML)",
+ "international_reference_printed": "ISO/IEC 23053:2022, Framework for Artificial Intelligence (AI) Systems Using Machine Learning (ML)",
+ "international_year": "2022",
+ "equivalence_statement_printed": "روش «معادل یکسان» — شامل ترجمهٔ تخصصی کامل متن به فارسی (پیش‌گفتار)؛ جلد: Identical with ISO/IEC 23053:2022",
+ "adoption_reference_printed": "مبتنی بر پذیرش استاندارد بین‌المللی؛ بند ۷ استاندارد ملی ایران شمارهٔ ۵؛ تصویب در هفتصد و چهلمین اجلاسیهٔ کمیتهٔ ملی استاندارد فناوری اطلاعات مورخ ۱۴۰۳/۰۵/۰۹",
+ "publisher_printed": "سازمان ملی استاندارد ایران (Iran National Standards Organization, INSO)",
+ "approval_or_publication_date_printed": "۱۴۰۳/۰۵/۰۹ (تاریخ تصویب در کمیتهٔ ملی استاندارد فناوری اطلاعات؛ تاریخ انتشار جداگانه چاپ نشده؛ روی جلد فقط «۱۴۰۳» و «2024»)",
+ "ics_printed": "35.020",
+ "edition_printed": "چاپ اول",
+ "committee_printed": {
+  "title": "کمیسیون فنی تدوین استاندارد «چارچوب سامانه‌های هوش مصنوعی با استفاده از یادگیری ماشین»",
+  "chair": "علی یزدیان ورجانی (دکتری مهندسی کامپیوتر؛ عضو هیئت‌علمی دانشکده مهندسی برق و کامپیوتر - دانشگاه تربیت‌مدرس)",
+  "secretary": "مهدی عزیزی مهماندوست (دکتری مدیریت راهبردی فضای سایبری؛ معاون مرکز نوآوری و توسعه هوش مصنوعی پژوهشگاه ارتباطات و فناوری اطلاعات)",
+  "editor": "حامد رثائی (کارشناسی‌ارشد مهندسی برق - قدرت؛ رئیس گروه تدوین استانداردهای ملی - سازمان ملی استاندارد ایران)",
+  "members_count_printed": 10,
+  "pdf_pages": [
+   4,
+   5
+  ]
+ },
+ "pdf_pages_total": 64,
+ "pdf_to_printed_offset": "شمارهٔ چاپی = شمارهٔ PDF − 9 از صفحهٔ PDF 10 (چاپی ۱) تا PDF 64 (چاپی ۵۵)؛ صفحات پیش‌متن با حروف ابجد: PDF 2=ب، 3=ج، 4=د، 5=ه، 6=و، 7=ز، 8=ح، 9=ط؛ PDF 1 (جلد) بدون شماره.",
+ "normative_references": [
+  {
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۲۳۶۷۹: سال ۱۴۰۳، فناوری اطلاعات - هوش مصنوعی - مفاهیم و اصطلاحات هوش مصنوعی",
+   "national_number_if_printed": "23679",
+   "pdf_page": 10
+  }
+ ],
+ "bibliography_standards_cited": [
+  {
+   "printed_reference": "[12] ISO/IEC 19944-1:2020, Cloud Computing And Distributed Platforms - Data Flow, Data Categories And Data Use - Part 1: Fundamentals",
+   "pdf_page": 64
+  },
+  {
+   "printed_reference": "[14] ISO/IEC 20889, Privacy Enhancing Data De-Identification Terminology And Classification Of Techniques",
+   "pdf_page": 64
+  },
+  {
+   "printed_reference": "[17] ISO/IEC 17789, Information technology - Cloud computing - Reference architecture",
+   "pdf_page": 64
+  }
+ ],
+ "notes": "شمارهٔ ملی (۲۳۶۸۱)، سال ایرانی (۱۴۰۳) و مبنای بین‌المللی (ISO/IEC 23053:2022) با انتظار دستور کار کاملاً مطابق است؛ تفاوتی یافت نشد. پیش‌گفتار می‌گوید این استاندارد «معادل یکسان» و شامل ترجمهٔ تخصصی کامل متن است. تنها مرجع الزامی (بند ۲) استاندارد ملی ۲۳۶۷۹ است؛ شمارهٔ ISO متناظر آن در این PDF چاپ نشده است (در نتیجه نباید بدون بررسی فایل ۲۳۶۷۹ ادعا شود که معادل کدام ISO/IEC است). متن بند ۱ و دامنه: چارچوب سامانهٔ AI عمومی با فناوری ML برای هر نوع و اندازهٔ سازمان. بندهای اصلی برچسب صریح «الزامی/آگاهی‌دهنده» ندارند (فقط پیوست الف «(آگاهی‌دهنده)» و بند ۲ «مراجع الزامی» برچسب دارند)؛ متن اصلی چارچوبی/توضیحی است و «باید/ضروری است/لازم است» فقط در چند جملهٔ پراکنده آمده است (فهرست در uncertainties.md). نقش‌ها/ذی‌نفعان: فهرست یا بند مستقل نقش‌ها وجود ندارد (تنها اشاره به «ذی‌نفعان» در ۸-۳ و ۸-۵). آدرس‌های وب چاپ‌شده (ISO OBP، Electropedia، پایگاه INSO) فقط در پاورقی بند ۳ و صفحهٔ ۲ آمده‌اند.",
+ "uncertainties": [
+  "تاریخ انتشار جداگانه چاپ نشده؛ فقط تاریخ تصویب ۱۴۰۳/۰۵/۰۹ و سال ۱۴۰۳/2024 روی جلد.",
+  "شمارهٔ ISO متناظر مرجع الزامی ۲۳۶۷۹ در این PDF چاپ نشده.",
+  "پیش‌گفتار از «بند ۷ استاندارد ملی ایران شمارهٔ ۵» و «مورد الف» نام می‌برد؛ متن «مورد الف» در این PDF مشخص نیست."
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "chapter": "P01/C55",
+ "sections": [
+  0,
+  2
+ ],
+ "section_shas": {
+  "0": "30fe28e49b98687e55e5cfac93a44483bfadad370cfc84854fa9288f9956d7a7",
+  "2": "3f388c7732f1f3709a4be60f1fe1659016c4572e74718a1b99f5b2f222af69ba"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 313.6429431438446,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "quote_not_verbatim",
+      "explanation": "The section explicitly claims to present Figure 1 'همان‌گونه که چاپ شده' (as printed), yet omits «مدل» from two box labels in the unlabelled middle row. Evidence F23681-شکل ۱ transcribes those boxes as «بازآموزی مدل با داده‌های افزوده» and «بازآموزی مدل برای استفاده سفارشی»; the section renders them without «مدل». (Note: evidence item S23681-012 also omits «مدل» in its summary, but the authoritative figure transcription F23681-شکل ۱ includes it, and a verbatim-fidelity claim must match the figure source.)",
+      "quote": "بازآموزی با داده‌های افزوده و بازآموزی برای استفادهٔ سفارشی",
+      "suggested_fix": "Restore the word «مدل» in both labels to match F23681-شکل ۱: «بازآموزی مدل با داده‌های افزوده» and «بازآموزی مدل برای استفادهٔ سفارشی»."
+     },
+     {
+      "type": "number_or_page_error",
+      "explanation": "The comparison table assigns pages «ص ۳۴ و ۳۵» to the غیرنظارتی (۷.۳) row. The only cited evidence for clause 7.3 content (S23681-083) is at printed page 34; printed page 35 is where clause 7.4 (نیمه‌نظارتی) begins, as confirmed by S23681-085 (pdf 44 / printed 35). No cited evidence item places clause 7.3 material on printed page 35, so the second page in the range is unsupported.",
+      "quote": "غیرنظارتی (۷.۳) | بدون دادهٔ برچسب‌دار؛ … مثال: K-means و PCA | ۳۴ و ۳۵",
+      "suggested_fix": "Change the page column for the غیرنظارتی row from «۳۴ و ۳۵» to «۳۴» to stay within the supported evidence."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:55:43-0400"
+}

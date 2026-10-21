@@ -1,0 +1,44 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  3,
+  4
+ ],
+ "section_shas": {
+  "3": "61958feaa11c91c8b1760b3c37981441e6f1d59586ff4566f72f9eebed7fd349",
+  "4": "f547f95cc8c30bd93c4d8704205fd07cca91e096755c7aa3fdf5fb96c1023fe8"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 597.5440819263458,
+ "result": {
+  "sections": [
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "هدف چارچوب کمک به یکپارچه‌کردن مدیریت مخاطره در فعالیت‌ها و کارکردهای مهم است",
+      "explanation": "Evidence S23733-032 prints «فعالیت‌ها و عملکردهای مهم». The section substitutes «کارکردهای مهم» for the INSO-printed «عملکردهای مهم». Although both Farsi words can translate 'functions/operations', the standard's printed term is «عملکرد» and the terminology rules require using the verified INSO-printed term for each clause.",
+      "suggested_fix": "Replace «کارکردهای مهم» with «عملکردهای مهم» to match the term as printed in INSO 23733:1403 §5.1 (S23733-032)."
+     }
+    ]
+   },
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "number_or_page_error",
+      "quote": "دامنه، بافت و معیارهای سطح پروژه از مراحل چرخهٔ عمر سامانه، به تعریف ۲۳۶۷۹، اثر می‌پذیرند",
+      "explanation": "Evidence S23733-071 gives the full identifier «۲۳۶۷۹: ۱۴۰۳» (INSO 23679:1403). The section drops the year, leaving only «۲۳۶۷۹». Per the project rule, both the INSO number and the Iranian year must be given together whenever the standard is cited.",
+      "suggested_fix": "Replace «به تعریف ۲۳۶۷۹» with «به تعریف ۲۳۶۷۹: ۱۴۰۳» to restore the full INSO identifier as printed in the evidence."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:59:03-0400"
+}

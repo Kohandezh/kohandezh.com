@@ -1,0 +1,115 @@
+{
+ "keys": [
+  "data sharing",
+  "data stakeholder",
+  "data steward",
+  "data taxonomy",
+  "organizational data",
+  "personally identifiable information",
+  "pii principal",
+  "semi structured data",
+  "structured data",
+  "classification model",
+  "regression model",
+  "generalization"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 162.7527301311493,
+ "result": {
+  "verdicts": [
+   {
+    "key": "data sharing",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.97,
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The printed term (INSO 15816-3 §3.7) is «هم‌رسانی داده‌ها (اشتراک داده)» — parenthetical included as part of the official printed form. The proposal strips the parenthetical to make «هم‌رسانی داده‌ها» the preferred entry and demotes the full printed form to alternatives_fa. Rule 1 requires preferred_fa to equal what the standard prints.",
+      "suggested_fix": "Set preferred_fa to «هم‌رسانی داده‌ها (اشتراک داده)» and remove that same string from alternatives_fa."
+     }
+    ]
+   },
+   {
+    "key": "data stakeholder",
+    "verdict": "AGREE",
+    "confidence": 0.99,
+    "issues": []
+   },
+   {
+    "key": "data steward",
+    "verdict": "AGREE",
+    "confidence": 0.99,
+    "issues": []
+   },
+   {
+    "key": "data taxonomy",
+    "verdict": "AGREE",
+    "confidence": 0.99,
+    "issues": []
+   },
+   {
+    "key": "organizational data",
+    "verdict": "AGREE",
+    "confidence": 0.99,
+    "issues": []
+   },
+   {
+    "key": "personally identifiable information",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.96,
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The printed term_fa (INSO 15816-3 §3.12) is «اطلاعات قابل‌شناسایی شخصی؛ داده‌های شخصی» — two co-printed preferred forms separated by a semicolon, exactly as ISO terminology conventions denote synonymous preferred terms. The proposal demotes «داده‌های شخصی» to alternatives_fa, reducing a co-preferred printed term to mere alias status. Rule 1 forbids this reassignment.",
+      "suggested_fix": "Set preferred_fa to the full joint printed form «اطلاعات قابل‌شناسایی شخصی؛ داده‌های شخصی» and remove «داده‌های شخصی» from alternatives_fa (it may be cross-referenced but not re-ranked)."
+     }
+    ]
+   },
+   {
+    "key": "pii principal",
+    "verdict": "AGREE",
+    "confidence": 0.99,
+    "issues": []
+   },
+   {
+    "key": "semi structured data",
+    "verdict": "AGREE",
+    "confidence": 0.99,
+    "issues": []
+   },
+   {
+    "key": "structured data",
+    "verdict": "AGREE",
+    "confidence": 0.98,
+    "issues": []
+   },
+   {
+    "key": "classification model",
+    "verdict": "AGREE",
+    "confidence": 0.99,
+    "issues": []
+   },
+   {
+    "key": "regression model",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.97,
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The printed term (INSO 23681 §3.1.2) is «مدل وایازش (رگرسیون)» — parenthetical included as part of the official printed form. The proposal strips the parenthetical to make «مدل وایازش» the preferred entry and demotes the full printed form to alternatives_fa, exactly as in the data sharing case. Rule 1 requires preferred_fa to equal what the standard prints.",
+      "suggested_fix": "Set preferred_fa to «مدل وایازش (رگرسیون)» and remove that string from alternatives_fa."
+     }
+    ]
+   },
+   {
+    "key": "generalization",
+    "verdict": "AGREE",
+    "confidence": 0.99,
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-17T23:52:09-0400"
+}

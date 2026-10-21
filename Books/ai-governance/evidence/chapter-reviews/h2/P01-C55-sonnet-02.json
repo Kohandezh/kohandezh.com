@@ -1,0 +1,37 @@
+{
+ "chapter": "P01/C55",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "530532df2fcba3ed742476ede1a5866c5b2adafaf8b6c3f37de8730363dd92e5",
+  "3": "a3c56f8a52ba5c45c215d98478353e6b2c28587fc991c78d144bedff5b38360b"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 597.2860198020935,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "رانش داده (تغییر ویژگی‌های دادهٔ محیط عملیاتی)",
+      "explanation": "Evidence S23681-027 prints «تغییر مشخصات دادهٔ محیط عملیاتی» (change in characteristics). The section substitutes the defined technical term «ویژگی» (feature, T3.3.3 of the same standard) for the non-defined general word «مشخصات». «ویژگی» has a specific ML meaning (feature/column descriptor) while «مشخصات» refers broadly to data properties; using the defined term narrows the concept without support from the cited source.",
+      "suggested_fix": "Replace «ویژگی‌های» with «مشخصات»: «رانش داده (تغییر مشخصات دادهٔ محیط عملیاتی)»"
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:27:57-0400"
+}

@@ -1,0 +1,50 @@
+{
+ "chapter": "P03/C61",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "e1005e5c13f479a59244a8ef98f38072ad432fdfca1ac9394fd652de447fabbe",
+  "1": "ba3a7ac706d54696920dff8f1cdcad933fd40b71bc0518141631d32d85c2b6c3"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 325.9343731403351,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "modality_drift",
+      "explanation": "The word «اختیاری» (optional) used to gloss «می‌تواند» maps the modal to «May» (permission/مجاز است), but §1-3 (S23685-011) defines «می‌تواند» explicitly as Can (capability/قادر است). «اختیاری» corresponds to «ممکن است» (May = مجاز است) per S23685-010, not to «می‌تواند». The same section (ریخت واژه‌ها paragraph) correctly distinguishes the two modals, making this conflation internally inconsistent and in direct violation of the standard's own modal definitions.",
+      "quote": "بند ۱-۲ کاربرد آن را در کسب‌وکارهای اینترنتی و انواع دیگر سازمان‌ها به‌صورت اختیاری («می‌تواند») بیان می‌کند",
+      "suggested_fix": "حذف «اختیاری» و بازنویسی: «بند ۱-۲ کاربرد آن را با واژهٔ «می‌تواند» (توانمندی/Can، نه الزام و نه مجوز صریح) بیان می‌کند» — تا با تعریف بند ۱-۳ هماهنگ باشد."
+     },
+     {
+      "type": "unsupported_claim",
+      "explanation": "Claiming that §6 is «almost entirely توصیه می‌شود» cannot be verified from the cited evidence. Only one statement evidence item covers §6: S23685-077, which pertains solely to §6-5. No statement evidence is provided for §6-1, §6-2, §6-3, §6-4, §6-6, §6-7, or §6-8. A modality characterisation spanning the whole of a six-sub-clause section requires evidence from those sub-clauses.",
+      "quote": "بند ۶ تقریباً یکسره «توصیه می‌شود» است",
+      "suggested_fix": "محدود کردن ادعا به شاهد موجود: «بند ۶-۵ برای داده‌پردازی از «توصیه می‌شود» استفاده می‌کند (S23685-077)» — یا اگر ادعا دربارهٔ کل بند ۶ ماندنی است، شواهد statement برای بقیهٔ زیربندها نیز فهرست شوند."
+     }
+    ]
+   },
+   {
+    "index": 1,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "layer_blend",
+      "explanation": "The sentence contrasting the definition of «واپایش مخاطره امنیتی کسب‌وکار کلان‌داده» with «general control actions» is a compiler's interpretive commentary, not a statement in the standard. T23685-3-1-2 provides only a positive definition (technology use for building models); the standard does not state that the term excludes a list of general control measures. This interpretive contrast appears in the body text without a compiler-layer label (e.g., «تدوینگر یادآوری می‌کند که…»), violating hard content rule 1 which requires that the compiler's explanation layer be visibly marked throughout the text, not only in the section header disclaimer.",
+      "quote": "«واپایش (کنترل) مخاطره» در اینجا نام کاربرد یک فناوری برای ساخت مدل است، نه فهرست اقدام‌های واپایشی عمومی",
+      "suggested_fix": "افزودن برچسب لایهٔ مفسر: «تدوینگر یادآوری می‌کند که «واپایش مخاطره امنیتی کسب‌وکار کلان‌داده» در این استاندارد به‌معنای کاربرد فناوری کلان‌داده برای ساخت مدل است (بند ۳-۱-۲)، نه فهرستی از اقدامات واپایشی عمومی.»"
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:31:24-0400"
+}

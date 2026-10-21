@@ -1,0 +1,49 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  5,
+  6
+ ],
+ "section_shas": {
+  "5": "5164127223137763b9e19b08088a71368a23f153b7de4b0552101de839c704e6",
+  "6": "8a730cf4387f943e598cc0069d7c5e4326f515db981fa42e5bfa2ca532913a73"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 341.6635527610779,
+ "result": {
+  "sections": [
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "explanation": "The table row for 7.5 uses «اسناد بیرونی» for what S42001-082 (clause 7.5.3) calls «اطلاعات مدون با منشأ خارجی». «اطلاعات مدون» is a defined INSO term (§3.10 / T42001-3.10); replacing it with «اسناد» (documents) drops coverage of records and other documented information, violating the term boundary.",
+      "quote": "از جمله اسناد بیرونی",
+      "suggested_fix": "Replace «اسناد بیرونی» with «اطلاعات مدون با منشأ خارجی» to match S42001-082 and the defined term in §3.10."
+     },
+     {
+      "type": "terminology",
+      "explanation": "Bullet 8.4 shortens the official term to «ارزیابی تأثیر» alone. The terminology table and evidence S42001-091 both require the full form «ارزیابی تأثیر سامانه هوش مصنوعی» (§3.24). Dropping «سامانه هوش مصنوعی» makes the term ambiguous and non-conformant with the defined INSO term.",
+      "quote": "۸.۴: ارزیابی تأثیر در فواصل طرح‌ریزی‌شده",
+      "suggested_fix": "Change to «ارزیابی تأثیر سامانه هوش مصنوعی در فواصل طرح‌ریزی‌شده» (per §3.24 and S42001-091)."
+     },
+     {
+      "type": "unsupported_claim",
+      "explanation": "The compiler states as fact that the standard does not define «تغییر چشمگیر». This is a claim about what is or is not printed in the standard. The cited evidence includes only three terms from §3 (T42001-3.10, 3.11, 3.18) and does not show the full definitions section; no cited item confirms that «تغییر چشمگیر» is undefined in the standard.",
+      "quote": "استاندارد «تغییر چشمگیر» را تعریف نمی‌کند.",
+      "suggested_fix": "Hedge to «در بندهای ۸.۲ و ۸.۴ تعریفی برای «تغییر چشمگیر» ارائه نشده است» or «استاندارد در این بندها تعریفی برای این اصطلاح ارائه نمی‌دهد»، تا اشاره به محدودهٔ بندهای بررسی‌شده باشد نه کل استاندارد."
+     }
+    ]
+   },
+   {
+    "index": 6,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:44:33-0400"
+}

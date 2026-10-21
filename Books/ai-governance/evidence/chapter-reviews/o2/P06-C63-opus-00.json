@@ -1,0 +1,37 @@
+{
+ "chapter": "P06/C63",
+ "sections": [
+  0,
+  1
+ ],
+ "section_shas": {
+  "0": "e9cf7af5f236521d143c1d078006018f390cecaf2e0274ec2fd0ca555f11c322",
+  "1": "dfc061dac174353ef41be2375cb35b785a70b9f744ea8c368ba9fa3ebe057884"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 249.33006119728088,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 1,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "other",
+      "quote": "عنوان بند ۶.۵ («کارکردهای حکمرانی»)",
+      "explanation": "The text presents «کارکردهای حکمرانی» as the title of clause 6.5, but evidence O23728-075 shows the full heading is «کارکردهای حکمرانی و پاسخگویی». The phrase «و پاسخگویی» is omitted, making the parenthetical read as the complete heading when it is only a fragment.",
+      "suggested_fix": "Change to: «عنوان بند ۶.۵ («کارکردهای حکمرانی و پاسخگویی»)» to match the full printed heading."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T06:47:41-0400"
+}

@@ -1,0 +1,51 @@
+استاندارد ملی ایران/ بی اس ایزوآآی‌ای‌سی ۴۲۰۰۱: سال ۱۴۰۴ 42001:2025 ‎INSO/BS/ISO/IEC‏
+
+نکته: استاندارد ملی ایران ۲۳۷۳۳ فناوری اطلاعات - هوش مصنوعی - راهنمای مدیریت مخاطره (ریسک». براساس استاندارد
+
+‎ISO 23894‏ تدوین شده است.
+
+‎[15] ISO/IEC TR 24027, Information technology — Artificial intelligence (AI) — Bias in AI
+systems and AI aided decision making
+
+‎[16] ISO/IEC TR 24029-1, Artificial Intelligence (AI) — Assessment of the robustness of neural
+networks — Part 1: Overview
+
+‎[17] ISOAEC TR 24368, Information technology — Artificial intelligence — Overview of
+ethical and societal concerns
+
+‎[18] ISO/IEC 25024, Systems and software engineering — Systems and software Quality
+Requirements and Evaluation (SQuaRE) — Measurement of data quality
+
+‏نکته: استاندارد ملی ایران ۲۲۳۵۵ مهندسی سامانه‌ها و نرمافزار نیازمندی‌ها ی کیفی سامانه‌ها و نرم‌افزار و ارزشیاب یآن
+‎-SquaRE)‏ سنجش کیفیت داده. براساس استاندارد 25024 ‎ISO‏ تدوین شده است.
+‎ISOMEC 25059, Software engineering — Systems and software Quality Requirements and‏ ]19[
+‎Evaluation (SQuaRE) — Quality model for AI systems‏
+نکته: استاندارد ملی ایران ۲۳۶۸۴ مهندسی نرم‌افزار - الزامات و ارزشیاب ی کیفیت سامانه‌ها و نرمافزار ‎Jae - SQuaRE)‏ کیفیت
+برای سامانه‌های هوش مصنوعی ‎(AD‏ براساس استاندارد 25059 ‎ISO‏ تدوین شده است.
+‎ISO/IEC 27000:2018, Information technology — Security techniques — Information‏ ]20[
+‎security management systems — Overview and vocabulary‏
+نکته: استاندارد ملی ایران اایزواآی‌ای‌سی ۲۷۰۰۰ فناوری اطلاعات - فنون امنیتی - سیستم‌های (سامانه‌های) مدیریت امنیت
+اطلاعات - مرو رکلی و واژگان. براساس استاندارد 27000 ‎ISO‏ تدوین شده است.
+‎ISOMEC 27701, Security techniques — Extension to ISO/IEC 27001 and ISO/IEC 2‏ ]21[
+‎for privacy information management — Requirements and guidelines‏
+
+‎[22] ISO/IEC 27001, Information security, cybersecurity and privacy protection — Information
+security management systems — Requirements
+
+‏نکته: استاندارد ملی ایران اایزواآی‌ای‌سی ۲۷۰۰۱ امنیت اطلاعات, امنیت سایبری و حفاظت از حریم خصوصی - سامانه مدیریت
+امنیت اطلاعات - الزامات. براساس استاندارد 27001 ‎ISO‏ تدوین شده است.
+‎ISO/IEC 29100, Information technology — Security techniques — Privacy framework‏ ]23[
+نکته: استاندارد ملی ایران ۱۷۶۴۳ ف نآوری اطلاعات - فنون امنیتی - چارچوب کاری حریم ‎aguas‏ براساس استاندارد
+‎ISO 29100‏ تدوین شده است.
+‎ISO 31000:2018, Risk management — Guidelines‏ ]24[
+نکته: استاندارد ملی ایران ۰۱۳۲۴۵ مدیریت ریسک - رهنمودها. براساس استاندارد 31000 150 تدوین شده است.
+‎ISO 37002, Whistleblowing management systems — Guidelines‏ ]25[
+نکته: استاندارد ملی ایران ۳۷۰۰۲ سیستم‌های مدیریت سوت‌زنی - راهنما. براساس استاندارد 37002 ‎ISO‏ تدوین شده است.
+‎ISO/IEC 38500:2015 Information technology — Governance of IT for the organization‏ ]26[
+نکته: استاندارد ملی ایران ۱۲۰۴۷ فناوری اطلاعات - حاکمیت فناوری اطلاعات ‎AT)‏ برای سازمان. براساس استاندارد
+‎ISO 38500‏ تدوین شده است.
+
+‎[27] ISO/IEC 38507, Information technology — Governance of IT — Governance implications
+of the use of artificial intelligence by organizations
+
+‎۶۸

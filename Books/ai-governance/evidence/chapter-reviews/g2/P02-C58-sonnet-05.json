@@ -1,0 +1,30 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  5,
+  8
+ ],
+ "section_shas": {
+  "5": "914185b82cc67fc029374c649c202c75ac8a6ffc14693b3b44f2df4fb598fcf5",
+  "8": "ece1b4a62ae54570c6597d0a1411b1336d44d80f25570f8d326bcf4dbb848d8e"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 417.62661600112915,
+ "result": {
+  "sections": [
+   {
+    "index": 5,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 8,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:31:07-0400"
+}

@@ -1,0 +1,107 @@
+{
+ "keys": [
+  "artificial intelligence",
+  "risk",
+  "privacy",
+  "risk tolerance",
+  "risk management",
+  "measure"
+ ],
+ "shas": {
+  "artificial intelligence": "ff0cb1efc407d768ddd67e3333a2e82016db90a6b24ce251a4311a957f35ed61",
+  "risk": "b765fe17d848d41181704fd693d16b64b316347f1e5f67133538185d8a7a2723",
+  "privacy": "29d975a1aee519a244c693af2c7d7400903ec655f99c47ecab97cd177e6eb9b1",
+  "risk tolerance": "b2054aafeaf196159d80c9a769971a7eebd055bbd999529ce8f17e93a4161666",
+  "risk management": "dd95ab72433880e2ace868c2680962c2f4f08c5a551bbb038c6f33573aabc9d4",
+  "measure": "a095ab131d77fc7c8ad9bf2c5febb00938655a64fee2552e850b767805921ef1"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 302.1581439971924,
+ "result": {
+  "verdicts": [
+   {
+    "key": "artificial intelligence",
+    "verdict": "AGREE",
+    "confidence": 0.97,
+    "issues": []
+   },
+   {
+    "key": "risk",
+    "verdict": "AGREE",
+    "confidence": 0.95,
+    "issues": []
+   },
+   {
+    "key": "privacy",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.92,
+    "issues": [
+     {
+      "type": "orthography",
+      "explanation": "rejected_fa contains «امنیت دادههای شخصی» without ZWNJ; the editor_note_fa already spells it correctly with ZWNJ. Fix to «امنیت داده‌های شخصی».",
+      "suggested_fix": "In rejected_fa, replace «امنیت دادههای شخصی» with «امنیت داده‌های شخصی»."
+     },
+     {
+      "type": "scope",
+      "explanation": "The editor note claims «حریم اطلاعاتی» (information privacy) is a «زیرمجموعه» (subset) of «حریم خصوصی» «در همان بند», attributing a taxonomic relationship to INSO 23728 clause 4.1. The truncated evidence text from that clause discusses the distinction between information-privacy objectives and information-security objectives; it does not explicitly establish information privacy as a subset of privacy. The conceptual inference may be reasonable, but attributing it to the clause over-claims what the standard prints.",
+      "suggested_fix": "Soften the editor note: replace «زیرمجموعه‌ای از آن است» with a formulation that does not attribute the subset relationship to the clause — e.g. «مفهومی مرتبط و محدودتر است» — or drop the subset claim and simply note that both terms appear in the standard."
+     }
+    ]
+   },
+   {
+    "key": "risk tolerance",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.93,
+    "issues": [
+     {
+      "type": "definition_not_faithful",
+      "explanation": "The editor note correctly identifies the printed phrase as «سطح رواداری مخاطره» (INSO 23728 clauses 7.3.2 and 8.1) and states it was registered as an alternative, but alternatives_fa lists only «رواداری مخاطره» (without «سطح»). The verbatim printed phrase «سطح رواداری مخاطره» is missing from alternatives.",
+      "suggested_fix": "Add «سطح رواداری مخاطره» to alternatives_fa alongside the existing «رواداری مخاطره»."
+     },
+     {
+      "type": "other",
+      "explanation": "Duplicate entry in rejected_fa: «آستانه پذیرش ریسک» appears twice.",
+      "suggested_fix": "Remove the duplicate «آستانه پذیرش ریسک» from rejected_fa."
+     },
+     {
+      "type": "orthography",
+      "explanation": "«سطح ریسکپذیری» in rejected_fa is missing the ZWNJ between «ریسک» and «پذیری».",
+      "suggested_fix": "Replace «سطح ریسکپذیری» with «سطح ریسک‌پذیری» in rejected_fa."
+     }
+    ]
+   },
+   {
+    "key": "risk management",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.94,
+    "issues": [
+     {
+      "type": "other",
+      "explanation": "definition_en has a stray quotation mark: it reads …risk\" (Source: ISO 31000:2018).\" — the trailing period-quote is malformed. The field already carries the 'NIST context:' label, so the internal quoting is redundant and introduces a typographic error.",
+      "suggested_fix": "Rewrite definition_en as: NIST context: Risk management refers to coordinated activities to direct and control an organization with regard to risk (Source: ISO 31000:2018)."
+     }
+    ]
+   },
+   {
+    "key": "measure",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.9,
+    "issues": [
+     {
+      "type": "alias_conflates_concepts",
+      "explanation": "rejected_fa includes «سنجه», but the editor note itself states that INSO 23684 clause 3.1.1 defines «سنجه» as the official Persian term for 'measure (noun)'. Placing the INSO-defined term for 'measure' in the rejected list of an entry headworded 'Measure' is misleading: a reader will infer «سنجه» is globally wrong for 'measure', when it is the correct INSO term for the noun sense. The rejection conflates two senses under one negative signal.",
+      "suggested_fix": "Remove «سنجه» from rejected_fa. In the editor note, add a cross-reference: «برای مفهوم اسمی سنجه (measure, noun) رجوع شود به مدخل جداگانهٔ آن (INSO 23684 بند ۳.۱.۱)» so readers are directed to the correct entry rather than warned away from a valid INSO term."
+     },
+     {
+      "type": "scope",
+      "explanation": "The entry carries zero printed_evidence, meaning no INSO source attests «سنجش» for 'measure'. The editor note explains the term covers the NIST AI RMF MEASURE function, but neither the definition_fa nor the editor note explicitly states that «سنجش» has no INSO attestation. A reader might assume INSO backing exists.",
+      "suggested_fix": "Add a sentence to editor_note_fa clarifying that «سنجش» is used only in the translated NIST context of this book and is not printed in the cited INSO standards — e.g. «سنجش» در استانداردهای ملی بررسی‌شده چاپ نشده و صرفاً در متن ترجمه‌شدهٔ NIST AI RMF این کتاب به‌کار می‌رود."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:23:27-0400"
+}

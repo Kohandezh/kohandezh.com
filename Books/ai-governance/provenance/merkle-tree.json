@@ -6,2279 +6,2743 @@
    "chapters": [
     {
      "chapter_id": "C01",
-     "chapter_hash": "c1d5ceefb0343389b734f246d0664270b72a41244a7b0caa72c5a4685e0a1e4e",
+     "chapter_hash": "a119ddbb6096d2687007d0326137b1bb7d88e49986c107d597dff1f1ccc23985",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P01-C01-S01-6FC077B0",
-       "hash": "sha256:6fc077b066aba6ac3c03697629bf7cee42d36056b109d90e03416146aeb5557c"
+       "content_id": "KDJ-AI-2026E2-P01-C01-S01-7C39CE39",
+       "hash": "sha256:7c39ce39c01e503844444509c8e497fa1b492287e25073a1a2f96f5f9468c2ed"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C01-S02-9D7D396F",
-       "hash": "sha256:9d7d396fd466d4c8c84ba725e374114702d777df0c6af3ed281266287d4d38b3"
+       "content_id": "KDJ-AI-2026E2-P01-C01-S02-ADE68CC7",
+       "hash": "sha256:ade68cc7e9960f900bb9d80836796e3ea4f60c2afc000b0ee73f12f1c520661b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C01-S03-8A563A55",
-       "hash": "sha256:8a563a552a5859adb53ea33c20c296b7bdbd65a77d905ad5aca0e74f585d6297"
+       "content_id": "KDJ-AI-2026E2-P01-C01-S03-68C400F1",
+       "hash": "sha256:68c400f111367f1cdea906f284dfa68b391d16f49acfddc2eafb59597562ad48"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C01-S04-2D457944",
-       "hash": "sha256:2d457944d14241d51e6ad970c40e97767e4d7482a1bb59ba4b446850507e59eb"
+       "content_id": "KDJ-AI-2026E2-P01-C01-S04-E53F4C48",
+       "hash": "sha256:e53f4c48ec5c296103417f25afc23c54c582c215eb074bd8d0ed2251074d242e"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C01-S05-901B3747",
+       "hash": "sha256:901b374773ae89ae686ea9f144174cee1ed279fe6f16d59e3fdc5dafe7fa599c"
+      }
+     ]
+    },
+    {
+     "chapter_id": "C54",
+     "chapter_hash": "751b2621039913c03564db3ca019e2a1042103fcb6bb8d0e1a061e9d26a21258",
+     "sections": [
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C54-S01-D51A64B2",
+       "hash": "sha256:d51a64b2f4ecab5b03c2ce7a2dafdb7cee47505a8a3b0e6158ee157ac021281a"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C54-S02-923E103C",
+       "hash": "sha256:923e103c2b5b2965ffccb4c3cf41256d27272074ecfe974d5892d9d17bb99f81"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C54-S03-54EFBB82",
+       "hash": "sha256:54efbb82ad1e6db9124188916486e8753531bc68208053faee2066596826bee0"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C54-S04-B3959143",
+       "hash": "sha256:b3959143a699168b129ab19208f62fbe025894da0ad95c088e9775d2721210be"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C54-S05-3A4879C5",
+       "hash": "sha256:3a4879c57c700e4761d6e31dc33cadfd2f02da2fc5ad8c4eb1333b04259fb12d"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C54-S06-99113B56",
+       "hash": "sha256:99113b56592e48037eeb0123762bd2961718d1109d94a41f87961b87ad0946ed"
       }
      ]
     },
     {
      "chapter_id": "C02",
-     "chapter_hash": "135f4bbadb01c2889abc5048b55d02cb7a61f11954e6d06193b77df0f96cd5b9",
+     "chapter_hash": "d4ca55a8e474ed2f107c09dc809f2c073be70c8c4b38f5aa5bb34a2ab43f6009",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P01-C02-S01-D572D88D",
-       "hash": "sha256:d572d88d69f7d2640789865cac98e262631bab8dcbdfeffac783ead4ff51a826"
+       "content_id": "KDJ-AI-2026E2-P01-C02-S01-B6B2BF7E",
+       "hash": "sha256:b6b2bf7e1c69bc6b329b528d0c98a079776c623b9133adba6e89c6b7ee3b503e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C02-S02-41B810B7",
-       "hash": "sha256:41b810b7452c6263fe73863fd85d747cc4aa040d1c77a26cccb5df890b6f11d1"
+       "content_id": "KDJ-AI-2026E2-P01-C02-S02-38CB5978",
+       "hash": "sha256:38cb5978506478bf19bbe2e4399509a6a495bae43f5fcee33db5d5eba1a91922"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C02-S03-EDB50B2C",
-       "hash": "sha256:edb50b2c62f8d9ed068cb27128b25f9796d0e5a6dbe57662d9fc635b17a93954"
+       "content_id": "KDJ-AI-2026E2-P01-C02-S03-E62812F8",
+       "hash": "sha256:e62812f8245e9b53bb5a1aeba27425f6abf83d59235dc6dc9946dc6455fe0ac2"
       }
      ]
     },
     {
      "chapter_id": "C03",
-     "chapter_hash": "f07cc59212a1a4fe1f2f9f8b1a29b9b299f52a4b6eca589cef2912d35237eba8",
+     "chapter_hash": "69e6a62505d2379c2de00024cc34a2cdf24728f1f850e36a8a0cb2f9fb7ba545",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S01-380E4C6C",
-       "hash": "sha256:380e4c6cec521f191f7e0d839591e8e2a5fec21dae9d8240dd6b6956e0b944b2"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S01-2AAC2662",
+       "hash": "sha256:2aac2662a634055b2b5ba6da70d26d0c93ec191f952e0805b29f5cad8d02d8d0"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S02-7ED8F39A",
-       "hash": "sha256:7ed8f39a3ba4d7bc294c6a993198ca1a6577748c02fa64dfa42377b029aca3f8"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S02-49B013CC",
+       "hash": "sha256:49b013cc7d57e6781286bf24231c29b476a01e2c7a96df22ae3390ec17876219"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S03-4C118787",
-       "hash": "sha256:4c118787fd57f4689457b06ce1253c77449c3797841fd0bc98f9bf4e2393fef7"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S03-64044AC8",
+       "hash": "sha256:64044ac8c9440741e2593c42177ff97ddc14de7aa20121a093d37772c2a809d9"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S04-3F2F6A9D",
-       "hash": "sha256:3f2f6a9d8a5b3006e1185bdb92286a96be3b29602be6bf043cae523eed264f88"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S04-86F115A0",
+       "hash": "sha256:86f115a0c07139a494e2b6df8919c41946bbd5619f72a0fbbf3f72e22e9bb70a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S05-73FA98D8",
-       "hash": "sha256:73fa98d8eb80c272d11faa52c7c8fddedb6f8bfac8645c7b086dd31c2f4d5cdf"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S05-48042C09",
+       "hash": "sha256:48042c09c4fdd2746b0b9c7d4e44a37282fca25c7a33b9bb1f495a6f6ce351dc"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S06-9FE2C2D1",
-       "hash": "sha256:9fe2c2d14bdcf3b11ff2489d62be294f368011bc2a5a881d33e3a2233447133d"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S06-0C0E5CE9",
+       "hash": "sha256:0c0e5ce98a52fca6ae7ea730e321787a535a1b06b21373ba20b48b57544fb6b9"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S07-CC1EDDF5",
-       "hash": "sha256:cc1eddf5463f6178ec43c9b427c0a9bc0dc6f2f363d3820a4870e08a42216da4"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S07-930A4817",
+       "hash": "sha256:930a48175ab1916bb9cb73c04f4fa7687ecf26f34ca74c90263de4cd01ed88f7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S08-B16F2790",
-       "hash": "sha256:b16f27906496b82b36ac34c3280a6a6ec40f0c48996fc07da7a286bd4a41f9b7"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S08-EA90BD9E",
+       "hash": "sha256:ea90bd9ea13f0a9f361ebf03675de8483a7d55e81ea65b2cb15281399f7ed714"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S09-45520A88",
-       "hash": "sha256:45520a88ec12d85de76c694b82d246aaf48674462f7d63fecab7cfa384a7a49d"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S09-EE8C0F37",
+       "hash": "sha256:ee8c0f37b2ec13b3a1519340009daeefec01b76b887dca5fa653c76bf9818f80"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S10-E9FAE1B6",
-       "hash": "sha256:e9fae1b6c201bf56cafaa7b4e857a28690fd6e47b0b91d809733f35be0e85403"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S10-6A3D9326",
+       "hash": "sha256:6a3d932640091045aad8739c83e4136733c011983358dff7dfdbf01a445357bf"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S11-2F73F347",
-       "hash": "sha256:2f73f34747f8c60f3f1c10e0f9681d790124b0f015c9c0b0f79d2e259a901200"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S11-C3AC478B",
+       "hash": "sha256:c3ac478b3ca61fc44d43b7bbd3d2357e2392141b9d35df910d561d8f68977607"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S12-75304F74",
-       "hash": "sha256:75304f74a49a973ba33d3a9b876f09cf8e631aa2cf1c786b73202e7eb4600b1f"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S12-3241DA56",
+       "hash": "sha256:3241da561b59ca1653e2aecb3c5b8fe112d2eeac6b58195e63604cb1c0253d45"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S13-ED17C843",
-       "hash": "sha256:ed17c84323a86755cf6fc076730821507691dbdb4cac391568bff582ba446407"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S13-CC94A5A5",
+       "hash": "sha256:cc94a5a5be252a85cdf7293ab5f007e9b6f6cef6a516e4a0e4351ba72b1b152b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S14-D79F1016",
-       "hash": "sha256:d79f10160d056b15848f7d365b5ac13a59d4cca1a2cb912f14a8664c52c36a00"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S14-1F1F97E1",
+       "hash": "sha256:1f1f97e181dcdd0fbce6d5e1ec128eeb13e29c538638c82de178a262f7ba3bea"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S15-D0B3E702",
-       "hash": "sha256:d0b3e7028370ab30fac091c9faff75b8e04a8aa47a08572f74cde58affcce9d4"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S15-814D5D35",
+       "hash": "sha256:814d5d35376b2a120c123bbff0da9a123f50a6808555e264cb2df8a93c6cb955"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S16-D4F31D0D",
-       "hash": "sha256:d4f31d0dc35f83d84eb92aabd46bae9da54a1e20e4843d4f9e88468f8be83227"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S16-530DEF42",
+       "hash": "sha256:530def42a49abf82a307d25e4fc981d6b4dbf2c17806a86c00c5184e796b065d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S17-97C094FC",
-       "hash": "sha256:97c094fc7f654625b594e00aa1ffc74487c18411fb6abc5841a5bff2d4fea613"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S17-0137F3D7",
+       "hash": "sha256:0137f3d75bf02a543f6dac8bfb48f96e51313fc6a1af33c2f82d64b08786c703"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S18-16BE9A75",
-       "hash": "sha256:16be9a75a2b7f87d47ea2f77b71ec92623a87049085ed4af35427dd7c7683f6b"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S18-9DE7667E",
+       "hash": "sha256:9de7667e1ef655e29d55d9e02ccc2ab0facf30659cbca21ac8cc906958e7336c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S19-92EFA6D1",
-       "hash": "sha256:92efa6d16dd8e5f6e0abe90c88e149b83a047534da1803a356b9722a39edfefc"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S19-BF9C13A7",
+       "hash": "sha256:bf9c13a7ea2c08989200981fbe582bbd62b97963bfe596830d43c744fec7e151"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S20-2F22681D",
-       "hash": "sha256:2f22681dec9176bdcf9a1e9d68741e40a6cc50774d414f6837fe36830796b9e8"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S20-4735AC94",
+       "hash": "sha256:4735ac94be80e7189980e50017a5983417568c51d5ebb3e1a51ba51ef4572142"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S21-8AA25E5A",
-       "hash": "sha256:8aa25e5a397fc35f21f3d933fe7023bd039bdb8bd0184eca6c7fa83618cb7e16"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S21-85813C95",
+       "hash": "sha256:85813c957948fb0558df48564f963113fc135e4006c3655ca3becb72b320aa8e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S22-ED2CC067",
-       "hash": "sha256:ed2cc067ff568532d38f64c71a7a2b18155ddf09971c3aefce330ba8ffe7f677"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S22-EDC5F187",
+       "hash": "sha256:edc5f187ed3073f50e3b759bef602ef05fc7c83c6545e02cad421e4d6753f43d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S23-B73D14E4",
-       "hash": "sha256:b73d14e469017875b9a229652d2a29b4b9f51e21c1ebecb8b4b7162af922f585"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S23-0B28A9CC",
+       "hash": "sha256:0b28a9ccad3bc24c2fb38ea1fcb8527bfe8a9f48f30f2eda14965d3be5f0b82e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S24-43516383",
-       "hash": "sha256:435163836e53f8263ddd697880615cf42dad866040a627a6c8852329957f3915"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S24-95D8B1F5",
+       "hash": "sha256:95d8b1f5120f74781a9d6b02637d442db83bea99569ca75c4b1a6cd170bb1ec4"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S25-4F57629B",
-       "hash": "sha256:4f57629bb0156a258f6b167ea7ce3a15f8cc29cfa879c4479ea7d3f8142ca6ca"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S25-0A50424D",
+       "hash": "sha256:0a50424d9fa6c119c29d58d149e566c175a43dd0e37eaca654b1f203b23ce22e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C03-S26-F6ED7368",
-       "hash": "sha256:f6ed7368d81a2f46d5897acf87e7faeae17d10e2993ae91e7c60eca854ed7764"
+       "content_id": "KDJ-AI-2026E2-P01-C03-S26-7D463089",
+       "hash": "sha256:7d463089db3ffec4512781a2564994cfc5575706a85c084311e25426139e4151"
+      }
+     ]
+    },
+    {
+     "chapter_id": "C55",
+     "chapter_hash": "f3197a0ae37ead052b16f690988bb98722e23141f33321ce5421bff9366b5b77",
+     "sections": [
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C55-S01-CE80E15F",
+       "hash": "sha256:ce80e15f1703dbf60e7f4d6d348ac7db47bf58ff370045f6db9781305406b417"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C55-S02-59FE481B",
+       "hash": "sha256:59fe481bcb8eacfaec9f6facb47ea49ab0ccabbc37c2f7ca22564b56089f1801"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C55-S03-5AB8C7F5",
+       "hash": "sha256:5ab8c7f5a31aac7ef017f1cd7751843383549d25d3760688dd52600115b26cbb"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C55-S04-4554AE4D",
+       "hash": "sha256:4554ae4d4d9912f5d83a0d6a495eb915e98eadbe52138b3dac8f4bf3ba10d714"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C55-S05-24917673",
+       "hash": "sha256:24917673900cecdf4f69a10ea932d3db4f030db0b62ab7742411e726341fe7ac"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C55-S06-60FD2046",
+       "hash": "sha256:60fd204695e464be49a2a2891df3e4b4feed47779b4b5fba11f79d797a6a2cad"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C55-S07-BB0072C0",
+       "hash": "sha256:bb0072c0ea4c3ffc6f642a3844e2c7c346a4e2594e829e063389443fe0f2a8e1"
+      }
+     ]
+    },
+    {
+     "chapter_id": "C56",
+     "chapter_hash": "14c3f199b900e5d3a52badead05a55c3b0db3aa54d49677063395396cd969973",
+     "sections": [
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C56-S01-923C575E",
+       "hash": "sha256:923c575e7c521a10e84b123ec07b247a5889688245758375d0fa6322261350b2"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C56-S02-F29EFFCE",
+       "hash": "sha256:f29effce7ef25850a507385486c7faa6aa29248d640314879bbffda9623b6038"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C56-S03-69553313",
+       "hash": "sha256:695533138d1c82b7121cf7d852d66b669755be5e0141b0748a6de0861c242942"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C56-S04-D23C5561",
+       "hash": "sha256:d23c5561065d02e410c31b542f4c4647009eed92b8f4f24b79346a5819f62825"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C56-S05-7BF89097",
+       "hash": "sha256:7bf8909727f321b7b8acb98580146273718ddd9bb3888c90ed98120fb3f3d75c"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P01-C56-S06-590A69DF",
+       "hash": "sha256:590a69df8b7098be9339b7b3fac7c14897e0c6cb2a61963ce55004438a94364d"
       }
      ]
     },
     {
      "chapter_id": "C04",
-     "chapter_hash": "4bfca7d4018c8d7f93b0fdc2e8cffe7e6a8e7fca6e3eb9ef424952a6bba2ee92",
+     "chapter_hash": "7f865e59d769e2c6345cf569f36234229d1177572279e057e66b5f46f364478c",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P01-C04-S01-0CAD88E5",
-       "hash": "sha256:0cad88e5839cfc799ce7d7468b396a7d62eac1fda17e88d64adcad5e968162de"
+       "content_id": "KDJ-AI-2026E2-P01-C04-S01-534480FD",
+       "hash": "sha256:534480fd712169c99fd9f74af525473a64baaf39eb9e076876d25d37ca4be5d9"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C04-S02-086B1A7E",
-       "hash": "sha256:086b1a7ec427c30d2e98406c09504fa57ba97e2830235d4b3412dc8ed95c3271"
+       "content_id": "KDJ-AI-2026E2-P01-C04-S02-6BFDB1AD",
+       "hash": "sha256:6bfdb1adc6384d3a7af8f7def0386f8563f4d26eb02892b9da8916c2a370b0ac"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C04-S03-257EA1B0",
-       "hash": "sha256:257ea1b001f990a83d384074e863e1609687c80ae376daeffe7899a2c5063ec4"
+       "content_id": "KDJ-AI-2026E2-P01-C04-S03-8220DED4",
+       "hash": "sha256:8220ded4ed1e29ed6c8e33ef393dee58ed5dee28a3f365c80306780722bbf5b2"
       }
      ]
     },
     {
      "chapter_id": "C05",
-     "chapter_hash": "0e38050896048bc446b9a6bc7315ace123240d48224d8f0ea1e7dc32ce4aaf2e",
+     "chapter_hash": "d2fc79f5b0a4a9364564cb922a20575ef18a520ad527b16e0a6ba555b2b97f44",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P01-C05-S01-5AC7A267",
-       "hash": "sha256:5ac7a26797a39b048d21bd955b03c54661b2be2223323511b17279d64cfd5b2c"
+       "content_id": "KDJ-AI-2026E2-P01-C05-S01-3FC5793E",
+       "hash": "sha256:3fc5793e825ed52880cf4075fd9ef8c072033947013f3d6f2e9d88f7964cd1ef"
       }
      ]
     },
     {
      "chapter_id": "C06",
-     "chapter_hash": "09d55e134fd679e00140c0188c3f4e363801a10a8874483b7035051459c248e8",
+     "chapter_hash": "e4d96be00b2f80ca0b6cc88bf1a4eb9387ce0d9f28c70b0a41d2d39809308fe8",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P01-C06-S01-0A4F866A",
-       "hash": "sha256:0a4f866a6b6040a1f17f6db6d5ab5fd93ae8c4a5aa817aa1f7c063a59f0c5856"
+       "content_id": "KDJ-AI-2026E2-P01-C06-S01-37217AD8",
+       "hash": "sha256:37217ad853c5d49c321cb26141c0ef9a7b490058acae1b1efc19093d5e2f689d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C06-S02-63B55813",
-       "hash": "sha256:63b55813b96d53e08fd60c47a559f0b0fdc8e9dfdfbcf3957dc0c473da6110ed"
+       "content_id": "KDJ-AI-2026E2-P01-C06-S02-0DBB5666",
+       "hash": "sha256:0dbb56664bd3a14500d1d1a2bc21b3acccd1248e43ad67cb1d1dd68714d2dc31"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C06-S03-7EF1DB1C",
-       "hash": "sha256:7ef1db1cf07f3691cc7c846215f84b08e36143e8a6cba1a946eb7f51004b1294"
+       "content_id": "KDJ-AI-2026E2-P01-C06-S03-305F2300",
+       "hash": "sha256:305f2300b9115844b0f6064adec8572a9d5a1572e516f393f63dfec4b1de218e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C06-S04-2CAE5D7E",
-       "hash": "sha256:2cae5d7e3bbee4de287ce559ad9a7ba697518da83b5362732335f91ae014558b"
+       "content_id": "KDJ-AI-2026E2-P01-C06-S04-C76BB669",
+       "hash": "sha256:c76bb6692d196780ae3f70de6ee9cc34f52d186a3ba114dd3d96533ea085510c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C06-S05-9E1CB2A8",
-       "hash": "sha256:9e1cb2a86d6f08a98887c0ba625eca09244753bd1f7a8f0b76adc1406b4e6b93"
+       "content_id": "KDJ-AI-2026E2-P01-C06-S05-5519F19A",
+       "hash": "sha256:5519f19ab97fabefd8ed64f6549acb5218733f972fd7f315db90003d5eca69f8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C06-S06-54498A5E",
-       "hash": "sha256:54498a5efb3395696f2c431d67e62e91ee3dad441ea929b3cb7548c17628866a"
+       "content_id": "KDJ-AI-2026E2-P01-C06-S06-13446636",
+       "hash": "sha256:1344663677f607c97e02a2b670c66b391b81a753b3797a8bc329a6d0bb25fdcd"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C06-S07-1CB08DA9",
-       "hash": "sha256:1cb08da91ab43d9b74323e6d5c124d17a2d45732b481dca2900060ef0cb89705"
+       "content_id": "KDJ-AI-2026E2-P01-C06-S07-71BF0D3B",
+       "hash": "sha256:71bf0d3bd1266635984ba43514310e74d220c74618ebd3a6d93ea8c5f3200c05"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C06-S08-3C21C304",
-       "hash": "sha256:3c21c3047362074daebe2ea6b9a9ddad38caa9705b383ccddf338edc5a06d2ad"
+       "content_id": "KDJ-AI-2026E2-P01-C06-S08-B8237CF7",
+       "hash": "sha256:b8237cf745d1e7047952e4883e86d0075d867faf0c1b0e526b869d752f19ff4d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P01-C06-S09-EED0222A",
-       "hash": "sha256:eed0222a208e0fd52b8e5f7cbbb9c718bb4654e5893653ccedbcb8eba62e812f"
+       "content_id": "KDJ-AI-2026E2-P01-C06-S09-D39407FA",
+       "hash": "sha256:d39407fa8310701ad5fae5515ca2b37464fd1b6326eff2a4a8e12ba87074ac02"
       }
      ]
     }
    ],
-   "part_hash": "5b3cb01375b332ff95815fc28d0a80cd4f41b92875fea2669710187d6f9aa19b"
+   "part_hash": "77f8c981e05b89c36f91edae0f1994c85dae9d064000cea312ef8b5a8327e045"
   },
   {
    "part_id": "P02",
    "chapters": [
     {
      "chapter_id": "C07",
-     "chapter_hash": "80cfbef04436d1465c580bb0ccd32ad56c689b4552c011549e87aa8f28d32bef",
+     "chapter_hash": "76d1a74bde9d15d3700f4057defab28255774b04577112781fa0ed4371bd4cd1",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P02-C07-S01-020FDB3B",
-       "hash": "sha256:020fdb3b6b00df0121e0646215d00ee181b5e782c5acfadeb437c652967baa83"
+       "content_id": "KDJ-AI-2026E2-P02-C07-S01-52299687",
+       "hash": "sha256:52299687d8156afb892f3dabc8004279e4062b7470caa3988616611edc6ae38f"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C07-S02-E5A3423F",
-       "hash": "sha256:e5a3423f3bae911f5b0c48041fee039718eff6071909c468ccb96a335b0d071e"
+       "content_id": "KDJ-AI-2026E2-P02-C07-S02-850A3177",
+       "hash": "sha256:850a3177d44e78b70b7db57184bbf0d9198dcaaebc67adef527c0a8fa9b7d725"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C07-S03-D273C882",
-       "hash": "sha256:d273c882a1bd97cc3b602f02413580547cf9e415da3b880f200d9f4c2e62c700"
+       "content_id": "KDJ-AI-2026E2-P02-C07-S03-B6F44A53",
+       "hash": "sha256:b6f44a535abbfc96aa5808b68d8051b415c4dd6deda1770ad4cf63db9e7412d2"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C07-S04-61D1FD0B",
+       "hash": "sha256:61d1fd0b7a2e02561f8c239ed401a65502423f02b45cff8e91fa2ca68791f4ea"
       }
      ]
     },
     {
      "chapter_id": "C08",
-     "chapter_hash": "04b3d8f397ac652aef855626e718c0c806e6c76f8c1f8a85d24f0ac391be07d4",
+     "chapter_hash": "639dd57d7077a4e48855bafb0533f78138ad86aeff5d2f2dbb510aa2afd9197c",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P02-C08-S01-E7F4014E",
-       "hash": "sha256:e7f4014e0f88594ffeaa01b2024ef2d24231ff90a052b1b5fa23b63c31e62c19"
+       "content_id": "KDJ-AI-2026E2-P02-C08-S01-313E1E22",
+       "hash": "sha256:313e1e22d9e0222d0a8a57a57c21fa82035c02dc49a054fba17b1cfa02631f6d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C08-S02-A6D30928",
-       "hash": "sha256:a6d30928399972ee8026cedd287a721923c608e06d259cc72b3c3b4e288c4a7b"
+       "content_id": "KDJ-AI-2026E2-P02-C08-S02-87A538B5",
+       "hash": "sha256:87a538b584518b2ca455751a68b56659c0ae45729ddaae1bc60bb001fb00927d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C08-S03-7B18C80D",
-       "hash": "sha256:7b18c80d39c79943e274ffe16b82e2378df67ccb26c38094052b9ba632329efd"
+       "content_id": "KDJ-AI-2026E2-P02-C08-S03-394620BC",
+       "hash": "sha256:394620bc0a42b89fe0fbb312ce0e18af8b2dfb3b1dc6f23763a9b437522d4078"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C08-S04-EC429101",
-       "hash": "sha256:ec42910139c22337e54f9c200d118bd0ca3064a08d7cb0969f0177187af9952b"
+       "content_id": "KDJ-AI-2026E2-P02-C08-S04-DBF12509",
+       "hash": "sha256:dbf125093004b57e8bc041ae5ae57cf45930965e9710382f6ee5055115f936b7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C08-S05-83D41AA5",
-       "hash": "sha256:83d41aa5ab38197c1f0b1a651305139154d2ed80dce60b1869ef7de70e892edf"
+       "content_id": "KDJ-AI-2026E2-P02-C08-S05-133C02BC",
+       "hash": "sha256:133c02bc4cfba4ddd6906bc39cbae88801021be25a004e1b3052e38921d3d486"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C08-S06-270963BE",
-       "hash": "sha256:270963be4a01e7dd927c09b942dc8aaea6a687e679a78faf3b977b726b02e115"
+       "content_id": "KDJ-AI-2026E2-P02-C08-S06-2C8996CB",
+       "hash": "sha256:2c8996cbbee0047ba8baf1e4183d4f65b6927a741872b68ea9318e1f1e035b3c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C08-S07-7F79BFBB",
-       "hash": "sha256:7f79bfbb2fb01685ee2d49075ee53ddda7ab7e4951590da438800d7212d3465e"
+       "content_id": "KDJ-AI-2026E2-P02-C08-S07-F5CC4021",
+       "hash": "sha256:f5cc4021208c0b5d0dabef2b376b1871c3ac68fb7cbc6898fb689902680485e1"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C08-S08-6CB4A289",
-       "hash": "sha256:6cb4a28990856b84b6e340855c1c87c83a26c42cb3edc3aded042b4ba9c3f136"
+       "content_id": "KDJ-AI-2026E2-P02-C08-S08-283A7249",
+       "hash": "sha256:283a72491469ce7a4590414bef83897cd25df6d580113e208fb2e5c1f88a18ca"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C08-S09-C97E0B40",
-       "hash": "sha256:c97e0b40258ecff57bde13f014e8e6db641452f96d0887cce8a29c4b9067d85a"
+       "content_id": "KDJ-AI-2026E2-P02-C08-S09-F4FE1107",
+       "hash": "sha256:f4fe1107bd62eac1c924a936fcee515cae299a1aea7ca657e697ed8cf08654b6"
       }
      ]
     },
     {
      "chapter_id": "C09",
-     "chapter_hash": "4e27b308d81dd28df295ad68af04380185e90685ad987bf4eca7d9743d12b4a8",
+     "chapter_hash": "3453b3245ce017c5fc5e54ec08db4eda0e6087ebab5437ae591ce49798be7261",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S01-49174427",
-       "hash": "sha256:49174427797326f8c2685794afcbe50c6cab39f994713240767a227b9bcb1779"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S01-977A4736",
+       "hash": "sha256:977a4736ae9112c1f81a13121b69d8c4758c260ca5ef72fad8cc3062c6a09f77"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S02-CFFB4109",
-       "hash": "sha256:cffb410900376ae842ec393c6b64ffc44c4eed7b35da407c27172a8f69e6d040"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S02-FE349C68",
+       "hash": "sha256:fe349c689b953237aaf797bb2718c4401ebe74be46685e451fa637e7cd55730f"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S03-266EEDAA",
-       "hash": "sha256:266eedaa925220f6e0fe2760fdae0524ba94c45af36f17170c5e8eb78fcec2d2"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S03-DCB1B998",
+       "hash": "sha256:dcb1b998fd6b2e2874fc3122f413fd211fc6f08f236ec3d01fb7634176eb3e30"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S04-24E258BA",
-       "hash": "sha256:24e258ba3c0e1e1c476ba7f2dea58d7517ead285c03d99d76e4d82f91fac5e3e"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S04-B9CBF8D6",
+       "hash": "sha256:b9cbf8d64105ed6ebbe950cf83f079e1534c20cf0f6fb032eb67d6b2b5c8e7a1"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S05-C9E8F1BF",
-       "hash": "sha256:c9e8f1bf91dd3e0dd4f87c677c8c40ff596178b90c338ab162e68f0162d11e8e"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S05-9EAA7C16",
+       "hash": "sha256:9eaa7c16d232d28920045a176630408f7106132406f267e9f136bebe5cafd0ea"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S06-03D5DB81",
-       "hash": "sha256:03d5db8125bf31616dfa2eb3bc7dc1d864bbed5f5f4fedc1be1cba116942b354"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S06-68326B3C",
+       "hash": "sha256:68326b3c1abd7b6ee2ec84535e88fe9773d172e3c373da7d974a09b05932cb4c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S07-EBC0316C",
-       "hash": "sha256:ebc0316c1585d2221f2bdbd58b3b2fa7af96c8b4c8365ce741a800c9a21c9c39"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S07-549129A9",
+       "hash": "sha256:549129a978ac22ae3c9ff2407df6c73109194a6b5711c3ad6060961da5a3f617"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S08-8A0691E5",
-       "hash": "sha256:8a0691e5472bfbd0529f05a0a07b4d3ca165b57b5425f031602fe0840a92950e"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S08-DB85EF71",
+       "hash": "sha256:db85ef712fe89245b363d94a0f6b9f43764d84a638917248fbf2bb61c732f42a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S09-E7FDE544",
-       "hash": "sha256:e7fde5447e08f0e53c875e5c6951676c6f5c4882bc41fbf064f78919d783deb1"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S09-97967191",
+       "hash": "sha256:979671911a3d7937f8f8e2397a6b18f1dfa6a6781e9c4cb5f7e0c8c51437f019"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S10-8F631612",
-       "hash": "sha256:8f63161209e24262446c4b6036554700c7920849fd91d702d3c74e34243dbf4d"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S10-4543DF35",
+       "hash": "sha256:4543df35e61705b9321d5e67006a20c0d0c18fd431196dac0cc240022e6cd1c4"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S11-5E02A04A",
-       "hash": "sha256:5e02a04aafdfd26d606a89447cf6ce55ef20edf0f36fdc72802e55684aef9b42"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S11-E346C4DF",
+       "hash": "sha256:e346c4df7166c9b0cb5fbb59300f9c650d8afc08871bb3b0c33dff1ca91fea5d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S12-2B5D28EE",
-       "hash": "sha256:2b5d28ee9db4fcc3cd2b10bf09d0f377316c506964f9d0b1496787347f286ec6"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S12-D6701EE3",
+       "hash": "sha256:d6701ee34cc4b003f69aae38ccc5fb8f3e3de7ef8d196b3f3fe6285a4a065a90"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S13-E3D71175",
-       "hash": "sha256:e3d71175ebfd3685db8ea8e9711e82cc6854b4d4fb529c2d5fc062abf3500ca2"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S13-C98DBDAD",
+       "hash": "sha256:c98dbdad03b9d5991f0c67a524fb20ace4ad14a9583608d92bcf34f22e4c6009"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S14-AB9BCC16",
-       "hash": "sha256:ab9bcc162390a20d57d1de49e322f0371b5247608c32d6cee8093164b31afdf7"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S14-71389F5C",
+       "hash": "sha256:71389f5c9cc4a4fd294fa15e504ff3735a7c8dae9309dff28ca8008f6861e309"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S15-08B2E061",
-       "hash": "sha256:08b2e0611b2d7e0bd3c2450833775b077c56039dead1ef5255fc31e5d71a80c8"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S15-17FB2332",
+       "hash": "sha256:17fb23323b59c490e0c0142e90e4ec161a46d90afd834c07acdbd257c8328d3c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S16-D8D4FB56",
-       "hash": "sha256:d8d4fb567aff4d06a59123759ae9029d2d1e14e1da2fd97425464474a5d8a6e6"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S16-DBC17D8E",
+       "hash": "sha256:dbc17d8e462cfdfba4c6a7177a23b74197eceb899e78fc49d745e3d7a881081a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S17-CDF82215",
-       "hash": "sha256:cdf82215880749537fba78b234931291ac253e8e8c51606cc8a52c8f7f57ce5b"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S17-B2E5E5C4",
+       "hash": "sha256:b2e5e5c456761f985775e70e47f30d43a51cb92e31f69922747423ba53501c2d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S18-72397DF8",
-       "hash": "sha256:72397df8fcb4d89cf57a88f1d4c382687558cccb510aa7e1cbae6c17ea7db534"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S18-6DA34553",
+       "hash": "sha256:6da34553c98c0e2ab77e44d9dc5a4a54093d612c2b9d7d9aba2e6b589371c3b0"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S19-9D4FD3F0",
-       "hash": "sha256:9d4fd3f0135b149b8a344767cba17e54d2dd359c0128fa8199b2b2116527e3bf"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S19-5EA61B4A",
+       "hash": "sha256:5ea61b4af4b75d169b56c69ceefefa7cd3779ce38bcf11778749c67c27ec243e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C09-S20-924D0834",
-       "hash": "sha256:924d08343807252217982e7885215a2e58a324a1d53ae264f9d375417b164018"
+       "content_id": "KDJ-AI-2026E2-P02-C09-S20-A7EBCCC1",
+       "hash": "sha256:a7ebccc10e894d159c8230c37d5e4505bf65f4d7ae8c9cf46d3290da232988a6"
       }
      ]
     },
     {
      "chapter_id": "C10",
-     "chapter_hash": "d3aa44c341d4565dbf43c134b36dfe8e622228ccf62cb94052170ce7640ce6a0",
+     "chapter_hash": "850065c39f73e05d5c423a12f76e399d340a1d36c39a3436d1b09374bbb4f038",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P02-C10-S01-CB96335E",
-       "hash": "sha256:cb96335ee5e2ec586ccb4c84e40e7aaeba96a2396da124a6b255fbc6845f0acf"
+       "content_id": "KDJ-AI-2026E2-P02-C10-S01-BCAB11B5",
+       "hash": "sha256:bcab11b5a5f5fac07490874340711959046b56eac8095881f01e4fecd62cfdb7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C10-S02-0071AA62",
-       "hash": "sha256:0071aa6275f2fd3c2494d9b609f2fba286a4aa78420f71cae2c9d0eb6413e4e1"
+       "content_id": "KDJ-AI-2026E2-P02-C10-S02-D53BBDEA",
+       "hash": "sha256:d53bbdea4788779c5b444db38d269e70dcf367f593ba53764ce73ffcd40ff7db"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C10-S03-F6D9B361",
-       "hash": "sha256:f6d9b361f09ad4c366f1c253e4a7bf4aa88f5931de7700903ac1858a850726d1"
+       "content_id": "KDJ-AI-2026E2-P02-C10-S03-B0E3FDF1",
+       "hash": "sha256:b0e3fdf1576e0d0e3f5012ce27a15c43b3491624c54fe592a7eb3589d5229e09"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C10-S04-F726E88B",
-       "hash": "sha256:f726e88beef3a32276e7162a069f2679e329a5dd6875006d94fe2e0fce6b1107"
+       "content_id": "KDJ-AI-2026E2-P02-C10-S04-C57E1F87",
+       "hash": "sha256:c57e1f8740557ead8d32252ebda807b2ed6f067005577ceefa54efc61ef10214"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C10-S05-58410C64",
-       "hash": "sha256:58410c64d30fdef2e558a597a560058f699cfd81efaf3706c6963c180a417f2b"
+       "content_id": "KDJ-AI-2026E2-P02-C10-S05-0C5F0BEB",
+       "hash": "sha256:0c5f0bebb96c3572a124b2fe7c091c947563293c1206ae033545b99394930142"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C10-S06-C7C8A931",
-       "hash": "sha256:c7c8a931c110140832831642fe796c20ecce19fc583b0b7cb6b7401a006a2a3c"
+       "content_id": "KDJ-AI-2026E2-P02-C10-S06-3CFBCCD9",
+       "hash": "sha256:3cfbccd9c103b21fec0681f9b37111a3798fd8ae593013d33aca61caa8332df2"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C10-S07-E9A8A4DB",
-       "hash": "sha256:e9a8a4dbd1a2120c343d6bdbd85b1e0f9eaece33e10dc5ea4c3946821033d784"
+       "content_id": "KDJ-AI-2026E2-P02-C10-S07-0C88AE7D",
+       "hash": "sha256:0c88ae7d4b4eedbf4c05de1b291cefcd22ce0bd2f95000bb2ebcdb2431787bad"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C10-S08-B766E4AE",
-       "hash": "sha256:b766e4ae07ffd29ea0b3847fdeec94a3dbc0a7ca193ebd3db19999ab5305a7a4"
+       "content_id": "KDJ-AI-2026E2-P02-C10-S08-01D201F3",
+       "hash": "sha256:01d201f3408d0b6508bb766cb75fbad7b909c4d5bb3b58d4083a61581e2260ea"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C10-S09-EDAA7079",
-       "hash": "sha256:edaa7079aeefd28ade598bf7b461f5f45d323965f9ebdc5ea7f995bd593e6eab"
+       "content_id": "KDJ-AI-2026E2-P02-C10-S09-9AAE62B4",
+       "hash": "sha256:9aae62b4d39d053c76b6fa03b2a986f96935b29a842b5d143e7397232742531d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C10-S10-A351F886",
-       "hash": "sha256:a351f886b85fc87ae741ec2e5c5b9e3543790ed28ff161eab30c77ad28ad21ba"
+       "content_id": "KDJ-AI-2026E2-P02-C10-S10-16A2B0DA",
+       "hash": "sha256:16a2b0da00dd8a612568c1bac3279327635f2128cb34fa4cd0a5ed3f1c78599b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C10-S11-4266A17E",
-       "hash": "sha256:4266a17e245b6aa87b046f5e163a330cf7bf915345b23a85b9a14b0dbd07c82a"
+       "content_id": "KDJ-AI-2026E2-P02-C10-S11-82B7DF6A",
+       "hash": "sha256:82b7df6a54a54718286b1e3085288f2362a5e2e5366b2930650e7644e7a99af3"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C10-S12-6408DBFB",
-       "hash": "sha256:6408dbfb20dc1441692636f05203bcdae322d313bedaabf3dafe15f92a815731"
+       "content_id": "KDJ-AI-2026E2-P02-C10-S12-A5C5418D",
+       "hash": "sha256:a5c5418d04243bdc126d3392f47de5a314096968224309fe60cdc3548ab0bb32"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C10-S13-3AF2AE74",
-       "hash": "sha256:3af2ae74ffb32464bd2e52677ed9271d57462f441793af2b3c3492bd90ce1d6c"
+       "content_id": "KDJ-AI-2026E2-P02-C10-S13-40BAB83C",
+       "hash": "sha256:40bab83c685b21d325e8329165a8772ae75d73d14ab772007882e247060477ae"
       }
      ]
     },
     {
      "chapter_id": "C11",
-     "chapter_hash": "951a34e4a192298b88951f05aace4142b02857de55e365efb405c897a05c6d2b",
+     "chapter_hash": "8fd29fd610117334473c3b51bfb805e0ed73b3cd737069bc4d1526e39f11e649",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S01-88BD2E1E",
-       "hash": "sha256:88bd2e1ea3604b7058e571e6f495e9c28ece63a6db1b1e5bff7f549d642f1f40"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S01-F198F210",
+       "hash": "sha256:f198f21065e10d5f8bcbfa5efd1865a349e966ee8f6bcd2f1c0e2e8d08255445"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S02-D1258926",
-       "hash": "sha256:d12589261827437f9b6de423c104e37db495851662814bb8a01a053977b18171"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S02-B0DA7CCE",
+       "hash": "sha256:b0da7cce9436e168abecb2bc4d0eea5bafd9987dd7a18b82280467e9fbc9667f"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S03-81B87DD4",
-       "hash": "sha256:81b87dd4f1fbcee8018442c4688fd4503ce9902fba211c3289ea2ae6a359e4b6"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S03-CB6821F5",
+       "hash": "sha256:cb6821f52ea8704ae215689149eadbaf8bbeab822a14f68e4beea251bfd3940f"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S04-D8D92ADA",
-       "hash": "sha256:d8d92adaff4c6f735a312e0d4e69b285b1905b8368ed00ee893f282ea1041ff0"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S04-5E19C101",
+       "hash": "sha256:5e19c1014211f008b67f89309806d4f14cdbd5f6e6e8ac820ff5ea0f60d49691"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S05-B328D333",
-       "hash": "sha256:b328d333fe3c04786398d8c91e0def0924327e9501cd930f4f57d6b05143df7b"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S05-6F8BE2AE",
+       "hash": "sha256:6f8be2aebef9a010b9b8f90154ee4a7e01f7a6eedbc6c927b9fa20cfba571b06"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S06-E011866C",
-       "hash": "sha256:e011866c1cd4a78a56efce6d29d43a83a810e6ef8b47e9b53f0ba93b30c74808"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S06-CDAD4755",
+       "hash": "sha256:cdad475570698df327315c4dfc0bc49f3d20e128b6426361ad772048a1492a96"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S07-B6A51385",
-       "hash": "sha256:b6a5138513cd44de9bf95a663cc190f9a39f475990f7aa886d0563e89df568f7"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S07-9CC3AC79",
+       "hash": "sha256:9cc3ac79b52b5e64a53b67d74f97a948c29adee2781f7317069223efdd7ddb89"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S08-4FBB7F5A",
-       "hash": "sha256:4fbb7f5a2d5a0f4ef08c726ae5bed7a2ba549ae7ce08973e514da3841de2571d"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S08-7458D1FE",
+       "hash": "sha256:7458d1fe0b1a5f48101d54523afa275c70aa39492366708b669fddfd9d6a18eb"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S09-1C17BD6D",
-       "hash": "sha256:1c17bd6db1e0ea78a956467e88b3e7caa907029a068b4437b73616891db3bd49"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S09-17E97B64",
+       "hash": "sha256:17e97b6417838f456b931994880265f4e400947221492210b5780908be969fb9"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S10-25521F99",
-       "hash": "sha256:25521f9913266d958cbb032fddb0fd4e02264e5976e86d55a2e21763156afa75"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S10-7F0AD789",
+       "hash": "sha256:7f0ad789d0242241e1e8b568a843a250685c8d361b15f26bac51b8f1c8a05b28"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S11-DCC947DB",
-       "hash": "sha256:dcc947db91099bdba3489cfcf4ddd4f528156980cd61492bfe4c38529042a3b9"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S11-1C6B39E0",
+       "hash": "sha256:1c6b39e01a4e53e9f5d9a375f7cdc81a68a133bfa382f3c03e02c9a5b8748ccc"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S12-847DF45C",
-       "hash": "sha256:847df45c8bf5f67afff99d3cffb0617ac01233e44b0a4ad7cedeb82324b545ed"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S12-C8CA97ED",
+       "hash": "sha256:c8ca97ed74ad7d1a2922d5e597a93d888e8dda79fb79d51ba702a348848925c0"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S13-1127510B",
-       "hash": "sha256:1127510b973d7223902fe39897860c8640adf24714103580ebfc31ce947e13d8"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S13-C874047F",
+       "hash": "sha256:c874047fb70219f6babfa2a8ad9b98b242b2180948ff23e2c5f6762a9d0d5a74"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S14-CCC6DED1",
-       "hash": "sha256:ccc6ded1dd452515f91b7f1d74f0435a1c517053e5d224ef4c3964360e5e1c87"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S14-20BF4443",
+       "hash": "sha256:20bf44433b5ba24146151e6298661ef3bf6b8692587baeda9cb3335b22be4dd8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S15-C4280418",
-       "hash": "sha256:c42804181e8445474016877355aa2bf1b94df62d63164832e77f18425edb274f"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S15-D3E7DFAF",
+       "hash": "sha256:d3e7dfaf2e9c4421164e23095aa492cd07073fdfc74263795108e14e0366d1ba"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S16-5787542E",
-       "hash": "sha256:5787542e749ba5b827e3091696bf75d07fd5803b02c4b06cc793a9527763b4e9"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S16-86E1D5BF",
+       "hash": "sha256:86e1d5bf1339edbc7f207cf0184fa114584b08ad2be3671bcd1da8825d0ccc55"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S17-47A08D7C",
-       "hash": "sha256:47a08d7c8fe01b90f6f85ec8ba4e34d4fa74a3748673d90555189ff3cfb75f2f"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S17-0E0AF926",
+       "hash": "sha256:0e0af926a9415e096b021ee9c94071fd8d107534ddae65b11d2f724f80d80e46"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C11-S18-CFB35DDF",
-       "hash": "sha256:cfb35ddf7d5f4ad6d233d4903499d6186fb9c5632a1c1fc0488f68a2e56c11f0"
+       "content_id": "KDJ-AI-2026E2-P02-C11-S18-A16277B4",
+       "hash": "sha256:a16277b462399e7f7337443dac8562fde97d30f996a71612e7bea2889111fcb6"
       }
      ]
     },
     {
      "chapter_id": "C12",
-     "chapter_hash": "4ecf19d46d0fa565bdf1cc8a0b4eb52750085ccb8428602b5121efb43669313e",
+     "chapter_hash": "8e0392d59274f4412830ca4d09033df4896cb59250162a4f42e7a9a668a2046a",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S01-6FAB79CD",
-       "hash": "sha256:6fab79cde1d4b50ad3b81cb71ba5bb632c3f89ac1977a29c5ac51ed18a58713d"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S01-79D57736",
+       "hash": "sha256:79d577363321352c2ba8b49c15f66729a546b8ddf900d378366c67cac1e1a386"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S02-44B9E00D",
-       "hash": "sha256:44b9e00dc9a86d6639bca204d35ad97db267bce7ffaaa1441bc5ab704ed8f3df"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S02-D699DBF4",
+       "hash": "sha256:d699dbf4a32cbbe666288c217da1dbfae3c6bc98485afb39e8c19e371dc9702f"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S03-DD27F201",
-       "hash": "sha256:dd27f201c45651f679d66bb410960d9ef80561cc00a42e2e0414cb2d8673cabc"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S03-34D229E1",
+       "hash": "sha256:34d229e114e901179fd3db0feaffd132f0a4c9c9180b972ef9fff74f846373fe"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S04-7255C383",
-       "hash": "sha256:7255c38375b7cda774b58cabc71f8ad0061dbb938e1416a06508765cd6d2f42e"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S04-A48C2111",
+       "hash": "sha256:a48c2111af8f1fd30f8f9e15acd1cc369761d732338148fe0a105dc610451471"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S05-77F6C7C8",
-       "hash": "sha256:77f6c7c82d81da580156942f838a4e865c2711f65c6bef6a20bdaa905c091bf1"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S05-1314F9A8",
+       "hash": "sha256:1314f9a846219e2aac732dcd441c1d8a6ff738a8d21e2bec70f9953cf1492573"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S06-051C8B22",
-       "hash": "sha256:051c8b22e9b57511038a13307fa82f6f164541821cf65973183f28b14a982714"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S06-42458D2C",
+       "hash": "sha256:42458d2cc66b6e504de60727e72b548d6f19ef093737b845ae31d5f19e81b191"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S07-6F905422",
-       "hash": "sha256:6f9054221ef9cea1f9abd96ea412d6eb12a2789a23e7eb918d2424713b9450af"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S07-F8E012B0",
+       "hash": "sha256:f8e012b00fba52d4cc3ec6d65a4213dbe0fa4446636448addba15a694e3b3610"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S08-41FC2DD6",
-       "hash": "sha256:41fc2dd6db9b83d3dd0954a01932c1fb7ec97fa9d939d3f76cdef0377e863c00"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S08-DD56B64D",
+       "hash": "sha256:dd56b64d8c4072fd37f97d43145c7169715d13c96b0e3bffd841fb0df290574e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S09-7EA765F8",
-       "hash": "sha256:7ea765f86a92fb72aa21edd845f01b9d81248d127861ae2525a92f45de11e87e"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S09-A0241372",
+       "hash": "sha256:a0241372f59cd4f5de563a04882f8d2e35898f79ab5886e8b22eef2a526d305d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S10-4E9C090D",
-       "hash": "sha256:4e9c090d3ee19410af57dbc275806dec21f4720007eb355f43f95ffc603f6d86"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S10-B1BABDDF",
+       "hash": "sha256:b1babddfbe67caeafe1de6f859d843c395805c5284f57e4f5bdf538cc0e0b876"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S11-60E3B64A",
-       "hash": "sha256:60e3b64a02f59a97346dd3a74c89e54cd973611e0cc45c95673103ec7ce3be67"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S11-A21EAFA6",
+       "hash": "sha256:a21eafa63b9d726ce14b2455327c6cd744f5116e42d2a09adcfd13b95610044b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S12-54ECF270",
-       "hash": "sha256:54ecf2700b6eebb3aab521fb7693101cb782228e4e0dfa666c3f614b5e1e1128"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S12-81813FFB",
+       "hash": "sha256:81813ffb07750963b2809be7ad835d18ede0bab0d803445a0e7e98f97fa528ea"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S13-C3991E8A",
-       "hash": "sha256:c3991e8a9316dbdf62fb6fa26d8a7d63e3021870658b703102f336709183affa"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S13-97C5EAC9",
+       "hash": "sha256:97c5eac93851af08638a55974f8485aca61038a3b5cc1f5ffc6d9030d55795b7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S14-61C3C412",
-       "hash": "sha256:61c3c412dd19631f522e0b464131527140a48740f2e5605e5b2e21c4e734403a"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S14-1A8C9473",
+       "hash": "sha256:1a8c94730ffa0b9cdd530b50c2112c00c2edc5033741a25ac131825ebba39dbe"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S15-30A43119",
-       "hash": "sha256:30a43119455c59b8ed39e78e8196d9a38c4f37b233f9ef01cab99bc8b1a8c650"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S15-494AAE47",
+       "hash": "sha256:494aae479af0384267bc0952063786196f419c50f10ee9e74a94720da8d3d08d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S16-677F4807",
-       "hash": "sha256:677f48076c3ac3c025fb057d204f0ad931274e937745906b0fadc0cf4bdcf1a1"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S16-ADFE7789",
+       "hash": "sha256:adfe778923d5fd33da6cee7e79326548910c1c861cc78de028833eb250684746"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S17-82FD75C5",
-       "hash": "sha256:82fd75c54d95619272d94b05faf202e2fe275cfa7440679b242e2ace10be8110"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S17-DFB548A1",
+       "hash": "sha256:dfb548a15a1be63578c722115f1d8eea94526112cd47043c71af90fc56440db5"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S18-64919527",
-       "hash": "sha256:6491952743c8a7bec4e9926b1bba2bbd9586f3367585deb27cea3a488841715d"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S18-02F9342B",
+       "hash": "sha256:02f9342b1d096de7e5714fdfc21447b85a2555fe23195478a48bb6265fed5793"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S19-E9751956",
-       "hash": "sha256:e97519564e9398945c50473318801d402fd1a58dcf1e86a5d60f30e9a12017cd"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S19-3BA72161",
+       "hash": "sha256:3ba7216151aa0f2d795e062808c5d4ecb66d4e800a172ea633c711f64656b4c6"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S20-40F1AD4B",
-       "hash": "sha256:40f1ad4b09d2b3891cad6ed54c78054dcfdb163564d2a2480d9d4e2bed7a7a2c"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S20-6B0681C9",
+       "hash": "sha256:6b0681c95bed29c0e3fa792ab1c3352a04bd520e56d2bc48250a88fb921e4b65"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S21-61DD947E",
-       "hash": "sha256:61dd947e6b58342a7497f3a69f46009d5ef6e13ec3d226ce7462dd81d30d5ca7"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S21-11894661",
+       "hash": "sha256:118946614a6568b655af0fe88d4ab9d91147a9ab345270a291043140321a30cc"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C12-S22-72BC64B2",
-       "hash": "sha256:72bc64b219a10aaa3e4779053c06d185c0ed2ce57e4011d32d8d96f7e5d0fe10"
+       "content_id": "KDJ-AI-2026E2-P02-C12-S22-A70ECA0F",
+       "hash": "sha256:a70eca0fdb121ed1d140fb63d6a5f1f5cfa3d7a9ca86ac06f026bcdd2366037e"
       }
      ]
     },
     {
      "chapter_id": "C13",
-     "chapter_hash": "33c821d79d6b6d527443c04857d95b282df47bf42bd7fe4edba83c5d68fe4e70",
+     "chapter_hash": "587424902e15de1b7429ec253e581c2f8c7ecd29825ac6adf930da63a56f4c55",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S01-92349B86",
-       "hash": "sha256:92349b864b41ef4f49c4fe7ffb89793d460fae3c670c26e088aee551b5b37a2d"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S01-0F1F00CA",
+       "hash": "sha256:0f1f00ca02efedeb7d787b7671b6459580f024c4de086836f5e6f1a21cac0087"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S02-C4D90480",
-       "hash": "sha256:c4d9048031508f48748c8c30002c77548d05f6de9efc147fd59633a9c3c10906"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S02-D6BA8405",
+       "hash": "sha256:d6ba8405f086a5a807281e06d67d3f9ea19f8323843f85c98e9de91dd277b9de"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S03-079D62F3",
-       "hash": "sha256:079d62f3882ef8b86b30aebfd0d6015e125ad6398164a055db5904c6d39c7c9d"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S03-1F9E624E",
+       "hash": "sha256:1f9e624e51c41270f82546f7217f3baeeb11aea63c2e7234e1d2ef03d2b5857d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S04-DC751B1D",
-       "hash": "sha256:dc751b1dc30585512dbb4c169155553ad1f8261aa638f07ecff6b6ab7a80f8f6"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S04-CDC528BF",
+       "hash": "sha256:cdc528bf2bbf4aab4b2bb5cb6334050121b5d2db330776a1e85797ba2cdca725"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S05-220ECFB0",
-       "hash": "sha256:220ecfb0557393426540feb62fa090b10f87353b4b7ac81478e1dd6f9d673747"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S05-20199E40",
+       "hash": "sha256:20199e403b82ad7c406ef21a79e40a8ba288be8f22d777d9e23348aa8c0a56fc"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S06-9F1BFDE0",
-       "hash": "sha256:9f1bfde06da9f5309f176d1b59b3e43d7c974a74280551bcf8ebe40c76fd0f03"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S06-79FB54D3",
+       "hash": "sha256:79fb54d34bf6c486fdf8db5a0206f90418199c6455b5093aa317de82571fa75b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S07-0CAE65BD",
-       "hash": "sha256:0cae65bdc11584c0f7de7ba63dc34a788268157769d80c671c2d932e6d2522c8"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S07-21F7ACA8",
+       "hash": "sha256:21f7aca8e84cec09eb57f4476892ea1b6337ee6e0cf65f267064a49daf320e8a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S08-BF53E7DA",
-       "hash": "sha256:bf53e7da9da6c3fde675f35f585dcdc90dfee8e7cd5631553e27ec4a40e94f48"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S08-9E68D09B",
+       "hash": "sha256:9e68d09b2c0a82c7ddc5319077369afd99c7a5b5f8dfd21b9d380d146d570f33"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S09-932190C4",
-       "hash": "sha256:932190c4fc6e36cd5bb41a9341b4c8a02e705b6fb60c9f5abc86b84bb8da2387"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S09-2C7AEF92",
+       "hash": "sha256:2c7aef92eebd509b57db0b461e1a7f36f7f8d5b2f4b1af03f51c35a8070323e4"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S10-60F951C8",
-       "hash": "sha256:60f951c8b9839bb79cdc56b16d72fb78f7f6de04d7940f746022888445d26f0b"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S10-6858B000",
+       "hash": "sha256:6858b00046e734ea166e20fa3218d58c57d5b227dfec92e338d82a698761f2c1"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S11-BC864942",
-       "hash": "sha256:bc864942f19a083e3c600cba7d846ad31b4bca7127ed559220519e0efeaca178"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S11-DC6C93D7",
+       "hash": "sha256:dc6c93d71e63f997f78e100b4797b41801ca62f7a4971d5a812f3ec98e5baa95"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S12-37B0772E",
-       "hash": "sha256:37b0772e7e48286fc9f888f2946c348fa324f7849d6783bf2e3c728e946e46cb"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S12-795178E5",
+       "hash": "sha256:795178e5f8190397dc8ea8aee2810ca9641dc6af9fedf5712a464917213bb267"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S13-61A96B53",
-       "hash": "sha256:61a96b533121c17cd5142d7af04c7418d6d4cd4e33f6c4ec3cd633f8f0f8f519"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S13-92121990",
+       "hash": "sha256:9212199073b51d18519d0196cfd689372a7c21f7b1dde93f6e3add99ce8a6fe2"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S14-35C6CDDE",
-       "hash": "sha256:35c6cddee197f9b6a8c3ab65dce44f69b0f5fe5f2f1fb2f070a50291c19c2657"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S14-21D9255A",
+       "hash": "sha256:21d9255a71f946482dd0da727b11e8815cf3835b552a810332ebc982a7a30666"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S15-7A07FED7",
-       "hash": "sha256:7a07fed74b944ac202e48c42a4cbbadb25094d3925a28a30932e91f614165e90"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S15-BEEF1213",
+       "hash": "sha256:beef1213c7e12974cbbc0e03a0562158c8952194fe4808362adda31a1dab63e6"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S16-6222628C",
-       "hash": "sha256:6222628cf864f48f8c603f59199f24af6dfcb52abc86f773520b6b052112b7ef"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S16-4EDFCF46",
+       "hash": "sha256:4edfcf465e86ba65b2f58d90f61f03c64d5f853d413319424138a76c1b42a435"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S17-121BDB1C",
-       "hash": "sha256:121bdb1c2d1b83992e6fbfd68461b04e210508724f7fc8acc3d761db8dca35d5"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S17-113EEC38",
+       "hash": "sha256:113eec381bad40ff70d505e925cf97bbab1b18a539ca82be388a1d18e6fc71c3"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S18-EB00DA70",
-       "hash": "sha256:eb00da70ebe0d42b6a280d260a6f95595c1f43132c714a47933a31be8a42b0d3"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S18-F17058C9",
+       "hash": "sha256:f17058c930c72a50a4d1356f4064e4cab19ad846ee95cd30738ed95c060f6c46"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S19-717536F5",
-       "hash": "sha256:717536f5a1efe7fac2ba75a2f790b8e35420f3928aefb255c4e541d4f5038b0f"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S19-2E2E3693",
+       "hash": "sha256:2e2e36937601d9cb8748d185a6423fbf039b86e95815ad848cad351b5075bc12"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C13-S20-E58D257A",
-       "hash": "sha256:e58d257aa92908333f61468322e71b53eaf11238c53fc5057dc59a3c5f13decb"
+       "content_id": "KDJ-AI-2026E2-P02-C13-S20-8DFA78D6",
+       "hash": "sha256:8dfa78d63bb05515ca9ae3d9f928fc386fe822ab0b1945465c649466b18101d5"
+      }
+     ]
+    },
+    {
+     "chapter_id": "C57",
+     "chapter_hash": "17131bd11aae544e2bfaf92fac91feb3561b5fdad6a8fbf4c7ec352268c7ac83",
+     "sections": [
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C57-S01-CD700E5E",
+       "hash": "sha256:cd700e5e66a6dc9d75a333224f855ab5414673fc25e3b7eb419590c3a033a5c8"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C57-S02-34FAEA1D",
+       "hash": "sha256:34faea1db5fab735c0f469663a2598d99f5c555fcd485879e02ef687b645a6f1"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C57-S03-54A8DD95",
+       "hash": "sha256:54a8dd95fb84bf14310b3030d839208ff60dfe180906e936aa02460e6beb9dfd"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C57-S04-4D87C6A7",
+       "hash": "sha256:4d87c6a7e67eeed59a26b49cdc2b31ee57825661e4226964fa477df2e65d9eef"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C57-S05-B27F11A4",
+       "hash": "sha256:b27f11a4ad7e14e55f80b4e02957279f7b92af4c4927b6ec43ce93fddd5aaf4a"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C57-S06-1AD396D8",
+       "hash": "sha256:1ad396d8ed11eabe716c0794828ed1148e5c07b309b99f8a6d6d78831eede3b9"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C57-S07-6AD8124A",
+       "hash": "sha256:6ad8124aad6b42c9154d2f45e5dfc6eaa36bb0567e894bffc86b4a6b2883e456"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C57-S08-F3E2106F",
+       "hash": "sha256:f3e2106f981d5d4f4c1773b8a1c969dd67719f829e0f41698a166374857b8aca"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C57-S09-67A4E183",
+       "hash": "sha256:67a4e183990478d74c5b27ca130e66d70b8f3c33d2ef9d4d5baa10da687614a4"
+      }
+     ]
+    },
+    {
+     "chapter_id": "C58",
+     "chapter_hash": "de4f62eebea409e5b161f92a0b9a08cb21ed0352b92e6c7f9d00f0858969cfde",
+     "sections": [
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C58-S01-9439A857",
+       "hash": "sha256:9439a8572c7c3d3660c7fe06b0ee47e44ca11e77edc83d8f3f14730a16493a74"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C58-S02-8040F117",
+       "hash": "sha256:8040f117cd94017f56fc628f3dfe365a5b30aa57b4422da70ed23f2402195f46"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C58-S03-FEFA4F4E",
+       "hash": "sha256:fefa4f4e8849cddf230fe707f72155c8ce042b7cfa6dbd442378990a9e27ffa7"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C58-S04-50A2DC4E",
+       "hash": "sha256:50a2dc4ea73cc4f68b32bd8995f89ef04c5568cb835baa24e10a9eb5b0172a04"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C58-S05-05D57937",
+       "hash": "sha256:05d579374bfc4a8d0038418b2854cbf13cdd21f17b4589f24d055dabf3b87654"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C58-S06-F389B4B8",
+       "hash": "sha256:f389b4b88aad8a6ff3e7e51396423172738da209613bb87ca15932b3392786e3"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C58-S07-A6C5EF35",
+       "hash": "sha256:a6c5ef357ceee52a451f34094e272e9f0099675203cd8de25a37e9c60a7b96fb"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C58-S08-D943549E",
+       "hash": "sha256:d943549e93129a47e13d3358e4d32977db4792a63f8ab9119a55f998700b304d"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C58-S09-66021FAD",
+       "hash": "sha256:66021fad852f1e3a9ba3284dfcea5aa564957376a30498ecc1174bcebea83323"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C58-S10-0B504A78",
+       "hash": "sha256:0b504a78889a2bd28a1560c052d5c0e3e4236fefada6b031ba313b079f6d3300"
+      }
+     ]
+    },
+    {
+     "chapter_id": "C59",
+     "chapter_hash": "4b71f39254569a485d402810331b082c1ee0cc9ce683460bc9e5c3a14c383780",
+     "sections": [
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C59-S01-C80E961D",
+       "hash": "sha256:c80e961de5c366cf565d8d4c6a25eabe5b3807faa9dd59d874b3fc2348e92989"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C59-S02-8A5F1CDF",
+       "hash": "sha256:8a5f1cdf06e728975cf946084987ad537b204c5d59a5788e2cf160ad30da62e3"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C59-S03-7EB94364",
+       "hash": "sha256:7eb9436488686b13b5a8997ef0b730164aec0129eadb7ce380607902394515b1"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C59-S04-31A58BC6",
+       "hash": "sha256:31a58bc6604d059608e30b54be0d02351f040c56482d3f40fde70709de0c0ffb"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C59-S05-352B5628",
+       "hash": "sha256:352b562881bf03edbd2d64ed221a1005a421545a98c4f0636814dd483f8cff18"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C59-S06-5CA5457D",
+       "hash": "sha256:5ca5457d1e37771abcd19e2eab0dc86a29abdc2503b75116861be85e0193d4cf"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C59-S07-2B0DFEAD",
+       "hash": "sha256:2b0dfeadc1e75a1882636d2f3936d7151a4cc5d8a02a6d470ac6d61df826055f"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C59-S08-9166572B",
+       "hash": "sha256:9166572b84277fdef8c58953d5c67039bbd3b9866631b664df4cb18a009f3c59"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C59-S09-A5C3DB9C",
+       "hash": "sha256:a5c3db9c9de076f8471ba1b4067ba3005339b578042a8a36e9b84107bbb27023"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C59-S10-C7AA6799",
+       "hash": "sha256:c7aa6799016a74acaa8b7636586aeb095d185240d696cf600d0cb62daa59a265"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C59-S11-301E6A48",
+       "hash": "sha256:301e6a485889a978540f3a88b0a6e7a6c0ce3df6dc6fa8c7416748e9c123cd62"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C59-S12-A0D3C81F",
+       "hash": "sha256:a0d3c81f8e47c46bc71da6c85fcced76b9969f0063fdc837cf916fa1ef159799"
+      }
+     ]
+    },
+    {
+     "chapter_id": "C60",
+     "chapter_hash": "836d20369e8f1e0cba595531fa6044264f4185ac9bf8e785b3514452febd2fad",
+     "sections": [
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C60-S01-6567A85C",
+       "hash": "sha256:6567a85ca25d845249fb306409be6de7b231f453027f11bec7fbc11975c60948"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C60-S02-828AD4C9",
+       "hash": "sha256:828ad4c9c7f556322faaba84e176c8fc1f55cf8e4ca7daae59ba752145d97af2"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C60-S03-CC446A2D",
+       "hash": "sha256:cc446a2d17721df1d4a364cea09ea35f671c5938b160300d62d2f71544800022"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C60-S04-1109A76C",
+       "hash": "sha256:1109a76c61e3fdc7b6be861af30d9a5228d76498d3a7bec5937e1b241a87fc83"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C60-S05-80FC72ED",
+       "hash": "sha256:80fc72ed6b77a3e343fe3fa715a861734b2763e3b07e8e46ae1f17b932652b08"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P02-C60-S06-A0342B77",
+       "hash": "sha256:a0342b7709baa40e8fcb9fac12cce15eac4ba503e81c536fe942d00464bf19ab"
       }
      ]
     },
     {
      "chapter_id": "C14",
-     "chapter_hash": "24c5630e967726113f2c52f275d15e3a5ba9d35646c82fdeb45228bd2d9f5447",
+     "chapter_hash": "11987daff470b236838f60b5664fa9697ef7b782b6acbd7a0a3c50c858a2ac9e",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P02-C14-S01-3A36956B",
-       "hash": "sha256:3a36956bd336cbc94202e84d30c608c5cd32a41a34f1f0b32d680ac69b2b582e"
+       "content_id": "KDJ-AI-2026E2-P02-C14-S01-B063DCC0",
+       "hash": "sha256:b063dcc07bd9e84e053eec2dade5e59ea08ca5c5d9bdd628da234997ed3e061e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C14-S02-81E35C05",
-       "hash": "sha256:81e35c05d9d4df7f7ed36baaba91f02ed0c84541db1787c6e03d7c0b32bcf1fb"
+       "content_id": "KDJ-AI-2026E2-P02-C14-S02-6054D8BF",
+       "hash": "sha256:6054d8bfa036d3fe39d0f888d4eb6eab2a3ba113fa271cada7289f71ea34d108"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C14-S03-D7B8E6FD",
-       "hash": "sha256:d7b8e6fdc0051d0eadbf6397e0b5df0c9dd849eb966f5ad297ccf87d5b710ef5"
+       "content_id": "KDJ-AI-2026E2-P02-C14-S03-7D0BD14F",
+       "hash": "sha256:7d0bd14f06c58ad57fee017f9128528347390ec30f5bb729c5f8cb15fb070205"
       }
      ]
     },
     {
      "chapter_id": "C15",
-     "chapter_hash": "93e8656d11f904de024123f287e2e2160b9c4ad0b7ad78b5e963354e5a252975",
+     "chapter_hash": "9fbd3683ab1c4e8aae4b39cfd07ec9b8310192de429bccc092dd91ad6441cc14",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P02-C15-S01-A35E56FE",
-       "hash": "sha256:a35e56fe86ae25b261e0f9151390f950e430287f508894a9882b4e9de37ef005"
+       "content_id": "KDJ-AI-2026E2-P02-C15-S01-BCFEE7CD",
+       "hash": "sha256:bcfee7cda9cb39146ab3db9aa2d412a6a8e08dda7f66c631426cc5affbf06a35"
       }
      ]
     },
     {
      "chapter_id": "C16",
-     "chapter_hash": "12710f3724afdec4cd201f3285e0319b1d6b39f5712a1a4bdc5eec0231c2806f",
+     "chapter_hash": "9a5c1eb1b7c46d4f6646bd363af1e13a35939b98b74fdf91bbc7934bb16167bc",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P02-C16-S01-B8B3D5EA",
-       "hash": "sha256:b8b3d5eabbb8db4aef8f7724967d58d5e066d7b4b01c02220bc1d2164ff27ea3"
+       "content_id": "KDJ-AI-2026E2-P02-C16-S01-A232B74F",
+       "hash": "sha256:a232b74f91401a96023cf8100b42d3834fae41ed46b4aba340fed21046f8c970"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C16-S02-28D5D8E2",
-       "hash": "sha256:28d5d8e2695f28c6a0325cd032edd5463f77dd19a78432cc5577735f1a0cfb20"
+       "content_id": "KDJ-AI-2026E2-P02-C16-S02-B82F3C42",
+       "hash": "sha256:b82f3c42555d308d928bff50957b12c037386fe482f19c1c945bf47abe9a9bf8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C16-S03-99BB79CF",
-       "hash": "sha256:99bb79cf5d4e32124e2a0f85950d25672b4b87a80119d41fd6f082bf0fb2ac8b"
+       "content_id": "KDJ-AI-2026E2-P02-C16-S03-621B6DEF",
+       "hash": "sha256:621b6def3867d3d7ba3555108711b97d148097e75ed3f5dc03b57f0f83042140"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C16-S04-2969D71A",
-       "hash": "sha256:2969d71aaf90979f2479a4356fe0f8c248c79be35aaa1fe31e40d2cecf79e5e9"
+       "content_id": "KDJ-AI-2026E2-P02-C16-S04-A012550C",
+       "hash": "sha256:a012550c5072609be4c2cfb969b3f690f1ffc9ac964c30321c1af41ba7224d22"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C16-S05-823C95BD",
-       "hash": "sha256:823c95bd265959734aa931193d66458a68fa9503cf3e119d41e43c5f36f9b916"
+       "content_id": "KDJ-AI-2026E2-P02-C16-S05-ADF5EF55",
+       "hash": "sha256:adf5ef5538a83025cd1e7db6cdb5cd754ab0c7d210e490f1b50baee6dce466b4"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C16-S06-CB34A49D",
-       "hash": "sha256:cb34a49d89b19cf7c0c5c48f0e73bcf0f7f6fa083971956952cbef644ff1b768"
+       "content_id": "KDJ-AI-2026E2-P02-C16-S06-A86C6B1F",
+       "hash": "sha256:a86c6b1f09d8421998968b989f7c2e749fee0f8e6e62d1127e6cd47469ec80fa"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C16-S07-52435AD8",
-       "hash": "sha256:52435ad88be3d83fb7f86c6ee9d68e7b1b14034dfe830aa574dec1c047dbd87d"
+       "content_id": "KDJ-AI-2026E2-P02-C16-S07-EF062E2E",
+       "hash": "sha256:ef062e2efaa24b4dba949390bfe7a485152b526d25d907bd27d7266651be28a6"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C16-S08-79D3418F",
-       "hash": "sha256:79d3418f558460ce086528209d48efad50d7f48321642087be527541653f22cc"
+       "content_id": "KDJ-AI-2026E2-P02-C16-S08-A2CD1247",
+       "hash": "sha256:a2cd124702109c3eb2e47608504489af5be8f207058a6f9aad294eedb50f16fe"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P02-C16-S09-F5BE4808",
-       "hash": "sha256:f5be4808663a2069a5514c87cb4dd72c696c29cfb8aba882d03f3f4786d0e2d0"
+       "content_id": "KDJ-AI-2026E2-P02-C16-S09-1F4213A0",
+       "hash": "sha256:1f4213a0dcc033f36b8abcfe6aad244e0699eb9f3bdc2dbd5407e417c995cdf2"
       }
      ]
     }
    ],
-   "part_hash": "49f5db1591055e271b10bda2fecfc8720523b5bddaae7751c0e60237d756966e"
+   "part_hash": "1f7076d6aa53329ff47444885a230f7fa9333a01d3362cffbf76cf1dc7470af1"
   },
   {
    "part_id": "P03",
    "chapters": [
     {
      "chapter_id": "C17",
-     "chapter_hash": "5797eac3e613ed8954b8c9d9a8f42f25d83cc859c6d9eaa41b8fa615fdeccea4",
+     "chapter_hash": "4e1048c4eb3b004481c771acc0f89ef86f74a0442a85dc7713fd84548ad5579b",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P03-C17-S01-B0F84ACA",
-       "hash": "sha256:b0f84acaf6ff2765b70ec04012aa6594a500337fade918058407c667f0ed1ccd"
+       "content_id": "KDJ-AI-2026E2-P03-C17-S01-80AD5388",
+       "hash": "sha256:80ad53888067616d7351b5f68689dbe8f0364747b662f485a7b460757d7817ca"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C17-S02-FA32D05E",
-       "hash": "sha256:fa32d05e6896595ac859b4b9069e5f8fcfa26ec5b16183228bb7189ec7a3ceee"
+       "content_id": "KDJ-AI-2026E2-P03-C17-S02-49B70CD5",
+       "hash": "sha256:49b70cd50ba318eb5c42feda5ac2cffc5f65cb67eb5cae7ac2137f5c9830b3d7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C17-S03-82429293",
-       "hash": "sha256:8242929384c163bf74fa8f1901a7e17499cc64b24d5de247b8716d47fbb81d44"
+       "content_id": "KDJ-AI-2026E2-P03-C17-S03-73705B35",
+       "hash": "sha256:73705b350e71caa17e05e198fb7d111b0e89025e615c844de1df2f62b00717f1"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P03-C17-S04-1834E91C",
+       "hash": "sha256:1834e91ca649ac408030519fd289a079b31d794bc399587b21e7f4a29e6555bf"
       }
      ]
     },
     {
      "chapter_id": "C18",
-     "chapter_hash": "05e7dc2b78fab3b41816e11f6d5c3dd7cd512219756d4bd17d7d258c2f36b165",
+     "chapter_hash": "6ef0d2c88c413d4c0d1ed919945cc129c1c5c5a5cfc3988425318c242be12995",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P03-C18-S01-9EBB2155",
-       "hash": "sha256:9ebb2155e33001978ef79f21420fffe5ba440f4ffc354fa2a38e64a390087502"
+       "content_id": "KDJ-AI-2026E2-P03-C18-S01-7593BB9A",
+       "hash": "sha256:7593bb9a0465f36f32e27317d50bf3e699a636075692fe1bf08a19d27e5d1a60"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C18-S02-EBB0A761",
-       "hash": "sha256:ebb0a761edf26dc1909adaa465cb1cc89932df74b82e2bf8d1c8bbb202acbb6f"
+       "content_id": "KDJ-AI-2026E2-P03-C18-S02-C47CC1A1",
+       "hash": "sha256:c47cc1a123926efaf03161e1968d93a157ae9b2362f3a2501604d89122894df6"
       }
      ]
     },
     {
      "chapter_id": "C19",
-     "chapter_hash": "a287a17606ddf34f3408671268bce3e995c07c73a8bc0dfc02a41a92d171d236",
+     "chapter_hash": "5e750541f2e06a90856e1c8a2e70a4d415a3aa07514c4ff4e2738d91449269a5",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P03-C19-S01-032EAF3A",
-       "hash": "sha256:032eaf3a05c67dec61633a470612ab126bc2aae7e2b9cdb63c8ae88b9ebef5bb"
+       "content_id": "KDJ-AI-2026E2-P03-C19-S01-8FD6F246",
+       "hash": "sha256:8fd6f246664165bec170e0b41a7706f42eb214d17e37d2182dd00b8c877f0504"
       }
      ]
     },
     {
      "chapter_id": "C20",
-     "chapter_hash": "80e8e636f23e26c15e5fb81947bf45435c966c184970c527d4d5659093fc083b",
+     "chapter_hash": "a7092d384913067f8d4889c734f6087e4e7fcebda03eebf57ce01348127f5b48",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S01-0DC3B9B4",
-       "hash": "sha256:0dc3b9b404bcbfa8de2114552c26e4950c64d663b2d684a8f3f3657b6dec4e9d"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S01-AA48B38F",
+       "hash": "sha256:aa48b38f0f40ad768d7b570880af8ca1bb9712b60aed962b62651b3dd9cef96e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S02-B58240E8",
-       "hash": "sha256:b58240e8a15d4cc7265f0428ce47c0e742f33c2965d29796631e848af8261881"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S02-E18120C4",
+       "hash": "sha256:e18120c4204857fb4992299e17f005b83b7497cd68a9dee1c218feb84c06a794"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S03-1C6A233C",
-       "hash": "sha256:1c6a233ce0dd20eed1f2f4a31dd0f4158c350eae0a11d83da942f6a11a819957"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S03-D13DA1C4",
+       "hash": "sha256:d13da1c408a15dee8f9164f0987e5451e6eace8a854984fc675c0071507d43eb"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S04-3D556E97",
-       "hash": "sha256:3d556e971d6dc6c9fcc85584a7787fc2ba13d140ca60db851048754c2d965b6d"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S04-80E48455",
+       "hash": "sha256:80e4845537ff1a37bb4501877aacbab6fe22f6bb78433ee7be802dd7c2f8fdf2"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S05-636F2118",
-       "hash": "sha256:636f21187f59335e9ed5ce1fa663fbbffa0fb69636a4042bbb7550b3d4b2c6b2"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S05-217DD4BB",
+       "hash": "sha256:217dd4bbb381db64202dc30ee5144e865025df7ad0c5fe09fb65b59c1abecfe4"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S06-8DE9B5FF",
-       "hash": "sha256:8de9b5ff9bc704411ae2a1caa3706ba9b098f46713215850c2b7dce23cc51f48"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S06-B2BB1445",
+       "hash": "sha256:b2bb1445d7d5410c082641d1890c2ee9ea680aa18dfebd21c6a290177b62fe25"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S07-3B73DC25",
-       "hash": "sha256:3b73dc256be1361e692f79cc0d4c790ecddf48a1c5c9dbbf1d7ed62f5550f385"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S07-406F6843",
+       "hash": "sha256:406f6843ffb8b9f505971970c64e2af08c21399d0e9a802e4d4c1a37783205ab"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S08-ADCCAA04",
-       "hash": "sha256:adccaa046a8cb5599868b4b0af4339170264ab726dc410efc1711359107230b4"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S08-A46EBC8C",
+       "hash": "sha256:a46ebc8c8091c794f340e5f1c0a4ef2e729b25b2f3417ac7c7f4d932eb996f4b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S09-F5A1A548",
-       "hash": "sha256:f5a1a548ebccb0a7b5f74ce3f5df5a2c881848e3d20eba29bd1bdc1387234401"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S09-8DF4E23B",
+       "hash": "sha256:8df4e23be9e27230951929847a01bdf2dd079a573afdcf8fa5e7cc2b63424f16"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S10-55C0BFC6",
-       "hash": "sha256:55c0bfc6d71a8462adc4d7b58db91ad3cabee19a747630002d811f2aaf4d94d9"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S10-8C54A273",
+       "hash": "sha256:8c54a273093517b14ea1cc0803eb3c6d0f477a28c97f4e98456632b0597f0251"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S11-8F836BD6",
-       "hash": "sha256:8f836bd661bf5f07ee5944031178a3c1dc82d9570d74ab0ae397b1b6845251c6"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S11-3B23184C",
+       "hash": "sha256:3b23184cd852a281d3e8daa67d133552e41904ac53ad3049e36ea3c70f029ff8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S12-EC9735A3",
-       "hash": "sha256:ec9735a3f56f307d4d9cd9cd151aab2c56df1cf8c63e3c1bf648283b3b171dec"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S12-A97D3003",
+       "hash": "sha256:a97d3003d5208b909ebceb6c872427021de2cf5a2fe344169af91e3c6c68c279"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S13-E6E1357D",
-       "hash": "sha256:e6e1357da1b1cead8fa4d4b1b99a9683662b5890da749cfdad1a2cf26d5ec635"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S13-D5858F92",
+       "hash": "sha256:d5858f92c9fb871d9c946fac4af710e45e67b12db9b59db3fc9ecbc913330032"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S14-A6C06E52",
-       "hash": "sha256:a6c06e5243ae0238d9cd0f47152cf288658c39a5ba66977179c1a669905db4ce"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S14-43CCFB90",
+       "hash": "sha256:43ccfb9062830f7ddd390b3666ce0542c4b5dc54bea43cd067b94bf323eb9d09"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S15-A1C7540E",
-       "hash": "sha256:a1c7540e4269e2c85b37dac47baed837aab812a08fc7d311836d25d4e976df5b"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S15-F78D99D1",
+       "hash": "sha256:f78d99d12c767fae8e6978f5e08e9ede7eacdde65d4a8699ab657be7192d1e7b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S16-3FABC475",
-       "hash": "sha256:3fabc47540651dcdd9e07d282f8516367dc9a6167b368319505bad267387c9bf"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S16-E76D7446",
+       "hash": "sha256:e76d74468c7f63924999334abca1206f794b4535e023c03c71a485572ebdd48b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S17-E8133972",
-       "hash": "sha256:e8133972560abd240d9ff8d7dfbba9a0567c59c15c8a4dd49fe601d2d1fea770"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S17-4A4AFDD6",
+       "hash": "sha256:4a4afdd6c2f9b51a1e7a4e31405db3c5b762c2ce322513d90736394b0ed730e4"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S18-E5862448",
-       "hash": "sha256:e5862448d00c48b0619a0b24d6472e800a1f1bd2889df6685f05b4cb0c3e429c"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S18-334D4C89",
+       "hash": "sha256:334d4c894e52ff4052fa1bf0de3a9e24f22fc7b5a6ba0915cc770e1698c74078"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S19-62C19D6D",
-       "hash": "sha256:62c19d6de60470ff38a94dc88cbd1981225b8b7a23d1c6770607661e24c38d63"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S19-6C00F207",
+       "hash": "sha256:6c00f207d0a26d441446129f3041aab8d5ec9df1ff80887857efec77ebd3d7e5"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S20-066E9C84",
-       "hash": "sha256:066e9c84c41e881c1dedea338ed32939aea06537b7c5bf0cc6e32d23c7ea62a0"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S20-848F5404",
+       "hash": "sha256:848f5404d20fd579a3c93a4eb79c4ef9d036605edb77954c5fc6c649d4ca487f"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S21-7688BCF1",
-       "hash": "sha256:7688bcf1bb3306002723772942ccee5a273fb0e8009f7420b53468824df27002"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S21-3068704E",
+       "hash": "sha256:3068704ea70b9d96c7ad6131f0b7449439cce12ef5a6d4ae273ead7634e6d6d6"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S22-A9DA6B54",
-       "hash": "sha256:a9da6b54b96caf6f30ce637510f3ea4d3fcc9b41374c84e1d232f0cb96ce189e"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S22-7445890A",
+       "hash": "sha256:7445890a67cde00fec84999907a70f04c6bb84c68e6b89cbb028e771c4926a70"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S23-F1E441C4",
-       "hash": "sha256:f1e441c4252dcf3e6e57635cf3a351acf6d100b732d03598d03272c950a68654"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S23-07DE9FF6",
+       "hash": "sha256:07de9ff6c414f83366750bb2248fcae96a9fe9a72c55a1420d7867b9f0bf4456"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C20-S24-A5DAF444",
-       "hash": "sha256:a5daf4449f67243d2dd994d44f7d0054c6781b49e1adae2494f4e9328ee9d6ca"
+       "content_id": "KDJ-AI-2026E2-P03-C20-S24-DC9005CC",
+       "hash": "sha256:dc9005ccc3bd2ff28acd5b5ee12f6167edf18e7c7840dfede0b901366c1a8c62"
       }
      ]
     },
     {
      "chapter_id": "C21",
-     "chapter_hash": "604a2e324a27d449c793d0568608ca49930bc0b7db0b1333b2079f91a896946c",
+     "chapter_hash": "479bb127bb78d2746a5024b5155135a3331978dfef32d4300689aceeb6e69c9e",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S01-91644AFD",
-       "hash": "sha256:91644afd761bd58db781b48c54b63ddc3d3e0591903bdae48c9b2697a7310567"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S01-709DE4C7",
+       "hash": "sha256:709de4c7d65ff5312539d5aa05d2cc0b14c3f46ac608309500c551114da8c8d4"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S02-6D53AA54",
-       "hash": "sha256:6d53aa54951bf5e936445ff5bec02bb29c11ce3e4463a6badbed40397d9c4465"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S02-C2373516",
+       "hash": "sha256:c2373516bada9246e290cd8cce4c9f898f10e8c00186c9f7613c2293655e7843"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S03-9BCA2C5B",
-       "hash": "sha256:9bca2c5bee66e1af7e3898b6b797a3b4d477cff7a341c8590176179165ad3558"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S03-1765702A",
+       "hash": "sha256:1765702a7e76a4d22fc1904776e5cd23d6239d9e83206da6ad8895260628d592"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S04-6C437BB1",
-       "hash": "sha256:6c437bb12e065c54769c847e41905ca4755238f03a77d422a6c6db7ca9e5ec2d"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S04-EE9CA85C",
+       "hash": "sha256:ee9ca85c3156ba93c1c68a947742c01d9c4a2f29b6d6b27b532be01b0e942fd3"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S05-8AF1A725",
-       "hash": "sha256:8af1a72559dcb56a67f709d81384bc087e9bdd30d02780fb860a9bd57da507eb"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S05-9B9BF127",
+       "hash": "sha256:9b9bf127ffc6c862e4f58a4145fd8500e9b8a0c3983fb8d9195dd2f35ad2b468"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S06-1865FC21",
-       "hash": "sha256:1865fc21bd5a1a6559ab6ea4f055a8dd4636cb16cf5321af1399f4c6d7626445"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S06-464A98F5",
+       "hash": "sha256:464a98f58e96716c82a1074e88f912821603fa1ee2de4ef53578a2f986bdd880"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S07-F1F2DFB8",
-       "hash": "sha256:f1f2dfb8c53824461fb76604cceba9c449cd35e8face0d5eb36c8c0b8bb46f4e"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S07-D090EAC5",
+       "hash": "sha256:d090eac58d8392dfcb44f7f08286c3777bac7dce38bea69ebccdd9cbb15c33f7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S08-38BA9133",
-       "hash": "sha256:38ba913390a7a988bd8f7ca8936993571c325e4be93954dbece40be5fdae6104"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S08-7FE2F0AC",
+       "hash": "sha256:7fe2f0ac2d29eb774164a28927b867d86283f0a8b30dd309916411dfd661e723"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S09-77C3D09B",
-       "hash": "sha256:77c3d09b83c3eebb50b832bb1b7f8318b6342b55e3e8ea75945b18c76d3329cd"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S09-71BB04A4",
+       "hash": "sha256:71bb04a4a7d4c3c2fe39e8d8e57dc8b0e7da4f8fe2929af9c2d5341745d3fe94"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S10-81913A6B",
-       "hash": "sha256:81913a6bfd6b0822eda7c8a8f8bdedbd5a6a16d8205bb5a672ad2943a2e2deb3"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S10-799F118E",
+       "hash": "sha256:799f118ef6cc04bfc0d5f6112f1bf05eaa576d9594bad3b1e7b724ce3e923cc0"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S11-A9C6B225",
-       "hash": "sha256:a9c6b225c061fe7120539dabbcc2f6af522ba713c7f29a9fe5254a132133e11b"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S11-9F2441CF",
+       "hash": "sha256:9f2441cf58b2261a427577a01d62908466cefde8eadceace1c43b016fb417f30"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S12-D4C9E885",
-       "hash": "sha256:d4c9e8850be4f9e1469c6bf9623f4e40962b51c8d564e8d47972f60f79331013"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S12-A00C0C5F",
+       "hash": "sha256:a00c0c5ff839f0d87ffca9a64be10da1444192172df6245b07f2f2514fa07e11"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S13-557EE10C",
-       "hash": "sha256:557ee10c1a7d6d4a38067fea5baf928fb22c86d63c5153da4d238668d23f8d59"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S13-CE96976E",
+       "hash": "sha256:ce96976e3b5f9169fc28fee758081db99a78b1abdacf91c07ad147b775299503"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S14-F768AD5B",
-       "hash": "sha256:f768ad5bcd21877363e72a6a11cd471e05338d382e9bbdc41daba93c42e5455f"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S14-971508DD",
+       "hash": "sha256:971508dd7b4a5e001378017d5adaa5f8e25400eb1e16eb02cc0f364d19666647"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S15-1D7F6D16",
-       "hash": "sha256:1d7f6d16973a39c79e8e75a381de4ac029180c274d750d25384fca49fb73ca7b"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S15-964F8B82",
+       "hash": "sha256:964f8b8236556d80825e532a02d90c6d4561e22a36fc73a87b1fd1848bd1edf9"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S16-66F81ECA",
-       "hash": "sha256:66f81ecaa59cc4f569eb3940a590111a15c4a5da5f81d15c042cbeb80e1658b2"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S16-8802C1D6",
+       "hash": "sha256:8802c1d65d7057282799ca0f62c974f5d4b9c4168ce9b37818ceec82c5b27ff6"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S17-87C15190",
-       "hash": "sha256:87c15190a073766d33c1371b505c5661a42e15b68186aacf74358fc3db96e91d"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S17-BFA848EC",
+       "hash": "sha256:bfa848ec7ae748d1b739926f7be1f97815033ec17e71883015833281fcaa7f6d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S18-C117E97C",
-       "hash": "sha256:c117e97c887fbc2e2fd8487090e383ca10ec0da822a2e9245648b909ed0d1ca4"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S18-BF6B7C72",
+       "hash": "sha256:bf6b7c72cd1e9d2f38814071e930179e58edda1b32d3e7a6266d8f1ab7a7fb52"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C21-S19-895E1728",
-       "hash": "sha256:895e172836b84832fa097ca5d77559d785745092ac63d28d91a069610e270c47"
+       "content_id": "KDJ-AI-2026E2-P03-C21-S19-0B0E2A1A",
+       "hash": "sha256:0b0e2a1a8806ba7ecd86354cbcddddc5913e976ea2f399bda5ae6fe0873399f5"
       }
      ]
     },
     {
      "chapter_id": "C22",
-     "chapter_hash": "2bcb42973f3f8ee54ffe8cbb29794871361d69d9e075d327019d6c3c15788e4c",
+     "chapter_hash": "39fb684377c001ec6e6c8b4b2fc9cfa5215ad0060edbeb9e46518b373d525ddb",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S01-D95798B4",
-       "hash": "sha256:d95798b4a3a31ee9f5adc9d628eeb99126a38c5a72f852e0c93681e386c7947a"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S01-CBA4F4F6",
+       "hash": "sha256:cba4f4f6a37345ad5f1b3a7cb424fc9a195c8a4728a02387e439a827221fa4db"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S02-20929048",
-       "hash": "sha256:20929048a84bccf59998bb1bb255108259787618bdd6db1b7fb9ce774503c6ee"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S02-EDA1C6D9",
+       "hash": "sha256:eda1c6d92ebe34de38f434d4a3d3f27c5618e52f655a7391281812ec3c9981db"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S03-C5028B3A",
-       "hash": "sha256:c5028b3a5641d5ac6a8c96eb33e144b8062db38e9310954cbc7671a4a69fdbed"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S03-DEE3AF02",
+       "hash": "sha256:dee3af02b5dbe1a99f2c91169c6abc8380c56816e9317b621871ad75eb611198"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S04-0850AED9",
-       "hash": "sha256:0850aed9105a6bde7a6643cc14c0dd44976c1630727b48fac4398d007b60ba78"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S04-3B4A917E",
+       "hash": "sha256:3b4a917e9292be47252c1356c8a6b778b72dffb678bb0a30ff98f5517b1c1c94"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S05-387866DA",
-       "hash": "sha256:387866da9567ede6bc66391c3e126482625fd7487c0c85f57f5ad9f14d7ccb34"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S05-FBC4A5E7",
+       "hash": "sha256:fbc4a5e7306a6569a8e7af1f8c60a8f92793f388aade40e32ce663af3ad3d73d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S06-F424804A",
-       "hash": "sha256:f424804acc6e5673445926d6e5497e87e59e7608ba183373a88924ce43e8492b"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S06-3C65072D",
+       "hash": "sha256:3c65072d4b70f99533a5bd7d81d00ca7e18b7385996a46fb26a5b2e54723aa8b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S07-4E0F0ABB",
-       "hash": "sha256:4e0f0abbf83f89cdef3cc6c8a11e40a6375a928869e5ee691e0c88477e30d29e"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S07-1AD57EB2",
+       "hash": "sha256:1ad57eb2d4a398dfb30796217e1276953ddaf513d43db13fe9229f1959b32d69"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S08-94D877A1",
-       "hash": "sha256:94d877a1eb0f46f8bff0612574a4f75193c4a253d59b79e8aacd9e52df487a6f"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S08-999137FC",
+       "hash": "sha256:999137fcc5173b8baeb54fba0502041ae0634b10bc3cd2254ab9e1a5ec3cc3e6"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S09-CD37DF3E",
-       "hash": "sha256:cd37df3eb5127df8bd50e5bb94f3e1262b63183557d2978910f595948b218a05"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S09-B62CE10F",
+       "hash": "sha256:b62ce10fbf5b0df39b80df95e8f41a5d90051f28c7f371d1831c9ab2a1adb21b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S10-7B0F4A6A",
-       "hash": "sha256:7b0f4a6a3dc006c62b1007117f5d7870abde475bbde267015c97972bced748a6"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S10-4BD2F428",
+       "hash": "sha256:4bd2f428ddea6bc5e6135d4485a3dd5e26c8e821b492b0e25aa085eaea7fcb68"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S11-89B3BCB4",
-       "hash": "sha256:89b3bcb4d2f34e4668a3b58ee7b8256210e86daa24dcfb6931e318b6525c12ae"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S11-4EEDD42A",
+       "hash": "sha256:4eedd42a8a70097d89a2b0739af0192bf7174ae979b0ec73b711e514dd594bbb"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S12-19DC0EF2",
-       "hash": "sha256:19dc0ef252c10c763ad78ce09c3dd62a1a787a0e5f420d2900ac5036e19d4b4a"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S12-2D23C39D",
+       "hash": "sha256:2d23c39df9a02dc84280588c9eb6f3cf45362f4a2942df5a58975f70b021a9ce"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S13-D6D530D2",
-       "hash": "sha256:d6d530d2e185260f247eb316c6ce2ce029c9a7dedea46010e196141a5be70689"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S13-ADF4E0D2",
+       "hash": "sha256:adf4e0d20dbe7171ac188ada30fb4e64aba7a6277db6ebe5293f41c0605fdf30"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S14-EE8D28FF",
-       "hash": "sha256:ee8d28ffe294d13860439212694f1bc6036476f2fbb519d4a1342da6b01ced7f"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S14-47FD7600",
+       "hash": "sha256:47fd760073465e65368be21ff76b3814b5fe5d4d85b643c517d7abfcfec9d180"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S15-26FF2CF0",
-       "hash": "sha256:26ff2cf066509f5c2b7b93afc29b9e891264ddb99ac1057f54cb0d1bf4a20f50"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S15-76681421",
+       "hash": "sha256:76681421905a4301bde7a762f475b89b74b31f08bacfefacbd5fdfc039bd3cd0"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S16-55E87329",
-       "hash": "sha256:55e87329484a29043692f87363a3cb79a0c0495da5fe63a4d65eb12f065b87e7"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S16-7A71A146",
+       "hash": "sha256:7a71a1463a54ba97c676acd6da4f1120373633c2353bd06948ef6c014b63b1d7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S17-A9E0378A",
-       "hash": "sha256:a9e0378ac90a8d6b363576d85c46eea3cab4370b8c87fb1d8e04a9a51a8b2375"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S17-B653931C",
+       "hash": "sha256:b653931cfdb2f0da42656f411981b9b7f2e826b05d65fa5d87a359fbdc704d69"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S18-A07950BD",
-       "hash": "sha256:a07950bd2b807fa49f29a9f7b74744c76c2657b0c9f7e04fd2904a7544075fca"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S18-B5047848",
+       "hash": "sha256:b50478480a667e81985bd2f722669d3aaa4919310c89d81efbbd0b2f2494f8dc"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S19-B36EFBA1",
-       "hash": "sha256:b36efba1f290e695735728fbad56f952b3cd1524979bfbfacadb907cd61fe03f"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S19-C1CBE549",
+       "hash": "sha256:c1cbe549861b581b509c0132b10fd2a34c6f44ea58eb2e40d22531cc9685fcc8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S20-889A79F0",
-       "hash": "sha256:889a79f07944e5fde3bc5d5611daf60d15f730031c50bab9f7a88ecf64f020b8"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S20-3859E30F",
+       "hash": "sha256:3859e30ff45c54f3f8500676dc88e378292dc87de97677e9e5bc9c9930087e9c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S21-D51D0FBA",
-       "hash": "sha256:d51d0fbaf04380e6fdd4108940fe2e05ff3e8834315d187b6650d86c99d714c5"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S21-A92EFC79",
+       "hash": "sha256:a92efc79905d0a6e029aabf1fd3aa5a87f72d5669a2998f21daa28d0c8539001"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S22-0A4C3526",
-       "hash": "sha256:0a4c35267532df8cdc6438fe2020928a47449c387154c93052e5c010d62263d0"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S22-AF640441",
+       "hash": "sha256:af6404418f87ca91c2f52f84f62d3abb24d4022ec11c145c9c0bd68d1354e17a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S23-FEA01DBD",
-       "hash": "sha256:fea01dbd514a86c27bb27ba175794592e1428542ed5783a69344311f87c2ce56"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S23-B80AFADA",
+       "hash": "sha256:b80afada475109265d40fdde5ac5c7a2737b2bb1a03e3a438aa178f3f4e23af8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C22-S24-A057F17D",
-       "hash": "sha256:a057f17d57a839a5a047d611333197794acd71e3f2e18b25d94179a48ce36192"
+       "content_id": "KDJ-AI-2026E2-P03-C22-S24-52CAEDE8",
+       "hash": "sha256:52caede84b329a75298d57dbf103b2aa507be82c9b88583d4624af8f6878ec9e"
       }
      ]
     },
     {
      "chapter_id": "C23",
-     "chapter_hash": "cb109e60f99d35f4b0d2471519ad5163212f6c6129c3f66e1bb7cde612b29d2c",
+     "chapter_hash": "8e06059b85fa8aa717a12a1b6a5d59a61a8c8cc7db72d0942955bf2c470bf27b",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P03-C23-S01-ED4A393F",
-       "hash": "sha256:ed4a393f09fdfc3d8c1b6bced2d20bbc0815f10eec9f798acd70119d1fa92618"
+       "content_id": "KDJ-AI-2026E2-P03-C23-S01-A235A76D",
+       "hash": "sha256:a235a76d94e603833c774e6a1be2af28521e503e87ffdc41b12786c5b421b83b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C23-S02-52706024",
-       "hash": "sha256:5270602432a97e0ee1b8c847a71cfb24577bced4d57e8892054f5336e8e28b52"
+       "content_id": "KDJ-AI-2026E2-P03-C23-S02-4A297BA8",
+       "hash": "sha256:4a297ba80a36930716a6605c134566359587e48766670d206746ec80506bef6c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C23-S03-08CA9832",
-       "hash": "sha256:08ca983273d14b28c25ed47def4da2d0c48a3a860f1158d027e62ba63eaca103"
+       "content_id": "KDJ-AI-2026E2-P03-C23-S03-9ECC57C1",
+       "hash": "sha256:9ecc57c158d93927ddb5ed701946d37baf9132f001f9f40e417e32721f78a396"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C23-S04-8E3780E1",
-       "hash": "sha256:8e3780e1dbb0b87f2d3d0802cddba3879dff54071c6c32618d478be5a6d295a7"
+       "content_id": "KDJ-AI-2026E2-P03-C23-S04-4E6544C0",
+       "hash": "sha256:4e6544c02325fe87f31f0e189b10c3e6f26ca0c8a0644b06d8b1fe009b39253f"
       }
      ]
     },
     {
      "chapter_id": "C24",
-     "chapter_hash": "b4ddd5ea2e492b2c89e98528fa6dd1ad0368f7c73400c7d83b93472a65ae6987",
+     "chapter_hash": "94d5be4d89fbe712811c60abde2ba77b43c4464c73ab6daff6e33f3e0cae5f3b",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P03-C24-S01-D9759391",
-       "hash": "sha256:d975939188b691541b2ce3c5ba47b8a892e2ba483ff979113d4f5591c227196b"
+       "content_id": "KDJ-AI-2026E2-P03-C24-S01-F4FA2B8A",
+       "hash": "sha256:f4fa2b8a2c8ab8c24d7069ca98a52e592296b2ee51e24e27299821f553415e09"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C24-S02-E6137EFB",
-       "hash": "sha256:e6137efbca7b969a88331063b95a6fc68a586c69d5e88ce2ece109e30c8bac7f"
+       "content_id": "KDJ-AI-2026E2-P03-C24-S02-BCBEE43E",
+       "hash": "sha256:bcbee43e46944f8d46640be424d45a2fd0c5cf942dab382e245eb3513371cd6d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C24-S03-C1104C17",
-       "hash": "sha256:c1104c172a9d16d948a277eb4533d598098d2f3b4e2f71a759ab8138e97019dd"
+       "content_id": "KDJ-AI-2026E2-P03-C24-S03-3996C596",
+       "hash": "sha256:3996c5962e204d4d9a57c69b94bfbb2efdbcd034829db42ffd2ec3f53b84c690"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C24-S04-780D7557",
-       "hash": "sha256:780d7557fb5919c3136ef7fc20f6f152dc295546a97ec6be90fa0f3870cd75e5"
+       "content_id": "KDJ-AI-2026E2-P03-C24-S04-10CA08FC",
+       "hash": "sha256:10ca08fcf361129986e99ae7ff351e51b4a13daa0c6bb6ab8114b7b194260f6c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C24-S05-A4888828",
-       "hash": "sha256:a48888289ba2dc0ca19a718e0a8895c9e04a66986e9c6d0f6237c366adbde3f5"
+       "content_id": "KDJ-AI-2026E2-P03-C24-S05-D42C6BAF",
+       "hash": "sha256:d42c6bafe66551d22cd379c0bca9ab07ac97480cf88700473d3dd20d9b3c24b5"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C24-S06-55770843",
-       "hash": "sha256:557708438a49e56e905e1c5da0546723d33cea8922dee61fe4feabaa4feb79dc"
+       "content_id": "KDJ-AI-2026E2-P03-C24-S06-2A26EAD6",
+       "hash": "sha256:2a26ead61e8bae111884aaccb06599b75dd1fe482c42872552f47e813d2db192"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C24-S07-FDF90590",
-       "hash": "sha256:fdf905909592bbe5bcf423abafbb6dcd5227ba999fadc5367ccaf1a778b40bf9"
+       "content_id": "KDJ-AI-2026E2-P03-C24-S07-CDF088A2",
+       "hash": "sha256:cdf088a21ed65559ecf1d1aa5a2fe0098adef93efa855b212381dbb03f99c13c"
+      }
+     ]
+    },
+    {
+     "chapter_id": "C61",
+     "chapter_hash": "4bd09b720da200bfc8f97b86c82d61bfd32b84288d31f4e86acb921d56084fa0",
+     "sections": [
+      {
+       "content_id": "KDJ-AI-2026E2-P03-C61-S01-D9E650A7",
+       "hash": "sha256:d9e650a7331eb10b7ed8ab66a660d4c434f5002426dcd5bbd8f0969d615227dc"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P03-C61-S02-F1306C4D",
+       "hash": "sha256:f1306c4d0265543f84814ae94f931e6ab75f1db75c44feae18be7a2e83213a18"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P03-C61-S03-D4C75BF6",
+       "hash": "sha256:d4c75bf673f7941beba329a29c0b3963928373a9a4187bcd8dbee62dcca38d0d"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P03-C61-S04-B7263533",
+       "hash": "sha256:b72635337d5934439c94c0519db66bb2211fef4235404729aa4396f31472a5a8"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P03-C61-S05-1CC16A29",
+       "hash": "sha256:1cc16a296262f5dd76b396c3651cc651597170c0f515544eaab94fc74d8cbd09"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P03-C61-S06-DA6759B7",
+       "hash": "sha256:da6759b7b62f768ca158e99382a5c42bfe8c7b3c27600dfc9bb9688006f89f1d"
       }
      ]
     },
     {
      "chapter_id": "C25",
-     "chapter_hash": "7b94efa807997ff8c2fdc6239d2be1294a37edd7672fa0e184f7ea7a06c5b90f",
+     "chapter_hash": "48220c6ef84dd36806b1cd149cfc817c108a7b50bb71cbb45e72cf51eba8aeb7",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P03-C25-S01-28C380A7",
-       "hash": "sha256:28c380a7becdad73a538b588588a7e2ba56f70c8ec8da43f7711e5a4b3b25167"
+       "content_id": "KDJ-AI-2026E2-P03-C25-S01-76F4D661",
+       "hash": "sha256:76f4d661eaf1a65c4dd71098a29a8503c7a71c1b334eb139cafdfde866aff733"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C25-S02-53ECC804",
-       "hash": "sha256:53ecc80474514d78155edb62e51bebc0a77976934cef9a6501455bb8c5482687"
+       "content_id": "KDJ-AI-2026E2-P03-C25-S02-6A15A985",
+       "hash": "sha256:6a15a985d7f7598403eb6b96f8ced9b30b5e4da10767b4b8705e50e2daa9a729"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C25-S03-977F8F90",
-       "hash": "sha256:977f8f90bf571493de4bc4e414d768b6be1e2adc754f7c4e27e51ec9b22abbf7"
+       "content_id": "KDJ-AI-2026E2-P03-C25-S03-B66289C8",
+       "hash": "sha256:b66289c8c16ece8fcace80846d97cd9b9366301bf1ae2cf30e0d6d4a5817d137"
       }
      ]
     },
     {
      "chapter_id": "C26",
-     "chapter_hash": "6705f43660aad273de4f9391c7488d540dc38228fc9dddc426af7bcc49c9e518",
+     "chapter_hash": "44b42574907e914867ce10cc51d33561171383b3be41e32aabfdfdd08a2f8f68",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P03-C26-S01-44D39BF0",
-       "hash": "sha256:44d39bf0746ba1239d6bd318bd80bfe26772f117c780d9e5a654a81c8bc370ec"
+       "content_id": "KDJ-AI-2026E2-P03-C26-S01-370D995C",
+       "hash": "sha256:370d995c0820d2202dba0abf66d281e277ba936c0e5399076a438be2cd4d1437"
       }
      ]
     },
     {
      "chapter_id": "C27",
-     "chapter_hash": "e159249f277680147ab185ab75811f402e0cee626f1e3bf54e5251b939a00794",
+     "chapter_hash": "eec24588b2dec4bb65db34efa33f508896f40d12fde4b4885eef0f4b489e7eba",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P03-C27-S01-3BD6EB29",
-       "hash": "sha256:3bd6eb2944c90805642afe264ff369f8eb646d0ee72f40a9d7cee0a61bd7d3ca"
+       "content_id": "KDJ-AI-2026E2-P03-C27-S01-9B9786A9",
+       "hash": "sha256:9b9786a91fd71af193ff1ba3bb6defa2952c0f0023937ff7144f75399a621939"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C27-S02-FA399DF4",
-       "hash": "sha256:fa399df40a5258a803da4ff5c6ba433779ca77d3877ff47505280ee171461e9b"
+       "content_id": "KDJ-AI-2026E2-P03-C27-S02-1C7D20A6",
+       "hash": "sha256:1c7d20a60a87c7e6e66662f2acabc8caab809ec9e54a5b480c28631a69199e3c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C27-S03-05C7A7FB",
-       "hash": "sha256:05c7a7fb39ba2d1983e19c20897520e75e765497f6c3da04280ca4e712c5df83"
+       "content_id": "KDJ-AI-2026E2-P03-C27-S03-CF00C47D",
+       "hash": "sha256:cf00c47df8ea46b5ca951b34586e400e2f02bf924f92091590edbf6a9c293ca1"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C27-S04-BD80CAE6",
-       "hash": "sha256:bd80cae625d4ed72765c3533e9350a3676856add81745c747236c0176ab81550"
+       "content_id": "KDJ-AI-2026E2-P03-C27-S04-3F86A979",
+       "hash": "sha256:3f86a97926f6302120a4c1149f419498098af6dbdf92c057b6ee99c12f0e887d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C27-S05-1D14F279",
-       "hash": "sha256:1d14f2794e6f9bb24818463ee4ac9eef96c2a18dc01a80190968b2daed085008"
+       "content_id": "KDJ-AI-2026E2-P03-C27-S05-FC476ECD",
+       "hash": "sha256:fc476ecdcc7a25af75ec17363883fdd00b4af8f4a7818a4094311c59ebbd14a0"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C27-S06-D21FB050",
-       "hash": "sha256:d21fb050afd8ced9d316c52d9747d92115c0bc99d2e69bdc7fa5427abb5f52fa"
+       "content_id": "KDJ-AI-2026E2-P03-C27-S06-875D157C",
+       "hash": "sha256:875d157cc344ffcd56159b40bd9afcf9bfb141fb10914398a85b4a4d759acf2c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C27-S07-9046AA3C",
-       "hash": "sha256:9046aa3cb68f7a0ea32ca0cfbf952349f4e92592b3f472833c135cffccc89eb1"
+       "content_id": "KDJ-AI-2026E2-P03-C27-S07-5DD7F4B2",
+       "hash": "sha256:5dd7f4b2b79fd16904b4a6df7e39766fbaff46b0afa4a10b15b5a957fed16c78"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P03-C27-S08-C38EBDE2",
-       "hash": "sha256:c38ebde286a8ed995d40faabdb3d85ced3817e37e01da609000224c9991cee25"
+       "content_id": "KDJ-AI-2026E2-P03-C27-S08-6BF58068",
+       "hash": "sha256:6bf58068ccb2d38e610adbde6ea2c3ee9de6eab0cd17287eac2d2a297ea0d214"
       }
      ]
     }
    ],
-   "part_hash": "cdadcd4be6ce6bc756883f4d60410609ee24b8496399822128fb0a983e2f2f52"
+   "part_hash": "d710e9e5d09a31cae8bbcf156bb46674e246477421e8ac850b9f696c0a4e1a66"
   },
   {
    "part_id": "P04",
    "chapters": [
     {
      "chapter_id": "C28",
-     "chapter_hash": "8bc613329763e0922b291a1a1f4ae01dac04e68f47e07435c32b771dd26caa99",
+     "chapter_hash": "53a777ba503c70467f9a5e1048e59ec0f9536f687d3a72916470f61a03d60b82",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P04-C28-S01-96B6BBFF",
-       "hash": "sha256:96b6bbff0739444a7b775805d7a3c8a3c6d6f0d38ce581c8ef904decde4179aa"
+       "content_id": "KDJ-AI-2026E2-P04-C28-S01-900C8474",
+       "hash": "sha256:900c8474f60922870a736480d5fe52a41a92acce22edb13952f70e4eb088bfed"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C28-S02-3F2D4845",
-       "hash": "sha256:3f2d48456cde294b283fc45cf6815d255b3b99230304a6e151a8977844f58e62"
+       "content_id": "KDJ-AI-2026E2-P04-C28-S02-ABF19170",
+       "hash": "sha256:abf191709a7f553995a5477ba1285b763147aad3b7de4847c6ac9f9c25c25d1a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C28-S03-F248BF32",
-       "hash": "sha256:f248bf32065131043dd6a9a41113d11a147e9ab92f0167c380f3bd76009e215b"
+       "content_id": "KDJ-AI-2026E2-P04-C28-S03-5245E6F3",
+       "hash": "sha256:5245e6f38e0abcdc356ab0817808be19cb258ea071efeef7bc7fc0d9a979960f"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C28-S04-92C66080",
-       "hash": "sha256:92c6608035536e26248c6ff3090040d385def5e518a37d4508e2c2c6c29a33e7"
+       "content_id": "KDJ-AI-2026E2-P04-C28-S04-598C266B",
+       "hash": "sha256:598c266b758e24ad265f942c0f6334dbc9deaef1c5bfdfc6dc8ede6e4ce368bf"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P04-C28-S05-3CC5CFB0",
+       "hash": "sha256:3cc5cfb0f009c919da86eb4ac83718f371400ddfe49411801b90673cd04f846a"
       }
      ]
     },
     {
      "chapter_id": "C29",
-     "chapter_hash": "e8e7dd607cae9e03024562fa7b5684cf9ed93ca15656b8e396f3f0b1dc0cde60",
+     "chapter_hash": "7124ca85ba5f0ea23e597c713192e2fd89803e50b3bffce6b8e4822a2a01834e",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P04-C29-S01-E8C5B7FF",
-       "hash": "sha256:e8c5b7ff84dc690dc2ce4b93a1f7ef157b596fb88e66989966d77ba7beb4bfa7"
+       "content_id": "KDJ-AI-2026E2-P04-C29-S01-A9C62F17",
+       "hash": "sha256:a9c62f170e04531ea3e786840119f67a948e9593b8d11776ff83d6efb94e0b6d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C29-S02-47F6E198",
-       "hash": "sha256:47f6e1980d7d31573c4d2b5d4a854b1ea50b2ce9ffe0b323f65c1ecc015053ac"
+       "content_id": "KDJ-AI-2026E2-P04-C29-S02-4A673F88",
+       "hash": "sha256:4a673f8885b94401e641b08501aa07b514f15dd52f1de9e25ca73411ad8b0df5"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C29-S03-D7F773D3",
-       "hash": "sha256:d7f773d3fddc4826874d1231c6a89a26e6b3c2cf68dfd32791ccf68594ed01e3"
+       "content_id": "KDJ-AI-2026E2-P04-C29-S03-1D4CF756",
+       "hash": "sha256:1d4cf7565017249d02b191f00e8baf0198bc7799da18a277eaf20e6ae73a8ff8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C29-S04-217B839C",
-       "hash": "sha256:217b839c126e6f8b21736760ea597f5e214aaa8e68eb7415e029258c3b4c5404"
+       "content_id": "KDJ-AI-2026E2-P04-C29-S04-DF1C6A7D",
+       "hash": "sha256:df1c6a7d7c16b3313b2aa3147277cd5cfd716d60ac03afbb0be1e12f76e86a5e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C29-S05-814FDB95",
-       "hash": "sha256:814fdb95502bd78359e96b7af0c11a9d7f3d7d4cb6ea1f20306fa271065e294d"
+       "content_id": "KDJ-AI-2026E2-P04-C29-S05-E823B6BD",
+       "hash": "sha256:e823b6bd3cc46f5efd17ce226c8425ba3e53330f96db4c2c0464c0938c7ea0bb"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C29-S06-EC2CC32F",
-       "hash": "sha256:ec2cc32fbc8c45df51d3b7c75faca7743d1d1835606b7820d188a1fc01e48663"
+       "content_id": "KDJ-AI-2026E2-P04-C29-S06-4C72445D",
+       "hash": "sha256:4c72445db0cb94624df6ef40651123097792197ed243de179ba6be45bccd08e7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C29-S07-F34571C2",
-       "hash": "sha256:f34571c28a463df48f365c230b6c7e2b97c2208f99120cca02de122d4df517b2"
+       "content_id": "KDJ-AI-2026E2-P04-C29-S07-75679542",
+       "hash": "sha256:75679542192175ce81a01476340a29e6e1b6fbc8590b0017be936db3e215d137"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C29-S08-C1EADAB2",
-       "hash": "sha256:c1eadab24d588e4d001b05b8037050d1c48de457c1ac9958144031a081dedaca"
+       "content_id": "KDJ-AI-2026E2-P04-C29-S08-ED299A42",
+       "hash": "sha256:ed299a42ef8725b80ee487a9c73b290460a96873cb365ffa3b2334bfcd427486"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C29-S09-C7703C0B",
-       "hash": "sha256:c7703c0b75f0c6178f713b531a2b6d6f9e09c2e4dae8bba3676daf7b8282fcbd"
+       "content_id": "KDJ-AI-2026E2-P04-C29-S09-3B40FB88",
+       "hash": "sha256:3b40fb888804c062ca7713f10e96ad6757cc1e0352e6e544401ce6506d86041b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C29-S10-CDFE093D",
-       "hash": "sha256:cdfe093d4d5c03121681e884314577203dda82320035e63e29c5517ee9b90c2a"
+       "content_id": "KDJ-AI-2026E2-P04-C29-S10-04CEEB80",
+       "hash": "sha256:04ceeb80946eef247d07effc39a1857edd45a8b24d30ec0791a76a93f47ecb7d"
       }
      ]
     },
     {
      "chapter_id": "C30",
-     "chapter_hash": "c41dff6079dfc948df2c8affd7d70308aa3af93706885a37caa17b34100a9a1f",
+     "chapter_hash": "e10a0536891942dbd7ef26f3e72d45b6bbc821704eafbdaa40e38a2ebed19d06",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P04-C30-S01-44C7CD64",
-       "hash": "sha256:44c7cd6404575d28f38475ddefdf93330fd5b426cc7fa8df4521e9c9e1164d9f"
+       "content_id": "KDJ-AI-2026E2-P04-C30-S01-F662EDA2",
+       "hash": "sha256:f662eda23b7ecced2dbc6f6dc6b0c50ed72abb766128680ee2e31d0f4338dc54"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C30-S02-FCF40DA6",
-       "hash": "sha256:fcf40da6e0bd705cd6fb343d642e20612ad9a91a1327f3cfa7c3192599277b70"
+       "content_id": "KDJ-AI-2026E2-P04-C30-S02-2C466AEB",
+       "hash": "sha256:2c466aeb99d7ca0bd471cc08fd402f8a13630162bf4ffa332f4d9f415b2e6b51"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C30-S03-290936FF",
-       "hash": "sha256:290936ff42e2414e0bb4edc7b3de3d187f83568b840491db298c56681d1e198d"
+       "content_id": "KDJ-AI-2026E2-P04-C30-S03-81F110DD",
+       "hash": "sha256:81f110dd4764d12a8f3486119596dc96a2e92d2d8f2ae000b371bed79dcf7073"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C30-S04-1BD83495",
-       "hash": "sha256:1bd8349519729a9d7eb14664efbcdd4457aa925b614d84fad20bc311b2e921fd"
+       "content_id": "KDJ-AI-2026E2-P04-C30-S04-1F473BA1",
+       "hash": "sha256:1f473ba1ba41667fbece4351523f24fb0d22a4714a7d3487351b71c8b1941bf6"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C30-S05-F48CC02E",
-       "hash": "sha256:f48cc02e38830534565cd3ac5999f8c83f67f819373d1839c7c5400cbd7e69f9"
+       "content_id": "KDJ-AI-2026E2-P04-C30-S05-A886E525",
+       "hash": "sha256:a886e5253dec8d48097c9e4e8796b94238ee36c966983af3ad249bba496a7c05"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C30-S06-8F95202A",
-       "hash": "sha256:8f95202a1995121a443da7219fc676a9efe6c213cf18c437b418ab6a7d0345b0"
+       "content_id": "KDJ-AI-2026E2-P04-C30-S06-B992FEF1",
+       "hash": "sha256:b992fef1c9ac8c310501a9f7c5bd4d4c11ed8535ee0db54caed56f3d03635ed5"
       }
      ]
     },
     {
      "chapter_id": "C31",
-     "chapter_hash": "c172816d140517524fa42d1d0efd7b06320893c3298cadab045cff307d3dc283",
+     "chapter_hash": "e60017a6f6a1c36873e281c887d6d6e961e03f4c08ef376d8ab7f7885523a4b5",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P04-C31-S01-9970B5DC",
-       "hash": "sha256:9970b5dc35b86328bc407b61b677184d015bc47a216c3c33c1a2cdaea821c1bb"
+       "content_id": "KDJ-AI-2026E2-P04-C31-S01-4D2FB3C8",
+       "hash": "sha256:4d2fb3c8c9cce4e3d80b97ba923961254b0c02efde5d16218dc106994ef40f69"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C31-S02-0EB5A1A7",
-       "hash": "sha256:0eb5a1a7e4d06b074daf7053c489b21e9cad7dfeb0f4b37ea1b0351fcb754584"
+       "content_id": "KDJ-AI-2026E2-P04-C31-S02-F273FD12",
+       "hash": "sha256:f273fd12690b8d6e9e909ea4dc4e5936c4a8f99508cd6f10c417b0b9a7895dd8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C31-S03-BF34D9CD",
-       "hash": "sha256:bf34d9cda762ceb8cf774f8ee3fa56bdf01846627171e8626a6adfb7f5e082a0"
+       "content_id": "KDJ-AI-2026E2-P04-C31-S03-15981C35",
+       "hash": "sha256:15981c35b9ffb6cd7610a73d4dc50370f3ef1339987bac2373f2b22b54dea044"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C31-S04-04090909",
-       "hash": "sha256:04090909675d8af9189119c8c96592f379fe1c13a668ff375ca2741f91ec1628"
+       "content_id": "KDJ-AI-2026E2-P04-C31-S04-F665F95E",
+       "hash": "sha256:f665f95e6e73565508f2eaada17dad9c0e90243185a9234096783b39e8dfbeb9"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C31-S05-755DC884",
-       "hash": "sha256:755dc8843b27fcbc37c0d3726274ebac3ebedb3a2f95bff16bec94a0f45a4a52"
+       "content_id": "KDJ-AI-2026E2-P04-C31-S05-DFBB904F",
+       "hash": "sha256:dfbb904f536c390ceeb417f87aa2453a2bbcc6eb8b0efa3ff26fbd575efbe620"
+      }
+     ]
+    },
+    {
+     "chapter_id": "C62",
+     "chapter_hash": "a2a3a8b9a3b328a18fa60f36edb60db3a74a8d0468c4d94807827f1497eb134a",
+     "sections": [
+      {
+       "content_id": "KDJ-AI-2026E2-P04-C62-S01-174BE24D",
+       "hash": "sha256:174be24df6bac55cbe635cbccbf7ce3de2253357a334faaa57da4452e0b5a04a"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P04-C62-S02-A69C5100",
+       "hash": "sha256:a69c5100fcb22d34b02ba953d97e09d5ae81c09fa4bcfa5732324101d2cc7287"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P04-C62-S03-597A7123",
+       "hash": "sha256:597a71239b25630dd1c354077e477324f8e88cb79a3658348ec8edd8bf1feb97"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P04-C62-S04-AE420177",
+       "hash": "sha256:ae4201770644fb96e566605de01993c6b5b6b93495afd6e0d07eea16bedb0131"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P04-C62-S05-7D67D672",
+       "hash": "sha256:7d67d672df8f208631746adc838c22b2799c1657460e8971d375d911e9ad76a4"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P04-C62-S06-E9D86E72",
+       "hash": "sha256:e9d86e72f167072cc2b6e196783cfd3feafeccd2866aa0e9383454ba23affeac"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P04-C62-S07-53FBC7D0",
+       "hash": "sha256:53fbc7d0fa1548a1e28cfe51495ce517b2e0f30c4cbdc2270d8e5ebd1f5f9c98"
       }
      ]
     },
     {
      "chapter_id": "C32",
-     "chapter_hash": "84534750089508ff66261ef4182f4bde01db1f33d89ccfcae0b11186dac94a7f",
+     "chapter_hash": "35fa277030286c4478ad969ee84781e69834bf2f9a5bec6372f5f6f8f3991769",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P04-C32-S01-F2813082",
-       "hash": "sha256:f2813082e0b9191082d759a2761866edf4cfdcf4b45a8c8d42bebf3d6429022e"
+       "content_id": "KDJ-AI-2026E2-P04-C32-S01-812C76CA",
+       "hash": "sha256:812c76ca93d05c239b32aec66ea26e1cc720694de6eb89a1cf35ee94a7905e07"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C32-S02-CC827699",
-       "hash": "sha256:cc827699d38ec66a9591ff37997dd9fa415079aa100c6d97b661770fa387b591"
+       "content_id": "KDJ-AI-2026E2-P04-C32-S02-91595C68",
+       "hash": "sha256:91595c680e6d477d2e057035d546630244e936bc5c9081e852b9b1f84b25471a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C32-S03-08EBAFFE",
-       "hash": "sha256:08ebaffe90d2a3b8237fca69beb3c0f89a3e7d368d222d9b3c4bce6003ed45aa"
+       "content_id": "KDJ-AI-2026E2-P04-C32-S03-F553D346",
+       "hash": "sha256:f553d3461e82fd46ac7e11f3ccbc539425d49284e0c5689beca03c528068cac7"
       }
      ]
     },
     {
      "chapter_id": "C33",
-     "chapter_hash": "10f596d461399e1e07e84859a5fce1c6d7022e5124f8742f50c257b2416c85dd",
+     "chapter_hash": "53a3ea04ff9c000e9d2850c84af58b55f22489444e7df7eac1dade793afd6f7a",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P04-C33-S01-106637B7",
-       "hash": "sha256:106637b7c0325989b7aa44596992a6ba3f79724b4edeb10d95d5f887bb641fdf"
+       "content_id": "KDJ-AI-2026E2-P04-C33-S01-A3F2E8F6",
+       "hash": "sha256:a3f2e8f6b248130d4ae9258e784dcc8a595eb4a8a481ede6bb6639f6a3ae4f03"
       }
      ]
     },
     {
      "chapter_id": "C34",
-     "chapter_hash": "7de460ffcdff8c5771786090553089a871515f8bb0d5ceac68c8b78d33a3d806",
+     "chapter_hash": "25edb3c60129851ab426fbead5f5864771938a0e7762a75565596bd543d1244b",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P04-C34-S01-2AE3E87F",
-       "hash": "sha256:2ae3e87f7ac5567ae86986016531270c189805f932954cbe52a52932003d97ba"
+       "content_id": "KDJ-AI-2026E2-P04-C34-S01-0E523B79",
+       "hash": "sha256:0e523b79fbf439fcd58bd8511ff772f75b2a3e5457b7b3afc75cfd390c26aecd"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C34-S02-CE1D1EDA",
-       "hash": "sha256:ce1d1edac38f3ffb3e8530da0e0ff3aa12029318d9356ab276d31bb9558a2373"
+       "content_id": "KDJ-AI-2026E2-P04-C34-S02-AD4E38C1",
+       "hash": "sha256:ad4e38c1242895a4fed916a1ff0d15373b0e1afbb8b0572168e6d6baf76b96fd"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C34-S03-32B6A51C",
-       "hash": "sha256:32b6a51c43c18b7ee6a1fc72b96cf1fa863a60f27d7f00592d72830514bc5565"
+       "content_id": "KDJ-AI-2026E2-P04-C34-S03-602BD8DA",
+       "hash": "sha256:602bd8da0a1eac50ba0727ce6435b4cc57c38e9355301a92a3d124d83ebcdb37"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C34-S04-979A9012",
-       "hash": "sha256:979a9012a86860a489c782a7a725192c3fbce9d85114ca844644d90df5be5fb6"
+       "content_id": "KDJ-AI-2026E2-P04-C34-S04-146122E8",
+       "hash": "sha256:146122e802a91c8c27b5a42c0920166662484f5dd4e24c2dc3f0429aefeae2b4"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C34-S05-BE63B7D3",
-       "hash": "sha256:be63b7d3398e50465e655099afaed746cadb56e6b084297259defab7bb2447fe"
+       "content_id": "KDJ-AI-2026E2-P04-C34-S05-4F49BE3B",
+       "hash": "sha256:4f49be3baabd7c10e87b952ad48aae6c757d086dba20c9cd438ff90cfd9e3ff1"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C34-S06-F527FD68",
-       "hash": "sha256:f527fd686c91c02def9ac012427ca461786242e0e2425347b8da36c10734808e"
+       "content_id": "KDJ-AI-2026E2-P04-C34-S06-F9DE2239",
+       "hash": "sha256:f9de2239ca194b8a9a00c5f839b97af9527b773600fd71d8348bf8cd9ecb44c9"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C34-S07-A0C185E8",
-       "hash": "sha256:a0c185e8fd237ab0ae47682c3b999e0dfc39a92e12e6391603b3fe15499467e8"
+       "content_id": "KDJ-AI-2026E2-P04-C34-S07-C8E82DC8",
+       "hash": "sha256:c8e82dc8d6cbada22ecaf2837bf223f3ea377fd0404c4b08b728228fdc7d2d7c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P04-C34-S08-287099FD",
-       "hash": "sha256:287099fd4ef49113299b84c0ff280f747d0532ed22d9c6bfdd7301ea9a33ab6f"
+       "content_id": "KDJ-AI-2026E2-P04-C34-S08-A8EFC1F8",
+       "hash": "sha256:a8efc1f83492c2270a53f11a0573ee8802bc2c9f6baa7f84be7715eed002aea5"
       }
      ]
     }
    ],
-   "part_hash": "4b96296e47b9d6c4e404619a96600bd5550a1f6a81f42b08145400383040ec72"
+   "part_hash": "67e8e5cd14c42e5efec5a90f8240b7572a009c981917ddb8bc03b1ce99630fa8"
   },
   {
    "part_id": "P05",
    "chapters": [
     {
      "chapter_id": "C35",
-     "chapter_hash": "9849032a1be811335f952932ae722fc225edc890b057f78bf9076c95d0c1fc9b",
+     "chapter_hash": "b6d1064f35990b970f17f4e38f7ef8c4399f81afac977ebc60d1bb020c13bcb0",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P05-C35-S01-9AFC95B3",
-       "hash": "sha256:9afc95b3b1ee758c18dc1b4d0e0c1f24a0be34006bab6923b57ba0cc7d2b93f6"
+       "content_id": "KDJ-AI-2026E2-P05-C35-S01-02D90DB2",
+       "hash": "sha256:02d90db2a8332b67d2b0735282cd357c19e9ad89b4cbae7d035f671d3ac8df42"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C35-S02-F985332C",
-       "hash": "sha256:f985332cd9c01cd476756f067cecf220f948ef25696eae9d560a4bcb133b4a6e"
+       "content_id": "KDJ-AI-2026E2-P05-C35-S02-22E61A24",
+       "hash": "sha256:22e61a24088b4ed82b5ec85cb4a403d9182117f9aae72aad1cf36dade58a475a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C35-S03-4CF1DA24",
-       "hash": "sha256:4cf1da244f83b9cba6d863bb0ffde4e96cacbdd26f26d2cc9d34ce5a2350d713"
+       "content_id": "KDJ-AI-2026E2-P05-C35-S03-5D70DDDD",
+       "hash": "sha256:5d70dddddd16bc8654e443ce4723d9b1c1668153df81b3622a91d88ed6b3e09c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C35-S04-D3D3E30A",
-       "hash": "sha256:d3d3e30aa1e99c647192ebc81f9ae409d47d7b0199d453dbc279e3c000ce7e25"
+       "content_id": "KDJ-AI-2026E2-P05-C35-S04-1BCA5794",
+       "hash": "sha256:1bca5794ce9b37ce4ac1309076488b2e2c16b1509635bc8dd88c40f93269b0ae"
       }
      ]
     },
     {
      "chapter_id": "C36",
-     "chapter_hash": "bcb0c0d0fa0da4a39881393d8a9de7bda44f96cc0e296abeb990329d527a8ef2",
+     "chapter_hash": "b8de661348238c5ad8cf7e2485bec8a43c7b05b8b304db9b4db5961d26c9c57e",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P05-C36-S01-0C20D5C9",
-       "hash": "sha256:0c20d5c9f5b63bb3434ada05cfb5aacabff1c67e78fb5110ca096600d710d38e"
+       "content_id": "KDJ-AI-2026E2-P05-C36-S01-6B5BA9EA",
+       "hash": "sha256:6b5ba9ea805328eb60ddbacbbef2d43105d7c64eff1572b5dd027ef1a922b258"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C36-S02-58B531BF",
-       "hash": "sha256:58b531bfabf812215ea616be19fc2df32232819b562fded4a3715c72ee66c3d1"
+       "content_id": "KDJ-AI-2026E2-P05-C36-S02-E9A9A327",
+       "hash": "sha256:e9a9a327c19dc80269def872f1d42ad3552ab4ed3877ff12f7d45911212d9cf7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C36-S03-546D6F51",
-       "hash": "sha256:546d6f51606c315e443b923a79b61b2dce95e6778b40c6f76270a4941e315ab6"
+       "content_id": "KDJ-AI-2026E2-P05-C36-S03-944E320D",
+       "hash": "sha256:944e320da55bcb1601f962fcfab486fd5bdd0b9489f3f6b272ec5377a0da54a0"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C36-S04-772031F2",
-       "hash": "sha256:772031f2f11d812b1bb0298e5215b1103f94153456caa2a1c9020f93a3f4180a"
+       "content_id": "KDJ-AI-2026E2-P05-C36-S04-06E9AEF1",
+       "hash": "sha256:06e9aef1f97b53814ba6291250603b4c0967ec3e6147fc1138e683c8e75f16c0"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C36-S05-901DA9A2",
-       "hash": "sha256:901da9a2690e636c05ac6251a93ddbe6be93911a781d7d7f91d7207091062438"
+       "content_id": "KDJ-AI-2026E2-P05-C36-S05-48E6A615",
+       "hash": "sha256:48e6a615e8f75730185f20b3ab234a1c95b3375c55ae0a17080c58dd5d031e3d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C36-S06-2D1D3E04",
-       "hash": "sha256:2d1d3e04188254054d005b0adff5a546e7e3d9931f7b02b255dfb59bb04a41d9"
+       "content_id": "KDJ-AI-2026E2-P05-C36-S06-25C19AE2",
+       "hash": "sha256:25c19ae2b3afc86ce7234e0dfa36e9031910fbd9eda3df290677b21bb6e09ae5"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C36-S07-526B02B1",
-       "hash": "sha256:526b02b15e718fa3e03b18ba224e12f4064a8aa43bae37f4f9ef79cc75f5a9af"
+       "content_id": "KDJ-AI-2026E2-P05-C36-S07-9EDF1F94",
+       "hash": "sha256:9edf1f946cf4513877c792c5eafd13afc7289822aea9f949009eab01192d2441"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C36-S08-32C00D45",
-       "hash": "sha256:32c00d45902dcd173df5cce2f861d64391997811381f3d3ae00c6d255d6d451d"
+       "content_id": "KDJ-AI-2026E2-P05-C36-S08-14820EAF",
+       "hash": "sha256:14820eafe0008a646dc9e1b881d97cb66cc46c2622db1a6b057aa28f1c7046f9"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C36-S09-E58DE430",
-       "hash": "sha256:e58de43075113b6a9de81003e4c797f30b142fc280a0e93348deeebd375b18b1"
+       "content_id": "KDJ-AI-2026E2-P05-C36-S09-E72088B6",
+       "hash": "sha256:e72088b6e23c8b541984d9208383fa0553c07c315baa09a852707ef5932faa5d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C36-S10-2BD8CA1D",
-       "hash": "sha256:2bd8ca1d850d0f127be087d8da31a9f7d540d14be2a726b5a4fd988be4797473"
+       "content_id": "KDJ-AI-2026E2-P05-C36-S10-E119CDED",
+       "hash": "sha256:e119cdedfe5533bc59e94b00d89fc133ea4382558ccbe25534eb383c6ae33c2b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C36-S11-A177B52F",
-       "hash": "sha256:a177b52f7a1513ddfc95458c58fd362e336541c188337a1d68e91faf95257c01"
+       "content_id": "KDJ-AI-2026E2-P05-C36-S11-9F5FDA41",
+       "hash": "sha256:9f5fda41b60f088b56c8b03cea294c7a540d7b04644fa562461b21aab111f6a1"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C36-S12-4BF67646",
-       "hash": "sha256:4bf676461e3dd153a94adf2a4232877b273af63b8453c4e429068fdd96fe216a"
+       "content_id": "KDJ-AI-2026E2-P05-C36-S12-F231C64D",
+       "hash": "sha256:f231c64d42fb7d1f6e4d89b30ca53f2495861621fb223a98a0d02822fdd7f275"
       }
      ]
     },
     {
      "chapter_id": "C37",
-     "chapter_hash": "1d8b2f3b6e4a64462db897a7e35ed252a8499e96a190ea5e2196482399ff9296",
+     "chapter_hash": "68134b55b0a3ede0ce63f66ba0812344de1619e7ec412f03c1d4f02980ab6b0d",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P05-C37-S01-14A43229",
-       "hash": "sha256:14a43229f20e022574f07b99cdc99c78dd59325e793864ebfaf7b1ee5d698cef"
+       "content_id": "KDJ-AI-2026E2-P05-C37-S01-DF36FB80",
+       "hash": "sha256:df36fb80c3018231c343319439908090480944c218a81133261a30da14d26a7c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C37-S02-D1856E61",
-       "hash": "sha256:d1856e618cf2e8a9151b9c66f392ac0e51f08ba17b47008961d0264d294749ca"
+       "content_id": "KDJ-AI-2026E2-P05-C37-S02-58EDA592",
+       "hash": "sha256:58eda5929aad6296e49a08637ff3abe042d3c7a9ac0a5a76af6b88eda0f3affa"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C37-S03-E1515D1A",
-       "hash": "sha256:e1515d1a3f1287061e0d7bd2d14789444b881064e5049f053544747bf620c97f"
+       "content_id": "KDJ-AI-2026E2-P05-C37-S03-7C554C11",
+       "hash": "sha256:7c554c11e06f682602388d08609d856245743c45e070d7c91bb0bfe2b00e81f7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C37-S04-8130A164",
-       "hash": "sha256:8130a16417111849e9e39bbb9674e15af734fbe2a05ac744d47766a0ca78a34d"
+       "content_id": "KDJ-AI-2026E2-P05-C37-S04-116B9CE9",
+       "hash": "sha256:116b9ce98efed32b79592795f4ceaaaa51dd46ed62dfff47e9fefeb723026700"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C37-S05-D87E30DE",
-       "hash": "sha256:d87e30deafd90336fdb0334ca0a10302241b5cc8cfc5793d8c358837d9fae10c"
+       "content_id": "KDJ-AI-2026E2-P05-C37-S05-7BD0F332",
+       "hash": "sha256:7bd0f3320b5122a03720f8343554f23d40edaf9d68fd44f982258c324c5ddb9a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C37-S06-22E19A6F",
-       "hash": "sha256:22e19a6f7725770c617a11a3f1c5070250ba588e160fcf1aeadf66ba1c40c553"
+       "content_id": "KDJ-AI-2026E2-P05-C37-S06-E149D747",
+       "hash": "sha256:e149d74755ea0161495ba1fa8a2e6c56f8573f6b851a86d0a5fd146780613e83"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C37-S07-70A9AD0C",
-       "hash": "sha256:70a9ad0c3dcdceafde87a1275d637ee3fd711e74cd767763a9e3d28888baa159"
+       "content_id": "KDJ-AI-2026E2-P05-C37-S07-C0514F7D",
+       "hash": "sha256:c0514f7d0918226fa4f5c724c426be7cc1a5e935eebb69b68ddbf6258aa1b1bc"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C37-S08-AA6C677E",
-       "hash": "sha256:aa6c677e6be7429e2a6101875ce1ff7bff526fca00a54f9baacc33a27f17ee44"
+       "content_id": "KDJ-AI-2026E2-P05-C37-S08-A61E5DB3",
+       "hash": "sha256:a61e5db39ca6d902f541768a31d913bf231e7b84166fe6d1a597a7f91ff83736"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C37-S09-D1CB190D",
-       "hash": "sha256:d1cb190d760a19c8273e1c4fe38c554f4b9ee380a5d6b11ee65f2d4ef1928620"
+       "content_id": "KDJ-AI-2026E2-P05-C37-S09-F8727870",
+       "hash": "sha256:f87278705eb468d69f1931f14d212a3ffa3417735fd43068d84d40b947e57f15"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C37-S10-2A07E0D7",
-       "hash": "sha256:2a07e0d7b0ebf07348f93d11f7ad334c35e24e135d20dd99f927dd6ed5c19b74"
+       "content_id": "KDJ-AI-2026E2-P05-C37-S10-CA0C8AD8",
+       "hash": "sha256:ca0c8ad80ed4c79012a88788065232c3a4a93e03cca9b129a9702ad223370d5f"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C37-S11-F8E7EE63",
-       "hash": "sha256:f8e7ee638f550b4688ac04aced97a508ed27856d866d6fe8092c61991b62b8d2"
+       "content_id": "KDJ-AI-2026E2-P05-C37-S11-416ADA5E",
+       "hash": "sha256:416ada5e6b75ff5a08d721af5e6a0c14d191d4cf71baf0c6f7b906d8a9cb6aea"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C37-S12-311B1734",
-       "hash": "sha256:311b173483f031c9a5848dc1c4f9fafb1325606355597e1fce3e89566f6f6dc8"
+       "content_id": "KDJ-AI-2026E2-P05-C37-S12-56E4496D",
+       "hash": "sha256:56e4496d2cf25329a4c81eb39c96ffcf27c0e5691a282bd73331e991f9d2fdbb"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C37-S13-C20150AC",
-       "hash": "sha256:c20150ac3f8bcc1da287bbef1fd3861897ebee9c5bd0ac00749a30ded4d1884d"
+       "content_id": "KDJ-AI-2026E2-P05-C37-S13-A68687F4",
+       "hash": "sha256:a68687f42ac72a1305a91f8fc6a9460bdf43f7f2f28cbe57bfbc6cb902216bf7"
       }
      ]
     },
     {
      "chapter_id": "C38",
-     "chapter_hash": "6b3506904c77db8d98498f905dc1fa7f3fbe77976d49f94354bdb1eec558688c",
+     "chapter_hash": "b6b90505f13391b54e5d55fcde106b2e9e12c65feae0ab9086e442ba8ad22650",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S01-86662086",
-       "hash": "sha256:8666208608d539b2fab811f6ebe38520bfd57da0f536ce4c4b086085b7013ce9"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S01-4B25504C",
+       "hash": "sha256:4b25504c86b6032e5a29092fe32f0ff61e33ed467a3b89fef41a522614bd2602"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S02-3F3E5404",
-       "hash": "sha256:3f3e5404f026ca936050314805abadf8f09f77cb256ecb9ad1e2b8dcfd63f23c"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S02-2576FD1E",
+       "hash": "sha256:2576fd1e024aac1154b87f6b51d53561afb99abdd89b7c7e017403f24283bc87"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S03-F686ADAE",
-       "hash": "sha256:f686adae67d4c5164a34ccd6b9979d63a66de8b33d03d67c1b1e982a5dc0597e"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S03-E280F642",
+       "hash": "sha256:e280f642784a174ec2439bc15d2b05fb6ed2bd7a3ee794379cb2bc395aa27ac8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S04-5DC23AB6",
-       "hash": "sha256:5dc23ab6d28177fcea5191f0b88d24d92a17408a830e9deffcc1d8e19eaee36b"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S04-D534F414",
+       "hash": "sha256:d534f414afa3096150fb5a207438f6420ce215d4cfa894377cd7665781f6b600"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S05-1515F109",
-       "hash": "sha256:1515f10971855cdb57272c0cb7c5848b9e31af624573c7ba0a9e8999cdc7450e"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S05-43CCAC26",
+       "hash": "sha256:43ccac2632839db15ce341f7c4ec2081cdd6414669e6a3093a7aaae074f6a623"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S06-570651A0",
-       "hash": "sha256:570651a0396950001b2ddd2ef8075e0d437c5f97bd056c40c457ab5d837035fc"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S06-46C836FE",
+       "hash": "sha256:46c836fe7b3ed771379e7d567e4ae9b7dc363e72b899f83c2847579c36286dc8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S07-39754FC1",
-       "hash": "sha256:39754fc1983eafc62ad1a6520dd928e6ddba54dca774fc0e89a208ef4081a409"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S07-7C38181B",
+       "hash": "sha256:7c38181bd521988b3af08b7bffdefe65ae1e48e7d2e303b2e530faad7415f2c7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S08-F09F88C9",
-       "hash": "sha256:f09f88c9985b864c63f10feaf9263e351a413a54e1abcc22f410497a17cdf497"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S08-6C3BA5A5",
+       "hash": "sha256:6c3ba5a5d6fcfbcb95ebc70acad2f239c969c37b0faf6f70891a6e249019b767"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S09-19B8F56B",
-       "hash": "sha256:19b8f56b03989057cf50d854cc7ac47f3ea9a0544f554fa1bf0f6dd8edcddd4c"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S09-D93F53D4",
+       "hash": "sha256:d93f53d47decbe18275bf424cb0526619ca6f0c53b29f37e31b4f6f14c0f0a9d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S10-37162624",
-       "hash": "sha256:371626245a24e65e690204111c74e95a53c25785727f26d7f21716eb8f2b7c4b"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S10-11E2C843",
+       "hash": "sha256:11e2c843c70b215687ac1929908a6d12957180b8ef907469b3856847129e58ab"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S11-ED40540D",
-       "hash": "sha256:ed40540d33b216616b4540121cae8818927f32b75ef4f2c2e481781f1360b190"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S11-5FC29DBB",
+       "hash": "sha256:5fc29dbb5a4d9b8e3cbe584d2497b7d3bc85042dab430814753b780ed9492e3f"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S12-229D0DB9",
-       "hash": "sha256:229d0db948f4891c0dba13bc9f957c30dcfe8347c60c3e9238d0dff2d2687227"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S12-63539263",
+       "hash": "sha256:63539263c6acbd9572c24737bf08588ffa599b85e9c93574c0be491fd692bf2f"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S13-D53B8F23",
-       "hash": "sha256:d53b8f23be9b599d9f9a3dbc32ee0c8e93e5270545212b582f5a6b0f7a6d0418"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S13-47CF43E3",
+       "hash": "sha256:47cf43e334d7da29a0a7d55ab0f83326cf29a2cd181dbf28a21a18cb832c7109"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S14-438AB865",
-       "hash": "sha256:438ab865007e375d64daac8f930fbc8c1fdb2491517de33a1cefaf648ec92fa1"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S14-937B5B4D",
+       "hash": "sha256:937b5b4d1d6e93db9a1a883a3d40aa735e7030010425b2fd3e51f2d35b8e9ea7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S15-E24E1E1F",
-       "hash": "sha256:e24e1e1fc626d48f2e1078f4565e8dcbd01960e5542218f12fe534ec9a1f6b14"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S15-F388E94B",
+       "hash": "sha256:f388e94b950a12023fa963835d7f3eaf89ec5cceef9c17dde2ff3022dde31be6"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S16-1D1B4776",
-       "hash": "sha256:1d1b4776d0dd3403aaa4e951be4fe16d3889c27b9e86274d3f3c5ba21edcd75e"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S16-B96FE076",
+       "hash": "sha256:b96fe076809bc04915e6f7b3b96840cee2e0cd5d69435e916e3a17f2bb87e00f"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S17-5E7A8BFC",
-       "hash": "sha256:5e7a8bfc94783b09d8c8697cce67fae2112b30017f6b0e730b11a8b7ab58abc0"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S17-3810EDCB",
+       "hash": "sha256:3810edcbd9ef44a15048ef92f6849addce8f987f2b79b76488fbc330b2dd0cba"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S18-F7D3C58C",
-       "hash": "sha256:f7d3c58ceeea9747fba8e4ce54aaaece6cfbb7f3c8521f68a448be6fa529df1f"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S18-A0A98D1A",
+       "hash": "sha256:a0a98d1a382b31249feca1f7c52615be2abb7f9a2baf92de494253551e6e8831"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S19-C58CA62D",
-       "hash": "sha256:c58ca62dd1e0d63692c2429ba15e2cd19e44f6e4809a8d3f888e4b6134a06566"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S19-B437A908",
+       "hash": "sha256:b437a908186e9d89bace8584972f1176eb294c75bc571e12d6d60ea7bfd5f314"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S20-6F8F175A",
-       "hash": "sha256:6f8f175a4ce0feab26f304e43cea3dc9dce4e1462bceb346fa186b7a5a3e9cf8"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S20-B0DE7990",
+       "hash": "sha256:b0de79909369df63dc990de186143bd5b22e60f3c53790130220b84ec305722c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S21-09BB9EC7",
-       "hash": "sha256:09bb9ec7e0a0e3b5cc14a72a87de30e15281a3a7814f7d8b5153ecb049913787"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S21-621AFE48",
+       "hash": "sha256:621afe48fb7c4dd1e00203433d996e9826fdad4c9bfa6a4c87fa7d8502f37d36"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S22-8E0FA447",
-       "hash": "sha256:8e0fa447d471ff171a92e61b934d6ac54632ac287f25f2ace77c883d1e0ca8af"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S22-6CCBD3E6",
+       "hash": "sha256:6ccbd3e679afe738c739da9c5db7534b00f02942a338bcf9d35695a4aa2173c8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S23-2C2B4742",
-       "hash": "sha256:2c2b47427a6ded8ed17ac6a1b42f7b30143f5e21e9461fdf4a99da2803ead121"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S23-087C3058",
+       "hash": "sha256:087c3058b7538d0a9cb5238dd9d2255043ee9bada34acf7ebcb08435febecab8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S24-D5BC17C3",
-       "hash": "sha256:d5bc17c3d8ef3462948150a5b0c4472604c2c918c290e4d460a184815f8b1961"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S24-E44F6BB6",
+       "hash": "sha256:e44f6bb6803be82b2521823fc55cdb9af1a1b9020c7ced90d00e6d44b1ba3019"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S25-0837A359",
-       "hash": "sha256:0837a359cd6e942b14e87fe8ee430155567f1ca9f111de3ad45ada03422f749b"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S25-81709523",
+       "hash": "sha256:817095238f382f5e4a7843bf20f63b666d4c8786bbc5872661312fce7cbb8750"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S26-F7DA881B",
-       "hash": "sha256:f7da881b354693820a169a1c3f1719dae52b2d4342dce6ca4c12fb3a3d98a6ac"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S26-5CC77433",
+       "hash": "sha256:5cc77433b9b0938701977f0fcc987cadff76045f43747946172a97afd944e264"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S27-8EA72266",
-       "hash": "sha256:8ea72266dd0f94fb0c02881f0a97f7d6abae5862e2b9e121933c0689dd7bc3bd"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S27-D89D5B82",
+       "hash": "sha256:d89d5b82c873400d644b2fc3fa22f1765e6be19d02cab1ca74e33e1949ae34ea"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S28-CA825B4D",
-       "hash": "sha256:ca825b4dddbf49988070ab897f1df92bb4815163d37795589eb90a3e1debb81b"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S28-9B9A5778",
+       "hash": "sha256:9b9a5778c4de5ee9cf9392a9cf8e5dd4e03e4d3b9540682bd6b97197ba9fa8d1"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S29-393A2AD0",
-       "hash": "sha256:393a2ad07fa6a88233365d4861953babe5a976c00c9ecf00938a31f368808464"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S29-5432A326",
+       "hash": "sha256:5432a326750e65b037bfdbbc423ca7c37a9964724833b5bb0913e0839647911c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S30-F247B358",
-       "hash": "sha256:f247b358a6d00d65babfd68e37d936628bc801bfe413505b25a865134f594fad"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S30-4303E94B",
+       "hash": "sha256:4303e94b5d82daaf87e76c2066b5de72a518e948e3474a57463e91c08f2b05ca"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S31-9ABDE5E2",
-       "hash": "sha256:9abde5e23c8eeb74109002183879b24cb077b799d4c572becdee7ae0d420f3c5"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S31-4AEF12F9",
+       "hash": "sha256:4aef12f9f8d33adb44490c30307e169f93e05c8d6d923a8f730821ff6fb3698d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S32-D7600234",
-       "hash": "sha256:d7600234a2d6be37f2c0b280ca186b62b981d48ad19122722d6c40b95ab2835e"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S32-56A33E78",
+       "hash": "sha256:56a33e785f037abe976349d2b00fa2f13cf8ada51e92a45cb14824bf705e801d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S33-EC496E96",
-       "hash": "sha256:ec496e96d9fec09f91bd5709d5a61545da03ff10473af6ac9dc32b94a0c34c52"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S33-4DEB3171",
+       "hash": "sha256:4deb31710d1cb1269fcc801634e0063c0f7a49fd77c7cb88524f822794df52c3"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S34-4855B022",
-       "hash": "sha256:4855b0227bad61b2db91a2da2c85a279942291591ffafce0ef0bd34aeb354dd6"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S34-7F59D58F",
+       "hash": "sha256:7f59d58f8b791f4c71a61e16ec4810bf35c43d6a40fb8efcbaff8370918e5725"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S35-56AB4ED5",
-       "hash": "sha256:56ab4ed5a7b34603f10af824711c298005315ae6e9373bb8da72daa812ba418b"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S35-4D635824",
+       "hash": "sha256:4d6358245f229f46a2c7434ecb89b44a7689c9f3101a69f3e20f361a5fac2ebb"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S36-78DA0367",
-       "hash": "sha256:78da03671847c99e4163e83f3adbb80c96e77731c18c50cbabe4f13a9072c7ca"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S36-4C4FD221",
+       "hash": "sha256:4c4fd221afcbd2a21f82cd8f35f489c50acf4d3fb8c634c97e1c452b91ffcb29"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S37-D3817417",
-       "hash": "sha256:d381741733f7c1cedb31b9dc8917c07a058e0fe1bdfbd1ce7529538dbf409673"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S37-50F64DC2",
+       "hash": "sha256:50f64dc2ea108ba37cbdda7f659d96363566dc74d6f19a0128ccc8e39ec26165"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S38-26576F14",
-       "hash": "sha256:26576f14621ad4bfa21f417dc443697c66031ca66dfc5adee33d00076e63d353"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S38-DFF10371",
+       "hash": "sha256:dff103710ef241dbe10a67d1991505aa09ad86b64337885ac6890baf51f727ac"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S39-6AA038CE",
-       "hash": "sha256:6aa038cee7faef8e7b15eb296233d8c0a98d2a8a3e96a933eb87af30c5ae5694"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S39-A87119FE",
+       "hash": "sha256:a87119fe790dc282782a1a3dd0291eebe34687d63f96ab8ca533c20621a81c08"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S40-CC38F49F",
-       "hash": "sha256:cc38f49f764edae95aaf20909c7f28834999ab7ab5e104abff1b9bbaecdd2112"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S40-0498AC1D",
+       "hash": "sha256:0498ac1d193546228a5252b1c2cd77c66a768797a9241963d8d0fa0a1055b3f3"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S41-3B0A1737",
-       "hash": "sha256:3b0a1737cac056d70cb402bfdb6afbddec304b5df03eb0b7d34e301d9c9ff82b"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S41-A1C10E15",
+       "hash": "sha256:a1c10e15036e7221acf3c8c9cd6080ac2ed717ae78ea312bb58caff9c29ed411"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S42-BC236A80",
-       "hash": "sha256:bc236a801cd634523e9011516d40812bac473ba6836598e0c128931316446421"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S42-2E060E89",
+       "hash": "sha256:2e060e894808cf765b82752cb007a32fd21360df8b655914cb745add691fe7b4"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S43-6054BAE7",
-       "hash": "sha256:6054bae703a879227a6dfb4d36fc8570fbf4bea1bec213963dc07babd3c500fc"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S43-1CAAE8EC",
+       "hash": "sha256:1caae8ecfb31dd4032f9dfb240002e98432c946265a62aabe5d5cb2042727b2b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S44-FDBC2B04",
-       "hash": "sha256:fdbc2b0476c23174d4e01fff3583669ea9229d9b262fd1bbc397fcb2a72944ea"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S44-44A06F94",
+       "hash": "sha256:44a06f94ffe6612c7fc7b1f5aacc1c2111465f3bda129eda0fcdeacfb8b20f4b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S45-F673D2D9",
-       "hash": "sha256:f673d2d91afd7c67bda254e9ad05ea5dc0d46386ff554346b91e4aa9e9973e25"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S45-47D624FE",
+       "hash": "sha256:47d624fe227787419b0122ec94e5e13605302b947097d76182ea80c687c584ef"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S46-4F8C4FFD",
-       "hash": "sha256:4f8c4ffd48a16f2ad78f7955f63bfa037cdb0c959ce8e6708ea16b16784ca854"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S46-3B79D0C9",
+       "hash": "sha256:3b79d0c94304bc063d0b3f8d984b705835438345e4362061f5fbbe0929b19328"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S47-BFEBF221",
-       "hash": "sha256:bfebf221dabf1f5ba4c50718d61124754bf6b468c8880296ce801f8879327394"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S47-2F4584CA",
+       "hash": "sha256:2f4584caaf32bccbaa14068291b35ca6c8972c73a4dbfa6f16d252382ba96ea1"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C38-S48-B2459E5F",
-       "hash": "sha256:b2459e5fa3121fecb5407786d2f195dcbb3bec8204c80eeb95497a15e5bd5d84"
+       "content_id": "KDJ-AI-2026E2-P05-C38-S48-16ECC5CA",
+       "hash": "sha256:16ecc5ca15577f1d065cf301196be2cc59e179e3fcbcbb298e2ceb819c35bb97"
       }
      ]
     },
     {
      "chapter_id": "C39",
-     "chapter_hash": "c973297b0e324b3f07f3e6d1dbe7fe817492bf78a05e4e463b38c3b58d79d3f5",
+     "chapter_hash": "9df89a4d984a6004eed24a3b927ec2de2ec4b3fe00b3aafdd65d1dca60602dfb",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P05-C39-S01-E712678F",
-       "hash": "sha256:e712678f9e3b88dcca6f4be9e78c290e547c96e0670983aec6d19df69df1a47b"
+       "content_id": "KDJ-AI-2026E2-P05-C39-S01-FCF691BD",
+       "hash": "sha256:fcf691bd3115407883d1193241abac9bad643bf6211b693676adb734e524513e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C39-S02-3DC37803",
-       "hash": "sha256:3dc37803222434a3c60086edf10c3e2a27ccb9db3d7e8fef0cbf30165d04345d"
+       "content_id": "KDJ-AI-2026E2-P05-C39-S02-F8883A60",
+       "hash": "sha256:f8883a60b3f8a1db8d63731ccb6d8fc65225f3403002f27b7a74615b4fae6cc8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C39-S03-8BCFA70A",
-       "hash": "sha256:8bcfa70ac8bc0f8824b9290f67ca7206e005b14c7f6bb27b3c32b572ec3dce6b"
+       "content_id": "KDJ-AI-2026E2-P05-C39-S03-9436602B",
+       "hash": "sha256:9436602bb0b63e02ea0c75150eab9e6232a15f3fec99dc0af6c06fcccea9cd5c"
       }
      ]
     },
     {
      "chapter_id": "C40",
-     "chapter_hash": "36c641f9dcc662291f6f0d12e923fe6bc677fa988116f33ccbe53e887f001b21",
+     "chapter_hash": "d6037b4f4d1450800c1433ff514a3d4ac3d666ef0ad870a919d58665f8b508c8",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P05-C40-S01-275425BE",
-       "hash": "sha256:275425be63422508c277589de6fa31c554f4a36e16ad73837c424e113d26d20b"
+       "content_id": "KDJ-AI-2026E2-P05-C40-S01-20D80820",
+       "hash": "sha256:20d80820ece2334429c8e8278974b1734a4cc33bb727e8ed7a1a0b0eeb566077"
       }
      ]
     },
     {
      "chapter_id": "C41",
-     "chapter_hash": "f278b74995efd8f6c3dc18e2d84bf60e31e4c49ffd4fcdffb3c9e59dbb20f40c",
+     "chapter_hash": "8d34047cf39297260fbde80358ed1f8e15e952ccf99395a5e0c348342f8c08cf",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P05-C41-S01-426C038F",
-       "hash": "sha256:426c038fa26c838ddcc20a626e1196d06cc2c95cfcea7fb4c351918031af8037"
+       "content_id": "KDJ-AI-2026E2-P05-C41-S01-062854B8",
+       "hash": "sha256:062854b8e1a70e28b9eda6539334199d20c5b39bb4fa25600a4f50822f887604"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C41-S02-0C1F257B",
-       "hash": "sha256:0c1f257b972b1082188046bf06d7a8b848134ac27aefa12882e099f9c57250f0"
+       "content_id": "KDJ-AI-2026E2-P05-C41-S02-7BE0AD38",
+       "hash": "sha256:7be0ad3821e17a8f033e199258ed7217cbbc58c18eaefafe86bba1c3dd30f7b9"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C41-S03-4B4B384A",
-       "hash": "sha256:4b4b384a777776c4925632032a554545616cf9975175bf383026c15e680f70af"
+       "content_id": "KDJ-AI-2026E2-P05-C41-S03-EB438F2C",
+       "hash": "sha256:eb438f2cced0fae40c2b35255bbb1ce8a36400a6f4eec7230191663d498e34f2"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C41-S04-65E75291",
-       "hash": "sha256:65e7529171322ec260f97cde003872e406774f141da63e81af666aebad72e877"
+       "content_id": "KDJ-AI-2026E2-P05-C41-S04-5B1F1C6B",
+       "hash": "sha256:5b1f1c6b971f0ca5bf5cdb34b2f059fb5d8553235a55979d6d3f4926a98ba457"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C41-S05-3DC2E746",
-       "hash": "sha256:3dc2e746e07b36cfe4e4f0c6ba98b67808d0283d197c6a435037982adc7f6a1b"
+       "content_id": "KDJ-AI-2026E2-P05-C41-S05-0DEE1389",
+       "hash": "sha256:0dee1389389a25c3d4ddd86341e1c44c5761c98205cf53565438267f193579a0"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C41-S06-8D71967D",
-       "hash": "sha256:8d71967dae13189d9dcf72eed778c9ebe714b020d383d05a5e568130c1d06b72"
+       "content_id": "KDJ-AI-2026E2-P05-C41-S06-8EE6553F",
+       "hash": "sha256:8ee6553fdd6205e59a7073e12b2eeec943c233a39683d6a68a57566ed41a19f7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C41-S07-7BE1ED1B",
-       "hash": "sha256:7be1ed1be9bf12822023ab73c66c6457c88b72170498a97c1bc25971cd5fc370"
+       "content_id": "KDJ-AI-2026E2-P05-C41-S07-146C3FA1",
+       "hash": "sha256:146c3fa162b7d4394742cc10ab9c7148a87b1cdb54e130b70f77adc4e1f49084"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C41-S08-45AD34AB",
-       "hash": "sha256:45ad34abe10f05a5978ebffc6b5a2da4b9174c152947adf0593b3ff08d50eb6b"
+       "content_id": "KDJ-AI-2026E2-P05-C41-S08-9EA949EA",
+       "hash": "sha256:9ea949ea79d56aad87df60522da9a258cba47cb3f6136694813c8729b9c144f7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C41-S09-43B306C8",
-       "hash": "sha256:43b306c8ad51dc1ba563c835818c053614d6570fa09af0f9c179c99a36eeb1c0"
+       "content_id": "KDJ-AI-2026E2-P05-C41-S09-731C8163",
+       "hash": "sha256:731c81631686703b537b320dce8ed69959bec790cb27bdc4c21b391f91e43c83"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P05-C41-S10-1AF4F660",
-       "hash": "sha256:1af4f660715babada6cf5bc8f8728ba64d77fab865ef096d308e88efbce04b98"
+       "content_id": "KDJ-AI-2026E2-P05-C41-S10-DD0E7BC2",
+       "hash": "sha256:dd0e7bc2139871173de3c86186b2581628b45dc4fea285097fb87f1b64d59aab"
       }
      ]
     }
    ],
-   "part_hash": "6e6c42d5f008f482c87d4c0c8e48cf7ebb7d5106712fcc328f15e15fc3fa1157"
+   "part_hash": "3831c9d4e19467de98bed81bee14ea354a7f837ee742035f628177bdcb54fbc8"
   },
   {
    "part_id": "P06",
    "chapters": [
     {
      "chapter_id": "C42",
-     "chapter_hash": "6c08621b6e4e1ff602d0b5730fea55abe43020b02e139f86893311eb2e0bb48a",
+     "chapter_hash": "f32d184e7b696b2054536eaa033842e12c1f2d81720df6389e3d469395dcd393",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P06-C42-S01-84484585",
-       "hash": "sha256:84484585f46d0c4f95b995beb16d4acb3ec0500d50432cbe74dd276e532f1ed3"
+       "content_id": "KDJ-AI-2026E2-P06-C42-S01-A0AC3D8D",
+       "hash": "sha256:a0ac3d8d05e0f2377f20bae456f1912ad6c8701ab0dab93ba80ef6867f491039"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C42-S02-B9ED513B",
-       "hash": "sha256:b9ed513b7158b22cb2c917aedd2c16e84e514d9b8e3cb7378fb7da5de5a95d51"
+       "content_id": "KDJ-AI-2026E2-P06-C42-S02-8B7CA39A",
+       "hash": "sha256:8b7ca39ac46b057328134127416d3d764bb47e0f5a9d27f4f08d8860070b6e23"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C42-S03-79661035",
-       "hash": "sha256:79661035aff28038b446a1f02f531e2139e8c66415a1503ee35aee4a4fe953e6"
+       "content_id": "KDJ-AI-2026E2-P06-C42-S03-D9287E37",
+       "hash": "sha256:d9287e372771d3398971fad1e98d1f345b3a793ad2ed6db29d44b4e807a67b24"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C42-S04-EA3AF9E3",
-       "hash": "sha256:ea3af9e35ebeb9513e066750e931f0a9aebaf5e9b71cd009b6055ecaf3ca9ef3"
+       "content_id": "KDJ-AI-2026E2-P06-C42-S04-B940571A",
+       "hash": "sha256:b940571a49895fa0484223a29df093617b190a14af4bfacb1d959fa6619b2db4"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P06-C42-S05-63DD3D12",
+       "hash": "sha256:63dd3d12d6ffac03112cd81a9df0ff09bbf0d0e57b891dc5dfd205cb981087aa"
       }
      ]
     },
     {
      "chapter_id": "C43",
-     "chapter_hash": "78769327408cabbd8de3cba0213c5528922f039b7c782570f3797f5bf0e43c5f",
+     "chapter_hash": "7d95cea9ccd958ae433f9a5d406ed6944a213d5a423576a926dd8581fa966b96",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S01-F0C6F950",
-       "hash": "sha256:f0c6f9505932db8ab5283f4aa8cad629004f653d2955469ad6fddf80b0570356"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S01-5839B2BD",
+       "hash": "sha256:5839b2bd8120f3b6facba100f6ba0bea92936f22cc30b46a377ff6a1daea9a27"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S02-59AD701E",
-       "hash": "sha256:59ad701e8056f6b7fd85b9a1c1432e65689d99cfcec7730d420fb5c18e204fb6"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S02-77554F0E",
+       "hash": "sha256:77554f0e81db88ca48aa5ddee1ceb4d2a339e46c241d782f8b86a7db09f02e41"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S03-4622A8A1",
-       "hash": "sha256:4622a8a12c149f8886661d8132757b385322f17f2ddf33618d5d094460307797"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S03-35E61BAC",
+       "hash": "sha256:35e61bac648b2ca72dad1b37c3c53b455b5125cbfd655f425a0c8186f89d2482"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S04-3845DE82",
-       "hash": "sha256:3845de827126ceedc6cf47c69344c71e1d9ade3fa422fbbc16350cc397b9196d"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S04-8D78D8AE",
+       "hash": "sha256:8d78d8ae657ff0ea77b4ae746a4dbf5455ecf617f4d66ab828054df3de47adc3"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S05-1CC66922",
-       "hash": "sha256:1cc669228a97ed78a27ac8f018092e43e9fd4aaf36eb136819a3399a0dd08156"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S05-27B14285",
+       "hash": "sha256:27b14285fb3fe0637b98f572da3a0c4d9fdf2332d69f63234d373169cab29839"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S06-8D061FAA",
-       "hash": "sha256:8d061faad31f2ff06f373e0ffe7ae3878e83e11f59afb2e833b63853302684df"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S06-4204CCD8",
+       "hash": "sha256:4204ccd8b4e1f75c16f6916db5c9e742fa3f787bab50768482660a26b7d0f159"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S07-659E23F4",
-       "hash": "sha256:659e23f4c0d9b194fcba00370369ac33741c93df81f79748de99edc9ee4c0234"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S07-E0C9E285",
+       "hash": "sha256:e0c9e285c1513b3cbc1ab028d66b4b082b142088cc252e4fb9d2f23169584749"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S08-A9FE5F06",
-       "hash": "sha256:a9fe5f0677875c83331dfb09b8dd0c9ad4045e339fad940e7c4c445e1d220810"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S08-EBDAC3D6",
+       "hash": "sha256:ebdac3d6a765c3474bf3c3c19257e21dbbe3981796f99fdc234237aaefc8b9a5"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S09-B67BEDA5",
-       "hash": "sha256:b67beda597f756f3f86d9c22feb6284ae9c25c29339cdc798de00999bf450289"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S09-68BD0139",
+       "hash": "sha256:68bd01393b6038c9d800f64e56686e4d9a5f55b6dd78fcc33eaf41a48979f103"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S10-531E76DB",
-       "hash": "sha256:531e76dbb7ffd3677d7bb9652b280ca5a41959374dce164b33dcd10994e2f9c5"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S10-76B3F88E",
+       "hash": "sha256:76b3f88e5c698fc3ce29d1875432927c95b6833544bc2018ba2decb6c54e2e06"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S11-512FEF87",
-       "hash": "sha256:512fef87486c2583b915c33e7d388f4daf6f64f9fa801d56873d5429428bc50b"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S11-BD194215",
+       "hash": "sha256:bd1942155265ae89d113cd172f9330e397fc148f3744acd8b972783648aa45f5"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S12-5CBBC43D",
-       "hash": "sha256:5cbbc43d72910f401d338e9e13dbdc5ae99e942f74f908a0c481685ef9717335"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S12-2F63AC42",
+       "hash": "sha256:2f63ac428022835eed76bfa174a821eebc2c572f4490fd0b79769b3017f7f2e0"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S13-D357B366",
-       "hash": "sha256:d357b3664e268a4240b7e91eb9e835e5a65bcff6b335bff7a05241fc2f34d1ad"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S13-D89D26C1",
+       "hash": "sha256:d89d26c1a204fdab9ac9700a0725977e77ed614fc24126c62de9101eb8a92b99"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S14-7C3C9F94",
-       "hash": "sha256:7c3c9f94211249cec99e673a4d7da5c61369f486292687c8481cb4565ee6887c"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S14-2504624B",
+       "hash": "sha256:2504624b1404ea591a9321d2f8c930ac8d049e399fcaae18bf98e184459a75c5"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S15-E9A443D3",
-       "hash": "sha256:e9a443d31f7b4ab972f57d7447bd23be4cab327b75b222ecba7a6b8b27185fca"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S15-70FC628A",
+       "hash": "sha256:70fc628a45bbf60b9ba726a3d6a6ef9712b8dbcb60a22a9ea9657252b7a6e929"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S16-FAEB9EAA",
-       "hash": "sha256:faeb9eaa02d2431a2b5a4effd7837141d5ad63939313eb9fe2e067e742e37bae"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S16-A47F089E",
+       "hash": "sha256:a47f089e21d85116894b5bdda76bc6bdfedb9397fe7b0757c36d685f9619fe7a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S17-AC1856C2",
-       "hash": "sha256:ac1856c2f64aea21b739edc0f0ea716d7e8aa77d96e3f86c5cff9ddcf99b6729"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S17-8BC1236C",
+       "hash": "sha256:8bc1236c1f65a7a06053ee0315b08824b1efafa228ae06f2d153fe17e13e2ad5"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S18-6405A0C2",
-       "hash": "sha256:6405a0c2b2712ee8445ef330083277768c7b42cc7996be5cc23d05c136631ba2"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S18-7F92DB6B",
+       "hash": "sha256:7f92db6b626d43343c52210a882e6495e88fbe3f97b9471ef27351ce429f7ab3"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S19-9A06ABA4",
-       "hash": "sha256:9a06aba4874265d1fa4e97e228378c5ff7e42896bc00922704ae1d55b2ec9d52"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S19-2E2CF11F",
+       "hash": "sha256:2e2cf11f75788af7bd0a3ad81c3dee526d8289a0e4524328eb7dd4c924c18fd5"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S20-BBE1F18D",
-       "hash": "sha256:bbe1f18db4d704c9c49ed3652e20413b228237016fee45fe641a63a040e74bf6"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S20-8C3511E4",
+       "hash": "sha256:8c3511e4202d2f532b4d2c951f06cfc28fa8b96005eac04fccabe5b874abe87d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C43-S21-72893FC7",
-       "hash": "sha256:72893fc7a00059e0c1f196beb03cd61aa740cbfd86c252e1fed411f02829261b"
+       "content_id": "KDJ-AI-2026E2-P06-C43-S21-49F9180F",
+       "hash": "sha256:49f9180fc07ea204a27c6db9978f5b88193712ce80cc56ff98e8c305ee872b37"
       }
      ]
     },
     {
      "chapter_id": "C44",
-     "chapter_hash": "130df1b1c9c006697495ae2735583b92a077dd0a5bf042900d17f8e9f1caa671",
+     "chapter_hash": "45668d773c09ab06bf95c7ec5e83d2a06032981bd660f2163ebc8be4cc89375d",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P06-C44-S01-F8842DBC",
-       "hash": "sha256:f8842dbc3db2cdb06019a4a7229bd2efa3ca11cf092a9b6e0b738e66be0ac877"
+       "content_id": "KDJ-AI-2026E2-P06-C44-S01-811A61A5",
+       "hash": "sha256:811a61a583c3be1c27e2c5ce2958546c2335d55508b02b40c460b719861ba812"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C44-S02-CA51025C",
-       "hash": "sha256:ca51025c35fc1a7e2ce254e1f6c101e5c0e379aeb9bc3f4aeb38b725609bd63d"
+       "content_id": "KDJ-AI-2026E2-P06-C44-S02-0EDE2368",
+       "hash": "sha256:0ede2368ec5cb89a4913c20973f1992b103f94f9540c984503a56203d80e9c45"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C44-S03-C1D39FD4",
-       "hash": "sha256:c1d39fd4e2d4318c17416994e90ef096357d8604cc6bc13ba88babb39b303d8b"
+       "content_id": "KDJ-AI-2026E2-P06-C44-S03-CE1EE063",
+       "hash": "sha256:ce1ee063d4fb2b1858357afe6d113ec66520688a102212c883e46a77472cdd44"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C44-S04-A0C51D8B",
-       "hash": "sha256:a0c51d8b86cf0405e95b2f2cbfb2208401eb0926dac180fcc8d7388bba48cebc"
+       "content_id": "KDJ-AI-2026E2-P06-C44-S04-C8E4CDED",
+       "hash": "sha256:c8e4cdeda72ec9466a999ea944c4b06d71c857a429af92f1f457fa9d7e12ca80"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C44-S05-2E05FAF9",
-       "hash": "sha256:2e05faf9358012f98d99d1b943920d532ebb3b45dfaa5d5deb3a828fdd5311d6"
+       "content_id": "KDJ-AI-2026E2-P06-C44-S05-43740950",
+       "hash": "sha256:437409508a0d310928db8f421491f6698e2850db1231ee127911dcc9d85be59a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C44-S06-3610E4B6",
-       "hash": "sha256:3610e4b683f3daa3e66915046cd8d69d100128416bc6debc4a82073fb008f0ee"
+       "content_id": "KDJ-AI-2026E2-P06-C44-S06-1AACB844",
+       "hash": "sha256:1aacb8446c3755e2eef93389f136f5c3f4e4c9a489a2dd4bb7e008f65da5c7d6"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C44-S07-F404FC37",
-       "hash": "sha256:f404fc373f4d77c1c21c515cad24836f104bb19458406cb47d8d5f0f83216187"
+       "content_id": "KDJ-AI-2026E2-P06-C44-S07-A320CD26",
+       "hash": "sha256:a320cd26ff244e21004ab3c7a307ef342546c1ebda84ff05dd41619e2d41f71a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C44-S08-4D34A0A3",
-       "hash": "sha256:4d34a0a3461142be55fcebdb33ca20f70b396e6faf7958292396f5426a9edec8"
+       "content_id": "KDJ-AI-2026E2-P06-C44-S08-044B752C",
+       "hash": "sha256:044b752ca8fa49b11eafbc0e8beabad418cb03a02768ab57a89aed2d906538b4"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C44-S09-D002D323",
-       "hash": "sha256:d002d323f9ff40d5f2ee90bfd41b01f8bd88d1f8422500533be334c6fe45082d"
+       "content_id": "KDJ-AI-2026E2-P06-C44-S09-162C2DC0",
+       "hash": "sha256:162c2dc03d80a30e884f9d091772b858f3ce42ea389201e9698823c77e1399cc"
       }
      ]
     },
     {
      "chapter_id": "C45",
-     "chapter_hash": "91aa60881107f80144b8bcabc5816c9c4059ab0b7f05169748b276a5ac3535a8",
+     "chapter_hash": "f5d716c874f16ac3b5e2608600c3e536e3d2b5f20acb1f5064d0f09e86ee746b",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S01-74A1F3E4",
-       "hash": "sha256:74a1f3e4d0a9f77359c5cde2db53e2259e574c42d1856e6bb3fa2a383f7c54eb"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S01-8E92FF21",
+       "hash": "sha256:8e92ff21ca8fe619f085defcdfb2fd8875016a3cbdc64c86491f5aed2df5f0f3"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S02-1AC84F0E",
-       "hash": "sha256:1ac84f0e5aa22b1e5e4e8c3cec7bed6efb5dcb2fafcfa980c9e130480bfefb02"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S02-340490A0",
+       "hash": "sha256:340490a052c89ec8c123abbc3ea19d9c90b56036f931aacdf11fa22bf1efd79f"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S03-2ACDF9C2",
-       "hash": "sha256:2acdf9c2d15ea1e3800c424c90f2ef0c6635da7f60cc79c18d19105fe4f24bfc"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S03-7D088F32",
+       "hash": "sha256:7d088f32aaeda9abd73301c32c4912f868ea3beefaaceceb93e39c48cc049a5a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S04-051E4F4C",
-       "hash": "sha256:051e4f4cd791f6a6d34b43f532941ec8a3639f5200434e606f6c4523c4bcc3a0"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S04-8DFB3E78",
+       "hash": "sha256:8dfb3e78fc8ebdc10e129cf887e838cda8f81095bab3a5b1676ef0a1c23ed0f5"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S05-25E65F9F",
-       "hash": "sha256:25e65f9ff60dfcb3e042f66b3b2c5121b5c5676da82fef806b9458da3d527e21"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S05-C8E12F07",
+       "hash": "sha256:c8e12f074853ba8bd816d0d75304c2353af2831429d7c75d6df8a74a5c52fa2e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S06-64AA9747",
-       "hash": "sha256:64aa97477f855741f7afde8c85bd3c3b6fc69b405b84157ed35451cdec772aa4"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S06-6AB41A40",
+       "hash": "sha256:6ab41a40b2f74730d5e9b9ff300dcc7536300961d36d9c4326ea51b2e7b13c4c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S07-D5A9DE7E",
-       "hash": "sha256:d5a9de7ebfb007d7138e593ff4273ccf8a93559dac1bdceb6ccdc92399853503"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S07-1F33D3F1",
+       "hash": "sha256:1f33d3f164b2d6814ac807f5b7bba81cb4caa2562e648075a81dbf18a3bc9eff"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S08-F2B54E4F",
-       "hash": "sha256:f2b54e4fa3b9acb520db02c854e94b102040959c5dda8997f79f12a573df8772"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S08-71570FF1",
+       "hash": "sha256:71570ff12f4269ad3664aae616b0db15f0ceeb75a297c10fccb2c632e4b44627"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S09-5AEFAF70",
-       "hash": "sha256:5aefaf70920abf2171fcb242e6124475b8729adf8010b68e17282e0f366126fb"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S09-79EC9004",
+       "hash": "sha256:79ec9004a379a339656dbd6c9d2104679364c491233029657086d3c18d9d29c7"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S10-6EB91957",
-       "hash": "sha256:6eb91957ff883b2407faea9422e4b3d4384d77b8dc8f60675e750ff6201d060b"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S10-224D03AF",
+       "hash": "sha256:224d03af3d1189dd120edcb9e4f30856d6c5c48abea8dc2d7552a8f45156eb30"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S11-A520B77E",
-       "hash": "sha256:a520b77ef2cefafc70dec7888d5611748840d8aac3ae9941c5addb126831c60c"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S11-23B8CA3A",
+       "hash": "sha256:23b8ca3ab569e6e188b1ea4bead4f98797a644a4981e1b7e272d5b3b34877e25"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S12-D3EFC1FD",
-       "hash": "sha256:d3efc1fdbec18682704920b66198bc69ea96b0eb492baae5bb4e78006de79106"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S12-68E17A14",
+       "hash": "sha256:68e17a148febfe8ef6a7b5e016f84f4509b9d0ba35cb7532b6cb08ed597df1e2"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S13-A4C74BD3",
-       "hash": "sha256:a4c74bd3af03cf028df322412b3af8277c91f95a85e4c69d31da67777439c2ff"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S13-4DCEF371",
+       "hash": "sha256:4dcef37191bbdaa567f564e7e2385bdadccbe5c22cab0a32c07a1f01be05395a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S14-AD390EEC",
-       "hash": "sha256:ad390eec80ee7958371b7cef33c1918fde0c228bc5ef92ec47d0fd2921a4cc4a"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S14-D71F032A",
+       "hash": "sha256:d71f032a70850d171def4ff47b69678515852ba486405bf512cfb0c5ce64aee3"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C45-S15-178D5DC0",
-       "hash": "sha256:178d5dc02d8c1daf2793c85f83dd97d831a8adeeeb8aa6c4bf11a13c6ede0490"
+       "content_id": "KDJ-AI-2026E2-P06-C45-S15-E176F41F",
+       "hash": "sha256:e176f41f54712ac6e83f5c7514c8a248923a0e1e1a2ba61e661bead5ee6d4b2e"
+      }
+     ]
+    },
+    {
+     "chapter_id": "C63",
+     "chapter_hash": "15a46343459818528b90108fa48494e24cdca01425aaf50e87671c0cd4e96ad1",
+     "sections": [
+      {
+       "content_id": "KDJ-AI-2026E2-P06-C63-S01-07CEDA59",
+       "hash": "sha256:07ceda596149bd7073ae1ee0566ba4df12e49129fce4d90d6af15b63b3982d47"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P06-C63-S02-1BA2501F",
+       "hash": "sha256:1ba2501f935bf3be40673036ed48d08918bf3aab7e65ffb890aeaf12aecc694a"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P06-C63-S03-4DE77E69",
+       "hash": "sha256:4de77e6959e30c741f411505707eccbe478c612fcb55335463e7fcfd908bab6b"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P06-C63-S04-4DDCE4E6",
+       "hash": "sha256:4ddce4e6243b8ee717c20ca72c35b7d104125253fca228212334c0f642d5556d"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P06-C63-S05-C1CACE56",
+       "hash": "sha256:c1cace56d8aa68cec2ad7386dbac13a06bcb3a44a3e75b206cb629570a407984"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P06-C63-S06-8257A155",
+       "hash": "sha256:8257a155e5211255d069c3cf36fd9a1583a268e64adccd8bebf08bbde38871fb"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P06-C63-S07-1AEC1FD0",
+       "hash": "sha256:1aec1fd0a3fa8f51cc93dec101df10e1bfb22c839493fdf8ad08a4d846a5cd7c"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P06-C63-S08-91A2D365",
+       "hash": "sha256:91a2d3655e3f44ac544a2999ab0d2762671bd39a628aefff97f9d1f2bbb8d913"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P06-C63-S09-2737469A",
+       "hash": "sha256:2737469af0b8ca01dcdbde724d1ca5d357badc03f0821957ad3dc813a142b500"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P06-C63-S10-2D96BF4D",
+       "hash": "sha256:2d96bf4dad48533f5ea2633497b2de3d4518b56320867a9c35ff37d5d719e33c"
       }
      ]
     },
     {
      "chapter_id": "C46",
-     "chapter_hash": "fb915e92d8956efc03b3a4098132552afc045550e202adb53da448bed1e7af21",
+     "chapter_hash": "26662f2fba14b663fbefff0626fc5f33b874cf0c08a99c05951d554ae3d78dac",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P06-C46-S01-BE98BCD7",
-       "hash": "sha256:be98bcd73826a179ae8e812f822cdbff42182f58ba90ec1351e4299f790ba5bd"
+       "content_id": "KDJ-AI-2026E2-P06-C46-S01-BF51AFF8",
+       "hash": "sha256:bf51aff81458632095c976675745a9b29ace1e72105c427a56756657e9a4ad8d"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C46-S02-5F389F16",
-       "hash": "sha256:5f389f16b39b4fec0660c7f6b0cc4a8f051c1617523c5f79885344632e665307"
+       "content_id": "KDJ-AI-2026E2-P06-C46-S02-ECF2281E",
+       "hash": "sha256:ecf2281e8ab4e82242038ad063f26dfec64890a6326223d033574c672ca2835a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C46-S03-A0EF3CC7",
-       "hash": "sha256:a0ef3cc713a2c1c48273acb0ebc4cbb6deeec2799527c26037fb65ae546f2ce7"
+       "content_id": "KDJ-AI-2026E2-P06-C46-S03-35ABFF44",
+       "hash": "sha256:35abff441eb021d03efa55cdfda67a8e362504c342e0e43fafe35ee7446ab1bf"
       }
      ]
     },
     {
      "chapter_id": "C47",
-     "chapter_hash": "6231d1a31642c9447dd39390a8a658d6a6a7d151f171caec901015a3611fa2d2",
+     "chapter_hash": "081317bc8512e6efb02c45635620d260cd91ef317dba608ee37cdca1dc2e3568",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P06-C47-S01-6999533F",
-       "hash": "sha256:6999533f91805cbf715b7436a5370b61552b4f6c869ff7108c8ec1709464a916"
+       "content_id": "KDJ-AI-2026E2-P06-C47-S01-89A5D6B5",
+       "hash": "sha256:89a5d6b505fea1d4361c7c0bc0b11c971c2ab2f5d85ffccbb65b28c03519e3bd"
       }
      ]
     },
     {
      "chapter_id": "C48",
-     "chapter_hash": "fc0d2d0e57682703cca241410eebb0a82768b584da34c12aba1e8c99614f2e0b",
+     "chapter_hash": "a36e6e57cbdad0c0ec80dcaff0eb2b063a2336cf1950afc9aff43197b40811c3",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P06-C48-S01-45221CBF",
-       "hash": "sha256:45221cbf455ee7a2faaa4201674453a799266bc2f3d5aa1efa8d6652cf74ff0f"
+       "content_id": "KDJ-AI-2026E2-P06-C48-S01-9D86A226",
+       "hash": "sha256:9d86a226f2c4ed20d56a9d8d11e0b960573efc546e613ed821090ba41f5c01c2"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C48-S02-2FE50A5C",
-       "hash": "sha256:2fe50a5c80310f8eae166d2331195ff90637b0941fbadd440a5e796572e4ba16"
+       "content_id": "KDJ-AI-2026E2-P06-C48-S02-91A06F52",
+       "hash": "sha256:91a06f528dad70419af91563047312972a31b69bac210a7292d8dc341b2a299b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C48-S03-80E7943B",
-       "hash": "sha256:80e7943bfc7424dae38f7e79e8a922524118ca64f63cf178e05ba5a0559b68cc"
+       "content_id": "KDJ-AI-2026E2-P06-C48-S03-A6D59CD3",
+       "hash": "sha256:a6d59cd320f78428e7cb03ee8b43451c9ea99f27ed6efce3717218eb6ec7e54a"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C48-S04-109EC715",
-       "hash": "sha256:109ec715c1cb41d300204bb72c05acce19f4c9755cf9dde7a7d5dd2661abaaf2"
+       "content_id": "KDJ-AI-2026E2-P06-C48-S04-7E1ECEE2",
+       "hash": "sha256:7e1ecee23c8fcb1542d2caed819a4f6d50f17fcfe585c2823db84c52429fccf4"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C48-S05-DB9B21A3",
-       "hash": "sha256:db9b21a391fb34f6555fbc38d777eef4252cbafd34b538f73db9936813b94656"
+       "content_id": "KDJ-AI-2026E2-P06-C48-S05-0B0A7356",
+       "hash": "sha256:0b0a735691d4aaf723eb294547ece686174bd64b1ffbca7bef1de351882b2320"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C48-S06-C363370E",
-       "hash": "sha256:c363370e4a200bf2e6a53a0ad8975edb938d0b7079bcd80273f3e29469af8731"
+       "content_id": "KDJ-AI-2026E2-P06-C48-S06-10EE2C7E",
+       "hash": "sha256:10ee2c7ee6825bdb72f8f66554bbbcbfb328c25228369545865b0d96ae86791b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C48-S07-0EEAC22D",
-       "hash": "sha256:0eeac22d0e0b9bb52477b0616152d88ff217c553c609af4ff7d1e7271a83f9e9"
+       "content_id": "KDJ-AI-2026E2-P06-C48-S07-72451C14",
+       "hash": "sha256:72451c14f1b8d3c067da78c2c8c6a7978d94e7a6f105d6584326e8fdfe8d6f0c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C48-S08-D612405A",
-       "hash": "sha256:d612405ae717db26eefa609345c88e0d21ac9a31e7ed3015ab437bcaba951599"
+       "content_id": "KDJ-AI-2026E2-P06-C48-S08-14B3D73E",
+       "hash": "sha256:14b3d73e4192c536b3278f0d176d785bbe65010f6d5366c6efdfe31cc92510bc"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P06-C48-S09-DC4DE95E",
-       "hash": "sha256:dc4de95e453e894b4ce56c9fab37468757d5bae42984ecd7800b6ff358da2311"
+       "content_id": "KDJ-AI-2026E2-P06-C48-S09-1F597365",
+       "hash": "sha256:1f59736555697cba16db1cb3366a017a85157a23364e93d226ed6eb0f0006c9e"
       }
      ]
     }
    ],
-   "part_hash": "a84844d4333f96b93808042e79dee6506bfbb84d74dc19a18b6e088a39692d2a"
+   "part_hash": "44b9ba6b75e4429899c776984044ac46b232ce26bf820e17df7825ce470c2e8b"
   },
   {
    "part_id": "P07",
    "chapters": [
     {
      "chapter_id": "C49",
-     "chapter_hash": "ae78c4c096606f4d017f4e2b3b32008775758e08d25c6c1db2b939826bef3700",
+     "chapter_hash": "678e12dc828849d303a683aa2c9f45fe9e7c815490053f82bf850e56978d6d77",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P07-C49-S01-1BF58DCC",
-       "hash": "sha256:1bf58dcc5826edc75287d0f35471d05574bd0ac8b5140fe66e6c7791fa2dbb17"
+       "content_id": "KDJ-AI-2026E2-P07-C49-S01-B7935658",
+       "hash": "sha256:b7935658fca9e8e70aed805ec8850253bf3cebe6e1b291d16f3e93f68bebf01c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C49-S02-315A4718",
-       "hash": "sha256:315a4718f7ce54f0d8704427cda886a35a37c803c341efd9e8b2d520fec76efd"
+       "content_id": "KDJ-AI-2026E2-P07-C49-S02-A6EF2EB9",
+       "hash": "sha256:a6ef2eb99184436c01b22b698071bc5f3153f83e12de0df55a694f19dfa7876e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C49-S03-2C7EB94D",
-       "hash": "sha256:2c7eb94d7465b6f9ef3476a00e39a2c3adc88a56289cae65ba2f1eda67d9a16c"
+       "content_id": "KDJ-AI-2026E2-P07-C49-S03-1377FB6C",
+       "hash": "sha256:1377fb6c393c1d17d01490ae1835a3cc770e15f921afd41d1efb8a558caf32d2"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C49-S04-C22A476C",
+       "hash": "sha256:c22a476c1740187c121681c63dd7f44cbc23c8517031a30b315741e4380dccf2"
       }
      ]
     },
     {
      "chapter_id": "C50",
-     "chapter_hash": "8fb433e627f5ab2ee53df79b4ba8ca191646c8d14e0a9a5c7b6630de7f2a7142",
+     "chapter_hash": "d956a85f2bddb6a5a8f2ce5cc948a4d4c8b501ca4b3237e2d7f26171cfee1298",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S01-3D90DFF8",
-       "hash": "sha256:3d90dff8f27c70a08ea2b89aacbc1f94c6a043e1838fe8362000f3621404979f"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S01-E88290A6",
+       "hash": "sha256:e88290a6cdc1af318b79777e9d6ee07c797357d055e777895fa589b0ca5d60c3"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S02-F3E203E4",
-       "hash": "sha256:f3e203e4368250b639a62b29b46258b2b710e6ad40a18d65f3e4b0591a44a77b"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S02-AC43B666",
+       "hash": "sha256:ac43b6664dcfee88c6887c175db2a69fbde25e2a3149fbd0aadb98f3d3f8d88e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S03-7DC814CD",
-       "hash": "sha256:7dc814cdddbe4ec425cac1791a0cef5c17abf2191a76ff80e502462a355d35e2"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S03-9F5D9F6F",
+       "hash": "sha256:9f5d9f6fd0fff50c4e738306959784adcfa53f61c246de4879f0eb13959a8818"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S04-DDB548CE",
-       "hash": "sha256:ddb548ced1458df606a9bd7e6166c67c220f1e70b334b5f7a80fbf7ed5d3f03e"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S04-363D4A5A",
+       "hash": "sha256:363d4a5a18f7525f2a03f50385d79bd9759b856281de1b4b635ef89a98a2ce5c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S05-3E8F1B3B",
-       "hash": "sha256:3e8f1b3b9cb6123b42f735c2c714d9663e17bfed3556a2502fa084d5c74f0a6a"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S05-A42B974F",
+       "hash": "sha256:a42b974f4894e567d5e7ccc32ea59b641b7c3dfc808f76427401af17f8c65343"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S06-7924877E",
-       "hash": "sha256:7924877e06f40e0126a173bff07e24545d9b55a5d26794ca319c1804c9f73980"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S06-8992B488",
+       "hash": "sha256:8992b488834912c762ceda3b63aafa3ce9eb8661f66b56469bf7a4983e8f4a1e"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S07-9898F56F",
-       "hash": "sha256:9898f56fe1ca796d58fede63da422e1edaa07c5769094503c50f8706492b4e6c"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S07-71D2D271",
+       "hash": "sha256:71d2d271be59fc4fa1f0323da3f0337c0fbdee9e3b403c71ba2ccd76938f801b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S08-81E4523B",
-       "hash": "sha256:81e4523b477e32fb70490bae73a9604cb54e38edc456d8f1a90aa51b3935c9df"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S08-DFE744CD",
+       "hash": "sha256:dfe744cd0556477849dc35b85c79635de1f482ec04a01b807a4e6ef7ff42a242"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S09-4DF0EBF8",
-       "hash": "sha256:4df0ebf887e0d58285127ef590fe74374d4ce165bb48b058509609394e31e020"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S09-7A7329DC",
+       "hash": "sha256:7a7329dc4e33fce15421aea18e580122192881ccb38698101dbeb4ce3b23d5f9"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S10-BB374D7E",
-       "hash": "sha256:bb374d7e905e740bfee27b9b0993bad3599af109803c27a8deda50e2d23d77b1"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S10-9BF8862E",
+       "hash": "sha256:9bf8862e3ce9c2cc41244dd2eb077fe3599ff4fadf99e2da0a4400a4e3087e2b"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S11-9E231012",
-       "hash": "sha256:9e231012700c41c862a95a3b8a98d3f60a47e07bcace4133ea88b9dc09b43af1"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S11-FCAE4450",
+       "hash": "sha256:fcae445042cd77393e41881fe463c43857deb16d33e65f33e22440249f8e4c53"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S12-5136B957",
-       "hash": "sha256:5136b95749e9837a68813a32d5ed99ae8f1c31792becae802071f28278574482"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S12-B6280B00",
+       "hash": "sha256:b6280b000c28d869e85aa1cc6e5f3fd3263102576bc77363b306bf768720d1d9"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S13-BF8E8B66",
-       "hash": "sha256:bf8e8b66c53cb0d95484e587efaf08485d897e0ea54e6d63d0d5603412e8aa53"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S13-5199CE81",
+       "hash": "sha256:5199ce81797415fa0449d16be21e942fceab301c4824b4b9393ab1d44495d294"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C50-S14-89644B20",
-       "hash": "sha256:89644b2046cc1a1b56ff5dc74e668b794548e87a3fc3598901cbad92aa00b2da"
+       "content_id": "KDJ-AI-2026E2-P07-C50-S14-B60F254C",
+       "hash": "sha256:b60f254c6b0b71325475a9a09cf3448bd6977371e2d81c2eed2b64054b1751f7"
+      }
+     ]
+    },
+    {
+     "chapter_id": "C64",
+     "chapter_hash": "e8a31873291ea9a624a24152fa505fc8c329aa4bea952e520784448d63968407",
+     "sections": [
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C64-S01-A91994C6",
+       "hash": "sha256:a91994c603fcc3ea7a9d0df5612d78b8af5face2eb203d36db1aec4b76d60441"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C64-S02-6FC2F955",
+       "hash": "sha256:6fc2f9558d326891b639e28bad23eb8c9b4036a6906d40f55ca5ed3a776408a7"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C64-S03-4D83D698",
+       "hash": "sha256:4d83d69840e84a837e27c40131460cceaf6f2624cdc2b4f4ed8b43f33ae4e84e"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C64-S04-6E48036F",
+       "hash": "sha256:6e48036f4f519d75079ea6330ad9f9c903dec8f9801c3c774663e2b91ab41241"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C64-S05-39DF04F7",
+       "hash": "sha256:39df04f7f5f766df72601eaaaa4bdd7937e4d994ff6642f19360ba24402d7c37"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C64-S06-3B851A4D",
+       "hash": "sha256:3b851a4d45e741b0d5e8d443ae574a166c154cfabfd343451ddb16e2d95b8f9c"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C64-S07-45A0F63D",
+       "hash": "sha256:45a0f63d8d02d9c8823d8c6f26c6ec3ef0ddac674af11cb187808620bcddbb21"
+      }
+     ]
+    },
+    {
+     "chapter_id": "C65",
+     "chapter_hash": "bd4be7dae0e47830c539b09622b850c9f71e29bd1c0700c508d65a8e8575f1cd",
+     "sections": [
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C65-S01-2C719100",
+       "hash": "sha256:2c7191005452fbb6de00ebcfc796810380cb00811882268314b97dd0858f455a"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C65-S02-B75175B9",
+       "hash": "sha256:b75175b9604a8d6f306f9f59fdb2a4673114d36bc1589fa36a9e175399592cc5"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C65-S03-A93F9BCB",
+       "hash": "sha256:a93f9bcb257d9e6500b11bbcaa19d1ae578d0f2ab0b224e373985b020b9e7213"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C65-S04-0DA79683",
+       "hash": "sha256:0da79683e29b7dc0118f6be6a4f44f156f40848931a6a826da7639bea01d9a57"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C65-S05-B16FA986",
+       "hash": "sha256:b16fa986082bd6383ce2754fa80d5f66c948e24dd31382846cb505582625d3f4"
+      },
+      {
+       "content_id": "KDJ-AI-2026E2-P07-C65-S06-7560BCE6",
+       "hash": "sha256:7560bce678cd0da0606a210f7f9fc2662371ff734dc7d7829c5e3cbbf5865643"
       }
      ]
     },
     {
      "chapter_id": "C51",
-     "chapter_hash": "bf1bb4e3c5a4abb33d30e72d64bb53a32054224eafbad8b2c4f095ac9238885d",
+     "chapter_hash": "f68773c7e6e0c840c99918ee7aeeb1da9a85e41abe870c2596caa7e6c848ae5c",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P07-C51-S01-05DE9635",
-       "hash": "sha256:05de96356240b4fcf4970d66fe533b8d5d35fb5bc9e858d3a9d375f2ae9102a8"
+       "content_id": "KDJ-AI-2026E2-P07-C51-S01-340BFA29",
+       "hash": "sha256:340bfa29e7a2cd711bf2f0ea9452053bd9a5cd12f89615a46d0260e1a65971e8"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C51-S02-E21F01AC",
-       "hash": "sha256:e21f01ac19848cf025bc9c82e9810de1e316e718d55d80c3cdc4288060c7bc65"
+       "content_id": "KDJ-AI-2026E2-P07-C51-S02-131B2C3F",
+       "hash": "sha256:131b2c3f849bc8506e8df67b4b433046952a84918fd8c4e6677b24430c0de2db"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C51-S03-90CE05BF",
-       "hash": "sha256:90ce05bfaf1ab5795b93e698daf00f46eb5304ff41862c7cd4377ffeef830fca"
+       "content_id": "KDJ-AI-2026E2-P07-C51-S03-91E007E6",
+       "hash": "sha256:91e007e65d0487f9a9da22b261e00389768b5ffe4e4fb6f95d9a722305cc88ef"
       }
      ]
     },
     {
      "chapter_id": "C52",
-     "chapter_hash": "9dea12d5b3ff0f75fc686cf97ea58bf00fe6fa0caead813a2323e5a187f27622",
+     "chapter_hash": "269d63e6c74aed4526ef133b972be2401648b1c745fdd4a98b57d525a94daf09",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P07-C52-S01-57C5C6DD",
-       "hash": "sha256:57c5c6ddf60106563895efa16b8e6ccc6108b9c8e69bfbe6d47fd9854d52a0fa"
+       "content_id": "KDJ-AI-2026E2-P07-C52-S01-84A01CF0",
+       "hash": "sha256:84a01cf00406596321d1cbb2ee4a22b956ed8e942fa7307b3dc4ce19d8bf2d2a"
       }
      ]
     },
     {
      "chapter_id": "C53",
-     "chapter_hash": "d4e8d1c6c280e55d4d9fe483783fd121aabbfa4e9cff33c19a674a27223a7077",
+     "chapter_hash": "167b1f1f46536d1631bbaaf40e4552ef01fd2eb9a2808a99f54579efe6223be6",
      "sections": [
       {
-       "content_id": "KDJ-AI-2026E1-P07-C53-S01-A58BCA57",
-       "hash": "sha256:a58bca5726a3945a52dd5b0513aa4dea43bcb55b2b33b5e2f2627c8d4712530c"
+       "content_id": "KDJ-AI-2026E2-P07-C53-S01-C31BA914",
+       "hash": "sha256:c31ba914bb9a13757bb7436df4d16c5a9e103a520541dd6a3035d1aeb5858b3c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C53-S02-20C2433C",
-       "hash": "sha256:20c2433c877037504dea45a771f005c9370b1d0b5e0851937dba635aa8e2ea91"
+       "content_id": "KDJ-AI-2026E2-P07-C53-S02-DFB9E572",
+       "hash": "sha256:dfb9e572d24ad495e3f6b51f80c1141f1dee5c718f814b72d10626f16258b30c"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C53-S03-9F292F77",
-       "hash": "sha256:9f292f779cff8130465e8bf772de209a9f11852ada44ca34493ba0b87e0217f5"
+       "content_id": "KDJ-AI-2026E2-P07-C53-S03-311D67C6",
+       "hash": "sha256:311d67c6190802b72c66ab826391f6741a06a3d179884630fb382df1efaa2887"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C53-S04-E8C1A95C",
-       "hash": "sha256:e8c1a95c463e8fd613a22a8785fced217617ab5594e07342fc238f2a2e15150d"
+       "content_id": "KDJ-AI-2026E2-P07-C53-S04-9A587175",
+       "hash": "sha256:9a587175cbecdc21b74de2496a27805adcb9322c598645d8cee2c75a4d56dd11"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C53-S05-DDCBE626",
-       "hash": "sha256:ddcbe6267854c677e8462b097b946534afc9e5f834296047958ea2060acbd564"
+       "content_id": "KDJ-AI-2026E2-P07-C53-S05-73BB9317",
+       "hash": "sha256:73bb93176d24566eba372f2319ace7728bd142a716ba8915d014d4cd2851d195"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C53-S06-396DC010",
-       "hash": "sha256:396dc01012e7d43d9d684dc380c121c90cdb3e0ed5d27eecc1b72a045d824678"
+       "content_id": "KDJ-AI-2026E2-P07-C53-S06-DAC238DC",
+       "hash": "sha256:dac238dc7497ce5c94116dbfcba64f8312f0f85aff28c43b9e07be3943be0d29"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C53-S07-1F16CDE1",
-       "hash": "sha256:1f16cde1283a719d5098b438d4820f60a41379392af579275f2023a8b9dadd4c"
+       "content_id": "KDJ-AI-2026E2-P07-C53-S07-2C1E9160",
+       "hash": "sha256:2c1e91604b91bed76456b25114e574f563a736286273c9c817a12a95c08cb8d3"
       },
       {
-       "content_id": "KDJ-AI-2026E1-P07-C53-S08-54006082",
-       "hash": "sha256:54006082b5bb121018e6657c8821cd42b4430351edc5ad0494908c78a4212bb2"
+       "content_id": "KDJ-AI-2026E2-P07-C53-S08-FF08D770",
+       "hash": "sha256:ff08d770189ca5fe37d8ec3db933bb46c2f5d6960ff9c72f79eb764fd788264c"
       }
      ]
     }
    ],
-   "part_hash": "9950b6e2c57dbe8ba3c130eec6cb5f943f8efdd1599e9ed32ad8299a0956ffa6"
+   "part_hash": "6cd44f11133838aef23aa3f9d31c511139adfe907120ef874dd6900dcf9a3070"
   }
  ],
- "merkle_root": "72b9c984707b0d29adf99a1da7d2851bea2faf62afd95a253f95a309be09393b",
+ "merkle_root": "b7c58fe736dd0ca70e5a872c330a436dc06e20babc5e2ae49c5dc2c65f4ecefe",
  "leaf_rule": "sha256(0x00 || content_hash_bytes)",
  "node_rule": "sha256(0x01 || left || right)"
 }

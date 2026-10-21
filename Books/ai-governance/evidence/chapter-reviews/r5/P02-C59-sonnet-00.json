@@ -1,0 +1,37 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  0,
+  2
+ ],
+ "section_shas": {
+  "0": "b7f593c5e983b2f8d2752a4b6df679798d84440cd425f9fadefdbfa638d16bb6",
+  "2": "3076e2202e1fbcf28bf4f00c760911085e6a8f492c5ece58f7ad8758c826a64e"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 340.8502218723297,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "الزام‌های بندهای ۴ تا ۱۰ و ردیف‌های جدول الف-۱ با «باید» نوشته شده‌اند",
+      "explanation": "The supplied evidence confirms that clauses 4–10 carry shall-level requirements (multiple [shall]-labelled items), and that Annex A is normative (O42001-055: «الزامی»). However, no evidence item directly states that the individual rows of Table A-1 are grammatically written with «باید». More importantly, S42001-105 explicitly states «استفاده از همهٔ اهداف واپایشی و واپایش‌های جدول الف-۱ «الزامی نیست»» — meaning not all rows need to be applied. Grouping the table rows with clauses 4–10 as an undifferentiated block of «باید» requirements contradicts this qualifier and overstates their mandatory force.",
+      "suggested_fix": "Separate the two normative tiers: «الزام‌های بندهای ۴ تا ۱۰ با «باید» نوشته شده‌اند. پیوست الف نیز الزامی است، اما بر اساس بند الف-۱ (ص ۲۲)، استفاده از همهٔ اهداف واپایشی و واپایش‌های جدول الف-۱ «الزامی نیست» و سازمان می‌تواند واپایش‌های متناسب خود را طراحی و اجرا کند (ارجاع به ۶-۱-۳).»"
+     }
+    ]
+   },
+   {
+    "index": 2,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:55:54-0400"
+}

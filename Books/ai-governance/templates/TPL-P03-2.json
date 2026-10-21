@@ -2,11 +2,11 @@
  "template_id": "TPL-P03-2",
  "title_fa": "چک‌لیست امنیت RAG و دستیارهای مولد — نمونهٔ پیشنهادی تدوینگر",
  "derived_from": [
-  "KDJ-AI-2026E1-P03-C21-S06",
-  "KDJ-AI-2026E1-P03-C21-S08",
-  "KDJ-AI-2026E1-P03-C21-S09",
-  "KDJ-AI-2026E1-P03-C21-S10",
-  "KDJ-AI-2026E1-P03-C20-S23"
+  "KDJ-AI-2026E2-P03-C21-S06",
+  "KDJ-AI-2026E2-P03-C21-S08",
+  "KDJ-AI-2026E2-P03-C21-S09",
+  "KDJ-AI-2026E2-P03-C21-S10",
+  "KDJ-AI-2026E2-P03-C20-S23"
  ],
  "fields": [
   {

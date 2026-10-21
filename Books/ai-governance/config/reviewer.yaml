@@ -5,7 +5,7 @@ prompt_version: "review-v1"
 #   anthropic_api : needs ANTHROPIC_API_KEY (env) or state/anthropic.key (gitignored) — fastest, pay-per-token, thinking enabled
 #   antigravity   : `agy` CLI (subscription quota; observed ≈200 review-size calls/day)
 #   claude_cli    : `claude -p` (needs `claude login`; consumes the Claude Code subscription)
-claude_routes: [anthropic_api, antigravity, claude_cli]
+claude_routes: [claude_cli]   # E2 staging: Antigravity rejects model "claude-sonnet-4-6" (probe 2026-10-17) and no Anthropic API key is configured; claude_cli runs claude-sonnet-4-6 / claude-opus-4-6 (verified via modelUsage)
 api_model_ids: {claude-sonnet-4-6: "claude-sonnet-4-6", claude-opus-4-6-thinking: "claude-opus-4-6"}
 api_thinking_budget: {claude-sonnet-4-6: 6000, claude-opus-4-6-thinking: 12000}
 

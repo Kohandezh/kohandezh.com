@@ -1,0 +1,73 @@
+{
+ "keys": [
+  "audit",
+  "accountability",
+  "receiver operating characteristic",
+  "false negative rate",
+  "area under the curve",
+  "artificial intelligence management system"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 89.43153309822083,
+ "result": {
+  "verdicts": [
+   {
+    "key": "audit",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "accountability",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "alias_conflates_concepts",
+      "explanation": "«مسئولیت‌پذیری» listed as an alternative for «accountability» (پاسخگویی) conflates it with «responsibility» (مسئولیت / مسئولیت‌پذیری). In IEEE/ISO governance vocabulary these are distinct concepts: accountability = انتساب مسئولیت به هستار؛ responsibility = تعهد یا وظیفهٔ یک هستار. Listing «مسئولیت‌پذیری» as an alias for accountability violates Rule 1.",
+      "suggested_fix": "Remove «مسئولیت‌پذیری» from alternatives_fa. Retain only the orthographic variant «پاسخ‌گویی» (ZWNJ form) as an alias."
+     }
+    ],
+    "confidence": 0.92
+   },
+   {
+    "key": "receiver operating characteristic",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "wrong_term",
+      "explanation": "The only supplied printed evidence (INSO 23681, clause 4, abbreviations table) prints «مشخصه‌های عملیاتی گیرنده» as the Persian expansion of ROC. The proposed preferred_fa «منحنی مشخصه عملکرد گیرنده» differs in three ways: adds «منحنی»، substitutes «عملکرد» for «عملیاتی»، and drops the plural «ها». Under Rule 1 the preferred term must equal the printed term at the cited clause; instead the printed term has been demoted to alternatives_fa. The body-text form from clause 6.5.5.5 is asserted in the editor note but no printed evidence record for that clause is provided, so it cannot currently justify a different preferred.",
+      "suggested_fix": "Either (a) set preferred_fa to «مشخصه‌های عملیاتی گیرنده» (matching the only supplied printed evidence) and retain «منحنی مشخصه عملکرد گیرنده» as an alias with an explanation referencing clause 6.5.5.5, or (b) add a printed_evidence record for clause 6.5.5.5 that actually prints «مشخصه عملکرد گیرنده» / «منحنی …» before using it as the preferred form."
+     }
+    ],
+    "confidence": 0.93
+   },
+   {
+    "key": "false negative rate",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "area under the curve",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "artificial intelligence management system",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "attribution",
+      "explanation": "The printed evidence at INSO 42001 clause 3.4 defines the generic term «نظام مدیریت» (management system), not «نظام مدیریت هوش مصنوعی». The definition_fa header states «تعریف در استاندارد ملی (INSO 42001، بند 3.4)» but the term at that clause is «نظام مدیریت»، not the compound. A reader will infer that clause 3.4 explicitly defines «نظام مدیریت هوش مصنوعی» as a standalone term, which it does not. The editor note itself acknowledges «ترکیب «نظام مدیریت هوش مصنوعی» از عنوان و متن سند می‌آید و تعریف مستقلی ندارد»، but this disclaimer appears only in the hidden editorial note, not in the published definition block.",
+      "suggested_fix": "Rewrite definition_fa to make the source term explicit: «تعریف پایه در INSO 42001 بند ۳.۴ برای «نظام مدیریت»: مجموعه‌ای از …». Then add a clarifying sentence: «ترکیب «نظام مدیریت هوش مصنوعی» تعریف مستقلی در بند ۳.۴ ندارد و از عنوان و قلمرو همین سند اخذ شده است.» This keeps attribution accurate and prevents Rule 3 violations."
+     }
+    ],
+    "confidence": 0.91
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-17T23:42:46-0400"
+}

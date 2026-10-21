@@ -1,0 +1,43 @@
+{
+ "chapter": "P01/C54",
+ "sections": [
+  1,
+  2
+ ],
+ "section_shas": {
+  "1": "fd51199a3c84dba37d21e5fb4987b78def96251131608d94d476f5a447882ca7",
+  "2": "875877364758f6caf923f04261681400fbd665df8b85921422f261d1b2f05a38"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 310.5683488845825,
+ "result": {
+  "sections": [
+   {
+    "index": 1,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "فقط عبارت «سطح رواداری مخاطره» در متن INSO 23728 (بندهای ۷.۳.۲ و ۸.۱) بدون تعریف چاپ شده است",
+      "explanation": "The section claims the exact phrase «سطح رواداری مخاطره» appears in both §7.3.2 and §8.1 of INSO 23728. Evidence S23728-095 (§7.3.2) prints «رواداری مخاطره» (without «سطح»); only evidence S23728-115 (§8.1) prints «سطح رواداری مخاطره». Attributing the full phrase to §7.3.2 is not supported by the cited evidence.",
+      "suggested_fix": "Replace «سطح رواداری مخاطره» with «(سطح) رواداری مخاطره» and note that §7.3.2 uses the shorter form «رواداری مخاطره» while §8.1 uses the full «سطح رواداری مخاطره»: «فقط عبارت «(سطح) رواداری مخاطره» در متن INSO 23728 (بند ۷.۳.۲ بدون «سطح»؛ بند ۸.۱ با «سطح») بدون تعریف چاپ شده است.»"
+     },
+     {
+      "type": "terminology",
+      "quote": "تبیین‌پذیری / تفسیرپذیری",
+      "explanation": "The terminology rules specify the E1/common alias for the explainability/interpretability pair as «تبیین‌پذیری (E1 preferred) / توضیح‌پذیری». The section replaces «توضیح‌پذیری» with «تفسیرپذیری», which is not the established E1 alias and therefore violates the binding terminology table.",
+      "suggested_fix": "Change «تبیین‌پذیری / تفسیرپذیری» to «تبیین‌پذیری / توضیح‌پذیری» to match the E1 alias column in the project terminology rules."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T03:10:53-0400"
+}

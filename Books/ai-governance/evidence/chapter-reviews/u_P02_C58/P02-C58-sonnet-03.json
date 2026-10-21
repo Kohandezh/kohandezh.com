@@ -1,0 +1,45 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  3,
+  5
+ ],
+ "section_shas": {
+  "3": "2b6358ff7d6a643f9e65e2bbfcefebd9e0749e79f357cb9404a07d4f8a7ecfb3",
+  "5": "1e9944d7de0007e70604d22248a41dd37597b0c3866dd40b606bfe826c6120b7"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 952.9628570079803,
+ "result": {
+  "sections": [
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "summary": "«ابزارهای آماده» — qualifier not in evidence; «و کتابخانه‌ها» silently dropped",
+      "quote": "با ابزارهای آماده توسعه را بدون درک کامل محدودیت‌ها ممکن کند",
+      "explanation": "Evidence S23733-052 says «دسترس‌پذیری ابزارها و کتابخانه‌ها». The section adds the word «آماده» (off-the-shelf/ready-made) which does not appear in the evidence, and silently omits «و کتابخانه‌ها» (and libraries). Both changes are unsupported.",
+      "suggested_fix": "Replace with: «با ابزارها و کتابخانه‌های دردسترس، توسعه را بدون درک کامل محدودیت‌ها ممکن کند»"
+     },
+     {
+      "type": "unsupported_claim",
+      "summary": "«مزایا» strips the qualifier «مخاطره» from «مزایای مخاطره» (risk benefits)",
+      "quote": "مقایسهٔ مزایا و توزیع مخاطره با سامانهٔ پیشین",
+      "explanation": "Evidence S23733-047 reads «مزایای مخاطره و توزیع مخاطرهٔ سامانهٔ هوش مصنوعی در مقایسه با سامانهٔ قبلی سنجیده شود». The qualifier «مخاطره» in «مزایای مخاطره» is technically significant (risk benefits, not generic benefits) and is not preserved in the section's paraphrase.",
+      "suggested_fix": "Replace «مزایا» with «مزایای مخاطره» to match the evidence: «مقایسهٔ مزایای مخاطره و توزیع مخاطره با سامانهٔ پیشین»"
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T09:26:55-0400"
+}

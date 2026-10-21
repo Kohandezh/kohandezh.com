@@ -1,0 +1,50 @@
+{
+ "chapter": "P01/C55",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "d6889c473af07593985968d0ba449d0a76e394c3e31b985d50fc2fd79e19320d",
+  "3": "68f7a98efe3e82e60cae5ab68e000dcc03844411ec13913d19b6d36e8fc7ea32"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 477.8093078136444,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "other",
+      "quote": "در پیکربندی آرمانی توزیع آماری یکسان دارند",
+      "explanation": "Evidence S23681-034 prints «توزیع تفاضلی یکسان دارند». The section silently replaces the printed term «تفاضلی» with «آماری». The printed term must be preserved verbatim in a paraphrase of clause text; «آماری» is not equivalent to «تفاضلی» and no parenthetical signals the substitution.",
+      "suggested_fix": "Change to «در پیکربندی آرمانی توزیع تفاضلی یکسان دارند» exactly as printed in S23681-034."
+     },
+     {
+      "type": "other",
+      "quote": "عدم توازن طبقه‌ها بسیاری از سنجه‌ها را تحریف می‌کند",
+      "explanation": "Evidence S23681-068 prints «عدم تعادل طبقه‌ها در دادهٔ آموزشی بسیاری از سنجه‌ها را تحریف می‌کند». The section substitutes the printed noun «تعادل» with «توازن» and drops the qualifier «در دادهٔ آموزشی», which narrows the scope of the standard's statement.",
+      "suggested_fix": "Change to «عدم تعادل طبقه‌ها در دادهٔ آموزشی بسیاری از سنجه‌ها را تحریف می‌کند» per S23681-068."
+     }
+    ]
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "واژهٔ «ذی‌نفعان» فقط در بندهای ۸.۳ و ۸.۵ آمده است",
+      "explanation": "The term «ذی‌نفعان» in §8.5 is confirmed by S23681-123. However, none of the five evidence items for §8.3 (S23681-102, S23681-103, S23681-108, S23681-109, S23681-111) contain «ذی‌نفعان». The positive claim that the term appears in §8.3 has no evidentiary basis and cannot be inferred from the supplied items.",
+      "suggested_fix": "Remove §8.3 from the claim. Safe wording: «واژهٔ «ذی‌نفعان» حداقل در بند ۸.۵ آمده است (بند ۸.۵، S23681-123)»; only re-add §8.3 if a supporting evidence item from that section is located."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:53:51-0400"
+}

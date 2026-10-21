@@ -1,0 +1,91 @@
+{
+ "keys": [
+  "system of interest",
+  "systems development life cycle",
+  "training",
+  "interested party",
+  "top management",
+  "objective",
+  "process",
+  "competence",
+  "documented information",
+  "performance",
+  "continual improvement",
+  "effectiveness"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 63.30315613746643,
+ "result": {
+  "verdicts": [
+   {
+    "key": "system of interest",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "systems development life cycle",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "training",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "scope",
+      "explanation": "در کتاب راهنمای حاکمیت هوش مصنوعی، «آموزش» دو معنای کاملاً متمایز دارد: (۱) معنای این بند (INSO 23728 / IEEE 7002 بند 3.1.45): فراهم‌سازی فعالیت‌های یادگیری رسمی و غیررسمی برای انسان‌ها؛ (۲) آموزش مدل یادگیری ماشین (ML training). بدون یادداشت رفع ابهام، خواننده‌ای که با ادبیات هوش مصنوعی آشناست به معنای دوم رجوع می‌دهد، که مفهوماً متفاوت است. هیچ‌کدام از بخش‌های موجود entry (definition_fa، editor_note_fa، alternatives_fa) این تمایز را برجسته نمی‌کنند.",
+      "suggested_fix": "به editor_note_fa اضافه شود: «توجه: «آموزش» در این بند صرفاً به معنای فراهم‌سازی فعالیت‌های یادگیری رسمی/غیررسمی برای کارکنان است (مطابق IEEE Std 7002). مفهوم آموزش مدل یادگیری ماشین (ML model training) اصطلاح جداگانه‌ای است و با این بند اشتباه گرفته نشود.»"
+     }
+    ]
+   },
+   {
+    "key": "interested party",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "top management",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "objective",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "process",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "competence",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "documented information",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "performance",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "continual improvement",
+    "verdict": "AGREE",
+    "issues": []
+   },
+   {
+    "key": "effectiveness",
+    "verdict": "AGREE",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:09:44-0400"
+}

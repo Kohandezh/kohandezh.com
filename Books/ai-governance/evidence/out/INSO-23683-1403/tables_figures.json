@@ -1,0 +1,31 @@
+{
+ "source_id": "INSO-23683-1403",
+ "note": "The document contains no numbered tables and no figures (checked on all 30 page images). The only table-like element is the untitled three-row list of abbreviated terms in clause 3.2.",
+ "items": [
+  {
+   "kind": "table",
+   "id": null,
+   "title_fa": "اصطلاحات کوته‌نوشت (فهرست سه‌ستونه بدون شماره و عنوان جداگانه)",
+   "pdf_page": 20,
+   "printed_page": 11,
+   "summary_fa": "فهرست سه کوته‌نوشت با معادل فارسی و انگلیسی؛ بدون تعریف.",
+   "rows": [
+    {
+     "abbr": "JSON",
+     "fa": "نشانه‌گذاری شیء جاوا اسکریپت",
+     "en": "Javascript Object Notation"
+    },
+    {
+     "abbr": "PII",
+     "fa": "اطلاعات قابل‌شناسایی شخصی",
+     "en": "Personally Identifiable Information"
+    },
+    {
+     "abbr": "XML",
+     "fa": "زبان نشانه‌گذاری توسعه‌پذیر",
+     "en": "Extensible Markup Language"
+    }
+   ]
+  }
+ ]
+}

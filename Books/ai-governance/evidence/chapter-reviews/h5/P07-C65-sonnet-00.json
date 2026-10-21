@@ -1,0 +1,37 @@
+{
+ "chapter": "P07/C65",
+ "sections": [
+  0,
+  3
+ ],
+ "section_shas": {
+  "0": "d0373b1834565525a5a9b9e630164d655060f3b6ca3354d0fb2ceb9570e4eb09",
+  "3": "58a0177e97a271bb15f85701a2c7c9534bfa2807ef5dacbe395b6fa923635935"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 449.85515308380127,
+ "result": {
+  "sections": [
+   {
+    "index": 0,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "پنج سند از نُه سند (۴۲۰۰۱، ۲۳۶۸۲، ۲۳۷۳۳، ۲۳۶۸۴ و ۲۳۶۸۱) در مراجع الزامی خود به ۲۳۶۷۹ ارجاع می‌دهند.",
+      "explanation": "The phrasing «پنج سند از نُه سند» is an exact count that implicitly asserts the remaining four documents (INSO 23728, 23683, 15816-3, and 23685) do NOT have 23679 in their normative references. Section 3's cited evidence confirms this only for 23685 (I23685-nr1 and I23685-nr2 list only 23683 and 13245 as normative references). For 23728 and 23683 the confirmation exists in I23728-ment and I23683-note respectively, but neither item appears in section 3's evidence list. For 15816-3, the source index shows that section H 2 (مراجع الزامی) exists but no evidence item — in section 3 or in section 0 — records the content of that normative-references clause, so the implicit claim that 15816-3 does not reference 23679 is entirely unsupported.",
+      "suggested_fix": "Either (a) add I23728-ment and I23683-note to section 3's evidence list and add an analogous evidence item transcribed from INSO 15816-3 §2 confirming that 23679 is not listed there; or (b) qualify the count: «پنج سند از نُه سند — بر اساس مراجع الزامی مندرج در متن هر سند (INSO 23728 و INSO 23683 فاقد هرگونه مرجع الزامی هستند؛ مراجع الزامی INSO 15816-3 شامل 23679 نمی‌شود) —». Do not leave the bare count «پنج سند از نُه سند» unsupported for three of the four implied non-referencers."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T02:23:52-0400"
+}

@@ -1,0 +1,31 @@
+{
+ "chapter": "P02/C57",
+ "sections": [
+  8
+ ],
+ "section_shas": {
+  "8": "e5a97991d1bbc022b323c9329539b2c3f73269314d4ca905d59530d6da1fe3c2"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 273.95721411705017,
+ "result": {
+  "sections": [
+   {
+    "index": 8,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "S23682-136 (A.2) gives two conjunctive conditions for permitting one person to hold multiple roles: (1) نبود تضاد منافع AND (2) آگاهی فرد از مسئولیت مجزای هر نقش. The section cites only the first condition, so the permission appears less restrictive than the evidence supports. The phrase «دو نقش متمایز می‌مانند» is a descriptive result, not a substitution for the prescriptive awareness condition in the evidence.",
+      "quote": "متن استاندارد چنین ترکیبی را به شرط نبود تضاد منافع مجاز می‌داند (الف.۲).",
+      "suggested_fix": "State both conditions as in S23682-136: «متن استاندارد چنین ترکیبی را مشروط بر نبود تضاد منافع و آگاهی فرد از مسئولیت مجزای هر نقش مجاز می‌داند (الف.۲).»",
+      "failure_scenario": "A reader following this section could conclude that absence of conflict of interest alone suffices for dual-role occupancy, whereas S23682-136 requires the additional condition that the person be aware of the separate responsibility of each role."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:34:14-0400"
+}

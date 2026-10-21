@@ -1,0 +1,37 @@
+{
+ "chapter": "P07/C65",
+ "sections": [
+  2,
+  3
+ ],
+ "section_shas": {
+  "2": "e40c69f9c4ae19291ac72546bfede5585b557106f7a347e60ecf613b969fb56f",
+  "3": "d92c59865597d9263c114f1b8614322fbe6b60c2af79922460c6353c0b5e382a"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 255.38933992385864,
+ "result": {
+  "sections": [
+   {
+    "index": 2,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 3,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "عنوان هشت سند این فصل (۲۳۶۸۱، ۲۳۶۸۲، ۲۳۶۸۳، ۲۳۶۸۴، **۲۳۶۸۵**، ۲۳۷۲۸، ۲۳۷۳۳ و ۱۵۸۱۶-۳) در فهرست دیده شد",
+      "explanation": "The number ۲۳۶۸۵ appears as an identified chapter document whose title is claimed to match «big-data business security risk assessment» in evidence item X-REFINDEX. However, no evidence item in section 3's declared set provides INSO 23685's number, title, or identity. INSO 23685 is absent from the source index entirely and from all nine supplied INSO identity items. The mapping of the X-REFINDEX English title to the specific number 23685 is therefore an unsupported inference. (All other seven numbers in the list — 23681, 23682, 23683, 23684, 23728, 23733, 15816-3 — are confirmed by their respective identity evidence items or by I23682-rel8.)",
+      "suggested_fix": "Replace the bare number «۲۳۶۸۵» with an explicit caveat, for example: «و سند مرتبط با ارزیابی مخاطره امنیت اطلاعات کلان‌داده (که شماره آن از مدارک این ویرایش تأیید نشده است)». Alternatively, add a parenthetical inline note: «(۲۳۶۸۵؛ شماره از فایل تأیید نشده)» so the reader knows this number is inferred from the title match in X-REFINDEX and not verified against a supplied INSO identity document."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:46:19-0400"
+}

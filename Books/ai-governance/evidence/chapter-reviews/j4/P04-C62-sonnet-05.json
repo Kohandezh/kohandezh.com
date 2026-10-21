@@ -1,0 +1,30 @@
+{
+ "chapter": "P04/C62",
+ "sections": [
+  5
+ ],
+ "section_shas": {
+  "5": "2db31975b866145c17bfb32f3561c402226d514f5287f1c2957cea85b81ba008"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 310.5004200935364,
+ "result": {
+  "sections": [
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "زبان الزام فقط در بندهای ۲، ۵.۱، ۶.۱ و ۶.۲ است.",
+      "explanation": "The word «فقط» (only) turns this into an unqualified negative claim about every other clause in the standard — asserting that no shall-level language appears anywhere outside these four clauses. Per the review criteria, absence claims are supported only when explicitly limited to the clauses actually cited. The evidence confirms [shall] tags in clauses 2, 5.1, 6.1, and 6.2 (S23684-014, S23684-021, S23684-056, S23684-059), but the supplied evidence does not provide full normative coverage of the standard, so the absolute «فقط» overreaches what can be verified.",
+      "suggested_fix": "Replace «فقط در بندهای ۲، ۵.۱، ۶.۱ و ۶.۲ است» with «در بندهای بررسی‌شده (۲، ۵.۱، ۶.۱ و ۶.۲) مشاهده شد» or add a qualifier such as «بر اساس مستندات موجود»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T03:03:47-0400"
+}

@@ -1,0 +1,49 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "88a419ef9f79212a40654c3ce106e12207dfca71a66e626354f49754f2ca295a",
+  "5": "914185b82cc67fc029374c649c202c75ac8a6ffc14693b3b44f2df4fb598fcf5"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 684.2726821899414,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "راهنمایی نهاد حکمران؛ تعهد رسمی مدیریت",
+      "explanation": "The compiler's synthesis uses «نهاد حکمران» (as printed in INSO 23733) instead of the project-wide default «مرجع حکمران» (verified at 42001 §3.22). The term appears multiple times in the جدول پ‑۱ summary rows (سطح سازمانی, سرآغاز, طراحی و توسعه, استقرار, عملیات, ارزشیابی مجدد, از رده خارج کردن). Since this is new editorial text, the terminology table requires the default form with the printed variant noted on first use.",
+      "suggested_fix": "Replace all instances of «نهاد حکمران» with «مرجع حکمران» and add on first use: «مرجع حکمران (در متن ۲۳۷۳۳ به‌صورت «نهاد حکمران» چاپ شده است)»."
+     },
+     {
+      "type": "terminology",
+      "quote": "تعهد رسمی مدیریت",
+      "explanation": "Evidence S23733-151 prints «مدیریت ارشد رسماً متعهد می‌شود». The project terminology table sets top management = «مدیریت رده‌بالا» (42001 §3.3); the alias «مدیریت ارشد» is the E1/common form. The section drops the qualifier entirely, writing just «مدیریت», which is ambiguous (management in general vs. top management). In new editorial text the default term should be used.",
+      "suggested_fix": "Change «تعهد رسمی مدیریت» to «تعهد رسمی مدیریت رده‌بالا» (optionally noting that ۲۳۷۳۳ prints «مدیریت ارشد»)."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "یازده هدف در الف.۲ تا الف.۱۲ آمده است",
+      "explanation": "Evidence S23733-123 says «برخی در الف‑۲ تا الف‑۱۲ ذکر شده‌اند» — the qualifier «برخی» (some) signals the standard treats these as a non-exhaustive subset of possible AI-related objectives. The section drops this qualifier and presents the eleven items as the definitive list ('یازده هدف … آمده است'), which slightly overstates what the standard claims.",
+      "suggested_fix": "Reword to reflect the standard's qualifier, e.g.: «از جمله یازده هدف در الف.۲ تا الف.۱۲ آمده است» or «برخی اهداف — یازده مورد — در الف.۲ تا الف.۱۲ آمده‌اند»."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T06:54:56-0400"
+}

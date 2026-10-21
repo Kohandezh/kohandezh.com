@@ -1,0 +1,117 @@
+{
+ "keys": [
+  "regression model",
+  "cluster",
+  "use of ai",
+  "data processing",
+  "gather",
+  "risk treatment measure",
+  "entity",
+  "control",
+  "data flow",
+  "information security",
+  "organization",
+  "policy"
+ ],
+ "shas": {
+  "regression model": "27cfaeac37f9a12b3096fae2da5816dd15ed68fdcf779966a9122772fd3292c2",
+  "cluster": "313321800ae5c8bfd6e47c0501a1b301a51436ed7b4f85baf3b12fb7d33d1c9d",
+  "use of ai": "d986a8c50613b6b992ca7ac0e4f13807a53248a6215f48b6a03555eb92644c90",
+  "data processing": "960d1275b5a90385cebfe1781871c94d8e7b231bc8f83e980480d69c3844453d",
+  "gather": "40e9fddc6e374e5073fc171778374503a4ef3dd5a1afba581ee6488d0e99c5ef",
+  "risk treatment measure": "ed4e21a5dd9d3c6fd5edadb89e80a4eb9fb17c5a9838aa78cb54aae6aa58f6bc",
+  "entity": "7067cbc0d0edd2cdd2bc3fc8c13792c1d3d945086bbe401ba25787eec6325297",
+  "control": "7266149a815ad1101738f19f5a37213adb57465e6d34f3ac74478dea0fe2477e",
+  "data flow": "ed48b5c138250026991e2657a510a11e292c879854a70aff45daedf9f5763380",
+  "information security": "4b64e199d4a6b91a946b0aee501303b884b5db7aeac4ad7edc56a00aacc3280c",
+  "organization": "5cd45cf61500ef3dcaa3b1e732cbad0ada3e5e0643d821ce33bb9cf60b6e5b63",
+  "policy": "85fd9d518a0cd15920a7cf381f135b594883861c128b363c49efb82f70d5826e"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 78.67198324203491,
+ "result": {
+  "verdicts": [
+   {
+    "key": "regression model",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "cluster",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "use of ai",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "data processing",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "gather",
+    "verdict": "AGREE_WITH_EDIT",
+    "issues": [
+     {
+      "type": "orthography",
+      "explanation": "The printed form at INSO 23683 §3.1.22 is «گردآورد(جمع‌آوری)» — no space between the base term and the opening parenthesis. The proposed preferred_fa inserts a space: «گردآورد (جمع‌آوری)». Rule 4 requires official forms to be kept as printed even if unusual.",
+      "suggested_fix": "Change preferred_fa to «گردآورد(جمع‌آوری)» (no space before the parenthetical), matching the print exactly. The alias «گردآورد» (form without the parenthetical gloss, per the normalisation policy) stays as-is."
+     }
+    ],
+    "confidence": 0.95
+   },
+   {
+    "key": "risk treatment measure",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "entity",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "control",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "data flow",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "information security",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "organization",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   },
+   {
+    "key": "policy",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.99
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:15:28-0400"
+}

@@ -1,0 +1,39 @@
+{
+ "chapter": "P01/C54",
+ "sections": [
+  4,
+  5
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 153.42882704734802,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "explanation": "«تطابق» is not an approved term; the terminology rules mandate «انطباق» for both conformity and compliance. The phrase «سطح‌های تطابق» should read «سطح‌های انطباق».",
+      "quote": "سایر ادعاهای آن جدول‌ها (از جمله سطح‌های تطابق و ردیف‌های مربوط به ISO/IEC 27001، 27005 و 27701…)",
+      "suggested_fix": "Replace «سطح‌های تطابق» with «سطح‌های انطباق»; if the distinction between conformity and compliance is relevant here, append «(conformity)» or «(compliance)» as appropriate."
+     },
+     {
+      "type": "unsupported_claim",
+      "explanation": "The assertion that fairness appears in Annexes B/C «not as an Annex A control» is a factual negative claim about Annex A content. The cited evidence covers only Annexes B (S42001-130, S42001-155) and C (S42001-168); no Annex A item from 42001 is supplied to corroborate what Annex A does or does not list. The review rules require judgement against CITED EVIDENCE ONLY, and no item establishes the content of 42001 Annex A controls. (By contrast, the dark-patterns correction in the same bullet set correctly adds the qualifier «searched the verified evidence».)",
+      "quote": "the printed text lists fairness only as an example objective in Annexes B/C, not as an Annex A control.",
+      "suggested_fix": "Add the same qualification used for the dark-patterns correction: append «(searched the verified evidence)» directly after «not as an Annex A control», so the reader knows this is an absence attested by the compiler's search rather than a positively evidenced statement."
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:09:58-0400"
+}

@@ -1,0 +1,97 @@
+{
+ "keys": [
+  "de identification",
+  "environment",
+  "functional requirement",
+  "functionality",
+  "guideline",
+  "information security",
+  "iterative process",
+  "nonfunctional requirement",
+  "organization",
+  "organizational privacy requirement",
+  "organizational privacy framework",
+  "personal data"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 49.23887324333191,
+ "result": {
+  "verdicts": [
+   {
+    "key": "de identification",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "environment",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "functional requirement",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "functionality",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "guideline",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "information security",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.96
+   },
+   {
+    "key": "iterative process",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "nonfunctional requirement",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.97
+   },
+   {
+    "key": "organization",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.96
+   },
+   {
+    "key": "organizational privacy requirement",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "organizational privacy framework",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   },
+   {
+    "key": "personal data",
+    "verdict": "AGREE",
+    "issues": [],
+    "confidence": 0.98
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:05:52-0400"
+}

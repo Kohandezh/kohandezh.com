@@ -417,8 +417,11 @@ def check_book_structure(ctx: Ctx) -> Check:
             for field, types in CHAPTER_FIELDS.items():
                 if field not in chapter or not is_type(chapter[field], types):
                     c.fail('chapter %s.%s missing or not %s' % (cid, field, '/'.join(t.__name__ for t in types)))
-            if cid != 'C%02d' % chapter_no:
-                c.fail('chapter %r != C%02d (chapters are numbered book-wide)' % (cid, chapter_no))
+            # Chapter IDs are book-wide, unique and gapless (C01..Cnn). Reading order is the
+            # array order; a later edition may place a chapter it adds in its natural position
+            # under the next free number, because published IDs are citation keys.
+            if not isinstance(cid, str) or not re.match(r'^C\d{2,}$', cid):
+                c.fail('chapter %r is not C followed by at least two digits' % (cid,))
             if cid in seen_chapters:
                 c.fail('chapter_id %s repeats' % cid)
             seen_chapters.add(cid)
@@ -452,6 +455,9 @@ def check_book_structure(ctx: Ctx) -> Check:
             if len(ids) > 1:
                 c.warn('chapter slug %r is shared by %s in %s: their canonical_url path cannot be resolved'
                        % (cslug, ', '.join(ids), part.get('part_id')))
+    missing_ids = ['C%02d' % n for n in range(1, chapter_no + 1) if 'C%02d' % n not in seen_chapters]
+    if missing_ids:
+        c.fail('chapter IDs have gaps: %s' % ', '.join(missing_ids[:6]))
     if len(book['parts']) > 99 or chapter_no > 99:
         c.fail('%d parts / %d chapters exceed the two-digit limit (99)' % (len(book['parts']), chapter_no))
     if isinstance(book.get('units'), int) and book['units'] != len(ctx.sections):

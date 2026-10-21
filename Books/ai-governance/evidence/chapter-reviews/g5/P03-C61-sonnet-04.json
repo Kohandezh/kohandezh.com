@@ -1,0 +1,37 @@
+{
+ "chapter": "P03/C61",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "3a603f542f2c350c0cf9ca201922921f96b3a6b8c371bdfb71c6ff1919a4d5d5",
+  "5": "67d8d8d0b74f94e6bce87a9935c5bec10a5bec5a3381d1c18885d9f551b54b16"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 299.1874132156372,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "The sentence attributes 'داده‌های زیست‌شناختی رویداد' to تک‌چهرهٔ شخص حقیقی (clause 5-1-5), but evidence S23685-040 for that clause lists only شماره شناسایی، شماره گذرنامه، and شماره تأمین اجتماعی as its unique identifiers. Biometric event data (fingerprint, face identity, voice, device fingerprint) is documented under clause 5-2-3-1 (هویت‌یابی شخصی, evidence S23685-059), a separate module. The Persian sentence structure — 'تک‌چهرهٔ شخص حقیقی با … و داده‌های زیست‌شناختی رویداد حساس‌اند' — grammatically folds biometrics into the real-person profile, creating an unsupported factual claim about the content of clause 5-1-5.",
+      "quote": "تک‌چهرهٔ شخص حقیقی با شمارهٔ شناسایی، گذرنامه و تأمین اجتماعی و داده‌های زیست‌شناختی رویداد حساس‌اند",
+      "suggested_fix": "Separate the two evidential sources and cite both clauses: «تک‌چهرهٔ شخص حقیقی (بند ۵-۱-۵) با شمارهٔ شناسایی، گذرنامه و تأمین اجتماعی، و ماژول هویت‌یابی شخصی (بند ۵-۲-۳-۱) با داده‌های زیست‌شناختی (اثر انگشت، هویت چهره، صدا) رویداد حساس‌اند.»"
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:36:23-0400"
+}

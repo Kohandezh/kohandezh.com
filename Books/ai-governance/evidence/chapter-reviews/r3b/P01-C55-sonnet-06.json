@@ -1,0 +1,42 @@
+{
+ "chapter": "P01/C55",
+ "sections": [
+  6
+ ],
+ "section_shas": {
+  "6": "6a1b2f2ff8e38d35dc718755f5c003679e97b9d09ec75ad31dabd2e352016909"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 187.76580810546875,
+ "result": {
+  "sections": [
+   {
+    "index": 6,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "وظیفه بر پایهٔ بند ۶.۲ (وایازش، طبقه‌بندی، خوشه‌بندی، بازشناسی ناهنجاری، کاهش ابعاد یا وظیفهٔ دیگر)",
+      "explanation": "The model-card table cites clause 6.2 as the authority for the enumerated ML task types. No evidence item from clause 6.2 of INSO 23681 is provided in the cited evidence list. Under the review rules, a factual assertion about what a specific clause contains must be supported by a cited item; absence of clause-6.2 evidence makes this unsupported regardless of editorial labelling.",
+      "suggested_fix": "Either supply a clause-6.2 evidence item that confirms this enumeration, or replace the clause pointer with an unattributed description such as «(مثال: وایازش، طبقه‌بندی، خوشه‌بندی، بازشناسی ناهنجاری، کاهش ابعاد)» and add a note that the authoritative list is in the standard."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "رویکرد (بند ۷)، دستهٔ الگوریتم (بند ۶.۵.۳)",
+      "explanation": "The model-card table cites clause 7 and clause 6.5.3 as the sources for the learning-approach and algorithm-category fields respectively. Neither clause 7 nor clause 6.5.3 appears in the provided evidence items for this section, so the implied content of those clauses is unsupported by cited evidence.",
+      "suggested_fix": "Either add evidence items from clauses 6.5.3 and 7 that substantiate the citation, or rewrite the field description to drop specific clause references and label the guidance as compiler-proposed (e.g., «رویکرد یادگیری — نظارتی / بدون‌نظارت / تقویتی؛ دستهٔ الگوریتم — از تدوینگر»)."
+     },
+     {
+      "type": "terminology",
+      "quote": "دقت (precision)، بازیابی، AUC و ماتریس درهم‌ریختگی",
+      "explanation": "The terminology rules (sourced from INSO 23681 clause 4 abbreviation table) require AUC to be written as «مساحت زیر منحنی» with «AUC» as the alias in parentheses at first use in the chapter. The section uses only the abbreviation «AUC» without its official INSO Persian equivalent, violating the first-use rule.",
+      "suggested_fix": "Replace «AUC» with «مساحت زیر منحنی (AUC)» at this first use in the section/chapter."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:56:59-0400"
+}

@@ -1,0 +1,43 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  6,
+  7
+ ],
+ "section_shas": {
+  "6": "d5424e5fe2757f3fcb54cf9db870a1d9bfa6b64d1a0088739990dc73c2d8c01b",
+  "7": "c1562e9f2600da408d1809ae884ec3d0db345615a746225707dd6561ffe7c2be"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 369.901239156723,
+ "result": {
+  "sections": [
+   {
+    "index": 6,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "یکی «اثر عدم قطعیت» است و دیگری سنجه",
+      "explanation": "Evidence S23733-014 (clause 4, printed p.2) explicitly states that in INSO 13245:1398 «مخاطره هر انحراف منفی یا مثبت از اهداف است». No cited evidence item uses the formulation «اثر عدم قطعیت» for the risk definition operative in INSO 23733. «اثر عدم قطعیت» comes from ISO 31000 / INSO 42001 §3.7, a standard not cited in 23733's evidence set. The compiler has silently substituted the ISO 31000 phrasing for the 13245 phrasing that the evidence actually supports.",
+      "suggested_fix": "Replace with «یکی «انحراف مثبت یا منفی از اهداف» (تعریف ۱۳۲۴۵ به‌نقل از یادآوری بند ۴) است و دیگری سنجهٔ ترکیبی» so the INSO definition is sourced to the evidence."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "۲۳۷۳۳ آن را در دو سطح سازمان و فرایند و به الگوی ۱۳۲۴۵ می‌چیند",
+      "explanation": "Evidence S23733-040 (clause 5.4.1) mentions external-context factors; evidence S23733-075 (clause 6.3.2) mentions «سطوح مختلف سازمان» (different organizational levels) and AI-system purposes. Neither evidence item specifies exactly «دو سطح سازمان و فرایند» as a named two-level taxonomy. The precise characterisation «دو سطح» is an editorial addition with no cited basis.",
+      "suggested_fix": "Change to «۲۳۷۳۳ آن را با ملاحظهٔ سطوح مختلف سازمان و اهداف سامانه‌های هوش مصنوعی به الگوی ۱۳۲۴۵ می‌چیند» to stay within what S23733-075 actually states."
+     }
+    ]
+   },
+   {
+    "index": 7,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:41:29-0400"
+}

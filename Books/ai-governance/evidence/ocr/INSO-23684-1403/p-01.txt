@@ -1,0 +1,37 @@
+استاندارد ملی ایران
+۱۳۳,۸۴
+چاپ اول
+
+۱۴۳۰۲۳
+
+)) | (
+جمهوری اسلامی ایران
+
+Islamic Republic of Iran
+‏سازمان ملی استاندارد ایران‎
+
+Iran National Standards Organization
+
+مهندسی نرم‌افزار —
+الزامات و ارزشیابی کیفیت سامانه‌ها و
+نرم‌افزار ‎(SQuaRE)‏ —
+مدل کیفیت برای سامانه‌های هوش مصنوعی
+‎(AD)‏
+
+Software Engineering —
+Systems and Software Quality
+Requirements and Evaluation (SQuaRE) —
+Quality Model for AI Systems
+
+ICS: 35.080
+
+INSO
+23684
+1st Edition
+2024
+
+Identical with
+
+ISO/IEC 25059:
+
+2023

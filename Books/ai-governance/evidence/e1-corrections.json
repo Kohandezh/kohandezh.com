@@ -1,0 +1,73 @@
+{
+ "note": "Compiler-authored E1 editorial claims about INSO/ISO texts corrected after the standards became available. NIST translations untouched.",
+ "corrections": [
+  {
+   "position": "P01-C06-S03",
+   "section_title": "نگاشت مفهوم NIST به هدف، کنترل، شواهد، KPI و مالک؛ به‌همراه جدول RACI و نگاشت ISO/IEC",
+   "kind": "corrected_against_supplied_standard",
+   "old": "ارزیابی اثر AI پیش از به‌کارگیری پیش‌بینی شده، اما غربالِ «نیاز به AI» محورِ این کتاب، موضوع صریح استاندارد نیست",
+   "new": "استاندارد ارزیابی تأثیر سامانهٔ هوش مصنوعی را الزام می‌کند (بند ۶.۱.۴؛ انجام آن در فواصل طرح‌ریزی‌شده یا هنگام تغییرات چشمگیر، بند ۸.۴)، اما غربالِ «نیاز به AI» محورِ این کتاب، موضوع صریح استاندارد نیست",
+   "reason": "E1 said impact assessment is foreseen 'before deployment'; INSO 42001 6.1.4 / 8.4 print: process required; performed at planned intervals or on significant change.",
+   "evidence_ids": [
+    "S42001-062",
+    "S42001-091"
+   ]
+  },
+  {
+   "position": "P01-C06-S03",
+   "section_title": "نگاشت مفهوم NIST به هدف، کنترل، شواهد، KPI و مالک؛ به‌همراه جدول RACI و نگاشت ISO/IEC",
+   "kind": "corrected_against_supplied_standard",
+   "old": "| عدم قطعیت، سوگیری، تاریک‌ساختگری | ISO/IEC 23894 | DIRECT | این استاندارد موارد یادشده را در شمار ریسک‌های شناخته‌شدهٔ AI بررسی و برایشان فرایند مدیریت ریسک تعریف می‌کند |",
+   "new": "| عدم قطعیت، سوگیری، تاریک‌ساختگری | ISO/IEC 23894 | PARTIAL | این استاندارد فرایند مدیریت مخاطره را برای مخاطره‌های هوش مصنوعی (از جمله موضوع‌هایی چون انصاف و عدم‌شفافیت) تعریف می‌کند؛ اما «تاریک‌ساختگری» (dark patterns) در متن ملی آن نیامده است |",
+   "reason": "E1 claimed DIRECT coverage of 'dark patterns'; the printed INSO 23733 text does not contain the concept (searched the verified evidence).",
+   "evidence_ids": [
+    "O23733-068"
+   ]
+  },
+  {
+   "position": "P02-C16-S09",
+   "section_title": "جمع‌بندی تطبیقی: نگاشت ISO/IEC، مدل بلوغ و شاخص‌های پیشنهادی",
+   "kind": "corrected_against_supplied_standard",
+   "old": "با این تفاوت که این چرخه تحت گواهی‌نامهٔ ISO/IEC 42001 الزام‌آور است، حال آنکه AI RMF چارچوبی داوطلبانه است و GOVERN را الزامی نمی‌کند",
+   "new": "با این تفاوت که ISO/IEC 42001 مجموعه‌ای از الزام‌ها («باید») برای نظام مدیریت هوش مصنوعی است، حال آنکه AI RMF چارچوبی داوطلبانه است و GOVERN را الزامی نمی‌کند",
+   "reason": "E1 said the cycle is mandatory 'under ISO/IEC 42001 certification'; the supplied INSO text prints no certification statement (searched); only that the standard states requirements.",
+   "evidence_ids": []
+  },
+  {
+   "position": "P02-C16-S09",
+   "section_title": "جمع‌بندی تطبیقی: نگاشت ISO/IEC، مدل بلوغ و شاخص‌های پیشنهادی",
+   "kind": "corrected_against_supplied_standard",
+   "old": "| چارچوب‌بندی و پاسخ به ریسک (MANAGE 1) | ISO/IEC 23894 | DIRECT | هر دو، فرایند شناسایی، تحلیل، ارزیابی و پردازش ریسک هوش مصنوعی را با گزینه‌های کاهش، اجتناب، انتقال و پذیرش توصیف می‌کنند |",
+   "new": "| چارچوب‌بندی و پاسخ به ریسک (MANAGE 1) | ISO/IEC 23894 | PARTIAL | هر دو فرایند شناسایی، تحلیل، ارزیابی و مقابله با مخاطرهٔ هوش مصنوعی را توصیف می‌کنند؛ اما بند ۶.۵.۲ استاندارد ملی گزینه‌های مقابله را به‌صورت اجتناب، پذیرش یا افزایش مخاطره برای دنبال‌کردن فرصت، حذف منبع مخاطره، تغییر احتمال، تغییر پیامدها، تسهیم و حفظ آگاهانه فهرست می‌کند و با فهرست «کاهش، اجتناب، انتقال، پذیرش» تطابق واژه‌به‌واژه ندارد |",
+   "reason": "E1 said both documents describe the options 'reduce, avoid, transfer, accept'; INSO 23733 6.5.2 prints seven different options.",
+   "evidence_ids": [
+    "S23733-115"
+   ]
+  },
+  {
+   "position": "P04-C34-S08",
+   "section_title": "مدل بلوغ تدوینگر و نگاشت ISO/IEC",
+   "kind": "corrected_against_supplied_standard",
+   "old": "| مدیریت سوگیری (SP 1270) | ISO/IEC 42001 | PARTIAL | کنترل‌های 42001 به انصاف و پرهیز از تبعیض می‌پردازند؛ اما چارچوب سه‌دسته‌ای سوگیری و پوشش کامل چرخهٔ عمر ساختار مشابهی در آن ندارد |",
+   "new": "| مدیریت سوگیری (SP 1270) | ISO/IEC 42001 | PARTIAL | «انصاف» در پیوست‌های استاندارد به‌عنوان نمونهٔ هدف استفادهٔ مسئولانه و هدف سازمانی آمده است (ب.۹.۳؛ پ.۲.۵) و ارزیابی تأثیر بر افراد و گروه‌ها توصیه شده است (ب.۵.۴)؛ اما واپایش مستقلی برای ارزیابی سوگیری تعریف نشده و چارچوب سه‌دسته‌ای سوگیری و پوشش کامل چرخهٔ عمر ساختار مشابهی در آن ندارد |",
+   "reason": "E1 said 42001 'controls address fairness and non-discrimination'; the printed text lists fairness only as an example objective in Annexes B/C, not as an Annex A control.",
+   "evidence_ids": [
+    "S42001-155",
+    "S42001-168",
+    "S42001-130"
+   ]
+  },
+  {
+   "position": "P04-C32-S01",
+   "section_title": "ارتباط اسناد این بخش با یکدیگر و با دیگر بخش‌های کتاب",
+   "kind": "corrected_against_supplied_standard",
+   "old": "| NIST SP 1270 | ISO/IEC 42001 | PARTIAL | ارزیابی سوگیری در قالب کنترل‌ها مطرح است، اما دسته‌بندی سه‌گانهٔ سوگیری و نگاه چرخهٔ عمر ارائه نمی‌شود |",
+   "new": "| NIST SP 1270 | ISO/IEC 42001 | PARTIAL | «انصاف» به‌عنوان نمونهٔ هدف در پیوست‌های استاندارد آمده و ارزیابی تأثیر بر افراد و گروه‌ها توصیه شده است، اما ارزیابی سوگیری به‌صورت واپایش مستقل تعریف نشده و دسته‌بندی سه‌گانهٔ سوگیری و نگاه چرخهٔ عمر ارائه نمی‌شود |",
+   "reason": "Same over-claim as P04/C34/S08 (bias assessment 'as controls').",
+   "evidence_ids": [
+    "S42001-155",
+    "S42001-168"
+   ]
+  }
+ ]
+}

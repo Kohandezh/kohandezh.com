@@ -1,0 +1,828 @@
+{
+ "edition_id": "2026E2",
+ "base_edition_id": "2026E1",
+ "statement": "This log lists what the project's own records show. It is not an attestation by any standards body or by a human reviewer.",
+ "orchestrator": "claude-sonnet-5-5 (Claude Code orchestrator) with delegated Claude workers; policy review by claude-sonnet-4-6 and claude-opus-4-6 via claude_cli",
+ "writers": {
+  "note": "chapters were drafted by delegated Claude workers from verified evidence packets; the generator field of each chapter file names the worker model as the harness reported it",
+  "generators": [
+   "claude-opus-5-5 (delegated worker)",
+   "claude-sonnet-5-5 (delegated worker)",
+   "claude-sonnet-5-5 (orchestrator editorial assembly, Claude Code)",
+   "opencode-agent/glm-5.3"
+  ]
+ },
+ "reviewers": {
+  "policy": "claude_cli route only: claude-sonnet-4-6 (REVIEW_MAX), claude-opus-4-6 (REVIEW_ULTRA) for escalation; GPT text models are denied by config/model-policy.yaml",
+  "human_review": "none recorded",
+  "publisher_or_standards_body_review": "none; INSO, ISO, IEC, IEEE and NIST did not review or approve this book"
+ },
+ "new_chapters": [
+  {
+   "file": "P01/C54.json",
+   "kind": "standards_integration",
+   "origin": "editorial_synthesis",
+   "generator": "claude-sonnet-5-5 (orchestrator editorial assembly, Claude Code)",
+   "generated_at": "2026-10-18T00:09:52-0400",
+   "sections": 6,
+   "qa": {
+    "pass": true,
+    "reviewer": "claude_cli/claude-sonnet-4-6",
+    "review_mode": "REVIEW_MAX",
+    "runs": [
+     "g5",
+     "j1",
+     "k1"
+    ],
+    "content_bound": true
+   }
+  },
+  {
+   "file": "P01/C55.json",
+   "kind": "standards_integration",
+   "origin": "editorial_synthesis",
+   "generator": "claude-sonnet-5-5 (delegated worker)",
+   "generated_at": "2026-10-17T23:48:41-04:00",
+   "sections": 7,
+   "qa": {
+    "pass": true,
+    "reviewer": "claude_cli/claude-sonnet-4-6",
+    "review_mode": "REVIEW_MAX",
+    "runs": [
+     "g2",
+     "h2",
+     "i1",
+     "l1",
+     "r4b"
+    ],
+    "content_bound": true
+   }
+  },
+  {
+   "file": "P01/C56.json",
+   "kind": "standards_integration",
+   "origin": "editorial_synthesis",
+   "generator": "claude-sonnet-5-5 (delegated worker)",
+   "generated_at": "2026-10-17T23:55:12-04:00",
+   "sections": 6,
+   "qa": {
+    "pass": true,
+    "reviewer": "claude_cli/claude-sonnet-4-6",
+    "review_mode": "REVIEW_MAX",
+    "runs": [
+     "g1",
+     "h2",
+     "j4",
+     "r3b"
+    ],
+    "content_bound": true
+   }
+  },
+  {
+   "file": "P02/C57.json",
+   "kind": "standards_integration",
+   "origin": "editorial_synthesis",
+   "generator": "claude-sonnet-5-5 (delegated worker)",
+   "generated_at": "2026-10-17T23:52:35-04:00",
+   "sections": 9,
+   "qa": {
+    "pass": true,
+    "reviewer": "claude_cli/claude-sonnet-4-6",
+    "review_mode": "REVIEW_MAX",
+    "runs": [
+     "g3",
+     "h3",
+     "i2",
+     "j2"
+    ],
+    "content_bound": true
+   }
+  },
+  {
+   "file": "P02/C58.json",
+   "kind": "standards_integration",
+   "origin": "editorial_synthesis",
+   "generator": "claude-opus-5-5 (delegated worker)",
+   "generated_at": "2026-10-17T23:55:00-0400",
+   "sections": 10,
+   "qa": {
+    "pass": true,
+    "reviewer": "claude_cli/claude-sonnet-4-6; claude_cli/claude-opus-4-6",
+    "review_mode": "REVIEW_MAX+REVIEW_ULTRA",
+    "runs": [
+     "g2",
+     "h1",
+     "o1",
+     "o3",
+     "r3",
+     "r4",
+     "v_C58"
+    ],
+    "content_bound": true
+   }
+  },
+  {
+   "file": "P02/C59.json",
+   "kind": "standards_integration",
+   "origin": "editorial_synthesis",
+   "generator": "claude-opus-5-5 (delegated worker)",
+   "generated_at": "2026-10-18T04:08:34Z",
+   "sections": 12,
+   "qa": {
+    "pass": true,
+    "reviewer": "claude_cli/claude-sonnet-4-6; claude_cli/claude-opus-4-6",
+    "review_mode": "REVIEW_MAX+REVIEW_ULTRA",
+    "runs": [
+     "h1",
+     "l1",
+     "o5",
+     "p_P02_C59",
+     "r3",
+     "r4",
+     "r5",
+     "s_P02_C59",
+     "t_P02_C59",
+     "u_P02_C59"
+    ],
+    "content_bound": true
+   }
+  },
+  {
+   "file": "P02/C60.json",
+   "kind": "standards_integration",
+   "origin": "editorial_synthesis",
+   "generator": "claude-sonnet-5-5 (orchestrator editorial assembly, Claude Code)",
+   "generated_at": "2026-10-18T00:12:06-0400",
+   "sections": 6,
+   "qa": {
+    "pass": true,
+    "reviewer": "claude_cli/claude-sonnet-4-6",
+    "review_mode": "REVIEW_MAX",
+    "runs": [
+     "g5",
+     "h3",
+     "k1"
+    ],
+    "content_bound": true
+   }
+  },
+  {
+   "file": "P03/C61.json",
+   "kind": "standards_integration",
+   "origin": "editorial_synthesis",
+   "generator": "claude-sonnet-5-5 (delegated worker)",
+   "generated_at": "2026-10-18T03:50:46+00:00",
+   "sections": 6,
+   "qa": {
+    "pass": true,
+    "reviewer": "claude_cli/claude-sonnet-4-6",
+    "review_mode": "REVIEW_MAX",
+    "runs": [
+     "g5",
+     "h4",
+     "j3",
+     "l1"
+    ],
+    "content_bound": true
+   }
+  },
+  {
+   "file": "P04/C62.json",
+   "kind": "standards_integration",
+   "origin": "editorial_synthesis",
+   "generator": "claude-sonnet-5-5 (delegated worker)",
+   "generated_at": "2026-10-17T23:45:54-04:00",
+   "sections": 7,
+   "qa": {
+    "pass": true,
+    "reviewer": "claude_cli/claude-sonnet-4-6",
+    "review_mode": "REVIEW_MAX",
+    "runs": [
+     "g3",
+     "h5",
+     "i4",
+     "m1"
+    ],
+    "content_bound": true
+   }
+  },
+  {
+   "file": "P06/C63.json",
+   "kind": "standards_integration",
+   "origin": "editorial_synthesis",
+   "generator": "claude-sonnet-5-5 (delegated worker)",
+   "generated_at": "2026-10-18T03:58:34Z",
+   "sections": 10,
+   "qa": {
+    "pass": true,
+    "reviewer": "claude_cli/claude-sonnet-4-6; claude_cli/claude-opus-4-6",
+    "review_mode": "REVIEW_MAX+REVIEW_ULTRA",
+    "runs": [
+     "h4",
+     "k2",
+     "o2",
+     "o4",
+     "s_P06_C63",
+     "t_P06_C63"
+    ],
+    "content_bound": true
+   }
+  },
+  {
+   "file": "P07/C64.json",
+   "kind": "standards_integration",
+   "origin": "editorial_synthesis",
+   "generator": "claude-sonnet-5-5 (delegated worker)",
+   "generated_at": "2026-10-18T03:50:44+00:00",
+   "sections": 7,
+   "qa": {
+    "pass": true,
+    "reviewer": "claude_cli/claude-sonnet-4-6",
+    "review_mode": "REVIEW_MAX",
+    "runs": [
+     "g4",
+     "h5",
+     "i4"
+    ],
+    "content_bound": true
+   }
+  },
+  {
+   "file": "P07/C65.json",
+   "kind": "standards_integration",
+   "origin": "editorial_synthesis",
+   "generator": "claude-sonnet-5-5 (orchestrator editorial assembly, Claude Code)",
+   "generated_at": "2026-10-17T23:42:46-0400",
+   "sections": 6,
+   "qa": {
+    "pass": true,
+    "reviewer": "claude_cli/claude-sonnet-4-6",
+    "review_mode": "REVIEW_MAX",
+    "runs": [
+     "g5",
+     "h5",
+     "j2"
+    ],
+    "content_bound": true
+   }
+  }
+ ],
+ "all_editorial_files": 42,
+ "glossary": {
+  "entries": 563,
+  "by_change_and_status": {
+   "changed/approved": 18,
+   "hygiene/approved": 52,
+   "hygiene/english_only": 1,
+   "hygiene/proposed": 4,
+   "metadata_only/approved": 2,
+   "metadata_only/proposed": 3,
+   "new/approved": 135,
+   "unchanged/approved": 47,
+   "unchanged/proposed": 301
+  },
+  "review_verdicts": {
+   "opus:claude-opus-4-6:AGREE": 18,
+   "sonnet:claude-sonnet-4-6:AGREE": 153
+  },
+  "review_runs": {
+   "r7": [
+    "opus-000.json",
+    "sonnet-000.json"
+   ],
+   "r6": [
+    "opus-000.json",
+    "sonnet-000.json"
+   ],
+   "r3": [
+    "opus-000.json",
+    "opus-001.json",
+    "opus-002.json",
+    "sonnet-000.json",
+    "sonnet-001.json",
+    "sonnet-002.json"
+   ],
+   "r4": [
+    "opus-000.json",
+    "opus-001.json",
+    "sonnet-000.json"
+   ],
+   "r5": [
+    "opus-000.json",
+    "sonnet-000.json"
+   ],
+   "r2": [
+    "_shas.json",
+    "sonnet-000.json",
+    "sonnet-001.json",
+    "sonnet-002.json",
+    "sonnet-003.json",
+    "sonnet-004.json",
+    "sonnet-005.json",
+    "sonnet-006.json",
+    "sonnet-007.json",
+    "sonnet-008.json",
+    "sonnet-009.json",
+    "sonnet-010.json",
+    "sonnet-011.json",
+    "sonnet-012.json"
+   ]
+  }
+ },
+ "chapter_review_runs": {
+  "t_P02_C59": [
+   "P02-C59-opus-03.json",
+   "P02-C59-sonnet-03.json"
+  ],
+  "t_P02_C58": [
+   "P02-C58-opus-03.json",
+   "P02-C58-sonnet-03.json"
+  ],
+  "m1": [
+   "P04-C62-sonnet-05.json"
+  ],
+  "u_P02_C58": [
+   "P02-C58-opus-03.json",
+   "P02-C58-sonnet-03.json"
+  ],
+  "h2": [
+   "P01-C54-sonnet-01.json",
+   "P01-C54-sonnet-03.json",
+   "P01-C55-sonnet-02.json",
+   "P01-C55-sonnet-05.json",
+   "P01-C56-sonnet-00.json",
+   "P01-C56-sonnet-05.json"
+  ],
+  "h5": [
+   "P04-C62-sonnet-00.json",
+   "P04-C62-sonnet-04.json",
+   "P04-C62-sonnet-06.json",
+   "P07-C64-sonnet-01.json",
+   "P07-C64-sonnet-05.json",
+   "P07-C65-sonnet-00.json",
+   "P07-C65-sonnet-04.json"
+  ],
+  "g1": [
+   "P01-C56-sonnet-02.json",
+   "P01-C56-sonnet-04.json",
+   "P02-C59-sonnet-04.json",
+   "P02-C59-sonnet-08.json"
+  ],
+  "k3": [
+   "P01-C55-sonnet-02.json",
+   "P04-C62-sonnet-05.json"
+  ],
+  "u_P02_C59": [
+   "P02-C59-opus-03.json",
+   "P02-C59-sonnet-03.json"
+  ],
+  "k2": [
+   "P03-C61-sonnet-04.json",
+   "P06-C63-sonnet-08.json"
+  ],
+  "s_P06_C63": [
+   "P06-C63-opus-01.json",
+   "P06-C63-opus-04.json",
+   "P06-C63-sonnet-01.json",
+   "P06-C63-sonnet-04.json"
+  ],
+  "h4": [
+   "P03-C61-sonnet-00.json",
+   "P03-C61-sonnet-02.json",
+   "P06-C63-sonnet-00.json",
+   "P06-C63-sonnet-03.json",
+   "P06-C63-sonnet-05.json",
+   "P06-C63-sonnet-07.json",
+   "P06-C63-sonnet-09.json"
+  ],
+  "h3": [
+   "P02-C57-sonnet-00.json",
+   "P02-C57-sonnet-04.json",
+   "P02-C57-sonnet-07.json",
+   "P02-C60-sonnet-01.json",
+   "P02-C60-sonnet-03.json"
+  ],
+  "j1": [
+   "P01-C54-sonnet-01.json",
+   "P01-C54-sonnet-03.json",
+   "P02-C59-sonnet-05.json"
+  ],
+  "f4": [],
+  "f3": [],
+  "o2": [
+   "P06-C63-opus-00.json",
+   "P06-C63-opus-02.json",
+   "P06-C63-opus-04.json",
+   "P06-C63-opus-06.json",
+   "P06-C63-opus-08.json"
+  ],
+  "o5": [
+   "P02-C59-opus-00.json",
+   "P02-C59-opus-02.json",
+   "P02-C59-opus-04.json",
+   "P02-C59-opus-06.json",
+   "P02-C59-opus-08.json",
+   "P02-C59-opus-10.json"
+  ],
+  "f2": [],
+  "i1": [
+   "P01-C55-sonnet-05.json",
+   "P02-C59-sonnet-05.json"
+  ],
+  "q_P06_C63": [],
+  "o4": [
+   "P06-C63-opus-01.json",
+   "P06-C63-opus-04.json",
+   "P06-C63-opus-09.json",
+   "P06-C63-sonnet-01.json",
+   "P06-C63-sonnet-04.json",
+   "P06-C63-sonnet-09.json"
+  ],
+  "o3": [
+   "P02-C58-opus-00.json",
+   "P02-C58-opus-03.json",
+   "P02-C58-sonnet-00.json",
+   "P02-C58-sonnet-03.json"
+  ],
+  "p_P06_C63": [
+   "P06-C63-opus-01.json",
+   "P06-C63-opus-04.json",
+   "P06-C63-sonnet-01.json",
+   "P06-C63-sonnet-04.json"
+  ],
+  "r1": [
+   "P01-C54-sonnet-00.json",
+   "P01-C54-sonnet-02.json"
+  ],
+  "r6": [
+   "P02-C60-sonnet-00.json",
+   "P02-C60-sonnet-02.json"
+  ],
+  "s_P02_C58": [
+   "P02-C58-opus-03.json",
+   "P02-C58-sonnet-03.json"
+  ],
+  "s_P02_C59": [
+   "P02-C59-opus-00.json",
+   "P02-C59-opus-03.json",
+   "P02-C59-sonnet-00.json",
+   "P02-C59-sonnet-03.json"
+  ],
+  "t_P06_C63": [
+   "P06-C63-opus-01.json",
+   "P06-C63-sonnet-01.json"
+  ],
+  "g2": [
+   "P01-C55-sonnet-00.json",
+   "P01-C55-sonnet-03.json",
+   "P01-C55-sonnet-06.json",
+   "P02-C58-sonnet-00.json",
+   "P02-C58-sonnet-03.json",
+   "P02-C58-sonnet-05.json"
+  ],
+  "g5": [
+   "P01-C54-sonnet-00.json",
+   "P01-C54-sonnet-02.json",
+   "P01-C54-sonnet-04.json",
+   "P02-C60-sonnet-00.json",
+   "P02-C60-sonnet-02.json",
+   "P02-C60-sonnet-04.json",
+   "P03-C61-sonnet-00.json",
+   "P03-C61-sonnet-02.json",
+   "P03-C61-sonnet-04.json",
+   "P07-C65-sonnet-00.json",
+   "P07-C65-sonnet-02.json",
+   "P07-C65-sonnet-04.json"
+  ],
+  "h1": [
+   "P02-C58-sonnet-00.json",
+   "P02-C58-sonnet-04.json",
+   "P02-C59-sonnet-00.json",
+   "P02-C59-sonnet-05.json",
+   "P02-C59-sonnet-08.json"
+  ],
+  "k1": [
+   "P01-C54-sonnet-02.json",
+   "P02-C59-sonnet-08.json",
+   "P02-C60-sonnet-02.json"
+  ],
+  "g4": [
+   "P06-C63-sonnet-00.json",
+   "P06-C63-sonnet-02.json",
+   "P06-C63-sonnet-04.json",
+   "P06-C63-sonnet-06.json",
+   "P06-C63-sonnet-08.json",
+   "P07-C64-sonnet-00.json",
+   "P07-C64-sonnet-02.json",
+   "P07-C64-sonnet-04.json",
+   "P07-C64-sonnet-06.json"
+  ],
+  "g3": [
+   "P02-C57-sonnet-00.json",
+   "P02-C57-sonnet-02.json",
+   "P02-C57-sonnet-04.json",
+   "P02-C57-sonnet-06.json",
+   "P02-C57-sonnet-08.json",
+   "P04-C62-sonnet-00.json",
+   "P04-C62-sonnet-02.json",
+   "P04-C62-sonnet-04.json",
+   "P04-C62-sonnet-06.json"
+  ],
+  "r4b": [
+   "P01-C55-sonnet-00.json",
+   "P01-C55-sonnet-02.json",
+   "P01-C55-sonnet-04.json",
+   "P01-C55-sonnet-06.json"
+  ],
+  "o1": [
+   "P02-C58-opus-00.json",
+   "P02-C58-opus-02.json",
+   "P02-C58-opus-04.json",
+   "P02-C58-opus-06.json",
+   "P02-C58-opus-08.json"
+  ],
+  "j2": [
+   "P02-C57-sonnet-07.json",
+   "P02-C60-sonnet-02.json",
+   "P07-C65-sonnet-03.json"
+  ],
+  "p_P02_C59": [
+   "P02-C59-opus-00.json",
+   "P02-C59-opus-03.json",
+   "P02-C59-opus-05.json",
+   "P02-C59-sonnet-00.json",
+   "P02-C59-sonnet-03.json",
+   "P02-C59-sonnet-05.json"
+  ],
+  "i4": [
+   "P04-C62-sonnet-01.json",
+   "P07-C64-sonnet-05.json"
+  ],
+  "i3": [
+   "P06-C63-sonnet-04.json",
+   "P06-C63-sonnet-08.json"
+  ],
+  "l1": [
+   "P01-C55-sonnet-02.json",
+   "P02-C59-sonnet-08.json",
+   "P03-C61-sonnet-04.json",
+   "P04-C62-sonnet-05.json"
+  ],
+  "i2": [
+   "P02-C57-sonnet-04.json"
+  ],
+  "f1": [],
+  "p_P02_C58": [
+   "P02-C58-opus-03.json",
+   "P02-C58-sonnet-03.json"
+  ],
+  "j3": [
+   "P03-C61-sonnet-00.json",
+   "P06-C63-sonnet-08.json"
+  ],
+  "r3b": [
+   "P01-C55-sonnet-00.json",
+   "P01-C55-sonnet-02.json",
+   "P01-C55-sonnet-04.json",
+   "P01-C55-sonnet-06.json",
+   "P01-C56-sonnet-00.json",
+   "P01-C56-sonnet-02.json",
+   "P01-C56-sonnet-04.json",
+   "P07-C64-sonnet-00.json",
+   "P07-C64-sonnet-02.json",
+   "P07-C64-sonnet-04.json",
+   "P07-C64-sonnet-06.json"
+  ],
+  "j4": [
+   "P01-C55-sonnet-02.json",
+   "P01-C56-sonnet-03.json",
+   "P04-C62-sonnet-05.json"
+  ],
+  "r3": [
+   "P02-C58-sonnet-00.json",
+   "P02-C58-sonnet-02.json",
+   "P02-C58-sonnet-04.json",
+   "P02-C58-sonnet-06.json",
+   "P02-C58-sonnet-08.json",
+   "P02-C59-sonnet-00.json",
+   "P02-C59-sonnet-02.json",
+   "P02-C59-sonnet-04.json",
+   "P02-C59-sonnet-06.json",
+   "P02-C59-sonnet-08.json",
+   "P02-C59-sonnet-10.json",
+   "P06-C63-sonnet-00.json",
+   "P06-C63-sonnet-02.json",
+   "P06-C63-sonnet-04.json",
+   "P06-C63-sonnet-06.json"
+  ],
+  "r4": [
+   "P01-C56-sonnet-00.json",
+   "P01-C56-sonnet-03.json",
+   "P01-C56-sonnet-05.json",
+   "P02-C58-sonnet-00.json",
+   "P02-C58-sonnet-03.json",
+   "P02-C58-sonnet-05.json",
+   "P02-C58-sonnet-08.json",
+   "P02-C59-sonnet-00.json",
+   "P02-C59-sonnet-03.json",
+   "P02-C59-sonnet-05.json",
+   "P02-C59-sonnet-07.json",
+   "P02-C59-sonnet-11.json"
+  ],
+  "q_P02_C58": [],
+  "q_P02_C59": [],
+  "v_C58": [
+   "P02-C58-opus-03.json",
+   "P02-C58-sonnet-03.json"
+  ],
+  "r5": [
+   "P02-C59-sonnet-00.json",
+   "P02-C59-sonnet-05.json",
+   "P02-C59-sonnet-08.json"
+  ],
+  "r2": [
+   "P01-C54-sonnet-04.json"
+  ]
+ },
+ "model_calls_since": "2026-10-17",
+ "model_ledger": [
+  {
+   "purpose": "editorial",
+   "provider": "claude_cli",
+   "model": "claude-sonnet-4-6",
+   "status": "ok",
+   "calls": 136,
+   "input_tokens": 423,
+   "output_tokens": 1692213
+  },
+  {
+   "purpose": "escalation",
+   "provider": "antigravity",
+   "model": "claude-opus-4-6",
+   "status": "error",
+   "calls": 4,
+   "input_tokens": 0,
+   "output_tokens": 0
+  },
+  {
+   "purpose": "escalation",
+   "provider": "claude_cli",
+   "model": "claude-opus-4-6",
+   "status": "ok",
+   "calls": 46,
+   "input_tokens": 92,
+   "output_tokens": 828724
+  },
+  {
+   "purpose": "review",
+   "provider": "antigravity",
+   "model": "claude-sonnet-4-6",
+   "status": "error",
+   "calls": 13,
+   "input_tokens": 0,
+   "output_tokens": 0
+  },
+  {
+   "purpose": "review",
+   "provider": "claude_cli",
+   "model": "claude-sonnet-4-6",
+   "status": "ok",
+   "calls": 173,
+   "input_tokens": 383,
+   "output_tokens": 3681287
+  },
+  {
+   "purpose": "review_alt",
+   "provider": "google",
+   "model": "gemini-3.8-flash",
+   "status": "error",
+   "calls": 1,
+   "input_tokens": null,
+   "output_tokens": null
+  },
+  {
+   "purpose": "review_alt",
+   "provider": "zai-coding-plan",
+   "model": "glm-5.3",
+   "status": "http_401",
+   "calls": 2,
+   "input_tokens": null,
+   "output_tokens": null
+  },
+  {
+   "purpose": "terminology",
+   "provider": "antigravity",
+   "model": "claude-sonnet-4-6",
+   "status": "error",
+   "calls": 68,
+   "input_tokens": 0,
+   "output_tokens": 0
+  },
+  {
+   "purpose": "terminology",
+   "provider": "claude_cli",
+   "model": "claude-sonnet-4-6",
+   "status": "ok",
+   "calls": 24,
+   "input_tokens": 49,
+   "output_tokens": 174308
+  }
+ ],
+ "ledger_note": "rows with status 'error' on provider 'antigravity' are attempts on a route that rejects the Claude model; the same call then ran on claude_cli. rows with http_401 are providers that were tried and refused credentials; none produced content.",
+ "gpt_text_usage_in_this_edition": [],
+ "evidence_corrections": [
+  "2026-10-17 INSO-23685-1403 statements.json clause 4-2 (S23685-022): inserted «IP» after «حساب کاربری» — the page image (pdf 15, printed 5) lists seven portrait types: حساب کاربری، IP، افزاره، شماره‌تلفن همراه، شخص حقیقی، محتوا، نمودار دانش. Raised by the C61 writer, verified by the editor on the image.",
+  "2026-10-18 INSO-42001-1404 terms.json 3.21 (control) and 3.26 (statement of applicability): added printed_page_end (6 and 7) / pdf_page_end (18 and 19) — the heading is on the first page and the definition text continues on the next (page image pdf 18 checked by the editor; raised by the C59 writer).",
+  "2026-10-18 INSO-42001-1404 statements.json: appended S42001-187 (clause 1, footnote 1: printed translation rule for «system» → «نظام» in management context / «سامانه» in AI-technology context); page image pdf 13 / printed 1 verified. Added at the end of the list so no existing item ID shifts.",
+  "2026-10-18 INSO-23683-1403 statements.json item 40 (S23683-040, clause الف-3, pdf 26 / printed 17): the earlier paraphrase contained «باید»; the page image prints «نیاز به در نظر گرفتن … دارد» (no «باید»; «ضروری است» is printed for the second sentence). Corrected; modality label stays info. Found because a chapter reviewer trusted the wrong paraphrase.",
+  "2026-10-18 INSO-23683-1403 statements.json: appended S23683-048 (clause 4.3.9, pdf 24 / printed 15): the page prints «در مقیاس بزرگ‌داده»; the earlier paraphrase of 4.3.9 had dropped the word. Appended at the end of the list so no existing item ID shifts.",
+  "2026-10-18 INSO-23681-1403 statements.json S23681-036 (clause 6.4, pdf 24 / printed 15): modality wording corrected against the page image — printed «در شرایطی که مدل نیاز داشته باشد به‌صورت پویا ... تطبیق یابد»; Statement inserts «باید» for the printed «نیاز داشته باشد» (and flattens the second printed «می‌تواند مستلزم»). Position and modality label unchanged.",
+  "2026-10-18 INSO-23681-1403 statements.json S23681-121 (clause 8.5, pdf 56 / printed 47): modality wording corrected against the page image — printed «نیاز به توجهی ویژه به مجزا باقی‌ماندن ... وجود دارد»; First clause «توصیه می‌شود» is faithful, but the second clause printed «نیاز به ... وجود دارد» was turned into «باید». Position and modality label unchanged.",
+  "2026-10-18 INSO-23728-1403 statements.json S23728-107 (clause 7.4, pdf 39 / printed 30): modality wording corrected against the page image — printed «نیاز به ارزیابی‌های تأثیر در برخی موقعیت‌ها دارند؛ باید در نظر گرفت»; Given page_image is cut off at «برخی از مقررات،»; verdict uses the continuation page INSO-23728-1403/p-40.png, where «باید در نظر گرفت» is confirmed but the regulations are said to «نیاز به ... دارند», not 'لازم می‌دانند' (minor strengthening). Position and modality label unchanged.",
+  "2026-10-18 INSO-23733-1403 statements.json S23733-055 (clause 5.4.1/Table3, pdf 20 / printed 11): modality wording corrected against the page image — printed «ضرورت آموزش ذی‌نفعان درباره قابلیت‌ها، حالت‌های خرابی و مدیریت خرابی»; Printed item is a bare noun phrase «ضرورت آموزش ...» under a «توصیه می‌شود ... در نظر بگیرند» lead-in; the statement's «باید ... آموزش ببینند» is inserted. Position and modality label unchanged.",
+  "2026-10-18 INSO-23733-1403 statements.json S23733-141 (clause B.2, pdf 40 / printed 31): modality wording corrected against the page image — printed «گسترهٔ موقعیت‌هایی که قرار است سامانه از آن‌ها پشتیبانی کند»; Statement inserts «باید» for printed «قرار است ... پشتیبانی کند» and also turns printed «ممکن است مخاطره‌های بیشتری» into «معمولاً»; «توصیه می‌شود» is correct. Position and modality label unchanged.",
+  "2026-10-18 INSO-42001-1404 statements.json S42001-042 (clause 6.1.1, pdf 24 / printed 12): modality wording corrected against the page image — printed «سازمان موظف است که ... دیدگاهی را در مورد مخاطره اتخاذ کند»; Note 5 prints «موظف است», not «باید»; the page does not use «باید» for this obligation. Position and modality label unchanged.",
+  "2026-10-18 INSO-42001-1404 statements.json S42001-160 (clause B.10.3, pdf 71 / printed 59): modality wording corrected against the page image — printed «بهتر است تأمین‌کننده را ملزم به انجام اقدامات اصلاحی نماید»; Minor: all «توصیه می‌شود» and «بهتر است» uses are faithful, but the printed «سازمان می‌تواند تصمیم بگیرد ... همکاری نماید» (may) was folded under «بهتر است» as «(یا همکاری گردد)». Position and modality label unchanged.",
+  "2026-10-18 INSO-23683-1403 statements.json: appended S23683-049 (clause الف-2, pdf 26 / printed 17: printed «مهم است» on metadata) and S23683-050 (introduction, page ط, pdf 9: printed «ضروری است» continues from page ح). Both read from the page images; appended at the end so no existing item ID shifts.",
+  "2026-10-18 INSO-23728-1403 statements.json S23728-073 (clause 6.5, pdf 33 / printed 24): modality wording corrected against the page image — printed «فرایندی ... وجود دارد که باید به طور مستمر، رسمی و با کیفیتِ کافی انجام شود»; Minor: lead «باید مسئول اثبات ... باشد» is kept, but the nested printed «باید ... انجام شود» in item (3) was dropped, turning a process requirement into a descriptive attribute (items 3-5 are on p-34). Position and modality label unchanged.",
+  "2026-10-18 INSO-23728-1403 statements.json S23728-116 (clause 8.1, pdf 41 / printed 32): modality wording corrected against the page image — printed «تأیید ذی‌نفعان و نظارت مستمر مورد نیاز است»; Low severity: printed «مورد نیاز است» was changed to «لازم است» (near-synonym, but a different listed expression). Position and modality label unchanged.",
+  "2026-10-18 INSO-23728-1403 statements.json S23728-125 (clause 8.2, pdf 42 / printed 33): modality wording corrected against the page image — printed «لزوماً همیشه برای هر سامانه‌ای مورد نیاز نخواهد بود»; Low severity: printed negated «مورد نیاز نخواهد بود» (on p-43, continuing from p-42) was changed to «لازم نیست»; «ممکن است» is kept. Position and modality label unchanged.",
+  "2026-10-18 INSO-23733-1403 statements.json S23733-052 (clause 5.4.1/Table3, pdf 19 / printed 10): modality wording corrected against the page image — printed «دانش خاص فناوری‌های هوش مصنوعی و داده‌شناسی مورد نیاز»; Printed item is a bare noun phrase with «مورد نیاز»; the statement turned it into the predicate «لازم است» (and «ممکن است» became «می‌تواند»). Position and modality label unchanged.",
+  "2026-10-18 INSO-15816-3-1403 statements.json S15816-3-057 (clause 6.3, pdf 30 / printed 21): modality wording corrected against the page image — printed «در این مرحله، سازمان قرار است ... ارزیابی خطر انجام دهد»; Page prints «قرار است» (twice in the risk-assessment paragraph) which the statement flattened to a plain present tense, and «لازم‌الاجرا خواهد شد» was reworded as «تعیین می‌شود» (no باید inserted). Position and modality label unchanged.",
+  "2026-10-18 INSO-23681-1403 statements.json S23681-027 (clause 6.3, pdf 21 / printed 12): modality wording corrected against the page image — printed «مدل نیاز به بازآموزی ... دارد؛ در رانش مفهوم نیاز است که ...»; Page prints «نیاز به ... دارد» and «نیاز است که»; statement turned both into «لازم است» (no باید inserted, lower severity). Position and modality label unchanged.",
+  "2026-10-18 INSO-23681-1403 statements.json S23681-108 (clause 8.3, pdf 52 / printed 43): modality wording corrected against the page image — printed «مدل‌های ML به داده آموزشی ... نیاز دارند؛ ... باید از هم مجزا باشند»; «باید» is faithful, but printed «نیاز دارند» was rewritten as «لازم است» (lower severity, no باید inserted). Position and modality label unchanged.",
+  "2026-10-18 INSO-23682-1403 statements.json S23682-010 (clause 2, pdf 11 / printed 1): modality wording corrected against the page image — printed «به‌صورت الزامی ارجاع داده شده است؛ ... الزام‌آور نیست / الزام‌آور است»; Checked p-11 and adjacent p-12: «به‌صورت الزامی» is kept, but printed «الزام‌آور نیست/الزام‌آور است» was weakened to «به‌کار می‌رود» (low severity). Position and modality label unchanged.",
+  "2026-10-18 INSO-23684-1403 statements.json S23684-002 (clause مقدمه, pdf 8 / printed ح): modality wording corrected against the page image — printed «نیاز است که خواص و مشخصه‌های بیشتری از سامانه‌ها مدنظر قرار گیرد»; Page prints «نیاز است که»; statement turned it into «لازم است» (lower severity, no باید inserted). Position and modality label unchanged.",
+  "2026-10-18 INSO-42001-1404 statements.json S42001-088 (clause 8.1, pdf 30 / printed 18): modality wording corrected against the page image — printed «آن‌گونه که ضروری است، اقدام نماید»; Minor: «باید» is correct, but the printed hedge «آن‌گونه که ضروری است» on the mitigation action was dropped, making that action unconditional. Position and modality label unchanged.",
+  "2026-10-18 INSO-42001-1404 statements.json S42001-130 (clause B.5.4, pdf 49 / printed 37): modality wording corrected against the page image — printed «زمینه‌های تأثیرپذیری که باید به‌عنوان بخشی از ارزیابی در نظر گرفته شود»; Control «توصیه می‌شود» and «لازم است» are right, but the printed «باید ... در نظر گرفته شود» on the impact-area list was dropped to a bare list (and «بهتر است» / the closing «توصیه می‌شود» consult-experts were unmarked). Position and modality label unchanged.",
+  "2026-10-18 INSO-42001-1404 statements.json S42001-136 (clause B.6.2.2, pdf 53 / printed 41): modality wording corrected against the page image — printed «لازم است الزامات ... مشخص شوند و بهتر است که کل چرخه عمر ... را دربرگیرند»; Statement attaches «لازم است» to the whole-lifecycle coverage and «بهتر است» to the same thing; the page prints «لازم است» for specifying the requirements and «بهتر است» only for covering the whole lifecycle. Position and modality label unchanged.",
+  "2026-10-18 INSO-42001-1404 statements.json S42001-137 (clause B.6.2.3, pdf 53 / printed 41): modality wording corrected against the page image — printed «انتخاب‌های متعددی درزمینهٔ طراحی سامانه هومص لازم است»; Minor: «توصیه می‌شود», «بهتر است» and «لازم است» (final architecture docs) are right, but the printed «لازم است» on the design-choices sentence was dropped (rendered as plain «را شامل می‌شود»). Position and modality label unchanged.",
+  "2026-10-18 INSO-42001-1404 statements.json S42001-138 (clause B.6.2.4, pdf 54 / printed 42): modality wording corrected against the page image — printed «توصیه می‌شود سازمان معیارهای ارزشیابی را تعریف و مستند نماید؛ لازم است سامانه براساس معیارهای مدون ارزشیابی شود»; Statement gives «لازم است» to defining/documenting the criteria; p-54 prints «توصیه می‌شود» for that, and «لازم است» (p-55) only for evaluating the system against the documented criteria; «می‌تواند» for the verification measures and evaluation plan was also dropped. Position and modality label unchanged.",
+  "2026-10-18 INSO-42001-1404 statements.json S42001-150 (clause B.8.2, pdf 64 / printed 52): modality wording corrected against the page image — printed «اطلاعاتی که می‌توان به کاربران ارائه داد بدون قید حصر شامل موارد زیر می‌شود»; The printed list is introduced by «می‌توان ... ارائه داد» (can), but the statement presents it as the content «توصیه می‌شود» be provided; the two real «توصیه می‌شود» clauses (pp. 52-53) are correct. Position and modality label unchanged.",
+  "2026-10-18 INSO-42001-1404 statements.json S42001-152 (clause B.8.4, pdf 66 / printed 54): modality wording corrected against the page image — printed «ممکن است الزامات قانونی ... برقرار باشد که بتوانند الزاماتی ... تعیین کنند»; Minor: «توصیه می‌شود» and «لازم است» are right, but the printed «ممکن است ... بتوانند ... تعیین کنند» was flattened into a definite «تعیین می‌کنند», and the «می‌تواند ... یکپارچه‌سازی کند» (before «اما لازم است») was dropped. Position and modality label unchanged.",
+  "2026-10-18 INSO-42001-1404 statements.json S42001-159 (clause B.10.2, pdf 70 / printed 58): modality wording corrected against the page image — printed «سازمان لازم است قادر باشد مستندات لازم را ... ارائه دهد»; Printed «لازم است قادر باشد ... ارائه دهد» was lost under the «توصیه می‌شود» chain, and the direction is reversed: the page says the organization SUPPLIES a system TO a third party, not «در خرید سامانه از شخص سوم». Position and modality label unchanged.",
+  "2026-10-18 INSO-42001-1404 statements.json S42001-161 (clause B.10.4, pdf 71 / printed 59): modality wording corrected against the page image — printed «سازمان می‌تواند ... تصمیم بگیرد با مخاطرات ... مقابله کند»; Minor: the printed «سازمان می‌تواند ... تصمیم بگیرد ... مقابله کند» (p-72) was folded into the preceding «توصیه می‌شود» sentence; «بهتر است» and «لازم است» are faithful (guidance is on the adjacent p-72). Position and modality label unchanged.",
+  "2026-10-18 INSO-23728-1403 statements.json: appended S23728-172 (foreword, pdf 8 / printed ح) and S23728-173 (page 1 running title, pdf 10 / printed 1): both page images print the title form «فرایند حفظ حریم اطلاعاتی»; read from the images. Appended at the end so no existing item ID shifts.",
+  "2026-10-18 INSO-15816-3-1403 statements.json: appended S15816-3-073 (5.3.4.1 footnotes, pdf 24 / printed 15): the page prints the English role names Data Custodian / Data Steward / Data Quality Owner / Multi-Faceted Taxonomy. Read from the image; appended at the end. (Also seen on the same page: its running header prints year ۱۴۰۲ while the cover/foreword print ۱۴۰۳ — reported as printed, not harmonised.)",
+  "2026-10-18 INSO-23681-1403 statements.json: appended S23681-144 (clause 8 heading footnote 1, pdf 48 / printed 39): the page prints the footnote «Machine Learning Pipeline». Read from the image; appended at the end so no existing item ID shifts."
+ ],
+ "e1_editorial_corrections": [
+  {
+   "position": "P01-C06-S03",
+   "section_title": "نگاشت مفهوم NIST به هدف، کنترل، شواهد، KPI و مالک؛ به‌همراه جدول RACI و نگاشت ISO/IEC",
+   "kind": "corrected_against_supplied_standard",
+   "reason": "E1 said impact assessment is foreseen 'before deployment'; INSO 42001 6.1.4 / 8.4 print: process required; performed at planned intervals or on significant change.",
+   "evidence_ids": [
+    "S42001-062",
+    "S42001-091"
+   ]
+  },
+  {
+   "position": "P01-C06-S03",
+   "section_title": "نگاشت مفهوم NIST به هدف، کنترل، شواهد، KPI و مالک؛ به‌همراه جدول RACI و نگاشت ISO/IEC",
+   "kind": "corrected_against_supplied_standard",
+   "reason": "E1 claimed DIRECT coverage of 'dark patterns'; the printed INSO 23733 text does not contain the concept (searched the verified evidence).",
+   "evidence_ids": [
+    "O23733-068"
+   ]
+  },
+  {
+   "position": "P02-C16-S09",
+   "section_title": "جمع‌بندی تطبیقی: نگاشت ISO/IEC، مدل بلوغ و شاخص‌های پیشنهادی",
+   "kind": "corrected_against_supplied_standard",
+   "reason": "E1 said the cycle is mandatory 'under ISO/IEC 42001 certification'; the supplied INSO text prints no certification statement (searched); only that the standard states requirements.",
+   "evidence_ids": []
+  },
+  {
+   "position": "P02-C16-S09",
+   "section_title": "جمع‌بندی تطبیقی: نگاشت ISO/IEC، مدل بلوغ و شاخص‌های پیشنهادی",
+   "kind": "corrected_against_supplied_standard",
+   "reason": "E1 said both documents describe the options 'reduce, avoid, transfer, accept'; INSO 23733 6.5.2 prints seven different options.",
+   "evidence_ids": [
+    "S23733-115"
+   ]
+  },
+  {
+   "position": "P04-C34-S08",
+   "section_title": "مدل بلوغ تدوینگر و نگاشت ISO/IEC",
+   "kind": "corrected_against_supplied_standard",
+   "reason": "E1 said 42001 'controls address fairness and non-discrimination'; the printed text lists fairness only as an example objective in Annexes B/C, not as an Annex A control.",
+   "evidence_ids": [
+    "S42001-155",
+    "S42001-168",
+    "S42001-130"
+   ]
+  },
+  {
+   "position": "P04-C32-S01",
+   "section_title": "ارتباط اسناد این بخش با یکدیگر و با دیگر بخش‌های کتاب",
+   "kind": "corrected_against_supplied_standard",
+   "reason": "Same over-claim as P04/C34/S08 (bias assessment 'as controls').",
+   "evidence_ids": [
+    "S42001-155",
+    "S42001-168"
+   ]
+  }
+ ],
+ "signing": "development key only; the release is not signed by a publisher key (PUBLISHER_SIGNING_KEY_REQUIRED)"
+}

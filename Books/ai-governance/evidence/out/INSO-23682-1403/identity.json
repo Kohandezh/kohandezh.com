@@ -1,0 +1,113 @@
+{
+ "source_id": "INSO-23682-1403",
+ "national_reference_printed": "استاندارد ملی ایران ۲۳۶۸۲ (چاپ اول) ؛ English cover: INSO 23682, 1st Edition, 2024",
+ "iranian_year_printed": "۱۴۰۳",
+ "title_fa_printed": "فناوری اطلاعات – حکمرانی فناوری اطلاعات – پیامدهای حکمرانیِ استفاده از هوش مصنوعی در سازمان‌ها",
+ "title_en_printed": "Information technology - Governance of IT — Governance implications of the use of artificial intelligence by organizations",
+ "international_reference_printed": "ISO/IEC 38507:2022",
+ "international_year": 2022,
+ "equivalence_statement_printed": "Cover (English, left margin): «Identical with ISO/IEC 38507:2022». Preface (PDF 8): این استاندارد ملی بر مبنای پذیرش استاندارد بین‌المللی زیر به روش «معادل یکسان» تهیه و تدوین شده و شامل ترجمه تخصصی کامل متن آن به زبان فارسی می‌باشد و معادل یکسان استاندارد بین‌المللی مزبور است",
+ "adoption_reference_printed": "ISO/IEC 38507:2022, Information technology — Governance of IT — Governance implications of the use of artificial intelligence by organizations (preface, PDF 8, printed ح)",
+ "publisher_printed": "سازمان ملی استاندارد ایران (Iran National Standards Organization, INSO) — جلد و صفحهٔ ب",
+ "approval_or_publication_date_printed": "پیش‌گفتار (PDF 8): تصویب در «هفتصد و چهل و چهارمین اجلاسیه کمیتهٔ ملی استاندارد فناوری اطلاعات مورخ ۱۴۰۳/۰۵/۲۳»؛ جلد: «چاپ اول ۱۴۰۳» / «1st Edition 2024». هیچ تاریخ انتشار جداگانه‌ای چاپ نشده است.",
+ "pdf_pages_total": 53,
+ "pdf_to_printed_offset": 10,
+ "ics_printed": "35.020 (جلد)",
+ "page_numbering": "جلد (PDF 1) بدون شماره؛ پیش‌گفتار و فهرست و مقدمه با حروف ابجد: ب=PDF 2، ج=3، د=4، ه=5، و=6، ز=7، ح=8، ط=9، ی=10؛ متن اصلی از شمارهٔ 1 (=PDF 11) تا 43 (=PDF 53): شمارهٔ چاپی = شمارهٔ PDF منهای 10.",
+ "normative_references": [
+  {
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۲۳۶۷۹: سال ۱۴۰۳، فناوری اطلاعات - هوش مصنوعی - مفاهیم و اصطلاحات هوش مصنوعی",
+   "national_number_if_printed": "23679:1403",
+   "pdf_page": 12,
+   "international_equivalent_printed": null
+  },
+  {
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۱۲۰۴۷، سال ۱۳۹۵، فناوری اطلاعات – حکمرانی فناوری اطلاعات (IT) برای سازمان",
+   "national_number_if_printed": "12047:1395",
+   "pdf_page": 12,
+   "international_equivalent_printed": null
+  }
+ ],
+ "related_national_standards_printed_in_text_or_bibliography": [
+  {
+   "national_number": "23733:1403",
+   "role": "AI risk-management guidance; bibliography note says it was developed using ISO/IEC 23894:2023",
+   "pdf_page": 52
+  },
+  {
+   "national_number": "13245:1398",
+   "role": "risk management – guidelines (bibliography [9]); also cited as the source of the 'risk' definition and for clauses 5.3, 5.2, 6.3.3",
+   "pdf_page": 52
+  },
+  {
+   "national_number": "13246:1389",
+   "role": "risk management – vocabulary (bibliography [1]); source of 'risk appetite'",
+   "pdf_page": 52
+  },
+  {
+   "national_number": "ISO 37000:1402 (printed «ایزو ۳۷۰۰۰»)",
+   "role": "governance of organizations – guidance (bibliography [11]); oversight principle cited at its clause 6.4",
+   "pdf_page": 52
+  },
+  {
+   "national_number": "ISO 37301:1401 (printed «ایزو ۳۷۳۰۱»)",
+   "role": "compliance management systems (bibliography [12]); source of 'compliance obligations'",
+   "pdf_page": 52
+  },
+  {
+   "national_number": "20125:1394",
+   "role": "IT governance framework and model; bibliography note: developed using ISO/IEC TR 38502:2014 (bibliography [13] lists ISO/IEC TR 38502:2017)",
+   "pdf_page": 52
+  },
+  {
+   "national_number": "15816-1 (year printed 1396 in bibliography [14] but 1398 in body text — see uncertainties)",
+   "role": "governance of data, part 1: application of ISO/IEC 38500 to the governance of data",
+   "pdf_page": 52
+  },
+  {
+   "national_number": "15816-3:1403",
+   "role": "data governance – data classification; developed using ISO/IEC TS 38505-3:2021 (bibliography [16])",
+   "pdf_page": 52
+  }
+ ],
+ "international_references_in_text_or_bibliography": [
+  "ISO/IEC 23894",
+  "ISO/IEC TR 24027",
+  "ISO/IEC TR 24028",
+  "ISO/IEC TR 24029-1",
+  "ISO/IEC TR 24030",
+  "ISO/IEC TR 24368",
+  "ISO 26000:2010",
+  "ISO 31050",
+  "ISO/IEC TR 38502:2017",
+  "ISO/IEC TR 38505-2",
+  "ISO/IEC TS 38505-3",
+  "ISO/IEC 38506",
+  "ISO/IEC 38505 series (mentioned in 5.3)",
+  "external [18]-[23]: Japan Social Principles of Human-Centric AI (2019), OECD AI Principles (2019), EC Ethics Guidelines for Trustworthy AI (2019), Singapore Model AI Governance Framework 2nd ed. (2020), UN Universal Declaration of Human Rights, UN Johannesburg Declaration (2002)"
+ ],
+ "technical_commission_printed": "PDF 4-5 (printed د-ه): رئیس: الیاسی قوپی، محمد؛ دبیر: عزیزی مهماندوست، مهدی؛ ویراستار: رثائی، حامد؛ به‌علاوه ۱۰ عضو (فهرست اسامی چاپ شده؛ در اینجا نقل نشد). نام کمیتهٔ ملی تأییدکننده: کمیتهٔ ملی استاندارد فناوری اطلاعات (پیش‌گفتار).",
+ "notes": [
+  "VERIFIED: national number 23682 and Iranian year 1403 (چاپ اول) and the international basis ISO/IEC 38507:2022 all match the owner's expectation; no difference found on the cover, header, preface or equivalence statement.",
+  "Document type: GUIDANCE standard. The text is overwhelmingly recommendation language: «توصیه می‌شود» (about 76 lines in OCR count, many more instances) and «بهتر است» (about 11 lines), plus «سزاوار است» (3 uses: 5.5, 6.1, A.1.4), «می‌تواند/می‌توان» for permission/possibility, and plain declaratives for descriptive text.",
+  "The word «باید» (shall) occurs exactly ONCE in the whole PDF — in the INSO preface boilerplate (PDF 8: «باید همواره از آخرین تجدیدنظر استانداردهای ملی ایران استفاده کرد»), confirmed in the native text layer and on the image. Clauses 1-6 and Annex A contain NO «باید» requirement. Stronger-than-should wording appears only as «لازم است» (6.4, PDF 35) and «ضروری است» (A.1.4, PDF 50; also intro PDF 9 and 6.3 PDF 32 in non-requirement senses). Clause 2 says use of the normative references is «الزامی» (boilerplate).",
+  "Annex A is printed as «پیوست الف (الزامی)» (TOC PDF 7 and annex heading PDF 47), although its content is descriptive/guidance (review of governance standards, with recommendation wording). Whether the ISO original labels it normative or informative was NOT verified here — treat the INSO label as printed.",
+  "Relationship to ISO/IEC 38500: the INSO text never prints the ISO designation of INSO 12047:1395 in clause 2 or in the bibliography, so the 38500 link is only indirect: clause 2.2 cites INSO 12047:1395 («حکمرانی فناوری اطلاعات (IT) برای سازمان»); Figure 3 (6.1) is a modified version of Figure 1 of INSO 12047:1395 and Figure A.1 reproduces the 'IT governance model' from it; 4.3 and Annex A.1.1 describe the evaluate-direct-monitor tasks via INSO 12047:1395. 'ISO/IEC 38500' appears by name only inside the title of INSO 15816-1 (bibliography [14]) and as 'ISO/IEC 38505/38506' references. NOT printed: the list of ISO/IEC 38500 principles (responsibility, strategy, acquisition, performance, conformance, human behaviour) — no such list exists in this PDF.",
+  "Evaluate-direct-monitor terminology as printed: Annex A.1.1 (PDF 47): «سه وظیفه اصلی ارزیابی، جهت‌دهی و پایش»; Figure A.1 (PDF 48) boxes: ارزیابی / جهت‌دهی / پایش; but 4.3 (PDF 18) compares the 4.3 list with «ارزیابی، جهت‌دهی و نظارت» and its footnote says INSO 12047 uses «ارزشیابی، هدایت و پایش»; the 4.3 list itself uses «جهت‌دهی، نظارت، ارزشیابی، گزارش‌دهی». The Persian vocabulary is therefore not consistent (evaluate = ارزیابی/ارزشیابی; direct = جهت‌دهی/هدایت; monitor = پایش/نظارت).",
+  "Governing body vs management: the text keeps them apart explicitly (4.2 tool selection is a management decision within governing-body direction; 6.1 managers ensure achievement of governing-body strategies/policies; 6.7.1 governing body sets risk appetite and is accountable, management tries to stay within it; A.2 distinguishes the two roles and allows one person to hold both only if no conflict of interest). Accountability of the governing body is stated as non-delegable (4.1, A.1.3).",
+  "Persian vocabulary used by INSO: «نهاد حکمران» (governing body; Figure 3 uses «نهاد حاکمه», 6.3 once «هیئت حکمران»), «حکمرانی» (governance), «ذی‌نفعان» (stakeholders), «هومص» (AI abbreviation, introduction), «سطح مخاطره‌پذیری» (risk appetite), «واپایش» (control), «نظارت» (oversight), «تعهدات انطباق» (compliance obligations).",
+  "Clause numbers are printed with Persian digits and a hyphen, and the PDF renders them right-to-left, so the image shows e.g. «۱-۴» for clause 4.1 and «۶-۴» (read right to left) for 6.4. All 'number' fields in these outputs use logical dotted notation (4.1, 6.7.4, A.1.3) with 'number_fa' giving the logical Persian-digit form. Cross-reference numbers quoted inside running text were checked on zoomed crops for the ones listed in uncertainties.md.",
+  "Page-number conventions: pdf_page = physical page; printed_page = integer shown in the footer for the main text, Persian letter for front matter, null for the cover. Main text starts on printed page 1 = PDF 11.",
+  "Front matter pages 2-3 (INSO contact and boilerplate about INSO) and the commission member list are not needed for the book and were only recorded at identity level.",
+  "OCR cross-check: tesseract output for this PDF is poor on Persian (drops/garbles words and digits, e.g. preface date and the only «باید»); similarity scores are therefore informational, and every verbatim field was verified on the page image instead."
+ ],
+ "uncertainties": [
+  "TOC prints stray full stops after three page numbers («۳.», «۱۵.», «۲۳.»); read as 3, 15, 23 and confirmed against the real pages of 3.2, 5.4 and 6.4.",
+  "INSO 15816-1 is dated «سال ۱۳۹۸» in the body text (PDF 33, 35, 41) but «سال ۱۳۹۶» in bibliography [14] (PDF 52); both read on zoomed crops.",
+  "6.2 (PDF 31) prints the clause reference of INSO 23733:1403 as «۶-۳-۳۳» (6.3.33), probably a typo for 6.3.3.",
+  "Annex A is labelled «الزامی» although descriptive — see notes.",
+  "Evaluate/direct/monitor Persian terms are inconsistent inside the document — see notes.",
+  "Clause 1 (PDF 11) prints the typo «هنمودهایی» (missing ر) for «رهنمودهایی»; the book should quote the intended word, not the typo, or flag it.",
+  "OCR is poor on this PDF; all verbatim fields were read on page images (details in uncertainties.md)."
+ ]
+}

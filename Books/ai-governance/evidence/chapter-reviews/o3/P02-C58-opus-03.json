@@ -1,0 +1,37 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  3,
+  5
+ ],
+ "section_shas": {
+  "3": "e00592bc2afbf639001aa6faa351fa244feaafb1b850a6f8d3a507b8681b9cd2",
+  "5": "79d7b8e21c48c22bb698df15469a82cc65f1031ebba460ad97fc892684f2289f"
+ },
+ "model": "claude-opus-4-6",
+ "provider": "claude_cli",
+ "latency_s": 445.5581941604614,
+ "result": {
+  "sections": [
+   {
+    "index": 3,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "terminology",
+      "quote": "ظرفیت‌پذیرش و معیارهای کلی",
+      "explanation": "The terminology rules designate «سطح مخاطره‌پذیری» (verified at 23682 §3.2.3) as the default term for risk appetite in new text. The rules explicitly state that «ظرفیت‌پذیرش مدیریت مخاطره» as printed in the جدول پ‑۱ footnote should be mentioned only as a printed variant, not used as the primary term. Here the text uses «ظرفیت‌پذیرش» without any annotation marking it as the printed form.",
+      "suggested_fix": "Replace «ظرفیت‌پذیرش و معیارهای کلی» with «سطح مخاطره‌پذیری (در چاپ جدول پ-۱: «ظرفیت‌پذیرش مخاطره») و معیارهای کلی» or a similar formulation that uses the official term as the primary form and notes the جدول پ-۱ printed variant."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T07:21:01-0400"
+}

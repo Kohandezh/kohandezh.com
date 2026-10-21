@@ -1,0 +1,43 @@
+{
+ "chapter": "P07/C65",
+ "sections": [
+  4,
+  5
+ ],
+ "section_shas": {
+  "4": "48d07db033ecf61c8f4cff0b476be3e6255f60a5af532addf21af68ccfc998e3",
+  "5": "fe5a5dd29111ac78724ad35455aafe46a586142f31a41223af14047dfc1e5605"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 169.7447328567505,
+ "result": {
+  "sections": [
+   {
+    "index": 4,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "The table note for INSO 23733 asserts that 'ISO 31000 به این نام در متن نیامده است'. The cited evidence (I23733-nr1, nr2, nr3) confirms that ISO 31000 is absent from the three normative references in clause 2, and the INSO 23733 source index shows no heading for ISO 31000. However, the claim 'در متن نیامده است' extends the assertion to the entire body text — including explanatory prose, tables, and bibliography — which the evidence does not cover. Per the review rules, an absence claim that is not limited to cited clauses requires evidence covering the full text.",
+      "quote": "ISO 31000 به این نام در متن نیامده است",
+      "suggested_fix": "Scope the claim to what the evidence supports: «ISO 31000 در مراجع الزامی (بند ۲) نیامده است؛ به‌جای آن INSO 13245:1398 (هم‌ارز ملی ISO 31000) ارجاع داده شده است.»"
+     },
+     {
+      "type": "layer_blend",
+      "explanation": "The second short observation contains the evaluative phrase 'مهم‌ترین شکاف این ویرایش است', which is a compiler editorial judgment, not a statement derivable from the cited evidence. The heading 'دو مشاهدهٔ کوتاه از همین فهرست' does not constitute the required explicit layer label. Per the hard content rules, compiler opinion must be explicitly attributed to the compiler layer (e.g., «در لایهٔ تدوینگر…»); it must never be left unmarked alongside factual reference-map data.",
+      "quote": "نبودِ آن در مجموعه مهم‌ترین شکاف این ویرایش است",
+      "suggested_fix": "Mark as compiler layer explicitly: «[لایهٔ تدوینگر] نبودِ INSO 23679 در مجموعهٔ این ویرایش، از دیدگاه تدوینگر، مهم‌ترین شکاف محتوایی ارزیابی می‌شود.»"
+     }
+    ]
+   },
+   {
+    "index": 5,
+    "verdict": "PASS",
+    "issues": []
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:48:45-0400"
+}

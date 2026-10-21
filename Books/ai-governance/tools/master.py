@@ -248,7 +248,8 @@ def assemble_doc(con, dk: str, doc_chapters: list[dict], log: list[str]) -> dict
 def build():
     con = db.connect()
     book = {"edition_id": EDITION, "locale": "fa", "title_fa": PUB["book_title_fa"], "title_en": PUB["book_title_en"], "compiler": PUB["compiler"], "website": PUB["website"],
-            "attribution": "ترجمه، تدوین و بازآرایی فارسی: محمدعلی کهن‌دژ — بر پایه اسناد و انتشارات اصلی NIST و منابع مشخص‌شده در هر فصل — وب‌سایت: kohandezh.com",
+            "attribution": PUB.get("attribution_fa") or "ترجمه، تدوین و بازآرایی فارسی: محمدعلی کهن‌دژ — بر پایه اسناد و انتشارات اصلی NIST و منابع مشخص‌شده در هر فصل — وب‌سایت: kohandezh.com",
+            **({"edition_label_fa": PUB["edition_label_fa"], "base_edition_id": PUB.get("base_edition_id"), "source_count": len(SRC)} if PUB.get("edition_label_fa") else {}),
             "hash_spec": PROV["spec_version"], "built_at": db.now(), "parts": []}
     units, content_ids, citation_registry, source_map = [], {}, {}, []
     md = [f"# {book['title_fa']}", "", book["attribution"], ""]

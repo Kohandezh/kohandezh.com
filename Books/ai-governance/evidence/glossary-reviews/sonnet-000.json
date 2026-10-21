@@ -1,0 +1,84 @@
+{
+ "keys": [
+  "artificial intelligence",
+  "risk",
+  "privacy",
+  "risk tolerance",
+  "risk management",
+  "measure"
+ ],
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 154.57774901390076,
+ "result": {
+  "verdicts": [
+   {
+    "key": "artificial intelligence",
+    "verdict": "AGREE",
+    "confidence": 0.93,
+    "issues": []
+   },
+   {
+    "key": "risk",
+    "verdict": "AGREE",
+    "confidence": 0.91,
+    "issues": []
+   },
+   {
+    "key": "privacy",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.9,
+    "issues": [
+     {
+      "type": "invented_claim",
+      "explanation": "The acronym SP is absent from all supplied printed evidence. In standards contexts SP typically abbreviates Security & Privacy (e.g. NIST SP series), which directly contradicts the editorial decision to keep privacy distinct from security that the entry itself correctly justifies via INSO 23728 clause 4.1.",
+      "suggested_fix": "Remove the SP acronym entirely. If an acronym is needed in a future edition it must be drawn from a printed INSO or IEEE source and attributed to that clause."
+     }
+    ]
+   },
+   {
+    "key": "risk tolerance",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.92,
+    "issues": [
+     {
+      "type": "other",
+      "explanation": "The term tahamol-risk appears simultaneously as proposed preferred_fa and as an item inside rejected_fa. A form cannot be both the approved preferred and a rejected form; this is a direct self-contradiction that makes the entry unpublishable.",
+      "suggested_fix": "Remove tahamol-risk from rejected_fa. The rejected list should contain only aastaneh-pazirash-risk (deduplicated, it appears twice) and satah-risk-paziri."
+     },
+     {
+      "type": "attribution",
+      "explanation": "definition_fa gives a substantive definition with no source citation, and definition_en likewise lacks a citation. With printed_evidence empty and class explicitly no-official-term-in-supplied-set, an uncited working definition risks implying an INSO-approved status that the editor note itself denies.",
+      "suggested_fix": "Prefix the definition with an explicit source label, e.g. the ISO 31000:2018 or ISO/IEC 42001 clause from which it is drawn, or mark it explicitly as the book editors' working translation with no INSO equivalent."
+     }
+    ]
+   },
+   {
+    "key": "risk management",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.88,
+    "issues": [
+     {
+      "type": "definition_not_faithful",
+      "explanation": "definition_fa opens with modiriiat-risk (the old preferred form and an alias) rather than the entry's own preferred term modiriiat-mokhatareh. The definition sentence effectively defines the alias, not the preferred term.",
+      "suggested_fix": "Replace the opening phrase with modiriiat-mokhatareh to match the preferred term: change the sentence start from 'modiriiat-risk beh...' to 'modiriiat-mokhatareh beh faaliiat-haaye hamaahang baraye hedaayat va kontrol-e yek saazman dar ertebaat ba mokhatareh...' and retain the ISO 31000:2018 attribution."
+     }
+    ]
+   },
+   {
+    "key": "measure",
+    "verdict": "AGREE_WITH_EDIT",
+    "confidence": 0.92,
+    "issues": [
+     {
+      "type": "invented_claim",
+      "explanation": "The acronym SSIM is present in the entry but is absent from every piece of printed evidence and is unexplained. In AI literature SSIM denotes Structural Similarity Index Measure, an image-quality metric wholly unrelated to the NIST AI RMF MEASURE function or to any governance sense of the English word measure. Its inclusion is either an unexplained invention or a data-entry error, both of which violate the rule against claiming status not printed in the standards.",
+      "suggested_fix": "Remove the SSIM acronym field value. If an abbreviation for the NIST MEASURE function is needed it should be taken verbatim from a printed NIST or INSO source and attributed accordingly."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-17T23:43:17-0400"
+}

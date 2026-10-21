@@ -2,11 +2,11 @@
  "template_id": "TPL-P06-2",
  "title_fa": "فرم ارزیابی سوگیری سامانهٔ هوش مصنوعی",
  "derived_from": [
-  "KDJ-AI-2026E1-P06-C45-S06",
-  "KDJ-AI-2026E1-P06-C45-S07",
-  "KDJ-AI-2026E1-P06-C45-S08",
-  "KDJ-AI-2026E1-P06-C45-S09",
-  "KDJ-AI-2026E1-P06-C45-S10"
+  "KDJ-AI-2026E2-P06-C45-S06",
+  "KDJ-AI-2026E2-P06-C45-S07",
+  "KDJ-AI-2026E2-P06-C45-S08",
+  "KDJ-AI-2026E2-P06-C45-S09",
+  "KDJ-AI-2026E2-P06-C45-S10"
  ],
  "fields": [
   {

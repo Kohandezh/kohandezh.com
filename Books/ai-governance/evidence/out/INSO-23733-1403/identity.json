@@ -1,0 +1,126 @@
+{
+ "source_id": "INSO-23733-1403",
+ "national_reference_printed": "استاندارد ملی ایران ۲۳۷۳۳ (چاپ اول)",
+ "national_reference_printed_en": "INSO 23733, 1st Edition",
+ "iranian_year_printed": "۱۴۰۳",
+ "gregorian_year_printed_on_cover": "2024",
+ "title_fa_printed": "فناوری اطلاعات – هوش مصنوعی – راهنمای مدیریت مخاطره (ریسک)",
+ "title_en_printed": "Information technology – Artificial intelligence – Guidance on risk management",
+ "running_header_printed": "استاندارد ملی ایران شمارهٔ ۲۳۷۳۳ (چاپ اول): سال ۱۴۰۳",
+ "international_reference_printed": "ISO/IEC 23894:2023",
+ "international_year": 2023,
+ "equivalence_statement_printed": {
+  "cover_en": "Identical with ISO/IEC 23894:2023",
+  "foreword_fa": "به روش «معادل یکسان» تهیه و تدوین شده و شامل ترجمه تخصصی کامل متن آن به زبان فارسی می‌باشد و معادل یکسان استاندارد بین‌المللی مزبور است",
+  "pdf_pages": [
+   1,
+   7
+  ],
+  "printed_pages": [
+   null,
+   "ز"
+  ]
+ },
+ "adoption_reference_printed": "ISO/IEC 23894:2023, Information technology — Artificial intelligence — Guidance on risk management",
+ "adoption_reference_pdf_page": 7,
+ "adoption_reference_printed_page": "ز",
+ "ics_printed": "35.020",
+ "publisher_printed": "سازمان ملی استاندارد ایران (Iran National Standards Organization, INSO)",
+ "publisher_address_pdf_page": 2,
+ "approval_or_publication_date_printed": {
+  "approval_session_fa": "هفتصد و چهل و پنجمین اجلاسیهٔ کمیتهٔ ملی استاندارد فناوری اطلاعات",
+  "approval_date_printed": "۱۴۰۳/۰۸/۰۶",
+  "pdf_page": 7,
+  "printed_page": "ز",
+  "publication_date_printed": null,
+  "note": "Only «چاپ اول ۱۴۰۳» is printed as publication info; no separate publication date. The Gregorian equivalent of the approval date is NOT printed (do not cite one as printed)."
+ },
+ "national_preparation_basis_printed": "پذیرش استانداردهای بین‌المللی/منطقه‌ای به‌عنوان استاندارد ملی ایران، به روش اشاره‌شده در مورد الف، بند ۷، استاندارد ملی ایران شمارهٔ ۵ (استانداردهای ملی ایران - ساختار و شیوهٔ نگارش)",
+ "technical_commission_printed": {
+  "title_fa": "کمیسیون فنی تدوین استاندارد «فناوری اطلاعات - هوش مصنوعی - راهنمای مدیریت مخاطره (ریسک)»",
+  "chair": "الیاسی قوپی، محمد",
+  "secretary": "عزیزی مهماندوست، مهدی",
+  "editor": "رثائی، حامد",
+  "member_count": 12,
+  "pdf_pages": [
+   4,
+   5
+  ],
+  "printed_pages": [
+   "د",
+   "ه"
+  ],
+  "note": "Names recorded only for chair/secretary/editor; members counted (8 on PDF 4, 4 on PDF 5). National committee that approved: «کمیتهٔ ملی استاندارد فناوری اطلاعات»."
+ },
+ "pdf_pages_total": 51,
+ "pdf_to_printed_offset": "printed (Arabic numerals) = PDF page - 9: PDF 10 = printed 1 ... PDF 51 = printed 42. Front matter uses Persian alphabetic page letters: PDF 1 cover (unnumbered), PDF 2 = ب, 3 = ج, 4 = د, 5 = ه, 6 = و, 7 = ز, 8 = ح, 9 = ط.",
+ "pdf_to_printed_offset_numeric": -9,
+ "document_type_register": "guidance (راهنما): the printed register is «توصیه می‌شود» (recommendation); the word «باید» occurs only once, in INSO boilerplate of the foreword (PDF 7); «موظف است» occurs 3 times (6.4.2.3-6.4.2.5); see statements.json modality_flag fields.",
+ "normative_references": [
+  {
+   "clause": "2-1",
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۱۳۲۴۵: سال ۱۳۹۸، مدیریت ریسک - رهنمودها",
+   "national_number_if_printed": "13245:1398",
+   "international_equivalent_if_printed": null,
+   "pdf_page": 10
+  },
+  {
+   "clause": "2-2",
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۱۳۲۴۶: سال ۱۳۸۹، مدیریت ریسک - واژگان",
+   "national_number_if_printed": "13246:1389",
+   "international_equivalent_if_printed": null,
+   "pdf_page": 10
+  },
+  {
+   "clause": "2-3",
+   "printed_reference": "استاندارد ملی ایران شمارهٔ ۲۳۶۷۹: سال ۱۴۰۳، فناوری اطلاعات - هوش مصنوعی - مفاهیم و اصطلاحات هوش مصنوعی",
+   "national_number_if_printed": "23679:1403",
+   "international_equivalent_if_printed": null,
+   "pdf_page": 10
+  }
+ ],
+ "relation_to_iso_31000": {
+  "iso_31000_printed_anywhere": false,
+  "how_related": "The text never prints the string «ISO 31000» (checked on all 51 pages). The relation is expressed only through the national standard: INSO 13245:1398 «مدیریت ریسک - رهنمودها» (clause 2-1), which the introduction (مقدمه, PDF 8) says this standard is designed to be used together with. Clauses 4, 5 and 6 repeatedly defer to the matching sub-clause of «استاندارد ملی ایران شمارهٔ ۱۳۲۴۵: سال ۱۳۹۸». INSO 13246:1389 «مدیریت ریسک - واژگان» is the vocabulary reference (clause 2-2).",
+  "national_number_given": "13245:1398 (guidelines); 13246:1389 (vocabulary)",
+  "international_designation_of_13245_or_13246_printed": null,
+  "pdf_pages": [
+   8,
+   10
+  ],
+  "printed_pages": [
+   "ح",
+   1
+  ],
+  "note": "That 13245:1398 corresponds to ISO 31000:2018 and 13246:1389 to ISO Guide 73:2009 is NOT stated in this PDF; do not cite it as printed evidence from this document."
+ },
+ "notes": [
+  "Cover (PDF 1) is bilingual: Persian side «استاندارد ملی ایران ۲۳۷۳۳ / چاپ اول / ۱۴۰۳»; English side «INSO 23733 / 1st Edition / 2024 / Identical with ISO/IEC 23894:2023».",
+  "Expected by the owner: INSO 23733 (1403), basis ISO/IEC 23894:2023 - CONFIRMED on the pages; no difference found.",
+  "Risk vocabulary: title uses «مخاطره (ریسک)»; running text uses «مخاطره» almost everywhere; PDF 8 footnote 1 prints «Risk» and states that INSO 13246:1389 and INSO 13245:1398 use the Persian word «ریسک». Their titles (clause 2) indeed print «ریسک».",
+  "Printed clause numbers are Persian digits joined by hyphen (e.g. «۲-۵»); read right-to-left they are major-minor (5-2 = clause 5.2). Annex clauses use «الف-۱», «ب-۱». outline.json normalises to dotted Latin form and keeps the printed form in number_printed.",
+  "No figures are printed in the document; 5 tables (Tables 1-4 and Table پ-1).",
+  "Clause 3 defines nothing itself: it only points to INSO 13245:1398, INSO 23679:1403 and INSO 13246:1389 (see terms.json).",
+  "Publisher address block (PDF 2) lists Tehran and Karaj offices, website https://www.inso.gov.ir/ and mail portal https://mail.inso.gov.ir/ as printed."
+ ],
+ "uncertainties": [
+  "Cross-reference [8] in A.11 prints «استاندارد ملی ایران شماره ۲۷۰۱۳»; the bibliography entry [8] is ISO/IEC 27005:2022 with a note naming INSO ISO/IEC 27005:1392 (see uncertainties.md U1).",
+  "The national numbers of the three normative references are printed, their ISO equivalents are not.",
+  "OCR cross-check was run after the visual reading (all 51 OCR pages); see uncertainties.md 'OCR cross-check' for the items below 0.80 (all re-read on the images)."
+ ],
+ "ocr_crosscheck_similarity": {
+  "title_fa_cover": 0.717,
+  "title_en_cover": 1.0,
+  "international_ref_cover": 1.0,
+  "international_ref_foreword": 1.0,
+  "identical_with_cover": 1.0,
+  "equivalence_foreword_fa": 0.962,
+  "approval_session_and_date": 0.439,
+  "national_ref_cover": 1.0,
+  "running_header": 1.0,
+  "commission_title": 1.0,
+  "normative_ref_1": 0.991,
+  "normative_ref_2": 0.99,
+  "normative_ref_3": 0.902
+ }
+}

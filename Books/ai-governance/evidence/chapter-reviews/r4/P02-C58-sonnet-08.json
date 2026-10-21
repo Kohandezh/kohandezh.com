@@ -1,0 +1,36 @@
+{
+ "chapter": "P02/C58",
+ "sections": [
+  8
+ ],
+ "section_shas": {
+  "8": "cd895d3aa6c712b9e270799c2dac4a3f55127e42b66b0f5c26066a4394e22ef8"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 271.2142131328583,
+ "result": {
+  "sections": [
+   {
+    "index": 8,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "دارایی‌های درگیر | assets | دارایی‌های مشهود و نامشهود سازمان، افراد و جوامع (بند ۶.۴.۲.۲)",
+      "explanation": "The form cell attributes the description 'دارایی‌های مشهود و نامشهود سازمان، افراد و جوامع' directly to clause 6.4.2.2 of INSO 23733. No evidence item for clause 6.4.2.2 is included in the cited evidence (the supplied items jump from 6.4.1 to 6.4.2.3). Because the clause citation is specific and content-bearing, the claim is unverifiable against the cited evidence and must be treated as unsupported.",
+      "suggested_fix": "Either supply an evidence item for clause 6.4.2.2 or remove the parenthetical clause reference and replace it with a general attribution, e.g. '(از مفاهیم بند ۶.۴ / پیوست ب — بند دقیق در متن استاندارد بررسی شود)'."
+     },
+     {
+      "type": "unsupported_claim",
+      "quote": "احتمال | likelihood | کمّی یا کیفی و همسو با معیارهای سازمان (بند ۶.۴.۳.۳)",
+      "explanation": "The form cell cites clause 6.4.3.3 as the source for the likelihood-assessment description. No evidence item for clause 6.4.3.3 appears in the cited evidence (the supplied items cover 6.4.3.2 but stop there). The description's accuracy against that clause cannot be verified from the cited evidence.",
+      "suggested_fix": "Either supply an evidence item for clause 6.4.3.3 or remove the parenthetical and replace it with '(از مفاهیم بند ۶.۴.۳ — بند دقیق در متن استاندارد بررسی شود)'."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T01:03:35-0400"
+}

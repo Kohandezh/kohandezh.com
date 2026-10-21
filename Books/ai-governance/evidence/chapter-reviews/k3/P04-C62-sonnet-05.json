@@ -1,0 +1,36 @@
+{
+ "chapter": "P04/C62",
+ "sections": [
+  5
+ ],
+ "section_shas": {
+  "5": "de3e155d56d1e85a0d2f972776b994bb9bcb4bb71b564f2a74f370ea2359ac5e"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 384.32527112960815,
+ "result": {
+  "sections": [
+   {
+    "index": 5,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "explanation": "The limitations note asserts that شکل ۱ prints «صحت عملکردی» (as opposed to «صحت کارکردی» in the body clauses). The only cited figure evidence for شکل ۱ is F23684-شکل ۱, whose ROWS data is truncated at PQ.3 (امنیت) and never reaches the functional-correctness sub-characteristic row. The parenthetical in F23684-شکل ۱ ('یک مورد (صحت کارکردی) با m') uses the transcriber's identifier, not a verbatim figure caption. No cited evidence item confirms that the figure cell itself prints «صحت عملکردی». The fact is stated in the project's binding terminology rules but is not a cited evidence item.",
+      "quote": "شکل ۱ «صحت عملکردی» و بندها «صحت کارکردی» چاپ کرده‌اند",
+      "suggested_fix": "Add a parenthetical marking the source of this observation: «(این تفاوت بر اساس سوابق مستند پروژه ثبت شده است؛ ردیف مربوط در شکل ۱ در مدرک شاهد ارائه‌شده قطع می‌شود)». Alternatively, supply a supplementary evidence item covering that specific figure row."
+     },
+     {
+      "type": "unsupported_claim",
+      "explanation": "The limitations note states that clause 5.6 does not use the word «جدید» in its body text — contrasting with the 'a' marker in the figures. No cited evidence item for clause 5.6 (S23684-043 through S23684-050) contains or denies the word «جدید» in the body text of that clause; S23684-043 only confirms the marker appears in the two شکل figures, not what clause 5.6's body says. This is an absence claim about unprovided text.",
+      "quote": "شفافیت در هر دو شکل علامت a دارد اما بند ۵.۶ واژهٔ «جدید» را نمی‌آورد",
+      "suggested_fix": "Soften to: «بند ۵.۶ در گزاره‌های نقل‌شده در این کتاب واژهٔ «جدید» را ندارد، در حالی که برچسب a در هر دو شکل به همراه یادداشت «مشخصهٔ فرعی جدید» آمده است (S23684-043)» — anchoring the contrast to evidence item S23684-043 rather than asserting silence in the full body text."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T06:24:40-0400"
+}

@@ -1,0 +1,43 @@
+{
+ "chapter": "P02/C59",
+ "sections": [
+  10,
+  11
+ ],
+ "section_shas": {
+  "10": "76a60558ca697d85047ada77e5212876c024810acb2447886323b01eee4913da",
+  "11": "cfbdd2eba9275d93d23ddc8203419d0b0c89308cd2cb3d3b15cab1de12de3543"
+ },
+ "model": "claude-sonnet-4-6",
+ "provider": "claude_cli",
+ "latency_s": 342.9951367378235,
+ "result": {
+  "sections": [
+   {
+    "index": 10,
+    "verdict": "PASS",
+    "issues": []
+   },
+   {
+    "index": 11,
+    "verdict": "PASS_WITH_EDIT",
+    "issues": [
+     {
+      "type": "unsupported_claim",
+      "quote": "بیانیه با تصمیم و توجیه برای هر ۳۸ واپایش و واپایش‌های اضافه",
+      "explanation": "The specific total of 38 controls is stated as fact but does not appear in any cited evidence item. Outline evidence O42001-055 describes Annex A generically as 'اهداف واپایشی مرجع و واپایش‌ها' with no count; statement evidence S42001-105 confirms not all controls are required but gives no total; and the individual control evidence items (A.2.4, A.6.1.3, A.6.2.3, A.6.2.6, A.6.2.7, A.6.2.8, A.7.4, A.7.5, A.8.4, A.9.4, A.10.2, A.10.3) enumerate only 12 controls—never stating a grand total. No cited item supports '۳۸'.",
+      "suggested_fix": "Replace 'هر ۳۸ واپایش' with 'هر واپایش فهرست‌شده در جدول الف-۱' (or 'تمامی واپایش‌های جدول الف-۱') to stay within what the evidence supports."
+     },
+     {
+      "type": "attribution",
+      "quote": "در برابر اولی نقش توسعه‌دهنده و در برابر دومی نقش مشتری را ثبت می‌کند (نکتهٔ ۱ بند ۴.۱)",
+      "explanation": "Evidence S42001-011 (note 1 to clause 4.1) lists the printed role names as 'ارائه‌دهندگان، تولیدکنندگان، مشتریان، شرکا'. The role assigned to the first system is labelled 'توسعه‌دهنده' (developer), which does not appear in that note; the closest printed term is 'تولیدکنندگان' (producers/manufacturers). By citing '(نکتهٔ ۱ بند ۴.۱)' directly after the role name, the text implies the standard itself uses 'توسعه‌دهنده', which the evidence does not support.",
+      "suggested_fix": "Either (a) use the printed term and write 'نقش تولیدکننده (توسعه‌دهنده)' to show it is a compiler gloss on the standard's 'تولیدکنندگان', or (b) drop the parenthetical citation and treat the role label as a free compiler term in the scenario narrative."
+     }
+    ]
+   }
+  ]
+ },
+ "raw_text": null,
+ "at": "2026-10-18T00:28:53-0400"
+}

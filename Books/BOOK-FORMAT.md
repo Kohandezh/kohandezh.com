@@ -78,7 +78,7 @@ Use: **D** = displayed by the reader, **P** = provenance (kept, verified, not di
 
 | Field | Type | Rule | Use |
 |---|---|---|---|
-| `chapter_id` | string | `C01`, `C02`, … numbered **book-wide** in reading order (not per part); unique | I, D |
+| `chapter_id` | string | `C01`, `C02`, … numbered **book-wide** (not per part); unique and gapless. Reading order is the array order. A later edition keeps every published ID and gives a chapter it adds the next free number, placed in its natural position (2026E2: `C54` sits after `C01`), because published IDs are citation keys and are never renumbered | I, D |
 | `slug` | string | path slug; unique within its part | D (URLs) |
 | `origin` | string | `source_translation` / `editorial_synthesis` / `editorial_localization_ir` | D |
 | `kind` | string | `source` / `reading_guide` / `comparative_synthesis` / `executive` / `localization_ir` (other values: WARN) | D |

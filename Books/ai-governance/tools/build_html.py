@@ -58,7 +58,7 @@ def page(title: str, desc: str, canonical: str, body: str, jsonld: dict | list, 
 <body>
 <header class="site"><a href="{BASE}/">{E(PUB['book_title_fa'])}</a> · <a href="{BASE}/glossary/">واژه‌نامه</a> · <a href="{BASE}/sources/">منابع و نقشهٔ منابع</a> · <a href="{BASE}/templates/">نمونه فرم‌ها</a> · <a href="{BASE}/search/">جست‌وجو</a> · <a href="/ai-book/verify/">اعتبارسنجی نسخه</a></header>
 <main>{crumb_html}{body}</main>
-<footer class="site">ترجمه، تدوین و بازآرایی فارسی: {E(PUB['compiler'])} — بر پایه اسناد و انتشارات اصلی NIST و منابع مشخص‌شده در هر فصل — <a href="{SITE}">kohandezh.com</a> · نسخهٔ {E(PUB['edition_id'])} · این نسخه ترجمهٔ رسمی NIST نیست و NIST آن را تأیید نکرده است.</footer>
+<footer class="site">ترجمه، تدوین و بازآرایی فارسی: {E(PUB['compiler'])} — {E(PUB.get("basis_fa", "بر پایه اسناد و انتشارات اصلی NIST و منابع مشخص‌شده در هر فصل"))} — <a href="{SITE}">kohandezh.com</a> · {E(PUB["edition_label_fa"] + " · ") if PUB.get("edition_label_fa") else ""}نسخهٔ {E(PUB['edition_id'])} · این نسخه ترجمهٔ رسمی NIST نیست و NIST آن را تأیید نکرده است. {E(PUB.get("disclaimer_extra_fa", ""))}</footer>
 </body></html>"""
 
 def source_box(dk: str, pages: list[int], sections_used: list[str], cid: str) -> str:
@@ -115,11 +115,11 @@ def build():
             toc.append(f'<li>{badge}<a href="{BASE}/{P["slug"]}/{C["slug"]}/">{E(C["title_fa"])}</a></li>')
         toc.append("</ul></li>")
     toc.append("</ul></div>")
-    intro = (art_tag("IMG-COVER", "cover-art") + f'<h1>{E(book["title_fa"])}</h1><p class="attrib">{E(book["attribution"])}</p><p>این کتاب مرجعِ یکپارچه، ترجمهٔ وفادار و بازآرایی‌شدهٔ ۱۸ سند NIST دربارهٔ حاکمیت، ریسک، امنیت، اعتماد، ارزیابی و حقوق هوش مصنوعی است. سه لایهٔ دانش در سراسر کتاب از هم متمایز شده‌اند: '
+    intro = (art_tag("IMG-COVER", "cover-art") + f'<h1>{E(book["title_fa"])}</h1><p class="attrib">{E(book["attribution"])}</p><p>این کتاب مرجعِ یکپارچه، {E(PUB.get("intro_sources_fa", "ترجمهٔ وفادار و بازآرایی‌شدهٔ ۱۸ سند NIST"))} دربارهٔ حاکمیت، ریسک، امنیت، اعتماد، ارزیابی و حقوق هوش مصنوعی است. سه لایهٔ دانش در سراسر کتاب از هم متمایز شده‌اند: '
              f'<strong>ترجمهٔ متن اصلی</strong>، <strong>یادداشت‌های تدوینگر</strong> (جمع‌بندی و ارتباط اسناد) و <strong>لایهٔ اجرایی برای سازمان‌های ایرانی</strong>. هر بخش شناسهٔ استناد پایدار و اثر انگشت رمزنگاری‌شده دارد؛ اصالت این نسخه را در <a href="/ai-book/verify/">صفحهٔ اعتبارسنجی</a> بررسی کنید.</p>')
     ld = {"@context": "https://schema.org", "@type": "Book", "name": book["title_fa"], "inLanguage": "fa-IR", "author": {"@type": "Person", "name": PUB["compiler"]}, "publisher": {"@type": "Organization", "name": "کهن‌دژ", "url": SITE},
-          "bookEdition": book["edition_id"], "url": SITE + BASE + "/", "isBasedOn": [d.get("doi_url") or d.get("title") for d in SRC.values()], "dateModified": book["built_at"][:10]}
-    (FA / "index.html").write_text(page(book["title_fa"], "ترجمه و تدوین فارسی ۱۸ سند NIST دربارهٔ حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی", BASE + "/", intro + "".join(toc), ld), encoding="utf-8"); urls.append(BASE + "/")
+          "bookEdition": book["edition_id"] + (" — " + PUB["edition_label_fa"] if PUB.get("edition_label_fa") else ""), "url": SITE + BASE + "/", "isBasedOn": [d.get("doi_url") or d.get("title") for d in SRC.values()], "dateModified": book["built_at"][:10]}
+    (FA / "index.html").write_text(page(book["title_fa"], PUB.get("description_fa", "ترجمه و تدوین فارسی ۱۸ سند NIST دربارهٔ حاکمیت، امنیت و مدیریت ریسک هوش مصنوعی"), BASE + "/", intro + "".join(toc), ld), encoding="utf-8"); urls.append(BASE + "/")
     for pi, P in enumerate(book["parts"]):
         pdir = FA / P["slug"]; pdir.mkdir(exist_ok=True)
         items = "".join(f'<li><a href="{BASE}/{P["slug"]}/{C["slug"]}/">{E(C["title_fa"])}</a> {"" if C["kind"]=="source" else "<span class=badge>"+E(render.LABELS.get(C["origin"],"تدوینگر"))+"</span>"}</li>' for C in P["chapters"] if C["sections"])
@@ -156,10 +156,10 @@ def build():
                                                           {"@context": "https://schema.org", "@type": "DefinedTermSet", "name": "واژه‌نامهٔ کهن‌دژ", "inLanguage": "fa-IR"}, [("کتاب", BASE + "/")]), encoding="utf-8"); urls.append(BASE + "/glossary/")
     # sources + source map
     smap = json.load(open(ROOT / "master" / "source_map.json", encoding="utf-8")) if (ROOT / "master" / "source_map.json").exists() else []
-    bib = "".join(f'<li><span class="latin"><strong>{E(d.get("series_identifier",""))}</strong> — {E(d.get("title",""))}{(" — " + E(d["subtitle"])) if d.get("subtitle") else ""}. {E(", ".join(d.get("authors") or []) or d.get("organization",""))}. {E(d.get("publication_type",""))}, {E(d.get("publication_status",""))}, {E(d.get("publication_date",""))}.</span> {("<a class=mono href=" + E(d.get("doi_url") or ("https://doi.org/" + d["doi"])) + ">" + E(d["doi"]) + "</a>") if d.get("doi") else ""} <span class="hash">sha256:{E(d["sha256"][:16])}…</span></li>' for d in SRC.values())
+    bib = "".join(f'<li><span class="latin"><strong>{E(d.get("series_identifier",""))}</strong> — {E(d.get("title",""))}{(" — " + E(d["subtitle"])) if d.get("subtitle") else ""}. {E(", ".join(d.get("authors") or []) or d.get("organization",""))}. {E(d.get("publication_type",""))}, {E(d.get("publication_status",""))}, {E(d.get("publication_date",""))}.{(" مبنای بین‌المللی: " + E(d["international"]["designation"]) + ".") if d.get("international") else ""}</span> {("<a class=mono href=" + E(d.get("doi_url") or ("https://doi.org/" + d["doi"])) + ">" + E(d["doi"]) + "</a>") if d.get("doi") else ""} <span class="hash">sha256:{E(d["sha256"][:16])}…</span></li>' for d in SRC.values())
     mrows = "".join(f'<tr><td class="cid">{E(r["structural_id"])}</td><td>{E(r["source_series"])}</td><td class="latin">{E(r["source_section"] or "")}</td><td>{E(("، ".join(map(str, r["source_pages"][:1])) + "–" + str(r["source_pages"][-1])) if r["source_pages"] else "—")}</td><td>{E(render.LABELS.get(r["origin"], r["origin"]))}</td></tr>' for r in smap)
     (FA / "sources").mkdir(exist_ok=True)
-    (FA / "sources" / "index.html").write_text(page("منابع و نقشهٔ منابع", "کتاب‌شناسی ۱۸ سند NIST و نگاشت هر بخش کتاب به سند، بخش و صفحات منبع", BASE + "/sources/", f'<h1>منابع</h1><ol>{bib}</ol><h2>نقشهٔ منابع</h2><div class="table-wrap"><table><thead><tr><th>شناسهٔ بخش</th><th>سند</th><th>بخش منبع</th><th>صفحات</th><th>لایه</th></tr></thead><tbody>{mrows}</tbody></table></div>',
+    (FA / "sources" / "index.html").write_text(page("منابع و نقشهٔ منابع", PUB.get("sources_description_fa", "کتاب‌شناسی ۱۸ سند NIST و نگاشت هر بخش کتاب به سند، بخش و صفحات منبع"), BASE + "/sources/", f'<h1>منابع</h1>{("<p class=attrib>" + E(PUB["sources_note_fa"]) + "</p>") if PUB.get("sources_note_fa") else ""}<ol>{bib}</ol><h2>نقشهٔ منابع</h2><div class="table-wrap"><table><thead><tr><th>شناسهٔ بخش</th><th>سند</th><th>بخش منبع</th><th>صفحات</th><th>لایه</th></tr></thead><tbody>{mrows}</tbody></table></div>',
                                                      {"@context": "https://schema.org", "@type": "WebPage", "name": "منابع"}, [("کتاب", BASE + "/")]), encoding="utf-8"); urls.append(BASE + "/sources/")
     # templates
     tdir = ROOT / "templates"; (FA / "templates").mkdir(exist_ok=True)
