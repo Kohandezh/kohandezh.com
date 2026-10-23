@@ -1,13 +1,13 @@
 {
  "edition_id": "2026E2",
- "release_id": "E2-RC1",
- "publication_date": "2026-10-18T16:13:15-0400",
+ "release_id": "release",
+ "publication_date": "2026-10-23T19:08:30-0400",
  "merkle_root": "b7c58fe736dd0ca70e5a872c330a436dc06e20babc5e2ae49c5dc2c65f4ecefe",
  "signature_kind": "DEVELOPMENT",
  "signing_status": "PUBLISHER_SIGNING_KEY_REQUIRED (development-signed release candidate)",
  "public_key_ed25519_hex": "07accc2e12763b7b549e7218fab2955991b3e061c037ecd0c3ca7bf459aaa839",
- "manifest_sha256": "89a7d1245779525afc063189663a6449e6729c87d90ee0a0f2169e8f243f2e92",
- "manifest_signature_hex": "24e8452c3a6d6b8ac883c3e3899a8669003d414af15cb273f7f6befc2c03937cd02677c5435b456d88f73c697b0d9de8c8d3d1a1f233418826cd0d590189d201",
+ "manifest_sha256": "1adce95d0d7b3a00b64a5c0fbcbf47a1fdc262a425605edcf2e7395e16b7d1ae",
+ "manifest_signature_hex": "85c692c1772a932fcfe433dd87778b82ec11388ce6c22a8e158d86919e5822247249c0863160359294c67f1a8be357c398c1f5875da270e17b199e3f5cf71e04",
  "artifact_hashes": {
   "01_source_manifest.json": {
    "sha256": "3487c1bad32c6849592df35d687670875a5ec47622e1f0df156b69409b4528e0",
@@ -26,8 +26,8 @@
    "bytes": 6024086
   },
   "05_book_fa.docx": {
-   "sha256": "e3497aa3d040d382e60051467c04298b1b93d3fec92b9de4f60f152ae808c298",
-   "bytes": 19454595
+   "sha256": "b04b772e466dfe58151c9ccd00178824a6b66e84bd99ac05ea5de490b196487e",
+   "bytes": 20967441
   },
   "06_book_fa.pdf": {
    "sha256": "6a1663927f71985b4c49a97a2f4b349ac83c9bdd01ea9bb4a3c20946b39da66d",

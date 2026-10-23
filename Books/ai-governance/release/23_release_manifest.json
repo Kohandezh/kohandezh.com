@@ -17,8 +17,8 @@
    "sha256": "74c86580694bc9e6f805e2edf68ef24a41ad75736479fa2169906b582b42ce81"
   },
   "05_book_fa.docx": {
-   "bytes": 19454595,
-   "sha256": "e3497aa3d040d382e60051467c04298b1b93d3fec92b9de4f60f152ae808c298"
+   "bytes": 20967441,
+   "sha256": "b04b772e466dfe58151c9ccd00178824a6b66e84bd99ac05ea5de490b196487e"
   },
   "06_book_fa.pdf": {
    "bytes": 39184107,
@@ -102,7 +102,7 @@
    "sha256": "ab97f4f82cbebafa5faa844a72cdd49f7661b13c2df659cbf83165c474703483"
   }
  },
- "build_date": "2026-10-18T16:13:15-0400",
+ "build_date": "2026-10-23T19:08:30-0400",
  "compiler": "محمدعلی کهن‌دژ",
  "edition_id": "2026E2",
  "hash_spec": "kdj-hash-1",
@@ -135,7 +135,7 @@
   "translate": "translate-v1"
  },
  "publisher": "کهن‌دژ",
- "release_id": "E2-RC1",
+ "release_id": "release",
  "source_hashes": {
   "AI_RMF_Playbook.pdf": "65d6101d806502875aadb0fd19a75c3a9cc9a5e9461129e9398a39192d8202d2",
   "NIST.AI.100-1.pdf": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
