@@ -29,6 +29,9 @@ final class KBK_AI_Book_Repository {
 	/** @var array<string,mixed>|false|null False once the manifest failed to load. */
 	private $release;
 
+	/** @var array<string,array<string,string>>|null Previous-edition map, keyed by its structural ID. */
+	private $previous_map;
+
 	/** @var array{applied:bool,chapters:int,sections:int,omitted:int} */
 	private $overlay_state = array( 'applied' => false, 'chapters' => 0, 'sections' => 0, 'omitted' => 0 );
 
@@ -177,6 +180,136 @@ final class KBK_AI_Book_Repository {
 			return $this->sections_by_structural_id[ $structural_id ] ?? null;
 		}
 		return null;
+	}
+
+	/**
+	 * Resolve an ID printed by the PREVIOUS edition (book.json base_edition_id)
+	 * to the same section of this edition. Section positions are stable across
+	 * editions and only the edition token changes, so the mapping is exact.
+	 * When provenance/e1-e2-map.json ships, a content ID must also match the
+	 * hash the previous edition published, and the section's status is known.
+	 *
+	 * @return array{base_id:string,structural_id:string,status:?string,content_match:?bool}|null
+	 */
+	public function resolve_previous_edition( string $id ): ?array {
+		$id   = strtoupper( trim( $id ) );
+		$book = $this->book();
+		$base = isset( $book['base_edition_id'] ) && is_string( $book['base_edition_id'] ) ? $book['base_edition_id'] : '';
+		if ( '' === $base || 1 !== preg_match( '/^KDJ-([A-Z0-9]{1,8})-(\d{4}E\d+)-(P\d{2}-C\d{2}-S\d{2})(?:-([A-F0-9]{8}))?$/', $id, $m ) || $m[2] !== $base ) {
+			return null;
+		}
+		$structural = 'KDJ-' . $m[1] . '-' . $book['edition_id'] . '-' . $m[3];
+		if ( null === $this->find_section( $structural ) ) {
+			return null;
+		}
+		$base_structural = 'KDJ-' . $m[1] . '-' . $base . '-' . $m[3];
+		$map    = $this->previous_edition_map();
+		$entry  = $map[ $base_structural ] ?? null;
+		$status = null;
+		$match  = null;
+		if ( null !== $entry ) {
+			$status = $entry['status'];
+			if ( isset( $m[4] ) && '' !== $m[4] ) {
+				$match = $entry['base_content_id'] === $id;
+				if ( ! $match ) {
+					return null; // a well-formed ID the previous edition never published
+				}
+			}
+		} elseif ( array() !== $map ) {
+			return null; // the map exists and has no such section
+		}
+		return array( 'base_id' => $id, 'structural_id' => $structural, 'status' => $status, 'content_match' => $match );
+	}
+
+	/** Previous-edition label (e.g. 2026E1), or '' for a first edition. */
+	public function base_edition_id(): string {
+		$book = $this->book();
+		return isset( $book['base_edition_id'] ) && is_string( $book['base_edition_id'] ) && 1 === preg_match( '/^\d{4}E\d+$/', $book['base_edition_id'] ) ? $book['base_edition_id'] : '';
+	}
+
+	/**
+	 * Optional provenance/e1-e2-map.json, keyed by the previous edition's
+	 * structural ID. Absent, unreadable or for another edition pair → array().
+	 *
+	 * @return array<string,array{base_content_id:string,structural_id:string,status:string}>
+	 */
+	public function previous_edition_map(): array {
+		if ( null !== $this->previous_map ) {
+			return $this->previous_map;
+		}
+		$this->previous_map = array();
+		$path = $this->artifact_path( 'provenance/e1-e2-map.json' );
+		if ( ! is_file( $path ) || filesize( $path ) > 4 * 1024 * 1024 ) {
+			return $this->previous_map;
+		}
+		$data = json_decode( (string) file_get_contents( $path ), true );
+		$book = $this->book();
+		if ( ! is_array( $data ) || ( $data['edition_id'] ?? null ) !== $book['edition_id'] || ( $data['base_edition_id'] ?? null ) !== $this->base_edition_id() || ! is_array( $data['mapping'] ?? null ) ) {
+			return $this->previous_map;
+		}
+		foreach ( $data['mapping'] as $row ) {
+			if ( is_array( $row ) && is_string( $row['base_structural_id'] ?? null ) && is_string( $row['structural_id'] ?? null ) && is_string( $row['base_content_id'] ?? null ) ) {
+				$this->previous_map[ $row['base_structural_id'] ] = array(
+					'base_content_id' => $row['base_content_id'],
+					'structural_id'   => $row['structural_id'],
+					'status'          => is_string( $row['status'] ?? null ) ? $row['status'] : '',
+				);
+			}
+		}
+		return $this->previous_map;
+	}
+
+	/**
+	 * What changed against the previous edition, for the "what's new" block.
+	 * Counts come from the shipped map when present; new chapters are the
+	 * chapters none of whose sections existed in the previous edition.
+	 *
+	 * @return array{base_edition_id:string,edition_label_fa:string,new_chapters:array<int,array{part_id:string,chapter_id:string,title_fa:string}>,added:int,corrected:int,unchanged:int}|null
+	 */
+	public function edition_changes(): ?array {
+		$base = $this->base_edition_id();
+		if ( '' === $base ) {
+			return null;
+		}
+		$book = $this->book();
+		$map  = $this->previous_edition_map();
+		$old  = array();
+		foreach ( $map as $entry ) {
+			$old[ $entry['structural_id'] ] = $entry['status'];
+		}
+		$new_chapters = array();
+		$added = 0;
+		$corrected = 0;
+		$unchanged = 0;
+		foreach ( $this->parts() as $part ) {
+			foreach ( $part['chapters'] as $chapter ) {
+				$fresh = true;
+				foreach ( $chapter['sections'] as $section ) {
+					$status = $old[ $section['structural_id'] ] ?? null;
+					if ( null === $status ) {
+						++$added;
+					} else {
+						$fresh = false;
+						if ( 'corrected_against_supplied_standard' === $status ) {
+							++$corrected;
+						} else {
+							++$unchanged;
+						}
+					}
+				}
+				if ( $fresh && array() !== $map && array() !== $chapter['sections'] ) {
+					$new_chapters[] = array( 'part_id' => $part['part_id'], 'chapter_id' => $chapter['chapter_id'], 'title_fa' => $chapter['title_fa'] );
+				}
+			}
+		}
+		return array(
+			'base_edition_id'  => $base,
+			'edition_label_fa' => isset( $book['edition_label_fa'] ) && is_string( $book['edition_label_fa'] ) ? $book['edition_label_fa'] : '',
+			'new_chapters'     => $new_chapters,
+			'added'            => array() === $map ? 0 : $added,
+			'corrected'        => $corrected,
+			'unchanged'        => $unchanged,
+		);
 	}
 
 	/**

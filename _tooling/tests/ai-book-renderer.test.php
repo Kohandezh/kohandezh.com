@@ -143,6 +143,10 @@ check( false !== strpos( $ordered, '<ul><li dir="auto">بی‌شماره</li></u
 $title = KBK_AI_Book::bidi_html( 'چارچوب مدیریت ریسک هوش مصنوعی (AI RMF 1.0)' );
 check( 'چارچوب مدیریت ریسک هوش مصنوعی (<span dir="ltr">AI RMF 1.0</span>)' === $title, 'Latin run inside a Persian title is isolated so the parentheses stay put' );
 check( '&lt;<span dir="ltr">b</span>&gt;' === KBK_AI_Book::bidi_html( '<b>' ), 'bidi_html escapes markup' );
+// Two standard numbers joined by a dash stay one LTR run; split, RTL swaps the halves.
+check( 'کلان‌داده (<span dir="ltr">INSO 23685 — IEEE Std 2813</span>)' === KBK_AI_Book::bidi_html( 'کلان‌داده (INSO 23685 — IEEE Std 2813)' ), 'bidi_html keeps an em-dash-joined Latin run together' );
+check( '<span dir="ltr">ISO/IEC 42001</span> – <span dir="ltr">x</span>' !== KBK_AI_Book::bidi_html( 'ISO/IEC 42001 – x' ) && false !== strpos( KBK_AI_Book::bidi_html( 'ISO/IEC 42001 – ISO 9001' ), '<span dir="ltr">ISO/IEC 42001 – ISO 9001</span>' ), 'bidi_html keeps an en-dash-joined Latin run together' );
+check( 'متن — <span dir="ltr">NIST</span>' === KBK_AI_Book::bidi_html( 'متن — NIST' ), 'a dash after Persian text is not pulled into the Latin run' );
 check( 'بخش ۵، فصل ۳۸' === KBK_AI_Book::location_label( 'P05', 'C38' ) && '۱۲۳' === KBK_AI_Book::fa_digits( 123 ) && '۱۰٬۴۷۴' === KBK_AI_Book::fa_digits( 10474 ), 'UI numbers use Persian digits' );
 check( 'تعریف‌شده در' === KBK_AI_Book::relation_label( 'DEFINED_IN' ) && 'روش ارزیابی' === KBK_AI_Book::entity_type_label( 'EvaluationMethod' ), 'relation codes and entity types have Persian labels' );
 

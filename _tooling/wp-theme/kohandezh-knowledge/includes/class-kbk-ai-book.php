@@ -102,6 +102,7 @@ final class KBK_AI_Book {
 		add_action( 'init', array( __CLASS__, 'rewrite_rules' ), 20 );
 		add_filter( 'template_include', array( __CLASS__, 'template_include' ), 30 );
 		add_action( 'template_redirect', array( __CLASS__, 'maybe_redirect_unlocalized_namespace' ), 0 );
+		add_action( 'template_redirect', array( __CLASS__, 'maybe_redirect_previous_edition_section' ), 0 );
 		add_action( 'template_redirect', array( __CLASS__, 'maybe_stream_pdf' ), 1 );
 		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_assets' ) );
 		add_filter( 'wp_robots', array( __CLASS__, 'robots' ) );
@@ -207,6 +208,30 @@ final class KBK_AI_Book {
 		}
 		status_header( 404 );
 		nocache_headers();
+	}
+
+	/**
+	 * A reader link that names a section of the PREVIOUS edition
+	 * (?kbk_section=KDJ-AI-2026E1-…, printed in that edition's PDF and DOCX)
+	 * moves permanently to the same section of this edition, fragment included,
+	 * instead of silently opening the chapter's first page.
+	 */
+	public static function maybe_redirect_previous_edition_section(): void {
+		if ( 'read' !== self::current_view() ) {
+			return;
+		}
+		$requested = self::requested_identifier( self::SECTION_QUERY_VAR );
+		$repository = null === $requested ? null : self::repository();
+		if ( null === $repository || null !== $repository->find_section( $requested ) ) {
+			return;
+		}
+		$previous = $repository->resolve_previous_edition( $requested );
+		$section  = null === $previous ? null : $repository->find_section( $previous['structural_id'] );
+		if ( null === $section ) {
+			return;
+		}
+		wp_safe_redirect( self::section_url( $section['part_id'], $section['chapter_id'], $section['structural_id'] ), 301 );
+		exit;
 	}
 
 	/**
@@ -816,7 +841,9 @@ final class KBK_AI_Book {
 	 * because <bdi> does not survive wp_kses_post.
 	 */
 	public static function bidi_html( string $text ): string {
-		$pieces = preg_split( '/([A-Za-z][A-Za-z0-9]*(?:[ .\-\/:+&\'_][A-Za-z0-9]+)*)/u', $text, -1, PREG_SPLIT_DELIM_CAPTURE );
+		// A dash between two Latin runs ("INSO 23685 — IEEE Std 2813") belongs to
+		// the run: split there, the RTL paragraph would swap the two halves.
+		$pieces = preg_split( '/([A-Za-z][A-Za-z0-9]*(?:(?:\s?[\x{2013}\x{2014}]\s?|[ .\-\/:+&\'_])[A-Za-z0-9]+)*)/u', $text, -1, PREG_SPLIT_DELIM_CAPTURE );
 		if ( false === $pieces ) {
 			return htmlspecialchars( $text, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8' );
 		}
@@ -1725,14 +1752,21 @@ final class KBK_AI_Book {
 		$query     = self::requested_verify_id();
 		$repository = self::repository();
 		if ( null === $repository ) {
-			return array( 'status' => self::repository_status(), 'query' => $query, 'submitted' => $submitted, 'release' => null, 'match' => null );
+			return array( 'status' => self::repository_status(), 'query' => $query, 'submitted' => $submitted, 'release' => null, 'match' => null, 'previous' => null );
+		}
+		$match    = null === $query ? null : $repository->verify( $query );
+		$previous = ( null === $match && null !== $query ) ? $repository->resolve_previous_edition( $query ) : null;
+		if ( null !== $previous ) {
+			$previous['section'] = $repository->find_section( $previous['structural_id'] );
+			$previous['edition'] = $repository->base_edition_id();
 		}
 		return array(
 			'status'    => 'READY',
 			'query'     => $query,
 			'submitted' => $submitted,
 			'release'   => $repository->release(),
-			'match'     => null === $query ? null : $repository->verify( $query ),
+			'match'     => $match,
+			'previous'  => $previous,
 		);
 	}
 

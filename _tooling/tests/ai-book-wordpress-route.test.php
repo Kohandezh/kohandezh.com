@@ -45,8 +45,8 @@ require_once __DIR__ . '/../wp-theme/kohandezh-knowledge/includes/class-kbk-rout
 
 KBK_AI_Book::hooks();
 $hook_names = array_map( static function ( array $hook ): string { return $hook[1] . '@' . $hook[2]; }, $GLOBALS['kbk_test_hooks'] );
-if ( 10 !== count( $GLOBALS['kbk_test_hooks'] ) || ! in_array( 'robots_txt@20', $hook_names, true ) || 2 !== count( array_keys( $hook_names, 'template_redirect@1', true ) ) ) {
-	fwrite( STDERR, "FAIL hook registration (10 hooks incl. the book feeds at template_redirect@1 and robots_txt@20)\n" ); exit( 1 );
+if ( 11 !== count( $GLOBALS['kbk_test_hooks'] ) || ! in_array( 'robots_txt@20', $hook_names, true ) || 2 !== count( array_keys( $hook_names, 'template_redirect@1', true ) ) || 2 !== count( array_keys( $hook_names, 'template_redirect@0', true ) ) ) {
+	fwrite( STDERR, "FAIL hook registration (11 hooks incl. the book feeds at template_redirect@1, the namespace and previous-edition redirects at template_redirect@0, and robots_txt@20)\n" ); exit( 1 );
 }
 KBK_AI_Book::rewrite_rules();
 $rules = $GLOBALS['kbk_test_rewrites'];
