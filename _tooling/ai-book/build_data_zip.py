@@ -36,7 +36,7 @@ FILES = [
     'manifests/sources.json', 'html/search/index.json',
 ]
 # Shipped when present; the plugin reads it only if its book_sha256 matches.
-OPTIONAL_FILES = ['master/reader-overlay.json', 'taxonomy/doc_titles_fa.json']
+OPTIONAL_FILES = ['master/reader-overlay.json', 'taxonomy/doc_titles_fa.json', 'provenance/e1-e2-map.json']
 LEGACY_SLUG, LEGACY_FOLDER, LEGACY_ZIP = 'ai-governance', 'AiBook', 'ai-book-data.zip'
 FOLDER_RE = re.compile(r'^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$')
 

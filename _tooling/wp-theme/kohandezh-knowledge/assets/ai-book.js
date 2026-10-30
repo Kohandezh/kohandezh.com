@@ -82,6 +82,17 @@
     var id;
     try { id = decodeURIComponent(window.location.hash.slice(1)); } catch (error) { return false; }
     if (!id || document.getElementById(id)) return false;
+    // An anchor from the previous edition (#KDJ-AI-2026E1-…) names the same
+    // section in this edition: positions are stable, only the edition changes.
+    var old = chapterMap.baseEdition && id.match(/^(KDJ-[A-Z0-9]{1,8}-)(\d{4}E\d+)(-P\d{2}-C\d{2}-S\d{2}.*)$/);
+    if (old && old[2] === chapterMap.baseEdition && chapterMap.edition) {
+      id = old[1] + chapterMap.edition + old[3];
+      if (document.getElementById(id)) {
+        try { history.replaceState(null, "", "#" + encodeURIComponent(id)); } catch (error) { /* keep the old hash */ }
+        document.getElementById(id).scrollIntoView();
+        return false;
+      }
+    }
     // Split sections list their parts (ID-p2) and headings (ID-h7); any other
     // in-section anchor (heading, footnote) lives on its section's page.
     var page = chapterMap.sections[id] || chapterMap.sections[id.replace(/-(?:h\d+|p\d+|fn-\d+|fnref-\d+-\d+)$/, "")];

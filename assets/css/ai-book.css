@@ -626,3 +626,10 @@ span.ab-title-en{display:inline;margin:0}
 .kbk-ai-book-page .ab-card-meta a{display:inline-block;min-height:24px;line-height:24px}
 @media (max-width:760px),(pointer:coarse){.kbk-ai-book-page .ab-card-meta a{min-height:44px;line-height:44px}}
 .ab-views{display:inline-flex;align-items:center;gap:4px;min-width:5.5em;color:var(--ab-muted);font-size:12px;font-weight:500;letter-spacing:0;line-height:1.6;white-space:nowrap;vertical-align:middle}.ab-views[hidden]{display:none}.ab-views-n{font-variant-numeric:tabular-nums}.ab-view-read .ab-prose>section>h2+.ab-views{display:inline-flex;margin:-6px 0 6px}.ab-view-read .ab-prose>section>h2+.ab-views[hidden]{display:none}.ab-kicker .ab-views-chapter{margin-inline-start:10px;padding:1px 9px;border:1px solid var(--ab-line);border-radius:999px;font-weight:600}
+
+/* Edition news: the "what's new" block and the new/corrected badges. */
+.ab-edition-badge{display:inline-flex;align-items:center;min-height:24px;padding:0 10px;margin-inline-start:8px;border:1px solid var(--ab-accent);border-radius:999px;color:var(--ab-accent-text);font-size:13px;font-weight:700;line-height:1.4;vertical-align:middle;white-space:nowrap}
+.ab-whats-new{padding:clamp(18px,3vw,28px);border:1px solid var(--ab-accent);border-radius:var(--ab-radius);background:var(--ab-panel)}
+.ab-whats-new .ab-stat-grid{margin:18px 0}
+.ab-book-status-new{border:1px solid var(--ab-accent);color:var(--ab-accent-text);background:transparent}
+@media print{.ab-edition-badge{border-color:#000;color:#000}}
