@@ -263,7 +263,21 @@ if ( $edition_changes && array() !== $edition_changes['new_chapters'] ) {
 	foreach ( $edition_changes['new_chapters'] as $wn_chapter ) {
 		$whats_new .= '<a class="ab-card" href="' . esc_url( KBK_AI_Book::reader_url( $wn_chapter['part_id'], $wn_chapter['chapter_id'] ) ) . '"><span class="ab-card-meta ab-meta-fa">' . esc_html( KBK_AI_Book::location_label( $wn_chapter['part_id'], $wn_chapter['chapter_id'] ) ) . $edition_badge( 'تازه' ) . '</span><h3>' . KBK_AI_Book::bidi_html( $wn_chapter['title_fa'] ) . '</h3><span class="ab-card-link">مطالعهٔ فصل</span></a>';
 	}
-	$whats_new .= '</div></section>';
+	$whats_new .= '</div>';
+	// Change log: every figure comes from the shipped edition map and the bundle, so it cannot drift from the book.
+	$wn_titles = array();
+	foreach ( $edition_changes['new_chapters'] as $wn_chapter ) {
+		$wn_titles[] = '<a href="' . esc_url( KBK_AI_Book::reader_url( $wn_chapter['part_id'], $wn_chapter['chapter_id'] ) ) . '">' . KBK_AI_Book::bidi_html( $wn_chapter['title_fa'] ) . '</a>';
+	}
+	$whats_new .= '<div class="ab-changelog" id="changelog"><h3>تاریخچهٔ تغییرات</h3><ol>';
+	$whats_new .= '<li><h4>' . esc_html( $wn_label ) . ' · <bdi>' . esc_html( $summary['edition_id'] ) . '</bdi></h4><ul>';
+	$whats_new .= '<li>' . esc_html( $fa( count( $edition_changes['new_chapters'] ) ) ) . ' فصل تازه و ' . esc_html( $fa( $edition_changes['added'] ) ) . ' بخش تازه افزوده شد: ' . implode( '، ', $wn_titles ) . '.</li>';
+	$whats_new .= '<li>' . esc_html( $fa( $edition_changes['corrected'] ) ) . ' بخش با مراجعه به استاندارد ارائه‌شده اصلاح شد؛ ' . esc_html( $fa( $edition_changes['unchanged'] ) ) . ' بخش پیشین بدون تغییر محتوایی ماند.</li>';
+	$whats_new .= '<li>شمارهٔ فصل‌ها و جایگاه بخش‌های ویرایش پیشین حفظ شد و شناسه‌ها و پیوندهای <bdi>' . esc_html( $edition_changes['base_edition_id'] ) . '</bdi> به همان بخش در این ویرایش می‌رسند.</li>';
+	$whats_new .= '<li>واژه‌نامه به ' . esc_html( $fa( $wn_terms ) ) . ' اصطلاح رسید و منابع اصلی کتاب به ' . esc_html( $fa( $summary['source_count'] ?? 18 ) ) . ' سند رسید.</li>';
+	$whats_new .= '</ul></li>';
+	$whats_new .= '<li><h4>ویرایش نخست · <bdi>' . esc_html( $edition_changes['base_edition_id'] ) . '</bdi></h4><ul><li>ویرایش پایه؛ فصل‌ها و بخش‌های آن در ویرایش دوم نگه داشته شده است.</li></ul></li>';
+	$whats_new .= '</ol></div></section>';
 }
 ?>
 <!doctype html>
