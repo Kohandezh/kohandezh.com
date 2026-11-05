@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "about": "Extra pose strips for the avatar. Each entry is an act in a group (click, idle, wait, drag, drop, talk, think); the runtime gives purpose-made poses double weight in their group. Build entries with scripts/build-act-strip.py from a generated pose sheet; never edit a strip by hand. A missing file is skipped, so an entry can never show a blank frame.",
+  "acts": []
+}
