@@ -105,6 +105,15 @@ $stt_has_key  = is_array( $stt_raw ) && ! empty( $stt_raw['api_key'] );
 				</td>
 			</tr>
 			<tr>
+				<th scope="row"><?php esc_html_e( 'Speech bubble', 'kohan-avatar' ); ?></th>
+				<td>
+					<label><input type="checkbox" name="kohan_avatar_options[talk]" value="1" <?php checked( $o['talk'], 1 ); ?>>
+					<?php esc_html_e( 'Clicking the avatar makes it talk about the section in view, or say one of the page\'s 2-3 quotations', 'kohan-avatar' ); ?></label><br>
+					<label><input type="checkbox" name="kohan_avatar_options[section_talk]" value="1" <?php checked( $o['section_talk'], 1 ); ?>>
+					<?php esc_html_e( 'Clicking a section of the page makes the avatar look at it and say what it is about', 'kohan-avatar' ); ?></label>
+				</td>
+			</tr>
+			<tr>
 				<th scope="row"><?php esc_html_e( 'Response-event mapping', 'kohan-avatar' ); ?></th>
 				<td>
 					<label><input type="checkbox" name="kohan_avatar_options[response_events]" value="1" <?php checked( $o['response_events'], 1 ); ?>>

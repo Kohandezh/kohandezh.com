@@ -55,7 +55,9 @@ w.Image=class {set src(v){urls.push(v)} addEventListener(){} };
 const src=fs.readFileSync('_tooling/wp-theme/kohan-avatar/assets/js/kohan-avatar.js','utf8');
 w.eval(src); w.eval(src); w.document.dispatchEvent(new w.Event('DOMContentLoaded'));
 assert.equal(w.document.querySelectorAll('.kohan-avatar-root').length,1);
-assert(w.document.querySelector('.kohan-avatar-root').style.backgroundImage.includes(w.KohanAvatarConfig.atlasUrl));
+// v3 paints frames on two crossfading layers inside the root, not on the root.
+assert(w.document.querySelector('.kohan-avatar-root .kohan-layer').style.backgroundImage.includes(w.KohanAvatarConfig.atlasUrl));
+assert.equal(w.document.querySelectorAll('.kohan-avatar-root .kohan-layer').length,2);
 assert.deepEqual(urls.filter(x=>x.includes('spritesheet.webp')),[w.KohanAvatarConfig.atlasUrl]);
 assert.equal(typeof w.KohanAvatar.setMood,'function');
 w.close();

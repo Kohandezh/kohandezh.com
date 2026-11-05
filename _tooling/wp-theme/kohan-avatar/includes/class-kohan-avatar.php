@@ -29,6 +29,7 @@ class Kohan_Avatar {
 		'confused', 'macbook-work', 'ipad-review', 'pointer-look',
 		'wink', 'angry-still', 'confused-vision', 'guarded', 'russian-roulette',
 		'drag-annoyed', 'fall-scared', 'goodbye-smoke', 'walking-patrol',
+		'looking-around', 'thinking', 'talking', 'waiting',
 	);
 
 	protected static $instance = null;
@@ -75,6 +76,8 @@ class Kohan_Avatar {
 			'weapon_moods'     => 1,
 			'response_events'  => 0,
 			'chat'             => 1,
+			'talk'             => 1,
+			'section_talk'     => 1,
 			'fire_probability' => 0.5,
 		);
 	}
@@ -230,6 +233,13 @@ class Kohan_Avatar {
 		$config = array(
 			'atlasUrl'  => esc_url_raw( KOHAN_AVATAR_URL . 'assets/kohan/spritesheet.webp?v=' . $ver ),
 			'assetBase' => esc_url_raw( KOHAN_AVATAR_URL . 'assets/kohan' ),
+			// Extra pose strips (assets/kohan/acts.json): each becomes an act in
+			// its group (wait / drag / drop / talk / click / idle). Validated here
+			// and again in the browser; a strip file that is missing is skipped.
+			'acts'      => $this->extra_acts( $ver ),
+			// The theme's verified wisdom-quotes dataset, when the active theme
+			// ships one; the talk bubble picks 2-3 per page from it.
+			'quotesBase' => $this->quotes_base(),
 			'ariaLabel' => 'Kohan avatar',
 			// kdcv/v1/chat has never existed. The AI Hub registers kdcv/v1/ask and
 			// nothing else, so every message the avatar sent 404'd: the bubble sat
@@ -246,6 +256,8 @@ class Kohan_Avatar {
 				'weaponMoods'     => (bool) $o['weapon_moods'],
 				'responseEvents'  => (bool) $o['response_events'],
 				'chat'            => (bool) $o['chat'],
+				'talk'            => (bool) $o['talk'],
+				'sectionTalk'     => (bool) $o['section_talk'],
 				'rouletteEvery'   => 3,
 				'fireProbability' => (float) $o['fire_probability'],
 			),
@@ -278,10 +290,91 @@ class Kohan_Avatar {
 			wp_enqueue_script( 'kohan-avatar-events', $evt_url, array( 'kohan-avatar' ), $this->file_ver( 'assets/js/kohan-avatar-events.js' ), true );
 		}
 
+		if ( ! empty( $o['talk'] ) ) {
+			wp_enqueue_style( 'kohan-avatar-talk', KOHAN_AVATAR_URL . 'assets/css/kohan-avatar-talk.css', array( 'kohan-avatar' ), $this->file_ver( 'assets/css/kohan-avatar-talk.css' ) );
+			wp_enqueue_script( 'kohan-avatar-talk', KOHAN_AVATAR_URL . 'assets/js/kohan-avatar-talk.js', array( 'kohan-avatar' ), $this->file_ver( 'assets/js/kohan-avatar-talk.js' ), true );
+		}
+
 		if ( ! empty( $o['chat'] ) ) {
 			wp_enqueue_style( 'kohan-avatar-chat', KOHAN_AVATAR_URL . 'assets/css/kohan-avatar-chat.css', array( 'kohan-avatar' ), $this->file_ver( 'assets/css/kohan-avatar-chat.css' ) );
 			wp_enqueue_script( 'kohan-avatar-chat', KOHAN_AVATAR_URL . 'assets/js/kohan-avatar-chat.js', array( 'kohan-avatar' ), $this->file_ver( 'assets/js/kohan-avatar-chat.js' ), true );
 		}
+	}
+
+	/**
+	 * Read assets/kohan/acts.json — the extra pose strips — and keep only
+	 * well-formed entries whose WebP file is actually shipped.
+	 *
+	 * @param string $ver Cache-busting version.
+	 * @return array<int,array<string,mixed>>
+	 */
+	public function extra_acts( $ver ) {
+		$file = KOHAN_AVATAR_DIR . 'assets/kohan/acts.json';
+		if ( ! is_readable( $file ) ) {
+			return array();
+		}
+		$data = json_decode( (string) file_get_contents( $file ), true );
+		if ( ! is_array( $data ) || empty( $data['acts'] ) || ! is_array( $data['acts'] ) ) {
+			return array();
+		}
+		$groups = array( 'click', 'idle', 'wait', 'drag', 'drop', 'talk', 'think' );
+		$out    = array();
+		foreach ( $data['acts'] as $a ) {
+			if ( ! is_array( $a ) || empty( $a['name'] ) || empty( $a['file'] ) ) {
+				continue;
+			}
+			$name      = (string) $a['name'];
+			$file_name = (string) $a['file'];
+			if ( ! preg_match( '/^[a-z][a-z0-9-]{1,40}$/', $name ) || ! preg_match( '/^[a-z0-9-]{1,60}\.webp$/', $file_name ) ) {
+				continue;
+			}
+			if ( ! is_readable( KOHAN_AVATAR_DIR . 'assets/kohan/acts/' . $file_name ) ) {
+				continue;
+			}
+			$frames = isset( $a['frames'] ) ? (int) $a['frames'] : 0;
+			if ( $frames < 1 || $frames > 24 ) {
+				continue;
+			}
+			$group = isset( $a['group'] ) ? (string) $a['group'] : '';
+			$entry = array(
+				'name'   => $name,
+				'url'    => esc_url_raw( KOHAN_AVATAR_URL . 'assets/kohan/acts/' . $file_name . '?v=' . $ver ),
+				'frames' => $frames,
+				'group'  => in_array( $group, $groups, true ) ? $group : '',
+			);
+			if ( isset( $a['frameMs'] ) ) {
+				$entry['frameMs'] = is_array( $a['frameMs'] ) ? array_map( 'intval', array_slice( $a['frameMs'], 0, 48 ) ) : (int) $a['frameMs'];
+			}
+			if ( isset( $a['order'] ) && is_array( $a['order'] ) ) {
+				$entry['order'] = array_map( 'intval', array_slice( $a['order'], 0, 48 ) );
+			}
+			foreach ( array( 'loops', 'blend', 'hold' ) as $k ) {
+				if ( isset( $a[ $k ] ) ) {
+					$entry[ $k ] = (int) $a[ $k ];
+				}
+			}
+			if ( isset( $a['motion'] ) && preg_match( '/^[a-z]{2,12}$/', (string) $a['motion'] ) ) {
+				$entry['motion'] = (string) $a['motion'];
+			}
+			$out[] = $entry;
+		}
+		return $out;
+	}
+
+	/**
+	 * URL of the theme's assets/data/ folder when it ships the quotes dataset.
+	 */
+	public function quotes_base() {
+		$candidates = array(
+			array( get_stylesheet_directory(), get_stylesheet_directory_uri() ),
+			array( get_template_directory(), get_template_directory_uri() ),
+		);
+		foreach ( $candidates as $c ) {
+			if ( is_readable( trailingslashit( $c[0] ) . 'assets/data/wisdom-quotes.en.json' ) ) {
+				return esc_url_raw( trailingslashit( $c[1] ) . 'assets/data/' );
+			}
+		}
+		return '';
 	}
 
 	public function preload_atlas() {
@@ -452,6 +545,8 @@ class Kohan_Avatar {
 		$out['weapon_moods']    = empty( $input['weapon_moods'] ) ? 0 : 1;
 		$out['response_events'] = empty( $input['response_events'] ) ? 0 : 1;
 		$out['chat']            = empty( $input['chat'] ) ? 0 : 1;
+		$out['talk']            = empty( $input['talk'] ) ? 0 : 1;
+		$out['section_talk']    = empty( $input['section_talk'] ) ? 0 : 1;
 		$out['fire_probability']= min( 1.0, max( 0.0, (float) ( $input['fire_probability'] ?? $d['fire_probability'] ) ) );
 		return $out;
 	}

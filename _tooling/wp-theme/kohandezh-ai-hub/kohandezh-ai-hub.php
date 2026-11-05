@@ -3,7 +3,7 @@
  * Plugin Name:       Kohandezh AI Hub
  * Plugin URI:        https://kohandezh.com
  * Description:       Multi-provider AI proxy (z.ai, OpenAI, Anthropic, …) for the Kohandezh CV assistant widget. Exposes a public REST endpoint, a wp-admin chat playground, conversation logs, and a settings screen for API keys — independent of the active theme.
- * Version:           1.1.0
+ * Version:           1.2.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Mohammad Ali Kohandezh
@@ -14,7 +14,8 @@
  *   includes/class-kdcv-provider.php        — abstract provider + registry
  *   includes/class-kdcv-provider-zai.php    — z.ai (Zhipu GLM) implementation
  *   includes/class-kdcv-logger.php          — DB-backed conversation log
- *   includes/class-kdcv-rest.php            — POST /wp-json/kdcv/v1/ask
+ *   includes/class-kdcv-site-index.php      — site-wide retrieval (posts, pages, profiles, book)
+ *   includes/class-kdcv-rest.php            — POST /wp-json/kdcv/v1/ask (grounded, cited)
  *   admin/settings.php                      — API keys + default provider
  *   admin/chat.php                          — chatbox + history + export/clear
  *
@@ -28,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'KDCV_AI_VERSION', '1.1.0' );
+define( 'KDCV_AI_VERSION', '1.2.0' );
 define( 'KDCV_AI_FILE', __FILE__ );
 define( 'KDCV_AI_DIR', plugin_dir_path( __FILE__ ) );
 define( 'KDCV_AI_URL', plugin_dir_url( __FILE__ ) );
@@ -40,6 +41,7 @@ require_once KDCV_AI_DIR . 'includes/class-kdcv-provider-openai.php';
 require_once KDCV_AI_DIR . 'includes/class-kdcv-provider-anthropic.php';
 require_once KDCV_AI_DIR . 'includes/class-kdcv-provider-custom.php';
 require_once KDCV_AI_DIR . 'includes/class-kdcv-logger.php';
+require_once KDCV_AI_DIR . 'includes/class-kdcv-site-index.php';
 require_once KDCV_AI_DIR . 'includes/class-kdcv-rest.php';
 
 /**
@@ -70,6 +72,7 @@ add_action( 'plugins_loaded', function () {
 } );
 
 KDCV_AI_REST::register();
+KDCV_AI_Site_Index::register();
 
 if ( is_admin() ) {
 	// chat.php registers the parent menu page; settings.php hangs a submenu
